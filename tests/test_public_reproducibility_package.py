@@ -25,6 +25,7 @@ def test_publication_files_exist():
         ROOT / "scripts/generate_paper8_artifacts.py",
         ROOT / "scripts/audit_paper8_foundations.py",
         ROOT / "scripts/run_available_morphology_readout_pilot.py",
+        ROOT / "scripts/run_morphology_matched_proxy_endpoint.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -40,6 +41,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "This paper does not claim" in source
     assert "that Tau Core is proven" in source
     assert "that the morphology-matched gate has already won on real SPARC endpoints" in source
+    assert "Available-data Tau-proxy preflight" in source
+    assert "beats the wrong-family mean in 0.568" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -124,6 +127,43 @@ def test_available_morphology_readout_pilot_is_claim_bounded():
     assert "not the final Paper 8" in report
     assert "175-Galaxy Proxy Runner" in report
     assert "Full-sample RMOND comparison is blocked" in report
+
+
+def test_morphology_matched_tau_proxy_endpoint_is_claim_bounded():
+    labels = pd.read_csv(DATA / "morphology_labels_predeclared_proxy.csv")
+    betas = pd.read_csv(DATA / "morphology_matched_proxy_family_betas.csv")
+    scores = pd.read_csv(DATA / "morphology_matched_proxy_scores_by_galaxy.csv")
+    summary = pd.read_csv(DATA / "morphology_matched_proxy_endpoint_summary.csv")
+    by_family = pd.read_csv(DATA / "morphology_matched_proxy_endpoint_by_family.csv")
+
+    expected_families = {
+        "K_compact_bulge",
+        "K_diffuse_scale_tail",
+        "K_late_exponential",
+        "K_mid_regular",
+    }
+    assert expected_families == set(labels["morphology_family"])
+    assert expected_families.issubset(set(betas["morphology_family"]))
+    assert "K_global_tau_proxy" in set(betas["morphology_family"])
+    assert labels["label_source"].str.contains("no residual endpoints").all()
+
+    holdout = summary.loc[summary["split"] == "holdout"].iloc[0]
+    assert int(holdout["n_galaxies"]) == 44
+    for column in [
+        "matched_beats_wrong_fraction",
+        "matched_rank1_fraction",
+        "matched_beats_tpg_v6_fraction",
+        "matched_beats_mond_fraction",
+    ]:
+        assert 0.0 <= float(holdout[column]) <= 1.0
+
+    assert len(scores) == 175
+    assert set(by_family["split"]) == {"holdout", "train"}
+    report = (ROOT / "reports" / "morphology_matched_tau_proxy_endpoint.md").read_text(
+        encoding="utf-8"
+    )
+    assert "not the final Paper 8 endpoint" in report
+    assert "wrong families, TPG/v6, and MOND" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

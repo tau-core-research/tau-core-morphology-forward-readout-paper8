@@ -199,6 +199,12 @@ This package includes a synthetic score fixture to verify the endpoint logic. It
 \caption{Synthetic protocol fixture for the endpoint schema. A real pass would require the matched-family score to beat wrong-family and shuffled-label controls, then be compared to Newtonian baryonic, MOND-simple, and empirical RAR baselines.}
 \end{figure}
 
+\section{Available-data Tau-proxy preflight}
+
+The repository also includes a first available-data preflight of the matched-family idea. This is not the final Paper 8 endpoint, because the family functions are still proxy functions built from the locally available Tau-proxy channel rather than the final morphology-specific $\delta g^K$ readout shells. The preflight nevertheless tests the important next question: whether a metadata-proxy morphology family assigned before scoring performs better than wrong Tau-proxy families on held-out galaxies.
+
+In the current 175-galaxy point-level packet, family amplitudes are fit on the train split only. On the 44-galaxy holdout split, the morphology-matched proxy beats the wrong-family mean in 0.568 of galaxies, beats the TPG/v6 comparator in 0.636 of galaxies, and beats the MOND comparator in 0.614 of galaxies. These numbers are recorded as a preparation result, not as empirical validation of Tau Core. They motivate replacing the generic Tau proxy with source-native morphology-family readout shells and a shuffled-label null in the final endpoint.
+
 \section{Minimal numerical protocol}
 
 The minimal public endpoint protocol is:
@@ -243,6 +249,7 @@ Paper 1 residual-blind disturbance association & available\\
 Paper 2 residual-shape inference and shuffled-label null & available\\
 Paper 3 candidate/control ladder and required-$S_\tau$ diagnostic & available\\
 Morphology-family formula registry & defined in this package\\
+Available-data matched Tau-proxy preflight & run; proxy only\\
 Accepted source-native component tables for full sample & pending\\
 Residual-blind morphology labels for full endpoint sample & pending\\
 Real matched-vs-wrong family endpoint & not yet run\\
