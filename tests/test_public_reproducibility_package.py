@@ -24,6 +24,7 @@ def test_publication_files_exist():
         ROOT / "figures",
         ROOT / "scripts/generate_paper8_artifacts.py",
         ROOT / "scripts/audit_paper8_foundations.py",
+        ROOT / "scripts/run_available_morphology_readout_pilot.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -86,6 +87,35 @@ def test_foundation_audit_preserves_preparation_status():
     report = (ROOT / "reports" / "paper8_foundation_audit.md").read_text(encoding="utf-8")
     assert "not yet suitable for an empirical discovery claim" in report
     assert "residual-blind morphology-label manifest" in report
+
+
+def test_available_morphology_readout_pilot_is_claim_bounded():
+    availability = pd.read_csv(DATA / "available_data_morphology_readout_availability.csv")
+    rank_summary = pd.read_csv(DATA / "available_data_wide_fixed_tpg_proxy_rank_summary.csv")
+    morph_summary = pd.read_csv(DATA / "available_data_morphology_decomposition_summary.csv")
+
+    final_endpoint = availability.loc[
+        availability["layer"] == "real_paper8_morphology_family_endpoint", "status"
+    ].iloc[0]
+    rmond_status = availability.loc[
+        availability["layer"] == "rmond_full_sample_comparator", "status"
+    ].iloc[0]
+    assert final_endpoint == "BLOCKED"
+    assert rmond_status == "BLOCKED"
+
+    core = rank_summary.loc[rank_summary["RotmodSpecificityFlagV02"] == "v02_core_like"].iloc[0]
+    assert core["n_galaxies"] == 6
+    assert core["fixed_tpg_beats_rar_fraction"] == 1.0
+    assert core["fixed_tpg_beats_mond_fraction"] == 1.0
+    assert core["fixed_tpg_beats_newtonian_fraction"] == 1.0
+
+    assert len(morph_summary) > 0
+    assert (ROOT / "reports" / "available_morphology_readout_pilot.md").exists()
+    report = (ROOT / "reports" / "available_morphology_readout_pilot.md").read_text(
+        encoding="utf-8"
+    )
+    assert "not the final Paper 8" in report
+    assert "Full-sample RMOND comparison is blocked" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

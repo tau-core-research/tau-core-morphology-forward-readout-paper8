@@ -30,6 +30,7 @@ def sha256(path: Path) -> str:
 def main() -> None:
     run([sys.executable, "scripts/generate_paper8_artifacts.py"])
     run([sys.executable, "scripts/audit_paper8_foundations.py"])
+    run([sys.executable, "scripts/run_available_morphology_readout_pilot.py"])
     if shutil.which("tectonic") is None:
         raise SystemExit("tectonic is required to compile paper8_submission_source/main.tex")
     run(["tectonic", "main.tex"], cwd=SOURCE)

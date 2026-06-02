@@ -1,0 +1,7 @@
+RotmodSpecificityFlagV02,n_galaxies,fixed_tpg_rank1_fraction,fixed_tpg_beats_rar_fraction,fixed_tpg_beats_mond_fraction,fixed_tpg_beats_newtonian_fraction,median_fixed_minus_best_conventional,mean_fixed_minus_best_conventional
+near_one_or_high_s_tau_control,102,0.27450980392156865,0.29411764705882354,0.3137254901960784,1.0,0.005447270000000004,0.007134799460784313
+weak_tpg_specific_gain,14,0.8571428571428571,0.8571428571428571,1.0,1.0,-0.004751401499999995,-0.006234100928571428
+no_radial_s_tau_ramp,11,1.0,1.0,1.0,1.0,-0.004014750999999997,-0.013081240909090908
+model_specificity_failure,8,0.0,0.875,1.0,0.0,0.12908322749999998,0.10920781824999999
+v02_core_like,6,1.0,1.0,1.0,1.0,-0.026311105500000008,-0.03222189766666667
+required_s_tau_too_low_or_unphysical,2,0.5,0.5,1.0,1.0,0.00023760199999999995,0.00023760199999999995

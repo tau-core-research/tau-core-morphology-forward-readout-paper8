@@ -1,0 +1,6 @@
+layer,status,available_data,limitation,allowed_claim
+real_paper8_morphology_family_endpoint,BLOCKED,morphology_family_registry only,no residual-blind galaxy->K manifest and no per-family delta_g^K scored table,not runnable yet as the final Paper 8 endpoint
+wide_fixed_tpg_component_proxy,RUNNABLE_PROXY,paper3_tau_signal_sparc_rotmod_wide_specificity_v02.csv,"uses FixedTPG/Tau-like specificity flag, not full Paper 8 morphology-family labels",stress test of Tau-like proxy group versus Newton/MOND/RAR
+morphology_decomposition_tau_proxy_vs_tpg,RUNNABLE_PROXY,tau_sparc_morphology_decomposition_control_runner_v0.csv,compares Tau proxy to TPG/v6 only; no MOND/RAR/Newton columns,morphology split sensitivity check against TPG/v6
+rmond_full_sample_comparator,BLOCKED,paper3_rmond_bridge_audit says no frozen V_RMOND(R),RMOND is not a pointwise residual comparator in current packet,RMOND cannot enter primary Paper 8 endpoint yet
+limited_rmond_mond_gallery,LIMITED_PROXY,six-galaxy gallery with rmse_rmond_mond_km_s,"combined RMOND/MOND comparator, different metric units, not full SPARC endpoint",illustrative sanity check only
