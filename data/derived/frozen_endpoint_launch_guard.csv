@@ -1,0 +1,2 @@
+launch_status,readiness_decision,primary_endpoint_lane,amplitude_policy,blocked_gate_count,guard_reason,endpoint_scores_computed,next_action
+LAUNCH_BLOCKED,BLOCKED_ACCEPTED_OBSERVABLES_MISSING,no_low_inclination,train_selected_family_to_global_shrinkage_0_40,4,accepted residual-blind observables missing,False,populate accepted manifest and rerun readiness gate

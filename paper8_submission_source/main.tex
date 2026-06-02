@@ -298,6 +298,8 @@ Finally, the repository includes an accepted-observable manifest template and va
 
 An accepted-manifest readiness gate then lifts the field-level validation to an endpoint-level decision. For the current empty template, the gate returns \texttt{BLOCKED\_ACCEPTED\_OBSERVABLES\_MISSING}. A future populated manifest must pass this gate before the frozen blind endpoint protocol is run.
 
+A final frozen-endpoint launch guard records the same boundary operationally. In the current package it returns \texttt{LAUNCH\_BLOCKED} with endpoint scores not computed. Thus the package preserves a complete path to a future blind endpoint while preventing the proxy manifest or empty accepted template from being used as discovery evidence.
+
 \section{Conclusion}
 
 Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:

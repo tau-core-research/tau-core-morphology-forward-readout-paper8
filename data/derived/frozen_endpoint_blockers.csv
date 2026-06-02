@@ -1,0 +1,5 @@
+gate,blocked_missing_rows,field_group,next_action
+residual_blind_family_labels_ready,175,formula_family,populate accepted residual-blind fields before endpoint scoring
+quality_and_caveat_ready,350,manifest_confidence; manifest_caveat,populate accepted residual-blind fields before endpoint scoring
+active_kernel_observables_ready,369,scale_radius_kpc; tail_inner_radius_kpc; tail_cutoff_radius_kpc; compact_support_radius_kpc; thickness_h_over_rs,populate accepted residual-blind fields before endpoint scoring
+provenance_ready,175,observable_provenance,populate accepted residual-blind fields before endpoint scoring

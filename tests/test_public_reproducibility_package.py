@@ -45,6 +45,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_morphology_observable_source_upgrade_plan.py",
         ROOT / "scripts/build_accepted_observable_manifest_template.py",
         ROOT / "scripts/run_accepted_manifest_readiness_gate.py",
+        ROOT / "scripts/run_frozen_endpoint_launch_guard.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -95,6 +96,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "intentionally endpoint-blocked" in source
     assert "accepted-manifest readiness gate" in source
     assert "BLOCKED\\_ACCEPTED\\_OBSERVABLES\\_MISSING" in source
+    assert "frozen-endpoint launch guard" in source
+    assert "LAUNCH\\_BLOCKED" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -813,6 +816,29 @@ def test_accepted_manifest_readiness_gate_blocks_empty_template():
     assert "not an endpoint score" in report
     assert "The current empty accepted manifest template is correctly blocked" in report
     assert "would not by itself imply that Tau Core" in report
+
+
+def test_frozen_endpoint_launch_guard_blocks_premature_endpoint():
+    launch = pd.read_csv(DATA / "frozen_endpoint_launch_guard.csv")
+    blockers = pd.read_csv(DATA / "frozen_endpoint_blockers.csv")
+    row = launch.iloc[0]
+    assert row["launch_status"] == "LAUNCH_BLOCKED"
+    assert row["readiness_decision"] == "BLOCKED_ACCEPTED_OBSERVABLES_MISSING"
+    assert bool(row["endpoint_scores_computed"]) is False
+    assert int(row["blocked_gate_count"]) == 4
+    assert {
+        "residual_blind_family_labels_ready",
+        "quality_and_caveat_ready",
+        "active_kernel_observables_ready",
+        "provenance_ready",
+    }.issubset(set(blockers["gate"]))
+    report = (ROOT / "reports" / "frozen_endpoint_launch_guard.md").read_text(
+        encoding="utf-8"
+    )
+    assert "This launch guard is not an endpoint score" in report
+    assert "Launch status: `LAUNCH_BLOCKED`" in report
+    assert "endpoint_scores_computed" in report
+    assert "not a negative empirical result" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
