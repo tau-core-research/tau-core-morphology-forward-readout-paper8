@@ -1,0 +1,4 @@
+amplitude_policy,beta_delta_v2_amplitude,fit_scope,overfit_diagnostic
+frozen_global_train_beta,-1003.8829388432548,full Paper 8 train split from source-native formula preflight,False
+pool_fit_beta_all13,218.093059057366,all 13 audited exponential-disk rows,True
+pool_fit_beta_strict6,3607.069971851181,6 strict S4G expdisk-supported rows,True

@@ -51,6 +51,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_accepted_morphology_manifest.py",
         ROOT / "scripts/audit_accepted_morphology_manifest.py",
         ROOT / "scripts/audit_exponential_disk_family_labels.py",
+        ROOT / "scripts/run_exponential_disk_narrow_dry_run.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -114,6 +115,9 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "next residual-blind morphology-label audit pool" in source
     assert "6 rows have strict \\texttt{D:expdisk} support" in source
     assert "7 rows remain caveated" in source
+    assert "narrow dry-run" in source
+    assert "beats TPG/v6 in 4/6 cases" in source
+    assert "beats MOND in only 2/6 cases" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1035,6 +1039,48 @@ def test_exponential_disk_family_label_audit_strengthens_near_term_pool():
     assert "Strict external expdisk support: 6" in report
     assert "Caveated external disk support: 7" in report
     assert "not an endpoint score" in report
+
+
+def test_exponential_disk_narrow_dry_run_is_mixed_and_claim_bounded():
+    amplitudes = pd.read_csv(DATA / "exponential_disk_narrow_dry_run_amplitudes.csv")
+    scores = pd.read_csv(DATA / "exponential_disk_narrow_dry_run_scores_by_galaxy.csv")
+    summary = pd.read_csv(DATA / "exponential_disk_narrow_dry_run_summary.csv")
+    points = pd.read_csv(DATA / "exponential_disk_narrow_dry_run_points.csv")
+    assert len(scores) == 13
+    assert points["galaxy"].nunique() == 13
+    assert set(amplitudes["amplitude_policy"]) == {
+        "frozen_global_train_beta",
+        "pool_fit_beta_all13",
+        "pool_fit_beta_strict6",
+    }
+    assert amplitudes.loc[
+        amplitudes["amplitude_policy"] == "frozen_global_train_beta",
+        "overfit_diagnostic",
+    ].iloc[0] == False
+    assert amplitudes.loc[
+        amplitudes["amplitude_policy"] == "pool_fit_beta_all13",
+        "overfit_diagnostic",
+    ].iloc[0] == True
+    strict_all13 = summary.loc[
+        (summary["narrow_dry_run_lane"] == "STRICT_NARROW_DRY_RUN_READY_CANDIDATE")
+        & (summary["amplitude_policy"] == "pool_fit_beta_all13")
+    ].iloc[0]
+    assert int(strict_all13["n_galaxies"]) == 6
+    assert abs(float(strict_all13["beats_tpg_v6_fraction"]) - 4 / 6) < 1.0e-12
+    assert abs(float(strict_all13["beats_mond_fraction"]) - 2 / 6) < 1.0e-12
+    strict_frozen = summary.loc[
+        (summary["narrow_dry_run_lane"] == "STRICT_NARROW_DRY_RUN_READY_CANDIDATE")
+        & (summary["amplitude_policy"] == "frozen_global_train_beta")
+    ].iloc[0]
+    assert abs(float(strict_frozen["beats_tpg_v6_fraction"]) - 1 / 6) < 1.0e-12
+    assert "narrow_dry_run_diagnostic_not_frozen_endpoint_not_validation" in set(
+        summary["claim_boundary"]
+    )
+    report = (ROOT / "reports" / "exponential_disk_narrow_dry_run.md").read_text(
+        encoding="utf-8"
+    )
+    assert "not the frozen Paper 8 endpoint" in report
+    assert "pool-fit amplitudes are overfit diagnostics" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
