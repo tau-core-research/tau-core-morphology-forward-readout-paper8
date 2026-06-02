@@ -304,6 +304,8 @@ The package also records an external morphology source registry for the missing 
 
 The first acquisition pass is included in the reproducibility package. It downloads SPARC Table 1 from the official SPARC site and S4G Pipeline 4 tables from VizieR/CDS, yielding 175 SPARC master rows, 77 S4G crossmatches, and 75 S4G/SPARC-derived disk-scale candidates. These candidates can support future source-native scale-radius fields, but they do not complete the accepted manifest: family labels, tail/ring/thickness observables, caveats, and full provenance still require the accepted-source audit path.
 
+The repository now also builds a partial accepted morphology-observable manifest from this acquisition layer. The manifest promotes 75 S4G/SPARC-derived scale-radius observables to field-level accepted-source status, while keeping all 175 rows endpoint-blocked. This is intentional: proxy family labels still require external morphology-label audit, and scale-tail, compact, and thick/flared branches still require their family-specific source-native kernel observables. Thus the accepted manifest draft is a data-readiness upgrade, not an endpoint score.
+
 \section{Conclusion}
 
 Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:

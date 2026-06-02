@@ -48,6 +48,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_frozen_endpoint_launch_guard.py",
         ROOT / "scripts/build_external_morphology_source_registry.py",
         ROOT / "scripts/acquire_external_morphology_inputs.py",
+        ROOT / "scripts/build_accepted_morphology_manifest.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -104,6 +105,9 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "S4G is the first morphology/decomposition source" in source
     assert "77 S4G crossmatches" in source
     assert "75 S4G/SPARC-derived disk-scale candidates" in source
+    assert "partial accepted morphology-observable manifest" in source
+    assert "75 S4G/SPARC-derived scale-radius observables" in source
+    assert "all 175 rows endpoint-blocked" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -909,6 +913,57 @@ def test_external_morphology_input_acquisition_is_partial_and_claim_bounded():
     assert "S4G/SPARC-derived disk scale candidates acquired: 75" in report
     assert "not a completed accepted manifest" in report
     assert "does not compute endpoint scores" in report
+
+
+def test_accepted_morphology_manifest_is_partial_and_endpoint_blocked():
+    manifest = pd.read_csv(DATA / "accepted_morphology_manifest.csv")
+    validation = pd.read_csv(DATA / "accepted_morphology_manifest_validation.csv")
+    by_family = pd.read_csv(DATA / "accepted_morphology_manifest_by_family.csv")
+    assert len(manifest) == 175
+    assert int(
+        (manifest["scale_radius_source_status"] == "ACCEPTED_SOURCE_OBSERVABLE").sum()
+    ) == 75
+    assert int(
+        (
+            manifest["family_label_source_status"]
+            == "REVIEW_PROXY_LABEL_NEEDS_EXTERNAL_MORPHOLOGY_AUDIT"
+        ).sum()
+    ) == 175
+    assert (
+        manifest["endpoint_eligibility_status"]
+        .eq("BLOCKED_NOT_ENDPOINT_ELIGIBLE")
+        .sum()
+        + manifest["endpoint_eligibility_status"]
+        .eq("BLOCKED_FAMILY_LABEL_AUDIT_PENDING")
+        .sum()
+        == 175
+    )
+    assert "partial_field_level_accepted_observables_not_endpoint_validation" in set(
+        manifest["claim_boundary"]
+    )
+    scale_gate = validation.loc[
+        validation["gate"] == "scale_radius_source_observables"
+    ].iloc[0]
+    assert scale_gate["gate_status"] == "PARTIAL_PASS"
+    assert int(scale_gate["n_pass"]) == 75
+    family_gate = validation.loc[
+        validation["gate"] == "external_family_label_audit"
+    ].iloc[0]
+    assert family_gate["gate_status"] == "BLOCKED"
+    assert int(family_gate["n_blocked"]) == 175
+    endpoint_gate = validation.loc[validation["gate"] == "endpoint_eligibility"].iloc[0]
+    assert endpoint_gate["gate_status"] == "BLOCKED"
+    assert int(endpoint_gate["n_pass"]) == 0
+    exp = by_family.loc[by_family["formula_family"] == "K_exponential_disk"].iloc[0]
+    assert int(exp["n_scale_radius_accepted"]) == 13
+    assert int(exp["n_kernel_complete"]) == 13
+    report = (ROOT / "reports" / "accepted_morphology_manifest.md").read_text(
+        encoding="utf-8"
+    )
+    assert "partial accepted morphology-observable manifest" in report
+    assert "Accepted S4G/SPARC scale-radius observables: 75" in report
+    assert "Endpoint-ready rows: 0" in report
+    assert "not an endpoint score" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

@@ -1,0 +1,6 @@
+gate,gate_status,n_rows,n_pass,n_blocked,decision_rule
+row_identity_ready,PASS,175,175,0,all rows preserve SPARC galaxy identity
+scale_radius_source_observables,PARTIAL_PASS,175,75,100,S4G disk scale converted with SPARC distance
+external_family_label_audit,BLOCKED,175,0,175,proxy family labels must be externally audited before endpoint use
+family_kernel_completeness,BLOCKED,175,13,162,all family-specific kernel fields must be source-native
+endpoint_eligibility,BLOCKED,175,0,175,field-level accepted observables do not by themselves authorize scoring
