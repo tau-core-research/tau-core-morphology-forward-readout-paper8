@@ -148,6 +148,102 @@ def morphology_decomposition_outputs() -> tuple[pd.DataFrame, pd.DataFrame]:
     return holdout, summary
 
 
+def full_sparc_proxy_outputs() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    runner_path = TPG_RESULTS / "tau_rotation_curve_frozen_proxy_runner_v0_galaxies.csv"
+    meta_path = TPG_RESULTS / "tau_rotation_curve_projection_metadata_control_v0.csv"
+    if not runner_path.exists():
+        raise FileNotFoundError(runner_path)
+    if not meta_path.exists():
+        raise FileNotFoundError(meta_path)
+
+    runner = pd.read_csv(runner_path)
+    meta = pd.read_csv(meta_path)[["galaxy", "type_bin", "inc_bin", "distance_quality"]]
+    df = runner.merge(meta, on="galaxy", how="left")
+    df["tau_proxy_beats_tpg_v6"] = df["rmse_tau_proxy"] < df["rmse_v6"]
+    df["tau_proxy_beats_mond"] = df["rmse_tau_proxy"] < df["rmse_mond"]
+    df["tpg_v6_beats_mond"] = df["rmse_v6"] < df["rmse_mond"]
+    df["tau_minus_tpg_v6"] = df["rmse_tau_proxy"] - df["rmse_v6"]
+    df["tau_minus_mond"] = df["rmse_tau_proxy"] - df["rmse_mond"]
+
+    def summarize(group_cols: list[str]) -> pd.DataFrame:
+        return (
+            df.groupby(group_cols, dropna=False)
+            .agg(
+                n_galaxies=("galaxy", "count"),
+                mean_tau_minus_tpg_v6=("tau_minus_tpg_v6", "mean"),
+                median_tau_minus_tpg_v6=("tau_minus_tpg_v6", "median"),
+                tau_beats_tpg_v6_fraction=("tau_proxy_beats_tpg_v6", "mean"),
+                mean_tau_minus_mond=("tau_minus_mond", "mean"),
+                median_tau_minus_mond=("tau_minus_mond", "median"),
+                tau_beats_mond_fraction=("tau_proxy_beats_mond", "mean"),
+                tpg_v6_beats_mond_fraction=("tpg_v6_beats_mond", "mean"),
+                mean_rmse_tau_proxy=("rmse_tau_proxy", "mean"),
+                mean_rmse_tpg_v6=("rmse_v6", "mean"),
+                mean_rmse_mond=("rmse_mond", "mean"),
+            )
+            .reset_index()
+        )
+
+    overall = summarize(["split"])
+    by_type = summarize(["split", "type_bin"])
+    return df, overall, by_type
+
+
+def paper1_baseline_outputs() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    path = Path(
+        "/Users/jolcsak/Projects/sparc-residual-disturbance-paper1/"
+        "studies/sparc_residual_coherence_test_v01/paper_packet_v06_distance_balanced/"
+        "baseline_score_by_galaxy.csv"
+    )
+    if not path.exists():
+        raise FileNotFoundError(path)
+    df = pd.read_csv(path)
+    pivot = df.pivot_table(
+        index=["GalaxyName", "Class", "NPoints"],
+        columns="Score",
+        values="RmsLog",
+        aggfunc="first",
+    ).reset_index()
+    tau_scores = [c for c in pivot.columns if str(c).startswith("tau_core_s_")]
+    baselines = ["projection_fixed", "newtonian_baryonic", "mond_simple_mu", "rar_mcgaugh"]
+    rows = []
+    for tau in tau_scores:
+        for base in baselines:
+            if tau not in pivot.columns or base not in pivot.columns:
+                continue
+            diff = pivot[tau] - pivot[base]
+            rows.append(
+                {
+                    "tau_score": tau,
+                    "baseline": base,
+                    "n_galaxies": int(diff.notna().sum()),
+                    "mean_tau_minus_baseline": float(diff.mean()),
+                    "median_tau_minus_baseline": float(diff.median()),
+                    "tau_beats_baseline_fraction": float((diff < 0).mean()),
+                }
+            )
+    summary = pd.DataFrame(rows).sort_values(["tau_score", "baseline"])
+    class_rows = []
+    for cls, sub in pivot.groupby("Class", dropna=False):
+        for tau in tau_scores:
+            for base in baselines:
+                if tau not in sub.columns or base not in sub.columns:
+                    continue
+                diff = sub[tau] - sub[base]
+                class_rows.append(
+                    {
+                        "class": cls,
+                        "tau_score": tau,
+                        "baseline": base,
+                        "n_galaxies": int(diff.notna().sum()),
+                        "median_tau_minus_baseline": float(diff.median()),
+                        "tau_beats_baseline_fraction": float((diff < 0).mean()),
+                    }
+                )
+    class_summary = pd.DataFrame(class_rows).sort_values(["class", "tau_score", "baseline"])
+    return pivot, summary, class_summary
+
+
 def limited_rmond_gallery_output() -> pd.DataFrame:
     path = TPG_FIGURES / "fig5_sparc_rotation_gallery_summary.csv"
     if not path.exists():
@@ -233,6 +329,9 @@ def write_report(
     rank_summary: pd.DataFrame,
     morph_summary: pd.DataFrame,
     rmond_gallery: pd.DataFrame,
+    full_overall: pd.DataFrame,
+    full_by_type: pd.DataFrame,
+    paper1_summary: pd.DataFrame,
 ) -> None:
     REPORTS.mkdir(parents=True, exist_ok=True)
 
@@ -250,6 +349,18 @@ def write_report(
         core_text = "No v02_core_like rows found."
 
     morph_best = morph_summary.sort_values("mean_delta_tau_minus_v6").head(3)
+    full_holdout = full_overall.loc[full_overall["split"] == "holdout"]
+    if not full_holdout.empty:
+        holdout_row = full_holdout.iloc[0].to_dict()
+        full_text = (
+            f"175-galaxy proxy runner holdout: n={int(holdout_row['n_galaxies'])}, "
+            f"Tau-proxy beats TPG/v6 fraction={holdout_row['tau_beats_tpg_v6_fraction']:.3f}, "
+            f"mean Tau-TPG delta={holdout_row['mean_tau_minus_tpg_v6']:.6g}, "
+            f"Tau-proxy beats MOND fraction={holdout_row['tau_beats_mond_fraction']:.3f}."
+        )
+    else:
+        full_text = "175-galaxy proxy runner holdout row unavailable."
+    best_paper1 = paper1_summary.sort_values("median_tau_minus_baseline").head(8)
     rmond_fraction = None
     if "hdda_dtl_better_than_rmond_mond" in rmond_gallery.columns:
         rmond_fraction = float(rmond_gallery["hdda_dtl_better_than_rmond_mond"].mean())
@@ -273,12 +384,35 @@ def write_report(
         "  Paper 8 morphology-family formula outputs.",
         "- The morphology-decomposition runner is mixed: some morphology splits improve",
         "  over TPG/v6, others do not.",
+        "- The 175-galaxy Tau-proxy runner gives a larger-sample check against TPG/v6",
+        "  and MOND, but it is still a proxy family rather than the final Paper 8",
+        "  morphology-family readout.",
         "- Full-sample RMOND comparison is blocked until a frozen pointwise",
         "  `V_RMOND(R)` prescription exists.",
         "",
         "## Key Proxy Result",
         "",
         core_text,
+        "",
+        "## Larger-Sample 175-Galaxy Proxy Runner",
+        "",
+        full_text,
+        "",
+        "Best type-bin holdout rows by mean Tau-minus-TPG/v6 delta:",
+        "",
+        markdown_table(
+            full_by_type.loc[full_by_type["split"] == "holdout"]
+            .sort_values("mean_tau_minus_tpg_v6")
+            .head(8)
+        ),
+        "",
+        "## 73-Galaxy Paper 1 Full-Baseline Layer",
+        "",
+        "This layer contains Newtonian, MOND, RAR, projection, and several",
+        "Tau-core S_tau score variants, but it is an A/B/C residual-disturbance",
+        "sample rather than a Paper 8 morphology-family endpoint.",
+        "",
+        markdown_table(best_paper1),
         "",
         "## Best Morphology-Decomposition Holdout Rows",
         "",
@@ -323,6 +457,8 @@ def main() -> None:
     wide = load_wide_specificity()
     wide_summary, ranks, rank_summary = wide_specificity_outputs(wide)
     morph_holdout, morph_summary = morphology_decomposition_outputs()
+    full_proxy, full_overall, full_by_type = full_sparc_proxy_outputs()
+    paper1_pivot, paper1_summary, paper1_class_summary = paper1_baseline_outputs()
     rmond_gallery = limited_rmond_gallery_output()
 
     availability.to_csv(DATA / "available_data_morphology_readout_availability.csv", index=False)
@@ -331,9 +467,25 @@ def main() -> None:
     rank_summary.to_csv(DATA / "available_data_wide_fixed_tpg_proxy_rank_summary.csv", index=False)
     morph_holdout.to_csv(DATA / "available_data_morphology_decomposition_holdout.csv", index=False)
     morph_summary.to_csv(DATA / "available_data_morphology_decomposition_summary.csv", index=False)
+    full_proxy.to_csv(DATA / "available_data_full_sparc_tau_proxy_galaxies.csv", index=False)
+    full_overall.to_csv(DATA / "available_data_full_sparc_tau_proxy_overall.csv", index=False)
+    full_by_type.to_csv(DATA / "available_data_full_sparc_tau_proxy_by_type.csv", index=False)
+    paper1_pivot.to_csv(DATA / "available_data_paper1_73_galaxy_baseline_pivot.csv", index=False)
+    paper1_summary.to_csv(DATA / "available_data_paper1_73_galaxy_tau_baseline_summary.csv", index=False)
+    paper1_class_summary.to_csv(
+        DATA / "available_data_paper1_73_galaxy_tau_baseline_by_class.csv", index=False
+    )
     rmond_gallery.to_csv(DATA / "available_data_limited_rmond_gallery.csv", index=False)
 
-    write_report(wide_summary, rank_summary, morph_summary, rmond_gallery)
+    write_report(
+        wide_summary,
+        rank_summary,
+        morph_summary,
+        rmond_gallery,
+        full_overall,
+        full_by_type,
+        paper1_summary,
+    )
     print("PAPER8_AVAILABLE_MORPHOLOGY_READOUT_PILOT_COMPLETE")
 
 

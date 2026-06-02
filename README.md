@@ -189,14 +189,22 @@ data/derived/available_data_wide_fixed_tpg_proxy_ranks.csv
 data/derived/available_data_wide_fixed_tpg_proxy_rank_summary.csv
 data/derived/available_data_morphology_decomposition_holdout.csv
 data/derived/available_data_morphology_decomposition_summary.csv
+data/derived/available_data_full_sparc_tau_proxy_galaxies.csv
+data/derived/available_data_full_sparc_tau_proxy_overall.csv
+data/derived/available_data_full_sparc_tau_proxy_by_type.csv
+data/derived/available_data_paper1_73_galaxy_baseline_pivot.csv
+data/derived/available_data_paper1_73_galaxy_tau_baseline_summary.csv
+data/derived/available_data_paper1_73_galaxy_tau_baseline_by_class.csv
 data/derived/available_data_limited_rmond_gallery.csv
 reports/available_morphology_readout_pilot.md
 ```
 
 This pilot is intentionally claim-bounded. It checks existing local proxy data
-for Tau-like/FixedTPG behavior against available Newtonian, MOND, RAR, and
-limited RMOND/MOND comparators. It does not replace the final Paper 8 endpoint,
-because residual-blind morphology-family labels and scored per-family
+for Tau-like/FixedTPG behavior against available TPG/v6, Newtonian, MOND, RAR,
+and limited RMOND/MOND comparators. The largest current layer is a 175-galaxy
+Tau-proxy versus TPG/MOND check; the full Newtonian/RAR layer is smaller and
+comes from the Paper 1 A/B/C packet. This does not replace the final Paper 8
+endpoint, because residual-blind morphology-family labels and scored per-family
 `delta_g^K` tables are still pending.
 
 ## arXiv Source Package

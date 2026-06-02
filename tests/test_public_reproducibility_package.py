@@ -93,6 +93,9 @@ def test_available_morphology_readout_pilot_is_claim_bounded():
     availability = pd.read_csv(DATA / "available_data_morphology_readout_availability.csv")
     rank_summary = pd.read_csv(DATA / "available_data_wide_fixed_tpg_proxy_rank_summary.csv")
     morph_summary = pd.read_csv(DATA / "available_data_morphology_decomposition_summary.csv")
+    full_overall = pd.read_csv(DATA / "available_data_full_sparc_tau_proxy_overall.csv")
+    full_by_type = pd.read_csv(DATA / "available_data_full_sparc_tau_proxy_by_type.csv")
+    paper1_summary = pd.read_csv(DATA / "available_data_paper1_73_galaxy_tau_baseline_summary.csv")
 
     final_endpoint = availability.loc[
         availability["layer"] == "real_paper8_morphology_family_endpoint", "status"
@@ -110,11 +113,16 @@ def test_available_morphology_readout_pilot_is_claim_bounded():
     assert core["fixed_tpg_beats_newtonian_fraction"] == 1.0
 
     assert len(morph_summary) > 0
+    assert int(full_overall["n_galaxies"].sum()) == 175
+    assert "type_bin" in full_by_type.columns
+    assert "newtonian_baryonic" in set(paper1_summary["baseline"])
+    assert "rar_mcgaugh" in set(paper1_summary["baseline"])
     assert (ROOT / "reports" / "available_morphology_readout_pilot.md").exists()
     report = (ROOT / "reports" / "available_morphology_readout_pilot.md").read_text(
         encoding="utf-8"
     )
     assert "not the final Paper 8" in report
+    assert "175-Galaxy Proxy Runner" in report
     assert "Full-sample RMOND comparison is blocked" in report
 
 
