@@ -1,0 +1,6 @@
+paper3_role,galaxy,paper3_status,paper8_forward_role,allowed_inputs,forbidden_inputs
+positive anchor,DDO126,fixed TPG public endpoint anchor,matched-family candidate once morphology label is residual-blind,"morphology label, baryonic components, geometry proxies","required S_tau, endpoint residual gain, post-hoc family choice"
+quiet control,DDO50,Newtonian-best or near-quiet control,control object for false-positive suppression,same frozen morphology and baryonic inputs as candidates,endpoint-conditioned family switching
+geometry stress,WLM,geometry/observability stress context,observability-caveated endpoint row,morphology and observability covariates declared before scoring,using caveat label to discard a bad endpoint after scoring
+candidate ladder,DDO168,specificity-support example after repair,candidate/control ladder consistency row,accepted component table or frozen public reconstruction,inverse S_tau as predictor
+countercontrol,DDO154,near-one control/countercontrol,rank-sensitive wrong-family stress row,predeclared morphology label and candidate family set,residual-selected morphology class

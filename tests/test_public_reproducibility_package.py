@@ -1,0 +1,110 @@
+import subprocess
+import zipfile
+from pathlib import Path
+
+import pandas as pd
+
+
+ROOT = Path(__file__).resolve().parents[1]
+SOURCE = ROOT / "paper8_submission_source"
+DATA = ROOT / "data" / "derived"
+
+
+def test_publication_files_exist():
+    required = [
+        ROOT / "README.md",
+        ROOT / "LICENSE",
+        ROOT / "CITATION.cff",
+        ROOT / "DATA_NOTICE.md",
+        ROOT / "requirements.txt",
+        SOURCE / "main.tex",
+        SOURCE / "refs.bib",
+        SOURCE / "main.pdf",
+        SOURCE / "figures",
+        ROOT / "figures",
+        ROOT / "scripts/generate_paper8_artifacts.py",
+        ROOT / "scripts/build_arxiv_source.py",
+        ROOT / "scripts/reproduce.py",
+    ]
+    missing = [str(path.relative_to(ROOT)) for path in required if not path.exists()]
+    assert missing == []
+
+
+def test_manuscript_contains_forward_gate_and_claim_boundaries():
+    source = (SOURCE / "main.tex").read_text(encoding="utf-8")
+    assert "MORPHOLOGY-MATCHED-FORWARD-READOUT-GATE" in source
+    assert "Paper 3 $S_\\tau$ diagnostic is useful but partly inverse" in source
+    assert "\\Delta_{\\rm matched}" in source
+    assert "This paper does not claim" in source
+    assert "that Tau Core is proven" in source
+    assert "that the morphology-matched gate has already won on real SPARC endpoints" in source
+    forbidden_phrases = [
+        "We prove Tau Core",
+        "This paper demonstrates Tau Core has beaten MOND/RAR",
+        "MOND and RAR are superseded",
+        "we derive a universal galaxy law",
+    ]
+    for phrase in forbidden_phrases:
+        assert phrase not in source
+
+
+def test_derived_protocol_tables_exist_and_have_expected_content():
+    registry = pd.read_csv(DATA / "morphology_family_registry.csv")
+    schema = pd.read_csv(DATA / "forward_readout_gate_schema.csv")
+    crosswalk = pd.read_csv(DATA / "paper3_candidate_control_crosswalk.csv")
+    readiness = pd.read_csv(DATA / "paper8_readiness_table.csv")
+
+    assert len(registry) == 7
+    assert "K_scale_tail_spiral" in set(registry["family_id"])
+    assert "velocity-field preferred" in set(registry["sparc_first_pass_status"])
+    assert len(schema) == 6
+    assert "shuffled-K null" in set(schema["gate_component"])
+    assert "DDO126" in set(crosswalk["galaxy"])
+    assert "DDO50" in set(crosswalk["galaxy"])
+    real_endpoint = readiness.loc[
+        readiness["item"] == "Real matched-vs-wrong family endpoint", "status"
+    ].iloc[0]
+    assert real_endpoint == "not_yet_run"
+
+
+def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
+    demo = pd.read_csv(DATA / "synthetic_forward_gate_demo.csv")
+    matched = float(demo.loc[demo["condition"] == "matched_family", "rms"].iloc[0])
+    wrong = float(demo.loc[demo["condition"] == "wrong_family_mean", "rms"].iloc[0])
+    shuffled = float(demo.loc[demo["condition"] == "shuffled_K_median", "rms"].iloc[0])
+    assert matched < wrong
+    assert matched < shuffled
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    assert "protocol fixtures" in readme
+    assert "not an empirical matched-family endpoint result" in readme
+
+
+def test_figures_and_arxiv_source_package_are_valid():
+    for name in [
+        "fig01_morphology_family_registry",
+        "fig02_forward_gate_score_schema",
+        "fig03_forward_readout_gate_flow",
+    ]:
+        assert (ROOT / "figures" / f"{name}.svg").exists()
+        assert (SOURCE / "figures" / f"{name}.pdf").exists()
+
+    archive_path = ROOT / "arxiv_submission_source.zip"
+    assert archive_path.exists()
+    with zipfile.ZipFile(archive_path) as archive:
+        names = set(archive.namelist())
+    assert "main.tex" in names
+    assert "refs.bib" in names
+    assert "main.pdf" not in names
+    assert "figures/fig01_morphology_family_registry.pdf" in names
+    assert not any(name.endswith((".aux", ".log", ".out", ".toc", ".blg", ".bbl")) for name in names)
+
+
+def test_build_arxiv_source_script_runs():
+    result = subprocess.run(
+        ["python", "scripts/build_arxiv_source.py"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    assert "arxiv_submission_source.zip" in result.stdout

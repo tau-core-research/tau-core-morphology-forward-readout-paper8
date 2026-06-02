@@ -1,0 +1,8 @@
+family_id,morphology_label,formula_shell,primary_readout,sparc_first_pass_status,caveat
+K_scale_tail_spiral,scale-tail spiral / extended low-surface-brightness disk,sigma_morph(R) ~ A_K / (R + R_c)^2 with finite inner cutoff,delta_g^K_R from Poisson-like closure source tail,1D rotation-curve testable,amplitude must be frozen or tightly bounded before endpoint scoring
+K_exponential_disk,regular exponential disk,sigma_morph(R) ~ A_K exp(-R/R_d),finite-support disk-like solved response,1D rotation-curve testable,degenerate with baryonic scale-length if not residual-blind
+K_compact_finite,compact finite source / centrally concentrated support,"I_morph(R) saturates, delta_g^K_R ~ -I_infty/R^2",Newtonian-like finite-tail residual correction,1D rotation-curve testable,should not be overread as a universal dark component
+K_ring_resonance,ring / resonance feature,sigma_morph(R) localized near R_ring with width w_ring,localized radial response feature,1D proxy testable,"requires morphology-fixed ring radius, not residual-selected radius"
+K_thick_flared,thick or flared disk,"sigma_morph(R,z) projected through thickness/flaring kernel",geometry-smoothed radial response,1D proxy testable,vertical geometry is only proxied in SPARC-like 1D curves
+K_barred_m2,barred spiral / m=2 non-axisymmetric mode,"sigma_morph(R,phi) includes m=2 harmonic readout","azimuthal velocity-field response, not only 1D curve",velocity-field preferred,1D SPARC use is caveat/proxy only
+K_lopsided_m1,lopsided / m=1 asymmetric mode,"sigma_morph(R,phi) includes m=1 harmonic readout",asymmetric velocity-field response,velocity-field preferred,1D SPARC use is caveat/proxy only

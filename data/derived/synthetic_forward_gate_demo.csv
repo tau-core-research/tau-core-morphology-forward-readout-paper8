@@ -1,0 +1,7 @@
+condition,rms,rank
+matched_family,0.111,1
+wrong_family_mean,0.156,3
+shuffled_K_median,0.151,3
+newtonian_baryonic,0.181,5
+mond_simple,0.142,2
+empirical_rar,0.139,2

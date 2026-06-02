@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite it as below."
+title: "Morphology-Matched Forward Readout Gates for Tau Core Gravity"
+authors:
+  - family-names: "Olcsak"
+    given-names: "Jozsef"
+date-released: "2026-06-02"
+version: "v0.1"
+repository-code: "https://github.com/tau-core-research/tau-core-morphology-forward-readout-paper8"
+license: "MIT"
+abstract: "Public reproducibility package for a claim-bounded Paper 8 protocol that extends SPARC residual Papers 1-3 from inverse required-S_tau diagnostics to morphology-matched forward-readout candidate/control gates."

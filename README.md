@@ -1,0 +1,177 @@
+# Paper 8: Tau Core Morphology-Matched Forward Readout Gate
+
+This repository is the public reproducibility package for:
+
+**Morphology-matched forward readout gates for Tau Core gravity: extending SPARC residual Papers 1-3 from inverse diagnostics to predeclared family tests**
+
+The package is intentionally small. It contains only the files needed to
+compile the manuscript, regenerate compact protocol tables and figures, build
+the arXiv-oriented source package, and verify the publication-facing claim
+boundary.
+
+## Main Claim
+
+The publication-facing claim is deliberately narrow:
+
+```text
+The Tau Core gravity bridge can sharpen SPARC residual Papers 1-3 by turning
+the Paper 3 inverse required-S_tau diagnostic into a morphology-matched
+forward-readout gate with matched-family, wrong-family, shuffled-label, and
+standard-baseline controls.
+```
+
+The key endpoint proposed by the paper is:
+
+```text
+MORPHOLOGY-MATCHED-FORWARD-READOUT-GATE
+```
+
+with pass condition:
+
+```text
+For predeclared candidates and controls, the morphology-matched Tau Core
+readout family improves residual structure more than wrong morphology
+families, shuffled morphology labels, Newtonian baryonic, MOND-simple, and
+empirical RAR baselines.
+```
+
+## Does Not Claim
+
+This paper does **not** claim:
+
+```text
+Tau Core is proven.
+The real SPARC matched-family endpoint has already passed.
+Tau Core fits all galaxies better than MOND/RAR/Newtonian baselines.
+MOND, RAR, or Newtonian baryonic baselines have been superseded.
+A universal weak-field galaxy law has been derived.
+Non-axisymmetric bar/lopsided families are fully testable from 1D curves alone.
+```
+
+## Theory Context
+
+The broader Tau Core theory and gravity bridge architecture are maintained
+separately at:
+
+```text
+https://github.com/tau-core-research/tau-core-theory
+```
+
+The most relevant local theory entrypoint is:
+
+```text
+docs/tau_core_gravity_bridge_central.md
+```
+
+in the theory repository.
+
+This Paper 8 repository is standalone. It does not require accepting Tau Core
+as a completed physical theory.
+
+## Relation To Papers 1-3
+
+Paper 1:
+
+```text
+Residual-blind external disturbance labels are associated with increased
+low-acceleration residual scatter.
+```
+
+Paper 2:
+
+```text
+Residual-shape features can infer external disturbance labels better than
+shuffled labels, while MOND/RAR-like baselines remain important comparators.
+```
+
+Paper 3:
+
+```text
+Candidate/control framework plus inverse required-S_tau diagnostic.
+```
+
+Paper 8:
+
+```text
+Forward morphology-matched readout gate:
+K_g -> formula shell -> delta_g^K -> matched-vs-wrong/shuffled endpoint.
+```
+
+## Main Files
+
+```text
+LICENSE
+CITATION.cff
+DATA_NOTICE.md
+requirements.txt
+README.md
+paper8_submission_source/main.tex
+paper8_submission_source/refs.bib
+paper8_submission_source/main.pdf
+paper8_submission_source/figures/
+figures/
+data/derived/
+scripts/generate_paper8_artifacts.py
+scripts/build_arxiv_source.py
+scripts/reproduce.py
+tests/test_public_reproducibility_package.py
+arxiv_submission_source.zip
+```
+
+## Included Data
+
+The package includes compact derived protocol artifacts:
+
+```text
+data/derived/morphology_family_registry.csv
+data/derived/paper3_candidate_control_crosswalk.csv
+data/derived/forward_readout_gate_schema.csv
+data/derived/synthetic_forward_gate_demo.csv
+data/derived/paper8_readiness_table.csv
+```
+
+These are protocol fixtures and claim-boundary artifacts. They are not raw
+SPARC data and not an empirical matched-family endpoint result.
+
+## Reproduce
+
+Create an environment with Python 3.10 or newer, then install the lightweight
+dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Run the one-command reproduction check:
+
+```bash
+python scripts/reproduce.py
+```
+
+This regenerates the derived tables and figures, compiles
+`paper8_submission_source/main.tex` with `tectonic`, builds the arXiv source
+ZIP, and runs the public package tests.
+
+## arXiv Source Package
+
+Build the arXiv source package directly with:
+
+```bash
+python scripts/build_arxiv_source.py
+```
+
+This writes:
+
+```text
+arxiv_submission_source.zip
+```
+
+The ZIP is built from `paper8_submission_source/` and excludes the compiled PDF
+and temporary LaTeX build files.
+
+## Scope
+
+This repository is a reproducibility package for Paper 8 only. It excludes raw
+SPARC downloads, private workbench outputs, endpoint-fitting notebooks, and
+broad Tau Core theory-hub material that is not needed to verify the paper
+package.

@@ -1,0 +1,7 @@
+step,gate_component,required_artifact,pass_condition
+1,residual-blind morphology label,morphology_labels_predeclared.csv,K_g assigned before reading forward residual endpoints
+2,formula-shell selection,morphology_family_registry.csv,"family shell selected from K_g, not from endpoint fit quality"
+3,geometry and amplitude discipline,amplitude_policy.csv,geometry fixed from morphology; amplitude frozen or tightly bounded
+4,matched-vs-wrong family endpoint,matched_wrong_family_scores.csv,matched family improves residual structure over wrong families
+5,shuffled-K null,shuffled_label_null.csv,matched score exceeds shuffled morphology-label distribution
+6,baseline comparison,baseline_comparison_scores.csv,"reported against Newtonian baryonic, MOND-simple, empirical RAR"

@@ -1,0 +1,272 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{array}
+\usepackage{enumitem}
+
+\title{Morphology-matched forward readout gates for Tau Core gravity: extending SPARC residual Papers 1--3 from inverse diagnostics to predeclared family tests}
+\author{Jozsef Olcsak}
+\date{2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Paper 1 found that residual-blind external structural disturbance labels are associated with increased low-acceleration residual scatter in SPARC galaxies. Paper 2 reversed the question and showed that fixed residual-shape features can infer those disturbance labels better than shuffled controls, while remaining non-unique with respect to MOND-simple and empirical RAR-like baselines. Paper 3 then built a candidate/control framework and introduced an endpoint-conditioned required-$S_\tau$ diagnostic: what preparation/readout factor would be needed to absorb a measured residual? This Paper 8 proposal turns that inverse diagnostic into a forward validation gate. The proposed gate predeclares a residual-blind morphology class $K_g$, maps it to a Tau Core morphology-conditioned readout shell, computes a forward $\delta g^K$ without using required $S_\tau$ as a predictor, and compares matched-family residual structure against wrong-family, shuffled-label, Newtonian baryonic, MOND-simple, and empirical RAR controls. The permitted claim is methodological: the morphology-matched forward-readout gate is a falsifiable, Tau-Core-specific next endpoint for the Paper 1--3 program. This paper does not claim that Tau Core has been empirically validated, that a universal galaxy law has been derived, or that the matched-family endpoint has already beaten MOND/RAR on real SPARC data.
+\end{abstract}
+
+\section{Purpose and claim boundary}
+
+The first three SPARC residual papers define a cautious progression. Paper 1 asks whether external structural disturbance is associated with residual scatter \cite{Paper1Package}. Paper 2 asks whether residual-shape features can recover external disturbance labels better than shuffled labels \cite{Paper2Package}. Paper 3 turns the association into a candidate/control framework and asks what $S_\tau$ would be required to absorb the observed residual \cite{Paper3Package}.
+
+That Paper 3 $S_\tau$ diagnostic is useful but partly inverse. It asks:
+\[
+\text{given the measured endpoint, what } S_\tau(R) \text{ would absorb it?}
+\]
+The present paper defines the next gate:
+\[
+\begin{aligned}
+&\text{residual-blind morphology class }K_g\\
+&\quad\longrightarrow\text{ forward readout }\delta g^K
+\text{ before endpoint scoring.}
+\end{aligned}
+\]
+
+The main claim is deliberately narrow:
+\begin{quote}
+The Tau Core gravity bridge can sharpen Papers 1--3 by replacing inverse required-$S_\tau$ residual absorption with a morphology-matched forward-readout candidate/control gate.
+\end{quote}
+
+This paper does not claim:
+\begin{itemize}[leftmargin=*]
+\item that Tau Core is proven;
+\item that the morphology-matched gate has already won on real SPARC endpoints;
+\item that MOND, RAR, or Newtonian baryonic baselines have been superseded;
+\item that non-axisymmetric morphology classes can be fully tested from one-dimensional rotation curves alone;
+\item that the morphology families below are the final physical taxonomy.
+\end{itemize}
+
+\section{From Paper 3 inverse diagnostics to forward readout}
+
+Paper 3 used an endpoint-conditioned diagnostic of the form
+\[
+S_{\tau,\mathrm{req}}(R)=
+\frac{V_{\rm obs}(R)/V_N(R)-1}{\alpha\ln(1+a_0/a_N(R))}.
+\]
+This quantity is descriptive. Because it uses $V_{\rm obs}$, it cannot be treated as an independent predictor. Its correct role is to identify what kind of future nonleaky rule would be required.
+
+The forward replacement is:
+\[
+K_g \longrightarrow \mathcal{F}_{K_g}
+\longrightarrow \delta g^{K_g}(R)
+\longrightarrow \mathrm{Score}(g_{\rm Newt}+\delta g^{K_g}).
+\]
+Here $K_g$ is a morphology label assigned before endpoint scoring, $\mathcal{F}_{K_g}$ is the predeclared readout family, and $\delta g^{K_g}$ is computed without using $S_{\tau,\mathrm{req}}$, endpoint residual gain, or post-hoc family selection.
+
+\section{MORPHOLOGY-MATCHED-FORWARD-READOUT-GATE}
+
+For a galaxy $g$, let
+\[
+K_g\in\mathcal{K}
+\]
+be a residual-blind morphology label. Let $\mathcal{F}_K$ denote the Tau Core readout shell assigned to morphology class $K$. Let
+\[
+R_{g,K}
+\]
+be the residual score after applying the forward readout family $\mathcal{F}_K$ to galaxy $g$ under a frozen geometry and amplitude policy.
+
+The matched-family score is
+\[
+R_{g,\mathrm{matched}}:=R_{g,K_g}.
+\]
+The wrong-family score is
+\[
+R_{g,\mathrm{wrong}}:=
+\frac{1}{|\mathcal{K}|-1}
+\sum_{K\neq K_g}R_{g,K}.
+\]
+The central paper-level endpoint can be written as
+\[
+\Delta_{\rm matched}
+=
+\mathrm{RMS}_{g}\!\left(R_{g,\mathrm{wrong}}\right)
+-
+\mathrm{RMS}_{g}\!\left(R_{g,\mathrm{matched}}\right).
+\]
+An equivalent rank endpoint is
+\[
+\mathrm{rank}_{g}(K_g)
+=
+\mathrm{rank}\bigl(R_{g,K_g}\;\mathrm{among}\;\{R_{g,K}:K\in\mathcal{K}\}\bigr).
+\]
+
+The gate passes only if the predeclared matched family improves residual structure more than:
+\begin{enumerate}[leftmargin=*]
+\item wrong morphology families;
+\item shuffled morphology labels;
+\item Newtonian baryonic baseline;
+\item MOND-simple baseline;
+\item empirical RAR-like baseline.
+\end{enumerate}
+
+This is Tau-Core-specific in a way that ordinary MOND/RAR comparisons are not: the discriminating claim is not merely lower residuals, but morphology-indexed readout specificity.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\linewidth]{figures/fig03_forward_readout_gate_flow.pdf}
+\caption{The proposed morphology-matched forward-readout gate. The labels and family choices must be fixed before endpoint scoring.}
+\end{figure}
+
+\section{Morphology-family registry}
+
+The current gravity bridge centralizes a morphology-conditioned TGP-like readout lane. The corresponding first-pass family registry is not a universal galaxy law. It is a set of candidate readout shells whose selection must be controlled by residual-blind morphology labels.
+
+\begin{table}[H]
+\centering
+\caption{Claim-bounded morphology-family registry for the forward-readout gate.}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lp{0.29\linewidth}p{0.30\linewidth}p{0.18\linewidth}}
+\toprule
+Family & Morphology label & Formula shell & First-pass status\\
+\midrule
+$K_{\rm tail}$ & Scale-tail spiral / diffuse LSB disk & $\sigma_{\rm morph}(R)\sim A_K/(R+R_c)^2$ & 1D testable\\
+$K_{\rm exp}$ & Regular exponential disk & $\sigma_{\rm morph}(R)\sim A_K e^{-R/R_d}$ & 1D testable\\
+$K_{\rm compact}$ & Compact finite support & $I_{\rm morph}(R)\to I_\infty$ and $\delta g_R\sim -I_\infty/R^2$ & 1D testable\\
+$K_{\rm ring}$ & Ring or resonance feature & localized $\sigma_{\rm morph}(R)$ near $R_{\rm ring}$ & 1D proxy\\
+$K_{\rm flare}$ & Thick or flared disk & projected thickness/flaring kernel & 1D proxy\\
+$K_{m=2}$ & Barred spiral / $m=2$ mode & harmonic $\sigma_{\rm morph}(R,\phi)$ & velocity-field preferred\\
+$K_{m=1}$ & Lopsided / $m=1$ mode & harmonic $\sigma_{\rm morph}(R,\phi)$ & velocity-field preferred\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\linewidth]{figures/fig01_morphology_family_registry.pdf}
+\caption{First-pass observability split for the current family registry. SPARC one-dimensional rotation curves are most suitable for axisymmetric or radially localized families; barred and lopsided branches require velocity-field follow-up for a full test.}
+\end{figure}
+
+\section{Candidate/control continuity from Paper 3}
+
+The gate preserves the Paper 3 candidate/control discipline. It does not discard difficult controls after seeing endpoints. The same object may carry a different role under the forward gate:
+\[
+\text{candidate/control role}
+\longrightarrow
+\text{predeclared morphology row}
+\longrightarrow
+\text{matched/wrong/shuffled score}.
+\]
+
+\begin{table}[H]
+\centering
+\caption{Paper 3 roles carried into the Paper 8 forward-gate protocol.}
+\footnotesize
+\begin{tabular}{lll}
+\toprule
+Galaxy & Paper 3 role & Paper 8 role\\
+\midrule
+DDO126 & positive anchor & matched-family candidate after residual-blind morphology labeling\\
+DDO50 & quiet control & false-positive suppression control\\
+WLM & geometry stress & observability-caveated endpoint row\\
+DDO168 & ladder support & candidate/control consistency row\\
+DDO154 & countercontrol & wrong-family and rank-sensitivity stress row\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The positive paper-level endpoint is not:
+\[
+\text{Tau Core fits every galaxy better.}
+\]
+The first meaningful endpoint is:
+\[
+\text{the correct predeclared morphology family ranks better than wrong families.}
+\]
+This is why shuffled-$K$ nulls are mandatory. Without the shuffled-label null, a morphology-indexed family could accidentally behave like a generic flexible residual smoother.
+
+\section{Synthetic protocol fixture}
+
+This package includes a synthetic score fixture to verify the endpoint logic. It is not real SPARC evidence. It exists only so the public tests can check that the manuscript, tables, and figure pipeline agree about the intended endpoint.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\linewidth]{figures/fig02_forward_gate_score_schema.pdf}
+\caption{Synthetic protocol fixture for the endpoint schema. A real pass would require the matched-family score to beat wrong-family and shuffled-label controls, then be compared to Newtonian baryonic, MOND-simple, and empirical RAR baselines.}
+\end{figure}
+
+\section{Minimal numerical protocol}
+
+The minimal public endpoint protocol is:
+\begin{enumerate}[leftmargin=*]
+\item Assign an external or residual-blind morphology label $K_g$ to each galaxy.
+\item Select a formula shell $\mathcal{F}_{K_g}$ from the predeclared registry.
+\item Fix geometry parameters from morphology, not from residual endpoints.
+\item Use either a frozen amplitude rule or a tightly bounded amplitude fit.
+\item Compute the matched-family score.
+\item Compute wrong-family scores for all other candidate families.
+\item Run shuffled-$K$ nulls.
+\item Compare against Newtonian baryonic, MOND-simple, and empirical RAR baselines.
+\end{enumerate}
+
+For SPARC-only first-pass work, the cleanest initial family set is:
+\[
+\{K_{\rm tail},K_{\rm exp},K_{\rm compact},K_{\rm ring},K_{\rm flare}\}.
+\]
+The $m=1$ and $m=2$ branches should be treated as caveated proxy rows in one-dimensional rotation curves and as real tests only when velocity-field products are available.
+
+\section{Why this would be a stronger Tau Core test}
+
+The new gate is stronger than a residual association because it creates a family-selection burden. A theory with morphology-indexed readout families should not only reduce residuals; it should reduce them more when the correct morphology family is used than when a wrong family is used. MOND-simple and empirical RAR baselines are strong comparators, but they do not naturally provide a predeclared morphology-family rank test of this kind.
+
+The result that would matter is therefore:
+\[
+\Delta_{\rm matched}>0
+\]
+with a rank distribution in which $K_g$ is systematically near the top, under residual-blind morphology labels and with shuffled-label controls. If this fails, the bridge loses specificity. If it passes, the Paper 1--3 residual-disturbance program becomes a forward-predictive morphology-readout program.
+
+\section{Readiness and remaining blockers}
+
+\begin{table}[H]
+\centering
+\caption{Current readiness of the Paper 8 forward endpoint.}
+\footnotesize
+\begin{tabular}{lp{0.42\linewidth}}
+\toprule
+Layer & Status\\
+\midrule
+Paper 1 residual-blind disturbance association & available\\
+Paper 2 residual-shape inference and shuffled-label null & available\\
+Paper 3 candidate/control ladder and required-$S_\tau$ diagnostic & available\\
+Morphology-family formula registry & defined in this package\\
+Accepted source-native component tables for full sample & pending\\
+Residual-blind morphology labels for full endpoint sample & pending\\
+Real matched-vs-wrong family endpoint & not yet run\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Conclusion}
+
+Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:
+\[
+\text{morphology label }K_g
+\to
+\text{formula shell }\mathcal{F}_{K_g}
+\to
+\delta g^{K_g}
+\to
+\text{matched vs wrong family endpoint}.
+\]
+
+The claim-safe breakthrough target is not a universal fit claim. It is a morphology-specific prediction claim: the correct Tau Core morphology readout family, chosen before endpoint scoring, should improve residual structure more than wrong morphology families and shuffled morphology labels, while remaining competitive against Newtonian baryonic, MOND-simple, and empirical RAR baselines.
+
+That is the first clean endpoint where the Tau Core bridge can become more than residual commentary.
+
+\bibliographystyle{plain}
+\bibliography{refs}
+\end{document}
