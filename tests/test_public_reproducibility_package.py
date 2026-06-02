@@ -36,6 +36,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_family_breakdown_diagnostics.py",
         ROOT / "scripts/run_family_observable_quality_diagnostics.py",
         ROOT / "scripts/run_predeclared_quality_gate_diagnostics.py",
+        ROOT / "scripts/run_quality_gate_shuffled_null_diagnostics.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -69,6 +70,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "morphology-observable extraction as a required predeclared gate" in source
     assert "predeclared quality-gate diagnostic" in source
     assert "candidate observability rules" in source
+    assert "shuffled-label null reveals the tradeoff" in source
+    assert "prioritizes observability-clean baseline competitiveness" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -540,6 +543,32 @@ def test_predeclared_quality_gate_diagnostics_are_claim_bounded():
     assert "does not choose a gate by" in report
     assert "not a discovery claim" in report
     assert "declare the quality gate before endpoint scoring" in report
+
+
+def test_quality_gate_shuffled_null_diagnostics_are_claim_bounded():
+    shuffled = pd.read_csv(DATA / "quality_gate_shuffled_null.csv")
+    summary = pd.read_csv(DATA / "quality_gate_shuffled_null_summary.csv")
+    assert len(shuffled) >= 8 * 2 * 1000
+    assert set(summary["split"]) == {"holdout", "train"}
+    holdout = summary.loc[summary["split"] == "holdout"]
+    assert "all" in set(holdout["quality_gate"])
+    all_gate = holdout.loc[holdout["quality_gate"] == "all"].iloc[0]
+    assert int(all_gate["n_shuffles"]) == 1000
+    assert int(all_gate["n_galaxies"]) == 44
+    for column in [
+        "p_mean_minus_wrong_at_least_as_good",
+        "p_beats_wrong_fraction_at_least_as_good",
+        "p_rank1_fraction_at_least_as_good",
+        "observed_beats_wrong_fraction",
+        "null_beats_wrong_fraction_mean",
+    ]:
+        assert ((0.0 <= summary[column]) & (summary[column] <= 1.0)).all()
+    report = (ROOT / "reports" / "quality_gate_shuffled_null_diagnostics.md").read_text(
+        encoding="utf-8"
+    )
+    assert "predeclared quality gate" in report
+    assert "not empirical validation" in report
+    assert "declared before endpoint scoring" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

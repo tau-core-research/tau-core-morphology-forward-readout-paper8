@@ -223,6 +223,8 @@ An observable-quality diagnostic separates part of that failure map. Joining the
 
 A predeclared quality-gate diagnostic makes that next run more concrete. Under the fixed train-selected shrinkage policy, the clean-manifest gate and the confidence-$\geq0.75$-and-clean gate each retain 20 holdout galaxies across all four formula families, with matched-vs-wrong specificity 0.900, TPG/v6 win fraction 0.500, and MOND win fraction 0.750. A broader no-large-distance-error gate retains 26 holdout galaxies and remains candidate-level, with matched-vs-wrong 0.885, TPG/v6 0.538, and MOND 0.731. These are not selected discovery endpoints; they are candidate observability rules that must be declared before endpoint scoring in a future Paper 8 run.
 
+The corresponding shuffled-label null reveals the tradeoff. On holdout, the full all-galaxy gate has the strongest shuffled-null support for morphology specificity, with $p\simeq0.036$ for the beats-wrong fraction and $p\simeq0.013$ for the mean matched-minus-wrong endpoint. The no-low-inclination gate gives similar values, $p\simeq0.041$ and $p\simeq0.011$. Cleaner gates improve the MOND/TPG comparison but have weaker shuffled-null support because the sample shrinks. Thus Paper 8 should not silently choose the cleanest-looking subset; it should predeclare whether the endpoint prioritizes observability-clean baseline competitiveness or larger-sample morphology-label specificity.
+
 \section{Minimal numerical protocol}
 
 The minimal public endpoint protocol is:
