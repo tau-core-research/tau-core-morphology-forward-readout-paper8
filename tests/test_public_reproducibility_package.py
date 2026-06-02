@@ -34,6 +34,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_amplitude_shrinkage_path.py",
         ROOT / "scripts/run_train_selected_shrinkage_diagnostic.py",
         ROOT / "scripts/run_family_breakdown_diagnostics.py",
+        ROOT / "scripts/run_family_observable_quality_diagnostics.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -63,6 +64,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "family weight 0.40" in source
     assert "family-breakdown diagnostic" in source
     assert "scale-tail spiral and thick/flared families" in source
+    assert "observable-quality diagnostic" in source
+    assert "morphology-observable extraction as a required predeclared gate" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -466,6 +469,38 @@ def test_family_breakdown_diagnostics_are_claim_bounded():
     assert "does not refit" in report
     assert "preparation diagnostic" in report
     assert "empirical validation claim" in report
+
+
+def test_family_observable_quality_diagnostics_are_claim_bounded():
+    summary = pd.read_csv(DATA / "family_observable_quality_diagnostics.csv")
+    groups = pd.read_csv(DATA / "family_observable_quality_clean_vs_caveated.csv")
+    expected_families = {
+        "K_compact_finite",
+        "K_scale_tail_spiral",
+        "K_exponential_disk",
+        "K_thick_flared",
+    }
+    assert expected_families == set(summary["formula_family"])
+    assert set(summary["split"]) == {"holdout", "train"}
+    assert {"clean_manifest_proxy", "quality_caveated"}.issubset(set(groups["quality_group"]))
+    holdout = summary.loc[summary["split"] == "holdout"]
+    assert int(holdout["n_galaxies"].sum()) == 44
+    assert "quality_limited" in set(holdout["quality_status"])
+    assert "current_best_case" in set(holdout["quality_status"])
+    for column in [
+        "low_confidence_fraction",
+        "any_quality_caveat_fraction",
+        "matched_beats_wrong_fraction",
+        "matched_beats_tpg_v6_fraction",
+        "matched_beats_mond_fraction",
+    ]:
+        assert ((0.0 <= summary[column]) & (summary[column] <= 1.0)).all()
+    report = (ROOT / "reports" / "family_observable_quality_diagnostics.md").read_text(
+        encoding="utf-8"
+    )
+    assert "not a new fit" in report
+    assert "failure-map diagnostic" in report
+    assert "better residual-blind morphology" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
