@@ -211,6 +211,8 @@ The source-native bridge formula preflight then consumes a declared morphology-p
 
 A confidence diagnostic on the manifest shows why the baseline claim remains blocked. Restricting the holdout set to confidence $\geq0.75$ preserves the matched-vs-wrong signal, with matched formulas beating wrong formulas in 0.906 of galaxies, but the TPG/MOND comparison is still mixed. Removing low-inclination or large-distance-error objects improves some baseline comparisons, so data quality matters. It is not the whole bottleneck: the remaining blockers are source-native morphology-scale extraction, amplitude policy, and normalization of the bridge formula kernels.
 
+An amplitude-policy diagnostic supports the same conclusion. Keeping the source-native bridge kernels fixed, the family-unconstrained policy gives the strongest matched-vs-wrong signal but remains weak against TPG/MOND baselines. A simple family-to-global shrinkage policy preserves most of the matched-vs-wrong signal, 0.864 on holdout, while raising the MOND win fraction to 0.636 and reducing the mean MOND gap. This is not a selected endpoint claim; it identifies amplitude normalization as a required Tau-side modeling gate before any baseline-superiority claim is allowed.
+
 \section{Minimal numerical protocol}
 
 The minimal public endpoint protocol is:

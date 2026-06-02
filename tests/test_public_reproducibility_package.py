@@ -30,6 +30,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_morphology_parameter_manifest.py",
         ROOT / "scripts/run_source_native_readout_formula_endpoint.py",
         ROOT / "scripts/run_manifest_confidence_diagnostics.py",
+        ROOT / "scripts/run_amplitude_policy_diagnostics.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -53,6 +54,7 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "beats the wrong-formula mean in 0.886" in source
     assert "p\\simeq0.002" in source
     assert "confidence $\\geq0.75$" in source
+    assert "family-to-global shrinkage policy" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -339,6 +341,39 @@ def test_manifest_confidence_diagnostics_are_claim_bounded():
     )
     assert "not a new fit" in report
     assert "morphology parameter quality" in report
+
+
+def test_amplitude_policy_diagnostics_are_claim_bounded():
+    amplitudes = pd.read_csv(DATA / "amplitude_policy_diagnostics_amplitudes.csv")
+    scores = pd.read_csv(DATA / "amplitude_policy_diagnostics_scores_by_galaxy.csv")
+    summary = pd.read_csv(DATA / "amplitude_policy_diagnostics_summary.csv")
+
+    expected_policies = {
+        "family_unconstrained",
+        "family_attractive_only",
+        "global_unconstrained",
+        "global_attractive_only",
+        "family_shrink_50_to_global",
+    }
+    assert expected_policies == set(summary["amplitude_policy"])
+    assert expected_policies == set(amplitudes["amplitude_policy"])
+    assert len(scores) == 175 * len(expected_policies)
+    holdout = summary.loc[
+        (summary["split"] == "holdout")
+        & (summary["amplitude_policy"] == "family_shrink_50_to_global")
+    ].iloc[0]
+    assert int(holdout["n_galaxies"]) == 44
+    for column in [
+        "matched_beats_wrong_fraction",
+        "matched_beats_tpg_v6_fraction",
+        "matched_beats_mond_fraction",
+    ]:
+        assert 0.0 <= float(holdout[column]) <= 1.0
+    report = (ROOT / "reports" / "amplitude_policy_diagnostics.md").read_text(
+        encoding="utf-8"
+    )
+    assert "not a new endpoint claim" in report
+    assert "amplitude-policy stress test" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
