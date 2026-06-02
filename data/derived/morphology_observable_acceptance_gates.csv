@@ -1,0 +1,7 @@
+gate,pass_condition,status
+residual_blindness,"No observable may use vobs residual gain, required_S_tau, or posthoc family choice.",required
+primary_quality_gate_ready,inclination fields and low-inclination caveat must reproduce no_low_inclination lane.,required
+family_kernel_parameters_ready,Each included formula family has all required scale/support/thickness fields.,required
+provenance_ready,Every row records external morphology-observable provenance.,required
+caveated_rows_preserved,Rows failing a quality gate remain in support/control outputs.,required
+non_axisymmetric_caveat,m=1/m=2 rows are not promoted from 1D curves without velocity-field support.,required

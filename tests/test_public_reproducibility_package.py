@@ -40,6 +40,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_endpoint_decision_matrix.py",
         ROOT / "scripts/build_predeclared_endpoint_protocol.py",
         ROOT / "scripts/build_readiness_upgrade_audit.py",
+        ROOT / "scripts/build_morphology_observable_intake_schema.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -80,6 +81,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "predeclared endpoint protocol sheet" in source
     assert "post-hoc gate choice" in source
     assert "preparation-ready, not discovery-ready" in source
+    assert "morphology-observable intake schema" in source
+    assert "endpoint-selected radii" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -652,6 +655,39 @@ def test_readiness_upgrade_audit_preserves_claim_boundary():
     assert "preparation-ready" in report
     assert "not discovery-ready" in report
     assert "accepted residual-blind morphology inputs" in report
+
+
+def test_morphology_observable_intake_schema_is_claim_bounded():
+    schema = pd.read_csv(DATA / "morphology_observable_intake_schema.csv")
+    gates = pd.read_csv(DATA / "morphology_observable_acceptance_gates.csv")
+    required_fields = {
+        "formula_family",
+        "manifest_confidence",
+        "manifest_caveat",
+        "inclination_deg",
+        "distance_frac_error",
+        "scale_radius_kpc",
+        "observable_provenance",
+    }
+    assert required_fields.issubset(set(schema["field"]))
+    forbidden = " ".join(schema["forbidden_source"].astype(str))
+    assert "required_S_tau" in forbidden
+    assert "endpoint-selected" in forbidden
+    assert "best-fit formula choice" in forbidden
+    expected_gates = {
+        "residual_blindness",
+        "primary_quality_gate_ready",
+        "family_kernel_parameters_ready",
+        "provenance_ready",
+        "caveated_rows_preserved",
+    }
+    assert expected_gates.issubset(set(gates["gate"]))
+    report = (ROOT / "reports" / "morphology_observable_intake_schema.md").read_text(
+        encoding="utf-8"
+    )
+    assert "data-intake contract" in report
+    assert "not a fit" in report
+    assert "current available-data manifest remains a proxy manifest" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

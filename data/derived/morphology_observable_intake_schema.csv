@@ -1,0 +1,16 @@
+field,required,scope,accepted_source,forbidden_source,acceptance_rule,failure_mode
+galaxy,True,all,catalog identifier before endpoint scoring,none,must uniquely match component/rotation-curve table,row cannot enter endpoint
+formula_family,True,all,residual-blind morphology classification,vobs residual pattern; required_S_tau; best-fit formula choice,one of predeclared Tau Core morphology families,leakage risk; row becomes diagnostic-only
+manifest_confidence,True,all,pre-scoring morphology-observable quality assessment,endpoint residual performance,"numeric in [0,1]; threshold gate predeclared",quality gate cannot be audited
+manifest_caveat,True,all,observability caveats from geometry/catalog quality,bad endpoint score after model application,must include none or explicit caveat tokens,cannot preserve limited-observability evidence
+inclination_deg,True,primary quality gate,external geometry/catalog measurement,endpoint residual fit,used to apply no_low_inclination gate before scoring,primary endpoint lane cannot be reproduced
+distance_frac_error,True,secondary quality gate,external distance estimate uncertainty,baseline-comparison outcome,used to apply no_large_distance_error support gate,secondary baseline lane cannot be reproduced
+scale_radius_kpc,True,K_scale_tail_spiral; K_exponential_disk; K_thick_flared,morphology/light-profile decomposition before endpoint scoring,rotation residual shape or endpoint-selected scale,positive physical length with provenance,kernel scale remains proxy-level
+tail_inner_radius_kpc,True,K_scale_tail_spiral,morphological transition or disk-structure feature,radius chosen to minimize residuals,positive and <= tail_cutoff_radius_kpc,scale-tail formula cannot be source-native
+tail_cutoff_radius_kpc,True,K_scale_tail_spiral,outer disk/tail morphology extent,endpoint-selected truncation radius,positive and >= tail_inner_radius_kpc,tail response normalization is not reproducible
+compact_support_radius_kpc,True,K_compact_finite,residual-blind compact-source morphology support,radius chosen from residual improvement,positive support radius with provenance,compact finite source row remains proxy-level
+thickness_h_over_rs,True,K_thick_flared,vertical/thickness proxy or direct morphology estimate,endpoint-tuned damping factor,positive dimensionless ratio with uncertainty/caveat,thick/flared kernel cannot be audited
+ring_radius_kpc,False,K_ring_resonance,external ring/resonance morphology,residual peak location,positive radius if ring family is included,ring row must remain caveated/proxy
+bar_m2_strength,False,K_barred_m2,image/velocity-field morphology before endpoint scoring,1D residual asymmetry fit,only velocity-field/full morphology endpoint can promote this row,1D SPARC row remains caveated proxy
+lopsided_m1_strength,False,K_lopsided_m1,image/velocity-field asymmetry before endpoint scoring,1D residual asymmetry fit,only velocity-field/full morphology endpoint can promote this row,1D SPARC row remains caveated proxy
+observable_provenance,True,all,"dataset name, measurement method, and pre-scoring timestamp",undocumented manual adjustment,must document source and residual-blind status,row cannot support a claim-safe endpoint

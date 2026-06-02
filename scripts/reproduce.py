@@ -46,6 +46,7 @@ def main() -> None:
     run([sys.executable, "scripts/run_endpoint_decision_matrix.py"])
     run([sys.executable, "scripts/build_predeclared_endpoint_protocol.py"])
     run([sys.executable, "scripts/build_readiness_upgrade_audit.py"])
+    run([sys.executable, "scripts/build_morphology_observable_intake_schema.py"])
     if shutil.which("tectonic") is None:
         raise SystemExit("tectonic is required to compile paper8_submission_source/main.tex")
     run(["tectonic", "main.tex"], cwd=SOURCE)
