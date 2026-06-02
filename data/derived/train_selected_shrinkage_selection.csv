@@ -1,0 +1,5 @@
+selection_rule,selected_family_weight,selected_amplitude_path_id,train_balanced_score,train_baseline_score,train_specificity_score,train_specificity_ok,train_mond_win_ok,train_tpg_win_ok
+train_balanced_max,0.4,shrink_family_weight_0.40,1.8625954198473282,1.0596618140748115,0.8015267175572519,True,True,False
+train_specificity_then_baseline,0.4,shrink_family_weight_0.40,1.8625954198473282,1.0596618140748115,0.8015267175572519,True,True,False
+train_mond_gap_min_with_specificity,0.4,shrink_family_weight_0.40,1.8625954198473282,1.0596618140748115,0.8015267175572519,True,True,False
+train_tpg_gap_min_with_specificity,0.4,shrink_family_weight_0.40,1.8625954198473282,1.0596618140748115,0.8015267175572519,True,True,False

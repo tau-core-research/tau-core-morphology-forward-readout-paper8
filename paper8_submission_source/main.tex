@@ -215,6 +215,8 @@ An amplitude-policy diagnostic supports the same conclusion. Keeping the source-
 
 A shrinkage-path scan makes this more precise. Varying the family amplitude weight from 0 to 1 shows that the current best compromise lies near family weight 0.4--0.5. At weight 0.5, the holdout matched-vs-wrong fraction is 0.864 and the MOND win fraction is 0.636, while TPG/v6 remains at 0.477. This identifies the normalization target for the next Tau-side gate: a physical source-normalization rule should recover a partially pooled family amplitude, not a fully free family amplitude chosen only for endpoint fit.
 
+A train-selected shrinkage diagnostic reduces the post-hoc risk in that conclusion. Four selection rules using train split metrics only all select family weight 0.40. Evaluated on the 44-galaxy holdout split, this train-selected policy keeps matched-vs-wrong specificity at 0.818, beats MOND in 0.614 of galaxies, and remains mixed against TPG/v6 at 0.477. This supports a stable partially pooled normalization range, but it is still not a validated amplitude-normalization law or a baseline-superiority endpoint.
+
 \section{Minimal numerical protocol}
 
 The minimal public endpoint protocol is:

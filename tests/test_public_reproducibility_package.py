@@ -32,6 +32,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_manifest_confidence_diagnostics.py",
         ROOT / "scripts/run_amplitude_policy_diagnostics.py",
         ROOT / "scripts/run_amplitude_shrinkage_path.py",
+        ROOT / "scripts/run_train_selected_shrinkage_diagnostic.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -57,6 +58,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "confidence $\\geq0.75$" in source
     assert "family-to-global shrinkage policy" in source
     assert "family weight 0.4--0.5" in source
+    assert "train-selected shrinkage diagnostic" in source
+    assert "family weight 0.40" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -399,6 +402,37 @@ def test_amplitude_shrinkage_path_is_claim_bounded():
     )
     assert "not a validated physical policy" in report
     assert "amplitude-normalization range" in report
+
+
+def test_train_selected_shrinkage_diagnostic_is_claim_bounded():
+    selection = pd.read_csv(DATA / "train_selected_shrinkage_selection.csv")
+    holdout = pd.read_csv(DATA / "train_selected_shrinkage_holdout.csv")
+
+    expected_rules = {
+        "train_balanced_max",
+        "train_specificity_then_baseline",
+        "train_mond_gap_min_with_specificity",
+        "train_tpg_gap_min_with_specificity",
+    }
+    assert expected_rules == set(selection["selection_rule"])
+    assert expected_rules == set(holdout["selection_rule"])
+    assert len(selection) == 4
+    assert len(holdout) == 4
+    assert set(holdout["selected_family_weight"]) == {0.4}
+    assert (holdout["holdout_n_galaxies"] == 44).all()
+    for column in [
+        "holdout_matched_beats_wrong_fraction",
+        "holdout_matched_rank1_fraction",
+        "holdout_matched_beats_tpg_v6_fraction",
+        "holdout_matched_beats_mond_fraction",
+    ]:
+        assert ((0.0 <= holdout[column]) & (holdout[column] <= 1.0)).all()
+    report = (ROOT / "reports" / "train_selected_shrinkage_diagnostic.md").read_text(
+        encoding="utf-8"
+    )
+    assert "using train" in report
+    assert "split metrics only" in report
+    assert "not a validated amplitude-normalization law" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
