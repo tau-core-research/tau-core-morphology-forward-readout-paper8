@@ -29,6 +29,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_morphology_formula_shell_proxy_endpoint.py",
         ROOT / "scripts/build_morphology_parameter_manifest.py",
         ROOT / "scripts/run_source_native_readout_formula_endpoint.py",
+        ROOT / "scripts/run_manifest_confidence_diagnostics.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -51,6 +52,7 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "p\\simeq0.479" in source
     assert "beats the wrong-formula mean in 0.886" in source
     assert "p\\simeq0.002" in source
+    assert "confidence $\\geq0.75$" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -311,6 +313,32 @@ def test_source_native_readout_formula_endpoint_is_claim_bounded():
     assert "concrete Tau Core bridge morphology formulas" in report
     assert "morphology_parameter_manifest.csv" in report
     assert "not empirical validation" in report
+
+
+def test_manifest_confidence_diagnostics_are_claim_bounded():
+    summary = pd.read_csv(DATA / "manifest_confidence_diagnostics_summary.csv")
+    shuffled = pd.read_csv(DATA / "manifest_confidence_diagnostics_shuffled.csv")
+    assert "holdout:all" in set(summary["subset"])
+    assert "holdout:confidence_ge_0_75" in set(summary["subset"])
+    assert "holdout:no_low_inclination" in set(summary["subset"])
+    assert "holdout:all" in set(shuffled["subset"])
+    assert "holdout:confidence_ge_0_75" in set(shuffled["subset"])
+    holdout = summary.loc[summary["subset"] == "holdout:all"].iloc[0]
+    assert int(holdout["n_galaxies"]) == 44
+    for column in [
+        "matched_beats_wrong_fraction",
+        "matched_beats_tpg_v6_fraction",
+        "matched_beats_mond_fraction",
+    ]:
+        assert 0.0 <= float(holdout[column]) <= 1.0
+    holdout_null = shuffled.loc[shuffled["subset"] == "holdout:all"].iloc[0]
+    assert int(holdout_null["n_shuffles"]) == 1000
+    assert 0.0 <= float(holdout_null["p_mean_minus_wrong_at_least_as_good"]) <= 1.0
+    report = (ROOT / "reports" / "manifest_confidence_diagnostics.md").read_text(
+        encoding="utf-8"
+    )
+    assert "not a new fit" in report
+    assert "morphology parameter quality" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
