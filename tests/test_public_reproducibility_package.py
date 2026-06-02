@@ -23,6 +23,7 @@ def test_publication_files_exist():
         SOURCE / "figures",
         ROOT / "figures",
         ROOT / "scripts/generate_paper8_artifacts.py",
+        ROOT / "scripts/audit_paper8_foundations.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -65,6 +66,26 @@ def test_derived_protocol_tables_exist_and_have_expected_content():
         readiness["item"] == "Real matched-vs-wrong family endpoint", "status"
     ].iloc[0]
     assert real_endpoint == "not_yet_run"
+
+
+def test_foundation_audit_preserves_preparation_status():
+    audit = pd.read_csv(DATA / "paper8_foundation_audit.csv")
+    assert "paper3_inverse_to_forward_bridge" in set(audit["gate"])
+    assert "empirical_endpoint_readiness" in set(audit["gate"])
+    assert "formula_shell_dimensional_readiness" in set(audit["gate"])
+    assert audit.loc[
+        audit["gate"] == "paper3_inverse_to_forward_bridge", "status"
+    ].iloc[0] == "PASS"
+    assert audit.loc[
+        audit["gate"] == "empirical_endpoint_readiness", "status"
+    ].iloc[0] == "BLOCKED"
+    assert audit.loc[
+        audit["gate"] == "formula_shell_dimensional_readiness", "status"
+    ].iloc[0] == "REVIEW"
+
+    report = (ROOT / "reports" / "paper8_foundation_audit.md").read_text(encoding="utf-8")
+    assert "not yet suitable for an empirical discovery claim" in report
+    assert "residual-blind morphology-label manifest" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
