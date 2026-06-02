@@ -39,6 +39,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_quality_gate_shuffled_null_diagnostics.py",
         ROOT / "scripts/run_endpoint_decision_matrix.py",
         ROOT / "scripts/build_predeclared_endpoint_protocol.py",
+        ROOT / "scripts/build_readiness_upgrade_audit.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -78,6 +79,7 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "no-low-inclination gate" in source
     assert "predeclared endpoint protocol sheet" in source
     assert "post-hoc gate choice" in source
+    assert "preparation-ready, not discovery-ready" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -632,6 +634,24 @@ def test_predeclared_endpoint_protocol_is_claim_bounded():
     assert "predeclaration aid" in report
     assert "must freeze these" in report
     assert "must not silently drop caveated" in report
+
+
+def test_readiness_upgrade_audit_preserves_claim_boundary():
+    audit = pd.read_csv(DATA / "paper8_readiness_upgrade_audit.csv")
+    assert "primary_endpoint_candidate" in set(audit["readiness_layer"])
+    assert "empirical_discovery_claim" in set(audit["readiness_layer"])
+    primary = audit.loc[audit["readiness_layer"] == "primary_endpoint_candidate"].iloc[0]
+    assert primary["status"] == "predeclaration_ready"
+    assert "no_low_inclination" in primary["evidence"]
+    discovery = audit.loc[audit["readiness_layer"] == "empirical_discovery_claim"].iloc[0]
+    assert discovery["status"] == "blocked"
+    assert "Do not claim Tau Core validation" in discovery["next_action"]
+    report = (ROOT / "reports" / "paper8_readiness_upgrade_audit.md").read_text(
+        encoding="utf-8"
+    )
+    assert "preparation-ready" in report
+    assert "not discovery-ready" in report
+    assert "accepted residual-blind morphology inputs" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
