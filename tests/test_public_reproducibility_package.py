@@ -50,6 +50,7 @@ def test_publication_files_exist():
         ROOT / "scripts/acquire_external_morphology_inputs.py",
         ROOT / "scripts/build_accepted_morphology_manifest.py",
         ROOT / "scripts/audit_accepted_morphology_manifest.py",
+        ROOT / "scripts/audit_exponential_disk_family_labels.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -111,6 +112,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "all 175 rows endpoint-blocked" in source
     assert "13 exponential-disk rows" in source
     assert "next residual-blind morphology-label audit pool" in source
+    assert "6 rows have strict \\texttt{D:expdisk} support" in source
+    assert "7 rows remain caveated" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -997,6 +1000,41 @@ def test_accepted_morphology_manifest_audit_identifies_next_pool():
     assert "closest near-term lane" in report
     assert "not an endpoint score" in report
     assert "does not promote proxy family labels" in report
+
+
+def test_exponential_disk_family_label_audit_strengthens_near_term_pool():
+    audit = pd.read_csv(DATA / "exponential_disk_family_label_audit.csv")
+    summary = pd.read_csv(DATA / "exponential_disk_family_label_audit_summary.csv")
+    assert len(audit) == 13
+    assert audit["external_family_label"].eq("K_exponential_disk").all()
+    assert audit["endpoint_scores_computed"].eq(False).all()
+    strict = audit.loc[
+        audit["narrow_dry_run_lane"] == "STRICT_NARROW_DRY_RUN_READY_CANDIDATE"
+    ]
+    caveated = audit.loc[
+        audit["narrow_dry_run_lane"] == "CAVEATED_NARROW_DRY_RUN_SUPPORT_POOL"
+    ]
+    assert len(strict) == 6
+    assert len(caveated) == 7
+    assert strict["external_family_label_status"].eq(
+        "ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_STRONG"
+    ).all()
+    assert set(caveated["external_family_label_status"]) == {
+        "ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_CAVEATED_BAR",
+        "ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_CAVEATED_EDGEON",
+    }
+    assert (
+        "external_family_label_audit_not_endpoint_score_not_empirical_validation"
+        in set(audit["claim_boundary"])
+    )
+    assert int(summary["n_rows"].sum()) == 13
+    assert not summary["endpoint_scores_computed"].any()
+    report = (ROOT / "reports" / "exponential_disk_family_label_audit.md").read_text(
+        encoding="utf-8"
+    )
+    assert "Strict external expdisk support: 6" in report
+    assert "Caveated external disk support: 7" in report
+    assert "not an endpoint score" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
