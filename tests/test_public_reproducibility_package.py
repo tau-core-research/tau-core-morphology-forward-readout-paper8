@@ -38,6 +38,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_predeclared_quality_gate_diagnostics.py",
         ROOT / "scripts/run_quality_gate_shuffled_null_diagnostics.py",
         ROOT / "scripts/run_endpoint_decision_matrix.py",
+        ROOT / "scripts/build_predeclared_endpoint_protocol.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -75,6 +76,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "prioritizes observability-clean baseline competitiveness" in source
     assert "endpoint decision matrix" in source
     assert "no-low-inclination gate" in source
+    assert "predeclared endpoint protocol sheet" in source
+    assert "post-hoc gate choice" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -599,6 +602,36 @@ def test_endpoint_decision_matrix_is_claim_bounded():
     assert "protocol decision aid" in report
     assert "Current primary endpoint candidate: no_low_inclination" in report
     assert "must not be read as selecting a winning endpoint" in report
+
+
+def test_predeclared_endpoint_protocol_is_claim_bounded():
+    protocol = pd.read_csv(DATA / "predeclared_endpoint_protocol.csv")
+    required_layers = {
+        "primary_endpoint_lane",
+        "fuller_sample_support_lane",
+        "baseline_secondary_lane",
+        "amplitude_policy",
+        "morphology_family_assignment",
+        "primary_specificity_metric",
+        "baseline_metrics",
+        "caveated_rows",
+        "primary_endpoint_lane_current_metrics",
+    }
+    assert required_layers.issubset(set(protocol["protocol_layer"]))
+    primary = protocol.loc[protocol["protocol_layer"] == "primary_endpoint_lane"].iloc[0]
+    assert primary["predeclared_choice"] == "no_low_inclination"
+    amplitude = protocol.loc[protocol["protocol_layer"] == "amplitude_policy"].iloc[0]
+    assert "family_weight=0.40" in amplitude["rule"]
+    assert "holdout-selected amplitude" in amplitude["forbidden_inputs"]
+    forbidden = " ".join(protocol["forbidden_inputs"].astype(str))
+    assert "required_S_tau" in forbidden
+    assert "posthoc gate choice" in forbidden
+    report = (ROOT / "reports" / "predeclared_endpoint_protocol.md").read_text(
+        encoding="utf-8"
+    )
+    assert "predeclaration aid" in report
+    assert "must freeze these" in report
+    assert "must not silently drop caveated" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
