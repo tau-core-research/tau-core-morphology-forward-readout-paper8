@@ -35,6 +35,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_train_selected_shrinkage_diagnostic.py",
         ROOT / "scripts/run_family_breakdown_diagnostics.py",
         ROOT / "scripts/run_family_observable_quality_diagnostics.py",
+        ROOT / "scripts/run_predeclared_quality_gate_diagnostics.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -66,6 +67,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "scale-tail spiral and thick/flared families" in source
     assert "observable-quality diagnostic" in source
     assert "morphology-observable extraction as a required predeclared gate" in source
+    assert "predeclared quality-gate diagnostic" in source
+    assert "candidate observability rules" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -501,6 +504,42 @@ def test_family_observable_quality_diagnostics_are_claim_bounded():
     assert "not a new fit" in report
     assert "failure-map diagnostic" in report
     assert "better residual-blind morphology" in report
+
+
+def test_predeclared_quality_gate_diagnostics_are_claim_bounded():
+    summary = pd.read_csv(DATA / "predeclared_quality_gate_diagnostics.csv")
+    by_family = pd.read_csv(DATA / "predeclared_quality_gate_by_family.csv")
+    expected_gates = {
+        "all",
+        "confidence_ge_0_75",
+        "confidence_ge_0_85",
+        "no_low_inclination",
+        "no_large_distance_error",
+        "no_few_rotation_points",
+        "clean_manifest_proxy",
+        "confidence_ge_0_75_and_clean",
+    }
+    assert expected_gates == set(summary["quality_gate"])
+    assert expected_gates.issubset(set(by_family["quality_gate"]))
+    assert set(summary["split"]) == {"holdout", "train"}
+    holdout = summary.loc[summary["split"] == "holdout"]
+    assert "candidate_predeclared_gate" in set(holdout["gate_status"])
+    clean = holdout.loc[holdout["quality_gate"] == "clean_manifest_proxy"].iloc[0]
+    assert int(clean["n_galaxies"]) == 20
+    assert int(clean["n_families_present"]) == 4
+    for column in [
+        "matched_beats_wrong_fraction",
+        "matched_rank1_fraction",
+        "matched_beats_tpg_v6_fraction",
+        "matched_beats_mond_fraction",
+    ]:
+        assert ((0.0 <= summary[column]) & (summary[column] <= 1.0)).all()
+    report = (ROOT / "reports" / "predeclared_quality_gate_diagnostics.md").read_text(
+        encoding="utf-8"
+    )
+    assert "does not choose a gate by" in report
+    assert "not a discovery claim" in report
+    assert "declare the quality gate before endpoint scoring" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
