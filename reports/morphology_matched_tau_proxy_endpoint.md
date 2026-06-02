@@ -20,6 +20,23 @@ final morphology-specific `delta_g^K` formula shells.
 - Mean matched-minus-TPG/v6 RMSE: -0.0806188
 - Mean matched-minus-MOND RMSE: -0.551864
 
+## Shuffled-Label Null
+
+The morphology labels are shuffled within each split with a deterministic
+seed (`1729`) and 1000 permutations. Lower
+matched-minus-wrong is better for the RMSE endpoint.
+
+- Holdout observed mean matched-minus-wrong: -0.0326133
+- Holdout shuffled-null mean: 0.0132684
+- Holdout shuffled-null median: 0.0133246
+- P(null at least as good; mean-minus-wrong): 0.2637
+- Holdout observed beats-wrong fraction: 0.568
+- Holdout shuffled beats-wrong mean: 0.541
+- P(null at least as good; beats-wrong fraction): 0.4316
+- Holdout observed rank-1 fraction: 0.250
+- Holdout shuffled rank-1 mean: 0.198
+- P(null at least as good; rank-1 fraction): 0.2298
+
 ## Family Amplitudes
 
 | morphology_family | beta | n_train_points | n_train_galaxies | fit_policy |

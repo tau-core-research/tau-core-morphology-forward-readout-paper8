@@ -223,16 +223,18 @@ data/derived/morphology_matched_proxy_family_betas.csv
 data/derived/morphology_matched_proxy_scores_by_galaxy.csv
 data/derived/morphology_matched_proxy_endpoint_summary.csv
 data/derived/morphology_matched_proxy_endpoint_by_family.csv
+data/derived/morphology_matched_proxy_shuffled_null.csv
+data/derived/morphology_matched_proxy_shuffled_null_summary.csv
 reports/morphology_matched_tau_proxy_endpoint.md
 ```
 
 This endpoint is closer to the Paper 8 target than the generic Tau-proxy
 runner: each galaxy receives a metadata-proxy morphology label, a family
 amplitude is fit on the train split only, and holdout galaxies are scored with
-their matched family against wrong families, TPG/v6, and MOND. It is still not
-the final endpoint because the family functions are built from the available
-`rparent_cd` channel, not from the final morphology-specific 4D readout
-formula shells.
+their matched family against wrong families, shuffled morphology labels,
+TPG/v6, and MOND. It is still not the final endpoint because the family
+functions are built from the available `rparent_cd` channel, not from the final
+morphology-specific 4D readout formula shells.
 
 ## arXiv Source Package
 

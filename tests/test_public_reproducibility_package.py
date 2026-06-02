@@ -43,6 +43,7 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "that the morphology-matched gate has already won on real SPARC endpoints" in source
     assert "Available-data Tau-proxy preflight" in source
     assert "beats the wrong-family mean in 0.568" in source
+    assert "p\\simeq0.264" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -135,6 +136,8 @@ def test_morphology_matched_tau_proxy_endpoint_is_claim_bounded():
     scores = pd.read_csv(DATA / "morphology_matched_proxy_scores_by_galaxy.csv")
     summary = pd.read_csv(DATA / "morphology_matched_proxy_endpoint_summary.csv")
     by_family = pd.read_csv(DATA / "morphology_matched_proxy_endpoint_by_family.csv")
+    shuffled = pd.read_csv(DATA / "morphology_matched_proxy_shuffled_null.csv")
+    shuffled_summary = pd.read_csv(DATA / "morphology_matched_proxy_shuffled_null_summary.csv")
 
     expected_families = {
         "K_compact_bulge",
@@ -159,11 +162,21 @@ def test_morphology_matched_tau_proxy_endpoint_is_claim_bounded():
 
     assert len(scores) == 175
     assert set(by_family["split"]) == {"holdout", "train"}
+    assert len(shuffled) == 2000
+    holdout_null = shuffled_summary.loc[shuffled_summary["split"] == "holdout"].iloc[0]
+    assert int(holdout_null["n_shuffles"]) == 1000
+    for column in [
+        "p_mean_minus_wrong_at_least_as_good",
+        "p_beats_wrong_fraction_at_least_as_good",
+        "p_rank1_fraction_at_least_as_good",
+    ]:
+        assert 0.0 <= float(holdout_null[column]) <= 1.0
     report = (ROOT / "reports" / "morphology_matched_tau_proxy_endpoint.md").read_text(
         encoding="utf-8"
     )
     assert "not the final Paper 8 endpoint" in report
     assert "wrong families, TPG/v6, and MOND" in report
+    assert "Shuffled-Label Null" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

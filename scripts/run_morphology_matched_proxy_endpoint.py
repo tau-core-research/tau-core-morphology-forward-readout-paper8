@@ -16,6 +16,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 
@@ -23,6 +24,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "derived"
 REPORTS = ROOT / "reports"
 TPG_RESULTS = Path("/Users/jolcsak/Projects/TPG/results/tau_core_projection_v1")
+SHUFFLE_SEED = 1729
+N_SHUFFLES = 1000
 
 
 def assign_family(row: pd.Series) -> str:
@@ -194,6 +197,100 @@ def score_all(
     return scored, galaxy_scores, summary, by_family
 
 
+def run_shuffled_label_null(
+    galaxy_scores: pd.DataFrame, betas: pd.DataFrame, n_shuffles: int = N_SHUFFLES
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Shuffle morphology labels within split and rescore the family-selection endpoint."""
+    beta_map = dict(zip(betas["morphology_family"], betas["beta"]))
+    families = [f for f in beta_map if f != "K_global_tau_proxy"]
+    score_cols = {family: f"rmse_{family}" for family in families}
+    rng = np.random.default_rng(SHUFFLE_SEED)
+    rows = []
+
+    for split, sub in galaxy_scores.groupby("split"):
+        sub = sub.reset_index(drop=True)
+        true_labels = sub["morphology_family"].to_numpy()
+        observed = {
+            "mean_minus_wrong": float(sub["matched_minus_wrong_mean"].mean()),
+            "median_minus_wrong": float(sub["matched_minus_wrong_mean"].median()),
+            "beats_wrong_fraction": float(sub["matched_beats_wrong_mean"].mean()),
+            "rank1_fraction": float((sub["matched_family_rank"] == 1).mean()),
+        }
+
+        for idx in range(n_shuffles):
+            shuffled = rng.permutation(true_labels)
+            minus_wrong = []
+            beats_wrong = []
+            ranks = []
+            for row_idx, family in enumerate(shuffled):
+                family_scores = {
+                    candidate: float(sub.loc[row_idx, score_cols[candidate]]) for candidate in families
+                }
+                selected = family_scores[family]
+                wrong_values = [value for candidate, value in family_scores.items() if candidate != family]
+                wrong_mean = float(sum(wrong_values) / len(wrong_values))
+                minus_wrong.append(selected - wrong_mean)
+                beats_wrong.append(selected < wrong_mean)
+                ranks.append(sorted(families, key=lambda candidate: family_scores[candidate]).index(family) + 1)
+            rows.append(
+                {
+                    "split": split,
+                    "shuffle_id": idx,
+                    "seed": SHUFFLE_SEED,
+                    "n_galaxies": int(len(sub)),
+                    "mean_shuffled_minus_wrong": float(np.mean(minus_wrong)),
+                    "median_shuffled_minus_wrong": float(np.median(minus_wrong)),
+                    "shuffled_beats_wrong_fraction": float(np.mean(beats_wrong)),
+                    "shuffled_rank1_fraction": float(np.mean(np.array(ranks) == 1)),
+                    "observed_mean_minus_wrong": observed["mean_minus_wrong"],
+                    "observed_median_minus_wrong": observed["median_minus_wrong"],
+                    "observed_beats_wrong_fraction": observed["beats_wrong_fraction"],
+                    "observed_rank1_fraction": observed["rank1_fraction"],
+                }
+            )
+
+    shuffled = pd.DataFrame(rows)
+    summary_rows = []
+    for split, sub in shuffled.groupby("split"):
+        observed = sub.iloc[0]
+        n = len(sub)
+        summary_rows.append(
+            {
+                "split": split,
+                "n_shuffles": int(n),
+                "seed": SHUFFLE_SEED,
+                "observed_mean_minus_wrong": float(observed["observed_mean_minus_wrong"]),
+                "null_mean_minus_wrong_mean": float(sub["mean_shuffled_minus_wrong"].mean()),
+                "null_mean_minus_wrong_median": float(sub["mean_shuffled_minus_wrong"].median()),
+                "p_mean_minus_wrong_at_least_as_good": float(
+                    (1 + (sub["mean_shuffled_minus_wrong"] <= observed["observed_mean_minus_wrong"]).sum())
+                    / (n + 1)
+                ),
+                "observed_beats_wrong_fraction": float(observed["observed_beats_wrong_fraction"]),
+                "null_beats_wrong_fraction_mean": float(sub["shuffled_beats_wrong_fraction"].mean()),
+                "null_beats_wrong_fraction_median": float(sub["shuffled_beats_wrong_fraction"].median()),
+                "p_beats_wrong_fraction_at_least_as_good": float(
+                    (
+                        1
+                        + (
+                            sub["shuffled_beats_wrong_fraction"]
+                            >= observed["observed_beats_wrong_fraction"]
+                        ).sum()
+                    )
+                    / (n + 1)
+                ),
+                "observed_rank1_fraction": float(observed["observed_rank1_fraction"]),
+                "null_rank1_fraction_mean": float(sub["shuffled_rank1_fraction"].mean()),
+                "null_rank1_fraction_median": float(sub["shuffled_rank1_fraction"].median()),
+                "p_rank1_fraction_at_least_as_good": float(
+                    (1 + (sub["shuffled_rank1_fraction"] >= observed["observed_rank1_fraction"]).sum())
+                    / (n + 1)
+                ),
+            }
+        )
+    return shuffled, pd.DataFrame(summary_rows)
+
+
 def markdown_table(df: pd.DataFrame) -> str:
     display = df.copy()
     for col in display.columns:
@@ -210,9 +307,16 @@ def markdown_table(df: pd.DataFrame) -> str:
     return "\n".join(lines)
 
 
-def write_report(labels: pd.DataFrame, betas: pd.DataFrame, summary: pd.DataFrame, by_family: pd.DataFrame) -> None:
+def write_report(
+    labels: pd.DataFrame,
+    betas: pd.DataFrame,
+    summary: pd.DataFrame,
+    by_family: pd.DataFrame,
+    shuffled_summary: pd.DataFrame,
+) -> None:
     REPORTS.mkdir(parents=True, exist_ok=True)
     holdout = summary.loc[summary["split"] == "holdout"].iloc[0]
+    holdout_null = shuffled_summary.loc[shuffled_summary["split"] == "holdout"].iloc[0]
     lines = [
         "# Morphology-Matched Tau-Proxy Endpoint",
         "",
@@ -235,6 +339,23 @@ def write_report(labels: pd.DataFrame, betas: pd.DataFrame, summary: pd.DataFram
         f"- Mean matched-minus-wrong RMSE: {holdout['mean_matched_minus_wrong']:.6g}",
         f"- Mean matched-minus-TPG/v6 RMSE: {holdout['mean_matched_minus_tpg_v6']:.6g}",
         f"- Mean matched-minus-MOND RMSE: {holdout['mean_matched_minus_mond']:.6g}",
+        "",
+        "## Shuffled-Label Null",
+        "",
+        "The morphology labels are shuffled within each split with a deterministic",
+        f"seed (`{SHUFFLE_SEED}`) and {N_SHUFFLES} permutations. Lower",
+        "matched-minus-wrong is better for the RMSE endpoint.",
+        "",
+        f"- Holdout observed mean matched-minus-wrong: {holdout_null['observed_mean_minus_wrong']:.6g}",
+        f"- Holdout shuffled-null mean: {holdout_null['null_mean_minus_wrong_mean']:.6g}",
+        f"- Holdout shuffled-null median: {holdout_null['null_mean_minus_wrong_median']:.6g}",
+        f"- P(null at least as good; mean-minus-wrong): {holdout_null['p_mean_minus_wrong_at_least_as_good']:.4f}",
+        f"- Holdout observed beats-wrong fraction: {holdout_null['observed_beats_wrong_fraction']:.3f}",
+        f"- Holdout shuffled beats-wrong mean: {holdout_null['null_beats_wrong_fraction_mean']:.3f}",
+        f"- P(null at least as good; beats-wrong fraction): {holdout_null['p_beats_wrong_fraction_at_least_as_good']:.4f}",
+        f"- Holdout observed rank-1 fraction: {holdout_null['observed_rank1_fraction']:.3f}",
+        f"- Holdout shuffled rank-1 mean: {holdout_null['null_rank1_fraction_mean']:.3f}",
+        f"- P(null at least as good; rank-1 fraction): {holdout_null['p_rank1_fraction_at_least_as_good']:.4f}",
         "",
         "## Family Amplitudes",
         "",
@@ -268,13 +389,16 @@ def main() -> None:
     points, labels = load_points()
     betas = fit_family_betas(points)
     _, galaxy_scores, summary, by_family = score_all(points, betas)
+    shuffled, shuffled_summary = run_shuffled_label_null(galaxy_scores, betas)
 
     labels.to_csv(DATA / "morphology_labels_predeclared_proxy.csv", index=False)
     betas.to_csv(DATA / "morphology_matched_proxy_family_betas.csv", index=False)
     galaxy_scores.to_csv(DATA / "morphology_matched_proxy_scores_by_galaxy.csv", index=False)
     summary.to_csv(DATA / "morphology_matched_proxy_endpoint_summary.csv", index=False)
     by_family.to_csv(DATA / "morphology_matched_proxy_endpoint_by_family.csv", index=False)
-    write_report(labels, betas, summary, by_family)
+    shuffled.to_csv(DATA / "morphology_matched_proxy_shuffled_null.csv", index=False)
+    shuffled_summary.to_csv(DATA / "morphology_matched_proxy_shuffled_null_summary.csv", index=False)
+    write_report(labels, betas, summary, by_family, shuffled_summary)
     print("PAPER8_MORPHOLOGY_MATCHED_PROXY_ENDPOINT_COMPLETE")
 
 
