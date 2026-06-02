@@ -53,6 +53,7 @@ def main() -> None:
     run([sys.executable, "scripts/run_accepted_manifest_readiness_gate.py"])
     run([sys.executable, "scripts/run_frozen_endpoint_launch_guard.py"])
     run([sys.executable, "scripts/build_external_morphology_source_registry.py"])
+    run([sys.executable, "scripts/acquire_external_morphology_inputs.py"])
     if shutil.which("tectonic") is None:
         raise SystemExit("tectonic is required to compile paper8_submission_source/main.tex")
     run(["tectonic", "main.tex"], cwd=SOURCE)

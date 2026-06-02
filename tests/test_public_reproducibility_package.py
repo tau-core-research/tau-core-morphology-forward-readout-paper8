@@ -47,6 +47,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_accepted_manifest_readiness_gate.py",
         ROOT / "scripts/run_frozen_endpoint_launch_guard.py",
         ROOT / "scripts/build_external_morphology_source_registry.py",
+        ROOT / "scripts/acquire_external_morphology_inputs.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -101,6 +102,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "LAUNCH\\_BLOCKED" in source
     assert "external morphology source registry" in source
     assert "S4G is the first morphology/decomposition source" in source
+    assert "77 S4G crossmatches" in source
+    assert "75 S4G/SPARC-derived disk-scale candidates" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -870,6 +873,42 @@ def test_external_morphology_source_registry_is_acquisition_only():
     assert "source-acquisition plan and crossmatch template" in report
     assert "not accepted-source coverage yet" in report or "TO_BE_CHECKED" in report
     assert "would not by itself compute endpoint scores" in report
+
+
+def test_external_morphology_input_acquisition_is_partial_and_claim_bounded():
+    sparc = pd.read_csv(DATA / "external_sparc_master_table.csv")
+    s4g_galaxies = pd.read_csv(DATA / "external_s4g_galaxies.csv")
+    s4g_table7 = pd.read_csv(DATA / "external_s4g_table7.csv")
+    candidates = pd.read_csv(DATA / "external_s4g_sparc_observable_candidates.csv")
+    crossmatch = pd.read_csv(DATA / "sparc_external_source_crossmatch_acquired.csv")
+    assert (ROOT / "data/external/sparc/SPARC_Lelli2016c.mrt").exists()
+    assert len(sparc) == 175
+    assert len(s4g_galaxies) == 2352
+    assert len(s4g_table7) == 4629
+    assert len(candidates) == 175
+    assert int((candidates["s4g_match_status"] == "S4G_MATCHED").sum()) == 77
+    assert int(
+        (candidates["candidate_observable_status"] == "ACQUIRED_S4G_SPARC_DERIVED").sum()
+    ) == 75
+    acquired = candidates.loc[
+        candidates["candidate_observable_status"] == "ACQUIRED_S4G_SPARC_DERIVED"
+    ]
+    assert acquired["scale_radius_kpc"].notna().all()
+    assert acquired["observable_provenance"].str.contains("VizieR_J/ApJS/219/4").all()
+    assert "candidate_source_observable_not_family_label_validation" in set(
+        candidates["claim_boundary"]
+    )
+    assert len(crossmatch) == 175
+    assert "PARTIAL_S4G_SCALE_CANDIDATE" in set(
+        crossmatch["accepted_observable_collection_status"]
+    )
+    report = (ROOT / "reports" / "external_morphology_input_acquisition.md").read_text(
+        encoding="utf-8"
+    )
+    assert "first actual external-source acquisition" in report
+    assert "S4G/SPARC-derived disk scale candidates acquired: 75" in report
+    assert "not a completed accepted manifest" in report
+    assert "does not compute endpoint scores" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
