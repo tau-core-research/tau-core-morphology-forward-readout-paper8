@@ -44,6 +44,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_morphology_observable_gap_audit.py",
         ROOT / "scripts/build_morphology_observable_source_upgrade_plan.py",
         ROOT / "scripts/build_accepted_observable_manifest_template.py",
+        ROOT / "scripts/run_accepted_manifest_readiness_gate.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -92,6 +93,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "P0 family-label, confidence, caveat, and provenance fields" in source
     assert "accepted-observable manifest template and validator" in source
     assert "intentionally endpoint-blocked" in source
+    assert "accepted-manifest readiness gate" in source
+    assert "BLOCKED\\_ACCEPTED\\_OBSERVABLES\\_MISSING" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -785,6 +788,31 @@ def test_accepted_observable_manifest_template_is_endpoint_blocked():
     assert "template is intentionally blocked" in report
     assert "collection-ready but endpoint-blocked" in report
     assert "not the proxy manifest" in report
+
+
+def test_accepted_manifest_readiness_gate_blocks_empty_template():
+    gates = pd.read_csv(DATA / "accepted_manifest_readiness_gates.csv")
+    summary = pd.read_csv(DATA / "accepted_manifest_readiness_summary.csv")
+    decision = summary["endpoint_readiness_decision"].iloc[0]
+    assert decision == "BLOCKED_ACCEPTED_OBSERVABLES_MISSING"
+    assert int(summary["n_blocked_gates"].iloc[0]) == 4
+    blocked = gates.loc[gates["gate_status"] == "BLOCKED"]
+    assert {
+        "residual_blind_family_labels_ready",
+        "quality_and_caveat_ready",
+        "active_kernel_observables_ready",
+        "provenance_ready",
+    }.issubset(set(blocked["gate"]))
+    identity = gates.loc[gates["gate"] == "row_identity_and_geometry_ready"].iloc[0]
+    assert identity["gate_status"] == "PASS"
+    optional = gates.loc[gates["gate"] == "optional_non_axisymmetric_not_promoted"].iloc[0]
+    assert optional["gate_status"] == "PASS_OR_CAVEATED"
+    report = (ROOT / "reports" / "accepted_manifest_readiness_gate.md").read_text(
+        encoding="utf-8"
+    )
+    assert "not an endpoint score" in report
+    assert "The current empty accepted manifest template is correctly blocked" in report
+    assert "would not by itself imply that Tau Core" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

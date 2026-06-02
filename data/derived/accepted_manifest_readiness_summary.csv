@@ -1,0 +1,2 @@
+endpoint_readiness_decision,n_gates,n_blocked_gates,n_blocked_missing_rows_total,claim_status
+BLOCKED_ACCEPTED_OBSERVABLES_MISSING,6,4,1069,not_endpoint_ready

@@ -296,6 +296,8 @@ The repository therefore records a morphology-observable source-upgrade plan. Th
 
 Finally, the repository includes an accepted-observable manifest template and validator. The template is intentionally endpoint-blocked: it keeps the galaxy rows and pre-scoring geometry fields, but leaves accepted morphology labels, kernel observables, and provenance to be supplied from residual-blind sources. This prevents the current proxy manifest from being silently promoted into a discovery input.
 
+An accepted-manifest readiness gate then lifts the field-level validation to an endpoint-level decision. For the current empty template, the gate returns \texttt{BLOCKED\_ACCEPTED\_OBSERVABLES\_MISSING}. A future populated manifest must pass this gate before the frozen blind endpoint protocol is run.
+
 \section{Conclusion}
 
 Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:
