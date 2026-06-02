@@ -290,6 +290,8 @@ Thus the present package is preparation-ready, not discovery-ready. Its next sci
 
 For that reason the repository also includes a morphology-observable intake schema. The schema records the fields required for the next run: residual-blind family labels, confidence and caveat fields, inclination and distance-quality observables, family-specific scale/support/thickness parameters, provenance, and explicit forbidden sources. In particular, it forbids using endpoint residual gain, required-$S_\tau$, endpoint-selected radii, post-hoc family choice, or per-galaxy residual tuning as morphology inputs.
 
+A gap audit compares the proxy manifest against this intake schema. It shows that the present package is coverage-rich but acceptance-limited: active families have broad proxy coverage, while the kernel-driving observables still need accepted residual-blind morphology sources before a discovery-style endpoint can be claimed. This makes the next upgrade concrete. The task is not to alter the endpoint gates after seeing scores, but to replace proxy morphology fields by pre-scoring observables and rerun the frozen protocol.
+
 \section{Conclusion}
 
 Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:

@@ -1,0 +1,5 @@
+formula_family,n_galaxies,required_fields_applicable,accepted_ready_required_fields,proxy_required_fields,missing_required_fields,readiness_status
+K_compact_finite,29,8,3,5,0,proxy_coverage_ready_acceptance_not_ready
+K_exponential_disk,32,8,3,5,0,proxy_coverage_ready_acceptance_not_ready
+K_scale_tail_spiral,80,10,3,7,0,proxy_coverage_ready_acceptance_not_ready
+K_thick_flared,34,9,3,6,0,proxy_coverage_ready_acceptance_not_ready

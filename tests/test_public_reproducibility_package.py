@@ -41,6 +41,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_predeclared_endpoint_protocol.py",
         ROOT / "scripts/build_readiness_upgrade_audit.py",
         ROOT / "scripts/build_morphology_observable_intake_schema.py",
+        ROOT / "scripts/run_morphology_observable_gap_audit.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -83,6 +84,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "preparation-ready, not discovery-ready" in source
     assert "morphology-observable intake schema" in source
     assert "endpoint-selected radii" in source
+    assert "A gap audit compares the proxy manifest" in source
+    assert "coverage-rich but acceptance-limited" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -688,6 +691,40 @@ def test_morphology_observable_intake_schema_is_claim_bounded():
     assert "data-intake contract" in report
     assert "not a fit" in report
     assert "current available-data manifest remains a proxy manifest" in report
+
+
+def test_morphology_observable_gap_audit_is_claim_bounded():
+    gap = pd.read_csv(DATA / "morphology_observable_gap_audit.csv")
+    by_family = pd.read_csv(DATA / "morphology_observable_gap_by_family.csv")
+    required_fields = {
+        "galaxy",
+        "formula_family",
+        "scale_radius_kpc",
+        "tail_inner_radius_kpc",
+        "compact_support_radius_kpc",
+        "thickness_h_over_rs",
+        "observable_provenance",
+    }
+    assert required_fields.issubset(set(gap["field"]))
+    assert {"accepted_available", "proxy_available"}.issubset(
+        set(gap["availability_status"])
+    )
+    assert "not_in_current_family_set" in set(gap["availability_status"])
+    assert not (gap["availability_status"] == "missing_required").any()
+    scale = gap.loc[gap["field"] == "scale_radius_kpc"].iloc[0]
+    assert scale["manifest_source_field"] == "scale_radius_proxy_kpc"
+    assert scale["availability_status"] == "proxy_available"
+    provenance = gap.loc[gap["field"] == "observable_provenance"].iloc[0]
+    assert provenance["availability_status"] == "proxy_available"
+    assert set(by_family["readiness_status"]) == {
+        "proxy_coverage_ready_acceptance_not_ready"
+    }
+    report = (ROOT / "reports" / "morphology_observable_gap_audit.md").read_text(
+        encoding="utf-8"
+    )
+    assert "coverage-rich but acceptance-limited" in report
+    assert "not accepted residual-blind observables yet" in report
+    assert "not an endpoint score" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
