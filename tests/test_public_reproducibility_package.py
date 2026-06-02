@@ -37,6 +37,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_family_observable_quality_diagnostics.py",
         ROOT / "scripts/run_predeclared_quality_gate_diagnostics.py",
         ROOT / "scripts/run_quality_gate_shuffled_null_diagnostics.py",
+        ROOT / "scripts/run_endpoint_decision_matrix.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -72,6 +73,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "candidate observability rules" in source
     assert "shuffled-label null reveals the tradeoff" in source
     assert "prioritizes observability-clean baseline competitiveness" in source
+    assert "endpoint decision matrix" in source
+    assert "no-low-inclination gate" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -569,6 +572,33 @@ def test_quality_gate_shuffled_null_diagnostics_are_claim_bounded():
     assert "predeclared quality gate" in report
     assert "not empirical validation" in report
     assert "declared before endpoint scoring" in report
+
+
+def test_endpoint_decision_matrix_is_claim_bounded():
+    matrix = pd.read_csv(DATA / "endpoint_decision_matrix.csv")
+    expected_roles = {
+        "primary_endpoint_candidate",
+        "specificity_null_primary",
+        "baseline_competitiveness_secondary",
+        "limited_or_negative_control",
+        "specificity_only_diagnostic",
+    }
+    assert expected_roles.issubset(set(matrix["recommended_endpoint_role"]))
+    primary = matrix.loc[
+        matrix["recommended_endpoint_role"] == "primary_endpoint_candidate"
+    ].iloc[0]
+    assert primary["quality_gate"] == "no_low_inclination"
+    assert int(primary["n_galaxies"]) == 35
+    assert primary["null_support_status"] == "strong_fraction_and_mean_null"
+    assert bool(primary["baseline_competitive"])
+    full = matrix.loc[matrix["quality_gate"] == "all"].iloc[0]
+    assert full["recommended_endpoint_role"] == "specificity_null_primary"
+    report = (ROOT / "reports" / "endpoint_decision_matrix.md").read_text(
+        encoding="utf-8"
+    )
+    assert "protocol decision aid" in report
+    assert "Current primary endpoint candidate: no_low_inclination" in report
+    assert "must not be read as selecting a winning endpoint" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

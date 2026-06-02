@@ -1,0 +1,9 @@
+quality_gate,n_galaxies,n_families_present,matched_beats_wrong_fraction,matched_beats_tpg_v6_fraction,matched_beats_mond_fraction,p_beats_wrong_fraction_at_least_as_good,p_mean_minus_wrong_at_least_as_good,baseline_competitive,null_support_status,recommended_endpoint_role,decision_score
+no_large_distance_error,26,4,0.8846153846153846,0.5384615384615384,0.7307692307692307,0.1308691308691308,0.1218781218781218,True,weak_null,baseline_competitiveness_secondary,3.1751998001998003
+confidence_ge_0_75_and_clean,20,4,0.9,0.5,0.75,0.1188811188811188,0.1098901098901098,True,weak_null,baseline_competitiveness_secondary,3.1492507492507493
+clean_manifest_proxy,20,4,0.9,0.5,0.75,0.1398601398601398,0.1298701298701298,True,weak_null,baseline_competitiveness_secondary,3.1287712287712286
+confidence_ge_0_85,30,4,0.8333333333333334,0.5,0.6,0.0659340659340659,0.0319680319680319,True,mean_null_only,baseline_competitiveness_secondary,3.05483682983683
+no_few_rotation_points,36,4,0.7777777777777778,0.5,0.5555555555555556,0.0669330669330669,0.0169830169830169,False,mean_null_only,limited_or_negative_control,2.995920745920746
+no_low_inclination,35,4,0.8571428571428571,0.5142857142857142,0.6571428571428571,0.0409590409590409,0.0109890109890109,True,strong_fraction_and_mean_null,primary_endpoint_candidate,3.2014610389610385
+all,44,4,0.8181818181818182,0.4772727272727273,0.6136363636363636,0.0359640359640359,0.0129870129870129,False,strong_fraction_and_mean_null,specificity_null_primary,3.134615384615385
+confidence_ge_0_75,32,4,0.84375,0.53125,0.59375,0.0529470529470529,0.0239760239760239,False,mean_null_only,specificity_only_diagnostic,3.1121066433566433
