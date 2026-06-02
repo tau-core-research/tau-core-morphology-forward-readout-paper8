@@ -31,6 +31,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_source_native_readout_formula_endpoint.py",
         ROOT / "scripts/run_manifest_confidence_diagnostics.py",
         ROOT / "scripts/run_amplitude_policy_diagnostics.py",
+        ROOT / "scripts/run_amplitude_shrinkage_path.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -55,6 +56,7 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "p\\simeq0.002" in source
     assert "confidence $\\geq0.75$" in source
     assert "family-to-global shrinkage policy" in source
+    assert "family weight 0.4--0.5" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -374,6 +376,29 @@ def test_amplitude_policy_diagnostics_are_claim_bounded():
     )
     assert "not a new endpoint claim" in report
     assert "amplitude-policy stress test" in report
+
+
+def test_amplitude_shrinkage_path_is_claim_bounded():
+    amplitudes = pd.read_csv(DATA / "amplitude_shrinkage_path_amplitudes.csv")
+    scores = pd.read_csv(DATA / "amplitude_shrinkage_path_scores_by_galaxy.csv")
+    summary = pd.read_csv(DATA / "amplitude_shrinkage_path_summary.csv")
+    tradeoff = pd.read_csv(DATA / "amplitude_shrinkage_path_tradeoff.csv")
+
+    assert len(set(summary["family_weight"])) == 21
+    assert len(scores) == 175 * 21
+    assert len(amplitudes) == 4 * 21
+    holdout_05 = summary.loc[
+        (summary["split"] == "holdout") & (summary["family_weight"] == 0.5)
+    ].iloc[0]
+    assert int(holdout_05["n_galaxies"]) == 44
+    assert 0.0 <= float(holdout_05["matched_beats_wrong_fraction"]) <= 1.0
+    assert 0.0 <= float(holdout_05["matched_beats_mond_fraction"]) <= 1.0
+    assert "tradeoff_score" in tradeoff.columns
+    report = (ROOT / "reports" / "amplitude_shrinkage_path.md").read_text(
+        encoding="utf-8"
+    )
+    assert "not a validated physical policy" in report
+    assert "amplitude-normalization range" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
