@@ -49,6 +49,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_external_morphology_source_registry.py",
         ROOT / "scripts/acquire_external_morphology_inputs.py",
         ROOT / "scripts/build_accepted_morphology_manifest.py",
+        ROOT / "scripts/audit_accepted_morphology_manifest.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -108,6 +109,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "partial accepted morphology-observable manifest" in source
     assert "75 S4G/SPARC-derived scale-radius observables" in source
     assert "all 175 rows endpoint-blocked" in source
+    assert "13 exponential-disk rows" in source
+    assert "next residual-blind morphology-label audit pool" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -964,6 +967,36 @@ def test_accepted_morphology_manifest_is_partial_and_endpoint_blocked():
     assert "Accepted S4G/SPARC scale-radius observables: 75" in report
     assert "Endpoint-ready rows: 0" in report
     assert "not an endpoint score" in report
+
+
+def test_accepted_morphology_manifest_audit_identifies_next_pool():
+    audit = pd.read_csv(DATA / "accepted_morphology_manifest_audit.csv")
+    summary = pd.read_csv(DATA / "accepted_morphology_manifest_audit_summary.csv")
+    assert len(audit) == 175
+    near_lane = "NEAR_TERM_EXPONENTIAL_DISK_FAMILY_LABEL_AUDIT_POOL"
+    near = audit.loc[audit["audit_lane"] == near_lane]
+    assert len(near) == 13
+    assert near["formula_family"].eq("K_exponential_disk").all()
+    assert near["scale_radius_source_status"].eq("ACCEPTED_SOURCE_OBSERVABLE").all()
+    assert near["primary_blocker"].eq("external_family_label_audit_only").all()
+    assert (
+        "accepted_manifest_audit_not_endpoint_score_not_family_validation"
+        in set(audit["audit_claim_boundary"])
+    )
+    exp_summary = summary.loc[
+        (summary["formula_family"] == "K_exponential_disk")
+        & (summary["audit_lane"] == near_lane)
+    ].iloc[0]
+    assert int(exp_summary["n_rows"]) == 13
+    assert int(exp_summary["n_accepted_scale"]) == 13
+    assert int(exp_summary["n_s4g_matched"]) == 13
+    assert "S4G_EXPDISK_SUPPORT" in set(audit["s4g_component_support_status"])
+    report = (ROOT / "reports" / "accepted_morphology_manifest_audit.md").read_text(
+        encoding="utf-8"
+    )
+    assert "closest near-term lane" in report
+    assert "not an endpoint score" in report
+    assert "does not promote proxy family labels" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
