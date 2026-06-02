@@ -1,8 +1,9 @@
 # Source-Native Bridge Readout Formula Endpoint
 
-This preflight uses the concrete Tau Core bridge morphology formulas as
-`delta v^2` readout kernels. It is not yet the final Paper 8 endpoint,
-because the morphology scale parameters are still available-data proxies.
+This preflight consumes `data/derived/morphology_parameter_manifest.csv`
+and uses the concrete Tau Core bridge morphology formulas as `delta v^2`
+readout kernels. It is not yet the final Paper 8 endpoint, because the
+morphology scale parameters are still available-data proxies.
 
 ## Holdout Verdict
 

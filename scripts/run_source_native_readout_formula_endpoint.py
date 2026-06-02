@@ -59,46 +59,26 @@ def assign_formula_family(row: pd.Series) -> str:
 
 def load_points() -> tuple[pd.DataFrame, pd.DataFrame]:
     points_path = TPG_RESULTS / "tau_rotation_curve_frozen_proxy_runner_v0_points.csv"
-    meta_path = TPG_RESULTS / "tau_rotation_curve_projection_metadata_control_v0.csv"
+    manifest_path = DATA / "morphology_parameter_manifest.csv"
     if not points_path.exists():
         raise FileNotFoundError(points_path)
-    if not meta_path.exists():
-        raise FileNotFoundError(meta_path)
+    if not manifest_path.exists():
+        raise FileNotFoundError(
+            f"{manifest_path} is missing; run scripts/build_morphology_parameter_manifest.py first"
+        )
 
     points = pd.read_csv(points_path)
-    meta = pd.read_csv(meta_path)
-    labels = (
-        points.groupby("galaxy")
-        .agg(
-            n_points=("r", "size"),
-            r_median=("r", "median"),
-            r_max=("r", "max"),
-            mean_gas=("total_gas_fraction", "mean"),
-            mean_bulge=("bulge_frac", "mean"),
-            mean_log_sbdisk=("log_sbdisk", "mean"),
-            peak_sb=("log_sb_peak", "max"),
-        )
-        .reset_index()
-        .merge(
-            meta[["galaxy", "split", "role", "type_bin", "inc_bin", "hub_type"]],
-            on="galaxy",
-            how="left",
-        )
-    )
-    labels["formula_family"] = labels.apply(assign_formula_family, axis=1)
-    labels["label_source"] = (
-        "metadata_proxy:type_bin+bulge_frac+gas_fraction+surface_brightness;no residual endpoints"
-    )
+    labels = pd.read_csv(manifest_path)
     points = points.merge(
         labels[
             [
                 "galaxy",
                 "formula_family",
-                "r_median",
-                "r_max",
-                "mean_gas",
-                "mean_bulge",
-                "mean_log_sbdisk",
+                "scale_radius_proxy_kpc",
+                "tail_inner_radius_proxy_kpc",
+                "tail_cutoff_radius_proxy_kpc",
+                "compact_support_radius_proxy_kpc",
+                "thickness_h_over_rs_proxy",
             ]
         ],
         on="galaxy",
@@ -145,21 +125,17 @@ def add_bridge_formula_kernels(points: pd.DataFrame) -> pd.DataFrame:
     out = points.copy()
     eps = 1.0e-6
     r = out["r"].clip(lower=eps)
-    r_med = out["r_median"].clip(lower=eps)
-    r_max = out["r_max"].clip(lower=r_med + eps)
-    gas = out["mean_gas"].clip(lower=0.0)
-    bulge = out["mean_bulge"].clip(lower=0.0)
 
     # Available-data scale proxies. These are the weak link in this preflight,
     # not the formula shells themselves.
-    r_s = (r_med / 1.678).clip(lower=eps)
+    r_s = out["scale_radius_proxy_kpc"].clip(lower=eps)
     y = r / (2.0 * r_s)
     out["kernel_K_exponential_disk"] = r_s * freeman_bessel_shape(y)
 
     out["kernel_K_compact_finite"] = 0.0
     for galaxy, idx in out.groupby("galaxy").groups.items():
         sub = out.loc[idx]
-        rc = max(float(sub["r_median"].iloc[0]) * (1.0 + float(sub["mean_bulge"].iloc[0])), eps)
+        rc = max(float(sub["compact_support_radius_proxy_kpc"].iloc[0]), eps)
         rr = sub["r"].clip(lower=eps).to_numpy()
         kernel = np.where(rr < rc, rr * rr / (rc ** 3), 1.0 / rr)
         out.loc[idx, "kernel_K_compact_finite"] = kernel
@@ -167,12 +143,12 @@ def add_bridge_formula_kernels(points: pd.DataFrame) -> pd.DataFrame:
     out["kernel_K_scale_tail_spiral"] = 0.0
     for galaxy, idx in out.groupby("galaxy").groups.items():
         sub = out.loc[idx]
-        rin = max(float(sub["r_median"].iloc[0]) * 0.35, eps)
-        rcut = max(float(sub["r_max"].iloc[0]) * (1.0 + 0.5 * float(sub["mean_gas"].iloc[0])), rin * 2.0)
+        rin = max(float(sub["tail_inner_radius_proxy_kpc"].iloc[0]), eps)
+        rcut = max(float(sub["tail_cutoff_radius_proxy_kpc"].iloc[0]), rin * 2.0)
         out.loc[idx, "kernel_K_scale_tail_spiral"] = tail_i2_over_r(sub["r"].to_numpy(), rin, rcut)
 
     x = (r / r_s).to_numpy()
-    h_over_rs = np.clip(0.08 + 0.45 * gas.to_numpy(), 0.05, 0.75)
+    h_over_rs = out["thickness_h_over_rs_proxy"].clip(lower=0.05, upper=0.75).to_numpy()
     out["kernel_K_thick_flared"] = r_s.to_numpy() * thick_damped_shape(x, h_over_rs)
     return out
 
@@ -400,9 +376,10 @@ def write_report(
     lines = [
         "# Source-Native Bridge Readout Formula Endpoint",
         "",
-        "This preflight uses the concrete Tau Core bridge morphology formulas as",
-        "`delta v^2` readout kernels. It is not yet the final Paper 8 endpoint,",
-        "because the morphology scale parameters are still available-data proxies.",
+        "This preflight consumes `data/derived/morphology_parameter_manifest.csv`",
+        "and uses the concrete Tau Core bridge morphology formulas as `delta v^2`",
+        "readout kernels. It is not yet the final Paper 8 endpoint, because the",
+        "morphology scale parameters are still available-data proxies.",
         "",
         "## Holdout Verdict",
         "",

@@ -31,6 +31,7 @@ def main() -> None:
     run([sys.executable, "scripts/generate_paper8_artifacts.py"])
     run([sys.executable, "scripts/audit_paper8_foundations.py"])
     run([sys.executable, "scripts/run_available_morphology_readout_pilot.py"])
+    run([sys.executable, "scripts/build_morphology_parameter_manifest.py"])
     run([sys.executable, "scripts/run_morphology_matched_proxy_endpoint.py"])
     run([sys.executable, "scripts/run_morphology_formula_shell_proxy_endpoint.py"])
     run([sys.executable, "scripts/run_source_native_readout_formula_endpoint.py"])

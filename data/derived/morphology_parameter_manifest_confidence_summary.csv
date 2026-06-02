@@ -1,0 +1,9 @@
+split,formula_family,n_galaxies,mean_confidence,median_confidence
+holdout,K_compact_finite,7,0.8357142857142856,0.85
+holdout,K_exponential_disk,7,0.8571428571428571,0.85
+holdout,K_scale_tail_spiral,20,0.8324999999999999,0.85
+holdout,K_thick_flared,10,0.8400000000000001,0.9
+train,K_compact_finite,22,0.9227272727272727,1.0
+train,K_exponential_disk,25,0.9359999999999999,1.0
+train,K_scale_tail_spiral,60,0.8216666666666668,0.85
+train,K_thick_flared,24,0.8250000000000001,0.9

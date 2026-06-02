@@ -27,6 +27,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_available_morphology_readout_pilot.py",
         ROOT / "scripts/run_morphology_matched_proxy_endpoint.py",
         ROOT / "scripts/run_morphology_formula_shell_proxy_endpoint.py",
+        ROOT / "scripts/build_morphology_parameter_manifest.py",
         ROOT / "scripts/run_source_native_readout_formula_endpoint.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
@@ -232,6 +233,36 @@ def test_morphology_formula_shell_proxy_endpoint_is_claim_bounded():
     assert "dimensionless radial proxies" in report
 
 
+def test_morphology_parameter_manifest_is_residual_blind_and_complete():
+    manifest = pd.read_csv(DATA / "morphology_parameter_manifest.csv")
+    counts = pd.read_csv(DATA / "morphology_parameter_manifest_family_counts.csv")
+    confidence = pd.read_csv(DATA / "morphology_parameter_manifest_confidence_summary.csv")
+
+    expected_families = {
+        "K_compact_finite",
+        "K_scale_tail_spiral",
+        "K_exponential_disk",
+        "K_thick_flared",
+    }
+    assert len(manifest) == 175
+    assert expected_families == set(manifest["formula_family"])
+    assert int(counts["n_galaxies"].sum()) == 175
+    assert set(confidence["split"]) == {"holdout", "train"}
+    assert manifest["parameter_source"].str.contains("available_data_proxy").all()
+    assert manifest["forbidden_inputs"].str.contains("required_S_tau").all()
+    for column in [
+        "scale_radius_proxy_kpc",
+        "tail_inner_radius_proxy_kpc",
+        "tail_cutoff_radius_proxy_kpc",
+        "compact_support_radius_proxy_kpc",
+        "thickness_h_over_rs_proxy",
+        "manifest_confidence",
+    ]:
+        assert manifest[column].notna().all()
+    report = (ROOT / "reports" / "morphology_parameter_manifest.md").read_text(encoding="utf-8")
+    assert "not the final hand-curated source-native morphology catalog" in report
+
+
 def test_source_native_readout_formula_endpoint_is_claim_bounded():
     labels = pd.read_csv(DATA / "source_native_readout_formula_labels.csv")
     amplitudes = pd.read_csv(DATA / "source_native_readout_formula_amplitudes.csv")
@@ -249,7 +280,8 @@ def test_source_native_readout_formula_endpoint_is_claim_bounded():
     }
     assert expected_families == set(labels["formula_family"])
     assert expected_families == set(amplitudes["formula_family"])
-    assert labels["label_source"].str.contains("no residual endpoints").all()
+    assert labels["parameter_source"].str.contains("available_data_proxy").all()
+    assert labels["forbidden_inputs"].str.contains("required_S_tau").all()
     assert amplitudes["formula_source"].str.contains("tau_core_gravity").all()
 
     holdout = summary.loc[summary["split"] == "holdout"].iloc[0]
@@ -277,6 +309,7 @@ def test_source_native_readout_formula_endpoint_is_claim_bounded():
         encoding="utf-8"
     )
     assert "concrete Tau Core bridge morphology formulas" in report
+    assert "morphology_parameter_manifest.csv" in report
     assert "not empirical validation" in report
 
 
