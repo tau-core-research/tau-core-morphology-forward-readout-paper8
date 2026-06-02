@@ -33,6 +33,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_amplitude_policy_diagnostics.py",
         ROOT / "scripts/run_amplitude_shrinkage_path.py",
         ROOT / "scripts/run_train_selected_shrinkage_diagnostic.py",
+        ROOT / "scripts/run_family_breakdown_diagnostics.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -60,6 +61,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "family weight 0.4--0.5" in source
     assert "train-selected shrinkage diagnostic" in source
     assert "family weight 0.40" in source
+    assert "family-breakdown diagnostic" in source
+    assert "scale-tail spiral and thick/flared families" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -433,6 +436,36 @@ def test_train_selected_shrinkage_diagnostic_is_claim_bounded():
     assert "using train" in report
     assert "split metrics only" in report
     assert "not a validated amplitude-normalization law" in report
+
+
+def test_family_breakdown_diagnostics_are_claim_bounded():
+    breakdown = pd.read_csv(DATA / "family_breakdown_diagnostics.csv")
+    expected_families = {
+        "K_compact_finite",
+        "K_scale_tail_spiral",
+        "K_exponential_disk",
+        "K_thick_flared",
+    }
+    assert expected_families == set(breakdown["formula_family"])
+    assert set(breakdown["split"]) == {"holdout", "train"}
+    assert set(breakdown["amplitude_path_id"]) == {"shrink_family_weight_0.40"}
+    holdout = breakdown.loc[breakdown["split"] == "holdout"]
+    assert int(holdout["n_galaxies"].sum()) == 44
+    for column in [
+        "matched_beats_wrong_fraction",
+        "matched_rank1_fraction",
+        "matched_beats_tpg_v6_fraction",
+        "matched_beats_mond_fraction",
+    ]:
+        assert ((0.0 <= breakdown[column]) & (breakdown[column] <= 1.0)).all()
+    assert "strong" in set(holdout["specificity_status"])
+    assert "baseline_blocked" in set(holdout["baseline_status"])
+    report = (ROOT / "reports" / "family_breakdown_diagnostics.md").read_text(
+        encoding="utf-8"
+    )
+    assert "does not refit" in report
+    assert "preparation diagnostic" in report
+    assert "empirical validation claim" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
