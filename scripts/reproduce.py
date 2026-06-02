@@ -49,6 +49,7 @@ def main() -> None:
     run([sys.executable, "scripts/build_morphology_observable_intake_schema.py"])
     run([sys.executable, "scripts/run_morphology_observable_gap_audit.py"])
     run([sys.executable, "scripts/build_morphology_observable_source_upgrade_plan.py"])
+    run([sys.executable, "scripts/build_accepted_observable_manifest_template.py"])
     if shutil.which("tectonic") is None:
         raise SystemExit("tectonic is required to compile paper8_submission_source/main.tex")
     run(["tectonic", "main.tex"], cwd=SOURCE)

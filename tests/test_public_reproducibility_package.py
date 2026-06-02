@@ -43,6 +43,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_morphology_observable_intake_schema.py",
         ROOT / "scripts/run_morphology_observable_gap_audit.py",
         ROOT / "scripts/build_morphology_observable_source_upgrade_plan.py",
+        ROOT / "scripts/build_accepted_observable_manifest_template.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -89,6 +90,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "coverage-rich but acceptance-limited" in source
     assert "morphology-observable source-upgrade plan" in source
     assert "P0 family-label, confidence, caveat, and provenance fields" in source
+    assert "accepted-observable manifest template and validator" in source
+    assert "intentionally endpoint-blocked" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -757,6 +760,31 @@ def test_morphology_observable_source_upgrade_plan_is_claim_bounded():
     assert "not a data source claim" in report
     assert "source replacement, not endpoint redesign" in report
     assert "would still not by itself prove Tau Core" in report
+
+
+def test_accepted_observable_manifest_template_is_endpoint_blocked():
+    template = pd.read_csv(DATA / "accepted_morphology_observable_manifest_template.csv")
+    validation = pd.read_csv(DATA / "accepted_observable_manifest_template_validation.csv")
+    assert len(template) == 175
+    assert "proxy_formula_family_for_scope" in template.columns
+    assert "source_dataset" in template.columns
+    assert template["source_dataset"].eq("TO_BE_FILLED").all()
+    assert template["galaxy"].notna().all()
+    assert template["inclination_deg"].notna().all()
+    formula = validation.loc[validation["field"] == "formula_family"].iloc[0]
+    assert formula["template_validation_status"] == "blocked_missing_required_accepted_source"
+    assert int(formula["n_missing_rows"]) == 175
+    provenance = validation.loc[validation["field"] == "observable_provenance"].iloc[0]
+    assert provenance["template_validation_status"] == "blocked_missing_required_accepted_source"
+    scale = validation.loc[validation["field"] == "scale_radius_kpc"].iloc[0]
+    assert int(scale["n_applicable_rows"]) == 146
+    assert int(scale["n_missing_rows"]) == 146
+    report = (ROOT / "reports" / "accepted_observable_manifest_template_validation.md").read_text(
+        encoding="utf-8"
+    )
+    assert "template is intentionally blocked" in report
+    assert "collection-ready but endpoint-blocked" in report
+    assert "not the proxy manifest" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
