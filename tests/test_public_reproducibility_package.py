@@ -42,6 +42,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_readiness_upgrade_audit.py",
         ROOT / "scripts/build_morphology_observable_intake_schema.py",
         ROOT / "scripts/run_morphology_observable_gap_audit.py",
+        ROOT / "scripts/build_morphology_observable_source_upgrade_plan.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -86,6 +87,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "endpoint-selected radii" in source
     assert "A gap audit compares the proxy manifest" in source
     assert "coverage-rich but acceptance-limited" in source
+    assert "morphology-observable source-upgrade plan" in source
+    assert "P0 family-label, confidence, caveat, and provenance fields" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -725,6 +728,35 @@ def test_morphology_observable_gap_audit_is_claim_bounded():
     assert "coverage-rich but acceptance-limited" in report
     assert "not accepted residual-blind observables yet" in report
     assert "not an endpoint score" in report
+
+
+def test_morphology_observable_source_upgrade_plan_is_claim_bounded():
+    plan = pd.read_csv(DATA / "morphology_observable_source_upgrade_plan.csv")
+    batches = pd.read_csv(DATA / "morphology_observable_collection_batches.csv")
+    required_fields = {
+        "formula_family",
+        "manifest_confidence",
+        "manifest_caveat",
+        "scale_radius_kpc",
+        "observable_provenance",
+    }
+    assert required_fields.issubset(set(plan["field"]))
+    assert {"P0", "P1"}.issubset(set(plan["upgrade_priority"]))
+    formula = plan.loc[plan["field"] == "formula_family"].iloc[0]
+    assert formula["upgrade_priority"] == "P0"
+    assert "required_S_tau" in formula["leak_guard"]
+    scale = plan.loc[plan["field"] == "scale_radius_kpc"].iloc[0]
+    assert scale["upgrade_priority"] == "P1"
+    assert "residual shape" in scale["leak_guard"]
+    assert "B4_blind_endpoint_run" in set(batches["batch"])
+    blind = batches.loc[batches["batch"] == "B4_blind_endpoint_run"].iloc[0]
+    assert "frozen matched-vs-wrong family endpoint" in blind["purpose"]
+    report = (ROOT / "reports" / "morphology_observable_source_upgrade_plan.md").read_text(
+        encoding="utf-8"
+    )
+    assert "not a data source claim" in report
+    assert "source replacement, not endpoint redesign" in report
+    assert "would still not by itself prove Tau Core" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
