@@ -1,0 +1,13 @@
+field,primary_source,secondary_source,fallback_policy,acceptance_check
+formula_family,S4G,DustPedia; NED_NEDD morphology references,leave row diagnostic-only if residual-blind family assignment is ambiguous,family assigned before endpoint scoring with source provenance
+manifest_confidence,source-quality rubric over S4G/NED/DustPedia evidence,manual pre-scoring morphology audit log,low confidence rows remain in caveated/support outputs,confidence threshold frozen before endpoint scoring
+manifest_caveat,geometry/catalog/source-quality caveat log,NED_NEDD distance and inclination provenance,caveat rather than drop unless predeclared exclusion applies,no caveat is based on bad endpoint residual performance
+scale_radius_kpc,S4G,DustPedia,block active-family endpoint row if no accepted scale exists,"positive physical scale, residual-blind method, provenance recorded"
+tail_inner_radius_kpc,S4G profile/decomposition or morphology feature log,DustPedia outer-disk morphology,scale-tail row remains diagnostic-only if transition is not source-defined,positive and <= tail_cutoff_radius_kpc; not chosen from residuals
+tail_cutoff_radius_kpc,S4G outer-disk extent or DustPedia support radius,NED/DustPedia size provenance,scale-tail row remains diagnostic-only if support is not source-defined,positive and >= tail_inner_radius_kpc; not endpoint-selected
+compact_support_radius_kpc,S4G decomposition,DustPedia compact-source morphology,compact row remains proxy-level if no compact support source exists,positive support radius with residual-blind provenance
+thickness_h_over_rs,external vertical/thickness estimate or documented morphology proxy,source-quality caveat if no direct thickness observable exists,thick/flared row is caveated unless thickness proxy is predeclared,positive dimensionless ratio; not endpoint-tuned damping
+ring_radius_kpc,S4G or PHANGS ring/resonance morphology,DustPedia/NED morphology notes,optional branch only; no primary 1D endpoint promotion,not selected from residual peak location
+bar_m2_strength,PHANGS or S4G bar morphology,image morphology caveat only,velocity-field/full-morphology branch only,not inferred from 1D residual asymmetry
+lopsided_m1_strength,PHANGS or external asymmetry morphology,image morphology caveat only,velocity-field/full-morphology branch only,not inferred from 1D residual asymmetry
+observable_provenance,NED_NEDD plus source-specific dataset/method records,manual pre-scoring provenance ledger,row cannot enter claim-ready endpoint without provenance,"dataset, method, and pre-scoring timestamp present"

@@ -46,6 +46,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_accepted_observable_manifest_template.py",
         ROOT / "scripts/run_accepted_manifest_readiness_gate.py",
         ROOT / "scripts/run_frozen_endpoint_launch_guard.py",
+        ROOT / "scripts/build_external_morphology_source_registry.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -98,6 +99,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "BLOCKED\\_ACCEPTED\\_OBSERVABLES\\_MISSING" in source
     assert "frozen-endpoint launch guard" in source
     assert "LAUNCH\\_BLOCKED" in source
+    assert "external morphology source registry" in source
+    assert "S4G is the first morphology/decomposition source" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -839,6 +842,34 @@ def test_frozen_endpoint_launch_guard_blocks_premature_endpoint():
     assert "Launch status: `LAUNCH_BLOCKED`" in report
     assert "endpoint_scores_computed" in report
     assert "not a negative empirical result" in report
+
+
+def test_external_morphology_source_registry_is_acquisition_only():
+    registry = pd.read_csv(DATA / "external_morphology_source_registry.csv")
+    field_map = pd.read_csv(DATA / "morphology_field_source_map.csv")
+    crossmatch = pd.read_csv(DATA / "sparc_external_source_crossmatch_template.csv")
+    expected_sources = {"SPARC", "S4G", "NED_NEDD", "DustPedia", "PHANGS"}
+    assert expected_sources == set(registry["source_id"])
+    s4g = registry.loc[registry["source_id"] == "S4G"].iloc[0]
+    assert s4g["priority"] == "primary_morphology_decomposition"
+    assert "scale_radius_kpc" in s4g["use_for_fields"]
+    phangs = registry.loc[registry["source_id"] == "PHANGS"].iloc[0]
+    assert "optional" in phangs["priority"]
+    assert {"formula_family", "scale_radius_kpc", "observable_provenance"}.issubset(
+        set(field_map["field"])
+    )
+    scale = field_map.loc[field_map["field"] == "scale_radius_kpc"].iloc[0]
+    assert scale["primary_source"] == "S4G"
+    assert len(crossmatch) == 175
+    assert crossmatch["sparc_present"].all()
+    assert crossmatch["s4g_match_status"].eq("TO_BE_CHECKED").all()
+    assert crossmatch["accepted_observable_collection_status"].eq("NOT_STARTED").all()
+    report = (ROOT / "reports" / "external_morphology_source_registry.md").read_text(
+        encoding="utf-8"
+    )
+    assert "source-acquisition plan and crossmatch template" in report
+    assert "not accepted-source coverage yet" in report or "TO_BE_CHECKED" in report
+    assert "would not by itself compute endpoint scores" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
