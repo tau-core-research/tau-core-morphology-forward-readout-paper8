@@ -1,0 +1,16 @@
+predeclared_formula_family,rotation_inferred_family,n_galaxies,n_matches_predeclared,median_margin
+K_compact_finite,K_compact_finite,14,14,3.2431763237671145
+K_compact_finite,K_exponential_disk,12,0,0.5038156240544343
+K_compact_finite,K_scale_tail_spiral,3,0,0.05422678241290235
+K_exponential_disk,K_compact_finite,2,0,3.647914266765147
+K_exponential_disk,K_exponential_disk,10,10,1.0435748431508083
+K_exponential_disk,K_scale_tail_spiral,16,0,2.9420036612747635
+K_exponential_disk,K_thick_flared,4,0,0.2081726057966975
+K_scale_tail_spiral,K_compact_finite,2,0,2.6088141967343352
+K_scale_tail_spiral,K_exponential_disk,32,0,1.301843198115415
+K_scale_tail_spiral,K_scale_tail_spiral,34,34,3.354007787117899
+K_scale_tail_spiral,K_thick_flared,12,0,0.4203332293829978
+K_thick_flared,K_compact_finite,3,0,4.317158010285873
+K_thick_flared,K_exponential_disk,17,0,0.9879766843570224
+K_thick_flared,K_scale_tail_spiral,10,0,1.418124146473049
+K_thick_flared,K_thick_flared,4,4,0.18761572192056208

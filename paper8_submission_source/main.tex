@@ -314,6 +314,8 @@ For diagnostic purposes, the package also runs an explicitly labeled narrow dry-
 
 A final failure/sensitivity audit varies only the accepted scale radius by fixed multipliers 0.75, 1.0, and 1.25 under the leave-one-galaxy-out amplitude policy. The strict lane remains mixed across these multipliers, indicating that the current failure mode is unlikely to be solved by a single radius rescaling alone. The next refinement should therefore test morphology-subtype splitting or readout normalization rather than treating the scale radius as the only missing ingredient.
 
+The package also records the corresponding inverse diagnostic: which morphology family would be inferred if the rotation-curve score table itself selected the readout family. This diagnostic is not residual-blind and is not allowed to define the accepted Paper 8 morphology labels. In the current run, the rotation-inferred family matches the predeclared proxy family in about 0.354 of rows, and matches the external S4G-supported exponential-disk label in about 0.308 of the 13 audited rows. This low agreement is not a validation result; it is a hypothesis-generation signal that the current external morphology labels and the rotation-preferred readout families may require subtype splitting.
+
 \section{Conclusion}
 
 Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:

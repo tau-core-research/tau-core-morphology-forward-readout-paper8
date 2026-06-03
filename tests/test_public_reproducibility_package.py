@@ -53,6 +53,7 @@ def test_publication_files_exist():
         ROOT / "scripts/audit_exponential_disk_family_labels.py",
         ROOT / "scripts/run_exponential_disk_narrow_dry_run.py",
         ROOT / "scripts/audit_exponential_disk_failure_sensitivity.py",
+        ROOT / "scripts/run_rotation_inferred_morphology_diagnostic.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -122,6 +123,9 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "leave-one-galaxy-out all-13 policy beats TPG/v6 in 3/6 strict cases" in source
     assert "fixed multipliers 0.75, 1.0, and 1.25" in source
     assert "unlikely to be solved by a single radius rescaling alone" in source
+    assert "rotation-inferred family matches the predeclared proxy family in about 0.354" in source
+    assert "matches the external S4G-supported exponential-disk label in about 0.308" in source
+    assert "not allowed to define the accepted Paper 8 morphology labels" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1126,6 +1130,34 @@ def test_exponential_disk_failure_sensitivity_is_mixed():
     ).read_text(encoding="utf-8")
     assert "strict lane remains mixed" in report
     assert "not an endpoint score" in report
+
+
+def test_rotation_inferred_morphology_is_inverse_diagnostic_only():
+    diagnostic = pd.read_csv(DATA / "rotation_inferred_morphology_diagnostic.csv")
+    summary = pd.read_csv(DATA / "rotation_inferred_morphology_summary.csv")
+    external = pd.read_csv(DATA / "rotation_inferred_external_expdisk_summary.csv")
+    assert len(diagnostic) == 175
+    assert abs(float(diagnostic["matches_predeclared_family"].mean()) - 62 / 175) < 1.0e-12
+    expdisk = diagnostic.loc[diagnostic["external_family_label"].notna()]
+    assert len(expdisk) == 13
+    assert abs(float(expdisk["matches_external_expdisk_label"].mean()) - 4 / 13) < 1.0e-12
+    assert "inverse_rotation_diagnostic_not_residual_blind_label_not_endpoint" in set(
+        diagnostic["claim_boundary"]
+    )
+    assert {
+        "K_compact_finite",
+        "K_scale_tail_spiral",
+        "K_exponential_disk",
+        "K_thick_flared",
+    }.issubset(set(diagnostic["rotation_inferred_family"]))
+    assert not summary.empty
+    assert not external.empty
+    report = (
+        ROOT / "reports" / "rotation_inferred_morphology_diagnostic.md"
+    ).read_text(encoding="utf-8")
+    assert "hypothesis generator only" in report
+    assert "not residual-blind" in report
+    assert "must not be used as accepted morphology evidence" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

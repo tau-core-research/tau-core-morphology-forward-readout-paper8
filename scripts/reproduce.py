@@ -59,6 +59,7 @@ def main() -> None:
     run([sys.executable, "scripts/audit_exponential_disk_family_labels.py"])
     run([sys.executable, "scripts/run_exponential_disk_narrow_dry_run.py"])
     run([sys.executable, "scripts/audit_exponential_disk_failure_sensitivity.py"])
+    run([sys.executable, "scripts/run_rotation_inferred_morphology_diagnostic.py"])
     if shutil.which("tectonic") is None:
         raise SystemExit("tectonic is required to compile paper8_submission_source/main.tex")
     run(["tectonic", "main.tex"], cwd=SOURCE)
