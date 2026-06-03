@@ -1,4 +1,7 @@
 amplitude_policy,beta_delta_v2_amplitude,fit_scope,overfit_diagnostic
 frozen_global_train_beta,-1003.8829388432548,full Paper 8 train split from source-native formula preflight,False
+shrink_global_to_all13_0_25,-698.3889393680995,25 percent all13 pool beta blended with 75 percent frozen global beta,True
+shrink_global_to_all13_0_50,-392.8949398929444,50 percent all13 pool beta blended with 50 percent frozen global beta,True
 pool_fit_beta_all13,218.093059057366,all 13 audited exponential-disk rows,True
 pool_fit_beta_strict6,3607.069971851181,6 strict S4G expdisk-supported rows,True
+leave_one_galaxy_out_beta_all13,,all13 pool refit excluding the scored galaxy,True

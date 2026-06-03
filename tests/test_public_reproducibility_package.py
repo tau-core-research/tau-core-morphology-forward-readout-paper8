@@ -118,6 +118,7 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "narrow dry-run" in source
     assert "beats TPG/v6 in 4/6 cases" in source
     assert "beats MOND in only 2/6 cases" in source
+    assert "leave-one-galaxy-out all-13 policy beats TPG/v6 in 3/6 strict cases" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1050,8 +1051,11 @@ def test_exponential_disk_narrow_dry_run_is_mixed_and_claim_bounded():
     assert points["galaxy"].nunique() == 13
     assert set(amplitudes["amplitude_policy"]) == {
         "frozen_global_train_beta",
+        "shrink_global_to_all13_0_25",
+        "shrink_global_to_all13_0_50",
         "pool_fit_beta_all13",
         "pool_fit_beta_strict6",
+        "leave_one_galaxy_out_beta_all13",
     }
     assert amplitudes.loc[
         amplitudes["amplitude_policy"] == "frozen_global_train_beta",
@@ -1073,6 +1077,12 @@ def test_exponential_disk_narrow_dry_run_is_mixed_and_claim_bounded():
         & (summary["amplitude_policy"] == "frozen_global_train_beta")
     ].iloc[0]
     assert abs(float(strict_frozen["beats_tpg_v6_fraction"]) - 1 / 6) < 1.0e-12
+    strict_loo = summary.loc[
+        (summary["narrow_dry_run_lane"] == "STRICT_NARROW_DRY_RUN_READY_CANDIDATE")
+        & (summary["amplitude_policy"] == "leave_one_galaxy_out_beta_all13")
+    ].iloc[0]
+    assert abs(float(strict_loo["beats_tpg_v6_fraction"]) - 3 / 6) < 1.0e-12
+    assert abs(float(strict_loo["beats_mond_fraction"]) - 2 / 6) < 1.0e-12
     assert "narrow_dry_run_diagnostic_not_frozen_endpoint_not_validation" in set(
         summary["claim_boundary"]
     )
@@ -1080,7 +1090,8 @@ def test_exponential_disk_narrow_dry_run_is_mixed_and_claim_bounded():
         encoding="utf-8"
     )
     assert "not the frozen Paper 8 endpoint" in report
-    assert "pool-fit amplitudes are overfit diagnostics" in report
+    assert "leave-one-galaxy-out all13 policy beats" in report
+    assert "policy is a stability check" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

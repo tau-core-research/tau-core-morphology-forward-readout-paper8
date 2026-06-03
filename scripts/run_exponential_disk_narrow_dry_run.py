@@ -44,6 +44,53 @@ def fit_beta_delta_v2(points: pd.DataFrame) -> float:
     return float((target * kernel).sum() / den) if den else 0.0
 
 
+def build_amplitudes(points: pd.DataFrame, frozen_beta: float) -> pd.DataFrame:
+    strict_points = points[
+        points["narrow_dry_run_lane"] == "STRICT_NARROW_DRY_RUN_READY_CANDIDATE"
+    ]
+    all13_beta = fit_beta_delta_v2(points)
+    strict6_beta = fit_beta_delta_v2(strict_points)
+    amp_rows = [
+        {
+            "amplitude_policy": "frozen_global_train_beta",
+            "beta_delta_v2_amplitude": frozen_beta,
+            "fit_scope": "full Paper 8 train split from source-native formula preflight",
+            "overfit_diagnostic": False,
+        },
+        {
+            "amplitude_policy": "shrink_global_to_all13_0_25",
+            "beta_delta_v2_amplitude": 0.75 * frozen_beta + 0.25 * all13_beta,
+            "fit_scope": "25 percent all13 pool beta blended with 75 percent frozen global beta",
+            "overfit_diagnostic": True,
+        },
+        {
+            "amplitude_policy": "shrink_global_to_all13_0_50",
+            "beta_delta_v2_amplitude": 0.50 * frozen_beta + 0.50 * all13_beta,
+            "fit_scope": "50 percent all13 pool beta blended with 50 percent frozen global beta",
+            "overfit_diagnostic": True,
+        },
+        {
+            "amplitude_policy": "pool_fit_beta_all13",
+            "beta_delta_v2_amplitude": all13_beta,
+            "fit_scope": "all 13 audited exponential-disk rows",
+            "overfit_diagnostic": True,
+        },
+        {
+            "amplitude_policy": "pool_fit_beta_strict6",
+            "beta_delta_v2_amplitude": strict6_beta,
+            "fit_scope": "6 strict S4G expdisk-supported rows",
+            "overfit_diagnostic": True,
+        },
+        {
+            "amplitude_policy": "leave_one_galaxy_out_beta_all13",
+            "beta_delta_v2_amplitude": np.nan,
+            "fit_scope": "all13 pool refit excluding the scored galaxy",
+            "overfit_diagnostic": True,
+        },
+    ]
+    return pd.DataFrame(amp_rows)
+
+
 def load_scored_points() -> tuple[pd.DataFrame, pd.DataFrame]:
     points_path = TPG_RESULTS / "tau_rotation_curve_frozen_proxy_runner_v0_points.csv"
     if not points_path.exists():
@@ -75,30 +122,7 @@ def load_scored_points() -> tuple[pd.DataFrame, pd.DataFrame]:
             "beta_delta_v2_amplitude",
         ].iloc[0]
     )
-    strict_points = points[
-        points["narrow_dry_run_lane"] == "STRICT_NARROW_DRY_RUN_READY_CANDIDATE"
-    ]
-    amp_rows = [
-        {
-            "amplitude_policy": "frozen_global_train_beta",
-            "beta_delta_v2_amplitude": frozen_beta,
-            "fit_scope": "full Paper 8 train split from source-native formula preflight",
-            "overfit_diagnostic": False,
-        },
-        {
-            "amplitude_policy": "pool_fit_beta_all13",
-            "beta_delta_v2_amplitude": fit_beta_delta_v2(points),
-            "fit_scope": "all 13 audited exponential-disk rows",
-            "overfit_diagnostic": True,
-        },
-        {
-            "amplitude_policy": "pool_fit_beta_strict6",
-            "beta_delta_v2_amplitude": fit_beta_delta_v2(strict_points),
-            "fit_scope": "6 strict S4G expdisk-supported rows",
-            "overfit_diagnostic": True,
-        },
-    ]
-    return points, pd.DataFrame(amp_rows)
+    return points, build_amplitudes(points, frozen_beta)
 
 
 def add_predictions(points: pd.DataFrame, amplitudes: pd.DataFrame) -> pd.DataFrame:
@@ -106,8 +130,21 @@ def add_predictions(points: pd.DataFrame, amplitudes: pd.DataFrame) -> pd.DataFr
     base_v2 = scored["v_v6"].pow(2)
     for _, amp in amplitudes.iterrows():
         policy = amp["amplitude_policy"]
+        if policy == "leave_one_galaxy_out_beta_all13":
+            scored[f"beta_delta_v2_{policy}"] = np.nan
+            scored[f"v_tau_exp_disk_{policy}"] = np.nan
+            for galaxy, idx in scored.groupby("galaxy").groups.items():
+                train = scored.loc[scored["galaxy"] != galaxy]
+                beta = fit_beta_delta_v2(train)
+                pred_v2 = base_v2.loc[idx] + beta * scored.loc[idx, "accepted_exp_disk_kernel"]
+                scored.loc[idx, f"beta_delta_v2_{policy}"] = beta
+                scored.loc[idx, f"v_tau_exp_disk_{policy}"] = np.sqrt(
+                    np.maximum(pred_v2, 0.0)
+                )
+            continue
         beta = float(amp["beta_delta_v2_amplitude"])
         pred_v2 = base_v2 + beta * scored["accepted_exp_disk_kernel"]
+        scored[f"beta_delta_v2_{policy}"] = beta
         scored[f"v_tau_exp_disk_{policy}"] = np.sqrt(np.maximum(pred_v2, 0.0))
     return scored
 
@@ -129,6 +166,7 @@ def score_by_galaxy(scored: pd.DataFrame, amplitudes: pd.DataFrame) -> pd.DataFr
             col = f"v_tau_exp_disk_{policy}"
             value = rmse(sub[col], sub["vobs"])
             row[f"rmse_tau_exp_disk_{policy}"] = value
+            row[f"beta_delta_v2_{policy}"] = float(sub[f"beta_delta_v2_{policy}"].iloc[0])
             row[f"tau_exp_disk_{policy}_minus_tpg_v6"] = value - row["rmse_tpg_v6"]
             row[f"tau_exp_disk_{policy}_minus_mond"] = value - row["rmse_mond"]
             row[f"tau_exp_disk_{policy}_beats_tpg_v6"] = value < row["rmse_tpg_v6"]
@@ -222,6 +260,10 @@ def write_report(scores: pd.DataFrame, summary: pd.DataFrame, amplitudes: pd.Dat
         "",
         "The calculation is now executable on the audited rows. Interpret it only as",
         "a dry-run sanity check of the accepted-scale exponential-disk lane.",
+        "The refined amplitude audit adds shrinkage and leave-one-galaxy-out policies.",
+        "On the strict six-row lane, the leave-one-galaxy-out all13 policy beats",
+        "TPG/v6 in 3/6 cases and MOND in 2/6 cases. This is more stable than a pure",
+        "pool-fit claim, but it is still not strong enough for an endpoint claim.",
         "",
         "Strict-lane summary:",
         "",
@@ -243,8 +285,8 @@ def write_report(scores: pd.DataFrame, summary: pd.DataFrame, amplitudes: pd.Dat
         "",
         "This dry-run is not an endpoint score, not a validation of Tau Core, and not",
         "a claim of superiority over MOND, RAR, TGP, or Newtonian baselines. The",
-        "pool-fit amplitudes are overfit diagnostics; the frozen-global amplitude is",
-        "the only non-pool-fit comparison in this report.",
+        "pool-fit and shrinkage amplitudes are diagnostics; the leave-one-galaxy-out",
+        "policy is a stability check, not a discovery endpoint.",
     ]
     (REPORTS / "exponential_disk_narrow_dry_run.md").write_text(
         "\n".join(lines) + "\n", encoding="utf-8"

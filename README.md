@@ -864,7 +864,10 @@ This dry-run applies the accepted-scale exponential-disk Freeman/Bessel shell to
 the 13 S4G-supported rows. The current result is mixed: on the 6 strict rows,
 the pool-fit all-13 amplitude beats TPG/v6 in 4/6 cases but beats MOND in only
 2/6 cases, while the frozen global train amplitude beats TPG/v6 in 1/6 cases.
-This is a useful executable sanity check, not a validation result.
+The refined amplitude audit adds shrinkage and leave-one-galaxy-out policies;
+the leave-one-galaxy-out all-13 policy beats TPG/v6 in 3/6 strict cases and
+MOND in 2/6 strict cases. This is a useful executable sanity check, not a
+validation result.
 
 ## arXiv Source Package
 
