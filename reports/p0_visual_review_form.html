@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paper 8 P0 Visual Review Template</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f6f6f2;
+      color: #1f2933;
+    }
+    main {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    h1 { margin: 0 0 8px; font-size: 30px; }
+    .notice { max-width: 980px; line-height: 1.5; margin: 0 0 24px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #d9d9d0;
+      border-radius: 8px;
+      padding: 18px;
+    }
+    h2 { margin: 0 0 4px; font-size: 22px; }
+    header p { margin: 0 0 14px; color: #52616b; line-height: 1.4; }
+    h3 { margin: 18px 0 10px; font-size: 14px; text-transform: uppercase; color: #52616b; }
+    .panels {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+    figure { margin: 0; border: 1px solid #e3e3dc; border-radius: 6px; overflow: hidden; background: #fafaf7; }
+    img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+    figcaption { font-size: 12px; padding: 6px; color: #52616b; }
+    .fields { display: grid; gap: 10px; }
+    label span { display: block; font-weight: 600; font-size: 13px; }
+    small { color: #667085; font-weight: 500; }
+    textarea {
+      width: 100%;
+      min-height: 36px;
+      resize: vertical;
+      border: 1px solid #d7d7d0;
+      border-radius: 6px;
+      padding: 8px;
+      box-sizing: border-box;
+      background: #fbfbf8;
+    }
+    em { display: block; margin-top: 3px; color: #667085; font-size: 12px; font-style: normal; line-height: 1.35; }
+    footer { margin-top: 24px; color: #52616b; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Paper 8 P0 Visual Review Template</h1>
+    <p class="notice">
+      This form embeds the P0 SkyView preview panels for residual-blind human review.
+      It is a template only: all review fields remain <code>TO_BE_FILLED_RESIDUAL_BLIND</code>.
+      It does not produce accepted morphology labels, does not classify images,
+      and does not compute endpoint scores. Claim boundary:
+      <code>p0_visual_review_template_not_accepted_label_not_endpoint</code>.
+    </p>
+    <div class="grid">
+      
+            <section class="card">
+              <header>
+                <h2>NGC0100</h2>
+                <p>edge_on_projection_degeneracy;outer_disk_tail_lsb_or_hi_extent</p>
+              </header>
+              <div class="panels">
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0100_2MASS_K.png" alt="NGC0100 2MASS K" />
+              <figcaption>NGC0100 2MASS K</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0100_DSS2_Red.png" alt="NGC0100 DSS2 Red" />
+              <figcaption>NGC0100 DSS2 Red</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0100_WISE_3_4.png" alt="NGC0100 WISE 3 4" />
+              <figcaption>NGC0100 WISE 3 4</figcaption>
+            </figure>
+            </div>
+              <h3>Residual-Blind Review Fields</h3>
+              <div class="fields">
+            <label>
+              <span>reviewer_id <small>text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Reviewer identifier. Must be filled before any endpoint score is inspected.</em>
+            </label>
+            
+
+            <label>
+              <span>review_timestamp_utc <small>datetime</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>UTC timestamp of the residual-blind visual review.</em>
+            </label>
+            
+
+            <label>
+              <span>present_day_morphology_label <small>controlled_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Residual-blind present-day morphology label from images/catalogues only.</em>
+            </label>
+            
+
+            <label>
+              <span>outer_disk_lsb_tail_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for outer disk, low-surface-brightness extension, scale tail, or diffuse outskirts.</em>
+            </label>
+            
+
+            <label>
+              <span>hi_extent_or_asymmetry_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence from HI extent/asymmetry sources when available.</em>
+            </label>
+            
+
+            <label>
+              <span>bar_m2_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for bar or m=2 structure. Velocity-field support should be noted separately.</em>
+            </label>
+            
+
+            <label>
+              <span>edge_projection_caveat <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Inclination, edge-on, or projection caveat affecting visual morphology.</em>
+            </label>
+            
+
+            <label>
+              <span>vertical_flare_warp_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for thick, flared, warped, or vertically extended disk structure.</em>
+            </label>
+            
+
+            <label>
+              <span>compact_bulge_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for compact source, central concentration, or bulge-dominated support.</em>
+            </label>
+            
+
+            <label>
+              <span>ring_resonance_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for ring or resonance morphology.</em>
+            </label>
+            
+
+            <label>
+              <span>morphological_memory_history_proxy_judgment <small>controlled_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Residual-blind judgment about whether current morphology may be an incomplete proxy for readout-relevant history.</em>
+            </label>
+            
+
+            <label>
+              <span>review_confidence <small>low_medium_high</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Reviewer confidence based on source quality, not endpoint performance.</em>
+            </label>
+            
+
+            <label>
+              <span>residual_blind_family_recommendation <small>controlled_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Candidate morphology-readout family recommendation for future endpoint use; must not use residuals.</em>
+            </label>
+            
+
+            <label>
+              <span>review_sources_used <small>semicolon_list</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Source panels/catalogues used by the reviewer.</em>
+            </label>
+            
+
+            <label>
+              <span>review_notes <small>free_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Short residual-blind notes and caveats.</em>
+            </label>
+            </div>
+            </section>
+            
+            <section class="card">
+              <header>
+                <h2>NGC0247</h2>
+                <p>bar_m2_component;outer_disk_tail_lsb_or_hi_extent</p>
+              </header>
+              <div class="panels">
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0247_2MASS_K.png" alt="NGC0247 2MASS K" />
+              <figcaption>NGC0247 2MASS K</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0247_DSS2_Red.png" alt="NGC0247 DSS2 Red" />
+              <figcaption>NGC0247 DSS2 Red</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0247_WISE_3_4.png" alt="NGC0247 WISE 3 4" />
+              <figcaption>NGC0247 WISE 3 4</figcaption>
+            </figure>
+            </div>
+              <h3>Residual-Blind Review Fields</h3>
+              <div class="fields">
+            <label>
+              <span>reviewer_id <small>text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Reviewer identifier. Must be filled before any endpoint score is inspected.</em>
+            </label>
+            
+
+            <label>
+              <span>review_timestamp_utc <small>datetime</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>UTC timestamp of the residual-blind visual review.</em>
+            </label>
+            
+
+            <label>
+              <span>present_day_morphology_label <small>controlled_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Residual-blind present-day morphology label from images/catalogues only.</em>
+            </label>
+            
+
+            <label>
+              <span>outer_disk_lsb_tail_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for outer disk, low-surface-brightness extension, scale tail, or diffuse outskirts.</em>
+            </label>
+            
+
+            <label>
+              <span>hi_extent_or_asymmetry_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence from HI extent/asymmetry sources when available.</em>
+            </label>
+            
+
+            <label>
+              <span>bar_m2_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for bar or m=2 structure. Velocity-field support should be noted separately.</em>
+            </label>
+            
+
+            <label>
+              <span>edge_projection_caveat <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Inclination, edge-on, or projection caveat affecting visual morphology.</em>
+            </label>
+            
+
+            <label>
+              <span>vertical_flare_warp_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for thick, flared, warped, or vertically extended disk structure.</em>
+            </label>
+            
+
+            <label>
+              <span>compact_bulge_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for compact source, central concentration, or bulge-dominated support.</em>
+            </label>
+            
+
+            <label>
+              <span>ring_resonance_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for ring or resonance morphology.</em>
+            </label>
+            
+
+            <label>
+              <span>morphological_memory_history_proxy_judgment <small>controlled_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Residual-blind judgment about whether current morphology may be an incomplete proxy for readout-relevant history.</em>
+            </label>
+            
+
+            <label>
+              <span>review_confidence <small>low_medium_high</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Reviewer confidence based on source quality, not endpoint performance.</em>
+            </label>
+            
+
+            <label>
+              <span>residual_blind_family_recommendation <small>controlled_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Candidate morphology-readout family recommendation for future endpoint use; must not use residuals.</em>
+            </label>
+            
+
+            <label>
+              <span>review_sources_used <small>semicolon_list</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Source panels/catalogues used by the reviewer.</em>
+            </label>
+            
+
+            <label>
+              <span>review_notes <small>free_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Short residual-blind notes and caveats.</em>
+            </label>
+            </div>
+            </section>
+            
+            <section class="card">
+              <header>
+                <h2>NGC0300</h2>
+                <p>outer_disk_tail_lsb_or_hi_extent</p>
+              </header>
+              <div class="panels">
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0300_2MASS_K.png" alt="NGC0300 2MASS K" />
+              <figcaption>NGC0300 2MASS K</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0300_DSS2_Red.png" alt="NGC0300 DSS2 Red" />
+              <figcaption>NGC0300 DSS2 Red</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0300_WISE_3_4.png" alt="NGC0300 WISE 3 4" />
+              <figcaption>NGC0300 WISE 3 4</figcaption>
+            </figure>
+            </div>
+              <h3>Residual-Blind Review Fields</h3>
+              <div class="fields">
+            <label>
+              <span>reviewer_id <small>text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Reviewer identifier. Must be filled before any endpoint score is inspected.</em>
+            </label>
+            
+
+            <label>
+              <span>review_timestamp_utc <small>datetime</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>UTC timestamp of the residual-blind visual review.</em>
+            </label>
+            
+
+            <label>
+              <span>present_day_morphology_label <small>controlled_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Residual-blind present-day morphology label from images/catalogues only.</em>
+            </label>
+            
+
+            <label>
+              <span>outer_disk_lsb_tail_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for outer disk, low-surface-brightness extension, scale tail, or diffuse outskirts.</em>
+            </label>
+            
+
+            <label>
+              <span>hi_extent_or_asymmetry_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence from HI extent/asymmetry sources when available.</em>
+            </label>
+            
+
+            <label>
+              <span>bar_m2_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for bar or m=2 structure. Velocity-field support should be noted separately.</em>
+            </label>
+            
+
+            <label>
+              <span>edge_projection_caveat <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Inclination, edge-on, or projection caveat affecting visual morphology.</em>
+            </label>
+            
+
+            <label>
+              <span>vertical_flare_warp_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for thick, flared, warped, or vertically extended disk structure.</em>
+            </label>
+            
+
+            <label>
+              <span>compact_bulge_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for compact source, central concentration, or bulge-dominated support.</em>
+            </label>
+            
+
+            <label>
+              <span>ring_resonance_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for ring or resonance morphology.</em>
+            </label>
+            
+
+            <label>
+              <span>morphological_memory_history_proxy_judgment <small>controlled_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Residual-blind judgment about whether current morphology may be an incomplete proxy for readout-relevant history.</em>
+            </label>
+            
+
+            <label>
+              <span>review_confidence <small>low_medium_high</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Reviewer confidence based on source quality, not endpoint performance.</em>
+            </label>
+            
+
+            <label>
+              <span>residual_blind_family_recommendation <small>controlled_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Candidate morphology-readout family recommendation for future endpoint use; must not use residuals.</em>
+            </label>
+            
+
+            <label>
+              <span>review_sources_used <small>semicolon_list</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Source panels/catalogues used by the reviewer.</em>
+            </label>
+            
+
+            <label>
+              <span>review_notes <small>free_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Short residual-blind notes and caveats.</em>
+            </label>
+            </div>
+            </section>
+            
+            <section class="card">
+              <header>
+                <h2>NGC6503</h2>
+                <p>outer_disk_tail_lsb_or_hi_extent</p>
+              </header>
+              <div class="panels">
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC6503_2MASS_K.png" alt="NGC6503 2MASS K" />
+              <figcaption>NGC6503 2MASS K</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC6503_DSS2_Red.png" alt="NGC6503 DSS2 Red" />
+              <figcaption>NGC6503 DSS2 Red</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC6503_WISE_3_4.png" alt="NGC6503 WISE 3 4" />
+              <figcaption>NGC6503 WISE 3 4</figcaption>
+            </figure>
+            </div>
+              <h3>Residual-Blind Review Fields</h3>
+              <div class="fields">
+            <label>
+              <span>reviewer_id <small>text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Reviewer identifier. Must be filled before any endpoint score is inspected.</em>
+            </label>
+            
+
+            <label>
+              <span>review_timestamp_utc <small>datetime</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>UTC timestamp of the residual-blind visual review.</em>
+            </label>
+            
+
+            <label>
+              <span>present_day_morphology_label <small>controlled_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Residual-blind present-day morphology label from images/catalogues only.</em>
+            </label>
+            
+
+            <label>
+              <span>outer_disk_lsb_tail_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for outer disk, low-surface-brightness extension, scale tail, or diffuse outskirts.</em>
+            </label>
+            
+
+            <label>
+              <span>hi_extent_or_asymmetry_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence from HI extent/asymmetry sources when available.</em>
+            </label>
+            
+
+            <label>
+              <span>bar_m2_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for bar or m=2 structure. Velocity-field support should be noted separately.</em>
+            </label>
+            
+
+            <label>
+              <span>edge_projection_caveat <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Inclination, edge-on, or projection caveat affecting visual morphology.</em>
+            </label>
+            
+
+            <label>
+              <span>vertical_flare_warp_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for thick, flared, warped, or vertically extended disk structure.</em>
+            </label>
+            
+
+            <label>
+              <span>compact_bulge_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for compact source, central concentration, or bulge-dominated support.</em>
+            </label>
+            
+
+            <label>
+              <span>ring_resonance_evidence <small>yes_no_uncertain</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Evidence for ring or resonance morphology.</em>
+            </label>
+            
+
+            <label>
+              <span>morphological_memory_history_proxy_judgment <small>controlled_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Residual-blind judgment about whether current morphology may be an incomplete proxy for readout-relevant history.</em>
+            </label>
+            
+
+            <label>
+              <span>review_confidence <small>low_medium_high</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Reviewer confidence based on source quality, not endpoint performance.</em>
+            </label>
+            
+
+            <label>
+              <span>residual_blind_family_recommendation <small>controlled_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Candidate morphology-readout family recommendation for future endpoint use; must not use residuals.</em>
+            </label>
+            
+
+            <label>
+              <span>review_sources_used <small>semicolon_list</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Source panels/catalogues used by the reviewer.</em>
+            </label>
+            
+
+            <label>
+              <span>review_notes <small>free_text</small></span>
+              <textarea placeholder="TO_BE_FILLED_RESIDUAL_BLIND"></textarea>
+              <em>Short residual-blind notes and caveats.</em>
+            </label>
+            </div>
+            </section>
+            
+    </div>
+    <footer>
+      Forbidden inputs: endpoint residual gain; required-S_tau diagnostic as a label input; best-fit Tau Core readout family; MOND/RAR/TGP comparison score; post-hoc family switching after endpoint scoring.
+    </footer>
+  </main>
+</body>
+</html>

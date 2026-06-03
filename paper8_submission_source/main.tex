@@ -330,6 +330,8 @@ A final source-availability preflight queries SkyView for DSS2 Red, 2MASS-K, and
 
 The package then renders these available SkyView sources into 12 local PNG preview panels, one for each P0 galaxy--survey pair. All previews render successfully at 300 by 300 pixels. These previews are included only as review source material for a future residual-blind human morphology audit; no automated image classification, accepted label, or endpoint score is emitted.
 
+The rendered panels are then assembled into a residual-blind visual review template. In this layer all review fields remain unfilled placeholders, and the package records the field schema needed for a future accepted morphology manifest: present-day morphology, outer-disk/LSB/tail evidence, HI asymmetry evidence, bar or $m=2$ support, projection caveats, vertical/flare/warp evidence, compact/bulge support, ring/resonance evidence, a morphological memory/history proxy judgment, reviewer confidence, source list, and a residual-blind family recommendation. The template is not yet an accepted manifest; endpoint residual gains, required-$S_\tau$ diagnostics, best-fit readout families, MOND/RAR/TGP comparison scores, and post-hoc family switching remain forbidden inputs.
+
 \section{Conclusion}
 
 Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:

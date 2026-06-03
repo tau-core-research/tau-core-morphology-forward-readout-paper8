@@ -61,6 +61,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_p0_external_imaging_review_dashboard.py",
         ROOT / "scripts/audit_p0_skyview_availability.py",
         ROOT / "scripts/acquire_p0_skyview_preview_images.py",
+        ROOT / "scripts/build_p0_visual_review_template.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -159,6 +160,9 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "12 local PNG preview panels" in source
     assert "300 by 300 pixels" in source
     assert "no automated image classification, accepted label, or endpoint score is emitted" in source
+    assert "residual-blind visual review template" in source
+    assert "morphological memory/history proxy judgment" in source
+    assert "all review fields remain unfilled placeholders" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1392,6 +1396,58 @@ def test_p0_skyview_preview_images_are_source_material_only():
     assert "not image classifications" in report
     assert "No image classification is performed" in report
     assert "No endpoint score is computed" in report
+
+
+def test_p0_visual_review_template_is_blank_and_residual_blind():
+    template = pd.read_csv(DATA / "p0_visual_review_template.csv")
+    schema = pd.read_csv(DATA / "p0_visual_review_field_schema.csv")
+    assert len(template) == 4
+    assert set(template["galaxy"]) == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert (template["inspection_priority_tier"] == "P0").all()
+    assert (template["preview_surveys_available"] == "2MASS-K;DSS2 Red;WISE 3.4").all()
+    assert not template["accepted_label_output_allowed"].any()
+    assert not template["endpoint_scores_allowed"].any()
+    assert not template["image_classification_performed"].any()
+    assert "p0_visual_review_template_not_accepted_label_not_endpoint" in set(
+        template["claim_boundary"]
+    )
+    review_fields = [
+        "reviewer_id",
+        "review_timestamp_utc",
+        "present_day_morphology_label",
+        "outer_disk_lsb_tail_evidence",
+        "hi_extent_or_asymmetry_evidence",
+        "bar_m2_evidence",
+        "edge_projection_caveat",
+        "vertical_flare_warp_evidence",
+        "compact_bulge_evidence",
+        "ring_resonance_evidence",
+        "morphological_memory_history_proxy_judgment",
+        "review_confidence",
+        "residual_blind_family_recommendation",
+        "review_sources_used",
+        "review_notes",
+    ]
+    for field in review_fields:
+        assert (template[field] == "TO_BE_FILLED_RESIDUAL_BLIND").all()
+    assert set(schema["field"]) == set(review_fields)
+    assert (schema["initial_value"] == "TO_BE_FILLED_RESIDUAL_BLIND").all()
+    assert schema["residual_blind_required"].all()
+    assert not schema["may_use_endpoint_scores"].any()
+
+    report = (ROOT / "reports" / "p0_visual_review_template.md").read_text(
+        encoding="utf-8"
+    )
+    assert "not an accepted morphology manifest" in report
+    assert "not an endpoint score" in report
+    assert "required-S_tau" in report
+    form = (ROOT / "reports" / "p0_visual_review_form.html").read_text(encoding="utf-8")
+    for galaxy in ["NGC0100", "NGC0247", "NGC0300", "NGC6503"]:
+        assert galaxy in form
+    assert "p0_skyview_previews" in form
+    assert "morphological_memory_history_proxy_judgment" in form
+    assert "Forbidden inputs" in form
+    assert "does not compute endpoint scores" in form
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

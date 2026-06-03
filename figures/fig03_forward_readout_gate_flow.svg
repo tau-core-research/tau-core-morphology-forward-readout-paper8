@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-06-03T08:19:27.799069</dc:date>
+    <dc:date>2026-06-03T08:30:43.325386</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -31,7 +31,7 @@ z
   <g id="axes_1">
    <g id="PathCollection_1">
     <defs>
-     <path id="mc6cf5aa64a" d="M 0 11.401754
+     <path id="m837ec538ed" d="M 0 11.401754
 C 3.023781 11.401754 5.924122 10.200393 8.062258 8.062258
 C 10.200393 5.924122 11.401754 3.023781 11.401754 0
 C 11.401754 -3.023781 10.200393 -5.924122 8.062258 -8.062258
@@ -43,13 +43,13 @@ C -5.924122 10.200393 -3.023781 11.401754 0 11.401754
 z
 " style="stroke: #457b9d"/>
     </defs>
-    <g clip-path="url(#pd1676dd4b8)">
-     <use xlink:href="#mc6cf5aa64a" x="49.8" y="52.925625" style="fill: #457b9d; stroke: #457b9d"/>
-     <use xlink:href="#mc6cf5aa64a" x="49.8" y="96.650625" style="fill: #457b9d; stroke: #457b9d"/>
-     <use xlink:href="#mc6cf5aa64a" x="49.8" y="140.375625" style="fill: #457b9d; stroke: #457b9d"/>
-     <use xlink:href="#mc6cf5aa64a" x="49.8" y="184.100625" style="fill: #457b9d; stroke: #457b9d"/>
-     <use xlink:href="#mc6cf5aa64a" x="49.8" y="227.825625" style="fill: #457b9d; stroke: #457b9d"/>
-     <use xlink:href="#mc6cf5aa64a" x="49.8" y="271.550625" style="fill: #457b9d; stroke: #457b9d"/>
+    <g clip-path="url(#p6c7ed0a390)">
+     <use xlink:href="#m837ec538ed" x="49.8" y="52.925625" style="fill: #457b9d; stroke: #457b9d"/>
+     <use xlink:href="#m837ec538ed" x="49.8" y="96.650625" style="fill: #457b9d; stroke: #457b9d"/>
+     <use xlink:href="#m837ec538ed" x="49.8" y="140.375625" style="fill: #457b9d; stroke: #457b9d"/>
+     <use xlink:href="#m837ec538ed" x="49.8" y="184.100625" style="fill: #457b9d; stroke: #457b9d"/>
+     <use xlink:href="#m837ec538ed" x="49.8" y="227.825625" style="fill: #457b9d; stroke: #457b9d"/>
+     <use xlink:href="#m837ec538ed" x="49.8" y="271.550625" style="fill: #457b9d; stroke: #457b9d"/>
     </g>
    </g>
    <g id="text_1">
@@ -1217,7 +1217,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pd1676dd4b8">
+  <clipPath id="p6c7ed0a390">
    <rect x="7.2" y="22.318125" width="511.2" height="279.84"/>
   </clipPath>
  </defs>
