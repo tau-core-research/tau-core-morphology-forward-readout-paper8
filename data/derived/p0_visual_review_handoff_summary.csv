@@ -1,0 +1,2 @@
+handoff_status,n_galaxies,n_blocked_review_rows,n_pending_review_fields_total,accepted_manifest_promotion_allowed,endpoint_scores_computed,claim_boundary
+READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW,4,4,60,False,False,p0_visual_review_handoff_not_label_not_endpoint

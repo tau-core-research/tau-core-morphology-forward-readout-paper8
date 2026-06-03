@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paper 8 P0 Visual Review Handoff</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f6f6f2;
+      color: #1f2933;
+    }
+    main {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    h1 { margin: 0 0 8px; font-size: 30px; }
+    .notice { max-width: 940px; line-height: 1.5; margin-bottom: 24px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #d7d7d0;
+      border-radius: 8px;
+      padding: 18px;
+    }
+    h2 { margin: 0 0 6px; font-size: 22px; }
+    .status {
+      display: inline-block;
+      margin: 0 0 14px;
+      padding: 5px 8px;
+      border-radius: 6px;
+      background: #fff4dc;
+      border: 1px solid #e8c36a;
+      color: #624b00;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .panels {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+    figure {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid #e0e0da;
+      border-radius: 6px;
+      background: #fafaf8;
+    }
+    img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+    figcaption { padding: 6px; color: #52616b; font-size: 12px; }
+    h3 { margin: 18px 0 8px; font-size: 14px; color: #52616b; text-transform: uppercase; }
+    li { line-height: 1.55; }
+    footer { margin-top: 24px; color: #52616b; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Paper 8 P0 Visual Review Handoff</h1>
+    <p class="notice">
+      This handoff package converts the blocked P0 visual review completion gate
+      into concrete reviewer tasks. It is not an accepted morphology manifest,
+      not an image classification, and not an endpoint score. Claim boundary:
+      <code>p0_visual_review_handoff_not_label_not_endpoint</code>.
+    </p>
+    <div class="grid">
+      
+            <section class="card">
+              <h2>NGC0100</h2>
+              <p class="status">BLOCKED_VISUAL_REVIEW_PENDING</p>
+              <div class="panels">
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0100_2MASS_K.png" alt="NGC0100 2MASS K" />
+              <figcaption>NGC0100 2MASS K</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0100_DSS2_Red.png" alt="NGC0100 DSS2 Red" />
+              <figcaption>NGC0100 DSS2 Red</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0100_WISE_3_4.png" alt="NGC0100 WISE 3 4" />
+              <figcaption>NGC0100 WISE 3 4</figcaption>
+            </figure>
+            </div>
+              <h3>Required Residual-Blind Fields</h3>
+              <ol><li>reviewer_id</li><li>review_timestamp_utc</li><li>present_day_morphology_label</li><li>outer_disk_lsb_tail_evidence</li><li>hi_extent_or_asymmetry_evidence</li><li>bar_m2_evidence</li><li>edge_projection_caveat</li><li>vertical_flare_warp_evidence</li><li>compact_bulge_evidence</li><li>ring_resonance_evidence</li><li>morphological_memory_history_proxy_judgment</li><li>review_confidence</li><li>residual_blind_family_recommendation</li><li>review_sources_used</li><li>review_notes</li></ol>
+              <h3>Allowed Sources</h3>
+              <ul><li>local SkyView preview panels</li><li>NED</li><li>SIMBAD</li><li>SkyView DSS2 Red</li><li>SkyView 2MASS-K</li><li>SkyView WISE W1</li><li>projection/inclination caveat sources</li></ul>
+            </section>
+            
+            <section class="card">
+              <h2>NGC0247</h2>
+              <p class="status">BLOCKED_VISUAL_REVIEW_PENDING</p>
+              <div class="panels">
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0247_2MASS_K.png" alt="NGC0247 2MASS K" />
+              <figcaption>NGC0247 2MASS K</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0247_DSS2_Red.png" alt="NGC0247 DSS2 Red" />
+              <figcaption>NGC0247 DSS2 Red</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0247_WISE_3_4.png" alt="NGC0247 WISE 3 4" />
+              <figcaption>NGC0247 WISE 3 4</figcaption>
+            </figure>
+            </div>
+              <h3>Required Residual-Blind Fields</h3>
+              <ol><li>reviewer_id</li><li>review_timestamp_utc</li><li>present_day_morphology_label</li><li>outer_disk_lsb_tail_evidence</li><li>hi_extent_or_asymmetry_evidence</li><li>bar_m2_evidence</li><li>edge_projection_caveat</li><li>vertical_flare_warp_evidence</li><li>compact_bulge_evidence</li><li>ring_resonance_evidence</li><li>morphological_memory_history_proxy_judgment</li><li>review_confidence</li><li>residual_blind_family_recommendation</li><li>review_sources_used</li><li>review_notes</li></ol>
+              <h3>Allowed Sources</h3>
+              <ul><li>local SkyView preview panels</li><li>NED</li><li>SIMBAD</li><li>SkyView DSS2 Red</li><li>SkyView 2MASS-K</li><li>SkyView WISE W1</li><li>bar-length or velocity-field support if acquired before scoring</li></ul>
+            </section>
+            
+            <section class="card">
+              <h2>NGC0300</h2>
+              <p class="status">BLOCKED_VISUAL_REVIEW_PENDING</p>
+              <div class="panels">
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0300_2MASS_K.png" alt="NGC0300 2MASS K" />
+              <figcaption>NGC0300 2MASS K</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0300_DSS2_Red.png" alt="NGC0300 DSS2 Red" />
+              <figcaption>NGC0300 DSS2 Red</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC0300_WISE_3_4.png" alt="NGC0300 WISE 3 4" />
+              <figcaption>NGC0300 WISE 3 4</figcaption>
+            </figure>
+            </div>
+              <h3>Required Residual-Blind Fields</h3>
+              <ol><li>reviewer_id</li><li>review_timestamp_utc</li><li>present_day_morphology_label</li><li>outer_disk_lsb_tail_evidence</li><li>hi_extent_or_asymmetry_evidence</li><li>bar_m2_evidence</li><li>edge_projection_caveat</li><li>vertical_flare_warp_evidence</li><li>compact_bulge_evidence</li><li>ring_resonance_evidence</li><li>morphological_memory_history_proxy_judgment</li><li>review_confidence</li><li>residual_blind_family_recommendation</li><li>review_sources_used</li><li>review_notes</li></ol>
+              <h3>Allowed Sources</h3>
+              <ul><li>local SkyView preview panels</li><li>NED</li><li>SIMBAD</li><li>SkyView DSS2 Red</li><li>SkyView 2MASS-K</li><li>SkyView WISE W1</li></ul>
+            </section>
+            
+            <section class="card">
+              <h2>NGC6503</h2>
+              <p class="status">BLOCKED_VISUAL_REVIEW_PENDING</p>
+              <div class="panels">
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC6503_2MASS_K.png" alt="NGC6503 2MASS K" />
+              <figcaption>NGC6503 2MASS K</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC6503_DSS2_Red.png" alt="NGC6503 DSS2 Red" />
+              <figcaption>NGC6503 DSS2 Red</figcaption>
+            </figure>
+            
+
+            <figure>
+              <img src="../reports/p0_skyview_previews/NGC6503_WISE_3_4.png" alt="NGC6503 WISE 3 4" />
+              <figcaption>NGC6503 WISE 3 4</figcaption>
+            </figure>
+            </div>
+              <h3>Required Residual-Blind Fields</h3>
+              <ol><li>reviewer_id</li><li>review_timestamp_utc</li><li>present_day_morphology_label</li><li>outer_disk_lsb_tail_evidence</li><li>hi_extent_or_asymmetry_evidence</li><li>bar_m2_evidence</li><li>edge_projection_caveat</li><li>vertical_flare_warp_evidence</li><li>compact_bulge_evidence</li><li>ring_resonance_evidence</li><li>morphological_memory_history_proxy_judgment</li><li>review_confidence</li><li>residual_blind_family_recommendation</li><li>review_sources_used</li><li>review_notes</li></ol>
+              <h3>Allowed Sources</h3>
+              <ul><li>local SkyView preview panels</li><li>NED</li><li>SIMBAD</li><li>SkyView DSS2 Red</li><li>SkyView 2MASS-K</li><li>SkyView WISE W1</li></ul>
+            </section>
+            
+    </div>
+    <footer>
+      Forbidden inputs: endpoint residual gain; required-S_tau diagnostic as a label input; best-fit Tau Core readout family; MOND/RAR/TGP comparison score; post-hoc family switching after endpoint scoring.
+    </footer>
+  </main>
+</body>
+</html>

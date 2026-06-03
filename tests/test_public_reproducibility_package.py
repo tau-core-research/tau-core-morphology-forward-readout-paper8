@@ -63,6 +63,7 @@ def test_publication_files_exist():
         ROOT / "scripts/acquire_p0_skyview_preview_images.py",
         ROOT / "scripts/build_p0_visual_review_template.py",
         ROOT / "scripts/run_p0_visual_review_completion_gate.py",
+        ROOT / "scripts/build_p0_visual_review_handoff.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -167,6 +168,9 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "completion gate" in source
     assert "BLOCKED\\_VISUAL\\_REVIEW\\_PENDING" in source
     assert "all 60 reviewer fields are still placeholders" in source
+    assert "visual review handoff" in source
+    assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW" in source
+    assert "does not promote labels or compute endpoint scores" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1485,6 +1489,48 @@ def test_p0_visual_review_completion_gate_blocks_unfilled_template():
     assert "BLOCKED_VISUAL_REVIEW_PENDING" in report
     assert "all review fields remain residual-blind placeholders" in report
     assert "not a negative empirical result" in report
+
+
+def test_p0_visual_review_handoff_is_review_task_only():
+    tasks = pd.read_csv(DATA / "p0_visual_review_handoff_tasks.csv")
+    summary = pd.read_csv(DATA / "p0_visual_review_handoff_summary.csv")
+    assert len(tasks) == 4
+    assert set(tasks["galaxy"]) == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert (tasks["review_status"] == "BLOCKED_VISUAL_REVIEW_PENDING").all()
+    assert (tasks["n_pending_review_fields"] == 15).all()
+    assert not tasks["accepted_manifest_promotion_allowed"].any()
+    assert not tasks["endpoint_scores_computed"].any()
+    assert "morphological_memory_history_proxy_judgment" in ";".join(
+        tasks["required_review_fields"]
+    )
+    assert tasks["preview_png_paths"].str.contains("p0_skyview_previews").all()
+    assert tasks["allowed_sources"].str.contains("local SkyView preview panels").all()
+    assert tasks["forbidden_inputs"].str.contains("endpoint residual gain").all()
+    assert "p0_visual_review_handoff_not_label_not_endpoint" in set(
+        tasks["claim_boundary"]
+    )
+
+    row = summary.iloc[0]
+    assert row["handoff_status"] == "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW"
+    assert int(row["n_galaxies"]) == 4
+    assert int(row["n_blocked_review_rows"]) == 4
+    assert int(row["n_pending_review_fields_total"]) == 60
+    assert bool(row["accepted_manifest_promotion_allowed"]) is False
+    assert bool(row["endpoint_scores_computed"]) is False
+    report = (ROOT / "reports" / "p0_visual_review_handoff.md").read_text(
+        encoding="utf-8"
+    )
+    assert "source-review handoff" in report
+    assert "not an accepted morphology manifest" in report
+    assert "not an endpoint score" in report
+    form = (ROOT / "reports" / "p0_visual_review_handoff.html").read_text(
+        encoding="utf-8"
+    )
+    for galaxy in ["NGC0100", "NGC0247", "NGC0300", "NGC6503"]:
+        assert galaxy in form
+    assert "Required Residual-Blind Fields" in form
+    assert "Allowed Sources" in form
+    assert "Forbidden inputs" in form
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

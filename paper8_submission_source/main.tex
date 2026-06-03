@@ -334,6 +334,8 @@ The rendered panels are then assembled into a residual-blind visual review templ
 
 A completion gate then checks whether this visual review template has actually been filled before any accepted-manifest promotion is allowed. In the current package the gate returns \texttt{BLOCKED\_VISUAL\_REVIEW\_PENDING}: all four P0 rows remain blocked, all 60 reviewer fields are still placeholders, accepted-manifest promotion is disallowed, and endpoint scores are not computed. This is a protocol safeguard, not a negative empirical result.
 
+To make the blocked state actionable, the package also emits a P0 visual review handoff. The handoff lists the required residual-blind fields, local preview panels, allowed source types, and forbidden endpoint-derived inputs for each P0 galaxy. Its status is \path{READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW}, but it still does not promote labels or compute endpoint scores.
+
 \section{Conclusion}
 
 Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:
