@@ -1,0 +1,4 @@
+survey,n_galaxies,n_available,n_unavailable,median_image_count
+2MASS-K,4,4,0,1.0
+DSS2 Red,4,4,0,1.0
+WISE 3.4,4,4,0,1.0
