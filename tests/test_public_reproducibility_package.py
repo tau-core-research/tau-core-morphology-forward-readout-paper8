@@ -71,6 +71,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_p0_source_assisted_review_response_draft.py",
         ROOT / "scripts/build_p0_codex_source_review_response.py",
         ROOT / "scripts/build_p0_codex_accepted_label_manifest.py",
+        ROOT / "scripts/run_p0_codex_source_review_pilot.py",
         ROOT / "scripts/audit_p0_requested_source_family_availability.py",
         ROOT / "scripts/build_p0_review_pipeline_status_dashboard.py",
         ROOT / "scripts/build_arxiv_source.py",
@@ -1811,6 +1812,34 @@ def test_p0_codex_accepted_label_manifest_is_not_endpoint_launch():
     )
     assert "P0 audit manifest only" in report
     assert "not a launch of the frozen 175-galaxy endpoint" in report
+
+
+def test_p0_codex_source_review_pilot_is_narrow_and_claim_bounded():
+    scores = pd.read_csv(DATA / "p0_codex_source_review_pilot_scores.csv")
+    summary = pd.read_csv(DATA / "p0_codex_source_review_pilot_summary.csv")
+    assert len(scores) == 4
+    assert set(scores["galaxy"]) == {"NGC0100", "NGC0247", "NGC0300", "NGC6503"}
+    assert scores["accepted_formula_family"].eq("K_exponential_disk").all()
+    assert scores["primary_amplitude_policy"].eq("leave_one_galaxy_out_beta_all13").all()
+    assert not scores["endpoint_scores_computed"].any()
+    assert not scores["full_endpoint_manifest_row_created"].any()
+    assert "p0_codex_source_review_pilot_not_endpoint" in set(scores["claim_boundary"])
+
+    row = summary.iloc[0]
+    assert row["pilot_decision"] == "P0_CODEX_SOURCE_REVIEW_PILOT_COMPLETE_NOT_ENDPOINT"
+    assert int(row["n_galaxies"]) == 4
+    assert abs(float(row["primary_beats_tpg_v6_fraction"]) - 0.75) < 1.0e-12
+    assert abs(float(row["primary_beats_mond_fraction"]) - 0.25) < 1.0e-12
+    assert abs(float(row["formula_shell_beats_tpg_v6_fraction"]) - 1.0) < 1.0e-12
+    assert abs(float(row["formula_shell_beats_mond_fraction"]) - 0.25) < 1.0e-12
+    assert bool(row["full_endpoint_manifest_rows_created"]) is False
+    assert bool(row["endpoint_scores_computed"]) is False
+    report = (ROOT / "reports" / "p0_codex_source_review_pilot.md").read_text(
+        encoding="utf-8"
+    )
+    assert "not launch the frozen 175-galaxy endpoint" in report
+    assert "MOND remains a hard baseline" in report
+    assert "not an endpoint result" in report
 
 
 def test_p0_review_pipeline_status_dashboard_summarizes_codex_review_chain():

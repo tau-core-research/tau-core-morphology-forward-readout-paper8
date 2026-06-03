@@ -77,6 +77,7 @@ def main() -> None:
     run([sys.executable, "scripts/build_p0_codex_source_review_response.py"])
     run([sys.executable, "scripts/run_p0_response_to_manifest_promotion_gate.py"])
     run([sys.executable, "scripts/build_p0_codex_accepted_label_manifest.py"])
+    run([sys.executable, "scripts/run_p0_codex_source_review_pilot.py"])
     run([sys.executable, "scripts/audit_p0_requested_source_family_availability.py"])
     run([sys.executable, "scripts/build_p0_review_pipeline_status_dashboard.py"])
     if shutil.which("tectonic") is None:
