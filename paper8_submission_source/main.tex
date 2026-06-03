@@ -332,6 +332,8 @@ The package then renders these available SkyView sources into 12 local PNG previ
 
 The rendered panels are then assembled into a residual-blind visual review template. In this layer all review fields remain unfilled placeholders, and the package records the field schema needed for a future accepted morphology manifest: present-day morphology, outer-disk/LSB/tail evidence, HI asymmetry evidence, bar or $m=2$ support, projection caveats, vertical/flare/warp evidence, compact/bulge support, ring/resonance evidence, a morphological memory/history proxy judgment, reviewer confidence, source list, and a residual-blind family recommendation. The template is not yet an accepted manifest; endpoint residual gains, required-$S_\tau$ diagnostics, best-fit readout families, MOND/RAR/TGP comparison scores, and post-hoc family switching remain forbidden inputs.
 
+A completion gate then checks whether this visual review template has actually been filled before any accepted-manifest promotion is allowed. In the current package the gate returns \texttt{BLOCKED\_VISUAL\_REVIEW\_PENDING}: all four P0 rows remain blocked, all 60 reviewer fields are still placeholders, accepted-manifest promotion is disallowed, and endpoint scores are not computed. This is a protocol safeguard, not a negative empirical result.
+
 \section{Conclusion}
 
 Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:

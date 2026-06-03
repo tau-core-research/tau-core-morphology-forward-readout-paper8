@@ -62,6 +62,7 @@ def test_publication_files_exist():
         ROOT / "scripts/audit_p0_skyview_availability.py",
         ROOT / "scripts/acquire_p0_skyview_preview_images.py",
         ROOT / "scripts/build_p0_visual_review_template.py",
+        ROOT / "scripts/run_p0_visual_review_completion_gate.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -163,6 +164,9 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "residual-blind visual review template" in source
     assert "morphological memory/history proxy judgment" in source
     assert "all review fields remain unfilled placeholders" in source
+    assert "completion gate" in source
+    assert "BLOCKED\\_VISUAL\\_REVIEW\\_PENDING" in source
+    assert "all 60 reviewer fields are still placeholders" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1448,6 +1452,39 @@ def test_p0_visual_review_template_is_blank_and_residual_blind():
     assert "morphological_memory_history_proxy_judgment" in form
     assert "Forbidden inputs" in form
     assert "does not compute endpoint scores" in form
+
+
+def test_p0_visual_review_completion_gate_blocks_unfilled_template():
+    gates = pd.read_csv(DATA / "p0_visual_review_completion_gate.csv")
+    summary = pd.read_csv(DATA / "p0_visual_review_completion_summary.csv")
+    assert len(gates) == 4
+    assert set(gates["galaxy"]) == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert (gates["completion_status"] == "BLOCKED_VISUAL_REVIEW_PENDING").all()
+    assert (gates["n_review_fields"] == 15).all()
+    assert (gates["n_pending_review_fields"] == 15).all()
+    assert not gates["accepted_manifest_promotion_allowed"].any()
+    assert not gates["endpoint_scores_computed"].any()
+    assert "morphological_memory_history_proxy_judgment" in ";".join(
+        gates["pending_review_fields"]
+    )
+    assert "p0_visual_review_completion_gate_not_endpoint" in set(
+        gates["claim_boundary"]
+    )
+
+    row = summary.iloc[0]
+    assert row["visual_review_completion_decision"] == "BLOCKED_VISUAL_REVIEW_PENDING"
+    assert int(row["n_galaxies"]) == 4
+    assert int(row["n_blocked_rows"]) == 4
+    assert int(row["n_pending_review_fields_total"]) == 60
+    assert bool(row["accepted_manifest_promotion_allowed"]) is False
+    assert bool(row["endpoint_scores_computed"]) is False
+    report = (ROOT / "reports" / "p0_visual_review_completion_gate.md").read_text(
+        encoding="utf-8"
+    )
+    assert "This completion gate is not an endpoint score" in report
+    assert "BLOCKED_VISUAL_REVIEW_PENDING" in report
+    assert "all review fields remain residual-blind placeholders" in report
+    assert "not a negative empirical result" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
