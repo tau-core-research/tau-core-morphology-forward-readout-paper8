@@ -64,6 +64,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_p0_visual_review_template.py",
         ROOT / "scripts/run_p0_visual_review_completion_gate.py",
         ROOT / "scripts/build_p0_visual_review_handoff.py",
+        ROOT / "scripts/build_p0_visual_review_response_intake.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -171,6 +172,9 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "visual review handoff" in source
     assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW" in source
     assert "does not promote labels or compute endpoint scores" in source
+    assert "visual-review response intake template and validator" in source
+    assert "BLOCKED\\_REVIEW\\_RESPONSE\\_PENDING" in source
+    assert "56 required response fields are still pending" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1531,6 +1535,45 @@ def test_p0_visual_review_handoff_is_review_task_only():
     assert "Required Residual-Blind Fields" in form
     assert "Allowed Sources" in form
     assert "Forbidden inputs" in form
+
+
+def test_p0_visual_review_response_intake_blocks_empty_responses():
+    response = pd.read_csv(DATA / "p0_visual_review_response_template.csv")
+    schema = pd.read_csv(DATA / "p0_visual_review_response_schema.csv")
+    validation = pd.read_csv(DATA / "p0_visual_review_response_validation.csv")
+    summary = pd.read_csv(DATA / "p0_visual_review_response_summary.csv")
+    assert len(response) == 4
+    assert set(response["galaxy"]) == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert len(schema) == 15
+    required = schema.loc[schema["required_for_visual_review_completion"]]
+    assert len(required) == 14
+    assert not schema["may_use_endpoint_scores"].any()
+    assert (validation["validation_status"] == "BLOCKED_RESPONSE_PENDING").all()
+    assert (validation["n_required_fields"] == 14).all()
+    assert (validation["n_missing_required_fields"] == 14).all()
+    assert not validation["forbidden_input_detected"].any()
+    assert not validation["accepted_manifest_promotion_allowed"].any()
+    assert not validation["endpoint_scores_computed"].any()
+    assert "morphological_memory_history_proxy_judgment" in ";".join(
+        validation["missing_required_fields"]
+    )
+    assert "p0_visual_review_response_intake_not_label_not_endpoint" in set(
+        validation["claim_boundary"]
+    )
+    row = summary.iloc[0]
+    assert row["response_intake_decision"] == "BLOCKED_REVIEW_RESPONSE_PENDING"
+    assert int(row["n_galaxies"]) == 4
+    assert int(row["n_blocked_rows"]) == 4
+    assert int(row["n_missing_required_fields_total"]) == 56
+    assert bool(row["accepted_manifest_promotion_allowed"]) is False
+    assert bool(row["endpoint_scores_computed"]) is False
+    report = (ROOT / "reports" / "p0_visual_review_response_intake.md").read_text(
+        encoding="utf-8"
+    )
+    assert "reviewer-response contract" in report
+    assert "not an accepted" in report
+    assert "not an endpoint" in report
+    assert "independent accepted-manifest audit" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
