@@ -44,6 +44,7 @@ def build_status_rows() -> pd.DataFrame:
     response = load_one("p0_visual_review_response_summary.csv")
     promotion = load_one("p0_response_to_manifest_promotion_summary.csv")
     source_plan = load_one("p0_missing_data_source_acquisition_summary.csv")
+    source_availability = load_one("p0_requested_source_family_availability_summary.csv")
 
     n_p0 = int(len(visual_template))
     rows = [
@@ -118,6 +119,14 @@ def build_status_rows() -> pd.DataFrame:
             "n_blocked": 0,
             "endpoint_scores_computed": bool(source_plan["endpoint_scores_computed"].any()),
             "next_action": "acquire S4G/NED/DustPedia/HI/PHANGS evidence residual-blind",
+        },
+        {
+            "stage": "requested_source_family_availability",
+            "stage_status": "SOURCE_AVAILABILITY_PREFLIGHT_COMPLETE",
+            "n_galaxies": int(source_availability["n_p0_galaxies"].max()),
+            "n_blocked": int(source_availability["n_to_be_queried"].sum()),
+            "endpoint_scores_computed": bool(source_availability["endpoint_scores_computed"].any()),
+            "next_action": "query remaining DustPedia/HI/PHANGS source evidence residual-blind",
         },
     ]
     status = pd.DataFrame(rows)

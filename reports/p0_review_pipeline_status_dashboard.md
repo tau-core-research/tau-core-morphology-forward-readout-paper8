@@ -11,7 +11,7 @@ This is a status dashboard only: it creates no accepted labels and computes no e
 
 | pipeline_decision | n_stages | n_blocked_stages | endpoint_scores_computed | accepted_labels_created | next_action | claim_boundary |
 | --- | --- | --- | --- | --- | --- | --- |
-| READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY | 9 | 3 | False | False | complete residual-blind human review responses | p0_review_pipeline_status_not_label_not_endpoint |
+| READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY | 10 | 3 | False | False | complete residual-blind human review responses | p0_review_pipeline_status_not_label_not_endpoint |
 
 ## Stage Status
 
@@ -26,6 +26,7 @@ This is a status dashboard only: it creates no accepted labels and computes no e
 | visual_review_response_intake | BLOCKED_REVIEW_RESPONSE_PENDING | 4 | 4 | False | False | fill response template before independent manifest audit |
 | response_to_manifest_promotion_gate | BLOCKED_RESPONSE_REVIEW_NOT_PROMOTABLE | 4 | 4 | False | False | do not promote labels until all promotion gates pass |
 | missing_data_source_acquisition_plan | SOURCE_PLAN_READY | 4 | 0 | False | False | acquire S4G/NED/DustPedia/HI/PHANGS evidence residual-blind |
+| requested_source_family_availability | SOURCE_AVAILABILITY_PREFLIGHT_COMPLETE | 4 | 12 | False | False | query remaining DustPedia/HI/PHANGS source evidence residual-blind |
 
 ## Claim Boundary
 

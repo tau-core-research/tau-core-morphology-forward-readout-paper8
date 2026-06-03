@@ -67,6 +67,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_p0_visual_review_response_intake.py",
         ROOT / "scripts/run_p0_response_to_manifest_promotion_gate.py",
         ROOT / "scripts/build_p0_missing_data_source_acquisition_plan.py",
+        ROOT / "scripts/audit_p0_requested_source_family_availability.py",
         ROOT / "scripts/build_p0_review_pipeline_status_dashboard.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
@@ -184,6 +185,7 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "consolidated P0 review-pipeline status dashboard" in source
     assert "S4G, NED/NED-D, DustPedia, HI surveys, and PHANGS" in source
     assert "TO_BE_ACQUIRED_RESIDUAL_BLIND" in source
+    assert "requested source-family availability" in source
     assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY" in source
     assert "accepted-label creation and endpoint scoring remain disabled" in source
     forbidden_phrases = [
@@ -1039,6 +1041,73 @@ def test_p0_missing_data_source_acquisition_plan_uses_requested_sources():
     assert "TO_BE_ACQUIRED_RESIDUAL_BLIND" in report
 
 
+def test_p0_requested_source_family_availability_is_preflight_only():
+    availability = pd.read_csv(DATA / "p0_requested_source_family_availability.csv")
+    summary = pd.read_csv(DATA / "p0_requested_source_family_availability_summary.csv")
+    assert len(availability) == 20
+    assert set(availability["galaxy"]) == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert {
+        "S4G",
+        "NED_NEDD",
+        "DustPedia",
+        "HI_SURVEYS",
+        "PHANGS",
+    } == set(availability["source_family"])
+    assert (
+        availability.loc[availability["source_family"] == "S4G", "availability_status"]
+        .eq("PARTIAL_SOURCE_READY")
+        .all()
+    )
+    assert (
+        availability.loc[
+            availability["source_family"] == "NED_NEDD", "availability_status"
+        ]
+        .eq("LOOKUP_READY")
+        .all()
+    )
+    assert (
+        availability.loc[
+            availability["source_family"] == "DustPedia", "availability_status"
+        ]
+        .eq("SOURCE_TO_BE_QUERIED")
+        .all()
+    )
+    assert (
+        availability.loc[
+            availability["source_family"] == "HI_SURVEYS", "availability_status"
+        ]
+        .str.contains("TO_BE_QUERIED")
+        .all()
+    )
+    ngc247_phangs = availability.loc[
+        (availability["galaxy"] == "NGC0247")
+        & (availability["source_family"] == "PHANGS")
+    ].iloc[0]
+    assert ngc247_phangs["availability_status"] == "REQUIRED_OPTIONAL_BRANCH_TO_BE_QUERIED"
+    other_phangs = availability.loc[
+        (availability["galaxy"] != "NGC0247")
+        & (availability["source_family"] == "PHANGS")
+    ]
+    assert other_phangs["availability_status"].eq(
+        "SUPPORTING_OPTIONAL_BRANCH_TO_BE_QUERIED"
+    ).all()
+    assert not availability["accepted_label_output_allowed"].any()
+    assert not availability["endpoint_scores_allowed"].any()
+    assert not availability["endpoint_scores_computed"].any()
+    assert "p0_requested_source_availability_not_label_not_endpoint" in set(
+        availability["claim_boundary"]
+    )
+    assert len(summary) == 5
+    assert int(summary["n_to_be_queried"].sum()) == 12
+    report = (
+        ROOT / "reports" / "p0_requested_source_family_availability.md"
+    ).read_text(encoding="utf-8")
+    assert "availability preflight only" in report
+    assert "DustPedia, HI surveys, and PHANGS remain residual-blind acquisition tasks" in report
+    assert "not an accepted morphology manifest" in report
+    assert "not an endpoint score" in report
+
+
 def test_accepted_morphology_manifest_is_partial_and_endpoint_blocked():
     manifest = pd.read_csv(DATA / "accepted_morphology_manifest.csv")
     validation = pd.read_csv(DATA / "accepted_morphology_manifest_validation.csv")
@@ -1672,7 +1741,7 @@ def test_p0_response_to_manifest_promotion_gate_blocks_pending_review():
 def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
     status = pd.read_csv(DATA / "p0_review_pipeline_status.csv")
     summary = pd.read_csv(DATA / "p0_review_pipeline_status_summary.csv")
-    assert len(status) == 9
+    assert len(status) == 10
     assert {
         "external_imaging_request_manifest",
         "skyview_availability_audit",
@@ -1683,6 +1752,7 @@ def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
         "visual_review_response_intake",
         "response_to_manifest_promotion_gate",
         "missing_data_source_acquisition_plan",
+        "requested_source_family_availability",
     } == set(status["stage"])
     blocked = status[status["stage_status"].str.startswith("BLOCKED")]
     assert len(blocked) == 3
@@ -1699,7 +1769,7 @@ def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
 
     row = summary.iloc[0]
     assert row["pipeline_decision"] == "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY"
-    assert int(row["n_stages"]) == 9
+    assert int(row["n_stages"]) == 10
     assert int(row["n_blocked_stages"]) == 3
     assert bool(row["endpoint_scores_computed"]) is False
     assert bool(row["accepted_labels_created"]) is False
@@ -1715,6 +1785,7 @@ def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
     assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY" in form
     assert "response_to_manifest_promotion_gate" in form
     assert "missing_data_source_acquisition_plan" in form
+    assert "requested_source_family_availability" in form
     assert "creates no accepted labels" in form
 
 
