@@ -328,6 +328,8 @@ For practical review, the package also renders these four requests into a local 
 
 A final source-availability preflight queries SkyView for DSS2 Red, 2MASS-K, and WISE W1 availability at the requested P0 coordinates and fields of view. All 12 P0 survey requests return at least one image candidate in the current run: 4/4 for DSS2 Red, 4/4 for 2MASS-K, and 4/4 for WISE W1. The audit intentionally records availability counts and stable query URLs only, not temporary FITS URLs and not image classifications.
 
+The package then renders these available SkyView sources into 12 local PNG preview panels, one for each P0 galaxy--survey pair. All previews render successfully at 300 by 300 pixels. These previews are included only as review source material for a future residual-blind human morphology audit; no automated image classification, accepted label, or endpoint score is emitted.
+
 \section{Conclusion}
 
 Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:

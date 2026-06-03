@@ -60,6 +60,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_p0_external_imaging_request_manifest.py",
         ROOT / "scripts/build_p0_external_imaging_review_dashboard.py",
         ROOT / "scripts/audit_p0_skyview_availability.py",
+        ROOT / "scripts/acquire_p0_skyview_preview_images.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -155,6 +156,9 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "SkyView for DSS2 Red, 2MASS-K, and WISE W1 availability" in source
     assert "All 12 P0 survey requests return at least one image candidate" in source
     assert "not temporary FITS URLs and not image classifications" in source
+    assert "12 local PNG preview panels" in source
+    assert "300 by 300 pixels" in source
+    assert "no automated image classification, accepted label, or endpoint score is emitted" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1360,6 +1364,34 @@ def test_p0_skyview_availability_audit_is_source_availability_only():
     assert "temporary SkyView FITS" in report
     assert "not a morphology label" in report
     assert "not an endpoint score" in report
+
+
+def test_p0_skyview_preview_images_are_source_material_only():
+    manifest = pd.read_csv(DATA / "p0_skyview_preview_image_manifest.csv")
+    summary = pd.read_csv(DATA / "p0_skyview_preview_image_summary.csv")
+    assert len(manifest) == 12
+    assert set(manifest["galaxy"]) == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert set(manifest["survey"]) == {"DSS2 Red", "2MASS-K", "WISE 3.4"}
+    assert (manifest["preview_status"] == "PREVIEW_RENDERED").all()
+    assert (manifest["preview_width_px"] == 300).all()
+    assert (manifest["preview_height_px"] == 300).all()
+    assert not manifest["image_classification_performed"].any()
+    assert not manifest["accepted_label_output_allowed"].any()
+    assert not manifest["endpoint_scores_allowed"].any()
+    assert "p0_skyview_previews_not_image_classification_not_endpoint" in set(
+        manifest["claim_boundary"]
+    )
+    for path in manifest["preview_png_path"]:
+        assert (ROOT / path).exists()
+        assert (ROOT / path).stat().st_size > 1000
+    assert set(summary["survey"]) == {"DSS2 Red", "2MASS-K", "WISE 3.4"}
+    assert (summary["n_rendered"] == 4).all()
+    report = (ROOT / "reports" / "p0_skyview_preview_images.md").read_text(
+        encoding="utf-8"
+    )
+    assert "not image classifications" in report
+    assert "No image classification is performed" in report
+    assert "No endpoint score is computed" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
