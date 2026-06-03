@@ -341,7 +341,9 @@ The handoff is finally converted into a visual-review response intake template a
 
 A response-to-manifest promotion gate records the same boundary at the next step. It returns \texttt{BLOCKED\_RESPONSE\_REVIEW\_NOT\_PROMOTABLE}: the response intake is incomplete, review confidence is missing, residual-blind family recommendations are missing, and morphology-memory/history judgments are missing. No accepted labels are created and no endpoint scores are computed.
 
-The package closes this preparation chain with a consolidated P0 review-pipeline status dashboard. The dashboard reports eight stages and the current overall decision \path{READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY}: the workflow is actionable for residual-blind human review, but accepted-label creation and endpoint scoring remain disabled.
+The package then turns the open review fields into a concrete source-acquisition plan using the requested source families: S4G, NED/NED-D, DustPedia, HI surveys, and PHANGS. This plan maps each missing P0 review field to source families, including HI extent/asymmetry checks for outer-disk and morphology-memory/history support and PHANGS/S4G support for optional bar or velocity-field evidence. All tasks remain \path{TO_BE_ACQUIRED_RESIDUAL_BLIND}; the layer is not an accepted morphology manifest and computes no endpoint scores.
+
+The package closes this preparation chain with a consolidated P0 review-pipeline status dashboard. The dashboard reports nine stages and the current overall decision \path{READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY}: the workflow is actionable for residual-blind human review and source acquisition, but accepted-label creation and endpoint scoring remain disabled.
 
 \section{Conclusion}
 

@@ -61,7 +61,7 @@
       <code>p0_review_pipeline_status_not_label_not_endpoint</code>.
     </p>
     <div class="grid">
-      
+
             <section class="card ready">
               <h2>external_imaging_request_manifest</h2>
               <p class="status">SOURCE_REQUEST_READY</p>
@@ -73,7 +73,7 @@
               </dl>
               <p>use source requests for residual-blind review</p>
             </section>
-            
+
             <section class="card ready">
               <h2>skyview_availability_audit</h2>
               <p class="status">AVAILABLE_SOURCE_PREFLIGHT_COMPLETE</p>
@@ -85,7 +85,7 @@
               </dl>
               <p>render source previews without image classification</p>
             </section>
-            
+
             <section class="card ready">
               <h2>skyview_preview_images</h2>
               <p class="status">PREVIEW_SOURCE_MATERIAL_READY</p>
@@ -97,7 +97,7 @@
               </dl>
               <p>use previews only as residual-blind review source material</p>
             </section>
-            
+
             <section class="card ready">
               <h2>visual_review_template</h2>
               <p class="status">REVIEW_TEMPLATE_READY</p>
@@ -109,7 +109,7 @@
               </dl>
               <p>fill review fields residual-blind</p>
             </section>
-            
+
             <section class="card blocked">
               <h2>visual_review_completion_gate</h2>
               <p class="status">BLOCKED_VISUAL_REVIEW_PENDING</p>
@@ -121,7 +121,7 @@
               </dl>
               <p>complete residual-blind visual review fields</p>
             </section>
-            
+
             <section class="card ready">
               <h2>visual_review_handoff</h2>
               <p class="status">READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW</p>
@@ -133,7 +133,7 @@
               </dl>
               <p>send handoff to residual-blind reviewer</p>
             </section>
-            
+
             <section class="card blocked">
               <h2>visual_review_response_intake</h2>
               <p class="status">BLOCKED_REVIEW_RESPONSE_PENDING</p>
@@ -145,7 +145,7 @@
               </dl>
               <p>fill response template before independent manifest audit</p>
             </section>
-            
+
             <section class="card blocked">
               <h2>response_to_manifest_promotion_gate</h2>
               <p class="status">BLOCKED_RESPONSE_REVIEW_NOT_PROMOTABLE</p>
@@ -157,7 +157,19 @@
               </dl>
               <p>do not promote labels until all promotion gates pass</p>
             </section>
-            
+
+            <section class="card ready">
+              <h2>missing_data_source_acquisition_plan</h2>
+              <p class="status">SOURCE_PLAN_READY</p>
+              <dl>
+                <div><dt>Galaxies</dt><dd>4</dd></div>
+                <div><dt>Blocked</dt><dd>0</dd></div>
+                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint scores</dt><dd>False</dd></div>
+              </dl>
+              <p>acquire S4G/NED/DustPedia/HI/PHANGS evidence residual-blind</p>
+            </section>
+
     </div>
   </main>
 </body>

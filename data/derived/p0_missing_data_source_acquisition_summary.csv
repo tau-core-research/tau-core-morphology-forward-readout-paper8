@@ -1,0 +1,6 @@
+source_family,url_or_catalog,n_p0_tasks,n_p0_galaxies,source_acquisition_status,accepted_label_output_allowed,endpoint_scores_computed,claim_boundary
+S4G,https://irsa.ipac.caltech.edu/data/SPITZER/S4G/overview.html,48,4,TO_BE_ACQUIRED_RESIDUAL_BLIND,False,False,p0_missing_data_source_plan_not_label_not_endpoint
+NED_NEDD,https://ned.ipac.caltech.edu/,32,4,TO_BE_ACQUIRED_RESIDUAL_BLIND,False,False,p0_missing_data_source_plan_not_label_not_endpoint
+DustPedia,https://arxiv.org/abs/1708.05335,44,4,TO_BE_ACQUIRED_RESIDUAL_BLIND,False,False,p0_missing_data_source_plan_not_label_not_endpoint
+HI_SURVEYS,THINGS; LITTLE_THINGS; WALLABY; HALOGAS,32,4,TO_BE_ACQUIRED_RESIDUAL_BLIND,False,False,p0_missing_data_source_plan_not_label_not_endpoint
+PHANGS,https://www.phangs.org/home/data,28,4,TO_BE_ACQUIRED_RESIDUAL_BLIND,False,False,p0_missing_data_source_plan_not_label_not_endpoint

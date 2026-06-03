@@ -66,6 +66,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_p0_visual_review_handoff.py",
         ROOT / "scripts/build_p0_visual_review_response_intake.py",
         ROOT / "scripts/run_p0_response_to_manifest_promotion_gate.py",
+        ROOT / "scripts/build_p0_missing_data_source_acquisition_plan.py",
         ROOT / "scripts/build_p0_review_pipeline_status_dashboard.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
@@ -181,6 +182,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "BLOCKED\\_RESPONSE\\_REVIEW\\_NOT\\_PROMOTABLE" in source
     assert "No accepted labels are created and no endpoint scores are computed" in source
     assert "consolidated P0 review-pipeline status dashboard" in source
+    assert "S4G, NED/NED-D, DustPedia, HI surveys, and PHANGS" in source
+    assert "TO_BE_ACQUIRED_RESIDUAL_BLIND" in source
     assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY" in source
     assert "accepted-label creation and endpoint scoring remain disabled" in source
     forbidden_phrases = [
@@ -930,13 +933,15 @@ def test_external_morphology_source_registry_is_acquisition_only():
     registry = pd.read_csv(DATA / "external_morphology_source_registry.csv")
     field_map = pd.read_csv(DATA / "morphology_field_source_map.csv")
     crossmatch = pd.read_csv(DATA / "sparc_external_source_crossmatch_template.csv")
-    expected_sources = {"SPARC", "S4G", "NED_NEDD", "DustPedia", "PHANGS"}
+    expected_sources = {"SPARC", "S4G", "NED_NEDD", "DustPedia", "HI_SURVEYS", "PHANGS"}
     assert expected_sources == set(registry["source_id"])
     s4g = registry.loc[registry["source_id"] == "S4G"].iloc[0]
     assert s4g["priority"] == "primary_morphology_decomposition"
     assert "scale_radius_kpc" in s4g["use_for_fields"]
     phangs = registry.loc[registry["source_id"] == "PHANGS"].iloc[0]
     assert "optional" in phangs["priority"]
+    hi = registry.loc[registry["source_id"] == "HI_SURVEYS"].iloc[0]
+    assert "gas_extent" in hi["priority"]
     assert {"formula_family", "scale_radius_kpc", "observable_provenance"}.issubset(
         set(field_map["field"])
     )
@@ -945,6 +950,7 @@ def test_external_morphology_source_registry_is_acquisition_only():
     assert len(crossmatch) == 175
     assert crossmatch["sparc_present"].all()
     assert crossmatch["s4g_match_status"].eq("TO_BE_CHECKED").all()
+    assert crossmatch["hi_survey_match_status"].eq("TO_BE_CHECKED").all()
     assert crossmatch["accepted_observable_collection_status"].eq("NOT_STARTED").all()
     report = (ROOT / "reports" / "external_morphology_source_registry.md").read_text(
         encoding="utf-8"
@@ -988,6 +994,49 @@ def test_external_morphology_input_acquisition_is_partial_and_claim_bounded():
     assert "S4G/SPARC-derived disk scale candidates acquired: 75" in report
     assert "not a completed accepted manifest" in report
     assert "does not compute endpoint scores" in report
+
+
+def test_p0_missing_data_source_acquisition_plan_uses_requested_sources():
+    plan = pd.read_csv(DATA / "p0_missing_data_source_acquisition_plan.csv")
+    source_summary = pd.read_csv(DATA / "p0_missing_data_source_acquisition_summary.csv")
+    galaxy_summary = pd.read_csv(DATA / "p0_missing_data_source_acquisition_by_galaxy.csv")
+    assert len(plan) == 52
+    assert set(plan["galaxy"]) == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert {
+        "S4G",
+        "NED_NEDD",
+        "DustPedia",
+        "HI_SURVEYS",
+        "PHANGS",
+    } == set(source_summary["source_family"])
+    assert source_summary["n_p0_galaxies"].eq(4).all()
+    assert plan["source_acquisition_status"].eq("TO_BE_ACQUIRED_RESIDUAL_BLIND").all()
+    assert not plan["accepted_label_output_allowed"].any()
+    assert not plan["endpoint_scores_allowed"].any()
+    assert not plan["endpoint_scores_computed"].any()
+    assert "p0_missing_data_source_plan_not_label_not_endpoint" in set(
+        plan["claim_boundary"]
+    )
+    hi = plan.loc[plan["review_field"] == "hi_extent_or_asymmetry_evidence"].iloc[0]
+    assert "HI_SURVEYS" in hi["required_source_families"]
+    bar = plan.loc[
+        (plan["galaxy"] == "NGC0247") & (plan["review_field"] == "bar_m2_evidence")
+    ].iloc[0]
+    assert bar["acquisition_priority"] == "P0_REQUIRED_NONAXISYMMETRIC_CHECK"
+    assert "PHANGS" in bar["required_source_families"]
+    edge = plan.loc[
+        (plan["galaxy"] == "NGC0100") & (plan["review_field"] == "edge_projection_caveat")
+    ].iloc[0]
+    assert edge["acquisition_priority"] == "P0_REQUIRED_PROJECTION_CHECK"
+    assert len(galaxy_summary) == 4
+    assert not galaxy_summary["endpoint_scores_computed"].any()
+    report = (
+        ROOT / "reports" / "p0_missing_data_source_acquisition_plan.md"
+    ).read_text(encoding="utf-8")
+    assert "use S4G, NED/NED-D, DustPedia, HI survey data, and PHANGS" in report
+    assert "not an accepted morphology manifest" in report
+    assert "not an endpoint score" in report
+    assert "TO_BE_ACQUIRED_RESIDUAL_BLIND" in report
 
 
 def test_accepted_morphology_manifest_is_partial_and_endpoint_blocked():
@@ -1623,7 +1672,7 @@ def test_p0_response_to_manifest_promotion_gate_blocks_pending_review():
 def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
     status = pd.read_csv(DATA / "p0_review_pipeline_status.csv")
     summary = pd.read_csv(DATA / "p0_review_pipeline_status_summary.csv")
-    assert len(status) == 8
+    assert len(status) == 9
     assert {
         "external_imaging_request_manifest",
         "skyview_availability_audit",
@@ -1633,6 +1682,7 @@ def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
         "visual_review_handoff",
         "visual_review_response_intake",
         "response_to_manifest_promotion_gate",
+        "missing_data_source_acquisition_plan",
     } == set(status["stage"])
     blocked = status[status["stage_status"].str.startswith("BLOCKED")]
     assert len(blocked) == 3
@@ -1649,7 +1699,7 @@ def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
 
     row = summary.iloc[0]
     assert row["pipeline_decision"] == "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY"
-    assert int(row["n_stages"]) == 8
+    assert int(row["n_stages"]) == 9
     assert int(row["n_blocked_stages"]) == 3
     assert bool(row["endpoint_scores_computed"]) is False
     assert bool(row["accepted_labels_created"]) is False
@@ -1664,6 +1714,7 @@ def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
     )
     assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY" in form
     assert "response_to_manifest_promotion_gate" in form
+    assert "missing_data_source_acquisition_plan" in form
     assert "creates no accepted labels" in form
 
 

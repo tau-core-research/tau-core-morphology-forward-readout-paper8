@@ -215,6 +215,7 @@ def build_candidates(
                 "ned_nedd_match_status": "TO_BE_CHECKED",
                 "dustpedia_match_status": "TO_BE_CHECKED",
                 "phangs_match_status": "TO_BE_CHECKED",
+                "hi_survey_match_status": "TO_BE_CHECKED",
                 "primary_morphology_source": "S4G" if s4g_name is not None else "TO_BE_ASSIGNED",
                 "secondary_morphology_source": "DustPedia/NED_NEDD_TO_BE_CHECKED",
                 "accepted_observable_collection_status": (

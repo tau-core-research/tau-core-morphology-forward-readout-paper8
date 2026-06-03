@@ -43,6 +43,7 @@ def build_status_rows() -> pd.DataFrame:
     handoff = load_one("p0_visual_review_handoff_summary.csv")
     response = load_one("p0_visual_review_response_summary.csv")
     promotion = load_one("p0_response_to_manifest_promotion_summary.csv")
+    source_plan = load_one("p0_missing_data_source_acquisition_summary.csv")
 
     n_p0 = int(len(visual_template))
     rows = [
@@ -109,6 +110,14 @@ def build_status_rows() -> pd.DataFrame:
             "n_blocked": int(promotion["n_blocked_gates"].iloc[0]),
             "endpoint_scores_computed": bool(promotion["endpoint_scores_computed"].iloc[0]),
             "next_action": "do not promote labels until all promotion gates pass",
+        },
+        {
+            "stage": "missing_data_source_acquisition_plan",
+            "stage_status": "SOURCE_PLAN_READY",
+            "n_galaxies": int(source_plan["n_p0_galaxies"].max()),
+            "n_blocked": 0,
+            "endpoint_scores_computed": bool(source_plan["endpoint_scores_computed"].any()),
+            "next_action": "acquire S4G/NED/DustPedia/HI/PHANGS evidence residual-blind",
         },
     ]
     status = pd.DataFrame(rows)
@@ -272,6 +281,7 @@ def write_html(status: pd.DataFrame, summary: pd.DataFrame) -> None:
 </body>
 </html>
 """
+    html = "\n".join(line.rstrip() for line in html.splitlines()) + "\n"
     (REPORTS / "p0_review_pipeline_status_dashboard.html").write_text(
         html, encoding="utf-8"
     )

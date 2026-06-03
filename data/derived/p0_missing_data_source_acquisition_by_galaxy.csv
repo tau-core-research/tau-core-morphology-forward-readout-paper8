@@ -1,0 +1,5 @@
+galaxy,n_source_tasks,n_required_tasks,n_pending_tasks,accepted_label_output_allowed,endpoint_scores_computed,claim_boundary
+NGC0100,13,8,13,False,False,p0_missing_data_source_plan_not_label_not_endpoint
+NGC0247,13,8,13,False,False,p0_missing_data_source_plan_not_label_not_endpoint
+NGC0300,13,6,13,False,False,p0_missing_data_source_plan_not_label_not_endpoint
+NGC6503,13,6,13,False,False,p0_missing_data_source_plan_not_label_not_endpoint
