@@ -1,0 +1,5 @@
+galaxy,source_family,sparc_hi_status,dustpedia_hi_status,mhi_1e9_msun,rhi_kpc,sparc_ref,match_status,evidence_summary,accepted_label_output_allowed,endpoint_scores_computed,claim_boundary
+NGC0100,HI_SURVEYS,SPARC_HI_RADIUS_READY,NO_DIRECT_DUSTPEDIA_HI_MATCH,1.99,16.36,"dB02,Rh96",HI_SOURCE_EVIDENCE_READY,"SPARC HI mass/radius available; refs=dB02,Rh96; DustPedia HI=no",False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0247,HI_SURVEYS,SPARC_HI_RADIUS_READY,NO_DIRECT_DUSTPEDIA_HI_MATCH,1.746,12.79,"Sa96,Ca90",HI_SOURCE_EVIDENCE_READY,"SPARC HI mass/radius available; refs=Sa96,Ca90; DustPedia HI=no",False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0300,HI_SURVEYS,SPARC_HI_RADIUS_READY,DUSTPEDIA_HI_MATCHED,0.936,9.2,"Sa96,CP90",HI_SOURCE_EVIDENCE_READY,"SPARC HI mass/radius available; refs=Sa96,CP90; DustPedia HI=yes",False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC6503,HI_SURVEYS,SPARC_HI_RADIUS_READY,NO_DIRECT_DUSTPEDIA_HI_MATCH,1.744,14.05,"Be91,Be87",HI_SOURCE_EVIDENCE_READY,"SPARC HI mass/radius available; refs=Be91,Be87; DustPedia HI=no",False,False,p0_external_source_evidence_not_label_not_endpoint

@@ -44,6 +44,8 @@ def build_status_rows() -> pd.DataFrame:
     response = load_one("p0_visual_review_response_summary.csv")
     promotion = load_one("p0_response_to_manifest_promotion_summary.csv")
     source_plan = load_one("p0_missing_data_source_acquisition_summary.csv")
+    source_evidence = load_one("p0_external_source_evidence_summary.csv")
+    response_draft = load_one("p0_source_assisted_review_response_validation.csv")
     source_availability = load_one("p0_requested_source_family_availability_summary.csv")
 
     n_p0 = int(len(visual_template))
@@ -121,12 +123,35 @@ def build_status_rows() -> pd.DataFrame:
             "next_action": "acquire S4G/NED/DustPedia/HI/PHANGS evidence residual-blind",
         },
         {
+            "stage": "dustpedia_hi_phangs_source_evidence",
+            "stage_status": "SOURCE_EVIDENCE_PARTIAL_REVIEW_REQUIRED",
+            "n_galaxies": int(source_evidence["galaxy"].nunique()),
+            "n_blocked": int(
+                (source_evidence["dustpedia_status"] == "NO_DIRECT_DUSTPEDIA_MATCH").sum()
+                + (source_evidence["phangs_status"] == "NO_PHANGS_SAMPLE_COVERAGE").sum()
+            ),
+            "endpoint_scores_computed": bool(source_evidence["endpoint_scores_computed"].any()),
+            "next_action": "use source evidence for human residual-blind review only",
+        },
+        {
+            "stage": "source_assisted_review_response_draft",
+            "stage_status": "BLOCKED_DRAFT_NOT_ACCEPTED_REVIEW",
+            "n_galaxies": int(response_draft["galaxy"].nunique()),
+            "n_blocked": int((response_draft["draft_validation_status"] != "PASS").sum()),
+            "endpoint_scores_computed": bool(response_draft["endpoint_scores_computed"].any()),
+            "next_action": "human reviewer must convert draft into accepted-review response",
+        },
+        {
             "stage": "requested_source_family_availability",
             "stage_status": "SOURCE_AVAILABILITY_PREFLIGHT_COMPLETE",
             "n_galaxies": int(source_availability["n_p0_galaxies"].max()),
-            "n_blocked": int(source_availability["n_to_be_queried"].sum()),
+            "n_blocked": int(
+                source_availability["n_to_be_queried"].sum()
+                + source_availability.get("n_no_coverage", pd.Series(dtype=int)).sum()
+                + source_availability.get("n_review_pending", pd.Series(dtype=int)).sum()
+            ),
             "endpoint_scores_computed": bool(source_availability["endpoint_scores_computed"].any()),
-            "next_action": "query remaining DustPedia/HI/PHANGS source evidence residual-blind",
+            "next_action": "complete human review for matched evidence and record no-coverage blockers",
         },
     ]
     status = pd.DataFrame(rows)

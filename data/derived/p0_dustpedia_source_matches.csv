@@ -1,0 +1,37 @@
+galaxy,source_family,catalog,table_key,match_status,evidence_summary,accepted_label_output_allowed,endpoint_scores_computed,claim_boundary
+NGC0100,DustPedia,J/A+A/622/A132,J/A+A/622/A132/fitw1,NO_DIRECT_MATCH,NGC0100 not found by normalized-name match in J/A+A/622/A132/fitw1,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0247,DustPedia,J/A+A/622/A132,J/A+A/622/A132/fitw1,NO_DIRECT_MATCH,NGC0247 not found by normalized-name match in J/A+A/622/A132/fitw1,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0300,DustPedia,J/A+A/622/A132,J/A+A/622/A132/fitw1,MATCHED_SOURCE_EVIDENCE,NGC0300 appears in J/A+A/622/A132/fitw1,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC6503,DustPedia,J/A+A/622/A132,J/A+A/622/A132/fitw1,NO_DIRECT_MATCH,NGC6503 not found by normalized-name match in J/A+A/622/A132/fitw1,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0100,DustPedia,J/A+A/622/A132,J/A+A/622/A132/fither,NO_DIRECT_MATCH,NGC0100 not found by normalized-name match in J/A+A/622/A132/fither,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0247,DustPedia,J/A+A/622/A132,J/A+A/622/A132/fither,NO_DIRECT_MATCH,NGC0247 not found by normalized-name match in J/A+A/622/A132/fither,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0300,DustPedia,J/A+A/622/A132,J/A+A/622/A132/fither,NO_DIRECT_MATCH,NGC0300 not found by normalized-name match in J/A+A/622/A132/fither,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC6503,DustPedia,J/A+A/622/A132,J/A+A/622/A132/fither,NO_DIRECT_MATCH,NGC6503 not found by normalized-name match in J/A+A/622/A132/fither,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0100,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-hi,NO_DIRECT_MATCH,NGC0100 not found by normalized-name match in J/A+A/623/A5/dp-hi,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0247,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-hi,NO_DIRECT_MATCH,NGC0247 not found by normalized-name match in J/A+A/623/A5/dp-hi,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0300,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-hi,MATCHED_SOURCE_EVIDENCE,NGC0300 appears in J/A+A/623/A5/dp-hi,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC6503,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-hi,NO_DIRECT_MATCH,NGC6503 not found by normalized-name match in J/A+A/623/A5/dp-hi,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0100,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-lr,NO_DIRECT_MATCH,NGC0100 not found by normalized-name match in J/A+A/623/A5/dp-lr,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0247,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-lr,NO_DIRECT_MATCH,NGC0247 not found by normalized-name match in J/A+A/623/A5/dp-lr,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0300,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-lr,MATCHED_SOURCE_EVIDENCE,NGC0300 appears in J/A+A/623/A5/dp-lr,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC6503,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-lr,NO_DIRECT_MATCH,NGC6503 not found by normalized-name match in J/A+A/623/A5/dp-lr,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0100,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-mr,NO_DIRECT_MATCH,NGC0100 not found by normalized-name match in J/A+A/623/A5/dp-mr,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0247,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-mr,NO_DIRECT_MATCH,NGC0247 not found by normalized-name match in J/A+A/623/A5/dp-mr,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0300,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-mr,MATCHED_SOURCE_EVIDENCE,NGC0300 appears in J/A+A/623/A5/dp-mr,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC6503,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-mr,NO_DIRECT_MATCH,NGC6503 not found by normalized-name match in J/A+A/623/A5/dp-mr,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0100,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-mg,NO_DIRECT_MATCH,NGC0100 not found by normalized-name match in J/A+A/623/A5/dp-mg,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0247,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-mg,NO_DIRECT_MATCH,NGC0247 not found by normalized-name match in J/A+A/623/A5/dp-mg,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0300,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-mg,MATCHED_SOURCE_EVIDENCE,NGC0300 appears in J/A+A/623/A5/dp-mg,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC6503,DustPedia,J/A+A/623/A5,J/A+A/623/A5/dp-mg,NO_DIRECT_MATCH,NGC6503 not found by normalized-name match in J/A+A/623/A5/dp-mg,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0100,DustPedia,J/A+A/623/A5,J/A+A/623/A5/refs,NO_DIRECT_MATCH,NGC0100 not found by normalized-name match in J/A+A/623/A5/refs,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0247,DustPedia,J/A+A/623/A5,J/A+A/623/A5/refs,NO_DIRECT_MATCH,NGC0247 not found by normalized-name match in J/A+A/623/A5/refs,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0300,DustPedia,J/A+A/623/A5,J/A+A/623/A5/refs,NO_DIRECT_MATCH,NGC0300 not found by normalized-name match in J/A+A/623/A5/refs,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC6503,DustPedia,J/A+A/623/A5,J/A+A/623/A5/refs,NO_DIRECT_MATCH,NGC6503 not found by normalized-name match in J/A+A/623/A5/refs,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0100,DustPedia,J/A+A/631/A38,J/A+A/631/A38/tablea1,NO_DIRECT_MATCH,NGC0100 not found by normalized-name match in J/A+A/631/A38/tablea1,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0247,DustPedia,J/A+A/631/A38,J/A+A/631/A38/tablea1,NO_DIRECT_MATCH,NGC0247 not found by normalized-name match in J/A+A/631/A38/tablea1,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0300,DustPedia,J/A+A/631/A38,J/A+A/631/A38/tablea1,MATCHED_SOURCE_EVIDENCE,NGC0300 appears in J/A+A/631/A38/tablea1,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC6503,DustPedia,J/A+A/631/A38,J/A+A/631/A38/tablea1,NO_DIRECT_MATCH,NGC6503 not found by normalized-name match in J/A+A/631/A38/tablea1,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0100,DustPedia,J/A+A/631/A38,J/A+A/631/A38/tableb1,NO_DIRECT_MATCH,NGC0100 not found by normalized-name match in J/A+A/631/A38/tableb1,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0247,DustPedia,J/A+A/631/A38,J/A+A/631/A38/tableb1,NO_DIRECT_MATCH,NGC0247 not found by normalized-name match in J/A+A/631/A38/tableb1,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0300,DustPedia,J/A+A/631/A38,J/A+A/631/A38/tableb1,MATCHED_SOURCE_EVIDENCE,NGC0300 appears in J/A+A/631/A38/tableb1,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC6503,DustPedia,J/A+A/631/A38,J/A+A/631/A38/tableb1,NO_DIRECT_MATCH,NGC6503 not found by normalized-name match in J/A+A/631/A38/tableb1,False,False,p0_external_source_evidence_not_label_not_endpoint

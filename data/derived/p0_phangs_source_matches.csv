@@ -1,0 +1,5 @@
+galaxy,source_family,match_status,source_url,evidence_summary,accepted_label_output_allowed,endpoint_scores_computed,claim_boundary
+NGC0100,PHANGS,NO_PHANGS_SAMPLE_COVERAGE,https://docs.google.com/spreadsheet/ccc?key=1dC6QGEuxoczljVM2C77t806KyQi4wE4Igu77j7w46vE&output=csv,NGC0100 is not present in the public PHANGS sample table,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0247,PHANGS,NO_PHANGS_SAMPLE_COVERAGE,https://docs.google.com/spreadsheet/ccc?key=1dC6QGEuxoczljVM2C77t806KyQi4wE4Igu77j7w46vE&output=csv,NGC0247 is not present in the public PHANGS sample table,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC0300,PHANGS,NO_PHANGS_SAMPLE_COVERAGE,https://docs.google.com/spreadsheet/ccc?key=1dC6QGEuxoczljVM2C77t806KyQi4wE4Igu77j7w46vE&output=csv,NGC0300 is not present in the public PHANGS sample table,False,False,p0_external_source_evidence_not_label_not_endpoint
+NGC6503,PHANGS,NO_PHANGS_SAMPLE_COVERAGE,https://docs.google.com/spreadsheet/ccc?key=1dC6QGEuxoczljVM2C77t806KyQi4wE4Igu77j7w46vE&output=csv,NGC6503 is not present in the public PHANGS sample table,False,False,p0_external_source_evidence_not_label_not_endpoint

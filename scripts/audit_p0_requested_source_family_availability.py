@@ -37,6 +37,7 @@ def source_status(
     p0_request: pd.Series,
     s4g_candidate: pd.Series | None,
     plan_rows: pd.DataFrame,
+    external_evidence: pd.Series | None,
 ) -> tuple[str, str]:
     required = plan_rows["acquisition_priority"].str.startswith("P0_REQUIRED").any()
     if source_family == "S4G":
@@ -54,16 +55,45 @@ def source_status(
             )
         return "SOURCE_TO_BE_QUERIED", "NED lookup URL missing"
     if source_family == "DustPedia":
+        if (
+            external_evidence is not None
+            and external_evidence["dustpedia_status"] == "MATCHED_SOURCE_EVIDENCE"
+        ):
+            return (
+                "MATCHED_SOURCE_EVIDENCE_REVIEW_PENDING",
+                "DustPedia direct source evidence is acquired, but morphology review is still pending",
+            )
         return (
-            "SOURCE_TO_BE_QUERIED",
-            "DustPedia multiband fallback/validation must be checked residual-blind",
+            "NO_DIRECT_DUSTPEDIA_MATCH",
+            "DustPedia was queried; no direct normalized-name match was found in the acquired tables",
         )
     if source_family == "HI_SURVEYS":
+        if (
+            external_evidence is not None
+            and external_evidence["hi_status"] == "HI_SOURCE_EVIDENCE_READY"
+        ):
+            return (
+                "HI_SOURCE_EVIDENCE_READY_REVIEW_PENDING",
+                "SPARC HI mass/radius evidence is available; HI morphology/asymmetry review remains pending",
+            )
         return (
             "REQUIRED_SOURCE_TO_BE_QUERIED" if required else "SUPPORTING_SOURCE_TO_BE_QUERIED",
             "THINGS/LITTLE_THINGS/WALLABY/HALOGAS availability and gas morphology evidence must be checked",
         )
     if source_family == "PHANGS":
+        if (
+            external_evidence is not None
+            and external_evidence["phangs_status"] == "NO_PHANGS_SAMPLE_COVERAGE"
+        ):
+            if galaxy == "NGC0247":
+                return (
+                    "NO_PHANGS_COVERAGE_FOR_REQUIRED_OPTIONAL_BRANCH",
+                    "PHANGS public sample was queried; NGC0247 is not covered, so this optional branch remains unsupported",
+                )
+            return (
+                "NO_PHANGS_SAMPLE_COVERAGE",
+                "PHANGS public sample was queried; this galaxy is not covered",
+            )
         if galaxy == "NGC0247":
             return (
                 "REQUIRED_OPTIONAL_BRANCH_TO_BE_QUERIED",
@@ -81,6 +111,12 @@ def build_availability() -> pd.DataFrame:
     requests = pd.read_csv(DATA / "p0_external_imaging_request_manifest.csv")
     s4g = pd.read_csv(DATA / "external_s4g_sparc_observable_candidates.csv")
     source_families = pd.read_csv(DATA / "p0_missing_data_source_acquisition_summary.csv")
+    evidence_path = DATA / "p0_external_source_evidence_summary.csv"
+    external_summary = (
+        pd.read_csv(evidence_path).set_index("galaxy")
+        if evidence_path.exists()
+        else pd.DataFrame()
+    )
     s4g_by_galaxy = {
         row["galaxy"]: row for _, row in s4g.iterrows() if row["galaxy"] in set(plan["galaxy"])
     }
@@ -100,6 +136,7 @@ def build_availability() -> pd.DataFrame:
                 request,
                 s4g_by_galaxy.get(galaxy),
                 source_plan,
+                external_summary.loc[galaxy] if galaxy in external_summary.index else None,
             )
             rows.append(
                 {
@@ -134,6 +171,14 @@ def build_summary(availability: pd.DataFrame) -> pd.DataFrame:
                 "availability_status",
                 lambda s: int(s.astype(str).str.contains("TO_BE_QUERIED").sum()),
             ),
+            n_no_coverage=(
+                "availability_status",
+                lambda s: int(s.astype(str).str.contains("NO_").sum()),
+            ),
+            n_review_pending=(
+                "availability_status",
+                lambda s: int(s.astype(str).str.contains("REVIEW_PENDING").sum()),
+            ),
             endpoint_scores_computed=("endpoint_scores_computed", "any"),
         )
         .assign(
@@ -162,8 +207,10 @@ def write_report(availability: pd.DataFrame, summary: pd.DataFrame) -> None:
         "",
         "S4G is partially source-ready for the P0 galaxies through existing",
         "crossmatches and disk-scale candidates. NED/NED-D lookup paths are ready.",
-        "DustPedia, HI surveys, and PHANGS remain residual-blind acquisition tasks",
-        "rather than accepted morphology evidence.",
+        "DustPedia is directly matched only for NGC0300 in the acquired tables.",
+        "HI mass/radius evidence is ready for all four P0 galaxies through SPARC,",
+        "while HI morphology/asymmetry review remains pending. PHANGS public sample",
+        "coverage is not found for the four P0 galaxies, including NGC0247.",
         "",
         "## Source Summary",
         "",

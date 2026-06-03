@@ -67,6 +67,8 @@ def test_publication_files_exist():
         ROOT / "scripts/build_p0_visual_review_response_intake.py",
         ROOT / "scripts/run_p0_response_to_manifest_promotion_gate.py",
         ROOT / "scripts/build_p0_missing_data_source_acquisition_plan.py",
+        ROOT / "scripts/acquire_p0_dustpedia_hi_phangs_sources.py",
+        ROOT / "scripts/build_p0_source_assisted_review_response_draft.py",
         ROOT / "scripts/audit_p0_requested_source_family_availability.py",
         ROOT / "scripts/build_p0_review_pipeline_status_dashboard.py",
         ROOT / "scripts/build_arxiv_source.py",
@@ -185,6 +187,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "consolidated P0 review-pipeline status dashboard" in source
     assert "S4G, NED/NED-D, DustPedia, HI surveys, and PHANGS" in source
     assert "TO_BE_ACQUIRED_RESIDUAL_BLIND" in source
+    assert "DustPedia direct matches are found for \\texttt{NGC0300} only" in source
+    assert "source-assisted review response draft" in source
     assert "requested source-family availability" in source
     assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY" in source
     assert "accepted-label creation and endpoint scoring remain disabled" in source
@@ -1065,32 +1069,21 @@ def test_p0_requested_source_family_availability_is_preflight_only():
         .eq("LOOKUP_READY")
         .all()
     )
-    assert (
-        availability.loc[
-            availability["source_family"] == "DustPedia", "availability_status"
-        ]
-        .eq("SOURCE_TO_BE_QUERIED")
-        .all()
-    )
-    assert (
-        availability.loc[
-            availability["source_family"] == "HI_SURVEYS", "availability_status"
-        ]
-        .str.contains("TO_BE_QUERIED")
-        .all()
-    )
+    dust = availability.loc[availability["source_family"] == "DustPedia"]
+    assert int((dust["availability_status"] == "MATCHED_SOURCE_EVIDENCE_REVIEW_PENDING").sum()) == 1
+    assert int((dust["availability_status"] == "NO_DIRECT_DUSTPEDIA_MATCH").sum()) == 3
+    hi = availability.loc[availability["source_family"] == "HI_SURVEYS"]
+    assert hi["availability_status"].eq("HI_SOURCE_EVIDENCE_READY_REVIEW_PENDING").all()
     ngc247_phangs = availability.loc[
         (availability["galaxy"] == "NGC0247")
         & (availability["source_family"] == "PHANGS")
     ].iloc[0]
-    assert ngc247_phangs["availability_status"] == "REQUIRED_OPTIONAL_BRANCH_TO_BE_QUERIED"
+    assert ngc247_phangs["availability_status"] == "NO_PHANGS_COVERAGE_FOR_REQUIRED_OPTIONAL_BRANCH"
     other_phangs = availability.loc[
         (availability["galaxy"] != "NGC0247")
         & (availability["source_family"] == "PHANGS")
     ]
-    assert other_phangs["availability_status"].eq(
-        "SUPPORTING_OPTIONAL_BRANCH_TO_BE_QUERIED"
-    ).all()
+    assert other_phangs["availability_status"].eq("NO_PHANGS_SAMPLE_COVERAGE").all()
     assert not availability["accepted_label_output_allowed"].any()
     assert not availability["endpoint_scores_allowed"].any()
     assert not availability["endpoint_scores_computed"].any()
@@ -1098,14 +1091,59 @@ def test_p0_requested_source_family_availability_is_preflight_only():
         availability["claim_boundary"]
     )
     assert len(summary) == 5
-    assert int(summary["n_to_be_queried"].sum()) == 12
+    assert int(summary["n_to_be_queried"].sum()) == 0
+    assert int(summary["n_no_coverage"].sum()) == 7
+    assert int(summary["n_review_pending"].sum()) == 5
     report = (
         ROOT / "reports" / "p0_requested_source_family_availability.md"
     ).read_text(encoding="utf-8")
     assert "availability preflight only" in report
-    assert "DustPedia, HI surveys, and PHANGS remain residual-blind acquisition tasks" in report
+    assert "DustPedia is directly matched only for NGC0300" in report
+    assert "PHANGS public sample" in report
     assert "not an accepted morphology manifest" in report
     assert "not an endpoint score" in report
+
+
+def test_p0_dustpedia_hi_phangs_source_evidence_and_response_draft_are_blocked():
+    source_summary = pd.read_csv(DATA / "p0_external_source_evidence_summary.csv")
+    dust = pd.read_csv(DATA / "p0_dustpedia_source_matches.csv")
+    phangs = pd.read_csv(DATA / "p0_phangs_source_matches.csv")
+    hi = pd.read_csv(DATA / "p0_hi_source_evidence.csv")
+    draft = pd.read_csv(DATA / "p0_source_assisted_review_response_draft.csv")
+    validation = pd.read_csv(DATA / "p0_source_assisted_review_response_validation.csv")
+
+    assert set(source_summary["galaxy"]) == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert source_summary.set_index("galaxy").loc["NGC0300", "dustpedia_status"] == "MATCHED_SOURCE_EVIDENCE"
+    assert int((source_summary["dustpedia_status"] == "NO_DIRECT_DUSTPEDIA_MATCH").sum()) == 3
+    assert phangs["match_status"].eq("NO_PHANGS_SAMPLE_COVERAGE").all()
+    assert hi["match_status"].eq("HI_SOURCE_EVIDENCE_READY").all()
+    assert hi["rhi_kpc"].notna().all()
+    assert "DUSTPEDIA_HI_MATCHED" in set(hi["dustpedia_hi_status"])
+    assert not dust.empty
+    assert len(draft) == 4
+    assert draft["draft_status"].eq("SOURCE_ASSISTED_DRAFT_REVIEW_REQUIRED").all()
+    assert draft["residual_blind_family_recommendation"].eq(
+        "REVIEWER_REQUIRED_NOT_ACCEPTED_LABEL"
+    ).all()
+    assert not draft["accepted_manifest_promotion_allowed"].any()
+    assert not draft["endpoint_scores_computed"].any()
+    assert validation["draft_validation_status"].eq(
+        "BLOCKED_DRAFT_NOT_ACCEPTED_REVIEW"
+    ).all()
+    assert not validation["accepted_labels_created"].any()
+    ngc247 = validation.loc[validation["galaxy"] == "NGC0247"].iloc[0]
+    assert "ngc0247_phangs_velocity_field_not_available" in ngc247["blockers"]
+    report = (
+        ROOT / "reports" / "p0_dustpedia_hi_phangs_source_evidence.md"
+    ).read_text(encoding="utf-8")
+    assert "DustPedia direct matches are found for NGC0300 only" in report
+    assert "PHANGS public sample coverage is not found" in report
+    draft_report = (
+        ROOT / "reports" / "p0_source_assisted_review_response_draft.md"
+    ).read_text(encoding="utf-8")
+    assert "source-assisted draft response" in draft_report
+    assert "not an accepted morphology manifest" in draft_report
+    assert "not an endpoint score" in draft_report
 
 
 def test_accepted_morphology_manifest_is_partial_and_endpoint_blocked():
@@ -1741,7 +1779,7 @@ def test_p0_response_to_manifest_promotion_gate_blocks_pending_review():
 def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
     status = pd.read_csv(DATA / "p0_review_pipeline_status.csv")
     summary = pd.read_csv(DATA / "p0_review_pipeline_status_summary.csv")
-    assert len(status) == 10
+    assert len(status) == 12
     assert {
         "external_imaging_request_manifest",
         "skyview_availability_audit",
@@ -1752,14 +1790,17 @@ def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
         "visual_review_response_intake",
         "response_to_manifest_promotion_gate",
         "missing_data_source_acquisition_plan",
+        "dustpedia_hi_phangs_source_evidence",
+        "source_assisted_review_response_draft",
         "requested_source_family_availability",
     } == set(status["stage"])
     blocked = status[status["stage_status"].str.startswith("BLOCKED")]
-    assert len(blocked) == 3
+    assert len(blocked) == 4
     assert {
         "visual_review_completion_gate",
         "visual_review_response_intake",
         "response_to_manifest_promotion_gate",
+        "source_assisted_review_response_draft",
     } == set(blocked["stage"])
     assert not status["endpoint_scores_computed"].any()
     assert not status["accepted_labels_created"].any()
@@ -1769,8 +1810,8 @@ def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
 
     row = summary.iloc[0]
     assert row["pipeline_decision"] == "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY"
-    assert int(row["n_stages"]) == 10
-    assert int(row["n_blocked_stages"]) == 3
+    assert int(row["n_stages"]) == 12
+    assert int(row["n_blocked_stages"]) == 4
     assert bool(row["endpoint_scores_computed"]) is False
     assert bool(row["accepted_labels_created"]) is False
     report = (ROOT / "reports" / "p0_review_pipeline_status_dashboard.md").read_text(
@@ -1785,6 +1826,8 @@ def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
     assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY" in form
     assert "response_to_manifest_promotion_gate" in form
     assert "missing_data_source_acquisition_plan" in form
+    assert "dustpedia_hi_phangs_source_evidence" in form
+    assert "source_assisted_review_response_draft" in form
     assert "requested_source_family_availability" in form
     assert "creates no accepted labels" in form
 

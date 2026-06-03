@@ -1,6 +1,6 @@
-source_family,n_p0_galaxies,n_source_family_rows,n_partial_source_ready,n_lookup_ready,n_to_be_queried,endpoint_scores_computed,accepted_label_output_allowed,claim_boundary
-DustPedia,4,4,0,0,4,False,False,p0_requested_source_availability_not_label_not_endpoint
-HI_SURVEYS,4,4,0,0,4,False,False,p0_requested_source_availability_not_label_not_endpoint
-NED_NEDD,4,4,0,4,0,False,False,p0_requested_source_availability_not_label_not_endpoint
-PHANGS,4,4,0,0,4,False,False,p0_requested_source_availability_not_label_not_endpoint
-S4G,4,4,4,0,0,False,False,p0_requested_source_availability_not_label_not_endpoint
+source_family,n_p0_galaxies,n_source_family_rows,n_partial_source_ready,n_lookup_ready,n_to_be_queried,n_no_coverage,n_review_pending,endpoint_scores_computed,accepted_label_output_allowed,claim_boundary
+DustPedia,4,4,0,0,0,3,1,False,False,p0_requested_source_availability_not_label_not_endpoint
+HI_SURVEYS,4,4,0,0,0,0,4,False,False,p0_requested_source_availability_not_label_not_endpoint
+NED_NEDD,4,4,0,4,0,0,0,False,False,p0_requested_source_availability_not_label_not_endpoint
+PHANGS,4,4,0,0,0,4,0,False,False,p0_requested_source_availability_not_label_not_endpoint
+S4G,4,4,4,0,0,0,0,False,False,p0_requested_source_availability_not_label_not_endpoint

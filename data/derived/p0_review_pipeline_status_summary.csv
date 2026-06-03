@@ -1,2 +1,2 @@
 pipeline_decision,n_stages,n_blocked_stages,endpoint_scores_computed,accepted_labels_created,next_action,claim_boundary
-READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY,10,3,False,False,complete residual-blind human review responses,p0_review_pipeline_status_not_label_not_endpoint
+READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY,12,4,False,False,complete residual-blind human review responses,p0_review_pipeline_status_not_label_not_endpoint
