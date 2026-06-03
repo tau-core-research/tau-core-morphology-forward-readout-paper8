@@ -56,6 +56,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_rotation_inferred_morphology_diagnostic.py",
         ROOT / "scripts/build_morphological_memory_history_proxy.py",
         ROOT / "scripts/build_morphology_inspection_queue.py",
+        ROOT / "scripts/build_p0_morphology_inspection_packets.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -137,6 +138,9 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "4 P0 and 18 P1 inspection targets" in source
     assert "\\texttt{NGC0300}, \\texttt{NGC6503}, \\texttt{NGC0100}, and \\texttt{NGC0247}" in source
     assert "not validation and not an accepted morphology manifest" in source
+    assert "residual-blind inspection packets" in source
+    assert "deep optical or infrared outer-disk profiles" in source
+    assert "\\texttt{NGC0247} additionally requests bar-length and velocity-field support" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1230,6 +1234,36 @@ def test_morphology_inspection_queue_is_acquisition_plan_only():
     assert "not an accepted morphology manifest" in report
     assert "not an endpoint score" in report
     assert "residual-blind source collection only" in report
+
+
+def test_p0_morphology_inspection_packets_are_blank_review_templates():
+    index = pd.read_csv(DATA / "p0_morphology_inspection_packet_index.csv")
+    needs = pd.read_csv(DATA / "p0_morphology_inspection_source_needs.csv")
+    assert len(index) == 4
+    assert set(index["galaxy"]) == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert not index["accepted_label_output_allowed"].any()
+    assert not index["endpoint_scores_allowed"].any()
+    assert "p0_morphology_packets_not_accepted_label_not_endpoint" in set(
+        index["claim_boundary"]
+    )
+    assert {
+        "residual_blind_multiband_image_morphology_label",
+        "deep_optical_or_ir_outer_disk_profile",
+        "hi_extent_or_asymmetry",
+    }.issubset(set(needs["source"]))
+    for packet_path in index["packet_path"]:
+        packet = (ROOT / packet_path).read_text(encoding="utf-8")
+        assert "Blank Review Fields" in packet
+        assert "Residual-blind family label recommended for future endpoint:" in packet
+        assert "Forbidden Inputs" in packet
+        assert "endpoint residual gain" in packet
+        assert "not an endpoint score" in packet
+    report = (ROOT / "reports" / "p0_morphology_inspection_packets.md").read_text(
+        encoding="utf-8"
+    )
+    assert "manual residual-blind" in report
+    assert "not accepted labels" in report
+    assert "not endpoint scores" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
