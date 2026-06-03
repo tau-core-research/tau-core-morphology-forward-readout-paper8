@@ -58,6 +58,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_morphology_inspection_queue.py",
         ROOT / "scripts/build_p0_morphology_inspection_packets.py",
         ROOT / "scripts/build_p0_external_imaging_request_manifest.py",
+        ROOT / "scripts/build_p0_external_imaging_review_dashboard.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -147,6 +148,9 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "29.745 arcmin for \\texttt{NGC0247}" in source
     assert "20.288 arcmin for \\texttt{NGC0300}" in source
     assert "10.030 arcmin for \\texttt{NGC6503}" in source
+    assert "local HTML imaging-review dashboard" in source
+    assert "offline launch page with per-galaxy source links" in source
+    assert "does not embed a classification result or an accepted label" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1304,6 +1308,29 @@ def test_p0_external_imaging_request_manifest_is_source_request_only():
     assert "does not download, classify" in report
     assert "not image-based validation" in report
     assert "not an endpoint score" in report
+
+
+def test_p0_external_imaging_review_dashboard_is_launch_page_only():
+    index = pd.read_csv(DATA / "p0_external_imaging_review_dashboard_index.csv")
+    assert len(index) == 1
+    assert int(index["n_galaxies"].iloc[0]) == 4
+    assert index["galaxies"].iloc[0] == "NGC0100;NGC0247;NGC0300;NGC6503"
+    assert not index["accepted_label_output_allowed"].any()
+    assert not index["endpoint_scores_allowed"].any()
+    assert "p0_imaging_review_dashboard_not_morphology_label_not_endpoint" in set(
+        index["claim_boundary"]
+    )
+    dashboard = (ROOT / "reports" / "p0_external_imaging_review_dashboard.html").read_text(
+        encoding="utf-8"
+    )
+    for galaxy in ["NGC0100", "NGC0247", "NGC0300", "NGC6503"]:
+        assert galaxy in dashboard
+    assert "DSS2 Red" in dashboard
+    assert "2MASS-K" in dashboard
+    assert "WISE W1" in dashboard
+    assert "Blank Review Checklist" in dashboard
+    assert "Forbidden inputs" in dashboard
+    assert "does not classify images" in dashboard
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

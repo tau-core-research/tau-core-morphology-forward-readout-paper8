@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paper 8 P0 External Imaging Review Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #1f2933;
+      background: #f7f7f4;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+    }
+    .notice {
+      max-width: 900px;
+      margin: 0 0 24px;
+      line-height: 1.5;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #d7d7d0;
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    }
+    h2 {
+      margin: 0 0 4px;
+      font-size: 22px;
+    }
+    h3 {
+      margin: 16px 0 8px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      color: #52616b;
+    }
+    .tag {
+      margin: 0;
+      color: #52616b;
+      line-height: 1.4;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 16px 0;
+    }
+    .meta div {
+      border-top: 1px solid #ecece7;
+      padding-top: 8px;
+    }
+    dt {
+      font-size: 12px;
+      color: #6b7280;
+    }
+    dd {
+      margin: 2px 0 0;
+      font-weight: 600;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    a, .chips span {
+      display: inline-block;
+      padding: 6px 8px;
+      border: 1px solid #c7d2da;
+      border-radius: 6px;
+      color: #0f4c81;
+      background: #f4f9fc;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .checklist {
+      padding-left: 20px;
+      line-height: 1.75;
+    }
+    footer {
+      margin-top: 24px;
+      color: #52616b;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Paper 8 P0 External Imaging Review Dashboard</h1>
+    <p class="notice">
+      This is a residual-blind review launch page. It links to external image and
+      catalogue sources for the four P0 morphology-inspection targets. This dashboard does not classify images, does not produce accepted morphology labels, and does not compute endpoint scores. Claim boundary: <code>p0_imaging_review_dashboard_not_morphology_label_not_endpoint</code>.
+    </p>
+    <div class="grid">
+      
+    <section class="card">
+      <header>
+        <h2>NGC0100</h2>
+        <p class="tag">edge_on_projection_degeneracy;outer_disk_tail_lsb_or_hi_extent</p>
+      </header>
+      <dl class="meta">
+        <div><dt>RA</dt><dd>6.01182</dd></div>
+        <div><dt>Dec</dt><dd>16.48639</dd></div>
+        <div><dt>FOV</dt><dd>8.000 arcmin</dd></div>
+        <div><dt>Inclination</dt><dd>89.0 deg</dd></div>
+        <div><dt>S4G components</dt><dd>Z</dd></div>
+      </dl>
+      <div class="links"><a href="https://ned.ipac.caltech.edu/byname?objname=NGC0100" target="_blank" rel="noreferrer">NED</a> <a href="https://simbad.cds.unistra.fr/simbad/sim-id?Ident=NGC0100" target="_blank" rel="noreferrer">SIMBAD</a> <a href="https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Position=6.011820+16.486390&amp;Survey=DSS2%20Red&amp;Size=0.1333" target="_blank" rel="noreferrer">DSS2 Red</a> <a href="https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Position=6.011820+16.486390&amp;Survey=2MASS-K&amp;Size=0.1333" target="_blank" rel="noreferrer">2MASS-K</a> <a href="https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Position=6.011820+16.486390&amp;Survey=WISE%203.4&amp;Size=0.1333" target="_blank" rel="noreferrer">WISE W1</a></div>
+      <h3>Requested Observables</h3>
+      <div class="chips"><span>residual_blind_multiband_image_morphology_label</span><span>deep_optical_or_ir_outer_disk_profile</span><span>hi_extent_or_asymmetry</span></div>
+      <h3>Blank Review Checklist</h3>
+      <ul class="checklist"><li><label><input type="checkbox" /> present-day morphology label</label></li><li><label><input type="checkbox" /> outer-disk / LSB / tail evidence</label></li><li><label><input type="checkbox" /> HI extent or asymmetry evidence</label></li><li><label><input type="checkbox" /> projection, edge-on, flare, or warp caveat</label></li><li><label><input type="checkbox" /> bar / m=2 evidence if requested</label></li><li><label><input type="checkbox" /> morphological memory/history proxy judgment</label></li><li><label><input type="checkbox" /> residual-blind family recommendation for future endpoint</label></li></ul>
+    </section>
+    
+
+    <section class="card">
+      <header>
+        <h2>NGC0247</h2>
+        <p class="tag">bar_m2_component;outer_disk_tail_lsb_or_hi_extent</p>
+      </header>
+      <dl class="meta">
+        <div><dt>RA</dt><dd>11.78564</dd></div>
+        <div><dt>Dec</dt><dd>-20.76040</dd></div>
+        <div><dt>FOV</dt><dd>29.745 arcmin</dd></div>
+        <div><dt>Inclination</dt><dd>74.0 deg</dd></div>
+        <div><dt>S4G components</dt><dd>D;BAR</dd></div>
+      </dl>
+      <div class="links"><a href="https://ned.ipac.caltech.edu/byname?objname=NGC0247" target="_blank" rel="noreferrer">NED</a> <a href="https://simbad.cds.unistra.fr/simbad/sim-id?Ident=NGC0247" target="_blank" rel="noreferrer">SIMBAD</a> <a href="https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Position=11.785640+-20.760400&amp;Survey=DSS2%20Red&amp;Size=0.4958" target="_blank" rel="noreferrer">DSS2 Red</a> <a href="https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Position=11.785640+-20.760400&amp;Survey=2MASS-K&amp;Size=0.4958" target="_blank" rel="noreferrer">2MASS-K</a> <a href="https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Position=11.785640+-20.760400&amp;Survey=WISE%203.4&amp;Size=0.4958" target="_blank" rel="noreferrer">WISE W1</a></div>
+      <h3>Requested Observables</h3>
+      <div class="chips"><span>residual_blind_multiband_image_morphology_label</span><span>deep_optical_or_ir_outer_disk_profile</span><span>hi_extent_or_asymmetry</span><span>bar_length_and_m2_component</span><span>velocity_field_if_available</span></div>
+      <h3>Blank Review Checklist</h3>
+      <ul class="checklist"><li><label><input type="checkbox" /> present-day morphology label</label></li><li><label><input type="checkbox" /> outer-disk / LSB / tail evidence</label></li><li><label><input type="checkbox" /> HI extent or asymmetry evidence</label></li><li><label><input type="checkbox" /> projection, edge-on, flare, or warp caveat</label></li><li><label><input type="checkbox" /> bar / m=2 evidence if requested</label></li><li><label><input type="checkbox" /> morphological memory/history proxy judgment</label></li><li><label><input type="checkbox" /> residual-blind family recommendation for future endpoint</label></li></ul>
+    </section>
+    
+
+    <section class="card">
+      <header>
+        <h2>NGC0300</h2>
+        <p class="tag">outer_disk_tail_lsb_or_hi_extent</p>
+      </header>
+      <dl class="meta">
+        <div><dt>RA</dt><dd>13.72283</dd></div>
+        <div><dt>Dec</dt><dd>-37.68438</dd></div>
+        <div><dt>FOV</dt><dd>20.288 arcmin</dd></div>
+        <div><dt>Inclination</dt><dd>42.0 deg</dd></div>
+        <div><dt>S4G components</dt><dd>D</dd></div>
+      </dl>
+      <div class="links"><a href="https://ned.ipac.caltech.edu/byname?objname=NGC0300" target="_blank" rel="noreferrer">NED</a> <a href="https://simbad.cds.unistra.fr/simbad/sim-id?Ident=NGC0300" target="_blank" rel="noreferrer">SIMBAD</a> <a href="https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Position=13.722830+-37.684380&amp;Survey=DSS2%20Red&amp;Size=0.3381" target="_blank" rel="noreferrer">DSS2 Red</a> <a href="https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Position=13.722830+-37.684380&amp;Survey=2MASS-K&amp;Size=0.3381" target="_blank" rel="noreferrer">2MASS-K</a> <a href="https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Position=13.722830+-37.684380&amp;Survey=WISE%203.4&amp;Size=0.3381" target="_blank" rel="noreferrer">WISE W1</a></div>
+      <h3>Requested Observables</h3>
+      <div class="chips"><span>residual_blind_multiband_image_morphology_label</span><span>deep_optical_or_ir_outer_disk_profile</span><span>hi_extent_or_asymmetry</span></div>
+      <h3>Blank Review Checklist</h3>
+      <ul class="checklist"><li><label><input type="checkbox" /> present-day morphology label</label></li><li><label><input type="checkbox" /> outer-disk / LSB / tail evidence</label></li><li><label><input type="checkbox" /> HI extent or asymmetry evidence</label></li><li><label><input type="checkbox" /> projection, edge-on, flare, or warp caveat</label></li><li><label><input type="checkbox" /> bar / m=2 evidence if requested</label></li><li><label><input type="checkbox" /> morphological memory/history proxy judgment</label></li><li><label><input type="checkbox" /> residual-blind family recommendation for future endpoint</label></li></ul>
+    </section>
+    
+
+    <section class="card">
+      <header>
+        <h2>NGC6503</h2>
+        <p class="tag">outer_disk_tail_lsb_or_hi_extent</p>
+      </header>
+      <dl class="meta">
+        <div><dt>RA</dt><dd>267.36047</dd></div>
+        <div><dt>Dec</dt><dd>70.14434</dd></div>
+        <div><dt>FOV</dt><dd>10.030 arcmin</dd></div>
+        <div><dt>Inclination</dt><dd>74.0 deg</dd></div>
+        <div><dt>S4G components</dt><dd>D;N</dd></div>
+      </dl>
+      <div class="links"><a href="https://ned.ipac.caltech.edu/byname?objname=NGC6503" target="_blank" rel="noreferrer">NED</a> <a href="https://simbad.cds.unistra.fr/simbad/sim-id?Ident=NGC6503" target="_blank" rel="noreferrer">SIMBAD</a> <a href="https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Position=267.360470+70.144340&amp;Survey=DSS2%20Red&amp;Size=0.1672" target="_blank" rel="noreferrer">DSS2 Red</a> <a href="https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Position=267.360470+70.144340&amp;Survey=2MASS-K&amp;Size=0.1672" target="_blank" rel="noreferrer">2MASS-K</a> <a href="https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Position=267.360470+70.144340&amp;Survey=WISE%203.4&amp;Size=0.1672" target="_blank" rel="noreferrer">WISE W1</a></div>
+      <h3>Requested Observables</h3>
+      <div class="chips"><span>residual_blind_multiband_image_morphology_label</span><span>deep_optical_or_ir_outer_disk_profile</span><span>hi_extent_or_asymmetry</span></div>
+      <h3>Blank Review Checklist</h3>
+      <ul class="checklist"><li><label><input type="checkbox" /> present-day morphology label</label></li><li><label><input type="checkbox" /> outer-disk / LSB / tail evidence</label></li><li><label><input type="checkbox" /> HI extent or asymmetry evidence</label></li><li><label><input type="checkbox" /> projection, edge-on, flare, or warp caveat</label></li><li><label><input type="checkbox" /> bar / m=2 evidence if requested</label></li><li><label><input type="checkbox" /> morphological memory/history proxy judgment</label></li><li><label><input type="checkbox" /> residual-blind family recommendation for future endpoint</label></li></ul>
+    </section>
+    
+    </div>
+    <footer>
+      Forbidden inputs: endpoint residual gain, required-S_tau as a label input,
+      best-fit readout family as accepted morphology evidence, and post-hoc
+      family switching after endpoint scoring.
+    </footer>
+  </main>
+</body>
+</html>

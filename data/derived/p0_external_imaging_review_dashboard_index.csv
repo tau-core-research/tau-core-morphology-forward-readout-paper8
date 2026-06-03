@@ -1,0 +1,2 @@
+dashboard_path,n_galaxies,galaxies,claim_boundary,accepted_label_output_allowed,endpoint_scores_allowed
+reports/p0_external_imaging_review_dashboard.html,4,NGC0100;NGC0247;NGC0300;NGC6503,p0_imaging_review_dashboard_not_morphology_label_not_endpoint,False,False
