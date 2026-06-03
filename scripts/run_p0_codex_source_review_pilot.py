@@ -33,6 +33,7 @@ def markdown_table(df: pd.DataFrame) -> str:
 
 def load_inputs() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     labels = pd.read_csv(DATA / "p0_codex_accepted_label_manifest.csv")
+    readout_proxy = pd.read_csv(DATA / "p0_readout_relevant_morphology_proxy.csv")
     expdisk = pd.read_csv(DATA / "exponential_disk_narrow_dry_run_scores_by_galaxy.csv")
     formula_shell = pd.read_csv(DATA / "morphology_formula_shell_proxy_scores_by_galaxy.csv")
     source_native = pd.read_csv(DATA / "source_native_readout_formula_scores_by_galaxy.csv")
@@ -43,6 +44,28 @@ def load_inputs() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFram
         raise RuntimeError("No P0 Codex/source-reviewed labels available for pilot.")
     if not labels["accepted_formula_family"].eq("K_exponential_disk").all():
         raise RuntimeError("This pilot is currently defined only for P0 K_exponential_disk labels.")
+    labels = labels.merge(
+        readout_proxy[
+            [
+                "galaxy",
+                "k_obs",
+                "k_readout",
+                "readout_proxy_source",
+                "promotion_status",
+                "formula_shell",
+                "readout_relevant_proxy_family",
+                "readout_proxy_components",
+                "proxy_reason",
+                "pilot_implication",
+            ]
+        ],
+        on="galaxy",
+        how="left",
+        validate="one_to_one",
+    )
+    if labels["k_readout"].isna().any():
+        missing_names = ", ".join(labels.loc[labels["k_readout"].isna(), "galaxy"].astype(str))
+        raise RuntimeError(f"P0 galaxies missing readout proxy rows: {missing_names}")
     return labels, expdisk, formula_shell, source_native
 
 
@@ -148,6 +171,10 @@ def build_scores() -> pd.DataFrame:
     merged["primary_tau_minus_mond"] = merged[primary_mond_delta]
     merged["primary_tau_beats_tpg_v6"] = merged[primary_beats_tpg]
     merged["primary_tau_beats_mond"] = merged[primary_beats_mond]
+    merged["scored_formula_shell"] = "K_exponential_disk"
+    merged["scored_formula_shell_source"] = "direct_p0_expdisk_pilot_control"
+    merged["readout_proxy_formula_shell_ready"] = merged["promotion_status"].eq("K_OBS_DIRECT")
+    merged["readout_proxy_overlay_not_scored"] = ~merged["readout_proxy_formula_shell_ready"]
     merged["endpoint_scores_computed"] = False
     merged["full_endpoint_manifest_row_created"] = False
     merged["claim_boundary"] = CLAIM_BOUNDARY
@@ -161,6 +188,15 @@ def build_summary(scores: pd.DataFrame) -> pd.DataFrame:
                 "pilot_decision": "P0_CODEX_SOURCE_REVIEW_PILOT_COMPLETE_NOT_ENDPOINT",
                 "n_galaxies": len(scores),
                 "primary_amplitude_policy": PRIMARY_POLICY,
+                "n_k_obs_exponential_disk": int(scores["k_obs"].eq("K_exponential_disk").sum()),
+                "n_distinct_k_readout": int(scores["k_readout"].nunique()),
+                "n_k_obs_direct": int(scores["promotion_status"].eq("K_OBS_DIRECT").sum()),
+                "n_k_readout_proxy_promotions": int(
+                    scores["promotion_status"].eq("K_OBS_TO_K_READOUT_PROXY").sum()
+                ),
+                "n_readout_proxy_overlay_not_scored": int(
+                    scores["readout_proxy_overlay_not_scored"].sum()
+                ),
                 "primary_beats_tpg_v6_fraction": float(scores["primary_tau_beats_tpg_v6"].mean()),
                 "primary_beats_mond_fraction": float(scores["primary_tau_beats_mond"].mean()),
                 "primary_median_tau_minus_tpg_v6": float(
@@ -233,6 +269,13 @@ def write_report(scores: pd.DataFrame, summary: pd.DataFrame) -> None:
         "endpoint result.",
         "This is not an endpoint result.",
         "",
+        "The score table now separates `k_obs`, `k_readout`,",
+        "`readout_proxy_source`, `promotion_status`, and `formula_shell`. In this",
+        "narrow pilot the scored shell is still the direct apparent",
+        "`K_exponential_disk` control. Rows whose `k_readout` requires projection,",
+        "bar/m=2, or compact-core overlay carry",
+        "`readout_proxy_overlay_not_scored=True`: they are not yet scored with their readout-proxy shell.",
+        "",
         "## Summary",
         "",
         markdown_table(summary),
@@ -244,6 +287,13 @@ def write_report(scores: pd.DataFrame, summary: pd.DataFrame) -> None:
             scores[
                 [
                     "galaxy",
+                    "k_obs",
+                    "k_readout",
+                    "readout_proxy_source",
+                    "promotion_status",
+                    "formula_shell",
+                    "scored_formula_shell",
+                    "readout_proxy_overlay_not_scored",
                     "accepted_formula_family",
                     "review_confidence",
                     "manifest_caveat",

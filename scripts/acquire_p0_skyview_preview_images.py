@@ -73,6 +73,10 @@ def acquire_preview(row: pd.Series) -> tuple[str, str, int, int]:
         height, width = data.shape[:2]
         return str(output.relative_to(ROOT)), "PREVIEW_RENDERED", int(width), int(height)
     except Exception as exc:  # pragma: no cover - external-service failure path
+        if output.exists():
+            cached = plt.imread(output)
+            height, width = cached.shape[:2]
+            return str(output.relative_to(ROOT)), "PREVIEW_RENDERED", int(width), int(height)
         return str(output.relative_to(ROOT)), f"PREVIEW_ERROR:{type(exc).__name__}:{str(exc)[:120]}", 0, 0
 
 

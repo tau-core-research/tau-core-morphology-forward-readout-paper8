@@ -1842,6 +1842,19 @@ def test_p0_readout_relevant_morphology_proxy_separates_4d_handles():
     summary = pd.read_csv(DATA / "p0_readout_relevant_morphology_proxy_summary.csv")
     assert len(proxy) == 4
     assert set(proxy["galaxy"]) == {"NGC0100", "NGC0247", "NGC0300", "NGC6503"}
+    required_columns = {
+        "k_obs",
+        "k_readout",
+        "readout_proxy_source",
+        "promotion_status",
+        "formula_shell",
+    }
+    assert required_columns.issubset(proxy.columns)
+    assert proxy["k_obs"].eq("K_exponential_disk").all()
+    assert proxy["formula_shell"].equals(proxy["k_readout"])
+    assert proxy["readout_proxy_source"].eq("p0_codex_source_review_caveat_mapping").all()
+    assert int(proxy["promotion_status"].eq("K_OBS_DIRECT").sum()) == 1
+    assert int(proxy["promotion_status"].eq("K_OBS_TO_K_READOUT_PROXY").sum()) == 3
     assert proxy["observed_4d_family_label"].eq("K_exponential_disk").all()
     assert not proxy["uses_rotation_residuals"].any()
     assert not proxy["endpoint_scores_computed"].any()
@@ -1855,12 +1868,15 @@ def test_p0_readout_relevant_morphology_proxy_separates_4d_handles():
         proxy["claim_boundary"]
     )
     assert int(summary["n_galaxies"].sum()) == 4
+    assert int(summary["n_direct_k_obs"].sum()) == 1
+    assert int(summary["n_proxy_promotions"].sum()) == 3
     report = (ROOT / "reports" / "p0_readout_relevant_morphology_proxy.md").read_text(
         encoding="utf-8"
     )
     assert "projected 4D morphology handles" in report
     assert "not as proven fundamental Tau-side classes" in report
     assert "plain P0 `K_exponential_disk` pilot can be weak" in report
+    assert "formula shell is attached to `k_readout`, not automatically to `k_obs`" in report
 
 
 def test_p0_codex_source_review_pilot_is_narrow_and_claim_bounded():
@@ -1868,6 +1884,21 @@ def test_p0_codex_source_review_pilot_is_narrow_and_claim_bounded():
     summary = pd.read_csv(DATA / "p0_codex_source_review_pilot_summary.csv")
     assert len(scores) == 4
     assert set(scores["galaxy"]) == {"NGC0100", "NGC0247", "NGC0300", "NGC6503"}
+    required_columns = {
+        "k_obs",
+        "k_readout",
+        "readout_proxy_source",
+        "promotion_status",
+        "formula_shell",
+        "scored_formula_shell",
+        "readout_proxy_overlay_not_scored",
+    }
+    assert required_columns.issubset(scores.columns)
+    assert scores["k_obs"].eq("K_exponential_disk").all()
+    assert scores["scored_formula_shell"].eq("K_exponential_disk").all()
+    assert int(scores["promotion_status"].eq("K_OBS_DIRECT").sum()) == 1
+    assert int(scores["promotion_status"].eq("K_OBS_TO_K_READOUT_PROXY").sum()) == 3
+    assert int(scores["readout_proxy_overlay_not_scored"].sum()) == 3
     assert scores["accepted_formula_family"].eq("K_exponential_disk").all()
     assert scores["primary_amplitude_policy"].eq("leave_one_galaxy_out_beta_all13").all()
     assert not scores["endpoint_scores_computed"].any()
@@ -1877,6 +1908,10 @@ def test_p0_codex_source_review_pilot_is_narrow_and_claim_bounded():
     row = summary.iloc[0]
     assert row["pilot_decision"] == "P0_CODEX_SOURCE_REVIEW_PILOT_COMPLETE_NOT_ENDPOINT"
     assert int(row["n_galaxies"]) == 4
+    assert int(row["n_distinct_k_readout"]) == 4
+    assert int(row["n_k_obs_direct"]) == 1
+    assert int(row["n_k_readout_proxy_promotions"]) == 3
+    assert int(row["n_readout_proxy_overlay_not_scored"]) == 3
     assert abs(float(row["primary_beats_tpg_v6_fraction"]) - 0.75) < 1.0e-12
     assert abs(float(row["primary_beats_mond_fraction"]) - 0.25) < 1.0e-12
     assert abs(float(row["formula_shell_beats_tpg_v6_fraction"]) - 1.0) < 1.0e-12
@@ -1889,6 +1924,8 @@ def test_p0_codex_source_review_pilot_is_narrow_and_claim_bounded():
     assert "not launch the frozen 175-galaxy endpoint" in report
     assert "MOND remains a hard baseline" in report
     assert "not an endpoint result" in report
+    assert "The score table now separates `k_obs`, `k_readout`" in report
+    assert "not yet scored with their readout-proxy shell" in report
 
 
 def test_p0_review_pipeline_status_dashboard_summarizes_codex_review_chain():

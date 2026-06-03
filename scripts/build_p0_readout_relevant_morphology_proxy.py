@@ -71,6 +71,16 @@ def build_proxy() -> tuple[pd.DataFrame, pd.DataFrame]:
         rows.append(
             {
                 "galaxy": row["galaxy"],
+                "k_obs": row["accepted_formula_family"],
+                "k_readout": proxy["readout_relevant_proxy_family"],
+                "formula_shell": proxy["readout_relevant_proxy_family"],
+                "promotion_status": (
+                    "K_OBS_DIRECT"
+                    if proxy["readout_relevant_proxy_family"]
+                    == "K_clean_exponential_disk_control"
+                    else "K_OBS_TO_K_READOUT_PROXY"
+                ),
+                "readout_proxy_source": "p0_codex_source_review_caveat_mapping",
                 "observed_4d_family_label": row["accepted_formula_family"],
                 "observed_4d_morphology_label": row["present_day_morphology_label"],
                 "manifest_caveat": row["manifest_caveat"],
@@ -87,6 +97,11 @@ def build_proxy() -> tuple[pd.DataFrame, pd.DataFrame]:
         .agg(
             n_galaxies=("galaxy", "size"),
             median_review_confidence=("review_confidence", "median"),
+            n_direct_k_obs=("promotion_status", lambda s: int((s == "K_OBS_DIRECT").sum())),
+            n_proxy_promotions=(
+                "promotion_status",
+                lambda s: int((s == "K_OBS_TO_K_READOUT_PROXY").sum()),
+            ),
             uses_rotation_residuals=("uses_rotation_residuals", "any"),
             endpoint_scores_computed=("endpoint_scores_computed", "any"),
         )
@@ -114,6 +129,10 @@ def write_report(proxy: pd.DataFrame, summary: pd.DataFrame) -> None:
         markdown_table(proxy),
         "",
         "## Interpretation",
+        "",
+        "The operational scoring fields are `k_obs`, `k_readout`,",
+        "`readout_proxy_source`, `promotion_status`, and `formula_shell`. The",
+        "formula shell is attached to `k_readout`, not automatically to `k_obs`.",
         "",
         "The thin/thick disk, bar, ring, compact, and tail labels are treated here",
         "as projected 4D morphology handles, not as proven fundamental Tau-side",
