@@ -112,3 +112,30 @@ and TGP-like baselines?
 The bridge does not yet claim that these readout proxies are final Tau-side
 classes, that Tau Core is empirically validated, or that MOND/RAR/TGP
 comparators have been superseded.
+
+## Baseline Success As Readout-Regime Control
+
+The bridge also records the complementary control reading: if a conventional or
+historical baseline already fits a galaxy well, that success may itself mark a
+Tau Core readout regime.
+
+```text
+Newtonian good fit
+    -> quiet / regular baryonic-readout regime.
+
+MOND or RAR good fit
+    -> scalarized radial low-acceleration or diffuse-disk regime.
+
+TPG good fit
+    -> smooth closure-like or memory-integrated readout regime.
+
+Tau matched-family good fit
+    -> current morphology proxy may be close to K_readout.
+```
+
+This matters because Paper 8 should not claim that Tau Core must beat every
+baseline everywhere. A stronger claim-safe endpoint is that baseline success
+zones and Tau-family success zones map to distinct predeclared
+morphology/readout regimes. Baseline winners may therefore become controls,
+especially for galaxies whose present-day 4D morphology is regular, scalarized,
+or historically/memory integrated.

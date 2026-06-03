@@ -1,0 +1,9 @@
+audit_source,available_best_model,n_galaxies,joined_to_primary_175,current_memory_match_fraction
+paper1_73_baseline_pivot,mond_simple_mu,22,22,0.5909090909090909
+paper1_73_baseline_pivot,newtonian_baryonic,5,5,0.0
+paper1_73_baseline_pivot,projection_fixed,32,32,0.21875
+paper1_73_baseline_pivot,rar_mcgaugh,14,14,0.42857142857142855
+wide_fixed_tpg_proxy_ranks,FixedTPG,58,58,0.2413793103448276
+wide_fixed_tpg_proxy_ranks,MOND,57,57,0.5964912280701754
+wide_fixed_tpg_proxy_ranks,Newtonian,8,8,0.125
+wide_fixed_tpg_proxy_ranks,RAR,20,20,0.4

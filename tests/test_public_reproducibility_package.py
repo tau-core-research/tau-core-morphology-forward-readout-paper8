@@ -30,12 +30,14 @@ def test_publication_files_exist():
         ROOT / "scripts/run_morphology_formula_shell_proxy_endpoint.py",
         ROOT / "scripts/build_morphology_parameter_manifest.py",
         ROOT / "scripts/run_source_native_readout_formula_endpoint.py",
+        ROOT / "scripts/run_readout_mixture_proxy_endpoint.py",
         ROOT / "scripts/run_manifest_confidence_diagnostics.py",
         ROOT / "scripts/run_amplitude_policy_diagnostics.py",
         ROOT / "scripts/run_amplitude_shrinkage_path.py",
         ROOT / "scripts/run_train_selected_shrinkage_diagnostic.py",
         ROOT / "scripts/run_family_breakdown_diagnostics.py",
         ROOT / "scripts/run_family_observable_quality_diagnostics.py",
+        ROOT / "scripts/audit_baseline_success_morphology.py",
         ROOT / "scripts/run_predeclared_quality_gate_diagnostics.py",
         ROOT / "scripts/run_quality_gate_shuffled_null_diagnostics.py",
         ROOT / "scripts/run_endpoint_decision_matrix.py",
@@ -56,6 +58,7 @@ def test_publication_files_exist():
         ROOT / "scripts/audit_exponential_disk_failure_sensitivity.py",
         ROOT / "scripts/run_rotation_inferred_morphology_diagnostic.py",
         ROOT / "scripts/build_morphological_memory_history_proxy.py",
+        ROOT / "scripts/build_readout_state_vector_intake_schema.py",
         ROOT / "scripts/build_morphology_inspection_queue.py",
         ROOT / "scripts/build_p0_morphology_inspection_packets.py",
         ROOT / "scripts/build_p0_external_imaging_request_manifest.py",
@@ -202,6 +205,11 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "requested source-family availability" in source
     assert "P0_CODEX_SOURCE_REVIEW_LABELS_READY_FULL_ENDPOINT_BLOCKED" in source
     assert "full endpoint labels and endpoint scoring remain disabled" in source
+    assert "baseline success is not discarded" in source
+    assert "quiet baryonic-readout controls" in source
+    assert "scalarized radial-readout controls" in source
+    assert "closure-like or memory-integrated readout controls" in source
+    assert "predeclared readout regimes rather than to post-hoc model choice" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -225,6 +233,11 @@ def test_bridge_central_doc_records_obs_vs_readout_layer():
     assert "endpoint residual gain" in bridge
     assert "best-fit Tau Core readout family" in bridge
     assert "NGC0247" in bridge
+    assert "Baseline Success As Readout-Regime Control" in bridge
+    assert "quiet / regular baryonic-readout regime" in bridge
+    assert "scalarized radial low-acceleration or diffuse-disk regime" in bridge
+    assert "smooth closure-like or memory-integrated readout regime" in bridge
+    assert "Baseline winners may therefore become controls" in bridge
 
 
 def test_derived_protocol_tables_exist_and_have_expected_content():
@@ -479,6 +492,40 @@ def test_source_native_readout_formula_endpoint_is_claim_bounded():
     assert "not empirical validation" in report
 
 
+def test_readout_mixture_proxy_endpoint_preserves_negative_control():
+    weights = pd.read_csv(DATA / "readout_mixture_proxy_weights.csv")
+    scores = pd.read_csv(DATA / "readout_mixture_proxy_scores_by_galaxy.csv")
+    summary = pd.read_csv(DATA / "readout_mixture_proxy_endpoint_summary.csv")
+    expected_families = {
+        "K_compact_finite",
+        "K_scale_tail_spiral",
+        "K_exponential_disk",
+        "K_thick_flared",
+    }
+    assert len(weights) == 175
+    assert len(scores) == 175
+    assert expected_families == {
+        column.removeprefix("w_") for column in weights.columns if column.startswith("w_")
+    }
+    weight_cols = [f"w_{family}" for family in expected_families]
+    assert (weights[weight_cols].sum(axis=1).sub(1.0).abs() < 1.0e-12).all()
+    assert weights["weight_source"].eq("available_data_residual_blind_morphology_proxy").all()
+    assert weights["claim_boundary"].eq(
+        "readout_mixture_proxy_not_accepted_tau_side_state_not_endpoint"
+    ).all()
+    holdout = summary.loc[summary["split"] == "holdout"].iloc[0]
+    assert int(holdout["n_galaxies"]) == 44
+    assert abs(float(holdout["mixture_beats_single_matched_fraction"]) - 5 / 11) < 1.0e-12
+    assert abs(float(holdout["mixture_beats_tpg_v6_fraction"]) - 0.5) < 1.0e-12
+    assert abs(float(holdout["mixture_beats_mond_fraction"]) - 5 / 11) < 1.0e-12
+    report = (ROOT / "reports" / "readout_mixture_proxy_endpoint.md").read_text(
+        encoding="utf-8"
+    )
+    assert "residual-blind proxy mixture" in report
+    assert "not an accepted Tau-side readout state" in report
+    assert "not a final endpoint" in report
+
+
 def test_manifest_confidence_diagnostics_are_claim_bounded():
     summary = pd.read_csv(DATA / "manifest_confidence_diagnostics_summary.csv")
     shuffled = pd.read_csv(DATA / "manifest_confidence_diagnostics_shuffled.csv")
@@ -652,6 +699,43 @@ def test_family_observable_quality_diagnostics_are_claim_bounded():
     assert "not a new fit" in report
     assert "failure-map diagnostic" in report
     assert "better residual-blind morphology" in report
+
+
+def test_baseline_success_morphology_audit_is_descriptive_control():
+    audit = pd.read_csv(DATA / "baseline_success_morphology_audit.csv")
+    summary = pd.read_csv(DATA / "baseline_success_morphology_summary.csv")
+    by_family = pd.read_csv(DATA / "baseline_success_morphology_by_family.csv")
+    conventional = pd.read_csv(DATA / "baseline_success_conventional_available_summary.csv")
+    assert len(audit) == 175
+    assert set(audit["winner_tau_tpg_mond"]) == {"tau_matched", "tpg_v6", "mond"}
+    assert audit["claim_boundary"].eq(
+        "baseline_success_morphology_audit_not_endpoint_not_validation"
+    ).all()
+    holdout = summary.loc[summary["split"] == "holdout"]
+    assert int(holdout["n_galaxies"].sum()) == 44
+    tpg = holdout.loc[holdout["winner_tau_tpg_mond"] == "tpg_v6"].iloc[0]
+    tau = holdout.loc[holdout["winner_tau_tpg_mond"] == "tau_matched"].iloc[0]
+    assert int(tpg["n_galaxies"]) == 16
+    assert int(tau["n_galaxies"]) == 16
+    assert float(tpg["current_memory_match_fraction"]) == 0.0
+    assert float(tau["current_memory_match_fraction"]) > 0.5
+    scale_tail_tpg = by_family.loc[
+        (by_family["split"] == "holdout")
+        & (by_family["formula_family"] == "K_scale_tail_spiral")
+        & (by_family["winner_tau_tpg_mond"] == "tpg_v6")
+    ].iloc[0]
+    assert int(scale_tail_tpg["n_galaxies"]) == 12
+    assert {"Newtonian", "RAR", "MOND", "FixedTPG"}.issubset(
+        set(conventional["available_best_model"])
+    )
+    report = (ROOT / "reports" / "baseline_success_morphology_audit.md").read_text(
+        encoding="utf-8"
+    )
+    assert "descriptive only" in report
+    assert "memory-integrated" in report
+    assert "regular baryonic-readout regime" in report
+    assert "simple radial/low-acceleration" in report
+    assert "diffuse-disk effective scaling regimes" in report
 
 
 def test_predeclared_quality_gate_diagnostics_are_claim_bounded():
@@ -1431,6 +1515,45 @@ def test_morphological_memory_history_proxy_is_hypothesis_layer_only():
     assert "not an accepted morphology label" in report
     assert "not an endpoint score" in report
     assert "future residual-blind testing" in report
+
+
+def test_readout_state_vector_intake_schema_blocks_proxy_mixture_promotion():
+    schema = pd.read_csv(DATA / "readout_state_vector_intake_schema.csv")
+    audit = pd.read_csv(DATA / "readout_state_vector_gap_audit.csv")
+    summary = pd.read_csv(DATA / "readout_state_vector_gap_summary.csv")
+    components = {
+        "K_exponential_disk",
+        "K_scale_tail_spiral",
+        "K_compact_finite",
+        "K_thick_flared",
+        "normalization",
+        "memory_history",
+    }
+    assert components == set(schema["readout_component"])
+    assert len(audit) == 175 * len(components)
+    assert schema["forbidden_inputs"].str.contains("required_S_tau").all()
+    assert schema["claim_boundary"].eq(
+        "readout_state_vector_intake_not_endpoint_not_accepted_state"
+    ).all()
+    assert audit["claim_boundary"].eq(
+        "readout_state_vector_intake_not_endpoint_not_accepted_state"
+    ).all()
+    assert int(audit["endpoint_ready_component"].sum()) == 0
+    assert "MISSING_TAU_SIDE_NORMALIZATION_RULE" in set(summary["component_status"])
+    assert "PROXY_MEMORY_SIGNAL_NEEDS_ACCEPTED_SOURCE" in set(summary["component_status"])
+    norm = summary.loc[summary["readout_component"] == "normalization"].iloc[0]
+    assert int(norm["n_galaxies"]) == 175
+    memory_proxy = summary.loc[
+        (summary["readout_component"] == "memory_history")
+        & (summary["component_status"] == "PROXY_MEMORY_SIGNAL_NEEDS_ACCEPTED_SOURCE")
+    ].iloc[0]
+    assert int(memory_proxy["n_galaxies"]) == 113
+    report = (ROOT / "reports" / "readout_state_vector_intake_schema.md").read_text(
+        encoding="utf-8"
+    )
+    assert "accepted Tau-side readout-state vector" in report
+    assert "computes no endpoint score" in report
+    assert "accepted residual-blind source observables" in report
 
 
 def test_morphology_inspection_queue_is_acquisition_plan_only():
