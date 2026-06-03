@@ -7,6 +7,7 @@
 \usepackage{float}
 \usepackage{array}
 \usepackage{enumitem}
+\setlength{\emergencystretch}{2em}
 
 \title{Morphology-matched forward readout gates for Tau Core gravity: extending SPARC residual Papers 1--3 from inverse diagnostics to predeclared family tests}
 \author{Jozsef Olcsak}
@@ -339,6 +340,8 @@ To make the blocked state actionable, the package also emits a P0 visual review 
 The handoff is finally converted into a visual-review response intake template and validator. This creates the residual-blind file that a reviewer would fill, then checks whether it is complete enough for a later independent accepted-manifest audit. In the current package the validator returns \texttt{BLOCKED\_REVIEW\_RESPONSE\_PENDING}: all four rows remain blocked and 56 required response fields are still pending. This layer is not a manifest promotion and not an endpoint calculation.
 
 A response-to-manifest promotion gate records the same boundary at the next step. It returns \texttt{BLOCKED\_RESPONSE\_REVIEW\_NOT\_PROMOTABLE}: the response intake is incomplete, review confidence is missing, residual-blind family recommendations are missing, and morphology-memory/history judgments are missing. No accepted labels are created and no endpoint scores are computed.
+
+The package closes this preparation chain with a consolidated P0 review-pipeline status dashboard. The dashboard reports eight stages and the current overall decision \path{READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY}: the workflow is actionable for residual-blind human review, but accepted-label creation and endpoint scoring remain disabled.
 
 \section{Conclusion}
 

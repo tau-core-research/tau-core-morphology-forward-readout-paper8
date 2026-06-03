@@ -66,6 +66,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_p0_visual_review_handoff.py",
         ROOT / "scripts/build_p0_visual_review_response_intake.py",
         ROOT / "scripts/run_p0_response_to_manifest_promotion_gate.py",
+        ROOT / "scripts/build_p0_review_pipeline_status_dashboard.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -179,6 +180,9 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "response-to-manifest promotion gate" in source
     assert "BLOCKED\\_RESPONSE\\_REVIEW\\_NOT\\_PROMOTABLE" in source
     assert "No accepted labels are created and no endpoint scores are computed" in source
+    assert "consolidated P0 review-pipeline status dashboard" in source
+    assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY" in source
+    assert "accepted-label creation and endpoint scoring remain disabled" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1614,6 +1618,53 @@ def test_p0_response_to_manifest_promotion_gate_blocks_pending_review():
     assert "BLOCKED_RESPONSE_REVIEW_NOT_PROMOTABLE" in report
     assert "does not promote labels" in report
     assert "not a negative empirical result" in report
+
+
+def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
+    status = pd.read_csv(DATA / "p0_review_pipeline_status.csv")
+    summary = pd.read_csv(DATA / "p0_review_pipeline_status_summary.csv")
+    assert len(status) == 8
+    assert {
+        "external_imaging_request_manifest",
+        "skyview_availability_audit",
+        "skyview_preview_images",
+        "visual_review_template",
+        "visual_review_completion_gate",
+        "visual_review_handoff",
+        "visual_review_response_intake",
+        "response_to_manifest_promotion_gate",
+    } == set(status["stage"])
+    blocked = status[status["stage_status"].str.startswith("BLOCKED")]
+    assert len(blocked) == 3
+    assert {
+        "visual_review_completion_gate",
+        "visual_review_response_intake",
+        "response_to_manifest_promotion_gate",
+    } == set(blocked["stage"])
+    assert not status["endpoint_scores_computed"].any()
+    assert not status["accepted_labels_created"].any()
+    assert "p0_review_pipeline_status_not_label_not_endpoint" in set(
+        status["claim_boundary"]
+    )
+
+    row = summary.iloc[0]
+    assert row["pipeline_decision"] == "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY"
+    assert int(row["n_stages"]) == 8
+    assert int(row["n_blocked_stages"]) == 3
+    assert bool(row["endpoint_scores_computed"]) is False
+    assert bool(row["accepted_labels_created"]) is False
+    report = (ROOT / "reports" / "p0_review_pipeline_status_dashboard.md").read_text(
+        encoding="utf-8"
+    )
+    assert "status dashboard only" in report
+    assert "creates no accepted labels" in report
+    assert "computes no endpoint scores" in report
+    form = (ROOT / "reports" / "p0_review_pipeline_status_dashboard.html").read_text(
+        encoding="utf-8"
+    )
+    assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY" in form
+    assert "response_to_manifest_promotion_gate" in form
+    assert "creates no accepted labels" in form
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
