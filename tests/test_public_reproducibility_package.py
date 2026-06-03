@@ -13,6 +13,7 @@ DATA = ROOT / "data" / "derived"
 def test_publication_files_exist():
     required = [
         ROOT / "README.md",
+        ROOT / "docs" / "tau_core_gravity_bridge_central.md",
         ROOT / "LICENSE",
         ROOT / "CITATION.cff",
         ROOT / "DATA_NOTICE.md",
@@ -85,6 +86,10 @@ def test_publication_files_exist():
 def test_manuscript_contains_forward_gate_and_claim_boundaries():
     source = (SOURCE / "main.tex").read_text(encoding="utf-8")
     assert "MORPHOLOGY-MATCHED-FORWARD-READOUT-GATE" in source
+    assert "K_{\\rm obs}" in source
+    assert "K_{\\rm readout}" in source
+    assert "The equality $K_{\\rm obs}=K_{\\rm readout}$ is allowed but not assumed" in source
+    assert "formula shell is selected as $\\mathcal{F}_{K_{\\rm readout}}$, not automatically as $\\mathcal{F}_{K_{\\rm obs}}$" in source
     assert "Paper 3 $S_\\tau$ diagnostic is useful but partly inverse" in source
     assert "\\Delta_{\\rm matched}" in source
     assert "This paper does not claim" in source
@@ -205,6 +210,21 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     ]
     for phrase in forbidden_phrases:
         assert phrase not in source
+
+
+def test_bridge_central_doc_records_obs_vs_readout_layer():
+    bridge = (ROOT / "docs" / "tau_core_gravity_bridge_central.md").read_text(
+        encoding="utf-8"
+    )
+    assert "Observed 4D morphology handles are not fundamental Tau-side classes" in bridge
+    assert "K_obs" in bridge
+    assert "K_readout" in bridge
+    assert "F = F_{K_readout}" in bridge
+    assert "not automatically" in bridge
+    assert "morphology-memory or history proxy layer" in bridge
+    assert "endpoint residual gain" in bridge
+    assert "best-fit Tau Core readout family" in bridge
+    assert "NGC0247" in bridge
 
 
 def test_derived_protocol_tables_exist_and_have_expected_content():

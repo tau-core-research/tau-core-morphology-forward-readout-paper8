@@ -17,7 +17,7 @@
 \maketitle
 
 \begin{abstract}
-Paper 1 found that residual-blind external structural disturbance labels are associated with increased low-acceleration residual scatter in SPARC galaxies. Paper 2 reversed the question and showed that fixed residual-shape features can infer those disturbance labels better than shuffled controls, while remaining non-unique with respect to MOND-simple and empirical RAR-like baselines. Paper 3 then built a candidate/control framework and introduced an endpoint-conditioned required-$S_\tau$ diagnostic: what preparation/readout factor would be needed to absorb a measured residual? This Paper 8 proposal turns that inverse diagnostic into a forward validation gate. The proposed gate predeclares a residual-blind morphology class $K_g$, maps it to a Tau Core morphology-conditioned readout shell, computes a forward $\delta g^K$ without using required $S_\tau$ as a predictor, and compares matched-family residual structure against wrong-family, shuffled-label, Newtonian baryonic, MOND-simple, and empirical RAR controls. The permitted claim is methodological: the morphology-matched forward-readout gate is a falsifiable, Tau-Core-specific next endpoint for the Paper 1--3 program. This paper does not claim that Tau Core has been empirically validated, that a universal galaxy law has been derived, or that the matched-family endpoint has already beaten MOND/RAR on real SPARC data.
+Paper 1 found that residual-blind external structural disturbance labels are associated with increased low-acceleration residual scatter in SPARC galaxies. Paper 2 reversed the question and showed that fixed residual-shape features can infer those disturbance labels better than shuffled controls, while remaining non-unique with respect to MOND-simple and empirical RAR-like baselines. Paper 3 then built a candidate/control framework and introduced an endpoint-conditioned required-$S_\tau$ diagnostic: what preparation/readout factor would be needed to absorb a measured residual? This Paper 8 proposal turns that inverse diagnostic into a forward validation gate. The proposed gate predeclares a residual-blind observed morphology handle $K_{\rm obs}$, audits whether it should be used directly or mapped to a readout-relevant proxy $K_{\rm readout}$, maps $K_{\rm readout}$ to a Tau Core morphology-conditioned readout shell, computes a forward $\delta g^K$ without using required $S_\tau$ as a predictor, and compares matched-family residual structure against wrong-family, shuffled-label, Newtonian baryonic, MOND-simple, and empirical RAR controls. The permitted claim is methodological: the morphology-matched forward-readout gate is a falsifiable, Tau-Core-specific next endpoint for the Paper 1--3 program. This paper does not claim that Tau Core has been empirically validated, that a universal galaxy law has been derived, or that the matched-family endpoint has already beaten MOND/RAR on real SPARC data.
 \end{abstract}
 
 \section{Purpose and claim boundary}
@@ -31,7 +31,8 @@ That Paper 3 $S_\tau$ diagnostic is useful but partly inverse. It asks:
 The present paper defines the next gate:
 \[
 \begin{aligned}
-&\text{residual-blind morphology class }K_g\\
+&\text{residual-blind observed morphology handle }K_{\rm obs}\\
+&\quad\longrightarrow\text{ readout-relevant proxy }K_{\rm readout}\\
 &\quad\longrightarrow\text{ forward readout }\delta g^K
 \text{ before endpoint scoring.}
 \end{aligned}
@@ -62,19 +63,24 @@ This quantity is descriptive. Because it uses $V_{\rm obs}$, it cannot be treate
 
 The forward replacement is:
 \[
-K_g \longrightarrow \mathcal{F}_{K_g}
-\longrightarrow \delta g^{K_g}(R)
-\longrightarrow \mathrm{Score}(g_{\rm Newt}+\delta g^{K_g}).
+K_{\rm obs} \longrightarrow K_{\rm readout}
+\longrightarrow \mathcal{F}_{K_{\rm readout}}
+\longrightarrow \delta g^{K_{\rm readout}}(R)
+\longrightarrow \mathrm{Score}(g_{\rm Newt}+\delta g^{K_{\rm readout}}).
 \]
-Here $K_g$ is a morphology label assigned before endpoint scoring, $\mathcal{F}_{K_g}$ is the predeclared readout family, and $\delta g^{K_g}$ is computed without using $S_{\tau,\mathrm{req}}$, endpoint residual gain, or post-hoc family selection.
+Here $K_{\rm obs}$ is the residual-blind observed 4D morphology handle, $K_{\rm readout}$ is the predeclared readout-relevant morphology proxy, $\mathcal{F}_{K_{\rm readout}}$ is the selected readout family, and $\delta g^{K_{\rm readout}}$ is computed without using $S_{\tau,\mathrm{req}}$, endpoint residual gain, or post-hoc family selection. The equality $K_{\rm obs}=K_{\rm readout}$ is allowed but not assumed; this is a Tau Core bridge consequence of treating morphology as a projection/readout structure rather than only a present-day visual class.
 
 \section{MORPHOLOGY-MATCHED-FORWARD-READOUT-GATE}
 
 For a galaxy $g$, let
 \[
-K_g\in\mathcal{K}
+K_{{\rm obs},g}
 \]
-be a residual-blind morphology label. Let $\mathcal{F}_K$ denote the Tau Core readout shell assigned to morphology class $K$. Let
+be its residual-blind observed 4D morphology handle, and let
+\[
+K_{{\rm readout},g}\in\mathcal{K}
+\]
+be the predeclared readout-relevant morphology proxy used for formula-shell selection. Let $\mathcal{F}_K$ denote the Tau Core readout shell assigned to readout proxy class $K$. Let
 \[
 R_{g,K}
 \]
@@ -82,13 +88,13 @@ be the residual score after applying the forward readout family $\mathcal{F}_K$ 
 
 The matched-family score is
 \[
-R_{g,\mathrm{matched}}:=R_{g,K_g}.
+R_{g,\mathrm{matched}}:=R_{g,K_{{\rm readout},g}}.
 \]
 The wrong-family score is
 \[
 R_{g,\mathrm{wrong}}:=
 \frac{1}{|\mathcal{K}|-1}
-\sum_{K\neq K_g}R_{g,K}.
+\sum_{K\neq K_{{\rm readout},g}}R_{g,K}.
 \]
 The central paper-level endpoint can be written as
 \[
@@ -100,9 +106,9 @@ The central paper-level endpoint can be written as
 \]
 An equivalent rank endpoint is
 \[
-\mathrm{rank}_{g}(K_g)
+\mathrm{rank}_{g}(K_{{\rm readout},g})
 =
-\mathrm{rank}\bigl(R_{g,K_g}\;\mathrm{among}\;\{R_{g,K}:K\in\mathcal{K}\}\bigr).
+\mathrm{rank}\bigl(R_{g,K_{{\rm readout},g}}\;\mathrm{among}\;\{R_{g,K}:K\in\mathcal{K}\}\bigr).
 \]
 
 The gate passes only if the predeclared matched family improves residual structure more than:
@@ -124,7 +130,7 @@ This is Tau-Core-specific in a way that ordinary MOND/RAR comparisons are not: t
 
 \section{Morphology-family registry}
 
-The current gravity bridge centralizes a morphology-conditioned TGP-like readout lane. The corresponding first-pass family registry is not a universal galaxy law. It is a set of candidate readout shells whose selection must be controlled by residual-blind morphology labels.
+The current gravity bridge centralizes a morphology-conditioned TGP-like readout lane. The corresponding first-pass family registry is not a universal galaxy law. It is a set of candidate readout shells whose selection must be controlled by residual-blind morphology evidence. In this paper, $K_{\rm obs}$ denotes the apparent 4D morphology handle and $K_{\rm readout}$ denotes the readout-relevant proxy used to select the shell. Thin/thick disk, bar, ring, compact, tail, and lopsided labels are therefore treated as projected 4D morphology handles unless a source-review or bridge argument promotes them to readout-relevant proxies.
 
 \begin{table}[H]
 \centering
@@ -234,8 +240,9 @@ The repository therefore records a predeclared endpoint protocol sheet. It freez
 
 The minimal public endpoint protocol is:
 \begin{enumerate}[leftmargin=*]
-\item Assign an external or residual-blind morphology label $K_g$ to each galaxy.
-\item Select a formula shell $\mathcal{F}_{K_g}$ from the predeclared registry.
+\item Assign an external or residual-blind observed 4D morphology handle $K_{{\rm obs},g}$ to each galaxy.
+\item Predeclare whether $K_{{\rm obs},g}$ is used directly or mapped to a readout-relevant proxy $K_{{\rm readout},g}$ using only residual-blind source evidence.
+\item Select a formula shell $\mathcal{F}_{K_{{\rm readout},g}}$ from the predeclared registry.
 \item Fix geometry parameters from morphology, not from residual endpoints.
 \item Use either a frozen amplitude rule or a tightly bounded amplitude fit.
 \item Compute the matched-family score.
@@ -258,7 +265,7 @@ The result that would matter is therefore:
 \[
 \Delta_{\rm matched}>0
 \]
-with a rank distribution in which $K_g$ is systematically near the top, under residual-blind morphology labels and with shuffled-label controls. If this fails, the bridge loses specificity. If it passes, the Paper 1--3 residual-disturbance program becomes a forward-predictive morphology-readout program.
+with a rank distribution in which $K_{{\rm readout},g}$ is systematically near the top, under residual-blind observed morphology handles, predeclared readout-proxy rules, and shuffled-label controls. If this fails, the bridge loses specificity. If it passes, the Paper 1--3 residual-disturbance program becomes a forward-predictive morphology-readout program.
 
 \section{Readiness and remaining blockers}
 
@@ -341,7 +348,7 @@ The handoff is finally converted into a visual-review response intake template a
 
 A response-to-manifest promotion gate records the same boundary at the next step. For the Codex/source-reviewed P0 response it also returns \path{READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT}. This does not run a frozen endpoint and does not validate Tau Core; it only allows the four P0 rows to enter a source-review audit lane. The package therefore builds a P0 Codex-source-reviewed label manifest with decision \path{P0_CODEX_SOURCE_REVIEW_LABELS_CREATED_NOT_ENDPOINT}. All four rows receive the residual-blind family recommendation \path{K_exponential_disk}, with caveats for edge projection, bar structure, or nuclear components where applicable. No full 175-galaxy endpoint labels are created and no endpoint scores are computed.
 
-The bridge interpretation then separates this apparent 4D morphology handle from a readout-relevant morphology proxy. Thin/thick disk, bar, ring, compact, and tail labels are treated as projected 4D morphology handles rather than proven fundamental Tau-side classes. In the P0 set, the apparent 4D handle is \path{K_exponential_disk} for all four rows, but source-side caveats split the readout-relevant proxy layer into a clean exponential-disk control, a projection-corrected expdisk candidate, a barred/$m=2$ overlay candidate, and a compact-core overlay candidate. This layer uses no rotation residuals and computes no endpoint scores.
+The bridge interpretation then separates this apparent 4D morphology handle from a readout-relevant morphology proxy. Thin/thick disk, bar, ring, compact, and tail labels are treated as projected 4D morphology handles rather than proven fundamental Tau-side classes. In notation, the source-review layer distinguishes $K_{\rm obs}$ from $K_{\rm readout}$, and the formula shell is selected as $\mathcal{F}_{K_{\rm readout}}$, not automatically as $\mathcal{F}_{K_{\rm obs}}$. In the P0 set, the apparent 4D handle is \path{K_exponential_disk} for all four rows, but source-side caveats split the readout-relevant proxy layer into a clean exponential-disk control, a projection-corrected expdisk candidate, a barred/$m=2$ overlay candidate, and a compact-core overlay candidate. This layer uses no rotation residuals and computes no endpoint scores.
 
 A narrow P0 pilot then consumes only these four Codex/source-reviewed labels. Under the primary leave-one-galaxy-out all13 exponential-disk policy, the Tau readout beats TPG/v6 in 0.75 of the P0 cases and beats MOND in 0.25 of the P0 cases. The formula-shell proxy slice is stronger against TPG/v6 on this small P0 set, beating the wrong-family mean and TPG/v6 in 1.0 of cases, while still beating MOND in only 0.25 of cases. This is a useful pilot signal for the TPG-like readout direction, but it is not the frozen 175-galaxy endpoint and not empirical validation.
 
@@ -359,13 +366,13 @@ The package closes this preparation chain with a consolidated P0 review-pipeline
 
 Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:
 \[
-\text{morphology label }K_g
-\to
-\text{formula shell }\mathcal{F}_{K_g}
-\to
-\delta g^{K_g}
-\to
-\text{matched vs wrong family endpoint}.
+\begin{aligned}
+&\text{observed morphology handle }K_{\rm obs}\\
+&\quad\to\text{ readout proxy }K_{\rm readout}\\
+&\quad\to\text{ formula shell }\mathcal{F}_{K_{\rm readout}}\\
+&\quad\to \delta g^{K_{\rm readout}}
+\to\text{ matched vs wrong family endpoint}.
+\end{aligned}
 \]
 
 The claim-safe breakthrough target is not a universal fit claim. It is a morphology-specific prediction claim: the correct Tau Core morphology readout family, chosen before endpoint scoring, should improve residual structure more than wrong morphology families and shuffled morphology labels, while remaining competitive against Newtonian baryonic, MOND-simple, and empirical RAR baselines.
