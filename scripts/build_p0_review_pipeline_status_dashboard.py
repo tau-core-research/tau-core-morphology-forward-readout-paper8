@@ -2,7 +2,7 @@
 """Build a consolidated P0 residual-blind review pipeline status dashboard.
 
 This dashboard summarizes the P0 source-to-review-to-promotion chain without
-creating accepted labels and without computing endpoint scores.
+creating full endpoint labels and without computing endpoint scores.
 """
 
 from __future__ import annotations
@@ -47,6 +47,7 @@ def build_status_rows() -> pd.DataFrame:
     source_evidence = load_one("p0_external_source_evidence_summary.csv")
     response_draft = load_one("p0_source_assisted_review_response_validation.csv")
     source_availability = load_one("p0_requested_source_family_availability_summary.csv")
+    codex_labels = load_one("p0_codex_accepted_label_manifest_summary.csv")
 
     n_p0 = int(len(visual_template))
     rows = [
@@ -142,6 +143,14 @@ def build_status_rows() -> pd.DataFrame:
             "next_action": "human reviewer must convert draft into accepted-review response",
         },
         {
+            "stage": "p0_codex_accepted_label_manifest",
+            "stage_status": codex_labels["p0_label_manifest_decision"].iloc[0],
+            "n_galaxies": int(codex_labels["n_galaxies"].iloc[0]),
+            "n_blocked": int(codex_labels["n_blocked"].iloc[0]),
+            "endpoint_scores_computed": bool(codex_labels["endpoint_scores_computed"].iloc[0]),
+            "next_action": "keep P0 labels in audit lane; do not launch full endpoint manifest",
+        },
+        {
             "stage": "requested_source_family_availability",
             "stage_status": "SOURCE_AVAILABILITY_PREFLIGHT_COMPLETE",
             "n_galaxies": int(source_availability["n_p0_galaxies"].max()),
@@ -155,18 +164,24 @@ def build_status_rows() -> pd.DataFrame:
         },
     ]
     status = pd.DataFrame(rows)
-    status["accepted_labels_created"] = False
+    status["p0_codex_source_review_labels_created"] = (
+        status["stage"].eq("p0_codex_accepted_label_manifest")
+        & status["n_blocked"].eq(0)
+    )
+    status["full_endpoint_labels_created"] = False
     status["claim_boundary"] = CLAIM_BOUNDARY
     return status
 
 
 def build_summary(status: pd.DataFrame) -> pd.DataFrame:
     blocked = status[status["stage_status"].str.startswith("BLOCKED")]
-    decision = (
-        "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY"
-        if not blocked.empty
-        else "READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT"
-    )
+    p0_labels_ready = bool(status["p0_codex_source_review_labels_created"].any())
+    if p0_labels_ready:
+        decision = "P0_CODEX_SOURCE_REVIEW_LABELS_READY_FULL_ENDPOINT_BLOCKED"
+    elif not blocked.empty:
+        decision = "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY"
+    else:
+        decision = "READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT"
     return pd.DataFrame(
         [
             {
@@ -174,8 +189,13 @@ def build_summary(status: pd.DataFrame) -> pd.DataFrame:
                 "n_stages": len(status),
                 "n_blocked_stages": len(blocked),
                 "endpoint_scores_computed": bool(status["endpoint_scores_computed"].any()),
-                "accepted_labels_created": False,
-                "next_action": "complete residual-blind human review responses",
+                "p0_codex_source_review_labels_created": p0_labels_ready,
+                "full_endpoint_labels_created": False,
+                "next_action": (
+                    "use P0 source-reviewed labels for audit only; full endpoint remains blocked"
+                    if p0_labels_ready
+                    else "complete residual-blind human review responses"
+                ),
                 "claim_boundary": CLAIM_BOUNDARY,
             }
         ]
@@ -187,11 +207,12 @@ def write_report(status: pd.DataFrame, summary: pd.DataFrame) -> None:
         "# P0 Residual-Blind Review Pipeline Status",
         "",
         "This report consolidates the P0 source-request, preview, visual-review,",
-        "response-intake, and response-to-manifest promotion gates. It is a status",
-        "dashboard only: it creates no accepted labels and computes no endpoint",
-        "scores.",
+        "response-intake, response-to-manifest promotion, and P0 source-reviewed",
+        "label-manifest gates. It is a status dashboard only: it creates no full",
+        "endpoint labels and computes no endpoint scores.",
         "",
-        "This is a status dashboard only: it creates no accepted labels and computes no endpoint scores.",
+        "This is a status dashboard only: P0 source-reviewed labels may exist,",
+        "but no full endpoint labels or endpoint scores are created.",
         "",
         "## Summary",
         "",
@@ -206,7 +227,8 @@ def write_report(status: pd.DataFrame, summary: pd.DataFrame) -> None:
                     "stage_status",
                     "n_galaxies",
                     "n_blocked",
-                    "accepted_labels_created",
+                    "p0_codex_source_review_labels_created",
+                    "full_endpoint_labels_created",
                     "endpoint_scores_computed",
                     "next_action",
                 ]
@@ -216,8 +238,8 @@ def write_report(status: pd.DataFrame, summary: pd.DataFrame) -> None:
         "## Claim Boundary",
         "",
         "The dashboard may be used to coordinate residual-blind review work. It does",
-        "not promote labels, does not run endpoint scores, and does not compare Tau",
-        "Core to MOND/RAR/TGP/Newtonian baselines.",
+        "not launch full endpoint labels, does not run endpoint scores, and does",
+        "not compare Tau Core to MOND/RAR/TGP/Newtonian baselines.",
         "",
         f"Claim boundary: `{CLAIM_BOUNDARY}`.",
     ]
@@ -238,7 +260,8 @@ def write_html(status: pd.DataFrame, summary: pd.DataFrame) -> None:
               <dl>
                 <div><dt>Galaxies</dt><dd>{int(row['n_galaxies'])}</dd></div>
                 <div><dt>Blocked</dt><dd>{int(row['n_blocked'])}</dd></div>
-                <div><dt>Accepted labels</dt><dd>{escape(str(row['accepted_labels_created']))}</dd></div>
+                <div><dt>P0 labels</dt><dd>{escape(str(row['p0_codex_source_review_labels_created']))}</dd></div>
+                <div><dt>Endpoint labels</dt><dd>{escape(str(row['full_endpoint_labels_created']))}</dd></div>
                 <div><dt>Endpoint scores</dt><dd>{escape(str(row['endpoint_scores_computed']))}</dd></div>
               </dl>
               <p>{escape(row['next_action'])}</p>
@@ -304,8 +327,9 @@ def write_html(status: pd.DataFrame, summary: pd.DataFrame) -> None:
     <h1>Paper 8 P0 Review Pipeline Status</h1>
     <p class="notice">
       Pipeline decision: <strong>{escape(decision)}</strong>. This dashboard
-      coordinates residual-blind review work only. It creates no accepted labels
-      and computes no endpoint scores. Claim boundary:
+      coordinates residual-blind review work only. P0 source-reviewed labels may
+      exist, but it creates no full endpoint labels and computes no endpoint
+      scores. Claim boundary:
       <code>{CLAIM_BOUNDARY}</code>.
     </p>
     <div class="grid">

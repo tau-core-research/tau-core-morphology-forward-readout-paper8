@@ -69,6 +69,8 @@ def test_publication_files_exist():
         ROOT / "scripts/build_p0_missing_data_source_acquisition_plan.py",
         ROOT / "scripts/acquire_p0_dustpedia_hi_phangs_sources.py",
         ROOT / "scripts/build_p0_source_assisted_review_response_draft.py",
+        ROOT / "scripts/build_p0_codex_source_review_response.py",
+        ROOT / "scripts/build_p0_codex_accepted_label_manifest.py",
         ROOT / "scripts/audit_p0_requested_source_family_availability.py",
         ROOT / "scripts/build_p0_review_pipeline_status_dashboard.py",
         ROOT / "scripts/build_arxiv_source.py",
@@ -178,20 +180,19 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "visual review handoff" in source
     assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW" in source
     assert "does not promote labels or compute endpoint scores" in source
-    assert "visual-review response intake template and validator" in source
-    assert "BLOCKED\\_REVIEW\\_RESPONSE\\_PENDING" in source
-    assert "56 required response fields are still pending" in source
+    assert "Codex/source-reviewed P0 response" in source
+    assert "READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT" in source
+    assert "P0 Codex-source-reviewed label manifest" in source
     assert "response-to-manifest promotion gate" in source
-    assert "BLOCKED\\_RESPONSE\\_REVIEW\\_NOT\\_PROMOTABLE" in source
-    assert "No accepted labels are created and no endpoint scores are computed" in source
+    assert "P0_CODEX_SOURCE_REVIEW_LABELS_CREATED_NOT_ENDPOINT" in source
     assert "consolidated P0 review-pipeline status dashboard" in source
     assert "S4G, NED/NED-D, DustPedia, HI surveys, and PHANGS" in source
     assert "TO_BE_ACQUIRED_RESIDUAL_BLIND" in source
     assert "DustPedia direct matches are found for \\texttt{NGC0300} only" in source
     assert "source-assisted review response draft" in source
     assert "requested source-family availability" in source
-    assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY" in source
-    assert "accepted-label creation and endpoint scoring remain disabled" in source
+    assert "P0_CODEX_SOURCE_REVIEW_LABELS_READY_FULL_ENDPOINT_BLOCKED" in source
+    assert "full endpoint labels and endpoint scoring remain disabled" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1701,85 +1702,121 @@ def test_p0_visual_review_handoff_is_review_task_only():
     assert "Forbidden inputs" in form
 
 
-def test_p0_visual_review_response_intake_blocks_empty_responses():
+def test_p0_codex_source_review_response_intake_is_ready_for_audit():
     response = pd.read_csv(DATA / "p0_visual_review_response_template.csv")
     schema = pd.read_csv(DATA / "p0_visual_review_response_schema.csv")
     validation = pd.read_csv(DATA / "p0_visual_review_response_validation.csv")
     summary = pd.read_csv(DATA / "p0_visual_review_response_summary.csv")
+    codex_response = pd.read_csv(DATA / "p0_codex_source_review_response.csv")
+    codex_validation = pd.read_csv(DATA / "p0_codex_source_review_validation.csv")
     assert len(response) == 4
     assert set(response["galaxy"]) == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert len(codex_response) == 4
     assert len(schema) == 15
     required = schema.loc[schema["required_for_visual_review_completion"]]
     assert len(required) == 14
     assert not schema["may_use_endpoint_scores"].any()
-    assert (validation["validation_status"] == "BLOCKED_RESPONSE_PENDING").all()
+    assert (
+        validation["validation_status"]
+        == "READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT"
+    ).all()
+    assert (
+        codex_validation["validation_status"]
+        == "READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT"
+    ).all()
     assert (validation["n_required_fields"] == 14).all()
-    assert (validation["n_missing_required_fields"] == 14).all()
+    assert (validation["n_missing_required_fields"] == 0).all()
     assert not validation["forbidden_input_detected"].any()
-    assert not validation["accepted_manifest_promotion_allowed"].any()
+    assert validation["accepted_manifest_promotion_allowed"].all()
     assert not validation["endpoint_scores_computed"].any()
-    assert "morphological_memory_history_proxy_judgment" in ";".join(
-        validation["missing_required_fields"]
-    )
-    assert "p0_visual_review_response_intake_not_label_not_endpoint" in set(
+    assert response["reviewer_id"].eq("CODEX_SOURCE_REVIEWER_RESIDUAL_BLIND_001").all()
+    assert response["residual_blind_family_recommendation"].eq("K_exponential_disk").all()
+    assert response["review_notes"].str.contains("Forbidden endpoint-derived inputs were not used").all()
+    assert "p0_codex_source_review_response_not_endpoint" in set(
         validation["claim_boundary"]
     )
     row = summary.iloc[0]
-    assert row["response_intake_decision"] == "BLOCKED_REVIEW_RESPONSE_PENDING"
+    assert row["response_intake_decision"] == "READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT"
     assert int(row["n_galaxies"]) == 4
-    assert int(row["n_blocked_rows"]) == 4
-    assert int(row["n_missing_required_fields_total"]) == 56
-    assert bool(row["accepted_manifest_promotion_allowed"]) is False
+    assert int(row["n_blocked_rows"]) == 0
+    assert int(row["n_missing_required_fields_total"]) == 0
+    assert bool(row["accepted_manifest_promotion_allowed"]) is True
     assert bool(row["endpoint_scores_computed"]) is False
-    report = (ROOT / "reports" / "p0_visual_review_response_intake.md").read_text(
+    report = (ROOT / "reports" / "p0_codex_source_review_response.md").read_text(
         encoding="utf-8"
     )
-    assert "reviewer-response contract" in report
-    assert "not an accepted" in report
-    assert "not an endpoint" in report
+    assert "Codex/source-reviewed response" in report
+    assert "not a human review" in report
+    assert "not an endpoint score" in report
     assert "independent accepted-manifest audit" in report
 
 
-def test_p0_response_to_manifest_promotion_gate_blocks_pending_review():
+def test_p0_response_to_manifest_promotion_gate_allows_audit_entry():
     gates = pd.read_csv(DATA / "p0_response_to_manifest_promotion_gates.csv")
     summary = pd.read_csv(DATA / "p0_response_to_manifest_promotion_summary.csv")
     assert len(gates) == 5
     blocked = gates.loc[gates["gate_status"] == "BLOCKED"]
-    assert len(blocked) == 4
+    assert len(blocked) == 0
     assert {
         "response_intake_complete",
+        "forbidden_inputs_absent",
         "review_confidence_present",
         "family_recommendation_present",
         "history_memory_judgment_present",
-    }.issubset(set(blocked["gate"]))
-    forbidden = gates.loc[gates["gate"] == "forbidden_inputs_absent"].iloc[0]
-    assert forbidden["gate_status"] == "PASS"
+    } == set(gates["gate"])
+    assert gates["gate_status"].eq("PASS").all()
     assert not gates["endpoint_scores_computed"].any()
     assert "p0_response_to_manifest_promotion_gate_not_endpoint" in set(
         gates["claim_boundary"]
     )
 
     row = summary.iloc[0]
-    assert row["promotion_gate_decision"] == "BLOCKED_RESPONSE_REVIEW_NOT_PROMOTABLE"
+    assert row["promotion_gate_decision"] == "READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT"
     assert int(row["n_gates"]) == 5
-    assert int(row["n_blocked_gates"]) == 4
-    assert int(row["n_blocked_rows_total"]) == 16
-    assert bool(row["accepted_manifest_audit_entry_allowed"]) is False
+    assert int(row["n_blocked_gates"]) == 0
+    assert int(row["n_blocked_rows_total"]) == 0
+    assert bool(row["accepted_manifest_audit_entry_allowed"]) is True
     assert bool(row["accepted_labels_created"]) is False
     assert bool(row["endpoint_scores_computed"]) is False
     report = (ROOT / "reports" / "p0_response_to_manifest_promotion_gate.md").read_text(
         encoding="utf-8"
     )
     assert "This promotion gate is not an endpoint score" in report
-    assert "BLOCKED_RESPONSE_REVIEW_NOT_PROMOTABLE" in report
+    assert "READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT" in report
     assert "does not promote labels" in report
-    assert "not a negative empirical result" in report
+    assert "does not create full endpoint labels or endpoint scores" in report
 
 
-def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
+def test_p0_codex_accepted_label_manifest_is_not_endpoint_launch():
+    manifest = pd.read_csv(DATA / "p0_codex_accepted_label_manifest.csv")
+    summary = pd.read_csv(DATA / "p0_codex_accepted_label_manifest_summary.csv")
+    assert len(manifest) == 4
+    assert set(manifest["galaxy"]) == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert manifest["accepted_label_status"].eq(
+        "P0_CODEX_SOURCE_REVIEW_ACCEPTED_FOR_AUDIT"
+    ).all()
+    assert manifest["accepted_formula_family"].eq("K_exponential_disk").all()
+    assert manifest["source_basis"].str.contains("no endpoint residuals used").all()
+    assert not manifest["full_endpoint_manifest_row_created"].any()
+    assert not manifest["endpoint_scores_computed"].any()
+    assert "p0_codex_accepted_labels_not_endpoint" in set(manifest["claim_boundary"])
+    row = summary.iloc[0]
+    assert row["p0_label_manifest_decision"] == "P0_CODEX_SOURCE_REVIEW_LABELS_CREATED_NOT_ENDPOINT"
+    assert int(row["n_p0_codex_source_review_accepted"]) == 4
+    assert int(row["n_blocked"]) == 0
+    assert bool(row["full_endpoint_manifest_rows_created"]) is False
+    assert bool(row["endpoint_scores_computed"]) is False
+    report = (ROOT / "reports" / "p0_codex_accepted_label_manifest.md").read_text(
+        encoding="utf-8"
+    )
+    assert "P0 audit manifest only" in report
+    assert "not a launch of the frozen 175-galaxy endpoint" in report
+
+
+def test_p0_review_pipeline_status_dashboard_summarizes_codex_review_chain():
     status = pd.read_csv(DATA / "p0_review_pipeline_status.csv")
     summary = pd.read_csv(DATA / "p0_review_pipeline_status_summary.csv")
-    assert len(status) == 12
+    assert len(status) == 13
     assert {
         "external_imaging_request_manifest",
         "skyview_availability_audit",
@@ -1792,44 +1829,46 @@ def test_p0_review_pipeline_status_dashboard_summarizes_blocked_chain():
         "missing_data_source_acquisition_plan",
         "dustpedia_hi_phangs_source_evidence",
         "source_assisted_review_response_draft",
+        "p0_codex_accepted_label_manifest",
         "requested_source_family_availability",
     } == set(status["stage"])
     blocked = status[status["stage_status"].str.startswith("BLOCKED")]
-    assert len(blocked) == 4
+    assert len(blocked) == 2
     assert {
         "visual_review_completion_gate",
-        "visual_review_response_intake",
-        "response_to_manifest_promotion_gate",
         "source_assisted_review_response_draft",
     } == set(blocked["stage"])
     assert not status["endpoint_scores_computed"].any()
-    assert not status["accepted_labels_created"].any()
+    assert status["p0_codex_source_review_labels_created"].any()
+    assert not status["full_endpoint_labels_created"].any()
     assert "p0_review_pipeline_status_not_label_not_endpoint" in set(
         status["claim_boundary"]
     )
 
     row = summary.iloc[0]
-    assert row["pipeline_decision"] == "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY"
-    assert int(row["n_stages"]) == 12
-    assert int(row["n_blocked_stages"]) == 4
+    assert row["pipeline_decision"] == "P0_CODEX_SOURCE_REVIEW_LABELS_READY_FULL_ENDPOINT_BLOCKED"
+    assert int(row["n_stages"]) == 13
+    assert int(row["n_blocked_stages"]) == 2
     assert bool(row["endpoint_scores_computed"]) is False
-    assert bool(row["accepted_labels_created"]) is False
+    assert bool(row["p0_codex_source_review_labels_created"]) is True
+    assert bool(row["full_endpoint_labels_created"]) is False
     report = (ROOT / "reports" / "p0_review_pipeline_status_dashboard.md").read_text(
         encoding="utf-8"
     )
     assert "status dashboard only" in report
-    assert "creates no accepted labels" in report
+    assert "P0 source-reviewed labels may exist" in report
     assert "computes no endpoint scores" in report
     form = (ROOT / "reports" / "p0_review_pipeline_status_dashboard.html").read_text(
         encoding="utf-8"
     )
-    assert "READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY" in form
+    assert "P0_CODEX_SOURCE_REVIEW_LABELS_READY_FULL_ENDPOINT_BLOCKED" in form
     assert "response_to_manifest_promotion_gate" in form
     assert "missing_data_source_acquisition_plan" in form
     assert "dustpedia_hi_phangs_source_evidence" in form
     assert "source_assisted_review_response_draft" in form
+    assert "p0_codex_accepted_label_manifest" in form
     assert "requested_source_family_availability" in form
-    assert "creates no accepted labels" in form
+    assert "creates no full endpoint labels" in form
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():

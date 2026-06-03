@@ -55,9 +55,10 @@
   <main>
     <h1>Paper 8 P0 Review Pipeline Status</h1>
     <p class="notice">
-      Pipeline decision: <strong>READY_FOR_RESIDUAL_BLIND_HUMAN_REVIEW_ONLY</strong>. This dashboard
-      coordinates residual-blind review work only. It creates no accepted labels
-      and computes no endpoint scores. Claim boundary:
+      Pipeline decision: <strong>P0_CODEX_SOURCE_REVIEW_LABELS_READY_FULL_ENDPOINT_BLOCKED</strong>. This dashboard
+      coordinates residual-blind review work only. P0 source-reviewed labels may
+      exist, but it creates no full endpoint labels and computes no endpoint
+      scores. Claim boundary:
       <code>p0_review_pipeline_status_not_label_not_endpoint</code>.
     </p>
     <div class="grid">
@@ -68,7 +69,8 @@
               <dl>
                 <div><dt>Galaxies</dt><dd>4</dd></div>
                 <div><dt>Blocked</dt><dd>0</dd></div>
-                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>P0 labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
                 <div><dt>Endpoint scores</dt><dd>False</dd></div>
               </dl>
               <p>use source requests for residual-blind review</p>
@@ -80,7 +82,8 @@
               <dl>
                 <div><dt>Galaxies</dt><dd>4</dd></div>
                 <div><dt>Blocked</dt><dd>0</dd></div>
-                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>P0 labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
                 <div><dt>Endpoint scores</dt><dd>False</dd></div>
               </dl>
               <p>render source previews without image classification</p>
@@ -92,7 +95,8 @@
               <dl>
                 <div><dt>Galaxies</dt><dd>4</dd></div>
                 <div><dt>Blocked</dt><dd>0</dd></div>
-                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>P0 labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
                 <div><dt>Endpoint scores</dt><dd>False</dd></div>
               </dl>
               <p>use previews only as residual-blind review source material</p>
@@ -104,7 +108,8 @@
               <dl>
                 <div><dt>Galaxies</dt><dd>4</dd></div>
                 <div><dt>Blocked</dt><dd>0</dd></div>
-                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>P0 labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
                 <div><dt>Endpoint scores</dt><dd>False</dd></div>
               </dl>
               <p>fill review fields residual-blind</p>
@@ -116,7 +121,8 @@
               <dl>
                 <div><dt>Galaxies</dt><dd>4</dd></div>
                 <div><dt>Blocked</dt><dd>4</dd></div>
-                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>P0 labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
                 <div><dt>Endpoint scores</dt><dd>False</dd></div>
               </dl>
               <p>complete residual-blind visual review fields</p>
@@ -128,31 +134,34 @@
               <dl>
                 <div><dt>Galaxies</dt><dd>4</dd></div>
                 <div><dt>Blocked</dt><dd>4</dd></div>
-                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>P0 labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
                 <div><dt>Endpoint scores</dt><dd>False</dd></div>
               </dl>
               <p>send handoff to residual-blind reviewer</p>
             </section>
 
-            <section class="card blocked">
+            <section class="card ready">
               <h2>visual_review_response_intake</h2>
-              <p class="status">BLOCKED_REVIEW_RESPONSE_PENDING</p>
+              <p class="status">READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT</p>
               <dl>
                 <div><dt>Galaxies</dt><dd>4</dd></div>
-                <div><dt>Blocked</dt><dd>4</dd></div>
-                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>Blocked</dt><dd>0</dd></div>
+                <div><dt>P0 labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
                 <div><dt>Endpoint scores</dt><dd>False</dd></div>
               </dl>
               <p>fill response template before independent manifest audit</p>
             </section>
 
-            <section class="card blocked">
+            <section class="card ready">
               <h2>response_to_manifest_promotion_gate</h2>
-              <p class="status">BLOCKED_RESPONSE_REVIEW_NOT_PROMOTABLE</p>
+              <p class="status">READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT</p>
               <dl>
                 <div><dt>Galaxies</dt><dd>4</dd></div>
-                <div><dt>Blocked</dt><dd>4</dd></div>
-                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>Blocked</dt><dd>0</dd></div>
+                <div><dt>P0 labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
                 <div><dt>Endpoint scores</dt><dd>False</dd></div>
               </dl>
               <p>do not promote labels until all promotion gates pass</p>
@@ -164,7 +173,8 @@
               <dl>
                 <div><dt>Galaxies</dt><dd>4</dd></div>
                 <div><dt>Blocked</dt><dd>0</dd></div>
-                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>P0 labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
                 <div><dt>Endpoint scores</dt><dd>False</dd></div>
               </dl>
               <p>acquire S4G/NED/DustPedia/HI/PHANGS evidence residual-blind</p>
@@ -176,7 +186,8 @@
               <dl>
                 <div><dt>Galaxies</dt><dd>4</dd></div>
                 <div><dt>Blocked</dt><dd>7</dd></div>
-                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>P0 labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
                 <div><dt>Endpoint scores</dt><dd>False</dd></div>
               </dl>
               <p>use source evidence for human residual-blind review only</p>
@@ -188,10 +199,24 @@
               <dl>
                 <div><dt>Galaxies</dt><dd>4</dd></div>
                 <div><dt>Blocked</dt><dd>4</dd></div>
-                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>P0 labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
                 <div><dt>Endpoint scores</dt><dd>False</dd></div>
               </dl>
               <p>human reviewer must convert draft into accepted-review response</p>
+            </section>
+
+            <section class="card ready">
+              <h2>p0_codex_accepted_label_manifest</h2>
+              <p class="status">P0_CODEX_SOURCE_REVIEW_LABELS_CREATED_NOT_ENDPOINT</p>
+              <dl>
+                <div><dt>Galaxies</dt><dd>4</dd></div>
+                <div><dt>Blocked</dt><dd>0</dd></div>
+                <div><dt>P0 labels</dt><dd>True</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint scores</dt><dd>False</dd></div>
+              </dl>
+              <p>keep P0 labels in audit lane; do not launch full endpoint manifest</p>
             </section>
 
             <section class="card ready">
@@ -200,7 +225,8 @@
               <dl>
                 <div><dt>Galaxies</dt><dd>4</dd></div>
                 <div><dt>Blocked</dt><dd>12</dd></div>
-                <div><dt>Accepted labels</dt><dd>False</dd></div>
+                <div><dt>P0 labels</dt><dd>False</dd></div>
+                <div><dt>Endpoint labels</dt><dd>False</dd></div>
                 <div><dt>Endpoint scores</dt><dd>False</dd></div>
               </dl>
               <p>complete human review for matched evidence and record no-coverage blockers</p>

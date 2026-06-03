@@ -106,6 +106,19 @@ def build_gates(validation: pd.DataFrame) -> pd.DataFrame:
 
 def write_report(gates: pd.DataFrame, summary: pd.DataFrame) -> None:
     decision = summary["promotion_gate_decision"].iloc[0]
+    if decision == "READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT":
+        verdict = [
+            "The current package passes this P0 response gate. The responses may",
+            "enter an independent accepted-manifest audit lane, but this still",
+            "does not create full endpoint labels or endpoint scores.",
+        ]
+    else:
+        verdict = [
+            "The current package is correctly blocked because the P0 response intake",
+            "is still pending. This is a review-readiness blocker, not a negative",
+            "empirical result.",
+            "This blocked promotion gate is not a negative empirical result.",
+        ]
     lines = [
         "# P0 Response-to-Manifest Promotion Gate",
         "",
@@ -122,10 +135,7 @@ def write_report(gates: pd.DataFrame, summary: pd.DataFrame) -> None:
         "",
         f"Promotion gate decision: `{decision}`.",
         "",
-        "The current package is correctly blocked because the P0 response intake",
-        "is still pending. This is a review-readiness blocker, not a negative",
-        "empirical result.",
-        "This blocked promotion gate is not a negative empirical result.",
+        *verdict,
         "",
         "## Gate Status",
         "",
