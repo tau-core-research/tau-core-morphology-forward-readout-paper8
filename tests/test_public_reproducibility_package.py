@@ -71,6 +71,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_p0_source_assisted_review_response_draft.py",
         ROOT / "scripts/build_p0_codex_source_review_response.py",
         ROOT / "scripts/build_p0_codex_accepted_label_manifest.py",
+        ROOT / "scripts/build_p0_readout_relevant_morphology_proxy.py",
         ROOT / "scripts/run_p0_codex_source_review_pilot.py",
         ROOT / "scripts/audit_p0_requested_source_family_availability.py",
         ROOT / "scripts/build_p0_review_pipeline_status_dashboard.py",
@@ -184,6 +185,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "Codex/source-reviewed P0 response" in source
     assert "READY_FOR_INDEPENDENT_ACCEPTED_MANIFEST_AUDIT" in source
     assert "P0 Codex-source-reviewed label manifest" in source
+    assert "readout-relevant morphology proxy" in source
+    assert "projected 4D morphology handles" in source
     assert "response-to-manifest promotion gate" in source
     assert "P0_CODEX_SOURCE_REVIEW_LABELS_CREATED_NOT_ENDPOINT" in source
     assert "consolidated P0 review-pipeline status dashboard" in source
@@ -1812,6 +1815,32 @@ def test_p0_codex_accepted_label_manifest_is_not_endpoint_launch():
     )
     assert "P0 audit manifest only" in report
     assert "not a launch of the frozen 175-galaxy endpoint" in report
+
+
+def test_p0_readout_relevant_morphology_proxy_separates_4d_handles():
+    proxy = pd.read_csv(DATA / "p0_readout_relevant_morphology_proxy.csv")
+    summary = pd.read_csv(DATA / "p0_readout_relevant_morphology_proxy_summary.csv")
+    assert len(proxy) == 4
+    assert set(proxy["galaxy"]) == {"NGC0100", "NGC0247", "NGC0300", "NGC6503"}
+    assert proxy["observed_4d_family_label"].eq("K_exponential_disk").all()
+    assert not proxy["uses_rotation_residuals"].any()
+    assert not proxy["endpoint_scores_computed"].any()
+    assert {
+        "K_clean_exponential_disk_control",
+        "K_projection_corrected_expdisk",
+        "K_barred_expdisk_m2_overlay",
+        "K_expdisk_compact_core_overlay",
+    } == set(proxy["readout_relevant_proxy_family"])
+    assert "p0_readout_relevant_morphology_proxy_not_endpoint" in set(
+        proxy["claim_boundary"]
+    )
+    assert int(summary["n_galaxies"].sum()) == 4
+    report = (ROOT / "reports" / "p0_readout_relevant_morphology_proxy.md").read_text(
+        encoding="utf-8"
+    )
+    assert "projected 4D morphology handles" in report
+    assert "not as proven fundamental Tau-side classes" in report
+    assert "plain P0 `K_exponential_disk` pilot can be weak" in report
 
 
 def test_p0_codex_source_review_pilot_is_narrow_and_claim_bounded():

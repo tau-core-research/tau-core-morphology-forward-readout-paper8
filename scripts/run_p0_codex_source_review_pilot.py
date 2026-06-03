@@ -197,6 +197,22 @@ def build_summary(scores: pd.DataFrame) -> pd.DataFrame:
 
 def write_report(scores: pd.DataFrame, summary: pd.DataFrame) -> None:
     row = summary.iloc[0]
+    readout_proxy_path = DATA / "p0_readout_relevant_morphology_proxy_summary.csv"
+    if readout_proxy_path.exists():
+        readout_proxy = pd.read_csv(readout_proxy_path)
+        readout_proxy_section = [
+            "## Readout-Relevant Proxy Context",
+            "",
+            markdown_table(readout_proxy),
+            "",
+            "The pilot above intentionally tests the direct apparent 4D",
+            "`K_exponential_disk` handle. The readout-relevant proxy layer records",
+            "which rows should later receive projection, bar, or compact-core",
+            "corrections before any stronger endpoint claim is attempted.",
+            "",
+        ]
+    else:
+        readout_proxy_section = []
     lines = [
         "# P0 Codex Source-Reviewed Pilot",
         "",
@@ -221,6 +237,7 @@ def write_report(scores: pd.DataFrame, summary: pd.DataFrame) -> None:
         "",
         markdown_table(summary),
         "",
+        *readout_proxy_section,
         "## P0 Scores",
         "",
         markdown_table(

@@ -23,6 +23,20 @@ This is not an endpoint result.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | P0_CODEX_SOURCE_REVIEW_PILOT_COMPLETE_NOT_ENDPOINT | 4 | leave_one_galaxy_out_beta_all13 | 0.75 | 0.25 | -0.02370912308604375 | 2.4173695930689894 | 1.0 | 1.0 | 0.25 | 0.75 | 0.0 | 0.0 | False | False | p0_codex_source_review_pilot_not_endpoint |
 
+## Readout-Relevant Proxy Context
+
+| readout_relevant_proxy_family | n_galaxies | median_review_confidence | uses_rotation_residuals | endpoint_scores_computed | claim_boundary |
+| --- | --- | --- | --- | --- | --- |
+| K_barred_expdisk_m2_overlay | 1 | 0.78 | False | False | p0_readout_relevant_morphology_proxy_not_endpoint |
+| K_clean_exponential_disk_control | 1 | 0.88 | False | False | p0_readout_relevant_morphology_proxy_not_endpoint |
+| K_expdisk_compact_core_overlay | 1 | 0.74 | False | False | p0_readout_relevant_morphology_proxy_not_endpoint |
+| K_projection_corrected_expdisk | 1 | 0.7 | False | False | p0_readout_relevant_morphology_proxy_not_endpoint |
+
+The pilot above intentionally tests the direct apparent 4D
+`K_exponential_disk` handle. The readout-relevant proxy layer records
+which rows should later receive projection, bar, or compact-core
+corrections before any stronger endpoint claim is attempted.
+
 ## P0 Scores
 
 | galaxy | accepted_formula_family | review_confidence | manifest_caveat | narrow_dry_run_lane | rmse_tpg_v6 | rmse_mond | primary_tau_rmse | primary_tau_minus_tpg_v6 | primary_tau_minus_mond | primary_tau_beats_tpg_v6 | primary_tau_beats_mond | formula_shell_matched_beats_wrong_mean | formula_shell_matched_beats_tpg_v6 | formula_shell_matched_beats_mond |
