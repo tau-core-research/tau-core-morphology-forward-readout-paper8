@@ -63,6 +63,7 @@ def main() -> None:
     run([sys.executable, "scripts/build_morphological_memory_history_proxy.py"])
     run([sys.executable, "scripts/build_morphology_inspection_queue.py"])
     run([sys.executable, "scripts/build_p0_morphology_inspection_packets.py"])
+    run([sys.executable, "scripts/build_p0_external_imaging_request_manifest.py"])
     if shutil.which("tectonic") is None:
         raise SystemExit("tectonic is required to compile paper8_submission_source/main.tex")
     run(["tectonic", "main.tex"], cwd=SOURCE)

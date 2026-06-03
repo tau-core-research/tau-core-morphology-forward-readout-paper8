@@ -322,6 +322,8 @@ To make that next data step operational, the repository also constructs a morpho
 
 The four P0 rows are then converted into residual-blind inspection packets. Each packet records the current source context, the requested external observables, suggested catalogue lookup links, blank review fields, and forbidden inputs. The common requested observables across all four P0 packets are residual-blind multiband morphology labels, deep optical or infrared outer-disk profiles, and HI extent or asymmetry checks; \texttt{NGC0247} additionally requests bar-length and velocity-field support. These packets are manual source-collection templates, not filled morphology labels.
 
+Finally, the P0 packet layer is translated into an external imaging request manifest. This manifest records S4G-derived sky coordinates, suggested fields of view, and residual-blind source URLs for DSS2, 2MASS, WISE, NED, and SIMBAD lookups. The recommended fields of view are 8.0 arcmin for \texttt{NGC0100}, 29.745 arcmin for \texttt{NGC0247}, 20.288 arcmin for \texttt{NGC0300}, and 10.030 arcmin for \texttt{NGC6503}. This makes the next image-based morphology review operational while still leaving classification and history/memory judgments blank.
+
 \section{Conclusion}
 
 Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:

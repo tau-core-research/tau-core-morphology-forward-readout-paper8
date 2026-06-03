@@ -57,6 +57,7 @@ def test_publication_files_exist():
         ROOT / "scripts/build_morphological_memory_history_proxy.py",
         ROOT / "scripts/build_morphology_inspection_queue.py",
         ROOT / "scripts/build_p0_morphology_inspection_packets.py",
+        ROOT / "scripts/build_p0_external_imaging_request_manifest.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -141,6 +142,11 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "residual-blind inspection packets" in source
     assert "deep optical or infrared outer-disk profiles" in source
     assert "\\texttt{NGC0247} additionally requests bar-length and velocity-field support" in source
+    assert "external imaging request manifest" in source
+    assert "8.0 arcmin for \\texttt{NGC0100}" in source
+    assert "29.745 arcmin for \\texttt{NGC0247}" in source
+    assert "20.288 arcmin for \\texttt{NGC0300}" in source
+    assert "10.030 arcmin for \\texttt{NGC6503}" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1264,6 +1270,40 @@ def test_p0_morphology_inspection_packets_are_blank_review_templates():
     assert "manual residual-blind" in report
     assert "not accepted labels" in report
     assert "not endpoint scores" in report
+
+
+def test_p0_external_imaging_request_manifest_is_source_request_only():
+    manifest = pd.read_csv(DATA / "p0_external_imaging_request_manifest.csv")
+    summary = pd.read_csv(DATA / "p0_external_imaging_request_summary.csv")
+    assert len(manifest) == 4
+    assert set(manifest["galaxy"]) == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert manifest["ra_deg"].notna().all()
+    assert manifest["dec_deg"].notna().all()
+    fov = manifest.set_index("galaxy")["suggested_fov_arcmin"].to_dict()
+    assert abs(float(fov["NGC0100"]) - 8.000) < 1.0e-12
+    assert abs(float(fov["NGC0247"]) - 29.745) < 1.0e-12
+    assert abs(float(fov["NGC0300"]) - 20.288) < 1.0e-12
+    assert abs(float(fov["NGC6503"]) - 10.030) < 1.0e-12
+    assert not manifest["accepted_label_output_allowed"].any()
+    assert not manifest["endpoint_scores_allowed"].any()
+    assert "p0_external_imaging_request_not_morphology_label_not_endpoint" in set(
+        manifest["claim_boundary"]
+    )
+    for column in [
+        "ned_url",
+        "simbad_url",
+        "skyview_dss2_red_url",
+        "skyview_2mass_ks_url",
+        "skyview_wise_w1_url",
+    ]:
+        assert manifest[column].str.startswith("https://").all()
+    assert not summary.empty
+    report = (ROOT / "reports" / "p0_external_imaging_request_manifest.md").read_text(
+        encoding="utf-8"
+    )
+    assert "does not download, classify" in report
+    assert "not image-based validation" in report
+    assert "not an endpoint score" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
