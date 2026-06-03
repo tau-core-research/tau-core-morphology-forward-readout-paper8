@@ -338,6 +338,8 @@ To make the blocked state actionable, the package also emits a P0 visual review 
 
 The handoff is finally converted into a visual-review response intake template and validator. This creates the residual-blind file that a reviewer would fill, then checks whether it is complete enough for a later independent accepted-manifest audit. In the current package the validator returns \texttt{BLOCKED\_REVIEW\_RESPONSE\_PENDING}: all four rows remain blocked and 56 required response fields are still pending. This layer is not a manifest promotion and not an endpoint calculation.
 
+A response-to-manifest promotion gate records the same boundary at the next step. It returns \texttt{BLOCKED\_RESPONSE\_REVIEW\_NOT\_PROMOTABLE}: the response intake is incomplete, review confidence is missing, residual-blind family recommendations are missing, and morphology-memory/history judgments are missing. No accepted labels are created and no endpoint scores are computed.
+
 \section{Conclusion}
 
 Paper 3 is the natural launching point for this forward gate because it already contains the candidate/control framework and the required-$S_\tau$ diagnostic. The present contribution is to state the next gate in a falsifiable form:

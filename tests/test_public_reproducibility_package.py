@@ -65,6 +65,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_p0_visual_review_completion_gate.py",
         ROOT / "scripts/build_p0_visual_review_handoff.py",
         ROOT / "scripts/build_p0_visual_review_response_intake.py",
+        ROOT / "scripts/run_p0_response_to_manifest_promotion_gate.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -175,6 +176,9 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "visual-review response intake template and validator" in source
     assert "BLOCKED\\_REVIEW\\_RESPONSE\\_PENDING" in source
     assert "56 required response fields are still pending" in source
+    assert "response-to-manifest promotion gate" in source
+    assert "BLOCKED\\_RESPONSE\\_REVIEW\\_NOT\\_PROMOTABLE" in source
+    assert "No accepted labels are created and no endpoint scores are computed" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1574,6 +1578,42 @@ def test_p0_visual_review_response_intake_blocks_empty_responses():
     assert "not an accepted" in report
     assert "not an endpoint" in report
     assert "independent accepted-manifest audit" in report
+
+
+def test_p0_response_to_manifest_promotion_gate_blocks_pending_review():
+    gates = pd.read_csv(DATA / "p0_response_to_manifest_promotion_gates.csv")
+    summary = pd.read_csv(DATA / "p0_response_to_manifest_promotion_summary.csv")
+    assert len(gates) == 5
+    blocked = gates.loc[gates["gate_status"] == "BLOCKED"]
+    assert len(blocked) == 4
+    assert {
+        "response_intake_complete",
+        "review_confidence_present",
+        "family_recommendation_present",
+        "history_memory_judgment_present",
+    }.issubset(set(blocked["gate"]))
+    forbidden = gates.loc[gates["gate"] == "forbidden_inputs_absent"].iloc[0]
+    assert forbidden["gate_status"] == "PASS"
+    assert not gates["endpoint_scores_computed"].any()
+    assert "p0_response_to_manifest_promotion_gate_not_endpoint" in set(
+        gates["claim_boundary"]
+    )
+
+    row = summary.iloc[0]
+    assert row["promotion_gate_decision"] == "BLOCKED_RESPONSE_REVIEW_NOT_PROMOTABLE"
+    assert int(row["n_gates"]) == 5
+    assert int(row["n_blocked_gates"]) == 4
+    assert int(row["n_blocked_rows_total"]) == 16
+    assert bool(row["accepted_manifest_audit_entry_allowed"]) is False
+    assert bool(row["accepted_labels_created"]) is False
+    assert bool(row["endpoint_scores_computed"]) is False
+    report = (ROOT / "reports" / "p0_response_to_manifest_promotion_gate.md").read_text(
+        encoding="utf-8"
+    )
+    assert "This promotion gate is not an endpoint score" in report
+    assert "BLOCKED_RESPONSE_REVIEW_NOT_PROMOTABLE" in report
+    assert "does not promote labels" in report
+    assert "not a negative empirical result" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
