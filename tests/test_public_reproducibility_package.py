@@ -55,6 +55,7 @@ def test_publication_files_exist():
         ROOT / "scripts/audit_exponential_disk_failure_sensitivity.py",
         ROOT / "scripts/run_rotation_inferred_morphology_diagnostic.py",
         ROOT / "scripts/build_morphological_memory_history_proxy.py",
+        ROOT / "scripts/build_morphology_inspection_queue.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -132,6 +133,10 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "current proxy family and rotation-inferred family disagree in 113/175 rows" in source
     assert "9/13 S4G-supported exponential-disk rows do not infer the exponential-disk readout family" in source
     assert "not an accepted morphology label, not an endpoint score" in source
+    assert "morphology inspection queue" in source
+    assert "4 P0 and 18 P1 inspection targets" in source
+    assert "\\texttt{NGC0300}, \\texttt{NGC6503}, \\texttt{NGC0100}, and \\texttt{NGC0247}" in source
+    assert "not validation and not an accepted morphology manifest" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1199,6 +1204,32 @@ def test_morphological_memory_history_proxy_is_hypothesis_layer_only():
     assert "not an accepted morphology label" in report
     assert "not an endpoint score" in report
     assert "future residual-blind testing" in report
+
+
+def test_morphology_inspection_queue_is_acquisition_plan_only():
+    queue = pd.read_csv(DATA / "morphology_inspection_queue.csv")
+    summary = pd.read_csv(DATA / "morphology_inspection_queue_summary.csv")
+    assert len(queue) == 175
+    tier_counts = queue["inspection_priority_tier"].value_counts().to_dict()
+    assert tier_counts["P0"] == 4
+    assert tier_counts["P1"] == 18
+    top_p0 = set(
+        queue.loc[queue["inspection_priority_tier"] == "P0", "galaxy"].tolist()
+    )
+    assert top_p0 == {"NGC0300", "NGC6503", "NGC0100", "NGC0247"}
+    assert not queue["accepted_label_output_allowed"].any()
+    assert not queue["endpoint_scores_allowed"].any()
+    assert "morphology_inspection_queue_not_accepted_label_not_endpoint" in set(
+        queue["claim_boundary"]
+    )
+    assert not summary.empty
+    report = (ROOT / "reports" / "morphology_inspection_queue.md").read_text(
+        encoding="utf-8"
+    )
+    assert "acquisition and" in report
+    assert "not an accepted morphology manifest" in report
+    assert "not an endpoint score" in report
+    assert "residual-blind source collection only" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
