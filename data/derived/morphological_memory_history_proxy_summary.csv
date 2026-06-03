@@ -1,0 +1,9 @@
+memory_history_proxy_class,n_galaxies,n_rotation_current_mismatches,n_external_rows,n_external_mismatches,median_rotation_margin
+current_readout_consistent_no_memory_proxy_flag,62,0,4,0,3.092565157114432
+scale_tail_current_with_expdisk_readout_memory_candidate,32,32,0,0,1.301843198115415
+thick_flared_proxy_with_alternate_readout_memory_candidate,30,30,0,0,1.3159196263303041
+generic_current_vs_rotation_readout_mismatch_candidate,17,17,0,0,0.5023480727386387
+compact_proxy_with_alternate_readout_memory_candidate,15,15,0,0,0.4154349036827405
+expdisk_proxy_with_scale_tail_readout_memory_candidate,10,10,0,0,3.3383918796467746
+expdisk_current_with_scale_tail_readout_memory_candidate,6,6,6,6,1.4156829038883325
+expdisk_current_with_vertical_projection_memory_candidate,3,3,3,3,0.2532895720555812

@@ -54,6 +54,7 @@ def test_publication_files_exist():
         ROOT / "scripts/run_exponential_disk_narrow_dry_run.py",
         ROOT / "scripts/audit_exponential_disk_failure_sensitivity.py",
         ROOT / "scripts/run_rotation_inferred_morphology_diagnostic.py",
+        ROOT / "scripts/build_morphological_memory_history_proxy.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -126,6 +127,11 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "rotation-inferred family matches the predeclared proxy family in about 0.354" in source
     assert "matches the external S4G-supported exponential-disk label in about 0.308" in source
     assert "not allowed to define the accepted Paper 8 morphology labels" in source
+    assert "morphology-memory/history layer" in source
+    assert "currently observed galaxy shape may be an insufficient proxy" in source
+    assert "current proxy family and rotation-inferred family disagree in 113/175 rows" in source
+    assert "9/13 S4G-supported exponential-disk rows do not infer the exponential-disk readout family" in source
+    assert "not an accepted morphology label, not an endpoint score" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1158,6 +1164,41 @@ def test_rotation_inferred_morphology_is_inverse_diagnostic_only():
     assert "hypothesis generator only" in report
     assert "not residual-blind" in report
     assert "must not be used as accepted morphology evidence" in report
+
+
+def test_morphological_memory_history_proxy_is_hypothesis_layer_only():
+    proxy = pd.read_csv(DATA / "morphological_memory_history_proxy.csv")
+    summary = pd.read_csv(DATA / "morphological_memory_history_proxy_summary.csv")
+    external = pd.read_csv(DATA / "morphological_memory_history_proxy_external_expdisk.csv")
+    assert len(proxy) == 175
+    assert int((~proxy["matches_current_proxy_family"]).sum()) == 113
+    expdisk = proxy.loc[proxy["external_family_label"].notna()]
+    assert len(expdisk) == 13
+    assert int(expdisk["external_family_mismatch"].sum()) == 9
+    assert int(
+        (
+            expdisk["memory_history_proxy_class"]
+            == "expdisk_current_with_scale_tail_readout_memory_candidate"
+        ).sum()
+    ) == 6
+    assert int(
+        (
+            expdisk["memory_history_proxy_class"]
+            == "expdisk_current_with_vertical_projection_memory_candidate"
+        ).sum()
+    ) == 3
+    assert "morphological_memory_proxy_not_accepted_label_not_endpoint_validation" in set(
+        proxy["claim_boundary"]
+    )
+    assert not summary.empty
+    assert not external.empty
+    report = (ROOT / "reports" / "morphological_memory_history_proxy.md").read_text(
+        encoding="utf-8"
+    )
+    assert "hypothesis generator only" in report
+    assert "not an accepted morphology label" in report
+    assert "not an endpoint score" in report
+    assert "future residual-blind testing" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
