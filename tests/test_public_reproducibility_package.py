@@ -52,6 +52,7 @@ def test_publication_files_exist():
         ROOT / "scripts/audit_accepted_morphology_manifest.py",
         ROOT / "scripts/audit_exponential_disk_family_labels.py",
         ROOT / "scripts/run_exponential_disk_narrow_dry_run.py",
+        ROOT / "scripts/audit_exponential_disk_failure_sensitivity.py",
         ROOT / "scripts/build_arxiv_source.py",
         ROOT / "scripts/reproduce.py",
     ]
@@ -119,6 +120,8 @@ def test_manuscript_contains_forward_gate_and_claim_boundaries():
     assert "beats TPG/v6 in 4/6 cases" in source
     assert "beats MOND in only 2/6 cases" in source
     assert "leave-one-galaxy-out all-13 policy beats TPG/v6 in 3/6 strict cases" in source
+    assert "fixed multipliers 0.75, 1.0, and 1.25" in source
+    assert "unlikely to be solved by a single radius rescaling alone" in source
     forbidden_phrases = [
         "We prove Tau Core",
         "This paper demonstrates Tau Core has beaten MOND/RAR",
@@ -1092,6 +1095,37 @@ def test_exponential_disk_narrow_dry_run_is_mixed_and_claim_bounded():
     assert "not the frozen Paper 8 endpoint" in report
     assert "leave-one-galaxy-out all13 policy beats" in report
     assert "policy is a stability check" in report
+
+
+def test_exponential_disk_failure_sensitivity_is_mixed():
+    scores = pd.read_csv(DATA / "exponential_disk_failure_sensitivity_scores.csv")
+    summary = pd.read_csv(DATA / "exponential_disk_failure_sensitivity_summary.csv")
+    best = pd.read_csv(DATA / "exponential_disk_failure_sensitivity_best_by_galaxy.csv")
+    assert len(scores) == 39
+    assert set(scores["scale_multiplier"]) == {0.75, 1.0, 1.25}
+    strict = summary.loc[
+        summary["narrow_dry_run_lane"] == "STRICT_NARROW_DRY_RUN_READY_CANDIDATE"
+    ]
+    assert len(strict) == 3
+    at_075 = strict.loc[strict["scale_multiplier"] == 0.75].iloc[0]
+    at_100 = strict.loc[strict["scale_multiplier"] == 1.0].iloc[0]
+    at_125 = strict.loc[strict["scale_multiplier"] == 1.25].iloc[0]
+    assert abs(float(at_075["beats_tpg_v6_fraction"]) - 3 / 6) < 1.0e-12
+    assert abs(float(at_100["beats_tpg_v6_fraction"]) - 3 / 6) < 1.0e-12
+    assert abs(float(at_125["beats_tpg_v6_fraction"]) - 2 / 6) < 1.0e-12
+    assert abs(float(at_075["beats_mond_fraction"]) - 1 / 6) < 1.0e-12
+    assert abs(float(at_100["beats_mond_fraction"]) - 2 / 6) < 1.0e-12
+    assert abs(float(at_125["beats_mond_fraction"]) - 2 / 6) < 1.0e-12
+    assert "beats_neither" in set(best["failure_class"])
+    assert "beats_both" in set(best["failure_class"])
+    assert "scale_sensitivity_diagnostic_not_endpoint_not_validation" in set(
+        scores["claim_boundary"]
+    )
+    report = (
+        ROOT / "reports" / "exponential_disk_failure_sensitivity_audit.md"
+    ).read_text(encoding="utf-8")
+    assert "strict lane remains mixed" in report
+    assert "not an endpoint score" in report
 
 
 def test_synthetic_fixture_is_not_mistaken_for_empirical_result():
