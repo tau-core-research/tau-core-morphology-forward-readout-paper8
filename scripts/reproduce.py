@@ -59,6 +59,8 @@ def main() -> None:
     run([sys.executable, "scripts/build_accepted_morphology_manifest.py"])
     run([sys.executable, "scripts/audit_accepted_morphology_manifest.py"])
     run([sys.executable, "scripts/audit_exponential_disk_family_labels.py"])
+    run([sys.executable, "scripts/build_narrow_accepted_exponential_disk_manifest.py"])
+    run([sys.executable, "scripts/run_narrow_accepted_exponential_disk_population_endpoint.py"])
     run([sys.executable, "scripts/run_exponential_disk_narrow_dry_run.py"])
     run([sys.executable, "scripts/audit_exponential_disk_failure_sensitivity.py"])
     run([sys.executable, "scripts/run_rotation_inferred_morphology_diagnostic.py"])

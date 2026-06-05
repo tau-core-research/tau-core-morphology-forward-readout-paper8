@@ -1,0 +1,42 @@
+# Narrow Accepted Exponential-Disk Manifest
+
+This manifest freezes the first population-level matched-family lane that
+is source-backed enough for Paper 8: the 13 externally audited
+exponential-disk rows with accepted scale-radius observables.
+
+## Verdict
+
+This is an accepted narrow population manifest, not the full 175-row launch.
+It authorizes a family-restricted endpoint lane only for the audited
+exponential-disk support pool.
+
+## Summary
+
+| accepted_population_lane | n_rows | n_strict_rows | n_caveated_rows | accepted_population_endpoint_ready | accepted_population_claim_boundary | launch_scope | full_175_launch_unblocked |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | 13 | 6 | 7 | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation | narrow_family_restricted_lane_only | False |
+
+## Manifest Rows
+
+| galaxy | accepted_population_lane | accepted_population_family | accepted_population_support_tier | external_family_label_status | external_family_label_confidence | accepted_population_caveat | scale_radius_kpc | accepted_kernel_observable | accepted_kernel_formula | observable_provenance | external_family_label_source | residual_blind_certification | accepted_population_endpoint_ready | accepted_population_claim_boundary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| NGC0100 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | CAVEATED | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_CAVEATED_EDGEON | 0.85 | edgedisk_component_orientation_caveat;large_distance_error | 1.2193294483812045 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+| NGC0247 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | CAVEATED | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_CAVEATED_BAR | 0.85 | bar_component_present | 4.0018082876406345 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+| NGC4010 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | CAVEATED | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_CAVEATED_EDGEON | 0.85 | edgedisk_component_orientation_caveat | 2.301214530367252 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+| NGC4183 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | CAVEATED | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_CAVEATED_EDGEON | 0.85 | edgedisk_component_orientation_caveat | 2.5281069868391675 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+| NGC4559 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | CAVEATED | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_CAVEATED_BAR | 0.85 | bar_component_present;large_distance_error | 2.1554796680624935 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+| UGC06930 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | CAVEATED | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_CAVEATED_BAR | 0.85 | bar_component_present;low_inclination | 2.6808231529361786 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+| UGC07089 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | CAVEATED | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_CAVEATED_EDGEON | 0.85 | edgedisk_component_orientation_caveat | 1.498363762021143 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+| NGC0300 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | STRICT | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_STRONG | 1.0 | none | 1.534398989732565 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+| NGC3917 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | STRICT | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_STRONG | 1.0 | none | 3.360628171466791 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+| NGC5585 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | STRICT | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_STRONG | 1.0 | large_distance_error | 1.5577077456186188 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+| NGC6015 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | STRICT | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_STRONG | 1.0 | large_distance_error | 2.7626597230842966 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+| NGC6503 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | STRICT | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_STRONG | 1.0 | none | 0.899249968469682 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+| NGC7793 | NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | K_exponential_disk | STRICT | ACCEPTED_EXTERNAL_EXPONENTIAL_DISK_LABEL_STRONG | 1.0 | none | 1.3135069498792606 | scale_radius_kpc | tau_core_gravity_rmond_exponential_disk_readout_formula_001:Freeman_Bessel | SPARC_Lelli2016c.mrt;VizieR_J/ApJS/219/4_S4G_Pipeline4 | VizieR_J/ApJS/219/4_S4G_Pipeline4 | pre_endpoint_external_catalog_query | True | narrow_accepted_population_manifest_not_full_launch_not_population_validation |
+
+## Claim Boundary
+
+This manifest does not imply that the global Paper 8 launch guard has
+passed. It does not authorize unmatched families, does not validate the
+full 175-row packet, and does not by itself establish population-level
+superiority over MOND, RAR, TPG, or Newtonian baselines.

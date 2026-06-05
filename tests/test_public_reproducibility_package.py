@@ -54,6 +54,8 @@ def test_publication_files_exist():
         ROOT / "scripts/build_accepted_morphology_manifest.py",
         ROOT / "scripts/audit_accepted_morphology_manifest.py",
         ROOT / "scripts/audit_exponential_disk_family_labels.py",
+        ROOT / "scripts/build_narrow_accepted_exponential_disk_manifest.py",
+        ROOT / "scripts/run_narrow_accepted_exponential_disk_population_endpoint.py",
         ROOT / "scripts/run_exponential_disk_narrow_dry_run.py",
         ROOT / "scripts/audit_exponential_disk_failure_sensitivity.py",
         ROOT / "scripts/run_rotation_inferred_morphology_diagnostic.py",
@@ -2697,6 +2699,61 @@ def test_exponential_disk_narrow_dry_run_is_mixed_and_claim_bounded():
     assert "not the frozen Paper 8 endpoint" in report
     assert "leave-one-galaxy-out all13 policy beats" in report
     assert "policy is a stability check" in report
+
+
+def test_narrow_accepted_exponential_disk_population_endpoint_is_frozen_and_narrow():
+    manifest = pd.read_csv(DATA / "narrow_accepted_exponential_disk_manifest.csv")
+    manifest_summary = pd.read_csv(
+        DATA / "narrow_accepted_exponential_disk_manifest_summary.csv"
+    ).iloc[0]
+    summary = pd.read_csv(
+        DATA / "narrow_accepted_exponential_disk_population_endpoint_summary.csv"
+    )
+    scores = pd.read_csv(
+        DATA / "narrow_accepted_exponential_disk_population_endpoint_scores.csv"
+    )
+    points = pd.read_csv(
+        DATA / "narrow_accepted_exponential_disk_population_endpoint_points.csv"
+    )
+
+    assert len(manifest) == 13
+    assert int(manifest_summary["n_rows"]) == 13
+    assert int(manifest_summary["n_strict_rows"]) == 6
+    assert int(manifest_summary["n_caveated_rows"]) == 7
+    assert bool(manifest_summary["accepted_population_endpoint_ready"]) is True
+    assert bool(manifest_summary["full_175_launch_unblocked"]) is False
+    assert (
+        manifest_summary["accepted_population_claim_boundary"]
+        == "narrow_accepted_population_manifest_not_full_launch_not_population_validation"
+    )
+
+    overall = summary.loc[summary["support_tier"] == "ALL_13"].iloc[0]
+    assert int(overall["n_galaxies"]) == 13
+    assert overall["amplitude_policy"] == "frozen_global_train_beta"
+    assert (
+        overall["accepted_endpoint_status"]
+        == "NARROW_ACCEPTED_MATCHED_FAMILY_RESULT"
+    )
+    assert (
+        overall["claim_boundary"]
+        == "narrow_accepted_exponential_disk_population_endpoint_preliminary_control"
+    )
+    assert float(overall["mean_rmse_tau"]) > float(overall["mean_rmse_tpg_v6"])
+    assert float(overall["mean_rmse_tau"]) < float(overall["mean_rmse_mond"])
+    assert abs(float(overall["tau_beats_tpg_v6_fraction"]) - 5 / 13) < 1.0e-12
+    assert abs(float(overall["tau_beats_mond_fraction"]) - 7 / 13) < 1.0e-12
+
+    assert len(scores) == 13
+    assert len(points["galaxy"].unique()) == 13
+    assert points["accepted_endpoint_claim_boundary"].eq(
+        "narrow_accepted_exponential_disk_population_endpoint_preliminary_control"
+    ).all()
+
+    report = (
+        ROOT / "reports" / "narrow_accepted_exponential_disk_population_endpoint.md"
+    ).read_text(encoding="utf-8")
+    assert "first population-level matched-family accepted endpoint lane" in report
+    assert "not the full 175-row matched-family launch" in report
 
 
 def test_exponential_disk_failure_sensitivity_is_mixed():
