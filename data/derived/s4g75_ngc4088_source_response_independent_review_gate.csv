@@ -1,0 +1,6 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,SR1_FROZEN_SOURCE_ARTIFACTS_PRESENT,PASS,"digitization response, validation, x_w audit, and first-pass responses are present",preserve frozen artifact provenance,False,False,s4g75_ngc4088_source_response_independent_review_not_endpoint
+NGC4088,SR2_QWARP_RECOMPUTATION_MATCHES,PASS,"q_review=1, first_pass=1, delta=0",none,False,False,s4g75_ngc4088_source_response_independent_review_not_endpoint
+NGC4088,SR3_MEMORY_RECOMPUTATION_MATCHES_CAVEATED,PASS,"m_review=1, first_pass=1, missing_components=0",none; H4 source-history context filled,False,False,s4g75_ngc4088_source_response_independent_review_not_endpoint
+NGC4088,SR4_ENDPOINT_BLINDNESS,PASS,review reads only source/digitization artifacts and forbids vobs/residuals,keep endpoint tests separate,False,False,s4g75_ngc4088_source_response_independent_review_not_endpoint
+NGC4088,SR5_NUMERIC_BOUND_SOURCE_AUTHORIZATION,PASS,q accepted and memory accepted with source-reviewed H4 context,freeze residual-blind B_i rule before evaluating epsilon_cross,False,False,s4g75_ngc4088_source_response_independent_review_not_endpoint

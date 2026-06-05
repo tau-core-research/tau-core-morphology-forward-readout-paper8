@@ -1,0 +1,2283 @@
+Pub!. Astron Soc. Japan 39, 849-878 (1987)
+
+Surface Photometry of the Warping Edge-on Galaxy NGC 5907
+Toshiyuki SASAKI
+Okayama Astrophysical Observatory,* Kamogata-cho,
+Asakuchi-gun, Okayama 719-02
+(Received 1987 March 20; accepted 1987 August 26)
+
+Photographic surface photometry of the edge-on Sc galaxy NGC 5907
+was performed with a particular intention to reveal the optical warping
+of the outer disk. The main results are: (I) The truncation of the disk
+found by van der Kruit (1979; AAA 26.158.040) is confirmed. The scale
+length of the main disk is 4.92 kpc (4.70 kpc after correction for extinction), and that of the truncated outer portion of the disk is 1.23 kpc. (2)
+The disk exhibits outward blueing with a color gradient of -0.048 mag
+kpc- 1 in the outer part. (3) The galaxy shows the optical warping of
+its disk in the region at projected distances from the center of 250" (13.3
+kpc) to 450" (24.0 kpc) with the maximum displacement of 32" (1.7 kpc).
+The optical warp seems to deviate from the H I warp. The departure
+can be interpreted with the truncation of the optical disk and the oblique
+direction of the warp with regard to the line of sight, if the warps detected
+in the stellar and the gaseous disk follow the same curved surface. The
+tidal interaction with companion galaxies is suggested to be relevant
+to the characteristics (the truncation, the outward blueing, and the warp)
+of the disk in the galaxy, but the full explanation remains to be solved.
+Key words: Galaxies; Photometry; Tidal interaction; Warping disks.
+1.
+
+Introduction
+
+Disk galaxies typically consist of a central bulge, a flat thin disk, and a nearly
+spherical halo. Stars and gas are the known components of galaxies. The inner gas
+component is distributed in a flat disk which defines the galactic plane. In the outskirt of the disk, however, there occur some displacements from the galactic plane.
+The displacement above the galactic plane on one side of the galaxy and below it on
+another side is often observed and is called a "warp" or "bend" of the galactic disk.
+A warping disk appears like an integral sign in edge-on projection.
+The warping of the disk was recognized in our Galaxy at the early stage of radio
+astronomy (Kerr 1957; Burke 1957; Westerhout 1957). Recent observations about
+the warp in our Galaxy showed that the plane bends up to 2 kpc to the north around
+/=80° and exhibits a scalloping structure in the southern sky (Knapp et al. 1978;
+* A branch of the Tokyo Astronomical Observatory, University of Tokyo.
+849
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+Abstract
+
+850
+
+T. Sasaki
+
+[Vol. 39,
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+Henderson et al. 1982; Kulkarni et al. 1982; Burton and Hekkert 1986). It is now
+known that most galaxies, when observed with high spatial resolution, show a warping
+structure in their disks (Bosma 1983; Sancisi 1983). When galaxies are observed as
+nearly face-on, the warping structure is inferred from the velocity field deviating from
+circular motion. The spiral galaxies M33 (Gordon 1971; Rogstad et al. 1976) and
+M83 (Rogstad et al. 1974) are examples of such face-on cases. Sancisi (1976) discovered the warping disks appearing like an integral sign in nearly edge-on galaxies.
+It was suggested from statistics on inclination angles of spiral galaxies that the warp
+is a common feature among spiral galaxies (Grosbol 1985).
+It has been considered that the interaction between our Galaxy and the Magellanic
+Clouds causes the warp in the outer part of our Galaxy. The interpretation was
+deduced from the fact that the center of mass of the outermost hydrogen layer is
+lying below the plane on the side towards the Clouds, while on the far side it lies consistently above the plane. After the direct detection of the warps in the nearly isolated,
+edge-on galaxies by Sancisi (1976), various mechanisms have been proposed to explain
+the warp even in the isolated galaxies. The warp was supposed to be excited by (1)
+an external force such as the tidal interaction by the nearby galaxies (Hunter and
+Toomre 1969; Fujimoto and Sofue 1976, 1977; Spight and Grayzeck 1977) or the
+pressure of the intergalactic gas (Kahn and Woltjer 1959), (2) an internal force due to
+instability in a stellar and/or a gaseous disk(s) (Binney 1978, 1981; Bertin and Mark
+1980; Nelson 1981; Yoshii and Fujimoto 1981), and (3) the primeval origin such as
+the free precession of the disk (Lynden-Bell 1965), the formation of an inclined disk
+or halo (Papp and Innanen 1982; Dekel and Shlosman 1983; Toomre 1983; Sparke
+1984a, b; Mathur 1984), and the infall of the HI clouds (Gordon 1971; Larson 1972;
+Saar 1979). The warp once excited by any mechanism can persist for a time longer
+in galaxies surrounded by a massive halo than in those without a massive halo (Tubbs
+and Sanders 1979; Petrou 1980; May and James 1984).
+Warps were detected mainly in radio wavelengths, but optical observations also
+succeeded in detecting warps in our Galaxy (Graham 1970; Burns et al. 1984), M31
+(Arp 1964; Innanen et al. 1982; Walterbos and Kennicutt 1987), M33 (Sandage and
+Humphreys 1980) and in some others. However, Ichikawa and Sasaki (1984) and
+Reed (1985) reported negative results on the stellar warp in our Galaxy. It is important to detect warps in both radio and optical wavelengths, since some mechanisms
+proposed for warps cause different responses between the stellar and gaseous components.
+The galaxy NGC 5907 is a nearly edge-on, bright galaxy with the morphological
+type SA(s)c: sp (de Vaucouleurs et al. 1976; hereafter abbreviated as RC2). The
+extent of this galaxy on the celestial sphere is fairly large with a semimajor axis of
+12~3 at 25 mag arcsec- 2 (RC2). Because of its brightness, large size, and edge-on
+view, its warp was investigated by the 21-cm HI line with the Westerbork synthesis
+radio telescope by Sancisi (1976). He detected the warp in this galaxy and three
+other edge-on galaxies out of five galaxies observed. NGC 5907 manifests the most
+conspicuous warp in the outer disk among these galaxies. The H I warp deviates
+from the major axis by l '. 6 at a distance of 8' from the disk center.
+van der Kruit (1979) searched for the optical counterpart of this HI warp. He
+
+No. 6]
+
+Surface Photometry of NGC 5907
+
+851
+
+2.
+
+Observations and Data Reduction
+
+Observations were made using the 105-cm Schmidt telescope at the Kiso Observatory. Accurate photometry near the center of galaxies suffers the lack of the spatial
+resolution due to the short focal length of the telescope but has no problem in the outer
+parts of the galaxy in this concern. We used the following combinations of emulsion
+and a filter; Kodak IIIa-J+Schott GG455 with the passband of .V, 4600 A-5400 A
+(J band) and Illa-F +Schott RG610 with .:l.:l 6100 A-6900 A (F band).
+Each plate was hypersensitized by being baked in a forming gas to give the maximum gain in the detective quantum efficiency, DQE (Sasaki 1983). The plates were
+exposed for density levels of the sky background to reach those of the maximum DQE
+of the emulsions.
+A list of plates which were used in this analysis is given in table 1. Numerals in
+column 6 of the table indicate the seeing sizes (FWHM) of stellar images. In column
+7 an output signal-to-noise ratio, (S/ N )out, of each plate is indicated for the sky level
+together with the maximum (S/ N )out· Among these plates there is a short-exposure
+plate in each color band, which we used to supplement the data of the saturated area
+around the very center of the galaxy in deep photographs.
+Details of reduction procedures of surface photometry and the photometric
+accuracy are given in a separate paper (Sasaki 1988); so only a brief summary will be
+given here.
+Photographic plates were measured with a Joyce-Loeb! microdensitometer
+MDM6 at the Department of Astronomy, University of Kyoto. The measurements
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+stacked two Illa-J deep images taken with the Palomar 126-cm Schmidt telescope to
+find marginal evidence of the warp. The present study of NGC 5907 in the optical
+region is intended to settle the following questions:
+(1) Where does the warp take place in the disk? As the warp of NGC 5907
+was considered to start out of the edge of the optical disk, Tubbs and Sanders (1979)
+proposed the sustenance of the gaseous warp in the spherical potential. However,
+van der Kruit (1979) discovered marginal evidence of the stellar warp. Can we
+confirm the marginal detection of the warp?
+(2) Are the H I gas and the stars distributed in the same manner over the regions
+where the warp arises? A certain difference in their distributions was predicted by
+some hypotheses on the origin of warps (Kahn and Woltjer 1959; Saar 1979; Nelson
+1981; Yoshii and Fujimoto 1981).
+(3) How are the mass and the color of the disk distributed in the regions where
+the warp arises? What is the mean age of a component(s) which exhibits the warp?
+The warp should be a transient phenomenon according to Hunter and Toomre (1969).
+The recent event which caused the warp might trigger the star formation in the disk.
+In this paper, we describe observations and image processing procedures applied
+to the present work in section 2, and present the surface photometry of NGC 5907
+in section 3. The detection of a warp of the stellar disk in NGC 5907 is carried out
+in section 4. A discussion on the origin of warps is presented in section 5, and a
+summary is given in section 6.
+
+852
+
+T. Sasaki
+
+Plate
+No.
+(1)
+
+Emulsion
+(2)
+
+Table I.
+
+List of plates used.
+
+Filter
+
+Observed date
+
+(3)
+
+(4)
+
+Exposure
+(min)
+(5)
+
+GG455
+GG455
+GG455
+GG455
+GG455
+GG455
+GG455
+RG610
+RG610
+RG610
+RG610
+RG610
+RG610
+RG610
+RG610
+
+February 19, 1980
+February 20, 1980
+March
+10, 1981
+11, 1981
+March
+May
+30, 1981
+2, 1981
+June
+June
+2, 1981
+2, 1982
+March
+March
+3, 1982
+March
+3, 1982
+March
+28, 1982
+29, 1982
+March
+March
+29, 1982
+1, 1982
+April
+May
+23, 1982
+
+208
+210
+140
+140
+70
+110
+140
+96
+120
+30
+105
+115
+115
+120
+110
+
+Seeing
+FWHM
+(arcsec)
+(6)
+
+S/N
+sky/max
+(7)
+
+6.9
+8.8
+7.4
+4.0
+5.2
+6.2
+5.8
+7.4
+6.0
+6.2
+4.1
+4.2
+4.1
+6.4
+4.4
+
+44/50
+49/54
+45/46
+40/49
+31/55
+40/45
+43/48
+32/43
+44/45
+19/47
+35/46
+38/42
+42/45
+40/41
+47/49
+
+were carried out with accuracies of O.OID in specular density and 2 µm in spatial
+positions. We have to measure plates over an area several times as large as those of
+the object itself in order to subtract the sky background by interpolation (Jones et al.
+1967). As the object galaxy NGC 5907 extends on the sky over 14' x l '. 3 (13.6 x 1.3
+mm 2 on the plates), we measured plates to obtain two separate frames, that is, a small,
+high-resolution, inner "galaxy" frame and a large, low-resolution, outer "sky" frame
+including the former one. The sky frame was measured with a large slit size of 250 x
+250 µm 2 and scanning steps of 250 µm over a 30 X 40 mm 2 area. The galaxy frame
+was scanned every 15 µmin X and Y with a 25x25 µm 2 slit over a 15x 18 mm 2 area.
+A scanning slit size nearly twice the scanning step was selected for the galaxy frame to
+reduce the noise.
+Measured densities were converted for each frame into relative intensities with
+the help of a characteristic curve proposed by Tsubaki and Engvold (1975). Characteristic curves were represented by Tsubaki and Engvold's (1975) formula with
+residuals in log I typically of 0.02 and 0.04 for J and F plates, respectively. The
+characteristic curves coincide with each other when being shifted along log I and D
+with an accuracy of0.028 and 0.025 in log /for IIIa-J and Illa-F, respectively, as shown
+for the 103a emulsion by Burstein (1979). Together with the density conversion into
+the relative intensity, (S/N)out was calculated for every pixel in the frame.
+The contribution of the sky background including the fog was subtracted from
+the object data. Polynomial series were used to fit the intensity distribution of the
+sky background in the sky frame by the least-squares method. The local sky background intensities, / 8 *, expressed by the fitted polynomials were subtracted from the
+intensities in the galaxy frame, Ia, which were then divided by the local sky intensities
+to yield the relative intensities
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+KL2656 ...... Illa-J
+KL2663 ...... Illa-J
+KL3204 ...... Illa-J
+KL3211 ...... Illa-J
+KL3314 ...... Illa-J
+KL3315 ...... Illa-J
+KL3316 ...... Illa-J
+KL3660 ...... Illa-F
+KL3662 ...... Illa-F
+KL3663 ...... Illa-F
+KL3707 ...... Illa-F
+KL3713 ...... Illa-F
+KL3715 ...... Illa-F
+KL3716 ...... Illa-F
+KL3771 ...... Illa-F
+
+[Vol. 39,
+
+No. 6]
+
+Surface Photometry of NGC 5907
+
+~(
+
+)_ / 0 (x, y)-Is*(x, y)
+
+I R X,Y -
+
+T
+
+-'s
+
+*(x,y )
+
+'
+
+853
+
+(1)
+
+(2)
+
+where ls are the relative intensities of the local sky background determined in the
+galaxy frame of the relative intensities. The mean residual of all plates in the fitting
+process of the sky background was 0.62 % of the sky brightness for the sky frame and
+the residual after correction for the errors due to the separate measurements became
+0.77 % for the galaxy frame.
+We stacked 7 plates in J band and 8 in F band to improve the output signal-tonoise ratios. In stacking, translations and a rotation of each frame were necessary
+to achieve an accurate positional fitting among them. Stellar and nebular images
+were detected and their centroids were calculated. The images were used for the
+fitting procedure of the plate position onto that of the reference plate KL3204. The
+parameters involved in the translations and the rotation were derived by the leastsquares method and the mean residual of the position fitting was 5.5 µm, i.e., one
+third of the scanning step. As the quality of plates varies among plates used, suitable
+weights were also applied in stacking. The plate quality can be well represented by
+the value of (S/N )out when the faint level around the sky brightness is concerned. We
+adopted (S/ N )out as the weight for each pixel. The intensity of the stacked image,
+ls, was calculated by
+( 3)
+
+where w=(S/ N )out and /3 is the ratio of the sky brightness with regard to the reference
+plate.
+A typical noise level of our photographic plates was 3 % of the sky brightness.
+Stacking reduced the noise down to 1.5 % for the IIIa-J image (7 plates) and down
+to 1.2 % for the IIIa-F image (8 plates) as shown in figure 1. These noise levels
+correspond to 4.6 mag and 4.8 mag fainter than the sky brightness, respectively.
+Gaussian-weighted smoothing was applied to each point in a galaxy frame with
+a smoothing box size twice the FWHM of the Gaussian function. The values of the
+FWHM were 5" and 7" for the IIIa-J and the IIIa-F images, respectively. We smoothed
+the images to give the same FWHMs of the stellar images both in J and F bands.
+At the same time the data size was compressed by one third. The smoothing largely
+reduced the noise level down to 0.5 % of the sky brightness for IIIa-J and to
+0.43 % for Illa-F as shown in figure 1.
+To derive photometric parameters such as total intensity and color, stellar images
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+The relative intensities, JR, were not yet free of errors due to separate measurements
+in the galaxy and the sky frames (the drift of zero level of the microdensitometer and
+the slight difference in the characteristic curves). We reduced these effects from the
+relative intensity in the galaxy frame, l R, by applying the same procedures of fitting
+the sky background as those used in the sky frame. The relative intensities corrected
+for the errors due to separate measurements were then obtained as
+
+854
+
+T. Sasaki
+
+[Vol. 39,
+
+10
+
+5
+
+•
+
+SMOOT
+
+F
+
+•
+
+0
+
+•
+
+c.
+
+•
+
+0.1-~---~-~-----'--'---'---'-'----L..J
+1
+5
+8
+NUMBER OF PLATES STACKED
+
+Fig. 1. Dependence of r.m.s. fluctuations in intensity of the blank sky data on the number
+of plates stacked. Fluctuations in the original data and smoothed data are shown by
+filled and open symbols for Illa-J (J) and Illa-F (F) plates. Broken lines indicate the
+expected dependence of fluctuations on the square root of the number of plates stacked.
+
+were removed from the galaxy frames and were replaced by the background represented
+by the third-order polynomials.
+The relative intensity was calibrated with the help of photoelectric aperture photometry (Tifft 1961, 1969; de Vaucouleurs 1961). Our color bands J and Fare related
+to the Johnson B and V bands by
+J= V+0.35(B-V),
+
+(4a)
+
+F=V-0.69(B-V),
+
+(4b)
+
+J-F=l.04(B-V)
+
+(4c)
+
+and
+
+(Oemler 1974; Kormendy and Bahcall 1974; Thuan and Gunn 1976; Kirshner et al.
+1978). The photoelectric magnitudes were converted into J and F bands with relations (4a) to (4c). The units of the intensities of the stacked frames were estimated
+as 21.89 J mag arcsec- 2 and 20.95 Fmag arcsec- 2 with deviations of 0.04 mag and
+0.07 mag, respectively.
+We then obtain the brightness distribution down to 27.64 J mag arcsec- 2 and
+26. 70 F mag arcsec- 2 , which correspond to 0.5 percent of the sky brightness. van
+der Kruit (1979) published a contour map of NGC 5907 down to 27.5 mag arcsec- 2
+in a similar color band to our J band. It is seen by comparison between our contour
+map in figure 2 and his figure 7 that the lowest level in our contour map is about 1 mag
+fainter than that of van der Kruit's (1979). This difference in brightness agrees with
+the difference in the zero levels of brightness by 0.86 mag between van der Kruit's
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+o.s
+
+No.6]
+
+855
+
+Surface Photometry of NGC 5907
+
+NGC 5907: J
+56° 4 O'
+
+56° 30'
+
+56° 25'
+
+Fig. 2. Contour map of the luminosity distribution of NGC 5907 in J band. The faintest
+contour (dotted lines) corresponds to µJ=27.64 mag arcsec- 2• Contours are drawn
+every 0.5 mag arcsec- 2 • Arrows on the margins indicate the positions of the galactic
+center.
+
+(1979) and ours (see below), if we consider a difference 0.14 mag in nominal
+brightness of the lowest level in contour maps.
+The accuracy of the image processing system was examined by performing the
+surface photometry of the standard galaxy NGC 3379 (Sasaki 1988). The accuracy
+was of 0.05 mag at the level brighter than 24.9 J mag arcsec- 2 and 0.3 mag at 26.1 J
+mag arcsec- 2 compared with the standard profile of de Vaucouleurs and Capaccioli
+(1979). We estimated the zero-point difference of 0.03 mag in brightness by shifting
+our profiles to coincide with the standard one.
+van der Kruit and Searle (1981a) published the profiles of NGC 5907 along the
+major axis. Their profiles were compared with our profiles, which were obtained with
+the same binning size as that van der Kruit and Searle (1981a) used. The resulting
+difference was estimated as less than 0.2 mag at the brightness level of 22-25 mag
+arcseC- 2 and less than 0.4 mag at 25-27 mag arcsec- 2 • The zero level in brightness
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+56° 35'
+
+856
+
+[Vol. 39,
+
+T. Sasaki
+
+Z"
+•
+0
+• 20NE
+A 205W
+
+1.0
+
+0.5
+
+o.o ...._.....___._....____.,__.,__.....__.______._. . . . . _____.
+20
+
+25
+
+Brightness
+
+mag/ □"
+
+Fig. 3. (J-F) color distribution against the surface brightness parallel to the major axis at
+z=0",20", and 40". Each datum is the average over a region of 50"x20" parallel
+and perpendicular to the major axis. Broken curves show an artificial shift in color
+expected from a given systematic error in determining the sky background.
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+differed by about 0.86 mag arcsec- 2, which includes the correction for the sky brightness in van der Kruit and Searle's (1981a) data by 0.2 mag (van der Kruit and Searle
+1982a).
+The systematic error in the magnitude scale would have affected to give false
+distributions of brightness and color in the galaxy. An artificial shift of the sky
+level becomes evident in regions of low brightness; the brightness distribution shows
+a false cutoff in the outer faint portion (de Vaucouleurs 1948; Capaccioli and de
+Vaucouleurs 1983) and the color becomes systematically red or blue in the outer
+part of the galaxy. We can estimate the systematic error in the determination of the
+sky background by plotting the color (J- F) against the surface brightness (figure 3).
+Color indices are obtained parallel to the major axis at z=O", 20", and 40" by
+averaging them over a region of 50" x 20" parallel and perpendicular to the major
+axis. Broken lines indicate artificial shifts in color if given systematic errors were
+introduced in one of the two color bands. The trend in the color distribution does
+not follow the false color distribution expected from any systematic error except
+around the central region brighter than 22 J mag arcsec- 2 (r ~ I 50"). In the
+central region, three J plates and four F plates were used to be stacked, because the
+other deeply-exposed plates have low (S/N )out around the very center of the
+galaxy and were not used in stacking. However, all plates were used in stacking in
+the region r>20" (20.7 mag arcsec- 2). If the trend in color around the bright central
+region is due to the systematic error in the photometry, color in the faint outer part
+should follow the curve expected from the systematic error in figure 3. The color
+distribution in the faint outer part does not follow any single curve expected from
+systematic errors. Otherwise, the outer part of the galaxy would have implausible
+
+No.6
+
+Surface Photometry of NGC 5907
+
+857
+
+red color. We conclude that the photometry is free from any large systematic error.
+The figure of the color against the surface brightness from the raw, nonsmoothed
+data [figure 14 in Sasaki (1988)] indicates that the raw color data are scattered in the
+figure over the region where the data might be distributed in the case of the photometric
+error of 0.5 or 0.75 % of the sky brightness, which coincides with the random noise of
+0.5 % attained after stacking.
+Photometric Parameters
+
+A contour map in J band is shown in figure 2. The faintest level corresponds to
+the detection limit, i.e., 27.64 J mag arcsec- 2 • A step of contours is 0.5 mag arcsec- 2 •
+The brightest contour level at the center of the galaxy is 19.67 J mag arcsec- 2 •
+The galaxy appears as a fairly thin disk system with a large intensity gradient in
+the outer parts. Intervals of contour lines are wider at the north-west and south-east
+sides of the galaxy than at the opposite sides. As mentioned by van der Kruit (1979),
+a northern extension of the galactic disk, which possibly is composed of isolated H n
+regions or OB associations, is bending to the west. In the southern part the disk
+also seems to curl marginally to the east. These facts suggest the optical warp in the
+stellar disk, which is to be analyzed in detail in the next section.
+It is difficult to determine the position of the galactic center exactly, because the
+central dust lane may hide the center in the case of nearly edge-on disk galaxies. We
+identify the point with the maximum intensity as the nominal galactic center throughout the present work. The scale height of dust distribution at the very center is unknown. If the scale height is the same as that of giant molecular clouds in our Galaxy,
+say, 60 pc (Solomon and Sanders 1980), then the real galactic center may be shifted
+from the point of the maximum intensity nearly by this height, that is, I 1: 1 at the distance to NGC 5907.
+The previous investigators estimated the position angle of the major axis as 155°
+(Nilson 1973; van der Kruit and Searle 1981a). As the galaxy is projected nearly
+edge-on, the brightness distribution has a steep gradient perpendicular to the major
+axis. The position angle can be obtained by drawing profiles through an off-center
+position parallel to the temporary major axes at several position angles. Among the
+temporary major axes, the one which gives the most symmetric profile is considered
+to be the exact major axis. To avoid complication due to the central dust lane, we
+draw profiles through z=20" off center at a position angle every 0~5. The position
+angle of 156° gives the most symmetric profile out to the distance of 220" from the
+center. Profiles with the same differences in angle from 156° show the similar asymmetries. So we adopt 156° as the position angle of the major axis of NGC 5907.
+Its error should be less than 0~ 5.
+We adopt the distance to NGC 5907 of 11 Mpc, which yields the scale of 3.20 kpc
+arcmin- 1 or 53.3 pc arcsec- 1 •
+Photometric parameters in the de Vaucouleurs' system are derived from the stacked
+frame free of stellar images. We summarize the photometric parameters derived for
+NGC 5907 in table 2. The total magnitude of the galaxy, BT, and color, (B-Vh,
+are given as BT= 11.0 mag and (B-V)T=0.77 mag in RC2. They are converted to
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+3.
+
+858
+
+T. Sasaki
+
+[Vol. 39,
+
+Table 2. Photometric parameters of NGC 5907
+Right ascension (1950)1J .............. a
+Declination (1950) 1> ••••••.....•••••• iJ
+Galactic coordinates .................. I, b
+Type2 > •••••••••••••••••••••••••••••
+Geometric distance adopted .......... LI
+
+15h14m35~81
+56°30'42'!5
+91 ~58, 51 ~09
+SA(s) c: sp
+11.0 Mpc
+
+2
+
+J
+
+9.87
+-20.34
+9.89
+156°
+
+Minor axis at threshold .............. 2bm
+Position at the maximum intensity.
+
+F-band
+
+10.67
+-19.54
+9.84
+0.109
+(2'.92<a<5'.25)
+
+Inclination ......................... i
+Observed peak brightness ............. µ 0
+L 0 (L@ pc- 2)
+The threshold surface brightness ....... µm
+Lm (L@PC- 2)
+Major axis at threshold .............. 2am
+
+0
+
+J-band
+
+19.64
+628.8
+27.64
+0.40
+14'.540
+46.52 kpc
+l '.961
+6.27 kpc
+
+0.112
+(3'.08<a<5'.15)
+880
+18.65
+836.7
+26.70
+0.50
+13'.554
+43.37 kpc
+1 '.919
+6.14 kpc
+
+From RC2.
+
+our color bands; JT(RC2)=10.50, FT(RC2)=9.70, and (J-FMRC2)=0.80. These
+values coincide fairly well with our measurements, leaving small differences of ilJ=
+0.17mag, JF=0.17mag, and il(J-F)=0.0mag. The detailed maps and data of
+the total intensity, the total area, the relative integrated luminosity, and the semiaxes
+against the equivalent radius are published in a separate paper (Sasaki 1988).
+Figure 4 shows the major-axis profiles and the color distribution. The profile
+in F band is shifted to coincide with the J profile at the center. It can be seen in the
+figure that the luminosity profile consists of the contribution from the central bulge
+(r~50") and that from the disk. The latter shows a steep gradient in brightness beyond r=320" as found by van der Kruit (1979).
+The color remains constant on the main disk within Ir!~ 100" along the major
+axis and tends to be bluer in the outer part. van der Kruit and Searle (1982a) showed
+that colors are nearly constant over the whole disk at z=20", where the dust lane does
+not influence colors. To be compared with their results, the radial distributions of
+the color index are drawn at z=0" (major axis), 20", and 40" in figure 5. Color indices are plotted by averaging them on both sides of the galactic plane over a region
+of 50" x 20" parallel and perpendicular to the major axis. The quoted error of color
+is estimated by 0.75 % as the combination of the random errors and the possible systematic drift of the sky brightness. There are trends of outward blueing in the region
+more distant than r=200" in the color distributions at z=0" and 20". The difference
+in colors within r=200" between z=0" and 20" may be greatly affected by the dust
+distributed in the disk. The difference between z=20" and 40" may not arise from
+the dust, but indicates a weak trend of outward blueing perpendicular to the galactic
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+Total apparent magnitude ... . ........ mT
+Absolute magnitude .......... . ...... MT
+Absolute luminosity ................. Jog L/L@
+Major-axis position angle ..... . .. . ... .
+Mean axis ratio ..................... (bfa>
+
+859
+
+Surface Photometry of NGC 5907
+
+No. 6)
+
+CNWI
+fil-500.00 -IJ.00.00
+
+-300.00
+
+-200.00
+
+R IN ARCSEC
+
+-100.00
+
+0.00
+
+ISEJ
+100.00
+
+200.00
+
+.300.00
+
+l!00.00
+
+500.llfl
+
+9
+
+D
+
+'
+
+"'
+
+0
+0
+
+D
+D
+
+c
+
+)<
+)<
+
+ci~
+If)
+
+u
+
+a:
+0
+
+0
+
+"'c
+
+0
+
+a:
+
+"''"L'.)
+
+a:
+
+oC..
+
+0
+
+DI
+
+D
+
+_; ~
+
+g-~-t----i_.il-'-r-.---.-,-----,--,--,---r--.----r--.--.---r-.-----r--.--1,.l..ll..-,-_l._+~
+-100.00 a.oo
+100.00
+200.00
+oa
+so .go
+00.00 -1,1,00.00
+
+.,;
+
+-300.00
+
+-200.00
+
+300. 00
+
+4 □ 0.
+
+0
+
+N5907 (J) , (f)
+
+cr,
+
+MAJOR AXIS
+0
+
+0
+
+D
+
+0
+
+0
+
+0
+
+"'
+
+N
+
+0
+0
+
+0
+0
+
+N
+N
+
+N
+
+0
+
+0
+
+N
+
+0
+
+0
+
+"'
+
+~ {\j
+)<
+
+N
+
+)<
+
+u
+
+oW
+0
+
+/f)
+
+•U
+
+"N 0:
+a:
+
+..._
+
+L'.)
+0
+
+g~
+
+N
+
+"'
+
+"'N
+
+0
+
+0
+
+0
+
+0
+
+0
+
+ID
+N
+
+~
+
+0
+0
+
+0
+
+D
+
+~
+
+~
+
+N
+
+0
+
+0
+
+0
+
+0
+
+ro
+
+<O
+
+N
+
+"'
+
+g
+
+g
+
+"':ru....l-'--,---.---,-,----,-----,--.--.---.------,--.--,------,---.--.--,-JLl(JL--,.11.JU.+
+
+"'-soo.ao "qoo.oo
+
+-300.00
+
+-200.00
+
+-100.00
+
+CNWl
+
+o.oo
+
+R IN ARC5EC
+
+100.00
+
+200.00
+
+300.00
+
+4 □□ .oo
+
+s □□ -~o
+
+15El
+
+Fig. 4. Upper panel: Color distribution along the major axis. A constant red color covers
+the central disk and the color becomes blue outward beyond there. Lower panel:
+Luminosity profiles along the major axis in J (thick line) and F (thin line) bands. The
+profile in F band is shifted by 0.99 mag to coincide with that in J band at the center.
+Note that a sharp cutoff is clearly seen at both edges in both color bands. Humps in
+the disk correspond to the optical spiral arms.
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+:,;
+
+860
+
+T. Sasaki
+
+[Vol. 39,
+
+0.0.------,----..------.----~--~
+NGC 5907
+PARALLEL TO
+MAJOR AXIS
+
+0I
+I
+
+'O
+
+I
+
+J-F
+
+I
+I
+
+--
+
+-□
+
+0.5
+
+1.0
+200..
+
+0
+
+400"
+
+R
+Fig. 5. Mean color distributions parallel to the major axis at z=O", 20", and 40". Each
+datum is the average of colors over 50" x 20" parallel and perpendicular to the major
+axis in both sides with regard to the central plane. Open symbols indicate data with
+errors greater than 0.5 mag. Errors in colors at z=40" are shown by upper and lower
+horizontal bars.
+
+plane similar to the (V-K) color observed by Skrutskie et al. (1985). These outward
+blueing can be easily seen in the global color distribution shown in figure 6. The
+color excess in the dust lane is about 0.1 mag, less than that estimated from the extinction of 1.3 J mag (seen in figure 9), which corresponds to E(J-F)=0.4 mag. The
+cause of this discrepancy has not yet been resolved. We guess that the existence of
+young populations, OB stars and H II regions, in and around the dust lane makes the
+color bluer.
+Major-axis profiles or equivalent profiles are commonly used to derive the structural
+characteristics of galaxies but are affected by different inclinations among galaxies
+because of an integration of a different amount oflight along the line of sight. Watanabe
+et al. (1982) proposed a new presentation of luminosity distribution in galaxies: A
+projected profile is first obtained by integrating the surface brightness distribution
+onto the major axis. A face-on profile, which they called a "generalized radial profile," is derived from the projected profile under the assumptions that galaxies are
+optically thin and rotationally symmetric with the minor axis being the projection of
+the rotation axis. This method is useful to derive the global structure even in considerably inclined galaxies without any models.
+The projected profile, f(r), is obtained by integrating the surface brightness distribution, l(r, z), along the direction perpendicular to the major axis:
+f(r)Jr=
+
++oo
+~ -oo
+
+dz
+
+~r+Jr/2
+
+I(r, zdr) ,
+
+(5)
+
+r-Jr/2
+
+where .Jr is the interval in radial distance, r, from the galactic center and z is the height
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+Z=O"
+
+No. 6]
+
+Surface Photometry of NGC 5907
+
+861
+
+J-F
+
+NGC 5907
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+>1.1
+
+1.0
+
+0.9
+
+0.8
+
+o. 7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1>
+
+J - F
+Fig. 6. (J - F) color map of NGC 5907. Note that the central dust lane is seen with the
+reddest color. Systematic outward blueing is detected over the whole outer area, where
+variable extinction by dust can hardly affect the color.
+
+862
+
+T. Sasaki
+
+from the major axis.
+equation:
+
+[Vol. 39,
+
+The face-on brightness distribution a(w) is given by the integral
+.
+("" a(w)wdw
+J(r)=2 j, (w'-r2)112 .
+
+(6)
+
+mag/ □"
+
+mag/ □"
+
+20
+
+NGC 5907
+
+( J)
+
+20
+UJ
+Q
+
+::::,
+
+-
+
+(/) (/)
+(/)
+
+1-
+
+z 25
+
+wx
+
+z <t
+
+C!l
+
+I-
+
+<t
+
+:I: c::
+c.,O
+
+!:!:
+
+25
+
+z
+0
+
+~<::E
+CD
+
+w C!l
+
+UJ
+
+CJ
+
+z
+
+<t 0
+u.. ...J
+c:: <t
+
+u 30
+<t
+u..
+
+::::,
+
+(/)
+
+30
+0
+
+400
+
+200
+
+1if (arcsec)
+Fig. 7. Face-on lummosity distribution in NGC 5907. w is the distance from the center
+in the plane. Straight lines indicate exponential decays in luminosity with scale-lengths
+of a 1 - 1 =4.92 kpc and a 2 - , = 1.23 kpc. Three humps around 190", 230", and 325"
+correspond to the outer spiral arms.
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+Here w is the distance from the galactic center in the plane of the galaxy. This equation is solved numerically by obtaining the face-on brightness from the faintest intensity at the outermost point and in turn by subtracting its contribution from the projected profile iteratively from the outer point to the galactic center.
+There is strong absorption by dust in the midplane of the galaxy. The dust
+lane might introduce a large error in deriving the face-on profile. As seen in vertical
+profiles parallel to the minor axis (figure 9), the dust lane is hardly detected more
+distant than 200" from the galactic center (surface brightness ,uJ~22 mag arcsec- 2).
+Figure 5 shows that the difference in color between z=O" and 20" becomes small
+at r ~ 200". These facts indicate that the dust lane does not seriously disturb the
+brightness distribution at least more distant than 200". The deviation of the profile
+perpendicular to the major axis from the Gaussian profile near the midplane indicates that total absorption near the center is about 34 % of the total intensity.
+The dust lane may influence the face-on luminosity at most by this amount inside
+200" from the center.
+Figure 7 represents the face-on luminosity distribution in J band. It shows a
+
+863
+
+Surface Photometry of NGC 5907
+
+No. 6]
+
+FACE- ON COLOR
+
+J-F
+0.5
+
+o.o
+0
+
+400
+
+200
+
+1if (arcsec)
+Fig. 8. Face-on (J-F) color distribution in NGC 5907. The global outward blueing is
+clearly seen. Three spiral arms at about 190", 230", and 325" have bluer colors than
+those in the surrounding regions.
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+central concentration of a small size {w~50") and a slowly decreasing exponential
+disk with a steep decline in luminosity at w~350". We confirm the detection of the
+sharp cutoff of the disk in NGC 5907 by van der Kruit (1979) and van der Kruit and
+Searle (1981a, 1982a). The scale length of the exponential disk is measured as a 1 - 1 =
+4.92 kpc (93"). When the dust makes the face-on magnitude fainter by 34 % at the
+center and the absorption is free beyond about 200" from the center, the scale length
+changes to a 1 - 1 =4.70 kpc from the present estimation of 4.92 kpc. The outer steeply
+declining portion is approximated by an exponential decay with a scale length a 2 - 1 =
+1.23 kpc (23"). The disk shows three humps in the outer part of the disk (w ~ 190",
+230", and 325"). These humps correspond to the main spiral arms (de Vaucouleurs 1958). As the scale height of the disk is independent of the distance
+from the galactic center (van der Kruit and Searle 1982a), our scale length of the
+exponential disk can be compared with one obtained from the three-dimensional
+galaxy model (van der Kruit and Searle 1981a, 1982a), that is, a 1 - 1 =5.7 kpc. This
+value of the scale length is obtained if three humps are considered as the part of the
+basic exponential disk.
+The face-on color distribution is shown in figure 8. This indicates the nearly constant color (J-F)=0.95 or (B-V)=0.91 in the inner part w~l30" with the possible
+exception of the central bulge. The dust affects the color largely in the central region.
+The dust absorbs the total light along the minor axis by 34 %, that is, AJ=0.45 mag.
+As AJ is equal to 3.5 E(J--F) derived from Av=3.3E(B- V) and the color conversion
+equation (4), we obtain E(J-F)=0.13 mag. The face-on color in the central part
+
+864
+
+T. Sasaki
+
+[Vol. 39,
+
+should be corrected to be bluer by 0.13 mag (J-F=0.82; B-V=0.79). The figure
+also indicates the outward blueing. The bluest color detected is about (J-F)=0.4
+at w:2::325". The gradient in the color in the outer part is approximately d(J-F)/dw=
+-0.048 mag kpc- 1 •
+4. Detection of an Stellar Warp
+
+( 7)
+
+Here l(z) is the intensity in the vertical profile, and a 1 and a2 are the photometric accuracies at zi and at its corresponding point on the opposite side of the vertical profile
+with regard to the bisection line, respectively. The value of x2 is calculated by using
+intensities brighter than 28 mag arcsec- 2 excluding those near the galactic plane
+covered by the dust lane in z<20" and r<200".
+Figure 10 shows the detected displacement of the bisection line from the major
+axis. The vertical displacement is shown relative to the displacement at r=0", where
+the bisection line differs from the major axis by 2'~ 5 to the western side. The errors
+in the vertical displacement are estimated as the difference in the positions of the
+bisection line by calculating x2 with the addition of (a/+a/) 112 to intensity l(z;) of
+equation (7). The displacement detected in F band coincides with that in J band
+within errors.
+In J and F bands several emission lines, Ha il.6563, [N 11) il.6584, i1.6548, [O m]
+i1.5007, il.4959, and Hp i1.4861 are included. However, their contributions to the total
+intensity must be small in normal galaxies, because its main contribution by Ha is
+less than 0.075 mag as estimated by its maximum equivalent width 60A for normal
+spiral galaxies (Cohen 1976; Kennicutt 1983; Kennicutt and Kent 1983; Kennicutt
+et al. 1984). The coincidence in appearance of the warp in two color bands therefore indicates that the warp arises in the stellar component of the disk.
+The vertical displacement of the bisection line in the H I distribution is obtained
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+When our contour map is compared with those of HI obtained by Sancisi (1976,
+1977), it is seen that an apparent departure of the H I disk from the optical one arises
+at r~325". Contour lines appear to warp slightly following the HI warp in the
+outer region, although the existence of the dust lane and the spiral arms complicates
+the situation near the galactic plane [a contour map in F band shows the same appearances as that in J band (Sasaki 1988)]. In order to show the optical warp more
+clearly, the vertical profiles perpendicular to the major axis are drawn every 50" in r.
+They are obtained by averaging intensities every 5" within an area of 20" x 5" parallel
+and perpendicular to the major axis. Profiles are shown for the portion brighter than
+28 mag arcsec- 2 in figure 9. They are fairly symmetric about the galactic plane as
+indicated by van der Kruit and Searle (1981a). The displacement of the ridge of the
+profiles from the major axis is clearly seen at the location farther than r=250". In
+order to investigate the warp quantitatively we obtain a bisection line z0 of the disk,
+which minimizes differences in intensity between both sides of the vertical profiles.
+The difference of intensities normalized by photometric accuracy, x2. is
+
+No. 6]
+
+865
+
+Surface Photometry of NGC 5907
+
+mag1o"r------.----------,--------.--------,
+
+NGC5907
+
++
+
+J
+(/)
+
+><
+<(
+
+z
+
+:E
+0
+
+I-
+
+i:i1 20
+...J
+..J
+
+<(
+
+0::
+
+~
+(/)
+(/)
+
+24
+
+w
+
+z
+1-
+
+::c
+c., 28
+0::
+CXJ
+
+w
+
+(.)
+<(
+LL
+
+0::
+:::)
+(/)
+
+SOE
+
+0
+
+z' (arcsec)
+
+SOW
+
+Fig. 9. The distribution of surface brightness parallel to the minor axis in J band. Each
+profile is drawn for µJ<28 mag arcsec- 2 by averaging the intensity every 5" within an
+area of 5" x 20" with the short side parallel to the minor axis. The abscissa, z', is
+measured from the bisection line of the profile at r=O" (see text), which is displaced by
+2'!5 from the major axis. Numerals in the figure indicate the distance from the
+center in arcseconds. The upper profiles are of the northern portion of the galaxy,
+shifted by 2 mag to the top, and the lower ones of the southern portion, shifted by 1
+mag to the bottom. The arrows indicate the stellar images which affect the profiles.
+
+from Sancisi's (1976) figure 2. The distance of every contour line is measured from the
+major axis and is averaged to derive the bisection line of the H I distribution in each
+velocity-channel map. Part of bisection lines taken from low-velocity maps depart
+largely from the others and are excluded in the derivation of the mean bisection line of
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+a:::
+0
+
+[Vol. 39,
+
+T. Sasaki
+
+866
+
+N
+
+•
+
+u
+G)
+
+.,
+
+■
+
+I:!
+100
+CV
+
+s
+0
+
+Optical
+
+C
+
+HI
+
+I2
+
+w
+:ll::
+w 50
+
+~
+
+(.)
+
+<t
+
+....I
+
++
+
+a.
+
+(/)
+
+------~!
+
+C
+\
+
+~
+
+0
+
+0
+
+400
+
+200
+
+RAD I US
+
+( arcsec)
+
+Fig. 10. Displacement of the bisection line of the disk from the major axis. See the text for
+the definition of the bisection line. The bisection line from the optical contour map is
+plotted with circles and that of the HI distribution (Sansici 1976) with squares. Filled
+symbols show the northern line and the open the southern one. Note that the optical
+line in the outermost portion deviates from the inner plane of the galaxy and also shows
+the departure from the H I line. Superposed on them are the bisection lines of the
+tilted ring models with parameters which satisfy the H I warp except for the truncation
+of the disk. Two truncation radii are examined: 'wmax=362" (the broken line) and
+wmax=397" (the solid line).
+
+the HI distribution. Their errors are estimated as the combination of the r.m.s.
+deviation of the bisection lines from each velocity-channel map and of the measuring
+error of 0.2 mm on the figure which corresponds to 3~2. The rotation curve of NGC
+5907 was found to be nearly flat at about 226 km s- 1 (Bosma 1981). The systemic
+velocity is observed as 670 km s- 1 (Sancisi 1976; Bosma 1981). Thus the tangential
+points of the disk have velocities of 444 and 896 km s- 1 for the inclination angle of
+88°. The bisection line of the HI disk from the maps of these velocities is around
+the mean bisection line within the estimated errors. The mean HI bisection line is
+shown in figure 10 with its estimated error.
+There is no displacement of the stellar disk in the inner part (r<200") within the
+error. This means that the position angle of the major axis is determined accurately
+for the present study by the disk inside r=200".
+The extinction exerted by the dust associated with the warping H I gas layer may
+affect the position of the optical bisection line of the vertical profile. When the H 1
+distribution in NGC 5907 is assumed to be the same as that in the slightly larger edgeon galaxy NGC 4565 (Sancisi 1981), the HI column density is about 20x l020 cm- 2
+in the outer part of the disk where the warp starts. The extinction in optical wavelength is correlated to the HI column density in our Galaxy (Burstein and Heiles 1978).
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+I
+
+Model
+
+No. 6]
+
+Surface Photometry of NGC 5907
+
+867
+
+5. Discussion
+5.1.
+
+Photometric Properties of NGC 5907
+The disk of NGC 5907 shows two prominent characteristics besides the warp:
+the truncation of the disk and the outward blueing. The truncation was found in
+seven edge-on late-type galaxies by van der Kruit and Searle (1981a, b, 1982a, b).
+They indicated that the disk of NGC 5907 shows the truncation at about four times
+the scale length of the disk, and has constant vertical scale heights independent of
+distance from the center. We confirm the truncation of the disk by constructing the
+face-on luminosity distribution of NGC 5907. de Vaucouleurs (1948) and de
+Vaucouleurs and Capaccioli (1979) showed that the inaccurate sky subtraction causes
+a false cutoff in the luminosity distribution of a galactic disk. As seen from figure 7,
+the level of the truncation at 27 .5 mag arcsec- 2 in the case of face-on views corresponds
+to 25 mag arcsec- 2 in edge-on views. As the accuracy of photometry depends mainly
+on the surface brightness of the object (cf. Sasaki 1988), the edge-on galaxies are observed more accurately than the face-on galaxies. As photometry was carried out
+with an accuracy of 0.1 mag at 25 J mag arcsec- 2 in the regions where truncation is
+observed, truncation is not false due to poor photometry. There are few face-on
+galaxies with detected disk truncation, because the truncation is difficult to detect
+even with the present accuracy in face-on galaxies, and because accurate photometry
+can hardly be achieved at levels fainter than 28 mag arcsec- 2 as indicated by de
+Vaucouleurs and Capaccioli (1979). A high-resolution radio observation succeeded
+in revealing the truncation of a disk in the moderately-inclined barred galaxy NGC
+3992 (Gottesman et al. 1984).
+Previous investigators suggested various hypotheses in connection with disk
+truncation. Some proposed a picture that star formations had ceased at the cutoff
+radius due to the low HI density below a critical value (Fall and Efstathiou 1980;
+Seiden 1983). However, numerical calculations showed that the sharpness at the
+edge is smeared out due to velocity dispersions of stars (May and James 1984). The
+width of the sharp edge increases by 3 times the initial value, i.e., to 6 kpc from 2 kpc
+in 2 x 10° yr. In this case the sharp edge must be transient, unless some mechanisms
+persistently confine stars inside the finite radius. Casertano (1983a, b) indicated that
+a steep decline in the rotation curve just outside the truncation radius can be repro-
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+Using their equation (7) and assuming a half of the HI column density observed in the
+galaxy contributes to the extinction, we calculate the color excess in the position
+where the warp starts, E(B-V)=0.14 mag. The deviation from the symmetry in
+the vertical distribution of (J-F) color is measured to be less than 0.1 mag in the outer
+disk (r>200"). When the observed vertical profiles are corrected for the extinction
+of OA mag (assuming the ratio of total to selective extinction of 3.5) on the side where
+the warp appears, the bisection line will be shifted by about 2".
+The warp starts near r=250" both in the optical and the H I distributions. The
+H I warp departs from the optical one in the part farther than 350". It is noted that
+the sharp decrease in luminosity in the disk arises at r=350" and that the outward
+blueing appears at r~200".
+
+868
+
+T. Sasaki
+
+[Vol. 39,
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+duced by a two-component galaxy model with a truncated exponential disk embedded
+in a smooth spherical halo. The truncation occurs not only in the luminosity distribution of the disk but also in the mass distribution in this case.
+There is another possibility to cause the truncation that the disk formation takes
+place slowly during the Hubble time (Larson 1976). In this picture the primordial
+gas spreads throughout the spherical halo and the active star formation is triggered
+after the gas settles to the disk. However, this scenario cannot avoid the difficulty of
+smearing the sharp edge due to the random motion of the stars unless the disk rapidly
+grows outward.
+A tidal deformation of the outermost disk is a third explanation for the truncation. Noguchi and Ishibashi (1986) showed from numerical simulations of a close
+encounter between galaxies that a bridge and a tail arise in the early stage after the
+perigalactic passage of a perturber and that an outer ring structure, formed in the late
+stage, lasts a long time about 2 x 109 yr. They also indicated that the diameter of the
+ring is smaller than the initial diameter of the disk when the perigalactic distance is a
+few times the diameter of the disk and that the ring has blue color. Sancisi (1976)
+considered NGC 5907 as being nearly isolated with regard to the tidal interpretation
+of the warp by Hunter and Toomre (1969); but there do exist nearby galaxies, though
+not close, at least as bright as NGC 5907 as described below. The tidal effect by these
+galaxies may not be irrelevant to the formation of the sharp outer edge.
+The disk of NGC 5907 exhibits another characteristic: the outward blueing. As
+seen in section 3, (J-F) color becomes bluer outward starting from (J-F)=0.95
+(0.82 after correction for possible extinction) at w= 130" (6.9 kpc). The gradient in
+the color is about -0.048 mag kpc- 1 and the color reaches (J-F)=0.4 at w~325"
+(17.3 kpc). This trend seems to be an intrinsic nature free of the influence by dust
+lanes and the photometric error as argued in section 3.
+Our J and F color bands are free from contamination by strong emission lines of
+city light and airglows. These color bands, however, contain emission lines emerged
+from the celestial objects: Ha 26563, [N n] 26584, 26548 in F color band, and [Orn]
+.<5007, 24959 and H.S 24861 in J band. The strongest Ha line can contribute to the
+total light by less than 0.075 mag in normal galaxies. The detected H.S emission
+lines show their equivalent widths (including [O III] lines) about 15 A in normal latetype galaxies (Cohen 1976) and 30 A in non-Seyfert, Markarian galaxies (Huchra
+1977a). The contribution of these lines to our J color band amounts to 0.02 mag.
+Then, the effect of emission lines on (J- F) color is about 0.1 mag or less, which is
+comparable to the photometric accuracy of the color.
+The comparison between the face-on surface brightness distribution and its color
+distribution (figures 7 and 8) reveals that three humps in the brightness distribution
+correspond to the regions where the color becomes bluer than in the surrounding
+regions. These humps can be considered as the contributions from the spiral arms.
+Since these blue humps do not affect the general trend in the color distribution, we
+assert that the color gradient occurs in the underlying disk of NGC 5907. Such
+color gradients in disks are not typical in spiral galaxies, but Schweizer (1976) and
+Jensen et al. (1981) found a similar color gradient in the old disk of M81. The warping edge-on galaxy NGC 4565 manifests the color gradient in its thin disk similar to
+
+No. 6)
+
+Surface Photometry of NGC 5907
+
+869
+
+5.2.
+
+Comparison with a Tilted Ring Model
+
+Rogstad et al. (1974) constructed a tilted ring model to reproduce the deviation
+from axisymmetry in the HI distribution in M83. The rings are concentric and progressively change their inclination and the line of nodes. Bosma (1981) applied this
+model to the HI warp observed in NGC 5907. Although there was some ambiguity
+in fitting models to the observation, he selected one model after three trials. We
+investigate whether the tilted ring model which is appropriate to represent the H I
+distribution can also be applied to reproduce the optical distribution.
+Camm (1950) obtained the solution for the distribution of matter in an isothermal
+self-gravitating gas layer:
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+that in NGC 5907, while its thick disk shows no significant color gradient (Jensen and
+Thuan 1982).
+The color in a galaxy is considered as a function of the mean metallicity of the
+stellar component and the mean age of the stars. Globular clusters in our Galaxy
+possess the heavy element abundance, [Fe/NJ, in a range of -2.4 to -0.06 with their
+intrinsic colors in a range of 0.97 to 0.48, which are almost a linear function of the
+heavy element abundance in logarithmic scale (see Harris and Racine 1979). For a
+restricted sample of globular clusters which are classified as the disklike type byWoltjer
+(1975), their intrinsic colors (B-V) 0 are in a range of0.90 to 0.66 and their metallicity
+in a range of [Fe/H]=-1.30 to -0.06. For Zinn's (1985) sample of globular clusters
+with the properties of the disk population, (B- V) 0 covers the range of 0.89 to 0.67.
+Theoretical arguments on the color dependence on the metallicity indicate that the
+color difference is less than 0.1 mag for reduction of a factor 4 in metallicity (Larson
+and Tinsley 1978; Tinsley and Larson 1978). The whole range of (J- F) color
+variation is 0.4 mag in NGC 5907 parallel to the major axis at z=20", where the
+effect of the dust lane is negligible (figure 5). This amount of the color variation
+cannot be assigned to the metallicity alone.
+A wide variety of colors can result from different star formation histories in individual galaxies and in different regions within galaxies (Sandage 1963; Searle et al.
+1973; Huchra 1977b; Larson and Tinsley 1978; Tinsley and Larson 1978). The
+effects of age on the color can be estimated from a sample of open clusters in our
+Galaxy (Mermilliod 1981; Lynga 1982; Tarrah 1982). The intrinsic (B-V) colors
+of clusters vary over a wide range of 0.58 to -0.32 corresponding to ages longer
+than 5 x 109 yr to 2 x 106 yr. (Their metallicities are in the range of one order of
+magnitude around the solar value.) The face-on color (figure 8) of NGC 5907 varies
+from (J-F)=0.82 in the inner disk to 0.4 in the outermost part of the disk. These
+colors are converted to (B-V) colors of0.79 and 0.38, respectively, which correspond
+to those of open clusters in our Galaxy with ages longer than 5 x 10° yr and around
+9 x 108 yr, respectively. Assuming that the disk stars are the same as those of open
+clusters, the mean age of stars decreases with increasing distance from the center.
+The sharp cutoff at the edge of the disk is expected to be washed out in 2 x 10° yr due
+to random motion. Since the mean age indicated by the color at the outermost part
+of the disk is shorter than this washing-out time, the smearing-out procedure of the
+sharp cutoff may be considered to be still under way.
+
+870
+
+T. Sasaki
+
+[Vol. 39,
+
+p(z)=p 0 sech2 (z/h,) ,
+
+( 8)
+
+where p is the space density as a function of z and Po is the density in the plane.
+scale height, h,, is expressed by
+
+The
+(9)
+
+L(w, z)=L 0 exp (-w/hr;;) sech2 (z/h,) ,
+
+with the scale lengths hr;; and h, being constants. Since the radial extent of the galaxy
+NGC 5907 is restricted to a certain radius, a cutoff in the radial distribution at Wmax
+is needed to be introduced, i.e.,
+L(w, z)=O
+
+for
+
+(11)
+
+w>wmax .
+
+A model galaxy described by equation (10) with a cutoff at wmax is assumed to have
+the same radial dependence of the inclination and the position angle of the line of
+nodes on w as adopted for the tilted ring model by Bosma (1981). Let ¢ denote
+the longitude in the galactic plane, and i the inclination angle. We calculate numerically the projected brightness distribution by integrating the luminosity of the
+model galaxy along the line of sight:
+P(x, y; i)=
+
+Zmu
+~ -Zmax
+
+~Wmax ~2~
+
+L(w, z) w d<j> dw dz,
+
+O
+
+(12)
+
+0
+
+where the Cartesian coordinates (x, y) in the celestial plane are expressed as
+cos <j> sin <j;- w s~n <j> c?s ¢ cos '. ) .
+(yx) = ( - ww cos
+<j> cos ¢- w sm <j> sm ¢ cos
+z
+
+(13)
+
+Here ¢ is the position angle of the line of node. The disk described by equation (10)
+is infinite in the z-direction but is restricted to Zmax= IOh, for numerical integration.
+We test the numerical errors introduced by finite step sizes by varying step sizes to
+prove that the results are independent of the step size used.
+The parameters to describe the model of the stellar disk of NGC 5907 are selected
+as follows:
+wmax=361 ~9 or 396 1:6 (19. 3 or 21. 2 kpc) ,
+Zmax =156':0
+
+(8.3 kpc),
+
+hr;;
+
+= 106':9 (5. 7 kpc) ,
+
+h.
+
+=15~6
+
+,t(w) and i(w):
+
+(0.83kpc),
+after the tilted ring model by Bosma (1981).
+
+The values of hr;; and h, and the smaller value of Wmax are taken after van der Kruit
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+with the velocity dispersion in the z-direction being <V,2) 112 • Assuming a constant
+mass-to-luminosity ratio, the space-luminosity density in a galaxy can be described
+(van der Kruit and Searle 1981a, b, 1982a, b) by
+
+871
+
+Surface Photometry of NGC 5907
+
+No.6]
+
+-300"
+
+NGC 5907
+
+Tilted Ring Model
+with truncated disk
+
+300"
+
+-300"
+
+0"
+
+300"
+
+Fig. 11. A contour map of the tilted ring model with the disk truncated at 'wmax =362". A
+slight warp can be noticed in the outer part.
+
+and Searle (1982a). Since the galaxy extends to the region farther than the maximum
+distance adopted by van der Kruit and Searle (1982a), another w'm,x is estimated as
+the distance at the brightness level of 29.0 mag arcsec- 2 in the face-on radial profile
+in figure 7. The projected brightness distribution of the model is shown in figure 11
+with 1-mag step of contours. This figure can be directly compared with the observation in figure 2. The model distribution exhibits the slight warp in the outermost
+part and its global characteristics resemble those of the observed one except for the
+structures caused by the dust lane, spiral arms, and the central bulge.
+We measure the bisection line in the vertical profiles of the truncated disk model
+by the same method as used in the observed ones. This bisection line is drawn in
+figure 10 to be compared with the observation. The bisection line of the model
+reproduces that of the observed profiles; the model with the cutoff radius of 396'~6
+shows good agreement. In the real galaxy, the disk extends to larger than 450" at
+least in the northern part, where the coincidence can be improved when the cutoff
+radius of 450" is adopted.
+We may conclude that both the stellar and the gaseous disks do warp by the same
+amount, but that the truncation of the stellar disk causes the apparent departure of
+the gaseous from the stellar disk. Such a departure appears in a nearly edge-on
+galaxy, when the direction of the maximum displacement of the disk differs from the
+line of node of the disk and the optical disk has a smaller extent than that of the H 1
+disk.
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+o·
+
+872
+
+T. Sasaki
+
+[Vol. 39,
+
+5.3.
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+A Possible Origin of the Warp
+The warp of the stellar disk in NGC 5907 is detected from optical surface photometry. Its galactic plane deviates apparently from that detected in H 1. The stellar
+warp is actually simulated to follow the H I warp on the basis of the tilted ring model
+with a sharp cutoff. The apparent departure between the stellar and the HI plane
+can be interpreted by the truncation of the stellar disk and the possible difference in
+the direction of the maximum vertical displacement of the disk from that perpendicular
+to the line of sight.
+Evidence of the stellar warp in NGC 5907 indicates that the hypotheses which
+interpret the gaseous warp alone (Kahn and Woltjer 1959; Saar 1979; Nelson 1981;
+Yoshii and Fujimoto 1981) are not relevant to the warp, unless a subsequent star
+formation causes a stellar warp in phase with a gaseous warp.
+Lynden-Bell (1965) showed that the free precession of the disk can cause a warp
+in galaxies with a sharp edge. This hypothesis seems to be applicable to the optical
+warp of the truncated disk in NGC 5907, though the HI warp is detected far out beyond
+the optical warp and no outer edge has been detected in the H I distribution of NGC
+5907 (Sancisi 1976, 1977; Bosma 1981).
+Recent proposals on the origin and/or sustenance of the warp were based on the
+assumption that galaxies have a massive halo (Binney 1978; Tubbs and Sanders 1979;
+Petrou 1980; Bertin and Mark 1980; Papp and Innanen 1982; Dekel and Shlosman
+1983; Toomre 1983; Sparke 1984a, b; May and James 1984; Mathur 1984). The
+galaxy NGC 5907 has a halo 1.5 times as massive as the disk inside the cutoff radius
+(Casertano 1983a, b). The presence of a modest halo does not conflict with the analysis
+by Casertano (1983a, b): If a cutoff radius of NGC 5907 is observed as about 20 kpc
+and the halo is assumed to extend to I 00 kpc and to have its density law proportional
+to r- 2 , the halo mass would be about 7.5 times larger than the disk mass. It will be
+desirable to observe the existence and the shape of a halo to examine the reality of the
+assumptions of the massive halo hypothesis on the warp.
+The tidal origin of the warp (Hunter and Toomre 1969) was rejected in the case of
+NGC 5907 by Sancisi (1976), because he judged NGC 5907 to be isolated. However,
+the galaxy is considered as a member of a group of galaxies: de Vaucouleurs' (1975)
+group of galaxies G30 or Huchra and Geller's (1982) group No. 78. We present in
+figure 12 the galaxies within 5° from the center of NGC 5907 by referring to the UGC
+catalog (Nilson 1973). Different symbols correspond to galaxies with different ranges
+of velocities, and the symbols with large size represent the galaxies brighter than 14
+mag (that is, within 2.5 mag relative to the brightness of NGC 5907). Six bright
+galaxies may compose a group of galaxies. The characteristics of these six galaxies
+taken from the UGC catalog are shown in table 3. The heliocentric velocities in
+column 7 are obtained from Huchra et al. (1983) and Fisher and Tully (1981). The
+six nearby bright galaxies are situated at distances farther than 200 kpc from NGC
+5907. In column 10 are presented travel times that the galaxies take to move along
+the linear projected distances between themselves and NGC 5907 with the spatial
+velocity of 100 km s- 1 , a mean velocity difference of galaxies in groups of galaxies and
+binary galaxies (cf. Faber and Gallagher 1979).
+The calculations by Hunter and Toomre (1969) showed that the tidally induced
+
+15 08.49
+15 32.3
+15 JO. 77
+
+15 11.8
+
+9753 ....... 5879
+
+9906 ....... 5963
+9769 ....... 5866B
+
+9776 .......
++57 JO
+
++56 45
++55 58.4
+
++57 11.4
+
+830*
+
+15.7
+
+17.
+
+SAB(rs)d
+dlrr
+
+844*
+
+11.9
+13.0
+
+775
+655
+
+672
+
+666
+
+V
+(km sec- 1)
+(7)
+
+Sb
+Spec
+
+11.4
+11.1
+
+Sc
+
+so
+
+(mag)
+(6)
+
+mP•
+
++56 30.4
+
+(5)
+
+Type
+
++55 57.3
+
+(4)
+
+01050
+
+0.77
+
+0.75
+
+1.JO
+2.45
+
+1.43
+
+Angular
+separation
+(degree)
+(8)
+
+Nearby galaxies around NGC 5907.
+
+Columns (3) and (4): FromRC2.
+Column (7): Heliocentric velocity from Huchra et al. (1983).
+Column (9): The distance to NGC 5907 is assumed as 11 Mpc.
+Column (JO): Transverse velocity of 100 km s- 1 is assumed.
+Column (11): From Huchra and Geller (1982).
+* Heliocentric velocity from Fisher and Tully (1981).
+
+15 14.61
+
+15 05.12
+
+(3)
+
+9801 ....... 5907
+
+(2)
+
+(1)
+
+lr1950
+
+9723 ....... 5866
+
+NGC
+
+UGC
+
+Table 3.
+
+148
+
+144
+
+211
+471
+
+275
+
+Linear
+separation
+(kpc)
+(9)
+
+(11)
+
+(JOO yr)
+(10)
+
+Group #78
+Group #78
+
+2.06
+4.61
+1.44
+
+1.41
+
+Group #78
+
+2.69
+
+Group #78
+
+Group
+membership
+
+.JT
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+~
+
+~
+
+...,
+
+VI
+
+-.J
+
+.,,
+
+00
+
+-.J
+
+0
+
+"'
+
+('")
+
+zC)
+
+0
+
+!
+
+...
+
+0
+0
+
+~
+
+(')
+(1)
+
+iil'
+
+rJl
+
+.2l
+
+874
+
+T. Sasaki
+
+[Vol. 39,
+
+warp persists for several rotation times, that is, about 5 x 108 yr which is estimated at
+the radius of 20 kpc with the rotation speed in the flat rotation curve of 226 km s- 1
+after Bosma (1981). The traveling times of the nearby galaxies are all longer than
+this time. The nearest galaxies UGC 9769 and UGC 9776 have velocities different
+from that of NGC 5907 by 171 km s- 1• If these galaxies move with this velocity, it
+takes 8 x 108 yr to travel to near NGC 5907. Although the spatial separations and
+the true spatial velocities are not known exactly, the tidal theory do marginally succeed
+to interpret the warp in NGC 5907. It is noted that the tidal interaction can pull out
+the disk materials in the outer part and form a ringlike structure in the outermost part
+of the disk (Noguchi and Ishibashi 1986). This ring structure might correspond to a
+sharp outer edge. The outer H I gas would also been torn out by tidal interaction.
+The warping H I gas layer has to tear H I gas and then return it back to the disk with its
+node of warping wave in accordance with that of the optical disk. It is not clear
+that tidal encounters cause a real galaxy to exhibit the warping truncated stellar disk
+together with the warping gaseous extent in regions far beyond the truncation of
+the stellar disk. The active star formation is suggested to be triggered in the disk by
+the tidal interaction (Larson and Tinsley 1978; Noguchi and Ishibashi 1986; Scalo
+and Struck-Marcell 1986), and to produce the outward blueing.
+Edge-on galaxies, NGC 891, NGC 4244, NGC 4565, and NGC 7814 have the
+warping H I disk with the truncated optical disk. The warping and truncation of
+disks seem to be a common feature in galaxies. In the present paper we investigated
+a conspicuous sample of the warp and truncation of a disk, NGC 5907, which has
+been considered as isolated but is a member of a group of galaxies. Krumm and
+Shane (1982) showed warps of the HI disk in NGC 2712 and NGC 5301. These
+two galaxies were indicated to be isolated by statistical analysis. If these galaxies are
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+Fig. 12. Distribution of nearby galaxies around NGC 5907. Symbols differ according to
+the range of the recession velocities of galaxies; 600<v< 1100 km s- 1 as circles; v> 1600
+km s- 1 as triangles; unknown velocities as crosses. NGC 5907 is shown by the filled
+circle. Galaxies brighter than 14 mag are plotted with large symbols. Two circles
+shown by dashed lines have radii of 2?5 and 5°, which correspond to 480 kpc and 960
+kpc, respectively, at the distance ofNGC 5907.
+
+No. 6]
+
+Surface Photometry of NGC 5907
+
+875
+
+really isolated, the tidal interpretation of warps would not be applicable and the warps
+should be internally generated and sustained.
+6.
+
+Summary
+
+The author expresses his hearty thanks to Professors B. Takase, K. Ishida, H.
+Maehara, and S. Okamura, and other staff members at the Kiso Observatory for
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+We summarize the main results as follows:
+(1) Surface photometry was carried out on the warping edge-on galaxy NGC
+5907 to detect the optical warp and to derive the photometric properties. The stacking of seven IIIa-J plates and eight Illa-F plates reduced the background noise proportionally to the square root of a number of stacked plates to yield the accuracy of
+0.5 %(la) of the sky intensity. We performed photometry down to the level of 27.64 J
+mag arcsec- 2 and 26.70 Fmag arcsec- 2 •
+(2) The optical warp is detected in the outer part of the disk and exhibits an
+apparent departure from that of the H I warp especially in the outermost part (figure
+10). This departure can be interpreted with the truncation of the optical disk and
+the oblique direction of the warp with regard to the line of sight, if the warps detected
+in the stellar and gaseous disks follow the same curved surface.
+(3) The sharp cutoff of the disk is confirmed and the outward blueing of the disk
+color is found in the face-on luminosity distribution. The scale length of the exponential disk is 4.9 kpc and that of the outer steep decline (w~350") is 1.2 kpc. The
+color of the disk is (J-F)=0.95 mag at the center and 0.4 mag at w~325" with the
+global color gradient of d(J-F)/dw=-0.048 mag kpc- 1 •
+(4) The dust lane obscures the disk around the galactic equatorial plane (JzJ<20")
+in the inner disk (r~200"). In the outer region the influence of the dust lane is hardly
+seen in the vertical profiles of brightness. The dust does not affect the color in the
+outer disk (r>200"). The scale length of the exponential disk is 4.7 kpc and the
+central constant color 0.82 mag if corrected for extinction by the dust lane in the
+central region.
+(5) NGC 5907 is a member of a group of galaxies. The six nearby bright galaxies
+are situated at distances farther than 200 kpc from NGC 5907 (table 3). The travel
+times of these galaxies are estimated with a typical space velocity in groups of galaxies
+and are marginally longer than the duration of the warp induced by tidal encounters
+(Hunter and Toomre 1969).
+(6) Several time scales are estimated to be roughly in accord: the time scale of
+persistence of the warp is about 5 x 108 yr (Hunter and Toomre 1969), the travel times
+of nearby galaxies UGC 9769 and UGC 9776 about 8 x 108 yr, the time scale in smearing the sharp edge of the disk about 2 x 109 yr (May and James 1984), and the mean
+age of stars in the outer part estimated from the color is around 9 x 10 8yr.
+(7) The warp, the sharp cutoff of the disk, and the outward blueing may be
+interpreted with the tidal interaction of a nearby galaxy. Some difficulties in the
+persistence of the warp remain as well as in the explanation of the sharp cutoff and the
+outward blueing.
+
+876
+
+T. Sasaki
+
+[Vol. 39,
+
+References
+Arp, H. 1964, Astrophys. J., 139, 1045.
+Bertin, G., and Mark, J. W.-K. 1980, Astron. Astrophys., 88, 289.
+Binney, J. 1978, Monthly Notices Roy. Astron. Soc., 183, 779.
+Binney, J. 1981, Monthly Notices Roy. Astron. Soc., 196, 455.
+Bosma, A. 1981, Astron. J., 86, 1825.
+Bosma, A. 1983, in Internal Kinematics and Dynamics of Galaxies, /AU Symp. No. JOO, ed. E.
+Athanassoula (Reidel, Dordrecht), p. 253.
+Burke, B. F. 1957, Astron. J., 62, 90.
+Burns, P. D., FitzGerald, M. P., and Reed, B. C. 1984, Monthly Notices Roy. Astron. Soc., 206, 327.
+Burstein, D. 1979, AAS Photo-Bull., No. 20, 6.
+Burstein, D., and Heiles, C. 1978, Astrophys. J., 225, 40.
+Burton, W. B., and Hekkert, L. 1986, Astron. Astrophys. Suppl., 65,427.
+Camm, G. L. 1950, Monthly Notices Roy. Astron. Soc., 110,305.
+Capaccioli, M., and de Vaucouleurs, G. 1983, Astrophys. J. Suppl., 52, 465.
+Casertano, S. 1983a, Monthly Notices Roy. Astron. Soc., 203, 735.
+Casertano, S. 1983b, in Internal Kinematics and Dynamics of Galaxies, /AU Symp. No. JOO, ed. E.
+Athanassoula (Reidel, Dordrecht), p. 63.
+Cohen, J. G. 1976, Astrophys. J., 203, 587.
+Dekel, A., and Shlosman, I. 1983, in Internal Kinematics and Dynamics of Galaxies, /AU Symp. No.
+JOO, ed. E. Athanassoula (Reidel, Dordrecht), p. 187.
+de Vaucouleurs, G. 1948, Ann. Astrophys., 11, 247.
+de Vaucouleurs, G. 1958, Astrophys. J., 127, 487.
+de Vaucouleurs, G. 1961, Astrophys. J. Suppl., 5, 233.
+de Vaucouleurs, G. 1975, in Galaxies and the Universe, ed. A. Sandage, M. Sandage, and J. Kristian
+(University of Chicago Press, Chicago), p. 557.
+de Vaucouleurs, G., and Capaccioli, M. 1979, Astrophys. J. Suppl., 40, 699.
+de Vaucouleurs, G., de Vaucouleurs, A., and Corwin, H. G., Jr. 1976, Second Reference Catalogue
+of Bright Galaxies (The University of Texas Press, Austin).
+Faber, S. M., and Gallagher, J. S. 1979, Ann. Rev. Astron. Astrophys., 17, 135.
+Fall, S. M., and Efstathiou, G. 1980, Monthly Notices Roy. Astron. Soc., 193, 189.
+Fisher, J. R., and Tully, R. B. 1981, Astrophys. J. Suppl., 47, 139.
+Fujimoto, M., and Sofue, Y. 1976, Astron. Astrophys., 47, 263.
+Fujimoto, M., and Sofue, Y. 1977, Astron. Astrophys., 61, 199.
+Gordon, K. J. 1971, Astrophys. J., 169,235.
+Gottesman, S. T., Ball, R., Hunter, J. H., Jr., and Huntley, J. M. 1984, Astrophys. J., 286, 471.
+Graham, J. A. 1970, Astron. J., 75, 703.
+Grosb0l, P. J. 1985, Astron. Astrophys. Suppl., 60, 261.
+Harris, W. E., and Racine, R. 1979, Ann. Rev. Astron. Astrophys., 17, 241.
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+making the telescope and other facilities available to him and for their kind hospitality.
+This work has been successfully carried out with their valuable cooperation. The
+author also expresses his hearty thanks to Professor K. Kodaira for his discussions and
+encouragement and for his critical reading of the manuscript. He is also indebted
+to Professor T. Kogure and Dr. H. Ohtani for their discussions and encouragement.
+The numerical calculations were made mainly with the FACOM computers at the Kyoto
+University Computer Center and partly by the FACOM S-3300 at the Okayama Astrophysical Observatory.
+This paper is based on the author's dissertation submitted to the University of
+Tokyo in partial fulfillment of the requirements for the doctorate.
+
+No. 6)
+
+Surface Photometry of NGC 5907
+
+877
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+Henderson, A. P., Jackson, P. D., and Kerr, F. J. 1982, Astrophys. J., 263, 116.
+Huchra, J.P. 1977a, Astrophys. J. Suppl., 35, 171.
+Huchra, J. P. 1977b, Astrophys. J., 217, 928.
+Huchra, J., Davis, M., Latham, D., and Tonry, J. 1983, Astrophys. J. Suppl., 52, 89.
+Huchra, J.P., and Geller, M. J. 1982, Astrophys. J., 257, 423.
+Hunter, C., and Toomre, A. 1969, Astrophys. J., 155, 747.
+Ichikawa, T., and Sasaki, T. 1984, in Proceedings of the Second Asian-Pacific Regional Meeting on
+Astronomy, ed. B. Hidayat and M. W. Feast (Tira Pustaka Publishing House, Jakarta), p. 182.
+Innanen, K. A., Kamper, K. W., Papp, K. A., and van den Bergh, S. 1982, Astrophys. J., 254, 515.
+Jensen, E. B., Tablot, R. J., Jr., and Dufour, R. J. 1981, Astrophys. J., 243, 716.
+Jensen, E. B., and Thuan, T. X. 1982, Astrophys. J. Suppl., 50, 421.
+Jones, W. B., Obitts, D. L., Gallet, R. M., and de Vaucouleurs, G. 1967, Pub!. Dept. Astron. Univ.
+Texas, Ser. 2, 1, No. 8.
+Kahn, F. D., and Woltjer, L. 1959, Astrophys. J., 130, 705.
+Kennicutt, R. C., Jr. 1983, Astron. J., 88, 483.
+Kennicutt, R. C., Jr., Bothum, G.D., and Schommer, R. A. 1984, Astron. J., 89, 1279.
+Kennicutt, R. C., Jr., and Kent, S. M. 1983, Astron. J., 88, 1094.
+Kerr, F. J. 1957, Astron. J., 62, 93.
+Kirshner, R. P., Oemler, A., Jr., and Schechter, P. L. 1978, Astron. J., 83, 1549.
+Knapp, G. R., Tremaine, S. D., and Gunn, J.E. 1978, Astron. J., 83, 1585.
+Kormendy, J., and Bahcall, J. N. 1974, Astron. J., 79, 671.
+Krumm, N., and Shane, W.W. 1982, Astron. Astrophys., 116,237.
+Kulkarni, S. R., Blitz, L., and Heiles, C. 1982, Astrophys. J. Letters, 259, L63.
+Larson, R. B. 1972, Nature, 236, 21.
+Larson, R. B. 1976, Monthly Notices Roy. Astron. Soc., 176, 31.
+Larson, R. B., and Tinsley, B. M. 1978, Astrophys. J., 219, 46.
+Lynden-Bell, D. 1965, Monthly Notices Roy. Astron. Soc., 129,299.
+Lynga, G. 1982, Astron. Astrophys., 109, 213.
+Mathur, S. D. 1984, Monthly Notices Roy. Astron. Soc., 211, 901.
+May, A., and James, R. A. 1984, Monthly Notices Roy. Astron. Soc., 206, 691.
+Mermilliod, J.C. 1981, Astron. Astrophys., 91, 235.
+Nelson, A.H. 1981, Monthly Notices Roy. Astron. Soc., 196, 557.
+Nilson, P. 1973, Nova Acta Regiae Soc. Sci. Uppsaliensis, Ser. 5A, Vol. I ( = Uppsala Astron. Obs. Ann.,
+Vol. 6).
+Noguchi, M., and Ishibashi, S. 1986, Monthly Notices Roy. Astron. Soc., 219,305.
+Oemler, A., Jr. 1974, Astrophys. J., 194, 1.
+Papp, K. A., and Innanen, K. A. 1982, Astrophys. J., 263, 639.
+Petrou, M. 1980, Monthly Notices Roy. Astron. Soc., 191, 767.
+Reed, B. C. 1985, Astron. Astrophys. Suppl., 62, 49.
+Rogstad, D. H., Lockhart, I. A., and Wright, M. C. H. 1974, Astrophys. J., 193, 309.
+Rogstad, D. H., Wright, M. C.H., and Lockhart, I. A. 1976, Astrophys. J., 204, 703.
+Saar, E. 1979, in The Large-Scale Characteristics of the Galaxy, /AU Symp. No. 84, ed. W. B. Burton
+(Reidel, Dordrecht), p. 513.
+Sancisi, R. 1976, Astron. Astrophys., 53, 159.
+Sancisi, R. 1977, in Topics in Interstellar Matter, ed. H. van Woerden (Reidel, Dordrecht), p. 255.
+Sancisi, R. 1981, in The Structure and Evolution of Normal Galaxies, ed. S. M. Fall and D. LyndenBell (Cambridge University Press, Cambridge), p. 149.
+Sancisi, R. 1983, in Internal Kinematics and Dynamics of Galaxies, TAU Symp. No. 100, ed. E.
+Athanassoula (Reidel, Dordrecht), p. 55.
+Sandage, A. 1963, Astrophys. J., 138, 863.
+Sandage, A., and Humphreys, R. M. 1980, Astrophys. J. Letters, 236, Ll.
+Sasaki, T. 1983, AAS Photo-Bull., No. 32, 3.
+Sasaki, T. 1988, Mem. Facul. Sci., Ser. Phys. Astrophys. Geophys. Chem., Univ. Kyoto, in press.
+
+878
+
+T. Sasaki
+
+Downloaded from https://academic.oup.com/pasj/article/39/6/849/8078264 by guest on 04 June 2026
+
+Scalo, J.M., and Struck-Marcell, C. 1986, Astrophys. J., 301, 77.
+Schweizer, F. 1976, Astrophys. J. Suppl., 31, 313.
+Searle, L., Sargent, W. L. W., and Bagnuolo, W. G. 1973, Astrophys. J., 179, 427.
+Seiden, P. E. 1983, Astrophys. J., 266, 555.
+Skrutskie, M. F., Shure, M. A., and Beckwith, S. 1985, Astrophys. J., 299, 303.
+Solomon, P. M., and Sanders, D. B. 1980, in Giant Molecular Clouds in the Galaxy, ed. P. M. Solomon
+and M. G. Edmunds (Pergamon Press, Oxford), p. 41.
+Sparke, L. S. 1984a, Astrophys. J., 280, 117.
+Sparke, L. S. 1984b, Monthly Notices Roy. Astron. Soc., 211, 911.
+Spight, L., and Grayzeck, E. 1977, Astrophys. J., 213, 374.
+Tarrab, I. 1982, Astron. Astrophys., 113, 57.
+Thuan, T. X., and Gunn, J. E. 1976, Puhl. Astron. Soc. Pacific, 88, 543.
+Tifft, W. G. 1961, Astron. J., 66, 390.
+Tifft, W. G. 1969, Astron. J., 74, 354.
+Tinsley, B. M., and Larson, R. B. 1978, Astrophys. J., 221, 554.
+Toornre, A. 1983, in Internal Kinematics and Dynamics of Galaxies, /AU Symp. No. 100, ed. E.
+Athanassoula (Reidel, Dordrecht), p. 177.
+Tsubaki, T., and Engvold, 0. 1975, AAS Photo-Bull., No. 9, p. 17.
+Tubbs, A. D., and Sanders, R.H. 1979, in The Large-Scale Characteristics of the Galaxy, /AU Symp.
+No. 84, ed. W. B. Burton (Reidel, Dordrecht), p. 511.
+van der Kruit, P. C. 1979, Astron. Astrophys. Suppl., 38, 15.
+van der Kruit, P. C., and Searle, L. 1981a, Astron. Astrophys., 95, 105.
+van der Kruit, P. C., and Searle, L. 1981b, Astron. Astrophys., 95, 116.
+van der Kruit, P. C., and Searle, L. 1982a, Astron. Astrophys., 110, 61.
+van der Kruit, P. C., and Searle, L. 1982b, Astron. Astrophys., 110, 79.
+Walterbos, R. A. M., and Kennicutt, R. C., Jr. 1987, Astron. Astrophys. Suppl., 69, 311.
+Watanabe, M., Kodaira, K., and Okamura, S. 1982, Astrophys. J. Suppl., SO, 1.
+Westerhout, G. 1957, Bull. Astron. Inst. Neth., 13, 201.
+Woltjer, L. 1975, Astron. Astrophys., 42, 109.
+Yoshii, Y., and Fujimoto, M. 1981, Astron. Astrophys., 104, 142.
+Zinn, R. 1985, Astrophys. J., 293, 424.
+
+

@@ -1,0 +1,2 @@
+galaxy,formula_id,r_warp_kpc,h_over_rs,z_ec_kpc,f_ec,gamma_overlay_upper,n_derivation_steps,n_endpoint_blockers,derivation_status,endpoint_scores_allowed,claim_boundary
+NGC4013,NGC4013_WARP_VERTICAL_OVERLAY_V1,10.0,0.2329317269076305,3.0,0.2,0.21646586345381524,7,3,FORMULA_SHELL_DERIVED_ENDPOINT_FREEZE_BLOCKED,False,ngc4013_warp_vertical_overlay_formula_derivation_not_endpoint

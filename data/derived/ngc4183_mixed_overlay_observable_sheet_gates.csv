@@ -1,0 +1,6 @@
+gate_id,gate_status,evidence,formula_freeze_allowed,endpoint_scores_allowed,remaining_obligation,claim_boundary
+N4183_OBS_G1_SOURCE_AUDIT_INPUT,PASS,NGC4183_MIXED_OVERLAY_SOURCE_AUDIT_LOCAL_SOURCE_PRESENT_REVIEW_REQUIRED_NOT_FREEZE_READY,False,False,observable sheet only; no scoring,ngc4183_mixed_overlay_observable_sheet_not_endpoint
+N4183_OBS_G2_RHI_DENOMINATOR,PASS_CAVEATED,source-native RHI=15.970 kpc vs SPARC RHI=16.070 kpc,False,False,choose formula lane before using denominator,ngc4183_mixed_overlay_observable_sheet_not_endpoint
+N4183_OBS_G3_PROJECTION_OBSERVABLE,PASS_CAVEATED,HI inclination=83.0 deg gives p_edge=0.985,False,False,derive projection kernel and coefficient rule,ngc4183_mixed_overlay_observable_sheet_not_endpoint
+N4183_OBS_G4_WARP_NUMERIC_KERNEL,BLOCKED,outer warp is qualitative only; no onset/amplitude frozen,False,False,acquire source-native warp onset/amplitude or use a projection-only lane,ngc4183_mixed_overlay_observable_sheet_not_endpoint
+N4183_OBS_G5_LABEL_PROMOTION,BLOCKED,bar/core/history overlay field remains missing for current proposed label,False,False,either acquire missing fields or narrow label to projection/outer-warp caveated lane,ngc4183_mixed_overlay_observable_sheet_not_endpoint

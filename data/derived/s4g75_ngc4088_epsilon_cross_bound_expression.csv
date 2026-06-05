@@ -1,0 +1,2 @@
+galaxy,expression_id,bound_expression,known_feature_subexpression,blocked_feature_subexpression,numeric_bound_value,expression_status,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,NGC4088_EPSILON_CROSS_BOUND_EXPRESSION_SHELL,|epsilon_cross| <= 0.5*B_PA + 0.25*B_R + 1*B_q + 1*B_mem,0.5*B_PA + 0.25*B_R + 1*B_q + 1*B_mem,none,1.375,NUMERIC_EPSILON_PROTOCOL_BOUND_READY_CAVEATED,False,False,s4g75_ngc4088_epsilon_cross_bound_expression_shell_not_endpoint

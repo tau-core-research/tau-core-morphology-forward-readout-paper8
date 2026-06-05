@@ -1,0 +1,4 @@
+split,n_galaxies,orientation_ready_count,projection_ready_count,memory_ready_or_not_required_count,memory_projection_ready_candidate_count,blocked_orientation_count,blocked_projection_count,blocked_memory_history_count,endpoint_scores_computed,claim_boundary
+all,175,67,71,4,1,108,47,19,False,memory_projection_acceptance_gate_not_endpoint
+holdout,44,16,14,1,0,28,14,2,False,memory_projection_acceptance_gate_not_endpoint
+train,131,51,57,3,1,80,33,17,False,memory_projection_acceptance_gate_not_endpoint

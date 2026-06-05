@@ -53,8 +53,14 @@ def ensure_dirs() -> None:
 
 def download(url: str, path: Path) -> None:
     req = urllib.request.Request(url, headers={"User-Agent": "Paper8-data-acquisition/1.0"})
-    with urllib.request.urlopen(req, timeout=30) as response:
-        path.write_bytes(response.read())
+    try:
+        with urllib.request.urlopen(req, timeout=30) as response:
+            path.write_bytes(response.read())
+    except Exception:
+        if path.exists() and path.stat().st_size > 0:
+            print(f"download failed; using cached file: {path}")
+            return
+        raise
 
 
 def parse_sparc_mrt(path: Path) -> pd.DataFrame:

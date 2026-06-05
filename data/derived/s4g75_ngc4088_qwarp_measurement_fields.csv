@@ -1,0 +1,6 @@
+galaxy,field_id,field_name,description,required,claim_boundary
+NGC4088,F1_OUTER_ASYMMETRY_EXTENT,outer_asymmetry_extent_px,outer displaced HI ridge or warp/asymmetry extent in panel coordinates,True,s4g75_ngc4088_qwarp_measurement_protocol_not_endpoint
+NGC4088,F2_LOCAL_DISK_REFERENCE_EXTENT,local_disk_reference_extent_px,local inner/ordinary disk reference extent in the same panel,True,s4g75_ngc4088_qwarp_measurement_protocol_not_endpoint
+NGC4088,F3_PANEL_WEIGHT,panel_source_weight,residual-blind panel reliability/source strength weight,True,s4g75_ngc4088_qwarp_measurement_protocol_not_endpoint
+NGC4088,F4_SIDE_LABEL,side_label,approaching/receding or side A/B label used only for source symmetry checks,True,s4g75_ngc4088_qwarp_measurement_protocol_not_endpoint
+NGC4088,F5_REVIEW_FLAG,review_flag,independent-review status and caveat flag,True,s4g75_ngc4088_qwarp_measurement_protocol_not_endpoint

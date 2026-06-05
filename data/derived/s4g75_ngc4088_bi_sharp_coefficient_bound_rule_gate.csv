@@ -1,0 +1,5 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,SB1_SOURCE_REVIEW_READY,PASS,SOURCE_RESPONSES_ACCEPTED_FOR_PROTOCOL_BOUND,none,False,False,s4g75_ngc4088_bi_sharp_coefficient_bound_rule_not_endpoint
+NGC4088,SB2_CONSERVATIVE_BASELINE_EXISTS,PASS,BI_COEFFICIENTS_FROZEN_PROTOCOL_BOUND_READY,keep B_i=1 baseline available for comparison,False,False,s4g75_ngc4088_bi_sharp_coefficient_bound_rule_not_endpoint
+NGC4088,SB3_SECOND_ORDER_REMAINDER_ASSUMPTION_DECLARED,PASS,B_i=0.5 is conditional on the normalized second-order remainder/Hessian-cap interpretation,derive the Hessian cap from Tau-side geometry before calling this final,False,False,s4g75_ngc4088_bi_sharp_coefficient_bound_rule_not_endpoint
+NGC4088,SB4_ENDPOINT_BLINDNESS,PASS,"sharp rule uses no vobs, residuals, or endpoint scores",keep endpoint tests separate,False,False,s4g75_ngc4088_bi_sharp_coefficient_bound_rule_not_endpoint

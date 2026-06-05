@@ -1,0 +1,7 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,BI1_DIMENSIONLESS_FORM,PASS,"epsilon_cross, f_i, and B_i are all dimensionless",preserve dimensionless coefficient rule,False,False,s4g75_ngc4088_bi_coefficient_rule_gate_not_endpoint
+NGC4088,BI2_FEATURE_NORMALIZATION_DECLARED,PASS,f_PA and f_R are normalized from source observables; f_q and f_mem use accepted q and caveated morphological-history source review if available,preserve source-review provenance,False,False,s4g75_ngc4088_bi_coefficient_rule_gate_not_endpoint
+NGC4088,BI3_COEFFICIENT_ORIGIN_RESTRICTED,PASS,allowed and forbidden coefficient origins are explicit,derive or freeze coefficient values without endpoint residuals,False,False,s4g75_ngc4088_bi_coefficient_rule_gate_not_endpoint
+NGC4088,BI4_COEFFICIENT_VALUES_AVAILABLE,PASS,"B_PA, B_R, B_q, and B_mem supplied by residual-blind protocol",derive the active protocol coefficients from Tau-side geometry before final physical claims,False,False,s4g75_ngc4088_bi_coefficient_rule_gate_not_endpoint
+NGC4088,BI5_NUMERIC_BOUND_READY,PASS,accepted q/morphological-history source responses and residual-blind B_i values are available,evaluate numeric epsilon_cross protocol bound,False,False,s4g75_ngc4088_bi_coefficient_rule_gate_not_endpoint
+NGC4088,BI6_ENDPOINT_BLINDNESS,PASS,rule forbids vobs and endpoint residuals,keep endpoint scoring separate,False,False,s4g75_ngc4088_bi_coefficient_rule_gate_not_endpoint

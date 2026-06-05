@@ -1,0 +1,2 @@
+galaxy,n_points,rmse_newton,rmse_tpg_v6,rmse_mond,rmse_generic_promoted_thick_flared,rmse_projection_dominated,projection_minus_tpg_v6,projection_minus_mond,projection_minus_generic_promoted,pi_projection_bound,h_over_r,gamma_projection,endpoint_scores_allowed,claim_boundary
+NGC5907,19,86.48374825501512,16.785509985459306,18.59536481497724,17.02530066461074,15.495197149438468,-1.2903128360208385,-3.1001676655387733,-1.5301035151722715,0.7891282494318128,0.1733207190160832,0.06838613779371243,False,ngc5907_projection_endpoint_diagnostic_not_validation

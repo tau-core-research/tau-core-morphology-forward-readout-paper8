@@ -8,6 +8,7 @@ SkyView FITS URLs are intentionally not written to disk.
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -18,6 +19,7 @@ from astroquery.skyview import SkyView
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "derived"
 REPORTS = ROOT / "reports"
+PREVIEW_DIR = REPORTS / "p0_skyview_previews"
 
 CLAIM_BOUNDARY = "p0_skyview_availability_not_image_classification_not_endpoint"
 
@@ -26,6 +28,14 @@ SURVEYS = [
     ("2MASS-K", "skyview_2mass_ks_url"),
     ("WISE 3.4", "skyview_wise_w1_url"),
 ]
+
+
+def safe_name(value: str) -> str:
+    return re.sub(r"[^A-Za-z0-9]+", "_", value).strip("_")
+
+
+def cached_preview_path(row: pd.Series, survey: str) -> Path:
+    return PREVIEW_DIR / f"{row['galaxy']}_{safe_name(survey)}.png"
 
 
 def query_count(row: pd.Series, survey: str) -> tuple[int, str]:
@@ -38,6 +48,8 @@ def query_count(row: pd.Series, survey: str) -> tuple[int, str]:
         )
         return len(urls), "QUERY_OK"
     except Exception as exc:  # pragma: no cover - external-service failure path
+        if cached_preview_path(row, survey).exists():
+            return 1, f"QUERY_CACHE_FALLBACK:{type(exc).__name__}:{str(exc)[:120]}"
         return 0, f"QUERY_ERROR:{type(exc).__name__}:{str(exc)[:120]}"
 
 

@@ -1,0 +1,2 @@
+galaxy,protocol_id,bound_form,allowed_inputs,forbidden_inputs,current_status,claim_boundary
+NGC4088,EPSILON_CROSS_RESIDUAL_BLIND_SOURCE_BOUND_PROTOCOL,|epsilon_cross| <= B_PA f_PA + B_R f_R + B_q f_q + B_mem f_mem,orientation mismatch; side onset asymmetry; onset uncertainty; source-measured warp amplitude; memory/history proxy,vobs; endpoint residuals; endpoint-selected family or amplitude,BOUND_FORM_DECLARED_NUMERIC_BOUND_BLOCKED,s4g75_ngc4088_epsilon_cross_source_bound_protocol_not_endpoint

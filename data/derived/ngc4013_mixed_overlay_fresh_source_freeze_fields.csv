@@ -1,0 +1,8 @@
+evidence_id,evidence_lane,source_field,source_value,pass_status,interpretation,galaxy,claim_boundary
+E1_SMOOTH_EDGE_DISK_COMPONENT,smooth_disk_carrier,S4G component decomposition,Z:edgedisk;N:psf,PASS,supports an exponential/smooth disk carrier rather than a compact-core carrier,NGC4013,ngc4013_mixed_overlay_fresh_source_freeze_review_not_endpoint
+E2_DISK_SCALE_PRESENT,smooth_disk_carrier,SPARC/S4G disk scale,Rdisk=3.53 kpc; S4G hr=2.39 kpc,PASS,supports a source-native smooth disk radial carrier,NGC4013,ngc4013_mixed_overlay_fresh_source_freeze_review_not_endpoint
+E3_COMPACT_LANE_REJECTED,anti_compact,compact lane source review,COMPACT_ENDPOINT_NOT_SOURCE_SUPPORTED,PASS,prevents treating the galaxy as pure K_true_compact,NGC4013,ngc4013_mixed_overlay_fresh_source_freeze_review_not_endpoint
+E4_WARP_OVERLAY_PRESENT,overlay,warp/flare/disk-halo pressure,warp_flare_disk_halo_overlay_present,PASS,"supports a source-windowed overlay correction, not a pure smooth disk only",NGC4013,ngc4013_mixed_overlay_fresh_source_freeze_review_not_endpoint
+E5_WARP_ONSET_NUMERIC,overlay,line_of_sight_warp_onset,10.0,PASS,supplies the radial activation window for the overlay component,NGC4013,ngc4013_mixed_overlay_fresh_source_freeze_review_not_endpoint
+E6_VERTICAL_EXTENDED_COMPONENT,overlay,h/R and extended component,h/R=0.232932; f_EC=0.2,PASS,supports the vertical-overlay attenuation amplitude,NGC4013,ngc4013_mixed_overlay_fresh_source_freeze_review_not_endpoint
+E7_LAG_CONTEXT,overlay,rotational lag,lag shallows from -35 km/s/kpc at 5.8 kpc to zero near R25,PASS_CAVEATED,"supports the overlay kernel, but figure-level digitization would strengthen it",NGC4013,ngc4013_mixed_overlay_fresh_source_freeze_review_not_endpoint

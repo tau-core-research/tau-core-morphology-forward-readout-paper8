@@ -1,0 +1,4 @@
+galaxy,radial_zone,n_points,r_min_kpc,r_max_kpc,mean_kernel_ramp,split_b2_rmse_km_s,projection_rmse_km_s,tpg_v6_rmse_km_s,newtonian_rmse_km_s,split_b2_mean_bias_km_s,claim_boundary
+NGC5907,inner_inactive_ramp,4,5.03,12.58,0.0,76.50886607124698,32.51595369658329,32.51595369658329,76.50886607124698,-76.2068679612851,ngc5907_split_b2_failure_mode_audit_not_formula_tuning
+NGC5907,source_warp_window,4,15.1,22.65,0.5207943925233645,39.79992162404936,3.2010344436762592,4.765168178235264,74.24572091045798,-36.43112449287344,ngc5907_split_b2_failure_mode_audit_not_formula_tuning
+NGC5907,beyond_source_window,11,25.16,50.33,2.284621920135939,62.8804234329085,5.150340624812667,9.69225217145713,93.7332777272411,53.18419567891872,ngc5907_split_b2_failure_mode_audit_not_formula_tuning

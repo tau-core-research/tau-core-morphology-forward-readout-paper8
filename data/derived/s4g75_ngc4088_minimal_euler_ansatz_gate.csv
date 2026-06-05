@@ -1,0 +1,8 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,E1_DIMENSIONAL_TARGET_VALID,PASS,lambda_w and sigma q x_w Vflat^2 both carry km^2/s^2,none at dimensional level,False,False,s4g75_ngc4088_minimal_euler_ansatz_gate_not_endpoint
+NGC4088,E2_STATIONARITY_ALGEBRA,PASS,dJ/dlambda_w=0 gives lambda_w=sigma q x_w Vflat^2 for kappa_lambda != 0,none for the conditional ansatz algebra,False,False,s4g75_ngc4088_minimal_euler_ansatz_gate_not_endpoint
+NGC4088,E3_CONVEXITY,FORMULA_CONDITIONAL,kappa_lambda > 0 would make the target stationary point a minimum,derive positive kappa_lambda from Tau-side closure geometry,False,False,s4g75_ngc4088_minimal_euler_ansatz_gate_not_endpoint
+NGC4088,E4_TARGET_TERM_TAU_ORIGIN,BLOCKED,the quadratic target is chosen to encode the selected scale,"derive the target term from Tau-side morphology/readout, not by reverse engineering",False,False,s4g75_ngc4088_minimal_euler_ansatz_gate_not_endpoint
+NGC4088,E5_WEIGHT_OR_STIFFNESS_DERIVATION,BLOCKED,kappa_lambda is not derived,derive or eliminate the closure stiffness without endpoint residuals,False,False,s4g75_ngc4088_minimal_euler_ansatz_gate_not_endpoint
+NGC4088,E6_NONTRIVIAL_SOURCE_COUPLING,FORMULA_CONDITIONAL,x_w and q_warp enter the target as source-side factors,derive why they enter multiplicatively and linearly,False,False,s4g75_ngc4088_minimal_euler_ansatz_gate_not_endpoint
+NGC4088,E7_ENDPOINT_BLINDNESS,PASS,the ansatz uses constants generated before endpoint scoring,keep endpoint evaluation separate,False,False,s4g75_ngc4088_minimal_euler_ansatz_gate_not_endpoint

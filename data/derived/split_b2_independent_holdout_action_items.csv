@@ -1,0 +1,4 @@
+priority,galaxy,action,details,endpoint_scores_allowed_after_action,next_gate_after_action,claim_boundary
+P0,NGC5907,resolve denominator,SPARC RHI is zero/missing; acquire source-native HI/support radius or predeclare caveated optical-warp support denominator from 13.3-24.0 kpc.,False,split-B2 formula freeze gate if denominator passes,split_b2_independent_holdout_candidate_selector_not_endpoint
+P1,NGC4013,fresh residual-blind source freeze,Has RHI/Vflat but is not a clean split-B2 holdout until exact source fields are re-frozen without using prior mixed endpoint information.,False,secondary analogue freeze gate,split_b2_independent_holdout_candidate_selector_not_endpoint
+P1,NGC4183,source acquisition,Has RHI/Vflat but lacks galaxy-specific warp/history activation fields.,False,source acquisition and preflight gate,split_b2_independent_holdout_candidate_selector_not_endpoint

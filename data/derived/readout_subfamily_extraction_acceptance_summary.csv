@@ -1,0 +1,8 @@
+galaxy,proposed_readout_subfamily,n_extracted,n_source_accepted,n_blocked,n_caveat
+IC2574,K_disturbed_outer_tail,6,5,1,0
+NGC4013,K_true_compact,4,3,0,1
+NGC4088,K_warp_history_coupled,7,1,2,0
+NGC4183,K_expdisk_overlay,1,0,0,1
+NGC5907,K_projection_dominated,5,5,0,0
+NGC7331,K_thick_regular,4,3,0,1
+UGC05716,K_disturbed_outer_tail,3,2,1,0

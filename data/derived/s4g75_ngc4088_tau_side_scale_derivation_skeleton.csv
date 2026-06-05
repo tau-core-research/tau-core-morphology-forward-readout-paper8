@@ -1,0 +1,2 @@
+galaxy,selected_scale_id,conditional_statement,derived_formula_if_all_gates_pass,current_status,claim_boundary
+NGC4088,CURRENT_XW_VFLAT2,"If the Tau-side warp/asymmetry closure readout is local at the source onset, asymptotically carried by the catalog flat-speed scale, autonomous from external closure comparators, and minimal in source factors, then the dimensionful carrier reduces to x_w * Vflat^2.","delta_v2_warp(R;p) = sigma_warp q_warp x_w Vflat^2 C_warp(R/R_HI; x_w, p)",DERIVATION_SKELETON_NOT_PROOF,s4g75_ngc4088_tau_side_scale_derivation_gate_not_endpoint

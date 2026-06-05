@@ -113,11 +113,12 @@ def thick_damped_shape(x: np.ndarray, h_over_rs: np.ndarray) -> np.ndarray:
     """Constant-h damped Fourier-Bessel shell for an exponential thick disk."""
     u = np.linspace(1.0e-4, 80.0, 900)
     base = u / np.power(1.0 + u * u, 1.5)
+    integrate = getattr(np, "trapezoid", np.trapz)
     rows = []
     for xi, hi in zip(x, h_over_rs):
         damping = 1.0 / (1.0 + u * hi)
         integrand = base * special.j1(u * xi) * damping
-        rows.append(0.5 * xi * np.trapezoid(integrand, u))
+        rows.append(0.5 * xi * integrate(integrand, u))
     return np.nan_to_num(np.asarray(rows), nan=0.0, posinf=0.0, neginf=0.0)
 
 

@@ -1,0 +1,4 @@
+galaxy,work_item,missing_field,preferred_source,acceptance_rule,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+NGC7331,W1_EXACT_TRANSFER_FORMULA_FREEZE_GATE,none_at_input_gate,"validated q interval, MOM1 sign context, and conservative epsilon_cross bound",freeze exact-transfer formula without reading vobs or endpoint residuals,False,False,ngc7331_b2_exact_transfer_upgrade_gate_not_endpoint
+NGC7331,W2_INTERVAL_PROPAGATION,point_q_warp_not_selected,CARRY_INTERVAL source-only review response,carry q_warp interval rather than collapsing to a scalar unless a future source theorem selects one observable,False,False,ngc7331_b2_exact_transfer_upgrade_gate_not_endpoint
+NGC7331,W3_ENDPOINT_GATE_AFTER_FREEZE,endpoint_score_not_allowed_yet,future formula-freeze manifest,only a separate endpoint gate may read vobs after the freeze manifest is fixed,False,False,ngc7331_b2_exact_transfer_upgrade_gate_not_endpoint

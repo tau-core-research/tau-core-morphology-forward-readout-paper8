@@ -1,0 +1,2 @@
+galaxy,target_lambda_km2_s2,n_factors,n_gates,n_pass,n_formula_conditional,n_blocked,target_origin_status,law_status,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,8324.015999999998,6,7,3,2,2,SOURCE_FACTORS_AVAILABLE_COUPLING_NOT_DERIVED,TARGET_TERM_NOT_TAU_SIDE_DERIVED,False,False,s4g75_ngc4088_target_functional_origin_gate_not_endpoint

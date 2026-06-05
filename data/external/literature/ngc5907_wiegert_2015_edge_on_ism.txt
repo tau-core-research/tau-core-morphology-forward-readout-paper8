@@ -1,0 +1,2668 @@
+Accepted for publication in AJ
+Preprint typeset using LATEX style emulateapj v. 5/2/11
+
+THE INTERSTELLAR MEDIUM AND STAR FORMATION IN EDGE-ON GALAXIES. II. NGC 4157, 4565,
+AND 5907
+Kijeong Yim1,2 , Tony Wong1 , Rui Xue1 , Richard J. Rand3 , Erik Rosolowsky4 ,
+J. M. van der Hulst2 , Robert Benjamin5 , Eric J. Murphy6,7
+
+arXiv:1408.5905v1 [astro-ph.GA] 25 Aug 2014
+
+Accepted for publication in AJ
+
+ABSTRACT
+We present a study of the vertical structure of the gaseous and stellar disks in a sample of edge-on
+galaxies (NGC 4157, 4565, and 5907) using BIMA/CARMA 12 CO (J = 1 → 0), VLA H I, and Spitzer
+3.6 µm data. In order to take into account projection effects when we measure the disk thickness as a
+function of radius, we first obtain the inclination by modeling the radio data. Using the measurement
+of the disk thicknesses and the derived radial profiles of gas and stars, we estimate the corresponding
+volume densities and vertical velocity dispersions. Both stellar and gas disks have smoothly varying
+scale heights and velocity dispersions, contrary to assumptions of previous studies. Using the velocity
+dispersions, we find that the gravitational instability parameter Q follows a fairly uniform profile with
+radius and is ≥ 1 across the star forming disk. The star formation law has a slope that is significantly
+different from those found in more face-on galaxy studies, both in deprojected and pixel-by-pixel plots.
+Midplane gas pressure based on the varying scale heights and velocity dispersions appears to roughly
+hold a power-law correlation with the midplane volume density ratio.
+Subject headings: galaxies: ISM — galaxies: kinematics and dynamics — galaxies: individual (NGC
+4157, NGC 4565, NGC 5907) — stars: formation
+1. INTRODUCTION
+
+Our understanding of the relationship between star formation and properties of the interstellar medium (ISM), such
+as gas content and interstellar pressure, is still rudimentary. Observational studies (e.g., Kennicutt 1998; Wong & Blitz
+2002; Bigiel et al. 2008) have derived a power-law relationship between the star formation rate and gas surface density
+(ΣSFR ∝ Σgas n ), a relationship referred to as the star formation law or Kennicutt-Schmidt law. Although the relationship is usually expressed in terms of surface density, fundamentally it is the volume density of the gas that should
+be related to star formation (Schmidt 1959; Ferguson et al. 1998; Krumholz et al. 2012).
+In spite of the importance of the volume density, however, most star formation studies have used surface density in
+combination with an assumed constant value of gas scale height since the disk thickness is usually difficult to measure.
+The disk thickness is, however, expected to increase with radius for a nearly isothermal disk and such flaring of the
+gas disk has been measured in recent observations of edge-on galaxies (e.g., O’Brien et al. 2010; Yim et al. 2011). An
+edge-on galaxy provides the most direct measurement of disk thickness, which for the gas disk enables us to derive the
+volume density, a quantity that may be better correlated with star formation rate (SFR) than surface density.
+Elmegreen (1993) derived a theoretical relationship between the molecular gas fraction and the hydrostatic midplane
+pressure. In this model a high intercloud pressure enhances the formation of H2 . Therefore, the pressure is perhaps
+a critical ingredient for describing star formation, which has been demonstrated to proceed primarily from molecular
+gas. More recent studies (e.g., Wong & Blitz 2002; Blitz & Rosolowsky 2004) have established a strong empirical
+correlation between the molecular to atomic gas ratio and the hydrostatic midplane pressure. This pressure is inferred
+by assuming a constant gas velocity dispersion and stellar scale height. However, this assumption may not be valid
+in general. For example, recent studies (e.g., Tamburro et al. 2009; Yim et al. 2011) have found that the gas velocity
+dispersion changes with radius. Therefore, it is important to examine the role of the gas pressure in controlling the
+molecular to atomic gas ratio when radial variations of the velocity dispersions and the scale heights are taken into
+account. Again, edge-on galaxies provide an important laboratory for this study.
+In a previous paper (Yim et al. 2011, hereafter Paper I), we studied the ISM and star formation in the prototypical
+edge-on galaxy NGC 891. In this second paper, we study the vertical structure of three additional edge-on galaxies
+(NGC 4157, 4565, and 5907) to investigate how the ISM properties are related to molecular cloud and star formation.
+We carry out this study using CO imaging from the Berkeley-Illinois-Maryland Association (BIMA) and the Combined
+Array for Research in Millimeter-wave Astronomy (CARMA), H I imaging from the Very Large Array (VLA), and
+IR imaging from the Spitzer Space Telescope. We have selected these galaxies primarily based on (1) availability of
+multi-wavelength data including CO, HI, and IR (3.6 and 24 µm), (2) high inclination (i > 80◦ ), (3) presence of strong
+CO emission, and (4) active star formation as measured at 60 µm by IRAS. The properties of the three galaxies are
+shown in Table 1. Note that we do not use the inclinations shown in Table 1, but obtain inclinations by modeling in
+1 Department of Astronomy, University of Illinois, 1002 West Green Street, Urbana, IL 61801, USA; k.yim@astro.rug.nl
+2 Kapteyn Astronomical Institute, University of Groningen, P.O. Box 800, 9700 AV Groningen, The Netherlands
+3 Department of Physics and Astronomy, University of New Mexico, 1919 Lomas Blvd NE, Albuquerque, NM 87131-1156, USA
+4 University of British Columbia Okanagan, 3333 University Way, Kelowna, BC V1V 1V7, Canada
+5 Department of Physics, University of Wisconsin-Whitewater, 800 West Main Street, Whitewater, WI 53190, USA
+6 Observatories of the Carnegie Institution for Science, 813 Santa Barbara Street, Pasadena, CA 91101, USA
+7 Infrared Processing and Analysis Center, California Institute of Technology, MC 220-6, Pasadena CA, 91125, USA
+
+2
+TABLE 1
+Galaxy Properties
+Galaxy
+
+R.A.
+
+Decl.
+(J2000)
+
+(1)
+NGC 4157
+NGC 4565
+NGC 5907
+
+(2)
+12 11 04.34
+12 36 29.18
+15 15 53.55
+
+(3)
+50 29 06.32
+25 55 27.23
+56 19 43.00
+
+D25
+(′ )
+(4)
+6.73
+16.72
+12.60
+
+PA
+(◦ )
+(5)
+63
+135
+115
+
+Distance
+(Mpc)
+(6)
+12.9
+9.7
+11.0
+
+Inclination
+(◦ )
+(7)
+82
+87.5
+86.5
+
+Vsys
+(km s−1 )
+(8)
+770
+1230
+670
+
+K
+mag
+(9)
+7.363
+6.060
+6.757
+
+Note. — Column (2) and (3) are the galaxy centers used in this study. Column (4) is the optical diameter in arcminutes and the
+references for NGC 4157, 4565, and 5907 are Verheijen & Sancisi (2001), Rupen (1991), and Laine et al. (2010), respectively. Column (5)
+is the position angle obtained from the 3.6 µm image using the MIRIAD task IMFIT. Column (6) is the distance from the literature:
+Irwin et al. (1999) for NGC 4157, Dahlem et al. (2005) for NGC 4565, and Just et al. (2006) for NGC 5907. Column (7) is the inclination
+from the literature: Verheijen & Sancisi (2001) for NGC 4157, Zschaechner et al. (2012) for NGC 4565, and Garcia-Burillo et al. 1997
+for NGC 5907. Column (8) is the heliocentric systemic velocity adopted in this paper. Column (9) is the Ks -band magnitude from the
+SIMBAD database.
+
+TABLE 2
+CO and H I Observing Parameters
+Galaxy
+Telescope
+Array
+θ (′′ )
+∆v (km s−1 )
+Total Flux (Jy km s−1 )
+Channel Noise (K)
+Velocity Range (km s−1 )
+Circular Beam
+
+NGC 4157
+CO
+HI
+BIMA
+VLA
+BCD
+CD
+3.84×3.30
+15.69×14.87
+10
+20
+1280
+110
+0.23
+0.67
+550–990
+550–990
+4′′ (250 pc)
+15.7′′ (981 pc)
+
+NGC 4565
+CO
+HI
+BIMA & CARMA
+VLA
+CD & CD
+BCD
+3.6×2.95
+6.26×5.59
+10
+20
+1030
+274
+0.16
+2.73
+960–1490
+970–1490
+3.7′′ (174 pc)
+6.3′′ (296 pc)
+
+NGC 5907
+CO
+HI
+BIMA & CARMA
+VLA
+CD & CD
+CD
+3.48×2.76
+15.43×13.84
+10
+20
+1530
+259
+0.15
+0.81
+420–920
+410–910
+3.6′′ (190 pc)
+15.5′′ (821 pc)
+
+Note. — θ is the angular resolution. ∆v is the velocity resolution. The original beam has been convolved to a circular beam for the analysis in Section 4.1.
+
+Section 4.1.
+The organization of this paper is as follows. We summarize the observations and the reduction of CO, H I, and IR
+data in Section 2 and show the radial distribution of ΣH2 , ΣHI , Σ∗ , and ΣSFR in Section 3. We measure the inclinations
+of the less edge-on galaxies (NGC 4157, 4565, and 5907) and scale heights of the gas and stars and derive the vertical
+velocity dispersions in Section 4. We examine the Kennicutt-Schmidt law and the role of the instability parameter
+Q using our sample of galaxies in Section 5. We investigate and discuss the relationship between the molecular to
+atomic gas ratio and the interstellar gas pressure when the scale heights and the velocity dispersions vary with radius
+in Section 6. Finally, our results are summarized in Section 7.
+2. OBSERVATIONS AND DATA REDUCTION
+2.1. CO Observations
+12
+
+The BIMA CO (J = 1 → 0) observations were taken in 2004 toward the edge-on galaxies NGC 4157 (in B, C, and
+D congurations), NGC 4565 (C and D), and NGC 5907 (C and D) with a 5 field mosaic oriented along the major
+axis with a 50′′ separation between the primary beam centers. In 2010 and 2011, we observed NGC 4565 and 5907
+using CARMA (in C and D configurations) in order to obtain higher angular resolution. The CARMA observations
+are mosaics of 11 pointings toward NGC 4565 and 13 pointings toward NGC 5907 with a half beam spacing of 30′′ .
+The median baseline lengths are roughly 278 m (B), 93 m (C), and 40 m (D) for BIMA and 278 m (C) and 111 m (D)
+for CARMA. The instruments and configurations used are summarized in Table 2. All the CO data were calibrated
+and imaged using the MIRIAD package. The calibration for each track involved use of MFCAL for bandpass and
+gain calibration and the BOOTFLUX task for flux calibration. For NGC 4565 and 5907, we combined the separately
+calibrated BIMA and CARMA data using the MIRIAD task INVERT. All the CO images were produced using natural
+weighting to achieve the highest possible sensitivity.
+The CO integrated intensity maps of NGC 4157, 4565, and 5907 are shown in Figure 1. Throughout this paper, we
+use x for the coordinate along the major axis (line of nodes), y for the coordinate perpendicular to x in the galaxy
+plane, and z for the coordinate perpendicular to the galaxy plane. The coordinate along the apparent minor axis is
+actually a combination of y and z (if not exactly edge-on), so we refer to it as the “minor axis offset”. The angular
+and velocity resolutions, total CO flux in Jy km s−1 , and the RMS noise per channel in K are presented in Table
+2. For the total flux, we used a masked integrated intensity map derived from a gain corrected image cube, limited
+to the region where the map noise is less than twice its minimum (central) value. The masked map is obtained by
+blanking regions below a 3σ threshold in a smoothed cube. We used a noise-flattened map convolved to 10′′ for the
+smoothed cube, where the noise-flattened map is the original cube divided by the normalized sensitivity image. The
+average RMS noise is obtained from line-free edge channels of the gain corrected cube. Each map is rotated to place
+the blue-shifted side of the disk (lower velocities than Vsys ) on the negative x-axis.
+2.2. H I Observations
+
+We have obtained H I data of the galaxies from the NRAO VLA archive. The array configurations are C and
+D for NGC 4157 and 5907 and B, C, and D for NGC 4565. A data reduction pipeline implemented in the CASA
+
+3
+
+Fig. 1.— CO integrated intensity maps of NGC 4157 (top), NGC 4565 (middle), and NGC 5907 (bottom). Contour levels are 26 × 1.4n
+K km s−1 , with n=0, 1, 2, 3. The synthesized beam is shown in the lower right corner of each box.
+
+(Common Astronomy Software Applications) software package (McMullin et al. 2007) was built for reprocessing the
+whole dataset in a uniform procedure, which we describe below.
+For the data taken from each individual track, flagging of shadowed data was automatically performed first. Edge
+channels in each spectral window were also automatically flagged, if a test bandpass calibration showed their solution
+amplitudes falling below 0.75. Any additional bad visibilities from either interference or instrumental problems were
+located and examined using tasks PLOTMS and VIEWER, and flagged using FLAGCMD with mode = ‘manualflag’ or
+‘quack’. Then the flux calibrator visibility model was set using SETJY, and we computed the bandpass and flux-scaled
+gain tables from the primary and secondary calibrator data, using tasks BANDPASS, GAINCAL, and FLUXSCALE.
+Those solution tables were later applied to the data with the task APPLYCAL.
+For the calibrated visibilities of each track, we usually performed a continuum subtraction in uv-space using task
+UVCONTSUB. A first order polynomial fit was used to estimate the continuum emission from line-free channels. Then
+the data from different tracks were combined using task CONCAT, and we imaged and cleaned the spectral data cubes
+using the CASA task CLEAN, with the ROBUST weighting algorithm (the ROBUST parameter was set to R = 0.5).
+The clean depth went to a brightness level of 2.5 times the RMS derived from the line free channels of a dirty cube.
+Figure 2 shows the H I integrated intensity maps of NGC 4157, 4565, and 5907. The observing parameters including
+the angular and velocity resolutions are shown in Table 2. The total flux in units of Jy km s−1 has been obtained
+from integration of the masked cube, where the mask was constructed from the 3σ contour of a cube smoothed to
+20′′ . The average RMS noise is measured in the line-free edge channels of the original cube. The strong warp of NGC
+5907 noted in previous studies (e.g., Sancisi 1976) is evident. In addition, slight HI warps are shown in the other two
+galaxies (NGC 4157 and 4565). However, we do not see any evidence for warps in non-H I data for all three galaxies.
+2.3. IR Observations
+The IR data (IRAC 3.6 µm and MIPS 24 µm) were obtained from the Spitzer archive: Program ID 69 (PI: G.
+Fazio) for both 3.6 µm and 24 µm images of NGC 4157, Program ID 3 (PI: G. Fazio) for 3.6µm images of NGC 4565
+and 5907, and Program ID 20268 (PI: R. de Jong) for 24 µm images of NGC 4565 and 5907. We have downloaded
+the basic calibrated data (BCD) and used MOPEX (Mosaicking and Point Source Extraction) to remove background
+variations in the BCD images and mosaic the images. In the case of 24 µm, we have removed a residual flat field in
+the BCD data before background matching and mosaicking. In addition, we have downloaded 3.6 µm images along
+with the supplied masks from the S4 G archive (Sheth et al. 2010) and masked out the stars on the images for stellar
+modeling in Section 4.2.2.
+The reduced 3.6 µm and 24 µm images of NGC 4157, 4565, and 5907 are shown in Figure 3 and Figure 4, respectively.
+
+4
+
+Fig. 2.— H I integrated intensity maps of NGC 4157 (top), NGC 4565 (middle), and NGC 5907 (bottom). Contour levels are 460 × 1.9n
+K km s−1 , with n=0, 1, 2, 3 for NGC 4157 and NGC 5907 and 3400 × 1.4n K km s−1 , with n=0, 1, 2, 3 for NGC 4565. The synthesized
+beam is shown in the lower right corner of each box.
+
+The ring seen in the CO map of NGC 4565 is clearly shown in the 24 µm image. In the 3.6 µm images, bright stars
+located nearby or projected against the galaxies are blanked and replaced by values from neighboring pixels using
+the Groningen Image Processing System (GIPSY; van der Hulst et al. 1992) tasks BLOT and PATCH before deriving
+their radial distributions.
+3. RADIAL SURFACE DENSITY DISTRIBUTIONS
+3.1. Molecular and Atomic Gas
+
+In order to derive the radial profile of gas surface density, we employ the position-velocity diagram (PVD) method
+from Paper I using vertically integrated position-velocity (p-v) diagrams (Figure 5, 6, and 7) and assuming circular
+rotation with a flat rotation curve (ignoring the rapidly rising velocity in the central region). The vertical integration
+for the p-v diagram extends between 10′′ above and below the midplane for CO and ± 50′′ for H I. The central region
+in the p-v diagrams (defined as a solid box in the figures), where contributions from many different radii overlap, is
+excluded when deriving the radial profile. At each pixel in the position-velocity diagram, the radius is obtained using
+the position (x), the assumed circular speed (Vc ) and the radial velocity (VR ):
+
+
+x
+with |VR − Vsys | < Vc ,
+(1)
+R = Vc
+VR − Vsys
+where the angle brackets indicate the mean value of x/(VR − Vsys ) within the pixel (see Paper I for more details) and
+the assumed circular speed is 220, 250, 240 km s−1 (indicated as a dashed line in Fig. 5–7) for NGC 4157, 4565, and
+5907, respectively. The circular speed is obtained based on the maximum value of the rotation curve (Figure 8) that
+we derived using the envelope tracing method (Sofue 1996), which is based on a position-velocity diagram along the
+midplane. In this method, the projected rotation curve (Vproj ) is derived from the terminal velocity (Vt ) at each x
+offset, considering the observational velocity resolution (σobs ) and the gas velocity dispersion (σg ):
+q
+2 + σ2 ,
+(2)
+Vproj = Vt − σobs
+g
+
+where the terminal velocity is selected as the highest velocity where the intensity exceeds the 3σ level. The velocity
+resolutions for our observations are 10 km s−1 for CO data and 20 km s−1 for HI data and the assumed velocity
+dispersion is 8 km s−1 . Based on the correction term with σobs and σg , we adopt an uncertainty for the rotation curve
+
+5
+
+Fig. 3.— Spitzer 3.6 µm images of NGC 4157 (top), NGC 4565 (middle), and NGC 5907 (bottom). Contour levels are 0.4 × 2.6n MJy
+sr−1 , with n=0, 1, 2, 3, 4.
+
+of 13 km s−1 for CO and ∼22 km s−1 for HI. The derived surface brightnesses of CO and H I by the PVD method
+(more details in Section 4.1 of Paper I) are converted to surface mass densities using the conversion factors shown in
+Equation (3) for CO (Strong & Mattox 1996; Dame et al. 2001) and Equation (4) for H I:
+N (H2 ) [cm−2 ] = 2 × 1020 ICO [K km s−1 ].
+
+N (H I) [cm−2 ] = 1.82 × 1018 IHI [K km s−1 ].
+
+(3)
+(4)
+
+The derived radial profiles of ΣHI , ΣH2 , and the total gas (ΣHI + ΣH2 ) are shown in Figure 9. The average value of
+both sides of the disk is used as the surface density profile in the figure and a factor of 1.36 for helium is included
+in the surface densities. For comparison between the molecular and atomic gas and to combine the two components
+for the total gas, the CO map has been convolved to the resolution of the H I map. Vertical error bars show the
+standard deviation of the average value (of all data points) in a bin and horizontal error bars represent an uncertainty
+in the radius, showing obtainable maximum and minimum radii derived from varying x and VR by the angular and
+the velocity resolutions. Some data points in the inner region of NGC 4565 are omitted since they are below the
+3σ detection threshold, which is obtained using the RMS noise in the p-v diagram. NGC 4565 shows a ring-like
+morphology as noticed in the CO map; NGC 4157 and 5907 exhibit small, centrally concentrated CO disks.
+For comparison purposes, we also plot the radial profile of ΣH2 obtained from the GIPSY task RADPROF (see
+Section 3.2 for details) as a magenta line in Figure 9. The RADPROF profile is in good agreement with the PVD
+profile of ΣH2 , although NGC 4565 exhibits differences between them in the central region, where CO emission is
+deficient and the uncertainties of the PVD profile are large. As discussed in Paper I, RADPROF is also subject to
+larger errors in the central region due to emission from outer radii seen in projection. In addition, it is unable to
+reproduce sharp gradients in the radial profile, such as those caused by gaps or rings.
+3.2. Stars and Star Formation Rate
+
+We have used the RADPROF task to obtain radial distributions of the stellar and SFR surface densities since the
+IR data lack velocity information. The RADPROF task uses an Abel inversion technique which assumes axisymmetry
+and requires a strip integral for each side of a galaxy, along with position angle, inclination (the values in Table 1 are
+used), beam size, and an initial function for the radial profile which we assume to be exponentially decreasing for the
+3.6 µm and a Gaussian function for the 24 µm data. Before employing the RADPROF task, all maps are smoothed to
+the lowest resolution among the dataset. For better accuracy in comparison between SFR and gas, the 24 µm maps
+were first convolved to a Gaussian beam of 7′′ using the IDL code and the kernel provided by Aniano et al. (2011)
+
+6
+
+Fig. 4.— Spitzer 24 µm images of NGC 4157 (top), NGC 4565 (middle), and NGC 5907 (bottom). Contour levels are 0.6 × 2.1n MJy
+sr−1 , with n=0, 1, 2, 3, 4.
+
+and then convolved to the HI beam except for NGC 4565. Since the HI beam size of NGC 4565 is less than 7′′ , other
+maps are convolved to the 24 µm Gaussian beam.
+The derived 3.6 µm radial profile from RADPROF is converted to stellar mass density using a conversion factor
+empirically derived by Leroy et al. (2008):
+Σ∗ [M⊙ pc−2 ] = 280 (cos i) I3.6 [MJy sr−1 ],
+
+(5)
+
+where the inclination i is zero since the 3.6 µm intensity (I3.6 ) obtained from RADPROF is the face-on surface density.
+The assumed mass-to-light ratio (K band) for the conversion factor is 0.5 and the uncertainty quoted by Leroy et al.
+(2008) is about 0.1 – 0.2 dex depending on galaxy color. The stellar radial distributions from RADPROF are shown
+as a blue line in Figure 10.
+In order to estimate the effect of extinction on the stellar surface density, we have estimated the extinction at 3.6
+µm from the ratio of gas column density NH to color excess E(B − V ) given by Bohlin et al. (1978) and the ratio of
+the extinction AV to E(B − V ) ∼ 3.1 (Rieke & Lebofsky 1985):
+NH
+≈ 1.87 × 1021 atoms cm−2 mag−1 .
+AV
+
+(6)
+
+Using the ratios A3.6 /AK = 0.56 (Indebetouw et al. 2005) and AK /AV = 0.112 (Rieke & Lebofsky 1985), the dust
+extinction at 3.6 µm is
+A3.6 ≈ 3.35 × 10−23 NH mag.
+(7)
+Using the combined map of CO and HI as a proxy for gas column density, we have obtained an extinction corrected
+map and derived a radial profile from the map. The largest extinctions we measured through the midplane are ∼1 mag
+for all the galaxies. By comparing the radial profile (Figure 10) with the extinction corrected profile, we noticed that
+the differences between two profiles are a factor of ∼2 in the central regions for all the galaxies. In the outer regions,
+the difference is almost negligible. Note that the extinction correction is not applied to the stellar profile (Figure 10).
+In addition to the RADPROF-derived stellar density profile, we also plot a fitted exponential disk model (red
+dashed line in the figure). The disk model we use is a self-gravitating and isothermal disk model provided by
+van der Kruit & Searle (1981):
+ 
+z
+,
+(8)
+L(R, z) = L0 e−R/l sech2
+z∗
+
+7
+
+Fig. 5.— Vertically integrated position-velocity diagrams of NGC 4157 CO (top) and H I (bottom). CO contours are 3.0 × 1.7n K arcsec,
+with n=0, 1, 2, 3. H I contour levels are 93.0 × 2.1n K arcsec, with n=0, 1, 2, 3, 4. CO contours (red) are overlaid on H I contours
+(blue). The dashed lines show the assumed circular speed (220 km s−1 ) used to derive the radial profile using the PVD method. The box
+represents the excluded region in the PVD method.
+
+where L0 is the space luminosity density at the center and l is the scale length. The vertically integrated luminosity
+density L(R) is converted to the mass density using Equation 5. For fitting, we use the projected intensity distribution
+for an edge-on galaxy, obtained by integrating the disk model:
+ 
+x
+x
+z
+K1
+sech2
+,
+(9)
+µ(x, z) = µ(0, 0)
+l
+l
+z∗
+
+where µ(0, 0) = 2lL0 and K1 is the modified Bessel function of the second kind of order 1. When fitting to the 3.6 µm
+maps, the central regions (including the stellar bulge) are excluded: |x| < 10′′ for NGC 4157, |x| < 80′′ for NGC 4565,
+and |x| < 30′′ for NGC 5907. The scale lengths obtained by fitting Equation 9 are ∼32′′ or ∼2 kpc (NGC 4157), ∼85′′
+or ∼4 kpc (NGC 4565), and ∼57′′ or ∼3 kpc (NGC 5907). The scale heights (z∗ ) are ∼12′′ or ∼780 pc (NGC 4157),
+∼14′′ or ∼640 pc (NGC 4565), and ∼13′′ or ∼670 pc (NGC 5907). The vertical error bar in the lower left corner
+represents the uncertainty of the radial profile and is obtained from the largest difference between the RADPROF
+and the disk model profiles: 0.25 dex (NGC 4157), 0.10 dex (NGC 4565), and 0.19 dex (NGC 5907). Note that the
+excluded central regions are not considered when finding the largest difference for the uncertainty estimate.
+The SFR surface density is determined from the Spitzer 24 µm image by adopting the calibration given by
+Calzetti et al. (2007):
+
+0.8104
+S24µm
+ΣSFR
+−35
+=
+1.56
+×
+10
+,
+(10)
+M⊙ yr−1 kpc−2
+erg s−1 kpc−2
+where
+
+S24µm
+= 1.5 × 1040
+erg s−1 kpc−2
+
+
+
+I24
+MJy sr−1
+
+and I24 is the SFR (24 µm) surface brightness derived from RADPROF.
+
+
+
+,
+
+(11)
+
+8
+
+Fig. 6.— Vertically integrated position-velocity diagrams of NGC 4565 CO (top) and H I (bottom). CO contours are 2.2 × 1.7n K arcsec,
+with n=0, 1, 2, 3. H I contour levels are 450.0 × 1.6n K arcsec, with n=0, 1, 2, 3, 4. CO contours (red) are overlaid on H I contours
+(blue). The dashed lines show the assumed circular speed (250 km s−1 ) used to derive the radial profile using the PVD method. The box
+represents the excluded region in the PVD method.
+
+Figure 11 shows the SFR radial profiles of the galaxies. The error bar, showing a factor of 2 uncertainty, is based
+on the largest difference between radial profiles from two different methods (RADPROF and ELLINT) for several
+face-on galaxies (observed by Spitzer at 24 µm) as described in Paper I. Before deriving the SFR radial profile of
+NGC 4565, the central compact source (possibly an AGN; Laine et al. 2010) in the 24 µm map has been removed
+using the GIPSY tasks BLOT and PATCH. The star formation rate in these galaxies seems relatively low compared
+to the SFR in NGC 891 (Paper I). Dumke et al. (1997) also found that NGC 4565 and 5907 show lower star formation
+than NGC 891. The far-infrared luminosity at 40–400 µm by IRAS (often used as a tracer for SFR) is 10.18, 10.03,
+9.61, 9.80 in log10 (L/L⊙ ) for NGC 891, 4157, 4565, and 5907, respectively (Sanders et al. 2003).
+4. RADIAL VARIATION IN VERTICAL STRUCTURE
+4.1. Inclination and Gas Disk Thickness
+
+Unlike NGC 891, whose inclination is known to be > 89◦ (Oosterloo et al. 2007), the other galaxies in our sample
+(NGC 4157, 4565, and 5907) appear less inclined. Since the inclination affects the apparent disk thickness, it is
+important to determine the inclination of the galaxies in order to obtain correct values for the scale height and the
+velocity dispersion.
+We have derived inclinations and scale heights of these less edge-on galaxies via Olling’s method (Olling 1996) which
+is described in detail in Appendix A. The derived inclinations with radius are shown in Figure 12 as blue solid and
+red open circles for CO and green solid and magenta open triangles for H I. Different colors indicate different halves
+of the galaxy. We show a weighted mean value of the inclination points as dotted (CO) and dashed (H I) lines and
+adopt a representative value of i = 86.5◦ for NGC 4565 and i = 86◦ for NGC 5907 since their mean CO and H I values
+are very close. However, in the case of NGC 4157, the CO (84◦ ) and H I (83◦ ) values show a difference, so we adopt
+the CO inclination value since the H I derived value may be affected by the outer warp. Even though there is the
+1◦ difference between CO and H I inclinations in NGC 4157, the values match well in the region where both tracers
+can be analyzed. We also note that the rotation curves of CO and H I in this galaxy show a mismatch (especially
+
+9
+
+Fig. 7.— Vertically integrated position-velocity diagrams of NGC 5907 CO (top) and H I (bottom). CO contours are 2.2 × 1.7n K arcsec,
+with n=0, 1, 2, 3. H I contour levels are 96.0 × 2.1n K arcsec, with n=0, 1, 2, 3, 4. CO contours (red) are overlaid on H I contours
+(blue). The dashed lines show the assumed circular speed (240 km s−1 ) used to derive the radial profile using the PVD method. The box
+represents the excluded region in the PVD method.
+
+in the region of 30′′ –70′′ ) unlike the other galaxies. Since the inclinations are determined using the distance yoff (see
+Appendix A) which depends on the velocity field map, the mismatch between the rotation curves may contribute to
+the differences between the inclinations derived from CO and H I.
+The measured scale heights (see Appendix A) considering the projection effects for the less edge-on galaxies are
+shown in Figure 13. We use the Gaussian width (0.42 × FWHM) for the scale height. The scale heights for NGC 891
+presented in Paper I have been included in this figure for comparison purposes. The lines show the linear least-squares
+fits to the data points and we use the best fit line to derive the radial variation in the volume density and velocity
+dispersion in Section 4.4 and 4.5. For the inner and outer regions where no data points are available, we assume a
+constant scale height within the innermost measured point when deriving the total midplane density and the total gas
+dispersion for the gravitational instability parameter Q (Section 5.2) and the interstellar pressure (Section 6).
+The thickness of the gas disk may be related to the star formation activity (Dumke et al. 1997, and references
+therein). From comparison between the CO disk thickness and the SFR surface density profile (Figure 11), we notice
+that the galaxies with higher SFR (NGC 891 and NGC 4157) show a thicker CO disk. In order to investigate the
+relationship between the CO disk thickness and SFR, we plot the average CO scale height as a function of average
+ΣSFR in Figure 14. The average ΣSFR values are obtained by integrating ΣSFR only over the CO disk range (i.e., the
+radial range over which estimates of the CO scale height are available) and normalizing by the disk area. This figure
+suggests a weak correlation between the galaxy-averaged CO disk thickness and the SFR. Within a galaxy, however,
+the two values are anti-correlated, with the CO disk being thicker in the outer galaxy where the SFR is lower.
+4.2. Stellar Disk Thickness
+Visual inspection of the 3.6 µm images does not reveal clear indications of an increase in the scale height with radius.
+This may be due, however, to the rapidly decreasing surface brightness with radius and a viewing angle that is not
+exactly edge-on. We have therefore adopted an iterative approach to modeling the variation in stellar scale height.
+4.2.1. Initial estimates
+
+10
+300
+NGC 4157
+
+Vrot (km/s)
+
+250
+200
+150
+100
+
+HI
+CO
+
+50
+0
+0
+
+50
+
+100
+
+150
+200
+Radius (arcsec)
+
+250
+
+300
+
+300
+NGC 4565
+
+Vrot (km/s)
+
+250
+200
+150
+100
+
+HI
+CO
+
+50
+0
+0
+
+100
+
+200
+300
+Radius (arcsec)
+
+400
+
+300
+NGC 5907
+
+Vrot (km/s)
+
+250
+200
+150
+100
+
+HI
+CO
+
+50
+0
+0
+
+50
+
+100
+
+150
+200
+250
+Radius (arcsec)
+
+300
+
+350
+
+Fig. 8.— Rotation curves obtained from position-velocity diagrams along the midplane. The red circles show the CO rotation curve and
+blue crosses represent the H I rotation velocity.
+
+Olling’s method is not applicable for deriving the stellar scale height due to the lack of velocity information. In
+the case of NGC 891 (Paper I), we assumed a sech2 (z/h∗ ) function to derive the variation of the stellar scale height
+(h∗ ) with radius. The vertical distributions at each radius was obtained by employing RADPROF to obtain radial
+distributions at many different vertical heights. For the less inclined galaxies studied here, however, projection effects
+must be taken into account. As an initial estimate for h∗ (R), we first employ the same RADPROF approach as in
+Paper I, then apply a multiplicative factor of sin i and make a least-squares linear fit to the resulting data points. The
+fitted line is then used to generate an initial disk model.
+4.2.2. Iterative Modeling
+
+In order to derive more accurate stellar scale heights, we generated a series of models in GIPSY task GALMOD,
+fixing the inclination and radial surface density profile to derived values and allowing the scale height to vary for
+different models. We obtained minor axis profiles of the 3.6 µm image and the models at various major axis (x)
+offsets to derive the line-of-sight (LOS) projected scale height by fitting an exponential function to the vertical profiles.
+(An exponential function is what the sech2 function approaches at high z.) The central regions (including bulge) are
+excluded from the fitting. For galaxies except NGC 891, we use the 3.6 µm images from the S4 G archive (Sheth et al.
+2010) in this procedure, and use the accompanying masks to exclude from the fitting any regions contaminated by
+point sources.
+First, we generated an initial model as described in Section 4.2.1. Next, we compared the projected scale heights
+of the model cube and the 3.6 µm map finding the modeled scale height to be an overestimate except for the almost
+edge-on galaxy NGC 891. We then input a new scale height into GALMOD estimated from the comparison between
+
+11
+102
+
+102
+
+102
+NGC 4565
+
+Gas
+H2
+HI
+
+100
+
+NGC 5907
+
+Gas
+H2
+HI
+
+101
+
+Σ (Msun pc−2)
+
+101
+
+Σ (Msun pc−2)
+
+Σ (Msun pc−2)
+
+NGC 4157
+
+100
+
+H2 RADPROF
+100
+
+200
+300
+Radius (arcsec)
+
+100
+
+H2 RADPROF
+
+10−1
+0
+
+101
+
+H2 RADPROF
+
+10−1
+400
+
+Gas
+H2
+HI
+
+10−1
+0
+
+100
+
+200
+300
+Radius (arcsec)
+
+400
+
+0
+
+100
+
+200
+300
+Radius (arcsec)
+
+400
+
+Fig. 9.— Radial distributions of H2 (red open squares), H I (blue open circles), and total gas (solid circles) surface density for NGC 4157
+(lef t), NGC 4565 (middle), and NGC 5907 (right). A factor of 1.36 is included in the surface densities for helium. The magenta line is
+the H2 radial profile obtained from RADPROF.
+
+103
+
+104
+
+Σ∗ (Msun pc−2)
+
+Σ∗ (Msun pc−2)
+
+N4565 3.6 µm
+
+RADPROF
+EXP MODEL
+
+102
+
+101
+
+N5907 3.6 µm
+
+RADPROF
+EXP MODEL
+
+103
+
+104
+
+Σ∗ (Msun pc−2)
+
+N4157 3.6 µm
+104
+
+102
+
+101
+
+1
+100
+
+200
+300
+Radius (arcsec)
+
+400
+
+103
+
+102
+
+101
+
+1
+0
+
+RADPROF
+EXP MODEL
+
+1
+0
+
+100
+
+200
+300
+Radius (arcsec)
+
+400
+
+0
+
+100
+
+200
+300
+Radius (arcsec)
+
+400
+
+Fig. 10.— Stellar surface density as a function of radius for NGC 4157 (lef t), NGC 4565 (middle), and NGC 5907 (right). Spitzer
+3.6 µm images are used to obtain the stellar radial profile. The blue solid line is the radial profile from the task RADPROF and the red
+dashed line shows the exponential disk model. The vertical error bar represents an uncertainty based on the largest difference between the
+RADPROF and the model profiles except the central regions excluded in the exponential fit.
+
+102
+
+102
+
+101
+
+1
+
+10−1
+
+N5907 24 µm
+ΣSFR (Msun Gyr−1 pc−2)
+
+N4565 24 µm
+ΣSFR (Msun Gyr−1 pc−2)
+
+ΣSFR (Msun Gyr−1 pc−2)
+
+N4157 24 µm
+
+102
+
+101
+
+1
+
+10−1
+0
+
+100
+
+200
+300
+Radius (arcsec)
+
+400
+
+101
+
+1
+
+10−1
+0
+
+100
+
+200
+300
+Radius (arcsec)
+
+400
+
+0
+
+100
+
+200
+300
+Radius (arcsec)
+
+400
+
+Fig. 11.— SFR surface density as a function of radius for NGC 4157 (lef t), NGC 4565 (middle), and NGC 5907 (right) obtained from
+Spitzer 24 µm images using the task RADPROF.
+
+12
+90
+HI
+HI
+
+Blue−shifted disk CO
+Red−shifted disk CO
+
+88
+
+Blue−shifted disk CO
+Red−shifted disk CO
+
+HI
+HI
+
+84
+
+Inclination (degree)
+
+86
+
+86
+
+84
+
+82
+
+82
+
+50
+
+100 150 200
+Radius (arcsec)
+
+250
+
+84
+
+NGC 4565
+80
+
+0
+
+86
+
+82
+
+NGC 4157
+80
+
+NGC 5907
+80
+
+0
+
+300
+
+HI
+HI
+
+88
+
+88
+Inclination (degree)
+
+Inclination (degree)
+
+90
+
+90
+Blue−shifted disk CO
+Red−shifted disk CO
+
+100
+
+200
+300
+Radius (arcsec)
+
+400
+
+0
+
+50
+
+100 150 200 250 300 350
+Radius (arcsec)
+
+Fig. 12.— Inclinations as a function of radius for NGC 4157 (Lef t), NGC 4565 (M iddle), and NGC 5907 (Right). The blue solid and
+red open circles show the blue-shifted disk and red-shifted disk of CO, respectively. The green solid and magenta open triangles represent
+the blue and red-shifted disks of H I, respectively. The horizontal dotted and dashed lines represent weighted mean values of the CO and
+H I inclinations, respectively.
+
+TABLE 3
+Parameters from fitting the radial variation of the scale heights
+Galaxy
+
+Adopted i [◦ ]
+
+NGC 891
+NGC 4157
+NGC 4565
+NGC 5907
+
+89
+84
+86.5
+86
+
+Central Value (a) [pc]
+CO
+HI
+Stars
+120±1
+151±5
+161
+89±11 291±11
+150
+33±8
+68±5
+165
+31±8
+284±8
+133
+
+Gradient (b) [pc/kpc]
+CO
+HI
+Stars
+8.3±0.1 11.6±0.5 22.0
+5.0±2.7 22.0±1.1 41.5
+1.1±1.4 20.8±0.4 20.0
+2.7±1.5 13.7±0.6 25.0
+
+the initial model and the data. The new scale height has a much lower central value (about three times lower than the
+original value) and a similar slope. After comparing this second model to the data, we adjusted the parameters for
+the central value and the slope to obtain a subsequent model. This iteration was carried out until the modeled scale
+height reproduces the fit to the data. Following this scheme, we could find a reasonable model within seven trials.
+The stellar scale height could be affected by uncertainties in the radial profile (which goes into the GALMOD
+modeling) so we checked the effects of extinction by starting with an extinction corrected radial profile. The new scale
+height from the extinction corrected density profile is increased by a factor of ∼1.1 for all the galaxies; extinction does
+not appear to have a major effect on the scale height. But we are only considering the effect of extinction on the radial
+profiles, not the vertical profiles. The variation in the LOS-integrated scale heights have been compared with what
+has been observed in other edge-on galaxies given by de Grijs & Peletier (1997); the gradients in our measurements
+are in the range of their sample.
+From a comparison between the initial scale height based on the RADPROF method and the scale height of the
+best model we note the following. For the less edge-on galaxies, the initial central values from the data seem to be
+overestimated by a factor of ∼2–3 compared to the values of the best models. The initial slopes of the scale heights
+are higher by a factor of ∼2 for NGC 4157 and 5907 and ∼3 for NGC 4565 than those of the best model. On the other
+hand, the almost edge-on galaxy NGC 891 shows similar values between the best model and the data. We also verified
+that a constant scale height model produced LOS-integrated scale heights that were in significant disagreement with
+the data. We will use these scale heights obtained by the modeling when deriving the midplane volume density and
+vertical velocity dispersion of stars in the following sections.
+4.3. Summary of Disk Thicknesses
+
+We characterize the radial variation in scale height using a linear function h(R) expressed as:
+h = a + b × R,
+
+(12)
+
+where the intercept (a) and the slope (b) with their uncertainties are summarized in Table 3. For stars, we show the
+parameters used to generate the best model. For ease of presentation, the slope is quoted in pc kpc−1 rather than in
+dimensionless form. Unlike the scale heights of H I, the uncertainties in the slopes of the CO scale heights are very
+large in the three galaxies NGC 4157, 4565, and 5907 and in the case of NGC 4565 the measured gradient is not
+significant. However, most galaxies show increases with radius in the scale heights of CO, H I, and stars.
+4.4. Midplane Volume Densities
+
+13
+
+1000
+
+300
+N891
+N4157
+N4565
+N5907
+
+800
+HI Scale Height (pc)
+
+CO Scale Height (pc)
+
+250
+200
+150
+100
+
+600
+
+400
+
+200
+
+50
+0
+0
+
+0.1
+
+0.2
+
+0.3 0.4 0.5
+Radius/R25
+
+0
+
+0.6
+
+0
+
+0.2
+
+0.4
+
+0.6 0.8
+Radius/R25
+
+1
+
+1.2
+
+1000
+
+300
+N891
+N4157
+N4565
+N5907
+
+N891
+N4157
+N4565
+N5907
+
+800
+HI Scale Height (pc)
+
+250
+CO Scale Height (pc)
+
+N891
+N4157
+N4565
+N5907
+
+200
+150
+100
+
+600
+
+400
+
+200
+
+50
+0
+0
+
+2
+
+4
+
+6
+8
+Radius (kpc)
+
+10
+
+12
+
+0
+0
+
+5
+
+10
+15
+Radius (kpc)
+
+20
+
+Fig. 13.— Top row: scale heights plotted against radius normalized by the optical radius (R25 ) for CO (Lef t) and H I (Right). Bottom
+row: scale heights plotted against radius in units of kpc for CO and H I. The lines show linear approximations obtained by least-squares
+fitting.
+
+Using the derived surface mass densities and the scale heights from the previous sections, we have obtained the
+midplane volume density (ρ0 ) profiles with radius:
+ρ0H2 =
+
+Σ H2
+√ ,
+hH2 2π
+
+ρ0HI =
+
+ΣHI
+√ ,
+hHI 2π
+
+ρ0∗ =
+
+Σ∗
+.
+2h∗
+
+(13)
+
+Here we assume a Gaussian distribution for the gas (H2 and H I) and a sech2 (z/h∗ ) function for stars. The estimated
+volume densities are shown in Figure 15. The uncertainties shown in the figure include errors in the radial profile but
+not in the scale height or the CO-to-H2 conversion factor. A factor of 2 variation in the XCO factor would lead to a
+similar variation in the volume density. This midplane density profile allows us to explore the role that the turbulent
+interstellar pressure (ρ0 σg2 ) plays in controlling the molecular to atomic (volume) gas density ratio, in comparison with
+the relationship between the hydrostatic midplane pressure and the H2 /H I ratio based on surface mass density. In
+addition, the density profile will allow us to investigate the star formation law in terms of volume density instead of
+surface density, although we defer this analysis to the next paper in this series.
+
+14
+
+200
+Average CO Scale Height (pc)
+
+ngc 891
+
+150
+
+ngc 4157
+
+100
+
+50
+
+ngc 5907
+ngc 4565
+
+0
+0
+
+5
+10
+15
+Average ΣSFR (Msun Gyr−1 pc−2)
+
+20
+
+Fig. 14.— Average scale height of CO as a function of average ΣSFR . The name of each galaxy is indicated next to its point. The vertical
+error bars are the standard deviation of the mean.
+
+101
+
+101
+Stars
+H2
+HI
+
+0
+
+10
+ρ0 (Msun pc−3)
+
+ρ0 (Msun pc−3)
+
+10
+
+10−1
+
+10−2
+
+10−3
+
+101
+NGC 4565
+
+0
+
+10−1
+
+10−2
+
+10−3
+
+10−4
+50
+
+100
+150
+Radius (arcsec)
+
+200
+
+0
+
+10
+
+Stars
+H2
+HI
+
+10−1
+
+10−2
+
+10−3
+
+10−4
+0
+
+NGC 5907
+
+Stars
+H2
+HI
+ρ0 (Msun pc−3)
+
+NGC 4157
+
+10−4
+0
+
+50
+
+100
+150
+Radius (arcsec)
+
+200
+
+0
+
+50
+
+100
+150
+Radius (arcsec)
+
+200
+
+Fig. 15.— Midplane volume densities of H2 (red open circles), H I (blue solid circles), and stars (green asterisks) as a function of radius.
+
+4.5. Vertical Velocity Dispersion
+
+Since it is not easy to measure a gaseous vertical velocity dispersion directly, some earlier studies had suggested
+fairly constant values (Combes & Becquaert 1997; Petric & Rupen 2007) . As an alternative, we have inferred the
+velocity dispersions as a function of radius using a numerical solution to the Poisson equation for a multi-component
+disk (Narayan & Jog 2002):
+σi2 =
+
+4πGρ0,tot ρ0i
+,
+−(d2 ρi /dz 2 )z=0
+
+(14)
+
+where the subscript i can refer to either g (gas) or ∗ (stars),
+d2 ρg /dz 2 = −ρ0g /h2g ,
+
+d2 ρ∗ /dz 2 = −2ρ0∗ /h2∗
+
+at z = 0,
+
+(15)
+
+15
+
+10
+
+1
+
+100
+N891
+N4157
+N4565
+N5907
+
+10
+
+Stellar Velocity Dispersion (km s−1)
+
+100
+N891
+N4157
+N4565
+N5907
+
+HI Velocity Dispersion (km s−1)
+
+CO Velocity Dispersion (km s−1)
+
+100
+
+1
+0
+
+0.1
+
+0.2
+
+0.3 0.4 0.5
+Radius/R25
+
+0.6
+
+N891
+N4157
+N4565
+N5907
+
+10
+
+1
+0
+
+0.2
+
+0.4
+
+0.6 0.8
+Radius/R25
+
+1
+
+1.2
+
+0
+
+0.2 0.4 0.6 0.8 1
+Radius/R25
+
+1.2 1.4
+
+Fig. 16.— Vertical velocity dispersions against radius normalized by the optical radius (R25 ) for CO (Lef t), H I (M iddle), and stars
+(Right).
+
+⇒ σg =
+Here the total midplane density is,
+
+q
+4πGh2g ρ0,tot ,
+
+σ∗ =
+
+q
+2πGh2∗ ρ0,tot .
+
+ρ0,tot = ρ0H2 + ρ0HI + ρ0∗ .
+
+(16)
+(17)
+
+We ignore the dark matter halo under the assumption that the dark matter density in the disk is relatively small
+compared to that of the stars. The boundary conditions we have used are ρi = ρ0i and dρi /dz = 0 at the midplane
+(z = 0).
+The velocity dispersions of CO, H I and stars for the galaxies including NGC 891 are shown in Figure 16. The two
+galaxies NGC 4565 and 5907 show very low values of the CO velocity dispersion compared to the other galaxies. The
+two main reasons for the low velocity dispersions are because of low values in (1) the total midplane density and (2)
+the scale height of CO (see Equation 16). On the other hand, the velocity dispersions of H I and stars show similar
+values (within a factor of ∼2) and trends for all galaxies. Note that when we estimate the midplane total density to
+derive the H I and stellar velocity dispersions, the molecular densities in the regions outside the CO field of view are
+assumed to be zero—a reasonable approximation because these regions are strongly H I dominated (with the possible
+exception of NGC 4565). In general, our results show that the velocity dispersions of CO, H I, and stars decrease as a
+function of radius.
+4.6. TiRiFiC Modeling
+
+In order to verify the derived scale heights and velocity dispersions of the gas, we have built CO and HI models
+of NGC 5907 (as a representative example) using the Tilted Ring Fitting Code (TiRiFiC) (Józsa et al. 2007) and
+compared the models with the data. The main input parameters we used for modeling in TiRiFiC are the derived
+rotation curve, density profile, scale height, velocity dispersion, and inclination. From the comparisons of the midplane
+and z-integrated p-v diagrams and the integrated intensity maps (Figure 17), we confirmed that the gas models match
+the data reasonably well although the model does not include the HI warp. It suggests that the derived CO and H I
+scale heights and velocity dispersions as well as the rotation curves are consistent with the data.
+5. STAR FORMATION
+
+In this section, we examine the Kennicutt-Schmidt (K-S) law (star formation law in terms of surface density) in our
+edge-on galaxy sample and compare the obtained K-S law indices with values from face-on systems found in other
+studies. We also test the role of the gravitational instability parameter Q in determining the region where stars form.
+We are unable to derive volume density estimates for the SFR from the present data so we defer discussion of the
+volumetric star formation law (SFL) to a future study.
+5.1. Kennicutt-Schmidt Law
+In Figure 18, we plot ΣSFR versus ΣH2 (left) and Σgas (right) for our galaxy sample including NGC 891 in order to
+examine the strength of the relationships and compare their slopes. The uncertainties on the SFR and the gas surface
+densities are shown in their radial profiles in Section 3. In addition, about a factor of 2 uncertainty in the CO-to-H2
+conversion factor (e.g., Bolatto et al. 2013) and the 24 µm SFR calibration (e.g., Murphy et al. 2012) are suggested
+by the literature. We use the ordinary least-squares (OLS) bisector (Isobe et al. 1990) to fit the relationships between
+log quantities. The obtained power-law index and RMS scatter (dex) around the fit for all galaxies are presented in
+Table 4. Note that the index of NGC 891 is a bit different from Paper I since we use the OLS bisector instead of
+the least-squares fitting used in Paper I. In addition, the index of NGC 891 for the total gas is much higher (by a
+factor of 2) than the index in Paper I because we use gas data points up to R = 400′′ , instead of 300′′ in Paper I.
+
+16
+
+Fig. 17.— CO position-velocity diagram along the major axis (top) and integrated intensity map of NGC 5907 (bottom). TiRiFiC model
+contours (red) are overlaid on the map contours (blue). Both contour levels are 0.2 × 1.9n K arcsec, with n=0, 1, 2, 3 (top) and 26 × 1.4n
+K km s−1 , with n=0, 1, 2, 3 (bottom).
+
+Our results suggest that the correlation between ΣSFR and ΣH2 is better than the correlation between ΣSFR and Σgas
+when considering the RMS scatter around the relationship. In addition, most individual relations between ΣSFR and
+Σgas appear to show distinct slopes at the low and high ends; this is most noticeable in NGC 4565.
+The most frequently cited relation given by Kennicutt (1998) suggests an index of 1.4: ΣSFR ∝ Σgas 1.4 . Wong & Blitz
+(2002) obtained weighted average indices of 0.78 (molecular gas) and 1.12 (total gas) from seven spiral galaxies.
+Leroy et al. (2005) found an index of 1.3 for the relationship between SFR (traced by the radio continuum) and H2
+in dwarf galaxies. Bigiel et al. (2008) derived average values of 0.96 for H2 and 1.85 for H I + H2 from seven spiral
+galaxies. Bigiel et al. (2008) also obtained a smaller scatter for the molecular gas relation (0.2 dex) than for the
+total gas relation (0.3 dex). The overall tendency towards a steeper index in the correlation between total gas and
+SFR compared to the “molecular star formation law” (ΣSFR ∝ ΣH2 n ) is also shown in our results since the relatively
+constant values in the atomic gas density profile steepen the total gas star formation law (ΣSFR ∝ Σgas n ). However,
+the derived “molecular” SFL indices are generally smaller (0.32–0.91) than found in previous studies, especially in
+NGC 4565 and 5907. Among the reasons for the shallow slopes in our results might be optical depth effects in the
+24 µm emission which decreases the 24 µm brightness in bright regions or contribution from diffuse starlight heating
+which increases the 24 µm brightness in faint regions. As mentioned in Section 3.2, we have explored the opacity
+issue on 3.6 µm and obtained the uncertainty of a factor of 2 by the extinction effects. Since the 24um opacity should
+be less than the 3.6 µm opacity, we expect less than a factor of 2 increase in the central region at the 24 µm radial
+profile. When we applied the uncertainty by the extinction at 3.6 µm to the SFR radial profile, the indices for H2
+are increased by a factor of ∼1.2 (NGC 4157), ∼1.4 (NGC 4565), and ∼1.2 (NGC 5907). Nevertheless, the index of
+NGC 4565 is still smaller, but it is not much unexpected since the CO emission of NGC 4565 is deficient in the central
+regions as shown in the CO map (ring-like morphology) and the gradient of the 24 µm profile is flatter than the others.
+In addition, NGC 4565 has an AGN, which can heat the dust to produce 24 µm even without much star formation.
+Rahman et al. (2011, 2012) have suggested that one possible reason for the flatter slopes in some galaxies among their
+sample might be a greater contribution from diffuse emission to the 24 µm emission. For this to explain the trends we
+
+0.1
+
+G
+yr
+
+0.
+1
+1
+
+G
+
+yr
+
+10
+
+10
+
+yr
+G
+10
+
+1
+
+ΣSFR (Msun pc−2 Gyr−1)
+
+yr
+
+0.
+1
+
+10
+
+G
+
+G
+
+yr
+
+N891: n=1.88
+N4157: n=2.98
+N4565: n=1.42
+N5907: n=3.41
+
+100
+
+1
+
+ΣSFR (Msun pc−2 Gyr−1)
+
+100
+
+G
+
+N891: n=0.91
+N4157: n=0.80
+N4565: n=0.32
+N5907: n=0.59
+
+yr
+
+17
+
+1
+
+0.1
+0.1
+
+1
+10
+(M
+ΣH2 sun pc−2)
+
+100
+
+0.1
+
+1
+10
+(M
+Σgas sun pc−2)
+
+100
+
+Fig. 18.— The relationship between ΣSFR and ΣH2 (lef t) and between ΣSFR and Σgas (right) for NGC 891, 4157, 4565, and 5907. The
+power-law index (Schmidt law index) is indicated in the upper-left corner. The dashed line shows constant SFE, with the gas depletion
+time (1/SFE) labeled.
+
+TABLE 4
+Power-law indices for the star formation law
+Galaxy
+NGC 891
+NGC 4157
+NGC 4565
+NGC 5907
+
+Molecular Gas
+Index RMS scatter
+0.91
+0.19
+0.80
+0.15
+0.32
+0.06
+0.59
+0.08
+
+Total Gas
+Index RMS scatter
+1.88
+0.42
+2.98
+0.25
+1.42
+0.36
+3.41
+0.23
+
+see in NGC 4565 and NGC 5907, they would need to suffer a factor of ∼2 more diffuse 24 µm contamination than the
+other galaxies whose slopes are consistent with that of NGC 4254 without diffuse emission (Rahman et al. 2011).
+In order to check whether the difference between RADPROF (SFR) and PVD (CO) methods is responsible for the
+flatter slope in the SFR vs. molecular gas relation, we can also investigate the relationship between ΣSFR and ΣH2
+on a pixel-by-pixel basis. For the pixel-by-pixel comparison, we use the masked CO intensity maps. Since most of
+the galaxies have very low resolution in H I compared to CO, we do not attempt a pixel-by-pixel comparison between
+ΣSFR and Σgas and focus on the “molecular star formation law” with the CO map convolved to the 24 µm Gaussian
+beam (7′′ ) for NGC 4157, 4565, and 5907. The CO beam of NGC 891 is 7′′ . Using the beam matched maps, we extract
+data on a pixel-by-pixel basis using the MIRIAD task IMCMP. All the extracted data are placed in 0.1 dex bins and
+the number of data points in each bin is mapped to the color scale in Figure 19. The blue solid points in the figures
+show the correlations from the radial profile analysis for comparison purposes. Most of the radial profile points for
+each galaxy follow the mean trends defined by the pixel-by-pixel plot (Fig. 19), but their values are generally lower
+compared to the contours since the projection effect of an edge-on galaxy leads to higher values in the pixel-by-pixel
+method. In particular, NGC 4565 shows much lower values for the radial profiles, due to its ring-like morphology
+leading to lower surface densities, especially in the central region. Note in our pixel-by-pixel analysis, unlike most K-S
+analyses, no deprojection is done.
+The best-fit line in the figures is obtained using the OLS bisector and the fitted power-law index (K-S law index)
+is shown in the upper-left corner of the figure. The obtained indices from the pixel-by-pixel analysis are in the range
+of 0.43 – 0.68 for the molecular star formation law. Those values are similar to the indices from the radial profile
+analysis. This is in contrast to the results of Bigiel et al. (2008) who obtained a power-law index of about unity (shown
+as red dashed line in Fig. 19) for the H2 star formation relation based on a pixel-by-pixel comparison for seven spiral
+galaxies.
+Figure 20 shows the star formation efficiency (SFE) as a function of radius (normalized by R25 ) in terms of total
+gas (SFE = ΣSFR /Σgas ) and the molecular gas (ΣSFR /ΣH2 ). The inverse of this quantity (SFE−1 ) represents the gas
+depletion time. Overall, most galaxies show declining SFE (in terms of total gas) with radius even though fluctuations
+in SFE exist in some galaxies. On the other hand, the molecular SFE in Figure 20 (right) appears to increase with
+radius in some galaxies. That is caused by a steeper drop in the ΣH2 profile compared to that of SFR and this situation
+
+18
+
+Bigiel et al. ------
+
+ΣSFR (Msun kpc−2 yr−1 )
+
+100
+
+180
+
+NGC 891: n=0.63
+
+140
+
+10-1
+
+120
+100
+
+10-2
+
+80
+60
+
+10-3
+
+180
+
+NGC 4157: n=0.68
+Bigiel et al. ------
+
+160
+
+ΣSFR (Msun kpc−2 yr−1 )
+
+100
+
+40
+
+150
+
+10-1
+120
+10-2
+
+90
+40
+
+10-3
+30
+
+20
+
+100
+
+10-1
+
+100
+
+101
+
+ΣH2 (Msun
+
+102
+
+pc−2 )
+
+103
+
+104
+
+100
+
+NGC 4565: n=0.43
+Bigiel et al. ------
+
+ΣSFR (Msun kpc−2 yr−1 )
+
+10-4 -2
+10
+
+0
+
+350
+
+10-1
+
+300
+250
+
+10-2
+
+200
+150
+
+10-3
+
+10-1
+
+100
+
+101
+
+ΣH2 (Msun
+
+102
+
+pc−2 )
+
+103
+
+104
+
+NGC 5907: n=0.52
+Bigiel et al. ------
+
+400
+
+ΣSFR (Msun kpc−2 yr−1 )
+
+10-4 -2
+10
+
+100
+
+350
+
+10-1
+
+300
+250
+
+10-2
+
+200
+150
+
+10-3
+
+100
+50
+
+50
+10-4 -2
+10
+
+10-1
+
+100
+
+101
+
+ΣH2 (Msun
+
+102
+
+pc−2 )
+
+103
+
+104
+
+0
+
+10-4 -2
+10
+
+0
+
+10-1
+
+100
+
+101
+
+ΣH2 (Msun
+
+102
+
+pc−2 )
+
+103
+
+104
+
+0
+
+Fig. 19.— The relationship between ΣSFR and ΣH2 based on a pixel-by-pixel analysis. Color contours represent the numbers of the data
+points in a pixel (0.1 dex by 0.1 dex). The blue poionts show the relationship based on the radial profile shown in Fig. 18 (left). The solid
+line is the best fit to the pixel-by-pixel data using the OLS bisector. The red dashed line shows the “molecular gas” Schmidt law index of
+0.96 based on the pixel-by-pixel analysis of Bigiel et al. (2008).
+
+could be due in part to the 24 µm opacity and diffuse emission issues. Once again this contrasts with previous results
+which find a roughly constant SFE in the molecular gas. Rownd & Young (1999) observed the constancy of SFE in a
+study of the SFE within CO-emitting galaxies. Bigiel et al. (2008) and Leroy et al. (2008) showed a constant SFE in
+the H2 dominated region and decreasing SFE with radius in the H I dominated region.
+5.2. Gravitational Instability
+
+Since both gas and stars can contribute to the gravitational instability of a galactic disk, many proposals have
+been made to evaluate stability using a single parameter Qtot analogous to the Toomre (1964) Q parameter but including the properties of both gaseous and stellar disks (e.g. Jog & Solomon 1984; Rafikov 2001; Romeo & Wiegert
+2011). A link between gravitational instability and star formation has been frequently suggested (Kennicutt 1989;
+Martin & Kennicutt 2001; Li et al. 2005) but has been difficult to confirm observationally (Wong & Blitz 2002;
+Leroy et al. 2008). Recently, Elmegreen (2011) has suggested that Qtot primarily governs the spiral structure on
+large scales and has little direct influence on local collapse leading to star formation. He also suggests that gas dissipation can increase the stability threshold from ∼1 to 2–3 and allow small-scale instability to persist even at large Qtot .
+In order to investigate the relationship between the gravitational instability parameter Q and massive star formation,
+we obtain the parameter Qtot using a modified version (to treat H I and H2 separately) of the equation provided by
+Rafikov (2001), assuming two components of collisional gas and collisionless stars in a thin rotating galactic disk:
+2
+q
+2 1
+q
+2
+2
+1
++
+=
+ΓσHI
+ΓσH2
+[1 − e−q I0 (q 2 )] > 1,
++
+2
+2
+2
+2
+Qtot
+QHI
+1 + q ΓσHI
+Q H2
+1 + q ΓσH2
+Qstar q
+
+(18)
+
+where
+QHI =
+
+κσHI
+,
+πGΣHI
+
+κσH2
+,
+πGΣH2
+ΓσHI = σHI /σ∗,R ,
+Q H2 =
+
+κσ∗,R
+,
+πGΣ∗
+ΓσH2 = σH2 /σ∗,R ,
+Qstar =
+
+(19)
+(20)
+
+19
+
+102
+
+102
+N891
+N4157
+N4565
+N5907
+
+101
+H2 SFE (Gyr−1)
+
+Gas SFE (Gyr−1)
+
+101
+
+N891
+N4157
+N4565
+N5907
+
+100
+
+10−1
+
+100
+
+10−1
+
+10−2
+
+10−2
+0
+
+0.2
+
+0.4
+0.6
+Radius/R25
+
+0.8
+
+1
+
+0
+
+0.2
+
+0.4
+0.6
+Radius/R25
+
+0.8
+
+1
+
+Fig. 20.— Star formation efficiency as a function of radius normalized by R25 in terms of total gas (lef t) and the molecular gas (right)
+for NGC 891, 4157, 4565, and 5907. The representative error bar of the SFE is shown in the upper right corner.
+
+kσ∗,R
+,
+q=
+κ
+
+Vrot
+κ=
+R
+
+s 
+
+
+R dVrot
+2 1+
+.
+Vrot dR
+
+(21)
+
+Here σ∗,R is the stellar velocity dispersion in the radial direction, estimated from the vertical velocity dispersion: σ∗,R =
+σ∗ /0.6 (Bottema 1993). I0 is the Bessel function of zero order, k is the wavenumber (2π/λ), κ is the epicyclic frequency,
+and Vrot is the rotational velocity, obtained using Equation 2 with a correction for the inclination: Vrot = Vproj / sin i.
+Note that Qtot is the minimum among those values we can obtain with a range of λ; usually the selected λ (providing
+the minimum Qtot ) is up to about 4 kpc. In this procedure, we use the inferred vertical velocity dispersion as a function
+of radius (Figure 16) to derive the parameter Qtot shown in the left panel of Figure 21 for the galaxies including NGC
+891 from Paper I. The error bars of Qtot show maximum and minimum values implied by the uncertainties in ΣH2 ,
+ΣHI , and Σ∗ . Since the differences between the maximum and minimum values are very small, the error bars are
+not very noticeable. The unstable condition is Qtot < 1. The results show that most galaxies are marginally stable
+(Q ∼ 1) in most regions, supporting the self-regulation of star formation (e.g., Ostriker et al. 2010; Kim et al. 2011).
+The Qtot value is increasing toward the center, contradicting the general expectation of an unstable central region.
+This tendency is also shown in a study of Leroy et al. (2008) even though they used a constant velocity dispersion for
+gas (11 km s−1 ) and varying velocity dispersion of stars proportional to Σ∗ 0.5 . The increase of Q toward the center
+appears to be due to the epicyclic frequency associated with the steeply rising slope of the rotation curve. It is well
+known that a strong central mass concentration makes Q increase in the central regions; this is called the “Q barrier”
+and is discussed by Sellwood (1985) and others. Generally, the Qtot profiles beyond the central regions are consistent
+with the total gas SFE; Q is rising as the SFE decreases.
+In Figure 21 (top right), we obtain another Qtot profile with the vertical velocity dispersions assumed to be constant (σ∗ = 21 km s−1 and σg = 8 km s−1 ), which is commonly assumed in the literature (e.g., Rafikov 2001;
+Combes & Becquaert 1997). In this regime, two galaxies (NGC 891 and 4157) show unstable regions predicting
+star formation in the inner disk, while the other galaxies (NGC 4565 and 5907) show a marginally stable disk. Considering the relatively low SFR in NGC 4565 and 5907 compared to the SFR in NGC 891 and 4157, the Qtot profile
+with constant velocity dispersions shows a reasonable prediction for the massive star formation. However, the assumed
+constant values are in conflict with the inferred radial variation in the velocity dispersion. The increase toward the
+center is also shown in this profile.
+The different Qtot profiles for constant and varying velocity dispersions show how much the adopted velocity dispersions affect the parameter. The variable velocity dispersions bring the Q vs. R trends into better agreement
+galaxy-to-galaxy. By plotting individual Q profiles for gas and stars in both cases, it appears that Qtot is affected
+mostly by Qstar . The range and values of Qgas are very large compared to Qstar and the profile shape of Qtot follows
+that of Qstar . One can see the individual Q profiles in Paper I (Figure 15) for NGC 891.
+For comparison purposes, we also applied the recent approximation considering realistically thick disks given by
+
+20
+varying σ∗ & σg
+
+constant σ∗ & σg
+
+N891
+N4157
+N4565
+N5907
+
+Qtot
+
+10
+
+Qtot
+
+10
+
+N891
+N4157
+N4565
+N5907
+
+1
+
+1
+
+Rafikov (2001)
+
+Rafikov (2001)
+
+0.1
+
+0.1
+0
+
+0.2
+
+0.4
+0.6
+Radius/R25
+
+0.8
+
+varying σ∗ & σg
+
+1
+
+0
+
+0.4
+0.6
+Radius/R25
+
+constant σ∗ & σg
+
+N891
+N4157
+N4565
+N5907
+
+0.8
+
+1
+
+N891
+N4157
+N4565
+N5907
+
+Qtot
+
+10
+
+Qtot
+
+10
+
+0.2
+
+1
+
+1
+
+Romeo & Wiegert (2011)
+
+Romeo & Wiegert (2011)
+
+0.1
+
+0.1
+0
+
+0.2
+
+0.4
+0.6
+Radius/R25
+
+0.8
+
+1
+
+0
+
+0.2
+
+0.4
+0.6
+Radius/R25
+
+0.8
+
+1
+
+Fig. 21.— Qtot as a function of radius normalized by R25 for varying velocity dispersions (left panels) and constant velocity dispersions
+(right panels). Unstable regions lie below the horizontal dotted lines. The top panels are obtained using Qtot provided by Rafikov (2001)
+and the bottom panels use the Romeo & Wiegert (2011) approximation.
+
+Romeo & Wiegert (2011):
+
+W
+
+
+ T Q
+
+where
+
+1
+=
+
+Qtot
+
+
+W =
+
+1
++T Q
+
+gas
+
+if T∗ Qstar ≥ Tg Qgas ,
+
+W
+1
+T∗ Qstar + Tg Qgas
+
+if Tg Qgas ≥ T∗ Qstar ,
+
+∗
+
+2s
+,
+1 + s2
+
+star
+
+s=
+
+g
+
+σg
+,
+σ∗,R
+
+T ≈ 0.8 + 0.7
+
+
+
+σz
+σR
+
+
+
+.
+
+(22)
+
+Here the ratio of vertical to radial velocity dispersion (σz /σR ) is 0.6 for stars and 1 for gas. The Qtot profiles using
+varying and constant σ are shown in the bottom panels of Figure 21. Even though there is not much difference between
+the two different approaches provided by Rafikov (2001) and Romeo & Wiegert (2011), the Rafikov Qtot values using
+varying σ seem consistently lower than the Romeo and Wiegert values by enough that the Rafikov values are ∼1 but
+
+21
+
+103
+
+103
+Hydrostatic Midplane Pressure
+
+102
+∝ P0.92
+
+101
+
+Rmol (= ρH2 / ρHI)
+
+Rmol (= ΣH2 / ΣHI)
+
+102
+
+1
+10−1
+10−2
+10−3
+10−4
+102
+
+Pg = ρ0g(r)σ2g(r)
+
+N891 : α=0.89±0.02, χ2red=10.4
+N4157: α=1.34±0.03, χ2red=61.3
+N4565: α=0.93±0.02, χ2red=2.9
+N5907: α=1.88±0.02, χ2red=16.4
+103
+
+104
+105
+106
+P/k (cm−3 K)
+
+107
+
+∝ P0.92
+
+101
+1
+10−1
+10−2
+10−3
+10−4
+102
+
+N891 : β=0.66±0.01, χ2red=50.2
+N4157: β=0.78±0.03, χ2red=69.0
+N4565: β=0.43±0.11, χ2red=1.1
+N5907: β=1.54±0.12, χ2red=0.5
+103
+
+104
+105
+106
+P/k (cm−3 K)
+
+107
+
+Fig. 22.— Lef t: ΣH2 /ΣHI as a function of the hydrostatic midplane pressure. Right: ρH2 /ρHI as a function of the interstellar gas
+pressure Pg using the derived volume density at the midplane and varying velocity dispersion. The obtained power-law slopes are shown
+in the bottom. The dotted line represents the power-law relationship with slope of 0.92 from Blitz & Rosolowsky (2006) for comparison.
+
+the Romeo and Wiegert values are usually ≥1. Overall, they show similar behaviour in the profiles although the values
+are slightly different.
+6. MOLECULAR TO ATOMIC GAS RATIO
+
+The ratio of molecular to atomic gas density is expected to scale with the interstellar gas pressure (e.g., Elmegreen
+1993). Since SFR is strongly correlated with the molecular gas, the interstellar pressure may provide a prescription
+for the star formation rate in a galaxy, if there is a strong correlation between the interstellar pressure and the ratio.
+Therefore, we examine whether the correlation is applicable in our sample of galaxies. First, we have investigated
+the relationship between the hydrostatic midplane pressure and the molecular to atomic gas surface density ratio
+(ΣH2 /ΣHI ). In order to obtain the hydrostatic pressure (P0 ), we use the equation given by Paper I:
+σg
+(23)
+P0 = 0.89(GΣ∗ )0.5 Σgas 0.5 .
+z∗
+This equation is very close to that derived by Blitz & Rosolowsky (2004). We assume the gas velocity dispersion σg
+= 8 km s−1 following Blitz & Rosolowsky (2004). For the constant stellar scale height (z∗ ), the values obtained by
+fitting the exponential model to 3.6 µm maps in Section 3.2 are used: 780 pc, 640 pc, and 670 pc for NGC 4157, 4565,
+and 5907, respectively. In order to compare with the power-law relationship found by Blitz & Rosolowsky (2006), we
+plot the ratio ΣH2 /ΣHI against the hydrostatic pressure in Figure 22 (left panel) and obtain a power-law slope (α) by
+least-squares fitting:
+α
+
+Σ H2
+P0
+=
+,
+(24)
+ΣHI
+Ptr
+where Ptr is the hydrostatic pressure at the transition radius where ΣH2 /ΣHI = 1 in the fit. The obtained power-law
+indices and reduced χ2 (goodness of fit) values are shown in the bottom of the figure. The dotted line in the figure
+represents a power-law relationship with index of 0.92 as found by Blitz & Rosolowsky (2006) for comparison. It seems
+that most of galaxies are well fitted by the power-law relation even though the range of slopes is large. However, the
+index of 0.92 is an average value and the range of slopes for the sample of galaxies in the study by Blitz & Rosolowsky
+(2006) is 0.58 – 1.64. The relation in two galaxies (NGC 4157 and 5907) appears to steepen in the outer disk due to
+the rapid decrease in ΣH2 in the region.
+The midplane hydrostatic pressure (P0 ) is obtained by assuming constant values for the stellar scale height and
+gaseous velocity dispersion. However, those values vary with radius as shown in Figure 13 and 16. Therefore, we have
+derived the interstellar gas pressure using the derived volume density at the midplane and radially dependent vertical
+velocity dispersion in order to examine whether a power-law relationship is still valid for the interstellar gas pressure
+(Pg ) at the midplane:
+2
+2
+(R) + ρ0HI (R) σHI
+(R).
+(25)
+Pg = ρ0g (R) σg2 (R) ≈ ρ0H2 (R) σH
+2
+We assume the partial pressures contributed by the H I and H2 are additive. We find that a power-law relationship
+between the midplane ρ0H2 /ρ0HI ratio and the interstellar pressure seems to roughly hold as shown by Figure 22 (right
+
+22
+panel). The vertical and horizontal error bars in Figure 22 show uncertainties in Rmol and pressure based on maximum
+and minimum values for volume density and velocity dispersion that were estimated from uncertainties in the surface
+densities and scale heights. In addition, the uncertainty (a factor of 2) of the CO-to-H2 conversion factor would affect
+the pressure using varying σg (R) by a factor of ∼20% for NGC 4157, ∼30% for NGC 4565, and ∼25% for NGC 5907.
+The power-law indices are a bit smaller compared with using constant values for σg and z∗ (left panel) but remain in
+good agreement with Blitz & Rosolowsky (2006). The reason why the relation based on volume density and varying
+velocity dispersion still shows a good correlation is that both Rmol and P are shifted to higher values: Rmol is higher
+at the midplane because the CO disk is thinner than the H I, but the midplane pressure is also higher since the inferred
+velocity dispersion is much higher than the assumed value of 8 km s−1 . The two effects together tend to move the
+points up and to the right, so the correlation is roughly preserved. However, as noted in Paper I, the correlation is
+not preserved out of the midplane (at least for NGC 891; see Figure 17 of that paper).
+7. SUMMARY AND CONCLUSIONS
+
+We have measured the thicknesses of CO, H I, and stellar disk for a sample of edge-on galaxies (NGC 4157, 4565, and
+5907) in order to derive the midplane volume density as a function of radius. In addition, we have inferred the vertical
+velocity dispersion from the measured disk thickness and surface density by solving the Poisson equation. Using the
+estimated volume density and inferred velocity dispersion as functions of radius, we have derived the interstellar gas
+pressure (ρ0g σg2 ) in order to investigate the role of the pressure in controlling the H2 /H I ratio. Our conclusions are
+summarized below.
+1. We have obtained the inclinations using Olling’s (1996) method to consider the projection effect of the less edge-on
+galaxies when we derive the disk thickness. The measured inclinations of NGC 4157 show a small difference between
+CO (84◦ ) and H I (83◦ ) disks, while NGC 4565 and 5907 show a consistent value for both disks: 86.6◦ for NGC 4565
+and 86◦ for NGC 5907.
+2. Using the inclinations, we have derived the gas disk thickness from the FWHM values of the observational data
+and the model at many different channel maps showing a “butterfly” shape in Appendix A. Our results show that the
+scale heights of CO, H I and stars increase with radius over the disk although the flaring of the CO disk in NGC 4565
+and 5907 is not clearly visible. The strongly star-forming galaxies (NGC 891 and NGC 4157) show a thicker CO disk
+compared to the other galaxies, suggesting a correlation between the disk thickness and star formation activity. The
+vertical velocity dispersions of CO, H I and stars inferred using the scale height and the surface density are declining
+as a function of radius.
+3. We have obtained the Schmidt law index for the total gas and the molecular gas using both the radial profile and
+the pixel-by-pixel analyses. For the molecular star formation law, the fitted indices for all galaxies range from 0.32 to
+0.91 in the radial profile method and from 0.43 to 0.68 in the pixel-by-pixel method. For the total gas star formation
+law, the range of the index is from 1.42 to 3.41 in the radial profile analysis. The correlation between ΣSFR and ΣH2
+appears to be stronger than the relationship between ΣSFR and Σgas when taking into account the RMS scatter and
+the curvature in the relationship for the total gas.
+4. We have derived the gravitational instability parameter Qtot in order to investigate the relationship between the
+parameter and massive star formation. In addition, we have compared the Qtot profiles using constant and varying
+velocity dispersions of gas and stars. Our results show that Qtot using the constant velocity dispersions seems to
+predict the star forming region in the inner disk, while Qtot using the varying velocity dispersions does not show a
+clear relationship with massive star formation. In addition, both cases are not able to predict massive star formation
+near the center. While the gravitational instability parameter does not appear to predict the locus of massive star
+formation, the parameter using the varying velocity dispersions is suggestive of self-regulated star formation (Q ∼ 1)
+even though the values are a bit larger than unity in most of galaxies.
+5. We have obtained the power-law index of the relationship between the hydrostatic midplane pressure and the
+molecular to atomic gas surface density ratio. The range of the fitted index for the galaxies in this study is 0.89–
+1.88. In addition, we have derived the interstellar gas pressure using the derived volume density and varying velocity
+dispersion σg (R) in order to examine the power-law relationship between the gas pressure and the ratio of H2 to H I
+density at the midplane (ρ0H2 /ρ0HI ). The power-law correlation between the pressure and the ratio is still valid at the
+midplane even if we use the varying scale heights and velocity dispersions. The power-law index for the relationship
+based on σg (R) ranges from 0.43 to 1.54.
+We thank the anonymous referee for useful comments and suggestions that improved this paper. K.Y. thanks Laura
+Zschaechner and Gyula Józsa for help with using Tirific. This study is supported by the National Science Foundation
+under cooperative agreement AST-0838226 and by a Spitzer Cycle-5 data analysis award from NASA. Support for
+CARMA construction was derived from the states of California, Illinois, and Maryland, the James S. McDonnell Foundation, the Gordon and Betty Moore Foundation, the Kenneth T. and Eileen L. Norris Foundation, the University
+of Chicago, the Associates of the California Institute of Technology, and the National Science Foundation. Ongoing
+CARMA development and operations are supported by the National Science Foundation under a cooperative agreement, and by the CARMA partner universities. K.Y. and J.M.H. acknowledge support from the European Research
+Council under the European Union’s Seventh Framework Programme (FP/2007-2013) / ERC Grant Agreement nr.
+291531. The National Radio Astronomy Observatory is a facility of the National Science Foundation operated under
+cooperative agreement by Associated Universities, Inc.
+
+23
+
+Fig. A1.— Lef t: Deprojected channel maps of a model galaxy generated using the velocity field map, assumed velocity dispersion of 8
+km s−1 , and the HI surface density profile of NGC 4157. The radial velocity of each channel map is indicated in the upper left corner.
+The systemic velocity is 770 km s−1 . Right T op: Gaussian width (w) against x-offset from the channel maps at 650 and 850 km s−1 .
+Right Bottom: Minor axis offset from the midplane (yoff ) as a function of x-offset from the channel maps at 650 and 850 km s−1 .
+
+APPENDIX
+INCLINATION AND SCALE HEIGHT USING OLLING’S METHOD
+
+In order to derive the inclination and the scale height for less edge-on galaxies, we have employed the method by
+Olling (1996) and we describe it as follows. The inclination (i) and the disk thickness (FWHM) are obtained from the
+apparent disk width (FWHMobs ) measured at each velocity by taking into account the size of the in-plane region that
+contributes emission at that velocity.
+First, we have created model emission cubes using the rotation curve (Figure 8) that we derived in Section 3.1,
+the surface density profile (Figure 9), and an assumed constant velocity dispersion (8 km s−1 ) for both CO and HI
+maps. For NGC 4157 and 5907, we use the CO rotation curve (red dashed line in Fig. 8) for the CO model and the
+H I rotation curve (blue solid line in the figure) for the H I model. However, in case of NGC 4565, we use the H I
+rotation curve for both CO and H I models because of a lack of CO emission in the inner region of the galaxy. Since
+the rotation curves of CO and H I in this galaxy are very consistent, using the H I curve for the CO model is justified.
+In this procedure, we used a modified version of the MIRIAD task VELMODEL to produce a model of the inplane distribution of gas at each observed radial velocity. From this task, we obtain a face-on view of the emission
+contributing to each observed velocity channel, using the rotation curve and the systemic velocity. The structure of
+the velocity field depends on the adopted rotation curve. In addition, we used the MIRIAD task IMGEN to make a
+velocity dispersion model (assuming σg = 8 km s−1 ) and a modified version of the task ELLINT to built a surface
+density model (using our derived surface density profile). For combining all three 1-D models (velocity field, velocity
+dispersion, and surface density models) together to make the model cube, the task VELIMAGE has been employed.
+2
+2
+Second, we have fitted a double Gaussian profile (e−0.5((y−yoff )/w) + e−0.5((y+yoff )/w) ) to the minor axis distribution
+at each x-offset for a given channel map of the model cube in order to obtain the Gaussian width (w) and the vertical
+offset (yoff ) from the line of nodes (y = 0). Some channel maps of the model are shown in Figure A1 (left) and the
+Gaussian width and the vertical offset from the midplane obtained from the velocity channel map of 650 km s−1 and
+850 km s−1 are shown in the figure (right). The planar width (FWHMp ) of the model is given by:
+q
+2 (x, V ),
+(A1)
+FWHMp (x, VR ) ≈ 2.35 w2 (x, VR ) + yoff
+R
+
+where the minor axis offset yoff is ignored when the minor axis profile can be fit with two Gaussians.
+Third, returning to the observed data cubes, we have determined distances between the two peaks of the minor axis
+profile (∆d) and the FWHMobs thicknesses (2.35 × Gaussian width) as functions of x and the radial velocity (VR ) by
+fitting a double Gaussian profile to many velocity channel maps. The channel maps of observational data are selected
+
+24
+
+Fig. A2.— Velocity channel map (taken at VR = 670 km s−1 ) for the NGC 4157 HI data (Lef t). Double Gaussian fit (red line) to the
+minor axis profile (black line) at x = −95′′ (M iddle) and at x = −111′′ (Right).
+
+when they show clear a “butterfly” shape, so they can be fitted by a double Gaussian profile. In addition, among
+many fitted x-values in the selected channel map, the final parameters we use for deriving the inclination and the disk
+thickness are chosen when at least one of two peaks is greater than twice the rms noise of the channel map and ∆d is
+greater than the synthesized beam (FWHMbeam ). One of the channel maps we have used for fitting is shown in Figure
+A2 and examples of fitting results at two different x offsets in the channel map are also shown in the figure.
+Finally, using all the parameters we obtained above, we have derived inclinations (i) and the disk thicknesses as a
+function of radius for the galaxies using the equations given by Olling (1996):
+i(x, VR ) = cos−1
+
+∆d(x, VR )
+,
+2 yoff (x, VR )
+
+1
+{FWHM2obs (x, VR ) − FWHM2beam
+sin2 i
+− [FWHMp (x, VR )cos i]2 },
+
+(A2)
+
+FWHM2 (x, VR ) =
+
+(A3)
+
+where FWHMbeam is beam size of the maps after convolving to the circular beam shown in Table 2. One double
+Gaussian fit to the butterfly shape of the data provides two different values of FWHM since the Gaussian widths from
+both sides are independent unlike the widths of the model. We use both FWHM values when the ratio of smaller to
+larger peak intensities is more than a factor of 0.6, while just one FWHM having the higher peak value is used when
+the peak ratio is less than 0.6. We convert x to a radius (R) using the projected rotation curve (Vproj ), which is used
+to obtain the velocity field model:
+x
+.
+(A4)
+R = Vproj (R)
+|VR − Vsys |
+We plot R/Vproj (R)(= x/|VR − Vsys |) versus radius (R) in Figure A3, showing how we obtain a radius corresponding
+to each combination of (x, VR ). From the inclination as a function of radius, we derived a weighted mean value of
+inclination and fixed the inclination to this value when deriving the FWHM values.
+As an example, the input needed to obtain FWHM thickness values are shown in Figure A4 (left panel) for the CO
+image of NGC 4157. The open triangles show the observed width (FWHM2obs ) and filled circles represent the sum
+of the two broadening terms (FWHM2beam + FWHM2p cos2 i) in Equation A3. In the right panel, all the points are
+averaged in a 4′′ radial bin and the averaged values are used to derive the FWHM thickness following Equation A3.
+The inverted triangle points show the data, which are non-deconvolveable since they are below the values of the solid
+circles. The bin size is selected based on the angular resolution of each map: 4′′ for all the CO maps, 10′′ for the H I
+map of NGC 4565, and 15′′ for the H I maps of NGC 4157 and 5907. The use of an average value in a bin provides a
+resolution similar to its map, as well as a better signal to noise ratio, hence we adopt this approach for our analysis.
+REFERENCES
+Aniano, G., Draine, B. T., Gordon, K. D., & Sandstrom, K. 2011,
+PASP, 123, 1218
+Bigiel, F., Leroy, A., Walter, F., Brinks, E., de Blok, W. J. G.,
+Madore, B., & Thornley, M. D. 2008, AJ, 136, 2846
+Blitz, L. & Rosolowsky, E. 2004, ApJ, 612, L29
+—. 2006, ApJ, 650, 933
+
+Bohlin, R. C., Savage, B. D., & Drake, J. F. 1978, ApJ, 224, 132
+Bolatto, A. D., Wolfire, M., & Leroy, A. K. 2013, ARA&A, 51,
+207
+Bottema, R. 1993, A&A, 275, 16
+
+25
+
+R/Vproj(R) (= x / |Vr − Vsys|)
+
+2
+
+1.5
+
+1
+
+0.5
+
+0
+
+0
+
+50 100 150 200 250 300
+Radius (R)
+
+Fig. A3.— R/Vproj (R)(= x/|VR − Vsys |) against radius for NGC 4157.
+
+100
+
+80
+2
+(arcsec2)
+FWHMobs
+
+2
+FWHMobs
+(arcsec2)
+
+80
+
+60
+
+40
+
+60
+
+40
+
+20
+
+20
+
+0
+
+20
+
+40
+60
+80
+Radius (arcsec)
+
+100
+
+0
+0
+
+20
+
+40
+60
+80
+Radius (arcsec)
+
+100
+
+Fig. A4.— Lef t: The observed FWHM values (open blue and solid green triangles) and the sum of FWHM2beam and FWHM2p cos2 i
+(solid red circle) as a function of radius for CO in NGC 4157. The inverted green triangles show the non-deconvolveable data since they
+are below the values of the solid circles. Right: Averaged data points in 4′′ radial bins. The values are for valid double Gaussian fits. The
+inverted triangle points show the data, which are non-deconvolveable. The horizontal line represents a value of FWHM2beam .
+
+26
+Calzetti, D., Kennicutt, R. C., Engelbracht, C. W., Leitherer, C.,
+Draine, B. T., Kewley, L., Moustakas, J., Sosey, M., Dale,
+D. A., Gordon, K. D., Helou, G. X., Hollenbach, D. J., Armus,
+L., Bendo, G., Bot, C., Buckalew, B., Jarrett, T., Li, A., Meyer,
+M., Murphy, E. J., Prescott, M., Regan, M. W., Rieke, G. H.,
+Roussel, H., Sheth, K., Smith, J. D. T., Thornley, M. D., &
+Walter, F. 2007, ApJ, 666, 870
+Combes, F. & Becquaert, J.-F. 1997, A&A, 326, 554
+Dahlem, M., Ehle, M., Ryder, S. D., Vlajić, M., & Haynes, R. F.
+2005, A&A, 432, 475
+Dame, T. M., Hartmann, D., & Thaddeus, P. 2001, ApJ, 547, 792
+de Grijs, R. & Peletier, R. F. 1997, A&A, 320, L21
+Dumke, M., Braine, J., Krause, M., Zylka, R., Wielebinski, R., &
+Guelin, M. 1997, A&A, 325, 124
+Elmegreen, B. G. 1993, ApJ, 411, 170
+—. 2011, ApJ, 737, 10
+Ferguson, A. M. N., Wyse, R. F. G., Gallagher, J. S., & Hunter,
+D. A. 1998, ApJ, 506, L19
+Garcia-Burillo, S., Guelin, M., & Neininger, N. 1997, A&A, 319,
+450
+Indebetouw, R., Mathis, J. S., Babler, B. L., Meade, M. R.,
+Watson, C., Whitney, B. A., Wolff, M. J., Wolfire, M. G.,
+Cohen, M., Bania, T. M., Benjamin, R. A., Clemens, D. P.,
+Dickey, J. M., Jackson, J. M., Kobulnicky, H. A., Marston,
+A. P., Mercer, E. P., Stauffer, J. R., Stolovy, S. R., &
+Churchwell, E. 2005, ApJ, 619, 931
+Irwin, J. A., English, J., & Sorathia, B. 1999, AJ, 117, 2102
+Isobe, T., Feigelson, E. D., Akritas, M. G., & Babu, G. J. 1990,
+ApJ, 364, 104
+Jog, C. J. & Solomon, P. M. 1984, ApJ, 276, 114
+Józsa, G. I. G., Kenn, F., Klein, U., & Oosterloo, T. A. 2007,
+A&A, 468, 731
+Just, A., Möllenhoff, C., & Borch, A. 2006, A&A, 459, 703
+Kennicutt, Jr., R. C. 1989, ApJ, 344, 685
+—. 1998, ApJ, 498, 541
+Kim, C.-G., Kim, W.-T., & Ostriker, E. C. 2011, ApJ, 743, 25
+Krumholz, M. R., Dekel, A., & McKee, C. F. 2012, ApJ, 745, 69
+Laine, S., Appleton, P. N., Gottesman, S. T., Ashby, M. L. N., &
+Garland, C. A. 2010, AJ, 140, 753
+Leroy, A., Bolatto, A. D., Simon, J. D., & Blitz, L. 2005, ApJ,
+625, 763
+Leroy, A. K., Walter, F., Brinks, E., Bigiel, F., de Blok, W. J. G.,
+Madore, B., & Thornley, M. D. 2008, AJ, 136, 2782
+Li, Y., Mac Low, M.-M., & Klessen, R. S. 2005, ApJ, 620, L19
+Martin, C. L. & Kennicutt, Jr., R. C. 2001, ApJ, 555, 301
+McMullin, J. P., Waters, B., Schiebel, D., Young, W., & Golap,
+K. 2007, in Astronomical Society of the Pacific Conference
+Series, Vol. 376, Astronomical Data Analysis Software and
+Systems XVI, ed. R. A. Shaw, F. Hill, & D. J. Bell, 127
+Murphy, E. J., Bremseth, J., Mason, B. S., Condon, J. J.,
+Schinnerer, E., Aniano, G., Armus, L., Helou, G., Turner, J. L.,
+& Jarrett, T. H. 2012, ApJ, 761, 97
+
+Narayan, C. A. & Jog, C. J. 2002, A&A, 394, 89
+O’Brien, J. C., Freeman, K. C., & van der Kruit, P. C. 2010,
+A&A, 515, A62
+Olling, R. P. 1996, AJ, 112, 457
+Oosterloo, T., Fraternali, F., & Sancisi, R. 2007, AJ, 134, 1019
+Ostriker, E. C., McKee, C. F., & Leroy, A. K. 2010, ApJ, 721, 975
+Petric, A. O. & Rupen, M. P. 2007, AJ, 134, 1952
+Rafikov, R. R. 2001, MNRAS, 323, 445
+Rahman, N., Bolatto, A. D., Wong, T., Leroy, A. K., Walter, F.,
+Rosolowsky, E., West, A. A., Bigiel, F., Ott, J., Xue, R.,
+Herrera-Camus, R., Jameson, K., Blitz, L., & Vogel, S. N. 2011,
+ApJ, 730, 72
+Rahman, N., Bolatto, A. D., Xue, R., Wong, T., Leroy, A. K.,
+Walter, F., Bigiel, F., Rosolowsky, E., Fisher, D. B., Vogel,
+S. N., Blitz, L., West, A. A., & Ott, J. 2012, ApJ, 745, 183
+Rieke, G. H. & Lebofsky, M. J. 1985, ApJ, 288, 618
+Romeo, A. B. & Wiegert, J. 2011, MNRAS, 416, 1191
+Rownd, B. K. & Young, J. S. 1999, AJ, 118, 670
+Rupen, M. P. 1991, AJ, 102, 48
+Sancisi, R. 1976, A&A, 53, 159
+Sanders, D. B., Mazzarella, J. M., Kim, D.-C., Surace, J. A., &
+Soifer, B. T. 2003, AJ, 126, 1607
+Schmidt, M. 1959, ApJ, 129, 243
+Sellwood, J. A. 1985, MNRAS, 217, 127
+Sheth, K., Regan, M., Hinz, J. L., Gil de Paz, A.,
+Menéndez-Delmestre, K., Muñoz-Mateos, J.-C., Seibert, M.,
+Kim, T., Laurikainen, E., Salo, H., Gadotti, D. A., Laine, J.,
+Mizusawa, T., Armus, L., Athanassoula, E., Bosma, A., Buta,
+R. J., Capak, P., Jarrett, T. H., Elmegreen, D. M., Elmegreen,
+B. G., Knapen, J. H., Koda, J., Helou, G., Ho, L. C., Madore,
+B. F., Masters, K. L., Mobasher, B., Ogle, P., Peng, C. Y.,
+Schinnerer, E., Surace, J. A., Zaritsky, D., Comerón, S., de
+Swardt, B., Meidt, S. E., Kasliwal, M., & Aravena, M. 2010,
+PASP, 122, 1397
+Sofue, Y. 1996, ApJ, 458, 120
+Strong, A. W. & Mattox, J. R. 1996, A&A, 308, L21
+Tamburro, D., Rix, H., Leroy, A. K., Low, M., Walter, F.,
+Kennicutt, R. C., Brinks, E., & de Blok, W. J. G. 2009, AJ,
+137, 4424
+Toomre, A. 1964, ApJ, 139, 1217
+van der Hulst, J. M., Terlouw, J. P., Begeman, K. G., Zwitser,
+W., & Roelfsema, P. R. 1992, in Astronomical Society of the
+Pacific Conference Series, Vol. 25, Astronomical Data Analysis
+Software and Systems I, ed. D. M. Worrall, C. Biemesderfer, &
+J. Barnes, 131
+van der Kruit, P. C. & Searle, L. 1981, A&A, 95, 105
+Verheijen, M. A. W. & Sancisi, R. 2001, A&A, 370, 765
+Wong, T. & Blitz, L. 2002, ApJ, 569, 157
+Yim, K., Wong, T., Howk, J. C., & van der Hulst, J. M. 2011,
+AJ, 141, 48
+Zschaechner, L. K., Rand, R. J., Heald, G. H., Gentile, G., &
+Józsa, G. 2012, ApJ, 760, 37
+
+

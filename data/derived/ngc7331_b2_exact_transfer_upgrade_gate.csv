@@ -1,0 +1,8 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+NGC7331,N7331_ETG1_XW_ONSET,PASS_REPLAY_ONLY,x_w=0.534309 from fractional outer-warp onset gate,"use only in future exact-transfer freeze/replay, not retroactive V1 endpoint update",False,False,ngc7331_b2_exact_transfer_upgrade_gate_not_endpoint
+NGC7331,N7331_ETG2_VFLAT_CARRIER,PASS,SPARC Vflat=239 km/s,none at source-catalog carrier field level,False,False,ngc7331_b2_exact_transfer_upgrade_gate_not_endpoint
+NGC7331,N7331_ETG3_Q_WARP,PASS_INTERVAL_CARRIED,"q_warp interval carried: [0.0079404475812108, 0.2057957876154617]",carry q interval into exact-transfer formula freeze,False,False,ngc7331_b2_exact_transfer_upgrade_gate_not_endpoint
+NGC7331,N7331_ETG4_SIGMA_WARP,PASS_CONTEXT_CARRIED,MOM1_CONTEXT_CONSISTENT_RECEDING_SIDE_ORIENTATION_CARRIED_TO_FORMULA_FREEZE,state the exact added-readout/attenuation sign in the freeze gate,False,False,ngc7331_b2_exact_transfer_upgrade_gate_not_endpoint
+NGC7331,N7331_ETG5_EPSILON_CROSS,PASS_BOUND_CARRIED,CARRY_CONSERVATIVE_SOURCE_BOUND_0.488571397976179_WITH_Q_OBSERVABLE_AMBIGUITY,carry conservative epsilon_cross caveat into exact-transfer formula freeze,False,False,ngc7331_b2_exact_transfer_upgrade_gate_not_endpoint
+NGC7331,N7331_ETG6_DIMENSION_PREVIEW,PASS_NOT_FREEZE,x_w * Vflat^2 has velocity-squared units,do not score the preview lambda without q/sigma/cross-term freeze,False,False,ngc7331_b2_exact_transfer_upgrade_gate_not_endpoint
+NGC7331,N7331_ETG7_ENDPOINT_BLINDNESS,PASS,all fields are source-side or catalog-side; no vobs residuals are read,keep any future scoring in a separate endpoint script,False,False,ngc7331_b2_exact_transfer_upgrade_gate_not_endpoint

@@ -1,0 +1,30 @@
+# NGC4088 Formula-Freeze Readiness Dashboard
+
+This dashboard consolidates the B1/B2/B3 formula-freeze blockers for the
+NGC4088 warp/history-coupled candidate. It is a preflight status synthesis,
+not an endpoint score and not an empirical validation claim.
+
+## Summary
+
+| dashboard_status | galaxy | candidate_readout | b1_status | b1_formula_freeze_status | b1_repeat_status | b1_radial_calibration_status | b1_original_data_route_status | b1_whisp_overview_extraction_status | b1_whisp_frozen_extraction_status | b1_whisp_frozen_x_w_review | b1_whisp_frozen_agrees_with_first_pass | b1_whisp_promotion_status | b1_source_consistency_promoted | b1_x_w_source_consistency_value | b1_accepted_x_w_for_formula_freeze | b2_status | b3_status | warp_history_formula_freeze_status | warp_history_lambda_w_km2_s2 | warp_history_turn_on_power_frozen | b2_law_level_open | b3_law_level_open | n_local_blockers | n_resolved_local_blockers | formula_freeze_allowed_now | endpoint_scores_allowed | uses_vobs_or_residual | readiness_decision | next_required_action | claim_boundary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| NGC4088_FORMULA_FREEZE_READINESS_DASHBOARD_CREATED | NGC4088 | K_expdisk_warp_history_coupled_mixed_review | B1_NOT_RESOLVED_INDEPENDENT_REVIEW_PENDING | B1_RESOLVED_CAVEATED_WHISP_GRAPHICAL_XW | FROZEN_IMAGE_REPEAT_ATTEMPT_COMPLETE_INCONCLUSIVE | RADIAL_CALIBRATION_NOT_ACCEPTED | RC3_ORIGINAL_CHANNEL_MAP_DATA_ROUTE_AUDITED_NO_DIRECT_PRODUCT_CACHED | WHISP_OVERVIEW_EXTRACTION_PACKET_READY_RESPONSE_PENDING | FROZEN_WHISP_OVERVIEW_EXTRACTION_ATTEMPT_COMPLETE_AGREES_WITH_FIRST_PASS | 0.298333 | True | B1_CAVEATED_XW_ACCEPTED_FOR_FORMULA_FREEZE_NOT_ENDPOINT | True | 0.298333 | True | B2_FORMULA_CONDITIONAL_DERIVATION_SYNTHESIZED_LAW_STILL_OPEN | B3_CONDITIONAL_UNIQUE_SCALE_SELECTED_LAW_LEVEL_UNIQUENESS_OPEN | NGC4088_WARP_HISTORY_FORMULA_FREEZE_READY_LAW_CAVEATED_NOT_SCORE | 8795.11 | 1 | True | True | 3 | 3 | True | False | False | FORMULA_FREEZE_READY_ENDPOINT_GATE_REQUIRED | build a separate accepted endpoint gate and scoring script that reads the frozen NGC4088 manifest unchanged | ngc4088_formula_freeze_readiness_dashboard_not_endpoint |
+
+## Local Blockers
+
+| blocker_id | current_status | resolved_for_formula_freeze | why_still_blocking | next_required_action | supporting_summary_file | endpoint_scores_allowed | uses_vobs_or_residual | claim_boundary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| B1_INDEPENDENT_XW_DIGITIZATION_REVIEW | B1_RESOLVED_CAVEATED_WHISP_GRAPHICAL_XW | True | resolved with caveat: WHISP graphical overview frozen extraction agrees with first-pass; direct source-coordinate H I product remains missing | carry WHISP graphical-overview provenance caveat into formula freeze; cache direct source-coordinate H I product when available | ngc4088_b1_whisp_promotion_review_summary.csv | False | False | ngc4088_formula_freeze_readiness_dashboard_not_endpoint |
+| B2_PHYSICAL_NORMALIZATION_LAW | B2_PROTOCOL_FORMULA_FREEZE_READY_LAW_LEVEL_OPEN | True | resolved only at protocol formula-freeze level; law-level physical normalization remains open | use the frozen protocol manifest for any later accepted endpoint gate; keep B2 law-level caveat attached | ngc4088_warp_history_formula_freeze_summary.csv | False | False | ngc4088_formula_freeze_readiness_dashboard_not_endpoint |
+| B3_SCALE_UNIQUENESS | B3_PROTOCOL_UNIQUE_SCALE_SELECTED_LAW_LEVEL_OPEN | True | resolved only at protocol formula-freeze level; law-level uniqueness remains open | use CURRENT_XW_VFLAT2 from the frozen manifest for any later accepted endpoint gate; keep B3 law-level caveat attached | ngc4088_warp_history_formula_freeze_summary.csv | False | False | ngc4088_formula_freeze_readiness_dashboard_not_endpoint |
+
+## Interpretation
+
+The NGC4088 lane now has a coherent residual-blind formula-freeze path.
+B1 is closed with an explicit provenance caveat: the accepted x_w comes
+from a residual-blind WHISP graphical-overview extraction rather than a
+direct source-coordinate H I product. B2 and B3 are closed only at the
+protocol formula-freeze level: the physical-normalization law and
+law-level uniqueness remain open. Therefore the formula may be treated as
+frozen for the next accepted-endpoint gate, but endpoint scoring still
+requires a separate gate and script.

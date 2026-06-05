@@ -1,0 +1,5 @@
+galaxy,new_lane_status,assigned_lane_for_claims,evidence,claim_allowed,endpoint_scores_allowed,claim_boundary
+NGC7331,SAME_CURVE_ADDED_SOURCE_DIAGNOSTIC_ONLY,L_added_source_diagnostic_not_endpoint,split-B2 unit-load improves q-role diagnostic but branch was identified on same curve,diagnostic q-role/source-load repair; not independent validation,False,readout_lane_taxonomy_update_not_endpoint
+NGC5907,PROJECTION_LANE_FAVORED_ADDED_SOURCE_REJECTED,L_projection_attenuation,negative holdout: split-B2 added-readout does not transfer to NGC5907; projection/TPG-like lane remains favored,negative split-B2 control plus projection/TPG-like lane preference,False,readout_lane_taxonomy_update_not_endpoint
+NGC4013,MIXED_ANALOGUE_REQUIRES_FRESH_SOURCE_FREEZE,L_mixed_overlay_pending,existing mixed reference path is retrospective; needs fresh residual-blind source freeze,"secondary analogue only, not clean holdout yet",False,readout_lane_taxonomy_update_not_endpoint
+NGC4183,SOURCE_ACQUISITION_REQUIRED,lane_unassigned,SPARC RHI/Vflat available but galaxy-specific activation fields missing,none before source acquisition,False,readout_lane_taxonomy_update_not_endpoint

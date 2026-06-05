@@ -1,0 +1,4 @@
+split,n_galaxies,freeze_allowed_count,blocked_normalization_count,blocked_orientation_count,orientation_ready_count,orientation_blocked_count,blocked_memory_projection_count,blocked_projection_acceptance_count,blocked_qi_normalization_acceptance_count,blocked_proxy_or_missing_component_count,proxy_gate_resolved_count,normalization_candidate_present_count,component_proxy_or_missing_count,source_candidates_present_count,dominant_source_candidate_count,dominant_proxy_or_partial_count,dominant_missing_source_count,nonzero_source_candidate_components,nonzero_proxy_or_partial_components,nonzero_missing_components,claim_boundary
+all,175,0,0,108,67,108,19,47,1,0,175,175,108,67,141,31,3,295,105,6,l2_weight_freeze_readiness_audit_not_endpoint
+holdout,44,0,0,28,16,28,2,14,0,0,44,44,28,16,35,9,0,79,28,0,l2_weight_freeze_readiness_audit_not_endpoint
+train,131,0,0,80,51,80,17,33,1,0,131,131,80,51,106,22,3,216,77,6,l2_weight_freeze_readiness_audit_not_endpoint

@@ -1,0 +1,7 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,Q1_PROTOCOL_DEFINED,PASS,dimensionless q_warp measurement rule is declared,none at protocol-definition level,False,False,s4g75_ngc4088_qwarp_measurement_protocol_not_endpoint
+NGC4088,Q2_SOURCE_IMAGES_AVAILABLE,PASS,"page76 ROI, worksheet overlay, and page77 cross-check are already present",none at source-availability level,False,False,s4g75_ngc4088_qwarp_measurement_protocol_not_endpoint
+NGC4088,Q3_PANEL_WORKSHEET_READY,PASS,23 measurement targets are available,fill q_warp-specific measurement fields,False,False,s4g75_ngc4088_qwarp_measurement_protocol_not_endpoint
+NGC4088,Q4_RESPONSE_FILLED,BLOCKED,q_warp_measured and uncertainty are empty,perform residual-blind source measurement,False,False,s4g75_ngc4088_qwarp_measurement_protocol_not_endpoint
+NGC4088,Q5_INDEPENDENT_REVIEW,BLOCKED,no independent q_warp review exists,independent reviewer must verify measurement,False,False,s4g75_ngc4088_qwarp_measurement_protocol_not_endpoint
+NGC4088,Q6_ENDPOINT_BLINDNESS,PASS,protocol forbids vobs and endpoint residuals,keep endpoint scoring separate,False,False,s4g75_ngc4088_qwarp_measurement_protocol_not_endpoint

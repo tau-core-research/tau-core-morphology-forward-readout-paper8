@@ -1,0 +1,6 @@
+obligation_id,obligation_status,requirement,acceptance_condition,endpoint_scores_allowed,claim_boundary
+XWREV1_SOURCE_LOCK,READY,"reviewer must use only the frozen page-76 ROI, worksheet overlay, and page-77 cross-check image",source_images_used must be a subset of the packet source image list,False,ngc4088_independent_xw_digitization_review_not_endpoint
+XWREV2_INDEPENDENT_REVIEWER,PENDING,reviewer identity or frozen image-analysis method must differ from first_pass_digitizer_id,independent_reviewer_id != first_pass_digitizer_id OR method_id is a frozen script/hash,False,ngc4088_independent_xw_digitization_review_not_endpoint
+XWREV3_NO_ENDPOINT_INPUTS,READY,"review notes and method must not use endpoint residuals, vobs, or fit ranks",forbidden_input_detected=False,False,ngc4088_independent_xw_digitization_review_not_endpoint
+XWREV4_SIDE_BY_SIDE_ONSET_REPEAT,PENDING,repeat side-A and side-B onset measurements under the frozen protocol,independent onset fields are numeric and side_combination_rule_applied is frozen,False,ngc4088_independent_xw_digitization_review_not_endpoint
+XWREV5_TOLERANCE_OR_ESCALATION,PENDING,compare independent x_w to the first-pass value before any endpoint use,|x_w_independent - 0.282353| <= 0.0705882; otherwise freeze an uncertainty interval or mark x_w unresolved,False,ngc4088_independent_xw_digitization_review_not_endpoint

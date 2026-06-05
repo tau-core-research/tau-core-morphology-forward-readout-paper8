@@ -1,0 +1,5 @@
+gate_id,gate_status,evidence,formula_freeze_allowed,endpoint_scores_allowed,remaining_obligation,claim_boundary
+N4183_TR_G1_SOURCE_NATIVE_PROFILE_PRESENT,PASS_REVIEW_REQUIRED,Table 4 OCR contains NGC4183 radial rings out to 241 arcsec,False,False,independent review against PDF/table image,ngc4183_tilted_ring_orientation_profile_extraction_not_endpoint
+N4183_TR_G2_RADIAL_COVERAGE,PASS,"max radius 21.031 kpc, RHI 15.970 kpc",False,False,none for source profile extraction,ngc4183_tilted_ring_orientation_profile_extraction_not_endpoint
+N4183_TR_G3_PROJECTION_LEVERAGE,WEAK_SOURCE_LEVERAGE,PA drift 3.0 deg; inclination drift 0.0 deg,False,False,do not expect a large projection correction from this profile alone,ngc4183_tilted_ring_orientation_profile_extraction_not_endpoint
+N4183_TR_G4_FREEZE,BLOCKED,OCR extraction not independently reviewed,False,False,review source-native table or acquire machine-readable tilted-ring data,ngc4183_tilted_ring_orientation_profile_extraction_not_endpoint

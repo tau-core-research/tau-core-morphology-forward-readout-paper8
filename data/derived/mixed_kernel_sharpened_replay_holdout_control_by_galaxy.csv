@@ -1,0 +1,3 @@
+galaxy,matched_rmse,wrong_best_rmse,matched_minus_wrong_best,matched_rank_within_galaxy,matched_beats_all_wrong_labels,claim_boundary
+NGC5907,16.31783747318899,16.77090831325326,-0.45307084006426734,1,True,mixed_kernel_sharpened_replay_holdout_endpoint_small_n_not_validation
+NGC7331,22.13084889610839,22.906398124207954,-0.775549228099564,1,True,mixed_kernel_sharpened_replay_holdout_endpoint_small_n_not_validation

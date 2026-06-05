@@ -1,0 +1,2 @@
+galaxy,formula_id,candidate_formula,expanded_prefactor,normalization_prefactor_km2_s2,proof_status,claim_boundary
+NGC4088,NGC4088-WARP-DELTA-V2-CANDIDATE-001,"delta_v2_warp(R;p) = sigma_warp q_warp x_w Vflat^2 C_warp(R/R_HI; x_w, p)","sigma_warp=1, q_warp=1, x_w=0.282353, Vflat^2=29480.89 km2_s2",8324.015999999998,FORMULA_CONDITIONAL_NOT_TAU_SIDE_LAW,s4g75_ngc4088_physical_normalization_law_gate_not_endpoint

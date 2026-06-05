@@ -1,0 +1,2 @@
+summary_status,n_inspected_cases,n_three_case_mixed_packet,n_additional_caveated_endpoint,n_accepted_single_galaxy_endpoints,n_matched_beats_best_baseline,n_matched_beats_all_wrong_families,mean_matched_rmse_km_s,claim_boundary,construction_used_vobs,scoring_used_vobs
+FOUR_INSPECTED_CASES_HETEROGENEOUS_PRELIMINARY_EVIDENCE,4,3,1,3,4,4,15.215498442360884,"four inspected cases, not a uniform population validation; three-case mixed control with NGC5907 and caveated NGC7331 accepted-mixed promotions plus one additional caveated accepted endpoint",False,True

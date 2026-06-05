@@ -1,0 +1,2 @@
+galaxy,ansatz_id,functional_ansatz,stationarity_equation,solved_lambda_km2_s2,solved_lambda_formula,proof_status,claim_boundary
+NGC4088,MINIMAL_QUADRATIC_TARGET_EULER_ANSATZ,J_min(lambda_w) = 1/2 kappa_lambda (lambda_w - sigma_warp q_warp x_w Vflat^2)^2,dJ_min/dlambda_w = kappa_lambda (lambda_w - sigma_warp q_warp x_w Vflat^2) = 0,8324.015999999998,lambda_w = sigma_warp q_warp x_w Vflat^2,EULER_SOLVES_TARGET_GIVEN_ANSATZ,s4g75_ngc4088_minimal_euler_ansatz_gate_not_endpoint

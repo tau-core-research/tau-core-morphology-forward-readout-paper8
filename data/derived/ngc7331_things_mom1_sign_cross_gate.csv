@@ -1,0 +1,6 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+NGC7331,N7331_MOM1SC1_PRODUCTS,PASS,NA_MOM1 and RO_MOM1 are cached and paired with MOM0 masks,none at product availability level,False,False,ngc7331_things_mom1_sign_cross_review_not_endpoint
+NGC7331,N7331_MOM1SC2_KINEMATIC_ORIENTATION,REVIEW_REQUIRED,max morph/kin delta PA=0.0428328 as sin(delta); consensus=CONSISTENT,independent review must define sign convention for B2 added-readout vs attenuation,False,False,ngc7331_things_mom1_sign_cross_review_not_endpoint
+NGC7331,N7331_MOM1SC3_EPSILON_CROSS,CANDIDATE_BOUND_REVIEW_REQUIRED,epsilon_cross_candidate_bound=0.488571,"review f_pa, f_R, f_q, and context factor before accepting or carrying interval",False,False,ngc7331_things_mom1_sign_cross_review_not_endpoint
+NGC7331,N7331_MOM1SC4_FORMULA_FREEZE,BLOCKED,sign not frozen and epsilon_cross bound not closed,freeze sign and close/carry epsilon_cross before exact B2 transfer,False,False,ngc7331_things_mom1_sign_cross_review_not_endpoint
+NGC7331,N7331_MOM1SC5_ENDPOINT_BLINDNESS,PASS,script reads THINGS moment maps and source geometry only,none at endpoint-blindness level,False,False,ngc7331_things_mom1_sign_cross_review_not_endpoint

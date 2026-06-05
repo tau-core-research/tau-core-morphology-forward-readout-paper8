@@ -1,0 +1,6 @@
+gate_id,gate_status,evidence,consequence,claim_boundary
+SB2LS_G1_PRESERVE_NGC7331_DIAGNOSTIC,PASS,NGC7331 split-B2 repair improves the failed same-curve exact-transfer diagnostic,"keep as q-role/source-load diagnostic, not validation",split_b2_lane_specificity_synthesis_not_population_validation
+SB2LS_G2_PRESERVE_NGC5907_NEGATIVE,PASS,NGC5907 split-B2 holdout RMSE is much worse than projection/TPG-like context,do not universalize split-B2 added-readout,split_b2_lane_specificity_synthesis_not_population_validation
+SB2LS_G3_UNIVERSAL_SPLIT_B2_RULE,REJECTED_BY_CURRENT_EVIDENCE,positive same-curve diagnostic plus negative independent holdout,split-B2 is not a universal morphology readout formula,split_b2_lane_specificity_synthesis_not_population_validation
+SB2LS_G4_LANE_SPECIFICITY,SUPPORTED_PRELIMINARY,projection-dominated NGC5907 rejects added split-B2 but accepts projection/TPG-like readout,"readout-lane selection is physically/scientifically central, not cosmetic",split_b2_lane_specificity_synthesis_not_population_validation
+SB2LS_G5_POPULATION_VALIDATION,OPEN,only one diagnostic origin and one caveated negative holdout,requires more predeclared galaxies before population claim,split_b2_lane_specificity_synthesis_not_population_validation

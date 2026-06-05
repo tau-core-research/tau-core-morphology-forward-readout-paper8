@@ -1,0 +1,4 @@
+galaxy,blocker_id,required_input,why_required,endpoint_scores_allowed,claim_boundary
+NGC4013,B1_OUTER_WARP_WINDOW,accepted outer warp/projection support radius R_o,"without R_o, W_warp cannot be endpoint-frozen",False,ngc4013_warp_vertical_overlay_formula_derivation_not_endpoint
+NGC4013,B2_LAG_TO_KERNEL_MAP,accepted normalized radial lag-shallowing profile K_lag(R),lag context cannot become a numerical kernel without a source-side map,False,ngc4013_warp_vertical_overlay_formula_derivation_not_endpoint
+NGC4013,B3_WEIGHT_RULE,"residual-blind omega_z, omega_EC, omega_lag weighting rule",component weights cannot be selected by endpoint residuals,False,ngc4013_warp_vertical_overlay_formula_derivation_not_endpoint

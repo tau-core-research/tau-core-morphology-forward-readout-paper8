@@ -1,0 +1,6 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+NGC7331,N7331_B2ER1_SOURCE_CONTEXT_AVAILABLE,PASS,Bosma H I warp context and Patra vertical/projection context are available,none at context availability level,False,False,ngc7331_b2_exact_transfer_source_evidence_review_not_endpoint
+NGC7331,N7331_B2ER2_Q_WARP_PROMOTION,BLOCKED_NUMERIC_AMPLITUDE_MISSING,x_w exists but q_warp amplitude/asymmetry does not,source-native H I map digitization or literature amplitude bound,False,False,ngc7331_b2_exact_transfer_source_evidence_review_not_endpoint
+NGC7331,N7331_B2ER3_SIGMA_PROMOTION,BLOCKED_SIGN_AMBIGUOUS,complex warp has opposite inner/outer directional context,source-side sign/orientation review,False,False,ngc7331_b2_exact_transfer_source_evidence_review_not_endpoint
+NGC7331,N7331_B2ER4_EPSILON_PROMOTION,BLOCKED_BOUND_MISSING,cross terms are plausibly relevant but not bounded,orientation/asymmetry/history/locality bound packet,False,False,ngc7331_b2_exact_transfer_source_evidence_review_not_endpoint
+NGC7331,N7331_B2ER5_ENDPOINT_BLINDNESS,PASS,"review uses source/literature context and previous source gates, not vobs residuals",endpoint scoring remains blocked until formula freeze,False,False,ngc7331_b2_exact_transfer_source_evidence_review_not_endpoint

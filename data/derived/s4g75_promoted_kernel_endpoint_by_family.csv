@@ -1,0 +1,9 @@
+split,formula_family,n_galaxies,matched_beats_wrong_fraction,matched_rank1_fraction,matched_beats_tpg_v6_fraction,matched_beats_mond_fraction,median_matched_minus_wrong,median_matched_minus_tpg_v6,median_matched_minus_mond,claim_boundary
+holdout,K_compact_finite,2,0.5,0.5,0.5,0.5,-8.967944851514536,-8.767620419332161,-8.355869983789557,s4g75_promoted_kernel_endpoint_stress_test_not_validation
+holdout,K_exponential_disk,1,1.0,0.0,1.0,1.0,-7.535629576581786,-0.26511220318043005,-4.1304123064730485,s4g75_promoted_kernel_endpoint_stress_test_not_validation
+holdout,K_scale_tail_spiral,10,1.0,0.3,0.3,0.4,-21.968944239916794,1.1326577332515164,0.22881341771808206,s4g75_promoted_kernel_endpoint_stress_test_not_validation
+holdout,K_thick_flared,8,1.0,0.125,0.5,0.75,-7.985258795807894,-0.12745670555602118,-2.572919743582746,s4g75_promoted_kernel_endpoint_stress_test_not_validation
+train,K_compact_finite,5,0.4,0.4,0.4,0.2,3.8068601453608153,3.390524005297486,1.8537818226766092,s4g75_promoted_kernel_endpoint_stress_test_not_validation
+train,K_exponential_disk,12,0.8333333333333334,0.3333333333333333,0.4166666666666667,0.5,-9.262699147552492,0.6784671759524756,0.3951752760768352,s4g75_promoted_kernel_endpoint_stress_test_not_validation
+train,K_scale_tail_spiral,20,1.0,0.5,0.5,0.45,-29.164139412166,0.4526780020041048,0.3661863880688747,s4g75_promoted_kernel_endpoint_stress_test_not_validation
+train,K_thick_flared,17,0.9411764705882353,0.058823529411764705,0.6470588235294118,0.7058823529411765,-3.2730841202072654,-0.33207799138573435,-2.2552618413377985,s4g75_promoted_kernel_endpoint_stress_test_not_validation

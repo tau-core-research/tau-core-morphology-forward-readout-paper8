@@ -1,0 +1,6 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,claim_boundary
+NGC4088,N4088_AEG1_FORMULA_FROZEN,PASS,NGC4088_WARP_HISTORY_FORMULA_FREEZE_READY_LAW_CAVEATED_NOT_SCORE,none for endpoint scoring; law-level caveats remain,True,ngc4088_warp_history_accepted_endpoint_gate_not_score
+NGC4088,N4088_AEG2_DASHBOARD_READY,PASS,FORMULA_FREEZE_READY_ENDPOINT_GATE_REQUIRED,none if dashboard says endpoint gate required,True,ngc4088_warp_history_accepted_endpoint_gate_not_score
+NGC4088,N4088_AEG3_ENDPOINT_BLIND_CONSTRUCTION,PASS,frozen manifest/kernel grid do not use vobs or residuals,scoring script may read vobs only after this gate,True,ngc4088_warp_history_accepted_endpoint_gate_not_score
+NGC4088,N4088_AEG4_CAVEATS_DECLARED,PASS_CAVEATED,"B1 graphical WHISP caveat, B2 law-level open, B3 law-level open",claim must remain preliminary single-galaxy control,True,ngc4088_warp_history_accepted_endpoint_gate_not_score
+NGC4088,N4088_AEG5_NO_RETUNING_RULE,PASS,posthoc_retuning_allowed=False; p=1 and lambda_w are frozen before scoring,"changing p, sign, carrier, x_w, or lambda after scoring demotes the row to diagnostic",True,ngc4088_warp_history_accepted_endpoint_gate_not_score

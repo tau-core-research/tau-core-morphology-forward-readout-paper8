@@ -36,10 +36,10 @@ than automatic label promotion.
 
 | galaxy | match_status | evidence_summary |
 | --- | --- | --- |
-| NGC0100 | NO_PHANGS_SAMPLE_COVERAGE | NGC0100 is not present in the public PHANGS sample table |
-| NGC0247 | NO_PHANGS_SAMPLE_COVERAGE | NGC0247 is not present in the public PHANGS sample table |
-| NGC0300 | NO_PHANGS_SAMPLE_COVERAGE | NGC0300 is not present in the public PHANGS sample table |
-| NGC6503 | NO_PHANGS_SAMPLE_COVERAGE | NGC6503 is not present in the public PHANGS sample table |
+| NGC0100 | NO_PHANGS_SAMPLE_COVERAGE | NGC0100 is not present in the public PHANGS sample table; downloaded fresh public PHANGS sample table |
+| NGC0247 | NO_PHANGS_SAMPLE_COVERAGE | NGC0247 is not present in the public PHANGS sample table; downloaded fresh public PHANGS sample table |
+| NGC0300 | NO_PHANGS_SAMPLE_COVERAGE | NGC0300 is not present in the public PHANGS sample table; downloaded fresh public PHANGS sample table |
+| NGC6503 | NO_PHANGS_SAMPLE_COVERAGE | NGC6503 is not present in the public PHANGS sample table; downloaded fresh public PHANGS sample table |
 
 ## HI Evidence
 

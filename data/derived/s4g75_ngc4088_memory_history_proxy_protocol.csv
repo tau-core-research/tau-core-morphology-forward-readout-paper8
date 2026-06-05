@@ -1,0 +1,2 @@
+galaxy,protocol_id,proxy_definition,allowed_sources,forbidden_inputs,current_status,claim_boundary
+NGC4088,NGC4088_WARP_MEMORY_HISTORY_SOURCE_PROXY_PROTOCOL,"m_history_warp = weighted_source_score(warp_persistence, HI_lopsidedness, outer_disk_asymmetry, interaction_context)",WHISP/HI morphology; channel-map persistence; outer-disk asymmetry; residual-blind environment notes,vobs; rotation residuals; rotation-inferred family; endpoint-selected model,PROTOCOL_READY_RESPONSE_EMPTY,s4g75_ngc4088_memory_history_proxy_protocol_not_endpoint

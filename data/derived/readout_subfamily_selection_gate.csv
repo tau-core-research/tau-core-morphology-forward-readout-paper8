@@ -1,0 +1,5 @@
+gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,claim_boundary
+RSF1_COARSE_FAMILY_NOT_FINAL_READOUT,PASS,K_obs and K_readout are already separated; 4D projected morphology is not automatically the Tau-side readout class,"keep parent-family labels as handles, not final physical taxonomy",False,readout_subfamily_selection_gate_not_endpoint
+RSF2_SUBFAMILY_MOTIVATED_BY_STRESS_CASE,PASS,NGC4088 generic family RMSE exceeds targeted warp bounded RMSE by 30.8843 km/s,repeat on multiple warp/history-rich galaxies,False,readout_subfamily_selection_gate_not_endpoint
+RSF3_RESIDUAL_BLIND_SUBFAMILY_OBSERVABLES,PENDING,registry lists required source observables for each subfamily,fill accepted residual-blind subfamily observables before endpoint use,False,readout_subfamily_selection_gate_not_endpoint
+RSF4_NO_ENDPOINT_SUBFAMILY_SELECTION,PASS,best Tau family/subfamily rows remain diagnostic-only and are not promoted to accepted labels,freeze subfamily selection rule before future endpoint scoring,False,readout_subfamily_selection_gate_not_endpoint

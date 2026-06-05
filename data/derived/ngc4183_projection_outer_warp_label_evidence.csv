@@ -1,0 +1,6 @@
+evidence_id,evidence_status,value,threshold_or_reason,interpretation
+E1_EDGE_ON_PROJECTION,SUPPORTS_NARROW_LABEL,0.9851478631379982,p_edge > 0.95,edge-on projection observable is strong enough for projection-overlay derivation
+E2_RHI_DENOMINATOR_CONSISTENCY,SUPPORTS_NARROW_LABEL,0.0062375447574292,relative difference < 0.02,source-native H I diameter and SPARC RHI agree as support scale
+E3_OUTER_WARP_CONTEXT,SUPPORTS_CAVEATED_LABEL_ONLY,ACCEPTED_CONTEXT_CAVEATED,qualitative source note only,outer-warp context can name the caveat but cannot freeze a numeric ramp
+E4_NUMERIC_WARP_KERNEL,BLOCKS_WARP_RAMP_FREEZE,BLOCKED_NUMERIC_FIELD_MISSING,no onset/amplitude,do not use standalone warp-ramp or added-source formula yet
+E5_BROAD_BAR_CORE_HISTORY,REJECTS_BROAD_LABEL_FOR_NOW,BLOCKED_REQUIRED_FIELD_MISSING,required field missing,broad proposed label is too specific for available source evidence

@@ -1,0 +1,8 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,T1_SOURCE_FACTORS_AVAILABLE,PASS,"sigma_warp, q_warp, x_w, and Vflat^2 are present before endpoint scoring",none at availability level,False,False,s4g75_ngc4088_target_functional_origin_gate_not_endpoint
+NGC4088,T2_DIMENSIONAL_PRODUCT_VALID,PASS,sigma_warp q_warp x_w Vflat^2 has km^2/s^2 units,none at dimensional level,False,False,s4g75_ngc4088_target_functional_origin_gate_not_endpoint
+NGC4088,T3_ONSET_FACTOR_SOURCE_GROUNDED,FORMULA_CONDITIONAL,x_w is measured by a residual-blind protocol but still needs independent review,complete independent digitization review,False,False,s4g75_ngc4088_target_functional_origin_gate_not_endpoint
+NGC4088,T4_ASYMPTOTIC_CARRIER_SOURCE_GROUNDED,FORMULA_CONDITIONAL,Vflat^2 is source/catalog grounded but not derived as a Tau-side carrier,derive asymptotic carrier dominance,False,False,s4g75_ngc4088_target_functional_origin_gate_not_endpoint
+NGC4088,T5_MULTIPLICATIVE_COUPLING_DERIVED,BLOCKED,"the product form is selected by ansatz, not derived","derive why source strength, onset, orientation, and carrier multiply linearly",False,False,s4g75_ngc4088_target_functional_origin_gate_not_endpoint
+NGC4088,T6_QUADRATIC_PENALTY_DERIVED,BLOCKED,the quadratic target penalty is minimal and convex but not Tau-side derived,derive penalty geometry or replace with a derived closure cost,False,False,s4g75_ngc4088_target_functional_origin_gate_not_endpoint
+NGC4088,T7_ENDPOINT_BLINDNESS,PASS,no observed velocity or residual score is used in target construction,keep endpoint testing separate,False,False,s4g75_ngc4088_target_functional_origin_gate_not_endpoint

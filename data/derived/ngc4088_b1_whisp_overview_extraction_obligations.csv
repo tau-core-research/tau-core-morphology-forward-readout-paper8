@@ -1,0 +1,6 @@
+obligation_id,status,requirement,acceptance_condition,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+WHEX1_SOURCE_PRODUCT_CACHED,PASS,WHISP UGC7081 overview GIF is cached with provenance,source_product_status=WHISP_GRAPHICAL_OVERVIEW_CACHED_REVIEW_READY,False,False,ngc4088_b1_whisp_overview_extraction_review_not_endpoint
+WHEX2_ARCMIN_AXIS_PRESENT,PASS,position-velocity panel has Offset from center (arcmin) axis,reviewer uses P3 axis rather than endpoint residuals,False,False,ngc4088_b1_whisp_overview_extraction_review_not_endpoint
+WHEX3_RESPONSE_FILLED,PENDING,reviewer fills side-A/side-B onset offsets and uncertainty,numeric arcmin offsets and uncertainty present,False,False,ngc4088_b1_whisp_overview_extraction_review_not_endpoint
+WHEX4_TOLERANCE_OR_INTERVAL,PENDING,x_w review agrees with first pass or freezes an uncertainty interval,"|x_w_review - 0.282353| <= 0.0705882, or source-side interval is frozen before formula use",False,False,ngc4088_b1_whisp_overview_extraction_review_not_endpoint
+WHEX5_INDEPENDENT_OR_FROZEN_METHOD,PENDING,measurement is performed by independent reviewer or frozen image script,reviewer_or_method_id is not the first-pass digitizer,False,False,ngc4088_b1_whisp_overview_extraction_review_not_endpoint

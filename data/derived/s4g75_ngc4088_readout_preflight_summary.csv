@@ -1,0 +1,2 @@
+galaxy,n_points,r_hi_kpc,max_delta_v2_p1,max_delta_v2_p2,max_v_candidate_p1,max_v_candidate_p2,profile_status,endpoint_scores_allowed,claim_boundary
+NGC4088,12,22.25295929988883,7921.121953269315,7630.509853988166,190.38077052127497,189.58158188290682,PREDECLARED_READOUT_EXPORT_NOT_ENDPOINT,False,s4g75_ngc4088_readout_preflight_profile_not_endpoint

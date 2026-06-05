@@ -1,0 +1,4 @@
+split,n_galaxies,filled_improves_matched_rmse_fraction,filled_improves_vs_wrong_fraction,filled_improves_vs_tpg_fraction,filled_improves_vs_mond_fraction,median_filled_minus_old_matched_rmse,median_filled_minus_old_matched_minus_wrong,median_filled_minus_old_matched_minus_tpg,median_filled_minus_old_matched_minus_mond,claim_boundary
+all,75,0.09333333333333334,0.10666666666666667,0.12,0.14666666666666667,0.0,0.0,0.0,0.0,s4g75_filled_kernel_endpoint_stress_test_not_validation
+holdout,21,0.2857142857142857,0.19047619047619047,0.2857142857142857,0.2857142857142857,0.0,0.005822442956933571,0.0,0.0,s4g75_filled_kernel_endpoint_stress_test_not_validation
+train,54,0.018518518518518517,0.07407407407407407,0.05555555555555555,0.09259259259259259,0.0,0.0,0.0,0.0,s4g75_filled_kernel_endpoint_stress_test_not_validation

@@ -1,0 +1,7 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+NGC7331,N7331_QCHOICE1_SOURCE_NATIVE_Q_EXISTS,PASS_REVIEW_INPUT_AVAILABLE,centroid_mid=0.00794045; envelope_mid=0.205796,none for existence of q candidates,False,False,ngc7331_qwarp_observable_choice_review_gate_not_endpoint
+NGC7331,N7331_QCHOICE2_OBSERVABLE_UNIQUENESS,BLOCKED_OBSERVABLE_CHOICE_NOT_UNIQUE,envelope/centroid ratio=25.9174,"independent review must select centroid, envelope, or carry an interval",False,False,ngc7331_qwarp_observable_choice_review_gate_not_endpoint
+NGC7331,N7331_QCHOICE3_MOM1_CONTEXT,PASS_REVIEW_INPUT_AVAILABLE,MOM1 receding side consensus=CONSISTENT; f_PA_max=0.0428328,map source orientation to B2 sign convention,False,False,ngc7331_qwarp_observable_choice_review_gate_not_endpoint
+NGC7331,N7331_QCHOICE4_EPSILON_INTERVAL,BLOCKED_INTERVAL_NOT_ACCEPTED,candidate epsilon_cross bound=0.488571; q choice gap fraction=0.961416,accept/carry epsilon interval after q observable decision,False,False,ngc7331_qwarp_observable_choice_review_gate_not_endpoint
+NGC7331,N7331_QCHOICE5_FORMULA_FREEZE,BLOCKED,"q observable not selected, sign not frozen, epsilon interval not accepted",close review decisions before exact-transfer formula freeze,False,False,ngc7331_qwarp_observable_choice_review_gate_not_endpoint
+NGC7331,N7331_QCHOICE6_ENDPOINT_BLINDNESS,PASS,"gate reads only source-side derived packets, not rotation scores",none at endpoint-blindness level,False,False,ngc7331_qwarp_observable_choice_review_gate_not_endpoint

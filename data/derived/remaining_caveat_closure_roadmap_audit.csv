@@ -1,0 +1,5 @@
+galaxy,caveat_reduction_status,caveat_reduced,remaining_caveat,endpoint_status_changed,endpoint_scores_recomputed,uses_vobs_or_residual_in_reduction,claim_boundary
+NGC4013,RETROSPECTIVE_CAVEAT_ISOLATED_NOT_REMOVED,False,needs a predeclared replay/holdout lane or future source-selected analogue to reduce the retrospective caveat,False,False,False,remaining_caveat_closure_roadmap_not_endpoint
+NGC5907,PRIOR_PROJECTION_CAVEAT_REDUCED_TO_CONTROL_CONTEXT,True,small-N and single-galaxy control status remain,False,False,False,remaining_caveat_closure_roadmap_not_endpoint
+NGC7331,BROAD_WINDOW_CAVEAT_REDUCED_FOR_REPLAY_NOT_RETROACTIVE_ENDPOINT,True,accepted V1 row remains broad-window caveated; V2/V3 replay result is not retroactive endpoint update,False,False,False,remaining_caveat_closure_roadmap_not_endpoint
+NGC4088,B1_PROVENANCE_CAVEAT_REDUCED_LAW_LEVEL_CAVEATS_REMAIN,True,WHISP graphical-overview provenance caveat travels with the formula; B2 physical normalization and B3 scale uniqueness remain law-level caveats,False,False,False,remaining_caveat_closure_roadmap_not_endpoint

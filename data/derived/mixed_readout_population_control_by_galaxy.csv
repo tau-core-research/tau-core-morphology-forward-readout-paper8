@@ -1,0 +1,4 @@
+galaxy,matched_rmse,wrong_mean_rmse,wrong_best_rmse,matched_minus_wrong_mean,matched_minus_wrong_best,matched_rank_within_galaxy,matched_beats_all_wrong_labels,claim_boundary
+NGC4013,10.614758288774299,12.132137483453935,11.367007531452495,-1.517379194679636,-0.7522492426781966,1,True,mixed_readout_population_wrong_label_control_audit
+NGC5907,16.37253184042256,17.055166006828266,16.847988894966658,-0.6826341664057054,-0.4754570545440977,1,True,mixed_readout_population_wrong_label_control_audit
+NGC7331,22.25566565122058,22.673070609551836,22.668249946984236,-0.41740495833125735,-0.41258429576365785,1,True,mixed_readout_population_wrong_label_control_audit

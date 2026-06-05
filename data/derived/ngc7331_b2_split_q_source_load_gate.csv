@@ -1,0 +1,7 @@
+gate_id,gate_status,evidence,remaining_obligation,galaxy,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+B2S1_FAILURE_LOCALIZED,PASS,NGC7331_B2_Q_ROLE_SEPARATION_DIAGNOSTIC_COMPLETE_NOT_ENDPOINT,none for failure localization,NGC7331,False,False,ngc7331_b2_split_q_source_load_theory_gate_not_endpoint
+B2S2_Q_SHAPE_SOURCE_AVAILABLE,PASS_INTERVAL,"[0.0079404475812108, 0.2057957876154617]",rename/use as q_shape; do not identify with mu_load by default,NGC7331,False,False,ngc7331_b2_split_q_source_load_theory_gate_not_endpoint
+B2S3_DIMENSIONS_LIMITS,PASS,split formulas are dimensionally valid and recover inactive window,none at dimensional/protocol level,NGC7331,False,False,ngc7331_b2_split_q_source_load_theory_gate_not_endpoint
+B2S4_MU_LOAD_SOURCE_ORIGIN,OPEN,"unit, vertical, cross, and HI/history candidates listed",derive or source-freeze mu_load before any endpoint freeze,NGC7331,False,False,ngc7331_b2_split_q_source_load_theory_gate_not_endpoint
+B2S5_SIGN_CONTEXT,CARRIED_CAVEATED,NGC7331_THINGS_MOM1_SIGN_CROSS_REVIEW_BUILT_FREEZE_BLOCKED,freeze sign convention independently if point branch is built,NGC7331,False,False,ngc7331_b2_split_q_source_load_theory_gate_not_endpoint
+B2S6_ENDPOINT_ELIGIBILITY,BLOCKED,post-failure diagnostic only,new formula branch must be predeclared and frozen before scoring,NGC7331,False,False,ngc7331_b2_split_q_source_load_theory_gate_not_endpoint

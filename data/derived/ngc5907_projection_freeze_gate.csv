@@ -1,0 +1,7 @@
+galaxy,proposed_readout_subfamily,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC5907,K_projection_dominated,PFG1_ACCEPTED_SOURCE_FIELDS,PASS,ACCEPTED_SUBFAMILY_SOURCE_FIELDS_ENDPOINT_STILL_BLOCKED,endpoint freeze still separate,False,False,ngc5907_projection_freeze_gate_not_endpoint
+NGC5907,K_projection_dominated,PFG2_DIMENSIONAL_WARP_RANGE,PASS,warp range 13.3-24 kpc; start/main_scale=2.7,preserve projected-geometry caveat,False,False,ngc5907_projection_freeze_gate_not_endpoint
+NGC5907,K_projection_dominated,PFG3_VERTICAL_KERNEL_DIRECT,PASS,h/R=0.173321 from Z:edgedisk_hz2_over_hr2,"treat as source-native kernel observable, not endpoint fit",False,False,ngc5907_projection_freeze_gate_not_endpoint
+NGC5907,K_projection_dominated,PFG4_TRUNCATION_CONTRAST_READY,PASS,main/corrected/outer scales=4.92/4.7/1.23 kpc,do not tune transition against rotation residuals,False,False,ngc5907_projection_freeze_gate_not_endpoint
+NGC5907,K_projection_dominated,PFG5_FROZEN_PROJECTION_BOUND,PASS_CAVEATED,Pi_projection <= 0.789128,protocol bound only; not final Tau-side projection coefficient law,False,False,ngc5907_projection_freeze_gate_not_endpoint
+NGC5907,K_projection_dominated,PFG6_ENDPOINT_BLINDNESS,PASS,all inputs are source fields or direct kernel observables; endpoint_scores_allowed=False,future scoring requires separately frozen endpoint protocol,False,False,ngc5907_projection_freeze_gate_not_endpoint

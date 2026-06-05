@@ -1,0 +1,11 @@
+subfamily,primary_lane,secondary_lane,selection_rule,endpoint_scores_allowed,claim_boundary
+K_warp_history_coupled,L_added_source,L_mixed_overlay,use added lane only when source fields imply a real source-load/history term; otherwise treat as mixed/blocked,False,readout_lane_taxonomy_update_not_endpoint
+K_projection_dominated,L_projection_attenuation,L_mixed_overlay,"projection evidence selects bounded attenuation, not added source ramp",False,readout_lane_taxonomy_update_not_endpoint
+K_expdisk_overlay,L_mixed_overlay,L_clean_carrier,smooth disk carrier plus overlay evidence; reject if overlay has no source field,False,readout_lane_taxonomy_update_not_endpoint
+K_clean_expdisk,L_clean_carrier,L_mixed_overlay,clean carrier unless source-blind overlay/projection/history evidence is present,False,readout_lane_taxonomy_update_not_endpoint
+K_thick_regular,L_clean_carrier,L_projection_attenuation,regular vertical thickness is carrier-like unless edge-on/projection caveat dominates,False,readout_lane_taxonomy_update_not_endpoint
+K_flared_outer_disk,L_mixed_overlay,L_projection_attenuation,outer flare modifies carrier; projection lane if geometry dominates source fields,False,readout_lane_taxonomy_update_not_endpoint
+K_smooth_n2_tail,L_added_source,L_clean_carrier,tail/source support may add a TGP-like term if source window and amplitude are frozen,False,readout_lane_taxonomy_update_not_endpoint
+K_disturbed_outer_tail,L_added_source,L_mixed_overlay,disturbed tails require asymmetry/history source evidence and bounded support,False,readout_lane_taxonomy_update_not_endpoint
+K_true_compact,L_clean_carrier,L_mixed_overlay,compact lane only with source-supported compact support; otherwise compact+disk overlay,False,readout_lane_taxonomy_update_not_endpoint
+K_compact_plus_disk,L_mixed_overlay,L_clean_carrier,compact and disk supports both active; freeze decomposition before scoring,False,readout_lane_taxonomy_update_not_endpoint

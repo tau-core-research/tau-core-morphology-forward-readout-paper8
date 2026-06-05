@@ -1,0 +1,1132 @@
+Mon. Not. R. Astron. Soc. 000, 000–000 (0000)
+
+Printed November 5, 2018
+
+(MN LATEX style file v2.2)
+
+Molecular scale height in NGC 7331
+Narendra Nath Patra1 ?
+
+1 National Centre for Radio Astrophysics, Tata Institute of Fundamental Research, Pune University campus, Pune 411 007, India
+
+arXiv:1706.08615v2 [astro-ph.GA] 6 Jul 2018
+
+ABSTRACT
+
+Combined Poisson’s-Boltzman equations of hydrostatic equilibrium were set up
+and solved numerically for different baryonic components to obtain the molecular scale
+height as defined by the Half Width at Half Maxima (HWHM) in the spiral galaxy NGC
+7331. The scale height of the molecular gas was found to vary between ∼ 100 − 200
+pc depending on the radius and assumed velocity dispersion. The solutions of the hydrostatic equation and the observed rotation curve were used to produce a dynamical model
+and consequently a simulated column density map of the molecular disk. The modelled
+molecular disk found to match with the observed one reasonably well except at the outer
+disk regions. The molecular disk of NGC 7331 was projected to an inclination of 90o to
+estimate its observable edge-on thickness (HWHM), which was found to be ∼ 500 pc.
+With an HWHM of ∼ 500 pc, the observed edge-on extent of the molecular disk was
+seen to be ∼ 1 kpc from the mid-plane. This indicates that in a typical galaxy, hydrostatic equilibrium, in fact, can produce a few kilo-parsec thick observable molecular disk
+which was thought to be difficult to explain earlier.
+Key words: ISM: molecules – molecular data – galaxies: structure – galaxies: kinematics and dynamics – galaxies: individual: NGC 7331 – galaxies: spiral
+
+1
+
+INTRODUCTION
+
+Molecular gas plays a significant role in galaxy formation and
+evolution. Molecular clouds provide the sites of active star formation and hence host a suite for stellar activity, e.g. stellar feedback, supernova etc. The conversion of the gas into stars significantly regulated by this phase of the ISM. Hence, the abundance
+and distribution of the molecular gas in galaxies are of immense
+importance. Dynamically, the molecular gas in galaxies is expected to settle in a thin disk due to its low thermal pressure;
+however, its three-dimensional distribution is still poorly understood.
+It is challenging to measure the three-dimensional distribution of the molecular clouds in the Galaxy mainly due to distance ambiguities and high opacity of 12 CO emission. Out of the
+plane distribution of molecular gas outside the solar circle was
+first reported by Grabelsky et al. (1987) using large-scale 12 CO
+survey. Extending on their study, Wouterloot et al. (1990) used
+IRAS point source catalogue and 12 CO observations to identify
+molecular clouds and their distribution in the outer Galaxy. In
+the inner Galaxy, the extinction is significant, and the distances
+to the molecular clouds were estimated mainly from their latitude and hence are ambiguous (e.g., Sanders, Solomon & Scoville 1984; Scoville et al. 1987; Bronfman et al. 1988). From these
+studies, one can only conclude that most of the molecular gas resides in a thin disk of scale height (HWHM) ∼ 75 pc in the inner
+Galaxy and can flare up to 200 − 250 pc at the outer Galaxy.
+However, many recent studies provide mounting evidence
+
+?
+
+E-mail: narendra@ncra.tifr.res.in
+
+c 0000 RAS
+
+of a much thicker molecular disk than what was expected earlier.
+For example, Garcia-Burillo et al. (1992) observed NGC 891
+using IRAM 30 m telescope and found a thick molecular disk.
+They detected molecular gas at ∼ 1 − 1.4 kpc above and below
+the mid-plane. Pety et al. (2013) also shown that the molecular
+component in the M51 galaxy does contain a diffuse component
+which has a typical scale height of ∼ 200 pc. Combes & Becquaert (1997a) studied two nearly face-on galaxies NGC 628 and
+NGC 3938 to find out that the velocity dispersion of the molecular and atomic gas are similar indicating a diffuse component
+of the molecular gas with high-velocity dispersion. Caldú-Primo
+et al. (2013) studied the stacked spectra of HI and CO in a comprehensive sample of 12 galaxies using THINGS (Walter et al.
+2008) and HERACLE (Leroy et al. 2009) survey data respectively to find that the velocity dispersion of the molecular gas is
+almost the same as that of the atomic gas. Later, very recently,
+Mogotsi et al. (2016) used the same sample to study individual
+HI and CO spectra and found a little lower velocity dispersion
+for the molecular gas than the atomic gas. Nevertheless, the line
+width of the molecular gas found to be ∼ 8 − 10 km s−1 , which
+is much higher than the velocity dispersion expected in a thin
+disk.
+Though these studies indicate a thicker molecular disk
+in external galaxies, they do not provide any detailed threedimensional distribution. Direct measurement of the same is not
+possible (even for an edge-on galaxy) due to line-of-sight integration effect. Theoretically, the vertical distribution of the gas
+disk is determined by the balance between gravity and pressure under hydrostatic equilibrium. Hence, the distribution of
+the molecular gas (or any other component) can be obtained by
+
+2
+
+N. N. Patra
+
+solving combined Poisson’s-Boltzman equation of hydrostatic
+equilibrium at any radius. Not only that, the solutions then can
+be used to produce observables and compared with real observations to constrain various input parameters (e.g. velocity dispersion, inclination etc.) to the hydrostatic equilibrium equation
+(see, e.g., Patra et al. 2014).
+Many previous studies used vertical hydrostatic equilibrium condition to estimate the vertical structure of atomic gas
+in spiral and dwarf galaxies (Olling 1995; Becquaert & Combes
+1997; Narayan, Saha & Jog 2005; Banerjee & Jog 2008; Banerjee, Matthews & Jog 2010; Banerjee et al. 2011; Patra et al.
+2014). These studies neglected the contribution of the molecular gas due to lack of observational inputs. With recent surveys of molecular gas in nearby galaxies (e.g. HERACLE (Leroy
+et al. 2009)), it is possible to estimate the vertical scale height
+of the molecular gas in nearby spiral galaxies. However, detecting molecular gas in dwarf galaxies remains challenging, and no
+significant detections were made in spite of substantial efforts
+(Cormier et al. 2014; McQuinn et al. 2012; Leroy 2006).
+In this paper, I set up the combined Poisson’s-Boltzman
+equation of hydrostatic equilibrium for a galactic disk with different baryonic components, i.e., stars, atomic gas and molecular
+gas under the external potential of dark matter halo and solve for
+the galaxy NGC 7331. Many aspects of NGC 7331 (e.g., stellar content, star formation rates etc.) are remarkably similar to
+that of the Galaxy, and sometimes it is referred to as “the Milky
+Way’s twin”. However, though, there exist a few structural differences as well between them, e.g., the Galaxy is believed to
+be a barred spiral whereas NGC 7331 doesn’t have a bar. These
+facts make it even more interesting to study this galaxy. Along
+with that, this galaxy is a part of THINGS survey (Walter et al.
+2008) and HERACLE (Leroy et al. 2009) survey which makes
+the necessary data available for this study. Not only that this
+galaxy has an inclination of ∼ 76o which makes it suitable for
+the estimation of its rotation curve reliably and at the same time
+its gas disk produces an observed thickness which is sensitive
+to the vertical structure of the gas disk. I numerically solve the
+second order coupled differential equations to obtain the vertical
+structure of the molecular disk. The hydrostatic equilibrium is a
+crucial assumption for this study. Any violation of this assumption would lead to a wrong interpretation of the data. Many previous studies revealed the existence of star-burst driven molecular outflow and supershells which are expected to disturb the hydrostatic equilibrium (Bolatto et al. 2013; Irwin & Sofue 1996).
+However, these disturbances are mostly restricted to the central
+region of . 1 kpc where the star formation rate is much higher
+than the outer parts of a galaxy. A central region of 2 kpc was
+excluded in this study to avoid several complications related to
+hydrostatic equilibrium, and it is expected that the assumption of
+the hydrostatic equilibrium would be mostly valid for the rest of
+the disk of NGC 7331. Even though it is possible that in places
+within the galaxy this assumption might not hold good, but as
+I am using an azimuthally averaged quantities to estimate the
+molecular scale height, the local fluctuations are expected to be
+smoothed away.
+
+2
+
+all the baryonic disks are considered to be co-planar, concentric
+and symmetric. Here I set up the hydrostatic equilibrium equation in a cylindrical-polar coordinate (R, z). The observed column density distribution of different baryonic components hence
+was deprojected (Fig. 2) to obtain the surface density distribution
+which is in the cylindrical polar coordinate too. The potential of
+the dark matter halo is considered to be fixed and can be determined observationally (from mass modelling). The Poisson’s
+equation for the disks plus dark matter halo then can be given as
+
+1 ∂
+R ∂R
+
+
+
+∂Φtotal
+R
+∂R
+
+3
+X
+∂ 2 Φtotal
++
+=
+4πG
+ρi + ρh
+∂z 2
+i=1
+
+!
+(1)
+
+where Φtotal is the total potential due to all the disk components
+and dark matter halo. ρi indicate the volume density of different baryonic components where i runs for stars, atomic gas and
+molecular gas. ρh denotes the mass density of dark matter halo.
+As an NFW profile better describes the dark matter halos of spiral galaxies as compared to an isothermal one (Moore et al. 1998;
+Jing & Suto 2000; de Blok et al. 2008), I chose to adopt an NFW
+distribution to represent the dark matter halo of NGC 7331. The
+dark matter density profile of an NFW halo (Navarro, Frenk &
+White 1997) can be given as
+
+ρ(R) =
+R
+Rs
+
+ρ0
+
+2
+1 + RRs
+
+(2)
+
+where ρ0 is the characteristic density and Rs is the scale radius.
+These two parameters describe entirely a spherically symmetric
+NFW dark matter halo.
+The equation of hydrostatic equilibrium for individual components can be written as
+
+∂
+∂Φtotal
+ρi hσz2 ii + ρi
+=0
+∂z
+∂z
+
+(3)
+
+where hσz ii is the vertical velocity dispersion of the ith
+component, an input parameter.
+Eliminating Φtotal from Equation (1) and (3),
+
+hσz2 ii
+
+∂
+∂z
+
+
+
+1 ∂ρi
+ρi ∂z
+
+
+=
+− 4πG (ρs + ρHI + ρH2 + ρh )
+
+
+1 ∂
+∂φtotal
+R
++
+R ∂R
+∂R
+
+(4)
+
+where ρs , ρHI and ρH2 are the mass density of stars, HI and
+molecular gas respectively. Eq. 4 represents three second-order
+partial differential equations in the variables ρs , ρHI and ρH2 .
+However the above equation can be further simplified using the
+fact (see Banerjee, Matthews & Jog 2010, for more details)
+
+MODELLING THE GALACTIC DISKS
+
+
+2.1
+
+
+
+Formulation of equation
+
+I model the galactic disk assuming it to be a three component
+system consisting of stars, atomic gas and molecular gas settled
+under mutual gravity in the external potential field of the dark
+matter halo. All the disks of different components would then be
+in vertical hydrostatic equilibrium individually. For simplicity,
+
+R
+
+∂φtotal
+∂R
+
+
+
+2
+= (vrot
+)R,z
+
+(5)
+
+R,z
+
+where (vrot )R,z is the circular rotation velocity. Assuming a
+negligible vertical gradient in (vrot )R,z , one can approximate
+the (vrot )R,z by the observed rotation curve vrot , which is a
+function of R alone. Thus Eq. 4 reduces to
+c 0000 RAS, MNRAS 000, 000–000
+
+3
+
+Molecular scale height in NGC 7331
+64
+H2
+
+56
+
+HI + H2
+
+32
+
+2400000
+
++34 18 00
+
+120
+
+24
+
+80
+60
+40
+
+16
+0
+
+140
+
+100
+
+0
+
+36s
+
+37m12s
+
+48s
+
+22h36m24s
+
+100
+80
+60
+40
+
+20
+
+8
+
+00
+
+ΣH2 (M pc−2)
+
+40
+
+◦
+
+120
+48
+ΣHI (M pc−2)
+
+Dec (J2000)
+
+30 00
+
+00
+
+36s
+
+37m12s
+
+48s
+
+ΣHI+H2 (M pc−2)
+
+160
+
+140
+0
+
+HI
+
+20
+
+0
+5 kpc
+22h36m24s
+
+0
+
+36s
+
+37m12s
+
+48s
+
+22h36m24s
+
+RA (J2000)
+Figure 1. The observed column density maps of NGC 7331. Left panel: The HI column density map from THINGS survey (Walter et al. 2008). Middle
+panel: The observed total intensity map of the molecular gas as traced by CO from the HERACLE survey (Leroy et al. 2009). Right panel: The intensity
+distribution of total gas column density, i.e., HI + H2 . The colour bars in each panel indicates the observed column densities in the unit of M pc−2 .
+
+104
+
+∂
+∂z
+
+1 ∂ρi
+ρi ∂z
+
+HI
+H2
+
+
+=
+− 4πG (ρs + ρHI + ρH2 + ρh )
+1 ∂
+2 
++
+vrot
+R ∂R
+
+(6)
+
+Eq. 6 represents three coupled, second-order ordinary differential equations in the variables ρs , ρHI and ρH2 . The solution of
+Eq. 6 at any radius (R) gives the density of these components as
+a function of z. Thus solutions of this equation will provide the
+three-dimensional density distribution of different disk components.
+
+2.2
+
+To get the vertical structure of the molecular disk of any galaxy
+one needs to solve Eq. 6. In this work, I solve Eq. 6 for the
+galaxy NGC 7331 to estimate its vertical molecular structure.
+This galaxy was observed in HI as part of the THINGS survey
+(Walter et al. 2008) and the molecular data was taken from the
+HERACLE survey (Leroy et al. 2009). As it is discussed in later
+sections, an inclination of ∼ 76o of this galaxy favours in comparing the modelled and the observed molecular disk.
+In Fig. 1, I show the observed column density images of
+NGC7331. The left panel shows the column density of HI gas
+as observed by the VLA as part of the THINGS survey (Walter
+et al. 2008), whereas the middle panel shows the molecular column density map as observed by the 30-meter IRAM telescope
+as part of the HERACLE survey (Leroy et al. 2009). The right
+panel of Fig. 1 shows the total gas column density map i.e., (HI
++ H2 ). The black dots show the observing beams at the left bottom corner of the respective panels. The HI data was at a higher
+resolution as compared to the H2 data, hence to get a total gas
+column density map, I first smoothed the HI data with a Gaussian kernel to produce an output resolution same as the H2 map
+and then sum them together to get the total gas column density
+map. The grey scale in each panel are in the unit of M pc−2 .
+I adopt the same CO(2-1) to H2 conversion factor as given by
+Leroy et al. (2008)
+ΣH2 (M pc−2 ) = 5.5 ICO (2 → 1) (Kkms−1 )
+
+(7)
+
+As we will be solving each component separately at a time
+(see § 2.3), the surface densities of the individual components
+are of particular interest. In Fig. 2, I plot the deprojected face-on
+c 0000 RAS, MNRAS 000, 000–000
+
+102
+
+101
+
+100
+0
+
+Input parameters
+
+star
+
+103
+Σ (M pc−2)
+
+hσz2 ii
+
+
+
+5
+
+10
+R (kpc)
+
+15
+
+20
+
+Figure 2. The deprojected face-on surface density profiles of NGC7331.
+The black asterisks represent stellar surface density; the blue squares
+represent the surface density of molecular gas whereas the red circles
+represent the HI surface density. It can be noted that the H2 disk extends
+only up to ∼ 10 kpc, whereas the HI and the stellar disks extend up to a
+much larger radius. The data were taken from Leroy et al. (2008).
+
+surface densities of different disk components (i.e., stars, HI and
+H2 ) as a function of radius. These data were taken from Leroy
+et al. (2008). As can be seen from the figure, the molecular gas
+disk extends up to ∼ 10 kpc from the centre whereas the HI and
+the stellar disk extends far out to a much larger radius. For details
+of the surface density calculations, I refer the readers to Leroy
+et al. (2008). It should be noted that the surface densities are one
+of the primary inputs to the hydrostatic equation and are a proxy
+to the mass distribution in the vertical direction.
+The vertical velocity dispersions of different disk components are another vital input to Eq. 6. Banerjee et al. (2011)
+shown that the vertical structure of the gaseous components is
+marginally affected by the accuracy of the assumed stellar velocity dispersion (σs ). Hence, the stellar velocity dispersion was
+calculated analytically
+√ by assuming an isothermal disk using the
+formula σs ≃ 1.879 ls Σs (see Leroy et al. 2008, for more details), where σs is the stellar velocity dispersion in km s−1 , ls is
+the exponential scale length of the stellar disk in kpc and Σs is
+the stellar surface density in M pc−2 .
+The HI velocity dispersion (σHI ) in spiral galaxies were
+
+N. N. Patra
+
+studied extensively through HI spectral line observations. Early
+work by many authors suggest an HI velocity dispersion of 6-13
+km s−1 (Shostak & van der Kruit 1984; van der Kruit & Shostak
+1984; Kamphuis & Sancisi 1993) in galaxies. Petric & Rupen
+(2007) studied the nearly face-on galaxy NGC 1058 to find that
+the σHI varies between 4-14 km s−1 and decreases with radius.
+In an extensive analysis, Tamburro et al. (2009) studied the σHI
+in spiral galaxies from THINGS survey and found a mean HI
+velocity dispersion to be ∼ 10 km s−1 at r25 . In a later study,
+Ianjamasimanana et al. (2012) applied spectral stacking method
+to the same data to estimate the σHI with higher confidence.
+They found a σHI = 12.5 ± 3.5 km s−1 (σHI = 10.9 ± 2.1
+km s−1 for galaxies with inclination less than 60o ).
+Caldú-Primo et al. (2013) studied the σHI and σCO using
+stacking technique in a sample of 12 nearby spiral galaxies. They
+found σHI /σCO = 1.0 ± 0.2 with a median σHI = 11.9 ± 3.1
+km s−1 . However, Mogotsi et al. (2016) studied the same sample
+by analysing individual high SNR spectra to find a σHI /σCO =
+1.4 ± 0.2 with σHI = 11.7 ± 2.3 km s−1 and σCO = 7.3 ± 1.7
+km s−1 . As can be seen from these studies, the σHI in spiral
+galaxies could be assumed to be ∼ 12 km s−1 . It can be noted
+that due to their mass budget, the dark matter halo and the stars
+dominantly decide the gravitational field which is followed by
+the gas components. In such a situation, the distribution of HI gas
+can only marginally influence the distribution of the molecular
+gas, and hence, the velocity dispersion of HI has minimal effect
+on the scale height of the molecular gas.
+But, the velocity dispersion of the molecular gas (σH2 )
+directly influences the vertical structure of the molecular disk.
+Stark (1984) observed molecular clouds in the Galaxy and found
+that the velocity dispersion of low mass clouds is higher than
+the high mass clouds. The low mass clouds have a σH2 ∼ 9.0
+km s−1 whereas the high mass clouds have σH2 ∼ 6.6 km s−1 .
+Combes & Becquaert (1997b) studied two nearly face-on galaxies to find σH2 ∼ 6 − 8.5 km s−1 . They also found that the
+σH2 is almost constant over the whole galaxy and comparable
+to the velocity dispersion of HI (σHI ). Stark & Lee (2005) used
+observations of 13 CO J = 1 → 0 in 1400 molecular clouds in
+the Galaxy to find that the velocity dispersion of small clouds
+is higher than that of the Giant Molecular Clouds (GMCs). I assume a primary velocity dispersion of molecular gas, σH2 to be
+∼ 7 km s−1 , along with a variation between 6-10 km s−1 to
+explore the observed molecular disk in more details.
+The second term on the right-hand side of Eq. 6 represents
+the contribution of the centripetal acceleration against the gravity. However, the vrot in Eq. 6 is an observable quantity. In
+Fig. 3, the observed rotation curve of NGC 7331 from Begeman
+(1987) and de Blok et al. (2008) are plotted. de Blok et al. (2008)
+used relatively high-resolution HI data from THINGS survey. As
+in Eq. 6, we need to use the derivatives of the rotation velocity
+(vrot ), it is useful to parametrise the rotation curve instead of using actual data. A commonly used Brandt’s profile (Brandt 1960)
+given as
+Vmax (R/Rmax )
+vrot (R) = 
+
+n 3/2n
+R
+1/3 + 2/3 Rmax
+
+(8)
+
+is used to parametrise the rotation curve and the data were fitted
+to estimate the parameters. A Vmax = 262.2 ± 0.8 km s−1 ,
+Rmax = 6.1 ± 0.1 kpc and n = 0.67 ± 0.06 were found for
+de Blok et al. (2008) data and Vmax = 257.5 ± 1.0 km s−1 ,
+Rmax = 6.7 ± 0.1 kpc and n = 0.89 ± 0.07 were found for
+Begeman (1987) data. As can be seen that the fit parameters of
+both the data matches very well with each other. I chose to work
+with the parameters found with Begeman (1987) data as it is
+
+300
+
+Vrot (km s −1 )
+
+4
+
+250
+
+200
+
+150
+
+5
+
+deBlok et al. (2008)
+Begeman et al. (1987)
+10
+15
+R (kpc)
+
+Figure 3. The rotation curve of NGC 7331 as measured from HI data.
+The solid red circles represent derived rotation curve from THINGS data
+(de Blok et al. 2008), whereas the blue asterisks represent data from
+Begeman (1987).
+
+smoother than the THINGS data, however, I note that this does
+not make any fundamental difference to the results.
+The dark matter halo is another important input to the hydrostatic equilibrium equation. For NGC 7331 I used the dark
+matter halo parameters from de Blok et al. (2008) (Table-4 in
+their paper). The dark matter halo of NGC 7331 can be described
+both by the isothermal and NFW profile well. However, as the
+NFW profile in general describe the dark matter halo of spiral
+galaxies better than isothermal one (Moore et al. 1998; Jing &
+Suto 2000; de Blok et al. 2008), I choose to use an NFW profile as given by Eq. 2 with ρ0 = 1.05 × 10−3 M pc−3 and
+rs = 60.2 kpc (see de Blok et al. (2008) for more details).
+2.3
+
+Solving the hydrostatic equilibrium equation
+
+With all the inputs mentioned above, Eq. 6 was solved to obtain
+the vertical structure of different disk components. The coupled
+second-order ordinary differential equations were solved numerically using 8th order Runge Kutta method as implemented in
+scipy package. As each equation (for individual components)
+is a second order differential equation, two initial conditions are
+required to solve it.
+dρi
+=0
+(9)
+dz
+The second boundary condition in the above equation comes from the fact that at the mid-plane, the force,
+−∂φtotal /∂z, must be zero due to symmetry in the vertical direction (Spitzer 1942). Whereas the first boundary condition demands the mid-plane density, ρi,0 to be known a-priory. Though
+the ρi,0 is not a directly measurable quantity, its valueR can be estimated using the observed surface density as Σi = ρi (z) dz.
+For an individual component, e.g., stars, I first assume a trial
+ρs,0 and solve Eq. 6 assuming ρHI = ρH2 = 0. The solution,
+ρs (z) then integrated to obtain the stellar surface density Σs and
+compared to the observed one (Σ0s ) to update the next trial ρs,0 .
+This way, iteratively, an appropriate ρs,0 is estimated such that it
+produces the observed Σ0s with better than 0.1% accuracy. It can
+be noted that using this approach, the surface densities found to
+converge in less than few hundred iterations.
+However, as in Eq. 6 ρs , ρHI and ρH2 jointly contribute to
+(ρi )z=0 = ρi,0
+
+and
+
+c 0000 RAS, MNRAS 000, 000–000
+
+Molecular scale height in NGC 7331
+
+As can be seen from Fig. 2, the surface density of the
+molecular gas do not extend beyond R ∼ 10 kpc and hence Eq. 6
+was solved at R ⩽ 10 kpc. From Fig. 2, it can also be noted that
+the stellar surface density is very high at the central region which
+indicates a higher energy input to the molecular disk. This might
+lead to a violation of the hydrostatic assumption in the central region. Not only that but also the assumed dark matter halo density
+profile (NFW) sharply peaks in the central region. To avoid any
+divergence due to these factors and a possible non-satisfaction
+of hydrostatic equilibrium, a central region of 1 kpc was avoided
+and was not solved. Thus, Eq. 6 was solved within 1 ⩽ R ⩽ 10
+kpc with an interval of 100 pc. The linear spatial resolution of
+the molecular data is ∼ 1 kpc. Hence, a radial interval of 100
+pc is expected to be more than enough to sample the molecular disk well in the radial direction. However, it is well known
+that the vertical thickness of the molecular disk is much smaller
+as compared to its radial extent, and hence a much higher resolution is needed to sample the molecular disk in the vertical
+direction. To achieve this, an adaptive resolution depending on
+the scale-height was used and found to be always better than a
+few pc. It should be emphasised here that a fine resolution in the
+vertical direction is critical as the molecular disk is very thin. As
+the molecular gas density vary reasonably in parsec-scale, a grid
+resolution of few parsecs is necessary to sample the distribution
+of the molecular gas well in the vertical direction. However, this
+finely gridded molecular map is convolved with the observed
+beam to match the observed resolution for comparison.
+c 0000 RAS, MNRAS 000, 000–000
+
+star
+HI
+H2
+
+R = 6 kpc
+0.10
+
+ρ (M pc−3)
+
+the gravity (first term in RHS), Eq. 6 have to be solved simultaneously for all the components. We numerically solve it using
+an iterative approach. We adopt a similar strategy as described
+in Banerjee & Jog (2008); Patra et al. (2014) (See also Bahcall (1984a,b) for an in-depth analysis of self-gravitating galactic disk systems). In the first iteration, all three equations (for
+stars, HI and H2 ) are solved independently assuming no coupling (single-component disk). Then these single component solutions are introduced in Eq. 6 to account for the coupling. In every iteration, these solutions are updated till they converge with
+acceptable accuracy. For example, in the first iteration, Eq. 6 is
+solved assuming a single-component system and ρs (z), ρHI (z)
+and ρH2 (z) is obtained. In the next iteration, the solutions for HI
+and H2 , i.e., ρHI (z) and ρH2 (z) as obtained in the previous iteration are frozen while solving for stars. Next, solutions for stars,
+ρs (z) (updated) and H2 , ρH2 (z) are frozen while solving for HI
+and finally, solutions for stars, ρs (z) (updated) and HI , ρHI (z)
+(updated) are frozen while solving for H2 . This marks the end
+of the second iteration. At the end of this iteration, coupled solutions are obtained which is better than the single-disk ones. This
+process is repeated until the solutions converge with better than
+0.1% accuracy. Physically, in the first iteration, I solve for an
+individual component, assuming no other components present.
+Then, in next iterations, any component was solved in the presence of the frozen distribution of other two components (as calculated in the previous iteration). Using this approach, the selfconsistent solutions were obtained iteratively starting from the
+single-component solutions. It can be noted that, for NGC 7331,
+the solutions were converged in less than ten iterations at any radius. It takes about a few minutes to solve the coupled equation
+at any radius in a normal workstation. However, as the hydrostatic condition at any radius is independent of other radii, Eq. 6
+can be solved in parallel and hence, for fast computation, the
+hydrostatic equation solver was implemented using MPI based
+parallel code.
+
+5
+
+0.05
+
+0.00
+0
+
+500
+
+1000
+z (pc)
+
+1500
+
+2000
+
+Figure 4. A sample solution of the hydrostatic equilibrium equation.
+The solid red line represents the stellar mass density as a function of the
+height from the midplane whereas the blue dashed and black dasheddotted lines represent the same for HI and H2 respectively.
+
+3
+
+RESULTS AND DISCUSSION
+
+In Fig. 4, sample solutions of Eq. 6, i.e., the mass density of different disk components (at R = 6 kpc) are plotted as a function
+of height (z) from the midplane. It can be seen from the figure, the molecular gas at R = 6 kpc extends to a much smaller
+height as compared to the HI or stellar disk. It should be noted
+that, for an isothermal single-component disk, the density distribution follows a sech2 law (Spitzer 1942; Bahcall 1984a,b).
+But due to the coupling of multiple disk components, the solutions deviate from sech2 distribution. In this case, it was found
+that a Gaussian function can reasonably represent the solutions.
+The deviation from a sech2 function was seen to be lowest for
+the stellar disk as it is the gravitationally most dominant component.
+The solutions shown in the figure was obtained by solving
+Eq. 6 assuming a velocity dispersion of 7 km s−1 for molecular gas. However, as discussed earlier, σH2 found to vary from
+galaxy to galaxy or even within a galaxy. To examine how this
+variation can affect the vertical structure of the molecular disk,
+Eq. 6 was solved with σH2 varying between 6-10 km s−1 in a
+step of 1 km s−1 .
+A Half width at Half Maxima (HWHM) of the vertical
+mass density profile was used as a measure of the vertical width
+of the molecular disk. In Fig. 5, I plot the HWHM profiles of
+the molecular disk as a function of radius. For comparison, the
+HWHM profiles of the atomic gas are also plotted in the figure. It can be seen that the molecular scale height in NGC 7331
+varies between 50 pc − 200 pc depending on the assumed σH2
+and radius. For an assumed σH2 = 7 km s−1 , the scale height
+varies between ∼ 60 − 100 pc which is ∼ a factor of 2 smaller
+than what is observed in the Galaxy. It can also be seen that the
+molecular scale height changes by a factor of ∼ 2 as one changes
+the σH2 from 6 km s−1 to 10 km s−1 . Also, the scale height of
+both the HI and H2 increases at R . 3 kpc. This increase is because of strong centripetal acceleration due to the rising rotation
+curve at these radii (see Fig. 3). However, this effect is minimal
+at the outer radii as the rotation curve significantly flattens at
+R & 3 kpc.
+The HWHM profile of the molecular disk is not a directly
+observable quantity even for an edge-on galaxy. Instead, the total
+intensity map is what is obtained through observation. To check
+the validity of the derived density distribution of the molecular
+
+N. N. Patra
+6 km s−1
+7 km s−1
+8 km s−1
+
+σH2 = 7 km s −1
+
+5
+Z (kpc)
+
+HWHM (pc)
+
+200
+
+9 km s−1
+10 km s−1
+
+150
+
+16
+8
+
+0
+
+0
+
+5
+100
+
+10
+50
+
+8
+10
+
+5
+
+0
+
+R (kpc)
+
+5
+
+10
+
+10
+2
+
+4
+
+6
+R (kpc)
+
+8
+
+24
+
+10
+
+Figure 5. The HWHM profiles of the molecular and atomic disks of
+NGC 7331. The solid lines represent HWHM profiles of the HI disks,
+whereas the broken lines represent the same for the molecular disk. Different types of lines represent the scale heights for different assumed
+σH2 values as quoted in the legend.
+
+Z (kpc)
+
+0
+
+5
+
+16
+
+0
+
+8
+
+5
+
+0
+
+10
+
+8
+10
+
+5
+
+0
+
+R (kpc)
+
+5
+
+10
+
+Figure 6. Top panel: The simulated column density map of the molecular
+disk. Bottom panel: Overplot of observed (colour scale) and simulated
+(contour) molecular gas column density maps. The colour bars indicate
+the observed ICO in the unit of K km s−1 . The successive contours are
+for ICO = (8, 10, 12, 14, 16, 18, 20, 22, 24) K km s−1 .
+
+24
+
+ICO (K km s −1 )
+
+gas, a three dimensional dynamical model of the molecular disk
+was produced using the solutions of Eq. 6 and the rotation curve.
+This 3D model then inclined to the observed inclination of 76o
+and convolved with the telescope beam to produce a simulated
+column density map. This map then can be compared with the
+observed one to check the consistency of the derived molecular
+gas density distribution.
+In Fig. 6 top panel, the simulated column density map of the
+molecular gas in NGC 7331 is shown as is obtained using the solutions of Eq. 6. In the bottom panel, this simulated map is compared with the observed one. A σH2 = 7 km s−1 was adopted to
+solve the hydrostatic equation. The simulated and the observed
+molecular disk found to match very well with each other. However, one should exclude central two kpc region for comparison
+as the Eq. 6 was not solved at R . 1 kpc and the convolution
+with the telescope beam of size ∼ 1 kpc will introduce error. A
+careful inspection of the bottom panel of the figure reveals extra
+emission features at both the upper and lower half of the galaxy
+which was not accounted by the model-observation (contours)
+properly.
+To capture it in more details, instead of an overplot of column density maps, I estimate and compare the observed and
+the modelled vertical profiles of the column density distribution
+maps as a function of radii. To extract the profiles, a vertical cut
+along the minor axis was taken through the observed and modelled molecular disk. In Fig. 7 the vertical profiles are plotted as
+a function of height (Z) from the major axis. It can be seen from
+the figure that, the observed and the modelled profiles matches
+with each other reasonably well, though, the base of the observed
+profiles are somewhat fatter than the modelled one. From Fig. 6
+bottom panel also one can see the extra plume of emissions in
+the edges of the map surpassing the contours representing the
+model.
+To check if the assumed inclination of the molecular disk
+is producing this difference, I re-computed the vertical profiles
+for a set of inclinations. The molecular disk was produced for an
+inclination range of 72o to 80o in steps of 2o . The face-on surface densities of the baryonic disks were recalculated assuming
+the updated inclination and the hydrostatic equilibrium equation
+was solved to produce the simulated molecular disks. The thin
+
+ICO (K km s −1 )
+
+10
+
+250
+
+ICO (K km s −1 )
+
+6
+
+2 kpc
+
+3 kpc
+
+4 kpc
+
+5 kpc
+
+16
+8
+24
+16
+8
+5.0 2.5 0.0 2.5 5.0 2.5 0.0 2.5
+
+Z (kpc)
+Figure 7. The vertical profiles of the observed and simulated molecular column density maps at different radial distances (as mentioned at
+the top left corner of each panel). The solid red and black curves represent the observed vertical profiles of two different halves at a particular
+galactocentric radius. The blue dashed line represents the vertical profile
+of the modelled molecular disk.
+
+c 0000 RAS, MNRAS 000, 000–000
+
+Molecular scale height in NGC 7331
+10
+
+Z (kpc)
+
+5
+
+25
+
+0
+
+0
+
+5
+10
+10
+
+5
+
+0
+
+R (kpc)
+
+5
+
+10
+
+ICO (K km s −1 )
+
+50
+
+4
+
+HWHM (pc)
+
+488
+
+484
+
+2
+
+4
+
+6
+
+R (kpc)
+
+8
+
+10
+
+Figure 8. Top panel: The simulated column density map of molecular
+disc as seen edge-on. Bottom panel: The HWHM profile of the simulated edge-on column density map. As can be seen the HWHM profile
+marginally flares as a function of radius and has a value ∼ 500 pc.
+
+black curves in each panel of Fig. 7 represents vertical profiles
+for inclinations 72o to 80o in step of 2o . The outermost profile is
+for 72o whereas the innermost profile is for 80o . As can be seen
+from the figure, no particular inclination can be considered as a
+better replacement for the assumed inclination of 76o as they all
+seem to be consistent given the spatial resolution of ∼ 1 kpc. For
+further analysis, I assume an inclination of 76o only (observed
+inclination of the optical disk). It is possible that the extra emission observed at the edges of the molecular disk is produced by a
+warp at the outer disk as the existence of warps is very common
+in large galaxies. In such cases, the hydrostatic equilibrium will
+not work, and the solutions would produce results unmatched to
+the observation. However, the warps are observed mostly at the
+outer disks, and it does not perturb the stability of the entire disk.
+As discussed in § 1, a thick molecular disk extending up
+to a few kpc from the mid-plane were observed in many edgeon galaxies (Garcia-Burillo et al. 1992). The existence of such
+thick disks are puzzling, and their origins are still an open question. I extend this study further to check if NGC 7331 in hydrostatic equilibrium can produce an observationally thick molecular disk. To check that, the solved density distribution of the
+molecular disk of NGC 7331 was projected to an inclination of
+90o to estimate its surface density map at edge-on orientation.
+In Fig. 8 top panel, I show the molecular disk of NGC 7331
+at an edge-on projection, whereas the bottom panel shows the
+HWHM profile of the vertical profiles of this disk as a function of radii. With radii, this HWHM profile marginally flares
+with a value of ∼ 500 pc. However, this HWHM profile, in fact,
+can produce a detectable molecular disk of ∼ 2 kpc (considering both the sides of the midplane) when observed edge-on.
+c 0000 RAS, MNRAS 000, 000–000
+
+Here it should be noted that the scale height of the molecular
+gas (∼ 100 − 200 pc) does not represent the full extent of the
+molecular disk, rather it is an indicative measure of thickness
+which marks the width where the density falls to half of the
+maximum. Though the thickness of the molecular disk found
+in NGC 7331 is not as thick as seen in NGC 891 (which is a few
+kpc thick (Garcia-Burillo et al. 1992)), these results indicate that
+it is probably not very difficult to produce a thick molecular disk
+under the assumption of hydrostatic equilibrium.
+
+25
+
+492
+
+480
+
+7
+
+SUMMARY AND FUTURE WORK
+
+In summary, assuming a vertical hydrostatic equilibrium between different disk components in a galaxy, the combined
+Poisson’s-Boltzman equations were set-up and solved to calculate the vertical structure of the molecular disk in the galaxy
+NGC 7331. Three coupled second-order partial differential
+equation (Eq. 6) were solved numerically using 8th order
+Runge-Kutta method from scipy and was implemented using
+MPI based code for fast computation. For NGC 7331, the hydrostatic equation was solved at 1 ⩽ R ⩽ 10 kpc to obtain
+the vertical structure of the molecular disk. The molecular scale
+height was found to be ∼ 50 − 100 pc at the centre which increases to ∼ 100−200 pc at the outer edge. The molecular scale
+height is sensitive to the assumed σH2 and found to change by a
+factor of ∼ 2 when σH2 changes from 6 km s−1 to 10 km s−1 .
+Using the solutions of hydrostatic equations and the observed rotation curve, a three dimensional dynamical model of
+the molecular disk was made. This model was then inclined to
+the observed inclination and convolved with the telescope beam
+to produce a model intensity map. This model intensity map was
+then compared with the observed one (Fig. 6) to find that the
+model matches with the observation reasonably. However, some
+low-intensity excess emission features in the observed molecular
+map at largest heights was not modelled properly. This emission
+feature was observed at the edge of the molecular disk and most
+probably not a part of the stable molecular disk, or it could be a
+warp. To check the modelling of the molecular disk at different
+depths, vertical profiles of column density maps were extracted
+and compared. The modelled vertical profiles at different radii
+reasonably match with the observation. The effect of assumed
+inclination on the molecular disk also explored and found that
+the vertical profile at any radius does not show large change as
+compared to the observing beam as one changes the inclination
+from ∼ 72o to 80o .
+Finally, I project the molecular gas density distribution of
+NGC 7331 to an inclination of 90o to examine if it can produce
+a reasonably thick molecular disk. The extracted HWHM profile
+of this edge-on disk was found to be ∼ 500 pc with a very little
+flaring with radius. This HWHM was found to be capable of
+producing a thick observable disk of thickness ∼ 2 kpc. With
+this result, it appears that a simple vertical hydrostatic model of
+the molecular disk can in-principal produce a few kilo-parsec
+thick observed disk and hence, creating a thick molecular disk
+in external galaxies might not be as difficult as it was thought
+before (e.g., NGC 891 (Garcia-Burillo et al. 1992)).
+In this work I assumed the molecular disk to be a single
+component system with a single σH2 . However, as discussed in
+§ 1, many recent studies point towards the possibility of a twocomponent molecular disk with a thin disk residing close to the
+midplane and a diffuse thick disk extending up to a few kpc. The
+σH2 of these disks are expected to be different. In these scenarios, the assumption of a simple single component molecular disk
+will fail, and one needs to add an extra component to the hydrostatic equilibrium equation. In future work, a detailed study with
+
+8
+
+N. N. Patra
+
+a two-component molecular disk is worth exploring to understand the thick molecular disks observed in external galaxies.
+
+5
+
+ACKNOWLEDGEMENT
+
+NNP would like to thank Dr Yogesh Wadadekar, Dr Samir
+Choudhuri and Mrs Gunjan Verma for their comments and suggestions which helped to improve the quality of this manuscript.
+NNP would also like to thank both the referees for their valuable comments and suggestions which improved the quality and
+readability of this paper.
+
+Scoville N. Z., Yun M. S., Sanders D. B., Clemens D. P., Waller
+W. H., 1987, ApJS, 63, 821
+Shostak G. S., van der Kruit P. C., 1984, A&A, 132, 20
+Spitzer, Jr. L., 1942, ApJ, 95, 329
+Stark A. A., 1984, ApJ, 281, 624
+Stark A. A., Lee Y., 2005, ApJL, 619, L159
+Tamburro D., Rix H.-W., Leroy A. K., Mac Low M.-M., Walter
+F., Kennicutt R. C., Brinks E., de Blok W. J. G., 2009, AJ, 137,
+4424
+van der Kruit P. C., Shostak G. S., 1984, A&A, 134, 258
+Walter F., Brinks E., de Blok W. J. G., Bigiel F., Kennicutt, Jr.
+R. C., Thornley M. D., Leroy A., 2008, AJ, 136, 2563
+Wouterloot J. G. A., Brand J., Burton W. B., Kwee K. K., 1990,
+A&A, 230, 21
+
+References
+Bahcall J. N., 1984a, ApJ, 276, 169
+Bahcall J. N., 1984b, ApJ, 276, 156
+Banerjee A., Jog C. J., 2008, ApJ, 685, 254
+Banerjee A., Jog C. J., Brinks E., Bagetakos I., 2011, MNRAS,
+415, 687
+Banerjee A., Matthews L. D., Jog C. J., 2010, NewA, 15, 89
+Becquaert J.-F., Combes F., 1997, A&A, 325, 41
+Begeman K. G., 1987, PhD thesis, , Kapteyn Institute, (1987)
+Bolatto A. D. et al., 2013, Natur, 499, 450
+Brandt J. C., 1960, ApJ, 131, 293
+Bronfman L., Cohen R. S., Alvarez H., May J., Thaddeus P.,
+1988, ApJ, 324, 248
+Caldú-Primo A., Schruba A., Walter F., Leroy A., Sandstrom
+K., de Blok W. J. G., Ianjamasimanana R., Mogotsi K. M.,
+2013, AJ, 146, 150
+Combes F., Becquaert J.-F., 1997a, A&A, 326, 554
+Combes F., Becquaert J.-F., 1997b, A&A, 326, 554
+Cormier D. et al., 2014, A&A, 564, A121
+de Blok W. J. G., Walter F., Brinks E., Trachternach C., Oh
+S.-H., Kennicutt, Jr. R. C., 2008, AJ, 136, 2648
+Garcia-Burillo S., Guelin M., Cernicharo J., Dahlem M., 1992,
+A&A, 266, 21
+Grabelsky D. A., Cohen R. S., Bronfman L., Thaddeus P., May
+J., 1987, ApJ, 315, 122
+Ianjamasimanana R., de Blok W. J. G., Walter F., Heald G. H.,
+2012, AJ, 144, 96
+Irwin J. A., Sofue Y., 1996, ApJ, 464, 738
+Jing Y. P., Suto Y., 2000, ApJL, 529, L69
+Kamphuis J., Sancisi R., 1993, A&A, 273, L31
+Leroy A. K., 2006, PhD thesis, University of California, Berkeley
+Leroy A. K. et al., 2009, AJ, 137, 4670
+Leroy A. K., Walter F., Brinks E., Bigiel F., de Blok W. J. G.,
+Madore B., Thornley M. D., 2008, AJ, 136, 2782
+McQuinn K. B. W., Skillman E. D., Dalcanton J. J., Dolphin
+A. E., Cannon J. M., Holtzman J., Weisz D. R., Williams B. F.,
+2012, ApJ, 751, 127
+Mogotsi K. M., de Blok W. J. G., Caldú-Primo A., Walter F.,
+Ianjamasimanana R., Leroy A. K., 2016, AJ, 151, 15
+Moore B., Governato F., Quinn T., Stadel J., Lake G., 1998,
+ApJL, 499, L5
+Narayan C. A., Saha K., Jog C. J., 2005, A&A, 440, 523
+Navarro J. F., Frenk C. S., White S. D. M., 1997, ApJ, 490, 493
+Olling R. P., 1995, AJ, 110, 591
+Patra N. N., Banerjee A., Chengalur J. N., Begum A., 2014,
+MNRAS, 445, 1424
+Petric A. O., Rupen M. P., 2007, AJ, 134, 1952
+Pety J. et al., 2013, ApJ, 779, 43
+Sanders D. B., Solomon P. M., Scoville N. Z., 1984, ApJ, 276,
+182
+c 0000 RAS, MNRAS 000, 000–000
+
+

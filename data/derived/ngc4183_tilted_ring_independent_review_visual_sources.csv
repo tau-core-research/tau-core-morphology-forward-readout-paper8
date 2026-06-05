@@ -1,0 +1,4 @@
+visual_source_id,path,role,review_use
+N4183_TABLE4_FULL_PAGE,/Users/jolcsak/Projects/tau-core-morphology-forward-readout-paper8/data/external/literature/2001_verheijen_sancisi_pages/ngc4183_review/page-013.png,full rendered PDF page containing NGC4183 Table 4 rows,check context and column headers
+N4183_TABLE4_FULL_COLUMN_CROP,/Users/jolcsak/Projects/tau-core-morphology-forward-readout-paper8/data/external/literature/2001_verheijen_sancisi_pages/ngc4183_review/ngc4183_table4_full_column_crop.png,focused crop containing NGC4183 tilted-ring rows,primary visual transcription check
+N4183_OBSERVING_PARAMETERS_PAGE,/Users/jolcsak/Projects/tau-core-morphology-forward-readout-paper8/data/external/literature/2001_verheijen_sancisi_pages/page_84-084.png,rendered page with NGC4183 H I parameters and warp note,"check PA=347, i=83, H I diameter=6.1 arcmin, slight outer warp note"

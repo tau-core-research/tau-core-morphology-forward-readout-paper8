@@ -1,0 +1,2097 @@
+c ESO 2022
+
+Astronomy & Astrophysics manuscript no. lopsidedness1
+June 8, 2022
+
+Lopsidedness in WHISP galaxies
+I. Rotation curves and kinematic lopsidedness
+J. van Eymeren1 , E. Jütte2 , C. J. Jog3 , Y. Stein2 , and R.-J. Dettmar2
+1
+
+arXiv:1103.4928v1 [astro-ph.CO] 25 Mar 2011
+
+Fakultät für Physik, Universität Duisburg-Essen, Lotharstr. 1, 47048 Duisburg, Germany
+e-mail: janine.vaneymeren@uni-due.de
+2
+Astronomisches Institut der Ruhr-Universität Bochum, Universitätsstr. 150, 44780 Bochum, Germany
+e-mail: eva.juette@astro.rub.de
+3
+Department of Physics, Indian Institute of Science, Bangalore 560012, India e-mail: cjjog@physics.iisc.ernet.in
+Accepted 19 March 2011
+ABSTRACT
+
+The frequently observed lopsidedness of the distribution of stars and gas in disc galaxies is still considered as a major problem in
+galaxy dynamics. It is even discussed as an imprint of the formation history of discs and the evolution of baryons in dark matter
+haloes. Here, we analyse a selected sample of 70 galaxies from the Westerbork H i Survey of Spiral and Irregular Galaxies. The H i
+data allow us to follow the morphology and the kinematics out to very large radii. In the present paper, we present the rotation curves
+and study the kinematic asymmetry. We extract the rotation curves of receding and approaching sides separately and show that the
+kinematic behaviour of disc galaxies can be classified by five different types: symmetric velocity fields where the rotation curves of
+receding and approaching sides are almost identical; global distortions where the rotation velocities of receding and approaching side
+have an offset which is constant with radius; local distortions which lead to large deviations in the inner and negligible deviations in
+the outer parts (and vice versa); and distortions which split the galaxies into two kinematic systems, visible in the different behaviour
+of the rotation curves of receding and approaching sides, which leads to a crossing and a change in side. The kinematic lopsidedness is
+measured from the maximum rotation velocities, averaged over the plateau of the rotation curves. This gives a good estimate of global
+lopsidedness in the outer parts of the sample galaxies. We find that the mean value of the perturbation parameter denoting the lopsided
+potential as obtained from the kinematic data is 0.056. 36% of all sample galaxies are globally lopsided, which can be interpreted
+as the disc responding to a halo that was distorted by a tidal encounter. In Paper II, we study the morphological lopsidedness for the
+same sample of galaxies.
+Key words. Surveys – Galaxies: evolution – Galaxies: ISM – Galaxies: kinematics and dynamics – Galaxies: structure
+
+1. Introduction
+It has been known for many years that the discs of galaxies often
+show a large-scale asymmetry in their morphology. Prominent
+examples are M 101, NGC 891 and NGC 4565 . This asymmetry was for the first time described by Baldwin et al. (1980) and
+was defined as ’lopsidedness’ by these authors. The first systematic study was done 15 years later by Rix & Zaritsky (1995)
+who investigated near-infrared images of a sample of disc galaxies and characterised lopsidedness in the stellar distribution by
+the m = 1 mode of a Fourier analysis. They found that at least
+30% of the stellar discs of galaxies are significantly lopsided. A
+comparable study of gaseous discs was difficult to obtain since
+spatially resolved maps of a large sample were not available.
+Therefore, Richter & Sancisi (1994) investigated a large number of integrated H i spectra and found that up to 50% show an
+asymmetric global H i profile interpreted by lopsidedness. The
+advantage of this method is that it is relatively easy to analyse
+a large dataset. However, it is not clear whether an asymmetric H i profile is caused by an asymmetric gas distribution or by
+kinematic lopsidedness. The first two-dimensional Fourier decomposition of H i surface density maps, analogous to the stellar
+studies (e.g., by Rix & Zaritsky 1995), was done by Angiras et al.
+(2006); Angiras et al. (2007), who showed that the HI gas distribution in group galaxies is highly lopsided. For more details on
+lopsided galaxies see the review by Jog & Combes (2009).
+
+Lopsidedness is observed not only in the morphology of
+galaxies, but also in the kinematics. Rotation curves are usually derived to obtain the mass distribution in a galaxy that
+is rotationally supported (e.g., Binney & Tremaine 1987). The
+typical assumption is that the rotation curves are azimuthally
+symmetric. However, observations show local deviations from a
+smooth circular rotation of a few km s−1 , which are contributed
+to streaming motions caused by spiral arms (Shane & BiegerSmith 1966) or bars (Rhee et al. 2004). In addition, it was
+shown by Huchtmeier (1975) that the rotation curves derived
+from the two halves of a galactic disc are also asymmetric on
+large scales. The difference in the rotation velocities was found
+to be ≥ 20 km s−1 . Most recent studies reveal that large-scale
+kinematic asymmetries are a common phenomenon, as shown
+by H i studies (e.g., Kannappan & Fabricant 2001; Swaters et al.
+2009) and also by Hα studies (e.g., the GHASP work by Epinat
+et al. 2008).
+The origin of the asymmetry in the rotation curves has also
+been addressed theoretically (Jog 2002), where it is shown that
+the global asymmetry in the rotation curves as well as in the
+morphology can be caused by the stars and the gas in a galactic
+disc responding to an imposed distorted halo potential. Even a
+small lopsided perturbation potential results in highly disturbed
+kinematics (Jog 1997, 2002) which should therefore be easy to
+detect.
+1
+
+J. van Eymeren et al.: Lopsidedness in WHISP galaxies: I. Rotation curves and kinematic lopsidedness
+
+An estimate of the perturbation in a lopsided potential that
+gives rise to the kinematic lopsidedness can be retrieved from the
+rotation curves of receding and approaching sides. Therefore, it
+is crucial to accurately define the kinematic parameters, i.e., the
+systemic velocity, the coordinates of the dynamic centre, the inclination and the position angle. As the perturbation parameter
+for the lopsided potential is calculated from the maximum rotation velocities, sensitive data which trace the gas up to large
+radii, where the rotation curve ends in a plateau, are needed.
+Interferometric H i observations are best suited for this kind of
+study.
+In this first of two papers we introduce the sample, derive
+rotation curves by performing a tilted-ring analysis and try
+to quantify the kinematic lopsidedness. The morphological
+lopsidedness will be analysed in a second, companion paper
+(van Eymeren et al. 2011, Paper II from now on).
+This paper is organised as follows: in Sect. 2 the data selection process is explained, in Sect. 3 we describe the data analysis. In Sect. 4 we present the results, which is followed by a
+discussion in Sect. 5 and a brief summary in Sect. 6.
+
+2. Sample selection
+This paper is based on data from the Westerbork H i Survey
+of Spiral and Irregular Galaxies (WHISP1 ). A detailed description of the survey and the data reduction process is given in
+Swaters et al. (2002). Three cubes of different spatial resolution
+per galaxy were produced by the WHISP team, a full resolution
+cube, one cube smoothed to 3000 × 3000 and one cube smoothed
+to 6000 × 6000 . In order to combine reasonably high spatial resolution with sufficiently high signal to noise, the following analysis
+is based on the 3000 × 3000 data.
+We only included galaxies with inclinations ranging between
+20◦ and 75◦ . This range has been chosen for the following
+reasons: the velocity information extracted from a nearly faceon galaxy is reduced, which results in a larger uncertainty in
+measuring the inclination. On the other hand, a nearly edge-on
+galaxy will provide reliable velocity information, but the surface
+density map will not be suitable for the analysis of the morphological lopsidedness. Therefore, the above mentioned range of
+inclinations seemed to be a good compromise.
+In order to be able to measure lopsidedness out to large radii,
+we further limited the sample to galaxies with the ratio of the
+H i diameter over the beam size being larger than 10, using the
+3000 × 3000 data. From the resulting sample we had to eliminate
+about 30 galaxies either because the signal to noise ratio was
+low causing the H i intensity distribution to be very patchy or because the velocity field was too distorted to allow for an analysis
+on global scales. This also excluded galaxies with pronounced
+warps, visible in the morphology of the nearly edge-on cases or
+in the velocity field of galaxies of low inclination. This left us
+with 70 galaxies. Some general properties of the final sample
+galaxies are given in Table 1.
+In order to make sure that these selection criteria do not bias
+our sample towards bright objects and only certain morphological types, we had a look at the range of absolute B-magnitudes
+and morphological types. We found that the galaxies are evenly
+distributed over -23 to -15 B-magnitudes (Fig. 1, upper panel).
+We cover a whole range of morphological types with a few earlytype spirals and with an increasing number density towards latetype spiral and irregular galaxies (Fig. 1, middle panel). Most
+1
+
+2
+
+http://www.astro.rug.nl/∼whisp/
+
+Fig. 1. The distribution of the selected galaxies over absolute Bmagnitude (upper panel), morphological type (middle panel) and
+radial extent (lower panel).
+
+galaxies show emission which is extended out to 1 to 4 R25
+(Fig. 1, lower panel). However, our sample also covers a few
+galaxies whose H i emission could be detected out to 6 to 10 R25
+(R25 being the apparent optical radius).
+
+3. Data analysis
+The data analysis is based on routines within the Groningen
+Image Processing System (GIPSY2 , van der Hulst et al. 1992).
+2
+
+URL: http://www.astro.rug.nl/∼gipsy/
+
+J. van Eymeren et al.: Lopsidedness in WHISP galaxies: I. Rotation curves and kinematic lopsidedness
+
+Table 1. General parameters of all sample galaxies.
+
+(3)
+
+α (J2000.0)
+[h m s]
+(4)
+
+δ (J2000.0)
+[◦ 0 00 ]
+(5)
+
+MB
+[mag]
+(6)
+
+D
+[Mpc]
+(7)
+
+R25
+[kpc]
+(8)
+
+Rmax
+[R/R25 ]
+(9)
+
+4
+9.9
+8.9
+6
+7.5
+4.9
+7.8
+7
+9.8
+6
+9.9
+10
+5
+3.4
+9
+9.9
+5.8
+1.1
+4.4
+9.8
+9.9
+6.4
+6
+1
+7.9
+5.2
+4
+4.3
+2.4
+3.9
+4
+3.7
+6.6
+6
+9.8
+10
+4
+6
+6.6
+5.1
+1.7
+4
+4.7
+5.3
+4.1
+6
+-2.7
+6.6
+7.9
+4
+8.9
+7
+6
+2.2
+1
+2.4
+9.9
+3
+4
+
+01 00 55.4
+01 10 44.0
+01 47 29.9
+01 47 54.5
+01 49 32.0
+01 51 17.6
+02 01 16.9
+02 27 16.9
+02 33 43.0
+02 36 27.9
+02 59 42.2
+03 40 02.5
+03 48 20.7
+04 07 46.9
+05 17 44.4
+05 56 38.6
+06 53 10.4
+06 55 30.9
+07 12 28.7
+07 28 54.7
+08 07 12.1
+08 13 58.9
+08 14 40.1
+08 32 11.3
+08 43 21.6
+09 12 14.5
+09 32 10.1
+09 48 36.1
+09 50 22.2
+10 16 53.7
+10 29 19.9
+10 32 34.9
+10 32 17.3
+10 39 09.5
+10 42 41.9
+10 49 36.5
+10 53 54.9
+11 11 31.0
+11 26 40.5
+11 33 21.1
+11 49 15.4
+11 57 36.0
+12 05 34.2
+12 06 01.1
+12 06 08.5
+12 09 58.6
+12 15 05.1
+12 17 34.0
+12 17 30.2
+12 18 57.5
+12 25 48.9
+12 28 44.1
+12 35 57.7
+12 50 26.6
+13 56 16.7
+14 16 07.7
+14 22 32.2
+14 57 45.7
+15 26 41.5
+
++47 40 55.1
++49 36 07.9
++27 20 00.1
++27 25 58.0
++32 35 23.0
++22 21 28.7
++28 50 14.1
++33 34 45.0
++40 31 41.2
++38 58 11.7
++25 14 14.2
++71 24 21.1
++70 07 58.4
++69 48 44.8
++53 33 04.6
++75 18 58.0
++57 10 40.0
++69 33 47.0
++47 10 00.1
++69 12 56.8
++80 07 30.0
++45 44 31.7
++49 03 42.2
++22 33 38.0
++45 44 08.4
++44 57 17.4
++21 30 03.0
++33 25 17.4
++72 16 43.1
++73 24 02.7
++29 29 30.6
++65 02 27.9
++27 40 07.6
++41 41 12.0
++34 26 56.0
++65 31 50.0
++73 41 25.3
++55 40 26.8
++53 44 48.0
++47 01 45.1
++56 05 03.7
++53 22 28.3
++50 32 20.5
++47 28 42.4
++49 34 57.7
++46 27 25.8
++33 11 50.4
++22 32 24.5
++45 37 09.5
++47 18 14.3
++33 32 48.7
++22 49 13.6
++27 57 35.1
++25 30 02.7
++47 14 08.5
++35 20 37.8
++45 23 01.9
++71 40 56.4
++40 33 52.2
+
+-19.20
+-12.74
+-16.33
+-17.37
+-13.81
+-20.34
+-14.97
+-18.74
+-15.82
+-18.69
+-16.26
+-14.57
+-17.61
+-19.08
+-14.86
+-15.57
+-18.31
+-18.40
+-17.85
+-13.80
+-15.09
+-16.31
+-17.15
+-21.01
+-17.87
+-20.67
+-19.76
+-19.23
+-20.14
+-21.53
+-18.96
+...
+-16.15
+-18.58
+-15.98
+-13.27
+-18.25
+-19.25
+-16.22
+-19.49
+-19.47
+-20.22
+-18.96
+-18.00
+-18.98
+-15.78
+-19.09
+-14.62
+-17.86
+-19.87
+-17.59
+-16.80
+-19.81
+-21.01
+-19.74
+-20.95
+-14.89
+-16.06
+...
+
+37.3H
+8.0S
+7.5S
+7.2E
+5.5S
+42.2E
+5.7H
+9.3E
+10.1S
+13.7E
+7.8S
+20.6E
+17.5E
+15.1N
+12.2E
+12.8S
+21.8E
+19.2N
+15.9E
+3.4S
+16.8S
+10.5S
+9.8E
+64.2N
+30.3S
+37.3H
+8.9H
+21.5E
+21.1E
+41.1E
+19.9H
+25.7H
+6.7S
+14.1E
+9.0S
+7.7S
+20.4H
+12.4H
+12.0S
+14.3E
+18.9E
+17.1H
+13.2H
+10.6H
+17.4H
+3.5S
+16.9N
+7.2H
+8.1S
+7.8H
+3.5S
+6.8S
+13.0E
+18.2N
+27.2E
+54.3N
+12.6S
+7.7E
+38.2E
+
+13.94
+2.17
+7.05
+7.42
+4.10
+23.33
+3.46
+14.52
+4.43
+8.50
+3.27
+7.02
+9.03
+8.74
+4.56
+7.08
+4.69
+5.97
+4.83
+2.16
+1.54
+4.40
+4.30
+14.46
+5.55
+11.59
+15.25
+14.97
+11.14
+24.35
+6.78
+6.49
+1.58
+7.44
+5.85
+2.81
+8.17
+7.18
+2.46
+10.92
+9.53
+20.24
+13.60
+8.67
+11.57
+2.67
+8.33
+5.01
+4.48
+19.46
+2.12
+1.60
+19.84
+25.91
+14.36
+22.77
+1.16
+2.08
+21.61
+
+2.33
+3.49
+1.01
+1.20
+1.27
+1.84
+1.80
+1.07
+1.99
+2.70
+2.08
+2.56
+1.55
+2.39
+2.92
+1.45
+3.72
+3.27
+2.63
+2.86
+9.50
+2.08
+3.48
+3.55
+4.37
+2.57
+1.40
+1.36
+1.65
+1.35
+2.77
+4.60
+4.62
+2.20
+1.46
+2.19
+2.54
+2.26
+3.89
+1.33
+2.88
+0.86
+0.99
+1.07
+1.42
+1.14
+2.66
+1.25
+1.58
+1.27
+3.84
+4.32
+1.58
+1.07
+1.65
+3.47
+8.72
+3.76
+1.29
+
+Galaxy
+
+Other name
+
+Hubble Type
+
+(1)
+
+(2)
+
+UGC 625
+UGC 731
+UGC 1249
+UGC 1256
+UGC 1281
+UGC 1317
+UGC 1501
+UGC 1913
+UGC 2034
+UGC 2080
+UGC 2455
+UGC 2800
+UGC 2855
+UGC 2953
+UGC 3273
+UGC 3371
+UGC 3574
+UGC 3580
+UGC 3734
+UGC 3851
+UGC 4173
+UGC 4278
+UGC 4284
+UGC 4458
+UGC 4543
+UGC 4838
+UGC 5079
+UGC 5251
+UGC 5253
+UGC 5532
+UGC 5685
+UGC 5717
+UGC 5721
+UGC 5789
+UGC 5829
+UGC 5918
+UGC 5997
+UGC 6225
+UGC 6446
+UGC 6537
+UGC 6787
+UGC 6937
+UGC 7081
+UGC 7090
+UGC 7095
+UGC 7151
+UGC 7256
+UGC 7321
+UGC 7323
+UGC 7353
+UGC 7524
+UGC 7603
+UGC 7766
+UGC 7989
+UGC 8863
+UGC 9133
+UGC 9211
+UGC 9649
+UGC 9858
+
+IC 65
+...
+IC 1727
+NGC 672
+...
+NGC 674
+NGC 784
+NGC 925
+...
+IC 239
+NGC 1156
+...
+...
+IC 356
+...
+...
+...
+...
+NGC 2344
+NGC 2366
+...
+IC 2233
+NGC 2541
+NGC 2599
+...
+NGC 2776
+NGC 2903
+NGC 3003
+NGC 2985
+NGC 3147
+NGC 3254
+NGC 3259
+NGC 3274
+NGC 3319
+...
+...
+NGC 3403
+NGC 3556
+...
+NGC 3726
+NGC 3898
+NGC 3992
+NGC 4088
+NGC 4095
+NGC 4100
+NGC 4144
+NGC 4203
+...
+NGC 4242
+NGC 4258
+NGC 4395
+NGC 4455
+NGC 4559
+NGC 4725
+NGC 5377
+NGC 5533
+...
+NGC 5832
+...
+
+3
+
+J. van Eymeren et al.: Lopsidedness in WHISP galaxies: I. Rotation curves and kinematic lopsidedness
+UGC 10359
+UGC 10470
+UGC 11670
+UGC 11707
+UGC 11852
+UGC 11861
+UGC 11891
+UGC 12082
+UGC 12632
+UGC 12732
+UGC 12754
+
+NGC 6140
+NGC 6217
+NGC 7013
+...
+...
+...
+...
+...
+...
+...
+NGC 7741
+
+5.6
+4
+0.5
+8
+1
+7.8
+9.9
+8.8
+8.7
+8.7
+6
+
+16 20 58.2
+16 32 39.2
+21 03 33.6
+21 14 31.8
+21 55 59.3
+21 56 19.4
+22 03 33.9
+22 34 10.8
+23 29 58.7
+23 40 39.9
+23 43 54.4
+
++65 23 26.0
++78 11 53.4
++29 53 50.6
++26 44 04.5
++27 53 54.3
++73 15 13.6
++43 44 57.2
++32 51 37.8
++40 59 24.8
++26 14 11.1
++26 04 32.2
+
+-18.70
+-19.59
+-17.77
+-16.00
+-19.83
+-17.37
+-14.79
+-16.13
+-16.06
+-16.29
+-18.25
+
+16.0E
+21.2E
+12.7E
+15.9S
+80.0E
+25.1S
+9.0E
+10.1E
+6.9S
+13.2S
+8.9E
+
+4.86
+6.90
+7.70
+2.37
+10.61
+6.49
+4.33
+3.95
+4.28
+5.29
+4.70
+
+3.83
+3.35
+1.56
+6.35
+5.48
+3.09
+2.26
+2.04
+1.88
+2.90
+1.51
+
+Notes: (1) galaxy name from the UGC catalogue; (2) other common names; (3) morphological type following the classification by de Vaucouleurs
+(1979); (4) and (5) equatorial coordinates of the optical centre (NED); (6) absolute B-magnitudes (HyperLeda); (7) distance D (H: deduced from
+the systemic velocity taken from HyperLeda corrected for Virgocentric infall and assuming H0 = 75 km s−1 Mpc−1 ; S: Swaters et al. (2002); N:
+Noordermeer et al. (2005); E: Epinat et al. (2008)); (8) apparent radius (HyperLeda); (9) outer H i radius as defined in this paper.
+
+3.1. Tilted-ring analysis
+
+The calculation of the kinematic lopsidedness requires the
+knowledge of the kinematic parameters of each galaxy.
+Therefore, a tilted-ring analysis of the velocity fields created
+from the peak value of the H i line profiles was performed
+(GIPSY task rotcur). The following steps were carried out: initial estimates for the centre coordinates x0 and y0 , the inclination
+i, and the position angle PA were obtained by fitting ellipses
+to the H i intensity distribution out to 3σ (GIPSY task ellfit).
+The systemic velocity vsys was taken from NED. These values
+were then fed into rotcur and iteratively processed, always for
+a combination of receding and approaching side (see, e.g., van
+Eymeren et al. 2009). The width of the rings was chosen to be
+half the spatial resolution, i.e., 1500 . Note that all pixels along a
+ring have equal weights. The expansion velocity vexp was fixed
+to zero. We fixed all parameters except for the systemic velocity that was allowed to vary with radius. After running rotcur, a
+mean value of vsys was calculated and fed into rotcur as a now
+best-fitting and fixed value. In this way, we calculated best-fitting
+values for vsys , x0 and y0 , i, and PA (in the here given order). In a
+final run, we used the best-fitting values for all parameters, kept
+them fixed for all radii, and derived the rotation velocities for a
+combination of receding and approaching side.
+As the velocity fields of many galaxies look quite asymmetric, we also derived rotation curves for both sides separately. The
+systemic velocity vsys and the centre coordinates x0 and y0 were
+fixed to the values derived in the first run for a combination of receding and approaching side. Inclination and position angle were
+calculated for each side separately and iteratively, as described
+above.
+As a last step, we checked how well the derived parameters describe the observed velocity fields. Therefore, we created model velocity fields by using the parameters from the final rotcur run. Subsequently, the model was subtracted from the
+original velocity field. Typically, the residuals are of the order of
+a few km s−1 , which means that the derived parameters describe
+the kinematics of the observed galaxies quite well. However,
+some of the nearly face-on galaxies show very disturbed velocities indicating a warp, which cannot be described by a set of
+parameters that is constant with radius. On the other side, we
+also found some almost edge-on galaxies, which show signs of
+warps in their outer morphology, whereas the velocity field is not
+affected at all. As already mentioned in Sect. 2, all these galaxies
+have been removed from the final sample.
+Warps in highly-inclined galaxies can easily be detected by
+looking at the change of scale-height with radius (Schwarzkopf
+4
+
+& Dettmar 2001; Garcı́a-Ruiz et al. 2002). In galaxies with
+low inclination, lopsidedness would dominate the morphological
+shape so that we can be sure that the contribution of a potential
+warp is small along the line of sight unless the velocity field is
+globally twisted as mentioned above. More problematic are the
+galaxies with intermediate inclination. Here, some contamination from warps while measuring lopsidedness is quite likely.
+The large-scale structure of warps has been classified as
+U-, S-, N-, and L-shaped (e.g., Reshetnikov & Combes 1998;
+Garcı́a-Ruiz et al. 2002). The first three still cause a symmetric
+distribution of the gas (or the stars), whereas the latter results
+in an asymmetric distribution, i.e., the kind of distribution we
+want to study. This means that for L-shaped warps it is difficult to clearly separate warpiness from lopsidedness (at intermediate inclination). However, optical studies by Schwarzkopf &
+Dettmar (2001) or Sánchez-Saavedra et al. (2003) and H i studies by Garcı́a-Ruiz et al. (2002) show that the fraction of galaxies
+harbouring L-shaped warps is small in comparison to galaxies
+showing U- or S-shaped warps or no warp at all.
+3.2. Kinematic lopsidedness
+
+Under the assumption that lopsidedness occurs as a disc response to a distorted halo, which was caused by a galaxy interaction, an estimate of the lopsided perturbation potential that
+gives rise to the kinematic lopsidedness can be retrieved from the
+maximum rotation velocities of the sample galaxies (Jog 2002):
+kin =
+
+vrec − vappr
+.
+2vc
+
+(1)
+
+where vrec and vappr are the maximum rotation velocities, as measured from the plateau of the rotation curves of the receding and
+approaching sides respectively, vc is the maximum rotation velocity as measured from the plateau of the combined rotation
+curve, and kin is the perturbation parameter that denotes the lopsided potential.
+In many galaxies the rotation curves are flat in the outer
+parts. However, in some galaxies the rotation curves are still rising at the outermost points. In those cases we took the highest
+value of vc , which resulted in an upper limit for kin .
+
+4. Results
+4.1. Rotation curves – an overview
+
+Figures A.1 to A.3 show the rotation curves of all sample galaxies. Black symbols represent the rotation velocities derived by
+
+J. van Eymeren et al.: Lopsidedness in WHISP galaxies: I. Rotation curves and kinematic lopsidedness
+
+combining receding and approaching sides, blue and red symbols represent the rotation velocities of approaching and receding sides respectively. Swaters et al. (1999) have already shown
+a type of velocity field in spiral galaxies where receding and approaching sides are distinctly different, e.g., one side keeps rising while the other side declines (see their Fig. 2). This case is
+here catalogued as Type 5. Beyond this, we have found four additional types of rotation curves, which are discussed below. We
+give examples for each type in Fig. 2.
+Type 1 For 13 galaxies (about 19% of the whole sample), receding and approaching sides are in very good agreement indicating a very symmetric velocity distribution. Fig. 2, upper row
+shows as an example the late-type spiral galaxy UGC 6446. Its
+velocity field (left panel) is very smooth and shows the typical
+spider pattern. The derived rotation velocities for receding and
+approaching sides (right panel) only differ marginally.
+Type 2 For 23 galaxies (about 33% of the whole sample), receding and approaching side have a constant offset. As an example we show the irregular dwarf galaxy UGC 2080 (Fig. 2, second row). There are no local asymmetries in the velocity field,
+but a global offset of the iso-velocity contours.
+Type 3 In 10 galaxies (i.e., in 14% of all cases), receding
+and approaching sides are in good agreement at small radii,
+but show increasing differences at larger radii. A good example is the irregular dwarf galaxy UGC 9211 (Fig. 2, third row).
+Whereas the rotation velocities extracted from the approaching
+side form a typical rotation curve with a slow rise in the inner
+parts and a plateau in the outer parts, the rotation velocities extracted from the receding side start to decline significantly from
+a radius of 6 R25 on. The velocity field shows gas which seems to
+be attached to the north-western part of the galaxy and probably
+causes the unexpected shape of the rotation curve of the receding
+side.
+Type 4 We detected seven cases (which corresponds to 10%)
+where receding and approaching sides agree well in the outer
+parts, but differ significantly in the inner parts. A good example
+is the barred spiral galaxy UGC 8863 (Fig. 2, fourth row). The
+velocity field shows a bar-like feature in the inner parts, which
+probably leads to these large discrepancies between receding and
+approaching sides.
+Type 5 Last but not least we found 17 galaxies (corresponding to 24%) with differences between receding and approaching
+sides both in the inner and the outer parts. However, the curves
+change in that the rotation velocities of both sides ”meet” and the
+decreasing side keeps decreasing, whereas the increasing side
+keeps increasing, which means that the sides flip. As an example we show the rotation curves of the spiral galaxy UGC 7353
+(Fig. 2, lower row). At a radius of about 0.8 R25 the rotation velocities extracted from the approaching side strongly increase,
+while the rotation velocities extracted from the receding side stay
+almost constant. The velocity field reveals two systems, an inner
+one which rotates more quickly in comparison to the outer one.
+This probably causes the change in the behaviour of the rotation
+velocities of both sides.
+4.2. Rotation curves – notes on individual galaxies
+
+We now want to discuss a few peculiar rotation curves in more
+detail. We only concentrate on galaxies which are not included
+in the sample by Swaters et al. (2009).
+UGC 1249 shows a constant offset of 50 km s−1 between the
+rotation curves of receding and approaching sides and is therefore classified as Type 2 galaxy. The velocity field reveals a
+close companion in the north, UGC 1256, which is at least twice
+
+as massive as UGC 1249. Both galaxies seem to interact with
+each other. While UGC 1249 is strongly affected by this process,
+UGC 1256 appears to be not lopsided at all (therefore classified
+as Type 1).
+UGC 1317 is in a group with four other galaxies (UGC 1280,
+UGC 1286, UGC 1305, and UGC 1310). It shows a declining rotation curve in the outer parts. Receding and approaching sides
+are offset by about 50 km s−1 at all radii, which classifies this
+galaxy as Type 2.
+UGC 1501 is very symmetric in the inner parts, but shows
+distortions in the outer parts (Type 3). The velocity field reveals
+gas which seems to be attached to the western edge. Therefore,
+gas accretion might be the possible cause of the lopsidedness.
+UGC 2855 has a close companion, UGC 2866, which is three
+times less massive. UGC 2855 shows a tail in the north-western
+part and additional gas attached to the southern edge. Receding
+and approaching sides are in good agreement in the inner parts.
+However, in the outer parts, the approaching rotation curve
+shows a decline, whereas the receding one slowly increases
+(Type 3). The difference in velocity is more than 50 km s−1 .
+UGC 4173 is very slowly rotating with only 36 km s−1 (there
+is only one more galaxy, UGC 2034, in our sample which shows
+an even lower rotation velocity of about 24 km s−1 ). Receding
+and approaching sides differ by about 10 km s−1 across the whole
+radial range (Type 2). The most remarkable thing about this
+galaxy is the extent to which we detect the neutral gas, which
+is out to almost 10 R25 . Other examples are UGC 9211 (about
+9R25 ), UGC 11707 (about 7R25 ), and UGC 11852 (about 6R25 ).
+Typically, the H i disc is twice as extended as the optical disc
+in a normal spiral galaxy (Briggs et al. 1980). Irregular galaxies
+can have a more extended H i distribution (e.g., Huchtmeier et al.
+1981). However, only one other case of an H i disc, as extended
+as UGC 4173, has been published so far, which is NGC 3714
+(Gentile et al. 2007).
+UGC 4458 also reveals a close companion, which is quite
+mass-poor (about six times less massive than UGC 4458). The
+offset between receding and approaching sides is visible at all
+radii (Type 2) and very large with 100 to 150 km s−1 . In fact,
+the rotation velocities are unusually high with values of about
+550 km s−1 (approaching side) and 350 km s−1 (receding side) at
+0.75 R25 , decreasing at larger radii to 400 and 300 km s−1 respectively. However, note that the inclination is very low. From the
+velocity field it seems that UGC 4458 interacts with its small
+companion.
+UGC 5251 is classified as Type 5. In both the inner and
+outer parts, receding and approaching sides are offset by about
+50 km s−1 with a change of sides at a radius of 1 R25 . The velocity
+field is highly asymmetric.
+UGC 5532 also shows unusually high rotation velocities with
+a constant offset of about 50 km s−1 between receding and approaching sides (Type 2). No close companion could be detected
+on the H i image. This galaxy has also been observed by the
+GHASP3 team who derived a similarly looking rotation curve
+from the Hα velocity field (Epinat et al. 2008).
+UGC 7256 is an extreme case of Type 5 as the rotation velocities of receding and approaching sides change sides several
+times. The velocity field of UGC 7256 looks slightly warped.
+Additionally, we located a small H i cloud nearby.
+UGC 7353 is also classified as Type 5 as receding and approaching sides change sides at a radius of about 0.8 R25 . The
+offset in the outer part is about 50 km s−1 , it varies in the inner
+3
+
+Gassendi HAlpha survey of SPirals
+5
+
+J. van Eymeren et al.: Lopsidedness in WHISP galaxies: I. Rotation curves and kinematic lopsidedness
+
+Fig. 2. Velocity fields and rotation curves of some example galaxies representing five different types of velocity patterns. From top
+to bottom: UGC 6446 (Type 1: receding and approaching sides agree at all radii), UGC 2080 (Type 2: receding and approaching
+sides have a constant offset), UGC 9211 (Type 3: receding and approaching sides agree well at small radii, but differ significantly
+at large radii), UGC 8863 (Type 4: receding and approaching sides differ at small radii, but agree well at large radii), UGC 7353
+(Type 5: the curves of receding and approaching sides change sides).
+6
+
+J. van Eymeren et al.: Lopsidedness in WHISP galaxies: I. Rotation curves and kinematic lopsidedness
+
+Fig. 3. The distribution of kin as calculated from Eq. 1.
+parts, but is generally smaller. H i gas was detected at the eastern
+edge, a very small companion is located to the north-west.
+UGC 10470 shows a second rise of the rotation curve at
+2.5 R25 . The rotation curves of receding and approaching sides
+are offset by about 40 km s−1 at all radii (Type 2).
+The combined rotation curve of UGC 12082 lies above the
+rotation curve for receding and approaching side separately. This
+is due to the very low inclination.
+UGC 12754 reveals a declining rotation curve at large radii.
+The rotation velocities of receding and approaching sides differ
+in the inner parts and are mainly comparable in the outer parts
+(Type 4).
+4.3. Kinematic lopsidedness
+
+As we could show in the previous section, the rotation curves
+of galaxies allow us to examine the kinematic lopsidedness. The
+rotation curves of most galaxies end in a plateau so that it is possible to derive a perturbation parameter in the lopsided potential
+that is measured from the kinematic data, kin , from the maximum rotation velocities (see Sect. 3.2). As already mentioned in
+Sect. 3.2, kin only gives us an estimate as the maximum rotation
+velocities are not always well defined. In Table 2, last column,
+we list kin for all sample galaxies.
+Figure 3 shows the distribution of kin . Although the mean
+was calculated to be about 0.056, it becomes obvious that most
+galaxies have values far below the mean, which means that the
+kinematic lopsidedness is generally quite low. In fact, more than
+60% of all sample galaxies show values for the perturbation parameter for the potential kin to be below 0.056.
+
+5. Discussion
+We analysed the rotation curves of 70 spiral and irregular galaxies. In many cases, the rotation curves extracted from receding
+and approaching sides separately differ significantly. Galaxies of
+Type 2 (like UGC 1249 or UGC 1317), where receding and approaching sides are offset at all radii, either have a more massive
+companion or are part of a group of close companions. Type 3
+galaxies, i.e., galaxies which are kinematically symmetric in the
+inner parts, but asymmetric in the outer parts (just from comparing the rotation velocities of receding and approaching sides),
+
+often show close companions, which are typically less massive,
+or small H i clouds. Close companions are also seen for Type 5
+galaxies. In this class, the curves of receding and approaching sides show a different behaviour and therefore cross each
+other and change sides. This indicates that the detailed kinematic asymmetry including the spatial extent of lopsidedness
+strongly depends on the environment of galaxies. Type 2 and
+Type 5 galaxies show lopsidedness at all radii. This is expected
+if the disc responds to a halo that was distorted by a tidal encounter Jog (1997). As those two types of galaxies form 57%
+of the whole sample, we suggest that tidal encounters play an
+important role for the lopsidedness of disc galaxies. The detection of companions and H i clouds in the near vicinity of the here
+studied galaxies supports this scenario. In addition, gas accretion
+as well as ram pressure from the intergalactic medium could also
+play a role for the origin of lopsidedness, as, e.g., simulated by
+Mapelli et al. (2008). From a comparison with NGC 891 they
+find that in this particular galaxy tidal interaction seems to be
+the dominant process for generating lopsidedness.
+Our data confirm the results by Huchtmeier (1975) of an
+offset of receding and approaching sides larger than 20 km s−1 .
+In fact, our sample galaxies often reveal offsets as large as
+50 km s−1 .
+We now want to check how well kin represents the observed
+asymmetries in the velocity fields. Therefore, we concentrate
+on our example galaxies displayed in Fig. 2 and compare the
+differences of the rotation curves of receding and approaching
+halves with the perturbation parameter in the lopsided potential.
+In UGC 6446, the rotation velocities of receding and approaching sides are in very good agreement at all radii. Not surprisingly,
+the value of kin is close to zero. In UGC 9211, kin is clearly
+below the mean. However, the parameter does not account for
+the large discrepancies in the very outer parts of the galaxy. For
+UGC 2080, kin is very high, which reflects very nicely the constant, large difference between receding and approaching side.
+The inner parts of UGC 8863 show large differences in the rotation velocities of receding and approaching side. The perturbation parameter in the potential, however, is far below the mean
+because the velocities were averaged over the plateau where the
+differences are small. UGC 7353 does not have a clearly defined
+plateau. The maximum rotation velocities were taken from the
+first maximum of the rotation curves where receding and approaching sides differ only slightly. Therefore, the perturbation
+parameter in the potential is small, although large distortions are
+visible both in the very inner and very outer parts of the galaxy.
+Taking into account the results for all sample galaxies, we
+conclude that kin is a very reliable parameter if a galaxy is globally distorted or not distorted at all. As the maximum rotation
+velocities are taken from a limited radial range (where the rotation curves reach their maximum), local distortions are either
+not included or overestimated, depending on whether we have a
+Type 4 or Type 3 galaxy. In about 20% of all sample galaxies, the
+H i content does not extend much further out than R25 so that the
+maximum rotation velocities were averaged over a radial range
+within R25 . In all other galaxies, the maximum rotation velocities
+were measured at radii beyond R25 .
+Summarised, it can be said that the best way to quantify the
+kinematic lopsidedness is a comparison of the rotation curves of
+receding and approaching sides.
+As mentioned in the introduction, the main assumption about
+deriving rotation curves is that they are azimuthally symmetric,
+which results in a symmetric mass distribution. However, as our
+analysis shows, there can be huge deviations between the rotation curves extracted from the receding and approaching sides.
+7
+
+J. van Eymeren et al.: Lopsidedness in WHISP galaxies: I. Rotation curves and kinematic lopsidedness
+
+Table 2. Kinematic parameters as obtained from the tilted-ring analysis.
+
+UGC
+(1)
+625
+731
+1249
+1256
+1281
+1317
+1501
+1913
+2034
+2080
+2455
+2800
+2855
+2953
+3273
+3371
+3574
+3580
+3734
+3851
+4173
+4278
+4284
+4458
+4543
+4838
+5079
+5251
+5253
+5532
+5685
+5717
+5721
+5789
+5829
+5918
+5997
+6225
+6446
+6537
+6787
+6937
+7081
+7090
+7095
+7151
+7256
+7321
+7323
+7353
+7524
+7603
+7766
+7989
+8863
+9133
+9211
+9649
+9858
+
+8
+
+vsys
+[ km s−1 ]
+(2)
+2608
+642
+343
+430
+156
+3101
+196
+556
+577
+908
+372
+1177
+1195
+873
+617
+814
+1441
+1194
+972
+104
+859
+556
+557
+4753
+1965
+2624
+551
+1497
+1324
+2826
+1334
+1687
+537
+738
+628
+335
+1266
+702
+646
+860
+1182
+1056
+748
+557
+1081
+266
+1098
+409
+509
+460
+317
+650
+805
+1190
+1787
+3841
+688
+446
+2628
+
+α (J2000.0)
+[h m s]
+(3)
+01 00 55.6
+01 10 40.4
+01 47 33.7
+01 47 51.3
+01 49 31.9
+01 51 14.3
+02 01 16.8
+02 27 15.0
+02 33 43.0
+02 36 27.2
+02 59 41.8
+03 40 08.0
+03 48 24.8
+04 07 46.8
+05 17 44.9
+05 56 36.4
+06 53 10.7
+06 55 30.7
+07 12 28.5
+07 28 54.6
+08 07 05.6
+08 13 59.0
+08 14 40.5
+08 32 11.3
+08 43 20.3
+09 12 16.8
+09 32 10.3
+09 48 34.3
+09 50 21.4
+10 16 55.7
+10 29 19.1
+10 32 35.5
+10 32 17.1
+10 39 09.6
+10 42 43.0
+10 49 36.0
+10 53 55.4
+11 11 31.1
+11 26 40.7
+11 33 20.8
+11 49 15.5
+11 57 35.7
+12 05 28.2
+12 06 00.6
+12 06 08.3
+12 09 58.7
+12 15 05.5
+12 17 33.7
+12 17 29.4
+12 18 56.8
+12 25 50.4
+12 28 43.5
+12 35 58.5
+12 50 25.8
+13 56 16.3
+14 16 06.9
+14 22 32.0
+14 57 47.3
+15 26 41.5
+
+δ (J2000.0)
+[◦ 0 00 ]
+(4)
++47 40 50.8
++49 36 03.8
++27 20 50.3
++27 25 57.1
++32 35 27.3
++22 21 44.2
++28 50 05.3
++33 34 55.6
++40 31 45.4
++38 58 15.4
++25 14 29.1
++71 24 17.9
++70 08 19.6
++69 48 51.2
++53 33 03.6
++75 19 00.4
++57 10 35.5
++69 33 40.1
++47 10 03.9
++69 12 47.4
++80 07 43.7
++45 44 31.0
++49 03 41.0
++22 33 34.0
++45 43 59.5
++44 57 17.5
++21 30 10.4
++33 25 15.0
++72 16 37.8
++73 23 57.7
++29 29 15.5
++65 02 56.7
++27 40 08.6
++41 41 12.9
++34 27 26.0
++65 31 58.3
++73 41 25.9
++55 40 20.0
++53 44 51.0
++47 01 50.8
++56 05 01.6
++53 22 24.5
++50 32 33.4
++47 28 28.3
++49 35 04.0
++46 27 24.4
++33 11 30.3
++22 32 25.5
++45 36 50.5
++47 18 30.1
++33 32 35.0
++22 50 09.1
++27 57 16.9
++25 29 56.2
++47 14 07.3
++35 20 21.6
++45 23 05.0
++71 40 54.7
++40 33 53.7
+
+i
+[◦ ]
+(5)
+70.27
+59.30
+51.43
+71.59
+73.34
+71.95
+73.88
+53.65
+29.85
+27.64
+52.11
+61.87
+61.49
+52.18
+74.04
+45.52
+31.20
+65.68
+21.61
+67.59
+69.39
+64.17
+61.67
+22.10
+61.58
+29.14
+64.01
+64.50
+36.32
+35.19
+72.67
+52.30
+65.53
+62.49
+36.94
+54.04
+66.43
+75.87
+50.49
+49.47
+68.40
+57.18
+65.55
+67.38
+70.52
+74.89
+50.50
+74.90
+52.06
+69.57
+46.87
+73.12
+67.31
+44.19
+54.06
+51.94
+46.22
+56.56
+69.98
+
+PA
+[◦ ]
+(6)
+331.74
+258.16
+147.57
+69.44
+216.86
+107.13
+0.83
+286.63
+358.67
+335.35
+271.88
+285.49
+111.19
+100.83
+40.59
+130.19
+99.79
+1.87
+135.22
+38.76
+135.05
+352.32
+169.77
+289.29
+316.35
+304.42
+202.69
+253.99
+355.95
+142.79
+45.21
+10.76
+279.45
+35.56
+191.50
+238.60
+71.60
+256.19
+191.11
+195.65
+113.51
+248.17
+228.38
+16.54
+345.65
+281.33
+204.18
+260.55
+36.02
+331.25
+324.87
+199.93
+323.31
+32.45
+211.35
+30.36
+291.13
+228.21
+75.80
+
+vc
+[km s−1 ]
+(7)
+168.52
+72.86
+65.49
+114.35
+59.45
+229.96
+53.39
+114.79
+24.44
+117.52
+51.57
+113.26
+205.32
+291.07
+93.86
+84.50
+125.98
+116.09
+172.19
+51.28
+35.61
+87.50
+104.06
+292.78
+53.31
+150.33
+195.31
+142.61
+249.47
+300.51
+205.25
+131.30
+80.29
+105.14
+53.79
+38.07
+149.75
+157.44
+81.35
+158.52
+237.54
+268.79
+179.40
+156.93
+187.04
+83.55
+144.96
+106.34
+71.95
+200.53
+76.03
+65.07
+121.95
+256.47
+213.60
+237.97
+61.60
+88.27
+170.73
+
+vrec
+[km s−1 ]
+(8)
+159.48
+73.45
+89.23
+113.92
+59.74
+226.82
+49.03
+117.44
+13.90
+145.57
+47.57
+111.75
+207.06
+289.47
+95.01
+78.11
+108.89
+112.35
+177.11
+54.62
+28.24
+88.50
+103.21
+400.03
+68.72
+129.71
+193.13
+156.03
+277.60
+284.11
+189.77
+132.40
+76.31
+104.51
+48.46
+36.22
+153.97
+160.81
+82.53
+147.23
+247.13
+269.50
+166.86
+139.02
+196.50
+85.22
+155.53
+106.73
+72.64
+209.37
+73.90
+68.97
+114.51
+243.12
+211.17
+231.80
+63.72
+89.76
+184.91
+
+vappr
+[km s−1 ]
+(9)
+181.41
+73.38
+46.54
+115.01
+60.82
+230.67
+58.69
+114.49
+30.94
+94.26
+58.60
+114.19
+215.02
+305.54
+93.25
+82.86
+123.71
+119.34
+133.61
+49.26
+38.90
+87.35
+104.17
+272.95
+38.01
+131.79
+198.56
+127.52
+227.78
+260.47
+227.31
+127.69
+86.31
+107.04
+47.94
+43.82
+146.11
+155.47
+81.58
+155.79
+228.86
+271.25
+187.94
+176.52
+181.48
+79.92
+133.76
+104.34
+74.05
+192.24
+74.19
+60.59
+131.16
+242.60
+215.06
+245.23
+60.02
+89.34
+154.54
+
+Type
+
+kin
+
+(10)
+2
+1
+2
+1
+1
+2
+3
+4
+2
+2
+2
+3
+3
+5
+3
+2
+3
+1
+2
+5
+2
+1
+5
+2
+2
+2
+4
+5
+2
+2
+5
+5
+2
+1
+5
+3
+1
+4
+1
+5
+2
+1
+2
+5
+2
+1
+5
+3
+4
+5
+5
+2
+5
+4
+4
+3
+3
+1
+5
+
+(11)
+0.065
+0.001
+0.326
+0.005
+0.009
+0.008
+0.091
+0.013
+0.349
+0.218
+0.107
+0.011
+0.019
+0.028
+0.009
+0.028
+0.059
+0.030
+0.126
+0.052
+0.150
+0.007
+0.005
+0.217
+0.288
+0.007
+0.014
+0.100
+0.100
+0.039
+0.091
+0.018
+0.062
+0.012
+0.005
+0.100
+0.026
+0.017
+0.006
+0.027
+0.039
+0.003
+0.059
+0.120
+0.040
+0.032
+0.075
+0.011
+0.010
+0.043
+0.002
+0.064
+0.068
+0.001
+0.009
+0.028
+0.030
+0.002
+0.089
+
+J. van Eymeren et al.: Lopsidedness in WHISP galaxies: I. Rotation curves and kinematic lopsidedness
+10359
+10470
+11670
+11707
+11852
+11861
+11891
+12082
+12632
+12732
+12754
+
+908
+1359
+777
+901
+5837
+1481
+457
+805
+426
+747
+753
+
+16 20 57.0
+16 32 39.8
+21 03 33.4
+21 14 30.8
+21 55 59.6
+21 56 22.3
+22 03 31.4
+22 34 11.3
+23 30 00.6
+23 40 40.1
+23 43 54.1
+
++65 23 32.9
++78 12 07.9
++29 53 49.9
++26 44 04.1
++27 53 57.0
++73 15 40.6
++43 45 11.1
++32 51 24.3
++40 59 41.5
++26 14 00.0
++26 04 38.5
+
+43.82
+36.78
+67.34
+65.37
+46.03
+48.30
+46.26
+20.56
+49.49
+40.27
+49.46
+
+278.01
+300.11
+335.63
+55.72
+192.35
+216.95
+115.49
+145.25
+38.38
+14.33
+344.85
+
+127.97
+130.96
+173.00
+97.71
+181.95
+152.18
+87.50
+87.19
+65.93
+79.34
+116.74
+
+122.73
+142.00
+177.36
+89.37
+163.18
+149.95
+81.05
+58.33
+69.07
+83.81
+116.93
+
+126.05
+117.28
+168.55
+102.82
+171.37
+148.84
+84.74
+45.02
+69.00
+78.05
+120.25
+
+1
+2
+2
+5
+2
+1
+5
+2
+5
+3
+4
+
+0.013
+0.094
+0.026
+0.069
+0.023
+0.004
+0.021
+0.076
+0.001
+0.036
+0.014
+
+Notes: (1) the UGC number; (2) to (6) the kinematic parameters as iteratively calculated from the tilted-ring analysis for a combination of receding
+and approaching sides: (2) the systemic velocity, (3) and (4) equatorial coordinates of the dynamic centre, (5) the inclination; (6) the position angle
+which is measured in anti-clockwise direction from the north to the receding half of the galaxy; (7) to (9) the maximum rotation velocities as
+measured from the plateaus of the rotation curves: vc (for a combination of receding and approaching sides), vrec (as measured from the receding
+side), and vappr (as measured from the approaching side); (10) the type of rotation curve as defined in Sect.4.1; (11) the perturbation parameter in
+the lopsided potential as measured from the kinematic data (see Eq. 1).
+
+As the occurrence of asymmetries in disc galaxies is quite high,
+extra care has to be taken when working on rotation curves and
+the mass distribution in those objects.
+
+6. Summary
+We obtained rotation curves of a sample of 70 spiral and irregular galaxies selected from the WHISP survey by performing
+a tilted-ring analysis of the H i data. We looked at receding and
+approaching sides separately and discussed the differences in the
+velocities. The galaxies can be divided into five different types
+with respect to the behaviour of the rotation curves of receding
+and approaching sides and indicate symmetric velocity fields,
+global distortions or local distortions at different radii. The most
+common types are Type 2 where the velocities of receding and
+approaching sides show a constant offset over all radii, often as
+high as 50 km s−1 , and Type 5 where the curves of receding and
+approaching sides change sides. Both types of galaxies are either members of a group of close companions, or have a close
+companion of higher or lower mass or an H i cloud nearby. We
+suggest that these global distortions are the result of the disc response to a halo that was distorted by a tidal encounter.
+Furthermore, we calculated the perturbation parameter for
+the lopsided potential from the kinematic asymmetry, kin , which
+gave us a mean value of about 0.056 (averaged over all sample galaxies). However, this parameter either under- or overestimates lopsidedness if there are local distortions.
+In order to quantify lopsidedness at all radii and to get a better idea of its physical origin(s), a more detailed study of lopsidedness has to be carried out. Morphological lopsidedness can
+easily be measured on all scales. A detailed study of the morphological lopsidedness will allow us to shed some light on the
+mechanisms that lead to lopsidedness in general. This analysis
+will be done in Paper II.
+Acknowledgements. The authors would like to thank the anonymous referee for
+the constructive feedback which helped to improve this paper.
+We want to thank Thijs van der Hulst for providing us with the WHISP
+data cubes before they became publicly available. C. J. would like to thank
+DFG (Germany) and INSA (India) for supporting a visit to Germany in
+October 2007 under INSA-DFG Exchange Programme, during which this
+collaboration was started. We made extensive use of NASA’s Astrophysics
+Data System (ADS) Bibliographic Services and the NASA/IPAC Extragalactic
+Database (NED) which is operated by the Jet Propulsion Laboratory, California
+Institute of Technology, under contract with the National Aeronautics and
+Space Administration. We acknowledge the usage of the HyperLeda database
+(http://leda.univ-lyon1.fr).
+
+References
+Angiras, R. A., Jog, C. J., Dwarakanath, K. S., & Verheijen, M. A. W. 2007,
+MNRAS, 378, 276
+Angiras, R. A., Jog, C. J., Omar, A., & Dwarakanath, K. S. 2006, MNRAS, 369,
+1849
+Baldwin, J. E., Lynden-Bell, D., & Sancisi, R. 1980, MNRAS, 193, 313
+Binney, J. & Tremaine, S. 1987, Galactic dynamics, ed. Binney, J. & Tremaine,
+S.
+Briggs, F. H., Wolfe, A. M., Krumm, N., & Salpeter, E. E. 1980, ApJ, 238, 510
+de Vaucouleurs, G. 1979, ApJ, 227, 380
+Epinat, B., Amram, P., Marcelin, M., et al. 2008, MNRAS, 388, 500
+Garcı́a-Ruiz, I., Sancisi, R., & Kuijken, K. 2002, A&A, 394, 769
+Gentile, G., Salucci, P., Klein, U., & Granato, G. L. 2007, MNRAS, 375, 199
+Huchtmeier, W. K. 1975, A&A, 45, 259
+Huchtmeier, W. K., Seiradakis, J. H., & Materne, J. 1981, A&A, 102, 134
+Jog, C. J. 1997, ApJ, 488, 642
+Jog, C. J. 2002, A&A, 391, 471
+Jog, C. J. & Combes, F. 2009, Phys. Rep., 471, 75
+Kannappan, S. J. & Fabricant, D. G. 2001, in Astronomical Society of the Pacific
+Conference Series, Vol. 230, Galaxy Disks and Disk Galaxies, ed. J. G. Funes
+& E. M. Corsini, 449–450
+Mapelli, M., Moore, B., & Bland-Hawthorn, J. 2008, MNRAS, 388, 697
+Noordermeer, E., van der Hulst, J. M., Sancisi, R., Swaters, R. A., & van Albada,
+T. S. 2005, A&A, 442, 137
+Reshetnikov, V. & Combes, F. 1998, A&A, 337, 9
+Rhee, G., Valenzuela, O., Klypin, A., Holtzman, J., & Moorthy, B. 2004, ApJ,
+617, 1059
+Richter, O. & Sancisi, R. 1994, A&A, 290, L9
+Rix, H. & Zaritsky, D. 1995, ApJ, 447, 82
+Sánchez-Saavedra, M. L., Battaner, E., Guijarro, A., López-Corredoira, M., &
+Castro-Rodrı́guez, N. 2003, A&A, 399, 457
+Schwarzkopf, U. & Dettmar, R. 2001, A&A, 373, 402
+Shane, W. W. & Bieger-Smith, G. P. 1966, Bull. Astron. Inst. Netherlands, 18,
+263
+Swaters, R. A., Sancisi, R., van Albada, T. S., & van der Hulst, J. M. 2009, A&A,
+493, 871
+Swaters, R. A., Schoenmakers, R. H. M., Sancisi, R., & van Albada, T. S. 1999,
+MNRAS, 304, 330
+Swaters, R. A., van Albada, T. S., van der Hulst, J. M., & Sancisi, R. 2002, A&A,
+390, 829
+van der Hulst, J. M., Terlouw, J. P., Begeman, K. G., Zwitser, W., & Roelfsema,
+P. R. 1992, in Astronomical Society of the Pacific Conference Series, Vol. 25,
+Astronomical Data Analysis Software and Systems I, ed. D. M. Worrall,
+C. Biemesderfer, & J. Barnes, 131
+van Eymeren, J., Jütte, E., Jog, C. J., Stein, Y., & Dettmar, R.-J. 2011, submitted
+to A&A
+van Eymeren, J., Marcelin, M., Koribalski, B. S., et al. 2009, A&A, 505, 105
+
+9
+
+J. van Eymeren et al.: Lopsidedness in WHISP galaxies: I. Rotation curves and kinematic lopsidedness
+
+Appendix A: Rotation curves of all sample galaxies
+Here we present the rotation curves of all sample galaxies
+(Figs. A.1 to A.3). Red and blue symbols mark the rotation velocities of receding and approaching sides respectively. The rotation curve of a combination of receding and approaching sides
+is shown in black.
+
+10
+
+J. van Eymeren et al.: Lopsidedness in WHISP galaxies: I. Rotation curves and kinematic lopsidedness
+
+Fig. A.1. The rotation curves of all sample galaxies extracted from the receding (red), approaching (blue), and a combination of
+both sides (black).
+11
+
+J. van Eymeren et al.: Lopsidedness in WHISP galaxies: I. Rotation curves and kinematic lopsidedness
+
+Fig. A.2. Figure A.1 to be continued.
+
+12
+
+J. van Eymeren et al.: Lopsidedness in WHISP galaxies: I. Rotation curves and kinematic lopsidedness
+
+Fig. A.3. Figure A.1 to be continued.
+
+13
+
+

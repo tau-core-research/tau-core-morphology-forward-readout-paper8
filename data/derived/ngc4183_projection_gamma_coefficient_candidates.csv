@@ -1,0 +1,5 @@
+candidate_rule,candidate_gamma_proj,source_inputs,status,freeze_allowed,reason
+inclination_difference_only,0.00458511390812999,SPARC Inc=82 deg; source-native HI inclination=83 deg,SOURCE_DERIVED_BUT_TOO_SMALL_AND_SIGNIFICANCE_LIMITED,False,only compares two nearly identical high inclinations; does not encode warp/profile overlay
+edge_on_strength_direct,0.9851478631379982,p_edge=sin^2(i_HI),REJECTED_DIMENSIONLESS_BUT_NOT_A_COEFFICIENT_DERIVATION,False,p_edge belongs inside the kernel; using it again as gamma would double-count projection
+residual_fit_gamma,,endpoint residuals,FORBIDDEN_FOR_FREEZE,False,would violate residual-blind endpoint protocol
+source_native_tilted_ring_gamma,,radial tilted-ring inclination/PA or velocity-field model,PREFERRED_BUT_MISSING,False,requires source-native radial orientation model not currently extracted

@@ -1,0 +1,4 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+NGC7331,N7331_QWS1_CENTROID_STABILITY,REVIEW_REQUIRED,centroid q range=0.00666612..0.00921478,choose whether centroid or envelope observable is the correct q_warp carrier,False,False,ngc7331_things_qwarp_measurement_sensitivity_audit_not_endpoint
+NGC7331,N7331_QWS2_ENVELOPE_STRENGTH,REVIEW_REQUIRED,envelope p80 q range=0.194693..0.216899,review whether warp/readout strength should track ridge centroid or outer envelope,False,False,ngc7331_things_qwarp_measurement_sensitivity_audit_not_endpoint
+NGC7331,N7331_QWS3_ENDPOINT_BLINDNESS,PASS,sensitivity audit reads THINGS moment-0 maps and geometry only,none at endpoint-blindness level,False,False,ngc7331_things_qwarp_measurement_sensitivity_audit_not_endpoint

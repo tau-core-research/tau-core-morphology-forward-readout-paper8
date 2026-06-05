@@ -1,0 +1,5 @@
+gate_id,gate_status,evidence,formula_freeze_allowed,endpoint_scores_allowed,remaining_obligation,claim_boundary
+N4183_GAMMA_G1_GEOMETRIC_CANDIDATE,PASS_AS_DIAGNOSTIC_ONLY,82->83 deg gives gamma=0.00458511,False,False,do not freeze because it only captures a near-identical inclination comparison,ngc4183_projection_gamma_coefficient_gate_not_endpoint
+N4183_GAMMA_G2_NO_DOUBLE_COUNTING,PASS_BLOCKS_BAD_RULE,p_edge already enters K_proj,False,False,gamma must be an independent coefficient rule,ngc4183_projection_gamma_coefficient_gate_not_endpoint
+N4183_GAMMA_G3_RESIDUAL_BLINDNESS,PASS_BLOCKS_ENDPOINT_FIT,no vobs/residual used,False,False,source-native radial model required,ngc4183_projection_gamma_coefficient_gate_not_endpoint
+N4183_GAMMA_G4_FREEZE,BLOCKED,no acceptable gamma_proj rule is frozen,False,False,acquire tilted-ring/profile source or declare NGC4183 blocked,ngc4183_projection_gamma_coefficient_gate_not_endpoint

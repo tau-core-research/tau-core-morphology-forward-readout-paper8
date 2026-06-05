@@ -1,0 +1,6 @@
+gate_id,gate_status,evidence,remaining_obligation,galaxy,selected_denominator_id,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+SB2D_G1_SELECTOR,PASS_CAVEATED,P0_PREDECLARED_SPLIT_B2_HOLDOUT_CANDIDATE_RHI_BLOCKED_OR_CAVEATED,denominator must be frozen before formula scoring,NGC5907,D1_SOURCE_OPTICAL_WARP_OUTER_EDGE,False,False,ngc5907_split_b2_denominator_gate_not_endpoint
+SB2D_G2_SPARC_RHI_ROUTE,BLOCKED,SPARC RHI_kpc=0,do not use SPARC RHI for NGC5907 split-B2,NGC5907,D1_SOURCE_OPTICAL_WARP_OUTER_EDGE,False,False,ngc5907_split_b2_denominator_gate_not_endpoint
+SB2D_G3_SOURCE_NATIVE_DENOMINATOR,PASS_CAVEATED,Sasaki optical warp source window 13.3-24 kpc,mark endpoint as caveated unless a source-native HI denominator is acquired,NGC5907,D1_SOURCE_OPTICAL_WARP_OUTER_EDGE,False,False,ngc5907_split_b2_denominator_gate_not_endpoint
+SB2D_G4_DIMENSIONAL_AND_LIMITS,PASS,"x_w=0.554167 is dimensionless and lies in (0,1)",none at radial-coordinate level,NGC5907,D1_SOURCE_OPTICAL_WARP_OUTER_EDGE,False,False,ngc5907_split_b2_denominator_gate_not_endpoint
+SB2D_G5_ENDPOINT_BLINDNESS,PASS,uses SPARC catalog and source-field freeze only; no vobs/residual columns,future scoring must read a formula freeze manifest unchanged,NGC5907,D1_SOURCE_OPTICAL_WARP_OUTER_EDGE,False,False,ngc5907_split_b2_denominator_gate_not_endpoint

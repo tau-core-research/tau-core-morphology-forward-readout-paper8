@@ -1,0 +1,6 @@
+criterion_id,criterion,galaxy,claim_boundary
+C1_RESIDUAL_BLIND,"scale carrier must not use vobs, endpoint residuals, or endpoint scores",NGC4088,s4g75_ngc4088_tau_side_scale_selection_gate_not_endpoint
+C2_SOURCE_ONSET_COUPLED,warp/asymmetry scale must carry the measured source onset x_w,NGC4088,s4g75_ngc4088_tau_side_scale_selection_gate_not_endpoint
+C3_ASYMPTOTIC_READOUT_CARRIER,"dimensionful carrier should be a source/catalog asymptotic readout scale, not a point-sampled median curve statistic",NGC4088,s4g75_ngc4088_tau_side_scale_selection_gate_not_endpoint
+C4_NO_EXTERNAL_CLOSURE_COMPARATOR,scale should not require a TPG-like v_v6 closure carrier as the normalizer,NGC4088,s4g75_ngc4088_tau_side_scale_selection_gate_not_endpoint
+C5_MINIMAL_SINGLE_SOURCE_FACTOR,scale should not multiply independent onset and closure fractions unless Tau-side theory derives the composite,NGC4088,s4g75_ngc4088_tau_side_scale_selection_gate_not_endpoint

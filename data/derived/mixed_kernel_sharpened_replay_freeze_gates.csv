@@ -1,0 +1,5 @@
+gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+MSKRF1_PREFLIGHT_READY,PASS,SOURCE_KERNEL_SHARPENING_PREFLIGHT_READY_NOT_ENDPOINT,none at sharpened freeze level,False,False,mixed_kernel_sharpened_replay_freeze_not_score
+MSKRF2_DIMENSION_AND_LIMITS,PASS,all sharpened kernel coefficients are dimensionless; inactive window gives K=0; gamma=0 recovers carrier,none at formula-shell level,False,False,mixed_kernel_sharpened_replay_freeze_not_score
+MSKRF3_ENDPOINT_BLINDNESS,PASS,construction reads source manifests and preflight formulas only,scoring must remain a separate script reading this manifest unchanged,False,False,mixed_kernel_sharpened_replay_freeze_not_score
+MSKRF4_REPLAY_ONLY_BOUNDARY,PASS,"freeze records V2/V3 replay formulas, not accepted endpoint updates",do not retroactively alter accepted NGC5907/NGC7331 rows,False,False,mixed_kernel_sharpened_replay_freeze_not_score

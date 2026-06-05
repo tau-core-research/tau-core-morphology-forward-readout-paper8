@@ -1,0 +1,6 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+NGC7331,N7331_QWG1_THINGS_PRODUCTS_AUDITED,PASS,NGC7331_THINGS_HI_PRODUCTS_AUDITED_WORKSHEET_READY,none at product-audit level,False,False,ngc7331_things_qwarp_measurement_worksheet_not_endpoint
+NGC7331,N7331_QWG2_GEOMETRY_SCALES_DEFINED,PASS,"Rdisk=5.020 kpc, RHI=27.010 kpc, x_w=0.534309",none at scalar geometry level,False,False,ngc7331_things_qwarp_measurement_worksheet_not_endpoint
+NGC7331,N7331_QWG3_PA_REFERENCE,BLOCKED_MEASUREMENT_PENDING,inner_disk_pa_deg is not frozen in this worksheet,measure from THINGS MOM1/MOM0 or cite source PA profile,False,False,ngc7331_things_qwarp_measurement_worksheet_not_endpoint
+NGC7331,N7331_QWG4_Q_WARP_RESPONSE,BLOCKED_MEASUREMENT_PENDING,q_warp response fields are empty,"fill ridge offsets, reference extent, and side weights",False,False,ngc7331_things_qwarp_measurement_worksheet_not_endpoint
+NGC7331,N7331_QWG5_ENDPOINT_BLINDNESS,PASS,worksheet uses map geometry and source products only,do not score until formula freeze passes,False,False,ngc7331_things_qwarp_measurement_worksheet_not_endpoint

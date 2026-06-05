@@ -1,0 +1,2 @@
+formula_id,formula,kernel,carrier,sign,amplitude_or_coefficient,coefficient_status,source_inputs,uses_vobs_or_residual,formula_freeze_allowed,endpoint_scores_allowed,claim_boundary
+N4183_PROJECTION_ATTENUATION_SHELL,v_readout^2(R)=v_carrier^2(R)*(1-gamma_proj*K_proj(R)),K_proj(R)=p_edge*smoothstep((R/R_HI-x_inner)/(1-x_inner)),smooth_exponential_disk_carrier,attenuation,gamma_proj,UNFROZEN_BLOCKS_FORMULA_FREEZE,R_HI_source_native_kpc; p_edge; Rdisk/RHI,False,False,False,ngc4183_projection_outer_warp_formula_derivation_not_endpoint

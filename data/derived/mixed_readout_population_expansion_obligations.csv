@@ -1,0 +1,5 @@
+gate_id,gate_status,obligation,claim_boundary
+EXP1_NO_ENDPOINT_SCORING,PASS,expansion gate ranks candidates but scores no rotation curve,mixed_readout_population_expansion_gate_not_endpoint
+EXP2_CONTROL_SIGNAL_PRESERVED,PASS,three-case matched-vs-wrong control must remain recorded before expanding,mixed_readout_population_expansion_gate_not_endpoint
+EXP3_NGC4088_NOT_PROMOTED,PASS,NGC4088 diagnostic signal cannot be used as source-label evidence,mixed_readout_population_expansion_gate_not_endpoint
+EXP4_FORMULA_FREEZE_BLOCKED_UNTIL_SOURCE_RULE,PASS,no fourth mixed formula freeze until blockers are resolved residual-blind,mixed_readout_population_expansion_gate_not_endpoint

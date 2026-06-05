@@ -1,0 +1,2 @@
+galaxy,proposed_readout_subfamily,n_gates,n_pass_like,n_caveated,n_blocked,x_warp_onset,q_warp,m_history_warp,epsilon_cross_bound,breakthrough_status,accepted_subfamily_label_promoted,endpoint_scores_allowed,claim_boundary
+NGC4088,K_warp_history_coupled,6,6,2,0,0.2823529411764706,1.0,1.0,0.6874999999999999,BREAKTHROUGH_PROTOCOL_BOUND_READY_NOT_ENDPOINT,False,False,ngc4088_breakthrough_promotion_gate_not_endpoint

@@ -24,6 +24,7 @@ REPORTS = ROOT / "reports"
 PREVIEW_DIR = REPORTS / "p0_skyview_previews"
 
 CLAIM_BOUNDARY = "p0_skyview_previews_not_image_classification_not_endpoint"
+PREVIEW_SIZE_PX = 300
 
 
 def safe_name(value: str) -> str:
@@ -44,15 +45,22 @@ def normalize(data: np.ndarray) -> np.ndarray:
     return np.clip(scaled, 0.0, 1.0)
 
 
+def resize_square(data: np.ndarray, size: int = PREVIEW_SIZE_PX) -> np.ndarray:
+    if data.ndim < 2:
+        return np.zeros((size, size), dtype=float)
+    height, width = data.shape[:2]
+    if height == 0 or width == 0:
+        return np.zeros((size, size), dtype=float)
+    y_idx = np.linspace(0, height - 1, size).astype(int)
+    x_idx = np.linspace(0, width - 1, size).astype(int)
+    return data[np.ix_(y_idx, x_idx)]
+
+
 def render_png(data: np.ndarray, output: Path, title: str) -> None:
     PREVIEW_DIR.mkdir(parents=True, exist_ok=True)
-    plt.figure(figsize=(4, 4), dpi=120)
-    plt.imshow(normalize(data), cmap="gray", origin="lower")
-    plt.title(title, fontsize=9)
-    plt.axis("off")
-    plt.tight_layout(pad=0.05)
-    plt.savefig(output, bbox_inches="tight", pad_inches=0.02)
-    plt.close()
+    del title  # The manifest carries labels; the source preview stays pixel-stable.
+    preview = resize_square(normalize(data))
+    plt.imsave(output, preview, cmap="gray", vmin=0.0, vmax=1.0)
 
 
 def acquire_preview(row: pd.Series) -> tuple[str, str, int, int]:
@@ -70,13 +78,22 @@ def acquire_preview(row: pd.Series) -> tuple[str, str, int, int]:
             return str(output.relative_to(ROOT)), "NO_IMAGE_RETURNED", 0, 0
         data = images[0][0].data
         render_png(data, output, f"{galaxy} - {survey}")
-        height, width = data.shape[:2]
-        return str(output.relative_to(ROOT)), "PREVIEW_RENDERED", int(width), int(height)
+        return (
+            str(output.relative_to(ROOT)),
+            "PREVIEW_RENDERED",
+            PREVIEW_SIZE_PX,
+            PREVIEW_SIZE_PX,
+        )
     except Exception as exc:  # pragma: no cover - external-service failure path
         if output.exists():
             cached = plt.imread(output)
-            height, width = cached.shape[:2]
-            return str(output.relative_to(ROOT)), "PREVIEW_RENDERED", int(width), int(height)
+            render_png(cached, output, f"{galaxy} - {survey}")
+            return (
+                str(output.relative_to(ROOT)),
+                "PREVIEW_RENDERED",
+                PREVIEW_SIZE_PX,
+                PREVIEW_SIZE_PX,
+            )
         return str(output.relative_to(ROOT)), f"PREVIEW_ERROR:{type(exc).__name__}:{str(exc)[:120]}", 0, 0
 
 

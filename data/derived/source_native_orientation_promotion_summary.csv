@@ -1,0 +1,4 @@
+split,n_galaxies,n_family_orientation_promoted,n_family_orientation_blocked,n_active_components,n_promoted_active_components,n_blocked_active_components,n_galaxies_orientation_ready,n_galaxies_orientation_blocked,endpoint_scores_computed,claim_boundary
+all,175,3,1,406,295,111,67,108,False,source_native_orientation_promotion_gate_not_endpoint
+holdout,44,3,1,107,79,28,16,28,False,source_native_orientation_promotion_gate_not_endpoint
+train,131,3,1,299,216,83,51,80,False,source_native_orientation_promotion_gate_not_endpoint

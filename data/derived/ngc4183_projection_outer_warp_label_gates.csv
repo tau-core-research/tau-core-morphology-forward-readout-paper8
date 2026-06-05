@@ -1,0 +1,5 @@
+gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,claim_boundary
+N4183_LABEL_G1_NO_RESIDUAL_SELECTION,PASS,label gate reads observable sheet only,separate endpoint script may read vobs only after freeze,False,ngc4183_projection_outer_warp_label_gate_not_endpoint
+N4183_LABEL_G2_BROAD_LABEL_REJECTED,PASS,bar/core/history overlay observables missing,do not score broad label,False,ngc4183_projection_outer_warp_label_gate_not_endpoint
+N4183_LABEL_G3_NARROW_LABEL_SUPPORTED,PASS_CAVEATED,p_edge=0.985 and RHI denominator consistency plus qualitative outer warp,derive projection attenuation formula shell and coefficient rule,False,ngc4183_projection_outer_warp_label_gate_not_endpoint
+N4183_LABEL_G4_ENDPOINT_ALLOWED,BLOCKED,no frozen formula yet,formula derivation and source-side formula freeze,False,ngc4183_projection_outer_warp_label_gate_not_endpoint

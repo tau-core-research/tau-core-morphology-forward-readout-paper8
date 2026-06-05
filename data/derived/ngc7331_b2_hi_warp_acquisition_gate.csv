@@ -1,0 +1,6 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+NGC7331,N7331_HIAG1_SOURCE_CANDIDATES_IDENTIFIED,PASS,"Bosma/NED, THINGS, radial gas-motion, and Patra routes are identified",none at candidate-identification level,False,False,ngc7331_b2_hi_warp_acquisition_route_not_endpoint
+NGC7331,N7331_HIAG2_SOURCE_NATIVE_HI_PRODUCT_CACHED,PASS,THINGS NGC7331 moment maps are locally cached and FITS-audited,build residual-blind q_warp/sign/cross-term measurement worksheet,False,False,ngc7331_b2_hi_warp_acquisition_route_not_endpoint
+NGC7331,N7331_HIAG3_Q_WARP_MEASURABLE,BLOCKED_EXTRACTION_PENDING,q_warp requires actual H I ridge/asymmetry measurement,measure q_warp with a residual-blind worksheet,False,False,ngc7331_b2_hi_warp_acquisition_route_not_endpoint
+NGC7331,N7331_HIAG4_SIGMA_SIGN_REVIEW,BLOCKED_SIGN_REVIEW_PENDING,Bosma complex warp/opposite-direction context prevents inherited sign,freeze added-readout/attenuation convention from source geometry,False,False,ngc7331_b2_hi_warp_acquisition_route_not_endpoint
+NGC7331,N7331_HIAG5_ENDPOINT_BLINDNESS,PASS,route uses source candidates and geometry requirements only,future scoring must remain separate after formula freeze,False,False,ngc7331_b2_hi_warp_acquisition_route_not_endpoint

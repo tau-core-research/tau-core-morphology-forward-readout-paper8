@@ -1,0 +1,3563 @@
+Holes and Shells in the Interstellar Medium of the Nearby
+Dwarf Galaxy IC 2574
+Fabian Walter1
+
+arXiv:astro-ph/9904002v1 1 Apr 1999
+
+Radioastronomisches Institut der Universität, Auf dem Hügel 71, D–53121 Bonn, Germany
+Electronic mail: walter@astro.uni-bonn.de
+and
+
+Elias Brinks
+Departamento de Astronomı́a, Apartado Postal 144, Guanajuato, Gto. 36000, Mexico
+National Radio Astronomy Observatory, P.O. Box O, Socorro, NM 87801
+Electronic mail: ebrinks@astro.ugto.mx
+
+ABSTRACT
+We present H I synthesis observation of the nearby dwarf galaxy
+IC 2574 (a member of the M81 group of galaxies) made with the NRAO
+Very Large Array in its B–, C– and D–array configurations at high
+spatial and velocity resolution (95 pc × 2.6 km s−1 ). In addition, we
+present optical broad and narrow band images obtained with the 2.2–
+m telescope of the Calar Alto observatory. The VLA H I observations
+show a stunning amount of detail in the form of 48 mostly expanding H I
+shells and holes in its neutral interstellar medium. These features range
+in size from about 100 (a limit set by the size of the beam) to about 1000
+pc dominating the appearance of the H I surface brightness map. Their
+dynamics clearly influence the velocity field of IC 2574. In addition to
+well defined holes, some large scale (> 1000 pc) coherent features are
+visible in the channel maps. They are probably the remainder of an
+older shell population.
+1
+
+Visiting Astronomer, German–Spanish Astronomical Centre, Calar Alto, operated by the Max–Planck–Institute
+for Astronomy, Heidelberg, jointly with the Spanish Commission for Astronomy.
+
+1
+
+Current star formation, as traced by Hα emission, is predominantly
+found along the rims of the larger H I holes, suggesting propagating star
+formation. On linear scales of ≈ 95 pc, star formation occurs if the
+H I surface density reaches values higher than 1021 cm−2. The radial
+expansion of the H I holes (8–12 km s−1 ), the indicative ages (10–60
+106 yr) and the energy requirements for their formation (1050–1053 ergs)
+can be understood in terms of the combined effects of stellar winds and
+multiple supernova explosions of the most massive stars formed during
+a recent phase of active star formation.
+The scaleheight of the H I layer is found to be ≈ 350 pc, considerably thicker than that in massive disk galaxies. This is due to a lower
+gravitational potential (for the same observed onedimensional velocity
+dispersion of ≈ 7 km s−1 ). This puffed up disk implies a lower H I volume density (0.15 cm−3). This, combined with the reduced gravitational
+pull and solid body rotation throughout the disk explains why the diameter distribution in dwarf galaxies extends to substantially larger values
+than in spiral galaxies.
+A comparison with other galaxies shows that the energies needed to
+create these structures are the same for all types of galaxies, at least to
+first order. The overall statistical properties of the H I holes and shells
+in galaxies show clear trends with Hubble type (or rather mass), such
+as in their diameter distribution, expansion velocities and ages.
+Subject headings: Galaxies: individual (IC 2574) – Galaxies: ISM – ISM:
+structure – Radio lines: galaxies – Radio lines: ISM
+
+2
+
+1.
+
+sible for some of the holes in Ho II have not
+led to the expected result (Rhode et al. 1999).
+And in the case of the largest observed shells,
+these seem to have energy requirements surpassing the output of stellar winds and supernovae. To explain those structures an alternative mechanism was proposed, the infall of gas clouds (see Tenorio–Tagle et al.
+(1987) for a numerical simulation and van der
+Hulst & Sancisi (1988) for observational evidence in the case of one of the largest holes
+in M 101). And recently, even Gamma Ray
+Bursters (GRBs) have been suggested as a
+possible explanation for the largest H I holes
+(Efremov, Elmegreen & Hodge 1998, Loeb &
+Perna 1998).
+The idea that supernovae deposit large
+amounts of energy into the ISM is not new.
+Cox & Smith (1974) already discussed the
+idea that the energy released by supernovae
+sets up tunnels of hot gas in the ISM. This
+picture was a substantial modification of the
+Field, Goldsmith & Habing (1969) model which
+consists of a two phase medium. The ideas
+proposed by Cox & Smith were incorporated
+within the model elaborated by McKee & Ostriker (1977) who suggested that the ISM has
+three distinct phases, a cool (T ≈ 102 K), a
+warm (T ≈ 104 K), and a hot phase (T ≈
+106 K), all in pressure equilibrium. Various
+refinements have been proposed but this picture basically still stands.
+Knowing how much kinetic energy is transferred in expanding shells and filaments is
+of direct importance for assessing the energy
+balance in the ISM. In addition to an analytical approach, various authors are pushing
+forward numerical simulations (e.g., Palouš,
+Franco & Tenorio–Tagle 1990, Silich et al.
+1996, Palouš, Tenorio–Tagle & Franco 1994),
+in order to model the evolution of the shape
+
+Introduction
+
+Some twenty years ago, Heiles (1979, 1984,
+1990) discovered large, shell–like structures
+in the neutral hydrogen (H I) distribution
+of our Galaxy by inspection of maps made
+in the 21–cm line. Since this discovery, a
+wealth of observations obtained with powerful Synthesis Radio Telescopes such as the
+Very Large Array (VLA) or the Westerbork
+Synthesis Radio Telescope (WSRT) revealed
+similar structures in our nearest neighbors.
+Prominent examples are M 31 (Brinks 1981,
+Brinks & Bajaja 1986), M 33 (Deul & den
+Hartog 1990), Holmberg II (Puche et al. 1992,
+hereafter referred to as PWBR92), the galaxies M 101 and NGC 6946 (Kamphuis 1993)
+and IC 10 (Wilcots & Miller 1998). The latest, impressive additions to this list are the
+SMC (Staveley–Smith et al. 1997) and LMC
+(Kim et al. 1998). All these observations indicate that the interstellar medium (ISM) of
+medium to late–type galaxies is dominated
+by features, which are variously described as
+shells, rings, holes, loops, bubbles or cavities.
+Obviously, one of the basic questions is
+which physical process is able to produce
+these observed structures. The general picture which has emerged is that they are the result of combined stellar winds and supernova
+explosions produced by young stellar associations. For review articles on that topic see
+Tenorio–Tagle & Bodenheimer (1988), and
+van der Hulst (1996, and references therein).
+Based on a simple model of holes created by
+O and B stars, Oey & Clarke (1997) successfully predict the observed number distribution of SMC holes, lending support to this
+hypothesis. It should be noted, however, that
+this general picture is not without its flaws.
+Searches for the remnant stellar populations
+of the OB associations thought to be respon3
+
+again facilitating the creation of large holes.
+And because of their smaller size, the probability to suffer impacts from infalling clouds
+is lower compared to that for larger galaxies.
+Despite all these arguments in favor, only very
+few such H I studies of dwarf galaxies have
+been published. Beside our two neighbors,
+the SMC and LMC a detailed analysis was
+performed in one case only, that of the dwarf
+galaxy Holmberg II (PWBR92), member of
+the M 81 group.
+In this paper, we concentrate on IC 2574, a
+gas–rich dwarf galaxy in the same group. Table 1 summarizes some general information on
+this object. IC 2574 (= UGC 5666 = DDO 81,
+also sometimes referred to as Coddington’s
+Nebula) has been studied by several authors
+in the past. Observations with single dish
+telescopes in the 21–cm line of neutral hydrogen (H I) were published by Rots (1980) and
+Huchtmeier & Richter (1988) and a first study
+using an interferometer was made by Seielstad
+& Wright (1973). A recent H I study, concentrating on the dynamics and contribution to
+the total mass by dark matter was performed
+by Martimbeau, Carignan & Roy (1994, hereafter abbreviated MCR94), who observed the
+galaxy with the Westerbork Synthesis Radio
+Telescope. Recent broadband optical studies were published by Tikhonov et al. (1991).
+Studies of H II regions in IC 2574 have been
+presented by Miller & Hodge (1994), Kennicutt (1988) and Arsenault & Roy (1986).
+Spectroscopy of some prominent H II regions
+was performed by Miller & Hodge (1996) and
+Hα velocity fields were recently obtained by
+Tomita et al. (1998). In addition, four Wolf–
+Rayet stars were discovered by Drissen, Roy
+& Moffat (1993).
+We present H I observations made with the
+
+of the H I shells in various environments, the
+fragmentation of matter on the rim of the
+shells and to investigate induced star formation. This is important not only for tracking
+down the mechanisms which produce the H I
+shells and filaments, but also for determining
+what fraction of the ISM breaks out into the
+halo and might eventually rain back onto the
+disk.
+Our aim is to investigate the properties of
+the H I shells and bubbles in the ISM of galaxies. Intimately linked to this are the questions when fragmentation on the rim of the
+shells starts and what drives star formation.
+Unfortunately, the determination of the characteristics of H I shells in our Galaxy is not
+straightforward due to our unfavorable location within the disk. Looking at the nearest spiral galaxies (e.g., M 31, M 33, M 101,
+NGC 6946) does not improve matters all that
+much since the structures in their ISM are
+strongly modified by spiral density waves and
+differential rotation, both effects dramatically
+influencing the shape and formation of holes
+and shells. Therefore, we decided to direct
+our attention to nearby dwarf galaxies instead. Dwarfs are slow rotators, generally
+show solid body rotation, and lack density
+waves. This implies that once features like
+shells have formed, they won’t be deformed
+by galactic shear and therefore tend to be long
+lived. Moreover, the overall gravitational potential of a dwarf is much smaller than in a
+normal spiral. The same amount of energy
+input of a star forming region therefore has
+a more pronounced impact on the overall appearance of the ISM, as shown by PWBR92.
+Since dwarf galaxies also tend to have a much
+thicker disk compared to massive spirals (e.g.,
+Staveley–Smith, Davies & Kinman 1992), the
+H I volume density of dwarf galaxies is lower,
+
+4
+
+NRAO2 Very Large Array (VLA) in its B–
+, C– & D–array configurations supplemented
+by optical observations obtained at the Calar
+Alto Observatory. The VLA data were originally obtained by Puche, Brinks and Westpfahl with the intention of following up on their
+work on Ho II. So far, only a low resolution
+integrated H I map was published by Puche
+& Westpfahl (1994). This paper presents the
+VLA data in a complete form and compares
+them with optical observations. The original data were recalibrated by us to produce
+far superior maps using the latest calibration
+and imaging techniques within aips. The
+data reduction and results are discussed in
+Secs. 2 & 3. In Sec. 4, a catalog of H I holes
+and shells is presented. Sec. 5 discusses the
+relation between H I and Hα features. A general discussion is given in Sec. 6 and a summary of the results is presented in Sec. 7.
+2.
+2.1.
+
+this extended configuration. The absolute
+flux calibration was determined by observing
+1328+307 (3C286) for approximately 20 minutes during each observing run, assuming a
+flux density of 14.73 Jy according to the Baars
+et al. (1977) scale. This calibrator was also
+used to derive the complex bandpass corrections. The nearby calibrators 1031+567 and
+0945+664 were used as secondary amplitude
+and phase calibrators and their fluxes were
+determined to be 1.80 Jy and 2.22 Jy, respectively. Since the systemic velocity of IC 2574
+(≈ 53 km s−1 ) is close in velocity to H I emission from our Galaxy, each calibrator observation was split in two parts to form a pair
+of observations, one part having the velocity
+shifted by +300 km s−1 and the other by 300 km s−1 to avoid contamination by Galactic emission. In the course of the calibration
+these observations were then averaged to give
+interpolated amplitude and phase corrections.
+IC 2574 was observed using a 1.56 MHz bandwidth centered at a heliocentric velocity of 38
+km s−1 . This band was divided into 128 channels resulting in a velocity resolution of 2.58
+km s−1 after online Hanning smoothing.
+The data for each array were edited and
+calibrated separately with the aips package3 .
+The uv–data were inspected and bad data
+points due to either interference or cross talk
+between antennae were removed, after which
+the data were calibrated. We Fourier transformed our B–, C– and D–array observations separately to assess their quality; subsequently we combined all data to form a single
+dataset which was used for mapping. All the
+results presented in this paper are based on
+this combined dataset.
+Channels with velocities lower then −40
+
+Observations
+Radio Observations
+
+IC 2574 was observed with the VLA in
+B–, C– and D–configuration. Part of the
+D–array observations were affected by solar
+interference, which was removed by deleting uv–spacings shorter than typically 0.4 kλ
+and editing out bad time–ranges. In total, 17 hours were spent on source which
+were divided into 4 hours for D–array, 2.5
+hours in C–array and 10.5 hours in B–array
+(see Table 2 for a detailed description of
+the VLA observations). The longer observing time in B–array only partly compensates
+for the lower surface brightness sensitivity in
+2
+
+The National Radio Astronomy Observatory (NRAO)
+is operated by Associated Universities, Inc., under cooperative agreement with the National Science
+Foundation.
+
+3
+
+5
+
+The Astronomical Image Processing System (aips)
+has been developed by the NRAO.
+
+km s−1 and higher than +136 km s−1 were
+found to be line free; these channels determined the continuum emission which was subtracted in the uv–plane. The same channels
+were used to produce a radio continuum map
+of IC 2574.
+After that, two sets of datacubes (1024 ×
+1024 pixels × 68 channels each) were produced using the task imagr in aips, each
+of them cleaned to a level of two times
+the rms noise (Högbom 1974, Clark 1980).
+The first data set was made with natural
+weighting, leading to a resolution of 12.4′′ ×
+11.9′′ and emphasizing large scale structures.
+A second cube was produced using the robust weighting scheme (Briggs 1995). This
+scheme achieves the high sensitivity of natural weighting combined with a well behaved
+synthesized beam, at a resolution close to
+that of uniform weighting. To obtain the
+optimum robust value for our observation,
+the robust parameter space was searched
+by producing maps in the sensitive regime of
+−2 <robust< 2 and measuring for each map
+the rms noise and beamsize. Eventually, we
+chose a value of robust=0.25, resulting in
+a beamsize of 6.4′′ × 5.9′′ and an rms noise
+of 0.7 mJy beam−1 . A comparison with the
+beamsize of the high resolution uniform map
+(4.7′′ × 4.3′′ ) and the rms noise of the low–
+noise, natural map (≈ 10% increase in noise)
+shows the strength of this mapping algorithm.
+Unless otherwise mentioned, the results presented in the following are based on this robust cube.
+Although IC 2574 is situated at a galactic
+latitude of 43.6◦ , some of the channels were
+clearly confused by Galactic emission (in particular between +10 and −10 km s−1 ). Since
+galactic emission shows its presence on predominantly large scales, we were able to re-
+
+move the most prominent emission features
+by blanking the uv–data out to 0.1 kλ in these
+channels.
+To separate real emission from the noise,
+the following procedure was applied: the natural weighted data cube was convolved to a
+circular beam with a FWHM of 45′′ . The
+smoothed map was then tested at the 2σ level;
+if a pixel fell below this level, the counterpart in the cube was blanked. After that,
+the remaining peaks were inspected. Emission that was present in 3 consecutive channels was considered to be real while all other
+remaining spikes were considered to be noise
+and blanked. The final result was named the
+master cube. This master cube can be used as
+a mask to blank the natural and robust data
+cubes. This method ensures that the same regions are included when inspecting cubes at
+different resolutions and with different signal–
+to–noise ratios.
+2.2.
+
+Optical Observations
+
+IC 2574 was observed with the 2.2–m telescope of the Calar Alto Observatory4 on 1999
+January 25 and 26 in Johnson R–band (20
+min) as well as in Hα (45 min). A 2048×2048
+pixel CCD was used leading to 0.5′′ per pixel.
+The seeing was around 1.3′′ . A focal reducer
+(CAFOS) allowed for a field of view of radius 8′ to be imaged. The usual calibration
+steps were followed using the iraf package5 .
+Each exposure was corrected for zero offset
+(bias) and was flatfielded using skyflats. Af4
+
+The Calar Alto Observatory is operated by the Max–
+Planck–Institute for Astronomy, Heidelberg, jointly
+with the Spanish Commission for Astronomy.
+5
+iraf is distributed by National Optical Astronomy
+Observatories, which is operated by the Association of
+Universities for Research in Astronomy (AURA), Inc.,
+under contract with the National Science Foundation.
+
+6
+
+To save space, only every other channel over
+the frequency range where line emission is
+present is shown. The heliocentric radial velocities (in km s−1 ) are plotted in the upper
+right–hand corner of each plane. The beamsize (6.4′′ × 5.9′′ ) is indicated in the top left–
+hand panel (note that the beamsize is so small
+that it cannot be properly reproduced in our
+maps). Many holes and shell–like structures
+are visible in the channel maps; these features
+will be the main topic of this paper.
+Obtaining the H I flux of each channel and
+hence the global H I profile of IC 2574 is
+not straightforward. As first pointed out by
+Jörsäter & van Moorsel (1995), fully cleaned
+maps do not exist and any cleaned map consists of the sum of two maps: one containing
+the restored clean components and the other
+the residual map. In the former, the unit is
+Jansky per clean beam area, and in the latter
+Jansky per dirty beam area. Usually, fluxes
+are determined on a cleaned map, assuming
+that the clean beam is the correct one for the
+entire map. In reality, the flux is calculated
+correctly only for the cleaned fraction of the
+map; for the residual map the flux is overestimated when the dirty beam area is bigger
+than the clean beam area (which is usually
+the case). This becomes a real problem for extended objects, especially in the case of combined array data, like for our VLA data set.
+For a full discussion on this topic see Jörsäter
+& van Moorsel (1995). Following their prescription, the real flux of a channel map is
+given by:
+D×C
+G=
+D−R
+where C is the cleaned flux, and R and D
+are the ’erroneous’ residual flux and the ’erroneous’ dirty flux over the same area of a
+channel map, respectively. We followed this
+
+ter that, frames were inspected for bad pixels and shifted to get them aligned. Lastly,
+the exposures were combined to eliminate cosmic ray hits and to create a final image. As
+it turned out, conditions were not photometric during the observation, hence no calibration using standard stars was performed. In
+order to get an approximate calibration for
+IC 2574, values were taken from the literature (MCR94). The deep R–band image was
+used for the continuum subtraction of the Hα
+map. The continuum level was determined
+by simply scaling the continuum image relative to the line plus continuum image such
+that the foreground stars disappeared when
+the two images were subtracted. For the calibration we relied on the Hα fluxes published
+by Miller & Hodge (1994, hereafter referred
+to as MH94). In their paper, these authors
+identify 289 H II regions in IC 2574 (for a
+thorough discussion on the Hα emission and
+its calibration see the Appendix in MH94).
+Figs. 1 and 2 show our R–band and the Hα
+image, respectively.
+Coordinates for the maps were obtained
+using the task koords within the karma
+software package (for a description of karma
+see Sec. 4.1). We used as input an image from
+the Digital Sky Survey. Using 14 stars found
+in our CCD image, it was possible to determine the coordinate system to an accuracy
+of better than one arcsecond, more than adequate for our needs.
+3.
+3.1.
+
+HI Studies
+Global H I Properties
+
+The channel maps obtained by the robust
+weighted cube are presented in Fig. 3. As
+can be seen, most traces of contamination by
+Galactic emission were successfully removed.
+7
+
+can hardly be properly reproduced. Note
+also that, although many hole–like structures
+and cavities are visible, specific features turn
+out to be less prominent in the total surface
+brightness map than in the channel maps.
+This is related to the fact that the galaxy
+is highly inclined, leading to overlapping of
+shell–like structures along the line–of–sight in
+the integrated map. For a more complete discussion on that topic, see Sec. 4.1.
+Fig. 6 shows the velocity field of IC 2574
+which was calculated in the usual manner by
+taking the first moment. Since the high resolution velocity field is dominated by small–
+scale motions within the ISM, the natural
+weighted cube was convolved to 30′′ (as indicated by the beamsize) to put more emphasis on the global characteristics of the velocity
+field. The underlying greyscale is a linear representation of the H I surface brightness map
+at full resolution. Although the overall velocity field shows the typical behavior for a
+dwarf galaxy (solid body rotation in the center, flattening of the rotation curve towards
+the very edge of the galaxy), the general rotation is obviously disturbed by noncircular motions (e.g., note the prominent band of lower
+velocities to the north east of the center of
+the galaxy, parallel to its major axis). These
+deviations are linked to holes in the neutral
+interstellar medium.
+Finally, Fig. 7 shows the second moment
+map, or velocity dispersion of IC 2574. Although some regions near shells reach values as high as 15 km s−1 , the overall velocity
+dispersion in the unperturbed parts is much
+lower. Using H I profiles, we derive the velocity dispersion in the disk by looking at quiescent regions. Several lines of sight were averaged to give a one sigma velocity dispersion
+of 7 ± 1 km s−1 (similar to what is found in
+
+procedure for every single channel to obtain
+the global H I profile as presented in Fig. 4.
+Without this correction, we would have overestimated the H I flux by a factor of about
+two!
+Figure 4 shows the flux– and primary–
+beam corrected fluxes for every channel of
+IC 2574 (open squares) plotted together with
+the single dish profile published by Rots (1980)
+and the WSRT data by MCR94 (the arrows
+indicate the velocity range for which the data
+points were interpolated due to contamination by galactic emission). From our data,
+we derive a total integrated H I flux of 373
+Jy km s−1 which should be compared with
+the value of 399 Jy km s−1 obtained by Rots
+(1980), who used the Greenbank 300 ft telescope to map IC 2574. This is excellent
+agreement, given the uncertainties of removing Galactic emission and systematic errors
+in the absolute calibration. This also means
+that we hardly miss any H I flux due to missing short spacings. Other values obtained by
+interferometric observations are: 440 ± 50 Jy
+km s−1 found by Seielstad & Wright (1973),
+using the Owens Valley Radio Interferometer and 286 Jy km s−1 obtained by MCR94
+from their Westerbork observations. As can
+be seen from Fig. 4, the new VLA observations recover substantially more flux than the
+WSRT data. Adopting a distance of 3.2 Mpc,
+our flux translates to a total neutral hydrogen mass of MHI = (9.0 ± 0.1) × 108 M⊙ for
+IC 2574.
+3.2.
+
+Global Characteristics
+
+Fig. 5 shows the H I surface density map
+of IC 2574 obtained by adding all channels
+containing H I emission of the robust cube,
+after blanking them with the master cube.
+Note that the beamsize is so small that it
+8
+
+h = 460 pc (Bottema et al. 1986; see also
+Staveley–Smith et al. 1992). In the case of
+IC 2574 there are also indications that the
+H I is distributed in a thicker disk. MCR94
+already noticed that, looking at the apparent axial ratio of the integrated H I map and
+assuming a real inclination of 75◦ , the H I
+must be distributed in a somewhat thicker
+disk. Moreover, the fact that we observe,
+as we will argue below, spherically expanding
+shells with diameters of up to almost 1 kpc
+implies that the extent of the H I layer must
+be of the same order of magnitude. Hence,
+the scale height of the H I gas should be of
+order 350–400 pc.
+An approximate value for the scale height
+can be obtained fairly simply, as shown by
+PWBR92. We follow their approach here.
+The scale height is proportional to the velocity dispersion of the gas and inversely proportional to the square root of the mass density
+in the disk (Kellmann 1972; van der Kruit
+1981). For a density distribution that can be
+described as ρ(z, R) = ρ(0, R) sech2 (z/z0 ), z0
+is given by
+
+Ho II). This shows that our velocity resolution
+of 2.5 km s−1 (FWHM) was quite sufficient to
+resolve the lines of neutral hydrogen.
+In this paper, we focus on the small–scale
+structure of the ISM in IC 2574. For our
+analysis, however, we need to adopt values
+for the orientation of the object which are
+usually derived on the basis of a kinematical
+analysis (rotation curve fitting). A full analysis of the dynamics of IC 2574 based on our
+observations, however, is beyond the scope
+of this paper. Luckily, an adequate analysis
+has already been published (see the paper by
+MCR94). In the course of their study they
+derive a systemic velocity of 58 ± 7 km s−1 ,
+adopt an inclination of 75◦ ± 7◦ and a position angle of 52◦ . Depending on their dynamical model, they find that 70 − 90% of the
+total mass of the galaxy is in the form of dark
+matter. Following the same procedure as performed for the dwarf galaxy II Zw 33 (Walter
+et al. 1997) we carried through a first analysis
+of our data confirming the results by MCR94
+regarding the rotation curve and the global
+orientation of IC 2574. For ease of comparison
+we therefore adopted their values throughout
+this paper.
+3.3.
+
+σgas
+z0 (R) = q
+2π G ρ(0, R)
+
+The scale height of the H I disk
+
+where R is the galactocentric distance, σgas
+the velocity dispersion of the gas in quiescent regions of the galaxy (Sec. 3.2), and ρ(R)
+the total volume density (gas, stars and dark
+matter) of the galaxy in the plane. However,
+since sech2 (z/z0 ) ≈ exp(−z 2 /z02 ) (to within
+5% in the region of interest) we can also assume a Gaussian distribution in z. The√1σ
+scale height h is then defined as h = z0 / 2.
+To calculate the average density of IC 2574
+in the plane we assume that the total mass
+of the galaxy can be estimated from the last
+measured point (Rmax ) of the observed ro-
+
+The scale height h of the H I layer of
+IC 2574 plays an important role in the determination of the properties of the holes,
+e.g., when translating the observed H I surface density into an H I volume density. Here
+h is defined as the 1σ value for a Gaussian
+distribution of the H I layer. Recent studies have shown that in general dwarf galaxies
+have thicker H I disks than more massive spiral galaxies. Their aspect ratio tends to be
+of the order of 10:1 rather than 100:1, e.g.,
+Ho II: h = 625 pc (PWBR92) or NGC 5023:
+9
+
+tation curve (MCR94) and that this is distributed over a spherical volume of radius
+Rmax . MCR94 derive a rotation curve with
+v(Rmax ) = 66 km s−1 at Rmax = 8.0 kpc.
+This corresponds to a total dynamical mass
+of 8.3 × 109 M⊙ . Distributing this mass over
+a spherical volume with radius Rmax gives an
+average value for ρ of 0.0039 M⊙ pc−3 . Since
+this is only the mean density of the galaxy
+and the density near the plane is certainly
+higher, we take twice this derived value (see
+PWBR92 for a justification) to get a first approximation to the real volume density ρ(R)
+near the center. Using this approach, we find
+ρ(R) = 0.008 M⊙ pc−3 .
+Substituting the observed velocity dispersion of 7 km s−1 (see Sec. 3.2) in the equation given above we derive a scale height of
+h = 345 pc for IC 2574. Note that this
+value, given all the uncertainties in the derivation, is in good agreement with the value derived based on the sizes of the largest holes
+(h = 350 − 400 pc). We therefore adopted a
+scale height of h = 350 pc for the H I layer of
+IC 2574.
+We can now calculate the volume density
+of the H I from the projected and corrected to
+face–on H I surface density. The surface density profile was obtained by elliptically averaging the flux– and primary–beam corrected
+total H I map (assuming an inclination of
+75◦ ). Again, this is correct to first order only
+as in the case of a thick H I distribution the
+deprojection of the observed projected H I
+distribution is not trivial. We then calculated
+the volume density nHI (R) of the H I in the
+plane of the disk using
+NHI (R) =
+
+Z +∞
+
+nHI (R) exp (
+
+−∞
+
+4.
+
+4.1.
+
+The H I–hole catalogue
+
+We conducted a search for H I structures
+in IC 2574 using the tasks kview, kpvslice and kshell that are built into the recently developed karma6 visualization software package. kview offers many different
+ways to look at a movie of a datacube whereas
+kpvslice produces real–time position velocity (pV) cuts through a cube in any orientation which tremendously facilitates the search
+for and identification of hole–like structures.
+Finally, kshell was used to make radius–
+velocity plots of some of the more prominent
+shells and holes.
+First, the robust cube was searched for
+the smaller holes in IC 2574. In order to
+be sensitive to more extended structures and
+therefore bigger holes, we smoothed our robust cube to 11′′ , 15′′ and 30′′ , respectively,
+and inspected each of them. For each H I
+hole in IC 2574 we determined its position,
+size and expansion velocity. Both authors independetly produced a list of holes to reduce
+personal bias, based on some simple criteria regarding the determination of the center,
+size, expansion velocity and systemic velocity
+of the holes. After that, the two lists were
+compared and merged. There was an overlap
+of about 75% in terms of well defined holes
+which lends some credibility to the identification process. We reexamined the remaining structures and, erring on the side of caution, ended up with a catalogue of 48 holes.
+Although this list cannot be free from personal bias, the method closely follows that
+employed in the case of M 31 and Ho II which
+should make a comparison between those ob-
+
+√
+−z 2
+) dz = 2π h nHI 6
+(R)
+The karma visualization software package was de2
+2h
+veloped by Richard Gooch of the Australia Telescope
+National Facility (ATNF)
+
+H I Holes in IC 2574
+10
+
+jects and IC 2574 valid.
+It is interesting, at this point, to reflect
+on the reality of the features. Do they really
+constitute large–scale, coherent structures or
+are we tricked by nature into seeing coherence in what is basically a turbulent, perhaps fractal medium? Mac Low et al. (1998)
+recently produced sets of model data cubes,
+similar to those obtained via radio (H I) or
+optical (Hα) observations (i.e., position, position and velocity). We analysed, using the
+same techniques as explained above, a cube
+of uniform, isotropic, isothermal, supersonic,
+super–Alfvénic, decaying turbulence. The
+simulations assume that the gas is optically
+thin and emits with a strength directly proportional to its density. The model corresponds to a weakly magnetized ISM. Single
+cuts through the data cube show features remarkably similar to the ones seen in the H I
+data. However, when focussing on a potential
+feature and investigating its morphology in
+position–position or position–velocity space,
+no coherent structure emerges. This lends
+us to believe that shells due to random (or
+at least turbulent) processes make up a small
+fraction of the holes we classified. Instead, it
+is more likely that the H I holes and shells
+are due to mechanisms which act on large
+scales, such as stellar winds and (multiple)
+supernovae.
+Following Brinks & Bajaja (1986), we distinguished between three different types of
+holes based on their appearance in the pV–
+diagrams. A Type 1 hole corresponds to a
+total blowout (i.e., we don’t observe the receding nor the approaching side of the shell).
+In that case, it is impossible to determine the
+expansion velocity and hence the kinematics
+of the hole. Figure 8c shows a pV–diagram
+of a typical Type 1 hole (our hole number 30)
+
+using kpvslice.
+A Type 2 hole corresponds to a hole which
+is offset with respect to the plane of the
+galaxy. In that case, we witness a deformation
+in the pV–diagram towards the plane of the
+galaxy and a blowout to the opposite side (see
+Silich et al. 1996 for numerical simulations of
+such a case — their case C). The amount of
+deformation yields the expansion velocity of
+the shell towards the midplane. The part of
+the shell that points away from the plane is
+usually not visible due to lack of sensitivity.
+Figure 8d shows a pV–diagram of a typical
+Type 2 hole (our hole number 33).
+Type 3 is the ’classic hole’ and corresponds
+to a more or less complete expanding shell.
+The signature in pV–space is that of an elliptical hole. The expansion velocity is equal to
+half the difference between the velocity of the
+approaching and receding sides. The systemic
+velocity of the hole is defined by its center.
+Figure 8a shows a pV–diagram of a typical example of a Type 3 hole (our hole number 21).
+Figure 8b shows the same hole, but analyzed
+with the task kshell. In this figure, the horizontal axis corresponds to radius r (distance
+from the center of the hole) and the intensity corresponds to the average H I density
+within an annulus with radius r around the
+center of the hole. The vertical axis is again
+velocity. Since we are looking at a radius–
+velocity diagram, we will call such a representation an rV–diagram in the following. For
+an ideal shell, a half ellipse should be visible
+in which the diameter in the v–direction is
+twice the expansion velocity and its dimension in the r–direction the radius of the shell.
+The advantage of looking at a near circular
+H I shell with kshell lies in a substantial increase in signal–to–noise ratio as one averages
+over many pixels whereas in a pV–diagram
+11
+
+Column 4: Heliocentric velocity vhel of the
+hole defined by the channel in which the
+hole is largest or most prominent. The
+accuracy of vhel is about 2.5 km s−1 (the
+velocity resolution of our observations).
+
+one merely cuts through an H I structure.
+Note that in the case of a Type 1 hole, the
+absence of detectable emission corresponding
+to the front and back of a shell causes a hole
+in rV–space. For obvious reasons, a Type 2
+hole does not show a prominent signature in
+an rV–diagram either.
+As was already mentioned earlier, the holes
+were found to be much more prominent in the
+channel maps than in the integrated H I map.
+This is due to the high inclination of IC 2574
+which leads to several H I shells at different locations within the disk and possibly different
+velocities overlapping along the line–of–sight,
+as is the case in M 31. The total H I surface
+brightness map was therefore of little use for
+the identification of a hole. Note that in the
+case of Ho II, only the integrated map was
+used because of the much lower inclination of
+the galaxy. This implies that the approach to
+search for holes needs to be adapted to the
+orientation of the galaxy.
+Figure 9 shows a plot of the distribution of
+the 48 H I holes detected with confidence in
+IC 2574. The greyscale map is a linear representation of the total H I surface brightness.
+Some of the holes are clearly visible in the total H I map but the majority of holes doesn’t
+show up at all and can only be detected in
+the channel maps or pV–diagrams.
+The final list of the detected H I holes is
+given in Table 3. The properties listed are as
+follows:
+
+Column 5: Diameter d of the hole in kpc.
+Note that most of the holes are circular. In the case of elliptical holes, the
+diameter along the major axis, along
+the minor axis and the position angle
+(2 × bmaj , 2 × bmin , P A) is given (but see
+Sec. 4.2). The accuracy of d is around
+95 pc (the FWHM of our synthesized
+beam).
+Column 6: The expansion velocity vexp of
+the hole in km s−1 . Note that in the
+case of a Type 1 hole, no expansion velocity can be measured. Typical errors
+are about 2 km s−1 .
+Column 7: The estimated H I volume density nHI (in M⊙ pc−3 ) of the region where
+the hole is situated before the hole was
+created. nHI was calculated based on
+the H I surface density, as described
+in Sec. 3.3. Given the uncertainties in
+the deprojection and the assumptions
+which went into the derivation of the
+mass density within the disk, we estimate a relative error in the value of nHI
+to be of order 30%.
+Column 8: The type of the hole (1–3), as
+defined in Sec. 4.1.
+
+Column 1: Number of the hole (increasing
+with increasing right ascension)
+
+Table 4 summarizes the physical properties
+derived from Table 3. The properties listed
+are as follows:
+
+Column 2, 3: Position of the center of the
+hole in right ascension and declination,
+respectively (B1950.0 coordinates). Typical errors are 3′′ .
+
+Column 1: Number of the hole
+
+12
+
+Column 2: Diameter d of the hole. For elliptical holes, the diameter was defined
+using the geometric mean
+d=
+
+The relative error is, as d enters to the
+third power, of order 30%. Note that in
+the case of the largest holes, this value
+is more likely to be an upper limit since
+nHI decreases with increasing distance z
+from the plane.
+
+q
+
+2 bmaj × 2 bmin
+
+Column 3: Expansion velocity vexp of the
+hole in km s−1 . Same as column 6 in
+Table 3.
+
+Column 6: The initial total energy EE that
+was released by the supernova explosions which created the hole (in units
+of 1050 ergs). Note that the kinetic energy of the expanding shell is about 1%
+to 10% of EE (depending on the ambient density, see Chevalier 1974). To
+determine EE , we used the equation by
+Chevalier (1974) who derived a fit to
+numerical results of an expanding shell
+created by a single explosion (see also
+McCray & Snow 1979). Expressing EE
+in terms of observable quantities d, vexp
+and n0 , he obtained
+
+Column 4: Kinematic age of the hole in units
+of 106 years. This age determination assumes that over its entire lifetime the
+hole was expanding with vexp . Hence:
+t=
+
+(d/2)
+vexp
+
+The accuracy of the kinetic age is typically 20%. Because of the assumption of
+a constant expansion velocity, the kinematic age is an upper limit.
+
+1.4
+EE = 5.3 × 1043 n01.12 (d/2)3.12 vexp
+ergs
+
+Column 5: Indicative H I mass MHI in units
+of 104 M⊙ . It is the mass which filled
+the observed hole under the following
+assumptions: i) the hole is spherical, ii)
+the gas was distributed uniformly in the
+galaxy, and iii) the hole is completely
+empty now. Note that if one can assume
+that only a minor fraction of the surrounding H I is ionized, this mass corresponds also to the total H I mass on
+the rim of the hole. MHI was calculated
+using
+MHI =
+
+where vexp is the expansion velocity in
+km s−1 , n0 the density of the ambient
+medium in particles per cubic centimeter, and d is the diameter of the shell in
+parsecs. In our calculations we replaced
+n0 by nHI as was done, e.g., for M 31
+and Ho II. This is not strictly correct
+as we are ignoring contributions by He
+and heavier elements. To correct EE for
+this contribution, all values should be
+multiplied by a factor of ≈ 1.5. In addition, the derived H I densities are average values for a given galactocentric distance which introduces another source
+of uncertainty. Note that the numerical coefficient in Chevaliers equation depends on the radiative energy loss rate
+and thus on the heavy element abundance in the expanding shell. Not only
+
+4
+π (d/2)3 nHI (R)
+3
+
+where n(R) is the volume density of
+the gas at the galactocentric distance R
+(column 7 in Table 3). To correct this
+value for the amount of primordial helium, a factor of 1.33 has to be applied.
+13
+
+sion of an elliptical feature; we treated
+this as a single object since subdividing
+it in, say, three holes would have been
+arbitrary.
+
+is this abundance different for various
+galaxies, but it decreases with galactic radius, both for our own and external galaxies and by more than an order
+of magnitude (e.g., Heiles 1979). The
+last phase in the expansion of a shell is
+reached when, after the shell has continued to collect more of the ambient
+medium it will slow down to velocities
+comparable to the random motions of
+the ISM (around 7 km s−1 ) and hence
+stops expanding. Most probably the
+largest structures we observe are in this
+latter phase (see Sec. 4.3). From this
+brief discussion it should be clear that
+the derived energies EE are only order
+of magnitude estimates.
+4.2.
+
+Holes # 13, 23, 26: As can be seen from
+the channel maps (Fig. 3), some holes
+are not clear–cut cases in terms of the
+definition of a hole given in Sec. 4.1.
+They are possibly chance superposition
+of old shells and fragments leading to
+the impression of a hole in the integrated H I map (see also Sec. 4.3). We
+therefore decided not to include these
+holes in the statistical analysis.
+4.3.
+
+Notes on large–scale structures
+
+As can be seen from Table 3, only few
+shells larger then ≈ 1000 pc have been catalogued in IC 2574. It has to be mentioned,
+however, that there appear coherent features
+larger then 1 kpc in the channel maps. Several
+of these can be identified in the channel maps
+(Fig. 3), e.g., between 45 and 70 km s−1 . Note
+that these structures are related to the major
+disturbance in the velocity field due north of
+the center of the galaxy. Obviously, it is very
+difficult to catalogue these features as they
+lack the clear coherence, both in position as
+well as in velocity, of H I shells. Moreover,
+because of their large size, their dynamics is
+not dominated by some leftover expansion but
+rather by large scale galactic rotation modified by the effects of nearby, smaller holes.
+The reason why we wish to mention these
+large scale features is because along some of
+the apparent arcs we find H II regions.
+
+Notes on single holes
+
+The following holes deserve a more detailed
+description:
+Hole #35: This hole causes a major disturbance in the pV–diagrams of IC 2574.
+It is one of the few elliptical holes, with
+dimensions of 1000 × 500 pc. Although
+there is some circumstantial evidence
+that it is a superposition of two spherical holes, it was treated as one hole. As
+we will show in Sec. 5, the most prominent H II region in IC 2574 is located
+on the rim of this supergiant shell. The
+shell is filled with soft X–ray emission as
+observed with the ROSAT telescope. A
+detailed multiwavelength analysis (optical, radio, X–ray) of this particular supergiant shell has been presented elsewhere (Walter et al. 1998)
+
+5.
+
+Hole #22: Catalogued elliptical in shape, this
+hole is actually a superposition of several holes, leading to the overall impres14
+
+The H I–Hα connection in IC 2574
+
+5.1.
+
+Fig. 11 presents an overlay of the Hα map
+with one contour of the H I surface brightness map (flux and primary beam corrected)
+plotted at 1.7 × 1021 atoms cm−2 . As can be
+seen from this overlay, Hα emission is globally
+correlated with a high H I surface brightness
+(for an exception in the very north see below).
+Kennicutt (1989) used the disk instability relation of Toomre (1964) to show that, for spirals, there is a threshold density for star formation. For gas densities above the threshold,
+the star formation rate (SFR) is consistent
+with a Schmidt law. Near the threshold, the
+correlation breaks down, and one sees bursts
+of SF. Much below the threshold the SFR is
+extremely low. Skillman (1987) has observationally determined this threshold for dwarf
+galaxies to be on the order of 1 × 1021 atoms
+cm−2 (at a resolution of 500 pc) which is in
+general agreement with our results (see also
+below). For a detailed discussion on the models that describe the relationship between gas,
+stars and star formation in irregular galaxies,
+the reader is referred to the paper by Hunter,
+Elmegreen & Baker (1998).
+
+Global correlations
+
+Until now, we have focussed on the structure and dynamics of the neutral ISM of
+IC 2574. In the following, we will compare
+these results with our Hα observations which
+reveal the sites of recent or ongoing SF in
+IC 2574. As noted earlier (Sec. 1), the expanding H I structures are widely thought to
+result from recent star formation. They sweep
+up gas causing the volume density on the rim
+of the shell to increase until gravitational instabilities lead to molecular cloud formation
+and hence secondary SF (e.g., Palouš et al.
+1990, Elmegreen 1994). Therefore, a comparison of the position of H I holes with H II
+regions should show some correlation, the Hα
+emission being predominantly found along the
+rims of larger holes, as evidence for propagating SF. In the case of the smaller, young holes
+one would expect some to be still filled with
+diffuse Hα emission coming from the ionized
+wind–blown cavities around the still present,
+young O and B stars.
+Figure 10 shows an overlay of the Hα map
+with the H I holes we detected in our survey (Sec. 4.1). The width of the rims of the
+H I holes is of course in reality larger then
+indicated in this plot. The subregions A–C
+will be discussed in more detail in the following section. As can be seen from this overlay,
+there is a prominent correlation of ongoing SF
+with the rims of the large H I shells which is
+in general agreement with the picture painted
+above. There is a strong tendency for H II regions to be situated on the rims of the H I
+shells (for some very nice examples see holes
+8 and 35) and only in a very few cases diffuse
+Hα emission does not seem to be related to
+an H I structure. Note that in one case only
+(hole 32), diffuse Hα emission (partly) fills an
+H I hole.
+
+5.2.
+
+Analysis of individual H II regions
+
+Using our high resolution H I data of
+IC 2574 we are now able to perform a much
+more detailed analysis and comparison of the
+properties of the H II regions with the H I features that are related to them. When making
+overlays of the Hα map with the high resolution cube we found that in virtually all cases,
+single H II regions are correlated with distinct
+H I structures like clumps or clouds. We defined 40 regions where Hα emission and H I
+clouds seem to be related. These regions are
+outlined by the squares in Figs. 12–14 which
+are meant to indicate which H II regions were
+lumped together. They are numbered 1′ to
+15
+
+40′ to avoid confusion with the numbers of the
+H I holes. Note, that sometimes two or more
+Hα features belong to the same H I structure (like a clump) and were thus considered
+as one region (e.g., in region 40′ ), whereas
+in other cases individual H II regions were
+treated as separate entities (e.g., regions 11′
+and 12′ ). The Hα fluxes of the regions tell
+us something about the current SF rate and
+the average number density of the ionized gas
+whereas the H I data yield approximations
+for the number density of neutral hydrogen,
+the velocity dispersion of the gas in that region and the thresholds for SF. Figs. 12–14
+are enlargements of the regions A–C marked
+in Fig. 10 and display the regions defined by
+us. The position and size of the H I holes are
+plotted as well for comparison (please refer to
+Fig. 10 for cross referencing of the holes). The
+fluxes of the H II regions were taken from the
+observations of MH94. Table 5 summarizes
+the cross identifications between their and our
+regions. In this table we list the coordinates
+of the centers of our regions as well.
+Table 6 summarizes the results of our analysis of the H II regions. The first column
+refers to the number of the H II region as
+defined in Figs. 12–14. From the fluxes published by MH94, we deduced the total flux
+F (Hα) of our groups by simply summing
+their fluxes in the respective regions (column 2, Table 6). From this number, the Hα
+luminosity can be calculated using L(Hα) =
+4π D 2 F (Hα), which, in the case of IC 2574
+(D=3.2 Mpc), translates to L(Hα) = 3.1 ×
+1017 F (Hα) where F (Hα) is given in ergs cm−2 s−1
+and L(Hα) in units of solar luminosities L⊙
+(1L⊙ = 3.85 × 1033 ergs s−1 ). The number of Lyman continuum photons per second
+is given by NLyc = 2.82 × 1045 L(Hα). Table 7 (see Devereux et al. 1997 and references
+
+16
+
+therein) summarizes the expected properties
+of high mass stars; column 1 gives the spectral type, column 2 the stellar mass, column 3
+the bolometric stellar luminosity, column 4
+the number of Lyman continuum photons per
+second, column 5 the Hα luminosity L(Hα),
+and column 6 the ratio of bolometric to Hα
+luminosity. These equations and values can
+be used to estimate, for example, the equivalent number of O5 stars, for each region (see
+below).
+Column 3 in Table 6 presents the volume
+density of the ionized free electrons over the
+area where we find Hα emission (as defined
+by MH94). This was arrived at by first calculating the emission measure (EM) of each of
+their regions according to:
+EM = 2.41 × 103 T 0.92 F (Hα) cm−6 pc
+(Peimbert et al. 1975), where F (Hα) is the
+Hα flux in units of ergs cm−2 s−1 sterad−1
+and T is assumed to be the canonical value of
+104 K. From that, the mean electron density
+for every single region published by MH94 was
+derived using
+EM = n2e d cm−6 pc
+where ne is the electron density and d the
+path length in pc through the H II region
+(assuming a spherical distribution of the Hα
+emission). Since the derived values for ne
+were very similar for a single region, we calculated the value for the electron density for
+each of our regions by taking an intensity–
+weighted average of the contributing MH94
+regions. The average electron densities range
+from 0.5 to 2 cm−3 . This is, most likely, a
+lower limit for the actual electron density due
+to internal absorption within IC 2574. Note
+that in the above, effects due to the filling factor of the gas are ignored. The real densities
+in the H II regions are likely much higher.
+
+(see Table 6).
+The average surface density of the H I regions is shown in column 8. Note that virtually all values are larger than 1 × 1021 cm−2
+which is in excellent agreement with the observational value given by Skillman (1987). In
+other words, SF is taking place if the projected H I surface density reaches values of
+about 1021 cm−2 not only for a resolution of
+500 pc, as observed by Skillman but also for
+almost an order of magnitude improvement
+(≈ 95 pc)! The highest surface density found
+is of order 2.5 × 1021 cm−2 .
+Finally Column 9 summarizes some remarks regarding the regions. Most of the
+H II regions are related to the rim of an H I
+shell. It should be noted at this point that
+in the course of checking for correlations between Hα and H I emission, we detected 5
+new tiny holes at the positions were there is
+Hα emission. However, as these holes were
+not detected in our inspection of the H I cubes
+we didn’t include them in the final catalogue
+which is thought to be complete for holes with
+radii larger then about 100 pc only (as discussed in Secs. 4.1 and 6.2).
+We catalogued four of the H I features as
+“clumps” (regions 1′ , 2′ , 6′ & 22′ ). By ’clump’
+we mean a well–defined H I region in 2 spatial dimensions as well as in velocity space.
+These clumps look like small, filled circles
+in position–velocity space. For those cases
+we asked ourselves whether these clumps are
+gravitationally confined or not. To answer
+that question, we calculated the virial masses
+of these objects using
+
+In order to derive properties of the H I features that are physically related to the H II
+regions, we defined areas A around each of
+the H II regions
+with an effective radius given
+q
+by reff = A/π, where reff is given in pc (column 4). Although this is a somewhat subjective process, we found that slight variations
+in the size of the aperture didn’t change the
+derived properties by more than 20 − 30%.
+Column 5 represents the total H I mass found
+within the aperture using the flux and primary beam corrected H I data. For every
+single region, we measured the velocity dispersion of the H I by taking spectra through
+the H I cube. Column 6 summarizes the measured velocity widths defined as the full width
+at half maximum (FWHM) from which the
+real velocity dispersion σv (assuming a Gaussian velocity distribution)
+can be calculated
+√
+using ∆v = 2 2 ln 2 σv = 2.355 σv Interestingly, these values tend to be high where two
+or more shells overlap (e.g., the H II complexes 16, 31, 32, 33). These high dispersions are probably caused by blending along
+the line of sight of these shells.
+Column 7 presents the average density of
+the neutral hydrogen which was calculated using
+4 3
+ρHI = MHI /( π reff
+)
+3
+with MHI and reff the values from columns 5
+and 4, respectively. Values for ρHI range from
+about 1 cm−3 to values as high as 6 cm−3 .
+Note that these are only averages and that
+locally the H I density might be more enhanced. Based on the analysis by MCR94 and
+some crude mass modeling (Sec. 3.3) we derive an average density in the disk of 0.008
+M⊙ pc−3 = 0.3 atom cm−3 . The regions in
+which star formation is currently active thus
+have an overdensity of an order of magnitude
+
+Mvir = 250 ∆v 2 reff M⊙
+(Rohlfs & Wilson 1996), where ∆v is the full
+velocity width at half maximum (FWHM) in
+km s−1 and reff the radius of the clump in
+17
+
+In some regions within IC 2574 (e.g., region 40’), we find high H I surface densities but only little Hα emission indicating
+that possibly a major star formation burst
+is about to commence there and that therefore most of the gas is still neutral. With
+the help of the equations given above we
+can calculate how many stars are approximately needed to create the observed Hα flux.
+In the case of region 40′ we find a flux of
+1.5 × 10−14 ergs cm−2 s−1 and deduce a luminosity of 4.7 × 103 L⊙ which is the equivalent
+of a few O7 stars only (see Table 7). Note,
+however, that there exist also regions where
+the situation is reversed and most of the H I is
+being ionized by the Lyman continuum photons of the most massive stars of the powerful H II regions. Region 34’ is a prominent
+example (see also Fig. 11). From the Hα flux
+of F (Hα) ≈ 1 × 10−12 ergs cm−2 s−1 we derive
+an Hα luminosity of L(Hα) = 3.1 × 105 L⊙
+which corresponds to an equivalent of 22 O5
+stars, in other words a major SF region.
+
+pc. The virial masses of the four regions
+are: Mvir (1’) = 13 × 106 M⊙ , Mvir (2’) =
+38 × 106 M⊙ , Mvir (6’) = 21 × 106 M⊙ and
+Mvir (22’) = 7 × 106 M⊙ . As we see, the virial
+masses are all about one order of magnitude
+higher than the H I masses. So, the clumps
+are either not gravitationally bound or they
+are held together by as yet undetected material. One possibility is that they contain
+an order of magnitude more mass in the form
+of molecules. This will be hard to confirm,
+however, as dwarf galaxies have been notoriously difficult to detect in CO, the most abundant tracer for molecular gas (e.g., Sage et
+al. 1992). Dark Matter could play a role,
+but the mass density, including DM, near
+the above mentioned SF regions is of order
+0.008 M⊙ pc−3 (see Sec. 3.3), insufficient by a
+wide margin.
+If the observed velocity dispersion is not
+due to gravitation, the question remains, why
+do we see clumps? We can think of two more
+mechanisms, magnetic confinement or pressure. The former is unlikely to play a large
+role. Dwarf galaxies do not possess large
+scale magnetic fields (the exceptions being
+NGC 4449 and IC 10, e.g., Chyzy et al. 1998),
+any non–thermal radio continuum radiation
+being confined to the strongest regions of active star formation (Deeg et al. 1993).
+We did not find any correlation of Hα flux
+with the surrounding H I density. However,
+one wouldn’t really expect any strong correlation of this kind. Not only is the Hα emissivity of a star forming region strongly dependent on the age of the region (see, e.g., Gerritsen & Icke 1997), but it is also dangerous
+to try to deduce actual physical properties of
+the SF regions from mean values, like average
+electron or H I densities, while ignoring spatial variations in their volume filling factors.
+
+6.
+6.1.
+
+Discussion
+What created the H I holes?
+
+The ISM of IC 2574 is dominated by expanding H I holes and shells. Similar structures have been found in other gas–rich dwarf
+galaxies (e.g., Holmberg II (PWBR92), IC 10
+(Wilcots & Miller 1998) and in more massive spiral galaxies like our Galaxy (Heiles
+1979), M 31 (Brinks & Bajaja 1988) and M 33
+(Deul & den Hartog 1990). One of the major
+questions concerning these structures is what
+physical process or processes are responsible
+for their origin.
+Heiles (1979), who was the first to recognize expanding H I shells in the Galaxy,
+concluded that ’many of the H I structures
+18
+
+which created the hole may have evolved off
+the main sequence and dispersed (assuming
+a similar IMF as in the Galaxy). This may
+make a detection of old clusters difficult. Such
+a case (LMC 4/Constellation III) is described
+by Efremov & Elmegreen (1998).
+Another potential problem with the conventional picture for the origin of the holes is
+that for the largest ones the energy requirements seem to surpass the amount that can
+possibly be released into the ambient ISM via
+stellar winds and supernova explosions. The
+giant shell in M 101 (van der Hulst & Sancisi
+1988) is just one example of such a structure.
+Tenorio–Tagle (1987) proposed as an alternative the infall of high velocity clouds which
+could deposit an amount of energy of 1052
+to 1054 ergs per collision (see the review by
+Tenorio–Tagle & Bodenheimer 1988 for further references). Even though this mechanism
+seems a viable explanation for at least some
+holes, it is unlikely that it plays a dominant
+role. Certainly it can’t be as important in
+dwarf galaxies because of their much smaller
+collisional cross section.
+Recently, an alternative explanation for
+the creation of supergiant H I shells in galaxies has been proposed, namely GRBs or Gamma
+Ray Bursters (Efremov, Elmegreen & Hodge
+1998, Loeb & Perna 1998). Even though the
+basic physics of GRB are not yet known the
+picture to emerge is that they are highly energetic events (of order 1054 ergs) that release
+huge amounts of energy in a very short period
+of time (order of a few seconds).
+Although we recognize that perhaps not all
+holes can be explained by stellar winds and
+supernova explosions, we feel that there is sufficient evidence for the conventional interpretation to warrant an analysis in those terms,
+which is what we pretend in the rest of this
+
+[...] were probably produced by large amounts
+of energy injected directly to the interstellar
+medium’. One obvious mechanism is the after
+effects of massive star formation: strong stellar winds and supernova explosions (see the
+review by Tenorio–Tagle and Bodenheimer
+1988). Detailed numerical modeling by various authors (e.g., Palouš, Franco & Tenorio–
+Tagle 1990, Silich et al. 1996, Palouš, Tenorio–
+Tagle & Franco 1994) has strengthened confidence in this explanation, as has the work
+by Oey & Clarke (1997) who in a (semi–
+)analytical way managed to predict the H I
+shell size distribution in the SMC based on
+the observed Hα luminosity function.
+Having said that, there are potentially problems with this interpretation, as mentioned
+by Radice, Salzer & Westpfahl (1995) and
+Rhode, Salzer & Westpfahl (1999). Looking
+for remnant stellar clusters at the centers of
+several large holes in Holmberg II they failed
+to find a population of A and F main sequence
+stars. Moreover, it is difficult to imagine that
+the largest H I shells which are located beyond the optical galaxy should have been created by star formation (an argument which
+holds equally well for some of the holes in
+IC 2574). This is corroborated by ultraviolet imaging of Holmberg II by Stewart (1999)
+who finds no FUV emission from the outer
+regions of Holmberg II.
+It should be noted, though, that the nondetection of population A and F stars does
+not necessarily mean that none of the H I
+are created by SF. In dwarf galaxies, in the
+absence of shear, H I shells can reach large
+dimensions and grow so old that no obvious
+bright cluster remnant will remain visible in
+the center (Efremov, Elmegreen & Hodge ).
+Some of the observed supershells are so old
+that the brightest members of stellar cluster
+19
+
+paper.
+6.2.
+
+The linear resolutions are very similar, as are
+the velocity resolutions with which they have
+been observed (see Tab. ?? for a summary).
+In addition, all four galaxies were examined
+in more or less the same fashion, one of the
+authors (EB) having taken part in the analysis of three of the four objects. We are aware
+that the results for the four galaxies suffer
+partially from low statistics and incompleteness due to personal bias and observational
+constraints (such as the beamsize). However,
+we feel that these effects, to first order, affect
+a comparison in a similar way and that it is
+valid to try to find global trends as a function
+of Hubble type.
+For the sake of brevity, rather than first
+show the statistical properties of the holes in
+IC 2574 separately, we immediately go to a
+comparison with the other three objects. In
+Figs. 15–19 we compare the distributions of
+swept–up matter, the energies, diameters, expansion velocities and ages of the holes in the
+4 galaxies. In each graph we plot in the form
+of histograms the relative number of holes, in
+percent, in order to make a direct comparison possible. In each histogram, the data for
+the individual objects are binned in the same
+way. To improve the presentation, however,
+the respective bins were slightly shifted when
+plotting the results.
+Fig. 15 shows an overlay of the indicative
+masses of the H I holes, binned logarithmically. The values range from typically 104
+to 5 × 106 M⊙ . Even though a two–sample
+Kolmogorov–Smirnov test rejects the hypothesis of pairwise equality of the distributions,
+a casual inspection shows that the indicative
+masses span roughly the same range. The
+mean masses (in 105 M⊙ ) for the dwarf galaxies (Ho II: 10.5, IC 2574: 8.4) are slightly
+higher as compared to the spirals (M 33: 4.1,
+
+Statistical properties of the holes:
+a comparison with other galaxies
+
+For the first time we are now in a position
+to address an important question regarding
+the creation and evolution of hole–like structures in the interstellar medium: how are
+their properties related to their environment,
+i.e., the type of host galaxy. In what follows
+we will compare the observed and derived H I
+hole properties of IC 2574 with those found
+in M 31 (Brinks & Bajaja 1986), an example of a massive spiral galaxy similar to our
+own, M 33 (Deul & den Hartog 1990), a less
+massive spiral and Ho II (PWBR92), another
+dwarf galaxy in the same group of galaxies,
+yet four times less massive than IC 2574. In
+other words, the sequence M 31 – M 33 –
+IC 2574 – Ho II spans a large range of different Hubble types from massive spirals to
+low–mass dwarfs.
+Despite the fact that a similar study, and
+at considerably higher sensitivity, is now available for the SMC (Staveley–Smith et al. 1997),
+we decided not to include their results. The
+main reason being that the linear scales (or
+spatial frequencies) sampled by the ATNF
+hardly overlap with those observed in the
+galaxies listed above. The linear resolution,
+at 28 pc, is almost four times higher than,
+for example, the VLA maps on IC 2574. At
+the other end of the spectrum, because of the
+lack of short spacing information, structures
+larger than a few hundred parsec will have
+been missed. Moreover, the SMC is a very
+disturbed system, being torn apart by tidal
+forces due to interactions with the LMC and
+the Galaxy.
+Limiting the comparison to the four galaxies listed above has some further advantages.
+20
+
+The fact that the holes get larger for “later”
+Hubble types (i.e., galaxies with lower mass)
+can be understood as follows. Smaller galaxies have lower masses and their mass surface
+density in the disk is lower as well. The one–
+dimensional velocity dispersion varies little,
+if any, among galaxies. We find in the four
+objects under scrutiny, taking into account
+an uncertainty of ± 1 km s−1 , a range of 6–9
+km s−1 . This, combined with the lower mass
+surface density, leads to dwarf galaxies having much thicker disks with aspect ratios of
+1:10 rather than 1:100. Hence, for the same
+amount of energy deposited, as argued above,
+an H I shell can grow much larger, because
+of a lower gravitational potential and a lower
+ambient density. Moreover, in dwarf galaxies
+shells are prevented from breaking out of the
+disk because it is thicker (see Sec. 3.3).
+The age distribution of the holes (Fig. 18)
+also shows a sequence with Hubble type. The
+mean values for the ages of the holes are:
+10 × 106 years (M 31); 12 × 106 years (M 33);
+23 × 106 years (IC 2574) and 62 × 106 years
+(Ho II). In the spirals no holes are found
+which are older than 30 Myr whereas the distribution in dwarfs is flatter and spans an age
+range of up to 120 Myr. This is not unexpected since in more massive galaxies shear
+and mixing due to the passage of density
+waves tend to destroy holes. In dwarfs, unless a shell is hit by a neighboring explosion,
+and subsequently expanding structure, a feature can potentially persist for a long time,
+until the rim disperses and mixes with the
+surrounding ISM.
+Finally, the distribution of the expansion
+velocities is presented in Fig. 19. The predominantly low values for the dwarfs (especially Ho II) reflect, again, the fact that we
+see many large holes in the dwarfs which have
+
+M 31: 3.2). This is somewhat surprising if
+one realizes that the volume density in the
+plane of a spiral galaxy is typically higher by
+a factor of three as compared to that found
+in a dwarf galaxy. H I column densities have
+a much smaller variation from object to object, though (see Tab. ??) which probably explains why the swept up matter works out to
+be more or less the same. As a warning, it
+should be born in mind that, in order to determine the H I densities we smeared out any
+fine scale structure, potentially adding somewhat to the errors.
+Fig. 16 is similar to Fig. 15, showing instead the distribution of the logarithm of the
+energies needed to create the observed H I
+holes (under the assumption of them being
+created by supernova explosions). The derived energies range from 1050 to 1053 ergs.
+We find the important result that the distributions are identical, at least to first order (mean energies (1052 ergs): Ho II: 1.4,
+IC 2574: 1.1, M 33: 1.6, M 31: 1.5). A two–
+sample Kolmogorov–Smirnov test reveals that
+there is no significant pairwise difference at
+the 95% level between the four energy distributions. From this we conclude that regardless of Hubble type of the parent galaxy, the
+star clusters (or whatever other process created the H I holes) deposit more or less the
+same amount of energy into the ISM.
+Fig. 17 shows an overlay of the size distribution of the holes found in the four galaxies.
+In this and the following plots the bins are on
+a linear scale. Note that there is a clear difference with Hubble type! The size distribution
+for holes in M 31 and M 33 cuts off sharply
+near 600 pc. In contrast, holes in IC 2574 and
+Ho II reach sizes of 1200 to 1500 pc, respectively. The lack of holes with sizes smaller
+than ∼ 100 pc is due to our resolution limit.
+21
+
+galaxies could be quite different from the spirals. In the latter, the global SF rate is, to
+first order, constant with time. Therefore,
+there is always a population of young holes.
+In contrast, in gas–rich dwarf irregulars, SF
+occurs in bursts which transforms them into
+an H II or blue compact dwarf (BCD) galaxy.
+It might be that IC 2574 and Ho II have
+undergone a recent burst, perhaps triggered
+by a close passage with another member of
+the M 81 group, and are now in their post–
+starburst phase and that this is why we don’t
+see many young holes. Our data alone don’t
+allow us to choose between the two possibilities.
+Oey & Clarke (1997), using the standard,
+adiabatic shell evolution predict the size distribution for the populations of OB superbubbles. In their paper they compare their predictions with observations of the SMC and
+the three same galaxies as we compared our
+IC 2574 data with, namely M31, M33, and
+Ho II. Without going into detail, their prediction fits the observations for the SMC surprisingly well. This despite the fact that they
+ignore the selection effect (missing short spacings) which renders the SMC maps insensitive
+to large structures which should dominate the
+appearance of dwarf galaxies. Also, they emphasize stalled shells, i.e., objects which have
+reached their largest diameter. This is in contradiction with the fact that the SMC shells,
+especially the smaller ones, are all found to be
+rapidly expanding. Their approach works less
+well for the other objects. They ascribe this
+to the data being incomplete, not only when
+considering the smallest detectable shells, but
+overall, due to the reduced sensitivity as compared to the SMC data. In that respect, our
+IC 2574 are not better than the maps on M31,
+M33 or Ho II. Hence, a thorough test of Oey &
+
+almost stalled. A word of caution should be
+added as the velocity resolution of the IC 2574
+and Ho II observations was a factor of about
+3 better than those of M 31. Very young (i.e.,
+smaller than ∼ 100 pc) and fast expanding
+holes are missed, of course, but this holds true
+for all galaxies in the sample.
+Figure 20 displays an alternative way of
+looking at the properties of the H I holes
+on a galaxy–wide scale. It shows the expansion velocities of the shells in the four nearby
+galaxies plotted as a function of their diameter (crosses). Based on the hydrodynamical
+models for expanding shells (Chevalier 1974),
+we plotted lines of constant energy for the expanding structures in Fig. 20 (assuming a constant density of the ambient medium of 0.15
+cm−2 ). The plotted curves represent energies
+at a level of 1049 , 1050 , 1051 and 1052 ergs,
+respectively (from left to right). The evolution of an individual hole of a given energy is
+along an equi–energy line from the top of the
+plot downwards. In addition, lines of equal
+ages are shown in the figure, ranging from 107
+years (steepest slope) via 5 × 107 years to 108
+years.
+There is a marked difference between the
+two spiral galaxies and the dwarfs. The H I
+shells in M 31 and M 33 are smaller and the
+range of expansion velocities is larger. In fact,
+when looking at the objects in order of decreasing mass (M 31 – M 33 – IC 2574 – Ho II)
+there seems to be a gradually shifting pattern.
+Whereas in the larger spirals there is an absence of older holes (older than a few ×107
+years, holes in IC 2574 range between 5 × 107
+and 108 years and holes in Ho II cluster near
+108 years
+This suggests an alternative explanation
+for why we don’t see younger holes in IC 2574
+and Ho II. The SF histories of these dwarf
+22
+
+IC 2574, however, is the only object studied to
+date which shows solid body rotation almost
+throughout the disk (MCR94) which ensures
+that holes stay circular until long after their
+creation.
+There is one fly in the ointment. Why
+should the shells in IC 2574 be intrinsically
+spherical? The expansion rate perpendicular
+to the disk should be different from that in
+the disk. In the direction perpendicular to the
+disk, the volume density rapidly decreases, favoring faster expansion in that direction. But
+on the other hand, the gas which moves upwards starts to feel the gravitational pull from
+the mass surface density below it, slowing it
+down. It thus seems as if nature conspires to
+create, at least in this particular object, holes
+which are near spherical in shape.
+Based on the absence of elliptical holes, an
+interesting conclusion can be drawn concerning magnetic fields. Usually, the influence of
+magnetic fields is neglected in numerical studies of expanding bubbles in the ISM. However,
+a few analytical approaches have been put forward in recent years to investigate the effects
+of the evolution of shell–like structures in the
+presence of magnetic fields (e.g., Tomisaka
+1991). The results of these investigations are
+that if global magnetic fields are present, this
+would inhibit the expansion of a supernova
+driven bubble in directions perpendicular to
+the field lines. The expansion along the field
+lines would not be affected, thus leading to
+elliptical, elongated structures. The fact that
+we observe only spherical holes in IC 2574
+shows that either magnetic fields play a minor
+role or that the magnetic fields in IC 2574 are
+really weak.
+
+Clarke’s predictions will have to await higher
+resolution and higher sensitivity data on the
+nearest (dwarf) galaxies.
+6.3.
+
+The intrinsic shape of the shells
+
+One of the results from our analysis is that
+over 90% of the holes are well approximated
+by a circular shape (the few exceptions are
+discussed in Sec. 4.2). This is a major difference with other galaxies studied thus far in
+similar detail (i.e., Ho II, M 31, M 33, M 101,
+NGC 6946) which tend to have much more elliptical holes. One attempt to understand this
+is in terms of projection effects (different inclinations for the galaxies observed thus far). If
+the shells are intrinsically triaxial, their projected shape on the sky will invariably be an
+ellipse with an ellipticity which varies as a
+function of the intrinsic axial ratios, the inclination of the galaxy, and the position angle of
+the major axis of the hole within the plane of
+the galaxy. This should lead to a wide range
+of ellipticities. The fact that we don’t see this
+in IC 2574 can only mean that the shells in
+this galaxy are intrinsically spherical.
+This can be understood by considering the
+shapes of the rotation curves of the galaxies. IC 2574 is the only object which exhibits a rising rotation curve throughout, as
+is typical for dwarf galaxies. As the rotation
+curve does not turn over, leading to a flat part
+dominated by differential rotation, there is no
+shear to distort and ultimately destroy any
+large scale structures such as H I shells. For
+a more complete discussion on this topic, see
+Silich et al. (1996) and Palouš et al. (1990).
+Indeed, PWBR92 estimate that the amount
+of shear over 1 or 2 kpc in radius, once the
+flat part of the rotation curve is reached in
+Ho II, is sufficient to stretch the holes to an
+axial ratio of 0.5 over a timescale of 108 years.
+23
+
+7.
+
+H I masses that were present at the position
+of the holes before creation (and that might
+now be present on the rim of the shell) are of
+the order of 10–100×104 M⊙ .
+4. In addition to the well defined holes,
+some large scale (> 1000 pc), coherent features are visible in the channel maps. They
+might be the remainder of an older shell population.
+5. The radial expansion of the holes, the
+indicative ages and the energy requirements
+for their formation suggest that they have
+been created by the combined effects of stellar winds and multiple supernova explosions.
+Despite their large dimensions, the energy requirements are not extreme and infall of material such as clouds is not needed to explain
+the observed features. However, alternative
+mechanisms cannot be ruled out.
+6. The shells can grow to these large dimensions because of several conditions which
+are fulfilled in dwarf galaxies. The volume
+density in the plane is low, which facilitates
+expansion. In the direction perpendicular to
+the disk, the gravitational pull is smaller than
+in a massive spiral. Also, because of the thick
+H I layer, shells are easily contained and unlikely to blow–out. Lastly, solid body rotation and a lack of spiral density waves prevent
+holes from being rapidly destroyed.
+7. A comparison with other galaxies studied in similar detail so far (M 31, M 33 and
+Ho II) shows that the size distribution of
+H I holes found in a galaxy is related to
+its Hubble type in the following way. The
+size of the largest H I shells is inversely proportional to the global gravitational potential
+(and hence mass surface density). The shells
+in dwarf galaxies show lower expansion velocities, most likely due to the fact that the shells
+are preserved much longer due to the absence
+
+Summary
+
+High resolution H I and Hα imaging using the VLA and the Calar Alto observatory
+of the dwarf galaxy IC 2574 have been presented in this paper. The main results and
+conclusions are:
+1. IC 2574 is a gas–rich dwarf galaxy
+which shows a stunning amount of detail in
+the form of H I shells and holes in its interstellar medium. These features are similar
+to those found in the Galaxy, the Magellanic
+Clouds, M 31, M 33, M 101 and NGC 6946,
+IC 10 and Ho II. From the global H I profile
+we derive a total H I mass of 9.0 × 108 M⊙ .
+2. Using two independent approaches, the
+thickness of the H I layer of IC 2574 has been
+derived to be ≈ 350 pc. This implies that
+IC 2574, as is the case for Ho II, is a ’thick’
+dwarf galaxy (compared to more massive spirals) which can be understood in terms of its
+lower gravitational potential.
+3. Large scale structures emptied of H I
+(believed to be expanding H I shells) leave
+roughly circular footprints, H I holes. They
+are prominent in the high resolution VLA
+channel maps of IC 2574. In total, 48 H I
+holes have been catalogued which are distributed across the entire galaxy. The diameters of the holes range between 100 pc
+and 1200 pc. The lower limit of the sizes
+is due to the limit of our spatial resolution.
+Most of the holes are found to be expanding with typical expansion velocities ranging
+between 8 and 12 km s−1 . The indicative
+ages of the H I holes range between 10 and
+60 × 106 years. Typical energies that are required to create the observed features are of
+the order of 10–100×1050 ergs assuming that
+they were created by the combined effects of
+stellar winds and supernova explosions. The
+24
+
+dict that this lower mass limit will be near
+106 M⊙ , which is well below the mass of the
+objects dealt with in this paper.
+
+of shear (differential rotation). The energies
+needed to create these structures, though, are
+found to be roughly the same for all types of
+galaxies. If we follow the conventional view
+that star forming regions are responsible for
+the structures found in H I, the energy output
+of a typical star forming region does not seem
+to be related to the host galaxy.
+8. The fact that virtually all holes in
+IC 2574 are circular in shape is a major difference with the other galaxies studied in comparable detail and can be explained, again,
+by the absence of shear and spiral density
+waves in IC 2574. This finding also indicates
+that magnetic fields play only a minor role in
+shaping expanding holes or that the magnetic
+fields in IC 2574 are weak.
+9. Current star formation, as traced by Hα
+emission, is predominantly found along the
+rims of the larger H I–holes, indicating propagating star formation. A detailed comparison of the Hα and the H I properties yields
+that, on a global scale, star formation is only
+present if the H I surface density reaches values larger then 1021 cm−2 (on a linear scale of
+≈ 95 pc).
+In summary, our results on IC 2574 confirm the findings by PWBR92 and show that
+Ho II is not a special case. Our analysis, and
+the comparison with other galaxies studied in
+similar detail suggest that there is a trend
+of hole characteristics with Hubble type (or
+mass). If the conclusion that the energy output of a SF region is independent of the host
+galaxy holds then it follows that there is a
+lower mass limit for the formation of dwarf
+galaxies. In other words, if the mass of a
+galaxy falls below a certain threshold, the first
+burst of star formation will tear the whole
+galaxy apart (see also, e.g., Puche & Westpfahl 1994). Mac Low & Ferrara (1998) pre-
+
+The authors are indebted to Mordecai–
+Marc Mac Low for providing them with a
+model data cube of a turbulent ISM in advance of publication and to Johan van Horebeek for valuable advise regarding some of
+the statistical techniques employed. FW acknowledges the ’Deutsche Forschungsgemeinschaft (DFG)’ for the award of a stipendium
+in the framework of the Graduiertenkolleg
+on ”The Magellanic Clouds and other Dwarf
+Galaxies” and would like to thank Uli Klein
+for continuous support and Neb Duric for
+fruitful discussions. FW appreciates the help
+of the staff of the Array Operation Center of
+the NRAO during his stay in Socorro, New
+Mexico and also wants to thank the staff of
+the Calar Alto observatory in Spain for excellent working conditions. FW is grateful
+to Jan Palouš for illuminating discussions regarding the numerical simulations of holes
+and shells during his stays at the Academy
+of Science in Prague, Czech Republic. EB acknowledges a grant awarded by CONACyT
+(grant number 0460P–E) and is grateful for
+the support by the Graduiertenkolleg without which this collaborative effort would not
+have been possible. Last but not least we
+would like to thank Klaas de Boer for carefully reading the manuscript and an anonymous referee for useful suggestions. This research has made use of the NASA/IPAC Extragalactic Database (NED) which is operated by the Jet Propulsion Laboratory, Caltech, under contract with the National Aeronautics and Space Administration (NASA),
+NASA’s Astrophysical Data System Abstract
+Service (ADS), and NASA’s SkyView.
+25
+
+Efremov, Y.N., & Elmegreen, B.G. 1998, MNRAS, 299, 643
+
+REFERENCES
+Arsenault, R., & Roy, J.R. 1986, AJ, 92, 567
+
+Efremov, Y.N., Elmegreen, B.G., & Hodge,
+P.W. 1998, ApJ, 501, L163
+
+Baars, J.W.M., Genzel, R., Pauliny–Toth,
+I.I.K., & Witzel, A. 1977, A&A, 61, 99
+
+Elmegreen, B.G. 1994, ApJ, 427, 384
+
+Bottema, R., Shostak, G.S., & van der Kruit,
+P.C. 1986, A&A, 167, 34
+
+Field, G.B., Goldsmith, D.W., & Habing,
+H.J. 1969, ApJ, 155, L149
+
+Briggs, D. 1995, Ph.D. thesis, New Mexico
+Institute of Mining and Technology
+
+Gerritsen, J.P.E., Icke, V. 1997, A&A, 325,
+972
+
+Brinks, E. 1981, A&A, 95, L1
+
+Heiles, C. 1979, ApJ, 229, 533
+
+Brinks, E., & Bajaja, E. 1986, A&A, 169, 14
+
+Heiles, C. 1984, ApJS, 55, 585
+
+Chevalier, R. A. 1974, ApJ, 188, 501
+Chyzy, K.T., Kohle, S., Beck, R., Klein, U.
+& Urbanik, M. 1998, in Proceedings of the
+Bonn/Bochum–Graduiertenkolleg Workshop:
+The Magellanic Clouds and Other Dwarf
+Galaxies, ed. T. Richtler, & J. M. Braun
+(Shaker Verlag:Bonn), p. 237
+Clark, B.G. 1980, A&A, 89, 377
+
+Heiles, C. 1990, ApJ, 354, 483
+Högbom, J.A. 1974, A&AS, 248, 1
+Huchtmeier, W.K., & Richter, O.G. 1988,
+A&A, 203, 237
+Hunter, D.A., Elmegreen, B.G., Baker, A.L.
+1998, ApJ, 493, 595
+Jörsäter, S., & van Moorsel, G.A. 1995, AJ,
+110, 2037
+
+Cox, D.P., & Smith, B.W. 1974, ApJ, 189,
+L105
+
+Kamphuis, J.J. 1993, Ph.D. thesis, University
+of Groningen
+
+Deeg, H.–J., Brinks, E., Duric, N., Klein, U.,
+& Skillman, E. 1993, ApJ, 410, 626
+
+Kellmann, S.A. 1972, ApJ, 175, 353
+
+Deul, E.R., & den Hartog, R.H. 1990, A&A,
+229, 362
+
+Kennicutt, R.C. 1988, ApJ, 334, 144
+Kennicutt, R.C. 1989, ApJ, 344, 685
+
+Devereux, N.A., Duric, N., & Scowen, P.A.,
+1997, AJ, 113. 236
+
+Kim, S., Staveley–Smith, L., Dopita, M.A.,
+Freeman, K.C., Sault, R.J., Kesteven, M.J.,
+& McConnell, D. 1999, ApJ, 503, 729
+
+de Vaucouleurs, G., de Vaucouleurs, A., Corwin, H.G., Buta, R.J., Paturel, G., &
+Fouqué, P. 1991, Third Reference Catalogue of Bright Galaxies (Springer:New
+York)(RC3)
+
+Loeb, A., & Perna, R. 1998, ApJ, 503, L35
+Martimbeau, N., Carignan, C., & Roy, J.–R.
+1994, AJ, 427, 656 (MCR94)
+
+Dressel, L.L., Condon, J.J. 1976, A&AS, 31,
+187
+
+McCray, R., & Snow, T.P. Jr. 1979, ARA&A,
+17, 213
+
+Drissen, L., Roy, J.–R., & Moffat, A.F.J.
+1993, AJ, 106, 1460
+
+Mac Low, M.–M., & Ferrara, A. 1998, ApJ,
+513, in press
+
+26
+
+Shostak, G.S., & Skillman, E.D. 1989, A&A,
+214, 33
+
+Mac Low, M.–M., Klessen, R.S., Burkert, A.,
+& Smith, M.D. 1998, Phys. Rev. Let., 80,
+2754
+
+Silich, S.A., Franco, J., Palouš, J., & Tenorio–
+Tagle, G. 1996, ApJ, 468, 722
+
+McKee, C.F. & Ostriker, J.P. 1977, ApJ, 218,
+148
+
+Skillman, E.D. 1987, in NASA Conf. Pub.
+CP–2466: Star Formation in Galaxies, ed.
+C.J. Lonsdale Persson (NASA:Washington),
+263
+
+Miller, B.W., & Hodge, P. 1994, ApJ, 427,
+656 (MH94)
+Miller, B.W., & Hodge, P. 1996, ApJ, 458,
+467
+
+Staveley–Smith, L., Davies, R.D., & Kinman,
+T.D. 1992, MNRAS, 258, 334
+
+Norman, C.A., & Ikeuchi, S. 1989. ApJ, 345,
+372
+
+Staveley–Smith, L., Sault, R.J., Hatzidimitrou, D., Kesteven, M.J., & McConnell,
+D. 1997, MNRAS, 289, 225
+
+Oey, M.S., & Clarke, C.J. 1997, MNRAS, 289,
+570
+
+Stewart, S. G., et al. 1999, ApJ, submitted.
+
+Palouš, J., Franco, J., & Tenorio–Tagle, G.
+1990, A&A, 227, 175
+
+Tenorio–Tagle, G., Franco, J., Bodenheimer,
+P., & Różyczka, M. 1987, A&A, 179, 219
+
+Palouš, J., Tenorio–Tagle, G., & Franco, J.
+1994, MNRAS, 270, 75
+
+Tenorio–Tagle, G., & Bodenheimer, P. 1988,
+ARA&A, 26, 145
+
+Peimbert, M., Rayo, J.F., & Torres–Peimbert,
+S. 1975, RMxA, 1, 289
+
+Tikhonov, N.A., Karachentsev, I.D., Bilkina,
+B.I., & Georgiev, T.B. 1991, A&AS, 89, 1
+
+Puche, D., Westpfahl, D., Brinks, E., & Roy,
+J.–R. 1992, AJ, 103, 1841 (PWBR92)
+Puche, D., & Westpfahl, D. 1994, in ESO/OHP
+Conference and Workshop Proceedings No. 49,
+ed. G. Meylan, & P. Prugniel (ESO:Garching),
+273
+Radice, L.A., Salzer, J.J., & Westpfahl, D.J.
+1995, BAAS, 186, 4908
+
+Tomisaka 1991, in IAU Symposium No. 144:
+The Interstellar Disk–Halo Connection in
+Galaxies, ed. H. Bloemen (Kluwer:Dordrecht),
+407
+Tomita, A., Ohta, K., Nakanishi, K., Takeuchi,
+T.T., & Saito, M. 1998, AJ, submitted
+Toomre, A. 1964, ApJ, 139, 1217
+
+Rhode, K.L., Salzer, J.J., & Westpfahl, D.J.
+1999, AJ, submitted.
+
+van der Hulst, J. M., & Sancisi, R. 1988, AJ,
+95, 1354
+
+Rohlfs, K., & Wilson, T.L. 1996, Tools of Radio Astronomy (Springer Verlag:Berlin)
+
+van der Hulst, J. M. 1996, in ASP Conf. Ser.
+Vol. 106: The Minnesota Lectures on Extragalactic Neutral Hydrogen, ed. E. D.
+Skillman (ASP:San Francisco), 47
+
+Rots, A.H. 1980, A&AS, 41, 189
+Sage, L.J., Salzer, J.J., Loose, H.–H., & Henkel,
+C. 1992, A&A, 265, 19
+
+van der Kruit, P.C. 1981, A&A, 99, 298
+Walter, F., Brinks, E., Duric, N., & Klein, U.
+1997, AJ, 113, 2031
+
+Seielstad, G.A., & Wright, M.C.H. 1973, ApJ,
+184, 343
+27
+
+Walter, F., Brinks, E., Duric, N., Kerp, J., &
+Klein, U. 1998, ApJ, 502, L143
+
+Fig. 1.— R–band CCD–image of IC 2574 obtained with the Calar Alto 2.2–m telescope.
+
+Wilcots, E.M., & Miller, B.W. 1998, AJ, 116,
+2363
+
+Fig. 2.— Continuum–subtracted Hα image
+of IC 2574 obtained with the Calar Alto 2.2–
+m telescope. The total exposure time is 45
+minutes. The brightest stars that were not
+fully subtracted by removing the continuum
+were blanked.
+Fig. 3.— Mosaic of every second channel map of IC 2574 in which line emission
+was detected. The velocity of each channel
+in km s−1 is plotted in the right hand corner. Greyscale range from 0 (white) to 6
+mJy beam−1 (black). Note that the beamsize
+(6.4′′ × 5.9′′ as indicated in the box of the top
+left hand panel) is smaller than the resolution
+of this plot. Coordinates are with respect to
+B1950.0 equinox.
+Fig. 4.— Global H I profile for IC 2574
+(squares) obtained by integrating the channel
+maps over the area of the source after subtraction of the continuum background. The
+data have been flux corrected (see text) and
+are corrected for primary beam attenuation.
+The Flux F is given in Jy. The channel spacing is 2.58 km s−1 . For comparison, the profiles published by Rots (1980) (full line) and
+MCR94 (dotted line) are also plotted. The
+arrow indicates the velocity range affected by
+contamination due to galactic emission.
+Fig. 5.— H I surface brightness map of
+IC 2574. The greyscale is a linear representation of the H I surface brightness (0 − 2406 K
+km s−1 ). The beamsize (6.4′′ × 5.9′′ ) is indicated in the lower left.
+Fig. 6.— Isovelocity contours of IC 2574 of
+the 30′′ convolved cube. The velocities are
+
+This 2-column preprint was prepared with the AAS
+LATEX macros v4.0.
+
+28
+
+given in km s−1 . The greyscale image is a linear representation of the H I surface brightness map at full resolution. A circular 30′′
+beam is plotted in the lower left hand corner.
+
+show how we defined groups of H II regions
+within IC 2574 (with sequence numbers).
+Fig. 13.— Enlargement of region B from
+Fig. 10. The circles indicate where we detected the H I holes (for identification of the
+H I holes, please refer to Fig. 10). The boxes
+show how we defined groups of H II regions
+within IC 2574 (with sequence numbers).
+
+Fig. 7.— Velocity dispersion (second moment) map of IC 2574. The greyscale is a
+linear representation of the velocity dispersion ranging between 4 km s−1 (white) and 13
+km s−1 (black). The beamsize (6.4′′ × 5.9′′ ) is
+indicated in the lower left.
+
+Fig. 14.— Enlargement of region C from
+Fig. 10. The circles indicate where we detected the H I holes (for identification of the
+H I holes, please refer to Fig. 10). The boxes
+show how we defined groups of H II regions
+within IC 2574 (with sequence numbers).
+
+Fig. 8.— Typical examples of position velocity diagrams. a) pV diagram of a Type 3 hole
+(hole number 21). b) rV diagram of the same
+hole. c) pV diagram of a Type 1 hole (number 30) and d) pV diagram of a Type 2 hole
+(number 33).
+
+Fig. 15.— Comparison of the relative distribution, in percentage, of the indicative masses
+of the H I holes in Ho II, IC 2574, M 33 and
+M 31.
+
+Fig. 9.— Location of the H I holes in IC 2574
+(with numbers). The greyscale map is a linear
+representation of the H I surface brightness
+map. For the largest holes (13, 23, and 26),
+see text.
+
+Fig. 16.— Comparison of the relative distribution, in percentage, of the energies required
+to produce the H I holes in Ho II, IC 2574,
+M 33 and M 31.
+
+Fig. 10.— Hα image of IC 2574 overlaid with
+the the discovered holes in its neutral interstellar medium (with numbers). Regions A–C
+are enlarged in Figs. 12–14, respectively. Note
+that almost all Hα emission in IC 2574 is located on the rims of H I shells (see text).
+
+Fig. 17.— Comparison of the relative distribution, in percentage, of the diameters of the
+H I holes in Ho II, IC 2574, M 33 and M 31.
+Fig. 18.— Comparison of the relative distribution, in percentage, of the ages of the H I
+holes in Ho II, IC 2574, M 33 and M 31.
+
+Fig. 11.— Hα image of IC 2574 overlaid with
+one contour of the H I surface brightness map
+at 1.7 × 1021 atoms cm−2 . Note that regions
+where we find Hα emission coincide with high
+H I surface brightness.
+
+Fig. 19.— Comparison of the relative distribution, in percentage, of the expansion velocities of the H I holes in Ho II, IC 2574, M 33
+and M 31.
+
+Fig. 12.— Enlargement of region A from
+Fig. 10. The circles indicate where we detected the H I holes (for identification of the
+H I holes, please refer to Fig. 10). The boxes
+
+Fig. 20.— The relation between expansion velocity and diameter in each of the four galaxies. Crosses represent observed values. The
+plotted curves are lines of constant energy
+29
+
+(based on Chevalier 1974) at levels of 1049 ,
+1050 , 1051 and 1052 ergs (from left to right).
+The straight lines correspond to constant age
+and are drawn at 107 years (steepest slope),
+5 × 107 years and 108 years.
+
+30
+
+Table 1: General information on IC 2574
+Object
+Other names
+Right ascension (1950.0)a
+Declination (1950.0)a
+Adopted distanceb
+Inclinationc
+Scale (1′′ corresponds to)
+Apparent magnitude (B)d
+Corrected distance modulus
+Corrected absolute magnitude (B)
+Blue luminosity LB
+HI mass MHI e
+HI mass to blue light ratio MHI /LB
+
+IC 2574
+UGC 5666, DDO 81, VII Zw 330
+10h 24m 41.s 3
+68◦ 40′ 18′′
+3.2 Mpc
+77±3◦
+15.5 pc
+10.8 mag
+mB -MB =27.6
+-16.8 mag
+7.8×108 LB⊙
+9.0×108 M⊙
+1.15 M⊙ /LB⊙
+
+a
+
+Dressel & Condon 1976
+see discussion in Puche et al. 1992
+c
+Martimbeau et al. 1994
+d
+de Vaucouleurs et al. 1991 (RC3)
+e
+this study
+b
+
+31
+
+Table 2: Setup of the VLA during the observations
+VLA configuration
+baselines
+date of observation
+total time on source
+total bandwidth
+No. of channels
+velocity resolution
+central velocity
+angular resolutiona
+linear resolutiona
+rms noisea
+
+a
+
+B
+1 − 54 kλ
+(0.21 − 11.4 km)
+1992 Jan. 18
+1992 Jan. 19
+647 min
+
+C
+0.34 − 16 kλ
+(0.073 − 3.4 km)
+1992 Apr. 20
+133 min
+1.56 MHz
+128
+2.58 km s−1
+38 km s−1
+6.4 × 5.9 arcsec
+100 × 91 pc
+0.7 mJy × beam−1
+11 Kelvin
+
+based on robust data cube; see text
+
+32
+
+D
+0.166 − 4.9 kλ
+(0.035 − 1.03 km)
+1991 Mar. 03
+1992 Sep. 03
+245 min
+
+Table 3: Observed properties of the H I holes
+#
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+
+α
+(1950.0)
+10 23 34.5
+10 23 38.0
+10 23 48.0
+10 23 52.5
+10 23 59.0
+10 24 00.5
+10 24 02.5
+10 24 04.6
+10 24 05.5
+10 24 06.5
+10 24 12.0
+10 24 15.0
+10 24 15.0
+10 24 17.0
+10 24 23.5
+10 24 26.5
+10 24 26.5
+10 24 28.0
+10 24 31.5
+10 24 42.0
+10 24 35.0
+10 24 40.5
+10 24 41.0
+10 24 42.0
+10 24 44.0
+10 24 48.5
+10 24 49.0
+10 24 49.5
+10 24 52.5
+10 24 56.0
+10 24 57.0
+10 25 00.5
+10 25 01.5
+10 25 02.5
+10 25 03.0
+10 25 05.0
+10 25 05.5
+10 25 06.5
+10 25 08.0
+10 25 11.5
+10 25 13.0
+10 25 14.5
+10 25 15.0
+10 25 16.5
+10 25 18.5
+10 25 21.8
+10 25 28.5
+10 25 34.0
+
+δ
+(1950.0)
+68 36 26
+68 36 43
+68 36 58
+68 40 14
+68 34 07
+68 42 08
+68 36 50
+68 39 57
+68 37 59
+68 36 40
+68 42 33
+68 37 12
+68 39 13
+68 38 11
+68 37 20
+68 37 57
+68 43 33
+68 38 43
+68 42 58
+68 40 18
+68 39 48
+68 39 35
+68 42 35
+68 40 18
+68 35 57
+68 37 08
+68 41 09
+68 39 43
+68 43 22
+68 39 59
+68 43 19
+68 41 43
+68 42 49
+68 42 26
+68 43 33
+68 44 55
+68 44 19
+68 40 28
+68 41 39
+68 44 01
+68 38 45
+68 43 57
+68 37 57
+68 37 53
+68 41 13
+68 41 57
+68 41 13
+68 42 54
+
+vhel
+( km s−1 )
+-11
+-1
+5
+28
+-1
+53
+2
+33
+17
+7
+43
+15
+25
+20
+25
+25
+53
+28
+36
+33
+38
+38
+46
+46
+25
+33
+48
+53
+56
+53
+51
+61
+66
+48
+64
+82
+77
+69
+64
+77
+59
+77
+56
+56
+87
+87
+71
+92
+
+d
+(pc)
+310
+310
+976
+1240×1116,42◦
+775
+325
+1162
+372
+418
+418
+697
+325
+1922
+325
+697
+325
+465
+434
+232
+837
+604
+976×558,78◦
+1550
+325
+775
+1240
+744
+279
+356
+1085
+186
+604
+744
+232
+1023×496,74◦
+418
+511
+310
+697
+232
+837
+279
+697×418,80◦
+186
+418
+155
+155
+403×186,80◦
+
+33
+
+vexp
+( km s−1 )
+8
+5
+17
+14
+9
+8
+–
+15
+7
+–
+8
+–
+–
+–
+6
+8
+13
+11
+8
+–
+18
+13
+–
+–
+13
+–
+–
+6
+10
+–
+–
+24
+23
+9
+25
+10
+–
+–
+–
+10
+–
+13
+–
+8
+7
+4
+8
+8
+
+nHI
+(cm−3 )
+0.13
+0.13
+0.15
+0.05
+0.1
+0.04
+0.16
+0.08
+0.16
+0.15
+0.04
+0.16
+0.16
+0.17
+0.16
+0.16
+0.08
+0.17
+0.07
+0.16
+0.17
+0.17
+0.11
+0.17
+0.05
+0.07
+0.17
+0.17
+0.09
+0.17
+0.12
+0.17
+0.15
+0.16
+0.13
+0.07
+0.07
+0.15
+0.17
+0.12
+0.06
+0.13
+0.05
+0.05
+0.16
+0.16
+0.05
+0.15
+
+type
+3
+3
+3
+2
+3
+3
+1
+3
+3
+1
+3
+1
+1
+1
+3
+3
+3
+3
+3
+1
+3
+3
+1
+1
+3
+1
+1
+3
+3
+1
+1
+3
+2
+3
+2
+3
+1
+1
+1
+3
+1
+2
+2
+3
+3
+3
+3
+2
+
+Table 4: Derived properties of the H I holes
+#
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+
+d
+(pc)
+310
+310
+976.5
+1178
+775
+325.5
+1162.5
+372
+418.5
+418.5
+697.5
+325.5
+1922
+325.5
+697.5
+325.5
+465
+434
+232.5
+837
+604.5
+744
+1550
+325.5
+775
+1240
+744
+279
+356.5
+1085
+186
+604.5
+744
+232.5
+713
+418.5
+511.5
+310
+697.5
+232.5
+837
+279
+542.5
+186
+418.5
+155
+155
+279
+
+vexp
+( km s−1 )
+8
+5
+17
+14
+9
+8
+–
+15
+7
+–
+8
+–
+–
+–
+6
+8
+13
+11
+8
+–
+18
+13
+–
+–
+13
+–
+–
+6
+10
+–
+–
+24
+23
+9
+25
+10
+–
+–
+–
+10
+–
+13
+–
+8
+7
+4
+8
+8
+
+age t
+(106 yr)
+19.6
+31.3
+29.0
+42.5
+43.5
+20.6
+–
+12.2
+30.2
+–
+44.1
+–
+–
+–
+58.7
+20.6
+18.1
+19.9
+14.7
+–
+17.0
+28.9
+–
+–
+30.1
+–
+–
+23.5
+18.0
+–
+–
+12.7
+16.3
+13.1
+14.3
+21.1
+–
+–
+–
+11.7
+–
+10.8
+–
+11.7
+30.2
+19.6
+9.8
+17.6
+
+34
+
+mass MHI
+(104 M⊙ )
+4.9
+4.9
+178.4
+104.4
+59.5
+1.8
+321.1
+5.2
+15.0
+14.0
+17.3
+7.0
+1451.2
+7.5
+69.4
+7.0
+10.3
+17.8
+1.1
+119.9
+48.0
+89.4
+523.3
+7.5
+29.7
+170.5
+89.4
+4.7
+5.2
+277.4
+1.0
+48.0
+78.9
+2.6
+60.2
+6.6
+12.0
+5.7
+73.7
+1.9
+44.9
+3.6
+10.2
+0.4
+15.0
+0.8
+0.2
+4.2
+
+energy EE
+(1050 ergs)
+6.8
+3.5
+817.9
+326.9
+103.7
+2.1
+–
+16.7
+18.1
+–
+22.7
+–
+–
+–
+71.6
+9.9
+27.4
+40.7
+1.4
+–
+228.3
+276.7
+–
+–
+79.8
+–
+–
+4.4
+9.5
+–
+–
+341.5
+534.6
+4.1
+420
+11.8
+–
+–
+–
+3.4
+–
+9.6
+–
+0.5
+18.1
+0.4
+0.3
+5.7
+
+Table 5: Cross identification of our grouping of H II regions with the ones defined by MH94
+Number
+
+α1950.0
+
+δ1950.0
+
+1′
+2′
+
+10 25 20.2
+10 25 10.1
+
+68 41 40
+68 40 50
+
+3′
+4′
+5′
+6′
+7′
+8′
+9′
+10′
+11′
+12′
+13′
+14′
+15′
+16′
+17′
+18′
+19′
+20′
+21′
+22′
+23′
+24′
+25′
+26′
+27′
+28′
+29′
+30′
+31′
+32′
+33′
+34′
+35′
+36′
+37′
+38′
+39′
+40′
+
+10 25 10.2
+10 25 10.4
+10 25 05.7
+10 25 04.5
+10 24 59.5
+10 24 54.1
+10 24 48.9
+10 24 49.9
+10 24 49.5
+10 24 48.7
+10 24 41.3
+10 24 44.5
+10 24 42.0
+10 24 40.1
+10 24 33.1
+10 24 20.4
+10 24 13.9
+10 24 09.3
+10 23 57.0
+10 24 02.7
+10 24 02.5
+10 24 00.1
+10 24 04.5
+10 23 59.7
+10 24 49.1
+10 24 58.4
+10 25 05.7
+10 25 03.9
+10 24 59.4
+10 24 56.1
+10 24 58.0
+10 25 03.0
+10 25 07.2
+10 25 08.4
+10 25 12.0
+10 25 14.8
+10 25 17.9
+10 25 15.7
+
+68 40 32
+68 40 19
+68 41 15
+68 39 39
+68 41 51
+68 40 53
+68 40 31
+68 40 18
+68 39 43
+68 39 27
+68 38 58
+68 40 07
+68 40 37
+68 40 05
+68 39 33
+68 37 55
+68 37 44
+68 37 24
+68 38 37
+68 39 12
+68 39 23
+68 39 17
+68 39 58
+68 39 58
+68 43 30
+68 42 29
+68 42 35
+68 43 04
+68 43 23
+68 43 24
+68 43 52
+68 43 51
+68 43 26
+68 43 49
+68 44 06
+68 43 51
+68 43 51
+68 43 20
+
+35
+
+cross identifications
+Miller & Hodge 1994 (MH94)
+246,251
+181,190,193,197,203,206,
+207,218,221,226,227,230
+208
+195,213,214,227
+184
+182,174
+136,143,155,158,165
+125,126,131
+117
+120
+115,121
+113,116
+99,100,106
+111
+105
+94,96,102,104
+76,80,83,84
+57,58,60-63,65,67
+50
+46
+17,19,20
+30,33
+31
+25
+24,28,32,34,36,38-41,43-46
+24
+118
+144
+186
+178
+148
+133,134,137,138
+140
+167,169,179,180
+192,196
+194,198,202
+210,215,224,225
+235
+237,238,240,242,244,245
+233,237,240
+
+Table 6: Derived properties of grouped H II regions
+Number
+1′
+2′
+3′
+4′
+5′
+6′
+7′
+8′
+9′
+10′
+11′
+12′
+13′
+14′
+15′
+16′
+17′
+18′
+19′
+20′
+21′
+22′
+23′
+24′
+25′
+26′
+27′
+28′
+29′
+30′
+31′
+32′
+33′
+34′
+35′
+36′
+37′
+38′
+39′
+40′
+
+F (Hα)
+[10−15 erg cm−2 s−1 ]
+30.8
+434.2
+32.9
+41.9
+13.7
+34.5
+152.4
+55.2
+5.2
+5.2
+40.8
+9.9
+44.7
+8.9
+9.9
+102.2
+86.8
+83.8
+139.0
+13.6
+75.4
+27.5
+13.8
+9.6
+213.2
+16.2
+35.9
+7.8
+109.0
+55.0
+120.9
+204.3
+78.8
+1004.7
+444.9
+487.2
+140.4
+13.3
+144.8
+15.4
+
+ρHII
+[cm−3 ]
+0.7
+1.8
+0.85
+0.8
+0.5
+0.8
+0.6
+0.7
+0.8
+0.6
+0.6
+0.65
+0.6
+0.9
+0.6
+0.9
+1.4
+0.8
+1.1
+0.7
+0.85
+1.0
+0.8
+0.7
+0.8
+0.8
+0.9
+0.6
+0.6
+0.8
+1.4
+1.5
+0.85
+2.0
+2.0
+1.9
+1.3
+0.8
+1.2
+0.85
+
+rHI,eff
+[pc]
+201
+225
+117
+148
+152
+245
+270
+196
+111
+107
+100
+103
+295
+88
+155
+163
+142
+303
+130
+111
+233
+77
+95
+93
+270
+73
+124
+89
+93
+136
+45
+175
+93
+199
+154
+183
+172
+98
+207
+182
+
+MHI
+[105 M⊙ ]
+14
+24
+5.8
+10
+7.4
+21
+17
+14
+4.8
+4.7
+3.9
+4.4
+28
+2.7
+7.9
+10
+8.5
+41
+8.1
+4.3
+17
+2.4
+3.2
+2.8
+23
+2.4
+6.2
+2.7
+4.1
+7.1
+3.3
+14
+2.5
+8.9
+11
+17
+13
+5.0
+28
+15
+
+∆v
+km s−1
+16.3
+26.1
+26.3
+19.7
+22.4
+18.3
+22.4
+23.7
+26.3
+21.7
+28.9
+25.0
+23.7
+26.3
+20.0
+34.2
+25.0
+25.0
+20.4
+22.4
+18.4
+19.6
+19.7
+21.0
+31.6
+31.3
+25.0
+21.0
+26.3
+23.7
+34.2
+33.0
+32.0
+25.0
+23.5
+28.7
+35.3
+23.7
+22.4
+25.6
+
+36
+
+ρHI
+[cm−3 ]
+1.68
+2.05
+3.52
+3.00
+2.05
+1.39
+0.84
+1.81
+3.41
+3.73
+5.23
+3.92
+1.06
+3.85
+2.06
+2.25
+2.89
+1.43
+3.58
+3.00
+1.30
+5.11
+2.37
+2.43
+1.14
+6.00
+3.16
+3.73
+4.96
+2.75
+3.52
+2.54
+3.02
+1.03
+2.93
+2.70
+2.48
+5.17
+3.07
+2.42
+
+σHI
+[1020 cm−2 ]
+13.9
+18.9
+16.9
+18.3
+12.8
+14.0
+9.3
+14.6
+15.6
+16.4
+15.6
+16.6
+12.9
+13.9
+13.1
+15.0
+16.9
+18.7
+19.1
+14.0
+12.5
+16.2
+14.2
+12.9
+12.6
+18.0
+16.1
+13.6
+18.9
+15.3
+6.5
+18.3
+11.5
+9.0
+18.5
+20.3
+17.5
+20.8
+26.1
+18.1
+
+remarks
+HI–clump
+HI–clump
+new tiny hole (D<60pc), rim hole 38
+diffuse HI
+on rim of hole 39, diffuse HI
+HI–clump
+Hα fills hole 32!
+on rim of hole 27
+–
+on rim of hole 30
+Hα–em. on rim of hole 28
+new tiny hole (D<60pc)
+on rim of hole 22, diffuse HI
+on rim of hole 24, diffuse HI
+on rim of hole 24. diffuse HI
+on rim of holes 21,22,24, high ∆v!
+on rim of holes 21,22
+a lot of HI in region
+a lot of HI in region
+a lot of HI in region
+new tiny hole (D<60pc)
+HI–clump between Hα–em.
+diffuse HI
+diffuse HI
+Hα same as rim of hole 8!
+on rim of holes 8,13, high ∆v
+on rim of holes 23,29
+new tiny hole (D<60pc), rim hole 33
+diffuse HI, on rim of hole 33
+new tiny hole (D<60pc)
+hardly any HI, high ∆v
+on rim of holes 31,35, high ∆v
+little HI, high ∆v
+little HI, on rim of holes 35,37
+a lot HI, on rim of hole 35
+a lot HI, rim hole 35, high ∆v
+little HI, rim hole 40, high ∆v,
+on rim of hole 42
+a lot of HI in region
+a lot of HI in region
+
+Table 7: Some properties of high mass stars (based on Devereux et al. 1997)
+Type
+O5
+O7
+O9
+B0
+B1
+B2
+B5
+
+Mass (M⊙ )
+40
+25
+20
+16
+10
+8
+6
+
+Lbol (L⊙ )
+6.8 × 105
+1.0 × 105
+4.6 × 104
+2.5 × 104
+5.2 × 103
+2.9 × 103
+7.9 × 102
+
+NLyc
+4 × 1049
+4 × 1048
+1.3 × 1048
+2.5 × 1047
+1.9 × 1045
+4.5 × 1044
+4.8 × 1043
+
+L(Hα)
+1.4 × 104
+1.4 × 103
+4.6 × 102
+89
+0.67
+0.16
+0.02
+
+Lbol /L(Hα)
+49
+71
+100
+282
+7.8 × 103
+1.8 × 104
+4.0 × 104
+
+Table 8: Summary of H I hole statistics in four nearby galaxies
+Property
+Linear resolution (pc)
+Velocity resolution (km s−1 )
+Average surface density (1020 cm−2 )
+Average volume density (cm−3 )
+Average velocity dispersion (km s−1 )
+Derived scaleheight (pc)
+Number of holes
+Sensitivity per channel (1020 cm−2 )
+
+M 31a M 33b IC 2574c Ho IId
+100
+55
+95
+65
+8.2
+8.2
+2.6
+2.6
+5
+9
+4
+10
+0.6
+0.45
+0.15
+0.2
+8
+8
+7
+7
+120
+100
+350
+625
+141
+148
+48
+51
+0.3
+1.0
+0.5
+2.4
+
+a
+
+Brinks & Bajaja 1986
+Deul & den Hartog 1990
+c
+This paper
+d
+Puche et al. 1992
+b
+
+37
+
+This figure "walter.fig1n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig2n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig3an.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig3bn.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig3cn.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig4n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig5n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig6n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig7n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig8n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig9n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig10n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig11n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig12n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig13n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig14n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig15n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig16n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig17n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig18n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig19n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+This figure "walter.fig20n.jpeg" is available in "jpeg" format from:
+http://arxiv.org/ps/astro-ph/9904002v1
+
+

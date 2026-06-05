@@ -1,0 +1,13 @@
+galaxy,proposed_readout_subfamily,post_acquisition_status,n_items,n_external_hits,n_review_ready,galaxy_external_hits,galaxy_matched_hits,galaxy_hit_ids
+IC2574,K_disturbed_outer_tail,REVIEW_READY_NOT_ACCEPTED,3,3,3,3,3,hi_asymmetry_map;environment_history;outer_tail_transition
+IC2574,K_disturbed_outer_tail,SOURCE_SEARCH_STILL_REQUIRED,1,0,0,3,3,hi_asymmetry_map;environment_history;outer_tail_transition
+IC4202,K_true_compact,SOURCE_SEARCH_STILL_REQUIRED,3,1,0,1,1,compact_support_radius
+NGC4013,K_true_compact,REVIEW_READY_NOT_ACCEPTED,1,1,1,1,1,disk_overlay_check
+NGC4013,K_true_compact,SOURCE_SEARCH_STILL_REQUIRED,2,0,0,1,1,disk_overlay_check
+NGC4088,K_warp_history_coupled,SOURCE_SEARCH_STILL_REQUIRED,4,0,0,0,0,
+NGC4183,K_expdisk_overlay,SOURCE_SEARCH_STILL_REQUIRED,3,1,0,1,1,bar_core_projection_history_overlay
+NGC5907,K_projection_dominated,REVIEW_READY_NOT_ACCEPTED,3,3,3,3,3,velocity_field_sanity;vertical_or_warp_source;projection_geometry
+NGC7331,K_thick_regular,REVIEW_READY_NOT_ACCEPTED,1,1,1,1,1,vertical_scale_or_thickness
+NGC7331,K_thick_regular,SOURCE_SEARCH_STILL_REQUIRED,2,0,0,1,1,vertical_scale_or_thickness
+UGC05716,K_disturbed_outer_tail,SOURCE_SEARCH_STILL_REQUIRED,4,1,0,1,1,hi_asymmetry_map
+UGC12506,K_expdisk_overlay,SOURCE_SEARCH_STILL_REQUIRED,3,0,0,1,0,disk_scale_overlay

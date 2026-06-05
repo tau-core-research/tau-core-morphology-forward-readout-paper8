@@ -1,0 +1,6 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,LB1_SOURCE_FEATURES_AVAILABLE,PASS,"f_PA, f_R, f_q, and f_mem are all available",none,False,False,s4g75_ngc4088_epsilon_cross_locality_bound_rule_not_endpoint
+NGC4088,LB2_SECOND_ORDER_HALF_RULE_READY,PASS,BI_COEFFICIENTS_SHARPENED_PROTOCOL_BOUND_READY,keep formula-conditional status explicit,False,False,s4g75_ngc4088_epsilon_cross_locality_bound_rule_not_endpoint
+NGC4088,LB3_LOCALITY_CHAIN_DECLARED,PASS,"only adjacent source/readout couplings f_PA*f_R, f_R*f_q, and f_q*f_mem are admitted in this narrowed pass",derive or revise adjacency from a final Tau-side locality theorem before physical promotion,False,False,s4g75_ngc4088_epsilon_cross_locality_bound_rule_not_endpoint
+NGC4088,LB4_SIGN_STABILITY_BOUND,PASS,locality-coupled bound=0.6875,none for sign-stability preflight,False,False,s4g75_ngc4088_epsilon_cross_locality_bound_rule_not_endpoint
+NGC4088,LB5_ENDPOINT_BLINDNESS,PASS,bound uses only source features and predeclared coupling adjacency,keep endpoint scoring separate,False,False,s4g75_ngc4088_epsilon_cross_locality_bound_rule_not_endpoint

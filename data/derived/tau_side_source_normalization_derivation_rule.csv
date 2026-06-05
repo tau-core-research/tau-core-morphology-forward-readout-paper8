@@ -1,0 +1,5 @@
+rule_component,formula,dimension_status,proof_status,edge_case,claim_boundary
+normalized_shape,K_gK(r) / median_r |K_gK(r)|,dimensionless,DEFINITION_DEPENDENT,zero kernel median is guarded by unit fallback in code,source_normalization_derivation_audit_not_endpoint
+closure_fraction,"median_r max(v_v6^2 - v_n^2, 0) / median_r v_v6^2",dimensionless,THEORY_CONDITIONAL,vanishes in quiet Newtonian-like closure or where v_v6 does not exceed v_n,source_normalization_derivation_audit_not_endpoint
+source_strength,c_g median_r(v_n^2),velocity_squared,THEORY_CONDITIONAL,zero baryonic velocity scale suppresses the candidate residual,source_normalization_derivation_audit_not_endpoint
+component_delta_v2,sigma_K e_gK w_gK c_g median_r(v_n^2) normalized_shape_gK(r),velocity_squared,THEORY_CONDITIONAL,missing source support or zero weight suppresses component,source_normalization_derivation_audit_not_endpoint

@@ -1,0 +1,2 @@
+galaxy,validation_id,response_pending,decision_allowed,q_decision_valid,sources_clean,forbidden_clean,sign_ready,epsilon_ready,formula_freeze_claimed,formula_freeze_allowed,forbidden_overlap,unknown_sources,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+NGC7331,N7331_QWARP_REVIEW_INTAKE_V1,False,True,True,True,True,True,True,True,True,none,none,False,False,ngc7331_qwarp_observable_choice_review_intake_not_endpoint

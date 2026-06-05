@@ -1,0 +1,5 @@
+gate_id,gate_status,evidence,endpoint_scores_allowed,remaining_obligation,claim_boundary
+N4183_G1_RESIDUAL_BLIND_SOURCE_AUDIT,PASS,"uses SPARC metadata and cached literature, not endpoint residuals",False,none for source-audit scope,ngc4183_mixed_overlay_source_audit_not_endpoint
+N4183_G2_GALAXY_SPECIFIC_HI_SOURCE,PASS_REVIEW_REQUIRED,Verheijen & Sancisi 2001 NGC4183 H I block is locally cached,False,independent review of PA/inc/HI diameter and usable kernel inputs,ngc4183_mixed_overlay_source_audit_not_endpoint
+N4183_G3_MIXED_OVERLAY_FREEZE_INPUTS,BLOCKED,bar/core/projection/history overlay observables remain missing,False,build galaxy-specific overlay observable sheet before formula freeze,ngc4183_mixed_overlay_source_audit_not_endpoint
+N4183_G4_FORMULA_FREEZE,BLOCKED,source-native numeric overlay kernel is not frozen,False,"freeze lane, carrier, kernel, amplitude rule after source review",ngc4183_mixed_overlay_source_audit_not_endpoint

@@ -1,0 +1,7 @@
+assignment_id,assignment_role,mean_rmse,sum_rmse,n_matched_labels,claim_boundary,rank_by_mean_rmse
+NGC4013->NGC4013;NGC5907->NGC5907;NGC7331->NGC7331,matched_diagonal,16.414318593472476,49.24295578041743,3,mixed_readout_population_wrong_label_control_audit,1
+NGC4013->NGC4013;NGC5907->NGC7331;NGC7331->NGC5907,shuffled_label_null,16.710332376908397,50.13099713072519,1,mixed_readout_population_wrong_label_control_audit,2
+NGC4013->NGC7331;NGC5907->NGC5907;NGC7331->NGC4013,shuffled_label_null,16.805810214664827,50.417430643994486,1,mixed_readout_population_wrong_label_control_audit,3
+NGC4013->NGC7331;NGC5907->NGC4013;NGC7331->NGC5907,shuffled_label_null,17.0992001990422,51.2976005971266,0,mixed_readout_population_wrong_label_control_audit,4
+NGC4013->NGC5907;NGC5907->NGC4013;NGC7331->NGC7331,shuffled_label_null,17.47175873512194,52.41527620536583,1,mixed_readout_population_wrong_label_control_audit,5
+NGC4013->NGC5907;NGC5907->NGC7331;NGC7331->NGC4013,shuffled_label_null,17.47438253418049,52.42314760254146,0,mixed_readout_population_wrong_label_control_audit,6

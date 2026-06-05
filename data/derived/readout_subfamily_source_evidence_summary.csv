@@ -1,0 +1,15 @@
+proposed_readout_subfamily,evidence_status,n_items,n_galaxies
+K_disturbed_outer_tail,MISSING_OR_REVIEW_REQUIRED,6,2
+K_disturbed_outer_tail,SOURCE_READY_CONTEXT_ONLY,2,2
+K_expdisk_overlay,ACCEPTED_FIELD_READY,1,1
+K_expdisk_overlay,MISSING,1,1
+K_expdisk_overlay,MISSING_OR_REVIEW_REQUIRED,4,2
+K_projection_dominated,MISSING_OR_REVIEW_REQUIRED,1,1
+K_projection_dominated,PROXY_SUPPORT_ONLY,2,1
+K_thick_regular,MISSING_OR_REVIEW_REQUIRED,1,1
+K_thick_regular,PROXY_SUPPORT_ONLY,1,1
+K_thick_regular,SOURCE_READY_CONTEXT_ONLY,1,1
+K_true_compact,MISSING_OR_REVIEW_REQUIRED,2,2
+K_true_compact,PROXY_SUPPORT_ONLY,4,2
+K_warp_history_coupled,SOURCE_BOUND_PARTIAL,3,1
+K_warp_history_coupled,SOURCE_BOUND_READY_FOR_DIAGNOSTIC,1,1

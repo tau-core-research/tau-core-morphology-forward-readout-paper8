@@ -1,0 +1,45 @@
+# NGC4183 Control Promotion Roadmap
+
+Status: `NGC4183_CONTROL_PROMOTION_ROADMAP_SCORING_COMPLETE_PRELIMINARY_CONTROL`
+
+This roadmap keeps NGC4183 separate from accepted endpoint evidence.  It tracks
+the route from source audit to optional weak-projection/null-control scoring.
+
+## Summary
+
+| control_roadmap_status | galaxy | n_stages | n_complete_or_ready_stages | n_blocked_or_review_required_stages | first_actionable_blocking_stage | first_actionable_blocking_status | gamma_projection_upper_bound | max_velocity_fractional_change | endpoint_scores_allowed | claim_boundary | next_gate |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| NGC4183_CONTROL_PROMOTION_ROADMAP_SCORING_COMPLETE_PRELIMINARY_CONTROL | NGC4183 | 14 | 10 | 2 | none | none | 0.00269837 | 0.0013501 | False | ngc4183_control_promotion_roadmap_not_endpoint | none |
+
+## Roadmap
+
+| stage_order | stage | status | state | endpoint_scores_allowed | next_action | claim_boundary |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | source_audit | NGC4183_MIXED_OVERLAY_SOURCE_AUDIT_LOCAL_SOURCE_PRESENT_REVIEW_REQUIRED_NOT_FREEZE_READY | COMPLETE | False | none | ngc4183_control_promotion_roadmap_not_endpoint |
+| 2 | observable_sheet | NGC4183_MIXED_OVERLAY_OBSERVABLE_SHEET_PARTIAL_PASS_LABEL_AND_FORMULA_BLOCKED | PARTIAL_PASS | False | do not use broad overlay fields until acquired | ngc4183_control_promotion_roadmap_not_endpoint |
+| 3 | label_narrowing | NARROW_REPLACEMENT_LABEL_SUPPORTED_FOR_FORMULA_DERIVATION_NOT_ENDPOINT | COMPLETE_FOR_DERIVATION | False | keep narrowed projection/outer-warp caveated label | ngc4183_control_promotion_roadmap_not_endpoint |
+| 4 | formula_shell | NGC4183_PROJECTION_OUTER_WARP_FORMULA_SHELL_DERIVED_FREEZE_BLOCKED | DERIVED_NOT_FROZEN | False | coefficient/review gates required | ngc4183_control_promotion_roadmap_not_endpoint |
+| 5 | tilted_ring_profile | NGC4183_TILTED_RING_PROFILE_EXTRACTED_REVIEW_REQUIRED_NOT_FREEZE_READY | EXTRACTED_REVIEW_REQUIRED | False | independent visual review response | ngc4183_control_promotion_roadmap_not_endpoint |
+| 6 | projection_upper_bound | NGC4183_PROJECTION_GAMMA_UPPER_BOUND_DERIVED_WEAK_NOT_ENDPOINT | WEAK_BOUND_DERIVED | False | preserve weak-control interpretation | ngc4183_control_promotion_roadmap_not_endpoint |
+| 7 | weak_control_preflight | NGC4183_WEAK_PROJECTION_CONTROL_PREFLIGHT_COMPLETE_NOT_ENDPOINT | COMPLETE_NOT_ENDPOINT | False | review before freeze | ngc4183_control_promotion_roadmap_not_endpoint |
+| 8 | review_packet | NGC4183_TILTED_RING_REVIEW_PACKET_CREATED_FREEZE_BLOCKED | PACKET_CREATED | False | send/fill review response | ngc4183_control_promotion_roadmap_not_endpoint |
+| 9 | visual_review_readiness | NGC4183_VISUAL_REVIEW_PACKET_READY_RESPONSE_RECEIVED | READY_RESPONSE_REQUIRED | False | review response already present; keep visual packet for audit trail | ngc4183_control_promotion_roadmap_not_endpoint |
+| 10 | review_response_intake | NGC4183_TILTED_RING_REVIEW_RESPONSE_ACCEPTED_NULL_CONTROL_FREEZE_ALLOWED | RESPONSE_RECEIVED | False | preserve accepted source-review state or obtain explicit freeze authorization | ngc4183_control_promotion_roadmap_not_endpoint |
+| 11 | freeze_readiness | NGC4183_NULL_CONTROL_FREEZE_READY_REVIEW_ACCEPTED_NOT_ENDPOINT | READY | False | freeze only after review acceptance | ngc4183_control_promotion_roadmap_not_endpoint |
+| 12 | formula_freeze | NGC4183_NULL_CONTROL_FORMULA_FROZEN_NOT_ENDPOINT | FROZEN | False | accepted-control gate after freeze | ngc4183_control_promotion_roadmap_not_endpoint |
+| 13 | accepted_control_gate | NGC4183_ACCEPTED_NULL_CONTROL_READY_NOT_SCORED | ACCEPTED_NOT_SCORED | False | separate scoring gate only if accepted-control passes | ngc4183_control_promotion_roadmap_not_endpoint |
+| 14 | scoring_gate | NGC4183_ACCEPTED_NULL_CONTROL_INTERVAL_ENDPOINT_COMPLETE | SCORED_PRELIMINARY_CONTROL | True | none | ngc4183_control_promotion_roadmap_not_endpoint |
+
+## Interpretation
+
+NGC4183 is scientifically useful as a weak-projection/null-control candidate,
+not as a strong projection endpoint.  The current source-side bound is:
+
+```text
+gamma_proj <= 0.00269837
+|Delta v|/v <= 0.00135010
+```
+
+The current first blocker is the next operational blocker in the lane. If the
+source-review and freeze gates have already passed, the blocker moves forward to
+scoring-branch implementation rather than remaining pinned to review state.

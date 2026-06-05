@@ -1,0 +1,2 @@
+galaxy,theorem_id,statement,derived_product_formula,derived_product_value_km2_s2,proof_status,claim_boundary
+NGC4088,CONDITIONAL_SEPARABLE_SOURCE_READOUT_PRODUCT,"If the warp/asymmetry readout amplitude separates into orientation sign, source strength, onset support fraction, and asymptotic carrier factors, then the first-order target scale is lambda_w = sigma_warp q_warp x_w Vflat^2.",lambda_w = sigma_warp q_warp x_w Vflat^2,8324.015999999998,FORMULA_DERIVED_GIVEN_SEPARABILITY_ASSUMPTIONS,s4g75_ngc4088_multiplicative_coupling_separability_gate_not_endpoint

@@ -1,0 +1,4 @@
+kernel_promotion_status,n_galaxies,endpoint_eligible_count,p0_count,p1_count,galaxies,endpoint_subset_status,claim_boundary
+KERNEL_PROXY_ONLY,7,0,5,2,NGC0024;NGC2683;NGC3726;NGC3949;NGC4088;NGC3972;NGC4389,NO_STRICT_ENDPOINT_ROWS,s4g75_kernel_ready_promotion_gate_not_endpoint
+KERNEL_READY_CONDITIONAL,6,0,3,3,NGC4214;UGC06917;UGC06983;UGC00891;UGC04499;UGC05829,NO_STRICT_ENDPOINT_ROWS,s4g75_kernel_ready_promotion_gate_not_endpoint
+KERNEL_READY_STRICT,2,2,1,1,NGC5907;NGC5985,RUNNABLE_STRICT_SUBSET,s4g75_kernel_ready_promotion_gate_not_endpoint

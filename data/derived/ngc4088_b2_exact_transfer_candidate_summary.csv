@@ -1,0 +1,2 @@
+exact_transfer_candidate_manifest_status,n_cases,n_reference_rows,n_exact_transfer_ready,n_partial_or_analogue_candidates,n_requirements,endpoint_scores_allowed,uses_vobs_or_residual,population_claim_allowed,next_required_action,claim_boundary
+EXACT_TRANSFER_CANDIDATE_MANIFEST_BUILT_NO_READY_INDEPENDENT_CASE,5,1,0,3,5,False,False,False,"prioritize NGC7331 for exact-transfer upgrade, then search/acquire additional source-native warp/history cases with all five fields",ngc4088_b2_exact_transfer_candidate_manifest_not_endpoint

@@ -1,0 +1,4 @@
+galaxy,evidence_id,source,source_locator,evidence_summary,component_support,forbidden_inputs_used
+NGC4088,H4_E1_GLOBAL_DISTORTION_CONTEXT,"Verheijen & Sancisi 2001 Ursa Major HI data paper, Sec. 7.3",local text lines near section 7.3,NGC4088 is identified as a system with strong optical and kinematic distortion.,1.0,False
+NGC4088,H4_E2_NGC4088_NOTE_ASYMMETRIC_WARP,Verheijen & Sancisi 2001 NGC4088 observing-results note,local text NGC4088 note,"The NGC4088 note reports a strongly distorted disk, strong PV asymmetry, asymmetric warp, and asymmetric PA change.",1.0,False
+NGC4088,H4_E3_COMPANION_CONTEXT,Verheijen & Sancisi 2001 NGC4085/NGC4088 notes,local text NGC4085 and NGC4088 notes,"NGC4085 is listed 10 arcmin from NGC4088, and NGC4088 is described as a strongly disturbed nearby system.",1.0,False

@@ -1,0 +1,5 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,RSA1_NUMERIC_BOUND_AVAILABLE,PASS,active epsilon_cross bound=0.6875; linear term sum=1.375,none,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint
+NGC4088,RSA2_ENDPOINT_BLINDNESS,PASS,audit propagates generated source-native profiles and does not compute residual scores,keep observed velocity columns contextual only,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint
+NGC4088,RSA3_BOUND_TIGHTNESS,PASS,|epsilon_cross| <= 0.6875 gives max |cross increment| <= 5445.77 km2/s2,stress-test under source uncertainty,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint
+NGC4088,RSA4_SIGN_STABILITY,PASS,negative epsilon scenario can invert the leading correction if bound exceeds one,preserve sign-stable bound,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint

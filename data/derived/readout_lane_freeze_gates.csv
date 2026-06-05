@@ -1,0 +1,6 @@
+gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,claim_boundary
+RLF_G1_TAXONOMY_AVAILABLE,PASS,readout_lane_taxonomy_update completed,none,False,readout_lane_freeze_gate_not_endpoint
+RLF_G2_NGC5907_PROJECTION_FREEZE,PASS_CAVEATED,projection lane favored; added split-B2 rejected,keep caveats and do not run standalone added ramp,False,readout_lane_freeze_gate_not_endpoint
+RLF_G3_NGC7331_DIAGNOSTIC_BOUNDARY,PASS,positive split-B2 is same-curve diagnostic only,independent added-readout holdout required,False,readout_lane_freeze_gate_not_endpoint
+RLF_G4_PENDING_CASES,PASS_CAVEATED,NGC4013 is prospective-only protocol ready after fresh source-freeze review; NGC4183 is a completed accepted null-control interval endpoint on its own narrow control branch,NGC4013 needs separate prospective scoring gate; NGC4183 should retain its single-galaxy null-control boundary rather than being treated as mixed validation,False,readout_lane_freeze_gate_not_endpoint
+RLF_G5_ENDPOINT_USE,BLOCKED,lane freeze is not a formula freeze and not a score,future endpoint scoring requires separate formula freeze,False,readout_lane_freeze_gate_not_endpoint

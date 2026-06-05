@@ -1,0 +1,5 @@
+component_id,value,unit,source,status,interpretation
+edge_on_kernel_strength,0.9851478631379982,dimensionless,NGC4183 projection formula summary,SOURCE_SIDE_ACCEPTED_CAVEATED,"large edge-on factor, already assigned to K_proj"
+max_pa_twist_kernel,0.0027390523158633,dimensionless,tilted-ring PA drift profile,OCR_REVIEW_REQUIRED,small radial orientation drift
+max_inclination_drift_kernel,0.0,dimensionless,tilted-ring inclination drift profile,OCR_REVIEW_REQUIRED,zero inclination drift in extracted profile
+gamma_projection_upper_bound,0.0026983715359959154,dimensionless,p_edge * max(orientation drift kernels),FORMULA_CONDITIONAL_UPPER_BOUND_NOT_FREEZE,source-side bound is too small for a strong correction

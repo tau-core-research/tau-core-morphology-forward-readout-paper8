@@ -1,0 +1,8 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,B1_BOUND_FORM_DECLARED,PASS,a residual-blind symbolic bound form is declared,derive coefficients B_i from Tau-side geometry or predeclare them,False,False,s4g75_ngc4088_epsilon_cross_source_bound_protocol_not_endpoint
+NGC4088,B2_ENDPOINT_BLINDNESS,PASS,bound protocol forbids vobs and endpoint residuals,keep endpoint evaluation separate,False,False,s4g75_ngc4088_epsilon_cross_source_bound_protocol_not_endpoint
+NGC4088,B3_PARTIAL_SOURCE_OBSERVABLES_AVAILABLE,FORMULA_CONDITIONAL,"orientation mismatch, side asymmetry, and onset uncertainty are available from first-pass digitization",independent digitization review,False,False,s4g75_ngc4088_epsilon_cross_source_bound_protocol_not_endpoint
+NGC4088,B4_QUANTITATIVE_Q_WARP_AVAILABLE,BLOCKED,q_warp is currently qualitative q_warp=1,measure quantitative source amplitude from channel maps or HI morphology,False,False,s4g75_ngc4088_epsilon_cross_source_bound_protocol_not_endpoint
+NGC4088,B5_MEMORY_PROXY_AVAILABLE,BLOCKED,no NGC4088-specific memory/history source proxy is currently accepted,construct residual-blind memory/history proxy for warp/asymmetry lane,False,False,s4g75_ngc4088_epsilon_cross_source_bound_protocol_not_endpoint
+NGC4088,B6_BOUND_COEFFICIENTS_DERIVED,BLOCKED,B_i coefficients are not derived from Tau-side geometry,derive or predeclare coefficient rule before endpoint use,False,False,s4g75_ngc4088_epsilon_cross_source_bound_protocol_not_endpoint
+NGC4088,B7_CROSS_TERM_GATE_CONNECTION,PASS,CROSS_TERMS_DECLARED_NOT_SUPPRESSED,use this protocol to move epsilon_cross from symbolic to bounded,False,False,s4g75_ngc4088_epsilon_cross_source_bound_protocol_not_endpoint

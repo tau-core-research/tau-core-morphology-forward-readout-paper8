@@ -1,0 +1,4 @@
+quantity,formula,value,unit,source,status,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+R_HI_arcmin,0.5 * D_HI_arcmin,4.25,arcmin,Verheijen-Sancisi HI diameter,SOURCE_NATIVE_READY,False,False,ngc4088_b1_source_native_radial_calibration_packet_not_endpoint
+x_w,R_warp_onset_arcmin / R_HI_arcmin,0.2823529411764706,dimensionless,first-pass manual digitization plus HI radius,FIRST_PASS_DIMENSIONALLY_VALID_NOT_B1_ACCEPTED,False,False,ngc4088_b1_source_native_radial_calibration_packet_not_endpoint
+Delta_x_w,Delta_R_onset_arcmin / R_HI_arcmin,0.0705882352941176,dimensionless,frozen first-pass tolerance,FIRST_PASS_TOLERANCE_NOT_B1_ACCEPTED,False,False,ngc4088_b1_source_native_radial_calibration_packet_not_endpoint

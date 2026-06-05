@@ -1,0 +1,2 @@
+galaxy,fill_id,q_warp_measured,m_history_warp,n_memory_components_measured,n_gates,n_pass,n_formula_conditional,n_blocked,fill_status,accepted_for_numeric_bound,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,NGC4088_FIRST_PASS_QWARP_MEMORY_SOURCE_RESPONSE_FILL,1.0,1.0,3,4,1,2,1,FIRST_PASS_SOURCE_FILLED_REVIEW_REQUIRED,False,False,False,s4g75_ngc4088_first_pass_source_response_fill_not_endpoint

@@ -1,0 +1,2 @@
+galaxy,functional_id,required_form,solved_scale_if_derived,readout_formula_if_derived,current_status,claim_boundary
+NGC4088,NGC4088_WARP_ASYMMETRY_CLOSURE_FUNCTIONAL_REQUIREMENT,"J_tau[lambda_w] = closure_cost(lambda_w; Q_D, Q_N, x_w, C_warp) + asymptotic_carrier_penalty(lambda_w; Vflat^2) + autonomy_penalty(lambda_w; external_comparators)",lambda_w = sigma_warp q_warp x_w Vflat^2,"delta_v2_warp(R;p) = lambda_w C_warp(R/R_HI; x_w, p)",FUNCTIONAL_REQUIREMENT_NOT_CONSTRUCTED,s4g75_ngc4088_closure_functional_requirement_gate_not_endpoint

@@ -1,0 +1,4 @@
+requirement_id,definition,forbidden_inputs,status,claim_boundary
+MCAQ1_SOURCE_ONLY,"candidate ranking uses source ledgers, morphology manifests, SPARC scale metadata, and acquisition worklists only",vobs; rotation residuals; RMSE ranks; required S_tau diagnostic family,PASS_BY_CONSTRUCTION,mixed_readout_candidate_acquisition_queue_not_endpoint
+MCAQ2_FRESH_MIXED_FREEZE,a candidate with a previous non-mixed endpoint must receive a fresh mixed formula-freeze before any mixed scoring,reusing previous endpoint success as mixed-label evidence,REQUIRED_FOR_NGC5907_AND_ANY_SIMILAR_CASE,mixed_readout_candidate_acquisition_queue_not_endpoint
+MCAQ3_MIN_POPULATION_CASES,population validation requires at least three independent prospective mixed protocols,counting retrospective diagnostic scores as prospective endpoints,CURRENTLY_BLOCKED,mixed_readout_candidate_acquisition_queue_not_endpoint

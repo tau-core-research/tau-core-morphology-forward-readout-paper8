@@ -1,0 +1,11 @@
+field_id,value,unit,source_id,field_status,freeze_usable,notes
+disk_scale_Rdisk_kpc,2.79,kpc,SPARC_MASTER,ACCEPTED_NUMERIC_RESIDUAL_BLIND,True,SPARC disk scale field; does not use vobs residuals.
+RHI_kpc,16.07,kpc,SPARC_MASTER,ACCEPTED_NUMERIC_RESIDUAL_BLIND,True,SPARC H I radius is nonzero and can support a source-window denominator.
+Vflat_km_s,110.6,km/s,SPARC_MASTER,ACCEPTED_NUMERIC_RESIDUAL_BLIND,True,Global velocity scale only; not a residual fit.
+inclination_deg_sparc,82.0,deg,SPARC_MASTER,ACCEPTED_NUMERIC_EDGE_ON_CAVEATED,True,High inclination supports a projection/overlay caveat.
+hi_position_angle_deg_source_native,347.0,deg,VERHEIJEN_SANCISI_2001_URSA_MAJOR_HI,SOURCE_PRESENT_REVIEW_REQUIRED,False,OCR block reports total H I map position angle; needs independent review before freezing.
+hi_inclination_deg_source_native,83.0,deg,VERHEIJEN_SANCISI_2001_URSA_MAJOR_HI,SOURCE_PRESENT_REVIEW_REQUIRED,False,OCR block reports total H I map inclination; source-native but still review-gated.
+hi_diameter_arcmin_source_native,6.1,arcmin,VERHEIJEN_SANCISI_2001_URSA_MAJOR_HI,SOURCE_PRESENT_REVIEW_REQUIRED,False,Potential direct support radius proxy; must be converted/reviewed before formula freeze.
+outer_warp_context,slightly warped in the outer regions,context,VERHEIJEN_SANCISI_2001_URSA_MAJOR_HI,ACCEPTED_CONTEXT_CAVEATED,False,"Supports mixed-overlay/projection review, but is not yet a numeric warp kernel."
+edge_on_projection_context,optical-axis inclination likely too high,context,VERHEIJEN_SANCISI_2001_URSA_MAJOR_HI,ACCEPTED_CONTEXT_CAVEATED,False,"Supports projection/overlay lane, not standalone added-source scoring."
+bar_core_history_overlay_observables,,mixed,PENDING,BLOCKED_REQUIRED_FIELD_MISSING,False,Needed by current NGC4183 mixed-overlay worklist before formula freeze.

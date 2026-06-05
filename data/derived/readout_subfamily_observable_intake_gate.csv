@@ -1,0 +1,5 @@
+gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,claim_boundary
+SOI1_SCHEMA_DEFINED,PASS,subfamily observable fields and forbidden sources are recorded,none,False,readout_subfamily_observable_intake_not_endpoint_not_accepted_label
+SOI2_FIRST_PASS_MANIFEST_POPULATED,PASS,9 atlas galaxies receive first-pass subfamily proposals,extend to larger source-rich set,False,readout_subfamily_observable_intake_not_endpoint_not_accepted_label
+SOI3_NO_ENDPOINT_SELECTION,PASS,"subfamily choices use manifest/source proxy fields, not vobs scores",preserve this boundary during audit,False,readout_subfamily_observable_intake_not_endpoint_not_accepted_label
+SOI4_ACCEPTED_SOURCE_READY,PENDING,all rows remain first-pass/proxy-only or diagnostic; no accepted subfamily labels promoted,fill accepted residual-blind observables per missing_for_acceptance,False,readout_subfamily_observable_intake_not_endpoint_not_accepted_label

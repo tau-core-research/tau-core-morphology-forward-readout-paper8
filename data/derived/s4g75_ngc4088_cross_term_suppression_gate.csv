@@ -1,0 +1,8 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,X1_LEADING_PRODUCT_AVAILABLE,PASS,lambda_0 = sigma q x_w Vflat^2 is conditionally derived under separability,none for leading product algebra,False,False,s4g75_ngc4088_cross_term_suppression_gate_not_endpoint
+NGC4088,X2_DIMENSIONAL_EXTENSION_VALID,PASS,"epsilon_cross is dimensionless, so lambda_w keeps km^2/s^2 units",none at dimensional level,False,False,s4g75_ngc4088_cross_term_suppression_gate_not_endpoint
+NGC4088,X3_CROSS_TERM_PARAMETER_DECLARED,FORMULA_CONDITIONAL,epsilon_cross explicitly represents all omitted mixed source-source terms,derive or bound epsilon_cross from source data,False,False,s4g75_ngc4088_cross_term_suppression_gate_not_endpoint
+NGC4088,X4_ZERO_CROSS_TERM_LIMIT,PASS,epsilon_cross = 0 recovers the current multiplicative readout formula,none for the limiting check,False,False,s4g75_ngc4088_cross_term_suppression_gate_not_endpoint
+NGC4088,X5_CROSS_TERM_SUPPRESSION_DERIVED,BLOCKED,no Tau-side argument yet proves epsilon_cross is zero or higher-order,"derive suppression from locality, independence, symmetry, or scale separation",False,False,s4g75_ngc4088_cross_term_suppression_gate_not_endpoint
+NGC4088,X6_SOURCE_BOUND_AVAILABLE,BLOCKED,no residual-blind source bound on epsilon_cross is currently available,define source observables that bound mixed geometry/memory terms,False,False,s4g75_ngc4088_cross_term_suppression_gate_not_endpoint
+NGC4088,X7_ENDPOINT_BLINDNESS,PASS,epsilon_cross is symbolic and is not fit to observed rotation residuals,do not tune epsilon_cross in endpoint tests,False,False,s4g75_ngc4088_cross_term_suppression_gate_not_endpoint

@@ -1,0 +1,10 @@
+promotion_gate,assumption_id,assumption,status,claim_boundary
+TAIL-HI-EXTENT-TO-TRANSITION-PROMOTION,T1,R_HI is measured residual-blind and not selected from endpoint residuals.,DATA_DEPENDENT,s4g75_promotion_theorem_skeletons_not_endpoint
+TAIL-HI-EXTENT-TO-TRANSITION-PROMOTION,T2,A fixed transition rule maps R_HI and disk scale to R_tail_in and R_tail_cut.,THEOREM_OR_PROTOCOL_REQUIRED,s4g75_promotion_theorem_skeletons_not_endpoint
+TAIL-HI-EXTENT-TO-TRANSITION-PROMOTION,T3,The mapped cutoff constrains the same outer-disk/tail support class used by F_tail.,WEAKEST_STEP,s4g75_promotion_theorem_skeletons_not_endpoint
+COMPACT-COMPONENT-SUPPORT-PROMOTION,C1,A source-native component decomposition identifies a compact component.,DATA_DEPENDENT,s4g75_promotion_theorem_skeletons_not_endpoint
+COMPACT-COMPONENT-SUPPORT-PROMOTION,C2,A compact support radius or bound is available before endpoint scoring.,DATA_OR_THEOREM_REQUIRED,s4g75_promotion_theorem_skeletons_not_endpoint
+COMPACT-COMPONENT-SUPPORT-PROMOTION,C3,Reff is not used as compact support unless a support theorem justifies the map.,CLAIM_BOUNDARY_RULE,s4g75_promotion_theorem_skeletons_not_endpoint
+EDGE-DISK-TO-VERTICAL-KERNEL-PROMOTION,V1,The source identifies vertical structure rather than only projection or inclination.,DATA_DEPENDENT,s4g75_promotion_theorem_skeletons_not_endpoint
+EDGE-DISK-TO-VERTICAL-KERNEL-PROMOTION,V2,"A measured or bounded h/Rs, flare, warp, or gas-plane thickness parameter is supplied.",DATA_OR_THEOREM_REQUIRED,s4g75_promotion_theorem_skeletons_not_endpoint
+EDGE-DISK-TO-VERTICAL-KERNEL-PROMOTION,V3,Projection effects are not promoted to vertical kernel parameters without a theorem.,CLAIM_BOUNDARY_RULE,s4g75_promotion_theorem_skeletons_not_endpoint

@@ -1,0 +1,5 @@
+obligation_id,status,evidence,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+WHEXATT1_SOURCE_PRODUCT_AND_AXIS,PASS,cached WHISP overview and frozen pos-vel panel geometry are used,False,False,ngc4088_b1_whisp_overview_frozen_extraction_attempt_not_endpoint
+WHEXATT2_TWO_OPPOSITE_COMPONENTS,PASS,"selected_components=2, side_count=2",False,False,ngc4088_b1_whisp_overview_frozen_extraction_attempt_not_endpoint
+WHEXATT3_FIRST_PASS_AGREEMENT,PASS,"x_w_review=0.298333, first_pass_x_w=0.282353, tolerance=0.0705882",False,False,ngc4088_b1_whisp_overview_frozen_extraction_attempt_not_endpoint
+WHEXATT4_FORMULA_FREEZE_PROMOTION,PENDING_REVIEW,requires explicit B1 promotion decision or independent review before accepting x_w,False,False,ngc4088_b1_whisp_overview_frozen_extraction_attempt_not_endpoint

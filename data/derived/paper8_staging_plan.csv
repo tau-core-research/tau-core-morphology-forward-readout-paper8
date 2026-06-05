@@ -1,0 +1,799 @@
+git_status,path,recommended_group,recommended_action,reason
+M,README.md,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+M,arxiv_submission_source.zip,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+M,data/derived/p0_phangs_source_matches.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,docs/tau_core_gravity_bridge_central.md,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+M,figures/fig01_morphology_family_registry.svg,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+M,figures/fig02_forward_gate_score_schema.svg,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+M,figures/fig03_forward_readout_gate_flow.svg,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+M,paper8_submission_source/figures/fig01_morphology_family_registry.pdf,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+M,paper8_submission_source/figures/fig02_forward_gate_score_schema.pdf,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+M,paper8_submission_source/figures/fig03_forward_readout_gate_flow.pdf,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+M,paper8_submission_source/main.pdf,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+M,paper8_submission_source/main.tex,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+M,paper8_submission_source/refs.bib,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+M,reports/p0_dustpedia_hi_phangs_source_evidence.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,reports/p0_skyview_previews/NGC0100_2MASS_K.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,reports/p0_skyview_previews/NGC0100_DSS2_Red.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,reports/p0_skyview_previews/NGC0100_WISE_3_4.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,reports/p0_skyview_previews/NGC0247_2MASS_K.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,reports/p0_skyview_previews/NGC0247_DSS2_Red.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,reports/p0_skyview_previews/NGC0247_WISE_3_4.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,reports/p0_skyview_previews/NGC0300_2MASS_K.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,reports/p0_skyview_previews/NGC0300_DSS2_Red.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,reports/p0_skyview_previews/NGC0300_WISE_3_4.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,reports/p0_skyview_previews/NGC6503_2MASS_K.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,reports/p0_skyview_previews/NGC6503_DSS2_Red.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,reports/p0_skyview_previews/NGC6503_WISE_3_4.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+M,scripts/acquire_external_morphology_inputs.py,stage_code_tests,stage,reproducible pipeline code and tests
+M,scripts/acquire_p0_dustpedia_hi_phangs_sources.py,stage_code_tests,stage,reproducible pipeline code and tests
+M,scripts/acquire_p0_skyview_preview_images.py,stage_code_tests,stage,reproducible pipeline code and tests
+M,scripts/audit_p0_skyview_availability.py,stage_code_tests,stage,reproducible pipeline code and tests
+M,scripts/reproduce.py,stage_code_tests,stage,reproducible pipeline code and tests
+M,scripts/run_source_native_readout_formula_endpoint.py,stage_code_tests,stage,reproducible pipeline code and tests
+M,tests/test_public_reproducibility_package.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,data/derived/four_case_endpoint_status_cases.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/four_case_endpoint_status_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/inclusion_lane_endpoint_allowed_use_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/inclusion_lane_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/inclusion_lane_endpoint_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/inclusion_lane_expansion_audit.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/inclusion_lane_expansion_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/inclusion_lane_information_gain_transitions.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/memory_projection_acceptance_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/memory_projection_acceptance_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_candidate_acquisition_queue.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_candidate_acquisition_requirements.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_candidate_acquisition_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_control_by_galaxy.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_control_matrix.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_control_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_control_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_endpoint_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_endpoint_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_expansion_candidates.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_expansion_obligations.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_expansion_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_shuffled_label_permutations.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_validation_cases.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_validation_endpoints.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_validation_protocol.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_population_validation_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_source_selection_cases.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_source_selection_protocol.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/mixed_readout_source_selection_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_data_acquisition.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_dustpedia_matches.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_l2_weight_freeze_component_audit.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_l2_weight_freeze_readiness.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_l2_weight_freeze_readiness_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_l2_weight_intake_candidates.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_l2_weight_intake_endpoint_by_family.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_l2_weight_intake_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_l2_weight_intake_endpoint_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_l2_weight_intake_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_level_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_scores_by_galaxy.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_source_expansion.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_source_expansion_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/morphology_information_gain_transitions.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/multigalaxy_fit_inspection_amplitudes.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/multigalaxy_fit_inspection_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/multigalaxy_fit_inspection_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/multigalaxy_fit_inspection_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_compact_overlay_source_acquisition.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_compact_overlay_source_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_expdisk_wvo_diagnostic_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_expdisk_wvo_diagnostic_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_expdisk_wvo_formula_freeze_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_expdisk_wvo_formula_freeze_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_expdisk_wvo_formula_freeze_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_expdisk_wvo_frozen_protocol_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_expdisk_wvo_frozen_protocol_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_expdisk_wvo_hypothesis_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_expdisk_wvo_hypothesis_source_fields.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_expdisk_wvo_hypothesis_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_expdisk_wvo_mixed_accepted_endpoint_blocker_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_expdisk_wvo_mixed_accepted_endpoint_blocker_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_mixed_source_rule_evidence.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_mixed_source_rule_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_mixed_source_rule_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_overlay_preflight_fields.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_overlay_preflight_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_overlay_preflight_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_control_candidates.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_control_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_endpoint_freeze_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_endpoint_freeze_kernel_grid.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_endpoint_freeze_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_endpoint_freeze_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_endpoint_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_formula_blockers.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_formula_derivation_steps.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_formula_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_formula_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_radial_zone_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_radial_zone_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_radial_zone_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_replacement_label_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_replacement_label_source_fields.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4013_warp_vertical_overlay_replacement_label_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_frozen_image_repeat_obligations.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_frozen_image_repeat_panel_geometry.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_frozen_image_repeat_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_original_hi_data_acquisition_attempts.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_original_hi_data_acquisition_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_original_hi_data_source_candidates.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_source_native_radial_calibration_formulas.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_source_native_radial_calibration_routes.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_source_native_radial_calibration_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_whisp_overview_extraction_obligations.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_whisp_overview_extraction_packet.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_whisp_overview_extraction_panels.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_whisp_overview_extraction_response_template.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_whisp_overview_extraction_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_whisp_overview_frozen_extraction_components.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_whisp_overview_frozen_extraction_obligations.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_whisp_overview_frozen_extraction_response.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_whisp_overview_frozen_extraction_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_whisp_promotion_review_gates.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b1_whisp_promotion_review_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b2_physical_normalization_components.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b2_physical_normalization_formula_status.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b2_physical_normalization_obligations.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b2_physical_normalization_synthesis_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b3_scale_uniqueness_candidate_resolution.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b3_scale_uniqueness_obligations.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_b3_scale_uniqueness_synthesis_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_breakthrough_promotion_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_breakthrough_promotion_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_formula_freeze_readiness_dashboard.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_formula_freeze_readiness_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_independent_xw_digitization_review_obligations.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_independent_xw_digitization_review_packet.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_independent_xw_digitization_review_protocol_digest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_independent_xw_digitization_review_response_template.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_independent_xw_digitization_review_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_mixed_formula_freeze_blocker_resolution_plan.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_mixed_formula_freeze_blocker_resolution_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_mixed_formula_freeze_protocol_supports.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_source_review_gate_decisions.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_source_review_literature_fields.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_source_review_packet_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_warp_history_accepted_endpoint_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_warp_history_accepted_endpoint_gate_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_warp_history_accepted_endpoint_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_warp_history_accepted_endpoint_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_warp_history_accepted_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_warp_history_accepted_endpoint_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_warp_history_formula_freeze_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_warp_history_formula_freeze_kernel_grid.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_warp_history_formula_freeze_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc4088_warp_history_formula_freeze_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_accepted_endpoint_control_candidates.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_accepted_endpoint_control_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_expdisk_projection_mixed_accepted_endpoint_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_expdisk_projection_mixed_accepted_endpoint_gate_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_expdisk_projection_mixed_accepted_endpoint_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_expdisk_projection_mixed_accepted_endpoint_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_expdisk_projection_mixed_accepted_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_expdisk_projection_mixed_accepted_endpoint_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_expdisk_projection_mixed_formula_freeze_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_expdisk_projection_mixed_formula_freeze_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_expdisk_projection_mixed_formula_freeze_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_accepted_endpoint_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_accepted_endpoint_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_accepted_endpoint_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_accepted_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_accepted_endpoint_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_endpoint_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_freeze_fields.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_freeze_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_freeze_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_radial_zone_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_radial_zone_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc5907_projection_radial_zone_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_expdisk_vertical_outer_warp_mixed_accepted_endpoint_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_expdisk_vertical_outer_warp_mixed_accepted_endpoint_gate_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_expdisk_vertical_outer_warp_mixed_accepted_endpoint_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_expdisk_vertical_outer_warp_mixed_accepted_endpoint_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_expdisk_vertical_outer_warp_mixed_accepted_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_expdisk_vertical_outer_warp_mixed_accepted_endpoint_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_expdisk_vertical_outer_warp_mixed_formula_freeze_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_expdisk_vertical_outer_warp_mixed_formula_freeze_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_expdisk_vertical_outer_warp_mixed_formula_freeze_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_fractional_onset_v2_replay_freeze_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_fractional_onset_v2_replay_freeze_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_fractional_onset_v2_replay_freeze_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_fractional_warp_onset_source_fields.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_fractional_warp_onset_source_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_fractional_warp_onset_source_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_outer_warp_vertical_caveat_fields.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_outer_warp_vertical_caveat_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/ngc7331_outer_warp_vertical_caveat_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/paper8_external_source_cache_inventory.csv,stage_commit_scope_audits,stage,records external cache policy boundary without staging cache itself
+??,data/derived/paper8_external_source_cache_inventory_summary.csv,stage_commit_scope_audits,stage,records external cache policy boundary without staging cache itself
+??,data/derived/paper8_reproduction_changeset_inventory.csv,stage_commit_scope_audits,stage,records dirty-tree reproduction package inventory
+??,data/derived/paper8_reproduction_changeset_inventory_summary.csv,stage_commit_scope_audits,stage,records dirty-tree reproduction package inventory
+??,data/derived/projection_scale_repair_audit.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/projection_scale_repair_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_accepted_manifest_audit.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_accepted_manifest_audit_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_external_source_acquisition_matrix.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_external_source_acquisition_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_external_source_cache_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_external_source_cache_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_external_source_hits.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_extracted_observables.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_extracted_observables_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_extraction_acceptance_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_missing_source_worklist.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_missing_source_worklist_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_ngc4088_case.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_observable_fields.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_observable_intake_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_observable_intake_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_registry.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_selection_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_source_citation_ledger.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_source_citation_ledger_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_source_evidence_by_galaxy.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_source_evidence_matrix.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/readout_subfamily_source_evidence_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_closure_source_generalization_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_closure_source_generalization_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_conditional_promotion_requirement_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_conditional_promotion_requirements.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_direct_kernel_measurement_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_direct_kernel_measurements.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_direct_source_native_acquisition_family_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_direct_source_native_acquisition_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_direct_source_native_acquisition_source_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_direct_source_native_observable_targets.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_failure_mode_breakdown.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_failure_mode_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_filled_kernel_delta_driver_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_filled_kernel_delta_drivers.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_filled_kernel_endpoint_by_family.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_filled_kernel_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_filled_kernel_endpoint_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_filled_vs_proxy_delta.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_filled_vs_proxy_delta_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_holdout_repair_review_field_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_holdout_repair_review_galaxy_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_holdout_repair_review_packet.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_kernel_observable_fill.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_kernel_observable_fill_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_kernel_ready_endpoint_subset_status.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_kernel_ready_promotion_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_kernel_ready_promotion_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_literature_kernel_source_hit_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_literature_kernel_source_hits.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc2683_closure_source_sensitivity.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc2683_closure_source_sensitivity_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc2683_flare_closure_source_prototype_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc2683_flare_closure_source_prototype_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc2683_flare_profile_mapping_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc2683_flare_profile_mapping_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc2683_hr_profile_kernel_prototype_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc2683_hr_profile_kernel_prototype_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc2683_profile_aware_kernel_preflight_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc2683_profile_aware_kernel_preflight_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_asymptotic_carrier_candidate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_asymptotic_carrier_dominance_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_asymptotic_carrier_dominance_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_bi_coefficient_freeze_rule_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_bi_coefficient_freeze_rule_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_bi_coefficient_obligations.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_bi_coefficient_rule_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_bi_coefficient_rule_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_bi_feature_normalization.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_bi_frozen_coefficients.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_bi_sharp_coefficient_bound_rule_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_bi_sharp_coefficient_bound_rule_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_bi_sharp_coefficients.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_channel_map_digitization_protocol.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_channel_map_digitization_response_schema.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_channel_map_digitization_response_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_channel_map_digitization_response_template.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_channel_map_digitization_response_validation.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_channel_map_digitization_worksheet.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_channel_map_digitization_worksheet_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_closure_functional_requirement.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_closure_functional_requirement_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_closure_functional_requirement_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_cross_term_ledger.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_cross_term_model.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_cross_term_suppression_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_cross_term_suppression_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_digitization_target_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_digitization_target_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_endpoint_fit_diagnostic_points.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_endpoint_fit_diagnostic_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_endpoint_fit_diagnostic_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_bound_expression.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_bound_expression_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_bound_protocol.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_bound_terms.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_input_review_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_input_review_obligations.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_input_review_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_locality_bound_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_locality_bound_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_locality_bound_terms.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_readout_sensitivity_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_readout_sensitivity_scenarios.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_readout_sensitivity_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_source_bound_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_source_bound_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_epsilon_cross_source_observables.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_filled_warp_closure_mapping.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_filled_warp_closure_profile.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_filled_warp_closure_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_first_pass_source_response_fill_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_first_pass_source_response_fill_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_h4_interaction_context_evidence.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_h4_interaction_context_review.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_h4_interaction_context_review_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_h4_interaction_context_review_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_kernel_to_velocity_normalization_constants.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_kernel_to_velocity_normalization_profile.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_kernel_to_velocity_normalization_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_memory_history_first_pass_components.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_memory_history_first_pass_response.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_memory_history_proxy_components.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_memory_history_proxy_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_memory_history_proxy_protocol.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_memory_history_proxy_response_template.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_memory_history_proxy_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_minimal_euler_ansatz.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_minimal_euler_ansatz_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_minimal_euler_ansatz_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_multiplicative_coupling_assumptions.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_multiplicative_coupling_separability_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_multiplicative_coupling_separability_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_multiplicative_coupling_theorem.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_physical_normalization_formula.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_physical_normalization_law_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_physical_normalization_law_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_qwarp_first_pass_response.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_qwarp_measurement_fields.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_qwarp_measurement_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_qwarp_measurement_protocol.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_qwarp_measurement_response_template.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_qwarp_measurement_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_readout_preflight_profile.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_readout_preflight_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_readout_promotion_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_readout_promotion_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_scale_uniqueness_audit.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_scale_uniqueness_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_source_response_independent_review.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_source_response_independent_review_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_source_response_independent_review_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_target_functional_origin_factors.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_target_functional_origin_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_target_functional_origin_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_tau_side_scale_derivation_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_tau_side_scale_derivation_skeleton.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_tau_side_scale_derivation_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_tau_side_scale_selection_criteria.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_tau_side_scale_selection_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_tau_side_scale_selection_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_warp_asymmetry_extraction_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_warp_asymmetry_extraction_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_warp_closure_basis_grid.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_warp_closure_mapping_rule.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_warp_closure_mapping_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_warp_onset_extraction_protocol.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_warp_onset_status.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_warp_onset_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_warp_prekernel_observable_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_warp_prekernel_observables.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_xw_conversion_audit.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_ngc4088_xw_conversion_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_promoted_kernel_endpoint_by_family.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_promoted_kernel_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_promoted_kernel_endpoint_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_promoted_kernel_observable_fill.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_promoted_kernel_observable_fill_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_promoted_vs_filled_delta_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_promoted_vs_proxy_delta.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_promotion_theorem_assumptions.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_promotion_theorem_skeletons.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_promotion_theorem_waiting_rows.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_remaining_kernel_acquisition_ledger.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_remaining_kernel_acquisition_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_repair_priority_queue.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_repair_priority_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_scale_source_subset_endpoint_by_family.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_scale_source_subset_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_scale_source_subset_endpoint_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_scale_source_subset_lane_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_scale_source_subset_repair_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_source_native_availability_audit.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_source_native_availability_source_coverage.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_source_native_availability_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_source_rich_lane_action_plan.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_source_rich_lane_context_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_source_rich_lane_source_action_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_tail_rhi_promotion_attempt.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_tail_rhi_promotion_attempt_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_vertical_source_search_audit.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/s4g75_vertical_source_search_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/source_native_orientation_component_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/source_native_orientation_family_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/source_native_orientation_galaxy_gate.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/source_native_orientation_promotion_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/source_normalization_failure_modes_by_lane.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/source_normalization_failure_modes_by_lane_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_evidence_measure_gate_components.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_evidence_measure_gate_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_evidence_measure_l2_component_rule.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_evidence_measure_l2_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_evidence_measure_l2_endpoint_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_evidence_measure_l2_galaxy_rule.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_source_normalization_component_rule.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_source_normalization_derivation_constants.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_source_normalization_derivation_rule.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_source_normalization_derivation_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_source_normalization_galaxy_rule.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_source_normalization_sensitivity_components.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_source_normalization_sensitivity_manifest.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_source_normalization_sensitivity_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_source_normalization_sensitivity_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_source_normalized_l2_endpoint_scores.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/derived/tau_side_source_normalized_l2_endpoint_summary.csv,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,data/external/literature/1512.07058_ngc2683_flaring_hi.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/1512.07058_ngc2683_flaring_hi.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/1909.04048_halogas_epg.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/1909.04048_halogas_epg.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/ngc4088_page_74-074.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/ngc4088_page_76-076.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/ngc4088_page_76_channel_maps_roi.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/ngc4088_page_76_channel_maps_roi_worksheet_overlay.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/ngc4088_page_76_frozen_image_repeat_overlay.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/ngc4088_page_77-077.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_84-084.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_85-085.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_86-086.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_87-087.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_88-088.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_89-089.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_90-090.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_91-091.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_92-092.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_93-093.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_94-094.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_95-095.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_96-096.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_97-097.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_pages/page_98-098.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_ursa_major_hi.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2001_verheijen_sancisi_ursa_major_hi.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2009.11299_hi_scale_height.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/2009.11299_hi_scale_height.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ic2574_deblok_2020_m81_hi_survey.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ic2574_deblok_2020_m81_hi_survey.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ic2574_sanchez_salcedo_hidalgo_gamez_2002_holes.html,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ic2574_walter_brinks_1999_hi_holes_shells.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ic2574_walter_brinks_1999_hi_holes_shells.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4013_comeron_2011_unusual_vertical_mass_distribution.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4013_comeron_2011_unusual_vertical_mass_distribution.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4013_zschaechner_rand_2015_hi_kinematics.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4013_zschaechner_rand_2015_hi_kinematics.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4088_source_native_hi_route/whisp_frameset_by_name.html,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4088_source_native_hi_route/whisp_listing_by_name.html,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4088_source_native_hi_route/whisp_ugc7081_direct_page.html,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4088_source_native_hi_route/whisp_ugc7081_obs_reduction_notes.html,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4088_source_native_hi_route/whisp_ugc7081_overview.gif,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4088_source_native_hi_route/whisp_ugc7081_overview_extraction_overlay.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4088_source_native_hi_route/whisp_ugc7081_posvel_crop.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4088_source_native_hi_route/whisp_ugc7081_posvel_frozen_extraction_overlay.png,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4183_whisp_lopsidedness_context_2011.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc4183_whisp_lopsidedness_context_2011.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc5907_sasaki_1987_surface_photometry_warp.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc5907_sasaki_1987_surface_photometry_warp.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc5907_shang_1998_ring_warp_interaction.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc5907_shang_1998_ring_warp_interaction.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc5907_wiegert_2015_edge_on_ism.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc5907_wiegert_2015_edge_on_ism.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc7331_patra_2018_molecular_scale_height.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ngc7331_patra_2018_molecular_scale_height.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ugc05716_swaters_2009_late_type_dwarf_rotation_shapes.pdf,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,data/external/literature/ugc05716_swaters_2009_late_type_dwarf_rotation_shapes.txt,hold_external_cache_policy_review,do_not_stage_by_default,source PDF/image/cache provenance and licensing policy required
+??,paper8_submission_source/figures/fig04_ngc4088_endpoint_fit_diagnostic.png,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+??,paper8_submission_source/figures/fig05_ngc5907_projection_endpoint_diagnostic.png,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+??,paper8_submission_source/figures/fig06_ngc5907_projection_accepted_endpoint.png,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+??,paper8_submission_source/figures/fig07_ngc4013_warp_vertical_overlay_endpoint.png,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+??,paper8_submission_source/figures/fig08_ngc4013_expdisk_wvo_diagnostic.png,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+??,paper8_submission_source/figures/fig09_ngc4013_expdisk_wvo_frozen_protocol.png,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+??,paper8_submission_source/figures/fig10_ngc4088_warp_history_accepted_endpoint.png,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+??,paper8_submission_source/figures/fig11_ngc5907_expdisk_projection_mixed_accepted_endpoint.png,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+??,paper8_submission_source/figures/fig12_ngc7331_vertical_outer_warp_mixed_accepted_endpoint.png,stage_paper_docs_package,stage,"paper, bridge documentation, figures, generated PDF/arXiv package"
+??,reports/four_case_endpoint_status_summary.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/inclusion_lane_endpoint_analysis.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/inclusion_lane_expansion_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/memory_projection_acceptance_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/mixed_readout_candidate_acquisition_queue.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/mixed_readout_population_control_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/mixed_readout_population_endpoint.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/mixed_readout_population_expansion_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/mixed_readout_population_validation_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/mixed_readout_source_selection_rule.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/morphology_information_gain_l2_weight_freeze_readiness.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/morphology_information_gain_l2_weight_intake.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/morphology_information_gain_l2_weight_intake_endpoint_preflight.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/morphology_information_gain_source_expansion.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/morphology_information_gain_test.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/multigalaxy_fit_inspection_atlas.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/multigalaxy_fit_inspection_atlas.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_compact_overlay_source_acquisition.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_expdisk_wvo_diagnostic.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_expdisk_wvo_formula_freeze_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_expdisk_wvo_frozen_protocol_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_expdisk_wvo_hypothesis_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_expdisk_wvo_mixed_accepted_endpoint_blocker_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_mixed_source_rule_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_warp_overlay_preflight_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_warp_vertical_overlay_control_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_warp_vertical_overlay_endpoint.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_warp_vertical_overlay_endpoint_freeze_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_warp_vertical_overlay_formula_derivation.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_warp_vertical_overlay_radial_zone_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4013_warp_vertical_overlay_replacement_label_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_b1_frozen_image_repeat_attempt.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_b1_original_hi_data_acquisition_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_b1_source_native_radial_calibration_packet.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_b1_whisp_overview_extraction_review_packet.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_b1_whisp_overview_frozen_extraction_attempt.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_b1_whisp_promotion_review.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_b2_physical_normalization_derivation_synthesis.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_b3_scale_uniqueness_resolution_synthesis.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_breakthrough_promotion_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_formula_freeze_readiness_dashboard.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_independent_xw_digitization_review_packet.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_mixed_formula_freeze_blocker_resolution_plan.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_source_review_packet.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_warp_history_accepted_endpoint.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_warp_history_accepted_endpoint_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc4088_warp_history_formula_freeze_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc5907_accepted_endpoint_control_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc5907_expdisk_projection_mixed_accepted_endpoint.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc5907_expdisk_projection_mixed_accepted_endpoint_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc5907_expdisk_projection_mixed_formula_freeze_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc5907_projection_accepted_endpoint.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc5907_projection_accepted_endpoint_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc5907_projection_endpoint_diagnostic.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc5907_projection_freeze_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc5907_projection_radial_zone_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc7331_expdisk_vertical_outer_warp_mixed_accepted_endpoint.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc7331_expdisk_vertical_outer_warp_mixed_accepted_endpoint_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc7331_expdisk_vertical_outer_warp_mixed_formula_freeze_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc7331_fractional_onset_v2_replay_freeze_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc7331_fractional_warp_onset_source_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/ngc7331_outer_warp_vertical_caveat_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/paper8_external_source_cache_inventory.md,stage_commit_scope_audits,stage,records external cache policy boundary without staging cache itself
+??,reports/paper8_reproduction_changeset_inventory.md,stage_commit_scope_audits,stage,records dirty-tree reproduction package inventory
+??,reports/projection_scale_repair_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/readout_subfamily_accepted_manifest_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/readout_subfamily_external_source_acquisition.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/readout_subfamily_external_source_cache.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/readout_subfamily_missing_source_worklist.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/readout_subfamily_observable_extraction.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/readout_subfamily_observable_intake.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/readout_subfamily_selection_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/readout_subfamily_source_citation_ledger.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/readout_subfamily_source_evidence_matrix.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_closure_source_generalization_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_conditional_promotion_requirements.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_direct_kernel_measurement_extraction.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_direct_source_native_acquisition_manifest.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_failure_mode_breakdown.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_filled_kernel_delta_driver_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_filled_kernel_endpoint_stress_test.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_holdout_repair_review_packet.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_kernel_observable_fill.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_kernel_ready_promotion_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_literature_kernel_source_hits.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc2683_closure_source_sensitivity.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc2683_flare_closure_source_prototype.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc2683_flare_profile_mapping_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc2683_hr_profile_kernel_prototype.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc2683_profile_aware_kernel_preflight.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_asymptotic_carrier_dominance_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_bi_coefficient_freeze_rule.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_bi_coefficient_rule_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_bi_sharp_coefficient_bound_rule.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_channel_map_digitization_protocol.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_channel_map_digitization_worksheet.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_closure_functional_requirement_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_cross_term_suppression_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_digitization_target_manifest.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_endpoint_fit_diagnostic.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_endpoint_fit_diagnostic.png,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_epsilon_cross_bound_expression_shell.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_epsilon_cross_input_review_packet.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_epsilon_cross_locality_bound_rule.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_epsilon_cross_source_bound_protocol.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_filled_warp_closure_mapping.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_first_pass_source_response_fill.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_h4_interaction_context_review.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_kernel_to_velocity_normalization_candidate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_memory_history_proxy_protocol.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_minimal_euler_ansatz_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_multiplicative_coupling_separability_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_physical_normalization_law_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_qwarp_measurement_protocol.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_readout_preflight_profile.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_readout_promotion_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_scale_uniqueness_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_source_response_independent_review.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_target_functional_origin_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_tau_side_scale_derivation_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_tau_side_scale_selection_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_warp_asymmetry_extraction_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_warp_closure_mapping_rule.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_warp_onset_extraction_protocol.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_warp_prekernel_observables.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_ngc4088_xw_conversion_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_promoted_kernel_endpoint_stress_test.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_promoted_kernel_observable_fill.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_promotion_theorem_skeletons.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_remaining_kernel_acquisition_ledger.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_scale_source_subset_endpoint_stress_test.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_source_native_availability_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_source_rich_lane_action_plan.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_tail_rhi_promotion_attempt.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/s4g75_vertical_source_search_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/source_native_orientation_promotion_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/source_normalization_failure_modes_by_lane.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/tau_side_evidence_measure_gate.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/tau_side_evidence_measure_l2_endpoint.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/tau_side_source_normalization_derivation_audit.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/tau_side_source_normalization_sensitivity.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,reports/tau_side_source_normalized_l2_endpoint.md,stage_derived_repro_artifacts,stage,tracked-style reproducibility outputs and reports
+??,scripts/acquire_ngc4013_compact_overlay_sources.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/acquire_readout_subfamily_external_sources.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/acquire_s4g75_direct_kernel_measurements.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/analyze_s4g75_failure_modes.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/audit_l2_weight_freeze_readiness.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/audit_readout_subfamily_accepted_manifest.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/audit_s4g75_filled_kernel_delta_drivers.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/audit_s4g75_ngc2683_closure_source_sensitivity.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/audit_s4g75_source_native_availability.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/audit_source_normalization_failure_modes_by_lane.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/audit_tau_side_source_normalization_sensitivity.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_four_case_endpoint_status_summary.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_inclusion_lane_expansion_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_l2_weight_intake_candidates.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_memory_projection_acceptance_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_mixed_readout_candidate_acquisition_queue.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_mixed_readout_population_expansion_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_mixed_readout_population_validation_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_mixed_readout_source_selection_rule.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_morphology_information_gain_source_expansion.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_multigalaxy_fit_inspection_atlas.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4013_expdisk_warp_vertical_overlay_hypothesis_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4013_expdisk_wvo_formula_freeze_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4013_expdisk_wvo_mixed_accepted_endpoint_blocker_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4013_mixed_source_rule_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4013_warp_overlay_preflight_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4013_warp_vertical_overlay_endpoint_freeze_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4013_warp_vertical_overlay_formula_derivation.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4013_warp_vertical_overlay_replacement_label_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_b1_frozen_image_repeat_attempt.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_b1_original_hi_data_acquisition_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_b1_source_native_radial_calibration_packet.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_b1_whisp_overview_extraction_review_packet.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_b1_whisp_overview_frozen_extraction_attempt.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_b1_whisp_promotion_review.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_b2_physical_normalization_derivation_synthesis.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_b3_scale_uniqueness_resolution_synthesis.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_breakthrough_promotion_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_formula_freeze_readiness_dashboard.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_independent_xw_digitization_review_packet.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_mixed_formula_freeze_blocker_resolution_plan.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_source_review_packet.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_warp_history_accepted_endpoint_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc4088_warp_history_formula_freeze_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc5907_expdisk_projection_mixed_accepted_endpoint_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc5907_expdisk_projection_mixed_formula_freeze_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc5907_projection_accepted_endpoint_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc5907_projection_freeze_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc7331_expdisk_vertical_outer_warp_mixed_accepted_endpoint_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc7331_expdisk_vertical_outer_warp_mixed_formula_freeze_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc7331_fractional_onset_v2_replay_freeze_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc7331_fractional_warp_onset_source_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_ngc7331_outer_warp_vertical_caveat_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_projection_scale_repair_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_readout_subfamily_missing_source_worklist.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_readout_subfamily_observable_intake.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_readout_subfamily_selection_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_readout_subfamily_source_citation_ledger.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_readout_subfamily_source_evidence_matrix.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_closure_source_generalization_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_conditional_promotion_requirements.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_direct_source_native_acquisition_manifest.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_holdout_repair_review_packet.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_kernel_observable_fill.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_kernel_ready_promotion_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_literature_kernel_source_hits.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc2683_flare_profile_mapping_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_asymptotic_carrier_dominance_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_bi_coefficient_freeze_rule.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_bi_coefficient_rule_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_bi_sharp_coefficient_bound_rule.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_channel_map_digitization_protocol.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_channel_map_digitization_worksheet.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_closure_functional_requirement_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_cross_term_suppression_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_digitization_target_manifest.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_endpoint_fit_diagnostic.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_epsilon_cross_bound_expression_shell.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_epsilon_cross_input_review_packet.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_epsilon_cross_locality_bound_rule.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_epsilon_cross_source_bound_protocol.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_filled_warp_closure_mapping.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_first_pass_source_response_fill.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_h4_interaction_context_review.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_kernel_to_velocity_normalization_candidate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_memory_history_proxy_protocol.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_minimal_euler_ansatz_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_multiplicative_coupling_separability_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_physical_normalization_law_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_qwarp_measurement_protocol.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_readout_preflight_profile.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_readout_promotion_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_scale_uniqueness_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_source_response_independent_review.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_target_functional_origin_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_tau_side_scale_derivation_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_tau_side_scale_selection_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_warp_asymmetry_extraction_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_warp_closure_mapping_rule.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_warp_onset_extraction_protocol.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_warp_prekernel_observables.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_ngc4088_xw_conversion_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_promoted_kernel_observable_fill.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_promotion_theorem_skeletons.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_remaining_kernel_acquisition_ledger.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_source_rich_lane_action_plan.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_tail_rhi_promotion_attempt.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_s4g75_vertical_source_search_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_source_native_orientation_promotion_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_tau_side_evidence_measure_gate.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/build_tau_side_source_normalization_derivation_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/download_readout_subfamily_external_sources.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/extract_readout_subfamily_observables.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_inclusion_lane_endpoint_analysis.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_l2_weight_intake_endpoint_preflight.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_mixed_readout_population_control_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_mixed_readout_population_endpoint.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_morphology_information_gain_test.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_ngc4013_expdisk_warp_vertical_overlay_diagnostic.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_ngc4013_expdisk_wvo_frozen_protocol_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_ngc4013_warp_vertical_overlay_control_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_ngc4013_warp_vertical_overlay_endpoint.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_ngc4013_warp_vertical_overlay_radial_zone_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_ngc4088_warp_history_accepted_endpoint.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_ngc5907_accepted_endpoint_control_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_ngc5907_expdisk_projection_mixed_accepted_endpoint.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_ngc5907_projection_accepted_endpoint.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_ngc5907_projection_dominated_endpoint_diagnostic.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_ngc5907_projection_radial_zone_audit.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_ngc7331_expdisk_vertical_outer_warp_mixed_accepted_endpoint.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_s4g75_filled_kernel_endpoint_stress_test.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_s4g75_ngc2683_flare_closure_source_prototype.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_s4g75_ngc2683_hr_profile_kernel_prototype.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_s4g75_ngc2683_profile_aware_kernel_preflight.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_s4g75_promoted_kernel_endpoint_stress_test.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_s4g75_scale_source_subset_endpoint_stress_test.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_tau_side_evidence_measure_l2_endpoint.py,stage_code_tests,stage,reproducible pipeline code and tests
+??,scripts/run_tau_side_source_normalized_l2_endpoint.py,stage_code_tests,stage,reproducible pipeline code and tests

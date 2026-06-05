@@ -1,0 +1,6 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,claim_boundary
+NGC5907,AEG1_ACCEPTED_SOURCE_SUBFAMILY,PASS,ACCEPTED_SUBFAMILY_SOURCE_FIELDS_ENDPOINT_STILL_BLOCKED,none for NGC5907 source-field endpoint eligibility,True,ngc5907_projection_accepted_endpoint_freeze_gate_not_score
+NGC5907,AEG2_SOURCE_FROZEN_PROJECTION_PROTOCOL,PASS,PROJECTION_PROTOCOL_BOUND_READY_NOT_ENDPOINT,none; scoring must use this frozen protocol unchanged,True,ngc5907_projection_accepted_endpoint_freeze_gate_not_score
+NGC5907,AEG3_FORMULA_FREEZE_BEFORE_SCORING,PASS,formula/sign/amplitude/window are written in the freeze manifest before endpoint scoring,"future endpoint runs must read this manifest, not infer formula from v_obs",True,ngc5907_projection_accepted_endpoint_freeze_gate_not_score
+NGC5907,AEG4_ENDPOINT_BLIND_CONSTRUCTION,PASS,"construction inputs are source fields, direct kernel observables, and the predeclared TPG carrier",v_obs may be read only by the separate scoring script,True,ngc5907_projection_accepted_endpoint_freeze_gate_not_score
+NGC5907,AEG5_NO_RETUNING_RULE,PASS,posthoc_retuning_allowed=False; amplitude is gamma_proj=0.5*Pi_projection*h_over_r,"changing sign, amplitude, carrier, or window after scoring demotes the row to diagnostic",True,ngc5907_projection_accepted_endpoint_freeze_gate_not_score

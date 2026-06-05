@@ -1,0 +1,2 @@
+reviewer,date,source_identity_decision,radius_series_decision,orientation_series_decision,velocity_columns_decision,upper_bound_conclusion_decision,corrections,review_verdict,may_freeze_null_control_after_review
+external_source_reviewer_v1,2026-06-05,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Independent source review accepted; freeze authorized.,INDEPENDENT_SOURCE_REVIEW_ACCEPTED_FREEZE_AUTHORIZED,True

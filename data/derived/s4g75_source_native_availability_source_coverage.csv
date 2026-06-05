@@ -1,0 +1,5 @@
+source_column,positive_status,n_positive,n_total,positive_fraction,claim_boundary
+s4g_match_status,S4G_MATCHED,15,15,1.0,s4g75_source_native_availability_audit_not_endpoint
+dustpedia_status,DUSTPEDIA_MATCHED,3,15,0.2,s4g75_source_native_availability_audit_not_endpoint
+phangs_status,PHANGS_PUBLIC_SAMPLE_MATCH,0,15,0.0,s4g75_source_native_availability_audit_not_endpoint
+SPARC_RHI,RHI_kpc_positive,14,15,0.9333333333333333,s4g75_source_native_availability_audit_not_endpoint

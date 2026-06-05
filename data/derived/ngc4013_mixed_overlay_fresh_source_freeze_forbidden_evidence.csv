@@ -1,0 +1,2 @@
+evidence_id,evidence_lane,source_field,source_value,pass_status,interpretation,galaxy,claim_boundary
+E8_DIAGNOSTIC_RMSE_SIGNAL,forbidden_label_input,mixed diagnostic score,mixed RMSE=10.6148,RECORDED_FOR_MOTIVATION_ONLY,"can motivate a future source-blind rule, but cannot itself justify the mixed label",NGC4013,ngc4013_mixed_overlay_fresh_source_freeze_review_not_endpoint

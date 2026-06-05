@@ -1,0 +1,10 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,claim_boundary
+NGC4088,DIMENSIONAL_CONSISTENCY,PASS,candidate maps a dimensionless source basis into delta v^2 units,none at dimensional-audit level,False,s4g75_ngc4088_physical_normalization_law_gate_not_endpoint
+NGC4088,PREFACTOR_REPRODUCED,PASS,normalization_prefactor = x_w * Vflat^2 for sigma=q=1,derive why this product is physically selected,False,s4g75_ngc4088_physical_normalization_law_gate_not_endpoint
+NGC4088,SOURCE_ONSET_SUPPRESSION,PASS,delta v^2 vanishes at and inside the measured source onset,independent onset review remains separate,False,s4g75_ngc4088_physical_normalization_law_gate_not_endpoint
+NGC4088,POSITIVE_WARP_ORIENTATION,PASS,candidate warp/asymmetry contribution is nonnegative in this orientation,derive orientation sign from Tau-side readout geometry,False,s4g75_ngc4088_physical_normalization_law_gate_not_endpoint
+NGC4088,RESIDUAL_BLIND_EXPORT,PASS,candidate profile generation uses no observed velocity or endpoint score,keep endpoint scoring in a separate frozen protocol,False,s4g75_ngc4088_physical_normalization_law_gate_not_endpoint
+NGC4088,FORMULA_LEVEL_CANDIDATE,FORMULA_CONDITIONAL,candidate formula is executable and dimensionally consistent,not yet a Tau-side physical normalization law,False,s4g75_ngc4088_physical_normalization_law_gate_not_endpoint
+NGC4088,TAU_SIDE_VARIATIONAL_OR_CLOSURE_DERIVATION,BLOCKED,no derivation yet selects x_w Vflat^2 as the unique closure-readout scale,derive from Tau-side closure/readout principle or predeclare as theory axiom,False,s4g75_ngc4088_physical_normalization_law_gate_not_endpoint
+NGC4088,SCALE_UNIQUENESS,BLOCKED,other residual-blind scales could be considered without overfitting,show this scale beats alternatives by theory criteria before endpoint use,False,s4g75_ngc4088_physical_normalization_law_gate_not_endpoint
+NGC4088,POPULATION_TRANSFER,BLOCKED,normalization is currently one-galaxy source-filled,repeat on a predeclared warp/asymmetry source-rich sample,False,s4g75_ngc4088_physical_normalization_law_gate_not_endpoint

@@ -1,0 +1,8 @@
+variant_id,variant_role,proxy_gate,missing_gate,sign_K_compact_finite,sign_K_scale_tail_spiral,sign_K_exponential_disk,sign_K_thick_flared,selection_policy,claim_boundary
+primary_proxy_gate_0p35,primary_formula_conditional_candidate_from_derivation_manifest,0.35,0.0,1.0,1.0,-1.0,-1.0,predeclared_sensitivity_audit_not_endpoint_selection,tau_side_source_normalization_sensitivity_not_model_selection
+no_proxy_gate_0p00,accepted_source_only_control,0.0,0.0,1.0,1.0,-1.0,-1.0,predeclared_sensitivity_audit_not_endpoint_selection,tau_side_source_normalization_sensitivity_not_model_selection
+weak_proxy_gate_0p20,proxy_gate_sensitivity,0.2,0.0,1.0,1.0,-1.0,-1.0,predeclared_sensitivity_audit_not_endpoint_selection,tau_side_source_normalization_sensitivity_not_model_selection
+strong_proxy_gate_0p50,proxy_gate_sensitivity,0.5,0.0,1.0,1.0,-1.0,-1.0,predeclared_sensitivity_audit_not_endpoint_selection,tau_side_source_normalization_sensitivity_not_model_selection
+full_proxy_gate_1p00,proxy_gate_stress_control,1.0,0.0,1.0,1.0,-1.0,-1.0,predeclared_sensitivity_audit_not_endpoint_selection,tau_side_source_normalization_sensitivity_not_model_selection
+all_positive_orientation,orientation_control,0.35,0.0,1.0,1.0,1.0,1.0,predeclared_sensitivity_audit_not_endpoint_selection,tau_side_source_normalization_sensitivity_not_model_selection
+all_negative_orientation,orientation_control,0.35,0.0,-1.0,-1.0,-1.0,-1.0,predeclared_sensitivity_audit_not_endpoint_selection,tau_side_source_normalization_sensitivity_not_model_selection

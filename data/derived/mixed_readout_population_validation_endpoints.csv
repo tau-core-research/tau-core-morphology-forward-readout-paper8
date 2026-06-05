@@ -1,0 +1,6 @@
+endpoint_id,definition,pass_condition,status,claim_boundary
+DELTA_MIXED_PURE,mean or median RMSE(best pure carrier/overlay control) - RMSE(matched mixed readout),> 0 on predeclared mixed source-rule-positive cases,NOT_RUN_POPULATION_ENDPOINT,mixed_readout_population_validation_gate_not_endpoint
+DELTA_MIXED_WRONG,RMSE(wrong-family mean) - RMSE(matched mixed readout),> 0 and correct family rank improves,NOT_RUN_POPULATION_ENDPOINT,mixed_readout_population_validation_gate_not_endpoint
+SHUFFLED_MIXED_NULL,matched-vs-shuffled improvement under randomized mixed labels,predeclared matched labels beat shuffled/null labels,NOT_RUN_POPULATION_ENDPOINT,mixed_readout_population_validation_gate_not_endpoint
+BASELINE_COMPETITIVENESS,"mixed readout versus Newtonian, MOND/RAR proxy, TPG/v6/RMOND-facing proxy",reported with caveats; no universal superiority claim unless population endpoint passes,NOT_RUN_POPULATION_ENDPOINT,mixed_readout_population_validation_gate_not_endpoint
+NON_MIXED_NEGATIVE_CONTROL,apply mixed formula only as forbidden/control lane to non-mixed source-rule-negative galaxies,mixed improvement is not systematic in non-mixed controls,NOT_RUN_POPULATION_ENDPOINT,mixed_readout_population_validation_gate_not_endpoint

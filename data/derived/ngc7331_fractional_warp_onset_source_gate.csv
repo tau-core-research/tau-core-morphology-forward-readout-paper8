@@ -1,0 +1,4 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC7331,N7331_FW_G1_SOURCE_STATEMENT_PRESENT,PASS,Bosma/NED states NGC7331 warp starts at 0.5 times the Holmberg radius,none at source-statement level,False,False,ngc7331_fractional_warp_onset_source_gate_not_endpoint
+NGC7331,N7331_FW_G2_KPC_CONVERSION_AVAILABLE,PASS_CAVEATED,0.5*R_Ho=3.375 arcmin; SPARC D=14.700 Mpc gives R_onset=14.432 kpc,conversion depends on pairing the Bosma Holmberg size with the SPARC distance,False,False,ngc7331_fractional_warp_onset_source_gate_not_endpoint
+NGC7331,N7331_FW_G3_ENDPOINT_PROTOCOL_BOUNDARY,BLOCKED_REPLAY_REQUIRED,accepted NGC7331 V1 endpoint was already scored with broad Rdisk-to-RHI window,use this onset only in a predeclared V2 replay/holdout or future endpoint,False,False,ngc7331_fractional_warp_onset_source_gate_not_endpoint

@@ -1,0 +1,6 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,BF1_SOURCE_REVIEW_AUTHORIZED,PASS,SOURCE_RESPONSES_ACCEPTED_FOR_PROTOCOL_BOUND,preserve caveated source-review status,False,False,s4g75_ngc4088_bi_coefficient_freeze_rule_not_endpoint
+NGC4088,BF2_DIMENSIONLESS_FEATURE_DOMAIN,PASS,"all f_i are normalized dimensionless features in [0,1]",preserve feature clipping and units,False,False,s4g75_ngc4088_bi_coefficient_freeze_rule_not_endpoint
+NGC4088,BF3_UNIT_LIPSCHITZ_BOUND_RULE,PASS,"B_i=1 is a conservative triangle-bound coefficient, not an endpoint fit",replace with sharper Tau-side derivation when available,False,False,s4g75_ngc4088_bi_coefficient_freeze_rule_not_endpoint
+NGC4088,BF4_ENDPOINT_BLINDNESS,PASS,freeze rule forbids vobs and endpoint residuals,keep endpoint tests separate,False,False,s4g75_ngc4088_bi_coefficient_freeze_rule_not_endpoint
+NGC4088,BF5_COEFFICIENT_FREEZE_AUTHORIZATION,PASS,four B_i coefficients frozen at 1 under the protocol rule,evaluate epsilon_cross as protocol upper bound,False,False,s4g75_ngc4088_bi_coefficient_freeze_rule_not_endpoint

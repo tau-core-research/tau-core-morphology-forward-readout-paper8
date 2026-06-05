@@ -1,0 +1,2 @@
+galaxy,component_id,component_symbol,reviewed_component_value,review_uncertainty,review_status,review_basis,review_caveat,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,H4_INTERACTION_CONTEXT,h_env,1.0,0.15,ACCEPTED_FOR_PROTOCOL_NUMERIC_BOUND,"residual-blind literature review of NGC4088 distortion, asymmetric warp, and companion/context evidence",source-history proxy only; not endpoint validation and not a claim of a unique dynamical cause,False,False,s4g75_ngc4088_h4_interaction_context_review_not_endpoint

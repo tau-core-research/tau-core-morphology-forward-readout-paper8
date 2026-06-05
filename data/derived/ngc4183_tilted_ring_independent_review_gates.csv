@@ -1,0 +1,3 @@
+gate_id,gate_status,evidence,formula_freeze_allowed,endpoint_scores_allowed,remaining_obligation,claim_boundary
+N4183_REVIEW_G1_PACKET_CREATED,PASS,"profile, source excerpt, and response template written",False,False,independent response required,ngc4183_tilted_ring_independent_review_packet_not_endpoint
+N4183_REVIEW_G2_FREEZE_ALLOWED,BLOCKED,independent review response is present but freeze remains separate,False,False,review intake determines whether source-only acceptance or freeze authorization applies,ngc4183_tilted_ring_independent_review_packet_not_endpoint

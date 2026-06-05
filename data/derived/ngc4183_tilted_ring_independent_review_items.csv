@@ -1,0 +1,6 @@
+review_item,field_or_range,current_value,review_question,required_response
+source_identity,Verheijen & Sancisi 2001 / NGC4183 / Table 4,local PDF + OCR cache,Does the cited table block correspond to NGC4183 tilted-ring rows?,accept/reject/correct
+radius_series,radius_arcsec,"10..241 arcsec, n=23","Are all radial rings transcribed correctly, including 229 and 241 arcsec rows?",accept/reject/correct
+orientation_series,"inclination_deg, pa_deg",i=82..82 deg; PA=346..349 deg,Is the near-constant i=82 deg and PA=346..349 deg transcription correct?,accept/reject/correct
+velocity_columns_not_endpoint,Vrot app/rec/ave,transcribed for source consistency only,Do not use Vrot columns for residual fitting; only confirm table transcription.,accept/reject/correct
+upper_bound_conclusion,gamma_proj upper bound,0.00269837,"If orientation series is accepted, does the weak-control conclusion follow?",accept/reject/correct

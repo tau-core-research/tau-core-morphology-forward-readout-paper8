@@ -1,0 +1,11 @@
+galaxy,branch_id,epsilon_cross_scenario,lambda_multiplier,min_corrected_delta_v2,max_corrected_delta_v2,max_abs_cross_increment_v2,max_leading_delta_v2,sign_flip_possible,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,p1,-0.6874999999999999,0.3125000000000001,0.0,2475.350610396662,5445.771342872653,7921.121953269315,False,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint
+NGC4088,p1,-0.34374999999999994,0.65625,0.0,5198.2362818329875,2722.8856714363264,7921.121953269315,False,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint
+NGC4088,p1,0.0,1.0,0.0,7921.121953269315,0.0,7921.121953269315,False,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint
+NGC4088,p1,0.34374999999999994,1.34375,0.0,10644.007624705642,2722.8856714363264,7921.121953269315,False,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint
+NGC4088,p1,0.6874999999999999,1.6875,0.0,13366.893296141969,5445.771342872653,7921.121953269315,False,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint
+NGC4088,p2,-0.6874999999999999,0.3125000000000001,0.0,2384.5343293713026,5245.975524616863,7630.509853988166,False,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint
+NGC4088,p2,-0.34374999999999994,0.65625,0.0,5007.522091679733,2622.9877623084317,7630.509853988166,False,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint
+NGC4088,p2,0.0,1.0,0.0,7630.509853988166,0.0,7630.509853988166,False,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint
+NGC4088,p2,0.34374999999999994,1.34375,0.0,10253.497616296598,2622.9877623084317,7630.509853988166,False,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint
+NGC4088,p2,0.6874999999999999,1.6875,0.0,12876.48537860503,5245.975524616863,7630.509853988166,False,False,False,s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit_not_endpoint

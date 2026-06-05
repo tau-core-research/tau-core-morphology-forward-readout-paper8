@@ -1,0 +1,1232 @@
+MNRAS 493, 2618–2631 (2020)
+
+doi:10.1093/mnras/staa415
+
+Advance Access publication 2020 February 12
+
+A 5◦ × 5◦ deep H I survey of the M81 group − II. H I distribution and
+kinematics of IC 2574 and HIJASS J1021+68
+A. Sorgho ,1‹ L. Chemin,2 Z. S. Kam,3 T. Foster4,5 and C. Carignan1,3
+1 Department of Astronomy, University of Cape Town, Private Bag X3, Rondebosch 7701, South Africa
+2 Centro de Astronomı́a (CITEVA), Universidad de Antofagasta, Avenida Angamos 601, Antofagasta, Chile
+3 Laboratoire de Physique et de Chimie de l’Environnement, Observatoire d’Astrophysique de l’Université Joseph Ki-Zerbo (ODAUO), 03 BP 7021 Ouaga
+
+03, Burkina Faso
+4 Dominion Radio Astrophysical Observatory, P.O. Box 248, Penticton, BC V2A 6J9, Canada
+5 Department of Physics & Astronomy, Brandon University, Brandon, MB R7A 6A9, Canada
+
+ABSTRACT
+
+We analyse the eastern region of a 5◦ × 5◦ deep H I survey of the M81 group containing the
+dwarf galaxy IC 2574 and the H I complex HIJASS J1021+68, located between the dwarf and
+the M81 system. The data show that IC 2574 has an extended H I envelope that connects to
+HIJASS J1021+68 in the form of a collection of small clouds, but no evident connection has
+been found between IC 2574 and the central members of the M81 group. We argue, based
+on the morphology of the clouds forming HIJASS J1021+68 and its velocity distribution,
+that the complex is not a dark galaxy as previously suggested, but is instead a complex of
+clouds either stripped from, or falling on to the primordial H I envelope of IC 2574. We also
+use the deep H I observations to map the extended H I envelope around IC 2574 and, using
+a 3D tilted-ring model, we derive the rotation curve of the galaxy to a larger extent than has
+been done before. Combining the obtained rotation curve to higher resolution curves from the
+literature, we constrain the galaxy’s dark matter halo parameters.
+Key words: galaxies: evolution – galaxies: groups: general – galaxies: individual: IC 2574 –
+galaxies: interactions – galaxies: ISM – galaxies: kinematics and dynamics.
+
+1 I N T RO D U C T I O N
+The most widely accepted models of galaxy formation, the standard
+lambda cold dark matter (CDM) and the hierarchical clustering
+model, predict that massive early-type galaxies form through
+mergers of smaller, late-type galaxies (e.g. Peebles 1965; Press &
+Schechter 1974; Searle & Zinn 1978; Blumenthal et al. 1984).
+More generally, the hierarchical clustering scenario predicts that the
+smallest dark matter (DM) haloes form first, and later merge to form
+larger structures, ranging from spiral galaxies to galaxy clusters
+(bottom-up scenario). Although the predictions of the models are
+consistent with observations on scales of galaxy clusters, there tends
+to be a discrepancy on smaller scales. In fact, the models predict
+more abundant low-mass haloes, mostly in the form of satellites
+around giant spirals, than are revealed by observations (the socalled ‘missing satellites’ problem, Klypin et al. 1999; Moore et al.
+1999). Furthermore, it has been suggested that high velocity clouds
+(HVCs), or at least one of their components (the so-called compact
+HVCs or CHVCs), might be the gaseous counterparts of low-mass
+dark matter satellites (Blitz et al. 1999; Braun & Burton 1999). This
+
+ E-mail: sorgho@ast.uct.ac.za
+
+implies that numerous low column density gas clouds have yet to
+be detected in the local environment.
+Over the past few years, effort has gone into mapping the low
+column density H I clouds both in the vicinity of nearby galaxies
+and in galaxy groups (see e.g. Braun, Thilker & Walterbos 2003;
+Braun & Thilker 2004; Chynoweth et al. 2008; Westmeier, Brüns &
+Kerp 2008; Westmeier, Koribalski & Braun 2013; Pisano 2014), in
+the hope of revealing a more complete picture of the distribution of
+the faint gas in the local Universe. Although several observational
+campaigns were successful in revealing faint neutral gas clouds,
+it was often found that limitations of the currently available
+instruments (such as poor resolution) could lead to an inaccurate
+picture of the H I distribution (e.g. the M31–M33 H I filament,
+Wolfe et al. 2013). With the advent of the Square Kilometre Array
+precursor telescopes such as MeerKAT (Camilo et al. 2018) and
+ASKAP (Johnston et al. 2007), the quality of H I mapping of largescale structures is expected to improve, with upcoming observations
+combining high resolutions, high sensitivities and large fields of
+view. For example, MeerKAT’s MHONGOOSE survey (de Blok
+et al. 2018) aims to investigate cold gas accretion in isolated galaxies
+by mapping their H I to very low column densities.
+In galaxy groups, intergalactic H I clouds in the form of tidal
+streams and tails are usually produced by interaction between
+galaxies (e.g. Yun, Ho & Lo 1993; Walter et al. 2002; Putman
+
+ 2020 The Author(s)
+C
+Published by Oxford University Press on behalf of the Royal Astronomical Society
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+Accepted 2020 February 9. Received 2020 February 7; in original form 2019 April 15
+
+H I distribution and kinematics of IC 2574 and HIJASS J1021+68
+
+2 O B S E RVAT I O N S A N D DATA R E D U C T I O N
+The observations were conducted in 2016/2017 using the DRAO
+telescope, and are extensively described in Paper I. 20 different
+fields covering the IC 2574 galaxy, M81 and its interacting counterparts M82 and NGC 3077, and NGC 2976 were observed for 144 h
+each during the observational campaign, for a total of nearly 3000 h
+in total. To further increase the sensitivity of the data in certain key
+areas such as the regions containing, respectively, the M81 triplet
+and IC 2574, 10 additional fields were retrieved from the DRAO
+archive and added to the observations, bringing the total number of
+fields to 30. These fields were included in the mosaic presented in
+Paper I. Moreover, 8 additional fields centred on the region around
+IC 2574 were recently observed and added to the initial data, and
+therefore the final data set comprises 38 fields, for a total of 5472 h
+of observation. The fields were calibrated, reduced, and processed
+individually before being combined into a single mosaic of 1024 ×
+1024 × 256 pixels in size, with spatial and spectral pixel widths of
+
+20 arcsec and 3.3 km s−1 , respectively. Because of the limitation
+of the DRAO as an interferometer when it comes to accurately
+recover the fluxes of large-scale structures (in this case, structures
+larger than 56 arcmin), we have combined the data with EBHIS
+H I data (Winkel et al. 2016) to correct for the instrumental effect
+of missing the shortest spacings. The EBHIS data were obtained
+with the 100 m Effelsberg single-dish telescope, and were shown to
+present a good overlap with the DRAO data in the uv plane. The
+resulting data have a 1σ sensitivity of 2.7 mJy beam−1 around IC
+2574, for a spatial resolution of 61 arcsec × 59 arcsec and a spectral
+resolution of 5.2 km s−1 . In column density units, this is equivalent
+to 5.8 × 1018 cm−2 over 16 km s−1 and at a spatial resolution of
+1.2 kpc. To further increase the sensitivity of the observations, we
+smoothed the datacube down to a resolution of 108 arcsec × 108
+arcsec (or 2.1 kpc at the distance of IC 2574).
+The last step of the data processing consisted of subtracting the
+Milky Way H I emission from the IC 2574 emission. Because of the
+low systemic velocity of the galaxy, the data were contaminated
+by foreground Galactic H I emission. We adopted a technique
+similar to that described in Chemin, Carignan & Foster (2009),
+which consisted of subtracting a model of the Galactic emission
+from the data. The technique was successful in mitigating most
+of the foreground H I in the data. A complete description of
+the observations, the calibration, and post-calibration processing
+procedures can be found in Paper I. The smoothed cube, which is
+used in this work, has a 1σ noise level of 2.4 × 1018 cm−2 (around
+IC 2574) over 16 km s−1 and a spatial resolution of 2.1 kpc (at the
+distance of IC 2574).
+3 H I P RO P E RT I E S
+3.1 H I emission in the M81 group
+In the top panel of Fig. 1, we present a total H I map of the entire
+M81 region observed. This is an updated version of the map in fig. 6
+of Paper I, including the new observations in the region of IC 2574.
+Numerous clouds are detected in the neighbourhood of IC 2574 and
+around M81, but nothing seems to exist in between the two systems.
+To further verify that, we took a position-velocity (PV) slice in the
+space between, and connecting HIJASS J1021+68 to NGC 3077.
+The bottom panel of the figure shows the corresponding PV diagram,
+in which no apparent cloud is seen except for a few structures
+detected at a low column density level. These faint structures, mostly
+only detected above the 2σ flux level, are rather scarce in the region
+and do not present extended H I distributions.
+As shown in Table 2, the H I clouds surrounding IC 2574 are lowmass objects, with masses between 106 and 107 M . These clouds
+are mostly complexes of discrete clumps, whose main members’
+coordinates are given in the Table 2. Cloud 8 is an extension of IC
+2574’s extended H I envelope, with an H I mass of 1.5 × 107 M .
+The table also contains an update on the H I mass of the different
+clouds of HIJASS J1021+68, whose total mass amounts to 8.5 ×
+107 M . This is more than twice what was measured earlier in
+Paper I, and nearly thrice the quoted HIJASS value (Boyce et al.
+2001). The properties of the H I clouds surrounding the central M81
+members were given in Paper I, and since the sensitivity of the data
+in this region has not changed, we will not discuss these here.
+3.2 H I emission in IC 2574
+In the following, we consider a subcube, only including the region
+containing IC 2574 and HIJASS J1021+68. The benefit of this
+MNRAS 493, 2618–2631 (2020)
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+et al. 2003). It is also believed that some HVCs are the remnants
+of galaxy formation that are currently being accreted on to galaxies
+(see Maller & Bullock 2004), or a result of a galactic fountain (see
+Wakker & van Woerden 1997, for a review). Their existence in the
+surroundings of galaxies therefore gives insights into the formation
+processes of large-scale structures.
+Using the DRAO telescope (Landecker et al. 2019), we have
+mapped, to a high column density sensitivity, a 5◦ × 5◦ region of
+the M81 group covering the M81 interacting system (M81, M82,
+and NGC 3077), NGC 2976 and IC 2574 (Sorgho et al. 2019b,
+hereafter Paper I) during ∼3000 h of observation. The observations
+allowed us to (i) map the H I arm connecting the M81 system and
+NGC 2976, (ii) resolve the H I clouds adjacent to the arm, and also
+(iii) resolve, for the first time, the HIJASS J1021+68 cloud located
+west of IC 2574 (see fig. 6 of Paper I). In this second paper of the
+series, we focus on the subset of the observations data covering
+IC 2574 (optical properties in Table 1) and HIJASS J1021+68
+– both located in the M81 group and at a distance of ∼4 Mpc
+(Karachentsev et al. 2002b) – and perform additional observations
+to increase the sensitivity of the data in the region. As a dwarf galaxy
+presenting a slowly rising rotation curve (as compared to massive
+spirals), IC 2574 is an interesting object to study in the context
+of understanding the dark matter (DM) distribution in galaxies. In
+fact, several observational studies have shown that late-type dwarf
+galaxies are usually best described by a cored profile (e.g. Flores &
+Primack 1994; Moore 1994; de Blok et al. 2001; Swaters et al. 2003;
+Oh et al. 2011), that is, their DM haloes are better characterized by
+an approximately constant density core. This is in contrast with
+the CDM model, which predicts a steeply cusped DM density
+distribution (Dubinski & Carlberg 1991; Navarro, Frenk & White
+1996, 1997; Moore et al. 1999). A review of this discrepancy
+between observations and the model, known as the ‘cusp–core’
+problem, is given in de Blok (2010).
+We present both the extended emission around IC 2574, and a
+kinematical analysis of its H I gas. We take advantage of the high
+column density sensitivity of the observations to extend the rotation
+curves of the galaxy found in the literature. We also present and
+discuss the H I distribution and kinematics of HIJASS J1021+68.
+The paper is organized as follows: in Section 2, we summarize the
+observations and the data reduction method and present the global
+H I profiles and moment maps of the galaxy in Section 3. We next
+derive its rotation curve and construct its mass models in Section 4,
+and summarize the results in Section 5.
+
+2619
+
+2620
+
+A. Sorgho et al.
+
+Table 1. Optical parameters of IC 2574. References: a RC3 catalogue (de
+Vaucouleurs et al. 1991); b Karachentsev et al. (2002a); c Karachentsev et al.
+(2004); d Derived from a WISE photometry (Jarrett et al., in preparation);
+e Salo et al. (2015); f Appleton, Davies & Stephenson (1981).
+Parameter
+RA (J2000) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Dec. (J2000) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Morphological typea . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Distanceb . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Optical 25th mag. diametersc . . . . . . . . . . . . . . . . . . . . .
+Total B Magnitudec . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Stellar massd . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Inclinatione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Position anglef . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+MNRAS 493, 2618–2631 (2020)
+
+Value
+10h28m23s.5
+
+68◦ 24 43. 7
+SABm
+4.02 Mpc
+13 .2 × 5 .4
+10.84 mag
+0.4 × 109 M
+75◦
+50◦
+
+is that it not only allows a faster processing of the data, but it
+also allows one to focus on the features associated with the two
+objects. The global H I profile of IC 2574, computed by integrating
+the H I emission inside the H I radius (see below) of the galaxy,
+is presented in Fig. 2. The total H I line flux measured for the
+galaxy is 367 ± 21 Jy km s−1 , which corresponds to an H I
+mass of (1.4 ± 0.1) × 109 M . For comparison, the H I flux of
+the galaxy published in Martimbeau, Carignan & Roy (1994) and
+derived using the WSRT (Westerbork Synthesis Radio Telescope)
+is 286 Jy km s−1 , i.e. ∼22 per cent lower than the flux derived
+in this work. The relatively high-H I mass of IC 2574 makes the
+dwarf a gas rich galaxy, with a gas fraction of 3.5 ± 0.1. The
+systemic velocity of the galaxy derived from the H I profile is
+49.5 ± 0.8 km s−1 , with a velocity width measured at 50 per cent
+of the peak intensity of 106.7 ± 5.3 km s−1 . The profile shows that
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+Figure 1. Top: H I total intensity map of the M81 region (blue contours) overlaid on a WISE W1 greyscale image. The labelled ellipses show the H I clouds
+surrounding IC 2574, whose H I masses are given in Table 2. The orange band shows the orientation of the PV slice of the diagram in the bottom panel, the
+orange shaded area indicating the width of the slice (22.5 arcmin). Contours are 1, 2, 4, ..., 128 × 1019 cm−2 . The blue circle at the bottom left corner of this
+and all subsequent figures where this appears corresponds to the size of the synthesized beam (1.8 arcmin) of the data. Bottom: PV diagram extracted along the
+dashed line of the top panel. The structures on the left of the diagram show the HIJASS J1021+68 complex of gas while the concentration on the right shows
+part of NGC 3077. The contours show the 2σ , 3σ , and 5σ levels.
+
+H I distribution and kinematics of IC 2574 and HIJASS J1021+68
+
+2621
+
+Table 2. H I mass of the clouds detected in the neighbourhood of IC 2574.
+The IDs of the clouds correspond to their labels in Fig. 1, and EC, CC, SC,
+and WC designate, respectively, the eastern, central (including northern),
+southern, and western components of the HIJASS J1021+68 H I complex.
+The coordinates of the clouds (except for EC and CC) in columns 2 and 3
+are those of the centres of the ellipses in Fig. 1.
+RA (J2000)
+
+Dec. (J2000) SH I (Jy km s−1 ) MH I (107 M )
+
+EC
+CC
+SC
+WC
+1
+2
+3
+4
+5
+6
+7
+8
+
+10:23:06.2
+10:20:24.9
+10:19:42.3
+10:17:51.2
+10:23:20.4
+10:25:21.9
+10:24:46.4
+10:24:20.4
+10:28:00.5
+10:31:29.1
+10:31:46.8
+10:28:52.0
+
+68:41:00.9
+68:41:50.2
+68:27:22.0
+68:49:27.4
+68:04:37.2
+68:08:17.8
+68:12:59.1
+68:29:00.5
+68:40:46.3
+68:51:40.4
+68:07:00.5
+68:06:14.9
+
+4.59
+16.8
+0.23
+0.36
+0.61
+0.41
+0.70
+0.59
+0.36
+0.66
+0.98
+3.98
+
+1.73
+6.34
+0.09
+0.36
+0.23
+0.15
+0.26
+0.22
+0.13
+0.25
+0.37
+1.50
+Figure 3. H I surface density profile of IC 2574 obtained by averaging
+the emission enclosed in annuli. The dashed and dash–dotted vertical lines
+represent, respectively, the optical radius measured at the 25th B magnitude
+and the H I radius measured at 1 M pc−2 .
+
+Figure 2. The global H I profile of IC 2574 (full line) and HIJASS J1021+21
+(dashed line). The grey areas show the velocity ranges that are contaminated
+by foreground emission.
+
+the galaxy is quite asymmetric, with more H I flux residing on its
+approaching (southwestern) side than on the receding (northeastern)
+side. The foreground Galactic H I mainly affects the rising part of
+the approaching side, but the shape of the profile shows that the
+Milky Way subtraction procedure successfully removed most of the
+contamination. In Fig. 3, we show the H I surface density profile of
+the galaxy, from which we derive an H I diameter of 20.8 arcmin
+(or 24.4 kpc) at the 1 M pc−2 isophote.
+We present in Fig. 4, the total H I intensity (zeroth moment)
+map of IC 2574 obtained from the 1.8 arcmin (2.1 kpc) resolution
+datacube. In Fig. 5, we show the corresponding velocity field (first
+moment) and the velocity dispersion (second moment) maps. These
+moment maps were computed with the MOMENT task of MIRIAD
+using a mask previously created at a 5σ clipping level with the
+smooth and clip algorithm of SOFIA (Serra et al. 2015). We have
+constructed the mask such that the emission from the extended H I
+envelope of the galaxy (see Section 3.3) is excluded, and only
+the gas contributing to the rotation of the galaxy is accounted
+for. This implies that no spatial smoothing was performed on the
+
+Figure 4. Column density map of IC 2574 overlaid on a WISE W1 greyscale
+image. Contours are 1, 2, 4, . . . , 128 × 1019 cm−2 .
+
+datacube, and only a spectral smoothing to twice the channel width
+of the cube was done before the final mask was derived. More
+explicitly, this means that the mask used to compute the moment
+maps was obtained by combining two masks: one created from
+the original datacube, and the other at twice the original velocity
+resolution. Consistent with the maps presented in earlier works (e.g.
+Martimbeau et al. 1994; Walter & Brinks 1999; de Blok et al. 2008;
+Oh et al. 2008), the velocity maps in Fig. 5 show non-circular and
+random motions in the inner regions of the galaxy. These are likely
+the effects of the dynamics of the expanding H I shells and holes
+residing in the galaxy (Walter & Brinks 1999).
+3.3 Extended H I emission around IC 2574
+To get a full view of the extended H I envelope of IC 2574, we
+have built a mask that includes the faint emission around the
+galaxy. This was done by lowering the detection threshold to 4σ
+MNRAS 493, 2618–2631 (2020)
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+Cloud ID
+
+2622
+
+A. Sorgho et al.
+
+and expanding the number of smoothing kernels used to build
+the mask. The corresponding H I intensity map is presented in
+Fig. 6. To ensure that the emission in the envelope is not just
+an artefact or foreground emission from the Milky Way, we have
+extracted spectra in boxes taken inside and outside the envelope (see
+Fig. 6). The spectra show that: (i) most of the emission is located
+outside the velocity channels affected by Galactic emission, and
+(ii) a comparison with spectra outside the envelope shows that such
+emission is not seen everywhere around the galaxy. Furthermore, the
+velocity distribution in the envelope (Fig. 7) suggests that most of the
+low density gas, especially the southern and western concentrations,
+is broadly rotating with the galaxy. The extension to the south is
+more or less aligned with the minor axis of the galaxy, and the gas
+located in that region is at systemic velocities; the gas along the
+western edge sits on the approaching side of the galaxy, although
+there appears to be a gradient in its velocity distribution. This further
+supports the idea that the low-density gas detected around IC 2574
+forms an extended envelope around the galaxy.
+
+3.4 H I distribution in HIJASS J1021+68
+Located at approximately 54 kpc west of IC 2574, HIJASS
+J1021+68 is a complex of gas clouds previously identified as a dark
+galaxy in the HIJASS catalogue (Boyce et al. 2001). The complex
+is not much studied in the literature, and no stellar counterpart has
+been reported. Fig. 8 shows an H I map of the region containing
+IC 2574 and the gas complex. HIJASS J1021+68 appears to be a
+complex of two major clouds (denoted CC and EC in Fig. 1) and
+two minor clouds (SC and WC), with the central cloud (CC) being
+the largest component. Its total H I mass, as derived in Section 3.1,
+is 8.5 × 107 M . Its global H I profile is shown in Fig. 2, computed
+by integrating the emission from the whole complex. The systemic
+velocity and velocity width at 50 per cent of the peak intensity of
+HIJASS J1021+68 (including all components), derived from the
+global profile, are respectively 35.4 ± 2.9 and 30.8 ± 5.8 km s−1 .
+This shows that HIJASS J1021+68 has very little rotation (unless
+it is seen fortuitously almost face-on).
+In a search for a possible stellar counterpart for the gas complex,
+we collected and looked at images of the clouds in three different
+bands in the hope of finding a star-forming region or an associated
+stellar population. Fig. 9 shows the H I intensity map of the complex,
+overlaid on GALEX (Galaxy Evolution Explorer; Martin et al. 2005)
+far-UV, optical R band, and infrared WISE (Wright et al. 2010) W1
+images. The R-band image is a mosaic of four different image
+tiles taken from the PS1 (aka PanSTARRS1: Panoramic Survey
+MNRAS 493, 2618–2631 (2020)
+
+Telescope and Rapid Response System; Chambers et al. 2016;
+Flewelling et al. 2016) catalogue1 of images. At the spatial position
+of HIJASS J1021+68, none of the images present a structure
+that may be a possible counterpart to the complex. Considering
+the WISE image whose W1 band has a surface brightness noise
+of 23.2 mag arcsec−2 (0.16 μJy arcsec−2 ) per pixel (Jarrett et al.
+2012), and considering a minimum of 1000 pixels (the angular
+pixel size being 2.75 arcsec), we find that the upper limit of the
+noise in the image shown in the right-hand panel of Fig. 9 is
+about 0.015 μJy arcsec−2 (or 25.8 mag arcsec−2 ). Converting this
+surface brightness level to luminosities yields about 0.43 L pc−2 ,
+which corresponds to an upper limit on stellar mass of 1.4 × 105 M
+assuming a conservative mass-to-light ratio of 1 M /L . The nondetection of stellar counterparts down to this level most likely
+suggests that no star formation has taken place (yet) in the gas
+clouds. We also note that the dwarf galaxy survey centred on
+M81 by Chiboucas, Karachentsev & Tully (2009) – and followup in Chiboucas et al. (2013) – with the CFHT detected no stellar
+counterparts at the position of HIJASS J1021+68.
+4 H I K I N E M AT I C S
+4.1 Rotation curves of IC 2574
+4.1.1 Tilted-ring modelling
+Using the 3D tilted-ring model fitting tool 3D BAROLO (Di Teodoro &
+Fraternali 2015), we derived the rotation curve of the galaxy. Unlike
+the traditionally used ROTCUR (Begeman 1989) task in GIPSY (van
+der Hulst et al. 1992) which derives the rotation curve from the
+two-dimensional velocity field, 3D BAROLO takes as input the threedimensional H I datacube and fits a 3D tilted-ring model to it. In fact,
+because of the relatively low spatial resolution of the data (only ∼6
+beams across IC 2574), rotation curves derived from low-resolution
+velocity fields are generally sensitive to beam smearing effects,
+which tend to underestimate the velocities in the inner regions of
+galaxies (e.g. Swaters et al. 2009; Lelli, Fraternali & Sancisi 2010).
+However, the 3D fitting procedure was shown to be less sensitive
+to these effects, and describes more accurately the rising parts of
+rotation curves (e.g. Di Teodoro & Fraternali 2015; Sorgho et al.
+2019a).
+We supplied to the fitting program the MW-subtracted H I
+datacube of IC 2574 and the 5σ mask derived in Section 3.2
+1 Accessible via MAST: http://catalogs.mast.stsci.edu/
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+Figure 5. Heliocentric velocity (left) and velocity dispersion (right) maps of IC 2574.
+
+H I distribution and kinematics of IC 2574 and HIJASS J1021+68
+
+2623
+
+Figure 7. Velocity distribution including the H I envelope around IC 2574.
+
+with SOFIA, and provided the optical values of the inclination and
+position angle as initial guesses. As for the systemic velocity and the
+dynamical centre, we estimated the initial values from the velocity
+field in Fig. 5. We have run the program for the entire galaxy (both
+sides), allowing it to run twice: a first stage during which it allows
+all the kinematical parameters to vary, then performs a parameter
+regularization where the parameters are interpolated, and a second
+stage during which these parameters (except the rotation velocity)
+are kept fixed to the fitted values. The rings in the tilted-ring model
+
+were chosen to be 50 arcsec wide (i.e. about half the beam size)
+in the inner regions of the galaxy, and because of the non-regular
+shape of the object (see Fig. 5), a ring width of 100 arcsec was
+chosen in the outer regions. Also, 3D BAROLO lets the user choose
+the fitting function (polynomial or Bezier) for the inclination and
+the position angle, and a series of tests has shown that the best
+results are obtained with a third-order polynomial function.
+The dynamical centre and systemic velocity obtained from
+s 68◦ 25 39. 1) and
+the fit are, respectively, (α, δ) = (10h28m36.1,
+−1
+45.4 ± 0.7 km s . To ensure the consistency of these values, we
+have used ROTCUR to re-estimate these values from the velocity
+field in Fig. 5, and obtained the sensibly similar value – with
+an angular separation equivalent to one third of the synthesized
+beam – of (10h28m43s.3, 68◦ 25 34. 3) for the dynamical centre, but
+a higher value of 56.3 ± 2.1 km s−1 for the systemic velocity. This
+difference in systemic velocity values can however be attributed
+to the limited – spatial and mostly spectral – resolutions of the
+data. Indeed, the low-resolution velocity field of Fig. 5 puts little
+constraint on the two-dimensional tilted-ring model, as compared
+to the three-dimensional fit; and this, combined with the presence
+of asymmetric features such as non-circular and random motions
+are likely to affect the spectral position of the centre.
+Fixing the centre and systemic velocity of the galaxy to the above
+values derived with 3D BAROLO, we have run the program two
+more times to estimate the variation of both the position angle and
+inclination for the approaching and receding halves, respectively.
+These are shown in the left-hand panel of Fig. 10. Except for a few
+
+MNRAS 493, 2618–2631 (2020)
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+Figure 6. The extended H I envelope around IC 2574. The plots in the subpanels A, B, ..., H are the spectra (flux versus velocity) extracted in and outside
+the H I envelope at the positions delimited by boxes of corresponding names. The x-axis ticks of the plots are −150, −50, 50, and 150 km s−1 . The grey area
+shows the velocity range affected and processed for Galactic emission. The contours are 1, 2, 4, . . . , 128 × 1019 cm−2 .
+
+2624
+
+A. Sorgho et al.
+
+minor differences, we note a good agreement between the sides and
+the resultant model for the variations of both the inclination and the
+position angle. Indeed, we see that for all the three models, there is
+a slight decrease in the variation of the position angle with radius,
+while the inclination tends to be high (∼80◦ ) in the centre and in
+the outskirts of the galaxy, with the lowest values (∼70◦ ) found
+
+MNRAS 493, 2618–2631 (2020)
+
+in the region ∼4–10 kpc. This similarity in the variations of the
+models’ geometric parameters suggests a kinematical symmetry in
+the galaxy’s disc. In the right-hand panel of Fig. 10, we compare the
+tilted-ring model fits to the galaxy’s position angle and inclination
+to those found in the literature. While the variations of the position
+angle obtained in this work seem to agree – in the inner 10 kpc
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+Figure 8. Top: Total H I intensity map of the region covering IC 2574 and HIJASS J1021+68 (blue contours) overlaid on a WISE W1 (3.4 μm) greyscale
+image. The dashed line shows the PV slice of the diagram in the bottom panel (see Section 4.3) and the orange shaded area the width of the slice (15
+arcmin). The contours are 1, 2, 4, ..., 128 × 1019 cm−2 . Bottom: PV diagram of the region including IC 2574 (eastern structure) and HIJASS J1021+68 (the
+two westernmost concentrations). There exist several small blobs in the space between IC 2574 and HIJASS J1021+68 hinting at a real connection between
+the two bodies. The contours represent the 2σ , 3σ and 5σ flux levels, and the grey horizontal band delimited by two horizontal lines shows the velocity range
+that was affected by Galactic foreground H I emission. The labels EC, CC, and WC, respectively, denote the eastern, central (including the northern), and
+western clouds of HIJASS J1021+68. The southern cloud of the HIJASS complex is not covered by the slice used to obtain the PV diagram, and is therefore
+not included in the diagram.
+
+H I distribution and kinematics of IC 2574 and HIJASS J1021+68
+
+2625
+
+Figure 10. Left: Tilted-ring model fits to position angle, φ, and inclination, i, of IC 2574 obtained from the 3D BAROLO fitting program. The horizontal dashed
+line in the lower panel shows the 3.6 μm photometric inclination of the galaxy (Salo et al. 2015). Right: comparison of the variations of φ and i to the literature.
+
+– with those of the THINGS bulk and intensity-weighted mean
+(IWM) solutions (Oh et al. 2008), we note a clear difference with the
+values of the position angle derived in Martimbeau et al. (1994). The
+latter work’s values of φ are on average lower than those obtained
+in Oh et al. (2008) and this work, particularly beyond a 3 kpc
+radius.
+As for the inclination, we note that the solutions obtained from 3D
+BAROLO sit on the upper limit of the inclinations of Martimbeau et al.
+(1994), which are scattered between ∼40◦ and ∼75◦ throughout the
+probed radii. Interestingly, the inclinations of the bulk model of Oh
+et al. (2008) constantly decrease from the centre – where the values
+are about 80◦ – towards the outer regions (to about 40◦ ), while this
+work’s values tend to remain relatively constant. On the other hand,
+the inclinations of IWM’s model are higher than our values in the
+inner 8.5 kpc of the galaxy, and abruptly fall outwards.
+We ran the program once more on the approaching and then on
+the receding half of the galaxy, with all the geometrical parameters
+fixed to those obtained for the overall model. The three rotation
+
+curves are presented in Fig. 11 where, as expected, the rotation of
+the galaxy seems to follow a solid-body type of rotation.
+
+4.1.2 Asymmetric drift correction
+Because of the low mass and rotation velocity of IC 2574, one
+expects the rotation curve of the galaxy to be underestimated
+because of the effects of asymmetric drift (e.g. Valenzuela et al.
+2007; Dalcanton & Stilp 2010; Pineda et al. 2017). To obtain the
+true circular velocity of the galaxy, we use equation (4.227) of
+Binney & Tremaine (2008) with the assumption that the product
+v r v z is independent of z, and that the thickness of the disc is constant;
+we write (also see Côté, Carignan & Freeman 2000; Carignan et al.
+2013; Chemin et al. 2016)
+
+
+d
+d
+2
+2
+ln (r) +
+ln σ 2 (r)
+(r) = vobs
+(r) − r σ 2 (r)
+(1)
+vcirc
+dr
+dr
+MNRAS 493, 2618–2631 (2020)
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+Figure 9. Total H I intensity map of HIJASS J1021+68 (black contours) overlaid on GALEX UV (left-hand panel), optical R -band (middle panel) and infrared
+WISE (right-hand panel) images. The contours are 1, 2, 4, 8 × 1019 cm−2 .
+
+2626
+
+A. Sorgho et al.
+
+Figure 12. Velocity dispersion profile of IC 2574. The open symbols
+represent the observed velocity dispersions while the filled symbols and
+the line show the smoothed velocities used to determine the asymmetric
+drift corrections.
+
+where v obs (r), σ (r), and (r) are, respectively, the observed rotational velocity, the observed line-of-sight velocity dispersion, and
+the total gas surface density at a radius r. The line-of-sight velocity
+dispersion was derived by fitting ellipses to the second moment map
+of the galaxy, and its variation is given in Fig. 12. The velocities
+were corrected for instrumental broadening, and the profile was
+smoothed with a third-order polynomial to make it less sensitive
+to the small-scale, local fluctuations. Following Dalcanton & Stilp
+(2010), the total gas surface density was assumed to be 1.4 times
+higher than the H I surface density of Fig. 3, where the factor 1.4
+allows to approximately correct for the helium and heavier elements.
+MNRAS 493, 2618–2631 (2020)
+
+Figure 13. Rotation curves of IC 2574 compared with the literature. v A
+represents the asymmetric drift velocity, given by the second term of the
+right-hand side of equation (1).
+
+In Fig. 13, we show a comparison of the observed rotational and
+circular velocities, and those derived in previous studies in the
+literature. We also show on the plot the asymmetric drift velocity,
+given by the second term of the right-hand side of equation (1).
+The rotation curves derived in this work extend farther than those
+in the literature, and overall agree well with the THINGS IWM (Oh
+et al. 2008) and Martimbeau et al. (1994)’s rotation curves in the
+central regions of the galaxy. However, the velocities of the derived
+rotation curves in the inner regions of the galaxy (<2 kpc) are
+overestimated by 11 per cent to 27 per cent when compared to these
+higher resolution curves. In the region ∼10–13 kpc, the derived
+rotation curves are slightly below the THINGS curve, but agree
+with the latter within the error bars (not shown for clarity). The
+figure also shows the THINGS bulk rotation curve from Oh et al.
+(2008), derived from the galaxy’s H I velocity field after correcting
+the data for random and small-scale non-circular motions. The bulk
+rotation curve is above the curves derived in this work in the region
+>2.3 kpc, but its last points agree with the circular velocities of the
+present work.
+To get a comparison between the tilted-ring model and the
+observed kinematics of the galaxy, we have constructed a residual
+map of the velocity field (Fig. 14) by subtracting a model velocity
+field of from the observed one. The model velocity field was
+computed using the 3D BAROLO geometrical parameters and the
+circular rotation curve obtained after accounting for the asymmetric
+drift. The residual map shows the regions of the galaxy where the
+non-circular motions mostly affect the rotation of the galaxy, with
+a difference velocity between the model and the data of the order
+of about 10–25 km s−1 . It also shows that the residual velocities are
+highest in the outermost regions of the galaxy, especially around
+the southwestern side.
+4.2 Mass model
+To construct the mass model of IC 2574, we take advantage of both
+the high-resolution VLA data and the extended DRAO curve: we
+construct a hybrid rotation curve by combining the bulk velocity
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+Figure 11. Rotation curve of IC 2574 derived using the parameters of
+Fig. 10.
+
+H I distribution and kinematics of IC 2574 and HIJASS J1021+68
+
+2627
+
+We therefore assume that the only stellar component of the galaxy
+is the stellar disc.
+For the gaseous disc component, we derived the contribution from
+the galaxy’s H I surface density presented in Fig. 3. We assumed a
+thin disc composed of neutral hydrogen and helium, and multiplied
+the H I surface densities by a factor of 1.4 to account for the
+helium and heavier elements. The total baryonic contribution to
+the observed rotation of the galaxy can therefore be written
+
+(2)
+vbaryonic = ϒ |vdisc |vdisc + |vgas |vgas ,
+
+4.2.2 Dark matter component
+
+Figure 15. W1 (3.4 μm) surface brightness profile of IC 2574.
+
+rotation curve of Oh et al. (2008) to that of the circular velocity
+derived in this work and plotted in Fig. 13. In the inner regions
+(r < 13 kpc), we consider the high-resolution curve only, while in
+the outer regions we consider the lower resolution DRAO curve.
+Also, because the THINGS curve is oversampled (two points per
+beam), we resampled it by dropping every second point in the curve,
+following the mass models of THINGS rotation curves in Chemin,
+de Blok & Mamon (2011).
+
+4.2.1 Baryonic component
+The WISE (Wright et al. 2010) W1 (3.4 μm) light profile of IC
+2574 (from Jarrett et al., in preparation) is shown in Fig. 15. The
+profile suggests the absence of a prominent bulge as expected, and
+an attempt to perform a decomposition into different components
+– an exponential disc and a spherical bulge – further confirmed
+that the bulge contribution to the total luminosity of the galaxy is
+negligible, with a bulge-to-total luminosity ratio of only 6 per cent.
+
+The other major component in disc galaxies – besides the baryonic
+components – accounting for their total mass is the DM. Indeed,
+several studies have shown that an important fraction of galaxies’
+mass – especially for late-type galaxies – is contained in their DM
+halo (e.g. Rubin et al. 1978; Kalnajs 1983; Carignan & Freeman
+1985). Two main profiles are generally used to describe the halo of
+this unseen matter: the pseudo-isothermal model which assumes an
+approximately constant DM density in the centre of the DM halo,
+and the cusp-like profile (Navarro et al. 1996, 1997), commonly
+referred to as the Navarro–Frenk–White (NFW) profile, for which
+the DM density rapidly increases towards the centre of the halo.
+The implication of a constant DM density like in the case of the
+pseudo-isothermal profile is that it results in a rotation curve that
+increases linearly with radius, while the NFW profile gives rise to
+a square-root-like curve. Given the solid body-type rotation of IC
+2574, we opt to use the pseudo-isothermal model to describe the
+galaxy’s DM halo. The mass density and velocity distributions of
+the pseudo-isothermal sphere as a function of the radius r of the
+sphere are respectively given by
+ρ0
+,
+(3)
+ρiso (r) =
+1 + (r/rc )2
+
+(4)
+viso (r) = 4π Gρ0 rc2 [1 − (r/rc ) arctan (r/rc )]
+where ρ 0 and rc are, respectively, the central density and the core
+radius of the halo.
+The decomposition of IC 2574’s rotation curve was done using
+the GIPSY’s program ROTMAS. The weight affected to a given data
+point of the rotation curve is equal to the squared inverse of the
+error bar at that point.
+When the stellar M/L is let as a free parameter (best-fitting
+model), the least-square fitting of the pseudo-isothermal model to
+the rotation curve returns an M/L value of ϒ  = 0.20 ± 0.10 M /L ,
+with a halo core radius and central density of rC = 5.8 ± 0.6 kpc
+and ρ = (6.7 ± 1.0) × 10−3 M pc−3 , respectively (see Table 3).
+The obtained value of the M/L ratio is about 3 times lower than that
+inferred from the WISE colour of the galaxy, but is in agreement
+with the values obtained in Martinsson et al. (2013) and Lelli,
+McGaugh & Schombert (2016). In fact, by measuring the vertical
+velocity dispersion of disc stars in a sample of 30 spiral galaxies,
+the authors determined a 3.6 μm stellar M/L ratio of about 0.2
+M /L . At the last measured point (18.4 kpc), the dark component
+MNRAS 493, 2618–2631 (2020)
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+Figure 14. Residual velocity field of IC 2574. The regions of high residuals
+around the centre show where the non-circular motions influence the rotation
+of the galaxy.
+
+where ϒ  is the stellar mass-to-light ratio (M/L) of the disc, v disc
+the disc velocity and v gas the velocity of the gaseous disc.
+From Jarrett et al. (in preparation), we have obtained a W1–W2
+colour of 0.089 ± 0.040 mag; following the M /LW1 calibration
+from Cluver et al. (2014), we derived a stellar mass-to-light ratio
+of 0.62 ± 0.11 M /L . We will hereafter refer to this value as the
+WISE colour M/L value.
+
+2628
+
+A. Sorgho et al.
+
+Table 3. Results of IC 2574’s mass models.
+Parameter
+
+Fixed M/L
+
+0.20 ± 0.14
+5.79 ± 0.65
+6.71 ± 1.00
+0.42
+
+0.62
+7.60 ± 0.62
+4.66 ± 0.37
+0.57
+
+10.7
+
+9.1
+
+0.13 ± 0.06
+9.71 ± 0.95
+3.29 ± 0.29
+0.31
+
+0.62
+16.64 ± 3.43
+2.11 ± 0.20
+0.99
+
+11.1
+
+9.4
+3.6 × 1010
+
+is 10.7 times more massive than the luminous (stars and gas)
+component. In other words, the dark halo constitutes over 91 per cent
+of the total dynamical mass of IC 2574, meaning that the stellar and
+H I discs of the galaxy contribute very little to its total mass. This
+result is consistent with the study by Martimbeau et al. (1994),
+who found a dark-to-luminous mass ratio of 8.9 at their (distance
+corrected) last radius of 10.8 kpc, and such large contribution of
+the dark halo was found in other low-mass systems (e.g. DDO 154:
+Carignan & Freeman 1988; Carignan & Beaulieu 1989; NGC 3109:
+Jobin & Carignan 1990; Carignan et al. 2013).
+To check the effect of the extension of the galaxy’s rotation
+curve on the DM halo model, we have run the fit on the THINGSonly rotation curve; the halo parameters obtained from the fit were
+sensibly similar to those obtained with the extended curve, showing
+that the combination has little effect in constraining the model.
+Because this could be due to the large error bars of the low-resolution
+DRAO curve, we have used a uniform weighting scheme for the
+least-square fitting but obtained a similar result. We performed an
+additional analysis by combining the DRAO curve to the Oh et al.
+(2008)’s IWM rotation curve of the galaxy instead of the bulk
+rotation curve (see Fig. 13). The rising part of the IWM rotation
+curve is slightly shallower than the bulk curve, and has a solid body
+type of rotation at almost all radii. Because of this shape, the bestfitting model with the pseudo-isothermal profile fails to constrain
+the parameters of the DM halo, yielding a large core radius of
+24.4 ± 4.5 kpc with a stellar M/L ratio of 0.23 ± 0.02 M /L .
+Moreover, when the M/L ratio is fixed to the WISE inferred value,
+the core radius considerably increases to 4.9 × 107 kpc, which
+is unphysical. It is worth noting that the NFW model also fails
+to constrain the DM halo. When combined with the DRAO curve
+following the prescription in Section 4.2, the curve becomes slightly
+flat in the outer regions, allowing us to constrain the DM halo with
+the pseudo-isothermal model. The best model fit provides a core
+radius of 9.7 ± 1.0 kpc with an M/L ratio of 0.13 ± 0.06 M /L ,
+while the fixed M/L method provides a core radius of 16.6 ± 3.4 kpc.
+Again, we note that the WISE inferred M/L value overestimates the
+baryonic contribution to the total mass of the galaxy.
+We then fixed the stellar M/L ratio to the WISE colour value, and
+fitted once again the pseudo-isothermal model to the rotation curve.
+As Table 3 shows, the values obtained for the halo parameters do not
+significantly vary, although a comparison of the reduced χ 2 values
+suggests that the fixed M/L fit is less accurate than the best-fitting
+model.
+MNRAS 493, 2618–2631 (2020)
+
+4.3 H I kinematics of HIJASS J1021+68
+In Fig. 17, we show the velocity distribution in HIJASS J1021+68.
+There is a slight east–west rotation pattern in the complex, with
+the western side approaching the observer while the eastern side
+recedes. Also, the eastern clump seems kinematically separated
+from the rest of the complex, with a difference in velocity reaching
+∼10–20 km s−1 . In the central and northern clouds of the complex,
+the velocity dispersion seems to follow the pattern of the velocity
+field, increasing from west to east. In the eastern cloud, the
+dispersion is roughly uniformly distributed with an average of ∼20–
+25 km s−1 . Although the limited resolution of the data does not allow
+us to perform an in-depth kinematical analysis of the complex,
+the present maps show that its kinematics are neither exclusively
+supported by rotation nor is it solely supported by dispersion;
+instead, the data suggest that both the rotation and the random
+motions of the gas complex contribute equally to its gravitational
+support.
+4.4 The nature of HIJASS J1021+68
+On the nature of HIJASS J1021+68, two possibilities arise: the
+object is either just a complex of gas clouds, or it is a dark galaxy
+in which star formation has not begun yet. The first hypothesis is
+obvious, as the system shows no stellar counterpart, and appears
+to be fragmented in different clouds. However, a few observational
+facts argue in favour of the dark galaxy nature of the object: the apparent gradient in the velocity field and the high-velocity dispersion
+(up to ∼20–25 km s−1 ) in the atomic gas, and the similarity of the
+object with the low-mass dwarf irregular galaxy GR8 (Carignan,
+Beaulieu & Freeman 1990). In fact, the H I kinematics of HIJASS
+J1021+68 present the same characteristics as those of GR8, whose
+gravitational support is essentially provided by rotation only in the
+inner regions, while it is dominated by random motions in the outer
+parts. Moreover, the rotation axis of the object – as given by the
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+THINGS bulk + DRAO
+ϒ  (M /L ) . . . . . . . . . . . . . . . . . . . . . . . .
+rc (kpc) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ρ 0 (10−3 M pc−3 ) . . . . . . . . . . . . . . . . . . .
+2 .................................
+χred
+At the last radius (r = 18.43 kpc):
+Mdark /Mlum . . . . . . . . . . . . . . . . . . . . . . . . . .
+THINGS IWM + DRAO
+ϒ  (M /L ) . . . . . . . . . . . . . . . . . . . . . . . .
+rc (kpc) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ρ 0 (10−3 M pc−3 ) . . . . . . . . . . . . . . . . . . .
+2 .................................
+χred
+At the last radius (r = 18.43 kpc):
+Mdark /Mlum . . . . . . . . . . . . . . . . . . . . . . . . . .
+Mtotal (M ) . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+Best fit
+
+For completeness, we have also used the cusp-like NFW (Navarro
+et al. 1996, 1997) density distribution to decompose the rotation
+curve of the galaxy. Similarly to Oh et al. (2008) and de Blok et al.
+(2008), we have obtained a value of zero, therefore unphysical,
+value for the stellar M/L. The same result was obtained by previous
+authors for similar galaxies (e.g. NGC 5585, Côté, Carignan &
+Sancisi 1991; NGC 3109, Carignan et al. 2013) and for a significant
+sample of galaxies (Haghi et al. 2018). This implies that the DM
+halo of the galaxy presents no cusp, and the pseudo-isothermal
+model should be preferred to the NFW model for the description
+of the galaxy’s DM halo. To investigate whether the inclusion of
+stellar feedback in the NFW model can produce an acceptable fit
+to the rotation curve of the galaxy, we have used the criteria of Di
+Cintio et al. (2014). The authors found a dependence of the inner
+slope of the DM density profile, α, on the stellar-to-halo mass ratio
+(M /Mhalo ). More specifically, for a galaxy like IC 2574, whose
+M /Mhalo value is less than ∼0.01 per cent (Table 3 suggests a ratio
+of 0.001 per cent), the energy from stellar feedback is insufficient
+to significantly alter the inner DM density, and therefore the galaxy
+retains a cusp-like profile. Also, even for galaxies where stellar
+feedback is sufficient to produce cores in the centre of the halo, the
+core radius found is only a few kpc in size, definitely lower than the
+values obtained here. Based on these criteria, we conclude that the
+NFW profile is not suited to describe the DM profile of IC 2574.
+In Fig. 16, we show the different decompositions of the hybrid
+rotation curve with the pseudo-isothermal model.
+
+H I distribution and kinematics of IC 2574 and HIJASS J1021+68
+
+2629
+
+Figure 17. Velocity field (left-hand panel) and velocity dispersion map (right-hand panel) of HIJASS J1021+68.
+
+gradient of the velocity in Fig. 17 – roughly follows the north–
+south direction; the spatial distribution of the H I in the system
+suggests that its major axis also follows the north–south direction.
+This makes HIJASS J1021+68 a system in which the rotation axis is
+parallel to the major axis, and the same pattern was observed in GR8
+(see Carignan et al. 1990). These kinematical similarities with GR8
+show that HIJASS J1021+68 can possibly be a dark galaxy as first
+suggested by Boyce et al. (2001). However, for this possibility to
+be true, there has to be a connection between the eastern and central
+clouds, such that the whole complex forms a single body. Otherwise,
+
+the velocity gradient in the central cloud alone (of ∼10 km s−1 ) is
+not high enough for the gravitational force to be important. Could
+there be some low column density gas in the space between the
+two major parts of the complex that was missed by the present
+observations? To investigate the connections between the clouds
+in the complex and with the dwarf galaxy IC 2574, we plot in
+Fig. 8 a PV diagram taken across the two systems. To maximize
+the signal-to-noise ratio, the width of the slice was taken to be 15
+arcmin, wide enough to cover most of the gas complex. None the
+less, no apparent connection is seen between the major two parts
+
+MNRAS 493, 2618–2631 (2020)
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+Figure 16. Mass models of IC 2574 for the best fit (left-hand panel) and fixed M/L (right-hand panel) models of the pseudo-isothermal DM halo profile.
+
+2630
+
+A. Sorgho et al.
+DM halo parameters. We then used the pseudo-isothermal model to
+decompose the resulting rotation curve, and obtained a stellar M/L
+ratio of 0.2 ± 0.1 M /L . This is consistent with the morphological
+type of the galaxy and with studies in the literature (e.g. Lelli et al.
+2016).
+The observations also allowed to resolve the object HIJASS
+J1021+68 for the first time, and its H I intensity map revealed three
+major clumps forming the complex. A search for a counterpart in
+UV, optical R band and infrared WISE W1 was unsuccessful, and the
+H I kinematics of the system suggests that both rotation and random
+motions contribute equally to its gravitational support. Furthermore,
+our analysis of a PV diagram of the data shows strong evidence of
+an H I connection between the gas complex and IC 2574, but not
+between the central and eastern clouds of the complex. This sheds
+light on the nature of HIJASS J1021+68, and we argue that the
+object is not a dark galaxy as previously thought, but a complex of
+H I clouds stripped from, or falling on to the envelope of IC 2574.
+
+AC K N OW L E D G E M E N T S
+The authors are very grateful to the staff at DRAO, particularly
+to Operations Manager Dr. Andrew Gray for his flexibility and
+assistance in observing the many fields and gathering archived
+data for our work. We would like to thank the anonymous referee,
+whose comments and suggestions were very useful and helped to
+improve the quality of this work. The work of CC is based upon
+research supported by the South African Research Chairs Initiative
+(SARChI) of the Department of Science and Innovation (DSI), the
+South African Radio Astronomy Observatory (SARAO), and the
+National Research Foundation of South Africa (NRF). The research
+of AS has been supported by SARChI and SARAO fellowships. The
+research of LC is supported by the Comité Mixto ESO-Chile and the
+Dirección de Gestión de la Investigación (DGI) of the Universidad
+de Antofagasta.
+
+5 S U M M A RY
+In this work, we have used sensitive DRAO observations of IC
+2574 and HIJASS J1021+68 to map both the low and high column
+density gas in the region. The high sensitivity H I intensity map of
+IC 2574 revealed a substantial amount of H I around the galaxy, in
+the form of an H I envelope, two large concentrations south and west
+of the galaxy, and as a series of small H I clouds in its immediate
+surroundings. The analysis of the H I in the envelope shows that the
+detected gas is real and distinct from Galactic H I. Also, the velocity
+distribution of the H I in the envelope and in the clumps suggests
+that the low column density gas rotates with the galaxy, although a
+gradient is observed in the velocity distribution.
+Surprisingly, no clear H I emission is detected in the space between M81 and HIJASS J1021+68, despite the apparent continuity
+of velocity between the two objects. This makes it unlikely that the
+system formed by IC 2574 and HIJASS J1021+68 is connected to
+the central members of the M81 group. However, if IC 2574 has
+interacted or connected to M81 at some point in the past, this could
+make it possible for the gas between the two systems to be ionized.
+Using a 3D tilted-ring model, we derived the rotation curve of the
+galaxy to a larger extent than previous works. Taking advantage of
+higher resolution curves available in the literature, we constructed
+a hybrid rotation curve by combining our extended curve to that
+derived from the THINGS bulk velocity field in Oh et al. (2008).
+This provided an extended and high-resolution rotation curve with a
+slightly flat part in the outskirts, which can be used to constrain the
+MNRAS 493, 2618–2631 (2020)
+
+REFERENCES
+Appleton P. N., Davies R. D., Stephenson R. J., 1981, MNRAS, 195, 327
+Begeman K. G., 1989, A&A, 223, 47
+Binney J., Tremaine S., 2008, Galactic Dynamics: Second Edition. Princeton
+University Press, Princeton, NJ
+Blitz L., Spergel D. N., Teuben P. J., Hartmann D., Burton W. B., 1999, ApJ,
+514, 818
+Blumenthal G. R., Faber S. M., Primack J. R., Rees M. J., 1984, Nature,
+311, 517
+Bournaud F., Duc P.-A., 2006, A&A, 456, 481
+Boyce P. J. et al., 2001, ApJ, 560, L127
+Braun R., Burton W. B., 1999, A&A, 341, 437
+Braun R., Thilker D. A., 2004, A&A, 435, 421
+Braun R., Thilker D., Walterbos R. A. M., 2003, A&A, 406, 829
+Camilo F. et al., 2018, ApJ, 856, 180
+Carignan C., Beaulieu S., 1989, ApJ, 347, 760
+Carignan C., Freeman K. C., 1985, ApJ, 294, 494
+Carignan C., Freeman K. C., 1988, ApJ, 332, L33
+Carignan C., Beaulieu S., Freeman K. C., 1990, AJ, 99, 178
+Carignan C., Frank B. S., Hess K. M., Lucero D. M., Randriamampandry T.
+H., Goedhart S., Passmoor S. S., 2013, AJ, 146, 48
+Chambers K. C. et al., 2016, preprint (arXiv:1612.05560)
+Chemin L., Carignan C., Foster T., 2009, ApJ, 705, 1395
+Chemin L., de Blok W. J. G., Mamon G. A., 2011, AJ, 142, 109
+Chemin L., Huré J.-M., Soubiran C., Zibetti S., Charlot S., Kawata D., 2016,
+A&A, 588, A48
+Chiboucas K., Karachentsev I. D., Tully R. B., 2009, AJ, 137, 3009
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+of HIJASS J1021+68. However, the diagram reveals a set of small
+clouds (above the 2σ level) in the space between the two systems,
+most of which are not seen in the H I intensity map of Fig. 8. It
+is worth noting that the distribution of these clouds suggests that
+more non-Galactic clouds could exist in the contaminated velocity
+channels (grey band in Fig. 8) that were removed by the Galactic H I
+subtraction process. We note two elongated prominent structures
+in the contaminated region, respectively, in IC 2574 and below
+HIJASS J1021+68 (at velocities of ∼0 km s−1 ), which represent
+residuals of the Galactic H I at the peak contamination. Furthermore,
+the continuity of velocity in the distribution of the detected clouds
+suggests that the connection that the low-resolution HIJASS data
+(Boyce et al. 2001) hinted at may be real. The western region of
+IC 2574’s extended envelope is also seen on the western side of the
+galaxy, at an angular offset of about −40 arcmin. Although HIJASS
+J1021+68 was previously classified as a dark galaxy and its velocity
+field presents a slight east–west gradient, the morphology of the
+complex and its apparent connection to IC 2574 strongly suggests
+that it may not be a dark galaxy. One possibility that could arise is
+that the object is, as suggested by Boyce et al. (2001), a forming tidal
+dwarf galaxy in which star formation has not yet begun. However,
+as predicted by the simulations (e.g. Bournaud & Duc 2006), tidal
+dwarf galaxies are more likely to form in major, gas-rich mergers.
+More specifically, tidal dwarf galaxies are known to generally form
+out of the debris residing in tidal tails of galaxies, as a result of
+interactions (e.g. Duc et al. 2000; Duc, Bournaud & Masset 2004;
+Lelli et al. 2015; Lee-Waddell et al. 2016). This makes it less likely
+for HIJASS J1021+68 to be a tidal dwarf galaxy, since neither the
+optical nor the H I morphology of IC 2574 hints at the existence of a
+tidal tail associated with the galaxy. With the natures of dark galaxy
+and tidal dwarf galaxy discarded as possible natures of HIJASS
+J1021+68, it becomes most likely that the object is just a complex
+of gas clouds connected to the large envelope of IC 2574, probably
+stripped from, or falling on to the envelope.
+
+H I distribution and kinematics of IC 2574 and HIJASS J1021+68
+
+Martinsson T. P. K., Verheijen M. A. W., Westfall K. B., Bershady M. A.,
+Andersen D. R., Swaters R. A., 2013, A&A, 557, 131
+Martin D. C. et al., 2005, ApJ, 619, L1
+Moore B., 1994, Nature, 370, 629
+Moore B., Ghigna S., Governato F., Lake G., Quinn T., Stadel J., Tozzi P.,
+1999, ApJ, 524, L19
+Navarro J. F., Frenk C. S., White S. D. M., 1996, ApJ, 462, 563
+Navarro J. F., Frenk C. S., White S. D. M., 1997, ApJ, 490, 493
+Oh S.-H., de Blok W. J. G., Walter F., Brinks E., Kennicutt R. C., 2008, AJ,
+136, 2761
+Oh S.-H., de Blok W. J. G., Brinks E., Walter F., Kennicutt R. C., 2011, AJ,
+141, 193
+Peebles P. J. E., 1965, ApJ, 142, 1317
+Pineda J. C. B., Hayward C. C., Springel V., Mendes de Oliveira C., 2017,
+MNRAS, 466, 63
+Pisano D. J., 2014, AJ, 147, 48
+Press W. H., Schechter P., 1974, ApJ, 187, 425
+Putman M. E., Staveley-Smith L., Freeman K. C., Gibson B. K., Barnes D.
+G., 2003, ApJ, 586, 170
+Rubin V. C., Ford W. K. J., Thonnard N., 1978, ApJ, 225, L107
+Salo H. et al., 2015, ApJS, 219, 4
+Searle L., Zinn R., 1978, ApJ, 225, 357
+Serra P. et al., 2015, MNRAS, 452, 2680
+Sorgho A. et al., 2019a, MNRAS, 482, 1248
+Sorgho A., Foster T., Carignan C., Chemin L., 2019b, MNRAS, 486, 504
+Swaters R. A., Madore B. F., van den Bosch F. C., Balcells M., 2003, ApJ,
+583, 732
+Swaters R. A., Sancisi R., van Albada T. S., van der Hulst J. M., 2009, A&A,
+493, 871
+Valenzuela O., Rhee G., Klypin A., Governato F., Stinson G., Quinn T.,
+Wadsley J., 2007, ApJ, 657, 773
+van der Hulst J. M., Terlouw J. P., Begeman K. G., Zwitser W., Roelfsema
+P. R., 1992, ASPC, 25, 131
+Wakker B. P., van Woerden H., 1997, ARA&A, 35, 217
+Walter F., Brinks E., 1999, AJ, 118, 273
+Walter F., Weiss A., Martin C., Scoville N., 2002, AJ, 123, 225
+Westmeier T., Brüns C., Kerp J., 2008, MNRAS, 390, 1691
+Westmeier T., Koribalski B. S., Braun R., 2013, MNRAS, 434, 3511
+Winkel B., Kerp J., Flöer L., Kalberla P. M. W., Bekhti N. B., Keller R.,
+Lenz D., 2016, A&A, 585, A41
+Wolfe S. A., Pisano D. J., Lockman F. J., McGaugh S. S., Shaya E. J., 2013,
+Nature, 497, 224
+Wright E. L. et al., 2010, AJ, 140, 1868
+Yun M. S., Ho P. T. P., Lo K. Y., 1993, ApJ, 411, L17
+
+This paper has been typeset from a TEX/LATEX file prepared by the author.
+
+MNRAS 493, 2618–2631 (2020)
+
+Downloaded from https://academic.oup.com/mnras/article/493/2/2618/5734519 by guest on 04 June 2026
+
+Chiboucas K., Jacobs B. A., Tully R. B., Karachentsev I. D., 2013, AJ, 146,
+126
+Chynoweth K. M., Langston G. I., Yun M. S., Lockman F. J., Rubin K. H.
+R., Scoles S. A., 2008, AJ, 135, 1983
+Cluver M. E. et al., 2014, ApJ, 782, 90
+Côté S., Carignan C., Sancisi R., 1991, AJ, 102, 904
+Côté S., Carignan C., Freeman K. C., 2000, AJ, 120, 3027
+Dalcanton J. J., Stilp A. M., 2010, ApJ, 721, 547
+de Blok W. J. G., 2010, Adv. Astron., 2010, 789293
+de Blok W. J. G., McGaugh S. S., Bosma A., Rubin V. C., 2001, ApJ, 552,
+L23
+de Blok W. J. G., Walter F., Brinks E., Trachternach C., Oh S.-H., Kennicutt
+R. C., 2008, AJ, 136, 2648
+de Blok W. et al., 2018, Proceedings of MeerKAT Science: On the Pathway
+to the SKA – PoS(MeerKAT 2016). Sissa Medialab, Cape Town
+de Vaucouleurs G., de Vaucouleurs A., Corwin H. G. J., Buta R. J., Paturel
+G., Fouqué P., 1991, Third Reference Catalogue of Bright Galaxies.
+Springer
+Di Cintio A., Brook C. B., Macciò A. V., Stinson G. S., Knebe A., Dutton
+A. A., Wadsley J., 2014, MNRAS, 437, 415
+Di Teodoro E. M., Fraternali F., 2015, MNRAS, 451, 3021
+Dubinski J., Carlberg R. G., 1991, ApJ, 378, 496
+Duc P.-A., Brinks E., Springel V., Pichardo B., Weilbacher P., Mirabel I. F.,
+2000, AJ, 120, 1238
+Duc P.-A., Bournaud F., Masset F., 2004, A&A, 427, 803
+Flewelling H. A. et al., 2016, preprint (arXiv:1612.05243)
+Flores R. A., Primack J. R., 1994, ApJ, 427, L1
+Haghi H., Khodadadi A., Ghari A., Zonoozi A. H., Kroupa P., 2018,
+MNRAS, 477, 4187
+Jarrett T. H. et al., 2012, AJ, 144, 68
+Jobin M., Carignan C., 1990, AJ, 100, 648
+Johnston S. et al., 2007, Publ. Astron. Soc. Aust., 24, 174
+Kalnajs A., 1983, in Athanassoula E., ed., IAU Symp. 100, Internal
+Kinematics and Dynamics of Galaxies. Kluwer, Dordrecht, p. 87
+Karachentsev I. D. et al., 2002a, A&A, 383, 125
+Karachentsev I. D., Mitronova S. N., Karachentseva V. E., Kudrya Y. N.,
+Jarrett T. H., 2002b, A&A, 396, 431
+Karachentsev I. D., Karachentseva V. E., Huchtmeier W. K., Makarov D. I.,
+2004, AJ, 127, 2031
+Klypin A., Kravtsov A. V., Valenzuela O., Prada F., 1999, ApJ, 522, 82
+Landecker T. L. et al., 2019, preprint (arXiv:1910.12002)
+Lee-Waddell K. et al., 2016, MNRAS, 460, 2945
+Lelli F., Fraternali F., Sancisi R., 2010, A&A, 516, A11
+Lelli F. et al., 2015, A&A, 584, A113
+Lelli F., McGaugh S. S., Schombert J. M., 2016, AJ, 152, 157
+Maller A. H., Bullock J. S., 2004, MNRAS, 355, 694
+Martimbeau N., Carignan C., Roy J.-R., 1994, AJ, 107, 543
+
+2631
+
+

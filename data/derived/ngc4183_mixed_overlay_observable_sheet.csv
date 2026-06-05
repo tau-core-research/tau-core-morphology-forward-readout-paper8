@@ -1,0 +1,10 @@
+observable_id,value,unit,source_basis,source_id,status,freeze_candidate,notes
+R_HI_source_native_kpc,15.969762655748113,kpc,HI diameter 6.1 arcmin at SPARC D=18.0 Mpc,VERHEIJEN_SANCISI_2001_URSA_MAJOR_HI,ACCEPTED_NUMERIC_CAVEATED_REVIEWED,True,Independent H I support radius proxy; consistent with SPARC RHI.
+R_HI_source_vs_SPARC_relative_difference,0.006237544757429206,dimensionless,source-native R_HI compared to SPARC RHI,SPARC_MASTER+VERHEIJEN_SANCISI_2001_URSA_MAJOR_HI,CONSISTENCY_CHECK_PASS,False,Agreement below 1%; supports using RHI as denominator.
+projection_edge_on_strength_p_edge,0.9851478631379982,dimensionless,"sin^2(i_HI), i_HI=83 deg",VERHEIJEN_SANCISI_2001_URSA_MAJOR_HI,ACCEPTED_NUMERIC_CAVEATED_REVIEWED,True,High-inclination projection observable; not a residual fit.
+disk_scale_fraction_x_scale,0.17470516376120188,dimensionless,Rdisk/R_HI_source,SPARC_MASTER+VERHEIJEN_SANCISI_2001_URSA_MAJOR_HI,ACCEPTED_NUMERIC_RESIDUAL_BLIND,True,Scale placement observable for smooth disk carrier.
+hi_extent_in_disk_scales,5.72392926729323,dimensionless,R_HI_source/Rdisk,SPARC_MASTER+VERHEIJEN_SANCISI_2001_URSA_MAJOR_HI,ACCEPTED_NUMERIC_RESIDUAL_BLIND,True,Extended support observable; large value favors outer-overlay review.
+outer_warp_flag,1.0,dimensionless flag,source note: slightly warped in the outer regions,VERHEIJEN_SANCISI_2001_URSA_MAJOR_HI,ACCEPTED_CONTEXT_CAVEATED,False,Qualitative source support; no numeric warp onset/amplitude yet.
+hi_position_angle_deg,347.0,deg,total H I map position angle,VERHEIJEN_SANCISI_2001_URSA_MAJOR_HI,ACCEPTED_NUMERIC_CAVEATED_REVIEWED,True,Orientation field; formula use requires a declared projection kernel.
+warp_onset_or_amplitude,,dimensionless_or_kpc,not available in current reviewed sources,PENDING,BLOCKED_NUMERIC_FIELD_MISSING,False,Prevents a source-native warp ramp freeze.
+bar_core_history_overlay,,mixed,not available in current reviewed sources,PENDING,BLOCKED_REQUIRED_FIELD_MISSING,False,Current worklist readout name requires this review before label promotion.

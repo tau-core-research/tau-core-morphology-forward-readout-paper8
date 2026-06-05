@@ -1,0 +1,1536 @@
+Astronomy
+&
+Astrophysics
+
+A&A 505, 577–587 (2009)
+DOI: 10.1051/0004-6361/200811136
+c ESO 2009
+
+
+The baryonic Tully-Fisher relation and its implication for dark
+matter halos
+C. Trachternach1 , W. J. G. de Blok2 , S. S. McGaugh3 , J. M. van der Hulst4 , and R.-J. Dettmar1
+1
+
+Astronomisches Institut, Ruhr-Universität Bochum, Universitätsstraße 150, 44780 Bochum, Germany
+Department of Astronomy, University of Cape Town, Private Bag X3, Rondebosch 7701, South Africa
+e-mail: edeblok@ast.uct.ac.za
+3
+Department of Astronomy, University of Maryland, College Park, MD 20742-2421, USA
+4
+Kapteyn Astronomical Institute, University of Groningen, Postbus 800, 9700 AV Groningen, The Netherlands
+2
+
+Received 12 October 2008 / Accepted 28 July 2009
+ABSTRACT
+
+Context. The baryonic Tully-Fisher relation (BTF) is a fundamental relation between baryonic mass and maximum rotation velocity.
+It can be used to estimate distances, as well as to constrain the properties of dark matter and its relation with the visible matter.
+Aims. In this paper, we explore if extremely low-mass dwarf galaxies follow the same BTF relation as high-mass galaxies. We quantify
+the scatter in the BTF relation and use this to constrain the allowed elongations of dark matter halo potentials.
+Methods. We obtained H i synthesis data of 11 dwarf galaxies and derive several independent estimates for the maximum rotation
+velocity.
+Results. Constructing a BTF relation using data from the literature for the high-mass end, and galaxies with detected rotation from
+our sample for the low-mass end results in a BTF with a scatter of 0.33 mag.
+Conclusions. This scatter constrains the ellipticities of the potentials in the plane of the disks of the galaxies to an upper limit of
+0−0.06, indicating that dwarf galaxies are at most only mildly tri-axial. Our results indicate that the BTF relation is a fundamental
+relation which all rotationally dominated galaxies seem to follow.
+Key words. dark matter – galaxies: kinematics and dynamics – galaxies: dwarf – galaxies: fundamental parameters
+
+1. Introduction
+The Tully-Fisher (TF) relation (Tully & Fisher 1977), the relation between the luminosity and rotation velocity of a galaxy, has
+been extensively used to estimate extragalactic distances (e.g.,
+Pierce & Tully 1988; Willick et al. 1997; Sakai et al. 2000; Tully
+& Pierce 2000; Springob et al. 2007). In the usual “classical” interpretation, luminosity is a proxy for the stellar mass, which in
+turn depends on the total (visible and dark) mass and through it
+on the rotation velocity. The slope and zero point of this classical TF relation do not depend on the central surface brightness
+of galaxies (Zwaan et al. 1995), though for very low mass dwarf
+galaxies, the slope tends to steepen (e.g., Matthews et al. 1998;
+McGaugh et al. 2000). Low-mass dwarf galaxies are apparently
+underluminous given their rotation velocity and therefore fall
+below the TF relation as defined by the high mass galaxies. A
+single linear relation can be restored if one replaces the luminosity (or stellar mass) with the baryonic disk mass, thus including the gas mass as well (McGaugh et al. 1999, 2000). This
+relation is called the baryonic Tully-Fisher (BTF) relation and
+has been studied by many authors in the last few years (e.g.,
+Bell & de Jong 2001; Verheijen 2001; Gurovich et al. 2004;
+McGaugh 2004, 2005; Geha et al. 2006; De Rijcke et al. 2007;
+Noordermeer & Verheijen 2007; Stark et al. 2009).
+The existence of a (baryonic) Tully-Fisher relation places
+severe constraints on galaxy formation and evolution theories
+
+Appendix is only available in electronic form at
+http://www.aanda.org
+
+(cf. Eisenstein & Loeb 1996; McGaugh & de Blok 1998a,b; Mo
+et al. 1998; Steinmetz & Navarro 1999; Blanton et al. 2008). For
+example, Franx & de Zeeuw (1992) note that the observed scatter in the TF relation places upper limits on the elongation of
+dark matter halos. They find that that the ellipticity of the potential in the plane of the disk is most likely between 0 and ∼0.06.
+This is in good agreement with what Trachternach et al. (2008)
+found observationally for a sample of 18 dwarf and spiral galaxies from the THINGS survey (Walter et al. 2008; de Blok et al.
+2008), but in disagreement with results from CDM simulations
+which predict more elongated potentials (e.g., Frenk et al. 1988;
+Hayashi & Navarro 2006). The smaller scatter in the observed
+BTF relation (e.g., McGaugh 2005), means that it can be used to
+put similar constraints on lower mass galaxies as well. This was
+recently shown by Stark et al. (2009) who studied the BTF for a
+large sample of dwarf galaxies with resolved H i rotation curves,
+and found a linear BTF relation with small scatter.
+The low mass end of the BTF relation has also been studied by Geha et al. (2006) and Kovac (2007). They measure line
+widths and after correcting these for broadening due to turbulent motion of the H i, they find that the extreme dwarf galaxies of their sample follow the same BTF relation as the high
+mass galaxies, albeit with a larger scatter. This increased scatter is most likely a result of their use of the W20 profile. Broeils
+(1992) and Verheijen (1997) already pointed out that using the
+maximum rotation velocity from a resolved rotation curve significantly decreases the scatter as compared to using line width
+measurements.
+
+Article published by EDP Sciences
+
+578
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation
+
+Table 1. Properties of the data.
+ID
+
+Date
+length
+bmaj
+bmin
+PA
+Noise/channel Pixel size Channel width
+
+
+◦
+
+mJy beam−1
+km s−1
+of Obs.
+of Obs.
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+D500-2
+01-05-2002
+12h
+25.0 10.6
+0.0
+1.0
+5
+4.12
+D500-3
+03-05-2002
+12h
+33.0 12.3
+0.0
+0.6
+5
+4.12
+D512-2
+16-05-2004
+12h
+28.9 13.4
+0.6
+0.9
+4
+2.10
+D564-8
+08-05-2002
+12h
+36.4 12.8
+0.0
+0.6
+5
+4.12
+D572-5
+10-05-2004
+12h
+86.6 24.0 −0.2
+1.2
+4
+2.10
+D575-1a
+07-05-2004
+12h
+48.2 18.4
+0.2
+0.9
+4
+2.10
+···
+12-05-2004
+12h
+···
+···
+···
+···
+···
+···
+09-05-2004
+12h
+45.6 14.0 −3.5
+0.6
+4
+2.10
+D575-2b
+···
+13-05-2004
+10h
+···
+···
+···
+···
+···
+···
+···
+17-10-2004
+7h
+···
+···
+···
+···
+···
+···
+D575-5
+05-05-2004
+12h
+37.5 11.3 −0.1
+1.1
+4
+2.10
+D631-7
+04-11-2004
+12h
+57.7 12.0
+0.2
+1.1
+4
+2.10
+D640-13 10-11-2004
+12h
+70.8 11.5 −0.1
+1.1
+4
+2.10
+D646-7
+11-05-2004
+12h 133.8 20.6
+0.6
+1.4
+4
+2.10
+a
+The data for D575-1 are combined from two individual observations.
+b
+The data for D575-2 are combined from three individual observations.
+Notes: (1) galaxy identifier; (2) date of observations; (3) length of observations; (4, 5) major and minor axis diameter of the robust weighted beam
+in arcsec; (6) position angle of the beam (in degrees), measured counter-clockwise from the north; (7) noise per channel in mJy beam−1 ; (8) pixel
+size in arcsec; (9) channel width in km s−1 .
+
+In this paper, we attempt to determine several independent
+estimates for the maximum rotation velocity (Vmax ) for a sample
+of extremely low-mass dwarf galaxies. Doing this, we can check
+whether these galaxies follow the same tight correlation between
+baryonic disk mass and rotation velocity as their high mass counterparts. As a reference, we use the sample of McGaugh (2005),
+for which well-determined estimates for Vmax exist based on
+analysis of well-resolved rotation curves. For an in-depth description of the comparison sample, the reader is referred to
+McGaugh (2005) and references therein.
+The paper is organized as follows: in Sect. 2 we describe the
+observations and the data reduction, which is followed by a description of the diﬀerent methods in estimating Vmax in Sect. 3.
+We comment the individual galaxies in Sect. 4, and present further analysis and our results in Sect. 5. We summarize our results
+and give our conclusions in Sect. 6. The Appendix contains moment maps, position-velocity diagrams and channel maps of our
+sample galaxies.
+
+2. The data
+Our sample was selected from the larger sample of Schombert
+et al. (1997), which is one of the largest samples of extreme
+field dwarf galaxies for which both line width measurements
+and H i masses (Eder & Schombert 2000), as well as optical
+photometry (Pildis et al. 1997) exist. The galaxies were chosen to be relatively nearby (vhel < 1400 km s−1 ), have suitable optical inclinations for potential derivation of their rotation
+curves (45 ≤ iopt ≤ 75), and to have V- and I-band photometry
+available.
+2.1. Observations
+
+Observations were carried out at the Westerbork Synthesis Radio
+Telescope (WSRT) in maxi-short configuration, in the 21-cm
+line of neutral hydrogen. We use both polarizations and sample
+1024 channels with a bandwidth of 10 MHz or 20 MHz (corresponding to velocity resolutions of 2.10 or 4.12 km s−1 ). The
+
+sample integration time was set to 60 s. Further observational
+details are summarized in Table 1.
+2.2. Data reduction
+
+The calibration and data reduction of the data is performed using standard routines in MIRIAD1 . The data are calibrated using one of the standard primary calibrators used at the WSRT
+(3C48, 3C147, 3C286, J2052+362). The primary calibrators are
+also used for the bandpass and gain corrections.
+The line-free channels (i.e., the channels containing only
+continuum emission) were used to create a continuum image.
+This image was used to self-calibrate the data. After the selfcalibration and continuum subtraction, image cubes were created
+using the robust weighting scheme (Briggs 1995) with a robust
+parameter of zero for all galaxies. These image cubes were then
+cleaned down to a level of ∼1σ. For a list of the beam sizes
+and noise levels, see Table 1. We additionally created Hanning
+smoothed data cubes, which were used for the creation of the
+H i profiles and the derivation of the velocity widths.
+Using GIPSY2 , we created zeroth, first and second moment
+maps of all galaxies. In order to isolate significant signal, we
+smoothed the data cubes to half the original resolution and only
+retained pixels with values >2.5 times the (smoothed) noise
+value. Spurious pixels were blotted by hand. This smoothed and
+blotted data cube was used as a mask for the original data cube.
+We determined the number of channels with significant emission
+contributing to each unblanked pixel in the unsmoothed moment
+maps and created a map containing the signal-to-noise (S /N) of
+each pixel in the total intensity (zeroth moment) map. Using this
+map, we determined the average pixel value in the zeroth moment map corresponding to a S /N = 3, and clip all moment
+maps using this flux limit. Channel maps and moment maps are
+presented in the Appendix.
+1
+Multichannel Image Reconstruction, Image Analysis and Display
+(Sault et al. 1995).
+2
+GIPSY, the Groningen Image Processing SYstem (van der Hulst et al.
+1992).
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation
+
+3. Estimating the maximum rotation velocity
+In order to construct a (baryonic) Tully-Fisher relation, one
+needs to estimate the maximum (outer) rotation velocity (Vmax )
+of a galaxy. There are several ways in which this can be done,
+which are described below in increasing order of preference.
+3.1. H I velocity profile
+
+The simplest way is to use the width W of the global H i velocity profile, usually measured at the 20 (50) percent level of
+the maximum intensity, and denoted as W20 (W50 ). The advantage in using the profile width is that it is easy to measure and
+can be derived using low resolution data. The drawback is that
+one cannot distinguish between rotation and turbulence. This
+uncertainty matters little for large, fast rotating spiral galaxies.
+However, as one goes to smaller and more slowly rotating galaxies, turbulent motions will start to contribute significantly to the
+total width of H i profiles (cf. Verheijen 1997). In our analysis,
+we use the velocity profiles from the Hanning smoothed data
+cubes and correct them for instrumental broadening and turbulent motion. The corrections applied are addressed and discussed
+more fully in Sect. 5.2.
+3.2. Major axis position-velocity diagram
+
+An alternative way to derive Vmax is to make use of the major
+axis position-velocity (pV) diagram. For a galaxy with a flat rotation curve, Gaussian fits to the outer galaxy radii in the major
+axis pV-diagram (see, e.g., Fig. A.1 in the Appendix) yield an
+estimate for the (projected) amplitude of the rotation. The maximum rotation velocity is then calculated as half the diﬀerence in
+velocity between approaching and receding sides, corrected for
+inclination:
+Vreceding − Vapproaching
+V pv =
+·
+(1)
+2 sin(i)
+The pV-diagram is potentially able to better constrain the the
+maximum rotation curve velocity than W20 and W50 values
+(Verheijen 2001).
+3.3. Tilted-ring models
+
+A third method for the derivation of Vmax is a tilted-ring model,
+in which the kinematics of a galaxy are described using a set
+of concentric rings. Each of these rings can have its own center
+position (x0 , y0 ), systemic velocity Vsys , rotation velocity Vrot ,
+inclination i, and position angle PA. The pre-requisite for this
+method is a resolved velocity field showing signs of rotation.
+For the galaxies in our sample that meet this criterion, we
+derive rotation curves using the GIPSY task rotcur. Assuming
+that the gas moves on circular orbits, the line-of-sight velocity
+can be expressed as:
+V(x, y) = Vsys + Vrot (r) sin(i) cos(θ).
+
+(2)
+
+Here, θ is the azimuthal distance from the major axis in the plane
+of the galaxy and is related to the position angle PA of the galaxy
+as measured in the plane of the sky by
+cos(θ) =
+
+−(x − x0 ) sin(PA) + (y − y0 ) cos(PA)
+r
+
+(3)
+
+−(x − x0 ) cos(PA) − (y − y0 ) sin(PA)
+·
+r cos(i)
+
+(4)
+
+and
+sin(θ) =
+
+579
+
+The PA is measured counter-clockwise from the north to the major axis of the receding side of the galaxy. As positions along the
+major axis of a galaxy carry more rotational information than positions near the minor axis, we weight the individual data points
+by | cos(θ)|.
+The derivation of a rotation curve is generally an iterative
+process involving the consecutive determination of the various
+tilted-ring parameters. Following is a general description of the
+procedure applied. In order to get good initial estimates for i,
+PA, and the center position, we fit isophotes at varying intensity
+levels to the H i total intensity maps, taking care that the results
+are not aﬀected by small-scale structures. As initial estimates for
+Vsys and Vrot , we use the central velocities of the W50 profile and
+1
+2 W50 / sin(i), respectively.
+In the first tilted-ring fit, we determine the systemic velocity
+by keeping all parameters except Vsys and Vrot fixed. In a second
+run, we derive the position of the dynamical center leaving by
+leaving (only) the central position of the rings and Vrot unconstrained. In a third fit, we determine the position angle by leaving only PA, i and Vrot as free parameters. As in most cases we
+sample the rotation curves with relatively few (∼10) tilted-rings,
+we approximate the fitted values either by a constant or linearly
+changing PA. Once the PA is modeled in such a way, we make
+another fit with only i (and Vrot ) as free parameters and derive the
+inclination of the galaxy. We do not model any radial trends for
+the inclination. In a last run, we determine the rotation curve by
+keeping all parameters except Vrot fixed at their best determined
+values. The maximum velocity of the rotation curve derived in
+this way will be referred to as Vv f hereafter.
+
+4. Comments on individual galaxies
+In this section, we present our results for the individual galaxies.
+Unless mentioned otherwise, the distances given in the following
+sections are calculated by correcting the systemic velocities of
+the galaxies for Virgocentric infall (following the formalism presented in Mould et al. 2000), and assuming a Hubble flow with
+a Hubble constant of H0 = 75 km s−1 Mpc−1 . Given the diﬀerent distance outcomes of diﬀerent flow models, we use half the
+diﬀerence between the minimum and maximum flow-corrected
+distances reported in NED as an indication of the uncertainty in
+the distance. Where independent distance measurements through
+measurements of the luminosity of the tip of the red giant branch
+are available, we adopt the distances and uncertainties listed in
+the source paper.
+4.1. Sub-samples
+
+As will be discussed extensively in Sect. 5.4, we will split our
+sample into two sub-samples, namely the “profile width” subsample and the “rotation curve” sub-sample. The profile width
+sub-sample contains the galaxies for which it proved impossible to derive a maximum rotation velocity from either the tiltedring analysis (Vv f ) or from the position-velocity diagram (V pv ).
+For this sample, therefore, only W20 and W50 measurements are
+available. Their properties are summarized in Table 2. The rotation curve sub-sample is summarized in Table 3. It contains
+the galaxies for which we were able to derive Vv f and/or V pv (in
+addition to W20 and W50 ).
+In the Appendix, we show for all galaxies presented in this
+paper a summary panel consisting of moment maps, major and
+minor axis position-velocity diagrams and the global H i profile.
+
+580
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation
+
+Table 2. Derived parameters for the profile width sub-sample.
+α2000
+δ2000
+Vsys
+D
+MV
+(V − I)
+MHI
+W20
+W50
+W20, turb W50 , turb
+i
+◦
+km s−1 Mpc
+mag
+107 M
+km s−1
+km s−1
+km s−1
+km s−1
+(h m s)
+(◦   )
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(10)
+(11)
+(12)
+(13)
+D572-5
+11 48 16.4 +18 38 33
+994
+14.6 −14.56
+0.52
+8.55
+77
+62
+68
+55
+50a
+D575-1
+12 51 46.1 +21 44 07
+600
+10.0 −14.22
+0.70
+3.76
+38
+24
+30
+18
+53
+D575-5
+12 55 41.4 +19 12 34
+437
+7.7 −13.21
+0.44
+4.27
+28
+19
+16
+10
+50
+D640-13 10 56 13.9 +12 00 41
+958
+13.4 −14.36
+0.55
+4.53
+38
+25
+30
+18
+48a
+D646-7
+12 58 40.4 +14 13 03
+233
+2.1b −12.52
+0.84
+0.37
+35
+23
+26
+16
+55a
+a
+Optical I-band inclination from Pildis et al. (1997).
+b
+Distance as given in Karachentsev et al. (2003).
+Notes: (1) galaxy identifier; (2, 3) central position taken from NED; (4) systemic velocity derived from the central velocity of the W50 profile;
+(5) distance in Mpc. If no reference is given, the distance is based on Vsys (Col. 4) and a Hubble flow using H0 = 75 km s−1 Mpc−1 , including a
+correction for Virgocentric infall (Mould et al. 2000); (6) absolute V-band magnitude as given in Pildis et al. (1997), corrected to our distance
+estimates; (7) V − I color from Pildis et al. (1997); (8) total H i mass (in units of 107 M ); (9) uncorrected width of the H i profile at the 20 percent
+level of the maximum intensity. The values listed here for W20 are derived using the Hanning smoothed data; (10) as Col. 9, but for the W50 profile;
+(11) width of the W20 profile, corrected for the finite velocity resolution, and turbulent motion of the H i gas; (12) as Col. 11, but for the W50 profile;
+(13) adopted inclination angle. The velocity widths in Cols. (9)−(12) are not corrected for inclination eﬀects.
+ID
+
+Table 3. Derived parameters for the rotation curve sub-sample.
+α2000
+δ2000
+Vsys
+D
+MV (V − I) MHI
+W20
+W50 W20, turb W50, turb
+i
+PA
+Vv f
+V pv
+◦
+◦
+(h m s)
+(◦   ) km s−1 Mpc mag
+107 M km s−1 km s−1 km s−1 km s−1
+km s−1 km s−1
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(10)
+(11)
+(12)
+(13) (14) (15)
+(16)
+D500-2∗ 10 31 43.0 +25 18 33
+1259 17.9 −16.38 0.42
+87.08
+135
+120
+119
+105 57 ± 6
+345
+68
+68
+D500-3 10 05 59.5 +23 52 04
+1327 18.5 −15.74 0.31
+6.58
+96
+83
+84
+72 55a ± 6 · · ·
+···
+45
+D512-2 14 33 20.2 +26 59 54
+840 14.1 −15.22 0.80
+6.96
+88
+74
+78
+65 56 ± 10
+40
+35
+37
+D564-8∗ 09 02 54.0 +20 04 28
+478 6.5 −12.64 0.93
+1.58
+62
+48
+54
+42 63 ± 7
+13
+25
+29
+D575-2∗ 12 52 21.9 +21 37 46
+774 12.2 −15.15 0.78
+31.51
+146
+119
+129
+104 57 ± 5
+220
+74
+···
+311 5.5b −14.50 0.55
+14.68
+113
+89
+100
+78 59 ± 3
+324
+58
+53
+D631-7∗ 07 57 01.8 +14 23 27
+a
+Optical I-band inclination from Pildis et al. (1997).
+b
+Distance as given in Karachentsev et al. (2003).
+Notes: Cols. (1) to (12) as in Table 2, except that for the starred galaxies, the center position and Vsys were derived kinematically; (13) inclination
+angle (optical inclination for D500-3, kinematic inclination otherwise). The uncertainties given for the kinematic inclination angles represent the
+scatter of the values of the individual tilted-rings. For D500-3, the average uncertainty of the kinematic inclination estimates is given; (14) average
+position angle of the rotation curve analysis, measured counter-clockwise from north to the receding side of the galaxy; (15) maximum rotation
+velocity from the tilted-ring analysis of the velocity field, corrected for inclination; (16) maximum rotation velocity from the position-velocity
+diagram, corrected for inclination.
+ID
+
+We additionally show channel maps for the galaxies of the rotation curve sub-sample.
+
+4.2. D500-2 (Data presented in Figs. 1, A.1, and A.12)
+
+D500-2 is also known as UGC 5716 and is classified as an
+Sm galaxy. We assume a distance of 17.9 ± 3.4 Mpc. The global
+H i profile of D500-2 (cf. Fig. A.1) shows the double-horned profile typical for spiral galaxies, and its velocity field indicates that
+D500-2 is clearly dominated by rotation. We fit ellipses using
+the zeroth moment map at a few representative intensity levels. The resulting inclination of the H i disk, corrected for the
+beam size, is iHI ∼ 57◦ . The parameters from these isophote
+fits are used as initial estimates for the tilted-ring analysis. The
+width of the rings is set to 11 . The systemic velocity as derived in the first tilted-ring fit shows only small radial variation.
+Its mean value is Vsys = 1259 km s−1 , identical to the the central velocity of the W50 profile. Fixing the systemic velocity,
+we derive the dynamical center in a new fit by averaging the
+(x0 , y0 ) values over the entire radial range. The resulting central position (cf. Table 3) is in good agreement with the optical
+center from NED and with that derived from our ellipse fits to
+the zeroth moment map. Keeping the center position fixed for
+the subsequent tilted-ring fits, we derive the PA and inclination
+
+angle. The position angle shows a linear decrease from 350◦ in
+the center to 340◦ in the outer parts.
+The inclination is then determined in an additional fit by averaging the inclination values for r ≥ 35 . The resulting kinematic inclination is ikin ∼ 57◦ ± 6◦ , which agrees with the (beam
+corrected) inclination of the H i disk. In a last tilted-ring fit, we
+derive the rotation velocity by keeping all parameters except Vrot
+fixed to their previously derived values. After a gentle inner rise,
+the rotation curve of D500-2 reaches a flat part at a velocity of
+Vv f ∼ 68 km s−1 . The rotation curve, as well as the radial distributions for PA and ikin are shown in Fig. 1. The maximum
+rotation velocity from the pV-diagram is V pv ∼ 68 km s−1 .
+4.3. D500-3 (Data presented in Figs. A.2 and A.13)
+
+D500-3 is a dwarf irregular (dI) at a distance of 18.5 ± 3.2 Mpc.
+Its velocity field (cf. Fig. A.2) indicates solid-body rotation
+throughout the entire disk, as confirmed by the pV-diagram.
+We fit isophotes to diﬀerent intensity levels in the zeroth moment map and find an inclination of the H i disk iHI ∼ 42◦ . This
+value is somewhat smaller than the optical I-band inclination of
+iopt ∼ 55◦ as given in Pildis et al. (1997). Because of the large
+H i beam size, we consider the optical inclination superior to the
+H i inclination and use it in our further analysis. The solid-body
+rotation and the limited spatial resolution make it impossible to
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation
+
+Fig. 1. Tilted-ring analysis of D500-2. From top to bottom, the radial
+distributions of the rotation velocity, the inclination angle, and the position angle are shown. The data points in the center and bottom panel
+indicate the values derived for i and PA as free parameters. The solid
+lines indicate the values adopted to derive the rotation curve shown in
+the top panel.
+
+581
+
+Fig. 2. Tilted-ring analysis of D512-2. The layout is identical to that
+of Fig. 1.
+
+derive a well-determined rotation curve using tilted-ring models. We are, however, able to get an estimate for the maximum
+rotation velocity by using the position-velocity diagram and find
+V pv ∼ 45 km s−1 .
+4.4. D512-2 (Data presented in Figs. 2, A.3, and A.14)
+
+D512-2 is a galaxy of Hubble type Sm. We assume a distance
+of 14.1 ± 2.2 Mpc. The velocity field of D512-2 shows signs of
+solid-body rotation in its inner parts. We fit ellipses at a number
+of representative intensity levels in the zeroth moment map and
+derive an inclination of the H i disk of iHI ∼ 48◦ (corrected for
+the beam size). Because the apparent size of D512-2 is small,
+we do not fit the center position or the systemic velocity using
+tilted-ring fits. For the center position, we adopt the estimate derived from the ellipse fitting, which is in good agreement with
+the position of the optical center. For the systemic velocity, we
+use the central velocity of the W50 profile. Keeping the center
+and the systemic velocity fixed, we derive an average position
+angle PA ∼ 40◦ from the tilted ring fit, choosing the width of the
+tilted-rings to be 13 . The position angle is then kept fixed for
+a subsequent tilted-ring fit to estimate i. Averaging the resulting
+inclination values yields ikin ∼ 56◦ ±10◦ , which is consistent with
+the values discussed above. Using the kinematic inclination, we
+determine the rotation curve in a last tilted-ring run leaving only
+Vrot unconstrained. The rotation curve (cf. Fig. 2) confirms what
+was already suggested by the velocity field: a solid-body rotation
+in the inner parts and a flat part in the outer regions. The rotation
+velocity of the flat part of the rotation curve is Vv f ∼ 35 km s−1 .
+From the pV-diagram, we estimate the (inclination corrected)
+maximum rotation velocity to be V pv ∼ 37 km s−1 .
+4.5. D564-8 (Data presented in Figs. 3, A.4, and A.15)
+
+For the dwarf irregular D564-8 (also known as F564-V3, see
+de Blok et al. 1996), we assume a distance of 6.5 ± 2.6 Mpc. The
+global H i profile of D564-8 is asymmetric with its peak flux density towards the receding side of the galaxy. The asymmetry of
+
+Fig. 3. Tilted-ring analysis of D564-8. The layout is identical to that
+of Fig. 1.
+
+the global H i profile can be traced also in the pV-diagram. The
+maximum rotation velocity, obtained from the pV-diagram is
+V pv ∼ 29 km s−1 . We use ellipse fitting to the zeroth moment map
+to derive initial estimates for our tilted-ring fits. We set the width
+of the tilted-rings to 12 . In the first tilted-ring fit, we derive a
+systemic velocity of Vsys ≈ 478 km s−1 , which agrees well with
+the central velocity of the W50 profile. In a subsequent fit, we derive the dynamical center by averaging the values for x0 and y0
+over the entire radial range. The resulting center (cf. Table 3)
+agrees to within a few arcseconds with the optical center from
+NED. In two subsequent tilted-ring fits, we derive the PA and
+inclination by averaging the individual measurements over the
+radial range, excluding the innermost (deviant) data point. The
+resulting inclination (ikin ∼ 63◦ ± 7◦ ) is larger than both the one
+derived from the H i disk (iHI ∼ 50◦ ), and the optical inclination
+(iopt ∼ 35◦ , Pildis et al. 1997). However, an inclination of 50◦ ,
+or even 35◦ can be ruled out by our kinematic data. Keeping all
+parameters except the rotation velocity fixed to their best estimates, we derive the rotation curve of D564-8. The maximum
+rotation velocity is Vv f ∼ 25 km s−1 (see Fig. 3).
+
+582
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation
+
+4.6. D565-5
+
+The WSRT observations of D565-5 do not detect any emission
+at the reported position and redshift. We do, however, see strong
+emission from the nearby galaxy NGC 2903 at the edge of the
+primary beam. The agreement of the apparent velocity of this
+emission with that of the Schombert et al. (1997) detection suggests that the latter detection was simply NGC 2903 emission
+that was picked up with the larger single-dish beam.
+4.7. D572-5 (Data presented in Fig. A.5)
+
+D572-5 is an irregular galaxy at a distance of 14.6±3.2 Mpc. Our
+H i data of this galaxy are barely resolved (see, e.g., the moment
+maps in Fig. A.5), which makes it diﬃcult to derive a reliable
+H i inclination. We therefore adopt the value of the I-band inclination iopt ∼ 50◦ as given by Pildis et al. (1997) in further
+analysis. Due to the low resolution, substantial oﬀ-axis H i emission enters the beam, causing the large velocity range in the minor axis pV-diagram. Given these problems, a rotation curve or
+a V pv from the major axis position-velocity diagram cannot be
+reliably derived. The only usable indicators for the maximum
+rotation velocity are W20 and W50 .
+4.8. D575-1 (Data presented in Fig. A.6)
+
+D575-1, also known as IC 3810, is classified as an Sm/Irr galaxy.
+We assume a distance of 10.0 ± 3.6 Mpc. Its global H i profile
+is well described by a Gaussian. The first-moment map and the
+position-velocity diagrams show only a small velocity range and
+it proved impossible to estimate either Vv f or V pv . The inclination
+of the H i disk (derived using ellipse fitting and corrected for the
+beam size) is iHI ∼ 53◦ and in reasonable agreement with the
+optical inclination (iopt ∼ 61◦ ) from Pildis et al. (1997) (though
+the observed small velocity range in the velocity field and pV
+diagram casts some doubt on the validity of these values).
+4.9. D575-2 (Data presented in Figs. 4, A.7, and A.16)
+
+D575-2, or UGC 8011, is a galaxy of the Hubble type Im, with
+an assumed distance of 12.2 ± 4.5 Mpc. It was not possible
+to estimate V pv from the position-velocity diagram. The galaxy
+is kinematically lopsided, which can be seen in the diﬀerences
+in the velocity contours between the approaching and receding
+side. Using ellipse fitting, we determine the inclination of the
+H i disk to be iHI ∼ 52◦ , which is somewhat less inclined than
+what Pildis et al. (1997) found optically (iopt ∼ 63◦ ). With the
+H i ellipse fitting results as initial estimates for a tilted-ring analysis and adopting a width of the tilted-rings of 14 , we determine
+a systemic velocity of Vsys ∼ 774 km s−1 . This agrees to within
+2 km s−1 with the center of the W50 profile. Fixing the systemic
+velocity, we determine a position of the dynamical center (see
+Table 3) in excellent agreement with the optical center as given
+in NED. Leaving PA and i unconstrained, we find a gradual decrease of the position angle from ∼230◦ in the inner parts to
+∼210◦ in the outskirts of D575-2. Fixing the PA to these values,
+we derive the inclination by averaging over all data points. The
+resulting inclination (ikin ∼ 57◦ ± 5◦ ) is halfway between the
+optical inclination and the one from the H i disk. Keeping the
+inclination fixed to the kinematic estimate, we derive the rotation curve of D575-2 (see Fig. 4). After a linear increase in the
+inner parts of the galaxy, the rotation velocity reaches a flat part
+at ∼74 km s−1 .
+
+Fig. 4. Tilted-ring analysis of D575-2. The layout is identical to that
+of Fig. 1.
+
+4.10. D575-5 (Data presented in Fig. A.8)
+
+D575-5 is classified as a dwarf irregular at an assumed distance
+of 7.7 ± 3.1 Mpc. Its global H i profile has a Gaussian shape
+and its W50 is the smallest of our sample (W50 ∼ 19 km s−1 for
+the Hanning smoothed data cube). Pildis et al. (1997) estimate
+the optical inclination to be iopt ∼ 66◦ , which is higher than the
+(beam corrected) inclination of the H i disk, for which we derive
+iHI ∼ 50◦ . However, neither the velocity field, nor the major axis
+pV-diagram show clear signs of rotation. We were unable to derive a maximum rotation velocity from either the velocity field,
+or from the major-axis position-velocity diagram. The secondmoment map shows values of 6−8 km s−1 throughout the entire
+disk. This suggests D575-5 is close to face-on and that a relatively large fraction of the profile width is caused by turbulence.
+For the inclination correction of W20 and W50 , we use the inclination of the H i disk, as the appearance of D575-5 rules out
+the optical inclination of iopt ∼ 66◦ , though we note that the observed small velocity range indicates that even this H i value is
+likely to be an overestimate of the true inclination.
+4.11. D631-7 (Data presented in Figs. 5, A.9, and A.17)
+
+D631-7 is also known as UGC 4115 and is classified as a dwarf
+irregular. Karachentsev et al. (2003) estimate its distance to be
+5.5 ± 0.6 Mpc using the luminosity of the tip of the red giant
+branch. The global H i profile of D631-7 is single-peaked. Its
+velocity field is well-resolved and shows clear signs of rotation.
+The major axis pV-diagram shows indications of a flat rotation
+curve in the outer parts of the galaxy. Ellipse fitting yields an
+inclination of the H i disk iHI ∼ 57◦ . The ellipse fit results are
+used as initial estimates for the tilted ring analysis. The width
+of the rings is set to 12 . In the first tilted-ring fit, we derive a
+systemic velocity of Vsys ∼ 311 km s−1 , which agrees well with
+the center of the W50 profile. The dynamical center is fitted in
+the second run with rotcur. The resulting center position is
+given in Table 3, and agrees to within 1 with the optical center
+as given by NED. The PA of D631-7 is obtained in a subsequent fit with rotcur and shows a gradual increase from ∼318◦
+in the inner parts to ∼330◦ in the outer parts. Fixing the PA to
+these values, we derive the kinematic inclination of D631-7 to
+be ikin ∼ 59◦ ± 3◦ by averaging the individual tilted-ring values for 50 ≤ r ≤ 150 . This is in good agreement with the
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation
+
+Fig. 5. Tilted-ring analysis of D631-7. The layout is identical to that
+of Fig. 1.
+
+inclination of the H i disk (iHI ∼ 57◦ ), but more face-on than
+the optical inclination (iopt ∼ 66◦ , derived by Pildis et al.
+1997). Keeping all parameters except vrot fixed, we determine
+the rotation curve of D631-7 (see Fig. 5). It shows the typical
+solid-body rotation in the inner parts, but reaches a flat part at
+Vv f ∼ 58 km s−1 . Assuming the kinematical inclination we derive V pv ∼ 53 km s−1 from the pV diagram.
+4.12. D640-13 (Data presented in Fig. A.10)
+
+D640-13 is an Im/Sm type galaxy with an adopted distance of
+13.4 ± 3.4 Mpc. Its global H i profile has a Gaussian shape.
+Comparing the size and the shape of the beam with that of the
+moment maps shows that the galaxy is barely resolved. This
+heavily aﬀects the derived inclination of the H i disk (iHI ∼ 71◦ )
+which is much higher than the optical inclination (iopt ∼ 48◦ ) by
+Pildis et al. (1997). We therefore use the optical inclination for
+our further analysis. As neither the position-velocity diagrams,
+nor the first-moment map show clear signs of rotation, only the
+widths of the W20 and W50 profiles remain as a proxy for the
+maximum rotation velocity, which we correct using the optical
+inclination.
+
+583
+
+Fig. 6. Stellar I-band mass-to-light ratio (Υ∗ ) vs. (V − I) color for two
+diﬀerent population synthesis models. The circles are based on the models from Bell & de Jong (2001) with a scaled Salpeter IMF, the triangles
+are based on the Portinari et al. (2004) models with a Kroupa IMF. Note
+that D631-7 and D640-13 have the same color: for clarity reasons we
+only plot one point.
+
+Before using them to construct a BTF, we discuss our choices
+for the stellar mass-to-light ratios (Υ∗ ), describe the corrections
+applied to the line width measurements and estimate the uncertainties in the rotation velocities and baryonic masses.
+5.1. The choice of the stellar mass-to-light ratio Υ∗
+
+D646-7 (or UGC 8091) is classified as an irregular dwarf galaxy
+for which Karachentsev et al. (2003) estimate a distance of
+2.1 ± 0.6 Mpc, using the tip of the red giant branch. The global
+H i profile of D646-7 has a clear Gaussian shape. The galaxy
+lacks clear signs of rotation, both in the velocity field and in the
+major-axis position-velocity diagram. Thus, only W20 and W50
+remain as indicators for the maximum rotation velocity. The optical inclination of D646-7, derived by Pildis et al. (1997), is
+iopt ∼ 55◦ , which is in good agreement with the (uncorrected)
+inclination of the H i disk (iHI ∼ 51◦ ). However, given that the
+galaxy is not well resolved, we use the optical inclination in our
+analysis.
+
+One of the largest contributors to the scatter in baryonic mass
+is the assumed value for the stellar mass-to-light ratio Υ∗ and
+its uncertainty. Fortunately, the eﬀect of Υ∗ becomes less important when dealing with low-mass galaxies, as their stellar mass
+generally contributes less to the total baryonic mass than the gas
+mass does (for reasonable values of Υ∗ ). The Υ∗ values adopted
+here are derived on the basis of two diﬀerent population synthesis models using two diﬀerent Initial Mass Functions (IMFs).
+The first model is from Bell & de Jong (2001) and uses a scaled
+Salpeter IMF (Salpeter 1955). The second population synthesis
+model discussed here uses a Kroupa IMF (Kroupa 1998) and is
+taken from Portinari et al. (2004). Figure 6 shows the derived
+stellar (I-band) mass-to-light ratios of our galaxies for the two
+population models as a function of color.
+It is immediately apparent that the Υ∗ from Bell & de Jong
+(2001) are consistently larger than the ones from Portinari et al.
+(2004). Although this diﬀerence can amount to a factor close to
+three, the impact on the baryonic mass (i.e., the sum of the stellar
+mass and the gas mass) is rather small, as can be seen in Fig. 7,
+where, for each galaxy, we compare the ratio of the two diﬀerent
+stellar mass assumptions against the baryonic mass implied by
+the respective Υ∗ values. In the following analysis we will adopt
+the average Υ∗ values implied by the two models. The individual
+mass-to-light ratios are listed in Table 4.
+
+5. Analysis
+
+5.2. Line width corrections
+
+In the previous section, we have derived several estimates for
+the maximum rotation velocities of the galaxies in our sample.
+
+The rotation velocities derived using the profile widths W20
+and W50 , still need to be corrected for instrumental velocity
+
+4.13. D646-7 (Data presented in Fig. A.11)
+
+584
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation
+
+Table 4. Stellar, gas, and baryonic masses.
+Mgas
+M∗ (Bell) M∗ (Portinari)
+Mbar
+108 M
+108 M
+108 M
+108 M
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+D500-2
+0.35
+0.12
+0.24 ± 0.12
+12.19
+0.73
+0.26
+12.69
+D500-3
+0.26
+0.09
+0.18 ± 0.09
+0.92
+0.28
+0.09
+1.11
+D512-2
+0.90
+0.37
+0.64 ± 0.27
+0.98
+0.93
+0.38
+1.63
+D564-8
+1.24
+0.54
+0.89 ± 0.35
+0.22
+0.14
+0.06
+0.32
+D572-5
+0.44
+0.16
+0.30 ± 0.14
+1.20
+0.19
+0.07
+1.33
+D575-1
+0.70
+0.28
+0.49 ± 0.21
+0.53
+0.26
+0.10
+0.71
+D575-2
+1.07
+0.45
+0.76 ± 0.31
+4.41
+1.02
+0.43
+5.13
+D575-5
+0.36
+0.13
+0.25 ± 0.12
+0.60
+0.04
+0.02
+0.63
+D631-7
+0.48
+0.18
+0.33 ± 0.15
+2.05
+0.20
+0.08
+2.19
+D640-13
+0.48
+0.18
+0.33 ± 0.15
+0.64
+0.18
+0.07
+0.76
+D646-7
+0.99
+0.41
+0.70 ± 0.29
+0.05
+0.09
+0.04
+0.12
+Notes: (1) galaxy identifier; (2) stellar I-band mass-to-light ratio based on Bell & de Jong (2001); (3) stellar I-band mass-to-light ratio based on
+Portinari et al. (2004); (4) average of I-band Υ∗ values listed in Cols. (2) and (3). For the uncertainty in Υ∗ , we assume half the diﬀerence between
+the mass-to-light ratios of the two population models; (5) the gas mass in 108 M ; (6) the stellar mass based on Υ∗ in Col. (2) in units of 108 M ;
+(7) like (6), but based on Υ∗ in Col. (3); (8) the baryonic mass used in further analysis, derived from the gas mass in Col. (5) and the average of
+the stellar masses in Cols. (6) and (7).
+ID
+
+Υ∗I (Bell)
+
+Υ∗I (Portinari)
+
+Υ∗I
+
+motion of the neutral gas. Following Tully & Fouque (1985),
+we use
+⎡
+⎡
+
+
+2 ⎤
+2 ⎤
+x
+x
+⎥⎥⎥
+⎢⎢⎢
+⎥⎥⎥
+− WWc,x
+− WWc,x
+⎢⎢⎢
+2
+2
+2 ⎢
+⎥
+⎢
+⎥⎦ . (6)
+W x,turb = W x + Wt,x ⎣1 − 2e
+⎦ − 2W x Wt,x ⎣1 − e
+
+Fig. 7. The ratio of the stellar mass from Bell & de Jong (2001) and
+Portinari et al. (2004) vs. the implied baryonic mass. Baryonic masses
+derived using the Bell & de Jong (2001) stellar masses are shown as
+filled circled; baryonic masses derived using the Portinari et al. (2004)
+models as open circles. It is clear the choice of Υ∗ has only a small eﬀect
+on the baryonic masses.
+
+The subscript x again refers to the profile width measured at 20
+or 50 percent of the peak flux; W x indicates velocity widths already corrected for instrumental resolution following Eq. (5).
+The Wc,x values represent the typical velocity widths where
+the shapes of the velocity profiles change from boxy (doublehorned) to Gaussian; the constants Wt,x indicate the amount by
+which turbulent motion of the neutral gas broadens the H i profile. For the choice of Wc,x and Wt,x , we follow Verheijen (1997),
+who assumes a turbulent motion of the gas with a velocity
+dispersion of 10 km s−1 and values of Wt,20 = 22 km s−1 ,
+Wt,50 = 5 km s−1 , Wc,20 = 120 km s−1 and Wc,50 = 100 km s−1
+(see Chap. 5 of Verheijen 1997 for an extensive discussion of
+these correction terms). The resulting corrected profile widths
+are given in Cols. (11) and (12) of Tables 2 and 3. Note that
+the profile widths listed in Tables 2 and 3 are not corrected for
+inclination.
+5.3. Sources of uncertainties
+5.3.1. Uncertainty in Vmax
+
+resolution and turbulence. To correct for the instrumental resolution, we use the approach of Verheijen (1997):
+⎡
+⎤
+⎢⎢⎢
+⎥⎥⎥
+ R 2
+⎢⎢⎢
+⎥
+obs
+W x = W x − C x · ⎢⎢ 1 +
+− 1⎥⎥⎥⎥ ,
+⎣
+⎦
+23.5
+
+(5)
+
+where the subscript x refers to the chosen profile width measure
+(i.e., x = 20 for W20 and x = 50 for W50 ), R is the instrumental
+resolution in km s−1 (cf. Col. (9) in Table 1), and C x is a constant,
+equal to C20 = 35.8 for the W20 profile and C50 = 23.5 for the
+W50 profile. The “obs” superscript in W xobs denotes the observed
+profile width (given in Cols. (9) and (10) of Tables 2 and 3).
+In addition to broadening due to finite velocity resolution,
+we correct the velocity widths for broadening due to turbulent
+
+The uncertainty in Vmax depends on the measurement error in
+the observed velocity and that in the inclination value. For the
+velocity uncertainty we assume that we can measure the velocity
+with an accuracy of one channel width (∼4 km s−1 ). In addition,
+we assume that noise in the data or intrinsic variance within the
+galaxies introduce another channel width worth of uncertainty.
+The total uncertainty we assume is the quadratic sum of these
+two terms or 6 km s−1 .
+For the uncertainty in the derived inclination angle, we distinguish between galaxies with a kinematically derived inclination, and those where we had to use the optical inclination or
+that of the H i disk. For the former category, we adopt the scatter of the inclination values of the individual tilted-ring models
+(see middle panels in Figs. 1−5) as the inclination uncertainty
+(see Col. (13) of Table 3). The average value of the uncertainties
+in these kinematically derived inclinations is 6◦ and is used as
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation
+
+the uncertainty in the inclination angles of the remaining galaxies. The total uncertainty of the (inclination-corrected) maximum rotation velocity is then calculated using Gaussian error
+propagation.
+5.3.2. Uncertainty of the baryonic mass
+
+The baryonic mass is the sum of the stellar mass and the gas
+mass:
+Mbar = Mstars + Mgas .
+
+(7)
+
+The stellar mass is calculated through
+Mstars = Υ∗I 10−0.4[MV −(V−I)−4.02] ,
+
+(8)
+
+where Υ∗I is the stellar mass-to-light ratio in the I-band, MI =
+MV − (V − I) is the absolute I-band magnitude, and 4.02 is the
+magnitude of the Sun in the I-band. The absolute magnitude of
+a galaxy depends through the distance modulus on its apparent
+magnitude and its distance. Thus, the stellar mass depends on
+three quantities: stellar mass-to-light ratio, distance, and apparent magnitude. For the uncertainty in the mass-to-light ratio, we
+use the values derived in Sect. 5.1. For the uncertainty in the
+distances, we use the values listed in Sect. 4. The apparent magnitudes of the galaxies in our sample were determined by Pildis
+et al. (1997), who report a photometric accuracy of 0.05 mag.
+This is insignificant compared to the influence of the uncertainties in the distance and in the stellar Υ∗ , and we therefore ignore
+the uncertainties of mV for the uncertainty of the stellar mass.
+The second term contributing to the baryonic disk mass is
+Mgas , the mass of the gas, which is given by:
+Mgas = 1.4MHI = 1.4 · 2.36 · 105 D2
+
+S dv,
+
+(9)
+
+where MHI is the total H i mass, D is the distance in Mpc, S is
+the total flux in mJy beam−1, and dv is the velocity resolution
+in km s−1 . The constant factor 1.4 corrects the H i mass for the
+presence of helium and metals. Note that since H2 /H i, the ratio
+between the molecular and the neutral hydrogen, is much lower
+in dwarf galaxies compared to luminous spirals (Taylor et al.
+1998; Leroy et al. 2005), we do not apply correction terms to
+account for molecular hydrogen. The uncertainty of the H i mass
+depends on the uncertainty of the total flux, and quadratically on
+the distance uncertainty. We focus again on the uncertainty in
+the distance, which is the dominant source of uncertainty here.
+Inserting Eqs. (8) and (9) into Eq. (7), we determine the uncertainty of the baryonic mass by assuming a Gaussian error propagation of the individual uncertainties discussed above. The stellar, gas, and baryonic masses are also listed in Table 4.
+5.4. The baryonic Tully-Fisher relation
+
+In this section we present the baryonic Tully-Fisher relation for
+the galaxies of our sample, using the diﬀerent estimates for Vmax
+derived previously. As a reference, we use the work by McGaugh
+(2005). It presents the BTF for galaxies with well-determined rotation velocities between 50 km s−1 and 300 km s−1 , and tests
+several methods to determine stellar mass-to-light ratios. The
+one yielding the smallest scatter in the BTF is based on the massdiscrepancy-acceleration relation (MDAcc, see McGaugh 2004)
+and gives a BTF relation
+4
+Mbar = 50Vmax
+,
+
+(10)
+
+585
+
+with the baryonic mass in M and the maximum rotation velocity in km s−1 .
+For the construction of a BTF relation using our galaxies,
+we use the four diﬀerent estimates for Vmax derived earlier. To
+recapitulate, these are:
+(a) Vv f , obtained from a tilted-ring analysis of the velocity
+fields;
+(b) V pv , obtained from fitting the outer parts in major-axis
+position-velocity diagrams;
+(c) VW20 , obtained from 12 W20 , the rotation velocity as derived
+from half the (corrected) width of the H i profile at the
+20 percent level of the maximum flux;
+(d) VW50 , obtained from 12 W50 , the rotation velocity as derived
+from half the (corrected) width of the H i profile at the
+50 percent level of the maximum flux.
+These velocities are all corrected for inclination. Additional corrections have been applied to VW20 and VW50 (as described in
+Sect. 5.2).
+In Fig. 8, we show the baryonic Tully-Fisher relation for the
+galaxies of our sample using the diﬀerent velocity estimates. The
+uncertainties are discussed in Sect. 5.3. In Fig. 8, we distinguish
+between galaxies in which clear signatures of rotation were detected in the position-velocity diagram and/or the velocity field
+(V pv and/or Vv f available in addition to VW20 and VW50 ; the rotation curve sub-sample), and galaxies for which no clear rotation
+was detectable (only VW20 and VW50 available; the profile-width
+sub-sample). For all four measures of Vmax , the galaxies in the
+rotation curve sub-sample are consistent with the BTF as derived
+in McGaugh (2005) and Stark et al. (2009).
+A few galaxies in the profile-width sub-sample are also consistent with a line-width-based BTF, but the majority of these
+galaxies are found to the left of the extrapolated BTF. This
+may indicate an increased scatter at the low line-width end of
+a line-width based BTF. Alternatively, the galaxies may be more
+face-on than indicated by the optical or H i inclinations (e.g.,
+D575-5), or they may not be supported by rotation. Without independent and/or resolved measures of the rotation velocity and
+the kinematic inclinations, it is diﬃcult to say anything further
+on these galaxies.
+In the following we therefore restrict our analysis to those
+galaxies which have a well resolved velocity field which allowed
+us to derive a rotation curve or – at the very least – a maximum
+rotation velocity using the position-velocity diagram (consistent
+with the procedure used in McGaugh 2005 and Stark et al. 2009).
+We emphasize that this is our only selection criterion. We do not
+preferentially select against galaxies that are not on the BTF, (in
+fact, one of the profile-width-only galaxies (D572-5) is right on
+the BTF), and we include all galaxies for which V pv or Vv f could
+be determined regardless of their position in the BTF diagram.
+5.5. The scatter of the BTF
+
+The panels in Fig. 8 clearly show that the data points from our
+rotation curve sample agree well with the BTF relation from
+McGaugh (2005) as given in Eq. (10). This relation was derived using resolved observations of the flat parts of the rotation
+curves of the sample galaxies. Including our five galaxies with
+measured values of Vv f yields a revised BTF of the form
+3.97
+.
+Mbar = 58Vmax
+
+(11)
+
+586
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation
+
+Fig. 8. The baryonic Tully-Fisher relation using four diﬀerent estimates for Vmax , namely Vv f from the tilted-ring analysis of the velocity fields
+(top left), V pv from the major-axis position-velocity diagram (top right), VW20 , i.e., half the W20 (bottom left), and VW50 , i.e., half the W50 (bottom
+right). As a reference, we show the BTF relation of the analysis of McGaugh (2005, dashed line). In the top panels, the star-dominated galaxies
+of McGaugh (2005) are shown as small squares and the gas-dominated galaxies of Stark et al. (2009) are shown as small circles. In the lower
+panels, the velocity widths from Bothun (1985) (small squares) and McGaugh et al. (2000) (small circles) are shown for comparison. Our new data
+are show as large circles. Galaxies for which no rotation is discernable are shown as open circles (with line-widths only) and those with rotation
+detected in the position-velocity diagram are shown as filled circles. The latter fall along the extrapolation of the BTF relation found by McGaugh
+(2005) while some of the former fall oﬀ the relation. These galaxies may not be supported by rotation, may have incorrect inclinations, or could
+simply reflect the increased scatter in the relation when line-width is used as a proxy for rotation velocity.
+
+This is remarkably close to the revised BTF presented in Stark
+et al. (2009), which extends the McGaugh (2005) BTF with an
+independent sample of low-mass gas-rich galaxies. They find
+3.94
+Mbar = 62Vmax
+.
+
+(12)
+
+The three fits given in Eqs. (10), (11) and (12) are statistically
+identical.
+For comparison, Bell & de Jong (2001) find a slope of 3.5
+for a subsample of the McGaugh (2005) sample, but choose different Υ∗ values than McGaugh (2005) does. Using identical Υ∗
+values yields identical slopes. Work by Geha et al. (2006) gives a
+slope of 3.7, De Rijcke et al. (2007) find a slope of 3.15, but this
+includes early-type galaxies. An analysis by Meyer et al. (2008)
+of H i-selected galaxies gives a steeper slope of 4.35. The majority of these studies deal with massive galaxies, dominated by
+stars, and are therefore sensitive to assumptions on Υ∗ . The new
+data presented here provide a test of the slope extrapolated from
+
+the fit to higher mass galaxies that do not overlap with this sample, and prefer a slope of ∼4. This is also the conclusion of Stark
+et al. (2009) who calibrate the BTF using only gas-dominated
+galaxies, independent of assumptions on Υ∗ . They find a slope
+of 3.94 (Eq. (12)). If a single, unbroken BTF exists, this can only
+imply that the slope at the high mass end must also be close to 4.
+We now return to the conclusions of Franx & de Zeeuw
+(1992), who use the scatter of the TF relation to put constraints
+on the ellipticity of dark matter halos. They argue that if the
+potential in the plane of the disk is elongated, then the diﬀerent viewing angles will cause scatter in the TF relation. In return, the scatter of the (B)TF relation can be used to put an upper limit on the ellipticity of the potential in the plane of the
+disk. According to Franx & de Zeeuw (1992), a TF relation
+with a scatter of 0.31 mag (0.46 mag when photometric inclinations are used) constrains the ellipticities of the potentials to be
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation
+
+below 0.10. As it is unlikely that all the scatter in the TF relation
+is due to diﬀerent viewing angles, they argue that an elongation
+between 0 and 0.06 is reasonable.
+Since the work of Franx & de Zeeuw (1992), the quantity
+and quality of the data have improved significantly and we can
+now trace the BTF relation over a large range of galaxy masses
+and rotation velocities. The scatter in the optimum BTF from
+McGaugh (2005) is σ = 0.098 dex, or 0.25 mag. Including our
+galaxies results in a slightly larger scatter (σ = 0.13 or σM =
+0.33 mag) – mainly because the distances to our galaxies are
+more uncertain. This scatter is only marginally larger than the
+scatter on which Franx & de Zeeuw (1992) based their upper
+limits for the ellipticity of the potentials in the disk plane.
+Their arguments equally apply to our sample. As the
+small scatter in the BTF holds down to rotation velocities
+of ∼25 km s−1 , it follows that the elongation of the potentials of
+these galaxies cannot be very large, and similar limits as those
+derived by Franx & de Zeeuw (1992), also apply to our galaxies.
+The upper limit on elongation of the potential of 0.06 is consistent with the results derived by Trachternach et al. (2008) who
+use harmonic decompositions of the velocity fields of 18 nearby
+well-resolved galaxies from the THINGS survey (Walter et al.
+2008; de Blok et al. 2008) to put constraints on the elongation
+of the potential in the plane of the disk. They find that the the
+average elongation of the potential is small (0.017 ± 0.020), particularly when compared to what is found in CDM simulations
+(cf. Frenk et al. 1988; Hayashi & Navarro 2006). Trachternach
+et al. (2008) also find that the elongation does not increase towards the center of the galaxies. The tightly correlated BTF relation presented in this paper constrains the ellipticity of galaxy
+potentials using a diﬀerent method, but reaches similar results.
+
+6. Conclusions
+We present new H i observations of a sample of low-mass
+dwarf galaxies and use these to explore and extend the baryonic
+Tully-Fisher (BTF) relation at low rotation velocities and galaxy
+masses. We present and discuss several estimates for Vmax , the
+maximum rotation velocity. For galaxies where a clear rotation signal could be detected, the diﬀerent estimates are in good
+agreement and the BTF relations based on them are equally wellconstrained. We discuss the choice of stellar mass-to-light ratio
+(Υ∗ ) and show that its choice is not crucial for the extreme dwarf
+galaxies in our sample, since for them, the stellar mass generally
+contributes less to the total baryonic mass than is the case for
+luminous high-mass galaxies.
+The small scatter in the BTF presented here (σM =
+0.33 mag) puts strong constraints on the ellipticity of the potential in the plane of the disk of the galaxies. Our results are
+in agreement with those from Franx & de Zeeuw (1992), Franx
+et al. (1994), and Trachternach et al. (2008), indicating that, at
+least in the plane of the disk, galaxy halos are not very elongated.
+The small scatter in the BTF over almost 5 orders of magnitude
+of baryonic mass indicates it is a fundamental relation which
+tightly couples the visible baryonic matter and the dark matter
+content of galaxies.
+Acknowledgements. C.T. would like to thank Janine van Eymeren and
+Volker Knierim for many stimulating discussions. We also thank the anonymous referee for valuable comments. The work of C.T. is supported by
+the German Ministry for Education and Science (BMBF) through grant 05
+AV5PDA/3. The work of W.J.G.d.B. is based upon research supported by the
+South African Research Chairs Initiative of the Department of Science and
+Technology and National Research Foundation. The Westerbork Synthesis Radio
+Telescope is operated by the ASTRON (Netherlands Foundation for Research
+
+587
+
+in Astronomy) with support from the Netherlands Foundation for Scientific
+Research (NWO). This research has made use of the NASA/IPAC Extragalactic
+Database (NED) which is operated by the Jet Propulsion Laboratory, California
+Institute of Technology, under contract with the National Aeronautics and Space
+Administration.
+
+References
+Bell, E. F., & de Jong, R. S. 2001, ApJ, 550, 212
+Blanton, M. R., Geha, M., & West, A. A. 2008, ApJ, 682, 861
+Bothun, G. D. 1985, AJ, 90, 1982
+Briggs, D. S. 1995, in BAAS, 27, 1444
+Broeils, A. H. 1992, Ph.D. Thesis, Univ. Groningen
+de Blok, W. J. G., McGaugh, S. S., & van der Hulst, J. M. 1996, MNRAS, 283,
+18
+de Blok, W. J. G., Walter, F., Brinks, E., et al. 2008, AJ, 136, 2648
+De Rijcke, S., Zeilinger, W. W., Hau, G. K. T., Prugniel, P., & Dejonghe, H.
+2007, ApJ, 659, 1172
+Eder, J. A., & Schombert, J. M. 2000, ApJS, 131, 47
+Eisenstein, D. J., & Loeb, A. 1996, ApJ, 459, 432
+Franx, M., & de Zeeuw, T. 1992, ApJ, 392, L47
+Franx, M., van Gorkom, J. H., & de Zeeuw, T. 1994, ApJ, 436, 642
+Frenk, C. S., White, S. D. M., Davis, M., & Efstathiou, G. 1988, ApJ, 327, 507
+Geha, M., Blanton, M. R., Masjedi, M., & West, A. A. 2006, ApJ, 653, 240
+Gurovich, S., McGaugh, S. S., Freeman, K. C., et al. 2004, Publ. Astron. Soc.
+Aust., 21, 412
+Hayashi, E., & Navarro, J. F. 2006, MNRAS, 373, 1117
+Karachentsev, I. D., Makarov, D. I., Sharina, M. E., et al. 2003, A&A, 398, 479
+Kovac, K. 2007, Ph.D. Thesis, Univ. Groningen
+Kroupa, P. 1998, in Brown Dwarfs and Extrasolar Planets, ed. R. Rebolo, E. L.
+Martin, & M. R. Zapatero Osorio, ASP Conf. Ser., 134, 483
+Leroy, A., Bolatto, A. D., Simon, J. D., & Blitz, L. 2005, ApJ, 625, 763
+Matthews, L. D., van Driel, W., & Gallagher, III, J. S. 1998, AJ, 116, 2196
+McGaugh, S. S. 2004, ApJ, 609, 652
+McGaugh, S. S. 2005, ApJ, 632, 859
+McGaugh, S., & de Blok, E. 1998a, in Galactic Halos, ed. D. Zaritsky, ASP
+Conf. Ser., 136, 210
+McGaugh, S. S., & de Blok, W. J. G. 1998b, ApJ, 499, 41
+McGaugh, S. S., Schombert, J. M., Bothun, G. D., & de Blok, W. J. G. 1999, in
+BAAS, 31, 1559
+McGaugh, S. S., Schombert, J. M., Bothun, G. D., & de Blok, W. J. G. 2000,
+ApJ, 533, L99
+Meyer, M. J., Zwaan, M. A., Webster, R. L., Schneider, S., & Staveley-Smith, L.
+2008, MNRAS, 391, 1712
+Mo, H. J., Mao, S., & White, S. D. M. 1998, MNRAS, 295, 319
+Mould, J. R., Huchra, J. P., Freedman, W. L., et al. 2000, ApJ, 529, 786
+Noordermeer, E., & Verheijen, M. A. W. 2007, MNRAS, 381, 1463
+Pierce, M. J., & Tully, R. B. 1988, ApJ, 330, 579
+Pildis, R. A., Schombert, J. M., & Eder, J. A. 1997, ApJ, 481, 157
+Portinari, L., Sommer-Larsen, J., & Tantalo, R. 2004, MNRAS, 347, 691
+Sakai, S., Mould, J. R., Hughes, S. M. G., et al. 2000, ApJ, 529, 698
+Salpeter, E. E. 1955, ApJ, 121, 161
+Sault, R. J., Teuben, P. J., & Wright, M. C. H. 1995, in Astronomical Data
+Analysis Software and Systems IV, ed. R. A. Shaw, H. E. Payne, & J. J. E.
+Hayes, ASP Conf. Ser., 77, 433
+Schombert, J. M., Pildis, R. A., & Eder, J. A. 1997, ApJS, 111, 233
+Springob, C. M., Masters, K. L., Haynes, M. P., Giovanelli, R., & Marinoni, C.
+2007, ApJS, 172, 599
+Stark, D. V., McGaugh, S. S., & Swaters, R. A. 2009, AJ, 138, 392
+Steinmetz, M., & Navarro, J. F. 1999, ApJ, 513, 555
+Taylor, C. L., Kobulnicky, H. A., & Skillman, E. D. 1998, AJ, 116, 2746
+Trachternach, C., de Blok, W. J. G., Walter, F., Brinks, E., & Kennicutt, R. C.
+2008, AJ, 136, 2720
+Tully, R. B., & Fisher, J. R. 1977, A&A, 54, 661
+Tully, R. B., & Fouque, P. 1985, ApJS, 58, 67
+Tully, R. B., & Pierce, M. J. 2000, ApJ, 533, 744
+van der Hulst, J. M., Terlouw, J. P., Begeman, K. G., Zwitser, W., & Roelfsema,
+P. R. 1992, in Astronomical Data Analysis Software and Systems I, ed. D. M.
+Worrall, C. Biemesderfer, & J. Barnes, ASP Conf. Ser., 25, 131
+Verheijen, M. A. W. 1997, Ph.D. Thesis, Univ. Groningen
+Verheijen, M. A. W. 2001, ApJ, 563, 694
+Walter, F., Brinks, E., de Blok, W. J. G., et al. 2008, AJ, 136, 2563
+Willick, J. A., Courteau, S., Faber, S. M., et al. 1997, ApJS, 109, 333
+Zwaan, M. A., van der Hulst, J. M., de Blok, W. J. G., & McGaugh, S. S. 1995,
+MNRAS, 273, L35
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 1
+
+Appendix A: Atlas
+The Appendix contains summary panels for all galaxies of our
+sample (Figs. A.1−A.11) and channel maps for the galaxies from
+the rotation curve sub-sample (Figs. A.12−A.17).
+The summary panels consist of two rows with three panels
+each, and contain the following maps:
+Top row: Left panel: zeroth moment map with grayscales.
+Unless mentioned otherwise, grayscales run from a column density of nHI = 1 × 1019 cm−2 (white) to nHI = 2 × 1021 cm−2
+(black). The 3σ level is indicated by the black contour. Middle
+panel: first moment map. The systemic velocity is indicated by
+the thick contour, the contours are spaced by 10 km s−1 . The approaching side can be identified by the light grayscales and black
+contours, and the receding side by dark grayscales and white
+contours. Right panel: second moment map. Grayscales run from
+2 to 40 km s−1 . Unless mentioned otherwise, the contours levels are given at 5, 10, and 15 km s−1 . For all moment maps, the
+beam size is indicated in the bottom right corner. Additionally, if
+a kinematic center has been independently derived, it is indicated
+in all moment maps by a cross.
+Bottom row: Left panel: major axis position-velocity diagram. The position angle of the slice indicated in the top-left
+corner of the panel. Grayscales run from 2σ to 30σ, and contour levels are given at 2σ + n × 4σ (i.e., 2, 6, 10, 14, 18 ...
+σ). The dashed line indicates the systemic velocity. If a V pv has
+been derived, the resulting velocities at either side of the rotation curve are indicated by arrows. Middle panel: minor axis
+position-velocity diagram. Grayscales and contours are identical
+to the major axis position-velocity diagram. Right panel: global
+H i profile of the Hanning smoothed data cube.
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 2
+
+Fig. A.1. Summary panel for D500-2. A general description of the panels and levels is given at the beginning of the Appendix. The 3σ contour in
+the zeroth moment map corresponds to a flux of 5.09 mJy, which translates to a column density limit of nHI = 8.8 × 1019 cm−2 .
+
+Fig. A.2. Summary panel for D500-3. A general description of the panels and levels is given at the beginning of the Appendix. The 3σ contour in
+the zeroth moment map corresponds to a flux of 4.51 mJy, which translates to a column density limit of nHI = 5.2 × 1019 cm−2 .
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 3
+
+Fig. A.3. Summary panel for D512-2. A general description of the panels and levels is given at the beginning of the Appendix. The 3σ contour in
+the zeroth moment map corresponds to a flux of 5.50 mJy, which translates to a column density limit of nHI = 3.3 × 1019 cm−2 .
+
+Fig. A.4. Summary panel for D564-8. A general description of the panels and levels is given at the beginning of the Appendix. The 3σ contour in
+the zeroth moment map corresponds to a flux of 4.99 mJy, which translates to a column density limit of nHI = 4.9 × 1019 cm−2 .
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 4
+
+Fig. A.5. Summary panel for D572-5. A general description of the panels and levels is given at the beginning of the Appendix. Grayscales in the
+zeroth moment map run from a column density of nHI = 1 × 1019 cm−2 (white) to nHI = 8 × 1020 cm−2 (black). The 3σ contour in the zeroth
+moment map corresponds to a flux of 12.47 mJy, which translates to a column density limit of nHI = 1.4 × 1019 cm−2 .
+
+Fig. A.6. Summary panel for D575-1. A general description of the panels and levels is given at the beginning of the Appendix. The 3σ contour in
+the zeroth moment map corresponds to a flux of 9.81 mJy, which translates to a column density limit of nHI = 1.3 × 1019 cm−2 . The contours in the
+second moment map are at 7.5 km s−1 and 9 km s−1 .
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 5
+
+Fig. A.7. Summary panel for D575-2. A general description of the panels and levels is given at the beginning of the Appendix. The 3σ contour in
+the zeroth moment map corresponds to a flux of 5.58 mJy, which translates to a column density limit of nHI = 2.0 × 1019 cm−2 .
+
+Fig. A.8. Summary panel for D575-5. A general description of the panels and levels is given at the beginning of the Appendix. The 3σ contour in
+the zeroth moment map corresponds to a flux of 8.82 mJy, which translates to a column density limit of nHI = 0.6 × 1019 cm−2 . The contours in the
+second moment map are given at 6 km s−1 and 7.5 km s−1 .
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 6
+
+Fig. A.9. Summary panel for D631-7. A general description of the panels and levels is given at the beginning of the Appendix. The 3σ contour in
+the zeroth moment map corresponds to a flux of 11.06 mJy, which translates to a column density limit of nHI = 3.7 × 1019 cm−2 .
+
+Fig. A.10. Summary panel for D640-13. A general description of the panels and levels is given at the beginning of the Appendix. The 3σ contour
+in the zeroth moment map corresponds to a flux of 11.49 mJy, which translates to a column density limit of nHI = 3.3 × 1019 cm−2 . The contours
+in the second moment map are given at 7.5 km s−1 and 10 km s−1 .
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 7
+
+Fig. A.11. Summary panel for D646-7. A general description of the panels and levels is given at the beginning of the Appendix. The 3σ contour
+in the zeroth moment map corresponds to a flux of 7.92 mJy, which translates to a column density limit of nHI = 0.7 × 1019 cm−2 . The contours in
+the second moment map are given at 7.5 km s−1 and 9 km s−1 .
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 8
+
+Fig. A.12. Channel maps of D500-2. Grayscales run from −0.02 to 7 mJy. Every second channel is shown.
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 9
+
+Fig. A.13. Channel maps of D500-3. Grayscales run from −0.02 to 5 mJy. Every channel is shown.
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 10
+
+Fig. A.14. Channel maps of D512-2. Grayscales run from −0.02 to 8 mJy. Every second channel is shown.
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 11
+
+Fig. A.15. Channel maps of D564-8. Grayscales run from −0.02 to 7 mJy. Every channel is shown.
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 12
+
+Fig. A.16. Channel maps of D575-2. Grayscales run from −0.02 to 10 mJy. Every fourth channel is shown.
+
+C. Trachternach et al.: Baryonic Tully-Fisher relation, Online Material p 13
+
+Fig. A.17. Channel maps of D631-7. Grayscales run from −0.02 to 25 mJy. Every second channel is shown.
+
+

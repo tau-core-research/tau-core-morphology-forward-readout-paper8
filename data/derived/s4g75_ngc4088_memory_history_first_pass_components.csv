@@ -1,0 +1,5 @@
+galaxy,component_id,component_symbol,component_value,evidence,component_status,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,H1_WARP_PERSISTENCE,h_warp_persist,1.0,warp/asymmetry visible across the frozen channel-map panel sequence,FIRST_PASS_FILLED_REVIEW_REQUIRED,False,False,s4g75_ngc4088_first_pass_source_response_fill_not_endpoint
+NGC4088,H2_HI_LOPSIDEDNESS,h_lopsided_hi,1.0,side A outer ridge differs strongly from the inner axis while side B remains aligned,FIRST_PASS_FILLED_REVIEW_REQUIRED,False,False,s4g75_ngc4088_first_pass_source_response_fill_not_endpoint
+NGC4088,H3_OUTER_DISK_ASYMMETRY,h_outer_asym,1.0,outer ridge PA and onset side asymmetry are present in source digitization,FIRST_PASS_FILLED_REVIEW_REQUIRED,False,False,s4g75_ngc4088_first_pass_source_response_fill_not_endpoint
+NGC4088,H4_INTERACTION_CONTEXT,h_env,,environment/interaction context not filled from source registry in this pass,SOURCE_REVIEW_REQUIRED,False,False,s4g75_ngc4088_first_pass_source_response_fill_not_endpoint

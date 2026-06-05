@@ -1,0 +1,2 @@
+galaxy,model_id,leading_formula,extended_formula,lambda0_km2_s2,epsilon_cross_status,proof_status,claim_boundary
+NGC4088,LEADING_PRODUCT_PLUS_EPSILON_CROSS,lambda_0 = sigma_warp q_warp x_w Vflat^2,lambda_w = lambda_0 * (1 + epsilon_cross),8324.015999999998,UNBOUNDED_SYMBOLIC_CORRECTION,LEADING_ORDER_ONLY_UNTIL_CROSS_TERMS_SUPPRESSED,s4g75_ngc4088_cross_term_suppression_gate_not_endpoint

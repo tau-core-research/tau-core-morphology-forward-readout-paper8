@@ -1,0 +1,8 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,M1_PRODUCT_ALGEBRA,PASS,the factor product reproduces lambda_w = 8324.016 km^2/s^2,none at algebra level,False,False,s4g75_ngc4088_multiplicative_coupling_separability_gate_not_endpoint
+NGC4088,M2_DIMENSIONAL_CONSISTENCY,PASS,dimensionless factors times Vflat^2 yield km^2/s^2,none at dimensional level,False,False,s4g75_ngc4088_multiplicative_coupling_separability_gate_not_endpoint
+NGC4088,M3_SEPARABILITY_ASSUMPTION,FORMULA_CONDITIONAL,product follows if the local source readout is separable,derive separability from Tau-side slice/readout geometry,False,False,s4g75_ngc4088_multiplicative_coupling_separability_gate_not_endpoint
+NGC4088,M4_SOURCE_FACTOR_GROUNDING,FORMULA_CONDITIONAL,q_warp and x_w are source-side factors but q_warp is qualitative and x_w needs independent review,replace qualitative strength and independently review onset,False,False,s4g75_ngc4088_multiplicative_coupling_separability_gate_not_endpoint
+NGC4088,M5_CARRIER_GROUNDING,FORMULA_CONDITIONAL,Vflat^2 is a source-catalog carrier candidate,derive asymptotic carrier dominance,False,False,s4g75_ngc4088_multiplicative_coupling_separability_gate_not_endpoint
+NGC4088,M6_NO_CROSS_TERMS,BLOCKED,no derivation yet excludes mixed source-source coupling corrections,derive absence/suppression of cross terms,False,False,s4g75_ngc4088_multiplicative_coupling_separability_gate_not_endpoint
+NGC4088,M7_POPULATION_TRANSFER,BLOCKED,the separability statement is currently NGC4088-specific,run on a predeclared warp/asymmetry source-rich sample,False,False,s4g75_ngc4088_multiplicative_coupling_separability_gate_not_endpoint

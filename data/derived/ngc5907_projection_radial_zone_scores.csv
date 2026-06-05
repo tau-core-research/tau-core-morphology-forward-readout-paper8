@@ -1,0 +1,4 @@
+galaxy,radial_zone,r_min_kpc,r_max_kpc,n_points,mean_projection_kernel,rmse_tpg_v6,rmse_projection_accepted,projection_minus_tpg_rmse,mean_abs_projection_shift_kms,zone_interpretation,claim_boundary
+NGC5907,inner_pre_projection_window,5.03,12.58,4,0.0,32.51595369658329,32.51595369658329,0.0,0.0,projection kernel inactive; inner mismatch is outside this endpoint lane,ngc5907_projection_radial_zone_audit_not_full_profile_solution
+NGC5907,transition_projection_window,15.1,22.65,4,0.46407519354235416,4.765168178235264,3.2010344436762592,-1.5641337345590047,3.740530178021295,source-windowed projection kernel turns on,ngc5907_projection_radial_zone_audit_not_full_profile_solution
+NGC5907,outer_full_projection_window,25.16,50.33,11,1.0,9.69225217145713,5.150340624812667,-4.541911546644462,7.838816854306311,projection kernel fully active,ngc5907_projection_radial_zone_audit_not_full_profile_solution

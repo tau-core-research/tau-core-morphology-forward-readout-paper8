@@ -1,0 +1,5 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,uses_vobs_or_residual,endpoint_scores_allowed,claim_boundary
+NGC4088,H4_1_SOURCE_PRESENT,PASS,local Ursa Major HI literature text includes NGC4088 distortion/asymmetry/context statements,preserve source citation in later manifest,False,False,s4g75_ngc4088_h4_interaction_context_review_not_endpoint
+NGC4088,H4_2_ENDPOINT_BLINDNESS,PASS,review does not read endpoint residuals or observed velocity scores,keep H4 fixed before endpoint scoring,False,False,s4g75_ngc4088_h4_interaction_context_review_not_endpoint
+NGC4088,H4_3_SOURCE_HISTORY_INTERPRETATION,PASS,"history is morphology-carried interaction/warp/asymmetry context, not a new fundamental object",avoid treating h_env as an endpoint-fitted parameter,False,False,s4g75_ngc4088_h4_interaction_context_review_not_endpoint
+NGC4088,H4_4_NUMERIC_BOUND_USE,PASS,h_env=1 with source-review uncertainty 0.15,carry uncertainty in epsilon_cross interpretation,False,False,s4g75_ngc4088_h4_interaction_context_review_not_endpoint

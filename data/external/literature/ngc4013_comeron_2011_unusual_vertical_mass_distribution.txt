@@ -1,0 +1,575 @@
+arXiv:1107.0529v3 [astro-ph.CO] 8 Aug 2011
+
+The unusual vertical mass distribution of NGC 4013 seen through the Spitzer
+Survey of Stellar Structure in Galaxies (S4 G)
+Sébastien Comerón,1 Bruce G. Elmegreen,2 Johan H. Knapen,3,4 Kartik Sheth,5 Joannah L. Hinz,6
+Michael W. Regan,7 Armando Gil de Paz,8 Juan-Carlos Muñoz-Mateos,5 Karı́n Menéndez-Delmestre,9
+Mark Seibert,9 Taehyun Kim,5 Trisha Mizusawa,5 Eija Laurikainen,10,11 Heikki Salo,10 Jarkko Laine,10
+E. Athanassoula,12 Albert Bosma,12 Ronald J. Buta,13 Dimitri A. Gadotti,14 Luis C. Ho,9 Benne
+Holwerda,15,16 Eva Schinnerer17 and Dennis Zaritsky6
+ABSTRACT
+NGC 4013 is a nearby Sb edge-on galaxy known for its “prodigious” H i warp and its “giant”
+tidal stream. Previous work on this unusual object shows that it cannot be fitted satisfactorily
+by a canonical thin+thick disk structure. We have produced a new decomposition of NGC 4013,
+considering three stellar flattened components (thin+thick disk plus an extra and more extended
+component) and one gaseous disk. All four components are considered to be gravitationally
+coupled and isothermal. To do so, we have used the 3.6µm images from the Spitzer Survey of
+Stellar Structure in Galaxies (S4 G).
+We find evidence for NGC 4013 indeed having a thin and a thick disk and an extra flattened
+component. This smooth and extended component (scaleheight zEC ∼ 3 kpc) could be interpreted
+as a thick disk or as a squashed ellipsoidal halo and contains ∼ 20% of the total mass of all three
+stellar components. We argue it is unlikely to be related to the ongoing merger or due to the
+off-plane stars from a warp in the other two disk components. Instead, we favor a scenario in
+1 Korea Astronomy and Space Science Institute, 776 Daedeokdae-ro, Yuseong-gu, Daejeon 305-348, Republic of Korea
+2 IBM T. J. Watson Research Center, 1101 Kitchawan Road, Yorktown Heights, NY 10598, USA
+3 Instituto de Astrofı́sica de Canarias, E-38200 La Laguna, Spain
+4 Departamento de Astrofı́sica, Universidad de La Laguna, E-38205 La Laguna, Tenerife, Spain
+5 National Radio Astronomy Observatory / NAASC, 520, Edgemont Road, Charlottesville, VA 22903, USA
+6 Steward Observatory, University of Arizona, 933 North Cherry Avenue, Tucson, AZ 85721, USA
+7 Space Telescope Science Institute, 3700 San Martin Drive, Baltimore, MD 21218, USA
+8 Departamento de Astrofı́sica, Universidad Complutense de Madrid, 28040, Madrid Spain
+9 The Observatories of the Carnegie Institution of Washington, 813 Santa Barbara Street, Pasadena, CA 91101, USA
+10 Astronomy Division, Department of Physical Sciences, P. O. Box 3000, FIN-90014 University of Oulu, Finland
+11 Finnish Centre of Astronomy with ESO (FINCA), University of Turku, Väisäläntie 20, FI-21500, Piikkiö, Finland
+12 Laboratoire d’Astrophysique de Marseille (LAM), UMR6110, Université de Provence/CNRS, Technopôle de Marseille Étoile,
+
+38 rue Frédéric Joliot Curie, 13388 Marseille Cédex 20, France
+13 Department of Physics and Astronomy, University of Alabama, Box 870324, Tuscaloosa, AL 35487, USA
+14 European Southern Observatory, Casilla 19001, Santiago 19, Chile
+15 European Space Agency, ESTEC, Keplerlaan 1, 2200, AG, Noordwijk, the Netherlands
+16 Astrophysics, Cosmology and Gravity Centre (AC
+
+GC)
+
+17 Max-Planck-Institut für Astronomie, Königstuhl 17, 69117 Heidelberg, Germany
+
+–2–
+
+which the thick disk and the extended component were formed in a two-stage process, in which
+an initially thick disk has been dynamically heated by a merger soon enough in the galaxy history
+to have a new thick disk formed within it.
+Subject headings: galaxies: individual (NGC 4013) — galaxies: photometry — galaxies: spiral
+— galaxies: structure
+
+1.
+
+Introduction
+
+Thick disks, first detected by Burstein (1979) and Tsikoudi (1979), are seen in edge-on galaxies as excesses of light a few thin disk scaleheights above the galaxy mid-planes. They are known to be ubiquitous
+(Yoachim & Dalcanton 2006; Comerón et al. 2011a) and their properties give important clues for understanding galaxy formation and evolution (Comerón et al. 2011b and references therein; hereafter CO11b).
+Recent studies (Robertson et al. 2006; Elmegreen & Elmegreen 2006; Brook et al. 2007; Richards et al. 2010)
+suggest an in situ formation mechanism for a significant fraction of the thick disk mass. This was recently
+supported further by our result that the masses of thick and thin disks are of the same order (CO11b).
+Other formation mechanisms such as disk kinematical heating due to its own overdensities (Villumsen 1985;
+Hänninen & Flynn 2002; Schönrich & Binney 2009; Bournaud et al. 2009) and the accretion of stars from
+infalling satellites (Statler 1988; Gilmore et al. 2002; Abadi et al. 2003; Navarro et al. 2004; Martin et
+al. 2004; Read et al. 2008) also contribute to the thick disk mass (CO11b).
+In CO11b we made thin+thick disk decompositions of 46 edge-on galaxies using images from the Spitzer
+Survey of Stellar Structure in Galaxies (S4 G; Sheth et al 2010). However, two galaxies, ESO 079-003
+and NGC 4013, could not be successfully fitted down to low surface brightness due to the presence of an
+extra light component not accounted for in our fits [affecting significantly the luminosity profiles starting at
+µ3.6µm (AB) = 23 mag arcsec−2 ]. In CO11b, NGC 3628 also presents an obvious third component, but at a
+lower surface brightness [µ3.6µm (AB) = 24.5 mag arcsec−2]. The aim of this Letter is to study the properties
+of these extra components. As ESO 079-003 is located near a bright star which makes its study at low
+surface brightness levels difficult and NGC 3628 presents a disturbed morphology due to a recent interaction
+we focused on NGC 4013.
+NGC 4013 is an Sb galaxy (Buta et al. 2007), at 18.6±2.5 Mpc (NED average for 13 redshift-independent
+measurements). Its optical diameter is D25 = 294′′ (HyperLEDA; Paturel et al. 2003). It is often described
+using superlative adjectives: it has a “prodigious” H i warp (Bottema et al. 1987; Bottema 1995; 1996) and
+a “giant” stellar tidal stream with an age of a few Gyr (Martı́nez-Delgado et al. 2009; hereafter MD09). The
+H i warp starts just at the optical edge of the galaxy (Bottema 1995) and it is one of the largest warps ever
+observed. It may have been triggered by the minor merger event which caused the tidal stream (MD09). In
+addition, NGC 4013 has a boxy bulge (Jarvis 1986) which could be tracing an edge-on bar (Athanassoula &
+Misiriotis 2002; Martı́nez-Valpuesta et al. 2006) or be the consequence of a merging event (Binney & Petrou
+1985).
+The S4 G 3.6 µm-band image used for the study presented in this Letter is shown in Fig. 1.
+
+–3–
+
+Fig. 1.— 3.6µm-band S4 G image of NGC 4013 with two different luminosity stretches. The vertical lines
+indicate the limits of the bins for which luminosity profiles have been produced, from left to right, at
+galactocentric distances of −0.8 r25 < R < −0.5 r25 , −0.5 r25 < R < −0.2 r25 , −0.2 r25 < R < 0.2 r25 ,
+0.2 r25 < R < 0.5 r25 and 0.5 r25 < R < 0.8 r25 . In order to avoid the influence of the bulge we have not
+produced fits for the central bin.
+
+–4–
+
+2.
+
+Fitting procedure
+
+In CO11b, the observed luminosity profiles were fitted with synthetic profiles resulting from coupling
+two stellar plus one gaseous isothermal disks (using the equations in Narayan & Jog 2002). The solutions
+are not analytic, so the fit was done by comparing the luminosity profile to a grid of pre-computed models
+with different thick-to-thin central mass density ratios (ρT0 /ρt0 ) and thick-to-thin velocity dispersions in
+the vertical direction ratios (σT /σt ) where T stands for the thick disk and t stands for the thin disk. Both
+observed luminosity and pre-computed profiles were scaled to have a mid-plane luminosity equal to unity
+and to have ρ(z = 200)/ρ(z = 0) = 0.1. In addition the synthetic profiles were convolved with a Gaussian
+kernel with a full width at half maximum (FWHM) equal to 2.2′′ in order to account for the point spread
+function of the 3.6µm-band image (S4 G “super-PSF”; Sheth et al. 2010). The mass-to-light ratios (Υ) for
+both thin and thick disk stars had to be assumed in order to make the computation of the grid of models,
+and reasonable limiting cases with ΥT /Υt = 1.2 and ΥT /Υt = 2.4 were studied (see CO11b). The gaseous
+disk was assumed to have a column mass density equal to a 20% of that of the thin disk. The case without
+gas was also studied yielding similar results to the with-gas case, but the fit quality was slightly worse.
+The fits were made ignoring the mid-plane pixel and over a range of magnitudes,
+p ∆m, which was defined
+2
+as the range for which either the square root of the χ of the fit was smaller than χ2 < 0.1 mag arcsec−2 or
+down to a limiting magnitude µl (AB) = 26 mag arcsec−2 . The discussion on how we chose this goodness-of-fit
+parameter and this limiting magnitude appear in CO11b.
+In CO11b, for the NGC 4013 luminosity profiles at 0.2 r25 < |R| < 0.5 r25 the fits could only
+p be
+performed down to µ(AB) ∼ 23 mag arcsec−2 , at which point our criterion for the quality of the fit, χ2 >
+0.1 mag arcsec−2 , was not met. The reason for that was the presence of a third component which made our
+two stellar disk decomposition insufficient at describing NGC 4013. This component was called “halo” by
+van der Kruit & Searle (1982) and by MD09 who reported that it is box-shaped (although the boxiness is
+probably caused by the location of the tidal streams and not by the intrinsic shape of the component).
+We adapted the code used in C011b to include a third component in equilibrium with the two stellar
+disks and the gaseous disk. This is a natural approach, because the luminosity profile decays exponentially
+with height once in the range of heights for which the more extended component dominates, and because the
+solution of the equations for a set of coupled flattened components can be approximated as exponential at
+high distances above the mid-plane. However, the fact of adding a third flattened component does not imply
+that it is a disk; this is because, without kinematical information, a squashed ellipsoidal halo nature for this
+component cannot be discarded. Arguments in favor of this component being a disk are (i) its relatively
+high surface brightness, and (ii) its luminosity profile parallel to the mid-plane direction (not shown here)
+which is that of a typical edge-on disk, with a shallow slope for low R and an exponential slope at larger
+R. Arguments in favor of the extended component being an squashed elliptical halo are (i) its isophotes
+are not disky (MD09) and may be very close to elliptical if the light of the tidal streams could be removed,
+and (ii) its ellipticity (ǫ = 0.63 when measured in an ellipse fit between radius 120′′ , which is the truncation
+radius of the thin disk, and 170′′ , where the extended component starts to be highly affected by noise) is
+compatible with that of simulated elliptical haloes (see, e.g., Lee et al. 2005). Due to its uncertain nature
+we will hereafter term this component as “extended component” (EC).
+The grid of models we used for the fits had ρT0 /ρt0 , ρT0 /ρEC0 , σT /σt and σT /σEC as free parameters,
+where EC denotes the extended component. Our grid of models has been computed including a gaseous disk
+and using the same normalizations as in CO11b. We considered the cases ΥT /Υt = 1.2 and ΥT /Υt = 2.4.
+In both cases we set ΥT /ΥEC = 1.0. This is justified by the fact that once above the mid-plane dust lane
+
+–5–
+(z > 10′′ , a region mainly influenced by the thick disk and the EC), the colors remain roughly constant,
+as can be seen in Fig. 2. Fig. 2 provides extra evidence that the thick disk and the EC contain old star
+populations since the average color for z > 10′′ is g ′ − r′ (z > 10′′ ) = 0.73 mag, which is compatible with the
+average colors predicted for S0 galaxies (g ′ − r′ = 0.68 mag; Fukugita et al. 1995).The reddening for z < 10′′
+is caused by the mid-plane dust lane. Since we found no significant influence of this mid-plane dust on the
+3.6µm-band profile for this galaxy in CO11b, we considered the mid-plane dust lane to have no effect on our
+fits.
+
+3.
+
+Results
+
+The addition of a third stellar component allows us to fit the surface brightness profile down to µ(AB) =
+26.0 mag arcsec−2. The fit is significantly better than that published in CO11b (Fig. 3 and Table 1) in the
+sense that it goes far deeper. The fact that for 0.2 r25 < |R| < 0.5 r25 ∆m is 3.0 mag arcsec−2 larger than
+what was achieved in CO11b and that the outermost fitted z goes from 25′′ − 45′′ in CO11b to 70′′ − 100′′ in
+the present work argues for the correctness of the fit, and thus for the physical reality of the third component.
+The numbers exclude a possible alternative, namely that the better fit is achieved merely by the addition of
+more free parameters.
+The fitted properties of the thin and the thick disk are fairly similar to those reported in CO11b (Table 1),
+and the ratio of the column mass densities ΣT /Σt is equal, within 10%, to that obtained for the three bins
+for which we succeeded to obtain a fit in CO11b. The mid-plane stellar densities are not much affected by
+the inclusion of the EC, and its main effect is to reduce the scaleheights of the thin and thick disks. The
+small effect introduced by the EC in ΣT /Σt is due to the fact that the mid-plane density of the EC is ∼ 10
+(∼ 10) times smaller than that of the thick disk and ∼ 20 (∼ 10) times smaller than that of the thin disk
+for ΥT /Υt = 1.2 (ΥT /Υt = 2.4). The fact that possible undetected ECs do not have much influence on the
+results in CO11b shows the robustness of our fitting approach in general.
+Each of the three stellar components has a significant range in vertical height for which it dominates
+the luminosity profile, making it easy to determine its properties and degeneracies unlikely. The thin disk
+luminosity dominates for z < 5′′ , the thick disk dominates for 5′′ < z < 20′′ and the EC dominates for
+z > 20′′ . The only problem in the fit is that the thin disk scaleheight is poorly constrained due to poor
+sampling (zt is around 1.5′′ , which is smaller than the FWHM).
+The EC, if considered to be a disk, has an exceptionally large scaleheight, zEC ∼ 3 kpc, comparable only
+to that of thick disks in NGC 0678, NGC 4437 and NGC 4565 in CO11b. The scaleheight is significantly
+larger for the −0.8 r25 < R < −0.5 r25 bin probably because its luminosity profile is affected by the brightest
+loop of the tidal stream (MD09). The ρT0 /ρEC0 ratio for 0.2 r25 < |R| < 0.5 r25 is significantly higher (a
+factor of two) than it is for 0.5 r25 < |R| < 0.8 r25 implying that the scalelength is significantly larger than
+that of the thin and the thick disk.
+Using the weightings in Eq. 5 from CO11b we find that the ratios of masses of the stellar components are
+MT /Mt = 1.22 (MT /Mt = 2.19) and MT /MEC = 2.74 (MT /MEC = 2.69) for ΥT /Υt = 1.2 (ΥT /Υt = 2.4).
+When taking the mass of the thick disk and the EC together (MT + MEC ) /Mt = 1.67 ((MT + MEC ) /Mt =
+3.00). With a circular velocity speed of vc = 181.7 km s−1 (HyperLEDA), NGC 4013 would not fit in
+the MT /Mt − vc relationship discovered by Yoachim & Dalcanton (2006) and shown in Fig. 12 of CO11b
+both when considering MT /Mt and (MT + MEC ) /Mt . Furthermore, if we consider the thick disk as part
+of the thin disk and the EC to be the only thick disk in NGC 4013, we get MEC / (Mt + MT ) = 0.20
+
+–6–
+
+g’-r’ (AB mag)
+
+1.2
+1.0
+
+0.8
+
+0.6
+0.4
+0
+
+20
+
+40
+
+60
+z (arcsec)
+
+80
+
+100
+
+Fig. 2.— g ′ − r′ color profiles made for 0.2 r25 < |R| < 0.5 r25 . The profile has been produced using SDSS
+DR7 data (Abazajian et al. 2007). Points for z ≤ 40′′ are calculated every three pixels (∼ 1.2′′ ) and those
+with z > 40′′ are calculated every nine pixels (∼ 3.6′′ ). The error bars represent the 2σ statistical errors.
+The vertical lines separate the regions dominated by the luminosity of the thin disk, the thick disk and the
+EC for ΥT /Υt = 1.2.
+
+0
+18
+
+2
+
+4
+
+z (kpc)
+
+6
+
+8
+
+12
+
+thin+thick
+
+-0.5r25<R<-0.2r25
+thin+thick+extended
+20
+
+µ3.6µm (AB mag arcsec-2)
+
+10
+
+20
+
+22
+
+24
+22
+
+26
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+120
+
+140
+
+24
+
+26
+
+0
+
+20
+
+40
+
+60
+
+80
+z (arcsec)
+
+100
+
+120
+
+140
+
+Fig. 3.— Example of a fit to the vertical luminosity profiles of NGC 4013 considering ΥT /Υt = 1.2. Data
+points with error bars (2σ statistical errors) represent the observed luminosity profile, and the dashed green
+curve the best fit. The dotted red curves indicate the contributions of the three stellar components. The
+dash-dotted vertical lines indicate the limits of the range in vertical distance above the mid-plane used for
+the fit. The horizontal line represents the µ(AB) = 26.0 mag arcsec−2 level down to which the fits have been
+done. The inset shows the thin+thick disk best fit obtained for NGC 4013 in CO11b.
+
+–7–
+
+(MEC / (Mt + MT ) = 0.26), which is too low to fit into the MT /Mt − vc relationship.
+The luminosity profiles could not be satisfactorily fitted byp
+a sum of two sech2 (z/z0 ) functions, but were
+acceptably fitted by a sum of two exponential functions. The (χ2 ) was, however, worse than in the three
+disk fit and misses a substantial amount of light corresponding to the thinner component of the three-disk
+fit (0.2 − 0.3 mag arcsec−2 for the inner bins). This fit, although simpler than that made with three coupled
+stellar components, should be regarded as unphysical.
+
+4.
+
+Discussion
+
+Just as causal links have been sought between the “prodigious” warp and the merging event causing the
+“giant” stream, one may also be tempted to find links between a minor merger and the EC of NGC 4013.
+If the EC is linked to the minor merger, then it can be made of tidal debris. According to the images in
+MD09, the tidal loops should not affect the luminosity profiles at R = 0. Although producing a fit for the
+minor axis using our procedure is impossible due to the presence of the bulge, we produced the luminosity
+profile (Fig. 4). It is clear that in the bin with −0.2 r25 < R < 0.2 r25 the EC is present and probably
+slightly brighter than in the 0.2 r25 < |R| < 0.5 r25 as predicted in the case of a disk or an ellipsoid. The
+color analysis made by MD09 shows that the tidal stream is much redder than the EC, although the large
+error bars make a common origin still possible. Other arguments against a tidal origin for the EC are its
+smoothness, its symmetry and the uniformity of its scaleheight with varying radial distance R.
+
+µ3.6µm (AB mag arcsec-2)
+
+Another possibility is that the EC has been formed by the dynamical heating of the disks by the crossing
+of the dwarf galaxy causing the tidal stream. However, as the disk self-gravity which counteracts the disk
+heating is higher at low galactocentric radii, disks formed in this way appear flared and, as a consequence,
+the EC would form with a relatively small scaleheight at low R. Simulations (Quinn et al. 1993; Walker et
+al. 1996; Kazantzidis et al. 2008; Bournaud et al. 2009) show how this mechanism could reasonably produce
+the observed scaleheights at high galactocentric radius, but would fail to produce such an EC for the inner
+kiloparsecs. Additionally, it seems difficult to create a component containing 20% (26%) of the mass of
+the galaxy if we assume ΥT /Υt = 1.2 (ΥT /Υt = 2.4) in a recent event without disturbing the disks. The
+regularity and the symmetry of the galaxy argues for an old origin for the EC, thus confirming that the
+
+18
+-0.2r25<R<0.2r25
+20
+22
+24
+26
+0
+
+20
+
+40
+
+60
+z (arcsec)
+
+80
+
+100
+
+Fig. 4.— Luminosity profile for the −0.2 r25 < R < 0.2 r25 bin (solid line) compared to that obtained from
+the 0.2 r25 < |R| < 0.5 r25 bins (dotted line).
+
+–8–
+
+assumption of equilibrium is reasonable. Finally, the stream in NGC 4013 is Monoceros-like (MD09), thus
+probably a very minor merger (∼1:100; Peñarrubia et al. 2005) not likely to cause large disturbances. The
+possibility of the EC being created during an older merger event cannot be discarded; Purcell et al. (2010)
+have shown that a 1:10 merger 5 Gyr ago in a Milky Way-like galaxy yields results which qualitatively match
+the appearance of NGC 4013 except for the fact that their resulting EC is more boxy than the one we detect
+and we do not find the same flaring. They show that low-latitude accretion events could heat up to 1% of the
+disk mass to z > 7 kpc, which is in rough agreement with what we found (1.8% of disk mass at z > 7 kpc).
+We also discard the EC to be the effect of a stellar warp seen in projection. Bottema (1995) found that
+the stellar disk is truncated at the radius at which the warp starts and the warp model made by Bottema
+(1996) shows that its line of nodes is in the direction of the line of sight, making a stellar warp look as a
+thick disk when seen in projection impossible. Even if the H i warp and the stellar warp were decoupled
+and with different lines of nodes the stellar warp would be unlikely to mimic an EC unless the stellar warp
+started at a radius smaller than the H i warp.
+Thus, we deduce from our findings and from literature data that the EC is a real feature and not some
+tidal feature or warp seen in projection. We also deduce that both the thick disk and the EC are old.
+A possible scenario for the formation of a three component system would be having a disk formed thick
+with stars formed before and during the build-up of the galaxy from small fragments (Robertson et al. 2006;
+Brook et al. 2007; Richards et al. 2010) and/or a disk heated by the internal thickening caused by kinematical
+heating due to giant clumps (Elmegreen & Elmegreen 2006). Then a merger event would further thicken
+the disk, which would become what we know as the EC. After the merger, the canonical thick disk would
+form with the same mechanisms as the EC formed prior to the merger event. Finally, the remaining gas,
+plus that coming from cold flows would settle in the mid-plane and form the thin disk. This disk formation
+mechanism is not very frequent, since only two galaxies over 30 exhibit a bright EC in CO11b. The difference
+in the formation mechanisms may explain why these two galaxies fall outside the MT /Mt − vc relationship
+discovered by Yoachim & Dalcanton (2006).
+
+5.
+
+Conclusions
+
+NGC 4013 is not adequately described by the canonical thin+thick disk description (CO11b). In this
+Letter, the luminosity profiles of NGC 4013 are fitted satisfactorily using the solutions of three stellar
+flattened components plus one gaseous disk in equilibrium. The newly described extended component (EC)
+has a relatively low surface brightness, but due to its vertical extent, contains a significant fraction of the
+disk mass (between 20% and 26% depending on the assumed Υt /ΥT ). The EC has a longer scalelength than
+the galaxy disks, is smooth and its properties do not depend strongly on varying galactocentric radii.
+The nature of the EC is unknown and could be a second thick disk or a squashed elliptical halo. The
+smoothness of the EC makes it unlikely to be related to the ongoing minor merger of NGC 4013. We also
+discard the EC to be made of off-plane stars of a warped disk, since the warp has been modeled to have
+its line of nodes in the direction of the line of sight (Bottema 1996). We favor a scenario in which the EC
+was formed in a two-stage process, in which an initially thick disk was dynamically heated by a merger soon
+enough in the galaxy history to have a new thick disk formed within it.
+
+–9–
+
+Acknowledgments
+The authors wish to thank the entire S4 G team for their efforts in this project. This work is based
+on observations and archival data made with the Spitzer Space Telescope, which is operated by the Jet
+Propulsion Laboratory, California Institute of Technology under a contract with NASA. We are grateful
+to the dedicated staff at the Spitzer Science Center for their help and support in planning and execution
+of this Exploration Science program. We gratefully acknowledge support from NASA JPL/Spitzer grant
+RSA 1374189 provided for the S4 G project. EA and AB thank the CNES for support. KS, J-CMM, TKim
+and TMizusawa acknowledge support from the National Radio Astronomy Observatory, which is a facility
+of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc.
+Funding for the SDSS has been provided by the Alfred P. Sloan Foundation, the Participating Institutions,
+the National Science Foundation, the U.S. Department of Energy, NASA, the Japanese Monbukagakusho,
+the Max Planck Society, and the Higher Education Funding Council for England. This research has made use
+of the NASA/IPAC Extragalactic Database (NED) which is operated by JPL, CALTECH, under contract
+with NASA.
+
+REFERENCES
+Abadi, M. G., Navarro, J. F., Steinmetz, M., & Eke, V. R., 2003, ApJ, 597, 21
+Abazajian, N. Z., et al. 2009, ApJS, 182, 534
+Athanassoula, E. & Misiriotis, A., 2002, MNRAS, 330, 35
+Binney, J., & Petrou, M., 1985, MNRAS, 214, 449
+Bottema, R., 1995, A&A, 295, 605
+Bottema, R., 1996, A&A, 306, 345
+Bottema, R., Shostak, G. S., & van der Kruit, P. C., 1987, Nature, 328, 401
+Bournaud, F., Elmegreen, B. G., & Martig, M., 2009, ApJ, 707, L1
+Brook, C., Richard, S., Kawata, D., Martel, H., & Gibson, B. K., 2007, ApJ, 658, 60
+Burstein, D., 1979, ApJ, 234, 829
+Buta, R. J., Corwin, H. G., & Odewahn, S. C., 2007, The de Vaucouleurs Atlas of Galaxies (Cambridge:
+Cambridge Univ. Press)
+Comerón, S., et al. 2011a, ApJ, 729, 18
+Comerón, S., et al. 2011b, ApJ, accepted for publication in ApJ, arXiv:1108.0037 (CO11b)
+Elmegreen, B. G., & Elmegreen, D. M., 2006, ApJ, 650, 644
+Fukugita, M., Shimasaku, K., & Ichikawa, T., 1995, PASP, 107, 945
+Gilmore, G., Wyse, R. F. G., & Norris, J. E., 2002, ApJ, 574, L39
+Hänninen, J., & Flynn, C., 2002, MNRAS, 337, 731
+
+– 10 –
+
+Jarvis, B. J., 1986, AJ, 91, 65
+Kazantzidis, S., Bullock, J. S., Zentner, A. W., Kravtsov, A. V., & Moustakas, L. A., 2008, ApJ, 688, 254
+Lee, J., Jing, Y. P., & Suto, Y., 2005, ApJ, 632, 706
+Martin, N. F., Ibata, R. A., Bellazzini, M., Irwin, M. J., Lewis, G. F., & Dehnen, W., 2004, MNRAS, 348,
+12
+Martı́nez-Delgado, D., Pohlen, M., Gabany, R. J., Makewski, S. R., Peñarrubuia, J., & Palma, C., 2009,
+ApJ, 692, 955 (MD09)
+Martı́nez-Valpuesta, I., Shlosman, I., & Heller, C., 2006, ApJ, 637, 214
+Narayan, C. A., & Jog, C. J., 2002, A&A, 394, 89
+Navarro, J. F., Helmi, A., & Freeman, K. C., 2004, ApJ, 601, L43
+Paturel, G., Petit, C., Prugniel, Ph., Theureau, G., Rousseau, J., Brouty, M., Dubois, P., & Cambrésy, L.,
+2003, A&A, 412, 45
+Peñarrubia et al., 2005, ApJ, 626, 128
+Purcell, C. W., Bullock, J. S., & Kazantzidis, S., 2010, MNRAS, 404, 1711
+Quinn, P., Hernquist, L., & Fullagar, D. P., 1993, ApJ, 403, 74
+Read, J. I., Lake, G., Agertz, O., Debattista, V. P., 2008, MNRAS, 389, 1041
+Richard, S., Brook, C. B., Martel, H., Kawata, D., Gibson, B. K., & Sánchez-Blázquez, P., 2010, MNRAS,
+402, 1489
+Robertson, B., Bullock, J. S., Cox, T. J., di Matteo, T., Hernquist, L., Springel, V., & Yoshida, N., 2006,
+ApJ, 645, 986
+Schönrich, R., & Binney, J., 2009, MNRAS, 399, 1145
+Sheth, K, et al., 2010, PASP, 122, 1397
+Statler, T. S., 1988, ApJ, 331, 71
+Tsikoudi, V. 1979, ApJ, 234, 842
+van der Kruit, P. C., & Searle, L., 1982, A&A, 110, 61
+Villumsen, J. V., 1985, ApJ, 290, 75
+Yoachim, P., & Dalcanton, J. J., 2006, AJ, 131, 226
+Walker, I. R., Mihos, J. C., & Hernquist, L., 1996, ApJ, 460, 121
+
+This preprint was prepared with the AAS LATEX macros v5.2.
+
+– 11 –
+
+Table 1: Result of the fits.
+Fitting range
+
+−0.8 r25 < R < −0.5 r25
+
+−0.5 r25 < R < −0.2 r25
+
+0.2 r25 < R < 0.5 r25
+
+0.5 r25 < R < 0.8 r25
+
+ΥT /Υt = 1.2
+ΥT /Υt = 2.4
+µl = 25.96 mag arcsec−2
+∆m = 6.0 mag arcsec−2
+ρT0 /ρt0 = 0.35
+ρT0 /ρt0 = 0.64
+ρT0 /ρEC0 = 7.00
+ρT0 /ρEC0 = 6.40
+σT /σt = 2.55
+σT /σt = 2.69
+σT /σEC = 0.38
+σT /σEC = 0.38
+ΣT /Σt = 1.21
+ΣT /Σt = 2.23
+ΣT /ΣEC = 1.54
+ΣT /ΣEC = 1.46
+zt = 130 pc
+zt = 120 pc
+zT = 610 pc
+zT = 580 pc
+zEC = 3660 pc
+zEC = 3500 pc
+µl = 25.99 mag arcsec−2
+∆m = 7.5 mag arcsec−2
+ρT0 /ρt0 = 0.36
+ρT0 /ρt0 = 0.60
+ρT0 /ρEC0 = 12.00 ρT0 /ρEC0 = 12.00
+σT /σt = 2.45
+σT /σt = 2.69
+σT /σEC = 0.41
+σT /σEC = 0.41
+ΣT /Σt = 1.19
+ΣT /Σt = 2.13
+ΣT /ΣEC = 2.91
+ΣT /ΣEC = 3.02
+zt = 110 pc
+zt = 110 pc
+zT = 510 pc
+zT = 530 pc
+zEC = 2780 pc
+zEC = 2890 pc
+µl = 25.93 mag arcsec−2
+∆m = 7.5 mag arcsec−2
+ρT0 /ρt0 = 0.35
+ρT0 /ρt0 = 0.64
+ρT0 /ρEC0 = 11.60 ρT0 /ρEC0 = 10.60
+σT /σt = 2.60
+σT /σt = 2.69
+σT /σEC = 0.44
+σT /σEC = 0.43
+ΣT /Σt = 1.25
+ΣT /Σt = 2.25
+ΣT /ΣEC = 3.13
+ΣT /ΣEC = 2.94
+zt = 110 pc
+zt = 100 pc
+zT = 520 pc
+zT = 500 pc
+zEC = 2540 pc
+zEC = 2470 pc
+µl = 25.67 mag arcsec−2
+∆m = 5.5 mag arcsec−2
+ρT0 /ρt0 = 0.39
+ρT0 /ρt0 = 0.70
+ρT0 /ρEC0 = 5.57
+ρT0 /ρEC0 = 5.00
+σT /σt = 2.35
+σT /σt = 2.50
+σT /σEC = 0.44
+σT /σEC = 0.44
+ΣT /Σt = 1.19
+ΣT /Σt = 2.19
+ΣT /ΣEC = 1.58
+ΣT /ΣEC = 1.48
+zt = 150 pc
+zt = 150 pc
+zT = 620 pc
+zT = 590 pc
+zEC = 2860 pc
+zEC = 2700 pc
+
+Note. –ΥT /Υt : ratio of the thick and thin disk mass-to-light ratios. µl : limiting magnitude of the fit. ∆m:
+dynamical range over which the fit has been produced. ρT0 /ρt0 , ρT0 /ρEC0 : mid-plane thick to thin and thick
+to EC mass density ratios. σT /σt , σT /σEC : thick to thin and thick to EC vertical velocity dispersion ratios.
+ΣT /Σt , ΣT /ΣEC : thick to thin and thick to EC stellar column mass density ratios. zt , zT , zEC : thin, thick
+and EC scaleheights.
+
+

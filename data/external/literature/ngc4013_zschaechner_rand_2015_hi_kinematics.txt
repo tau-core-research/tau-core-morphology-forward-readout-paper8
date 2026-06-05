@@ -1,0 +1,830 @@
+Accepted to Astrophysical Journal on June 16, 2015
+Preprint typeset using LATEX style emulateapj v. 5/2/11
+
+THE H I KINEMATICS OF NGC 4013: A STEEP AND RADIALLY SHALLOWING EXTRA-PLANAR
+ROTATIONAL LAG
+Laura K. Zschaechner1,2 & Richard J. Rand2
+
+arXiv:1506.05123v1 [astro-ph.GA] 16 Jun 2015
+
+Accepted to Astrophysical Journal on June 16, 2015
+
+ABSTRACT
+NGC 4013 is a distinctly warped galaxy with evidence of disk-halo activity. Through deep H i
+observations and modeling we confirm that the H i disk is thin (central exponential scale height of
+with an upper limit of 4” or 280 pc), but flaring. We detect a vertical gradient in rotation velocity
+−1
+(lag), which shallows radially from a value of −35+7
+kpc−1 at 1.4’ (5.8 kpc), to a value of zero
+−28 km s
+near R25 (11.2 kpc). Over much of this radial range, the lag is relatively steep. Both the steepness
+and the radial shallowing are consistent with recent determinations for a number of edge-ons, which
+have been difficult to explain. We briefly consider the lag measured in NGC 4013 in the context of
+this larger sample and theoretical models, further illuminating disk-halo flows.
+1. INTRODUCTION
+
+To fully comprehend star formation (SF) processes,
+we must understand the properties and origins of the
+gas that fuels them. If galaxies are to avoid exhausting
+their star forming fuel in a short time compared to their
+age, then there must exist some means of gaining material, possibly through stellar mass loss as suggested by
+Leitner & Kravtsov (2011), or through the accretion of
+primordial neutral and ionized gas. Thus, extra-planar
+layers are of great interest as they are the interface between the main disk and the intergalactic medium (IGM)
+and all material accreted onto the midplane to fuel SF
+must first pass through them.
+With the exception of neutral hydrogen H i, a
+connection has been made between the presence of
+extra-planar components and SF both on local and
+global scales (e.g. Putman et al. 2012 and references
+therein). In particular, connections have been made
+between SF and hot gas (e.g. Tüllmann et al. 2006,
+Hodges-Kluck & Bregman 2013, Li & Wang 2013), relativistic particles (e.g. Irwin et al. 1999), dust (e.g.
+Howk & Savage 1999), and diffuse ionized gas (DIG)
+(e.g. Rand 1996; Rossa & Dettmar 2003). Extra-planar
+H i has been shown to have some connection to diskhalo flows within some galaxies (e.g. Irwin (1994) and
+Boomsma et al. (2005)), but evidence for H i accretion
+[e.g. HVCs in the Milky Way (Wakker & van Woerden
+1997), counterrotating clouds in NGC 891 seen by
+Oosterloo et al. 2007] exists, leaving the relative contributions of each process ambiguous until further study.
+A powerful method to determine the origins of extraplanar layers is to study their kinematics. In particular,
+decreases in rotation speed with height above the midplane (lags) have come to the forefront in recent years
+(e.g. Oosterloo et al. 2007, Heald et al. 2007) leading to
+various models attempting to explain them in terms of
+disk-halo flows or an interaction between disk-halo cycling gas and accreting gas. Purely ballistic models of
+1 Max Planck Institute für Astronomie - Königstuhl 17, 69117
+Heidelberg - Germany; zschaechner@mpia.de
+2 Department of Physics and Astronomy, University of New
+Mexico, 1919 Lomas Blvd NE, Albuquerque, New Mexico 87131
+- USA; rjr@phys.unm.edu
+
+disk halo flow (e.g. Collins et al. 2002, Barnabè et al.
+2006, Fraternali & Binney 2006) consider only gravitational effects: Material is ejected from the midplane in
+disk-halo flows and then moves outward radially due to
+its being farther from the gravitational potential. To
+conserve angular momentum, the rotational velocity of
+the material decreases, creating a lag with height above
+the midplane. A clear shortcoming of such models is that
+they greatly under-predict lag magnitudes by up to an
+order of magnitude (Heald et al. 2007). Thus, additional
+processes may be at work such as pressure gradients or
+magnetic tension (Benjamin 2002, 2012). However, simulations involving these mechanisms have yet to be developed in earnest, with future progress made possible
+through observational constraints, in particular those involving lags.
+Pressure gradients and magnetic tension aside, some
+theoretical simulations have gone beyond purely ballistic effects and disk-halo flows considered in isolation.
+Those presented by Marinacci et al. (2011) involve momentum and heat exchanges occurring in disk-halo flows.
+When cool clouds are launched from the disk into a
+hot, initially static corona built up by accretion, gas is
+stripped from the clouds, which streams in the cloud’s
+wake, mixing with the hot coronal gas. The mixed gas
+forms additional H i clouds before falling to the midplane. This mixing results in substantially more efficient
+cooling of the hot coronal gas than is described in the
+earlier, related model of Fraternali & Binney (2008), in
+which hot coronal gas experienced cooling times ∼100
+times greater than the expected flow time of galactic
+fountain clouds, thus resulting in most of the hot gas
+remaining in the halo. Marinacci et al. (2011) demonstrate that this process would contribute approximately
+−7 km s−1 kpc−1 to the deceleration of clouds, amounting to 50% of the total −15 km s−1 kpc−1 observed
+in NGC 891. If one also considers ballistic effects, this
+momentum exchange would nearly eliminate discrepancies between purely ballistic models and observed lags
+in NGC 891 and the Milky Way. However, lags have
+been shown to differ substantially among galaxies (e.g.
+Heald et al. 2007, Sancisi et al. 2008, Zschaechner et al.
+2012, Kamphuis et al. 2013). Thus, additional galaxies
+
+2
+
+Zschaechner & Rand
+
+must be observed and modeled to comparable sensitivity and detail. The Westerbork Hydrogen Accretion in
+LOcal GAlaxieS (HALOGAS) survey (Heald et al. 2011)
+has sought to remedy this situation through extensive H i
+observations of a carefully selected sample of nearby spiral galaxies.
+Not only are lag magnitudes of interest, but variations
+in lag magnitude with radius are expected based on conservation of angular momentum. From ballistic considerations only, in a disk-halo flow, material at smaller radii
+experiences larger relative changes in the gravitational
+potential when ejected from the midplane to a given
+height (and thus a greater lag) than material at large
+radii. Oosterloo et al. (2007), Zschaechner et al. (2011,
+2012), and Kamphuis et al. (2011) measure a shallowing
+of the lags in several nearby galaxies, with a current summary given in Zschaechner et al. (2015). A general trend
+noted in that paper is that the lags begin to shallow near
+a radius of 0.5R25 , and reach their shallowest point near
+R25 itself. Considering the mismatch between observed
+lag magnitudes and ballistic models, it is likely that the
+origin of the shallowing is more complicated as well.
+This work builds upon the HALOGAS sample and
+models, as well as supplemental galaxies presented in
+Zschaechner et al. (2015). To this existing collection of
+modeled galaxies, we add NGC 4013, a nearby, wellstudied, edge-on spiral galaxy with multiple extended
+extra-planar components.
+1.1. NGC 4013
+
+NGC 4013 is a member of the NGC 4151 group
+containing 16 galaxies, but is itself rather isolated
+(Giuricin et al. 2000). Arguably, its most noteworthy
+feature is its substantial warp originally seen in H i by
+Bottema et al. (1987). Here we present detailed H i observations and tilted-ring models of this galaxy. A brief
+summary of NGC 4013’s observational properties is provided in Table 1. Before presenting our work, we will
+review some of the key findings throughout the literature concerning NGC 4013.
+Rand (1996) presents an analysis of the DIG in nine
+nearby, edge-on spiral galaxies, including NGC 4013. In
+that work, four extra-planar filaments are found to extend 2.5 kpc from the disk, defining a nearly “H” or
+“X” shape. These filaments could be related to outflows fueled by SN activity near the center. The extraplanar DIG is not nearly as prominent as in NGC 891
+or NGC 5775, which have higher SFRs. The presence of extended extra-planar DIG is confirmed by
+Miller & Veilleux (2003), who also see indications of gradients in rotation speed with height above the midplane.
+Rueff et al. (2013) observe the DIG, but also find extraplanar dust up to approximately 2 kpc above the disk.
+The dust is highly structured and filamentary - far more
+so than the DIG. They conclude that direct evidence for
+a connection between the extra-planar DIG and extraplanar dust is lacking, suggesting the gas associated with
+the dust is either atomic or molecular.
+Verstappen et al. (2013) observe the dust in seven
+nearby, edge-on spiral galaxies using Herschel. According to their analysis, NGC 4013 is the only galaxy within
+their sample to display substantial extra-planar dust.
+All of these results suggest disk-halo cycling at a level
+above those of galaxies such as NGC 4244 and NGC 4565,
+
+but lower than that of NGC 891.
+Garcı́a-Burillo et al. (1999) present CO observations
+of NGC 4013, emphasizing its box-shaped bulge that is
+likely due to a bar. They note extra-planar extensions
+showing some connection to the extra-planar DIG described by Rand (1996). Additionally, they find a 130
+km s−1 spread in velocities near the center, which they
+note has no corresponding H i feature.
+Martı́nez-Delgado et al. (2009) discovered a tidal stellar stream extending 3 kpc above the plane of the disk
+in NGC 4013, possibly indicating a minor merger has
+taken place approximately 3 Gyr ago. Such a scenario
+was previously unexpected, as NGC 4013 appears to be
+relatively isolated and undisturbed.
+Rueff et al. (2014) observe an extra-planar H ii region
+in NGC 4013 that is 850 pc above the midplane and
+has a substantially lower metallicity than the main disk.
+They interpret this as a mixing of material in the gas
+that formed the associated stars.
+Perhaps most relevant to the work presented here, H i
+observations and modeling were presented in Bottema
+(1995). Those observations were done using the WSRT,
+achieving a spatial resolution of 19”×13”, velocity resolution of 33.3 km s−1 , and a single channel rms noise of
+0.3 mJy beam−1 . As will be shown in the next section,
+our data improve upon these numbers.
+(Bottema 1996) presented tilted-ring models of NGC
+4013 using the aforementioned WSRT data. Those models include a central inclination of 90◦ , and a central position angle of 66◦ . A substantial warp is also modeled.
+The rotation curve peaks at 195 km s−1 and decreases
+to 165 km s−1 at large radii. Naturally, the models presented in this paper will also constrain these parameters, which we derive independently but compare in § 7.
+Additionally, the models presented here focus largely on
+the extra-planar dynamics, which were not considered in
+(Bottema 1996).
+2. OBSERVATIONS & DATA REDUCTION
+
+Observations of NGC 4013 were completed with the
+VLA in B and C configurations. Data reduction was
+performed in AIPS using standard spectral line methods. Self-calibration was performed after combining all
+tracks, but before continuum subtraction, and led to substantial improvement. Although the velocity resolution
+of these data is 6.7 km s−1 , due to incomplete (not all of
+the awarded time was observed) observations, we average three channels to obtain our desired rms noise level
+for the final cube. A variety of weighting schemes were
+used to make cubes, with the final, full resolution cleaned
+cube using Briggs weighting and a robust parameter of
+3 after attempting a range of robust parameters to find
+the optimal balance between resolution and sensitivity.
+A low spatial resolution cube (used only for the lowest
+contour in Figure 1) uses a robust parameter of 2 with
+an outer uv taper of 7 kilo-lambda. Observation dates
+and cube parameters are given in Table 2. The primary
+beam correction was performed in AIPS.
+3. THE DATA
+
+Immediately clear from the zeroth-moment map (Figure 1) is the prominent, nearly symmetric warp in NGC
+4013. Hints of a line of sight warp component, flare, or
+possibly a thickened H i layer may also be seen extend-
+
+Kinematic Modeling of NGC 4013
+
+3
+
+TABLE 1
+NGC 4013 Parameters
+Parameter
+
+Value
+
+Reference
+
+Distance (Mpc)
+Systemic velocity (km s−1 )
+Inclination
+Morphological Type
+SFR (M⊙ yr −1 )
+Kinematic Center α (J2000.0)
+Kinematic Center δ (J2000.0)
+D25 (kpc)
+Total Atomic Gas Mass (109 M⊙ )
+
+14.6a
+835
+90 ◦
+SBc
+0.48
+11h 58m 31.6s
+43d 56m 52.2s
+22.3
+2.1 c
+
+Nasa Extragalactic Database
+Bottema (1995)
+This work
+Tully et al. (1988)
+Weigert et al. (2015, submitted to AJ )
+This work
+This work
+de Vaucouleurs et al. (1991)
+This work
+
+a Distance is the median value of distances found on the NED database, excluding those obtained
+using the Tully-Fisher relation to be consistent with HALOGAS.
+b Includes neutral He via a multiplying factor of 1.36. Value obtained using single dish data at our
+adopted distance is 2.4×109 M⊙ (Springob et al. 2005). WSRT value obtained by Bottema (1995)
+using our adopted distance is 2.3×109 M⊙ .
+
+TABLE 2
+Observational and Instrumental Parameters
+Parameter
+Observation Dates − C Config.
+B Configuration
+
+Total Time on source - C Config. (hours)
+Total Time on source - B Config. (hours)
+Pointing Center
+Number of channels
+Velocity Resolution
+Primary Cube Beam Size
+PA
+RMS Noise − 1σ 1 chan.
+Secondary Cube Beam Size
+PA
+RMS Noise − 1σ 1 chan.
+
+Value
+2010 Nov 16
+2010 Nov 20
+2010 Nov 28
+2011 Mar 21-23
+2011 Apr 02
+2011 Apr 22
+2011 May 02
+2011 May 04
+2011 May 09
+9a
+9.5b
+11h 58m 31.30s
+43d 56m 48.00s
+256
+20.1 km s−1c
+12.7×9.91”
+900×700 pc
+4.92◦
+0.18 mJy beam−1
+23.4×19.7”
+1700×1400 pc
+84.37◦
+0.23 mJy beam−1
+
+a Although nine total hours were observed, approximately three of
+these hours had substantial RFI and were flagged heavily.
+b Approximately two hours of these data were omitted due to poor
+quality, resulting in 7.5 hours used in the final cubes.
+c Averaged from 6.7 km s−1 to 20.1 km s−1 for modeling in order to
+improve SNR.
+
+ing to an apparent height of ∼0.7’ (3 kpc). Thickening
+of the disk largely to the southwest strongly suggests
+evidence for a line of sight warp component, although
+the other possibilities (or a combination of them) cannot yet be ruled out. It is unlikely that the warp is
+oriented across the line of sight - its more probable that
+the warp is indeed comprised of both across and along
+line of sight components. Further investigation through
+modeling (§ 4) is required to determine which of these
+components are actually present in NGC 4013. The final
+constraints on these components will be given in § 7.
+Channel maps (Figure 2) again show the prominent
+warp in NGC 4013. Evidence for a line of sight warp
+component may be seen by the splitting in channels cor-
+
+Fig. 1.— A zeroth-moment map of NGC 4013. The full resolution cube is represented in black, while an outline of the smoothed
+cube is in gray. Contour levels for the full resolution cube begin at
+2.6×1020 cm−2 and increase by factors of two. The gray contour
+is at 9.5×1019 cm−2 . Black lines represent the slice locations of bv
+diagrams in Figure 5. The beams are shown in the lower left-hand
+corner (white is full resolution, black is the smoothed cube). Note the
+prominent warp. Also note the apparent thickness of the warped regions, possibly due to a flare, thick disk, or a warp component along
+the line of sight.
+
+responding to 736 km s−1 and 756 km s−1 . It is clear
+that the disk is very thin near the center. Note that more
+than half of the total radial extent is clearly affected by
+the warp. The component of the warp across the line
+of sight extends a substantial 3’ (12.8 kpc) above the
+midplane at its highest point.
+The total mass we derive from our observations (Table 1) is close to that derived from single-dish data
+(Springob et al. 2005), which implies that there is no
+substantial flux missing. A first assessment going by apparent extent only indicates that 32% of the total H i
+mass is at a height greater than 1 kpc (14”). If only
+material within a radius of 7.9 kpc (2.2’), thus avoiding
+the clearly warped regions, this percentage amounts to
+18%. Again, we emphasize that this is only the H i with
+an apparent extent above 1 kpc. Naturally if a line of
+
+4
+
+Zschaechner & Rand
+
+sight warp component is present, much of this gas will
+be closer to the midplane.
+We now consider tilted-ring models created to fit these
+data.
+4. THE MODELS
+
+For tilted-ring modeling, in which we create model
+galaxies comprised of a series of concentric rings for
+which parameters such as the rotational velocity, inclination, position angle, etc. may be specified, we use the
+Tilted Ring Fitting Code (TiRiFiC, Józsa et al. 2007).
+Through tilted-ring modeling, features such as warps
+(via changes in inclination and position angle) and flares
+(vial radial increases in scale height) may be constrained.
+In addition to capabilities included in previous tiltedring modeling software, TiRiFiC allows for the fitting of
+asymmetries and localized features, as well as lags, which
+we utilize in our models of NGC 4013.
+The approaching and receding halves of NGC 4013
+are modeled separately as it is clear upon initial inspection that their morphologies differ greatly, and fitting
+them together could lead to unnecessary complexity in
+the models. Additional asymmetries almost certainly exist, but due to projection effects, these are not obvious
+upon inspection. Thus, we only allow for asymmetry between the two halves. The initial estimate for the inclination was 90◦ and the position angle (PA) for the nonwarped disk is 65◦ , both determined by eye (with only
+very slight modifications to the central PA during later
+stages of the modeling and no modification to the central inclination). The initial rotation curve was estimated
+based on matching the velocities on the terminal sides of
+the data and model lv (major-axis position-velocity) diagrams. Subsequent modifications to the rotation curve
+were made in the same manner until optimal fits were
+reached. The initial surface brightness distribution was
+set by examining the flux distribution along the midplane
+by eye. The surface brightness distribution was altered
+only slightly during the modeling, with the final distribution optimized for our final preferred model, and imposed
+on all other models. The reasoning behind imposing the
+surface brightness distribution from the final model onto
+the other models is 1) any differences between models
+were minute and could be attributed to degeneracies between the rotation curve and surface brightness, and 2)
+to maintain a clear and consistent picture of the changes
+in the models due to each additional component. All
+models presented here share the same surface brightness
+distribution, velocity dispersion (15 km s−1 ), systemic
+velocity (835 km s−1 ), central position (11h 58m 31.6s,
+43◦ 56’ 52.2”), central inclination (90◦ ), radial position
+angle dependence, and rotation curve. The only exception is that the models including a lag have a rotation
+curve that is 10 km s−1 higher in the approaching half
+than those that do not. The parameters not given here
+are shown in Figure 3 for final models.
+4.1. Individual Models
+We now address individual models and their defining
+characteristics, starting with a simple one-component
+model with a warp component across the line of sight
+(1C in figures).
+As stated previously, it is clear that there exists a warp
+component in NGC 4013 that lies across the line of sight.
+
+Thus, we model it with a single disk having an exponential scale height optimally found to be 7”±0.5 (500±35
+pc). To this model we add a PA warp for which parameters are given in Figure 3. This model fails to match
+the vertical profile [summed over ±60” (4.3 kpc) from
+the center in order to avoid the warped outer regions as
+much as possible (Figure 4)]. The width of the vertical profile is overestimated, yet the model cannot reproduce the spread near the systemic side of bv (minor-axis
+position-velocity) diagrams (Figure 5). Thus, the model
+is too wide on the terminal side, but too narrow on the
+systemic. Similarly, as may be seen in channel maps
+shown in Figure 6, the disk is too thick at small radii,
+but too narrow at large radii. The splitting of most of
+the data bv diagrams near the systemic side is indicative
+of a warp component along the line of sight, which we
+now address.
+We add a line of sight warp component (“W” model
+in figures, inclination parameters given in Figure 3) that
+begins near the radial onset of the other warp component
+(∼1.2’ or 10 kpc), but is roughly a quarter the magnitude. The relative contributions of each component to
+the total warp indicate that, in reality, the warp is oriented at an angle approximately 70 ◦ from the line of
+sight (of course, there is a degeneracy due to projection
+effects in terms of the near and far sides). The scale
+height of the layer is reduced to 5” (350 pc) to accommodate for the effects of the warp in this model. One can
+see clear improvements to the bv diagrams and channel
+maps, but can also see that the emission near the systemic side is not entirely matched in the former, nor are
+the outer edges of the latter. The warp also improves
+the fit to the vertical profile, although a closer match is
+still desirable. In the channel maps, the data show an
+increasing minor axis thickness with radius, especially in
+the unwarped component, which is not present in this
+model. This suggests a flare.
+Adding a substantial flare to the model (“WF” in figures) by increasing the scale height with radius allows
+for a better fit to the vertical profile (parameters shown
+in Figure 3). Additionally, the scale height of the approaching half decreases slightly for radii larger than 3.1’
+(13.2 kpc). The emission on the systemic sides of bv diagrams is now spread out more, and the aforementioned
+thickening in the channel maps is well reproduced. The
+improvements due to the flare are best seen on the systemic sides (going from systemic to ∼75 km s−1 above
+systemic) of bv diagrams corresponding to radii greater
+than 1.0’ (4.4 kpc) as seen in Figure 5. Note the increased spread between the contours, which is in better
+agreement with the data. Also note the increase in the
+spread along the minor axis. One issue to note is that to
+fit this model, the central scale height is reduced to 3”
+(210 pc), pushing the limits of our ability to constrain
+this parameter given our resolution. However, we do see
+an extremely slight distinction between a scale height of
+3” and 4”, mainly near the peak, shown in Figure 4. In
+the end, the significance of this difference is debatable,
+but we use the 3” (210 pc) scale height for subsequent
+models.
+For the sake of completeness, a second, thicker disk is
+briefly considered, but as one may have already assumed,
+this yields no improvement to the models and is quickly
+dismissed. For instance, the thickening in the minor axis
+
+Kinematic Modeling of NGC 4013
+
+5
+
+Fig. 2.— Channel maps of NGC 4013 show the substantial warp. Velocities in km s−1 are given in each panel. Contours begin at 2σ (0.36
+mJy beam−1 , or 6.4×1019 cm−2 ) and increase by factors of two. The cube is rotatied 66◦ .
+
+Fig. 3.— The parameters used in the final models of NGC 4013
+for the approaching and receding halves. Parameters presented here
+are consistent for all models except for the scale height and inclination distribution in the case of the 1C model, and the scale height
+distribution for the W model, for which these parameters are held
+constant by definition. Note the relatively symmetric distributions
+of each quantity. The bold line in the bottom-right panel represents
+the inclination
+
+5. THE ADDITION OF A LAG
+
+Fig. 4.— Vertical profiles of the data, one-component (1C), line
+of sight warp (W), and warp with a flare (WF), summed over a
+range of ±60” (4.3 kpc) from the center in order to avoid as much
+of the warped regions as possible. Additionally, we present the WF
+model with a central exponential scale height of 4” as opposed to
+3” in order to illustrate the subtle difference between the two since
+such differences are pushing the limits of the resolution of the data.
+Note how the 4” model slightly underestimates the peak. Given this
+very slight preference, we use the 3” scale height in our final models,
+although the central scale height could indeed be closer to 4”. A color
+figure is available in the online version.
+
+Improvements are seen via the addition of a lag of
+−1
+−21+7
+kpc−1 starting at a radius of 1.4’ (5.8
+−14 km s
+kpc). The lag causes the observed velocity of the gas to
+be shifted in the direction of the systemic velocity, with
+this shift increasing with height. This causes the ter-
+
+minal side of the contours in bv diagrams to shift from
+a relatively shallow U-shape to a steeper V-shape. Although we attempt to alter as few parameters as possible, a slight adjustment to the rotation curve in the
+
+direction evident in the channel maps as discussed above
+is naturally well matched by a flare. A thick disk would
+not reproduce such behavior and add unnecessary complexity to the models.
+
+6
+
+Zschaechner & Rand
+
+Fig. 5.— bv diagrams showing all of the models presented in this paper. Note the clearly poor fit of the 1C model, especially in the narrow
+systemic and wide terminal sides of each panel, as well as near the center. The W model is an improvement, but still lacks the proper
+distribution near the systemic sides that is achieved through the addition of a flare. Contours are as in Figure 2. Note the improved match in
+the curvature on the terminal sides of panels corresponding to ±2.0’ and ±2.3’ that is due to the lag in this model.
+
+Kinematic Modeling of NGC 4013
+
+7
+
+8
+
+Zschaechner & Rand
+
+Fig. 6.— Representative channel maps showing the approaching
+(A) and receding (B) halves of NGC 4013. Note the splitting in
+the panel corresponding to 736 km s−1 and how this is achieved by
+adding a warp component along the line of sight. The 1C, W, and
+WF models are shown here as these are the models exhibiting the
+most substantial changes from one another. The WFL and WFLv
+models are omitted from this figure as they are very similar to the
+WF model in channel maps since the lag is only in the flat part of
+the disk, which is visually overwhelmed by the outer, warped region
+here. Contours are as in Figure 2
+
+approaching half (190 km s−1 to 200 km s−1 ) yielded a
+better fit for the lag models. The subtle improvements
+from the addition of such a lag are best seen in panels
+corresponding to the terminal sides of ±2.0’-2.3’ of Figures 5 and 7 (WFL). (Recall that there is a flaring layer
+in NGC 4013, so there is more H i present at high z at
+large radii, making it easier to detect a lag.) As for the
+central regions within ∼1.3’, due to a lack of spatial resolution relative to the thickness of the disk, we cannot
+use the bv diagrams to meaningfully constrain the lag in
+those regions.
+We see further improvement by allowing the lag to
+shallow with radius (WFLv) in Figures 5 and 7. Note
+how the contours on the terminal side in the panels corresponding to ±1.7’ and ±2.0’ have a “V” shape on the
+terminal side in both the data and radially varying lag
+models, while those at ±2.3’ are distinctly more rounded
+in both the data and the radially varying lag model than
+in the constant lag model. This behavior can only be
+reproduced if the lag is allowed to shallow radially. The
+shallowing itself is parametrized in Figure 8.
+For completeness, we show lv diagrams of the 1C and
+final WFLv models in Figure 9.
+6. THE UNCERTAINTIES OF THE MODELS
+
+The rotation curves on each half nearly match each
+other, and the average uncertainty in individual rings is
+
+Fig. 7.— Select bv diagrams of the data, warped model with a
+flare (WF), warped model with a flare and constant lag (WFL) , and
+warped model with a flare and radially shallowing lag (WFLv) for
+the approaching (A) and receding (B) halves. The orange lines trace
+the approximate shape of the terminal sides of the bv diagrams in
+the data. In Figure A, note the overall rounded appearance of the
+WF model compared to the data. Note also how the terminal side
+of the WFL model is too pointed in the panel corresponding to 2.3’,
+while the WFLv is somewhat rounded, in closer agreement with the
+data. In Figure B, the WF model is again too rounded compared
+to the data. Regarding the radially shallowing lag, note the rounded
+appearance of the second and third contours on the terminal side of
+the data at −2.3’. The WFL and WFLv models both fit these curves
+quite well at −2.3’, with the WFL model perhaps being slightly too
+pointed. However, at −2.0’ and −1.7’, it becomes evident that the
+lag in the WFL model is too shallow, especially at larger minor axis
+offsets, closer to 950 km s−1 . Thus, to fit the data at smaller radii,
+the lag would need to become steeper for the WFL model, resulting
+in too much of a V-shape in the −2.3’ panel. Contours are as in
+Figure 2 A color figure is available in the online version.
+
+approximately 5 km s−1 . The runs of the position angle and inclination are both extremely sensitive to small
+changes of a degree or two in a single ring. The narrow
+scale height near the center should be considered somewhat skeptically as it approaches the limits of our ability
+to constrain this parameter given the resolution of the
+data and should be considered an upper limit. Still, a
+slight change can be seen in the vertical profile when the
+scale height near the center is changed from 3” to 4”
+(Figure 4). It is also clear that there is a flaring layer in
+NGC 4013.
+We consider uncertainties in the lag by creating minimum and maximum value models which are judged to
+
+Kinematic Modeling of NGC 4013
+
+9
+
+Fig. 10.— Select bv diagrams of the data, minimum, optimal,
+and maximum lag models for the approaching (A) and receding (B)
+halves. The various lags are parametrized in Figure 8. Note in particular the subtle differences in the curvature along the terminal sides
+in each model. The minimum lag model is too rounded, while the
+maximum model has a distinct “V” shape not present in the data.
+Contours are as in Figure 2
+
+Fig. 8.— The distributions of lag magnitudes for the minimum,
+optimal, and maximum lag models shown in Figure 10. Constant lag
+values are kept to as large of radii as possible before it is obvious that
+radially shallowing is necessary. Thus, the lag may shallow over its
+entire range. Note the increased uncertainty in the upper limits due
+to the spatial resolution along the minor axis of the data leading to
+smaller changes introduced by steeper lags.
+
+Fig. 9.— lv diagrams showing the data, one component (1C), and
+final (WFLv) models. The most substantial changes are near the
+systemic side and at large minor axis offsets. Contours are as in
+Figure 2
+
+be still consistent with the data in addition to the optimal lag (Figure 10). The various lag distributions are
+parametrized in Figure 8. Note the high maximum lag allowed, which is due to the thinness of the disk in relation
+to the resolution of the data. This difficulty is because of
+the thinning along the minor axis of the terminal side of
+the bv diagrams when steeper lags are introduced. The
+thickness on this side becomes insensitive to the lag for
+relatively steep lags. For a similar reason, an upper limit
+for the magnitude of the lag is increasingly difficult to
+determine with decreasing radius. Within ∼7 kpc, our
+small upper limit on the scale height limits our ability to
+constrain steeper lags that result in even further thinning
+along the terminal side of the minor axis.
+By summing the square of the residuals for each model
+interior to 1.15’ (10.2 kpc), we attempt to quantify the
+improvement due to each feature. We do not consider
+the addition of a line of sight warp component (W) to
+a (1C) model here since it is in reality connected to the
+warp component across the line of sight which is obvious
+upon inspection. Adding a flare (WF) to the warped
+(W) model yields a decrease of 3.7% in the approaching
+half and 2.6% in the receding half. The addition of a
+constant lag results in a total increase with respect to the
+W model of 11.3% and a decrease of 4.9%, respectively,
+while allowing the lag to shallow radially provides an
+decrease of 8.1% in the approaching and a decrease of
+5.3% in the receding compared to the W model.
+The rounding on the terminal side of the bv diagram
+at 2.3’ in the approaching half indicates some degree
+of shallowing, and yet the numerical goodness of fit is
+worse than for the model with a constant lag (for the
+
+10
+
+Zschaechner & Rand
+
+approaching half only). This inconsistency highlights
+the problem inherent in tilted-ring modeling of galaxies, in particular their faint and often locally-disrupted
+extra-planar layers, which greatly hinders automated fitting efforts, rendering a by-eye approach necessary as
+demonstrated throughout the literature (e.g. Fraternali
+et al. 2004/2005, Oosterloo et al. 2007, Zschaechner et
+al. 2011/2012/2015, Kamphuis et al. 2013, Gentile et al.
+2013). The effects of lags predominantly occur in the
+faintest gas - only a fraction of the total emission. Thus,
+the quantifiable improvements from them are suppressed
+over large regions. Furthermore, if bright material close
+to the midplane is displaced by a lag (as is the case here),
+the detriment from that dominates the final quantization
+of the overall improvement to the models. This issue is
+particularly relevant to NGC 4013 given its thin disk,
+which pushes the limits of the resolution of these data.
+However, resolution is not an issue for the fainter, more
+diffuse emission extending above the midplane in which
+the lag is clearly observed and there are indications of its
+shallowing.
+What these models demonstrate is that the overall
+characteristic V-shape of the terminal sides of the bv diagrams, as seen in other galaxies with lagging extra-planar
+sc H,ı (e.g. NGC 891, NGC 4565, NGC 4244) can only be
+achieved through the addition of a lag. The presence of
+this V-shape is independent of the rotation curve at the
+midplane. Furthermore, the rounding of this V-shape
+at large radii, also demonstrated in the aforementioned
+galaxies, is achieved through shallowing of the lag. It is
+possible that the rounding which we attribute to shallowing here, could be indicative of a constant lag starting
+higher above the midplane with increasing radius (not
+shown). However, such a scenario, in which the rounding of the terminal sides of bv diagrams is attributed
+solely to starting height of the lag, is unlikely, although
+it, or a combination of shallowing and variable starting
+height cannot be ruled out based on these data alone.
+7. DISCUSSION & CONCLUSIONS
+7.1. NGC 4013
+
+The central H i layer in NGC 4013 is rather thin with
+an upper limit of 4” (280 pc) for the central scale height.
+The layer then flares up to 15” (1 kpc) at radii greater
+than 7 kpc. The rotation curve peaks at 195 km s−1 and
+is approximately flat, indicating a large dynamical mass
+(calculated as 1.1×1012 M⊙ using a rotational velocity of
+190 km s−1 at a radius of 13.3 kpc). We see no evidence
+for substantial amounts of extra-planar H i, but see evidence for a radially shallowing lag with a peak magnitude
+−1
+kpc−1 where the H i layer flares. The
+of−35+7
+−28 km s
+lag then shallows with radius, going to zero near R25 .
+The lag is modeled starting from the midplane.
+Our models agree remarkably well with those presented
+in Bottema (1996), the most notable difference being a
+20-30 km s−1 decrease in rotational velocity in the outer
+warped radii in the Bottema (1996) model, while our
+rotation curve remains flat. This difference is likely due
+to degeneracies in modeling substantially warped regions.
+Recall that the lag is considered only at radii interior to
+the warp, thus this discrepancy has no bearing on the
+final conclusions involving the lag.
+The lack of extra-planar H i is intriguing given the
+
+Fig. 11.— Measured radial variations of lags in several nearby
+edge-on spiral galaxies including NGC 891 (Oosterloo et al. 2007),
+NGC 4244 (Zschaechner et al. 2011), NGC 4565 (Zschaechner et al.
+2012), NGC 5023 (Kamphuis et al. 2013), NGC 4302 and NGC 3044
+(Zschaechner et al. 2015). Note the general trend of lags beginning
+to shallow near 0.5R25 , and reaching their shallowest values near
+R25 itself. A color figure is available in the online version.
+
+extra-planar DIG and dust. However, it is possible that
+there is a relatively large escape of ionizing radiation
+into the gaseous halo, resulting in prominent extra-planar
+DIG but not H i.
+As a side note, we see no evidence for the potential H i
+clouds noted by Bottema (1995) that are slightly beyond
+and near the highest point in the warp on the approaching half and conclude (as Bottema (1995) suggested) that
+they are likely artifacts in those data.
+As is also noted by Bottema (1995), there are no indications of a bar in H i, although one appears to exist
+in CO and at optical wavelengths (Garcı́a-Burillo et al.
+1999). The location of the bar they describe coincides
+with the central region of lower column densities before
+the initial peak in H i (Figure 3).
+7.2. The Lag in NGC 4013 in the Context of Other
+
+Galaxies
+The lag in NGC 4013 is the steepest measured for H i
+to date. It also shows radial shallowing similar to several
+existing measured lags (Figure 11). For a more extensive presentation involving lag properties among a larger
+sample of galaxies see Zschaechner et al. (2015), in particular Table 5. The addition of NGC 4013 does not
+change any conclusions concerning lags and SF properties already presented in that work.
+7.3. Implications for Theoretical Scenarios
+
+As has been previously noted, observed lag magnitudes are substantially steeper than those predicted by
+purely ballistic models (e.g. Collins et al. 2002). The
+lag in NGC 4013 is no exception. Recent models by
+(Marinacci et al. 2011) consider a momentum exchange
+between galactic fountain clouds and an initially static,
+but subsequently slowly-rotating hot halo that is built
+up via accretion. As noted by (Zschaechner et al. 2015),
+the radial shallowing observed in these galaxies indicates
+that if lags are indeed due to such a scenario, then this
+momentum exchange must be occurring predominantly
+within R25 .
+The shallowing itself is not yet understood, and must
+be considered in future simulations. Benjamin (2002,
+2012) suggests that extra-planar pressure gradients could
+impact lags and their radial variations. There have
+been few observational constraints to date for such pressure gradients, a situation soon to be remedied by deep
+continuum observations of edge-on galaxies (Irwin et al.
+
+Kinematic Modeling of NGC 4013
+2012). Their sample includes seven galaxies with measured lags, including five (as well as the receding side of
+NGC 4302) with radially shallowing lags.
+8. ACKNOWLEDGMENTS
+
+We thank the operators at VLA for overseeing the observations. The National Radio Astronomy Observatory
+is a facility of the National Science Foundation operated
+under cooperative agreement by Associated Universities,
+Inc. This research has made use of the NASA/IPAC
+
+11
+
+Infrared Science Archive, which is operated by the Jet
+Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and
+Space Administration. We also thank Rene A. M. Walterbos, Gregory B. Taylor and Peter Zimmer for constructive comments. This material is based on work partially supported by the National Science Foundation under grant AST-0908106 to R.J.R. We thank the anonymous referee for exceptionally insightful and constructive
+comments regarding the presentation of these models.
+
+REFERENCES
+Barnabè, M., Ciotti, L., Fraternali, F., & Sancisi, R. 2006, A&A,
+446, 61
+Boomsma, R., Oosterloo, T. A., Fraternali, F., van der Hulst,
+J. M., & Sancisi, R. 2005, A&A, 431, 65
+Bottema, R. 1995, A&A, 295, 605
+—. 1996, A&A, 306, 345
+Bottema, R., Shostak, G. S., & van der Kruit, P. C. 1987, Nature,
+328, 401
+Collins, J. A., Benjamin, R. A., & Rand, R. J. 2002, ApJ, 578, 98
+de Vaucouleurs, G., de Vaucouleurs, A., Corwin, Jr., H. G., Buta,
+R. J., Paturel, G., & Fouque, P. 1991, Third Reference
+Catalogue of Bright Galaxies, ed. de Vaucouleurs, G., de
+Vaucouleurs, A., Corwin, H. G., Jr., Buta, R. J., Paturel, G., &
+Fouque, P.
+Fraternali, F., & Binney, J. J. 2006, MNRAS, 366, 449
+—. 2008, MNRAS, 386, 935
+Garcı́a-Burillo, S., Combes, F., & Neri, R. 1999, A&A, 343, 740
+Gentile, G., et al. 2013, A&A, 554, A125
+Giuricin, G., Marinoni, C., Ceriani, L., & Pisani, A. 2000, ApJ,
+543, 178
+Heald, G., et al. 2011, A&A, 526, A118+
+Heald, G. H., Rand, R. J., Benjamin, R. A., & Bershady, M. A.
+2007, ApJ, 663, 933
+Hodges-Kluck, E. J., & Bregman, J. N. 2013, ApJ, 762, 12
+Howk, J. C., & Savage, B. D. 1999, AJ, 117, 2077
+Irwin, J., et al. 2012, AJ, 144, 43
+Irwin, J. A. 1994, ApJ, 429, 618
+Irwin, J. A., English, J., & Sorathia, B. 1999, AJ, 117, 2102
+Józsa, G. I. G., Kenn, F., Klein, U., & Oosterloo, T. A. 2007,
+A&A, 468, 731
+Kamphuis, P., Peletier, R. F., van der Kruit, P. C., & Heald,
+G. H. 2011, MNRAS, 414, 3444
+Kamphuis, P., et al. 2013, MNRAS, 434, 2069
+Leitner, S. N., & Kravtsov, A. V. 2011, ApJ, 734, 48
+
+Li, J.-T., & Wang, Q. D. 2013, MNRAS, 435, 3071
+Marinacci, F., Fraternali, F., Nipoti, C., Binney, J., Ciotti, L., &
+Londrillo, P. 2011, MNRAS, 415, 1534
+Martı́nez-Delgado, D., Pohlen, M., Gabany, R. J., Majewski,
+S. R., Peñarrubia, J., & Palma, C. 2009, ApJ, 692, 955
+Miller, S. T., & Veilleux, S. 2003, ApJ, 592, 79
+Oosterloo, T., Fraternali, F., & Sancisi, R. 2007, AJ, 134, 1019
+Putman, M. E., Peek, J. E. G., & Joung, M. R. 2012, ARA&A,
+50, 491
+Rand, R. J. 1996, ApJ, 462, 712
+Rossa, J., & Dettmar, R. 2003, A&A, 406, 493
+Rueff, K. M., Howk, J. C., Pitterle, M., Hirschauer, A. S., Fox,
+A. J., & Savage, B. D. 2013, AJ, 145, 62
+Rueff, K. M., Howk, J. C., Wotta, C., Croxall, K. V., Savage,
+B. D., & O’Meara, J. 2014, in American Astronomical Society
+Meeting Abstracts, Vol. 223, American Astronomical Society
+Meeting Abstracts #223, #246.19
+Sancisi, R., Fraternali, F., Oosterloo, T., & van der Hulst, T.
+2008, A&A Rev., 15, 189
+Springob, C. M., Haynes, M. P., Giovanelli, R., & Kent, B. R.
+2005, ApJS, 160, 149
+Tüllmann, R., Pietsch, W., Rossa, J., Breitschwerdt, D., &
+Dettmar, R. 2006, A&A, 448, 43
+Tully, R. B., Fisher, J. R., & Madore, B. F. 1988, JRASC, 82, 305
+Verstappen, J., et al. 2013, A&A, 556, A54
+Wakker, B. P., & van Woerden, H. 1997, ARA&A, 35, 217
+Zschaechner, L. K., Rand, R. J., Heald, G. H., Gentile, G., &
+Józsa, G. 2012, ApJ, 760, 37
+Zschaechner, L. K., Rand, R. J., Heald, G. H., Gentile, G., &
+Kamphuis, P. 2011, ApJ, 740, 35
+Zschaechner, L. K., Rand, R. J., & Walterbos, R. 2015, ApJ, 799,
+61
+
+

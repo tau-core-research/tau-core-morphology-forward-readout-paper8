@@ -1,0 +1,1996 @@
+Mon. Not. R. Astron. Soc. 000, 000–000 (0000)
+
+Printed 25 September 2020
+
+(MN LATEX style file v2.2)
+
+HI scale height in spiral galaxies
+Narendra Nath Patra1 ?
+
+arXiv:2009.11299v1 [astro-ph.GA] 23 Sep 2020
+
+1 Raman Research Institute, C. V. Raman Avenue, Sadashivanagar, Bengaluru 560080, India
+
+ABSTRACT
+
+We model the galactic discs of seven nearby large spiral galaxies as three-component
+systems consist of stars, molecular gas, and atomic gas in vertical hydrostatic equilibrium. We set up the corresponding joint Poisson-Boltzmann equation and solve it numerically to estimate the three-dimensional distribution of HI in these galaxies. While
+solving the Poisson-Boltzmann equation, we do not consider a constant HI velocity dispersion (σHI ); rather, we develop an iterative method to self-consistently estimate the σHI
+profile in a galaxy by using the observed second-moment profile of the HI spectral cube.
+Using the density solutions, we determine the HI vertical scale height in our galaxies.
+We find that the HI discs flare in a linear fashion as a function of radius. HI scale height
+in our galaxies is found to vary between a few hundred parsecs at the center to ∼ 1 − 2
+kpc at the outskirts. We estimate the axial ratio of the HI discs in our sample galaxies and
+find a median ratio of 0.1, which is much lower than what is found for dwarf galaxies,
+indicating much thinner HI discs in spiral galaxies. Very low axial ratios in three of our
+sample galaxies (NGC 5055, NGC 6946, and NGC 7331) suggest them to be potential
+superthin galaxies. Using the HI distribution and the HI hole sizes in NGC 6946, we find
+that most of the HI holes in this galaxy are broken out into the circumgalactic medium
+and this breaking out is more effective in the inner radii as compared to the outer radii.
+Key words: radio lines: ISM – atomic data – galaxies: structure – galaxies: kinematics
+and dynamics – galaxies: spirals
+
+1
+
+INTRODUCTION
+
+The atomic hydrogen (HI) in galaxies is one of the most critical components which directly influences the physical, chemical, and dynamical evolution of a galaxy. The atomic gas acts
+as a long-term fuel for star formation and found to correlate
+with the current star formation in both spiral and dwarf galaxies (Kennicutt 1998; Bigiel et al. 2008; Roychowdhury et al.
+2009; Patra et al. 2016; Leroy et al. 2009; Roychowdhury et al.
+2015; Bacchini et al. 2019a,b). Though the stars born out of
+molecular beds, the molecular gas forms out of the Cold Neutral Medium (CNM) phase of the interstellar medium (ISM).
+The connection between the ISM phases and the star formation requires the knowledge of the density distribution of the
+HI in galaxies, which might play a pivotal role in deciding different phase transitions and inducing instabilities (Toomre 1964;
+Madore 1977; Burton 1987; Wolfire et al. 1995; Alves, Lombardi & Lada 2007). In fact, in a recent study, Bacchini et al.
+(2019a) have shown that a volumetric star-formation law shows a
+much lower scatter than the traditional star formations laws with
+surface densities. This, in turn, indicates that the volume density
+distribution of the gas in galaxies is crucial in understanding the
+origin of star formation and hence, the star formation laws.
+HI also plays a vital role in understanding the dynamical
+evolution of galaxies. For example, HI extends to much larger
+
+?
+
+E-mail: narendra@rri.res.in
+
+c 0000 RAS
+
+radii as compared to optical discs and serves as a tracer of the
+underlying dark matter halo potential at these regions. Such as,
+to date, the HI rotation curve is the most robust indicator of the
+presence of dark matter in galaxies, and it is routinely used to
+investigate the properties of the dark matter halos (Bosma 1978,
+1981; van Albada et al. 1985; Begeman 1987; de Blok et al.
+2008; Oh et al. 2015; Iorio et al. 2017). Moreover, the distribution of HI is an excellent tracer of the gravitational potential
+in the vertical direction as well. For example, in the Galaxy, it
+is observed that the HI flares as a function of the galactocentric
+radius. In that sense, the HI can trace the variation in the gravitational potential (and hence the underlying dark matter density)
+in the vertical direction (Banerjee & Jog 2008), especially on the
+outskirts of a galaxy where the dark matter dominates.
+The three-dimensional distribution of HI in galaxies is also
+crucial to many other physical properties of galaxies. For example, the thickness of the HI discs in galaxies influences the effective cross-section to the background quasars, which produces
+the absorption spectra. Thicker HI discs in a particular type of
+galaxies would also increase their incident rates as a function of
+redshift as well (see, e.g., Zwaan et al. 2005; Patra, Chengalur
+& Begum 2013; Roy et al. 2013). Further, the thickness of the
+HI layer in a galaxy decides the size distribution of the HI holes
+originated due to supernovae or stellar feedback. Consequently,
+it determines if the HI shell would break into the circumgalactic medium (CGM) polluting it with metal-enriched gas or not
+(Mac Low & Ferrara 1999; Silich & Tenorio-Tagle 2001). How-
+
+2
+
+N. N. Patra
+
+Table 1. Basic properties of our sample galaxies
+
+(1)
+
+RA (J2000)
+(h m s)
+(2)
+
+DEC (J2000)
+(o 0 00 )
+(3)
+
+Dist
+(Mpc)
+(4)
+
+MB
+(mag)
+(5)
+
+r25
+(0 )
+(6)
+
+i
+(o )
+(7)
+
+PA
+(o )
+(8)
+
+log MHI
+(M )
+(9)
+
+SFR
+(M yr−1 )
+(10)
+
+NGC 925
+NGC 2841
+NGC 2976
+NGC 3198
+NGC 5055
+NGC 6946
+NGC 7331
+
+02 27 16.5
+09 22 02.6
+09 47 15.3
+10 19 55.0
+13 15 49.2
+20 34 52.2
+22 37 04.1
+
++33 34 44
++50 58 35
++67 55 00
++45 32 59
++42 01 45
++60 09 14
++34 24 57
+
+9.2
+14.1
+3.6
+13.8
+10.1
+5.9
+14.7
+
+-20.04
+-21.21
+-17.78
+-20.75
+-21.12
+-20.61
+-21.67
+
+5.3
+5.3
+3.6
+3.2
+5.9
+5.7
+4.6
+
+66
+74
+65
+72
+59
+33
+76
+
+287
+154
+335
+215
+102
+243
+168
+
+9.66
+9.93
+8.13
+10.01
+9.96
+9.62
+9.96
+
+1.09
+0.20
+0.10
+0.85
+2.42
+4.76
+4.20
+
+Name
+
+NOTE: The data presented in this table is compiled from Walter et al. (2008).
+
+ever, despite its tremendous importance, a direct determination
+of the three-dimensional distribution of the HI is difficult in external galaxies due to the line-of-sight integration effect. For the
+Galaxy on the other hand, determination of the HI distribution
+is possible with direct observations assisted with minimal modeling (Grabelsky et al. 1987; Wouterloot et al. 1990; Nakanishi
+& Sofue 2003; Rathborne et al. 2009; Kalberla & Dedes 2008;
+Roman-Duval et al. 2010, 2016; Sofue 2017; Marasco et al.
+2017). For external galaxies, using observation only, a direct estimation of the vertical HI distribution (and hence the HI scale
+height (defined as the Half Width at Half Maxima of the vertical density distribution)) without modelling is only possible if
+the galaxy has a constant vertical scale height and, viewed at an
+edge-on orientation. However, for almost no galaxies, the HI vertical scale height is constant as a function of radius. Hence, detailed modeling of the HI disc is essential to estimate the threedimensional distribution of HI in a galaxy.
+In fact, a large number of previous studies has estimated
+the three-dimensional distribution of stars and gas in a number of galaxies using detailed hydrostatic modeling considering
+galactic discs to be multi-component isothermal systems (Woolley 1957; van der Kruit & Searle 1981a,b; van der Kruit 1981;
+Bahcall 1984b,a; Bahcall & Casertano 1984; Bahcall, Flynn &
+Gould 1991; Romeo 1992; Olling 1995; Narayan & Jog 2002;
+Abramova & Zasov 2008; Banerjee et al. 2011; Bacchini et al.
+2019a,b). In early studies, Bahcall (1984b,a) assumed the stellar
+disc of the Galaxy to be an isothermal system in vertical hydrostatic equilibrium and solved the combined Boltzman-Poissons
+equation. They estimated the vertical stellar mass distribution
+and consequently measured the ratio of the halo to disc mass
+densities. They also used this method to determine the relationship between the total surface density of mass, observed luminosity scale height, and vertical velocity dispersion (Bahcall &
+Casertano 1984). Later, Romeo (1992) solved the hydrostatic
+equation assuming galactic discs to be two-component systems
+(stars+cold gas) to investigate the self-regulation mechanisms in
+determining the dynamics and structure of early normal spiral
+galaxies. The hydrostatic condition has further been used to investigate the shape of the dark matter halos in galaxies by modeling the vertical HI distribution (see, e.g., Olling 1995; Banerjee
+& Jog 2008).
+In this work, we model the baryonic discs of seven
+nearby large spiral galaxies from The HI Nearby Galaxy Survey (THINGS, Walter et al. (2008)) to estimate the threedimensional distribution of HI in them. We consider the galactic
+discs to be three-component systems consist of stars, molecular gas, and atomic gas in vertical hydrostatic equilibrium under
+their mutual gravity and the dark matter halo. We further set up
+the joint Poisson-Boltzmann equation of hydrostatic equilibrium
+
+and solve it numerically to obtain a detailed distribution of the
+HI in these galaxies.
+To solve the Poisson-Boltzmann equation numerically, we
+adopt a similar strategy as used by Narayan & Jog (2002) and
+subsequent studies (Banerjee & Jog 2008; Banerjee, Matthews
+& Jog 2010; Patra et al. 2014; Patra 2019, 2018; Sarkar & Jog
+2018, 2019; Patra 2020a,b). However, most of these previous
+studies considered the vertical velocity dispersion of HI (σHI ) to
+be constant for simplicity or lack of observation. Recently, in rigorous studies, Bacchini et al. (2019a,b) used a very similar technique to obtain a three-dimensional distribution of HI,H2 and
+star formation rate in a sample of twelve nearby star-forming
+galaxies and the Milky Way. Unlike previous studies, they extracted the vertical velocity dispersion of the gas discs as a function of the radius by performing detailed 3D tilted ring modeling
+of the kinematic data using 3D Barolo (Di Teodoro & Fraternali
+2015). However, they did not solve the hydrostatic equation fully
+self-consistently and ignored the gravity of the H2 disc while
+solving for HI. Whereas, in this study, we solve the hydrostatic
+equilibrium equation self-consistently incorporating the gravity
+of all the disc components. We also do not assume a constant
+σHI ; rather, we develop an iterative method by which we estimate the σHI profile in a galaxy from the observed secondmoment profile (MOM2) of the HI spectral cube. In this approach, simultaneously, both the HI distribution and the σHI can
+be determined self-consistently in a galaxy.
+
+2
+
+SAMPLE
+
+We select seven nearby spiral galaxies from The HI Nearby
+Galaxy Survey (THINGS, Walter et al. (2008)) for which all the
+necessary data are available publicly. As part of the THINGS
+survey, a total of 34 galaxies were observed in HI with the Very
+Large Array (VLA) with a high spatial resolution of ∼ 600 . The
+sample was carefully chosen, such as to be part of a larger multiwavelength campaign. For example, THINGS galaxies are part
+of the Spitzer Infrared Nearby Galaxy Survey (SINGS, Kennicutt et al. (2003)), which enables robust estimation of the stellar masses in these galaxies. They have the FUV data from the
+GALEX observations, which is useful to calculate the recent
+star formation in these galaxies. Moreover, the HERA CO Line
+Extra-galactic Survey (HERACLES, Leroy et al. (2009)) also
+used the THINGS samples as the base to observe 18 large spiral
+galaxies with the 30-m IRAM telescope and mapped molecular
+gas in these galaxies.
+Solving the Poisson-Boltzmann equation requires several
+essential input parameters. For every galaxy, one needs the surface density profiles of the disc components, which are primarily
+responsible for gravity. Here it should be mentioned that several
+galaxies in the THINGS sample did not have publicly available
+c 0000 RAS, MNRAS 000, 000–000
+
+HI scale height in spiral galaxies
+molecular surface density profiles. As molecular gas is one of
+the crucial baryonic components which can significantly influence the dynamics, we exclude these galaxies from our sample.
+HI rotation curve and the mass-model (dark matter distribution)
+of a galaxy are the other essential inputs to the hydrostatic equation. However, due to limitations in the observing parameters
+(e.g., inclination, data quality etc.), mass-modeling could not be
+performed in some of the THINGS galaxies (see de Blok et al.
+2008, for more details). We exclude these galaxies as well from
+our sample. This leads to a total of eight galaxies for which all
+the necessary parameters are available to solve the hydrostatic
+equation. However, for one galaxy, NGC 3521, the HI disc shows
+strong warp at the outer disc (see, e.g., Fig. 77 of de Blok et al.
+2008). This results in a varying inclination of the annular ring
+at a particular radius and can overestimate the observed σHI significantly. Hence, we exclude this galaxy from our sample which
+leads to a total seven galaxies in our sample for which we solve
+the hydrostatic equilibrium equation.
+In Tab. 1, we present a few basic properties of our sample
+galaxies. Column (1) quotes the name of the galaxies, column
+(2) and (3) present the coordinates (RA and DEC) of the galaxies. In column (4) and (5), we show the distances to the galaxies
+and the absolute blue band magnitude (corrected for the extinction of the Milky Way and the galaxy itself), respectively. Column (6) denotes the optical radius (r25 ), whereas column (7) and
+(8) present the average inclination and the position angle of the
+HI discs as obtained by a tilted-ring fitting of the HI velocity
+field (as obtained by de Blok et al. (2008)). Finally, column (9)
+shows the HI mass of the galaxies, whereas column (10) depicts
+the global star formation rate. The data presented in this table
+are compiled from Walter et al. (2008).
+
+3
+
+where σz represents the velocity dispersion of different baryonic
+discs and is a measure of the vertical pressure. Eq. 2 can be used
+to simplify Eq. 1 as
+hσz2 ii
+
+∂
+∂z
+
+
+
+1 ∂ρi
+ρi ∂z
+
+
+=
+− 4πG (ρs + ρHI + ρH2 + ρh )
+
+
+1 ∂
+∂Φtot
++
+R
+R ∂R
+∂R
+
+1 ∂
+R ∂R
+
+!
+
+
+3
+X
+∂Φtot
+∂ 2 Φtot
+R
++
+= 4πG
+ρi + ρh
+∂R
+∂z 2
+i=1
+
+(1)
+
+where Φtot is the total potential due to the gravity of the baryonic discs and the dark matter halo. ρi represents the volume
+density of different disc components, where i runs for stars, HI,
+and molecular gas. ρh denotes the density of the dark matter
+halo.
+In hydrostatic equilibrium, the gradient in the potential in
+the vertical direction would be balanced by the gradient in pressure. This can be represented by the Boltzmann equation as
+
+∂
+∂Φtot
+ρi hσz2 ii + ρi
+=0
+∂z
+∂z
+c 0000 RAS, MNRAS 000, 000–000
+
+(2)
+
+(3)
+
+where, ρs , ρH2 and ρHI are the volume densities of stars, molecular gas, and atomic gas, respectively. The rightmost term in the
+RHS of Eq. 3 originates due to the gradient of the potential in
+the radial direction. This can be estimated using the observed
+rotation curve. The HI rotation curve is expected to trace the potential of a galaxy in the midplane. In that sense, the radial term
+can be expressed as
+
+
+∂Φtot
+2
+R
+= (vrot
+)R,z
+∂R R,z
+
+(4)
+
+where the vrot (measured using the Doppler shift of the HI-21cm
+line) is implicitly taken to be equal to the circular speed. Though
+the above equation is strictly valid for z = 0, we assume that the
+rotation curve does not change considerably as a function of z,
+and it traces the potential above the midplane reasonably well.
+With this assumption, Eq. 3 can further be simplified using Eq. 4
+to rewrite the hydrostatic equilibrium equation as
+hσz2 ii
+
+∂
+∂z
+
+
+
+1 ∂ρi
+ρi ∂z
+
+
+=
+− 4πG (ρs + ρHI + ρH2 + ρh )
+1 ∂
+2 
++
+vrot
+R ∂R
+
+MODELING THE GALACTIC DISCS
+
+We model our sample galaxies as three-component systems consisting of stellar, molecular, and atomic discs. We assume that all
+these baryonic discs are in vertical hydrostatic equilibrium under
+their mutual gravity in the external force field of the dark matter
+halo. The dark matter potential is considered here to be fixed as
+determined by the observed rotation curve (or mass model). In
+hydrostatic equilibrium, the gravity will be balanced by the pressure. The gravity on any elemental volume (in any disc component) will be resulted due to all the three components, whereas,
+the pressure would be determined only by the velocity dispersion of an individual component. For simplicity, we assume all
+the three baryonic discs are concentric and coplanar with the
+centers coinciding with that of the dark matter halo. In that case,
+the Poisson’s equation of hydrostatic equilibrium at any radius
+can be written in cylindrical polar coordinate as
+
+3
+
+(5)
+
+Eq. 5 represents three second-order partial coupled ordinary differential equations in ρs (z), ρH2 (z) and ρHI (z). The solutions of these equations at any radius would provide the density distribution, ρi , as a function of z. To produce a complete
+three-dimensional density distribution of any disc component,
+one needs to solve these equations at all radii.
+
+3.1
+
+Input parameters
+
+Several input parameters are required to solve Eq. 5 in a selfconsistent manner. As the baryonic discs provide a significant
+amount of gravity to the hydrostatic equation, the surface density profiles play an essential input to Eq. 5. In Fig. 1, we show
+the surface density profiles of our sample galaxies. As can be
+seen from the figure, the stellar discs dominate the surface densities in all our sample galaxies at the inner parts whereas, the
+HI dominates the outskirts. It can also be seen that the molecular discs in our galaxies are considerably shorter as compared
+to the stellar and the HI discs. Because of this reason, at all
+radii, we cannot consider our galaxies as three-component systems (stars+HI+H2 ). We, therefore, consider our galaxies to be
+three-component systems till the edge of the molecular discs; beyond that, we consider them to be two-component systems with
+stars and HI.
+Another input to the hydrostatic equation is the density distribution of the dark matter halo. Particularly for HI distribution,
+the dark matter can play a significant role as the HI extends to regions (both in radial and the vertical direction) where dark matter
+dominates the gravity. We use the mass-models of our sample
+
+4
+
+N. N. Patra
+
+102
+
+103
+102
+101
+100
+
+NGC 925
+
+(M pc 2)
+
+101
+100
+
+102
+
+NGC 2841
+
+NGC 2976
+
+101
+
+101
+
+100
+
+100
+
+0 4 8 12 16
+0 4 8 12 16 20
+0 1 2 3 4 5
+103
+NGC 5055
+NGC 6946 103
+NGC 7331
+2
+10
+102
+102
+103
+
+101
+
+101
+
+100 0 4 8 12 16 20 100 0
+
+4
+
+8
+
+12
+
+101
+100
+
+NGC 3198
+
+102
+
+0 4 8 12 16 20
+
+0 4 8 1216202428
+
+R (kpc)
+
+Figure 1. The surface density profiles of our sample galaxies. The black stars represent the stellar surface density profiles, whereas the red circles with
+error bars depict the HI surface density profiles. The molecular surface densities are shown by the blue squares with error bars. Each panel represents
+different galaxies, as quoted at the top right corner of the panel. The stellar surface density data was taken from Leroy et al. (2008), whereas the HI and
+the molecular surface density profiles are obtained from Schruba et al. (2011).
+
+galaxies from de Blok et al. (2008) and obtain the dark matter halo parameters. The mass-modeling of our sample galaxies
+were done using both an isothermal and an NFW halo. The NFW
+dark matter density profile can be given as
+ρ0
+
+ρh (R) =
+R
+Rs
+
+
+2
+1 + RRs
+
+(6)
+
+whereas, the pseudo-isothermal profile (ISO) can be given as
+
+ρh (R) =
+1+
+
+ρ0
+ 2
+
+Table 2. Dark matter halo parameters
+Galaxy
+
+Profile
+
+Rs
+(kpc)
+
+ρ0
+(×10−3 M pc−3 )
+
+NGC 925
+NGC 2841
+NGC 2976
+NGC 3198
+NGC 5055
+NGC 6946
+NGC 7331
+
+ISO
+NFW
+ISO
+ISO
+ISO
+ISO
+NFW
+
+9.67
+20.55
+5.09
+2.71
+11.73
+3.62
+60.20
+
+5.90
+12.40
+35.50
+47.50
+4.80
+45.70
+1.05
+
+(7)
+
+R
+Rs
+
+Table 3. Best fit parameters of the rotation curves
+
+where ρ0 is the characteristic density, and Rs is the characteristic
+radius. These two parameters completely describe a spherically
+symmetric dark matter halo. As discussed in detail in de Blok
+et al. (2008) (see their Table 3 and Table 4 for more details), no
+particular dark matter density profile (ISO or NFW) describes
+the rotation curves of our galaxies systematically better than the
+other one. Hence, depending on the galaxy, we choose a dark
+matter halo profile that better describes its rotation curve (based
+on the reduced χ2 values of the fitted rotation curves). However,
+it should be noted that this choice does not influence our results
+significantly as both the dark matter profiles explain the rotation
+curves reasonably well within the observational uncertainties. In
+Tab. 2, we present the dark matter halo parameters we adopt to
+solve Eq. 5 for our sample galaxies.
+The observed rotation curves are another input parameter
+required to evaluate the radial term in Eq. 5. We obtain the rotation curves of our sample galaxies from de Blok et al. (2008).
+In Fig. 2, we show the rotation curves of our sample galaxies.
+As can be seen from Eq. 5, the radial term is computed by calculating the first derivative of the rotation curve’s square. In that
+case, any sudden change/jump in the rotation curve (could be
+due to measurement/modeling limitations), might lead to an unphysical value of the derivative and hence diverge the solutions.
+To overcome this shortcoming, we fit the rotation curves with a
+commonly used Brandt profile (Brandt 1960). A Brandt profile
+
+Galaxy
+
+Vmax
+(km s−1 )
+
+Rmax
+(kpc)
+
+n
+
+NGC 925
+NGC 2841
+NGC 2976
+NGC 3198
+NGC 5055
+NGC 6946
+NGC 7331
+
+118.0±1.4
+320.9±0.5
+103.5±13.6
+158.1±0.7
+209.1±0.6
+199.7±0.5
+257.8±1.7
+
+16.4±0.9
+5.7±0.2
+6.9±3.0
+16.4±0.3
+8.5±0.2
+12.0±0.6
+3.5±1.3
+
+1.80±0.10
+0.36±0.02
+1.05±0.28
+0.82±0.03
+0.36±0.01
+0.69±0.05
+0.12±0.04
+
+can be given as
+vrot (R) = 
+
+Vmax (R/Rmax )
+
+n 3/2n
+R
+1/3 + 2/3 Rmax
+
+(8)
+
+where vrot is the rotation velocity, Vmax is the maximum attained velocity and Rmax is the radius at which the Vmax is
+attained. n is the index, which decides how fast or slow the rotation curve rises to Vmax . In Tab. 3, we present the fit parameters
+of the rotation curves. We use these parameters to calculate the
+radial term, which is now free from any sudden jump/variation.
+The vertical velocity dispersions of the baryonic disc components are one of the most critical inputs to Eq. 5. The velocity
+c 0000 RAS, MNRAS 000, 000–000
+
+5
+
+vrot (km s 1)
+
+HI scale height in spiral galaxies
+
+120
+
+330
+
+80
+
+150
+
+80
+
+290
+
+40
+
+90
+
+40
+00
+200
+150
+100
+50
+
+NGC 925
+NGC 2976
+250 NGC 2841
+30 NGC 3198
+0
+4 8 12
+0 10 20 30
+0.5 1.5 2.5
+0 10 20 30 40
+300
+220
+260
+
+160
+NGC 5055
+100
+10
+30
+50
+
+220
+NGC 6946
+5 10 15 20
+
+R (kpc)
+
+NGC 7331
+5
+15
+25
+
+Figure 2. The rotation curves of our sample galaxies as obtained from de Blok et al. (2008). The solid red circles with error bars represent the rotation
+curves as obtained by a tilted-ring fitting of the HI velocity fields. The black dashed lines in each panel represent a Brandt profile fit to the rotation
+curves. See the text for more details.
+
+Direct measurement of the stellar velocity dispersion is
+tough even with present-day optical telescopes. Because a direct measurement is not available, we calculate the stellar velocity dispersion analytically using the scale length of the optical
+disc, RD , and the stellar surface density as described in Leroy
+et al. (2008) (given in Appendix B in their paper). In this calculation, the stellar disc is assumed to be a single-component
+system in hydrostatic equilibrium. As this calculation ignores
+gas-gravity, the calculated stellar velocity dispersion is slightly
+underestimated.
+Unlike the stellar velocity dispersion, the gas velocity dispersion can be estimated relatively easily using spectroscopic
+observations by radio telescopes. In the context of the molecular velocity dispersion in the Galaxy, early observations by Stark
+(1984) reveal that low-mass molecular clouds have a velocity
+dispersion of ∼ 9 km s−1 , whereas, the high-mass clouds have
+a relatively lower velocity dispersion of ∼ 6.6 km s−1 . It should
+be mentioned here that the gas velocity dispersion refers to the
+dispersion due to the relative turbulent motions between the gas
+clouds. The thermal velocity dispersion (due to the kinetic temperature) within a molecular cloud is expected to be much less
+(∼ 0.1 km s−1 ). In a more recent study, Caldú-Primo et al.
+(2013) used the data from the THINGS and the HERACLES
+survey for 12 nearby spiral galaxies to estimate the velocity dispersion of HI and CO. Using a spectral stacking method (for
+improved SNR), they found σHI /σCO = 1.0 ± 0.2 with a median σHI = 11.9±3.1 km s−1 . Later, Mogotsi et al. (2016) used
+the same sample to investigate the individual high SNR spectra
+and found a σHI /σCO = 1.4 ± 0.2. They concluded that the
+molecular disc has a diffuse component with somewhat higher
+c 0000 RAS, MNRAS 000, 000–000
+
+30
+
+NGC 925
+
+25
+
+MOM2 (km s 1)
+
+42'00"
+
+Dec (J2000)
+
+dispersion alone decides the resistive force balancing the total
+gravity due to all the components and the dark matter halo on
+an elemental volume. Moreover, as gravity is coupled, the influence of a particular component’s gravity is shared by all the disc
+components. On the other hand, the stability of a disc component (stars, molecular gas, or HI) against this combined gravity
+is solely controlled by its velocity dispersion. In this regard, the
+velocity dispersion can influence the density distribution significantly, and hence, a precise measurement of the same is essential.
+
+20
+
+36'00"
+
+15
+10
+5
+
++33°30'00"
+36s
+
+5 kpc 0
+27m12s 2h26m48s
+
+RA (J2000)
+
+Figure 3. The MOM2 map of a representative galaxy, NGC 925 in our
+sample. The grayscale indicates the MOM2 distribution in the galaxy.
+We extract the MOM2 profile of our galaxies by averaging the MOM2
+values in radial bins. The red ellipse represents a radial bin at 10 kpc
+distance from the center. The solid circle at the bottom left corner represents the observing beam. Whereas, the scale bar at the bottom right
+represents a linear scale of 5 kpc at the distance of the galaxy, 9.2 Mpc.
+
+velocity dispersion, which is not detected in individual spectra,
+but only recovered when multiple spectra are stacked. This indicates that the dominant component in the molecular disc, which
+is detected in individual spectra, has a velocity dispersion of ∼
+7 km s−1 . Hence, for our sample galaxies, we adopt a velocity dispersion of 7 km s−1 for their molecular discs. However,
+in a recent study, Marasco et al. (2017) have found a somewhat
+lower velocity dispersion (4.4 ± 1.2 km s−1 ) of the molecular
+gas in the Galaxy inside the solar cycle. Nevertheless, the velocity dispersion of the stellar discs or the molecular discs does not
+influence the density distribution of HI considerably (see, e.g.,
+Banerjee et al. 2011; Patra 2019). Hence, our adopted velocity
+dispersions for the stellar and the molecular discs are adequate
+for solving Eq. 5.
+Unlike the stellar and the molecular velocity dispersions,
+the HI velocity dispersion plays a crucial role in deciding the
+
+6
+
+N. N. Patra
+
+density distribution in an HI disc. Hence, careful estimation of
+the same is essential while solving Eq. 5. Early spectroscopic
+studies with a low spatial resolution reveal an HI velocity dispersion (σHI ) in the range 6-13 km s−1 in nearby galaxies (Shostak
+& van der Kruit 1984; van der Kruit & Shostak 1984; Kamphuis
+& Sancisi 1993). However, more recent studies used high spatial
+resolution spectral cubes to estimate σHI in nearby large spiral
+galaxies. For example, in an extensive analysis of the secondmoment (MOM2) of the HI spectral cubes from the THINGS
+data, Tamburro et al. (2009) found a significant variation in σHI
+within a galaxy as well as across the galaxies. They found a mean
+σHI of ∼ 10 km s−1 at the optical radius, r25 . These results suggest that the σHI might have a significant variation within and
+across our sample galaxies.
+To estimate the HI velocity dispersion, we use the publicly
+available moment maps of our sample galaxies as obtained in the
+THINGS survey1 . We refer the readers to Walter et al. (2008)
+for a detailed description of generating the moment maps from
+the observed HI spectral cubes. In Fig. 3, we show an example
+MOM2 map of a representative galaxy, NGC 925, from our sample. As can be seen from the figure, MOM2 in NGC 925 shows
+considerable variation across the galaxy. To capture this variation as a function of radius and to obtain a MOM2 profile, we
+construct a number of annuli as a function of the radius with a
+width of ∼ 2 times the spatial resolution. In Fig. 3, we show one
+such annulus with red ellipses at a radius of 10 kpc. We generate a MOM2 profile by averaging all the MOM2 values within
+an annulus as a function of the radius. In Fig. 5, the first panel
+shows the resulting MOM2 profile (solid red circles with error
+bars) for NGC 925.
+It should be noted that due to the low SNR, some of the
+pixels in Fig. 3 are blanked while producing the moment maps
+(see, Walter et al. (2008) for more details). We exclude these pixels while estimating the average MOM2 value within an annulus.
+Nevertheless, this has no considerable effect on our estimation of
+MOM2 profiles as the fraction of these blanked pixels is small.
+However, a low SNR (especially at the outskirts of the galaxies)
+can have a non-negligible effect on the determined MOM2 profile of a galaxy. At low SNRs, the MOM2 only traces the peaks
+of the HI profiles and hence, artificially underestimates the actual σHI . We find that the MOM2 could underestimate the σHI
+by ∼ 10% in a region where SNR is . 3 in MOM0 map. This
+value reduces to a few percent when the SNR increases to & 5.
+For our galaxies, we found the observed SNR to be & 3 in the
+regions of our interests. Hence, we include a conservative error
+of 10% in our estimated MOM2 values. Further, to account for
+the variation of the MOM2 within an annulus, we add the normalized (by the square root of the number of independent beams
+within an annulus) standard deviation in quadrature to the error bars. As can be seen from Fig. 5, the MOM2 profiles for our
+sample galaxies do not remain constant, rather vary considerably
+as a function of radius.
+However, MOM2 does not represent the intrinsic velocity
+dispersion; instead, it is the intensity weighted σHI along a lineof-sight. For galaxies where the beam-smearing of line-of-sight
+HI spectra is significant, the MOM2 can considerably differ from
+σHI . Especially in the central regions of galaxies, where the gradient of the rotation curve is high. Three primary factors mainly
+influence the smearing of the rotational velocity into the HI spectral width. Firstly, the slope of the rotation curve, secondly the
+spatial resolution, and thirdly the inclination of the HI disc. The
+thickness of the HI disc also can contribute to the smearing, albeit on a minor level. Due to these smearing effects, the MOM2
+
+1
+
+https://www2.mpia-hd.mpg.de/THINGS/Data.html
+
+would always be an overestimate of the intrinsic σHI profile.
+Hence, using the MOM2 profile in Eq. 5 as input σHI is not
+suitable. Instead, we use an iterative method to estimate the intrinsic σHI profile in a self-consistent manner using the observed
+MOM2 profile. The details of this method are explained in the
+next section.
+
+4
+
+SOLVING THE HYDROSTATIC EQUATION
+
+Eq. 5 is a second-order ordinary coupled partial differential
+equation, which cannot be solved analytically even for a twocomponent system. Hence, we adopt a numerical approach to
+solve it. We use an eighth-order Runge-Kutta method as implemented in the python package scipy to integrate the differential equation and obtain the density solutions. To integrate Eq. 5,
+i
+we need to know the ‘initial condition’ or the values of ∂ρ
+and
+∂z
+ρi at z = 0, from where we start the integration. We can adopt
+
+(ρi )z=0 = ρi,0
+
+and
+
+∂ρi
+∂z
+
+
+=0
+
+(9)
+
+z=0
+
+Due to vertical symmetry, the density at the midplane is expected
+to be maximum, leading to the second condition. However, for
+the first condition, one needs to know the midplane density at
+every radius to initiate the integration. However, this midplane
+density is not a directly measurable quantity in galaxies (except
+for the Galaxy, (see, e.g., Kalberla & Dedes 2008; Grabelsky
+et al. 1987, 1988; Wouterloot et al. 1990; López-Corredoira &
+Molgó 2014; Wang et al. 2018)). We estimate this midplane density at every radius using the knowledge of the surface densities
+at that radius.
+Adopting a similar strategy as used by many previous authors (Narayan & Jog 2002; Banerjee et al. 2011; Patra et al.
+2014; Patra 2018, 2019), we use an iterative approach to find the
+midplane density using the knowledge of the observed surface
+density. For solving at a particular radius for a particular component, say, stars, we first assume a trial midplane density ρi,0,t ,
+and solve Eq. 5. This will result in a trial solution ρi,t (z). This
+solution is not the correct solution as we chose the ρi,0,t arbitrarily. Now, we can integrate
+R ∞this solution, to obtain a trial surface
+density as Σi,t = 2 × 0 ρi,t (z)dz. The surface density is an
+observable quantity at every radius and can be compared with
+the trial one (Σi,t ) to constrain the midplane density. We iteratively update the ρi,0,t , such as it produces a Σi,t close to the
+observation. We stop this iterative process when the trial surface
+density matches the observed one with better than 0.1% accuracy. For our sample galaxies, we find that the surface densities
+for any component converge within 10s of iterations at any radius. It should be mentioned here that we assumed the observed
+column density at any radius is fully determined by the vertical density distribution at that radius. For an HI disc with finite
+thickness, this will only be true for a face-on orientation. In any
+other inclination, the density distribution of the adjacent radii
+would contribute to the surface density. However, the error introduced due to this effect is expected to be smaller as compared
+to the observational uncertainties.
+Eq. 5 represents three coupled differential equations (for
+three baryonic discs), and hence, in principle, should be solved
+simultaneously. This is not possible as the exact mathematical
+form of the coupling between the components is not known.
+Hence, we adopt an iterative approach to introduce the coupling
+gradually while solving the equations individually. At any radius, we first solve the three equations (for three components)
+separately, considering no coupling. For example, in the first
+iteration, in the gravity term (first term in the RHS of Eq. 5),
+c 0000 RAS, MNRAS 000, 000–000
+
+7
+
+HI scale height in spiral galaxies
+
+MOM2/ HI (km s 1)
+
+60
+
+60
+
+itr = 1
+
+60
+
+itr = 2
+
+50
+
+50
+
+50
+
+40
+
+40
+
+40
+
+30
+
+30
+
+30
+
+20
+
+20
+
+20
+
+0
+
+5
+
+10
+
+15
+
+20
+
+0
+
+5
+
+10
+
+R (kpc)
+
+15
+
+20
+
+MOM2obs
+MOM2
+
+itr = 3
+
+0
+
+5
+
+10
+
+15
+
+20
+
+Figure 4. The σ/MOM2 profile of NGC 7331 at different iterations of the iterative method. The solid red circles with error bars in each panel represent
+the observed MOM2 profile. The empty black stars represent the input σHI profile, whereas the empty blue triangles represent the corresponding
+simulated MOM2 profiles. The iteration numbers every panel represents are quoted on the top left of every panel. As can be seen, the iterative method
+gradually finds out a σHI profile, which produces a MOM2 profile much close to the observed one. The shaded regions in each panel represent the radius
+where the iterative method is not applied due to high spectral blending. See the text for more details.
+
+we make ρi = 0 for all the components except the one we
+are solving for. In the next iteration onwards, we introduce the
+gravity of the components through the coupling term. For example, in the first iteration, when we solve for stars, we consider
+ρHI = ρH2 = 0, i.e., no coupling. Thus we generate a primary
+solution ρs,1 (z) for the stars. The second index in the subscript
+represents the iteration number. Similarly, we generate solutions
+for HI and H2 , ρHI,1 and ρH2,1 . In the next iteration, we introduce ρHI,1 and ρH2,1 in the gravity term while solving for stars
+and generate a solution ρs,2 (z). Now, this is a better solution
+than what is obtained in the first iteration as it includes the gravity of HI and H2 while solving for stars. Similarly, we obtain
+ρHI,2 and ρH2,2 at the end of the second iteration. However, as
+ρHI,1 and ρH2,1 was not perfect; these solutions are also not perfect but better than what was obtained in the first iteration. The
+consecutive iterations are thus run with improved coupled solutions. We repeat this process until the solutions converge, i.e.,
+there is no effective difference between ρi,n (z) and ρi,n−1 (z),
+where n is the number of iteration. We note that for our sample
+galaxies, the coupling quickly converges within a few iterations.
+As mentioned earlier, to solve Eq. 5; often, the observed
+MOM2 is used as a proxy for σHI . However, MOM2 is always an overestimate of the σHI due to various smearing effects. To overcome this, we employ an iterative method to estimate the intrinsic σHI profile using the observed MOM2 in
+galaxies. In the first iteration of this method, we assume the observed MOM2 profile (M2obs ) to be the input HI velocity dispersion profile, σHI,1 and solve Eq. 5. Thus we generate the
+density solutions for HI, ρHI (R, z). This ρHI (R, z) describes
+a complete three-dimensional distribution of the HI in a galaxy.
+Using this ρHI (R, z) and the observed rotation curve, we then
+build a three-dimensional dynamical model of the galaxy. We
+then incline this three-dimensional dynamical model to the observed inclination and project it into the sky plane to obtain an
+HI spectral cube sampled with the same velocity resolution as
+of the observation (1.3 km s−1 (one galaxy) or 2.6 km s−1 (one
+galaxy) or 5.2 km s−1 (five galaxies) for our sample galaxies).
+This spectral cube further convolved to the telescope beam to
+mimic the actual observation. The spectral cube then used to produce the moment maps and hence, a simulated MOM2 profile,
+M2sim,1 . In an ideal situation, if the σHI,1 was chosen perfectly,
+the M2sim,1 would match the observed MOM2 profile, M2obs .
+c 0000 RAS, MNRAS 000, 000–000
+
+However, as the MOM2 is an overestimate of the intrinsic σHI ,
+M2sim,1 > M2obs .
+Next, we compute the difference between M2sim,1 and
+M2obs at every radius and introduce a proportional change into
+the input σHI for the next iteration σHI,2 . Thus, σHI,2 is a better estimate of the σHI , which will produce a M2sim,2 closer to
+M2obs than what was found in the previous iteration. We continue this process until the difference between the observed and
+the simulated MOM2 at any radius reduces below a few km s−1 ,
+which is at least two times better than the velocity resolution
+of the observation. We note that for our sample galaxies, this
+method reaches the convergence criteria within a few iterations.
+In Fig. 4, we show how the iterative method estimates a σHI
+profile, which produces the observed MOM2 profile for NGC
+7331. In the left panel, we show the first iteration where the observed MOM2 profile (solid red circles with error bars) is taken
+as the input σHI profile (empty black stars). This produces a
+simulated MOM2 profile (empty blue triangles), which is higher
+than the observed one. In the next iteration, we introduce a proportional change in the input σHI profile, as shown in the middle panel. As can be seen, a lower input σHI profile now produces a MOM2 profile, which is closer to the observed one. In
+the right panel, we show the results from the third iteration. The
+updated σHI profile in this iteration produces a MOM2 profile
+that matches the observed ones within our convergence criteria.
+It should be noted that the satisfaction of the hydrostatic equilibrium condition is crucial for our analysis. Any violation of
+the same might lead to a wrong interpretation of the results. Observationally, the central regions of spiral galaxies (. 1 kpc) are
+generally found to exhibit highly energetic activities with associated outflows and enhanced star formation (Irwin & Sofue 1996;
+Bolatto et al. 2013). Subsequently, in these regions, the condition
+of hydrostatic equilibrium might not be valid fully. Moreover,
+due to several other effects, e.g., the high gradient in rotation
+curve, strong non-circular motions, etc., the HI spectra in these
+regions could be broadened by a significant amount. Such as, this
+artificial broadening dominates the spectral width (especially for
+high inclination galaxies) as compared to the actual σHI . Consequently, in these regions, the effective M2sim becomes insensitive to σHI , and the iterative method fails to recover the intrinsic σHI profiles effectively. Further, a high MOM2 value also
+leads to a divergence of Eq. 5 in the first iteration of the iterative
+method. Considering these complexities, we exclude a portion
+
+8
+
+N. N. Patra
+
+NGC 925
+
+MOM2/ HI (km s 1)
+
+20
+
+66o, 265pc
+
+15
+10
+50
+40
+30
+20
+10
+
+140
+
+NGC 2841
+74o, 760pc
+
+100
+60
+
+0
+
+5
+
+10 15
+NGC 5055
+59o, 500pc
+
+0
+
+5
+
+10 15
+
+20
+40
+30
+20
+10
+
+0
+
+5
+
+10 15
+NGC 6946
+33o, 170pc
+
+20
+18
+16
+14
+12
+60
+
+30
+25
+20
+15
+
+NGC 2976
+
+65o, 130pc
+
+0
+
+1
+
+2
+
+NGC 3198
+72o, 765pc
+
+0
+
+5
+
+10
+
+NGC 7331
+76o, 435pc
+
+40
+20
+
+0
+
+5
+
+10
+
+R (kpc)
+
+0 5 10 15 20
+
+Figure 5. The σHI /MOM2 profiles of our sample galaxies as extracted by the iterative method. Different panels show the results for different galaxies,
+as quoted at the top of each panel. The solid red circles with error bars represent the observed MOM2, whereas the empty blue triangles represent the
+simulated MOM2. The input σHI is shown by the empty black stars. The inclinations and the spatial resolutions of the galaxies are also quoted at the
+top of every panel. As can be seen, highly inclined galaxies with low spatial resolution suffer maximum spectral blending as indicated by the difference
+between the recovered σHI and the observed MOM2. See the text for more details.
+
+20
+
+NGC 925
+
+HI (km s 1)
+
+5
+
+10
+
+15
+
+NGC 5055
+
+5
+30
+
+10
+
+15
+
+NGC 6946
+
+10
+
+15
+
+20
+
+0.5
+30
+
+1.5
+
+2.5
+
+10
+
+4
+
+8
+
+12
+
+NGC 7331
+
+20
+
+10
+5
+
+NGC 3198
+
+25
+
+10
+
+20
+
+20
+
+NGC 2976
+
+15
+
+10
+0
+
+20
+15
+
+20
+
+30
+
+10
+
+NGC 2841
+
+30
+
+15
+10
+
+40
+
+10
+0
+
+5
+
+10
+
+R (kpc)
+
+10
+
+20
+
+Figure 6. Comparison of our σHI profiles to the same as obtained by Bacchini et al. (2019a). The solid black asterisks represent the σHI profiles as
+recovered by the iterative method, whereas the empty red squares indicate the σHI profiles as determined by Bacchini et al. (2019a). As can be seen, for
+most of the galaxies, both the σHI profiles match each other reasonably well. See the text for more details.
+
+of the central regions (by a trial and error method) of our galaxies and do not apply the iterative method. The grey shaded areas
+in Fig. 4 and 5, show the extent of these regions for our galaxies.
+
+5
+
+RESULTS AND DISCUSSION
+
+We apply the above mentioned iterative method in our seven
+sample galaxies and solve the hydrostatic equilibrium equation.
+In Fig. 5, we show how the iterative method estimates the σHI
+
+profiles in our galaxies using the observed MOM2 profiles. As
+can be seen from the figure, the iterative method could assess the
+σHI profiles, such as the output MOM2 profiles matches to the
+observed ones reasonably well. The inclinations and the spatial
+resolutions of the observations quoted at the top of every panel
+in Fig. 5. As can be seen, galaxies with high inclinations and
+coarse spatial resolutions (e.g., NGC 2841, NGC 3521) exhibit
+maximum spectral blending, which in turn results in a maximum difference between the observed MOM2 profile and the
+estimated σHI . Galaxies with low inclinations and high spatial
+c 0000 RAS, MNRAS 000, 000–000
+
+HI scale height in spiral galaxies
+
+Using a different approach, very recently, Bacchini et al.
+(2019a) had estimated the σHI profiles in a sample of 12 nearby
+galaxies. They used the HI spectral cubes to perform a rigorous 3D tilted-ring modeling using the software 3D Barolo (Di
+Teodoro & Fraternali 2015) and simultaneously model the HI velocity dispersion (see also, Iorio et al. 2017). They used these
+σHI profiles to estimate the vertical scale height profiles of
+the HI discs employing a hydrostatic equilibrium condition. In
+Fig. 6, we compare our σHI profiles as estimated by the iterative
+method (black filled asterisks) to what is determined by Bacchini et al. (2019a) (empty red squares). As can be seen from
+the figure, for most of our galaxies, both the σHI profiles match
+reasonably well. However, for the galaxy NGC 2841, the iterative method recovers much higher σHI values as compared to
+what is obtained by Bacchini et al. (2019a). The inclination of
+NGC 2841 is 74o , and it was observed with a coarse spatial (760
+pc) and spectral resolutions (5.2 km s−1 ). Its rotation curve also
+shows a significant gradient (Fig. 2, second panel on the top)
+across all radius. It is possible that significant smearing is introduced due to these effects, and in these circumstances, the
+iterative method might not be fully effective in recovering the
+σHI correctly. We also note that the recovered σHI for the galaxy
+NGC 7331 is somewhat higher than what is observed for other
+galaxies in our sample (however, though it matches reasonably
+well with that of obtained by Bacchini et al. (2019a)). This could
+also be due to its high inclination (76o ) and a modest spatial
+resolution (∼ 450 pc). We emphasize that despite a completely
+different approach, our iterative method recovers σHI profiles,
+which are consistent with those found by Bacchini et al. (2019a).
+Thus, for all our galaxies, using the iterative method, we
+self-consistently solve for the density distributions and the σHI
+profile. In Fig. 7, we plot a sample solution for NGC 7331 at a
+radius of 10 kpc. For comparison, we also plot the density solutions for an assumed constant σHI = 12 km s−1 at the same
+radius (thin lines). This σHI = 12 km s−1 is commonly used as
+the velocity dispersion of the HI discs in spiral galaxies as estimated by Caldú-Primo et al. (2013) and Mogotsi et al. (2016) using the THINGS data. As can be seen from the figure, a constant
+σHI = 12 km s−1 produces a very different HI disc as compared
+to what is found by the iterative method. The σHI found by the
+iterative method at a radius of 10 kpc is ∼ 28 km s−1 which is
+significantly higher than the constant σHI = 12 km s−1 . This
+higher σHI significantly flares the HI disc (at 10 kpc), resulting in a much larger HI scale height. However, though the σHI
+changes the HI density distribution significantly, it marginally
+influences the H2 (dotted thin and thick blue lines) and the stellar discs (solid thin and thick red lines), as can be seen from the
+figure. We note that for a single-component isothermal disc in
+hydrostatic equilibrium, the density distribution follows a sech2
+law (Spitzer 1942). However, for a galaxy with multiple discs
+and dark matter halo, the density distribution deviates significantly from sech2 law and resembles more like a Gaussian due
+to coupling (see, e.g., Olling 1995; Koyama & Ostriker 2009).
+We use the density solutions of our sample galaxies to
+extract the HI scale heights, the Half-Width at Half-Maxima
+(HWHM). In Fig. 8, we plot, thus, obtained HI scale height
+c 0000 RAS, MNRAS 000, 000–000
+
+0.04
+
+(M pc 3)
+
+resolutions endure negligible or minimal blending. For example,
+NGC 6946 has an inclination of 33o and was observed with a
+spatial resolution of ∼ 170 pc. For this galaxy, the intrinsic σHI
+profile matches with the observed MOM2 profile well within
+a few percent. This indicates, for this kind of observational parameters, the observed MOM2 represent the intrinsic σHI profile
+fairly well. This has a significant impact on understanding the
+connection between the velocity dispersion and various physical
+processes (e.g., star formation, feedback, etc.) in a galaxy.
+
+9
+
+Star
+H2
+HI
+
+NGC 7331
+
+0.03
+0.02
+0.01
+0.00 0
+
+500
+
+1000
+
+z (pc)
+
+1500
+
+2000
+
+Figure 7. The sample solution for NGC 7331 at a radius of 10 kpc.
+The thick lines represent the solutions using our iterative method (with
+recovered σHI ), while the thin lines represent the solutions assuming a
+constant σHI = 12 km s−1 . The solid red lines describe the volume
+density of stars, whereas the blue dotted lines represent the density of
+molecular gas. The black dashed lines denote the solutions for HI. As can
+be seen, a constant velocity dispersion for HI produces a very different
+HI disc than what would be otherwise. See the text for more details.
+
+profiles (thick blue lines) along with the estimated errors on
+them (blue shaded region). For comparison, in every panel, we
+also plot the HI scale height profiles obtained by Bacchini et al.
+(2019a) (red shaded region). As can be seen, for most of the
+galaxies, both the HI scale height profiles compare well to each
+other. For NGC 2841 and NGC 6946, however, the scale height
+profiles differ considerably from what is obtained by Bacchini
+et al. (2019a). This could be attributed to the difference in their
+σHI profiles, as compared to what is obtained by Bacchini et al.
+(2019a) (Fig. 6, second and sixth panel). As can also be seen in
+Fig. 8, the HI discs in our sample galaxies flares as a function of
+radius. However, the nature of the flaring is not uniform, and the
+shape of the scale height profiles vary across our sample galaxies. To quantify this flaring further, we fit these HI scale height
+profiles with straight lines (shown by the black dashed lines).
+We note that the variation of the shape of the scale height profiles across the galaxies is significant, and hence a simple linear
+fit is employed to describe the profiles reasonably. The respective slope and the intercepts of the fits are quoted at the top left
+of corners of the individual panels.
+To further investigate the global behavior of the HI flaring
+in our sample galaxies, we normalize the HI scale height profiles
+to unity at a radius of 0.3r25 , where r25 is the optical radius of a
+galaxy calculated by fitting 25th magnitude isophote in B-band.
+Schruba et al. (2011) had used the same normalizing condition
+to find a universality in the H2 surface density profiles in spiral
+galaxies. Further, Patra (2019) used the same condition to normalize the H2 scale height profiles in spiral galaxies. Their results suggest a global dependence of the molecular surface density/scale height on the characteristic stellar surface density distribution in a galaxy. In Fig. 9, we plot the normalized HI scale
+height profiles (solid gray lines) for our sample galaxies. As can
+be seen, despite having a substantial scatter in the normalized
+scale height profiles, they seem to follow a reasonably well linear
+trend. This indicates that, globally, the normalized scale height
+profiles follow a universal linear law. To quantify this flaring be-
+
+10
+
+N. N. Patra
+29.3 ± 0.6
+275.5 ± 4.8
+
+800
+
+HWHM (pc)
+
+NGC 925
+
+0
+
+5
+
+10
+
+91.5 ± 4.7
+
+400
+NGC 5055
+
+0
+
+5
+
+± 0.9
+1200 39.8
+145.5 ± 5.5
+
+1000
+
+200
+
+800
+
+500
+
+100
+
+80.0 ± 10.7
+
+NGC 2841
+
+15
+
+600 24.6 ± 0.6
+
+200
+
+300 22.9 ± 13.6
+
+217.8 ± 39.8
+
+600
+400
+
+1500 33.9 ± 4.3
+
+10 15
+
+5
+
+10
+
+15
+
+23.9 ± 0.6
+
+00
+
+NGC 2976
+
+1
+
+2
+
+300 38.9 ± 2.9
+
+± 1.0
+1000 28.0
+140.4 ± 11.2
+
+200
+
+500
+
+100
+
+NGC 6946
+
+0
+
+5
+
+10
+
+0
+
+R (kpc)
+
+400
+
+NGC 3198
+
+0
+
+5
+
+10
+
+15
+
+NGC 7331
+
+0 5 10 15 20
+
+Figure 8. The HI scale height (HWHM) profiles of our sample galaxies. Different panels represent the scale heights for different galaxies, as quoted in
+the bottom right corners of every panel. The thick blue lines represent the HI scale height profiles, whereas the blue-shaded regions depict its one sigma
+error bar. The black dashed lines represent a linear fit to these scale height profiles. The two numbers from the top left of every panel indicate the slopes
+(in the units of pc/kpc) and the intercepts (in the units of pc) of the fitted lines, respectively. The red shaded region in every panel represents the HI scale
+height profiles obtained by Bacchini et al. (2019a). As can be seen, for most of the galaxies, our determination of the scale heights compares very well
+with what is found by Bacchini et al. (2019a). See the text for more details.
+
+Normalized scaleheight (HI)
+
+4 (HWHM)N = (1.84 ± 0.12) r25 + (0.53 ± 0.04)
+3
+2
+1
+0.0 0.2 0.4 0.6 0.8 1.0 1.2
+R (r25)
+Figure 9. The normalized scale height profiles of our sample galaxies. The thin gray lines represent the normalized scale height profiles,
+whereas the solid blue squares with error bars represent the average normalized scale height values within a bin of width 0.1 r25 . The red dashed
+line represents a linear fit to these average normalized scale heights. The
+corresponding straight line equation is quoted at the top left of the figure.
+See the text for more details.
+
+havior further, we evaluate a bin average of these normalized
+scale heights within a radial bin of 0.1 r25 (blue squares with error bars) and fit it with a straight line (red dashed line). We find
+a slope of 1.84±0.12 and an intercept of 0.53±0.04. We note
+that our normalized scale height profiles exhibit a significantly
+
+higher scatter than what is found by Patra (2019) for molecular
+scale heights. This indicates a weaker global dependence of the
+HI scale height on the stellar surface density profiles.
+The HI scale height serves as an indicator of the thickness/density distribution in the vertical direction of the HI disc.
+As can be seen in Fig. 8, the HI scale height in our sample galaxies varies between a few hundred parsecs in the central region
+(within a few kpc) to ∼ 1 − 2 kpc at the outskirts of the HI discs.
+This thickness is comparable to that of the Galaxy (see, e.g.,
+Kalberla & Dedes 2008; Bacchini et al. 2019b) and is much
+smaller as compared to what is found in dwarf galaxies by a
+similar analysis (Patra 2020a). This indicates that the HI discs in
+spiral galaxies are much thinner as compared to the dwarf galaxies.
+To make a better sense of the relative thickness of the
+HI discs in our sample galaxies, we estimate the axial ratios using the scale height data. We define the axial ratio as the ratio of
+the maximum thickness of the HI disc (taken to be two times the
+FWHMmax ) to the diameter of the HI disc, Dmax . As FWHM
+represents only half of the maximum density, we use two times
+the FWHM (to account for the wings of the Gaussian) as a conservative limit to the maximum HI thickness. This ratio is an
+indicator of the relative thickness of the HI discs, which can be
+compared with other galaxies. In Fig. 10, we plot the axial ratios
+of our sample galaxies. The axial ratio varies from ∼ 0.06 to ∼
+0.22 with a median value of 0.1 (blue dashed line). This median
+value is very close to the axial ratio found for the Milky Way
+(Kalberla & Dedes 2008), which is ∼ 0.13 (black dashed-dotted
+line). Interestingly, there are three galaxies in our sample, i.e.,
+NGC 5055, NGC 6946, and NGC 7331, for which the axial ratios are much less than 0.1. An axial ratio of . 0.1 for the optical
+discs in galaxies is traditionally considered an indicator of a superthin galaxy (Goad & Roberts 1981; Karachentsev, Karachentseva & Parnovskij 1993; Karachentsev, Karachentseva & Kudrya
+1999). However, though there is no clear assessment of the axc 0000 RAS, MNRAS 000, 000–000
+
+NGC 2976
+
+0.15
+0.10
+
+NGC 3198
+NGC 925
+
+NGC 7331
+NGC 5055
+
+0.05
+
+Fractional density
+
+0.20
+
+0.4
+
+NGC 2841
+
+NGC 6946
+
+2
+
+4
+6
+Galaxy number
+
+Figure 10. The axial ratio of our sample galaxies. Axial ratio is defined
+as the ratio of twice the FWHM of HI distribution to the HI diameter
+of a galaxy. The solid red circles represent the axial ratio for our sample
+galaxies. The blue dashed line represents the median axial ratio, whereas
+the black dashed-dotted line represents the same for the Milky Way.
+As can be seen, the median axial ratio of our sample galaxies matches
+closely to that of the Galaxy. See the text for more details.
+
+ial ratios of the HI discs to qualify a galaxy to be superthin, we
+adopt the same ratio used for the optical discs as a conservative limit. For example, by performing a detailed 3D modeling,
+Matthews & Wood (2003) estimated the HI scale heights in UGC
+7321, a well known superthin galaxy. For this galaxy, the axial
+ratio of the HI disc is found to be 0.07, whereas we find axial ratios of 0.06, 0.06, and 0.08 for NGC 5055, NGC 6946, and NGC
+7331, respectively. Mass-modeling of superthin galaxies also revealed that the superthin galaxies host a compact dark matter
+halo with RC /RD < 2, where RC is the core radius of the dark
+matter halo and RD is the scale length of the optical disc (see,
+e.g., Banerjee & Bapat 2017). For our three galaxies, RC /RD
+are found to be 3.7, 1.6, and 1.4 for NGC 5055, NGC 6946, and
+NGC 7331, respectively. As can be seen, except NGC 5055, the
+other two galaxies host compact dark matter halos as well. These
+results suggest that NGC 5055, NGC 6946, and NGC 7331 could
+possibly represent superthin galaxies. However, detailed comparisons of other physical properties and an edge-on projected
+view of the baryonic discs would be necessary to make any firm
+conclusion.
+The thickness of the HI discs in galaxies has many significant implications. For example, a thin disc offers a much smaller
+cross-section to the background quasars to produce HI absorption spectra. The thickness of the HI discs very often decides the
+sizes of the HI shells or holes forms out of star formation feedback/supernovae. For example, Boomsma et al. (2008) detected
+a large number of HI holes and high-velocity gas in the typical
+spiral galaxy NGC 6946 (which is also present in our sample
+galaxy). They found the average diameter of the HI holes to be
+1.2 kpc, whereas the diameter of the smallest hole is 766 pc. For
+NGC 6946, we find that the HI scale height reaches up to ∼ 300
+pc at a radius of ∼ 12 kpc. This means that the thickness of the
+HI disc in NGC 6946 cannot contain the HI holes entirely, and
+most probably, they have broken out into the immediate environment of the circumgalactic medium (CGM).
+To further investigate the effectiveness of the HI holes in
+NGC 6946 in breaking out into the CGM, we calculate the fracc 0000 RAS, MNRAS 000, 000–000
+
+11
+
+NGC 6946
+
+0.3
+0.2
+0.1
+
+0.0
+0.12
+HI, B (atoms cm 3)
+
+Axial ratio (2 × FWHMmax/Dmax)
+
+HI scale height in spiral galaxies
+
+0.08
+0.04
+0.00 5
+
+7
+
+R (kpc)
+
+9
+
+11
+
+Figure 11. Top panel: The fraction of the midplane density at a height
+equal to the radius of an HI hole. The thick magenta crosses represent the
+fraction, whereas the black pentagons with error bars represent average
+values within a radial bin of 1 kpc. The black dashed line represents a
+linear fit to the bin averaged values. See the text for more details. Bottom
+panel: The solid red circles represent the volume density of the HI at a
+height equal to the radius of an HI hole. The blue stars with error bars
+represent the average values of the same within a radial bin of 1 kpc. The
+red dashed line represents the mean particle density when an HI hole
+breaks out. See the text for more details.
+
+tional HI density at the edge of the HI holes in the vertical direction. To do that, we use the size and the location of the detected
+HI holes in NGC 6946 from Boomsma (2007). Using our solution at the radius where the HI hole is detected, we calculate the
+volume density of HI (ρHI,B ) at a height equal to the radius of
+the hole. Using this ρHI,B , and the midplane density at that radius, we determine the density fraction. This can be thought of
+as the fraction of the midplane density at the edge of the HI hole
+in the vertical direction. In the top panel of Fig. 11, we plot this
+fraction for all the HI holes in NGC 6946 as a function of radius.
+As can be seen from the figure, for all the holes, the fraction remains less than 0.5, the density point defining the scale height.
+The majority number of holes have a density fraction of less
+than 0.2. This means the holes reach much lower densities as
+compared to the midplane density, strongly indicating a breakout of the HI holes into the CGM. As also can be seen from the
+figure, the density fraction increases as a function of the radius
+with very low values at the inner galaxies. This indicates that
+the HI holes are more effective in polluting CGM at inner radii
+as compared to outer radii. To quantify this linear increase, we
+
+12
+
+N. N. Patra
+
+evaluate an average bin value (black pentagons) withing a radial bin of 1 kpc and fit these average values with a straight line
+(black dashed line). We find a slope of 0.024 ± 0.001 and an
+intercept of −0.117 ± 0.007 for the linear fit. We would like
+to mention here that for this analysis, we exclude HI holes in a
+region where we do not solve the hydrostatic equation.
+Next, in the bottom panel of Fig. 11, we plot the particle
+density at the edge of the HI holes (in the vertical direction) as
+a function of radius. As can be seen from the figure, the ρHI,B
+vary between ∼ 0.03 − 0.1 atoms cm−3 with a mean value of
+0.04 atoms cm−3 . We further calculate the average values of
+this breakout density within radial bins of 1 kpc (shown by the
+blue filled stars with error bars) and found them to be reasonably
+constant as a function of radius. However, given the uncertainty,
+this result is only indicative, and a more detailed study is necessary to draw firm conclusions.
+
+6
+
+CONCLUSION
+
+In summary, we model galactic discs to be three-component systems consisting of stars, molecular gas, and atomic gas in vertical hydrostatic equilibrium. Under this assumption, we set up
+the Poisson-Boltzmann equation of hydrostatic equilibrium in a
+sample of seven large spiral galaxies from the THINGS survey.
+We solve the hydrostatic equations numerically using an 8th order Runge-Kutta method to estimate the three-dimensional distribution of the HI in our sample galaxies.
+The HI velocity dispersion, σHI , is one of the critical inputs
+which directly influences the vertical distribution of the HI in a
+galaxy. We do not assume the σHI to be constant across our sample or within a galaxy. Instead, we develop an iterative method
+by which we use the observed MOM2 profile in a galaxy to estimate its intrinsic σHI profile. We find that the iterative method
+estimates the σHI profiles in our galaxies reasonably well, such
+as the output MOM2 profiles match the observation within a few
+percents. Our method self-consistently computes the σHI profile
+for a galaxy, which is not possible to directly estimate due to
+line-of-sight integration effects.
+Using this iterative method, we solve the hydrostatic equilibrium equation to obtain a detailed three-dimensional distribution of the HI in our sample galaxies. Our method reveals that
+though a constant σHI = 12 km s−1 does not affect the density distribution of the stars and the molecular gas considerably,
+it alters the distribution of the HI in a significant way. Hence, a
+precise estimation of the σHI is essential to determine the distribution of HI in galaxies accurately. From the solutions of the
+hydrostatic equation, we also find that due to coupling between
+the disc components and the presence of the dark matter halo,
+the density of different disc components deviates from the traditional sech2 law and behaves more like a Gaussian function as
+also found by previous studies.
+Using the density solutions for the HI disc, we estimate the
+HI scale heights (Half-Width at Half-Maxima) in our sample
+galaxies. We find that the HI scale height increases as a function of radius, i.e., the HI disc flares. This flaring can be represented reasonably well by a linear increase. The scale height of
+the HI discs in our sample galaxies are found to vary between
+a few hundred parsecs at the center to ∼ 1 − 2 kpc at the edge
+of the HI discs. This scale height is much lower as compared to
+what is observed in dwarf galaxies, indicating thinner HI discs
+in spiral galaxies.
+We further investigate the universality of the HI flaring in
+our galaxies by normalizing the HI scale height profiles to unity
+at a radius of 0.3 r25 . Despite a considerable variation in the individual scale height profiles, the normalized profiles are found
+
+to follow a linear behavior with a slope of 1.84±0.12 and an
+intercept of 0.53±0.04. The scatter in the normalized HI scale
+height profiles are found to be much higher than what is observed for the molecular scale height profiles. This indicates a
+weaker global dependence of HI scale height on the stellar surface density profiles.
+We quantify the thickness of the HI discs in our sample
+galaxies by estimating an axial ratio, the ratio of two times the
+maximum FWHM of the HI distribution to the HI diameter of
+a galaxy. This axial ratio serves as a measure of the thickness
+of the HI discs in galaxies. We find that the axial ratios for the
+HI discs in our galaxies vary between ∼ 0.06 to 0.22 with a median of ∼ 0.1. This median axial ratio is very close to what is
+found for the Milky Way and is much less than what is found for
+the dwarf galaxies. Using this axial ratio as an indicator, we identify three galaxies in our sample, i.e., NGC 5055, NGC 6946,
+and NGC 7331 as potential candidates for superthin galaxies.
+We use the three-dimensional density distribution of HI in
+one of our sample galaxies, NGC 6946, to estimate the volume
+density as a fraction of the midplane density at the edge of the
+HI holes (in the vertical direction) as detected by Boomsma et al.
+(2008). We find that most of the HI holes reach a density, which
+is . 10 − 20% of the midplane density. This indicates that most
+of the HI holes in NGC 6946 are broken into the circumgalactic
+medium (CGM). We also find a linear increase of this fraction
+as a function of radius, meaning a more efficient metal mixing in
+the IGM in the inner galaxy as compared to the outer galaxy. We
+also measure the volume density of HI at the edge of the HI holes
+(breakout density) and find a mean value of 0.04 atoms cm−3 .
+Despite considerable variation in this breakout density amongst
+the holes, the bin averaged values seem to be reasonably constant
+as a function of radius. This further strengthens the possibility
+that the holes are broken out into the CGM.
+Our study points out that it is vital to determine the vertical
+thickness and the distribution of HI accurately in galaxies to understand various physical processes that influence its evolution.
+Our iterative method offers a simultaneous estimation of the σHI
+and the HI distribution in a self-consistent manner. Given the
+observing parameters, our method can be used to estimate the
+amount of spectral blending in a galaxy, which can play a crucial role in interpreting HI spectral data.
+
+7
+
+ACKNOWLEDGEMENT
+
+This work extensively uses data from the THINGS survey. NNP
+would like to thank the THINGS team for making the data publicly available. NNP would like to thank the anonymous referee
+gratefully for producing a very detailed, thorough, and thoughtful review of the manuscript. It significantly improved the quality of the paper.
+
+8
+
+DATA AVAILABILITY
+
+We used already existing publicly available data for this work.
+No new data were generated or analyzed in support of this research. The scale height and the σHI profiles are available from
+the author on a reasonable request.
+
+REFERENCES
+Abramova O. V., Zasov A. V., 2008, Astronomy Reports, 52,
+257
+Alves J., Lombardi M., Lada C. J., 2007, A&A, 462, L17
+c 0000 RAS, MNRAS 000, 000–000
+
+HI scale height in spiral galaxies
+Bacchini C., Fraternali F., Iorio G., Pezzulli G., 2019a, A&A,
+622, A64
+Bacchini C., Fraternali F., Pezzulli G., Marasco A., Iorio G.,
+Nipoti C., 2019b, A&A, 632, A127
+Bahcall J., Flynn C., Gould A., 1991, in Dynamics of Disc
+Galaxies, Sundelius B., ed., p. 105
+Bahcall J. N., 1984a, ApJ, 276, 169
+Bahcall J. N., 1984b, ApJ, 276, 156
+Bahcall J. N., Casertano S., 1984, ApJL, 284, L35
+Banerjee A., Bapat D., 2017, MNRAS, 466, 3753
+Banerjee A., Jog C. J., 2008, ApJ, 685, 254
+Banerjee A., Jog C. J., Brinks E., Bagetakos I., 2011, MNRAS,
+415, 687
+Banerjee A., Matthews L. D., Jog C. J., 2010, NewA, 15, 89
+Begeman K. G., 1987, PhD thesis, , Kapteyn Institute, (1987)
+Bigiel F., Leroy A., Walter F., Brinks E., de Blok W. J. G.,
+Madore B., Thornley M. D., 2008, AJ, 136, 2846
+Bolatto A. D. et al., 2013, Natur, 499, 450
+Boomsma R., 2007, PhD thesis, Kapteyn Astronomical Institute, University of Groningen
+Boomsma R., Oosterloo T. A., Fraternali F., van der Hulst J. M.,
+Sancisi R., 2008, A&A, 490, 555
+Bosma A., 1978, PhD thesis, Bosma A., 1981, AJ, 86, 1825
+Brandt J. C., 1960, ApJ, 131, 293
+Burton M. G., 1987, PhD thesis, University of Edinburgh
+Caldú-Primo A., Schruba A., Walter F., Leroy A., Sandstrom
+K., de Blok W. J. G., Ianjamasimanana R., Mogotsi K. M.,
+2013, AJ, 146, 150
+de Blok W. J. G., Walter F., Brinks E., Trachternach C., Oh
+S.-H., Kennicutt, Jr. R. C., 2008, AJ, 136, 2648
+Di Teodoro E. M., Fraternali F., 2015, MNRAS, 451, 3021
+Goad J. W., Roberts M. S., 1981, ApJ, 250, 79
+Grabelsky D. A., Cohen R. S., Bronfman L., Thaddeus P., 1988,
+ApJ, 331, 181
+Grabelsky D. A., Cohen R. S., Bronfman L., Thaddeus P., May
+J., 1987, ApJ, 315, 122
+Iorio G., Fraternali F., Nipoti C., Di Teodoro E., Read J. I.,
+Battaglia G., 2017, MNRAS, 466, 4159
+Irwin J. A., Sofue Y., 1996, ApJ, 464, 738
+Kalberla P. M. W., Dedes L., 2008, A&A, 487, 951
+Kamphuis J., Sancisi R., 1993, A&A, 273, L31
+Karachentsev I. D., Karachentseva V. E., Kudrya Y. N., 1999,
+Astronomy Letters, 25, 1
+Karachentsev I. D., Karachentseva V. E., Parnovskij S. L.,
+1993, Astronomische Nachrichten, 314, 97
+Kennicutt, Jr. R. C., 1998, ApJ, 498, 541
+Kennicutt, Jr. R. C. et al., 2003, PASP, 115, 928
+Koyama H., Ostriker E. C., 2009, ApJ, 693, 1346
+Leroy A. K. et al., 2009, ApJ, 702, 352
+Leroy A. K., Walter F., Brinks E., Bigiel F., de Blok W. J. G.,
+Madore B., Thornley M. D., 2008, AJ, 136, 2782
+López-Corredoira M., Molgó J., 2014, A&A, 567, A106
+Mac Low M.-M., Ferrara A., 1999, ApJ, 513, 142
+Madore B. F., 1977, MNRAS, 178, 1
+Marasco A., Fraternali F., van der Hulst J. M., Oosterloo T.,
+2017, A&A, 607, A106
+Matthews L. D., Wood K., 2003, ApJ, 593, 721
+Mogotsi K. M., de Blok W. J. G., Caldú-Primo A., Walter F.,
+Ianjamasimanana R., Leroy A. K., 2016, AJ, 151, 15
+Nakanishi H., Sofue Y., 2003, PASJ, 55, 191
+Narayan C. A., Jog C. J., 2002, A&A, 394, 89
+Oh S.-H. et al., 2015, AJ, 149, 180
+Olling R. P., 1995, AJ, 110, 591
+Patra N. N., 2018, MNRAS, 478, 4931
+c 0000 RAS, MNRAS 000, 000–000
+
+13
+
+Patra N. N., 2019, MNRAS, 484, 81
+Patra N. N., 2020a, MNRAS, 495, 2867
+Patra N. N., 2020b, A&A, 638, A66
+Patra N. N., Banerjee A., Chengalur J. N., Begum A., 2014,
+MNRAS, 445, 1424
+Patra N. N., Chengalur J. N., Begum A., 2013, MNRAS, 429,
+1596
+Patra N. N., Chengalur J. N., Karachentsev I. D., Kaisin S. S.,
+Begum A., 2016, MNRAS, 456, 2467
+Rathborne J. M., Johnson A. M., Jackson J. M., Shah R. Y.,
+Simon R., 2009, ApJS, 182, 131
+Roman-Duval J., Heyer M., Brunt C. M., Clark P., Klessen R.,
+Shetty R., 2016, ApJ, 818, 144
+Roman-Duval J., Jackson J. M., Heyer M., Rathborne J., Simon
+R., 2010, ApJ, 723, 492
+Romeo A. B., 1992, MNRAS, 256, 307
+Roy N., Mathur S., Gajjar V., Patra N. N., 2013, MNRAS, 436,
+L94
+Roychowdhury S., Chengalur J. N., Begum A., Karachentsev
+I. D., 2009, MNRAS, 397, 1435
+Roychowdhury S., Huang M.-L., Kauffmann G., Wang J.,
+Chengalur J. N., 2015, MNRAS, 449, 3700
+Sarkar S., Jog C. J., 2018, A&A, 617, A142
+Sarkar S., Jog C. J., 2019, A&A, 628, A58
+Schruba A. et al., 2011, AJ, 142, 37
+Shostak G. S., van der Kruit P. C., 1984, A&A, 132, 20
+Silich S., Tenorio-Tagle G., 2001, ApJ, 552, 91
+Sofue Y., 2017, PASJ, 69, R1
+Spitzer, Jr. L., 1942, ApJ, 95, 329
+Stark A. A., 1984, ApJ, 281, 624
+Tamburro D., Rix H.-W., Leroy A. K., Mac Low M.-M., Walter
+F., Kennicutt R. C., Brinks E., de Blok W. J. G., 2009, AJ, 137,
+4424
+Toomre A., 1964, ApJ, 139, 1217
+van Albada T. S., Bahcall J. N., Begeman K., Sancisi R., 1985,
+ApJ, 295, 305
+van der Kruit P. C., 1981, A&A, 99, 298
+van der Kruit P. C., Searle L., 1981a, A&A, 95, 105
+van der Kruit P. C., Searle L., 1981b, A&A, 95, 116
+van der Kruit P. C., Shostak G. S., 1984, A&A, 134, 258
+Walter F., Brinks E., de Blok W. J. G., Bigiel F., Kennicutt, Jr.
+R. C., Thornley M. D., Leroy A., 2008, AJ, 136, 2563
+Wang H.-F., Liu C., Xu Y., Wan J.-C., Deng L., 2018, MNRAS,
+478, 3367
+Wolfire M. G., McKee C. F., Hollenbach D., Tielens
+A. G. G. M., 1995, ApJ, 453, 673
+Woolley R. V. D. R., 1957, MNRAS, 117, 198
+Wouterloot J. G. A., Brand J., Burton W. B., Kwee K. K., 1990,
+A&A, 230, 21
+Zwaan M. A., van der Hulst J. M., Briggs F. H., Verheijen
+M. A. W., Ryan-Weber E. V., 2005, MNRAS, 364, 1467
+
+

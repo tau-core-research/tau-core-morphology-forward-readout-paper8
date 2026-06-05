@@ -1,0 +1,6 @@
+gate_id,gate_status,evidence,consequence,endpoint_scores_allowed,claim_boundary
+RLTU_G1_SPLIT_B2_UNIVERSALITY,REJECTED_BY_CURRENT_EVIDENCE,NGC7331 positive diagnostic and NGC5907 negative holdout,do not use split-B2 as a universal forward readout formula,False,readout_lane_taxonomy_update_not_endpoint
+RLTU_G2_LANE_SPECIFICITY,SUPPORTED_PRELIMINARY_NOT_VALIDATED,same evidence supports lane-specific interpretation,freeze readout lane before formula scoring,False,readout_lane_taxonomy_update_not_endpoint
+RLTU_G3_PROJECTION_VS_ADDED_SEPARATION,PASS,NGC5907 projection/TPG-like readouts are strong while added split-B2 is weak,projection-dominated source evidence should veto standalone added-ramp transfer,False,readout_lane_taxonomy_update_not_endpoint
+RLTU_G4_SUBFAMILY_LINK,PASS_CAVEATED,subfamily registry mapped to lane taxonomy; source rules still incomplete,subfamily acceptance must now also declare a readout lane,False,readout_lane_taxonomy_update_not_endpoint
+RLTU_G5_ENDPOINT_USE,BLOCKED,taxonomy update only; no new endpoint protocol frozen,future scoring requires lane freeze plus formula freeze,False,readout_lane_taxonomy_update_not_endpoint

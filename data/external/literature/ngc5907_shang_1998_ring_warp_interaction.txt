@@ -1,0 +1,423 @@
+arXiv:astro-ph/9806395v1 30 Jun 1998
+
+Ring structure and warp of NGC 5907
+– Interaction with dwarf galaxies1
+Zhaohui Shang,2,3,4 Zhongyuan Zheng,2,4 Elias Brinks,5 Jiansheng Chen,2,4 David Burstein,6
+Hongjun Su,2 Yong-IK Byun,7 Licai Deng,2,4 Zugan Deng,4,8 Xiaohui Fan,2,9 Zhaoji Jiang,2,4
+Yong Li,6 Weipeng Lin,2,4 Feng Ma3 Wei-hsin Sun,7 Beverley Wills,3 Rogier A. Windhorst,6
+Hong Wu,2,4 Xiaoyang Xia,4,10 Wen Xu,2,6 Suijian Xue,2,4 Haojing Yan,2,6 Xu Zhou,2,4 Jin Zhu,2,4
+and Zhenlong Zou,2,4
+
+ABSTRACT
+The edge-on, nearby spiral galaxy NGC 5907 has long been used as the prototype
+of a “non-interacting” warped galaxy. We report here the discovery of two interactions
+with companion dwarf galaxies that substantially change this picture. First, a faint ring
+structure is discovered around this galaxy that is likely due to the tidal disruption of
+a companion dwarf spheroidal galaxy. The ring is elliptical in shape with the center of
+NGC 5907 close to one of the ring’s foci. This suggests the ring material is in orbit
+around NGC 5907. No gaseous component to the ring has been detected either with
+deep Hα images or in Very Large Array (VLA) HI 21–cm line maps. The visible material
+in the ring has an integrated luminosity ≤ 108 L⊙ and its brightest part has a color R–I
+∼ 0.9. All of these properties are consistent with the ring being a tidally-disrupted
+dwarf spheroidal galaxy. Second, we find that NGC 5907 has a dwarf companion galaxy,
+PGC 54419, projected to be only 36.9 kpc from the center of NGC 5907, close in radial
+velocity (∆V = 45 km s−1 ) to the giant spiral galaxy. This dwarf is seen at the tip of the
+HI warp and in the direction of the warp. Hence, NGC 5907 can no longer be considered
+“non-interacting,” but is obviously interacting with its dwarf companions much as the
+Milky Way interacts with its dwarf galaxies. These results, coupled with the finding by
+others that dwarf galaxies tend to be found around giant galaxies, suggest that tidal
+interaction with companions, even if containing a mere 1% of the mass of the parent
+galaxy, might be sufficient to excite the warps found in the disks of many large spiral
+galaxies.
+1 The Very Large Array of the National Radio Astronomy Observatory is a facility of the National Science Foundation operated by a
+
+cooperative agreement with Associated Universities, Inc.
+2 Beijing Astronomical Observatory, Chinese Academy of Sciences, Beijing 100080, China
+3 Department of Astronomy, University of Texas at Austin, Austin, TX 78712, shang@astro.as.utexas.edu
+4 Beijing Astrophysics Center, Beijing, 100871, China
+5 Departamento de Astronomı́a, Universidad de Guanajuato, Apartado Postal 144, Guanajuato, Gto. 36000, Mexico
+6 Department of Physics and Astronomy, Box 871504, Arizona State University, Tempe, AZ 85287–1504
+7 Institute of Astronomy, National Central University, Chung-Li, Taiwan
+8 Graduate School, Chinese Academy of Sciences, Beijing 100080, China
+9 Princeton University Observatory, Princeton, New Jersey, 08544
+10 Department of Physics, Tianjin Normal University, China
+
+1
+
+Subject headings: galaxies: individual (NGC 5907, PGC 054419) – galaxies: interactions
+– galaxies: photometry – galaxies: spiral – radio lines: galaxies
+
+2
+
+1.
+
+& Harding 1994; Rudy et al. 1997), we obtain the
+transformation between our two bands and R and I
+bands (Zheng et al. 1998). Within an error of 0.5 mag
+arcsec−2 , our limiting magnitudes correspond to 28.6
+and 26.9 mag arcsec−2 in R and I, respectively.
+As is evident from Figure 1, a luminous ring encompasses this galaxy. The part of this ring closest
+to NGC 5907 can be seen faintly in Figure 3 of Morrison et al. (1994). In separate papers (Zheng et al.
+1998; Chen et al. 1998), we detail the data taking
+and data reduction processes that permit us to reliably investigate low surface brightness features on our
+images. For the present paper, we present Figure 1 as
+evidence that we can reliably flatfield large portions
+of our images to very faint surface brightnesses.
+We have also used the McDonald Observatory
+0.76m telescope (field of view 46′ × 46′ with a 2048 ×
+2048 CCD) to obtain broad band R (4.5 hours) and
+30Å–wide Hα (7.5 hours) and [OIII] (2.5 hours) images of NGC 5907. The narrow band filters are of sufficient width to cover gas emission from zero velocity
+to well past the 667 km s−1 heliocentric recession velocity of NGC 5907. The ring clearly appears in the
+0.76m R images (ruling out ghost images on Schmidt
+plates as a possible source), but does not appear in
+either narrow band image (the exposures of which are
+too short to see the ring in just the faint continuum),
+confirming previous Hα observations (Rand 1996).
+In order to understand the distribution of neutral
+hydrogen gas around NGC 5907, 21 cm HI line observations were obtained with the VLA in its modified
+C–array (one antenna each from the middle of the
+East and West arm having been moved inward to improve coverage of the inner portion of the uv–plane).
+We employed spectral line mode 4, in which the two
+independently tunable passbands are used to cover a
+total velocity range of around 1000 km s−1 , centered
+on 667 km s−1 and with a velocity resolution of 20
+km s−1 . To optimize sensitivity, both right and left
+hand polarized emission are recorded.
+At 21 cm, the field of view of the VLA is about 32′ ,
+large enough to include the area of interest. As our
+aim was to go as deep as possible, naturally weighted
+maps were made, leading to a synthesized beam of
+18′′ , sufficient to resolve the ring. The total integration time of 6 hours results in a 1σ noise level of 0.23
+mJy beam−1 . This translates to a column density of
+9 ×1019 atom cm−2 assuming a 3σ detection in two
+adjacent channels. The resulting HI map, superimposed on our optical image of NGC 5907, is shown
+
+Introduction
+
+NGC 5907 is an edge-on spiral galaxy, large in angular size, with a well-known warp both in its HI gas
+(Sancisi 1976; see also below) and in its optical disk
+(Sasaki 1987; Morrison, Boroson, & Harding 1994;
+Zheng et al. 1998). As such, it has been a popular galaxy in which to study the vertical luminosity
+distribution in a spiral galaxy, not only in the optical (Morrison, Boroson, & Harding 1994; Sackett et
+al. 1994; Lequeux et al. 1996; Lequeux et al. 1998;
+Zheng et al. 1998), but also in the infrared (Rudy et
+al. 1997). Much of the recent interest on NGC 5907
+was stimulated by the announcement by Sackett et al.
+of the detection of a faint halo around it, sufficient to
+supply the halo mass of this galaxy.
+We present here deep optical images and new VLA
+HI maps of NGC 5907 that are used to reassess the
+origin of the warp in this galaxy. In a separate paper
+(Zheng et al. 1998), we will use these same data to
+study the halo of NGC 5907 in detail.
+2.
+
+Observations
+
+Optical observations of NGC 5907 were made as
+part of the Beijing-Arizona-Taipei-Connecticut (BATC)
+Color Survey of the Sky (cf. Fan et al. 1996). This
+survey uses the Beijing Astronomical Observatory
+(BAO) 0.6/0.9m Schmidt telescope equipped with a
+2048 × 2048 Ford CCD and a custom-designed set
+of 15 intermediate-band filters to do spectrophotometry for specific 1 deg2 regions of the northern sky.
+NGC 5907 is in the center of one of these regions
+and, given the great interest in its low surface brightness properties, we obtained long integrations of it in
+two BATC filters: central wavelength 6660Å, bandwidth 480Å (m6660 ) and central wavelength 8020Å,
+bandwidth 260Å (m8020 ).
+The CCD subtends 58′ × 58′ (1.71′′ /pixel) in the
+focal plane of the BAO Schmidt. Out of 43 hours of
+actual observation of NGC 5907 at 6660Å, we select
+the 84 best images for analysis with a total exposure
+time of 26.17 hours (Zheng et al. 1998). The telescope
+was centered at slightly different positions for these
+images for greater reliability of flat-fielding. Figure 1
+shows the inner part of the combined BATC m6660
+image with low surface brightness features emphasized. We also obtained 21 hours of integration with
+the 8020Å filter, of which the best 16.7 hours were
+used. By directly comparing with standard broadband photometry of NGC 5907 (Morrison, Boroson,
+3
+
+our conclusion is that the ring is physically associated
+with NGC 5907.
+How bright is the ring? Fan et al. (1996) showed
+that we can flatfield BATC images to <1% accuracy
+(see also Zheng et al. 1998), and photometrically calibrate them to 1–2% absolute accuracy using flux standard stars (Oke & Gunn 1983). Our images yield
+an average sky brightnesses of 21.25 mag arcsec−2 at
+6660Å and 19.91 mag arcsec−2 at 8020Å, respectively
+(on the AB standard system of Oke & Gunn 1983).
+We get m6660 ≥ 14.7 for the ring by taking the average surface brightness for the part of the ring we can
+see and assuming a complete ring of similar surface
+brightness.
+In contrast, by replacing all foreground stars with
+the mean value of surrounding background, we find
+that NGC 5907 itself has m6660 ≈ 9.9 to a surface
+brightness of 27 m6660 arcsec−2. From our VLA observations we obtain a rotation velocity of 205 km s−1
+and an outer HI radius of 7.5′ (25 kpc), giving a dynamical mass of 1.9 × 1011 M⊙ .
+Based on these measurements, the luminosity of
+the ring is ≤ 1.2% that of the galaxy, or an absolute
+6660Å luminosity of ≤ 108 L⊙ . While it is evident the
+ring is not of uniform surface brightness, this upper
+limit is comparable to the luminosity estimated for
+the Sagittarius dwarf galaxy, recently found to be in
+the process of tidal disruption by our own Galaxy
+(Ibata, Gilmore & Irwin 1994.) The R–I color of ∼
+0.9 of the brightest part of the ring suggests that the
+optical emission is mostly from late-type stars.
+The lack of detection of gas in the ring, either in
+the VLA 21 cm map or the Hα and O[III] images,
+suggests that gas is a minor constituent of this ring.
+For example, suppose the pre-tidally-distorted dwarf
+galaxy originally had an equal amount of gas associated with it as stars (a reasonable assumption for
+low–mass, dIrr galaxies), or ∼ 108 M⊙ . If we distribute this gas evenly along the ring, we would expect a column density of 4 × 1019 atom cm−2 , close to
+our detection limit. Only modest clumping would be
+sufficient for us to detect this gas, which we do not see
+(cf. Figure 2). We thus conclude that the ring consists mostly of stars, in agreement with its measured
+R–I color.
+
+in Figure 2. The observations confirm the impressive
+warp reported earlier by Sancisi (1976). On the other
+hand, within the quoted sensitivity limits no HI was
+found to coincide with the optical ring.
+3.
+
+The Ring
+
+The possible physical interpretations of this ring
+are either Galactic in origin — “cirrus,” planetary
+nebula or supernova remnant — or physically associated with NGC 5907. Examination of the whole
+BATC field of view (only 1/4 of which is shown in Figure 1) shows no other evidence of ring-like structures
+near NGC 5907. In addition, the Burstein–Heiles
+(1978) predicted reddening for this galaxy is only
+E(B–V) = 0.003. These two facts make it unlikely
+that this ring is an artifact due to Galactic “cirrus.”
+If the ring has a Galactic origin, its ionized gas should
+easily have been detected on our narrow band filter
+images. In addition, from our images we measure the
+m6660 −m8020 color to be 0.7±0.3 mag arcsec−2 , of the
+brightest part of the ring (26.8 ± 0.1 m6660 arcsec−2 ).
+This corresponds to an R–I color of 0.9 ± 0.4 based on
+our transformation to broad-band photometry, certainly not the color of a planetary nebula. These observations, together with the fact that the field is at
+high Galactic latitude (b = +51◦ ), make it highly
+unlikely that this ring could be a Galactic supernova remnant or a planetary nebula. While we can
+not completely rule out the possibility that this is a
+planetary nebula, it would have to be relatively close
+(within 1 kpc), very old and cold, with little ionized
+gas.
+Alternatively, the ring is physically associated with
+NGC 5907. To test this hypothesis we derived the luminosity distribution along the ring and fitted it with
+an ellipse (Figure 3). We find that it is almost perfectly elliptical in shape. Within the errors, the center
+of the galaxy falls on the ring’s major axis, and is close
+to one of its foci, as should be the case if the material in the ring is in orbit around NGC 5907. The
+separation of 1.4′ between the focus and the center of
+NGC 5907 implies an orbit inclination of 45◦ and intrinsic ring dimensions of 13.4′ ×10.3′ and eccentricity
+0.63.
+The major axis size is the same as the optical diameter of NGC 5907 itself, 43 kpc at an assumed
+distance of 11 Mpc (using H0 = 75 km s−1 Mpc−1 ).
+Thus, based both on the lack of a plausible alternative and a plausible orbital interpretation of the ring,
+
+4.
+
+PGC 54419 and the Warp
+
+Our VLA map clearly shows the well-known warped
+HI disk of NGC 5907 (e.g., Sancisi 1976) extending
+4
+
+far beyond the optical disk. Because of the absence
+of any nearby galaxy candidate, NGC 5907 has long
+been considered a prime example (Sancisi 1976) of a
+non–interacting galaxy with an HI warp. However,
+our VLA map reveals that the object PGC 54419,
+which was once considered a background object, has
+a radial velocity of 712.0 ± 1.5 km s−1 , or only 45
+km s−1 from that of the main galaxy. It therefore
+is a dwarf companion at a projected distance of 36.9
+kpc (∼ 11.5′ ) from the nucleus of NGC 5907. It is
+located near the northern tip and in the direction of
+the warp, at some 3.7′ (12 kpc) in projection to the
+west. PGC 54419 is likely closer to NGC 5907 than
+the Magellanic Clouds are to the Milky Way.
+We obtain m6660 = 15.34 ± 0.02 and m8020 =
+15.33 ± 0.02 for PGC 54419, with m6660 − m8020 =
+0.01 ± 0.03 (R–I ∼ 0.2). From Fan et al. (1996), we
+estimate its V mag to be essentially the same as its
+m6660 mag, or V = 15.34. The angular size of PGC
+54419 is 54.6′′ × 31.4′′ (2.9 × 1.7 kpc), yielding an inclination of 56.6◦ (based on an intrinsic axial ratio of
+0.2). From the VLA data we observe an HI profile
+with full width at 20% maximum of 88 km s−1 , giving an inclination-corrected rotation velocity of 53 km
+s−1 . From this, we measure the mass of PGC 54419 to
+be 9.5×108 M⊙ (0.5% the mass of NGC 5907), and its
+mass-to-light ratio to be 12 in solar units. From the
+VLA HI profile we measure an HI mass of 3.6×107M⊙
+for this galaxy. In all of its measured characteristics,
+PGC 54419 is a dwarf irregular galaxy (cf. Roberts &
+Haynes; and is likely misclassified as a spiral galaxy;
+see Paturel 1989).
+It is of interest to understand why PGC 54419 was
+not previously detected in HI by Sancisi (1976). The
+object measures, in the channel map at 715 km s−1
+in which it is most clearly seen, about 30′′ × 12′′ (at
+a position angle of ∼ 65◦ ) and has an integrated flux
+density of 14 ± 2 mJy. Once smoothed to the resolution obtained by Sancisi (51′′ × 61′′ ) the source has
+become unresolved and its flux density corresponds to
+2.6 Kelvin, or less than 4σ in Sancisi’s maps. The signal in neighbouring channels falls well below 3σ which
+explains why it was not detected in the Westerbork
+data.
+5.
+
+Discussion
+
+We propose that the ring around NGC 5907 was
+once a dwarf spheroidal galaxy in orbit around NGC 5907,
+now tidally-disrupted by its interaction with the larger
+
+5
+
+galaxy. A nearby (at 36.9 kpc projected distance)
+dwarf irregular galaxy is suggestively situated right
+at the end of the more prominent warp in NGC 5907
+(Figure 2). At the very least, NGC 5907 is no longer
+a “non-interacting” galaxy with an HI warp.
+Low surface brightness, ring–like structures may
+be common around galaxies, as few nearby galaxies
+have been probed as deeply as NGC 5907. Even our
+own galaxy is tidally interacting with its entourage of
+dwarf galaxies (e.g. the Sagitarrius dwarf; Magellanic
+stream) and is a likely candidate for such a ring-like
+feature in the future (cf. Johnston, Spergel & Hernquist 1995). Indeed, models by Johnston et al. (1995)
+show that such a ring could exist from the tidal disruption of a dwarf galaxy in much the form we see it
+around NGC 5907. A dwarf spheroidal galaxy would
+have low velocity dispersion (cf. Bender, Burstein &
+Faber 1992), so its tidal debris would tend to produce
+a coherent stream. The stream would tend to bunch
+up at apogalacticon, which is near where we see the
+highest surface brightness in the NGC 5907 ring. The
+models of Johnston et al. indicate that such rings can
+persist for ∼ 2 dynamical time scales, or ∼ 1 billion
+years in the case of NGC 5907 (rotation velocity of
+205 km s−1 from our HI data).
+The situation is not as clear with regards to how
+the ring and PGC 54419 are related to the HI warp
+in NGC 5907. The ring and dwarf galaxy combined
+have ∼1% of the luminosity of NGC 5907, and likely
+a similar percentage of its mass. On the one hand,
+Weinberg (1995) points out that, in the case of the
+LMC and the Galaxy, a dynamically active halo acts
+to amplify the tidal warping effect of a small galaxy
+on the disk of a much larger galaxy, through distortion of the halo of the larger parent galaxy. On the
+other hand, the LMC is 10% of the mass of the Milky
+Way, while the ring and dwarf are much smaller compared to NGC 5907. It remains to be seen whether
+realistic models of tidal interactions of outer HI disks
+with small companion dwarf galaxies can produce the
+warps, both HI and optical seen in NGC 5907.
+Related to this issue is that detailed investigation
+of the HI map shows that the vertical distribution of
+HI is not symmetric on both sides near the central
+region of the galaxy. On the side of the ring there are
+weak HI features just above 3σ level, as may result
+from tidal interaction between the ring material and
+the disk. Deeper VLA maps of this galaxy will be
+needed to confirm this feature.
+Finally, it is well-known that dwarf galaxies tend
+
+to group around giant spiral galaxies. Such is certainly the case for the Milky Way and M31 in the
+Local Group (e.g. Grebel 1997). The study of Zaritsky et al. (1997) shows the same to be true around
+most giant spiral galaxies, even “isolated” giant spirals. While it would be very hard to show that a
+galaxy did not have dwarf companions, given their
+low surface brightnesses, it is also equally hard to
+show that all galaxies have them. Only by taking
+a deep look at the environments around “isolated”
+spiral galaxies with warped disks can this issue be
+resolved.
+6.
+
+Lequeux, J., Combes, F., Dantel-Fort, M., Cuillandre,
+J.-C., Fort, B. & Mellier, Y. 1998, A&A, (in press)
+Morrison, H., Boroson, T. & Harding, P. 1994, AJ,
+108, 1191
+Oke, J. B. & Gunn, J. E. 1983, ApJ, 266, 713
+Paturel, G., Fouqué, P., Bottinelli, L. & Gouguenheim, L. 1989, Catalogue of Principal Galaxies
+(Observatoire de Lyon)
+Rand, R. 1996, ApJ, 462, 712
+Roberts, M.S. & Haynes, M.P. 1994, ARA&A, 32, 115
+
+Acknowledgments
+
+Rudy, R.J., Woodward, C.E., Hodge, T., Fairfield,
+S.W. & Harker, D.E. 1997, Nature, 387, 159
+
+We thank McDonald Observatory for supporting
+part of the observations and data reductions, David
+Spergel for a helpful conversation, the VLA personnel for efficient service, and the anonymous referee for
+helpful comments. This research is supported in part
+by the Chinese National Natural Science Foundation
+(CNNSF) and by the U.S. National Science Foundation (NSF Grant INT-93-01805).
+
+Sackett, P. D., Morrison, H. L., Harding P. & Boroson, T. A. 1994, Nature, 370, 441
+Sancisi, R. 1976, A&A, 53, 159
+Sasaki, T. 1987, PASJ, 39, 849
+Weinberg, M. 1995, ApJ, 455, L31
+
+REFERENCES
+
+Zheng, Z. et al. 1998, (in preparation)
+
+Aaronson, M. 1983, ApJ, 266, L11
+
+Zaritsky, D., Smith, R., Frenk, C. & White, S.D.M.
+1997, ApJ, 478, 39
+
+Bender, R., Burstein, D. & Faber, S.M. 1992, ApJ,
+399, 462
+Burstein, D. & Heiles, C. 1984, ApJ, 54, 33
+Chen, J. et al. 1998, AJ, submitted
+de Vaucouleurs, G., de Vaucouleurs, A., Corwin,
+H.C.G., Jr., Buta, R.J., Paturel, G. & Fouqué, P.
+1991, Third Reference Catalog of Bright Galaxies
+(Springer-Verlag: New York)
+Faber, S. M. & Lin, D. 1983, ApJ, 266, L17
+Fan, X. et al. 1996, AJ, 112, 628
+Grebel, E.K. 1997, Rev Mod Astr, 10, 29
+Ibata, R.A., Gilmore, G. & Irwin, M.J. 1994, Nature,
+370, 194
+Johnston, K.V., Spergel, D.N. & Hernquist, L. 1995,
+ApJ, 451, 598
+Lequeux, J., Fort, B., Dantel-Fort, M., Cuillandre,
+J.-C. & Mellier, Y. 1996, A&A ,321, L1
+
+This 2-column preprint was prepared with the AAS LATEX
+macros v4.0.
+
+6
+
+Fig. 1.— This is the combined 26.17 hour BAO
+Schmidt image of a 28′ × 28′ subfield of our 58′ × 58′
+image, centered around NGC 5907 taken through
+the 6660Å BATC filter. All foreground stars, other
+galaxies (including PGC 54419) and the dust lane of
+NGC 5907 have been blanked. This permits displaying a range of grey levels to enhance the faintest surface brightness features in this galaxy. The inset diagram shows the shape of the ring and its relative
+orientation with respect to NGC5907.
+
+Fig. 2.— The integrated intensity map of 21 cm emission as derived from our 6 hour VLA observation,
+superimposed on our m6660 image, of size 25′ × 25′ .
+The 21 cm contours are 0.69 (3σ), 4.0, 12.5, 22.5, 75
+mJy beam−1 (1 mJy beam−1 = 1.85 Kelvin). The
+beamwidth is 18′′ . Note the discovery of HI at a similar velocity as NGC 5907 in the dwarf galaxy PGC
+54419 off to the upper right.
+
+7
+
+Fig. 3.— The peak brightness distribution along the
+ring and the fitted ellipse. Only the clear part of the
+ring is measured. Major axis is 13.4′ ; minor axis, 7.3′
+with eccentricity of 0.84. The small dot is the center
+of NGC 5907, while the open circle shows the focus
+of the ring nearest the galaxy nucleus. The radius of
+this circle (10 pixels) indicates the position error of
+the focus location. Also shown is the major axis of
+the ring.
+
+8
+
+

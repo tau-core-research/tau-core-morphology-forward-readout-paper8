@@ -1,0 +1,16 @@
+split,repair_status,n_galaxies,n_holdout,n_caution,n_acquisition,n_existing_s4g_scale,n_velocity_field_source,endpoint_scores_computed,claim_boundary
+all,NEEDS_DISTANCE_SCALE_SOURCE,30,9,10,20,0,0,False,projection_scale_repair_audit_not_endpoint
+all,NEEDS_INCLINATION_PROJECTION_REVIEW,26,8,13,13,9,0,False,projection_scale_repair_audit_not_endpoint
+all,NEEDS_VERTICAL_GEOMETRY_SOURCE,34,10,18,16,25,0,False,projection_scale_repair_audit_not_endpoint
+all,NO_PROJECTION_SCALE_REPAIR_REQUIRED,71,14,19,51,27,0,False,projection_scale_repair_audit_not_endpoint
+all,REPAIRABLE_WITH_EXISTING_SCALE_SOURCE_PLUS_DISTANCE_AUDIT,14,3,6,8,14,0,False,projection_scale_repair_audit_not_endpoint
+holdout,NEEDS_DISTANCE_SCALE_SOURCE,9,,1,8,0,0,False,projection_scale_repair_audit_not_endpoint
+holdout,NEEDS_INCLINATION_PROJECTION_REVIEW,8,,6,2,2,0,False,projection_scale_repair_audit_not_endpoint
+holdout,NEEDS_VERTICAL_GEOMETRY_SOURCE,10,,6,4,8,0,False,projection_scale_repair_audit_not_endpoint
+holdout,NO_PROJECTION_SCALE_REPAIR_REQUIRED,14,,2,12,8,0,False,projection_scale_repair_audit_not_endpoint
+holdout,REPAIRABLE_WITH_EXISTING_SCALE_SOURCE_PLUS_DISTANCE_AUDIT,3,,1,2,3,0,False,projection_scale_repair_audit_not_endpoint
+train,NEEDS_DISTANCE_SCALE_SOURCE,21,,9,12,0,0,False,projection_scale_repair_audit_not_endpoint
+train,NEEDS_INCLINATION_PROJECTION_REVIEW,18,,7,11,7,0,False,projection_scale_repair_audit_not_endpoint
+train,NEEDS_VERTICAL_GEOMETRY_SOURCE,24,,12,12,17,0,False,projection_scale_repair_audit_not_endpoint
+train,NO_PROJECTION_SCALE_REPAIR_REQUIRED,57,,17,39,19,0,False,projection_scale_repair_audit_not_endpoint
+train,REPAIRABLE_WITH_EXISTING_SCALE_SOURCE_PLUS_DISTANCE_AUDIT,11,,5,6,11,0,False,projection_scale_repair_audit_not_endpoint

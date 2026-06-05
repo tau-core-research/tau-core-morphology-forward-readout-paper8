@@ -1,0 +1,6 @@
+gate_id,gate_status,evidence,remaining_obligation,galaxy,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+MULD1_ROLE_SEPARATION,PASS,q_shape/mu_load split gate built,none for diagnostic role separation,NGC7331,False,False,ngc7331_b2_mu_load_derivation_gate_not_endpoint
+MULD2_DIMENSIONLESS_MU,PASS,mu_load is dimensionless after factoring x_w Vflat^2,none at dimensional level,NGC7331,False,False,ngc7331_b2_mu_load_derivation_gate_not_endpoint
+MULD3_UNIT_LOAD_COORDINATE,FORMULA_CONDITIONAL,unit value follows as normalized coordinate if no extra load observable is admitted,derive Tau-side reason for minimal-load coordinate,NGC7331,False,False,ngc7331_b2_mu_load_derivation_gate_not_endpoint
+MULD4_SOURCE_LOAD_ORIGIN,OPEN,HI support/history/vertical candidates are not source-frozen as mu_load laws,derive or acquire residual-blind mu_load observable,NGC7331,False,False,ngc7331_b2_mu_load_derivation_gate_not_endpoint
+MULD5_ENDPOINT_ELIGIBILITY,BLOCKED,post-failure theory derivation gate only,predeclare and freeze a new split-B2 branch before scoring,NGC7331,False,False,ngc7331_b2_mu_load_derivation_gate_not_endpoint

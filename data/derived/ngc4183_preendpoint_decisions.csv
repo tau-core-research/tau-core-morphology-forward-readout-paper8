@@ -1,0 +1,5 @@
+decision_id,decision,evidence,consequence
+D1_STRONG_ENDPOINT,REJECT_FOR_NOW,gamma upper bound 0.00269837,do not run NGC4183 as a strong projection endpoint from current sources
+D2_WEAK_PROJECTION_CONTROL,PROMOTE_AS_CONTROL_CANDIDATE,source-native H I profile supports edge-on/projection caveat but weak radial orientation drift,NGC4183 can test whether the protocol correctly predicts a near-carrier result
+D3_MORE_DATA_ROUTE,OPTIONAL_ACQUIRE,OCR profile needs independent review; no numeric warp onset/amplitude,machine-readable tilted-ring or velocity-field source could reopen endpoint path
+D4_NO_RESIDUAL_PATCHING,PASS_GUARDRAIL,all gates keep endpoint_scores_allowed=False,do not tune gamma_proj using observed rotation residuals

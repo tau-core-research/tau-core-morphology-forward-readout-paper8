@@ -1,0 +1,2 @@
+galaxy,review_packet_status,n_review_options,q_centroid_mid,q_envelope_mid,response_pending,formula_freeze_allowed,endpoint_scores_allowed,uses_vobs_or_residual,next_required_action,claim_boundary
+NGC7331,NGC7331_QWARP_OBSERVABLE_CHOICE_REVIEW_PACKET_READY_RESPONSE_PENDING,4,0.0079404475812108,0.2057957876154617,True,False,False,False,"fill independent review response, then run acceptance/intake gate",ngc7331_qwarp_observable_choice_review_packet_not_endpoint

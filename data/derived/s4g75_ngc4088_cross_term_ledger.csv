@@ -1,0 +1,5 @@
+galaxy,term_id,term_symbol,term_status,interpretation,claim_boundary
+NGC4088,CROSS_ORIENTATION_STRENGTH,epsilon_sigma_q,NOT_DERIVED,orientation sign and source strength may couple beyond a product factor,s4g75_ngc4088_cross_term_suppression_gate_not_endpoint
+NGC4088,CROSS_ONSET_STRENGTH,epsilon_x_q,NOT_DERIVED,onset radius and warp source strength may have mixed dependence,s4g75_ngc4088_cross_term_suppression_gate_not_endpoint
+NGC4088,CROSS_ONSET_CARRIER,epsilon_x_vflat,NOT_DERIVED,onset support and asymptotic carrier may not separate exactly,s4g75_ngc4088_cross_term_suppression_gate_not_endpoint
+NGC4088,CROSS_GEOMETRY_MEMORY,epsilon_memory,NOT_DERIVED,morphological history/memory may modify the present-day source product,s4g75_ngc4088_cross_term_suppression_gate_not_endpoint

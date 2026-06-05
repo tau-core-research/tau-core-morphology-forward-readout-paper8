@@ -1,0 +1,7 @@
+galaxy,gate_id,gate_status,evidence,remaining_obligation,endpoint_scores_allowed,uses_vobs_or_residual,claim_boundary
+NGC7331,N7331_B2SP1_PACKET_SCOPE,PASS,"q_warp, sigma_warp, and epsilon_cross source requirements are declared",none at packet-scope level,False,False,ngc7331_b2_exact_transfer_source_packet_not_endpoint
+NGC7331,N7331_B2SP2_XW_VFLAT_CONTEXT,PASS_CONTEXT,upgrade gate has x_w and Vflat available; preview=30520.275307 km^2/s^2,do not treat preview as formula or endpoint score,False,False,ngc7331_b2_exact_transfer_source_packet_not_endpoint
+NGC7331,N7331_B2SP3_Q_WARP_TEMPLATE,BLOCKED_MEASUREMENT_PENDING,q_warp templates exist but no accepted measurement is filled,measure or bound q_warp from residual-blind H I/warp source,False,False,ngc7331_b2_exact_transfer_source_packet_not_endpoint
+NGC7331,N7331_B2SP4_SIGMA_TEMPLATE,BLOCKED_REVIEW_PENDING,sigma_warp sign/orientation templates exist but convention is not frozen,freeze sign from source-side geometry,False,False,ngc7331_b2_exact_transfer_source_packet_not_endpoint
+NGC7331,N7331_B2SP5_EPSILON_TEMPLATE,BLOCKED_MEASUREMENT_PENDING,epsilon_cross templates exist but no bound is filled,"fill orientation, asymmetry, history, and locality inputs",False,False,ngc7331_b2_exact_transfer_source_packet_not_endpoint
+NGC7331,N7331_B2SP6_ENDPOINT_BLINDNESS,PASS,packet defines source templates only and reads no vobs/residual columns,keep endpoint scoring in a later separate script after formula freeze,False,False,ngc7331_b2_exact_transfer_source_packet_not_endpoint

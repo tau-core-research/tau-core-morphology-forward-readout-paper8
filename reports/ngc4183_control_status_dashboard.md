@@ -1,0 +1,36 @@
+# NGC4183 Control Status Dashboard
+
+Status: `NGC4183_CONTROL_STATUS_DASHBOARD_SCORED_PRELIMINARY_CONTROL`
+
+This dashboard consolidates the NGC4183 weak-projection/null-control
+path. It is not a formula freeze and not an endpoint score.
+
+## Summary
+
+| dashboard_status | galaxy | n_stages | n_pass_or_ready_stages | n_blocked_stages | first_blocking_stage | first_blocking_status | first_blocking_next_gate | gamma_projection_upper_bound | max_velocity_fractional_change | formula_freeze_allowed | endpoint_scores_allowed | construction_reads_vobs | scoring_reads_vobs | roadmap_status | claim_boundary | next_required_action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| NGC4183_CONTROL_STATUS_DASHBOARD_SCORED_PRELIMINARY_CONTROL | NGC4183 | 11 | 11 | 0 | none | none | none | 0.00269837 | 0.0013501 | True | True | False | True | NGC4183_CONTROL_PROMOTION_ROADMAP_SCORING_COMPLETE_PRELIMINARY_CONTROL | ngc4183_control_status_dashboard_not_endpoint | none |
+
+## Stage Chain
+
+| stage_order | stage_id | stage_status | gate_pass | next_gate | evidence | report_path | formula_freeze_allowed | endpoint_scores_allowed | construction_reads_vobs | scoring_reads_vobs | claim_boundary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | source_audit | NGC4183_MIXED_OVERLAY_SOURCE_AUDIT_LOCAL_SOURCE_PRESENT_REVIEW_REQUIRED_NOT_FREEZE_READY | True | independent_review_of_source_native_hi_fields_and_overlay_observable_sheet | local Verheijen-Sancisi source cache present | reports/ngc4183_mixed_overlay_source_audit.md | False | False | False | False | ngc4183_control_status_dashboard_not_endpoint |
+| 2 | tilted_ring_profile | NGC4183_TILTED_RING_PROFILE_EXTRACTED_REVIEW_REQUIRED_NOT_FREEZE_READY | True | independent_table_review_or_machine_readable_tilted_ring_acquisition | n=23; max Delta PA=3 deg | reports/ngc4183_tilted_ring_orientation_profile_extraction.md | False | False | False | False | ngc4183_control_status_dashboard_not_endpoint |
+| 3 | projection_gamma_upper_bound | NGC4183_PROJECTION_GAMMA_UPPER_BOUND_DERIVED_WEAK_NOT_ENDPOINT | True | decide_ngc4183_as_weak_projection_control_or_acquire_higher_quality_orientation_profile | gamma_bound<=0.00269837 | reports/ngc4183_projection_gamma_upper_bound_gate.md | False | False | False | False | ngc4183_control_status_dashboard_not_endpoint |
+| 4 | weak_projection_control_preflight | NGC4183_WEAK_PROJECTION_CONTROL_PREFLIGHT_COMPLETE_NOT_ENDPOINT | True | independent_profile_review_then_optional_null_control_freeze | max |Delta v|/v=0.00135010 | reports/ngc4183_weak_projection_control_preflight.md | False | False | False | False | ngc4183_control_status_dashboard_not_endpoint |
+| 5 | independent_review_packet | NGC4183_TILTED_RING_REVIEW_PACKET_CREATED_FREEZE_BLOCKED | True | review_response_intake | n_review_items=5 | reports/ngc4183_tilted_ring_independent_review_packet.md | False | False | False | False | ngc4183_control_status_dashboard_not_endpoint |
+| 6 | review_handoff | NGC4183_TILTED_RING_REVIEW_HANDOFF_READY_RESPONSE_REQUIRED | True | independent_reviewer_fills_response_template | n_tasks=5; n_visual_sources=3 | reports/ngc4183_tilted_ring_review_handoff.md | False | False | False | False | ngc4183_control_status_dashboard_not_endpoint |
+| 7 | review_response_intake | NGC4183_TILTED_RING_REVIEW_RESPONSE_ACCEPTED_NULL_CONTROL_FREEZE_ALLOWED | True | freeze_null_control_formula | response_received=True; all_required_accepted=True | reports/ngc4183_tilted_ring_review_response_intake.md | True | False | False | False | ngc4183_control_status_dashboard_not_endpoint |
+| 8 | freeze_readiness | NGC4183_NULL_CONTROL_FREEZE_READY_REVIEW_ACCEPTED_NOT_ENDPOINT | True | build_null_control_formula_freeze | review_accepts_freeze=True | reports/ngc4183_null_control_freeze_readiness_gate.md | True | False | False | False | ngc4183_control_status_dashboard_not_endpoint |
+| 9 | formula_freeze | NGC4183_NULL_CONTROL_FORMULA_FROZEN_NOT_ENDPOINT | True | accepted_null_control_gate | gamma_bound=0.00269837 | reports/ngc4183_null_control_formula_freeze_gate.md | True | False | False | False | ngc4183_control_status_dashboard_not_endpoint |
+| 10 | accepted_null_control | NGC4183_ACCEPTED_NULL_CONTROL_READY_NOT_SCORED | True | run_null_control_scoring_gate | frozen_lane=L_projection_attenuation_weak_control_after_review | reports/ngc4183_accepted_null_control_gate.md | False | False | False | False | ngc4183_control_status_dashboard_not_endpoint |
+| 11 | scoring_gate | NGC4183_ACCEPTED_NULL_CONTROL_INTERVAL_ENDPOINT_COMPLETE | True | none | primary_blocker=none | reports/ngc4183_weak_projection_null_control_scoring_gate.md | True | True | False | True | ngc4183_control_status_dashboard_not_endpoint |
+
+## Interpretation
+
+The source-side pipeline predicted a near-carrier weak-projection case,
+and that branch has now been carried through accepted source review,
+freeze, accepted-control promotion, and interval-control scoring.
+The result remains a preliminary single-galaxy control endpoint, not
+a point-fit validation and not population validation.

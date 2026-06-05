@@ -1,0 +1,1661 @@
+Astronomy & Astrophysics manuscript no.
+(will be inserted by hand later)
+
+The flaring Hi disk of the nearby spiral galaxy NGC 2683?
+B. Vollmer, F. Nehlig, R. Ibata
+
+arXiv:1512.07058v1 [astro-ph.GA] 22 Dec 2015
+
+Observatoire astronomique de Strasbourg, UMR 7750, 11, rue de l’université, 67000 Strasbourg, France
+Received / Accepted
+Abstract. New deep VLA D array Hi observations of the highly inclined nearby spiral galaxy NGC 2683 are
+presented. Archival C array data were processed and added to the new observations. To investigate the 3D
+structure of the atomic gas disk, we made different 3D models for which we produced model Hi data cubes. The
+main ingredients of our best-fit model are (i) a thin disk inclined by 80◦ ; (ii) a crude approximation of a spiral
+and/or bar structure by an elliptical surface density distribution of the gas disk; (iii) a slight warp in inclination
+between 10 kpc≤ R ≤ 20 kpc (decreasing by 10◦ ); (iv) an exponential flare that rises from 0.5 kpc at R = 9 kpc
+to 4 kpc at R = 15 kpc, stays constant until R = 22 kpc, and decreases its height for R > 22 kpc; and (v) a
+low surface-density gas ring with a vertical offset of 1.3 kpc. The slope of NGC 2683’s flare is comparable, but
+somewhat steeper than those of other spiral galaxies. NGC 2683’s maximum height of the flare is also comparable
+to those of other galaxies. On the other hand, a saturation of the flare is only observed in NGC 2683. Based on the
+comparison between the high resolution model and observations, we exclude the existence of an extended atomic
+gas halo around the optical and thin gas disk. Under the assumption of vertical hydrostatic equilibrium we derive
+the vertical velocity dispersion of the gas. The high turbulent velocity dispersion in the flare can be explained
+by energy injection by (i) supernovae, (ii) magneto-rotational instabilities, (iii) ISM stirring by dark matter
+substructure, or (iv) external gas accretion. The existence of the complex large-scale warping and asymmetries
+favors external gas accretion as one of the major energy sources that drives turbulence in the outer gas disk.
+We propose a scenario where this external accretion leads to turbulent adiabatic compression that enhances the
+turbulent velocity dispersion and might quench star formation in the outer gas disk of NGC 2683.
+Key words. Galaxies: individual: NGC 2683 – Galaxies: ISM – Galaxies: kinematics and dynamics
+
+1. Introduction
+The neutral gas content of a spiral galaxy can be roughly
+divided into three components: the dense molecular disk,
+the atomic gas disk, and an atomic gas halo. Whereas the
+inner gas disk is extremely thin (∼ 100 pc; e.g. Kalberla
+& Kerp 2009 for the Galaxy), the gas halo component, if
+present, is much more extended (a few kpc up to 22 kpc;
+Gentile et al 2013, Oosterloo et al. 2007) and contains
+about 15 % of the galaxy’s total gas content (NGC 891,
+Oosterloo et al. 2007; NGC 6946, Boomsma et al. 2008;
+NGC 253, Boomsma et al. 2005; NGC 4559, Barbieri et
+al. 2005; UGC 7321, Matthews & Wood 2003; NGC 2403,
+Fraternali et al. 2002; NGC 2613, Chaves & Irwin 2001;
+NGC 3198, Gentile et al. 2013; for a review see Sancisi et
+al. 2008). In edge-on systems, like NGC 891, the vertical
+extension of the halo gas is directly accessible.
+Send
+offprint
+requests
+to:
+B.
+Vollmer,
+e-mail:
+Bernd.Vollmer@astro.unistra.fr
+?
+Based on NRAO VLA observations (AI134). The National
+Radio Astronomy Observatory is a facility of the National
+Science Foundation operated under cooperative agreement by
+Associated Universities, Inc.
+
+The halo gas typically shows differential rotation parallel to the disk plane. Compared to the disk, the halo gas
+rotation velocity is lower (Fraternali et al. 2002, Oosterloo
+et al. 2007). In some cases, radial gas inflow is detected
+(Fraternali et al. 2002, Zschaechner et al. 2012). Above
+the star forming disk, the ionized component of the gas
+halo is detected in Hα (e.g., Rossa & Dettmar 2003), radio continuum (e.g., Dahlem et al. 2006), and X-rays (e.g.,
+Yamasaki et al. 2009).
+It is not clear what role the halo gas plays in the ecosystem of a spiral galaxy:
+– Above the star forming disk, galactic fountains
+(Shapiro & Field 1976, Fraternali & Binney 2006) may
+play a dominant role. The disk gas is lifted into the
+halo by stellar winds and supernova explosions; then
+it cools there and finally falls back onto the galactic
+disk.
+– The gas lifted by galactic fountains may interact with
+a pre-existing hot ionized halo, leading to enhanced
+gas condensation and gas backfall.
+– Accretion of intergalactic gas may add gas to the halo
+component. This accretion can be in form of the merg-
+
+2
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+ing of small gas-rich satellites (van der Hulst & Sancisi
+2005).
+The last scenario is corroborated by the detection of faint
+gaseous tidal streams in a considerable number of local
+spiral galaxies (Sancisi et al. 2008).
+The Hi disk of spiral galaxies is often warped and flares
+beyond the optical radius; i.e., its thickness increases exponentially. Flares are detected in the Galaxy (Kalberla &
+Kerp 2009), M 31 (Brinks & Burton 1984), and a sample of
+edge-on spiral galaxies (O’Brien et al. 2010, Zschaechner
+et al. 2012). While warps are ubiquitous in spiral galaxies where the Hi disk is more extended than the optical
+disk (Garcia-Ruiz et al. 2002), flaring gas disks are common, but not ubiquitous: for modeling the Hi observations
+of NGC 5746 (Rand & Benjamin 2008) and NGC 4559
+(Barbieri et al. 2005), a flaring gas disk is not necessary.
+According to van der Kruit (2007), the inner flat disk and
+the outer warped (and in some cases flared) one are distinct components with different formation histories. The
+inner disk forms initially, and the warped outer disk forms
+as a result of much later infall of gas with a higher angular
+momentum in a different orientation.
+NGC 2683 is a good candidate for further investigating the role of the gas disk beyond the optical disk and
+gas halos for the evolution of a spiral galaxy. Its basic parameters are presented in Table 1. This highly inclined
+spiral galaxy is located at a distance of 7.7 Mpc. Within
+the galaxy a distance of 1 kpc thus corresponds to 2700 .
+Deep VLA D array observations with a resolution of ∼ 10
+are ideal for probing its neutral gas halo. Casertano & van
+Gorkom (1991) observed NGC 2683 for one hour with the
+VLA in D array configuration. They found neutral hydrogen extending more than twice as far as the visible light on
+both sides of the galaxy. The gas distribution is fairly symmetric and close to the plane of the optical disk. The derived rotation curve peaks at about 215 km s−1 at ∼ 3 kpc
+from the galaxy center and then decreases monotonically.
+Kuzio de Naray et al. (2009) found a multi-valued, figureof-eight velocity structure in the inner 4500 = 1.7 kpc of
+the long-slit spectrum of NGC 2683 and twisted isovelocity contours in the velocity field. They argue that these
+features, along with boxy galaxy isophotes, are evidence
+of a bar in NGC 2683.
+In this article we revisit NGC 2683, which we observed
+for nine hours in the Hi 21cm line with the VLA in D configuration. We also reduced archival C array observations
+and added them to our data. The observations are presented in Sec. 2, and the results are given in Sec. 3. The
+3D kinematically modeling of the galaxy is described in
+Sec. 4 followed by the modeling results. We discuss our
+findings in Sec. 6 and give our conclusions in Sec. 7.
+
+2. Observations
+NGC 2683 was observed in December 2009 for nine hours
+with the Very Large Array (Napier et al. 1983) in D array
+configuration. We used 0542+498 as flux calibrator. The
+
+Table 1. Basic parameters of NGC 2683
+Type
+m0B
+D25
+Distance
+MB
+max
+vrot
+Ṁ∗
+lB
+lK 0
+M∗
+M∗,disk
+
+Sb
+9.84 mag
+9.30 = 20.8 kpc
+7.7 Mpc
+−19.59 mag
+215 km s−1
+0.8 M yr−1
+0.810 = 1.8 kpc
+0.670 = 1.5 kpc
+3.6 × 1010 M
+2.6 × 1010 M
+
+(de Vaucouleurs et al. 1976)
+(Nilson 1973)
+(Tonry et al. 2001)
+(Casertano & van Gorkom 1991)
+(Irwin et al. 1999)
+(Kent 1985)
+(this paper)
+(this paper)
+(this paper)
+
+phase calibrator 0909+428 was observed for 2.5min every
+30min. The total bandwidth of 3.125 MHz was divided
+into 128 channels with a channel separation of 5.16 km s−1 .
+Of the 22 available antennas, 20 were EVLA antennas. To
+avoid closure errors on the VLA-EVLA baselines, an alternative ’channel 0’ was created for the initial calibration
+stage. Subsequent calibration was achieved using VLA
+standard calibration procedures. Fifteen line-free channels
+were selected for continuum subtraction. The maps were
+generated with natural weighting to maximize sensitivity. We obtained an rms noise level of 1 mJy/beam in a
+5 km s−1 channel. The resolution is 6100 × 5100 .
+In addition, we reduced 8.5 h of archival C array
+data. The total bandwidth of 3.125 MHz was divided into
+64 channels with a channel separation of 10.3 km s−1 .
+Calibration was done using VLA standard calibration procedures. The maps were generated with a weighting between natural and uniform (ROBUST=1). An rms noise
+level of 0.4 mJy/beam in a 10.3 km s−1 channel was obtained with a resolution of 1900 × 1800 .
+In a last step, the C and D array observations were
+combined into a single data set. With a ROBUST=1
+weighting leading to a resolution of 2100 ×2000 , we obtained
+an rms noise level of 0.3 mJy/beam assuming a linewidth
+of 10.3 km s−1 channel. The cube was clipped at a flux density of 2.0 mJy/beam or 7 times the rms. Linear fits were
+made to the line-free channels of each spectrum. These
+baselines were then subtracted from the spectra. The Hi
+column densities corresponding to the rms noise levels in
+individual channel maps are given in Table 2. For the creation of the moment0 map, a boxcar smoothing of 7×7×7
+pixels (4900 ×4900 ×36 km s−1 ) was applied to the data cube
+and voxels of the smoothed cube with flux densities lower
+than 1/0.3 mJy/beam for the D/C+D array data were
+blanked. The same voxels were then blanked in the original data cube before generating the moment0 map. The
+primary beam correction was then applied to the moment0
+maps. At the end, the primary beam correction was applied to the channel maps. For the comparison with our
+models, we smoothed the D array data cube to the spectral resolution of the C+D array data cube (10.3 km s−1 ).
+We made continuum maps from the line-free channels
+of the Hi data cube. However, owing to the small number
+of line-free channels, our 20cm continuum image has a
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+3
+
+Table 2. Hi observations and the combined data cube
+Date
+Array
+Duration
+Bandwidth
+Number of channels
+Central velocitya
+Velocity resolution
+FWHP restoring beam
+rms noise in channel maps
+Equivalent Hi column density
+a
+heliocentric, optical definition
+
+December 2009
+D
+9h
+3.125 MHz
+128
+412 km s−1
+5.16 km s−1
+6100 × 5100
+1.0 mJy/beam
+2 × 1018 cm−2
+
+May 2004
+C
+8.5h
+3.125 MHz
+64
+412 km s−1
+10.30 km s−1
+1900 × 1800
+0.4 mJy/beam
+1.3 × 1019 cm−2
+
+CD
+17.5h
+3.125 MHz
+64
+412 km s−1
+10.30 km s−1
+2100 × 2000
+0.3 mJy/beam
+8 × 1018 cm−2
+
+NGC 2683 SDSS
+
+N
+
+1’
+
+Fig. 1. Integrated Hi spectrum of NGC 2683 from the
+VLA D array observations.
+
+high rms noise level of 0.35 mJy/beam at a resolution of
+6000 compared to the rms noise level of 1 mJy/beam in
+a 5.16 km s−1 channel (Table 2). On this image only the
+inner star forming disk of ∼ 40 diameter is visible.
+
+3. Results
+We extracted an integrated spectrum from the area containing line emission (Fig. 1). The total line flux is
+FHI = 101.4 Jy km s−1 . This is coincidentally equal to
+the line flux that is corrected for self-absorption, but
+higher than the pointing/extension-corrected line flux of
+FHI = 87.6 Jy km s−1 from Springob et al. (2005). With
+a distance of 7.7 Mpc, this corresponds to a total Hi
+mass of MHI = 1.42 × 109 M . The line flux of the
+C array data is FHI = 73.8 Jy km s−1 corresponding to
+MHI = 1.03 × 109 M . The integrated line profile is asymmetric with a 16 % higher peak flux density on the receding side. The linewidths at 20 % and 50 % of the peak flux
+density are W20 = 450 km s−1 and W50 = 426 km s−1 .
+With a systemic velocity of 415 km s−1 (Casertano & van
+Gorkom 1991), the approaching and receding sides of the
+galactic disk contain equal amounts of atomic gas. The
+channel maps of the D array and combined C+D array
+observations are presented in Appendix B.
+
+29.82’ x 22.93’
+
+E
+
+Fig. 3. Hi contours on the SDSS color image of
+NGC 2683 (copyright 2006 Michael R. Blanton & David
+W. Hogg). The contour levels are (2,4,8,16,32,64,128)×
+10 mJy/beam km s−1 or 2.6 × 1019 cm−2 .
+
+3.1. Hi gas distribution
+The distribution of atomic hydrogen of NGC 2683 is presented in Fig. 2. As already shown by Casertano & van
+Gorkom (1991), the atomic hydrogen is distributed over a
+diameter of 26.50 ,so almost three times the optical diameter (Fig. 3). The overall structure is that of an inner disk
+of high column density gas (∼ 90 diameter) and an extended low column-density vertically extended structure.
+We show that a part of this vertical extent is caused by
+the projection of a flaring gas disk. While the high column gas disk is thin, the low column density gas is more
+extended in the vertical direction.
+The thin gas disk appears significantly bent. Whereas
+the southwestern part of the high column density gas
+disk at a distance of 3.50 from the galaxy center bends
+away from the major axis to the south, the northeastern
+part bends slightly to the north. This warping is reversed
+at distances between 3.50 and 80 from the galaxy center,
+which means that at these distances the northeastern and
+southwestern parts bend toward the major axis. The projected disk thickness increases slightly with increasing distance from the galaxy center. At distances greater than 80 ,
+
+4
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+2
+
+4
+
+6
+
+0.0
+
+33 35
+
+33 35
+
+30
+
+30
+
+DECLINATION (J2000)
+
+DECLINATION (J2000)
+
+0
+
+25
+
+20
+
+15
+
+15
+
+30
+
+15
+
+00 52 45
+30
+15
+RIGHT ASCENSION (J2000)
+
+00
+
+51 45
+
+1.0
+
+1.5
+
+25
+
+20
+
+08 53 45
+
+0.5
+
+08 53 45
+
+30
+
+15
+
+00 52 45
+30
+15
+RIGHT ASCENSION (J2000)
+
+00
+
+51 45
+
+Fig. 2. Hi gas distribution of NGC 2683. Left panel: from the D array observations. The beam size is 6100 × 5100 . The
+contour levels are (1,2,4,6,8,12,16,20,24,28,32,48,64,96,128,192,264,392) × 30 mJy/beam km s−1 or 1.1 × 1019 cm−2 .
+The horizontal wedge is in units of Jy/beam km s−1 . Right panel: from the C+D array observations. The beam size
+is 2100 × 2000 . The contour levels are (2,4,6,8,12,16,20,24,28,32,48,64,96,128,192,264,392) × 10 mJy/beam km s−1 or
+2.6 × 1019 cm−2 . Grayscales are in units of Jy/beam km s−1 . As in Casertano & van Gorkom (1991) we deliberately
+have suppressed the enhanced noise due to the primary beam correction (for comparison see Figs. 11, 12, B.3, and
+B.5).
+the vertical projected thickness of the gas disk decreases
+rapidly. At the extremities of the gas disk, at distances
+of ∼ 11.50 = 26 kpc, two distinct gas blobs are present.
+The northeastern blob has a column density that is twice
+as high as the southwestern one. In the higher resolution
+C+D array image, the southwestern part of the gas disk
+(08 52 20, +33 22 00, red circle in the right panel of Fig. 2)
+has a significant substructure. The gas mass within the depicted area is approximately 6 × 107 M . The mass excess
+compared to the opposite side of the galactic disk (08 52
+55, +33 30 00, a second red circle in the right panel of
+Fig. 2) is about 1.5 × 107 M .
+
+3.2. Hi kinematics
+The velocity field of highly inclined galaxies cannot be
+used to derive the kinematical parameters (e.g., Kregel &
+van der Kruit 2004) that have to be derived directly from
+the data cube. We derived the rotation curve of NGC 2683
+from the position velocity diagram along the major axis
+and validated it with our 3D model (Sect. 4). To search
+for counter-rotating gas and determine the rotation curve,
+we decreased the rms noise level in the position velocity
+diagrams by smoothing the velocity axis with a boxcar
+function of a width of three pixels or 15.5 km s−1 . The position velocity diagram along the major axis from the D
+array data is presented in Fig. 4. We did not observe any
+
+Fig. 4. Position velocity diagram along the major axis
+from the D array observations. At each position along the
+major axis, the highest velocities trace the rotation curve
+at that radius (solid line). The dashed line shows the rotation velocity derived with the envelope-tracing method.
+The grayscale levels are (−1, 1, 2, 4, 8, 16, 24, 32, 64, 132) ×
+1 mJy/beam.
+
+counter-rotating gas. To derive the rotation curve from
+the position velocity diagram, we assumed that the neu-
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+5
+
+tral hydrogen moves in circular orbits and that the highest velocities trace the rotation curve at a given radius.
+The envelope-tracing method (Sofue & Rubin 2001) makes
+use of the terminal velocity in a position velocity diagram
+along the major axis. The rotation velocity vrot is derived
+by using the terminal velocity vt :
+vrot = (vt − vsys )/ sin i − ∆ ,
+
+(1)
+
+1
+
+2
+2
+where ∆ = (σobs
++ σISM
+) 2 = 11.3 km s−1 with σISM =
+−1
+10 km s and σobs = 5.16 km s−1 , which are the velocity dispersion of the interstellar medium and the velocity
+resolution of the observations, respectively.
+We adopted a similar approach: the spectra along
+the major axis were decomposed into Gaussian profiles
+after clipping at a level of 2 mJy/beam. The maximum/minimum peak velocities of the Gaussian decompositions were then adopted as rotation velocities on the
+approaching/receding side of the galaxy and corrected
+for an inclination of 83◦ (see Sect. 4)1 . Moreover, we set
+∆ = 15.5 km s−1 . The derived velocity curve (solid line in
+Fig. 4) is very similar to those obtained with the envelopetracing method (dashed line in Fig. 4) and derived by
+Casertano & van Gorkom (1991; Fig. 2).
+Position velocity diagrams parallel to the minor axis
+(positions are shown in the upper panels of Fig. 15) are
+presented in Figs. 11 and 12. Almost all position velocity diagrams are asymmetric. In the inner gas disk, emission of higher surface brightness is found toward positive/negative offsets at the receding/approaching side of
+the galactic disk (p6/p4). Low surface brightness emission
+of highest velocities is found toward positive offsets at the
+approaching side (pv4), whereas the envelope of the emission distribution at the receding side is quite symmetric
+(pv6). At intermediate radii of the receding side (pv7 and
+pv8) emission of highest surface brightness is found toward
+negative offsets. At intermediate radii of the approaching
+side (pv2 and pv3) most emission is found toward positive
+offsets. In the outer part of the disk (pv1 and pv9), the
+emission is shifted toward positive offsets.
+
+4. 3D modeling
+We developed an IDL code to construct 3D data cubes
+with properties identical to the observed data cubes (D
+and C+D array data) from these model gas distributions.
+The sensitivity limits of our observations were also applied
+to the model cubes.
+For the 3D modeling we used a symmetrized mean
+rotation velocity (lower panel of Fig. 5), which we obtained
+by the Gaussian decomposition of the spectra along the
+major axis corrected by inclination (lower panel of Fig. 5).
+The rotation curve is consistent with the one derived by
+Casertano & van Gorkom (1991). It is flat (220 km s−1 )
+1
+Up to 30 Gaussian components were fitted to reproduce
+the spectra. In the inner disk 15-25 components were needed
+whereas in the outer disk 3-10 components were sufficient to
+fit the Hi spectra.
+
+Fig. 5. Radial profiles of NGC 2683. Upper panel: deprojected total (solid), atomic (dash-dotted), and assumed
+molecular (dashed) gas surface density based on SEST
+CO-line observations (see Sect. 4). The dotted line represents the symmetric deprojected Hi profile obtained from
+the method of Warmels (1988). Lower panel: observed and
+modeled rotation curve (solid), component due to the stellar bulge and disk (dashed), gas (dash-dotted), and dark
+matter halo (dotted). The colors indicate different K’ band
+mass-to-light ratios from blue (0.5) to red (1.3).
+up to a galactic radius of ∼ 10 kpc. The rotation velocity
+declines to a value of 160 km s−1 at 18 kpc and then rises
+to 200 km s−1 at a galactic radius of 26 kpc.
+Following Warmels (1988), we derived the deprojected
+Hi surface density using the symmetric rotation curve and
+the major axis position velocity diagram. First, the so-
+
+6
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+called strip integral was calculated by integrating the Hi
+column density map perpendicularly to the major axis, as
+defined by the dynamical center and position angle of the
+stellar disk. The approaching and the receding sides of this
+strip integral are deprojected separately, using the iterative deconvolution method of Lucy (1974). The iteration
+process was halted at the point when
+s
+(ΣHI − Σmodel )2
+< 10−5 ,
+(2)
+Σ2HI
+where ΣHI and Σmodel are the observed and modeled Hi
+surface densities. The profiles of the approaching and receding sides were averaged to yield a mean radial Hi
+profile which is presented in the upper panel of Fig. 5.
+The total Hi mass of the model is consistent with our
+observations. As in most nearby spiral galaxies, the deprojected Hi surface density is about constant within the
+optical radius (see, e.g., Leroy et al. 2008). Its value of
+∼ 2 M pc−2 is remarkably low compared to the typical value of ∼ 10 M pc−2 in nearby spiral galaxies: in
+the sample of Leroy et al. (2008), only NGC 3351 and
+NGC 2841 show such low surface densities within the optical disk. The inner surface density profile shows two peaks
+corresponding to an inner and outer ring structure at radii
+of 3 kpc and 8 kpc. For larger radii the surface density
+decreases monotonically until 20 kpc, before rising again
+toward a peak at 26 kpc. We interpret and model the latter maximum as an Hi ring at the extremity of the gas
+disk.
+The gas surface density is the sum of the atomic and
+molecular gas surface densities when assuming a Galactic
+CO-H2 conversion factor (upper panel of Fig. 5). For the
+molecular gas surface density, we used the SEST CO(10) line flux of Elfhag et al. (1996) and assumed an exponential distribution with a scale length of the stellar
+disk 4000 = 1.5 kpc, as observed in local spiral galaxies
+(Leroy et al. 2008). This led to a central surface density of
+molecular gas of 40 M pc−2 (lower panel of Fig. 5). The
+atomic-to-molecular mass ratio of NGC 2683 is about 5.
+This ratio is located at the lower end of the atomic-tomolecular mass ratio distribution for Sb galaxies (Fig. 4
+of Young & Scoville 1991).
+For the mass modeling of NGC 2683, we applied
+GALFIT (Peng et al. 2002) to the 2MASS K’ image to
+obtain surface brightness profiles for the bulge and disk
+components of NGC 2683. The derived parameters (central surface density Σ0 , surface density at the effective radius of the Sersic profile2 Σe , scale length l, effective radius
+Re of the Sersic profile, Sersic index n, and total stellar
+mass M∗ assuming a K’ band mass-to-light ratio of 1.0)
+are given in Table 3. The K’ band stellar disk scale length
+is l∗ = 1.5 kpc, a low value for a rotation velocity similar to
+that of the Galaxy or galaxies of comparable rotation velocities (Fig. 8 of Courteau et al. 2007). The decomposition
+2
+
+The Sersic profile is given by Σ = Σe exp −κ((R/Re )1/n −
+1) with κ = 2n − 0.331.
+
+
+
+of the rotation curve for different K’ band mass-to-light
+ratios from 0.5 to 1.3 is shown in the lower panel of Fig. 5.
+Whereas the fit of the exponential disk is robust, the fit
+of the bulge component depends somewhat on the initial
+conditions that were used in GALFIT. After inspecting
+the residual image, we are confident that the mass profile
+is reproduced within the given errors (Table 3).
+We assumed that the dark matter halo is isothermal
+with a core following the density distribution:
+ρ0
+,
+(3)
+ρ(R) =
+1 + (R/R0 )2
+where ρ0 is the central density and R0 the core radius.
+Alternatively, we used an NFW profile (Navarro et al.
+1996):
+ρ(R) =
+
+ρ0
+R
+(1
++ RRS )2
+RS
+
+,
+
+(4)
+
+where ρ0 is the central density and RS the scale radius.
+For a given K’ band mass-to-light ratio M/LK0 for the
+bulge and the disk, the halo central density and core radius
+were determined by minimizing χ2 between the model and
+observed rotation curves. We calculated χ2 for a grid of
+(M/LK0 )bulge , (M/L)disk , ρ0 , and R0 yielding
+– for the cored isothermal halo (χ2 = 3.10):
+(M/LK0 )bulge =1.4,
+(M/LK0 )disk =0.9,
+ρ0
+=
+0.16 M pc−3 and R0 = 2.0 kpc; and
+– for a NFW halo (χ2 = 3.63): (M/LK0 )bulge =1.2,
+(M/LK0 )disk =0.9, ρ0 = 0.03 M pc−3 and R0 =
+7.5 kpc.
+based on the χ2 values, the cored isothermal halo is the
+preferred model.
+For our modeling, we adopted a mass-to-light ratio of
+M/LK0 = 1.4 for the bulge and M/LK0 = 0.9 for the disk
+component. The latter value is compatible with the value
+of 0.8 given by Bell et al. (2003; appendix B). However, it
+is situated at the very high end of the M/LK0 distribution
+determined by the DiskMass Survey (Fig. 1 of Martinsson
+et al. 2013). Lower values of the mass-to-light ratio lead
+to gas velocity dispersions lower than typically observed
+in the inner disks of nearby spiral galaxies (Tamburro et
+al. 2009; see Sect. 6.3).
+The GALFIT absolute magnitude of MKs = 6.328 ±
+0.017 is consistent with the value of MKs = 6.30 ± 0.01
+from the 2MASX catalog (Skrutskie et al. 2006). The
+disk/bulge decomposition gave disk and bulge masses of
+2.6×1010 M and 1.2×1010 M , respectively. We thus determined a total stellar mass of M∗ = 3.8 × 1010 M . This
+is quite low for a rotation velocity of 220 km s−1 (Fig. 8
+of Courteau et al. 2007).
+To investigate the 3D structure of the atomic gas disk,
+we made different 3D axisymmetric models for which we
+produced model Hi data cubes. These models have the
+following components:
+– a thin gas disk with a thickness of 500 pc (TD),
+– a radially decreasing velocity dispersion (Vd),
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+7
+
+Table 3. GALFIT derived model parameters of NGC 2683
+M/LK0
+Bulge
+Disk
+
+1.4
+0.9
+
+Σe /Σ0
+(M pc−2 )
+184 ± 4
+1825 ± 43
+
+Re /l
+(kpc)
+1.68 ± 0.07
+1.50 ± 0.01
+
+n
+5.20 ± 0.09
+1.0
+
+M∗
+(1010 M )
+1.20 ± 0.02
+2.58 ± 0.05
+
+– an asymmetric disk structure (E),
+– a possible warp in inclination and position angle of the
+thin disk (PA, INC),
+– different gas flares at galactic radii larger than 9 kpc
+(F0-F3; Fig. 10),
+– an outer gas ring (R > 25 kpc),
+– a gas halo around the inner disk (H), and
+– a vertically lagging rotation velocity (L).
+For the inclination angle of the galactic disk, we set
+90◦ ≤ i ≤ 60◦ . The comparison of the model position
+velocity diagrams with those of the high-resolution C+D
+array data showed that i = 83◦ is the best choice for the
+inner high surface density disk. In addition, it turned out
+that i = 87◦ for the outer Hi ring (R > 24 kpc) led to
+the best resemblance between the model and observed gas
+distributions (column TD in Fig. A.2). For galactic radii
+between 10 and 24 kpc, we considered warps in inclination
+and position angle.
+To reproduce the emission distribution in the D array
+channel maps close to the systemic velocity (Fig. B.4), we
+introduced a turbulent velocity dispersion that increases
+toward the galaxy center:
+vturb = 10 + 10 exp(−(R/4 kpc)2 ) km s−1 .
+
+(5)
+
+For the flare, we assumed four characteristic radial profiles of the disk height H = F W HM/2 (Fig. 10):
+ρ(z) = Σ0 (R) sech(1.3 z/H(R)) ,
+
+(6)
+
+where Σ0 (R) is the surface density in the midplane. We
+also tried an exponential and a sech2 (isothermal) dependence of the vertical density structure (see Sect. 4.3).
+For radii larger than R = 10.50 = 23.5 kpc, which is the
+low surface density ring, the disk plane is shifted vertically
+by 3500 = 1.3 kpc. This was necessary because the two Hi
+emission blobs at the extremities of the galactic gas disk
+are offset from the galaxy’s major axis (see Sect. 3.1).
+
+4.1. Asymmetric structure of the disk
+Since the observed asymmetries in the position velocity
+diagrams (Sect. 3.2) cannot be reproduced with an axisymmetric model, we modeled the inner gas disk with
+elliptical isodensity annuli. This choice is motivated by
+the existence of another non-axisymmetric structure in
+NGC 2683, a galactic bar within R = 2 kpc= 5400 (Kuzio
+de Naray et al. 2009). Since the observed Hi asymmetries
+extend over more than 60 = 13 kpc in radius, a physical
+link between the inner bar structure and outer elliptical
+annuli is not obvious, though.
+
+axis ratio
+0.7
+-
+
+The size of the major axis of the elliptical component
+is a = 15 kpc and the axis ratio is b/a = 2/3. We varied
+the angle between the major axis and the plane of the sky
+up to 90◦ in steps of 10◦ . It turned out that an angle of 30◦
+reproduced our observations in a satisfying way (column
+TD+E in Figs. A.1 and A.2). This is similar to the result
+of Kuzio de Naray et al. (2009), who found the bar to be
+closer to side-on than end-on. The approximate alignment
+between the two structures might occur by chance or indicate a common pattern speed of the bar and the outer
+non-axisymmetric gas structure, i.e. a dynamical coupling
+between the two structures.
+The resulting face-on projection of the gas distribution is presented in Fig. 6. The resulting surface brightness profile (dash-dotted line in the upper panel of Fig. 5)
+does not differ significantly from the initially symmetric
+deprojected profile. The elliptical structure of the inner
+gas disk might be interpreted as a crude approximation to
+spiral and/or bar structure (for more sophisticated models
+see Kamphuis et al. 2013). This corresponds to an m=2
+distortion that can be measured by a Fourier decomposition of the Hi distribution (e.g., Bournaud et al. 2005).
+Compared to the THINGS sample (Walter et al. 2008),
+NGC 2683 resembles (i) the irregular galaxy NGC 4214,
+which shows an inner bar-like Hi structure within a symmetric disk; (ii) the Sab galaxy NGC 4736, which shows
+an inner Hi ring with a different position angle than the
+main disk; and (iii) the Sc galaxy NGC 628, which shows
+an inner bar structure mainly in CO. If the elliptical structure is mainly due to a bar, we expect a distorted velocity
+field, i.e. the 3D velocity vectors are approximately tangential to the isophotes of the bar (Pérez et al. 2004). If
+it is mainly due to spiral arms, we expect a much less
+distorted velocity field.
+The influence of velocity distorsions on our model is
+shown in Fig. 7 where the position velocity diagrams of
+a disk model with an elliptical component and a velocity field following the bar isophotes is shown for different
+ellipticities and different angles between the bar’s major
+axis and the plane of the sky. While including an asymmetric velocity field improves the resemblance of pv3, it
+worsens the resemblance of pv5, pv6, and pv7 to observations. Small velocity distortions are present in the inner
+disk of NGC 2683, because we observe an asymmetric position velocity diagram in the center of NGC 2683 (pv
+5). However, the observed amplitude of the asymmetry is
+much smaller than that of the models. We thus conclude
+that the velocity field of the elliptical component is rather
+symmetric.
+
+8
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+Fig. 7. NGC 2683 Hi D array and model position velocity diagrams. The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96) ×
+0.7 mJy/beam. The resolution is 6100 × 5100 . The model includes an elliptical component with axis ratios of 1.43 :
+1/1.25 : 1 and angles between the the bar’s major axis and the plane of the sky of 20◦ and 30◦ , a warp in inclination
+(I1), a centrally increasing velocity dispersion (VD), and a disk flare (F3).
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+9
+
+Fig. 8. Model inclination and position angle with respect
+to the galactic radius. The best-fit parameters are shown
+with a solid line. The dashed and dotted lines represent
+the tested variations for discarded models. The model with
+profiles represented by dotted lines are not shown in Fig. 9.
+
+than the observed linewidth. In addition, the linewidth at
+offsets > 10 are also smaller than observed. These differences between our models and observations are present for
+Fig. 6. Model gas distribution in face-on projection. all 20 models. We thus conclude that the projected thickThe resolution is 6100 × 5100 . Grayscale levels are ness of the Hi disk cannot be reproduced by a warp of the
+(1, 2, 4, 6, 8, 12, 16, 20, 24, 28, 32, 48, 64, 96, 128, 192, 264, 392, 784)×
+thin disk alone.
+5 mJy/beam km s−1 or 2 × 1018 cm−2 .
+To reproduce the slight warp of at least a part of the
+gas disk between 7 kpc and 14 kpc observed in the high
+and low resolution Hi distribution maps (Fig. 2), we se4.2. The disk warp
+lected a best-fit warp model by eye based on the moment0
+Can the projected thickness of the Hi disk be caused by a maps and position velocity diagrams (Fig. 8). By only
+warp of the thin disk? To answer this question, we chose varying the position angle, we did not succeed in finding
+five characteristic inclination and four position angle pro- an axisymmetric model that reproduced the Hi gas distrifiles to create tilted ring models of the thin Hi disk (Fig. 8). bution in a satisfying way. Without a varying inclination
+The radial extent of the warp is set by the fact that warps angle, the spatial extent of the position velocity diagrams
+typically begin at an Hi column density of ∼ 2 M pc−2 pv3, pv4, pc6, and pv7 at velocities close to the systemic
+where the Hi density drops down (Garcia-Ruiz et al. 2002). velocity is too small (Figs. 11 and 12). Varying the inclina◦
+The maximum inclination/position angles of the model tion by 10 toward lower inclination angles improved the
+profiles were determined by the observed projected disk observed position velocity diagrams in a satisfying way
+thickness. We created model cubes for all combinations of (column TD+E compared to TD+E+INC of Figs. A.1
+the inclination and position angle profiles. For clarity, we and A.2). However, the spatial extent of the position veonly show selected C+D array position velocity diagrams locity diagrams, especially beyond the optical disk (pv1,
+pv2, pv3, pv7, pv8, pv9), are significantly smaller than our
+of nine of these combinations in Fig. 9.
+In the two position velocity diagrams of the approach- observations.
+ing side (pv3 and pv4), the emission at negative offsets
+Thus, the Hi data is consistent with a thin disk compois reproduced well by the models. However, the linewidth nent of constant position angle and a change in inclination
+of the emission at positive offsets is significantly smaller by 10◦ between 10 kpc and 23 kpc. A second thick comthan the observed linewidth. On the receding side (pv6 ponent is needed beyond the optical disk. The outer low
+and pv7), we observe the opposite trend: the linewidth surface brightness ring is modeled best with an inclination
+of the emission at negative offsets is significantly smaller of 87◦ .
+
+10
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+Fig. 9. NGC 2683 Hi C+D array and model position velocity diagrams. The contour levels are
+(−2, 2, 3, 6, 12, 24, 48, 96) × 0.3 mJy/beam. The resolution is 1900 × 1800 . The different warp models refer to the profiles
+of Fig. 8.
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+11
+
+4.4. Rotation velocity lag
+Thick Hi components with lagging rotation velocities
+are observed in NGC 891 (Oosterloo et al. 2007) and
+NGC 3198 (Gentile et al. 2013), among others. While
+Oosterloo et al. (2007) modeled the thick component separately by assigning it a lower rotation velocity, Gentile
+et al. (2013) assumed a constant vertical gradient. We assumed a linear vertical gradient of the following form:
+vrot (z) = vrot,0 − ξ (
+
+z
+),
+1.0 kpc
+
+(7)
+
+where vrot,0 is the axisymmetric rotation velocity and
+ξ = 5 , 10, 15 km s−1 . These gradients are comparable
+to those found in NGC 891 and NGC 3198 (∆v/∆z ∼
+7 − 15 km s−1 kpc−1 ). Since we are interested in a lagging
+Hi halo, different Hi halos with the different velocity lags
+are presented in Fig. 17 (for the halo component, we refer
+to Sect. 5.5). The velocity lag makes the radial velocities of
+gas at high altitudes (or offsets) increase/decrease toward
+the systemic velocity (see also Sect. 5.5).
+Fig. 10. Model disk flares.
+
+4.3. The disk flare
+As shown in the previous section, the observed position
+velocity diagrams beyond the optical radius cannot be reproduced by a tilted ring model that only includes a thin
+disk (columns TD in Figs. A.1 and A.2). We therefore introduced a flaring gas disk into our model. The disk flare
+was modeled by an exponential rise in the disk height
+H(R)=FWHM/2. The maximum disk width FWHM is
+set by the comparison between (i) the outer contours of
+the model and observed Hi moment 0 maps and (ii) the
+D array position velocity diagrams beyond the optical radius: FWHM=2.6 kpc. We varied the radial scale length
+of the exponential rise of H(r) between 9 kpc and 2 kpc.
+Moreover, we assumed that the flare saturates at a width
+of 4 kpc and might decrease at larger radii. The four different types of warps that we tested in our model (F0 –
+F3) are shown in Fig. 10.
+For the vertical distribution of the atomic gas density,
+we additionally tested an exponential and a sech2 profile (Fig. A.3). We adapted the respective scale heights
+to obtain the same FWHM for all profiles. Whereas the
+sech2 profile is indistinguishable from the sech profile, the
+exponential vertical profile broadens the position velocity
+diagrams in the velocity direction. Since this broadening is
+consistent with most of the observed position velocity diagrams, an exponential vertical distribution might be the
+better choice. Keeping this in mind, we decided to keep
+the vertical sech profile of Eq. 6 which is in between the
+isothermal (sech2 ) and the exponential case.
+
+5. Comparison with observations
+For the following comparison between models and observations, we started with an inclined thin disk model and
+then successively added a decreasing velocity dispersion
+(Vd), an elliptical component (E), a warp in position angle (PA) and inclination angle (INC), the different flare
+profiles (F0-F3), a rotation velocity lag (L), and an Hi
+halo (H). For the models including a disk flare, only the
+best-fit warp of Sect. 4.2 was considered. The gas distribution maps (Fig. 15) and nine position velocity diagrams
+along the galaxy’s minor axis were then calculated in the
+same way as for the observations (Figs. 11, 12, B.4, and
+B.6).
+
+5.1. Position velocity diagrams
+The addition of the elliptical disk component is necessary to reproduce the asymmetric emission distribution in
+the position velocity diagrams of the inner gas disk (pv4,
+pv6, and pv7; compare column TD with column TD+E of
+Figs. A.1 and A.2). The addition of a warp along the line of
+sight leads to an increased spatial extent of the V-shaped
+emission distribution (with two “legs”) at velocities close
+to the systemic velocity in the position velocity diagram
+(the legs of the V are curved outwards). This leads to a
+closer resemblance between the model and observed position velocity diagrams of the inner disk mostly on the
+receding side (pv6 and pv7; compare column TD+E with
+column TD+E+i1 of Figs. A.1 and A.2). On the approaching side, the warp model is consistent with the observed
+position velocity diagram pv3. However, the increased spatial extent of the V-shaped emission distribution is not
+observed in pv4.
+The different flare models lead to different spatial extents of the emission in the position velocity diagrams at
+
+12
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+Fig. 11. NGC 2683 Hi D array and model position velocity diagrams. The model includes a thin disk, an elliptical
+component (E), a warp in inclination (i1), a radially decreasing velocity dispersion (Vd), and a flare (F0-F3; see
+Fig. 10). The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96) × 0.7 mJy/beam. The resolution is 6100 × 5100 .
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+13
+
+Fig. 12. NGC 2683 Hi C+D array and model position velocity diagrams. The model includes a thin disk, an elliptical
+component (E), a warp in inclination (i1), a radially decreasing velocity dispersion (Vd), and a flare (F0-F3; see
+Fig. 10). The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96) × 0.3 mJy/beam. The resolution is 1900 × 1800 .
+
+14
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+different galactic radii (flares F0 - F3 in Fig. 11 (D array) and 12 (C+D array)). We discuss these differences
+from negative (pv1) to positive offsets (pv9). If not stated
+otherwise, the discussed features are present in the D and
+C+D array data.
+pv1: Model F0/F3 shows the largest/smallest spatial extent of the Hi emission, comparable to or somewhat
+smaller than the observed extent. The model flares F0,
+F1, and F2 resemble the observed emission distribution
+most closely.
+pv2: Models F0-F2 show the largest spatial extents of the
+high column density Hi emission, somewhat larger than
+the observed extent. The observed low column density extension to negative offsets (D array data) is not present
+in model F0. Model F3 resembles the observed emission
+distribution most closely.
+pv3: The observed emission distribution is not reproduced
+well by the flare models. The legs of the V-shaped structure are too thin for the model flares F0 and F1 (C+D array data). The spatial extent of the observed emission distribution is small at low velocities, but significantly larger
+for the model F2 (C+D array data). The model F3 represents a compromise that is marginally consistent with
+observations.
+pv4: As for pv3, the legs of the V-shaped emission distribution are too thin for the model flares F0/F1 and too
+thick for the model F2 in the C+D array data. This effect
+is less obvious in the D array data. The model F3 resembles the observed emission distribution most closely.
+pv5: The observed asymmetric emission is not reproduced
+by our models.
+pv6: As for pv3, the legs of the V-shaped emission distribution are too thin for the model flares F0/F1. The
+width of the leg at negative offsets is reproduced better
+by model F2, and the leg at positive offsets by model F3.
+This is most visible in the C+D data.
+pv7: The spatial extent of the observed emission distribution is small at low velocities and significantly larger for
+model F2. The legs of the V-shaped emission structures
+of the models flares F0 and F1 are thinner than the corresponding observed structures (most visible in the C+D
+array data). Model flare F3 represents a compromise that
+is most consistent with observations.
+pv8: The observed high column density part of the emission distribution is located at somewhat higher velocities
+than the low column density part. This feature is not reproduced by our models. The observed extent of the low
+column density emission to negative offsets (D array data)
+is not present in model F0. Models F1-F3 approximately
+reproduce the observed emission distribution.
+pv9: The spatial extent of the emission distribution of
+models F0, F1, and F2 are larger than observed. Only
+model F3 reproduces the observed extent.
+
+We conclude that model F3 is most consistent with our
+Hi observations.
+
+5.2. Selected channel maps
+Selected channel maps of the different models and the Hi
+observations are shown in Fig. 13 for the D array and in
+Fig. 14 for the C+D array data. A decreasing inclination
+angle leads to an increasing angle of the horizontal Vshaped emission structure (the V becomes wider) in the
+channel maps. This is visible the most in the C+D data
+between 300 and 506 km s−1 (Fig. B.2). The model with a
+varying inclination angle (TD+E+INC) reproduces observations better than the model with a constant inclination
+angle (TD+E).
+The addition of a flare to the model leads to an increased extent for the emission distribution in the vertical
+direction. This effect is visible best in the channel maps
+between 299 and 508 km s−1 (Fig. 13). The legs of the
+horizontal V-shaped emission distribution are too thin for
+models F0 and F1 (at 299, 454, 508 km s−1 ). The difference between models F2 and F3 is less obvious in the
+channel maps.
+We conclude that models F2 and F3 reproduce the
+selected channel maps best.
+
+5.3. Atomic gas distribution
+The atomic gas distributions of the models with different flares F0 to F3 are shown in Fig. 15 for the D and
+C+D array data. While the inner high column density Hi
+disk is barely affected by the different flare models, the
+main differences are observed at the lowest column densities. Only models F2 and F3 show the observed extent
+perpendicular to the major axis. We note that the largest
+vertical extent occurs along the minor axis (owing to axisymmetry) in the models, whereas it occurs at an offset
+of ∼ 40 along the major axis in our observations. This suggests that either the observed Hi flare is not axisymmetric
+or the disk volume is not uniformly populated by atomic
+gas. As observed in all model maps, two gas blobs, which
+we interpret as the lobes of a ring structure, are located
+at the extremities of the gas disk (R = 110 = 24.6 kpc).
+By construction, they are vertically offset from the disks
+major axis.
+We thus conclude that models F2 and F3 show the
+best resemblance to our Hi observations with a slight preference for model F3 (Sect. 5.1). In the following we refer
+to the model with the elliptical component, with an inclination varying by 10◦ , and flare F3 as the best-fit model
+(F3+E+INC).
+The relative and absolute residual column density of
+the best-fit model are presented in Fig. 16 for the D and
+C+D data separately. Most residuals are asymmetric with
+respect to the major and minor axes and most probably caused by non-axisymmetric features in the observed
+atomic gas surface density. Within the inner 40 , negative residuals are located at positive/negative offsets on
+the x/y-axis and negative/positive offsets on the x/y-axis.
+These residuals are probably due to the spiral structure
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+15
+
+Fig. 13. Selected Hi D array and model channel maps. The model includes a thin disk, an elliptical component (E), a
+warp in inclination (INC), a radially decreasing velocity dispersion (Vd), a flare (F0-F3; see Fig. 10), and an Hi halo
+(H2). The offsets along the x- and y-axis are in arcmin. The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96)×0.8 mJy/beam.
+The resolution is 6100 × 5100 . The galaxy was rotated by 45◦ .
+
+5.4. The rotation velocity lag
+Since the gas disk has a significant vertical extent only
+at galactic radii > 12 kpc, the effects of the lag are only
+visible in pv1-pv3 and pv7-9, shifting the emission distribution toward velocities closer to the systemic velocity.
+This only improves the resemblance between our model
+and observations for the outermost radius (pv1 and pv9).
+The addition of the rotation velocity lag changes the emission distribution significantly in four channels (186, 248,
+537, and 599 km s−1 ), but does not significantly improve
+the resemblance between our models and observations.
+We conclude that a rotation velocity lag is not a necessary ingredient for our model.
+
+5.5. Atomic gas halo
+
+Fig. 16. Upper panels: residual column density from the
+best-fit model. Lower panels: relative residual column density from the best-fit model. Left: D array; right: C+D
+array data. The offsets along the x- and y-axes are in arcmin.
+
+The origins of Hi halos are thought to be (i) a continuous
+galactic fountain flow, where gas is pushed up by stellar
+activity, travels through the halo and eventually falls back
+to the disc (Fraternali & Binney 2006) or (ii) external gas
+accretion. For case (i) we expect an Hi halo within a radius
+of R < 10 kpc where the molecular gas surface density and
+star formation activity is high (Fig. 5 and 20). For case (ii)
+the halo can extend to larger galactic radii. However, it
+can be most clearly identified in the inner disk R < 10 kpc,
+where warps and flares are rare.
+
+of the gas disk. For galactic radii between 40 and 60 , the
+residuals are mostly positive.
+
+Is there an extended atomic gas halo around the thin
+gas disk inside the optical radius? To answer this question,
+
+16
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+Fig. 14. Selected Hi C+D array and model channel maps. The model includes a thin disk, an elliptical component (E),
+a warp in inclination (INC), a radially decreasing velocity dispersion (Vd), a flare (F0-F3; see Fig. 10), and an Hi halo
+(H2). The offsets along the x- and y-axis are in arcmin. The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96)×0.4 mJy/beam.
+The resolution is 1900 × 1800 . The galaxy was rotated by 45◦ .
+we introduced an additional thick gas disk of the following
+form (Oosterloo et al. 2007):
+ρhalo = χ ρdisk
+
+sinh(z/z0 )
+,
+cosh(z/z0 )2
+
+(8)
+
+where ρdisk is the density of the gas disk, and vertical
+z0 the scale height in kpc. We used the following combinations of (χ, z0 ): H1=(0.3, 0.75), H2=(0.2, 1.0), and
+H3=(0.1, 1.25). This thick gas halo does not show up in
+the position velocity diagrams nor in the selected channel maps of the low resolution (D array) model. However,
+it is clearly visible in the position velocity diagrams and
+channel maps of the inner disk (Fig. 17 pv3, pv4, pv6, and
+pv7) in the high resolution (C+D array) model in form
+of a low column density envelop around the thin disk.
+The comparison with our preferred model (right panels of
+Fig. 12) shows that this additional envelop is not present
+in the observed position velocity diagrams. This statement
+is confirmed by the direct comparison between the channel
+maps of the models with and without an Hi halo (Fig. 14).
+We conclude that NGC 2683 does not host an extended
+Hi halo around the optical and thin gas disk with column
+densities in excess of ∼ 3 × 1019 cm−2 . The addition of a
+velocity lag does not change our conclusion.
+
+6. Discussion
+The main ingredients of our best-fit model of the gas disk
+are (i) a thin disk; (ii) an elliptical surface density distribution of the gas disk; (iii) a slight warp in inclination between 10 kpc≤ R ≤ 20 kpc; (iv) an exponential flare that
+
+rises from 0.5 kpc at R = 9 kpc to 4 kpc at R = 15 kpc,
+stays constant until R = 22 kpc, and decreases its height
+for R > 22 kpc (Fig. 10); and (v) a low surface density gas
+ring with a vertical offset of 1.3 kpc. Based on the comparison between the high resolution model and observations,
+we exclude the possibility that there is an extended atomic
+gas halo around the optical and thin gas disk (Fig. 17).
+
+6.1. Uncertainties of the derived parameters
+The absence of an objective measure for the goodness of
+our model fits led to it not being possible to give precise uncertainties for the derived model parameters. Here
+we give estimates based on our experience with the comparison between our models and observations: the inclination angle of the thin disk is uncertain to ∆i ∼ 3◦ . The
+uncertainty of the rotation velocity ∆vrot ∼ 10 km s−1
+is mainly given by the spectral resolution. The lower
+limit of the K0 band mass-to-light ratio is determined
+by the typical velocity dispersion of nearby spiral galaxies. We estimate the uncertainty to be ∆(M/LK0 ) ∼ 0.3.
+Thus, our preferred value of M/LK0 = 0.9 ± 0.3 is significantly higher than the mean value of the DiskMass
+Survey (M/LK0 = 0.31 ± 0.07). Only one galaxy in this
+surveys has a comparable mass-to-light ratio. The uncertainty of the rotation curve of the dark matter halo is
+dominated by the uncertainty of the mass-to-light ratio in
+the inner disk (∆vDM ∼ 20-30 km s−1 ). At R > 10 kpc,
+the latter uncertainty decreases and the uncertainty of
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+17
+
+Fig. 15. Model gas distribution maps. Left column: D array; right column: C+D array data. Upper panels: observations;
+lower panels: models with an elliptical component (E), a warp in inclination (INC), and the warps F0-F3; best-fit (F3
++ warp) model. The contours are the same as for Fig. 2.
+
+18
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+Fig. 17. Selected position velocity diagrams. C+D observations and models with a thin disk (TD), an elliptical
+component (E), a warp in inclination (i1), a centrally increasing velocity dispersion (Vd), different Hi halos (H1-H3),
+and different velocity lags (L1, L2, L3: 5, 10, 15 km s−1 kpc−1 ). The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96) ×
+0.3 mJy/beam. The resolution is 1900 × 1800 .
+the total rotation velocity is no longer negligible, yielding
+∆vDM ∼ 15 km s−1 .
+For the disk warp (inclination and position angle), we
+used a limited number of characteristic profiles. The bestfit profile of the inclination angle (Fig. 8) has a maximum
+variation of 10◦ . We estimate the uncertainty on the radial variation of the profile to be on the order of 30 %.
+We did not observe any improvement in the model fit by
+a variation in the position angle. The uncertainty on this
+profile is about 3-4◦ . For the disk flare, we also used a limited number (4) of characteristic profiles. Since the model
+with flare F3 (Fig. 10) reproduces our observations better
+(see Sect. 5.1), we suggest that the height of the flaring
+disk decreases at large galactic radii. We can give a lower
+
+limit for the slope of the flaring part (model F1 is discarded) and a tendency to prefer a flare that does not rise
+too steeply (model F3 is somewhat preferred to model F1).
+Thus a flare profile between model profiles F2 and F3 is
+possible. The maximum height of the flare is determined
+by the moment0 maps and the D array position velocity
+diagrams. It is uncertain to a fraction of the C+D array
+resolution, i.e. ∼ 0.3 kpc.
+
+6.2. Comparison with other Hi flares
+In Fig. 18 we compare the flare of NGC 2683 with that
+of the Galaxy (Kalberla & Kerp 2009) and other nearby
+spiral galaxies (O’Brien et al. 2010). For this comparison
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+19
+
+Fig. 18. Comparison between the flare of the gas disk and
+those of other spiral galaxies.
+we set the Hi radius of NGC 2683 to 17 kpc. The slope
+of NGC 2683’s flare is comparable, but somewhat steeper
+than those of the other spiral galaxies. NGC 2683’s maximum height of the flare is also comparable with those of
+the other galaxies. On the other hand, a saturation of the
+flare is only observed in NGC 2683.
+
+6.3. The vertical velocity dispersion of the gas
+We can go another step forward and calculate the velocity dispersion of the gas within the disk assuming that
+it is vertically sustained by turbulent motions. If vertical
+pressure equilibrium is assumed (see, e.g., Ostriker et al.
+2010):
+2
+ρvturb
+=
+
+1
+ρDM
+vturb 
+πGΣ Σ(1 +
+) + Σ∗ ∗
+,
+2
+ρ
+vdisp
+
+(9)
+
+where vturb is the vertical turbulent velocity of the gas,
+G the gravitation constant, Σ = ρ H the gas surface density, ρ the gas density, ρDM the dark matter density, Σ∗
+∗
+the stellar surface density, and vdisp
+the stellar vertical
+dispersion velocity. The dark matter density is derived
+from the decomposition of the rotation curve (Fig. 4) and
+ρDM = (vDM /R)2 /(4πG). As before, we used K’ band
+mass-to-light ratios from 0.5 to 1.3. The stellar velocity
+dispersion is calculated assuming a constant vertical scale
+height of the stellar disk (Eq. B3 of Leroy et al. 2008),
+which is 1/7.3 times the radial scale length (Kregel et al.
+2002). Since the uncertainty of this fraction (1/(7.3±2.2))
+resembles that of the K’ band mass-to-light ratio, we estimate the uncertainty of the velocity dispersion to be
+∆vturb ∼ 2 km s−1 .
+
+Fig. 19. Upper panel: vertical velocity dispersion of the
+gas halo of NGC 2683. Lower panel: derived Toomre Q parameter. NFW halo and isothermal halo (ISO). The colors
+indicate different K’ band mass-to-light ratios from blue
+(0.5) to red (1.3).
+The derived vertical velocity dispersion of the gas
+decreases monotonically with increasing radius from
+10 km s−1 in the inner disk (R = 1 kpc) to 7 km s−1
+at R = 10 kpc (Fig. 19). This is a typical behavior for
+nearby spiral galaxies (Tamburro et al. 2009, Fraternali et
+al. 2002). Within the flare (R = 12 kpc and 16 kpc), it
+increases to 12 km s−1 and then decreases monotonically.
+We believe that the increase is real, but its exact shape is
+mostly caused by our choice of the flare profile (Fig. 10),
+
+20
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+which leads to a satisfactory reproduction of our observations.
+
+6.4. The Toomre Q parameter
+The Toomre stability parameter is
+Q=
+
+vturb Ω
+,
+πGΣtot
+
+(10)
+
+where Σtot is the total gas surface density (see Sect. 4),
+and Ω = vrot /R. The Toomre parameter is about Q = 4-7
+for radii smaller than 10 kpc. It then increases slightly to
+Q = 8 at 13 kpc, stays constant until R = 17 kpc, and
+then rises steeply to a maximum of Q ∼ 60 at 20 kpc. The
+Hi ring at the extremity of the gas disk shows a relatively
+low Toomre parameter of Q ∼ 6. With such high Q values,
+NGC 2683 is similar to NGC 3351 and NGC 2841 (Leroy
+et al. 2008).
+
+6.5. The missing Hi halo
+NGC 2683 does not host an Hi halo around its optical disk
+and thin Hi disk. This is consistent with the flocculent
+appearance of its disk on public HST images. Why does
+another equally massive spiral galaxy (vrot ∼ 200 km s−1 ),
+NGC 891, host an extended Hi halo, whereas we can exclude the existence of such a gas halo for NGC 2683? The
+absence of a large-scale extended gaseous halo in the massive edge-on galaxy NGC 4565 (Heald et al. 2011) can be
+explained by its much lower energy injection rate compared to NGC 891. Is this also the case for NGC 2683?
+Within the optical disk (R < 90 ) of spiral galaxies,
+the thickness of gas disks can be explained well by energy injection via supernovae explosions (galactic fountains; Shapiro & Field 1976, Bregman 1980) and the vertical restoring force. This force mainly depends on the disk
+mass surface density (gas and stars, see Eq. 9). Because
+NGC 2683 has a lower stellar mass than NGC 891, we do
+not expect its disk restoring force to be higher than that
+of NGC 891. The energy injection rate is proportional to
+the local star formation rate ∆E/(∆t∆A) ∝ Σ̇∗ .
+The star formation rate based on FIR emission of
+NGC 891 is 3.8 M yr−1 (Popescu et al. 2004). NGC 2683’s
+star formation rate based on radio continuum emission of
+0.8 M yr−1 (Irwin et al. 1999) is thus about five times
+lower than that of NGC 891. On the other hand, the flux
+ratios between NGC 891 and NGC 2683 in the IRAS
+100 µm band (Sanders et al. 2003) and Spitzer MIPS
+70 µm and 160 µm bands are found to be around 5.5.
+Assuming distances of 9.5 Mpc and 7.7 Mpc for NGC 891
+and NGC 2683, respectively, we infer the star formation
+of NGC 2683 to be about eight times lower than that of
+NGC 891.
+To compare the local energy injection of the two galaxies, we show the Spitzer MIPS 70 µm and 160 µm surface
+brightness profiles along the galaxies’ major axis summed
+over the minor axis in Fig. 20. NGC 2683 has a star formMpc
+ing disk that is about 1.7× 9.5
+7.7 Mpc = 2 times less extended
+
+Fig. 20. Spitzer MIPS 70 µm and 160 µm surface brightness profiles of NGC 891 (upper solid lines) and NGC 2683
+(lower solid lines) along the major axis summed over the
+minor axis. Dotted lines: profiles of NGC 2683 stretched
+by a factor 1.7 and multiplied by a factor 3.5.
+than NGC 891. This is expected based on the smaller
+scale length of the stellar disk (1.5 kpc compared to 4 kpc
+for NGC 891; Schechtman-Rook & Bershady 2013). The
+nearly 3.5 times lower surface brightness of the edge-on
+profile translates into a 3.5/2.0 = 1.8 times lower local
+star formation rate or energy injection rate of NGC 2683
+than for NGC 891. In the innermost disk where the local
+star formation rate is high, the deep galactic gravitational
+potential probably prevents the formation of a significant
+Hi halo.
+We conclude that the small extent of the star forming
+disk and the low local star formation rate of NGC 2683
+explains the absence of an extended Hi halo around the
+optical disk. Indeed, the Hi halo of NGC 891 is the most
+prominent at galactic radii between 2.5 and 15 kpc (Fig. 13
+of Oosterloo et al. 2007), whereas the star forming disk of
+NGC 2983 only extends to ∼ 3 kpc.
+
+6.6. How to sustain the flaring Hi disk
+NGC 2683’s gas disk is flaring so is very thick at radii well
+beyond the optical radius where the rate of star formation
+is very low or even nonexistent. A galactic-fountain origin
+for the flare gas beyond the optical radius is thus excluded.
+For the majority of the flare region, the gas velocity dispersion is well above the speed of sound (∼ 6 km s−1 ).
+To maintain the gas velocity dispersion at this high level,
+four physical mechanisms can be suggested:
+– energy injection by supernovae,
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+– magneto-rotational instabilities (Balbus & Hawley
+1991),
+– ISM stirring by dark matter substructure,
+– external gas accretion.
+In the following we compare the energy injection rates
+of these mechanisms with the energy dissipation rate via
+turbulence.
+Energy injection by supernovae: Following Vollmer &
+Beckert (2003) energy flux conservation between the energy injection via supernovae and the energy dissipation
+rate via turbulence is
+v2
+Σν 2turb = ξ Σ̇∗ ,
+ldriv
+
+(11)
+
+where ν = vturb ldriv is the gas viscosity, ldriv the turbulent driving length scale, and ξ = 3.6 × 10−8 pc2 yr−2 is
+normalized by the Galactic supernova rate. For a driving
+length scale of ldriv = 1 kpc, a turbulent velocity of vturb =
+8 km s−1 , and a gas surface density of Σ = 0.5 M pc−2 ,
+we obtain Σ̇∗ = 8×10−12 M yr−1 pc−2 . Such levels of star
+formation are observed in the outer disks of nearby spiral
+galaxies (Bigiel et al. 2010). The energy injection rate is
+∆E∗ /(∆A ∆t) ∼ 2 × 10−8 erg cm−2 s−1 .
+Magneto-rotational instabilities: Following Tamburro
+et al. (2009), the energy injection rate by magnetorotational instabilities for a disk height of 1 kpc, a magnetic field strength of 1 µG, and an angular velocity of Ω =
+10−8 yr−1 are ∆EMRI /(∆A ∆t) ∼ 2 × 10−8 erg cm−2 s−1 .
+The energy injection due to magneto-rotational instabilities is thus comparable to the one caused by supernovae.
+ISM stirring by dark matter substructure: For the stirring of the gas disk by the dark matter substructure, we
+can estimate the energy deposited by a dark matter subhalo crossing the disk is ∆E ∼ Mhalo v 2 . The timescale
+of interactions between a halo of mean mass Mhalo is tcoll .
+The energy injection rate is thus
+∆E
+N Mhalo v 2
+=
+.
+∆A∆t
+πR2 tcoll
+
+(12)
+
+We assume v = 150 km s−1 , Mhalo = 107 M , R = 20 kpc,
+and a collision timescale tcoll ∼ πR/v ∼ 4 × 108 yr. With
+N ∼ 20, a fraction of  ∼ 0.03 of the halo’s kinetic energy
+has to be injected into the ISM to balance the energy
+dissipation rate via turbulence.
+External gas accretion: In the case of external accretion, one can estimate the necessary infall velocity vinfall
+to maintain local gas turbulence via the following energy
+flux conservation equation:
+v3
+Ṁ 2
+Σ turb =
+v
+,
+H
+∆A infall
+
+(13)
+
+where Ṁ ∼ 0.2 M yr−1 (Sancisi et al. 2008) is the external mass accretion rate, Σ = 0.5 M pc−2 , H = 3 kpc,
+and ∆A ∼ π(20 kpc)2 . With these numbers we obtain
+vinfall ∼ 24 km s−1 . The local dissipation timescale of turbulence is close to the crossing time tcross ∼ H/vturb ∼
+
+21
+
+3 × 108 yr (Mac Low et al. 1999). The timescale of external accretion is tacc ∼ MouterHI /Ṁ ∼ 3 Gyr, where
+MouterHI ∼ 6 × 108 M is the mass of the flaring part of
+the gas disk. Thus, it is only possible to maintain ISM turbulence by external gas accretion if the local dissipation
+timescale of turbulence is decreased by a factor of about
+ten with respect to its value for fully developed turbulence
+in a star forming disk.
+For accreting thick gas tori around active galactic nuclei, Vollmer & Davies (2013) suggest that massive and
+rapid gas accretion can lead to adiabatic compression of
+the ISM. This leads to (i) an increase in the gas velocity
+dispersion, (ii) intermittent turbulence, and (iii) quenching of star formation. Vollmer & Davies (2013) propose
+that turbulent adiabatic compression can lead to intermittent turbulence and a subsequent decrease in the local
+dissipation timescale of turbulence (by the area filling factor of dense clumps or clouds). This mechanism might also
+act in the flaring gas disk of NGC 2683.
+From these estimates none of the suggested mechanisms, which might be responsible for the driving of ISM
+turbulence, can be discarded. All effects might contribute
+to setting the overall velocity dispersion, but locally one
+of the four mechanisms might dominate according to the
+local conditions. The existence of the complex large-scale
+warping (Sect. 4) with asymmetries (Sect. 5.3) and smallscale structure (Sect. 3.1) might indicate that large scale
+external gas accretion has occurred and/or is occurring in
+NGC 2683. Alternatively, a triaxial dark matter halo can
+also induce a large-scale warp (e.g., Binney 1992). Since Hi
+distributions of most spiral galaxies, which extend beyond
+the optical disk, show warps (Garcia-Ruiz et al. 2002) and
+are flared (O’Brien et al. 2010), we propose the following
+scenario for NGC 2683:
+– Recent external gas accretion (within the last few Gyr)
+has added the atomic gas beyond the optical diameter
+(see van der Kruit 2007).
+– Since the angular momentum of the infalling gas is not
+expected to be the same as that of the disk, a kinetic
+and spatial warp forms.
+– During circularization, gas is compressed in colliding
+rotating gas streams/arms.
+– If the compression is adiabatic, i.e. it increases the gas
+velocity dispersion, ISM turbulence becomes intermittent and star formation is quenched. In this case gas
+compression feeds and maintains the ISM turbulence.
+– If the compressed turbulent gas can dissipate the injected mechanical energy, star formation proceeds in
+the compression region and the energy injection by
+subsequent SN explosions feeds and maintains ISM
+turbulence.
+– Since we expect equipartition between the turbulent
+kinetic energy and the magnetic field energy, magnetorotational instabilities might become important in regions where turbulence has enhanced the magnetic
+field.
+
+22
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+This rather speculative scenario might be valid for other
+spiral galaxies with extended low surface density atomic
+gas. In addition, a triaxial halo might induce and/or modify a warp of the outer Hi disk.
+
+7. Conclusions
+New deep VLA D array Hi observations of the nearby
+highly inclined spiral galaxy NGC 2683 have been presented. Archival C array data were processed and added
+to the new observations. In the D array data an rms noise
+level of 1.0 mJy/beam is reached in a 5.16 km s−1 channel.
+The total Hi mass of NGC 2683 is MHI = 1.42 × 109 M .
+As already shown by Casertano & van Gorkom (1991),
+the gas disk extends up to about three times the optical
+radius. At the extremity of the Hi disk (∼ 27 kpc), we
+observe a ring-like structure whose projected surface density distribution has a blob-like structure. The position
+velocity diagram along the major axis does not show any
+counter-rotating gas.
+To investigate the 3D structure of the atomic gas disk,
+we made different 3D models for which we produced model
+Hi data cubes. These models have the following main components: (i) a thin gas disk with a thickness of 500 pc,
+(ii) different gas flares at galactic radii larger than 9 kpc
+(Fig. 10), (iii) a possible warp of the disk, and (iii) an
+outer gas ring (R > 25 kpc).
+The main ingredients of our best-fit model are: (i) a
+thin disk inclined by 80◦ , (ii) a crude approximation of
+spiral and/or bar structure by an elliptical surface density
+distribution of the gas disk, (iii) a slight warp in inclination
+between 10 kpc≤ R ≤ 20 kpc, (iv) an exponential flare
+that rises from 0.5 kpc at R = 9 kpc to 4 kpc at R =
+15 kpc, stays constant until R = 22 kpc, and decreases its
+height for R > 22 kpc (flare F3 in Fig. 10), and (v) a low
+surface density gas ring with a vertical offset of 1.3 kpc.
+The slope of NGC 2683’s flare is comparable, but
+somewhat steeper than those of other spiral galaxies.
+NGC 2683’s maximum height of the flare is also comparable with those of other galaxies. On the other hand, a
+saturation of the flare is only observed in NGC 2683.
+Based on the comparison between the high resolution
+model and observations, we excluded that there is an extended atomic gas halo around the optical and thin gas
+disk (Figs. 12 and 14). By comparing the disk properties
+(local star formation rate and mass surface density) of
+NGC 2683 with that of NGC 891, we concluded that the
+small extent of the star forming disk and the low local star
+formation rate of NGC 2683 might explain the absence of
+an extended Hi halo around the optical disk.
+Under the assumption of vertical hydrostatic equilibrium, we derived the vertical velocity dispersion of the
+gas. As in other nearby galaxies (Tamburro et al. 2009,
+Fraternali et al. 2002), the velocity dispersion decreases
+monotonically with increasing radius within the optical
+disk. The velocity dispersion in the inner disk is about
+8 km s−1 .
+
+Since the gas disk flares, i.e. is considerably thick, beyond the optical radius where star formation is low or
+even absent, it is improbable that galactic fountains are
+responsible for the high velocity dispersion (exceeding the
+thermal velocity dispersion). We estimated the energy dissipation rate due to turbulence and compared it to the
+energy injection rates due to (i) supernova explosions, (ii)
+magneto-rotational instabilities, (iii) ISM stirring by dark
+matter substructure, and (iv) external gas accretion. It
+is found that none of these mechanisms can be definitely
+discarded.
+The existence of the complex large-scale warping
+(Sect. 4) and asymmetries (Sect. 5.3) indicates that large
+scale external gas accretion has occurred and/or is occurring in NGC 2683. Since most galaxies with Hi distributions extending beyond the optical disk show warps
+(Garcia-Ruiz et al. 2002) and are flared (O’Brien et al.
+2010), we propose a scenario where recent external gas
+accretion (within the last view Gyr) has added the atomic
+gas beyond the optical radius, in which a kinetic and spatial warp forms. During circularization, gas is compressed
+in colliding rotating gas streams/arms. If the compression
+is adiabatic, i.e. it increases the gas velocity dispersion,
+ISM turbulence becomes intermittent and star formation
+is expected to be quenched. In this case gas compression
+feeds and maintains the ISM turbulence. If the compressed
+turbulent gas can dissipate the injected mechanical energy,
+star formation proceeds in the compression region, and the
+energy injection by subsequent SN explosions feeds and
+maintains ISM turbulence.
+Acknowledgements. We would like to thank the anonymous
+referee for constructive comments that helped to improve this
+article significantly.
+
+References
+Balbus, S.A.;, Hawley, J.F. 1991, ApJ, 376, 214
+Barbieri, C.V., Fraternali, F., Oosterloo, T., et al. 2005, A&A,
+439, 947
+Bell, E.F.; McIntosh, D.H., et al. 2003, ApJS, 149, 289
+Bigiel, F., Leroy, A., Walter, F., et al. 2010, AJ, 140, 1194
+Binney, J. 1992, ARA&A, 1992, 30, 51
+Boomsma, R., Oosterloo, T.A., Fraternali, F., van der Hulst,
+J.M., Sancisi, R. 2005, A&A, 431, 65
+Boomsma, R., Oosterloo, T.A., Fraternali, F., van der Hulst
+J.M., & Sancisi, R. 2008, A&A, 490, 555
+Bournaud, F., Combes, F., Jog, C.J., & Puerari, I., 2005, A&A,
+438, 507
+Bregman, J.M. 1980, ApJ, 236, 577
+Brinks, E., Burton, W.B. 1984, A&A, 141, 195
+Casertano, S. & van Gorkom, J.H. 1991, AJ, 101, 1231
+Chaves, T. A. & Irwin, J. A. 2001, ApJ, 557, 646
+Courteau, S., Dutton, A.A., van den Bosch, F.C., et al. 2007,
+ApJ, 671, 203
+Dahlem, M., Lisenfeld, U., & Rossa, J. 2006, A&A, 457, 121
+de Vaucouleurs, G., de Vaucouleurs, A., Corwin, J.R. 1976,
+Second reference catalogue of bright galaxies, 1976, Austin:
+University of Texas Press.
+Elfhag, T., Booth, R.S., Höglund, B., et al. 1996, A&AS, 115,
+439
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+Fraternali, F., van Moorsel, G., Sancisi, R., Oosterloo, T. 2002,
+ApJ, 123, 3124
+Fraternali, F. & Binney, J.J. 2006, MNRAS, 366, 449
+Garca-Ruiz, I., Sancisi, R., Kuijken, K. 2002, A&A, 394, 769
+Gentile, G., Jozsa, G.I.G., Serra, P., et al. 2013, A&A, 554,
+A125
+Heald, G., Józsa, Serra, P., et al. 2011, A&A, 528, 118
+Irwin, J. A., English, J., Sorathia, B. 1999, AJ, 117, 2102
+Kalberla, P.M.W., Kerp, J. 2009, ARA&A, 47, 27
+Kamphuis, P., Rand, R.J., Józsa G.I.G. et al. 2013, MNRAS,
+434, 2069
+Kent, S.M. 1985, ApJS, 59, 115
+Kregel, M., van der Kruit, P.C., & de Grijs, R. 2002, MNRAS,
+334, 646
+Kregel, M. & van der Kruit, P.C. 2004, MNRAS, 352, 787
+Kuzio de Naray, R., Zagursky, M.J., & McGaugh, S.S., 2009,
+AJ, 138, 1082
+Leroy, A. K., Walter, F., Brinks, E., et al. 2008, AJ, 136, 2782
+Lucy L.B. 1974, AJ, 79, 745
+MacLow, M.-M. 1999, ApJ, 524, 169
+Martinsson, T.P.K., Verheijen, M.A.W., Westfall, K.B., et al.
+2013, A&A, 557, A131
+Matthews, L.D., Wood, Kenneth 2003, ApJ, 593, 721
+Napier, P.J., Thompson, A.R., Ekers, R.D. 1983, IEEEP, 71,
+1295
+Nilson, P., 1973, Uppsala General Catalogue of Galaxies,
+1973, Acta Universitatis Upsalienis, Nova Regiae Societatis
+Upsaliensis, Series v: a Vol.
+O’Brien, J.C., Freeman, K.C., van der Kruit, P.C., 2010, A&A,
+515, 62
+Oosterloo, T., Fraternali, F., & Sancisi, R. 2007, AJ, 134, 1019
+Ostriker, E.C., McKee, C.F., & Leroy, A.K. 2010, ApJ, 721,
+975
+Peng, C.Y., Ho, L.C., Impey, C.D., Rix, H.-W. 2002, AJ, 124,
+266
+Pérez, I., Fux, R., & Freeman, K. 2004, A&A, 424, 799
+Popescu, C.C., Tuffs, R.J., Kylafis, N.D., Madore, B.F. 2004,
+A&A, 414, 45
+Rand, R.J. & Benjamin, R.A. 2008, ApJ, 676, 991
+Rossa, J., Dettmar, R.-J. 2003, A&A, 406, 493
+Sancisi, R., Fraternali, F., Oosterloo, T., & van der Hulst, T.
+2008, A&ARev
+Sanders, D.B., Mazzarella, J.M., Kim, D.-C., Surace, J.A.,
+Soifer, B.T. 2003, AJ, 126, 1607
+Schechtman-Rook, A. & Bershady, M.A. 2013, ApJ, 773, 45
+Shapiro, P.R. & Field, G.B. 1976, ApJ, 205, 762
+Skrutskie M.F., Cutri R.M., Stiening R., et al. 2006, AJ, 131,
+1163
+Sofue, Y. & Rubin, V. 2001, ARA&A, 39, 137
+Springob, C.M., Haynes, M.P., Giovanelli, R., & Kent, B.R.
+2005, ApJS, 160, 149
+Tamburro, D., Rix, H.-W., Leroy, A.K., et al. 2009, AJ, 137,
+4424
+Tonry, J.L., Dressler, A., Blakeslee, J.P., et al. 2001, ApJ, 546,
+681
+van der Hulst, J. M., Sancisi, R. 2005, Extra-Planar Gas, ASP
+Conference Proceedings, Vol. 331. Edited by Robert Braun.
+San Francisco: Astronomical Society of the Pacific, 2005,
+p.139
+van der Kruit, P.C. 2007, A&A, 466, 883
+Vollmer, B. & Beckert, T. 2003, A&A, 404, 21
+Vollmer, B. & Davies, R.I. 2013, A&A, 556, 31
+Walter, F., Brinks, E., de Blok, W.J.G., et al. 2008, AJ, 136,
+2563
+
+23
+
+Warmels, R.H. 1988, A&AS, 72, 427
+Yamasaki, N.Y., Sato, K., Mitsuishi, I., & Ohashi, T. 2009,
+PASJ, 61, 291
+Young, J.S. & Scoville, N.Z. 1991, ARA&A, 29, 581
+Zschaechner, L.K., Rand, R.J., Heald, G., Gentile, G., Jozsa,
+G. 2012, ApJ, 760, 37
+
+Appendix A: Hi position velocity diagrams
+Appendix B: Hi channel maps
+
+24
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+Fig. A.1. NGC 2683 Hi D array and model position velocity diagrams. The model ingredients are a thin disk (TD),
+an elliptical component (E), a warp in position angle (PA), a warp in inclination (i), and a radially decreasing velocity
+dispersion (Vd). The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96) × 0.7 mJy/beam. The resolution is 6100 × 5100 .
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+25
+
+Fig. A.2. NGC 2683 Hi C+D array and model position velocity diagrams. The model ingredients are a thin disk (TD),
+an elliptical component (E), a warp in position angle (PA), a warp in inclination (i), and a radially decreasing velocity
+dispersion (Vd). The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96) × 0.3 mJy/beam. The resolution is 1900 × 1800 .
+
+26
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+Fig. A.3. Models with different vertical structures of the gas disk (sech2 and exponential). Left panels: NGC 2683 Hi
+D array and model position velocity diagrams. The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96) × 0.7 mJy/beam. The
+resolution is 6100 × 5100 . Models include a flare with sech2 and exponential vertical profiles. Right panels: NGC 2683 Hi
+C+D array and model position velocity diagrams. The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96) × 0.3 mJy/beam.
+The resolution is 1900 × 1800 . Models include a flare with sech2 and exponential vertical profiles.
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+27
+
+Fig. B.1. Selected Hi D array and model channel maps. The model ingredients are a thin disk (TD), an elliptical
+component (E), a warp in position angle (PA), a warp in inclination (INC), and a radially decreasing velocity dispersion
+(Vd). The offsets along the x- and y-axis are in arcmin. The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96)×0.8 mJy/beam.
+The resolution is 6100 × 5100 . The galaxy was rotated by 45◦ .
+
+Fig. B.2. Selected Hi C+D array and model channel maps. The model ingredients are a thin disk (TD), an elliptical
+component (E), a warp in position angle (PA), a warp in inclination (INC), and a radially decreasing velocity dispersion
+(Vd). The offsets along the x- and y-axis are in arcmin. The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96)×0.4 mJy/beam.
+The resolution is 1900 × 1800 . The galaxy was rotated by 45◦ .
+
+28
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+Fig. B.3. NGC 2683 Hi D array channels maps. The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96) × 0.8 mJy/beam. The
+resolution is 6100 × 5100 . The offsets along the x- and y-axis are in arcmin.
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+29
+
+Fig. B.4. Best-fit model channel maps. The model ingredients are a thin disk (TD), an elliptical component (E), a
+warp in inclination (INC), a radially decreasing velocity dispersion (Vd), and a flare (F3). The resolution is 6100 × 5100 .
+The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96) × 0.8 mJy/beam. The channels of the original data cube were averaged
+to yield a channel separation of 20 km s−1 . The offsets along the x- and y-axes are in arcmin.
+
+30
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+Fig. B.5. NGC 2683 Hi C+D array channels maps. The contour levels are (−2, 2, 3, 6, 12, 24, 48, 96) × 0.4 mJy/beam.
+The resolution is 1900 × 1800 . The offsets along the x- and y-axes are in arcmin.
+
+Vollmer, Nehlig, Ibata: The flaring Hi disk of NGC 2683
+
+31
+
+Fig. B.6. Best-fit model channel maps. The model ingredients are a thin disk (TD), an elliptical component (E), a
+warp in inclination (INC), a radially decreasing velocity dispersion (Vd), and a flare (F3). The contour levels are
+(−2, 2, 3, 6, 12, 24, 48, 96) × 0.4 mJy/beam. The resolution is 1900 × 1800 . The offsets along the x- and y-axes are in
+arcmin.
+
+

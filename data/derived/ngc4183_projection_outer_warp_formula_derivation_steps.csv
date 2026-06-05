@@ -1,0 +1,6 @@
+step_id,definition_or_result,status,dimension_check,limit_check
+D1_CARRIER,v_carrier^2(R) is the predeclared smooth exponential-disk carrier,ASSUMPTION_FROM_EXISTING_SOURCE_LABEL,km^2/s^2,carrier recovered when gamma_proj=0
+D2_PROJECTION_OBSERVABLE,p_edge = sin^2(i_HI),DERIVED_FROM_SOURCE_NATIVE_HI_INCLINATION,dimensionless,p_edge -> 0 face-on; p_edge -> 1 edge-on
+D3_RADIAL_KERNEL,K_proj(R)=p_edge*smoothstep((R/R_HI-x_inner)/(1-x_inner)),FORMULA_SHELL_DERIVED,dimensionless,K_proj=0 inside inactive window; K_proj<=p_edge
+D4_ATTENUATION_READOUT,v_readout^2(R)=v_carrier^2(R)*(1-gamma_proj*K_proj(R)),FORMULA_CONDITIONAL_COEFFICIENT_UNFROZEN,km^2/s^2 because K_proj and gamma_proj are dimensionless,gamma_proj=0 or K_proj=0 recovers carrier
+D5_OUTER_WARP_CAVEAT,"outer warp statement can motivate caveat only, not a numeric added ramp",BLOCKS_WARP_RAMP_FREEZE,no numeric term introduced,no warp amplitude means no added-source contribution

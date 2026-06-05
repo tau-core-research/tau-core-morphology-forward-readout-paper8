@@ -1,0 +1,2 @@
+promotion_gate,formula_family,n_waiting_galaxies,waiting_galaxies,source_priorities,theorem_id,proof_status,weakest_step,claim_boundary
+TAIL-HI-EXTENT-TO-TRANSITION-PROMOTION,K_scale_tail_spiral,6,NGC4214;UGC06917;UGC06983;UGC00891;UGC04499;UGC05829,P0_DIRECT_SOURCE_NATIVE_REQUIRED;P1_PROMOTE_OR_CONFIRM_SOURCE_NATIVE,TAIL-HI-EXTENT-PROMOTION-LEMMA-001,CONDITIONAL_INCOMPLETE,Showing that R_HI constrains the same outer-disk transition kernel rather than merely bounding generic gas extent.,s4g75_promotion_theorem_skeletons_not_endpoint

@@ -122,9 +122,17 @@ def acquire_dustpedia(galaxies: list[str]) -> pd.DataFrame:
 
 
 def acquire_phangs(galaxies: list[str]) -> tuple[pd.DataFrame, pd.DataFrame]:
-    data = urllib.request.urlopen(PHANGS_SAMPLE_URL, timeout=30).read()
-    sample = pd.read_csv(io.BytesIO(data))
-    sample.to_csv(EXTERNAL / "phangs" / "phangs_public_sample.csv", index=False)
+    cache_path = EXTERNAL / "phangs" / "phangs_public_sample.csv"
+    source_note = "downloaded fresh public PHANGS sample table"
+    try:
+        data = urllib.request.urlopen(PHANGS_SAMPLE_URL, timeout=30).read()
+        sample = pd.read_csv(io.BytesIO(data))
+        sample.to_csv(cache_path, index=False)
+    except Exception as exc:  # noqa: BLE001 - reproducibility should use cache offline
+        if not cache_path.exists():
+            raise
+        sample = pd.read_csv(cache_path)
+        source_note = f"used cached PHANGS sample table after download failure: {exc}"
     sample_names = set(norm_name(value) for value in sample["Name"].dropna())
     rows = []
     for galaxy in galaxies:
@@ -138,9 +146,9 @@ def acquire_phangs(galaxies: list[str]) -> tuple[pd.DataFrame, pd.DataFrame]:
                 else "NO_PHANGS_SAMPLE_COVERAGE",
                 "source_url": PHANGS_SAMPLE_URL,
                 "evidence_summary": (
-                    f"{galaxy} is present in the public PHANGS sample table"
+                    f"{galaxy} is present in the public PHANGS sample table; {source_note}"
                     if matched
-                    else f"{galaxy} is not present in the public PHANGS sample table"
+                    else f"{galaxy} is not present in the public PHANGS sample table; {source_note}"
                 ),
                 "accepted_label_output_allowed": False,
                 "endpoint_scores_computed": False,

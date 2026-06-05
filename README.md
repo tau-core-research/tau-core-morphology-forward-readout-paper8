@@ -71,6 +71,46 @@ to select a formula shell.
 This Paper 8 repository is standalone. It does not require accepting Tau Core
 as a completed physical theory.
 
+## Current Endpoint Exemplars
+
+The repository now contains a small set of claim-bounded single-galaxy endpoint
+or control exemplars. These are useful because they show that the residual-blind
+source-review to freeze to scoring workflow is executable, but they do not by
+themselves establish population validation.
+
+Current examples:
+
+```text
+NGC5907:
+    accepted mixed projection-control endpoint
+    beats Newtonian, TPG/v6, MOND, and wrong-family controls in its
+    frozen single-galaxy lane
+
+NGC7331:
+    caveated accepted mixed vertical/outer-warp endpoint
+    scored with the broad-window caveat preserved
+
+NGC4183:
+    accepted null-control interval endpoint
+    built from an independently reviewed weak-projection tilted-ring source,
+    frozen as an interval rather than a residual-tuned point fit
+    better than MOND and slightly better than TPG/v6 on this artifact,
+    but not stronger than the simple exponential-disk carrier baseline
+
+NGC4088:
+    caveated accepted warp-history endpoint
+    operationally useful, but still carries explicit law-level caveats
+```
+
+The correct reading is narrow:
+
+```text
+These are single-galaxy predeclared endpoints or controls.
+They strengthen the paper's operational and methodological case.
+They do not yet authorize a claim that Tau Core beats all baselines in general,
+nor do they replace the blocked population-level accepted-observable launch.
+```
+
 ## Relation To Papers 1-3
 
 Paper 1:
@@ -450,6 +490,1946 @@ Tau matched-family good fit
 
 This makes baseline success scientifically useful: it marks control regimes
 that the final Tau Core paper should predeclare rather than discard.
+
+The stronger theoretical reading is a conditional limiting-regime claim, not a
+baseline-superiority claim. If the Tau-side morphology/readout state satisfies
+the regime conditions under which a historical baseline is strong, the baseline
+should arise naturally as an effective 4D readout approximation:
+
+```text
+Newtonian limit
+  Conditions: K_readout is quiet/current-regular, alpha_tau is small, the
+  quotient-visible morphology residual is suppressed, and the baryonic
+  weak-field closure is stable.
+  Tau Core reading: g_eff -> g_Newt. Newtonian success is expected.
+
+MOND/RAR-like limit
+  Conditions: the morphology residual scalarizes into an almost radial
+  low-acceleration response, family structure is averaged or weak, and a
+  source-normalization scale is supplied by Tau-side closure/readout data.
+  Tau Core reading: a MOND/RAR-like radial law can appear as a special
+  scalarized solved response.
+
+TPG-like limit
+  Conditions: the residual is best represented as a smooth closure/readout
+  defect, often memory-integrated, and the solved response has an outer
+  logarithmic or near-flat-speed branch.
+  Tau Core reading: a classical TPG-like formula can appear as a special
+  closure-solved branch rather than as an inserted force law.
+
+RMOND-facing limit
+  Conditions: the same residual descends through a metric-compatible,
+  gauge-safe weak-field readout map.
+  Tau Core reading: the branch becomes RMOND-facing, meaning suitable for a
+  relativistic/metric audit, not yet a derived relativistic MOND theory.
+```
+
+This is the bridge consequence to test: where a baseline is strong, Tau Core
+should explain why that baseline is the appropriate effective readout limit for
+that galaxy's readout state. Where a morphology-matched Tau family is strong,
+the current morphology proxy may be closer to the active `K_readout`. Where a
+wrong family or shuffled label is strong, the case remains a failure map.
+
+The theory bridge now imports a stricter formula-status ladder into Paper 8:
+
+```text
+Newtonian limit
+  Status: FORMULA-DERIVED.
+  Reason: if the quotient-visible morphology residual is suppressed,
+  delta_g_morph -> 0 and g_eff -> g_Newt.
+
+TPG-like shape
+  Status: FORMULA-DERIVED under the n=2 source-tail gate.
+  Reason: sigma_morph ~ A/r^2 implies delta_g ~ A/r and
+  delta Phi ~ A log r.
+
+Fixed historical TPG branch
+  Status: FORMULA-CONDITIONAL.
+  Reason: the log-like readout shape is derived, but the finite-load
+  constants, branch choice, and historical normalization still require
+  additional Tau-side closure/readout input.
+
+MOND/RAR-like scaling
+  Status: FORMULA-CONDITIONAL.
+  Reason: A^2 = G M_b g_* implies delta_g = sqrt(g_N g_*), but this is a
+  Tau Core derivation only if g_* is supplied internally.
+
+RMOND-facing branch
+  Status: READOUT-FORM-ONLY.
+  Reason: the weak-field readout can be metric-audit-ready, but no covariant
+  relativistic field equation, conservation law, or lensing sector is derived
+  in this paper.
+```
+
+The internal-scale construction used by the amplitude gate is:
+
+```text
+g_* := lambda_* ell_*
+[lambda_*] = T^-2
+[ell_*] = L
+```
+
+Here `lambda_*` is a residual-blind Tau-side closure/readout stiffness and
+`ell_*` is an admissible readout length. This gives an internal acceleration
+scale object by dimensional construction, but it is not a numerical `a0`
+validation, not a universal MOND-scale derivation, and not an empirical
+baseline-superiority claim.
+
+The baseline-selection theorem used by the paper is conditional:
+
+```text
+CONDITIONAL-BASELINE-SELECTION-THEOREM
+
+Assume a galaxy has a residual-blind readout-regime label R_g assigned before
+rotation endpoint scoring.
+
+If R_g satisfies the quiet baryonic-readout conditions, then the Tau Core
+effective readout reduces to the Newtonian limit.
+
+If R_g satisfies the scalarized radial low-acceleration conditions and an
+internal g_* = lambda_* ell_* scale has been supplied, then the Tau Core
+effective readout has a MOND/RAR-like solved-response branch.
+
+If R_g satisfies the smooth closure/readout source-tail conditions, especially
+the n=2 tail sigma_morph ~ A/r^2, then the Tau Core effective readout has a
+TPG-like logarithmic / near-flat-speed branch.
+
+If R_g satisfies the gauge-safe metric-readout descent conditions, then the
+same residual becomes RMOND-facing, but only as a weak-field readout form.
+```
+
+Thus the bridge can explain why a particular baseline is expected to be good
+only when the corresponding regime label is fixed in advance. If multiple
+regime predicates hold, the case is not a unique proof of one baseline; it is
+an overlap/control regime. If no predicate holds, baseline success is not
+explained by the current bridge and must remain a failure map.
+
+## Morphology Information Gain Test
+
+The next endpoint direction is not to write a high-dimensional full morphology
+model for every galaxy. That would likely fail from missing or heterogeneous
+source data. The claim-safe direction is an information-gain test:
+
+```text
+As residual-blind morphology/readout information improves, the predeclared Tau
+Core forward readout should improve in a systematic way.
+```
+
+The proposed information levels are:
+
+```text
+Level 0: coarse K_obs label
+    e.g. exponential disk, compact, scale-tail, thick/flared.
+
+Level 1: source-reviewed K_readout
+    projection caveats, memory/history caveats, bar/core overlays.
+
+Level 2: low-dimensional readout-state vector
+    q_tail, q_compact, q_thick, q_bar, q_memory, q_regular.
+
+Level 3: source-native scales and amplitudes
+    disk scale, HI/tail radius, compact-core radius, flare support, bar length,
+    and residual-blind closure/readout normalization.
+
+Level 4: richer morphology/kinematic data
+    velocity fields, HI maps, decompositions, and history indicators.
+```
+
+Pass condition:
+
+```text
+Adding residual-blind morphology/readout information improves at least one
+predeclared endpoint in the expected direction:
+    matched-vs-wrong family rank,
+    shuffled-label separation,
+    residual RMS,
+    baseline competitiveness,
+    or readout-regime classification.
+```
+
+Fail condition:
+
+```text
+More morphology/readout information does not improve prediction,
+or the improvement appears only when rotation residuals are used to choose
+labels, weights, scales, or gates.
+```
+
+This is stronger than a single best-fit comparison. It asks whether the Tau
+Core bridge becomes more predictive as the observed morphology proxy is refined
+toward the readout-relevant morphology state.
+
+The first executable preflight is generated by:
+
+```bash
+python scripts/run_morphology_information_gain_test.py
+```
+
+This writes:
+
+```text
+data/derived/morphology_information_gain_level_manifest.csv
+data/derived/morphology_information_gain_scores_by_galaxy.csv
+data/derived/morphology_information_gain_summary.csv
+data/derived/morphology_information_gain_transitions.csv
+data/derived/morphology_information_gain_data_acquisition.csv
+reports/morphology_information_gain_test.md
+```
+
+Current holdout reading:
+
+```text
+L0 -> L1:
+    improves family specificity strongly
+    but does not improve raw RMSE yet.
+
+L1 -> L2:
+    current readout-state mixture proxy is mixed/negative.
+    This supports the accepted-observable gate: mixture weights need real
+    morphology-memory/source observables, not coarse present-day proxies.
+
+L2 -> L3:
+    train-selected normalization improves the proxy mixture layer.
+```
+
+Data acquisition status for this preflight:
+
+```text
+SPARC:      175/175 master rows acquired.
+S4G:        75 scale-radius candidates acquired.
+DustPedia: 31 full-sample source-candidate matches.
+HI:         171 full-sample SPARC HI-ready galaxies.
+PHANGS:     2 full-sample public-sample matches, but 0 MUSE-ready velocity-field matches.
+L2 tail:    172 source candidates.
+L2 compact: 48 source candidates.
+L2 bar:     19 source candidates.
+L2 weights: 0 endpoint-ready accepted readout-state components.
+```
+
+This result is not monotonicity proof. It is the first executable failure map
+for the morphology-information-gain hypothesis.
+
+The full-sample source expansion is generated by:
+
+```bash
+python scripts/build_morphology_information_gain_source_expansion.py
+```
+
+This writes:
+
+```text
+data/derived/morphology_information_gain_source_expansion.csv
+data/derived/morphology_information_gain_dustpedia_matches.csv
+data/derived/morphology_information_gain_source_expansion_summary.csv
+reports/morphology_information_gain_source_expansion.md
+```
+
+The expansion is an acquisition layer only. It does not promote morphology
+labels, does not assign accepted mixture weights, and does not score rotations.
+
+The first L2 weight-intake preflight is generated by:
+
+```bash
+python scripts/build_l2_weight_intake_candidates.py
+```
+
+This writes:
+
+```text
+data/derived/morphology_information_gain_l2_weight_intake_candidates.csv
+data/derived/morphology_information_gain_l2_weight_intake_summary.csv
+reports/morphology_information_gain_l2_weight_intake.md
+```
+
+Current full-sample reading:
+
+```text
+Source-informative L2 weight candidates: 174/175.
+Uninformative equal fallbacks:          1/175.
+Tail nonzero candidates:                172.
+Exponential-disk nonzero candidates:    75.
+Compact nonzero candidates:             48.
+Thick/flared nonzero candidates:        107.
+```
+
+These are not accepted Tau-side readout-state weights and not endpoint scores.
+They are residual-blind intake candidates that separate the present projected
+4D morphology handle from a more detailed readout-state vector. Endpoint use
+requires a separate freeze-and-audit step.
+
+The endpoint stress test of these intake candidates is generated by:
+
+```bash
+python scripts/run_l2_weight_intake_endpoint_preflight.py
+```
+
+This writes:
+
+```text
+data/derived/morphology_information_gain_l2_weight_intake_endpoint_scores.csv
+data/derived/morphology_information_gain_l2_weight_intake_endpoint_summary.csv
+data/derived/morphology_information_gain_l2_weight_intake_endpoint_by_family.csv
+reports/morphology_information_gain_l2_weight_intake_endpoint_preflight.md
+```
+
+Current holdout reading:
+
+```text
+Beats old L2 mixture proxy:       0.409
+Beats hard source-native family:  0.409
+Beats TPG/v6:                    0.477
+Beats MOND:                      0.432
+Median intake-minus-old-L2 RMSE: +0.847
+```
+
+This is a preserved negative/mixed result. The source-intake layer is broader
+and more residual-blind than the old mixture proxy, but it is not yet a better
+endpoint predictor. By dominant intake family, the thick/flared channel is the
+cleanest current positive hint, while compact and several tail/exponential
+cases remain weak. This points to a freeze-and-audit step for source-native
+weights and morphology-memory/projection observables before endpoint use.
+
+The freeze-readiness audit for these weights is generated by:
+
+```bash
+python scripts/audit_l2_weight_freeze_readiness.py
+```
+
+This writes:
+
+```text
+data/derived/morphology_information_gain_l2_weight_freeze_readiness.csv
+data/derived/morphology_information_gain_l2_weight_freeze_component_audit.csv
+data/derived/morphology_information_gain_l2_weight_freeze_readiness_summary.csv
+reports/morphology_information_gain_l2_weight_freeze_readiness.md
+```
+
+The source-native orientation promotion gate is generated by:
+
+```bash
+python scripts/build_source_native_orientation_promotion_gate.py
+```
+
+This writes:
+
+```text
+data/derived/source_native_orientation_family_gate.csv
+data/derived/source_native_orientation_component_gate.csv
+data/derived/source_native_orientation_galaxy_gate.csv
+data/derived/source_native_orientation_promotion_summary.csv
+reports/source_native_orientation_promotion_gate.md
+```
+
+Current source-native orientation status:
+
+```text
+Family orientations promoted:       3/4.
+Family orientations blocked:        1/4.
+Active components promoted:         295/406.
+Active components blocked:          111/406.
+Galaxies orientation-ready:         67/175.
+Galaxies orientation-blocked:       108/175.
+```
+
+This is not endpoint scoring. It promotes compact, scale-tail, and exponential
+orientation signs from source-native family evidence, while keeping the
+thick/flared sign blocked because the required velocity-field/vertical source
+layer is not yet available.
+
+The memory/projection acceptance gate is generated by:
+
+```bash
+python scripts/build_memory_projection_acceptance_gate.py
+```
+
+This writes:
+
+```text
+data/derived/memory_projection_acceptance_gate.csv
+data/derived/memory_projection_acceptance_summary.csv
+reports/memory_projection_acceptance_gate.md
+```
+
+Current memory/projection status:
+
+```text
+Orientation-ready:                         67/175.
+Projection-ready:                          71/175.
+Memory ready or not required:              4/175.
+Memory/projection ready candidates:        1/175.
+Blocked by orientation:                    108/175.
+Blocked by projection after orientation:   47/175.
+Blocked by memory/history after projection: 19/175.
+```
+
+The existing memory/history proxy is still useful for triage, but it is not an
+accepted memory/history observable because part of it is rotation-inferred.
+
+To increase usable coverage without weakening the strict claim boundary, the
+inclusion-lane expansion audit is generated by:
+
+```bash
+python scripts/build_inclusion_lane_expansion_audit.py
+```
+
+This writes:
+
+```text
+data/derived/inclusion_lane_expansion_audit.csv
+data/derived/inclusion_lane_expansion_summary.csv
+reports/inclusion_lane_expansion_audit.md
+```
+
+Current inclusion-lane status:
+
+```text
+Strict-ready candidates:                 1/175.
+Caution/proxy-supported rows:           66/175.
+Analysis-includable strict+caution rows: 67/175.
+Acquisition-required rows:              108/175.
+Rows needing orientation source evidence: 108/175.
+Rows needing projection/scale review:    104/175.
+Rows needing memory/history source review: 171/175.
+```
+
+The caution lane is not accepted evidence and cannot support endpoint
+validation. It is a support/sensitivity lane that keeps orientation-ready
+galaxies in view while preserving their projection or memory/history caveats.
+
+The inclusion-lane endpoint analysis is generated by:
+
+```bash
+python scripts/run_inclusion_lane_endpoint_analysis.py
+```
+
+This writes:
+
+```text
+data/derived/inclusion_lane_endpoint_scores.csv
+data/derived/inclusion_lane_endpoint_summary.csv
+data/derived/inclusion_lane_endpoint_allowed_use_summary.csv
+data/derived/inclusion_lane_information_gain_transitions.csv
+reports/inclusion_lane_endpoint_analysis.md
+```
+
+Current holdout strict+caution reading:
+
+```text
+Rows:                                      16.
+Source-native hard family beats wrong:     0.8125.
+Source-native hard family beats TPG/v6:    0.5000.
+Source-native hard family beats MOND:      0.4375.
+Tau evidence L2 beats TPG/v6:              0.3750.
+Tau evidence L2 beats MOND:                0.3125.
+L2 -> L3 improves RMSE in:                 0.6250.
+```
+
+This is mixed. The lane preserves a matched-vs-wrong morphology-specific signal,
+but it does not yet produce baseline superiority. That is useful: it says the
+expanded support lane is good for acquisition planning and sensitivity checks,
+not for an endpoint-validation claim.
+
+The caution lane is now split by allowed use. On holdout, the projection-caveat
+sub-lane contains 14 galaxies. The source-native hard-family formula still
+beats the wrong-family mean in `0.7857` of those rows, but the Tau evidence L2
+normalization beats TPG/v6 in only `0.3571` and MOND in only `0.2857`. This
+points to projection/scale quality and source-normalization as the immediate
+weak link, not to loss of morphology-family specificity.
+
+The projection/scale repair audit and source-normalization failure-mode audit
+are generated by:
+
+```bash
+python scripts/build_projection_scale_repair_audit.py
+python scripts/audit_source_normalization_failure_modes_by_lane.py
+```
+
+These write:
+
+```text
+data/derived/projection_scale_repair_audit.csv
+data/derived/projection_scale_repair_summary.csv
+reports/projection_scale_repair_audit.md
+data/derived/source_normalization_failure_modes_by_lane.csv
+data/derived/source_normalization_failure_modes_by_lane_summary.csv
+reports/source_normalization_failure_modes_by_lane.md
+```
+
+Current repair map:
+
+```text
+No projection/scale repair required:             71/175.
+Needs vertical geometry source:                  34/175.
+Needs inclination/projection review:             26/175.
+Needs distance/scale source:                     30/175.
+Repairable with existing scale source + audit:   14/175.
+```
+
+On the holdout projection-caveat sub-lane, `7/14` rows are classified as
+`PROJECTION_SCALE_NORMALIZATION_FAILURE`: morphology-family specificity is
+present, but the Tau evidence L2 normalization does not transfer it into
+baseline-competitive solved response. This is the most immediate repair target.
+
+### S4G75 source-rich lane
+
+The current source-rich disk-scale lane is generated by:
+
+```bash
+python scripts/run_s4g75_scale_source_subset_endpoint_stress_test.py
+python scripts/analyze_s4g75_failure_modes.py
+python scripts/build_s4g75_source_rich_lane_action_plan.py
+python scripts/build_s4g75_holdout_repair_review_packet.py
+python scripts/build_s4g75_kernel_observable_fill.py
+python scripts/run_s4g75_filled_kernel_endpoint_stress_test.py
+python scripts/audit_s4g75_filled_kernel_delta_drivers.py
+python scripts/build_s4g75_direct_source_native_acquisition_manifest.py
+python scripts/audit_s4g75_source_native_availability.py
+python scripts/acquire_s4g75_direct_kernel_measurements.py
+python scripts/build_s4g75_kernel_ready_promotion_gate.py
+python scripts/build_s4g75_promoted_kernel_observable_fill.py
+python scripts/run_s4g75_promoted_kernel_endpoint_stress_test.py
+python scripts/build_s4g75_conditional_promotion_requirements.py
+python scripts/build_s4g75_promotion_theorem_skeletons.py
+```
+
+These write:
+
+```text
+data/derived/s4g75_scale_source_subset_endpoint_scores.csv
+data/derived/s4g75_scale_source_subset_endpoint_summary.csv
+data/derived/s4g75_failure_mode_breakdown.csv
+data/derived/s4g75_repair_priority_queue.csv
+data/derived/s4g75_source_rich_lane_action_plan.csv
+data/derived/s4g75_holdout_repair_review_packet.csv
+data/derived/s4g75_holdout_repair_review_galaxy_summary.csv
+data/derived/s4g75_kernel_observable_fill.csv
+data/derived/s4g75_kernel_observable_fill_summary.csv
+data/derived/s4g75_filled_kernel_endpoint_scores.csv
+data/derived/s4g75_filled_kernel_endpoint_summary.csv
+data/derived/s4g75_filled_vs_proxy_delta.csv
+data/derived/s4g75_filled_kernel_delta_drivers.csv
+data/derived/s4g75_filled_kernel_delta_driver_summary.csv
+data/derived/s4g75_direct_source_native_observable_targets.csv
+data/derived/s4g75_direct_source_native_acquisition_manifest.csv
+data/derived/s4g75_direct_source_native_acquisition_source_summary.csv
+data/derived/s4g75_direct_source_native_acquisition_family_summary.csv
+data/derived/s4g75_source_native_availability_audit.csv
+data/derived/s4g75_source_native_availability_summary.csv
+data/derived/s4g75_source_native_availability_source_coverage.csv
+data/derived/s4g75_direct_kernel_measurements.csv
+data/derived/s4g75_direct_kernel_measurement_summary.csv
+data/derived/s4g75_kernel_ready_promotion_gate.csv
+data/derived/s4g75_kernel_ready_promotion_summary.csv
+data/derived/s4g75_kernel_ready_endpoint_subset_status.csv
+data/derived/s4g75_promoted_kernel_observable_fill.csv
+data/derived/s4g75_promoted_kernel_observable_fill_summary.csv
+data/derived/s4g75_promoted_kernel_endpoint_scores.csv
+data/derived/s4g75_promoted_kernel_endpoint_summary.csv
+data/derived/s4g75_promoted_vs_proxy_delta.csv
+data/derived/s4g75_promoted_vs_filled_delta_summary.csv
+data/derived/s4g75_conditional_promotion_requirements.csv
+data/derived/s4g75_conditional_promotion_requirement_summary.csv
+data/derived/s4g75_promotion_theorem_skeletons.csv
+data/derived/s4g75_promotion_theorem_assumptions.csv
+data/derived/s4g75_promotion_theorem_waiting_rows.csv
+reports/s4g75_scale_source_subset_endpoint_stress_test.md
+reports/s4g75_failure_mode_breakdown.md
+reports/s4g75_source_rich_lane_action_plan.md
+reports/s4g75_holdout_repair_review_packet.md
+reports/s4g75_kernel_observable_fill.md
+reports/s4g75_filled_kernel_endpoint_stress_test.md
+reports/s4g75_filled_kernel_delta_driver_audit.md
+reports/s4g75_direct_source_native_acquisition_manifest.md
+reports/s4g75_source_native_availability_audit.md
+reports/s4g75_direct_kernel_measurement_extraction.md
+reports/s4g75_kernel_ready_promotion_gate.md
+reports/s4g75_promoted_kernel_observable_fill.md
+reports/s4g75_promoted_kernel_endpoint_stress_test.md
+reports/s4g75_conditional_promotion_requirements.md
+reports/s4g75_promotion_theorem_skeletons.md
+```
+
+Current S4G75 holdout reading:
+
+```text
+Rows:                                  21.
+Hard matched family beats wrong mean:  0.9524.
+Hard matched family beats TPG/v6:      0.5238.
+Hard matched family beats MOND:        0.5714.
+Tau L2 beats old L2 intake:            0.6190.
+Tau L2 beats TPG/v6:                   0.3810.
+Tau L2 beats MOND:                     0.6190.
+```
+
+This makes the 75-row S4G source-rich lane the best current development lane:
+it is source-richer than the full 175-row stress sample and preserves a strong
+matched-vs-wrong morphology signal. It is still not an accepted endpoint
+validation lane, because the rows mix strict, caution, and acquisition states.
+The next action is P0/P1 source repair inside this 75-row lane before expanding
+the accepted-claim sample.
+
+The holdout repair packet currently covers 15 galaxies and 71 residual-blind
+review fields. Its key operational result is that S4G/SPARC scale evidence is
+already present for the repair rows, but endpoint eligibility remains blocked
+by external family-label audit and missing family-specific kernel fields:
+compact support radius for the compact row, tail inner/cutoff radii for
+scale-tail rows, and `thickness_h_over_rs` for thick/flared rows.
+
+The kernel-observable fill then assigns concrete numerical candidates for those
+missing fields:
+
+```text
+Scale radius:      SOURCE_DERIVED_S4G_SPARC_SCALE for 15/15.
+Tail fields:       SOURCE_CONSTRAINED_FORMULA_CANDIDATE for 7 scale-tail rows.
+Compact support:  SOURCE_CONSTRAINED_FORMULA_CANDIDATE for 1 compact row.
+Thickness h/Rs:    SOURCE_CONSTRAINED_FORMULA_CANDIDATE for 7 thick/flared rows.
+Edge-disk h/Rs:    SOURCE_CONSTRAINED_EDGE_DISK_CANDIDATE for 1 thick/flared row.
+```
+
+Concrete here means numerically filled, not accepted. The values are
+residual-blind and source-constrained, but tail, compact, and thickness fields
+remain formula-conditional candidates until direct source-native morphology
+measurements or an accepted bridge promotion rule exists.
+
+The filled-kernel endpoint stress test preserves the strong morphology-family
+specificity but does not improve the baseline comparison:
+
+```text
+Holdout matched-vs-wrong: old 0.9524, filled 0.9524.
+Holdout matched-vs-TPG/v6: old 0.5238, filled 0.4286.
+Holdout matched-vs-MOND: old 0.5714, filled 0.5714.
+```
+
+This is a preserved negative/mixed result. It says that concrete
+source-constrained formula-candidate filling is not enough by itself. The next
+repair target is stronger direct source-native kernel observables and the
+source-normalization/projection layer, not another endpoint-selected family.
+
+The filled-kernel delta-driver audit localizes that next repair target:
+
+```text
+P0 direct source-native required:
+    scale-tail HI/break/tail cutoff rows: 3.
+    thick/flared vertical-geometry rows: 6.
+
+P1 promote or confirm source-native:
+    compact-support rows: 1.
+    scale-tail HI/break/tail cutoff rows: 3.
+    thick/flared vertical-geometry rows: 2.
+```
+
+The strongest negative diagnostic is therefore not the morphology match itself.
+It is the kernel-observable layer: direct outer-disk/HI transition data and
+direct vertical-geometry data are needed before the filled S4G75 lane can make
+a baseline-superiority claim.
+
+The direct source-native acquisition manifest turns this into an explicit
+source queue:
+
+```text
+Total source tasks:        15.
+P0 direct source-native:    9.
+P1 promote/confirm:         6.
+```
+
+P0 tasks target `NGC4214`, `UGC06917`, `UGC06983`, `NGC0024`, `NGC2683`,
+`NGC3726`, `NGC3949`, `NGC4088`, and `NGC5907`. The required source families
+are S4G, NED/NED-D, DustPedia, HI survey support, and PHANGS where relevant.
+This manifest is an acquisition queue only; it cannot create accepted readout
+labels or endpoint wins without a later residual-blind audit.
+
+The source-native availability audit checks the same queue against the locally
+acquired S4G/SPARC/DustPedia/HI/PHANGS cache:
+
+```text
+S4G match coverage:       15/15.
+SPARC HI radius coverage: 14/15.
+DustPedia direct match:    3/15.
+PHANGS public sample:      0/15.
+```
+
+Kernel-specific reading:
+
+```text
+Scale-tail rows:
+    HI extent is mostly present, but this is still only partial support.
+    A direct outer-disk transition profile, break radius, truncation radius,
+    or source-native tail cutoff is still missing.
+
+Compact row:
+    a compact/bulge component is present. S4G Table 7 supplies a direct
+    Sersic bulge Re for NGC5985.
+
+Thick/flared rows:
+    five P0 and two P1 rows still lack direct vertical geometry.
+    NGC5907 has S4G edge-disk hz2/hr2 support.
+```
+
+This explains the weak filled-kernel baseline transfer: generic source coverage
+is good, but the bridge needs kernel-specific source-native observables, not
+only 4D proxy substitutes.
+
+The direct kernel measurement extraction reads the stable direct-source
+acquisition manifest, not the current conditional-promotion table. This keeps
+already promoted rows in the extraction under repeated reproduction runs. It
+finds two S4G Table 7 kernel measurements:
+
+```text
+NGC5985:
+    compact_support_radius_kpc = 0.735239 from S4G Sersic bulge Re.
+
+NGC5907:
+    h/Rs = 0.173321 from S4G edge-disk hz2/hr2.
+```
+
+The kernel-ready promotion gate is deliberately stricter:
+
+```text
+Strict kernel-ready endpoint rows: 2.
+Conditional kernel rows:          6.
+Proxy-only kernel rows:           7.
+```
+
+So the S4G75 repair lane now has a tiny strict kernel-ready subset
+(`NGC5985`, `NGC5907`), but it is too small for accepted validation. The six
+remaining conditional rows are all scale-tail rows awaiting either direct
+outer-disk transition evidence or a residual-blind Tau-side RHI promotion rule.
+
+The conditional promotion requirements now reduce the remaining six conditional
+rows to one active family-level gate:
+
+```text
+TAIL-HI-EXTENT-TO-TRANSITION-PROMOTION:
+    SPARC HI extent may promote scale-tail cutoff only if it constrains the
+    same outer-disk transition, break, truncation, or tail-support radius used
+    by the formula kernel.
+```
+
+The compact and edge-disk gates are no longer waiting on the current S4G75
+conditional list because direct S4G Table 7 kernel measurements were extracted
+for their waiting rows. They remain general bridge gates for future rows:
+
+```text
+COMPACT-COMPONENT-SUPPORT-PROMOTION:
+    compact finite-source support requires a compact component support radius,
+    not merely an effective light radius.
+
+EDGE-DISK-TO-VERTICAL-KERNEL-PROMOTION:
+    an edge-disk component may promote thick/flared only if it constrains
+    vertical scale height, flare, warp, or gas-plane thickness.
+```
+
+Each gate can be satisfied either by direct source-native measurement or by a
+residual-blind Tau-side promotion theorem. Endpoint improvement itself cannot
+satisfy these gates.
+
+The current tail RHI promotion attempt records all six remaining scale-tail
+rows as theorem-conditional upper-cutoff candidates, not strict measurements.
+It uses the fact that SPARC `RHI` is available in the local lane and cites the
+homogeneous outer HI profile context from Wang et al. 2014, but it preserves
+the claim boundary: an HI extent can support a conservative upper-cutoff
+theorem only after we prove that it constrains the same outer transition used
+by the readout kernel. Until then these rows remain non-endpoint and
+`endpoint_scores_allowed = False`.
+
+The remaining kernel acquisition ledger then separates the non-strict rows into
+actionable acquisition/theorem lanes:
+
+```text
+Scale-tail transition missing:
+    6 galaxies.
+    Direct route: resolved HI radial profile, outer-disk break/truncation, or
+    source-native transition radius.
+    Theorem route: residual-blind RHI conservative upper-cutoff theorem.
+
+Vertical kernel missing:
+    7 galaxies.
+    Direct route: vertical scale height, h/Rs, flare/warp radius, or gas-plane
+    thickness.
+    Theorem route: residual-blind edge-disk/inclination-to-vertical-kernel
+    theorem.
+```
+
+Within the vertical-kernel blockers, `NGC2683` and `NGC3972` are the highest
+priority direct literature-search targets because their inclinations make
+edge-on vertical decomposition or warp evidence more plausible. `NGC4088` is a
+high-inclination flare/warp target. `NGC0024`, `NGC3726`, `NGC3949`, and
+`NGC4389` remain lower-confidence kinematic or multi-band thickness-proxy
+review targets. None of these rows is endpoint-ready yet.
+
+The first targeted literature-hit pass improves this map without yet changing
+endpoint eligibility:
+
+```text
+NGC2683:
+    direct literature flare-profile source found.
+    Vollmer, Nehlig & Ibata 2016 model the HI disk with an exponential flare:
+        H = 0.5 kpc at R = 9 kpc,
+        H = 4 kpc at R = 15 kpc,
+        saturated to R = 22 kpc,
+        outer ring vertical offset = 1.3 kpc.
+    Status: direct profile ready, but mapping required into the current
+    thick/flared executable kernel.
+
+Scale-tail rows:
+    NGC4214 has HI/warp profile context from Lelli, Verheijen & Fraternali
+    2014, but no tail transition radius is extracted here.
+    UGC06917 and UGC06983 have Verheijen & Sancisi 2001 HI atlas/profile
+    source candidates.
+    UGC00891, UGC04499, and UGC05829 have van Zee / Swaters source-family
+    candidates.
+    Status: profile extraction still required before strict promotion.
+```
+
+This is a useful strengthening but also a claim-boundary result. `NGC2683`
+should not be converted directly into a scalar `h/Rs` endpoint override until a
+residual-blind profile-to-kernel mapping is implemented. The tail rows likewise
+remain extraction/theorem tasks, not accepted kernel-ready rows.
+
+The NGC2683 flare-profile mapping gate is the first concrete version of that
+next layer. It maps the source-native profile onto the observed rotation radii
+without using residuals:
+
+```text
+NGC2683 rotation points checked:       11.
+Profile-mapped points:                  7.
+Post-22 kpc unmapped decrease points:   4.
+
+Old scalar h/Rs proxy:                  0.202408.
+Mapped profile h/Rs range:              0.226281 to 1.810245.
+Mapped profile h/Rs median:             0.545702.
+```
+
+The source profile is therefore much richer than the current scalar proxy. It
+also stresses the existing executable thick/flared kernel because the profile
+enters a large-flare regime and the source does not give a unique executable
+decrease law beyond 22 kpc. The correct next task is not to force this into the
+old scalar shell, but to define a residual-blind profile-aware thick/flared
+readout kernel.
+
+The first profile-aware stress preflight confirms this diagnosis. Using the
+source profile as a pointwise scalar substitution changes the NGC2683 score
+only at the `~1e-4` RMSE level and slightly worsens it:
+
+```text
+Mapped-only policy:
+    scalar RMSE  = 9.100678
+    profile RMSE = 9.100747
+    delta        = +0.000069
+
+Hybrid mapped/scalar-unmapped policy:
+    scalar RMSE  = 10.331859
+    profile RMSE = 10.331898
+    delta        = +0.000038
+
+Mapped profile points exceeding current h/Rs clip: 3
+```
+
+This is not a failure of the source-native flare profile. It is a failure map
+for the current executable shell: the thick/flared kernel still clips
+`h/Rs <= 0.75` and treats thickness as a local scalar damping parameter. A real
+profile-aware readout should use the radial `H(R)` structure itself, including
+the flare rise, saturation, and post-saturation ambiguity.
+
+The unclipped diagnostic strengthens this conclusion rather than removing it:
+
+```text
+Mapped-only policy:
+    clipped profile delta   = +0.000069
+    unclipped profile delta = +0.004542
+
+Hybrid policy:
+    clipped profile delta   = +0.000038
+    unclipped profile delta = +0.002546
+```
+
+So the main problem is not merely the `h/Rs <= 0.75` clip. Removing the clip
+still does not turn the direct flare profile into a better readout under the
+current pointwise scalar damping shell. The next kernel must be genuinely
+radial-profile aware, not only unclipped.
+
+The first nonlocal `H(R)`-aware prototype also preserves this negative result:
+
+```text
+post22_hold_plateau_upper:
+    scalar RMSE      = 10.331859
+    H(R) RMSE        = 10.335662
+    delta            = +0.003803
+
+post22_linear_taper_to_inner_height:
+    scalar RMSE      = 10.331859
+    H(R) RMSE        = 10.334888
+    delta            = +0.003029
+```
+
+This prototype uses a source-weighted local average of the NGC2683 flare
+profile with locality width fixed to the S4G/SPARC disk scale. It is still not
+an accepted endpoint, but it sharpens the formula lesson: putting `H(R)` into
+the old damping family is insufficient. The next candidate should change the
+vertical/readout operator itself, for example by treating flare/warp structure
+as a separate closure source rather than only a damping factor on an
+exponential-disk shell.
+
+The first closure-source prototype is therefore the first constructive signal
+in this branch. Instead of damping by local thickness, it builds a separate
+source from the positive radial gradient of `log H(R)`, optionally with a
+localized outer-ring offset source. With the same non-endpoint amplitude policy,
+it improves the NGC2683 thick/flared stress score:
+
+```text
+flare_gradient_source:
+    scalar RMSE  = 10.331859
+    closure RMSE = 10.203145
+    delta        = -0.128714
+
+flare_gradient_plus_ring_offset_source:
+    scalar RMSE  = 10.331859
+    closure RMSE = 10.178731
+    delta        = -0.153128
+```
+
+This is not validation, and it is only one galaxy. But it is the first
+source-native formula-development result in this lane where the more realistic
+morphology profile helps in the expected direction once it is treated as a
+closure source rather than a scalar damping substitute.
+
+A residual-blind sensitivity audit then varies only prototype knobs around this
+closure-source family:
+
+```text
+locality multiplier: 0.5, 1.0, 1.5, 2.0
+ring strength:       0.0, 0.5, 1.0
+grid size:           12
+improved over scalar thick/flared: 12/12
+best delta RMSE:     -0.353217
+```
+
+This makes the constructive signal more robust: the closure-source direction is
+not just one delicate NGC2683 setting. It is still a single-galaxy
+formula-development map, not validation, but it gives a clear next bridge
+candidate for profile-aware thick/flared galaxies.
+
+The closure-source generalization gate then prevents overclaiming. In the
+current S4G75 thick/flared lane:
+
+```text
+PROFILE_CLOSURE_SOURCE_READY_PROTOTYPE_ONLY:
+    NGC2683
+
+EDGE_ON_VERTICAL_PROFILE_SEARCH_REQUIRED:
+    NGC3972
+
+HIGH_INCLINATION_WARP_FLARE_SEARCH_REQUIRED:
+    NGC4088
+
+INSUFFICIENT_VERTICAL_PROFILE_SUPPORT:
+    NGC0024, NGC3726, NGC3949, NGC4389
+```
+
+No row is authorized for closure-source endpoint scoring. The bridge result is
+therefore precise: NGC2683 supplies a constructive prototype, while NGC3972 and
+NGC4088 are the next source-acquisition targets needed before this can become a
+population-level formula family.
+
+A targeted vertical-source search audit now makes that blocker reproducible
+rather than informal. NGC2683 remains the only row with a direct profile source.
+NGC3972 now has object-specific HI morphology support from O'Brien et al. 2016
+and WHISP/Ursa Major observing context from Verheijen & Sancisi 2001, but no
+vertical scale, flare profile, warp radius, or gas-plane thickness is extracted.
+NGC4088 is stronger: Verheijen & Sancisi 2001 record a strongly distorted disk,
+an asymmetric position-velocity diagram, and an asymmetric warp; O'Brien et al.
+2018 add object-specific HI kinematic asymmetry context. This is still not an
+endpoint input. It is a profile-extraction target: the bridge can now ask for a
+source-native warp/asymmetry-to-closure-source mapping, but it cannot yet fill a
+galaxy-specific kernel observable. HALOGAS and Patra 2020 remain useful
+context for extraplanar/scale-height physics, but they likewise cannot be
+promoted into NGC3972/NGC4088 kernel observables without residual-blind profile
+or bound extraction for the target galaxy.
+
+The NGC4088 warp/asymmetry extraction gate makes the next step concrete. The
+WHISP/Ursa Major source provides source-native observables such as inclination
+`69 deg`, position angle `231 deg`, HI diameter `8.5 arcmin`, integrated HI
+flux `102.9 Jy km/s`, and qualitative warp/PV/PA asymmetry flags. The missing
+pieces are exactly the profile-kernel observables: warp-onset radius,
+`theta_warp(R)` or `PA(R)`, vertical height `H(R)`, a radial closure-source
+profile, and a residual-blind mapping rule. Thus NGC4088 is now a
+closure-source development target, not an endpoint-scoring galaxy.
+
+A pre-kernel normalization step then converts the source-native WHISP/SPARC
+geometry into dimensionless observables. The WHISP HI diameter and SPARC
+distance reconstruct `R_HI = 22.253 kpc`, consistent with the SPARC catalog
+value `RHI = 22.25 kpc` at fractional difference `1.33e-4`. This gives
+`R_HI/Rdisk = 8.63` using SPARC `Rdisk` and `R_HI/Rs4g = 6.83` using the S4G
+scale radius. These quantities are useful for a future warp/asymmetry
+closure-source formula, but they are still pre-kernel observables. They do not
+replace the missing radial warp profile or authorize endpoint scoring.
+
+The first mapping-rule shell is now explicit. Using the dimensionless radius
+`x := R/R_HI`, the NGC4088 warp/asymmetry source basis is defined as
+
+```text
+C_warp(x; x_w, p) = q_warp * max(0, (x - x_w)/(1 - x_w))^p
+```
+
+where `q_warp` is the source-side qualitative warp/asymmetry strength and
+`x_w := R_warp/R_HI` is the source-native warp-onset control. This is the right
+kind of object for the Tau Core bridge: it is morphology/readout indexed,
+dimensionless, and residual-blind. It is still blocked for endpoint use because
+`x_w`, a radial `PA(R)` or `theta_warp(R)` profile, and the final readout
+normalization are not source-extracted yet.
+
+The onset extraction protocol now freezes what would count as a legitimate
+source for `x_w`. Accepted routes are: a source-native radial `PA(R)` profile, a
+radial warp-angle/tilted-ring profile, or a predeclared channel-map
+digitization of the ridge/bend. A text-only statement that the galaxy is warped
+is not accepted for `x_w`; it only supports the formula-development lane. This
+keeps the mapping shell residual-blind: `x_w` cannot be chosen from the
+rotation-curve residual.
+
+The first digitization target manifest now identifies the concrete source page
+for the manual/frozen route. The N4088 channel maps are rendered from
+Verheijen & Sancisi 2001 PDF page `76` into
+`data/external/literature/2001_verheijen_sancisi_pages/ngc4088_page_76-076.png`.
+The manifest requires an inner disk axis, outer ridge axes by side, onset radius
+in arcmin, side-combination rule, and uncertainty. This still does not extract
+`x_w`; it only turns the missing source task into a reproducible digitization
+target.
+
+The next artifact is now a frozen channel-map digitization worksheet. The ROI
+crop
+`data/external/literature/2001_verheijen_sancisi_pages/ngc4088_page_76_channel_maps_roi.png`
+is split into panel-level measurement targets with a companion overlay and
+empty measurement fields for inner-axis, outer-ridge, onset-radius, and
+uncertainty extraction. This is still not an `x_w` measurement and still not an
+endpoint input; it only converts the rendered source page into a reproducible
+panel worksheet for later frozen/manual digitization.
+
+The worksheet is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_channel_map_digitization_worksheet.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_channel_map_digitization_worksheet.csv
+data/derived/s4g75_ngc4088_channel_map_digitization_worksheet_summary.csv
+reports/s4g75_ngc4088_channel_map_digitization_worksheet.md
+data/external/literature/2001_verheijen_sancisi_pages/ngc4088_page_76_channel_maps_roi_worksheet_overlay.png
+```
+
+The next operational artifact is the frozen digitization protocol plus blank
+response intake. This freezes the allowed measurement logic before any manual
+digitization fills values:
+
+```text
+python scripts/build_s4g75_ngc4088_channel_map_digitization_protocol.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_channel_map_digitization_protocol.csv
+data/derived/s4g75_ngc4088_channel_map_digitization_response_template.csv
+data/derived/s4g75_ngc4088_channel_map_digitization_response_schema.csv
+data/derived/s4g75_ngc4088_channel_map_digitization_response_validation.csv
+data/derived/s4g75_ngc4088_channel_map_digitization_response_summary.csv
+reports/s4g75_ngc4088_channel_map_digitization_protocol.md
+```
+
+This still does not extract `x_w`. It freezes how `x_w` may later be measured:
+one inner-disk axis, two outer-side axes, side-by-side onset radii, a frozen
+`MIN_SIDE` combination rule, one uncertainty field, and a page-77 consistency
+cross-check. A completed response would only authorize a later residual-blind
+`x_w` conversion audit; it still would not allow endpoint scoring.
+
+That downstream conversion gate is now explicit:
+
+```text
+python scripts/build_s4g75_ngc4088_xw_conversion_audit.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_xw_conversion_audit.csv
+data/derived/s4g75_ngc4088_xw_conversion_summary.csv
+reports/s4g75_ngc4088_xw_conversion_audit.md
+```
+
+This audit reads the validated digitization response plus the pre-kernel `R_HI`
+normalization and converts a filled response into the dimensionless
+`x_w = R_warp / R_HI` control. In the current package it is correctly blocked,
+because the response template is still pending. Even a passing `x_w` conversion
+would only open the mapping-rule lane; it still would not allow endpoint
+scoring.
+
+With `x_w` available, the next source-side artifact is a filled NGC4088
+closure-source mapping:
+
+```text
+python scripts/build_s4g75_ngc4088_filled_warp_closure_mapping.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_filled_warp_closure_mapping.csv
+data/derived/s4g75_ngc4088_filled_warp_closure_profile.csv
+data/derived/s4g75_ngc4088_filled_warp_closure_summary.csv
+reports/s4g75_ngc4088_filled_warp_closure_mapping.md
+```
+
+This fills the source-side onset control in the closure-source shell using the
+residual-blind `x_w` audit. It still does not supply the final
+kernel-to-velocity normalization, so it remains a filled source-basis artifact,
+not an endpoint or baseline-comparison result.
+
+The next bridge artifact is an NGC4088-specific kernel-to-velocity
+normalization candidate:
+
+```text
+python scripts/build_s4g75_ngc4088_kernel_to_velocity_normalization_candidate.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_kernel_to_velocity_normalization_constants.csv
+data/derived/s4g75_ngc4088_kernel_to_velocity_normalization_profile.csv
+data/derived/s4g75_ngc4088_kernel_to_velocity_normalization_summary.csv
+reports/s4g75_ngc4088_kernel_to_velocity_normalization_candidate.md
+```
+
+This is the first NGC4088-specific candidate bridge from the filled
+closure-source basis to a `delta v^2` scale. It remains theory-conditional:
+the source-side onset control is now filled, but the physical normalization law
+is still not endpoint-authorized and still not a matched-family result.
+
+The next operational export is the NGC4088-specific readout preflight profile:
+
+```text
+python scripts/build_s4g75_ngc4088_readout_preflight_profile.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_readout_preflight_profile.csv
+data/derived/s4g75_ngc4088_readout_preflight_summary.csv
+reports/s4g75_ngc4088_readout_preflight_profile.md
+```
+
+This evaluates the filled NGC4088 candidate on the local SPARC/TPG point radii
+and exports `delta v^2` plus candidate velocity curves for the `p=1` and `p=2`
+turn-on branches. It is still a preflight profile export only: no amplitude fit
+is performed there, no endpoint score is computed there, and no baseline or
+matched-family claim is made there.
+
+The physical normalization-law gate is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_physical_normalization_law_gate.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_physical_normalization_formula.csv
+data/derived/s4g75_ngc4088_physical_normalization_law_gate.csv
+data/derived/s4g75_ngc4088_physical_normalization_law_summary.csv
+reports/s4g75_ngc4088_physical_normalization_law_gate.md
+```
+
+This gate records the exact candidate formula
+`delta_v2_warp(R;p) = sigma_warp q_warp x_w Vflat^2 C_warp(R/R_HI; x_w, p)`.
+The formula is dimensionally consistent and reproduces the prefactor
+`8324.016 km^2/s^2`, but the law status is
+`FORMULA_CONDITIONAL_PHYSICAL_LAW_BLOCKED`. The remaining blockers are the
+Tau-side closure/readout derivation of the scale, scale uniqueness, and
+population transfer.
+
+Later NGC4088 formula-freeze bookkeeping uses the caveated WHISP graphical
+overview review value `x_w = 0.298333`, not this pre-review first-pass value.
+The frozen endpoint-protocol normalization is therefore
+`8795.111752 km^2/s^2`; the `8324.016 km^2/s^2` value remains recorded as
+first-pass provenance and as part of the earlier conditional law audit.
+
+The scale-uniqueness audit is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_scale_uniqueness_audit.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_scale_uniqueness_audit.csv
+data/derived/s4g75_ngc4088_scale_uniqueness_summary.csv
+reports/s4g75_ngc4088_scale_uniqueness_audit.md
+```
+
+It lists five residual-blind, dimensionally valid `delta v^2` scale carriers:
+the current `x_w * Vflat^2` candidate, `x_w * median_r(v_n^2)`,
+`x_w * median_r(v_v6^2)`, `c_g * median_r(v_n^2)`, and
+`x_w * c_g * median_r(v_n^2)`. Therefore the current decision is
+`BLOCKED_MULTIPLE_RESIDUAL_BLIND_SCALES`: the scale cannot be selected by
+endpoint residuals, and a Tau-side closure/readout principle must choose or
+reject the alternatives.
+
+The Tau-side scale-selection gate is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_tau_side_scale_selection_gate.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_tau_side_scale_selection_criteria.csv
+data/derived/s4g75_ngc4088_tau_side_scale_selection_gate.csv
+data/derived/s4g75_ngc4088_tau_side_scale_selection_summary.csv
+reports/s4g75_ngc4088_tau_side_scale_selection_gate.md
+```
+
+Under the conditional `MINIMAL_SOURCE_ONSET_ASYMPTOTIC_CARRIER_RULE`, the
+current `x_w * Vflat^2` carrier is the only selected scale. The status is
+`THEORY_SELECTION_CONDITIONAL_CURRENT_ONLY`, not a final law: the selection rule
+still needs a Tau-side closure/readout derivation before endpoint use. Its law
+status is `SELECTION_RULE_CONDITIONAL_NOT_DERIVED_LAW`.
+
+The follow-up derivation gate is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_tau_side_scale_derivation_gate.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_tau_side_scale_derivation_skeleton.csv
+data/derived/s4g75_ngc4088_tau_side_scale_derivation_gate.csv
+data/derived/s4g75_ngc4088_tau_side_scale_derivation_summary.csv
+reports/s4g75_ngc4088_tau_side_scale_derivation_gate.md
+```
+
+The gate records the exact missing proof obligations behind the selected
+carrier. It currently reports
+`DERIVATION_BLOCKED_SELECTION_RULE_AUDITED` and
+`NOT_DERIVED_TAU_SIDE_LAW`: dimensional consistency passes, source-onset
+locality/comparator autonomy/minimal-source-factor status remains
+formula-conditional, and asymptotic carrier dominance, a Tau-side
+closure/readout functional, and population transfer remain blocked.
+
+The asymptotic-carrier dominance subgate is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_asymptotic_carrier_dominance_gate.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_asymptotic_carrier_candidate.csv
+data/derived/s4g75_ngc4088_asymptotic_carrier_dominance_gate.csv
+data/derived/s4g75_ngc4088_asymptotic_carrier_dominance_summary.csv
+reports/s4g75_ngc4088_asymptotic_carrier_dominance_gate.md
+```
+
+This subgate sharpens the `G3_ASYMPTOTIC_CARRIER_DOMINANCE` blocker. `Vflat^2`
+passes catalog-availability, dimensional, point-sampled-median rejection, and
+external-comparator rejection checks, but the status remains
+`ASYMPTOTIC_CARRIER_DOMINANCE_NOT_DERIVED` and
+`VFLAT2_SOURCE_CANDIDATE_NOT_TAU_SIDE_CARRIER_PROOF`.
+
+The closure-functional requirement gate is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_closure_functional_requirement_gate.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_closure_functional_requirement.csv
+data/derived/s4g75_ngc4088_closure_functional_requirement_gate.csv
+data/derived/s4g75_ngc4088_closure_functional_requirement_summary.csv
+reports/s4g75_ngc4088_closure_functional_requirement_gate.md
+```
+
+This gate sharpens the `G6_TAU_SIDE_CLOSURE_FUNCTIONAL` blocker. It specifies a
+minimum functional requirement,
+`J_tau[lambda_w] = closure_cost + asymptotic_carrier_penalty + autonomy_penalty`,
+but the status is still
+`CLOSURE_FUNCTIONAL_REQUIREMENT_SPECIFIED_NOT_DERIVED` and
+`NO_TAU_SIDE_EULER_CLOSURE_DERIVATION_YET`: the closure cost and stationarity
+equation have not been constructed.
+
+The minimal Euler-ansatz gate is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_minimal_euler_ansatz_gate.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_minimal_euler_ansatz.csv
+data/derived/s4g75_ngc4088_minimal_euler_ansatz_gate.csv
+data/derived/s4g75_ngc4088_minimal_euler_ansatz_summary.csv
+reports/s4g75_ngc4088_minimal_euler_ansatz_gate.md
+```
+
+This gate performs the first explicit conditional stationarity calculation:
+for
+`J_min(lambda_w)=1/2 kappa_lambda (lambda_w - sigma_warp q_warp x_w Vflat^2)^2`,
+the Euler condition gives
+`lambda_w = sigma_warp q_warp x_w Vflat^2 = 8324.016 km^2/s^2`. The status is
+`EULER_CONDITION_SOLVED_GIVEN_TARGET_ANSATZ`, but not a law:
+`TARGET_FUNCTIONAL_NOT_TAU_SIDE_DERIVED`.
+
+The target-functional origin gate is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_target_functional_origin_gate.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_target_functional_origin_factors.csv
+data/derived/s4g75_ngc4088_target_functional_origin_gate.csv
+data/derived/s4g75_ngc4088_target_functional_origin_summary.csv
+reports/s4g75_ngc4088_target_functional_origin_gate.md
+```
+
+This gate decomposes the Euler target. The source-side factors are available:
+`sigma_warp`, `q_warp`, `x_w`, and `Vflat^2`. The composite target
+`sigma_warp q_warp x_w Vflat^2 = 8324.016 km^2/s^2` is dimensionally valid,
+but the status remains
+`SOURCE_FACTORS_AVAILABLE_COUPLING_NOT_DERIVED` and
+`TARGET_TERM_NOT_TAU_SIDE_DERIVED`: the multiplicative coupling and quadratic
+penalty are still ansatz-level, not Tau-side derived.
+
+The multiplicative-coupling separability gate is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_multiplicative_coupling_separability_gate.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_multiplicative_coupling_theorem.csv
+data/derived/s4g75_ngc4088_multiplicative_coupling_assumptions.csv
+data/derived/s4g75_ngc4088_multiplicative_coupling_separability_gate.csv
+data/derived/s4g75_ngc4088_multiplicative_coupling_separability_summary.csv
+reports/s4g75_ngc4088_multiplicative_coupling_separability_gate.md
+```
+
+This gate upgrades the product term to a conditional separability result:
+if the warp/asymmetry readout amplitude separates into orientation, source
+strength, onset-support, and asymptotic-carrier factors, then
+`lambda_w = sigma_warp q_warp x_w Vflat^2`. The status is
+`CONDITIONAL_PRODUCT_DERIVED_IF_SEPARABLE`, not a final law:
+`SEPARABILITY_AND_CROSS_TERM_SUPPRESSION_NOT_DERIVED`.
+
+The cross-term suppression gate is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_cross_term_suppression_gate.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_cross_term_model.csv
+data/derived/s4g75_ngc4088_cross_term_ledger.csv
+data/derived/s4g75_ngc4088_cross_term_suppression_gate.csv
+data/derived/s4g75_ngc4088_cross_term_suppression_summary.csv
+reports/s4g75_ngc4088_cross_term_suppression_gate.md
+```
+
+This gate keeps the leading product honest by introducing
+`lambda_w = lambda_0 * (1 + epsilon_cross)`. The zero-cross limit recovers the
+current formula, but the current status is
+`CROSS_TERMS_DECLARED_NOT_SUPPRESSED` and
+`LEADING_PRODUCT_ONLY_UNTIL_EPSILON_CROSS_BOUND`: mixed source-source terms are
+declared but not yet derived away or bounded by residual-blind source
+observables.
+
+The epsilon-cross source-bound protocol is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_epsilon_cross_source_bound_protocol.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_epsilon_cross_source_observables.csv
+data/derived/s4g75_ngc4088_epsilon_cross_bound_protocol.csv
+data/derived/s4g75_ngc4088_epsilon_cross_source_bound_gate.csv
+data/derived/s4g75_ngc4088_epsilon_cross_source_bound_summary.csv
+reports/s4g75_ngc4088_epsilon_cross_source_bound_protocol.md
+```
+
+This protocol declares a residual-blind bound form for `epsilon_cross`.
+NGC4088 already has three first-pass source observables: a 90 degree
+orientation mismatch, a 0.4 arcmin side-onset asymmetry, and a 0.25 onset
+uncertainty fraction. The numeric bound remains blocked:
+`SOURCE_BOUND_PROTOCOL_PARTIAL_NUMERIC_BOUND_BLOCKED` and
+`SYMBOLIC_UNBOUNDED_UNTIL_Q_AND_MEMORY_READY`, because quantitative
+`q_warp`, a memory/history proxy, and bound coefficients are still missing.
+
+The q_warp measurement protocol is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_qwarp_measurement_protocol.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_qwarp_measurement_protocol.csv
+data/derived/s4g75_ngc4088_qwarp_measurement_fields.csv
+data/derived/s4g75_ngc4088_qwarp_measurement_response_template.csv
+data/derived/s4g75_ngc4088_qwarp_measurement_gate.csv
+data/derived/s4g75_ngc4088_qwarp_measurement_summary.csv
+reports/s4g75_ngc4088_qwarp_measurement_protocol.md
+```
+
+This protocol turns qualitative `q_warp=1` into a residual-blind measurement
+task:
+`q_warp_measured = clipped_mean(outer_asymmetry_extent / local_disk_reference_extent)`.
+The protocol has 23 panel measurement targets and five required fields, but the
+response is still empty. Status:
+`QWARP_PROTOCOL_READY_MEASUREMENT_BLOCKED`; after measurement and independent
+review it would unblock the q component of the `epsilon_cross` bound.
+
+The NGC4088 memory/history proxy protocol is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_memory_history_proxy_protocol.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_memory_history_proxy_protocol.csv
+data/derived/s4g75_ngc4088_memory_history_proxy_components.csv
+data/derived/s4g75_ngc4088_memory_history_proxy_response_template.csv
+data/derived/s4g75_ngc4088_memory_history_proxy_gate.csv
+data/derived/s4g75_ngc4088_memory_history_proxy_summary.csv
+reports/s4g75_ngc4088_memory_history_proxy_protocol.md
+```
+
+It defines
+`m_history_warp = weighted_source_score(warp_persistence, HI_lopsidedness, outer_disk_asymmetry, interaction_context)`
+as a residual-blind source proxy for the `B_mem f_mem` term in the
+`epsilon_cross` bound. The protocol explicitly forbids `vobs`, rotation
+residuals, `rotation-inferred family`, and endpoint-selected models. The WHISP
+source lane is available, but all component measurements remain empty. Status:
+`MEMORY_PROTOCOL_READY_MEASUREMENT_BLOCKED`; after residual-blind source review
+and independent verification it would unblock the memory component:
+`UNBLOCKS_MEMORY_COMPONENT_AFTER_MEASUREMENT_AND_REVIEW`.
+
+The first-pass source-response fill is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_first_pass_source_response_fill.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_qwarp_first_pass_response.csv
+data/derived/s4g75_ngc4088_memory_history_first_pass_components.csv
+data/derived/s4g75_ngc4088_memory_history_first_pass_response.csv
+data/derived/s4g75_ngc4088_first_pass_source_response_fill_gate.csv
+data/derived/s4g75_ngc4088_first_pass_source_response_fill_summary.csv
+reports/s4g75_ngc4088_first_pass_source_response_fill.md
+```
+
+It fills provisional source values from the already frozen channel-map
+digitization response: `q_warp_measured=1.0` and `m_history_warp=1.0`. These are
+not accepted numeric-bound inputs. Status:
+`FIRST_PASS_SOURCE_FILLED_REVIEW_REQUIRED`; independent source review and
+environment/context completion remain required.
+
+The independent source-response review is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_source_response_independent_review.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_source_response_independent_review.csv
+data/derived/s4g75_ngc4088_source_response_independent_review_gate.csv
+data/derived/s4g75_ngc4088_source_response_independent_review_summary.csv
+reports/s4g75_ngc4088_source_response_independent_review.md
+```
+
+It recomputes the first-pass source responses without endpoint residuals. The
+q response is accepted for the protocol numeric bound. The previously missing
+H4 interaction/context component is now filled by a residual-blind source review
+of the NGC4088 literature evidence for distortion, asymmetric warp, and nearby
+companion/context. The morphological-history warp proxy is therefore accepted
+for this protocol-bound layer rather than caveated. Here memory/history means
+morphology-carried source history, not a separate fundamental Tau object.
+Status: `SOURCE_RESPONSES_ACCEPTED_FOR_PROTOCOL_BOUND`.
+
+The B_i coefficient freeze rule is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_bi_coefficient_freeze_rule.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_bi_frozen_coefficients.csv
+data/derived/s4g75_ngc4088_bi_coefficient_freeze_rule_gate.csv
+data/derived/s4g75_ngc4088_bi_coefficient_freeze_rule_summary.csv
+reports/s4g75_ngc4088_bi_coefficient_freeze_rule.md
+```
+
+It freezes the conservative residual-blind protocol rule `B_i=1` for all four
+coefficients. This is a unit-Lipschitz/triangle-bound default, not a final
+Tau-side sharp-amplitude derivation and not an endpoint fit. Status:
+`BI_COEFFICIENTS_FROZEN_PROTOCOL_BOUND_READY`.
+
+The sharpened B_i coefficient-bound rule is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_bi_sharp_coefficient_bound_rule.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_bi_sharp_coefficients.csv
+data/derived/s4g75_ngc4088_bi_sharp_coefficient_bound_rule_gate.csv
+data/derived/s4g75_ngc4088_bi_sharp_coefficient_bound_rule_summary.csv
+reports/s4g75_ngc4088_bi_sharp_coefficient_bound_rule.md
+```
+
+It supplies the stricter residual-blind protocol rule `B_i=0.5` under a
+declared second-order Taylor-remainder interpretation with normalized
+source-space Hessian cap `<=1`. This is formula-conditional and sharper than
+the unit bound, but it is still not a final Tau-side amplitude derivation.
+Status: `BI_COEFFICIENTS_SHARPENED_PROTOCOL_BOUND_READY`.
+
+The epsilon-cross input review packet is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_epsilon_cross_input_review_packet.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_epsilon_cross_input_review_obligations.csv
+data/derived/s4g75_ngc4088_epsilon_cross_input_review_gate.csv
+data/derived/s4g75_ngc4088_epsilon_cross_input_review_summary.csv
+reports/s4g75_ngc4088_epsilon_cross_input_review_packet.md
+```
+
+This packet consolidates the two residual-blind source-measurement obligations
+(`q_warp_measured`, `m_history_warp`) and the four coefficient-rule obligations
+(`B_PA`, `B_R`, `B_q`, `B_mem`). With the independent source review and the
+active residual-blind coefficient protocol present, this gate now authorizes
+downstream evaluation of a numeric protocol bound. Status:
+`INPUT_REVIEW_PACKET_NUMERIC_PROTOCOL_BOUND_READY`; the next required action is
+`evaluate_numeric_epsilon_cross_protocol_bound`.
+
+The B_i coefficient-rule gate is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_bi_coefficient_rule_gate.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_bi_feature_normalization.csv
+data/derived/s4g75_ngc4088_bi_coefficient_obligations.csv
+data/derived/s4g75_ngc4088_bi_coefficient_rule_gate.csv
+data/derived/s4g75_ngc4088_bi_coefficient_rule_summary.csv
+reports/s4g75_ngc4088_bi_coefficient_rule_gate.md
+```
+
+This gate carries the residual-blind, dimensionless feature-normalization side
+and the active protocol coefficients. Current NGC4088 values are `f_PA=0.5`,
+`f_R=0.25`, `f_q=1.0`, and `f_mem=1.0`; `f_mem` is a source-reviewed
+morphological-history proxy, not a separate fundamental memory object. The
+conservative baseline keeps `B_PA=B_R=B_q=B_mem=1`, while the active sharpened
+formula-conditional protocol uses `B_PA=B_R=B_q=B_mem=0.5`. Status:
+`FEATURE_NORMALIZATION_AND_B_VALUES_READY_PROTOCOL_BOUND`; numeric bound status:
+`NUMERIC_EPSILON_PROTOCOL_BOUND_READY`.
+
+The epsilon-cross bound-expression shell is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_epsilon_cross_bound_expression_shell.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_epsilon_cross_bound_terms.csv
+data/derived/s4g75_ngc4088_epsilon_cross_bound_expression.csv
+data/derived/s4g75_ngc4088_epsilon_cross_bound_expression_summary.csv
+reports/s4g75_ngc4088_epsilon_cross_bound_expression_shell.md
+```
+
+It combines the accepted feature-normalization side with the frozen protocol
+coefficient side:
+
+```text
+|epsilon_cross| <= 0.5*B_PA + 0.25*B_R + 1*B_q + 1*B_mem
+```
+
+With the conservative `B_i=1` baseline this evaluates to:
+
+```text
+|epsilon_cross| <= 2.75
+```
+
+With the active second-order-remainder `B_i=0.5` protocol rule this evaluates to:
+
+```text
+|epsilon_cross| <= 1.375
+```
+
+This is a residual-blind protocol upper bound, not a final physical amplitude
+derivation and not endpoint authorization. The follow-on readout sensitivity
+audit preserves the negative/preparatory result that `1.375` is still loose
+enough to require additional Tau-side locality, sign, or monotonicity
+constraints before promotion.
+
+The narrowed locality-coupled bound is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_epsilon_cross_locality_bound_rule.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_epsilon_cross_locality_bound_terms.csv
+data/derived/s4g75_ngc4088_epsilon_cross_locality_bound_gate.csv
+data/derived/s4g75_ngc4088_epsilon_cross_locality_bound_summary.csv
+reports/s4g75_ngc4088_epsilon_cross_locality_bound_rule.md
+```
+
+It treats `epsilon_cross` as an adjacent source/readout coupling rather than as
+an independently additive feature sum:
+
+```text
+|epsilon_cross| <= 0.5*f_PA*f_R + 0.5*f_R*f_q + 0.5*f_q*f_mem
+```
+
+For NGC4088 this gives:
+
+```text
+|epsilon_cross| <= 0.6875
+```
+
+This is now below one, so the readout sensitivity audit marks the narrowed
+bound as sign-stable in the preflight sense. The status is still
+formula-conditional: the adjacency rule is a residual-blind locality-chain
+protocol, not a final Tau-side locality theorem. Status:
+`NUMERIC_EPSILON_PROTOCOL_BOUND_READY_CAVEATED`; numeric bound status:
+`NUMERIC_EPSILON_PROTOCOL_BOUND_AVAILABLE`.
+
+The readout promotion gate is generated by:
+
+```text
+python scripts/build_s4g75_ngc4088_readout_promotion_gate.py
+```
+
+and writes:
+
+```text
+data/derived/s4g75_ngc4088_readout_promotion_gate.csv
+data/derived/s4g75_ngc4088_readout_promotion_summary.csv
+reports/s4g75_ngc4088_readout_promotion_gate.md
+```
+
+This gate separates preflight readiness from endpoint authorization. In the
+current package, five gates pass: source onset, dimensional carrier, basis
+sanity, residual-blind generation, and endpoint-score guard. Three gates remain
+blocked: independent digitization review, physical normalization-law
+derivation, and population generalization. Thus NGC4088 is
+`PROMOTION_BLOCKED_PREFLIGHT_READY`, not endpoint-ready.
+
+The promotion theorem skeletons currently have deliberately conservative
+status:
+
+```text
+TAIL-HI-EXTENT-PROMOTION-LEMMA-001:
+    CONDITIONAL_INCOMPLETE.
+    Weakest step: prove that R_HI constrains the same outer-disk transition
+    kernel, not merely generic gas extent.
+
+COMPACT-SUPPORT-PROMOTION-LEMMA-001:
+    CONDITIONAL_INCOMPLETE.
+    Weakest step: prove that Reff or a listed component is the compact support
+    used by the compact kernel, not a global half-light proxy.
+
+EDGE-DISK-VERTICAL-PROMOTION-LEMMA-001:
+    CONDITIONAL_INCOMPLETE.
+    Weakest step: prove that edge-disk/component evidence yields a measured or
+    bounded vertical kernel parameter, not merely a projection caveat.
+```
+
+The promoted-kernel stress test then reruns the S4G75 lane with those direct
+kernel overrides. It is still not accepted validation, because the strict
+subset has only two rows. The direct compact override is encouraging, while the
+direct edge-disk override is not:
+
+```text
+NGC5985:
+    filled matched RMSE  = 59.896708.
+    promoted matched RMSE = 50.032494.
+    delta = -9.864214.
+
+NGC5907:
+    filled matched RMSE  = 17.013339.
+    promoted matched RMSE = 17.025301.
+    delta = +0.011961.
+```
+
+This preserves the core diagnosis: direct compact support helps in this pilot,
+but thick/flared still needs a better vertical readout or projection rule.
+
+Current full-sample freeze verdict:
+
+```text
+Endpoint-freeze allowed:                  0/175.
+Proxy-gate blocker resolved by E_tau:     175/175.
+Blocked by missing Tau-side normalization: 0/175.
+Source-native orientation ready:          67/175.
+Blocked by source-native orientation:     108/175.
+Blocked by projection acceptance:         47/175.
+Blocked by memory/history acceptance:     19/175.
+Blocked by q_i/normalization acceptance:  1/175.
+Formula-conditional normalization present: 175/175.
+Dominant source-candidate support:        141/175.
+Dominant proxy/partial only:              31/175.
+Dominant missing source support:          3/175.
+```
+
+This is a protocol safeguard, not a negative empirical result. It says that
+the source layer is informative, and a residual-blind source-normalization
+candidate now exists. The proxy blocker is resolved, and orientation promotion
+is now partial rather than absent. The endpoint still cannot freeze because the
+remaining thick/flared orientation rows, projection caveats, memory/history
+acceptance, accepted per-galaxy evidence assignments, and the accepted
+normalization-law step are not yet closed.
+is independently accepted as a Tau-side normalization law and paired with an
+accepted morphology-memory/projection audit.
+
+The source-normalization derivation audit is generated by:
+
+```bash
+python scripts/build_tau_side_source_normalization_derivation_audit.py
+```
+
+This writes:
+
+```text
+data/derived/tau_side_source_normalization_derivation_constants.csv
+data/derived/tau_side_source_normalization_derivation_rule.csv
+data/derived/tau_side_source_normalization_derivation_summary.csv
+reports/tau_side_source_normalization_derivation_audit.md
+```
+
+The audit records the predeclared orientation signs and source-evidence gates
+used by the normalization candidate. It also checks the rule dimensionally as a
+delta-v-squared candidate. The constants are not selected from endpoint
+residuals. The orientation signs are now recorded as theory-conditional bridge
+derivations, while the proxy attenuation is the coarse executable
+representative of the conservative Tau-side readout-admission product:
+
+```text
+E_proxy* = 1/3
+epsilon_* = 0.157399...
+strong proxy = 0.85
+ordinary proxy = 0.70
+standard proxy product = 0.70 * 0.70 * 0.85 * 0.85 = 0.354025.
+```
+
+This is not a final universal evidence law; it is the current conservative
+readout-admission geometry used by the bridge.
+
+The intended promotion path is:
+
+```text
+fixed proxy bin e_proxy = 0.35
+    -> galaxy/family-specific evidence gate e_gK = E_tau(g,K).
+```
+
+Here `E_tau` must be assigned from residual-blind source presence, geometry
+relevance, projection safety, morphology-memory reliability, and resolution
+adequacy. The median standard proxy value near `0.35` is now derived as the
+coarse-grid product `0.354025` inside the current conservative
+readout-admission geometry. The remaining caveat is not the internal proxy
+product, but whether this conservative evidence geometry is final.
+
+The theory-conditional source-normalized L2 preflight is generated by:
+
+```bash
+python scripts/run_tau_side_source_normalized_l2_endpoint.py
+```
+
+This writes:
+
+```text
+data/derived/tau_side_source_normalization_component_rule.csv
+data/derived/tau_side_source_normalization_galaxy_rule.csv
+data/derived/tau_side_source_normalized_l2_endpoint_scores.csv
+data/derived/tau_side_source_normalized_l2_endpoint_summary.csv
+reports/tau_side_source_normalized_l2_endpoint.md
+```
+
+Residual-blind normalization rule:
+
+```text
+normalized_shape_gK(r) = kernel_gK(r) / median_r |kernel_gK(r)|
+c_g = median_r max(v_v6^2 - v_n^2, 0) / median_r v_v6^2
+delta v_gK^2(r) = sigma_K e_gK w_gK c_g median_r(v_n^2) normalized_shape_gK(r)
+```
+
+Current holdout reading:
+
+```text
+Beats old L2 intake endpoint: 0.568.
+Beats TPG/v6:                0.455.
+Beats MOND:                  0.545.
+Median minus old L2 RMSE:   -0.272.
+```
+
+This improves over the raw L2 intake endpoint, but remains formula-conditional:
+the orientation signs now have a partial source-native promotion gate, while
+the thick/flared orientation source layer and the per-galaxy `q_i` evidence
+assignments must become accepted source-native observables before endpoint
+freeze.
+The endpoint script loads those signs and gates from
+`tau_side_source_normalization_derivation_constants.csv`; it does not carry a
+separate endpoint-local tuning table.
+
+The sensitivity audit for the conditional signs and evidence gates is generated
+by:
+
+```bash
+python scripts/audit_tau_side_source_normalization_sensitivity.py
+```
+
+This writes:
+
+```text
+data/derived/tau_side_source_normalization_sensitivity_manifest.csv
+data/derived/tau_side_source_normalization_sensitivity_components.csv
+data/derived/tau_side_source_normalization_sensitivity_scores.csv
+data/derived/tau_side_source_normalization_sensitivity_summary.csv
+reports/tau_side_source_normalization_sensitivity.md
+```
+
+Current holdout sensitivity:
+
+```text
+primary proxy gate 0.35:
+    beats old L2 intake 0.568, TPG/v6 0.455, MOND 0.545.
+no proxy gate:
+    beats old L2 intake 0.545.
+full proxy gate:
+    beats old L2 intake 0.523 and TPG/v6 0.523.
+all-positive orientation:
+    beats old L2 intake 0.477.
+all-negative orientation:
+    beats old L2 intake 0.432.
+```
+
+This audit does not select a winning variant. It shows that the orientation
+structure matters. The proxy-gate ladder is now derived inside the conservative
+Tau-side readout-admission geometry, so the remaining freeze blockers are
+orientation promotion and accepted per-galaxy evidence assignments.
+
+The first executable Tau-side evidence-measure gate is generated by:
+
+```bash
+python scripts/build_tau_side_evidence_measure_gate.py
+```
+
+This writes:
+
+```text
+data/derived/tau_side_evidence_measure_gate_components.csv
+data/derived/tau_side_evidence_measure_gate_summary.csv
+reports/tau_side_evidence_measure_gate.md
+```
+
+Candidate measure:
+
+```text
+E_tau = q_source q_geometry q_projection q_memory q_resolution
+```
+
+Current full-sample reading:
+
+```text
+Components audited:              406.
+Proxy/partial components:        105.
+Median proxy E_tau:              0.354025.
+Mean proxy E_tau:                0.335798.
+Median proxy minus fixed 0.35:   +0.004025.
+```
+
+This shows that the fixed `0.35` proxy gate can be replaced by a
+galaxy/family-specific `E_tau(g,K)` candidate while reproducing the old proxy
+bin as a coarse-grid consequence for the median proxy component. The proxy
+ladder is derived inside the current conservative readout-admission geometry;
+the individual `q_i` assignments are still theory-candidate source/readout
+assignments, not accepted source-native observables.
+The generated component table therefore carries explicit per-factor status
+columns: accepted and missing source gates are definition-derived limit cases,
+while proxy/partial rows are marked
+`THEORY_CANDIDATE_FACTOR_GEOMETRY_NOT_ACCEPTED`.
+
+The endpoint stress test using `E_tau(g,K)` gates is generated by:
+
+```bash
+python scripts/run_tau_side_evidence_measure_l2_endpoint.py
+```
+
+This writes:
+
+```text
+data/derived/tau_side_evidence_measure_l2_component_rule.csv
+data/derived/tau_side_evidence_measure_l2_galaxy_rule.csv
+data/derived/tau_side_evidence_measure_l2_endpoint_scores.csv
+data/derived/tau_side_evidence_measure_l2_endpoint_summary.csv
+reports/tau_side_evidence_measure_l2_endpoint.md
+```
+
+Current holdout reading:
+
+```text
+Beats old L2 intake endpoint: 0.568.
+Beats TPG/v6:                0.455.
+Beats MOND:                  0.545.
+Median E_tau-minus-old-L2 RMSE: -0.236.
+```
+
+This is not a model-selection step. It says that the `E_tau` candidate preserves
+the fixed-gate signal while exposing the proxy gate as a source-evidence
+measure whose galaxy/component assignments still need source-native acceptance
+before endpoint freeze.
 
 ## Amplitude Policy Diagnostics
 
