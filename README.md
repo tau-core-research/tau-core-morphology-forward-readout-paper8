@@ -5504,7 +5504,7 @@ papers/paper2_projection_enriched/arxiv_source.zip
 
 ## Zenodo Publication Status
 
-This repository is Zenodo-ready for version `v0.1.0`:
+This public repository is Zenodo-ready for version `v0.1.1`:
 
 ```text
 .zenodo.json
@@ -5514,14 +5514,11 @@ arxiv_submission_source.zip
 paper8_submission_source/main.pdf
 ```
 
-Important limitation: this GitHub repository is private. Zenodo's GitHub
-integration can archive GitHub releases only for repositories it can access;
-Zenodo's public FAQ states that private repositories are not accessible through
-that integration. Therefore, an automatic Zenodo DOI requires either making an
-appropriate release repository visible to Zenodo before release archiving, or
-uploading the release package directly through Zenodo with a Zenodo access
-token/manual deposit. The metadata file in this repository is the intended
-record metadata for that deposit.
+The repository is public and carries `.zenodo.json` plus `CITATION.cff`.
+Automatic DOI minting still requires enabling the repository in the Zenodo
+GitHub integration before creating or reprocessing a GitHub release. If the
+integration is not enabled, the same release package can be uploaded manually
+or through the Zenodo API with this metadata.
 
 ## Scope
 
