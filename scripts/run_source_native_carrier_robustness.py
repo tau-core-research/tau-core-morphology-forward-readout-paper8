@@ -33,6 +33,7 @@ from run_source_native_readout_formula_endpoint import (  # noqa: E402
 )
 
 N_SHUFFLES = 1000
+FLOAT_FORMAT = "%.12g"
 CARRIERS = [
     ("tpg_v6", "v_v6", "TPG/v6 frozen predecessor carrier"),
     ("newtonian_baryonic", "vn", "Newtonian baryonic carrier"),
@@ -367,11 +368,23 @@ def main() -> None:
     family_out = build_family_summary(scores_out)
     freeze_audit = build_freeze_invariance_audit(labels, amplitudes_out, summary_out)
 
-    amplitudes_out.to_csv(DATA / "source_native_carrier_robustness_amplitudes.csv", index=False)
-    scores_out.to_csv(DATA / "source_native_carrier_robustness_scores_by_galaxy.csv", index=False)
-    summary_out.to_csv(DATA / "source_native_carrier_robustness_summary.csv", index=False)
-    family_out.to_csv(DATA / "source_native_carrier_robustness_by_family.csv", index=False)
-    shuffled_out.to_csv(DATA / "source_native_carrier_robustness_shuffled_null_summary.csv", index=False)
+    amplitudes_out.to_csv(
+        DATA / "source_native_carrier_robustness_amplitudes.csv", index=False, float_format=FLOAT_FORMAT
+    )
+    scores_out.to_csv(
+        DATA / "source_native_carrier_robustness_scores_by_galaxy.csv", index=False, float_format=FLOAT_FORMAT
+    )
+    summary_out.to_csv(
+        DATA / "source_native_carrier_robustness_summary.csv", index=False, float_format=FLOAT_FORMAT
+    )
+    family_out.to_csv(
+        DATA / "source_native_carrier_robustness_by_family.csv", index=False, float_format=FLOAT_FORMAT
+    )
+    shuffled_out.to_csv(
+        DATA / "source_native_carrier_robustness_shuffled_null_summary.csv",
+        index=False,
+        float_format=FLOAT_FORMAT,
+    )
     freeze_audit.to_csv(DATA / "source_native_carrier_robustness_freeze_invariance_audit.csv", index=False)
     write_report(summary_out, shuffled_out, family_out, freeze_audit)
     print("SOURCE_NATIVE_CARRIER_ROBUSTNESS_COMPLETE")

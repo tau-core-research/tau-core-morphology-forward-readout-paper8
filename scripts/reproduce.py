@@ -10,6 +10,7 @@ the Paper 9 repository.
 from __future__ import annotations
 
 import hashlib
+import os
 import shutil
 import subprocess
 import sys
@@ -22,7 +23,9 @@ SOURCE = ROOT / "paper8_submission_source"
 
 def run(cmd: list[str], cwd: Path = ROOT) -> None:
     print("$ " + " ".join(cmd) + f"  # cwd={cwd}")
-    subprocess.run(cmd, cwd=cwd, check=True)
+    env = os.environ.copy()
+    env.setdefault("SOURCE_DATE_EPOCH", "1767225600")
+    subprocess.run(cmd, cwd=cwd, check=True, env=env)
 
 
 def sha256(path: Path) -> str:

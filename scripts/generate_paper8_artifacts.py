@@ -12,6 +12,7 @@ import shutil
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 import pandas as pd
 
@@ -20,6 +21,16 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "derived"
 FIGURES = ROOT / "figures"
 SOURCE_FIGURES = ROOT / "paper8_submission_source" / "figures"
+SVG_METADATA_REPLACEMENT = """\
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+"""
 
 
 MORPHOLOGY_FAMILIES = [
@@ -203,15 +214,26 @@ def savefig(name: str) -> None:
     SOURCE_FIGURES.mkdir(parents=True, exist_ok=True)
     svg = FIGURES / f"{name}.svg"
     pdf = SOURCE_FIGURES / f"{name}.pdf"
-    plt.savefig(svg, bbox_inches="tight")
-    plt.savefig(pdf, bbox_inches="tight")
+    mpl.rcParams["svg.hashsalt"] = "paper8-forward-readout"
+    pdf_metadata = {
+        "Creator": "Paper 8 reproducibility pipeline",
+        "Producer": "Paper 8 reproducibility pipeline",
+        "CreationDate": None,
+        "ModDate": None,
+    }
+    plt.savefig(svg, bbox_inches="tight", metadata={"Date": None})
+    plt.savefig(pdf, bbox_inches="tight", metadata=pdf_metadata)
     plt.close()
     # Matplotlib SVG paths often contain trailing spaces before line breaks.
     # Strip them so `git diff --check` stays useful for the public package.
-    svg.write_text(
-        "\n".join(line.rstrip() for line in svg.read_text(encoding="utf-8").splitlines()) + "\n",
-        encoding="utf-8",
-    )
+    # Also replace Matplotlib's version/date metadata, which otherwise creates
+    # noisy byte-level diffs across valid reproduction environments.
+    text = svg.read_text(encoding="utf-8")
+    if " <metadata>" in text and " </metadata>" in text:
+        before, rest = text.split(" <metadata>", 1)
+        _, after = rest.split(" </metadata>", 1)
+        text = before + SVG_METADATA_REPLACEMENT + after
+    svg.write_text("\n".join(line.rstrip() for line in text.splitlines()) + "\n", encoding="utf-8")
 
 
 def make_figures() -> None:

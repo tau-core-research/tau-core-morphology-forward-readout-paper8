@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "paper8_submission_source"
 ZIP_PATH = ROOT / "arxiv_submission_source.zip"
 EXCLUDED_SUFFIXES = {".aux", ".log", ".out", ".toc", ".blg", ".bbl", ".synctex.gz"}
+ZIP_EPOCH = (2026, 1, 1, 0, 0, 0)
 
 
 def should_include(path: Path) -> bool:
@@ -27,7 +28,10 @@ def main() -> None:
     with zipfile.ZipFile(ZIP_PATH, "w", compression=zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(SOURCE.rglob("*")):
             if should_include(path):
-                archive.write(path, path.relative_to(SOURCE).as_posix())
+                info = zipfile.ZipInfo(path.relative_to(SOURCE).as_posix(), ZIP_EPOCH)
+                info.compress_type = zipfile.ZIP_DEFLATED
+                info.external_attr = 0o644 << 16
+                archive.writestr(info, path.read_bytes())
     print(f"wrote {ZIP_PATH}")
 
 

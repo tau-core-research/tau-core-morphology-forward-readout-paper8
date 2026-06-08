@@ -949,7 +949,8 @@ SPARC data and not an empirical matched-family endpoint result.
 ## Reproduce
 
 Create an environment with Python 3.10 or newer, then install the lightweight
-dependencies:
+dependencies.  The current committed artifact set was last audited on Python
+3.9.6 as well; Python 3.10+ remains the recommended fresh-environment target.
 
 ```bash
 python -m pip install -r requirements.txt
@@ -965,6 +966,42 @@ This regenerates the derived tables and figures, compiles Paper 1 through the
 compatibility path `paper8_submission_source/main.tex` with `tectonic`, builds
 the Paper 1 arXiv source ZIP, runs the foundation audit, and runs the public
 package tests.
+
+The reproduction script sets a fixed `SOURCE_DATE_EPOCH` for the TeX build and
+the arXiv ZIP builder writes deterministic archive timestamps.  Matplotlib
+figures strip version/date metadata, and carrier-robustness CSVs use fixed
+floating-point formatting so that reruns should avoid scientifically irrelevant
+byte-level drift.  If a remote dataset cannot be downloaded, the acquisition
+step uses the committed/cacheable source copy and reports the fallback in the
+terminal output.
+
+### Online Data Dependencies
+
+The one-command reproduction path includes one source-acquisition step:
+
+```bash
+python scripts/acquire_external_morphology_inputs.py
+```
+
+That script queries/downloads residual-blind catalogue inputs before endpoint
+scoring:
+
+- SPARC Table 1 from the official SPARC site:
+  `https://astroweb.case.edu/SPARC/SPARC_Lelli2016c.mrt`
+- S4G catalogue/decomposition tables through VizieR via `astroquery`.
+
+The SPARC table is cached under:
+
+```text
+data/external/sparc/SPARC_Lelli2016c.mrt
+```
+
+If the remote SPARC download fails, the script uses the cached local copy and
+prints a fallback message.  S4G/VizieR queries require network access for a
+fresh acquisition; the generated derived tables are committed for reproducing
+the paper state.  Other source-hunt and acquisition scripts in this repository
+are optional workbench/provenance upgrades unless they are explicitly listed in
+`scripts/reproduce.py`.
 
 ## Foundation Audit
 
