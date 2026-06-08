@@ -95,6 +95,14 @@ is allowed into a score only after it is source-frozen, assigned to a distinct
 ledger channel, checked for overlap with active kernels, and ablated against
 the lower-channel model. Otherwise it remains theory motivation.
 
+A stricter source-grounding gate is recorded in the Tau Core theory hub as
+projection induction. In Paper 8 terms, a readout channel can move from a
+source-frozen proxy to a Tau-side induced source only after four checks:
+activation of a Tau-side mode, quotient survival after null/gauge removal,
+closure stability, and survival under the 4D readout map. Paper 8 does not
+prove this gate. It uses the gate to mark the derivation boundary of the
+formula shells tested here.
+
 The deeper object behind these handles is called a `Tau morphology state`.
 This is not a visible galaxy-shape class. It is a Tau-side organizing
 configuration whose different 4D readouts may appear as visible morphology,

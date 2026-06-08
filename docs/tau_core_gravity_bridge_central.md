@@ -78,6 +78,43 @@ with active morphology/projection/time kernels, and tested by ablation against
 the lower-channel kernel. Until then it remains Tau-side motivation, not an
 endpoint-scored readout factor.
 
+## Projection-Induction / Source-Grounding Gate
+
+The source-freeze rule is necessary but not sufficient for a Tau-side
+derivation claim. A source-frozen observable only says that a channel was chosen
+without endpoint residual leakage. To promote that channel from an operational
+proxy to a Tau-induced 4D source, it must also pass the projection-induction
+gate:
+
+```text
+activation
+    -> quotient survival
+    -> closure stability
+    -> 4D readout survival
+```
+
+In compact notation the induced observable has the form
+
+```text
+O_i^4D = R_i^4D( Pi_stab([A_tau(u)]) )
+```
+
+where `u` is a Tau-side mode, `A_tau` is the activation map,
+`[A_tau(u)]` is the class after null/gauge quotienting, `Pi_stab` keeps only
+the closure-stable part, and `R_i^4D` is the channel-specific 4D readout map.
+
+Bridge status for Paper 8:
+
+```text
+SOURCE_GROUNDING_GATE_DEFINED
+SOURCE_GROUNDING_DERIVATION_PENDING
+```
+
+Therefore the morphology formula shells below are source-frozen, auditable
+readout proxies unless the corresponding source-grounding derivation is
+separately discharged. This gate protects the paper from over-reading a
+successful matched-family score as a final Tau Core derivation.
+
 ## Core Chain
 
 ```text
