@@ -1,0 +1,29 @@
+{
+  "title": "Morphology-Matched Forward Readout Gates for Tau Core Gravity",
+  "upload_type": "software",
+  "description": "Reproducibility package for the Paper 8 internal-preflight morphology-matched forward-readout protocol. The package contains claim-bounded scripts, derived artifacts, manuscript source, rendered PDF, arXiv source package, and source-native robustness diagnostics. It should be read as a reproducible protocol and internal-preflight signal, not as empirical evidence for a new gravitational law.",
+  "creators": [
+    {
+      "name": "Olcsak, Jozsef"
+    }
+  ],
+  "license": "MIT",
+  "version": "v0.1.0",
+  "access_right": "open",
+  "keywords": [
+    "Tau Core",
+    "galaxy rotation curves",
+    "morphology-matched readout",
+    "SPARC",
+    "reproducibility package",
+    "candidate-control audit"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/tau-core-research/tau-core-morphology-forward-readout-paper8",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "The endpoint statistics do not depend on accepting the Tau Core theory-motivation appendix. Online acquisition paths and cache fallbacks are documented in README.md."
+}
