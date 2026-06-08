@@ -68,6 +68,69 @@ Paper 8 morphology-layer discipline. In particular, it separates the observed
 4D morphology handle `K_obs` from the readout-relevant proxy `K_readout` used
 to select a formula shell.
 
+The paper uses morphology and projection as related but non-identical notions.
+`K_obs` is the catalogue or visually supported 4D morphology handle.
+`K_present` is the present source-observed morphology state. `K_readout` is the
+readout-relevant morphology/projection state that can select a formula shell.
+`O_path` contains observer/path projection information, and `Theta_tau`
+contains source-frozen Tau-side morphology trajectory or phase information.
+Thus a phrase such as "morphology-specific formula" should be read as
+"morphology-projection readout family" unless the context explicitly restricts
+the kernel to a pure present-day morphology proxy.
+
+The deeper object behind these operational handles is the Tau morphology
+state: a source-side organizing configuration whose different 4D readouts may
+appear as visible morphology, matter distribution, gravity response,
+trajectory/phase, observer/path appearance, or clock/time projection.  In this
+language `Theta_morph` is a morphology-state phase/history readout, while
+`Xi_t` is a clock/time-projection readout.  They may share source evidence, but
+they are not the same channel and must pass a non-overlap ledger before any
+combined endpoint claim.
+
+This is an open channel hierarchy, not a fixed two-term model. Other
+projections of the same internal Tau morphology state may also affect the
+rotation readout, such as mass-distribution, metric/closure, coherence/phase,
+or source-observer path/environment projections. Operationally, a new channel
+is allowed into a score only after it is source-frozen, assigned to a distinct
+ledger channel, checked for overlap with active kernels, and ablated against
+the lower-channel model. Otherwise it remains theory motivation.
+
+The deeper object behind these handles is called a `Tau morphology state`.
+This is not a visible galaxy-shape class. It is a Tau-side organizing
+configuration whose different 4D readouts may appear as visible morphology,
+matter/mass distribution, gravity or metric response, time/clock structure,
+observer/path appearance, and quantum/coherence structure. The papers use this
+term as theory motivation and claim-boundary discipline; the numerical tests
+still operate only on source-frozen manifests and endpoint scores.
+
+Consequence for residuals: in Tau Core a rotation-curve residual is not
+assumed to be generated only by the local 4D baryonic mass density at the same
+radius. It may be the 4D readout of several source-frozen channels of the
+deeper Tau morphology state: baryonic distribution, metric/closure response,
+observer/path projection, envelope/history/phase structure, or other
+admissible readout channels. This is not a fitting license; every channel must
+be residual-blind, ledger-separated, and ablated before endpoint scoring.
+
+The bridge also treats observer/path projection as morphology-trajectory
+dependent. The observer/projection layer is not merely an inclination
+correction: a source-frozen `K_readout` may depend on present morphology,
+observer/path geometry, Tau-side morphology trajectory or phase, and
+projection-history environment. In this usage, morphology trajectory is not
+limited to past-memory traces. If 4D past, present, and future morphology are
+different readout slices of the same deeper Tau-side configuration, then
+source-frozen relaxation, settling, accretion, or future-directed phase proxies
+may enter the readout state. These terms are allowed only when supported by
+residual-blind source evidence, not by endpoint residuals or best-fit family
+selection.
+
+The bridge now also isolates a stronger time-readout projection channel. In
+that channel, the observed rotation can be affected because the projection
+selects a different clock/readout slice than the Newtonian closure-test clock.
+The first shell is `v_obs^2 = Xi_t^2 [v_Newt^2 + delta_v_grav/morph^2]`, with
+`Xi_t = 1` as the Newtonian clock-readout limit. `Xi_t` is formula-conditional:
+it must be frozen from residual-blind source/path/time-readout evidence before
+scoring and cannot be inferred from the rotation residual.
+
 This Paper 8 repository is standalone. It does not require accepting Tau Core
 as a completed physical theory.
 
@@ -147,6 +210,700 @@ Forward morphology-matched readout gate:
 K_obs -> K_readout -> formula shell -> delta_g^K -> matched-vs-wrong/shuffled endpoint.
 ```
 
+For projection-enriched cases the bridge refines this to:
+
+```text
+K_obs
+  -> source-frozen present morphology
+     + observer/path projection
+     + Tau-side morphology trajectory/phase
+     + projection-history environment
+  -> K_readout
+  -> formula shell:
+       delta_v_proj^2(R)
+       = sum_j A_j(source)
+               w_j(R, O_obs/path, Theta_morph)
+               K_j(R; K_present, Theta_morph)
+  -> replay / endpoint score
+```
+
+The time-readout branch refines the replay shell to:
+
+```text
+v_obs^2(R)
+  =
+  Xi_t^2(R; O_obs/path, Theta_morph, E_proj/history)
+  *
+  [v_Newt^2(R) + delta_v_grav/morph^2(R)]
+```
+
+The current full-time morphology replay is only a diagnostic proxy for this
+branch, not a source-complete accepted `Xi_t(R)` endpoint.
+
+When the diagnostic time/projection layer worsens a galaxy, the repository now
+records the reason instead of treating the row as a tunable failure. NGC4013
+worsens because the active mixed warp/vertical-overlay kernel already carries
+the source geometry that the generic `Xi_t` proxy would rescale. NGC7331
+worsens more mildly because the broad vertical/outer-warp window already
+contains the available phase information. In both cases the operational rule is
+to keep `Xi_t = 1` unless independent, non-overlapping clock/readout evidence
+is frozen before scoring.
+
+The problematic-galaxy projection-channel ledger is generated by:
+
+```bash
+python scripts/build_problematic_galaxy_projection_channel_ledger.py
+```
+
+It writes:
+
+```text
+data/derived/problematic_galaxy_projection_channel_ledger.csv
+data/derived/problematic_galaxy_projection_channel_summary.csv
+reports/problematic_galaxy_projection_channel_ledger.md
+```
+
+The current ledger does not open any endpoint score. It says that UGC12506
+should next test a source-frozen mass/envelope plus metric-closure channel,
+NGC4088 should keep clock readout as a control on top of the accepted
+warp/history route, NGC4013 and NGC7331 should not promote the current `Xi_t`
+proxy, NGC5907 is projection-saturated at the present proxy level, and NGC4183
+remains a weak/null projection control.
+
+The ledger is converted into executable next gates by:
+
+```bash
+python scripts/build_problematic_projection_channel_next_gates.py
+```
+
+It writes:
+
+```text
+data/derived/problematic_projection_channel_next_gates.csv
+data/derived/problematic_projection_channel_next_gates_summary.csv
+reports/problematic_projection_channel_next_gates.md
+```
+
+The current next-gate artifact is still not an endpoint permission artifact:
+`n_endpoint_allowed = 0`. It opens only two control/replay paths. UGC12506 may
+continue through the source-native NFW/HSE mass-envelope plus metric-closure
+ablation gate, and NGC4088 keeps its accepted additive warp/history route while
+clock readout remains a control. NGC4013 is explicitly blocked for the current
+generic `Xi_t` proxy, NGC7331 needs source-sharpened outer-warp/vertical
+windowing before a refined replay, NGC5907 is saturated at the present
+projection proxy level, and NGC4183 remains the weak/null control.
+
+The UGC12506 source-native NFW/HSE replay is generated by:
+
+```bash
+python scripts/build_ugc12506_source_native_nfw_hse_shell.py
+python scripts/run_ugc12506_source_native_nfw_hse_replay.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_source_native_nfw_hse_replay_summary.csv
+data/derived/ugc12506_source_native_nfw_hse_replay_scores.csv
+figures/endpoint_diagnostics/ugc12506_source_native_nfw_hse_replay.png
+reports/ugc12506_source_native_nfw_hse_replay.md
+```
+
+Current result: the source-native NFW/HSE branch improves the older
+`R_d`-proxy NFW/HSE control slightly (`77.86 -> 77.54 km/s` RMSE), improves
+strongly over the pure envelope/edge-on source branches (`~102.45 -> 77.54
+km/s` RMSE), and improves over the baryonic carrier (`116.02 -> 77.54 km/s`
+RMSE). It still does not reach the prior diagnostic Tau/MOND/TPG-level
+references (`best diagnostic RMSE = 37.36 km/s`). Thus it is evidence that
+UGC12506 needs a real mass/envelope plus closure channel, but not yet a
+source-complete endpoint solution.
+
+The fixed-shape normalization diagnostic and the first source-derived
+beta-closure replay are generated by:
+
+```bash
+python scripts/run_ugc12506_source_native_nfw_hse_normalization_diagnostic.py
+python scripts/run_ugc12506_source_derived_beta_closure_replay.py
+```
+
+The residual-aware diagnostic finds the required velocity-squared multiplier
+`beta_diag = 3.876` and lowers RMSE to `7.48 km/s`; this is diagnostic only
+because it uses the observed curve to set beta. The source-derived candidate
+
+```text
+beta_cl = 1
+          + (lambda_spin / 0.10) * (chi2_iso / chi2_NFW - 1)_+
+          + sin^2(i) * max((i - 80 deg) / 10 deg, 0)
+```
+
+uses only source-frozen spin, Table-5 NFW preference, and inclination. For
+UGC12506 it gives `beta_cl = 3.954`, within about `2.1%` of the diagnostic
+normalization, and scores `7.67 km/s` RMSE. This is a strong shape/source
+normalization candidate, but it is still post-diagnostic and must be
+predeclared and transferred to independent high-spin edge-on systems before it
+can be treated as an endpoint-grade normalization law.
+
+The independent transfer predeclaration is generated by:
+
+```bash
+python scripts/build_ugc12506_beta_closure_transfer_predeclaration.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_transfer_candidates.csv
+data/derived/ugc12506_beta_closure_transfer_source_worklist.csv
+data/derived/ugc12506_beta_closure_transfer_predeclaration_summary.csv
+reports/ugc12506_beta_closure_transfer_predeclaration.md
+```
+
+The current gate finds 11 non-UGC12506 SPARC proxy candidates and allows no
+replay or endpoint score yet. The top source-acquisition targets are
+`UGC11455`, `ESO563-G021`, `IC4202`, `NGC0891`, `NGC4013`, `NGC2841`,
+`NGC4157`, and `NGC4217`. Each requires source-native `lambda_spin`,
+`chi2_NFW`, `chi2_ISO`, halo-fit provenance, and PV/envelope notes before the
+`beta_cl` rule can be replayed as an independent transfer test.
+
+The first source-acquisition blocker is reduced by:
+
+```bash
+python scripts/acquire_ugc12506_beta_closure_transfer_halo_fit_fields.py
+```
+
+It caches the Li et al. (2020) SPARC halo-model catalogue through VizieR and
+writes:
+
+```text
+data/external/literature/li2020_sparc_halo_catalog/table1_vizier.tsv
+data/derived/ugc12506_beta_closure_transfer_halo_fit_fields.csv
+data/derived/ugc12506_beta_closure_transfer_halo_fit_worklist_update.csv
+data/derived/ugc12506_beta_closure_transfer_halo_fit_acquisition_summary.csv
+reports/ugc12506_beta_closure_transfer_halo_fit_acquisition.md
+```
+
+All 11 candidates now have pISO/NFW reduced-chi2 fields filled, but endpoint
+replay remains blocked because `lambda_spin` and PV/envelope evidence are still
+unfrozen. The halo-fit acquisition also shows that the highest edge-on/massive
+H I proxy targets are not automatically UGC12506-like NFW-preference systems:
+positive `nfw_preference_load` appears for `NGC0891`, `NGC7331`, `NGC2841`,
+`NGC0801`, and weakly `NGC4013`.
+
+The post-halo prioritization gate is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_transfer_priority_gate.py
+```
+
+It promotes no endpoint score. It narrows the immediate transfer source-review
+queue to two primary NFW-preference targets, `NGC0891` and `NGC7331`, keeps
+`NGC2841`, `NGC0801`, and `NGC4013` as weak/secondary transfer targets, and
+preserves the pISO-preferred rows as controls or alternative-branch candidates.
+
+The primary target source-freeze preflight is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_primary_source_freeze_preflight.py
+```
+
+It accepts PV/envelope context for both `NGC0891` and `NGC7331`, but freezes no
+`lambda_spin` value. Consequently `beta_cl` replay and endpoint scoring remain
+blocked. The next admissible gate is either a direct source-native spin
+acquisition or a predeclared source-only spin-proxy rule, before inspecting any
+transfer residual.
+
+The direct lambda/spin source-acquisition gate is:
+
+```bash
+python scripts/acquire_ugc12506_beta_closure_direct_lambda_spin_sources.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_direct_lambda_spin_source_evidence.csv
+data/derived/ugc12506_beta_closure_direct_lambda_spin_source_gate_summary.csv
+reports/ugc12506_beta_closure_direct_lambda_spin_source_gate.md
+```
+
+Current status: no direct value is accepted for the `beta_cl` `lambda_spin`
+slot. `NGC7331` has a published disc-spin-like value, `lambda = 0.423`, from a
+lognormal self-gravitating disc model, but this is a definition mismatch rather
+than a direct halo/envelope `lambda_spin` replacement. `NGC0891` remains direct
+lambda blocked; NGC891-like simulation context is model-analogue only.
+
+The NGC0891 spin-source hunt update is:
+
+```bash
+python scripts/acquire_ugc12506_beta_closure_ngc0891_spin_source_hunt_update.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_ngc0891_spin_source_hunt_update_sources.csv
+data/derived/ugc12506_beta_closure_ngc0891_spin_source_hunt_update_worklist.csv
+data/derived/ugc12506_beta_closure_ngc0891_spin_source_hunt_update_summary.csv
+reports/ugc12506_beta_closure_ngc0891_spin_source_hunt_update.md
+```
+
+Status: `NGC0891_CONTEXT_STRENGTHENED_DIRECT_LAMBDA_STILL_BLOCKED`. Four
+NGC891/NGC0891 halo/extraplanar-gas sources strengthen the envelope/projection
+context, but none supplies a direct dimensionless `beta_cl` `lambda_spin`
+measurement. Replay remains blocked.
+
+The NGC7331 definition-conversion gate is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_lambda_definition_conversion_gate.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_lambda_definition_conversion_checks.csv
+data/derived/ugc12506_beta_closure_lambda_definition_conversion_comparison.csv
+data/derived/ugc12506_beta_closure_lambda_definition_conversion_worklist.csv
+data/derived/ugc12506_beta_closure_lambda_definition_conversion_summary.csv
+reports/ugc12506_beta_closure_lambda_definition_conversion_gate.md
+```
+
+Verdict: `NGC7331_DISC_LAMBDA_CONTEXT_ACCEPTED_DIRECT_SUBSTITUTION_REJECTED`.
+The Marr value remains useful source-side angular-momentum context, but direct
+substitution is rejected. A residual-blind disc-to-halo/envelope conversion
+functional is required before it can replace the `lambda_spin_proxy` slot.
+
+The Bullock-like disk-inferred spin conversion proxy gate is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_bullock_spin_conversion_proxy_gate.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_bullock_spin_conversion_proxy_values.csv
+data/derived/ugc12506_beta_closure_bullock_spin_conversion_proxy_comparison.csv
+data/derived/ugc12506_beta_closure_bullock_spin_conversion_proxy_checks.csv
+data/derived/ugc12506_beta_closure_bullock_spin_conversion_proxy_summary.csv
+reports/ugc12506_beta_closure_bullock_spin_conversion_proxy_gate.md
+```
+
+Status: `BULLOCK_DISK_INFERRED_SPIN_PROXY_COMPUTED_REVIEW_REQUIRED`. This
+gate computes the residual-blind conversion proxy
+`lambda'_disk = j_disk / (sqrt(2) R200 V200)` with
+`j_disk = 2 Rdisk Vflat` and `R200 = V200/(10 H0)`, using SPARC source fields
+and Li2020 NFW-flat `V200`. It is a conservative angular-momentum control:
+`NGC0891` gives `lambda'_disk ~= 0.035`, while the earlier exposure proxy gives
+`lambda_spin_proxy ~= 0.149`. The discrepancy is not replay permission; it is
+the reason an independent reviewer must choose between direct spin acquisition,
+the exposure proxy, the Bullock-like conversion proxy, or rejection of the
+route.
+
+The predeclared source-only spin-proxy gate is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_source_declared_spin_proxy_gate.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_source_declared_spin_proxy_fields.csv
+data/derived/ugc12506_beta_closure_source_declared_spin_proxy_transfer_queue.csv
+data/derived/ugc12506_beta_closure_source_declared_spin_proxy_gate_summary.csv
+reports/ugc12506_beta_closure_source_declared_spin_proxy_gate.md
+```
+
+This gate declares a bounded residual-blind proxy candidate,
+`lambda_spin_proxy = 0.10 * (1 + 0.35 extent_load + 0.25 velocity_load +
+0.25 gas_load + 0.15 edgeon_load)`, using only `RHI/Rdisk`, `Vflat`, H I mass,
+and inclination. It is not accepted as a direct `lambda_spin` measurement and
+authorizes no replay or endpoint score. It changes the next source-review queue:
+`NGC0891` is the only primary proxy-transfer review target, while `NGC7331`,
+`NGC2841`, `NGC0801`, and `NGC4013` remain secondary transfer-review targets.
+
+The independent spin-proxy review bundle is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_spin_proxy_review_bundle.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_spin_proxy_review_packet.csv
+data/derived/ugc12506_beta_closure_spin_proxy_review_obligations.csv
+data/derived/ugc12506_beta_closure_spin_proxy_review_forbidden_inputs.csv
+data/derived/ugc12506_beta_closure_spin_proxy_review_response_template.csv
+data/derived/ugc12506_beta_closure_spin_proxy_review_bundle_manifest.csv
+data/derived/ugc12506_beta_closure_spin_proxy_review_bundle_summary.csv
+reports/ugc12506_beta_closure_spin_proxy_review_prompt.md
+reports/ugc12506_beta_closure_spin_proxy_review_bundle.md
+review_bundles/ugc12506_beta_closure_spin_proxy_review_bundle.zip
+```
+
+Status: `U12506_BETA_SPIN_PROXY_REVIEW_BUNDLE_READY_RESPONSE_PENDING`.
+The bundle is for residual-blind independent review only. It includes both the
+source-declared exposure proxy and the Bullock-like disk-inferred conversion
+proxy, but promotes neither. It does not authorize `beta_cl` replay and keeps
+endpoint scoring false.
+The response form now requires an explicit `selected_spin_normalization_route`
+decision: `EXPOSURE_PROXY`, `BULLOCK_DISK_CONVERSION`,
+`DIRECT_SOURCE_NATIVE_SPIN`, `NEW_RESIDUAL_BLIND_RULE`, or rejection/blocking
+via the review decisions.
+
+The review-response intake validator is:
+
+```bash
+python scripts/run_ugc12506_beta_closure_spin_proxy_review_response_intake.py
+```
+
+With no completed reviewer CSV present, the current status is
+`U12506_BETA_SPIN_PROXY_REVIEW_RESPONSE_PENDING_ENDPOINT_BLOCKED`. The proxy
+promotion gate, `beta_cl` replay preflight, and endpoint scoring all remain
+false. The selected spin-normalization route remains
+`PENDING_INDEPENDENT_REVIEW`.
+
+The downstream spin-route prefreeze gate is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_spin_route_prefreeze_gate.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_spin_route_prefreeze_gate.csv
+data/derived/ugc12506_beta_closure_spin_route_prefreeze_values.csv
+data/derived/ugc12506_beta_closure_spin_route_prefreeze_summary.csv
+reports/ugc12506_beta_closure_spin_route_prefreeze_gate.md
+```
+
+Current status:
+`U12506_BETA_SPIN_ROUTE_PREFREEZE_BLOCKED_REVIEW_ROUTE_PENDING`. This gate is
+the replay-side lock: even after the proxy bundle exists, no transfer prefreeze
+values are emitted until an independent response selects a spin-normalization
+route. Endpoint scoring remains false.
+
+The spin-route decision matrix is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_spin_route_decision_matrix.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_spin_route_decision_matrix.csv
+data/derived/ugc12506_beta_closure_spin_route_decision_matrix_summary.csv
+reports/ugc12506_beta_closure_spin_route_decision_matrix.md
+```
+
+Status:
+`U12506_BETA_SPIN_ROUTE_DECISION_MATRIX_READY_REVIEW_REQUIRED`. It compares four
+routes: `EXPOSURE_PROXY`, `BULLOCK_DISK_CONVERSION`,
+`DIRECT_SOURCE_NATIVE_SPIN`, and `REJECT_ROUTE`. The preferred scientific route
+is still direct source-native halo/envelope spin, but the current practical
+reviewable routes are the exposure proxy and Bullock-like disk conversion. The
+matrix chooses none of them and authorizes no replay.
+
+The beta-closure scoring launch gate is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_scoring_launch_gate.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_scoring_launch_inputs.csv
+data/derived/ugc12506_beta_closure_scoring_launch_gates.csv
+data/derived/ugc12506_beta_closure_scoring_protocol_skeleton.csv
+data/derived/ugc12506_beta_closure_scoring_launch_summary.csv
+reports/ugc12506_beta_closure_scoring_launch_gate.md
+```
+
+Current status:
+`U12506_BETA_CLOSURE_SCORING_LAUNCH_BLOCKED_REVIEW_PREFREEZE_PENDING`.
+All nine required launch inputs exist, but the review route, prefreeze value,
+and carrier-freeze gates are blocked. This is the last non-scoring gate: the
+future scoring script may read `vobs` only after a formula manifest is frozen
+from accepted spin-route values and an accepted carrier.
+
+The beta-closure transfer carrier-freeze gate is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_transfer_carrier_freeze_gate.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_transfer_carrier_route_decision_matrix.csv
+data/derived/ugc12506_beta_closure_transfer_carrier_manifest.csv
+data/derived/ugc12506_beta_closure_transfer_carrier_freeze_gates.csv
+data/derived/ugc12506_beta_closure_transfer_carrier_freeze_summary.csv
+reports/ugc12506_beta_closure_transfer_carrier_freeze_gate.md
+```
+
+Current status:
+`U12506_BETA_CLOSURE_TRANSFER_CARRIER_FREEZE_BLOCKED_CARRIER_REVIEW_PENDING`.
+The gate records three carrier routes: a reviewable-but-not-accepted
+`BARYONIC_050_FAST_PACKET` stress carrier, a `LI2020_NFW_FIT_CARRIER`
+diagnostic/control route that is not endpoint-safe by default because it uses
+published rotation-curve fit products, and a preferred-but-missing
+`SOURCE_NATIVE_NFW_HSE_TRANSFER_CARRIER`. No carrier row is frozen.
+
+The carrier review bundle and response intake are:
+
+```bash
+python scripts/build_ugc12506_beta_closure_carrier_review_bundle.py
+python scripts/run_ugc12506_beta_closure_carrier_review_response_intake.py
+```
+
+They write:
+
+```text
+data/derived/ugc12506_beta_closure_carrier_review_bundle_summary.csv
+data/derived/ugc12506_beta_closure_carrier_review_obligations.csv
+data/derived/ugc12506_beta_closure_carrier_review_forbidden_inputs.csv
+data/derived/ugc12506_beta_closure_carrier_review_response_template.csv
+data/derived/ugc12506_beta_closure_carrier_review_response_intake_summary.csv
+data/derived/ugc12506_beta_closure_carrier_review_response_intake_checks.csv
+review_bundles/ugc12506_beta_closure_carrier_review_bundle.zip
+reports/ugc12506_beta_closure_carrier_review_bundle.md
+reports/ugc12506_beta_closure_carrier_review_response_intake.md
+```
+
+Current status:
+`U12506_BETA_CARRIER_REVIEW_BUNDLE_READY_RESPONSE_PENDING` and
+`U12506_BETA_CARRIER_REVIEW_RESPONSE_PENDING_ENDPOINT_BLOCKED`. A future
+independent response can accept the minimal baryonic stress carrier, require a
+source-native transfer carrier, or reject the route. Until then, no carrier row
+is frozen.
+
+The beta-closure transfer formula-freeze gate is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_transfer_formula_freeze_gate.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_transfer_formula_manifest.csv
+data/derived/ugc12506_beta_closure_transfer_formula_freeze_gates.csv
+data/derived/ugc12506_beta_closure_transfer_formula_freeze_summary.csv
+reports/ugc12506_beta_closure_transfer_formula_freeze_gate.md
+```
+
+Current status:
+`U12506_BETA_CLOSURE_TRANSFER_FORMULA_FREEZE_BLOCKED_PREFREEZE_PENDING`. The
+gate writes the transfer formula manifest with headers and zero rows. The
+halo-fit and priority-field gates pass, but independent route review,
+prefrozen spin-route values, and carrier freeze are still blocked. It reads no
+observed rotation curves and authorizes no endpoint score.
+
+The separate blocked scoring runner is:
+
+```bash
+python scripts/run_ugc12506_beta_closure_transfer_scoring.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_transfer_scoring_summary.csv
+data/derived/ugc12506_beta_closure_transfer_scoring_gates.csv
+data/derived/ugc12506_beta_closure_transfer_scoring_scores.csv
+data/derived/ugc12506_beta_closure_transfer_scoring_points.csv
+reports/ugc12506_beta_closure_transfer_scoring.md
+```
+
+Current status:
+`U12506_BETA_CLOSURE_TRANSFER_SCORING_BLOCKED_LAUNCH_GATE`. In this state the
+runner sees an existing but empty formula manifest, writes no scores, and does
+not read observed rotation curves. The dormant scoring branch is implemented
+for a future accepted `BARYONIC_050_FAST_PACKET` carrier: after launch and
+formula-freeze gates pass, the runner will compute
+`v_readout = sqrt(beta_cl * v_baryon_050^2)` and write both score-level and
+point-level control artifacts. It exists to enforce that `vobs` can only be
+read by the separate scoring script after launch and formula-freeze gates pass.
+
+The no-vobs scoring contract dry run is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_transfer_scoring_contract_dry_run.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_transfer_scoring_contract_dry_run_summary.csv
+data/derived/ugc12506_beta_closure_transfer_scoring_contract_dry_run_scenarios.csv
+data/derived/ugc12506_beta_closure_transfer_scoring_contract_dry_run_manifest.csv
+data/derived/ugc12506_beta_closure_transfer_scoring_contract_dry_run_predictions.csv
+reports/ugc12506_beta_closure_transfer_scoring_contract_dry_run.md
+```
+
+Current status:
+`U12506_BETA_CLOSURE_TRANSFER_SCORING_CONTRACT_DRY_RUN_READY_REVIEWS_PENDING`.
+It checks the two implemented spin-normalization routes
+(`EXPOSURE_PROXY`, `BULLOCK_DISK_CONVERSION`) against the reviewable
+`BARYONIC_050_FAST_PACKET` carrier without reading `vobs`. Both scenarios are
+contract-ready if independent reviews accept them: 22 dry-run manifest rows
+and 656 prediction rows are produced with `scoring_used_vobs = false`.
+
+The final pre-scoring unlock packet is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_transfer_scoring_unlock_packet.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_transfer_scoring_unlock_packet_summary.csv
+data/derived/ugc12506_beta_closure_transfer_scoring_unlock_requirements.csv
+data/derived/ugc12506_beta_closure_spin_proxy_review_response_example_only_exposure_proxy.csv
+data/derived/ugc12506_beta_closure_spin_proxy_review_response_example_only_bullock_conversion.csv
+data/derived/ugc12506_beta_closure_carrier_review_response_example_only_baryonic_stress.csv
+review_bundles/ugc12506_beta_closure_transfer_scoring_unlock_packet.zip
+reports/ugc12506_beta_closure_transfer_scoring_unlock_packet.md
+```
+
+Current status:
+`U12506_BETA_CLOSURE_TRANSFER_SCORING_UNLOCK_PACKET_READY_ACTIVE_RESPONSES_PENDING`.
+The packet contains example-only response rows and exact active-response
+requirements. It does not create active reviewer responses. Scoring remains
+blocked until an independent reviewer writes the two active response files and
+the standard intake/prefreeze/formula-freeze/scoring-launch gates pass.
+
+The post-review scoring launcher is:
+
+```bash
+python scripts/run_ugc12506_beta_closure_post_review_scoring_launcher.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_post_review_scoring_launcher_summary.csv
+data/derived/ugc12506_beta_closure_post_review_scoring_launcher_active_inputs.csv
+data/derived/ugc12506_beta_closure_post_review_scoring_launcher_chain.csv
+reports/ugc12506_beta_closure_post_review_scoring_launcher.md
+```
+
+Current status:
+`U12506_BETA_CLOSURE_POST_REVIEW_SCORING_BLOCKED_ACTIVE_RESPONSES_PENDING`.
+The launcher already runs the whole post-review chain and all chain scripts
+return successfully. Because zero active reviewer response files are present,
+it keeps the scoring runner blocked and reads no observed rotation curve.
+
+Completed reviewer responses can be installed only through:
+
+```bash
+python scripts/install_ugc12506_beta_closure_active_review_responses.py
+```
+
+The default incoming directory is:
+
+```text
+review_bundles/incoming/ugc12506_beta_closure_transfer_scoring/
+```
+
+The installer expects exactly:
+
+```text
+ugc12506_beta_closure_spin_proxy_review_response.csv
+ugc12506_beta_closure_carrier_review_response.csv
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_active_review_response_install_summary.csv
+data/derived/ugc12506_beta_closure_active_review_response_install_checks.csv
+reports/ugc12506_beta_closure_active_review_response_installer.md
+```
+
+Current status:
+`U12506_BETA_ACTIVE_REVIEW_RESPONSE_INSTALL_BLOCKED_INCOMING_PENDING_OR_INVALID`.
+No active responses are present. The installer rejects missing, placeholder, or
+`EXAMPLE_ONLY` rows and does not create review decisions.
+
+The scoring-readiness dashboard is:
+
+```bash
+python scripts/build_ugc12506_beta_closure_scoring_readiness_dashboard.py
+```
+
+It writes:
+
+```text
+data/derived/ugc12506_beta_closure_scoring_readiness_summary.csv
+data/derived/ugc12506_beta_closure_scoring_readiness_dashboard.csv
+reports/ugc12506_beta_closure_scoring_readiness_dashboard.md
+```
+
+Current status:
+`U12506_BETA_CLOSURE_SCORING_READINESS_BLOCKED_ACTIVE_RESPONSES_PENDING`.
+The dashboard is a compact pre-scoring ledger: the no-`vobs` dry-run contract
+and unlock packet are ready, the installer and launcher are wired, but the two
+active independent response files are still absent. After those files are
+placed in `review_bundles/incoming/ugc12506_beta_closure_transfer_scoring/`,
+the scoring path is:
+
+```bash
+python scripts/install_ugc12506_beta_closure_active_review_responses.py
+python scripts/run_ugc12506_beta_closure_post_review_scoring_launcher.py
+python scripts/build_ugc12506_beta_closure_scoring_readiness_dashboard.py
+```
+
+Until the installer validates both active responses, no endpoint scores are
+allowed and observed rotation curves are not read by this route.
+
+The operational ablation ladder is:
+
+```text
+K^(0)(R) = K(R; K_present)
+K^(1)(R) = K(R; K_present, O_obs/path)
+K^(2)(R) = K(R; K_present, O_obs/path, Theta_morph)
+K^(3)(R) = K(R; K_present, O_obs/path, Theta_morph, E_proj/history)
+```
+
+Current projection-enriched curves are first-order or partial approximations on
+this ladder, not full path-aware `K^(3)` kernels.
+
+## Paper Layout
+
+The manuscript-facing material is split into two paper lanes:
+
+```text
+papers/paper1_internal_preflight/
+papers/paper2_projection_enriched/
+papers/common/
+```
+
+Paper 1 contains the original internal-preflight paper package. Paper 2 contains
+the projection-enriched companion paper and should be used for the current
+observer/path/projection-kernel work. Shared data, scripts, figures, reports,
+tests, and bridge context remain in the repository-level common infrastructure.
+
+For backward compatibility with existing scripts, the old top-level paths are
+kept as symlinks:
+
+```text
+paper8_submission_source -> papers/paper1_internal_preflight/source
+paper8_projection_enriched_source -> papers/paper2_projection_enriched/source
+arxiv_submission_source.zip -> papers/paper1_internal_preflight/arxiv_source.zip
+arxiv_projection_enriched_source.zip -> papers/paper2_projection_enriched/arxiv_source.zip
+```
+
+New work should prefer the `papers/...` layout; existing reproducibility scripts
+may continue to use the historical paths.
+
 ## Main Files
 
 ```text
@@ -155,17 +912,23 @@ CITATION.cff
 DATA_NOTICE.md
 requirements.txt
 README.md
-paper8_submission_source/main.tex
-paper8_submission_source/refs.bib
-paper8_submission_source/main.pdf
-paper8_submission_source/figures/
+papers/paper1_internal_preflight/source/main.tex
+papers/paper1_internal_preflight/source/refs.bib
+papers/paper1_internal_preflight/source/main.pdf
+papers/paper1_internal_preflight/source/figures/
+papers/paper1_internal_preflight/arxiv_source.zip
+papers/paper2_projection_enriched/source/main.tex
+papers/paper2_projection_enriched/source/refs.bib
+papers/paper2_projection_enriched/source/main.pdf
+papers/paper2_projection_enriched/source/figures/
+papers/paper2_projection_enriched/arxiv_source.zip
+papers/common/
 figures/
 data/derived/
 scripts/generate_paper8_artifacts.py
 scripts/build_arxiv_source.py
 scripts/reproduce.py
 tests/test_public_reproducibility_package.py
-arxiv_submission_source.zip
 ```
 
 ## Included Data
@@ -198,9 +961,10 @@ Run the one-command reproduction check:
 python scripts/reproduce.py
 ```
 
-This regenerates the derived tables and figures, compiles
-`paper8_submission_source/main.tex` with `tectonic`, builds the arXiv source
-ZIP, runs the foundation audit, and runs the public package tests.
+This regenerates the derived tables and figures, compiles Paper 1 through the
+compatibility path `paper8_submission_source/main.tex` with `tectonic`, builds
+the Paper 1 arXiv source ZIP, runs the foundation audit, and runs the public
+package tests.
 
 ## Foundation Audit
 
@@ -629,17 +1393,17 @@ Level 0: coarse K_obs label
     e.g. exponential disk, compact, scale-tail, thick/flared.
 
 Level 1: source-reviewed K_readout
-    projection caveats, memory/history caveats, bar/core overlays.
+    projection caveats, trajectory/phase caveats, bar/core overlays.
 
 Level 2: low-dimensional readout-state vector
-    q_tail, q_compact, q_thick, q_bar, q_memory, q_regular.
+    q_tail, q_compact, q_thick, q_bar, q_phase, q_regular.
 
 Level 3: source-native scales and amplitudes
     disk scale, HI/tail radius, compact-core radius, flare support, bar length,
     and residual-blind closure/readout normalization.
 
 Level 4: richer morphology/kinematic data
-    velocity fields, HI maps, decompositions, and history indicators.
+    velocity fields, HI maps, decompositions, and trajectory/phase indicators.
 ```
 
 Pass condition:
@@ -3003,6 +3767,1147 @@ the source-native bridge-formula preflight. It is a real, narrow accepted
 population endpoint, but not the full matched-family Paper 8 launch and not a
 population-wide family validation result.
 
+The full-launch closure roadmap is generated by:
+
+```bash
+python scripts/build_175_row_launch_closure_roadmap.py
+```
+
+This writes:
+
+```text
+data/derived/launch_175_row_closure_family_plan.csv
+data/derived/launch_175_row_closure_gate_plan.csv
+data/derived/launch_175_row_closure_summary.csv
+reports/launch_175_row_closure_roadmap.md
+```
+
+This artifact turns the blocked 175-row launch into an execution order. It
+shows that the remaining path is accepted-input closure across all active
+families, not a post-score endpoint redesign.
+
+The Phase 1 exponential-disk expansion packet is generated by:
+
+```bash
+python scripts/build_phase1_exponential_disk_expansion_packet.py
+```
+
+This writes:
+
+```text
+data/derived/phase1_exponential_disk_expansion_packet.csv
+data/derived/phase1_exponential_disk_expansion_summary.csv
+reports/phase1_exponential_disk_expansion_packet.md
+```
+
+This packet turns the first family-level closure phase into a concrete worklist
+for all 32 `K_exponential_disk` rows: 14 already in the near-term accepted-lane
+pool, 1 remaining S4G-matched scale-recovery row, and 17 external-crossmatch rows.
+
+The Phase 1 exponential-disk family-label promotion manifest is generated by:
+
+```bash
+python scripts/build_phase1_exponential_disk_family_label_promotion_manifest.py
+```
+
+This writes:
+
+```text
+data/derived/phase1_exponential_disk_family_label_promotion_manifest.csv
+data/derived/phase1_exponential_disk_family_label_promotion_summary.csv
+reports/phase1_exponential_disk_family_label_promotion_manifest.md
+```
+
+This promotes the current 14-row near-term audit pool into an explicit
+accepted-manifest family-label promotion packet. After the `NGC5023` alias fix
+and the refreshed external family-label audit, `UGC08286` now also clears this
+promotion gate, so the Phase 1 expdisk promotion manifest is now 14 rows wide.
+
+The `ESO116-G012` scale-recovery packet is generated by:
+
+```bash
+python scripts/build_eso116_g012_scale_recovery_packet.py
+```
+
+This writes:
+
+```text
+data/derived/eso116_g012_scale_recovery_packet.csv
+data/derived/eso116_g012_scale_recovery_summary.csv
+reports/eso116_g012_scale_recovery_packet.md
+```
+
+This inspects the single `B_S4G_MATCHED_SCALE_RECOVERY` row in Phase 1. It
+records a useful terminal local negative result: `ESO116-G012` is S4G-matched,
+the S4G object row itself is flagged `No fit`, DustPedia fallback matches are
+present, but the currently cached local sources still do not yield a direct
+accepted scale radius. So this row is now cleanly closed as `local source
+exhausted` until a genuinely new external decomposition/profile source is added.
+
+The Phase 1 external-crossmatch packet is generated by:
+
+```bash
+python scripts/build_phase1_exponential_disk_external_crossmatch_packet.py
+```
+
+This writes:
+
+```text
+data/derived/phase1_exponential_disk_external_crossmatch_packet.csv
+data/derived/phase1_exponential_disk_external_crossmatch_summary.csv
+reports/phase1_exponential_disk_external_crossmatch_packet.md
+```
+
+This converts the remaining 17 no-S4G exponential-disk rows into a prioritized
+fallback-source queue. It records which rows need outer-disk/HI review, which
+need compact-support review, and which need projection/thickness review before
+any family-label promotion can occur.
+
+The dedicated Phase 1 `P1` crossmatch packet is generated by:
+
+```bash
+python scripts/build_phase1_exponential_disk_p1_crossmatch_packet.py
+```
+
+This writes:
+
+```text
+data/derived/phase1_exponential_disk_p1_crossmatch_packet.csv
+data/derived/phase1_exponential_disk_p1_crossmatch_summary.csv
+reports/phase1_exponential_disk_p1_crossmatch_packet.md
+```
+
+This now isolates the single remaining highest-priority no-S4G row,
+`UGC07603`, into a direct outer-disk/HI fallback-source acquisition lane.
+
+The dedicated Phase 1 `P2` crossmatch packet is generated by:
+
+```bash
+python scripts/build_phase1_exponential_disk_p2_crossmatch_packet.py
+```
+
+This writes:
+
+```text
+data/derived/phase1_exponential_disk_p2_crossmatch_packet.csv
+data/derived/phase1_exponential_disk_p2_crossmatch_summary.csv
+reports/phase1_exponential_disk_p2_crossmatch_packet.md
+```
+
+This isolates the 7 medium-priority no-S4G rows into a separate residual-blind
+review lane, mostly split between outer-disk/tail reclassification candidates
+and compact-support review candidates.
+
+The endpoint-conversion roadmap for the remaining `17` no-S4G rows is generated by:
+
+```bash
+python scripts/build_phase1_exponential_disk_endpoint_conversion_roadmap.py
+```
+
+This writes:
+
+```text
+data/derived/phase1_exponential_disk_endpoint_conversion_roadmap.csv
+data/derived/phase1_exponential_disk_endpoint_conversion_summary.csv
+reports/phase1_exponential_disk_endpoint_conversion_roadmap.md
+```
+
+This does not run any endpoint yet. Instead, it identifies the shortest
+admissible path from the remaining `17` rows toward a future subgroup endpoint:
+an accepted `K_scale_tail_spiral` founder subset seeded by `F568-3`, `F574-1`,
+and `NGC2403`.
+
+The first concrete founder-source packet from that subgroup path is generated by:
+
+```bash
+python scripts/build_ngc2403_scale_tail_founder_source_packet.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_scale_tail_founder_source_packet.csv
+data/derived/ngc2403_scale_tail_founder_source_summary.csv
+reports/ngc2403_scale_tail_founder_source_packet.md
+```
+
+This upgrades `NGC2403` from a generic P2 queue item to a local-source-backed
+scale-tail founder candidate. It still does not promote accepted scale-tail
+observables or authorize endpoint scoring.
+
+The founder review gate for that first subgroup target is generated by:
+
+```bash
+python scripts/build_ngc2403_scale_tail_founder_review_gate.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_scale_tail_founder_review_decisions.csv
+data/derived/ngc2403_scale_tail_founder_review_gate.csv
+reports/ngc2403_scale_tail_founder_review_gate.md
+```
+
+This records the next boundary precisely: `NGC2403` now supports a
+conditional scale-tail surrogate candidate, but not an accepted founder
+promotion, because direct outer-disk transition evidence is still missing.
+
+The first founder-subset preflight gate is generated by:
+
+```bash
+python scripts/build_phase1_scale_tail_founder_preflight_gate.py
+```
+
+This writes:
+
+```text
+data/derived/phase1_scale_tail_founder_preflight_gate.csv
+data/derived/phase1_scale_tail_founder_preflight_summary.csv
+reports/phase1_scale_tail_founder_preflight_gate.md
+```
+
+This combines the initial founder trio into one endpoint-facing preflight view:
+`NGC2403` is a local-context conditional candidate, while `F568-3` and `F574-1`
+are still SPARC-HI-only conditional candidates that require external source review.
+
+The second founder-source packet from that subgroup path is generated by:
+
+```bash
+python scripts/build_f574_1_scale_tail_founder_source_packet.py
+```
+
+This writes:
+
+```text
+data/derived/f574_1_scale_tail_founder_source_packet.csv
+data/derived/f574_1_scale_tail_founder_source_summary.csv
+reports/f574_1_scale_tail_founder_source_packet.md
+```
+
+This isolates `F574-1` as a SPARC-HI-only conditional founder candidate with a
+usable `Vflat`/`Rdisk`/`RHI` bundle, but still blocked on external morphology review.
+
+The direct founder external-review request for this galaxy is generated by:
+
+```bash
+python scripts/build_f574_1_founder_external_review_request.py
+```
+
+This writes:
+
+```text
+data/derived/f574_1_founder_external_review_request.csv
+data/derived/f574_1_founder_external_review_summary.csv
+reports/f574_1_founder_external_review_request.md
+```
+
+This makes `F574-1` the second concrete founder-unlock lane in the remaining
+`17`: it already has a usable SPARC-HI conditional candidate, and now its
+missing external morphology/HI review is isolated as a direct request packet.
+
+The intake-ready source lane for that same founder is generated by:
+
+```bash
+python scripts/build_f574_1_founder_external_review_intake_packet.py
+```
+
+This writes:
+
+```text
+data/derived/f574_1_founder_external_review_intake_packet.csv
+data/derived/f574_1_founder_external_review_intake_summary.csv
+reports/f574_1_founder_external_review_intake_packet.md
+```
+
+This promotes `F574-1` from a founder request into a concrete residual-blind
+external morphology plus HI intake lane without authorizing accepted founder
+promotion or endpoint scoring.
+
+The first external source-search audit for that intake lane is generated by:
+
+```bash
+python scripts/build_f574_1_external_source_search_audit.py
+```
+
+This writes:
+
+```text
+data/derived/f574_1_external_source_search_audit.csv
+data/derived/f574_1_external_source_search_summary.csv
+reports/f574_1_external_source_search_audit.md
+```
+
+This records the first primary-source pass for `F574-1` and shows that the
+currently reviewed external literature is still context-only: useful for the
+founder lane, but not yet enough to freeze an accepted outer-disk transition
+observable or authorize endpoint scoring.
+
+The next numeric-unlock request for that same lane is generated by:
+
+```bash
+python scripts/build_f574_1_transition_numeric_acquisition_request.py
+```
+
+This writes:
+
+```text
+data/derived/f574_1_transition_numeric_acquisition_request.csv
+data/derived/f574_1_transition_numeric_summary.csv
+reports/f574_1_transition_numeric_acquisition_request.md
+```
+
+This reduces the remaining `F574-1` founder blocker to a concrete missing
+numeric: a source-native outer-disk break, truncation, or HI-side transition
+measurement, still without authorizing accepted founder promotion or endpoint
+scoring.
+
+The direct 1996 HI table extraction for `F574-1` and `F568-3` is generated by:
+
+```bash
+python scripts/build_f574_f568_hi1996_table_extraction.py
+```
+
+This writes:
+
+```text
+data/derived/f574_f568_hi1996_table_extraction.csv
+data/derived/f574_f568_hi1996_table_extraction_summary.csv
+reports/f574_f568_hi1996_table_extraction.md
+```
+
+This upgrades the founder-side source record from pure context to source-native
+table numerics: both galaxies now have explicit `R_out` and `R_HI`, and
+`F568-3` also gains outer-velocity context from the 1996 HI source. The
+remaining block is no longer missing table depth, but missing a frozen direct
+transition or tail-onset numeric.
+
+The follow-on multi-source radius support packet is generated by:
+
+```bash
+python scripts/build_f574_f568_multisource_radius_support.py
+```
+
+This writes:
+
+```text
+data/derived/f574_f568_multisource_radius_support.csv
+data/derived/f574_f568_multisource_radius_support_summary.csv
+reports/f574_f568_multisource_radius_support.md
+```
+
+This records that `F574-1` and `F568-3` now have outer-radius support from
+more than one primary source family: HI-side `Rout/RHI` numerics from `1996`
+and Halpha-side `Rmax` support from the `2001` high-resolution sample. This
+still does not isolate a direct transition radius, but it strengthens the
+founder lanes materially on the road toward a future subgroup endpoint.
+
+The targeted direct-transition source-hunt update is generated by:
+
+```bash
+python scripts/build_f574_f568_direct_transition_source_hunt_update.py
+```
+
+This writes:
+
+```text
+data/derived/f574_f568_direct_transition_source_hunt_update.csv
+data/derived/f574_f568_direct_transition_source_hunt_update_summary.csv
+reports/f574_f568_direct_transition_source_hunt_update.md
+```
+
+This records the next source-search outcome cleanly: the `2001` Halpha and
+model papers do strengthen founder-side support and curve-quality confidence
+for `F574-1` and `F568-3`, but they still do not isolate a frozen direct
+`transition/break/truncation` numeric. So the founder lanes are stronger than
+before, yet the endpoint remains blocked at the transition-observable step.
+
+The local PS figure-extraction blocker is generated by:
+
+```bash
+python scripts/build_f574_f568_ps_figure_extraction_blocker.py
+```
+
+This writes:
+
+```text
+data/derived/f574_f568_ps_figure_extraction_blocker.csv
+data/derived/f574_f568_ps_figure_extraction_blocker_summary.csv
+reports/f574_f568_ps_figure_extraction_blocker.md
+```
+
+This records the current technical limit of the local environment: the `.ps`
+ figure assets from the `2001` source bundles are present and text-level source
+ hunting is complete, but figure-level raster rendering is blocked because
+ Ghostscript is not installed. That keeps the figure lane from contributing new
+ claim-safe transition numerics for now.
+
+Once Ghostscript is available and the figures are rendered, the follow-on
+figure review packet is generated by:
+
+```bash
+python scripts/build_f574_f568_ps_figure_review.py
+```
+
+This writes:
+
+```text
+data/derived/f574_f568_ps_figure_review.csv
+data/derived/f574_f568_ps_figure_review_summary.csv
+reports/f574_f568_ps_figure_review.md
+```
+
+This records the visual review outcome from the rendered `2001` PS figures.
+The figures strengthen founder-side support and outer-radius interpretation for
+`F574-1` and `F568-3`, but still do not isolate a frozen direct
+`transition/break` numeric.
+
+The direct primary-source review of the `F574-1` colour-profile kink candidate
+is generated by:
+
+```bash
+python scripts/build_f574_1_color_profile_kink_source_review.py
+```
+
+This writes:
+
+```text
+data/derived/f574_1_color_profile_kink_source_review.csv
+data/derived/f574_1_color_profile_kink_source_review_summary.csv
+reports/f574_1_color_profile_kink_source_review.md
+```
+
+This replaces the weaker thesis-search hit with a real primary-source review:
+the `2000` MNRAS colour-profile paper does confirm a conspicuous `F574-1`
+colour-profile kink, but it also explicitly attributes the central colour
+behaviour to likely heavy dust reddening. That means the source is valuable
+founder-side context, but it still does not provide a frozen tail-transition,
+break, or truncation numeric.
+
+The consolidated primary-transition source review for `F574-1` and `F568-3`
+is generated by:
+
+```bash
+python scripts/build_f574_f568_primary_transition_source_review.py
+```
+
+This writes:
+
+```text
+data/derived/f574_f568_primary_transition_source_review.csv
+data/derived/f574_f568_primary_transition_source_review_summary.csv
+reports/f574_f568_primary_transition_source_review.md
+```
+
+This captures the best newly surfaced primary sources on both lanes:
+`F574-1` now has a real Appendix-side radial R-band profile source plus the
+confirmed colour-profile kink source, and `F568-3` now has a primary HI
+surface-density profile-shape statement plus the already extracted inner
+profile-feature numerics. Together these materially strengthen founder-side
+support, but still do not provide a frozen direct transition or truncation
+radius.
+
+The next-closer break-radius candidate update for those two lanes is generated by:
+
+```bash
+python scripts/build_f574_f568_break_radius_candidate_update.py
+```
+
+This writes:
+
+```text
+data/derived/f574_f568_break_radius_candidate_update.csv
+data/derived/f574_f568_break_radius_candidate_update_summary.csv
+reports/f574_f568_break_radius_candidate_update.md
+```
+
+This records a more specific new source family: the `2001` ApJ mass-density
+profile letter explicitly says it determines a `break radius` where the slope
+changes most rapidly, and it includes both `F568-3` and a rederived `F574-1`
+profile. That makes it a better direct-transition candidate than generic outer
+profile support, but the actual per-galaxy break-radius numerics still need
+extraction.
+
+The direct figure-level extraction gate for that break-radius source is generated by:
+
+```bash
+python scripts/build_f574_f568_break_radius_extraction_gate.py
+```
+
+This writes:
+
+```text
+data/derived/f574_f568_break_radius_extraction_gate.csv
+data/derived/f574_f568_break_radius_extraction_gate_summary.csv
+reports/f574_f568_break_radius_extraction_gate.md
+```
+
+This confirms that the `2001` source is genuinely relevant at the panel level,
+but also makes the blocker precise: the figure does not print per-galaxy
+break-radius numerics, so a frozen value would require either a predeclared
+digitization step or a different table/source that states the number directly.
+
+The predeclared digitization route for those two break-radius panels is generated by:
+
+```bash
+python scripts/build_f574_f568_break_radius_digitization_protocol.py
+```
+
+This writes:
+
+```text
+data/derived/f574_f568_break_radius_digitization_protocol.csv
+data/derived/f574_f568_break_radius_digitization_response_template.csv
+data/derived/f574_f568_break_radius_digitization_response_schema.csv
+data/derived/f574_f568_break_radius_digitization_response_validation.csv
+data/derived/f574_f568_break_radius_digitization_response_summary.csv
+reports/f574_f568_break_radius_digitization_protocol.md
+```
+
+This freezes the allowed reading logic before any number is filled: use only the
+printed `2001` panels, define the axes first, apply one predeclared break
+selection rule, record one candidate `log(R/kpc)` break radius plus uncertainty,
+and forbid any residual- or endpoint-guided choice.
+
+The first residual-blind candidate fill for those panels is generated by:
+
+```bash
+python scripts/build_f574_f568_break_radius_first_pass_fill.py
+python scripts/build_f574_f568_break_radius_digitization_protocol.py
+```
+
+This updates:
+
+```text
+data/derived/f574_f568_break_radius_digitization_response_template.csv
+reports/f574_f568_break_radius_first_pass_fill.md
+```
+
+and refreshes:
+
+```text
+data/derived/f574_f568_break_radius_digitization_response_validation.csv
+data/derived/f574_f568_break_radius_digitization_response_summary.csv
+```
+
+The current first-pass candidate fill records conservative panel-read break
+radii for `F574-1` and `F568-3`, but these remain candidate digitization fills
+only and still do not authorize endpoint scoring.
+
+The first-pass candidate audit for those fills is generated by:
+
+```bash
+python scripts/build_f574_f568_break_radius_candidate_audit.py
+```
+
+This writes:
+
+```text
+data/derived/f574_f568_break_radius_candidate_audit.csv
+data/derived/f574_f568_break_radius_candidate_audit_summary.csv
+reports/f574_f568_break_radius_candidate_audit.md
+```
+
+This is the promotion check after filling: it confirms that the current
+break-radius numbers are valid residual-blind candidates, but keeps them
+blocked because the source does not print direct per-galaxy break-radius
+numerics and no independent review has yet accepted the panel reads.
+
+The independent review packet for those candidate fills is generated by:
+
+```bash
+python scripts/build_f574_f568_break_radius_independent_review_packet.py
+```
+
+This writes:
+
+```text
+data/derived/f574_f568_break_radius_independent_review_items.csv
+data/derived/f574_f568_break_radius_independent_review_packet.csv
+data/derived/f574_f568_break_radius_independent_review_obligations.csv
+data/derived/f574_f568_break_radius_independent_review_response_template.csv
+data/derived/f574_f568_break_radius_independent_review_summary.csv
+reports/f574_f568_break_radius_independent_review_packet.md
+```
+
+This is the next gate after the first-pass candidate audit: it freezes the
+independent panel-review questions, the required reviewer obligations, and the
+response template, but it still leaves the package in `response pending`
+status until an actual non-first-pass reviewer accepts, corrects, or rejects
+the panel reads.
+
+The deeper source-triage audit for that numeric-unlock lane is generated by:
+
+```bash
+python scripts/build_f574_1_deeper_source_triage_audit.py
+```
+
+This writes:
+
+```text
+data/derived/f574_1_deeper_source_triage_audit.csv
+data/derived/f574_1_deeper_source_triage_summary.csv
+reports/f574_1_deeper_source_triage_audit.md
+```
+
+This separates generic context from the strongest current lead: the 1996 HI
+observations paper is now explicitly tracked as the best transition-source
+candidate for `F574-1`, and it now contributes source-native table numerics,
+but it still does not freeze a direct outer-disk or HI-side transition
+observable.
+
+The direct source-depth extraction request for that lead is generated by:
+
+```bash
+python scripts/build_f574_1_source_depth_extraction_request.py
+```
+
+This writes:
+
+```text
+data/derived/f574_1_source_depth_extraction_request.csv
+data/derived/f574_1_source_depth_extraction_summary.csv
+reports/f574_1_source_depth_extraction_request.md
+```
+
+This turns the `F574-1` lane into a single explicit extraction problem: pull
+figure- or table-depth HI/profile evidence from the 1996 source if available,
+while keeping the founder lane blocked unless a source-native numeric can be
+frozen residual-blind.
+
+The local extraction verdict for that request is generated by:
+
+```bash
+python scripts/build_f574_1_source_depth_extraction_gate.py
+```
+
+This writes:
+
+```text
+data/derived/f574_1_source_depth_extraction_gate_items.csv
+data/derived/f574_1_source_depth_extraction_gate.csv
+reports/f574_1_source_depth_extraction_gate.md
+```
+
+This closes the current local extraction attempt in its updated state: the best
+lead source is known and source-native table numerics are extracted, but no
+frozen direct transition numeric is available yet, so the founder lane remains
+blocked without endpoint scoring.
+
+The parallel founder external-review request for `F568-3` is generated by:
+
+```bash
+python scripts/build_f568_3_founder_external_review_request.py
+```
+
+This writes:
+
+```text
+data/derived/f568_3_founder_external_review_request.csv
+data/derived/f568_3_founder_external_review_summary.csv
+reports/f568_3_founder_external_review_request.md
+```
+
+This gives the third founder its own direct unlock lane too: `F568-3` remains a
+SPARC-HI conditional candidate, but still needs external morphology/HI review
+and has weaker velocity context than `F574-1`.
+
+The intake-ready source lane for that founder is generated by:
+
+```bash
+python scripts/build_f568_3_founder_external_review_intake_packet.py
+```
+
+This writes:
+
+```text
+data/derived/f568_3_founder_external_review_intake_packet.csv
+data/derived/f568_3_founder_external_review_intake_summary.csv
+reports/f568_3_founder_external_review_intake_packet.md
+```
+
+This promotes `F568-3` from a founder request into a concrete residual-blind
+external morphology plus HI intake lane while preserving its weaker
+velocity-context caveat and without authorizing accepted founder promotion or
+endpoint scoring.
+
+The first external source-search audit for that intake lane is generated by:
+
+```bash
+python scripts/build_f568_3_external_source_search_audit.py
+```
+
+This writes:
+
+```text
+data/derived/f568_3_external_source_search_audit.csv
+data/derived/f568_3_external_source_search_summary.csv
+reports/f568_3_external_source_search_audit.md
+```
+
+This records the first primary-source pass for `F568-3` and shows that the
+current external literature pass is still context-only: the founder lane is
+better specified, but no frozen transition numeric or velocity-context repair
+is yet available.
+
+The focused 2018 profile-feature review for `F568-3` is generated by:
+
+```bash
+python scripts/build_f568_3_profile_feature_source_review.py
+```
+
+This writes:
+
+```text
+data/derived/f568_3_profile_feature_source_review.csv
+data/derived/f568_3_profile_feature_source_review_summary.csv
+reports/f568_3_profile_feature_source_review.md
+```
+
+This upgrades the founder-side source packet from pure context into explicit
+profile-feature numerics: the paper contributes azimuthal bar radii,
+ellipticity-feature radii, and a first phase-crossing radius near `10 arcsec`
+for `F568-3`. These values materially strengthen the founder lane, but they
+still describe inner bar/profile structure rather than a frozen tail-transition
+or truncation observable, so endpoint scoring remains blocked.
+
+The deeper source-triage audit for that founder is generated by:
+
+```bash
+python scripts/build_f568_3_deeper_source_triage_audit.py
+```
+
+This writes:
+
+```text
+data/derived/f568_3_deeper_source_triage_audit.csv
+data/derived/f568_3_deeper_source_triage_summary.csv
+reports/f568_3_deeper_source_triage_audit.md
+```
+
+This separates generic context from the strongest current lead: the 1996 HI
+observations paper is now explicitly tracked as the best transition-source
+candidate for `F568-3`, and it now contributes source-native table numerics
+plus explicit outer-velocity context, but it still does not freeze a direct
+outer-disk or HI-side transition observable.
+
+The direct source-depth extraction request for that lead is generated by:
+
+```bash
+python scripts/build_f568_3_source_depth_extraction_request.py
+```
+
+This writes:
+
+```text
+data/derived/f568_3_source_depth_extraction_request.csv
+data/derived/f568_3_source_depth_extraction_summary.csv
+reports/f568_3_source_depth_extraction_request.md
+```
+
+This turns the `F568-3` lane into a single explicit extraction problem: pull
+figure- or table-depth HI/profile evidence and any source-side velocity-context
+clarifier from the 1996 source if available, while keeping the founder lane
+blocked unless a source-native numeric can be frozen residual-blind.
+
+The local extraction verdict for that request is generated by:
+
+```bash
+python scripts/build_f568_3_source_depth_extraction_gate.py
+```
+
+This writes:
+
+```text
+data/derived/f568_3_source_depth_extraction_gate_items.csv
+data/derived/f568_3_source_depth_extraction_gate.csv
+reports/f568_3_source_depth_extraction_gate.md
+```
+
+This closes the current local extraction attempt in its updated state: the best
+lead source is known, source-native table numerics are extracted, and the weak
+velocity caveat is no longer driven by a total lack of source-side velocity
+evidence, but no frozen direct transition numeric is available yet, so the
+founder lane remains blocked without endpoint scoring.
+
+The consolidated founder unlock dashboard is generated by:
+
+```bash
+python scripts/build_phase1_scale_tail_founder_unlock_dashboard.py
+```
+
+This writes:
+
+```text
+data/derived/phase1_scale_tail_founder_unlock_dashboard.csv
+data/derived/phase1_scale_tail_founder_unlock_summary.csv
+reports/phase1_scale_tail_founder_unlock_dashboard.md
+```
+
+This ranks the three founder unlock lanes for the remaining `17`: `NGC2403`
+first, `F574-1` second, and `F568-3` third.
+
+The shared founder-subset acquisition manifest is generated by:
+
+```bash
+python scripts/build_phase1_scale_tail_founder_external_acquisition_manifest.py
+```
+
+This writes:
+
+```text
+data/derived/phase1_scale_tail_founder_external_acquisition_manifest.csv
+data/derived/phase1_scale_tail_founder_external_acquisition_summary.csv
+reports/phase1_scale_tail_founder_external_acquisition_manifest.md
+```
+
+This converts the current founder trio into a direct subgroup-unblock worklist:
+`NGC2403` needs direct transition evidence, while `F574-1` and `F568-3` need
+external morphology plus HI review before an accepted scale-tail subgroup endpoint
+can be attempted.
+
+The direct-transition request packet for the nearest founder unlock is generated by:
+
+```bash
+python scripts/build_ngc2403_direct_transition_request_packet.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_direct_transition_request_packet.csv
+data/derived/ngc2403_direct_transition_request_summary.csv
+reports/ngc2403_direct_transition_request_packet.md
+```
+
+This isolates the single closest subgroup-unblock blocker: `NGC2403` now needs
+direct transition evidence rather than broader morphology triage.
+
+The intake-ready packet for that direct-transition search is generated by:
+
+```bash
+python scripts/build_ngc2403_direct_transition_intake_packet.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_direct_transition_intake_packet.csv
+data/derived/ngc2403_direct_transition_intake_summary.csv
+reports/ngc2403_direct_transition_intake_packet.md
+```
+
+This is the first fully intake-ready founder-unlock lane in the remaining `17`:
+`NGC2403` now has a concrete residual-blind source-search packet for direct
+transition evidence.
+
+The first local-source acquisition update for that lane is generated by:
+
+```bash
+python scripts/build_ngc2403_direct_transition_acquisition_update.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_direct_transition_acquisition_sources.csv
+data/derived/ngc2403_direct_transition_acquisition_update.csv
+data/derived/ngc2403_direct_transition_acquisition_summary.csv
+reports/ngc2403_direct_transition_acquisition_update.md
+```
+
+This upgrades `NGC2403` from a pure intake packet to a concrete local
+source-family map: several residual-blind source families are already present,
+but the direct transition observable is still missing, so the founder lane
+remains blocked short of endpoint scoring.
+
+The negative local extraction gate for that same lane is generated by:
+
+```bash
+python scripts/build_ngc2403_direct_transition_extraction_gate.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_direct_transition_extraction_gate.csv
+data/derived/ngc2403_direct_transition_extraction_summary.csv
+reports/ngc2403_direct_transition_extraction_gate.md
+```
+
+This makes the current blocker fully explicit: the local evidence package does
+not yet yield a frozen outer-break, truncation, or HI-transition radius, so the
+lane remains founder-blocked even though its residual-blind source map is now
+well organized.
+
+The first external source review pass for that lane is generated by:
+
+```bash
+python scripts/build_ngc2403_direct_transition_external_source_review.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_direct_transition_external_source_review.csv
+data/derived/ngc2403_direct_transition_external_source_review_summary.csv
+reports/ngc2403_direct_transition_external_source_review.md
+```
+
+This records that the reviewed `Fraternali`-side HI papers and a stellar
+outer-disk context source strengthen the founder rationale, but still do not
+yield a claim-safe frozen direct-transition radius for endpoint promotion.
+
+The strongest current transition-context candidate can be isolated with:
+
+```bash
+python scripts/build_ngc2403_conditional_transition_candidate_packet.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_conditional_transition_candidate_packet.csv
+data/derived/ngc2403_conditional_transition_candidate_summary.csv
+reports/ngc2403_conditional_transition_candidate_packet.md
+```
+
+This records the current best explicit outer-disk cutoff candidate for `NGC2403`
+at `10 kpc`, but keeps it clearly in the conditional, not-yet-accepted bucket.
+
+The promotion audit for that conditional candidate is generated by:
+
+```bash
+python scripts/build_ngc2403_transition_candidate_promotion_gate.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_transition_candidate_promotion_gate.csv
+data/derived/ngc2403_transition_candidate_promotion_summary.csv
+reports/ngc2403_transition_candidate_promotion_gate.md
+```
+
+This turns the current founder blocker into three explicit subgates:
+source-depth, observable-type, and freeze-readiness. Right now all three remain
+blocked, so the candidate helps prioritize the lane but does not yet unlock endpoint scoring.
+
+The concrete request for the first of those blocked subgates is generated by:
+
+```bash
+python scripts/build_ngc2403_source_depth_acquisition_request.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_source_depth_acquisition_request.csv
+data/derived/ngc2403_source_depth_acquisition_summary.csv
+reports/ngc2403_source_depth_acquisition_request.md
+```
+
+This is the first truly actionable request packet in the `NGC2403` founder lane:
+it asks for deeper numeric source extraction around the current `10 kpc` outer-disk
+cutoff candidate before any promotion toward endpoint scoring.
+
+The execution-focus audit for the whole `NGC2403` unlock lane is generated by:
+
+```bash
+python scripts/build_ngc2403_unlock_execution_focus_audit.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_unlock_execution_focus_audit.csv
+data/derived/ngc2403_unlock_execution_focus_summary.csv
+reports/ngc2403_unlock_execution_focus_audit.md
+```
+
+This makes explicit that `NGC2403` is now the sole live founder unlock in the
+remaining founder set, and that the Barker outer-disk depth lane is the first
+actionable target ahead of the Fraternali HI-context support lanes.
+
+The Barker-focused lead audit for that unlock lane is generated by:
+
+```bash
+python scripts/build_ngc2403_barker_depth_lead_audit.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_barker_depth_lead_audit.csv
+data/derived/ngc2403_barker_depth_lead_summary.csv
+reports/ngc2403_barker_depth_lead_audit.md
+```
+
+This strengthens the source-side picture by showing that the Barker family is
+better sourced than before, including the later faint-structure paper, but that
+it still remains stellar outer-structure context rather than a frozen HI-tail
+transition numeric.
+
+The concrete request for the second blocked subgate is generated by:
+
+```bash
+python scripts/build_ngc2403_observable_type_acquisition_request.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_observable_type_acquisition_request.csv
+data/derived/ngc2403_observable_type_acquisition_summary.csv
+reports/ngc2403_observable_type_acquisition_request.md
+```
+
+This makes explicit that the current `10 kpc` candidate is still the wrong
+observable family for founder promotion: we still need an HI-tail / break /
+truncation type source-native measurement to move toward endpoint scoring.
+
+The concrete request for the third blocked subgate is generated by:
+
+```bash
+python scripts/build_ngc2403_freeze_readiness_acquisition_request.py
+```
+
+This writes:
+
+```text
+data/derived/ngc2403_freeze_readiness_acquisition_request.csv
+data/derived/ngc2403_freeze_readiness_acquisition_summary.csv
+reports/ngc2403_freeze_readiness_acquisition_request.md
+```
+
+This completes the blocker-triád request layer for `NGC2403`: even if a better
+numeric and a better observable family arrive, the lane still needs a
+freeze-admissible residual-blind source-native measurement before endpoint scoring.
+
+The first concrete galaxy packet from that lane is generated by:
+
+```bash
+python scripts/build_ugc08286_p1_source_acquisition_packet.py
+```
+
+This writes:
+
+```text
+data/derived/ugc08286_p1_source_acquisition_packet.csv
+data/derived/ugc08286_p1_source_acquisition_summary.csv
+reports/ugc08286_p1_source_acquisition_packet.md
+```
+
+This now records the opposite correction: `UGC08286` is no longer a no-S4G
+fallback-source target. The `NGC5023` alias fix reveals an existing S4G match
+and accepted scale radius, so the row moves back into the S4G-matched
+scale-recovery/family-audit branch.
+
+The first real external-source update for that row is generated by:
+
+```bash
+python scripts/build_ugc08286_external_source_acquisition_update.py
+```
+
+This writes:
+
+```text
+data/derived/ugc08286_external_source_acquisition_sources.csv
+data/derived/ugc08286_external_source_acquisition_update.csv
+data/derived/ugc08286_external_source_acquisition_summary.csv
+reports/ugc08286_external_source_acquisition_update.md
+```
+
+This resolves `UGC08286` to `NGC5023/PGC045849`, confirms the accepted S4G
+scale, and adds source-side optical/HI context for the family-label audit.
+
+The resulting surrogate review gate is generated by:
+
+```bash
+python scripts/build_ugc08286_scale_surrogate_review_gate.py
+```
+
+This writes:
+
+```text
+data/derived/ugc08286_scale_surrogate_review_decisions.csv
+data/derived/ugc08286_scale_surrogate_review_gate.csv
+reports/ugc08286_scale_surrogate_review_gate.md
+```
+
+This explicitly separates “accepted direct scale already present” from
+“family-label audit still pending”. At the current stage, the row remains
+blocked only on label audit, not on scale recovery.
+
+Its paired distance-caveated companion is generated by:
+
+```bash
+python scripts/build_ugc07603_p1_source_acquisition_packet.py
+```
+
+This writes:
+
+```text
+data/derived/ugc07603_p1_source_acquisition_packet.csv
+data/derived/ugc07603_p1_source_acquisition_summary.csv
+reports/ugc07603_p1_source_acquisition_packet.md
+```
+
+This preserves the same negative source-result discipline for `UGC07603`, while
+keeping the `large_distance_error` caveat explicit.
+
+The first-pass external search audit for that row is generated by:
+
+```bash
+python scripts/build_ugc07603_external_source_search_audit.py
+```
+
+This writes:
+
+```text
+data/derived/ugc07603_external_source_search_audit.csv
+data/derived/ugc07603_external_source_search_summary.csv
+reports/ugc07603_external_source_search_audit.md
+```
+
+This records that `UGC07603` did not yet produce a clean alias-resolved primary
+source packet comparable to the now-reclassified `UGC08286` case.
+
+The resulting Phase 1 no-S4G closure gate is generated by:
+
+```bash
+python scripts/build_phase1_exponential_disk_external_acquisition_gate.py
+```
+
+This writes:
+
+```text
+data/derived/phase1_exponential_disk_external_acquisition_gate.csv
+data/derived/phase1_exponential_disk_external_acquisition_blockers.csv
+reports/phase1_exponential_disk_external_acquisition_gate.md
+```
+
+This makes the next blocker explicit: the local cache is no longer enough for
+the no-S4G Phase 1 branch, so new residual-blind external source acquisition is
+required before further promotion.
+
+The corresponding external source-request manifest is generated by:
+
+```bash
+python scripts/build_phase1_exponential_disk_external_source_request_manifest.py
+```
+
+This writes:
+
+```text
+data/derived/phase1_exponential_disk_external_source_request_manifest.csv
+data/derived/phase1_exponential_disk_external_source_request_summary.csv
+reports/phase1_exponential_disk_external_source_request_manifest.md
+```
+
+This packages the next concrete request order for the remaining live no-S4G P1
+queue: `UGC07603` first.
+
 ```bash
 python scripts/audit_exponential_disk_failure_sensitivity.py
 ```
@@ -3541,15 +5446,29 @@ python scripts/build_arxiv_source.py
 This writes:
 
 ```text
-arxiv_submission_source.zip
+papers/paper1_internal_preflight/arxiv_source.zip
 ```
 
-The ZIP is built from `paper8_submission_source/` and excludes the compiled PDF
-and temporary LaTeX build files.
+The ZIP is built from `papers/paper1_internal_preflight/source/` through the
+compatibility path `paper8_submission_source/` and excludes the compiled PDF and
+temporary LaTeX build files.
+
+Build the projection-enriched companion package with:
+
+```bash
+python scripts/build_arxiv_projection_enriched_source.py
+```
+
+This writes:
+
+```text
+papers/paper2_projection_enriched/arxiv_source.zip
+```
 
 ## Scope
 
-This repository is a reproducibility package for Paper 8 only. It excludes raw
-SPARC downloads, private workbench outputs, endpoint-fitting notebooks, and
-broad Tau Core theory-hub material that is not needed to verify the paper
-package.
+This repository is now a shared reproducibility workspace for the Paper 1
+internal-preflight lane and the Paper 2 projection-enriched lane. It excludes
+raw SPARC downloads, private workbench outputs, endpoint-fitting notebooks, and
+broad Tau Core theory-hub material that is not needed to verify these paper
+packages.

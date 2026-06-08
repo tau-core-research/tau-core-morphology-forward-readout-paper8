@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""One-command reproduction check for the Paper 8 public package."""
+"""One-command reproduction check for the Paper 8 / Paper 1 package.
+
+After the Paper 8/Paper 9 split this script intentionally reproduces only the
+internal-preflight morphology-matched forward-readout paper.  Projection,
+time-readout, UGC12506, and beta-closure candidate/control material now lives in
+the Paper 9 repository.
+"""
 
 from __future__ import annotations
 
@@ -28,234 +34,53 @@ def sha256(path: Path) -> str:
 
 
 def main() -> None:
-    run([sys.executable, "scripts/generate_paper8_artifacts.py"])
-    run([sys.executable, "scripts/audit_paper8_foundations.py"])
-    run([sys.executable, "scripts/run_available_morphology_readout_pilot.py"])
-    run([sys.executable, "scripts/build_morphology_parameter_manifest.py"])
-    run([sys.executable, "scripts/run_morphology_matched_proxy_endpoint.py"])
-    run([sys.executable, "scripts/run_morphology_formula_shell_proxy_endpoint.py"])
-    run([sys.executable, "scripts/run_source_native_readout_formula_endpoint.py"])
-    run([sys.executable, "scripts/run_readout_mixture_proxy_endpoint.py"])
-    run([sys.executable, "scripts/run_manifest_confidence_diagnostics.py"])
-    run([sys.executable, "scripts/run_amplitude_policy_diagnostics.py"])
-    run([sys.executable, "scripts/run_amplitude_shrinkage_path.py"])
-    run([sys.executable, "scripts/run_train_selected_shrinkage_diagnostic.py"])
-    run([sys.executable, "scripts/run_family_breakdown_diagnostics.py"])
-    run([sys.executable, "scripts/run_family_observable_quality_diagnostics.py"])
-    run([sys.executable, "scripts/audit_baseline_success_morphology.py"])
-    run([sys.executable, "scripts/run_predeclared_quality_gate_diagnostics.py"])
-    run([sys.executable, "scripts/run_quality_gate_shuffled_null_diagnostics.py"])
-    run([sys.executable, "scripts/run_endpoint_decision_matrix.py"])
-    run([sys.executable, "scripts/build_predeclared_endpoint_protocol.py"])
-    run([sys.executable, "scripts/build_readiness_upgrade_audit.py"])
-    run([sys.executable, "scripts/build_morphology_observable_intake_schema.py"])
-    run([sys.executable, "scripts/run_morphology_observable_gap_audit.py"])
-    run([sys.executable, "scripts/build_morphology_observable_source_upgrade_plan.py"])
-    run([sys.executable, "scripts/build_accepted_observable_manifest_template.py"])
-    run([sys.executable, "scripts/run_accepted_manifest_readiness_gate.py"])
-    run([sys.executable, "scripts/run_frozen_endpoint_launch_guard.py"])
-    run([sys.executable, "scripts/build_external_morphology_source_registry.py"])
-    run([sys.executable, "scripts/acquire_external_morphology_inputs.py"])
-    run([sys.executable, "scripts/build_accepted_morphology_manifest.py"])
-    run([sys.executable, "scripts/audit_accepted_morphology_manifest.py"])
-    run([sys.executable, "scripts/audit_exponential_disk_family_labels.py"])
-    run([sys.executable, "scripts/build_narrow_accepted_exponential_disk_manifest.py"])
-    run([sys.executable, "scripts/run_narrow_accepted_exponential_disk_population_endpoint.py"])
-    run([sys.executable, "scripts/run_exponential_disk_narrow_dry_run.py"])
-    run([sys.executable, "scripts/audit_exponential_disk_failure_sensitivity.py"])
-    run([sys.executable, "scripts/run_rotation_inferred_morphology_diagnostic.py"])
-    run([sys.executable, "scripts/build_morphological_memory_history_proxy.py"])
-    run([sys.executable, "scripts/build_readout_state_vector_intake_schema.py"])
-    run([sys.executable, "scripts/build_morphology_inspection_queue.py"])
-    run([sys.executable, "scripts/build_p0_morphology_inspection_packets.py"])
-    run([sys.executable, "scripts/build_p0_external_imaging_request_manifest.py"])
-    run([sys.executable, "scripts/build_p0_external_imaging_review_dashboard.py"])
-    run([sys.executable, "scripts/audit_p0_skyview_availability.py"])
-    run([sys.executable, "scripts/acquire_p0_skyview_preview_images.py"])
-    run([sys.executable, "scripts/build_p0_visual_review_template.py"])
-    run([sys.executable, "scripts/run_p0_visual_review_completion_gate.py"])
-    run([sys.executable, "scripts/build_p0_visual_review_handoff.py"])
-    run([sys.executable, "scripts/build_p0_visual_review_response_intake.py"])
-    run([sys.executable, "scripts/build_p0_missing_data_source_acquisition_plan.py"])
-    run([sys.executable, "scripts/acquire_p0_dustpedia_hi_phangs_sources.py"])
-    run([sys.executable, "scripts/build_p0_source_assisted_review_response_draft.py"])
-    run([sys.executable, "scripts/build_p0_codex_source_review_response.py"])
-    run([sys.executable, "scripts/run_p0_response_to_manifest_promotion_gate.py"])
-    run([sys.executable, "scripts/build_p0_codex_accepted_label_manifest.py"])
-    run([sys.executable, "scripts/build_p0_readout_relevant_morphology_proxy.py"])
-    run([sys.executable, "scripts/run_p0_codex_source_review_pilot.py"])
-    run([sys.executable, "scripts/audit_p0_requested_source_family_availability.py"])
-    run([sys.executable, "scripts/build_p0_review_pipeline_status_dashboard.py"])
-    run([sys.executable, "scripts/build_morphology_information_gain_source_expansion.py"])
-    run([sys.executable, "scripts/build_l2_weight_intake_candidates.py"])
-    run([sys.executable, "scripts/run_l2_weight_intake_endpoint_preflight.py"])
-    run([sys.executable, "scripts/build_tau_side_source_normalization_derivation_audit.py"])
-    run([sys.executable, "scripts/run_tau_side_source_normalized_l2_endpoint.py"])
-    run([sys.executable, "scripts/audit_tau_side_source_normalization_sensitivity.py"])
-    run([sys.executable, "scripts/build_source_native_orientation_promotion_gate.py"])
-    run([sys.executable, "scripts/build_memory_projection_acceptance_gate.py"])
-    run([sys.executable, "scripts/build_inclusion_lane_expansion_audit.py"])
-    run([sys.executable, "scripts/run_inclusion_lane_endpoint_analysis.py"])
-    run([sys.executable, "scripts/build_projection_scale_repair_audit.py"])
-    run([sys.executable, "scripts/audit_source_normalization_failure_modes_by_lane.py"])
-    run([sys.executable, "scripts/run_s4g75_scale_source_subset_endpoint_stress_test.py"])
-    run([sys.executable, "scripts/analyze_s4g75_failure_modes.py"])
-    run([sys.executable, "scripts/build_s4g75_source_rich_lane_action_plan.py"])
-    run([sys.executable, "scripts/build_s4g75_holdout_repair_review_packet.py"])
-    run([sys.executable, "scripts/build_s4g75_kernel_observable_fill.py"])
-    run([sys.executable, "scripts/run_s4g75_filled_kernel_endpoint_stress_test.py"])
-    run([sys.executable, "scripts/audit_s4g75_filled_kernel_delta_drivers.py"])
-    run([sys.executable, "scripts/build_s4g75_direct_source_native_acquisition_manifest.py"])
-    run([sys.executable, "scripts/audit_s4g75_source_native_availability.py"])
-    run([sys.executable, "scripts/acquire_s4g75_direct_kernel_measurements.py"])
-    run([sys.executable, "scripts/build_s4g75_kernel_ready_promotion_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_promoted_kernel_observable_fill.py"])
-    run([sys.executable, "scripts/run_s4g75_promoted_kernel_endpoint_stress_test.py"])
-    run([sys.executable, "scripts/build_s4g75_conditional_promotion_requirements.py"])
-    run([sys.executable, "scripts/build_s4g75_promotion_theorem_skeletons.py"])
-    run([sys.executable, "scripts/build_s4g75_tail_rhi_promotion_attempt.py"])
-    run([sys.executable, "scripts/build_s4g75_remaining_kernel_acquisition_ledger.py"])
-    run([sys.executable, "scripts/build_s4g75_literature_kernel_source_hits.py"])
-    run([sys.executable, "scripts/build_s4g75_vertical_source_search_audit.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_warp_asymmetry_extraction_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_warp_prekernel_observables.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_warp_closure_mapping_rule.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_warp_onset_extraction_protocol.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_digitization_target_manifest.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_channel_map_digitization_worksheet.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_channel_map_digitization_protocol.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_xw_conversion_audit.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_filled_warp_closure_mapping.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_kernel_to_velocity_normalization_candidate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_readout_preflight_profile.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_physical_normalization_law_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_scale_uniqueness_audit.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_tau_side_scale_selection_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_tau_side_scale_derivation_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_asymptotic_carrier_dominance_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_closure_functional_requirement_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_minimal_euler_ansatz_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_target_functional_origin_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_multiplicative_coupling_separability_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_cross_term_suppression_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_epsilon_cross_source_bound_protocol.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_qwarp_measurement_protocol.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_memory_history_proxy_protocol.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_first_pass_source_response_fill.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_h4_interaction_context_review.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_source_response_independent_review.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_bi_coefficient_freeze_rule.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_bi_sharp_coefficient_bound_rule.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_epsilon_cross_input_review_packet.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_bi_coefficient_rule_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_epsilon_cross_bound_expression_shell.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_epsilon_cross_locality_bound_rule.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_epsilon_cross_readout_sensitivity_audit.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc4088_readout_promotion_gate.py"])
-    run([sys.executable, "scripts/build_s4g75_ngc2683_flare_profile_mapping_gate.py"])
-    run([sys.executable, "scripts/run_s4g75_ngc2683_profile_aware_kernel_preflight.py"])
-    run([sys.executable, "scripts/run_s4g75_ngc2683_hr_profile_kernel_prototype.py"])
-    run([sys.executable, "scripts/run_s4g75_ngc2683_flare_closure_source_prototype.py"])
-    run([sys.executable, "scripts/audit_s4g75_ngc2683_closure_source_sensitivity.py"])
-    run([sys.executable, "scripts/build_s4g75_closure_source_generalization_gate.py"])
-    run([sys.executable, "scripts/build_mixed_readout_source_selection_rule.py"])
-    run([sys.executable, "scripts/build_ngc4013_expdisk_wvo_formula_freeze_gate.py"])
-    run([sys.executable, "scripts/run_ngc4013_expdisk_wvo_frozen_protocol_audit.py"])
-    run([sys.executable, "scripts/build_ngc4013_expdisk_wvo_mixed_accepted_endpoint_blocker_gate.py"])
-    run([sys.executable, "scripts/build_mixed_readout_candidate_acquisition_queue.py"])
-    run([sys.executable, "scripts/build_ngc4183_mixed_overlay_source_audit.py"])
-    run([sys.executable, "scripts/build_ngc4183_mixed_overlay_observable_sheet.py"])
-    run([sys.executable, "scripts/build_ngc4183_projection_outer_warp_label_gate.py"])
-    run([sys.executable, "scripts/build_ngc4183_projection_outer_warp_formula_derivation.py"])
-    run([sys.executable, "scripts/build_ngc4183_projection_gamma_coefficient_gate.py"])
-    run([sys.executable, "scripts/build_ngc4183_tilted_ring_orientation_profile_extraction.py"])
-    run([sys.executable, "scripts/build_ngc4183_projection_gamma_upper_bound_gate.py"])
-    run([sys.executable, "scripts/build_ngc4183_preendpoint_decision_synthesis.py"])
-    run([sys.executable, "scripts/build_ngc4183_weak_projection_control_preflight.py"])
-    run([sys.executable, "scripts/build_ngc4183_tilted_ring_independent_review_packet.py"])
-    run([sys.executable, "scripts/build_ngc4183_tilted_ring_review_handoff.py"])
-    run([sys.executable, "scripts/build_ngc4183_codex_internal_review_response.py"])
-    run([sys.executable, "scripts/build_ngc4183_tilted_ring_review_response_intake.py"])
-    run([sys.executable, "scripts/build_ngc4183_visual_review_readiness_gate.py"])
-    run([sys.executable, "scripts/build_ngc4183_null_control_freeze_readiness_gate.py"])
-    run([sys.executable, "scripts/build_ngc4183_null_control_formula_freeze_gate.py"])
-    run([sys.executable, "scripts/build_ngc4183_accepted_null_control_gate.py"])
-    run([sys.executable, "scripts/build_ngc4183_control_promotion_roadmap.py"])
-    run([sys.executable, "scripts/run_ngc4183_weak_projection_null_control_accepted_endpoint.py"])
-    run([sys.executable, "scripts/run_ngc4183_weak_projection_null_control_scoring_gate.py"])
-    run([sys.executable, "scripts/build_ngc4183_control_status_dashboard.py"])
-    run([sys.executable, "scripts/build_ngc5907_expdisk_projection_mixed_formula_freeze_gate.py"])
-    run([sys.executable, "scripts/build_ngc7331_outer_warp_vertical_caveat_gate.py"])
-    run([sys.executable, "scripts/build_ngc7331_fractional_warp_onset_source_gate.py"])
-    run([sys.executable, "scripts/build_ngc7331_fractional_onset_v2_replay_freeze_gate.py"])
-    run([sys.executable, "scripts/build_ngc7331_expdisk_vertical_outer_warp_mixed_formula_freeze_gate.py"])
-    run([sys.executable, "scripts/build_mixed_readout_population_validation_gate.py"])
-    run([sys.executable, "scripts/run_mixed_readout_population_endpoint.py"])
-    run([sys.executable, "scripts/run_mixed_readout_population_control_audit.py"])
-    run([sys.executable, "scripts/run_mixed_readout_replay_holdout_endpoint.py"])
-    run([sys.executable, "scripts/build_mixed_kernel_observable_separation_gate.py"])
-    run([sys.executable, "scripts/build_mixed_kernel_sharpening_preflight.py"])
-    run([sys.executable, "scripts/build_mixed_kernel_sharpened_replay_freeze.py"])
-    run([sys.executable, "scripts/run_mixed_kernel_sharpened_replay_holdout_endpoint.py"])
-    run([sys.executable, "scripts/build_ngc5907_expdisk_projection_mixed_accepted_endpoint_gate.py"])
-    run([sys.executable, "scripts/run_ngc5907_expdisk_projection_mixed_accepted_endpoint.py"])
-    run([sys.executable, "scripts/build_ngc7331_expdisk_vertical_outer_warp_mixed_accepted_endpoint_gate.py"])
-    run([sys.executable, "scripts/run_ngc7331_expdisk_vertical_outer_warp_mixed_accepted_endpoint.py"])
-    run([sys.executable, "scripts/build_mixed_readout_population_expansion_gate.py"])
-    run([sys.executable, "scripts/build_ngc4088_mixed_formula_freeze_blocker_resolution_plan.py"])
-    run([sys.executable, "scripts/build_ngc4088_independent_xw_digitization_review_packet.py"])
-    run([sys.executable, "scripts/build_ngc4088_b1_frozen_image_repeat_attempt.py"])
-    run([sys.executable, "scripts/build_ngc4088_b1_source_native_radial_calibration_packet.py"])
-    run([sys.executable, "scripts/build_ngc4088_b1_original_hi_data_acquisition_audit.py"])
-    run([sys.executable, "scripts/build_ngc4088_b1_whisp_overview_extraction_review_packet.py"])
-    run([sys.executable, "scripts/build_ngc4088_b1_whisp_overview_frozen_extraction_attempt.py"])
-    run([sys.executable, "scripts/build_ngc4088_b1_whisp_promotion_review.py"])
-    run([sys.executable, "scripts/build_ngc4088_b2_physical_normalization_derivation_synthesis.py"])
-    run([sys.executable, "scripts/build_ngc4088_b2_source_load_closure_functional_gate.py"])
-    run([sys.executable, "scripts/build_ngc4088_b2_frozen_asymptotic_carrier_theorem_gate.py"])
-    run([sys.executable, "scripts/build_ngc4088_b2_population_transfer_preflight_gate.py"])
-    run([sys.executable, "scripts/build_ngc4088_b2_exact_transfer_candidate_manifest.py"])
-    run([sys.executable, "scripts/build_ngc7331_b2_exact_transfer_upgrade_gate.py"])
-    run([sys.executable, "scripts/build_ngc7331_b2_exact_transfer_source_packet.py"])
-    run([sys.executable, "scripts/build_ngc7331_b2_exact_transfer_source_evidence_review.py"])
-    run([sys.executable, "scripts/build_ngc7331_things_hi_product_audit.py"])
-    run([sys.executable, "scripts/build_ngc7331_b2_hi_warp_acquisition_route.py"])
-    run([sys.executable, "scripts/build_ngc7331_things_qwarp_measurement_worksheet.py"])
-    run([sys.executable, "scripts/build_ngc7331_things_qwarp_first_pass_measurement.py"])
-    run([sys.executable, "scripts/build_ngc7331_things_qwarp_measurement_sensitivity_audit.py"])
-    run([sys.executable, "scripts/build_ngc7331_things_mom1_sign_cross_review.py"])
-    run([sys.executable, "scripts/build_ngc7331_qwarp_observable_choice_review_gate.py"])
-    run([sys.executable, "scripts/build_ngc7331_qwarp_observable_choice_review_packet.py"])
-    run([sys.executable, "scripts/build_ngc7331_qwarp_source_only_review_response.py"])
-    run([sys.executable, "scripts/run_ngc7331_qwarp_observable_choice_review_intake.py"])
-    run([sys.executable, "scripts/build_ngc7331_b2_exact_transfer_upgrade_gate.py"])
-    run([sys.executable, "scripts/build_ngc7331_b2_exact_transfer_formula_freeze_gate.py"])
-    run([sys.executable, "scripts/run_ngc7331_b2_exact_transfer_interval_control_audit.py"])
-    run([sys.executable, "scripts/build_ngc4088_b2_source_load_origin_derivation_gate.py"])
-    run([sys.executable, "scripts/build_ngc4088_b2_closure_asymptotic_conditional_derivation_gate.py"])
-    run([sys.executable, "scripts/build_ngc4088_b3_scale_uniqueness_resolution_synthesis.py"])
-    run([sys.executable, "scripts/build_ngc4088_warp_history_formula_freeze_gate.py"])
-    run([sys.executable, "scripts/build_ngc4088_formula_freeze_readiness_dashboard.py"])
-    run([sys.executable, "scripts/build_ngc4088_warp_history_accepted_endpoint_gate.py"])
-    run([sys.executable, "scripts/run_ngc4088_warp_history_accepted_endpoint.py"])
-    run([sys.executable, "scripts/build_four_case_endpoint_status_summary.py"])
-    run([sys.executable, "scripts/build_four_case_caveat_reduction_audit.py"])
-    run([sys.executable, "scripts/build_ngc4013_retrospective_caveat_closure_gate.py"])
-    run([sys.executable, "scripts/run_ngc7331_v2_v3_replay_holdout_endpoint.py"])
-    run([sys.executable, "scripts/build_ngc4013_predeclared_replay_holdout_gate.py"])
-    run([sys.executable, "scripts/build_ngc4088_remaining_caveat_action_gate.py"])
-    run([sys.executable, "scripts/build_remaining_caveat_closure_roadmap.py"])
-    run([sys.executable, "scripts/audit_l2_weight_freeze_readiness.py"])
-    run([sys.executable, "scripts/build_tau_side_evidence_measure_gate.py"])
-    run([sys.executable, "scripts/run_tau_side_evidence_measure_l2_endpoint.py"])
-    run([sys.executable, "scripts/run_morphology_information_gain_test.py"])
+    paper1_commands = [
+        "scripts/generate_paper8_artifacts.py",
+        "scripts/audit_paper8_foundations.py",
+        "scripts/run_available_morphology_readout_pilot.py",
+        "scripts/build_morphology_parameter_manifest.py",
+        "scripts/run_morphology_matched_proxy_endpoint.py",
+        "scripts/run_morphology_formula_shell_proxy_endpoint.py",
+        "scripts/run_source_native_readout_formula_endpoint.py",
+        "scripts/run_readout_mixture_proxy_endpoint.py",
+        "scripts/run_manifest_confidence_diagnostics.py",
+        "scripts/run_amplitude_policy_diagnostics.py",
+        "scripts/run_amplitude_shrinkage_path.py",
+        "scripts/run_train_selected_shrinkage_diagnostic.py",
+        "scripts/run_family_breakdown_diagnostics.py",
+        "scripts/run_family_observable_quality_diagnostics.py",
+        "scripts/audit_baseline_success_morphology.py",
+        "scripts/run_predeclared_quality_gate_diagnostics.py",
+        "scripts/run_quality_gate_shuffled_null_diagnostics.py",
+        "scripts/run_endpoint_decision_matrix.py",
+        "scripts/build_predeclared_endpoint_protocol.py",
+        "scripts/build_readiness_upgrade_audit.py",
+        "scripts/build_morphology_observable_intake_schema.py",
+        "scripts/run_morphology_observable_gap_audit.py",
+        "scripts/build_morphology_observable_source_upgrade_plan.py",
+        "scripts/build_accepted_observable_manifest_template.py",
+        "scripts/run_accepted_manifest_readiness_gate.py",
+        "scripts/run_frozen_endpoint_launch_guard.py",
+        "scripts/build_external_morphology_source_registry.py",
+        "scripts/acquire_external_morphology_inputs.py",
+        "scripts/build_accepted_morphology_manifest.py",
+        "scripts/audit_accepted_morphology_manifest.py",
+        "scripts/audit_exponential_disk_family_labels.py",
+        "scripts/build_narrow_accepted_exponential_disk_manifest.py",
+        "scripts/run_narrow_accepted_exponential_disk_population_endpoint.py",
+        "scripts/build_source_native_readout_robustness.py",
+        "scripts/run_source_native_carrier_robustness.py",
+    ]
+    for script in paper1_commands:
+        run([sys.executable, script])
+
     if shutil.which("tectonic") is None:
         raise SystemExit("tectonic is required to compile paper8_submission_source/main.tex")
     run(["tectonic", "main.tex"], cwd=SOURCE)
     run([sys.executable, "scripts/build_arxiv_source.py"])
     run([sys.executable, "-m", "pytest", "-q"])
     print(f"paper8_pdf_sha256: {sha256(SOURCE / 'main.pdf')}")
-    print("PAPER8_MORPHOLOGY_FORWARD_READOUT_REPRODUCTION_COMPLETE")
+    print("PAPER8_INTERNAL_PREFLIGHT_REPRODUCTION_COMPLETE")
 
 
 if __name__ == "__main__":

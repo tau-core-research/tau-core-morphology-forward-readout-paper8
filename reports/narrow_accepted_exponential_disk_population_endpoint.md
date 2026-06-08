@@ -1,7 +1,7 @@
 # Narrow Accepted Exponential-Disk Population Endpoint
 
 This is the first population-level matched-family accepted endpoint lane in
-Paper 8. It is intentionally narrow: only the 13 externally audited
+Paper 8. It is intentionally narrow: only the 14 externally audited
 exponential-disk rows are scored, using accepted scale radii and the
 frozen train-only exponential-disk amplitude from the source-native bridge
 formula preflight.
@@ -9,17 +9,17 @@ formula preflight.
 ## Verdict
 
 This lane is endpoint-complete in the narrow accepted sense, but it is not the full 175-row matched-family launch.
-On all 13 accepted rows, mean Tau RMSE = 8.928328,
-mean TPG/v6 RMSE = 8.801151,
-mean MOND RMSE = 9.240743.
+On all 14 accepted rows, mean Tau RMSE = 9.412732,
+mean TPG/v6 RMSE = 9.186105,
+mean MOND RMSE = 9.376046.
 
 ## Summary
 
 | accepted_population_lane | support_tier | n_galaxies | mean_rmse_tau | mean_rmse_tpg_v6 | mean_rmse_mond | median_tau_minus_tpg_v6 | median_tau_minus_mond | tau_beats_tpg_v6_fraction | tau_beats_mond_fraction | beta_delta_v2_amplitude | amplitude_policy | accepted_endpoint_status | claim_boundary |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | CAVEATED | 7 | 8.854211096310156 | 9.008999864267581 | 11.200168489319273 | -0.23663795662571374 | -3.2946095028847893 | 0.5714285714285714 | 0.7142857142857143 | -1003.8829388432548 | frozen_global_train_beta | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |
-| NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | STRICT | 6 | 9.014797448531171 | 8.558661162885608 | 6.954746714231061 | 0.5170424681910073 | 2.4479049324705 | 0.16666666666666666 | 0.3333333333333333 | -1003.8829388432548 | frozen_global_train_beta | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |
-| NARROW_ACCEPTED_EXPONENTIAL_DISK_13 | ALL_13 | 13 | 8.928327874258319 | 8.801151232860516 | 9.240743054663177 | 0.08302907340214549 | -0.25565194584695394 | 0.38461538461538464 | 0.5384615384615384 | -1003.8829388432548 | frozen_global_train_beta | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |
+| NARROW_ACCEPTED_EXPONENTIAL_DISK_14 | CAVEATED | 8 | 9.711182241772274 | 9.656687818401874 | 11.19201972260069 | -0.022914975160991613 | -2.7535435489811624 | 0.5 | 0.625 | -1003.8829388432548 | frozen_global_train_beta | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |
+| NARROW_ACCEPTED_EXPONENTIAL_DISK_14 | STRICT | 6 | 9.014797448531171 | 8.558661162885608 | 6.954746714231061 | 0.5170424681910073 | 2.4479049324705 | 0.16666666666666666 | 0.3333333333333333 | -1003.8829388432548 | frozen_global_train_beta | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |
+| NARROW_ACCEPTED_EXPONENTIAL_DISK_14 | ALL_14 | 14 | 9.412731616097517 | 9.18610496603776 | 9.376045576156566 | 0.136918539852938 | 0.28382489868790683 | 0.35714285714285715 | 0.5 | -1003.8829388432548 | frozen_global_train_beta | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |
 
 ## Galaxy Scores
 
@@ -32,6 +32,7 @@ mean MOND RMSE = 9.240743.
 | NGC4559 | CAVEATED | bar_component_present;large_distance_error | 32 | 2.1554796680624935 | 14.39749336852071 | 15.385306161864646 | 18.985298676354127 | -0.9878127933439362 | -4.587805307833417 | True | True | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |
 | UGC06930 | CAVEATED | bar_component_present;low_inclination | 10 | 2.6808231529361786 | 7.320750408182532 | 7.129942401878801 | 10.615359911067321 | 0.19080800630373052 | -3.2946095028847893 | False | True | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |
 | UGC07089 | CAVEATED | edgedisk_component_orientation_caveat | 12 | 1.498363762021143 | 10.233823623212158 | 11.854626156035648 | 15.11002549298317 | -1.6208025328234896 | -4.876201869771011 | True | True | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |
+| UGC08286 | CAVEATED | edgedisk_component_orientation_caveat | 17 | 1.204106339170835 | 15.70998026000711 | 14.190503497341913 | 11.134978355570606 | 1.5194767626651977 | 4.575001904436505 | False | False | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |
 | NGC0300 | STRICT | none | 25 | 1.534398989732565 | 10.938448962424388 | 9.83189803567648 | 5.607034629923943 | 1.106550926747909 | 5.3314143325004455 | False | False | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |
 | NGC3917 | STRICT | none | 17 | 3.360628171466791 | 8.152579974837693 | 6.899654025227952 | 6.637702160319162 | 1.2529259496097405 | 1.5148778145185302 | False | False | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |
 | NGC5585 | STRICT | large_distance_error | 24 | 1.5577077456186188 | 7.174600938353657 | 7.910184029247681 | 8.365260361585127 | -0.735583090894024 | -1.1906594232314704 | True | True | NARROW_ACCEPTED_MATCHED_FAMILY_RESULT | narrow_accepted_exponential_disk_population_endpoint_preliminary_control |

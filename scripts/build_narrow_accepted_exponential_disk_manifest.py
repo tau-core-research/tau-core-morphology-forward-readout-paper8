@@ -2,7 +2,7 @@
 """Build a narrow accepted manifest for the audited exponential-disk lane.
 
 This does not unblock the full Paper 8 frozen launch. It freezes only the
-externally audited 13-row exponential-disk lane where both the family label
+externally audited 14-row exponential-disk lane where both the family label
 and the scale observable are source-backed enough for a narrow accepted
 population endpoint.
 """
@@ -21,11 +21,12 @@ REPORTS = ROOT / "reports"
 CLAIM_BOUNDARY = (
     "narrow_accepted_population_manifest_not_full_launch_not_population_validation"
 )
+ACCEPTED_POPULATION_LANE = "NARROW_ACCEPTED_EXPONENTIAL_DISK_14"
 
 
 def build_manifest() -> tuple[pd.DataFrame, pd.DataFrame]:
     audit = pd.read_csv(DATA / "exponential_disk_family_label_audit.csv").copy()
-    audit["accepted_population_lane"] = "NARROW_ACCEPTED_EXPONENTIAL_DISK_13"
+    audit["accepted_population_lane"] = ACCEPTED_POPULATION_LANE
     audit["accepted_population_family"] = "K_exponential_disk"
     audit["accepted_kernel_observable"] = "scale_radius_kpc"
     audit["accepted_kernel_formula"] = (
@@ -64,7 +65,7 @@ def build_manifest() -> tuple[pd.DataFrame, pd.DataFrame]:
     summary = pd.DataFrame(
         [
             {
-                "accepted_population_lane": "NARROW_ACCEPTED_EXPONENTIAL_DISK_13",
+                "accepted_population_lane": ACCEPTED_POPULATION_LANE,
                 "n_rows": int(len(manifest)),
                 "n_strict_rows": int(
                     (manifest["accepted_population_support_tier"] == "STRICT").sum()
@@ -99,7 +100,7 @@ def write_report(manifest: pd.DataFrame, summary: pd.DataFrame) -> None:
         "# Narrow Accepted Exponential-Disk Manifest",
         "",
         "This manifest freezes the first population-level matched-family lane that",
-        "is source-backed enough for Paper 8: the 13 externally audited",
+        "is source-backed enough for Paper 8: the 14 externally audited",
         "exponential-disk rows with accepted scale-radius observables.",
         "",
         "## Verdict",

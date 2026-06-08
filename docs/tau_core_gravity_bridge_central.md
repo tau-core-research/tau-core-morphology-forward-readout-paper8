@@ -13,10 +13,75 @@ to choose a candidate 4D readout shell.
 This distinction is a Tau Core bridge consequence: the bridge treats galaxy
 morphology as a projection/readout structure, not merely as a 4D visual label.
 
+## Tau Morphology State
+
+The bridge uses `Tau morphology state` for the deeper Tau-side organizing
+configuration behind the observable galaxy.  It is not the same object as a
+visible spiral/bar/ring/warp class.  A Tau morphology state is a
+configuration-level descriptor whose different four-dimensional readouts may
+appear as:
+
+```text
+time / clock readout
+matter or mass-distribution readout
+gravity / metric-response readout
+quantum or coherence readout
+visible 4D morphology
+observer/path readout
+```
+
+In this language, the visible galaxy morphology is one readout of the Tau
+morphology state, not the state itself.  The current Paper 8/Paper 2 machinery
+does not model all of these readouts.  It uses the concept to keep the
+operational hierarchy honest: visible morphology is a source handle, while
+`K_readout`, `Theta_tau`, and possible clock/path factors are partial
+four-dimensional projections of the same deeper Tau-side state.
+
+Equivalently, the internal Tau morphology state is the shared source-side
+organizing object that determines which readout channels can be visible in 4D.
+It is not itself a rotation-curve correction, a visual class, or a clock
+factor.  The correction terms used in this bridge are channel-specific
+readouts of it:
+
+```text
+Tau morphology state
+    -> visible/source morphology readout       K_present, K_obs
+    -> morphology/gravity readout              K_readout, delta_v_morph^2
+    -> morphology trajectory/phase readout     Theta_morph
+    -> clock/time projection readout           Xi_t or Xi_eff
+    -> observer/path projection readout        O_obs/path, E_proj/history
+```
+
+Thus `Theta_morph` and `Xi_t` are not two names for the same effect.
+`Theta_morph` records how the source's internal morphology state appears as a
+settling/history/phase readout, while `Xi_t` records how the observed clock or
+time-slice readout changes the velocity quotient.  They may share source
+evidence because they are readouts of the same deeper state, but a combined
+endpoint requires a nonoverlap ledger to prevent counting the same evidence
+twice.
+
+This channel list is open, but not freely tunable. Other projections of the
+same internal Tau morphology state can in principle affect the effective
+rotation readout, including:
+
+```text
+mass-distribution readout
+metric / closure readout
+coherence or phase readout
+source-observer path / environment readout
+```
+
+Bridge rule: a new projection channel is not an allowed correction merely
+because it is conceptually available. It must be turned into a residual-blind
+source observable, assigned to a distinct ledger channel, checked for overlap
+with active morphology/projection/time kernels, and tested by ablation against
+the lower-channel kernel. Until then it remains Tau-side motivation, not an
+endpoint-scored readout factor.
+
 ## Core Chain
 
 ```text
-Tau-side configuration / morphology
+Tau morphology state
     -> projection and 4D readout
     -> observed 4D morphology handle K_obs
     -> residual-blind source review, caveats, and provenance
@@ -32,6 +97,2081 @@ feature, or other projected morphology descriptor.
 `K_readout` is the predeclared readout-relevant morphology proxy. It is the
 object allowed to select the formula shell. It may equal `K_obs`, but this is
 not assumed.
+
+## Morphology Versus Projection
+
+The bridge uses morphology and projection as related but distinct notions.
+Observed 4D morphology is already a projection/readout handle, not the
+fundamental Tau-side configuration itself.  A visual or catalogue label can
+start the residual-blind source review, but it does not automatically select
+the active readout kernel.
+
+Operationally the bridge separates:
+
+```text
+K_obs:
+    catalogue or visually supported 4D morphology handle
+
+K_present:
+    present source-observed 4D morphology state used in a local formula shell
+
+K_readout:
+    readout-relevant morphology/projection state allowed to select F_K
+
+O_path:
+    observer/path projection data: inclination, line-of-sight stacking,
+    warp visibility, beam/path geometry, source-observer viewing context
+
+Theta_tau:
+    Tau-side morphology trajectory / phase information: history,
+    relaxation, settling, asymmetry, or future-directed phase proxy
+```
+
+The safe relationship is:
+
+```text
+K_obs
+    -> source review and caveats
+    -> K_present
+    +  O_path
+    +  Theta_tau
+    +  E_proj/history
+    -> K_readout
+    -> F_{K_readout}
+```
+
+Thus the older shorthand "morphology-specific formula" should be read as
+"morphology-projection readout family."  A barred, ringed, warped, thick,
+compact, or lopsided 4D morphology label is a first-pass projected handle.  The
+active kernel may instead be projection-dominated, history-dominated,
+mixed-readout, clock/readout-controlled, or a null/quiet limit.
+
+This distinction also defines the double-count discipline.  The same
+source-side fact cannot be counted once as the morphology kernel and again as an
+independent observer/path, trajectory, or clock/readout correction.  Any such
+second channel must provide residual-blind non-overlap evidence before endpoint
+use.
+
+Kernel-level audit after the terminology clarification:
+
+```text
+status:
+    MORPHOLOGY_PROJECTION_KERNEL_LEVEL_AUDIT_COMPLETE
+
+galaxies audited:
+    6
+
+routes audited:
+    11
+
+endpoint-allowed routes:
+    7
+
+routes requiring immediate rescoring:
+    0
+
+routes numerically changed by the terminology audit:
+    0
+
+time-control routes:
+    2
+```
+
+Bridge consequence: the morphology/projection distinction changes route
+interpretation and future gate requirements, not the frozen numerical endpoint
+kernels.  The main watchlist is:
+
+```text
+NGC4088:
+    clock-only Xi_eff control overlaps the accepted additive warp/history route
+
+UGC12506:
+    Theta_morph and Xi_t routes require non-overlap separation before endpoint.
+    The channel roles are now separated, but the combined endpoint remains
+    blocked by source overlap.
+
+NGC4013:
+    mixed overlay prospective replay remains quarantined, not endpoint
+
+NGC7331:
+    broad vertical/outer-warp window remains caveated and should be source-sharpened
+```
+
+Artifacts:
+
+```text
+data/derived/morphology_projection_kernel_level_audit.csv
+data/derived/morphology_projection_kernel_level_audit_summary.csv
+data/derived/morphology_projection_kernel_double_count_worklist.csv
+reports/morphology_projection_kernel_level_audit.md
+```
+
+## Observer / Path Projection Is Morphology-History Dependent
+
+The bridge treats observer/path projection as part of the readout structure,
+not as a merely geometric viewing-angle correction. In Tau Core bridge terms,
+the apparent projection seen by an observer can depend on the present
+morphology, the observer/path geometry, and the source's Tau-side morphology
+trajectory or phase profile.
+
+The operational rule is therefore:
+
+```text
+K_readout =
+K_readout(
+    present source morphology,
+    observer/path projection,
+    Tau-side morphology trajectory / phase,
+    projection-history environment
+)
+```
+
+Equivalently, the projection-enriched rotation readout shell is:
+
+```text
+delta_v_proj^2(R)
+  =
+  sum_j A_j(source)
+        w_j(R, O_obs/path, Theta_morph)
+        K_j(R; K_present, Theta_morph)
+```
+
+where `Theta_morph` is the residual-blind Tau-side morphology trajectory/phase
+profile. It may include present morphology, past traces, and future-directed
+relaxation or settling indicators, but only as source-frozen observables.
+
+This is a bridge consequence, not an endpoint fitting license. The
+observer/path and trajectory/phase terms may enter a formula shell only through
+residual-blind source evidence: inclination, warp geometry, vertical overlay,
+H I envelope/asymmetry, resolved velocity-field context, interaction history,
+relaxation or settling indicators, environment notes, or other source-native
+observables. Endpoint residuals, best-fitting families, and baseline comparison
+scores cannot define these terms.
+
+In Tau Core language, future-directed morphology or path-environment terms are
+not treated as backward causal influences. They are treated as
+trajectory/phase components of a deeper Tau-side configuration, whose
+four-dimensional past, present, and future appearances may be different
+readout slices. Thus future-directed relaxation, settling, accretion,
+morphological phase, or path-environment indicators may be admissible readout
+inputs when they are supported by residual-blind source evidence.
+
+The current observer/path projection audits are first-order approximations.
+The fuller object is the galaxy-to-observer null-geodesic bundle environment:
+the light path or beam neighborhood together with the metric/matter
+distribution that can influence the causal past of that observed beam. A
+present-day line-of-sight or inclination proxy may therefore be incomplete if
+the Tau-side morphology trajectory contains earlier morphology, current
+projection, or future-directed relaxation/settling phase information with a
+readout-relevant imprint.
+
+Consequently, a weak present-day morphology match is not automatically a Tau
+Core failure. The correct next question is whether the source record supports a
+different `K_readout` after projection/trajectory enrichment. Conversely, if a
+source-complete, residual-blind projection/trajectory-enriched `K_readout` fails
+under a frozen formula shell, that case becomes a stronger true-negative
+candidate.
+
+The bridge therefore distinguishes four operational kernel levels:
+
+```text
+K^(0)(R) = K(R; K_present)
+K^(1)(R) = K(R; K_present, O_obs/path)
+K^(2)(R) = K(R; K_present, O_obs/path, Theta_morph)
+K^(3)(R) = K(R; K_present, O_obs/path, Theta_morph, E_proj/history)
+```
+
+Existing Paper 2 curves are to be read as `K^(0)`, `K^(1)`, or partial
+`K^(2)` approximations depending on the source artifact. They are not full
+`K^(3)` path-aware kernels.
+
+## Time-Readout Projection Channel
+
+The bridge now separates morphology/trajectory phase from a stronger
+time-readout projection channel. The point is not only that the source
+morphology may have past/current/future Tau-side trajectory components. The
+stronger claim to be tested is:
+
+```text
+Tau-side configuration
+    -> projection-dependent time / clock readout
+    -> gravity / morphology readout
+    -> observed rotation dynamics
+```
+
+In this channel, the observed rotation speed can differ because the time
+parameter used by the observed 4D readout is not identical to the Newtonian
+closure-test time parameter. This is not an extra force term. It is a
+clock/readout mismatch.
+
+The first shell is:
+
+```text
+v_obs^2(R)
+  =
+  Xi_t^2(R; O_obs/path, Theta_morph, E_proj/history)
+  *
+  [
+    v_Newt^2(R)
+    + delta_v_grav/morph^2(R)
+  ]
+```
+
+where `Xi_t = 1` is the Newtonian clock-readout limit. For a small
+projection-time mismatch:
+
+```text
+Xi_t(R) = 1 + epsilon_t(R)
+```
+
+the linearized contribution is:
+
+```text
+delta_v_t^2(R)
+  ~= 2 epsilon_t(R)
+     [
+       v_Newt^2(R) + delta_v_grav/morph^2(R)
+     ].
+```
+
+This is formula-conditional. `Xi_t` or `epsilon_t` must be frozen from
+residual-blind source-side time/projection evidence before scoring. It cannot
+be inferred from the rotation residual, a best-fit Tau family, or a
+MOND/RAR/TPG comparison score.
+
+The current Paper 2 full-time morphology replay is only a diagnostic proxy for
+this channel. It tests whether a morphology-trajectory layer behaves like a
+source-dependent readout correction. It is not yet a source-complete
+time-projection endpoint, because no accepted residual-blind `Xi_t(R)` manifest
+exists.
+
+Operationally the channel affects five projection subchannels:
+
+| Subchannel | What changes | Formula role | Source-freeze requirement |
+| --- | --- | --- | --- |
+| Observer/path projection | which source clock slice is visible along the observed light bundle | argument of `Xi_t` through `O_obs/path` | inclination, edge-on overlay, warp visibility, beam/path geometry, foreground/path audit |
+| Morphology trajectory / phase | whether present 4D morphology is a settled or phase-shifted readout slice | argument of `Xi_t` through `Theta_morph` | settling state, warp/asymmetry stage, interaction history, relaxation/future-directed phase proxy |
+| Gravity/readout projection | additive morphology/gravity residual is clock-rescaled | `Xi_t^2 [v_Newt^2 + delta_v_grav/morph^2]` | separate morphology/gravity residual shell must be frozen before time-readout scoring |
+| Clock-rate / time-slice projection | effective time parameter in the observed velocity quotient changes | `Xi_t = 1 + epsilon_t`; `delta_v_t^2 ~= 2 epsilon_t (...)` | residual-blind clock/readout mismatch proxy |
+| Path/environment projection | metric/matter environment of the observed light bundle can affect the clock factor | possible `E_proj/history` dependence in `Xi_t` | null-geodesic bundle environment or rejected image-plane coincidence |
+
+This matrix is a checklist for future manifests. It is not a statement that all
+five subchannels are active for a given galaxy.
+
+First diagnostic replay status:
+
+```text
+Xi_t(R) = 1 + epsilon_0 K_t(R)
+```
+
+with `epsilon_0` capped and inherited from residual-blind source-status loads
+was run on the current trial galaxies. The diagnostic improved the strongest
+warp/history/asymmetry case (`NGC4088`) and the high-spin edge-on stress case
+(`UGC12506`), was nearly neutral for the weak-projection control (`NGC4183`),
+and degraded already close or saturated projection kernels (`NGC4013`,
+`NGC5907`, `NGC7331`). This is useful only as a diagnostic: it suggests the
+time-readout channel is not a universal amplitude rescue term, but no accepted
+`Xi_t(R)` endpoint exists yet.
+
+The corresponding readiness manifest has the following current policy:
+
+```text
+P1 source-review targets:
+    NGC4088, UGC12506
+
+P2 weak/null control:
+    NGC4183
+
+P3 reject current Xi_t proxy / keep Xi_t = 1 unless new source evidence appears:
+    NGC4013, NGC5907, NGC7331
+```
+
+This is an important bridge discipline. A failed or neutral `Xi_t` replay is
+not patched by increasing `epsilon_t`; it either becomes a null-control
+confirmation or rejects the current time-readout proxy for that source state.
+
+The P1 source-review worklist is now explicit and remains non-endpoint:
+
+```text
+NGC4088:
+    required source route:
+        independent warp/asymmetry phase proxy
+        interaction/companion context
+        accepted epsilon_t normalization law
+    key audit:
+        separate clock/readout phase from the already-used additive
+        warp/history morphology kernel
+
+UGC12506:
+    required source route:
+        high-spin edge-on H I envelope or position-velocity consistency proxy
+        source-side clock/readout settling proxy
+        path/foreground review
+    key audit:
+        decide whether the path term is active or zero before endpoint scoring
+```
+
+Bridge consequence: `NGC4088` and `UGC12506` are not accepted `Xi_t`
+endpoints. They are source-review targets. The next accepted endpoint can only
+be run after `K_t(R)` and `epsilon_t` are frozen from source observables alone,
+with no rotation-residual promotion and no post-hoc amplitude rescue.
+
+First P1 source-review intake:
+
+```text
+NGC4088:
+    status:
+        strong source context, measurement blocked
+    filled:
+        warp presence flag
+        PV asymmetry flag
+        PA asymmetry flag
+    blocked:
+        q_warp_measured
+        m_history_warp
+        independent review
+        epsilon_t normalization law
+    consequence:
+        Xi_t route remains measurement-blocked until the source worksheets
+        are filled and reviewed.
+
+UGC12506:
+    status:
+        strong source context, foreground/path term not established
+    filled:
+        high-inclination PV/envelope requirement
+        extended H I support
+        asymmetric PV/envelope context
+        low-density stable H I context
+        high-spin context
+    blocked:
+        accepted K_t(R) envelope mapping
+        epsilon_t normalization law
+        clock/readout settling proxy
+    consequence:
+        foreground/path term is set to zero unless a later cone/path review
+        supports it. The active route is high-spin/envelope clock readout,
+        not foreground rescue.
+```
+
+UGC12506 first source-only `Xi_t` shell:
+
+```text
+Xi_t(R) = 1 + epsilon_t K_t(R)
+
+K_t = norm[
+    w_spin K_spin
+  + w_edge K_edge_clock
+  + w_env K_envelope_settling
+  + w_asym K_asymmetric_PV_phase
+  + 0 * K_path
+]
+
+epsilon_t = min(0.035, 0.035 * Gamma_clock)
+Gamma_clock = L / (1 + L)
+```
+
+Current source-shell value:
+
+```text
+epsilon_t ~= 0.023844
+path_load = 0
+endpoint_scores_allowed = false
+```
+
+Bridge consequence: this is the first concrete source-only UGC12506 clock
+readout shell. It remains blocked as an accepted endpoint because the
+`epsilon_t` normalization law is still a source-shell candidate rather than an
+accepted Tau-side clock/readout law.
+
+UGC12506 `epsilon_t` normalization derivation gate:
+
+```text
+Given:
+    L >= 0 is a residual-blind source clock/readout load.
+
+Require:
+    epsilon_t is dimensionless.
+    epsilon_t(0) = 0.
+    epsilon_t is monotone in L.
+    epsilon_t <= epsilon_cap.
+
+Minimal bounded response map:
+    Gamma_clock = L / (1 + L)
+    epsilon_t = epsilon_cap * Gamma_clock
+```
+
+Current UGC12506 specialization:
+
+```text
+L ~= 2.13728
+Gamma_clock ~= 0.681253
+epsilon_cap = 0.035
+epsilon_t ~= 0.023844
+```
+
+Bridge consequence: the shape `L/(1+L)` is now a conditional derived bounded
+response map. The open piece is the origin of `epsilon_cap`: it must be derived
+from Tau-side clock/readout geometry or frozen as a predeclared class constant
+before any accepted `Xi_t` endpoint is allowed.
+
+UGC12506 small-mismatch cap protocol gate:
+
+```text
+Xi_t = 1 + epsilon_t
+Xi_t^2 = 1 + 2 epsilon_t + epsilon_t^2
+
+quadratic-to-linear ratio = epsilon_t / 2
+
+protocol tolerance:
+    eta_quad = 0.02
+
+admissible linear-regime bound:
+    epsilon_t <= 2 eta_quad = 0.04
+
+frozen protocol cap:
+    epsilon_cap = 0.035
+```
+
+Current cap consequences:
+
+```text
+epsilon_cap = 0.035 < 0.04
+max quadratic-to-linear ratio at cap = 0.0175
+max Xi_t^2 fractional shift at cap = (1.035)^2 - 1 ~= 0.071225
+```
+
+Bridge consequence: `epsilon_cap = 0.035` is now frozen only as a conservative
+small-mismatch protocol cap inside the linearized time-readout regime. It is
+not a universal Tau Core constant and does not turn the UGC12506 source shell
+into an endpoint. Promotion still requires either an accepted class-cap
+manifest or a deeper Tau-side clock/readout geometry derivation.
+
+UGC12506 accepted-manifest gate:
+
+```text
+status:
+    U12506_XI_T_ACCEPTED_MANIFEST_NOT_READY
+
+passes:
+    source-only Xi_t shell exists
+    no residual/v_obs leakage in shell, normalization, or cap summaries
+    path term is zero because path evidence is not established
+    bounded normalization shape is available
+    epsilon_cap is protocol-frozen inside the linearized regime
+
+blocked:
+    K_t(R) envelope mapping still needs independent source review
+    clock/readout settling proxy is still unfilled
+    epsilon_cap must be recorded as protocol cap, not universal Tau constant
+    deeper Tau-side cap origin remains open for any universal-law claim
+
+endpoint_scores_allowed:
+    false
+```
+
+Bridge consequence: UGC12506 is now stronger than a raw diagnostic `Xi_t`
+replay, because it has a source-only clock shell, bounded source-load
+normalization, and small-mismatch cap protocol. It is still not an endpoint.
+The next promotion step is a residual-blind source review of the `K_t(R)`
+envelope mapping and clock/readout settling proxy, followed by rerunning the
+accepted-manifest gate.
+
+UGC12506 source-review packet:
+
+```text
+status:
+    U12506_XI_T_SOURCE_REVIEW_PACKET_READY_RESPONSE_PENDING
+
+review obligations:
+    high-spin / low-density H I envelope as clock-readout settling proxy
+    high-inclination PV/envelope context as time-slice proxy
+    radial K_t envelope ramp from R_d/R_opt to R_HI
+    caveated approaching/receding asymmetry phase component
+    zero path/environment policy unless cone/path evidence appears
+    epsilon_cap carried only as small-mismatch protocol cap
+
+forbidden promotion inputs:
+    rotation residuals
+    endpoint RMSE
+    Newton/MOND/RAR/RMOND/TPG baseline ranks
+    wrong-family Tau scores
+    post-hoc epsilon_cap changes
+    foreground/path rescue without source evidence
+
+endpoint_scores_allowed:
+    false
+```
+
+Bridge consequence: the UGC12506 `Xi_t` route has moved from informal
+worklist to review-ready source packet. The packet does not validate the route;
+it makes the next validation step auditable.
+
+UGC12506 source-review response intake:
+
+```text
+status after completed reviewer response:
+    U12506_XI_T_SOURCE_REVIEW_RESPONSE_USABLE_MANIFEST_GATE_REQUIRED
+
+reviewer verdict:
+    ACCEPT_KT_CARRY_CAP_AS_CAVEATED_INTERVAL
+
+validator checks:
+    response uses one allowed response
+    source inputs are cited
+    forbidden inputs are absent
+    response does not authorize endpoint scoring
+    response does not authorize accepted manifest by itself
+    response does not promote epsilon_cap to universal Tau constant
+
+next gate:
+    rerun UGC12506 Xi_t accepted-manifest gate
+
+endpoint_scores_allowed:
+    false
+```
+
+Bridge consequence: the executable promotion chain is now explicit:
+
+```text
+source packet
+    -> independent source-review response
+    -> response intake validator
+    -> accepted-manifest gate
+    -> caveated interval/control manifest
+    -> separate endpoint-permission gate before any scoring
+```
+
+UGC12506 caveated interval/control manifest:
+
+```text
+accepted-manifest gate status:
+    U12506_XI_T_CAVEATED_INTERVAL_CONTROL_MANIFEST_READY_ENDPOINT_BLOCKED
+
+control manifest status:
+    U12506_XI_T_CAVEATED_INTERVAL_CONTROL_MANIFEST_READY
+
+manifest kind:
+    caveated_interval_control
+
+frozen interval:
+    epsilon_t in [0, 0.0238438]
+    Xi_t in [1, 1.02384]
+
+policies:
+    K_t(R) is carried only as caveated interval/control manifest
+    asymmetry remains caveated phase component
+    path term remains zero unless later source path review establishes it
+    epsilon_cap = 0.035 remains protocol cap, not universal Tau constant
+
+artifact:
+    data/derived/ugc12506_xi_t_caveated_interval_control_manifest.csv
+
+builder:
+    scripts/build_ugc12506_xi_t_caveated_interval_control_manifest.py
+```
+
+Bridge consequence: UGC12506 has moved beyond a raw diagnostic `Xi_t` replay.
+It now has a source-reviewed, caveated interval/control manifest. This is a
+stronger protocol object, but endpoint scoring remains blocked until a separate
+endpoint-permission gate is defined and passed.
+
+UGC12506 caveated interval/control replay:
+
+```text
+status:
+    U12506_XI_T_CAVEATED_INTERVAL_CONTROL_REPLAY_COMPLETE_NOT_ENDPOINT
+
+control interval:
+    epsilon_t in [0, 0.0238438]
+    Xi_t in [1, 1.02384]
+
+scores:
+    control low RMSE  = 77.540886 km/s
+    control mid RMSE  = 77.011360 km/s
+    control high RMSE = 76.485611 km/s
+
+effect:
+    RMSE improvement versus low edge = 1.055275 km/s
+    observed points inside interval = 0.0
+    observed points inside interval with errors = 0.0
+
+artifact:
+    data/derived/ugc12506_xi_t_caveated_interval_control_replay_summary.csv
+
+figure:
+    figures/endpoint_diagnostics/ugc12506_xi_t_caveated_interval_control_replay.png
+```
+
+Bridge consequence: the source-reviewed `Xi_t` route moves UGC12506 in the
+expected direction, but the protocol cap is too small to rescue the rotation
+curve. This is a useful negative-control discipline: the time-readout channel is
+not being used as an arbitrary amplitude knob.
+
+UGC12506 `Theta_morph` / `Xi_t` separation gate:
+
+```text
+separation status:
+    U12506_THETA_XIT_CHANNELS_SEPARATED_ENDPOINT_STILL_BLOCKED
+
+Theta_morph role:
+    additive morphology/trajectory phase kernel
+    v_theta^2(R) = v_projection_history^2(R) + A_theta K_theta(R)
+
+Xi_t role:
+    multiplicative clock/readout interval control
+    Xi_t(R) = 1 + epsilon_t K_t(R)
+
+formula roles distinct:
+    true
+
+source overlap present:
+    true
+
+path term established:
+    false
+
+combined endpoint allowed:
+    false
+```
+
+Bridge consequence: with the refined terminology, UGC12506 is no longer an
+ambiguous single "time/morphology" route.  `Theta_morph` is the additive
+morphology-state phase diagnostic, while `Xi_t` is the small clock/readout
+control interval.  This is a real architectural clarification.  It is not an
+endpoint promotion, because the current evidence still overlaps through the
+high-spin/envelope/asymmetry source context and the path term remains
+unestablished.
+
+UGC12506 source-nonoverlap gate:
+
+```text
+nonoverlap status:
+    PARTIAL_NONOVERLAP_CONTROL_ALLOWED_COMBINED_ENDPOINT_BLOCKED
+
+Theta-only evidence:
+    late-settling outer radial shape
+
+Xi_t-only evidence:
+    epsilon_t small-mismatch protocol cap
+
+shared / partially shared evidence:
+    high spin
+    extended low-density H I envelope
+    high-inclination / edge-on PV geometry
+    approaching-receding H I asymmetry
+
+excluded:
+    foreground/path environment until source path review establishes it
+
+combined control replay allowed:
+    true
+
+combined endpoint allowed:
+    false
+```
+
+Bridge consequence: UGC12506 can now proceed to a combined-control replay with
+the assignments frozen by the nonoverlap ledger.  That replay is allowed only
+as a control because enough source facts remain shared that a positive score
+would not yet be an endpoint validation of independent `Theta_morph` and
+`Xi_t` channels.
+
+UGC12506 combined-control replay:
+
+```text
+combined control status:
+    U12506_THETA_XIT_COMBINED_CONTROL_REPLAY_COMPLETE_NOT_ENDPOINT
+
+Theta_morph-only RMSE:
+    64.12 km/s
+
+ledger-strict combined cap-only RMSE:
+    60.31 km/s
+
+caveated shared-K_t high stress RMSE:
+    63.21 km/s
+
+best control:
+    Theta_morph + Xi_t protocol cap only
+
+combined endpoint allowed:
+    false
+```
+
+Bridge consequence: the strict ledger-controlled combination improves the
+UGC12506 control curve by about `3.81 km/s` relative to the `Theta_morph`
+diagnostic alone.  The shared-context shaped `K_t(R)` stress curve improves
+less.  This supports the channel-accounting choice: the cleanest current
+control signal is the morphology-phase curve plus the small `Xi_t` cap, while
+the shaped `K_t` route remains caveated because its source context overlaps
+with the morphology channel.  No endpoint claim follows from this replay.
+
+Time-projection + morphology control-galaxy audit:
+
+```text
+audit status:
+    TIME_MORPHOLOGY_CONTROL_GALAXY_IMPROVEMENT_AUDIT_COMPLETE_NOT_ENDPOINT
+
+galaxies audited:
+    6
+
+improves clearly:
+    UGC12506  delta RMSE = -3.81 km/s
+    NGC4088  delta RMSE = -1.04 km/s
+
+near neutral:
+    NGC4183  delta RMSE = -0.01 km/s
+    NGC5907  delta RMSE = +0.03 km/s
+
+worsens:
+    NGC7331  delta RMSE = +0.16 km/s
+    NGC4013  delta RMSE = +0.53 km/s
+
+endpoint validation claim:
+    false
+```
+
+Bridge consequence: the current time/projection-morphology layer is selective,
+not universal.  It helps where source context indicates strong history,
+asymmetry, or projection-clock relevance, and it is neutral or harmful where
+the current proxy is not independently supported.  This is a useful guardrail:
+`Xi_t` is not behaving as an all-purpose amplitude knob.
+
+Why the worsened rows worsened:
+
+```text
+NGC4013:
+    current active route:
+        mixed warp / vertical-overlay readout
+    failure mode:
+        the generic Xi_t proxy overlaps the already active mixed geometry
+    interpretation:
+        adding Xi_t double-counts source structure already present in the
+        mixed kernel and moves an already close curve in the wrong direction
+    gate consequence:
+        keep Xi_t = 1 unless independent, non-overlapping clock/readout
+        evidence is source-frozen
+
+NGC7331:
+    current active route:
+        broad vertical / outer-warp mixed readout
+    failure mode:
+        the broad mixed window already carries the available phase information
+    interpretation:
+        adding Xi_t over-rescales a saturated broad-window proxy rather than
+        adding a separately frozen time/readout channel
+    gate consequence:
+        sharpen the outer-warp / vertical source window before any clock layer;
+        keep Xi_t = 1 for the current endpoint score
+
+NGC5907:
+    current active route:
+        edge-on projection / warp-truncation readout
+    failure mode:
+        near-neutral to slightly worse response
+    interpretation:
+        projection kernel is already saturated at the present proxy level
+    gate consequence:
+        no accepted Xi_t promotion from the present proxy
+```
+
+Bridge rule: a worsened `Xi_t` replay is a rejection of the current
+clock/readout proxy for that source state. It is not permission to retune the
+clock amplitude from the rotation residual. The default is `Xi_t = 1` until a
+non-overlapping, residual-blind clock/readout manifest is promoted.
+
+Problematic-galaxy projection-channel ledger:
+
+```text
+ledger status:
+    PROBLEMATIC_GALAXY_PROJECTION_CHANNEL_LEDGER_BUILT_NOT_ENDPOINT
+
+endpoint-allowed rows:
+    0
+
+UGC12506:
+    priority channel = mass-distribution / envelope + metric-closure readout
+    secondary        = observer/path edge-on projection, clock interval control
+    reason           = high-spin, edge-on, extended H I envelope stress remains
+                       underpredicted by the current small Xi_t cap
+
+NGC4088:
+    priority channel = trajectory/phase + asymmetry/history readout
+    secondary        = clock readout as control only
+    reason           = warp/history/asymmetry source state is the clearest
+                       current improving time/projection case
+
+NGC4013:
+    priority channel = mixed warp / vertical-overlay readout
+    forbidden now    = generic Xi_t promotion
+    reason           = current Xi_t proxy double-counts the mixed geometry
+
+NGC7331:
+    priority channel = source-sharpened vertical / outer-warp readout
+    secondary        = metric/closure only after window sharpening
+    reason           = broad mixed window is saturated and over-rescaled by Xi_t
+
+NGC5907:
+    priority channel = observer/path edge-on projection
+    reason           = projection kernel appears saturated at current proxy level
+
+NGC4183:
+    priority channel = quiet weak-projection limit
+    reason           = null/weak projection control
+```
+
+Bridge consequence: the next work should not apply the same extra projection
+layer to every problematic galaxy. Each row gets a different source-side
+channel hypothesis, and every new channel remains blocked until source-freeze,
+non-overlap, and ablation checks pass.
+
+Problematic projection-channel next-gate execution plan:
+
+```text
+script:
+    scripts/build_problematic_projection_channel_next_gates.py
+
+outputs:
+    data/derived/problematic_projection_channel_next_gates.csv
+    data/derived/problematic_projection_channel_next_gates_summary.csv
+    reports/problematic_projection_channel_next_gates.md
+
+status:
+    PROBLEMATIC_PROJECTION_CHANNEL_NEXT_GATES_BUILT_NOT_ENDPOINT
+
+endpoint permissions:
+    n_endpoint_allowed = 0
+
+currently runnable control/replay paths:
+    UGC12506:
+        U12506_MASS_ENVELOPE_METRIC_CLOSURE_ABLATION_GATE
+        status = CONTROL_REPLAY_READY_ENDPOINT_BLOCKED
+        interpretation = source-native NFW/HSE mass-envelope plus
+                         metric-closure seed can be ablated against
+                         Theta_morph-only, Theta+Xi_t cap-only, and
+                         source-envelope controls
+
+    NGC4088:
+        N4088_CLOCK_NONOVERLAP_EVIDENCE_GATE
+        status = NO_NEW_ENDPOINT_KEEP_ACCEPTED_ADDITIVE_ROUTE
+        interpretation = accepted additive warp/history route remains active;
+                         clock readout stays a control unless independent
+                         non-overlapping source-clock evidence is acquired
+
+blocked or inactive rows:
+    NGC4013:
+        BLOCKED_CURRENT_XIT_REJECTED
+    NGC7331:
+        REPLAY_PATH_EXISTS_ENDPOINT_NOT_PROMOTED
+    NGC5907:
+        SATURATED_CONTROL_NO_NEW_LAYER
+    NGC4183:
+        RETAIN_NULL_CONTROL
+```
+
+Bridge consequence: the channel ledger is now operational. The framework can
+move forward on UGC12506 and NGC4088 as control/replay work, but it still
+prevents endpoint promotion for every problematic row until the relevant
+source-freeze, non-overlap, and ablation obligations are closed.
+
+UGC12506 source-native mass/envelope--closure ablation replay:
+
+```text
+scripts:
+    scripts/build_ugc12506_source_native_nfw_hse_shell.py
+    scripts/run_ugc12506_source_native_nfw_hse_replay.py
+
+outputs:
+    data/derived/ugc12506_source_native_nfw_hse_replay_summary.csv
+    data/derived/ugc12506_source_native_nfw_hse_replay_scores.csv
+    figures/endpoint_diagnostics/ugc12506_source_native_nfw_hse_replay.png
+    reports/ugc12506_source_native_nfw_hse_replay.md
+
+status:
+    UGC12506_SOURCE_NATIVE_NFW_HSE_REPLAY_IMPROVES_RD_PROXY_NOT_PRIOR_DIAGNOSTICS
+
+RMSE:
+    baryonic carrier:              116.02 km/s
+    source-envelope branch:        102.48 km/s
+    edge-on/envelope/asym branch:  102.43 km/s
+    old Rd-proxy NFW/HSE branch:    77.86 km/s
+    source-native NFW/HSE branch:   77.54 km/s
+    best prior diagnostic branch:   37.36 km/s
+
+claim boundary:
+    replay/control evidence, not endpoint validation
+```
+
+Bridge consequence: UGC12506 is no longer well-described as a pure clock or
+observer-projection problem. The source-native NFW/HSE replay confirms that a
+mass/envelope plus metric-closure channel moves in the right direction and
+beats the lower source branches, but it still leaves a large residual gap. The
+next UGC12506 theory task is therefore not to turn up `Xi_t`; it is to derive a
+stronger source-frozen closure/readout channel that can account for the rapid
+rise and high-spin envelope without using the rotation residual to choose the
+kernel or amplitude.
+
+UGC12506 source-derived beta-closure normalization candidate:
+
+```text
+diagnostic fixed-shape optimum:
+    beta_diag = 3.876
+    RMSE      = 7.48 km/s
+    status    = residual-aware diagnostic only
+
+source-only candidate:
+    beta_cl
+      = 1
+        + (lambda_spin / 0.10) * (chi2_iso / chi2_NFW - 1)_+
+        + sin^2(i) * max((i - 80 deg) / 10 deg, 0)
+
+UGC12506 value:
+    lambda_spin = 0.15
+    chi2_iso / chi2_NFW - 1 = 1.571
+    edge-on load = 0.597
+    beta_cl = 3.954
+    RMSE    = 7.67 km/s
+
+script:
+    scripts/run_ugc12506_source_derived_beta_closure_replay.py
+
+outputs:
+    data/derived/ugc12506_source_derived_beta_closure_replay_summary.csv
+    data/derived/ugc12506_source_derived_beta_closure_replay_scores.csv
+    data/derived/ugc12506_source_derived_beta_closure_derivation.csv
+    figures/endpoint_diagnostics/ugc12506_source_derived_beta_closure_replay.png
+    reports/ugc12506_source_derived_beta_closure_replay.md
+
+status:
+    UGC12506_SOURCE_DERIVED_BETA_CLOSURE_REPLAY_MATCHES_DIAGNOSTIC_SHAPE_NOT_ENDPOINT
+```
+
+Bridge consequence: this is the first concrete UGC12506 closure-normalization
+formula that reproduces the needed amplitude scale without using the rotation
+curve to compute `beta_cl`. It remains post-diagnostic because the rule was
+formulated after the residual-aware beta diagnostic. The next proof/validation
+gate is to predeclare this beta-closure rule and transfer it to independent
+high-spin, high-inclination NFW/envelope systems, or derive the same expression
+from the Tau-side closure/load functional before scoring.
+
+UGC12506 beta-closure transfer predeclaration:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_transfer_predeclaration.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_transfer_candidates.csv
+    data/derived/ugc12506_beta_closure_transfer_source_worklist.csv
+    data/derived/ugc12506_beta_closure_transfer_predeclaration_summary.csv
+    reports/ugc12506_beta_closure_transfer_predeclaration.md
+
+status:
+    UGC12506_BETA_CLOSURE_TRANSFER_CANDIDATES_PREDECLARED_SOURCE_ACQUISITION_REQUIRED
+
+selection inputs:
+    SPARC inclination, RHI/Rdisk, MHI, Vflat, quality flag
+    no rotation residuals
+
+candidate count:
+    11 non-UGC12506 galaxies
+
+top source-acquisition targets:
+    UGC11455
+    ESO563-G021
+    IC4202
+    NGC0891
+    NGC4013
+    NGC2841
+    NGC4157
+    NGC4217
+
+required source-native fields before replay:
+    lambda_spin
+    chi2_NFW
+    chi2_ISO
+    source-native halo-fit reference
+    PV/envelope method notes
+
+endpoint/replay permission:
+    none yet
+```
+
+Bridge consequence: the beta-closure rule now has an independent transfer
+route. The correct next move is source acquisition for the predeclared target
+list, not further tuning on UGC12506.
+
+UGC12506 beta-closure transfer halo-fit acquisition:
+
+```text
+script:
+    scripts/acquire_ugc12506_beta_closure_transfer_halo_fit_fields.py
+
+source:
+    Li et al. 2020, ApJS 247, 31; VizieR J/ApJS/247/31
+
+outputs:
+    data/external/literature/li2020_sparc_halo_catalog/table1_vizier.tsv
+    data/derived/ugc12506_beta_closure_transfer_halo_fit_fields.csv
+    data/derived/ugc12506_beta_closure_transfer_halo_fit_worklist_update.csv
+    data/derived/ugc12506_beta_closure_transfer_halo_fit_acquisition_summary.csv
+    reports/ugc12506_beta_closure_transfer_halo_fit_acquisition.md
+
+status:
+    UGC12506_BETA_CLOSURE_TRANSFER_HALO_FIT_FIELDS_FILLED_SPIN_AND_PV_STILL_BLOCKED
+
+filled fields:
+    chi2_ISO
+    chi2_NFW
+    nfw_preference_load = max(chi2_ISO / chi2_NFW - 1, 0)
+
+still blocked:
+    lambda_spin
+    PV/envelope method notes
+    independent replay freeze
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: the first transfer blocker is reduced, but the result is
+not a transfer replay. The acquisition also sharpens the source-side meaning of
+the UGC12506 beta-closure mechanism: high inclination, large H I extent, and
+large gas mass are not sufficient by themselves. The UGC12506-style
+normalization route needs a positive source-side NFW-preference load. In the
+current predeclared list, that load is positive for NGC0891, NGC7331, NGC2841,
+NGC0801, and weakly NGC4013, while UGC11455, ESO563-G021, and IC4202 are
+edge-on/massive candidates with pISO-preferred halo fits under Li et al. (2020).
+Those rows are still scientifically useful, but mainly as control or
+alternative-branch candidates unless an independent spin/PV source review
+changes the admissible transfer route.
+
+UGC12506 beta-closure transfer priority gate:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_transfer_priority_gate.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_transfer_priority_gate.csv
+    data/derived/ugc12506_beta_closure_transfer_priority_gate_summary.csv
+    reports/ugc12506_beta_closure_transfer_priority_gate.md
+
+status:
+    UGC12506_BETA_CLOSURE_TRANSFER_PRIORITY_GATE_BUILT_ENDPOINT_BLOCKED
+
+primary NFW-preference targets:
+    NGC0891
+    NGC7331
+
+weak/secondary NFW-preference targets:
+    NGC2841
+    NGC0801
+    NGC4013
+
+pISO-preferred controls or alternative branches:
+    UGC11455
+    ESO563-G021
+    IC4202
+    NGC4157
+    NGC4217
+    NGC3521
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: this is a useful tightening, not a validation result. The
+beta-closure transfer now has a defensible first source-review queue:
+NGC0891 and NGC7331. The next allowed work is to freeze their `lambda_spin`
+and PV/envelope evidence from independent sources before any replay score is
+computed.
+
+UGC12506 beta-closure primary source-freeze preflight:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_primary_source_freeze_preflight.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_primary_source_freeze_preflight.csv
+    data/derived/ugc12506_beta_closure_primary_source_freeze_evidence.csv
+    data/derived/ugc12506_beta_closure_primary_source_freeze_preflight_summary.csv
+    reports/ugc12506_beta_closure_primary_source_freeze_preflight.md
+
+status:
+    UGC12506_BETA_CLOSURE_PRIMARY_SOURCE_FREEZE_PREFLIGHT_BUILT_SPIN_BLOCKED
+
+NGC0891:
+    PV/envelope context accepted from edge-on H I XV/PV and envelope-tracing literature.
+    lambda_spin remains blocked.
+
+NGC7331:
+    PV/envelope context accepted from cached THINGS products and published
+    H I/vertical-context literature.
+    lambda_spin remains blocked.
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: the primary transfer targets have passed only the
+PV/envelope-context side of the source-freeze gate. The missing object is now
+precise: either a direct source-native `lambda_spin` measurement must be
+acquired, or a residual-blind source-only spin proxy must be predeclared before
+any beta-closure replay can be run.
+
+UGC12506 beta-closure direct lambda/spin source-acquisition gate:
+
+```text
+script:
+    scripts/acquire_ugc12506_beta_closure_direct_lambda_spin_sources.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_direct_lambda_spin_source_evidence.csv
+    data/derived/ugc12506_beta_closure_direct_lambda_spin_source_gate_summary.csv
+    reports/ugc12506_beta_closure_direct_lambda_spin_source_gate.md
+
+status:
+    UGC12506_BETA_CLOSURE_DIRECT_LAMBDA_SOURCE_GATE_PARTIAL_ENDPOINT_BLOCKED
+
+NGC7331:
+    disc-spin-like lambda = 0.423 from Marr 2015 lognormal disc model.
+    Not accepted for beta_cl because it is not the same halo/envelope
+    lambda_spin definition.
+
+NGC0891:
+    no accepted direct source-native lambda_spin cached.
+    NGC891-like lambda context is model-analogue only.
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: the direct-source route is informative but does not yet
+unlock a transfer replay. The NGC7331 value requires a definition-conversion
+review; NGC0891 requires either direct spin acquisition or proxy review.
+
+NGC0891 beta-closure spin-source hunt update:
+
+```text
+script:
+    scripts/acquire_ugc12506_beta_closure_ngc0891_spin_source_hunt_update.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_ngc0891_spin_source_hunt_update_sources.csv
+    data/derived/ugc12506_beta_closure_ngc0891_spin_source_hunt_update_worklist.csv
+    data/derived/ugc12506_beta_closure_ngc0891_spin_source_hunt_update_summary.csv
+    reports/ugc12506_beta_closure_ngc0891_spin_source_hunt_update.md
+
+status:
+    NGC0891_CONTEXT_STRENGTHENED_DIRECT_LAMBDA_STILL_BLOCKED
+
+context accepted:
+    cold H I halo
+    lagging extraplanar rotation
+    low-angular-momentum accretion context
+    stationary/extraplanar-gas model context
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: NGC0891 is strengthened as a physically relevant
+halo/envelope/projection transfer target, but the precise `lambda_spin` slot is
+still not filled. Context is not a substitute for the Tau-side normalization
+field.
+
+NGC7331 beta-closure lambda definition-conversion gate:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_lambda_definition_conversion_gate.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_lambda_definition_conversion_checks.csv
+    data/derived/ugc12506_beta_closure_lambda_definition_conversion_comparison.csv
+    data/derived/ugc12506_beta_closure_lambda_definition_conversion_worklist.csv
+    data/derived/ugc12506_beta_closure_lambda_definition_conversion_summary.csv
+    reports/ugc12506_beta_closure_lambda_definition_conversion_gate.md
+
+status:
+    NGC7331_DISC_LAMBDA_CONTEXT_ACCEPTED_DIRECT_SUBSTITUTION_REJECTED
+
+direct-substitution comparison:
+    beta_if_direct_disc_lambda_substituted = 1.731
+    beta_if_proxy_candidate_used           = 1.235
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: this is a preserved negative gate, not a setback. Marr's
+NGC7331 disc-spin value is source-side and useful, but it is not the same
+Tau-side halo/envelope normalization slot used by `beta_cl`. A residual-blind
+disc-to-halo/envelope conversion functional must be derived before this route
+can replay.
+
+UGC12506 beta-closure Bullock-like disk-inferred spin conversion proxy gate:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_bullock_spin_conversion_proxy_gate.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_bullock_spin_conversion_proxy_values.csv
+    data/derived/ugc12506_beta_closure_bullock_spin_conversion_proxy_comparison.csv
+    data/derived/ugc12506_beta_closure_bullock_spin_conversion_proxy_checks.csv
+    data/derived/ugc12506_beta_closure_bullock_spin_conversion_proxy_summary.csv
+    reports/ugc12506_beta_closure_bullock_spin_conversion_proxy_gate.md
+
+status:
+    BULLOCK_DISK_INFERRED_SPIN_PROXY_COMPUTED_REVIEW_REQUIRED
+
+formula:
+    j_disk = 2 Rdisk Vflat
+    R200   = V200 / (10 H0)
+    lambda'_disk = j_disk / (sqrt(2) R200 V200)
+
+primary comparison:
+    NGC0891 lambda'_disk = 0.035
+    NGC0891 exposure-proxy lambda_spin = 0.149
+    NGC7331 lambda'_disk = 0.033
+    NGC7331 exposure-proxy lambda_spin = 0.136
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: this is a more standard angular-momentum conversion
+candidate, but it is deliberately conservative and does not fill the Tau-side
+`beta_cl` spin slot by itself. The disagreement with the exposure proxy is
+useful: it forces the next gate to be an independent review choosing direct
+spin acquisition, exposure proxy, Bullock-like conversion, or route rejection
+before any replay.
+
+UGC12506 beta-closure source-declared spin proxy gate:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_source_declared_spin_proxy_gate.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_source_declared_spin_proxy_fields.csv
+    data/derived/ugc12506_beta_closure_source_declared_spin_proxy_transfer_queue.csv
+    data/derived/ugc12506_beta_closure_source_declared_spin_proxy_gate_summary.csv
+    reports/ugc12506_beta_closure_source_declared_spin_proxy_gate.md
+
+status:
+    UGC12506_BETA_CLOSURE_SOURCE_DECLARED_SPIN_PROXY_BUILT_ENDPOINT_BLOCKED
+
+proxy candidate:
+    lambda_spin_proxy =
+        0.10 * (1 + 0.35 extent_load
+                  + 0.25 velocity_load
+                  + 0.25 gas_load
+                  + 0.15 edgeon_load)
+
+source fields:
+    RHI/Rdisk
+    Vflat
+    H I mass
+    inclination
+
+primary proxy-transfer review target:
+    NGC0891
+
+secondary proxy-transfer review targets:
+    NGC7331
+    NGC2841
+    NGC0801
+    NGC4013
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: this reduces the old undefined `lambda_spin` slot to a
+source-only, dimensionless, reviewable proxy candidate. It does not prove that
+the proxy is a physical spin measurement and it does not promote a transfer
+endpoint. The next admissible step is an independent review or direct
+source-native spin acquisition before any beta-closure transfer replay.
+
+UGC12506 beta-closure spin proxy independent-review bundle:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_spin_proxy_review_bundle.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_spin_proxy_review_packet.csv
+    data/derived/ugc12506_beta_closure_spin_proxy_review_obligations.csv
+    data/derived/ugc12506_beta_closure_spin_proxy_review_forbidden_inputs.csv
+    data/derived/ugc12506_beta_closure_spin_proxy_review_response_template.csv
+    data/derived/ugc12506_beta_closure_spin_proxy_review_bundle_manifest.csv
+    data/derived/ugc12506_beta_closure_spin_proxy_review_bundle_summary.csv
+    reports/ugc12506_beta_closure_spin_proxy_review_prompt.md
+    reports/ugc12506_beta_closure_spin_proxy_review_bundle.md
+    review_bundles/ugc12506_beta_closure_spin_proxy_review_bundle.zip
+
+status:
+    U12506_BETA_SPIN_PROXY_REVIEW_BUNDLE_READY_RESPONSE_PENDING
+
+review obligations:
+    source fields accepted or proxy rejected
+    weight rule accepted or replaced before replay
+    NGC7331 disc-lambda context-only boundary accepted or conversion supplied
+    transfer target scope accepted or restricted
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: the source-only proxy route is now reviewable without repo
+access and without residual leakage. It now includes the Bullock-like
+conversion proxy as a conservative control alongside the source-declared
+exposure proxy. Neither is an accepted Tau-side amplitude law. The next gate is
+an independent response intake with an explicit spin-normalization route
+selection: `EXPOSURE_PROXY`, `BULLOCK_DISK_CONVERSION`,
+`DIRECT_SOURCE_NATIVE_SPIN`, `NEW_RESIDUAL_BLIND_RULE`, or rejection. Until
+that route is selected and accepted, the beta-closure transfer replay remains
+blocked.
+
+UGC12506 beta-closure spin proxy review-response intake:
+
+```text
+script:
+    scripts/run_ugc12506_beta_closure_spin_proxy_review_response_intake.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_spin_proxy_review_response_intake_checks.csv
+    data/derived/ugc12506_beta_closure_spin_proxy_review_response_intake_summary.csv
+    reports/ugc12506_beta_closure_spin_proxy_review_response_intake.md
+
+current status:
+    U12506_BETA_SPIN_PROXY_REVIEW_RESPONSE_PENDING_ENDPOINT_BLOCKED
+
+selected spin-normalization route:
+    PENDING_INDEPENDENT_REVIEW
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: the response-intake contract is now explicit. Without a
+completed independent review response, proxy promotion, beta-closure replay
+preflight, and endpoint scoring all remain blocked.
+
+UGC12506 beta-closure spin-route prefreeze gate:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_spin_route_prefreeze_gate.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_spin_route_prefreeze_gate.csv
+    data/derived/ugc12506_beta_closure_spin_route_prefreeze_values.csv
+    data/derived/ugc12506_beta_closure_spin_route_prefreeze_summary.csv
+    reports/ugc12506_beta_closure_spin_route_prefreeze_gate.md
+
+current status:
+    U12506_BETA_SPIN_ROUTE_PREFREEZE_BLOCKED_REVIEW_ROUTE_PENDING
+
+selected spin-normalization route:
+    PENDING_INDEPENDENT_REVIEW
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: this is the mechanical replay lock after the review
+bundle. The bridge now has a route-selection contract, an intake contract, and
+a downstream prefreeze contract. No `beta_cl` transfer values can be frozen
+until the independent review selects an accepted spin-normalization route.
+
+UGC12506 beta-closure spin-route decision matrix:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_spin_route_decision_matrix.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_spin_route_decision_matrix.csv
+    data/derived/ugc12506_beta_closure_spin_route_decision_matrix_summary.csv
+    reports/ugc12506_beta_closure_spin_route_decision_matrix.md
+
+status:
+    U12506_BETA_SPIN_ROUTE_DECISION_MATRIX_READY_REVIEW_REQUIRED
+
+routes:
+    EXPOSURE_PROXY
+    BULLOCK_DISK_CONVERSION
+    DIRECT_SOURCE_NATIVE_SPIN
+    REJECT_ROUTE
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: the amplitude-normalization choice is now explicitly
+auditable. The bridge no longer has a single hidden proxy path; it exposes the
+two computable residual-blind routes, the preferred-but-missing direct-source
+route, and the valid negative outcome where the route is rejected.
+
+UGC12506 beta-closure scoring launch gate:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_scoring_launch_gate.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_scoring_launch_inputs.csv
+    data/derived/ugc12506_beta_closure_scoring_launch_gates.csv
+    data/derived/ugc12506_beta_closure_scoring_protocol_skeleton.csv
+    data/derived/ugc12506_beta_closure_scoring_launch_summary.csv
+    reports/ugc12506_beta_closure_scoring_launch_gate.md
+
+status:
+    U12506_BETA_CLOSURE_SCORING_LAUNCH_BLOCKED_REVIEW_PREFREEZE_PENDING
+
+current gate counts:
+    required inputs = 9
+    missing inputs = 0
+    pass gates = 2
+    blocked gates = 3
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: the path to scoring is now explicit. The launch blocker is
+not missing files; it is missing independent route acceptance, prefrozen
+spin-normalization values, and an accepted carrier. The future scoring script
+is isolated as the only step allowed to read `vobs`, and that step remains
+blocked until the formula manifest exists.
+
+UGC12506 beta-closure transfer carrier-freeze gate:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_transfer_carrier_freeze_gate.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_transfer_carrier_route_decision_matrix.csv
+    data/derived/ugc12506_beta_closure_transfer_carrier_manifest.csv
+    data/derived/ugc12506_beta_closure_transfer_carrier_freeze_gates.csv
+    data/derived/ugc12506_beta_closure_transfer_carrier_freeze_summary.csv
+    reports/ugc12506_beta_closure_transfer_carrier_freeze_gate.md
+
+status:
+    U12506_BETA_CLOSURE_TRANSFER_CARRIER_FREEZE_BLOCKED_CARRIER_REVIEW_PENDING
+
+carrier routes:
+    BARYONIC_050_FAST_PACKET = reviewable, not accepted
+    LI2020_NFW_FIT_CARRIER = diagnostic/control only by default
+    SOURCE_NATIVE_NFW_HSE_TRANSFER_CARRIER = preferred, currently missing
+
+observed-curve read permission:
+    false
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: `beta_cl` is now correctly treated as an amplitude/closure
+factor, not a complete scoring formula. A velocity-squared carrier must be
+source-frozen before scoring. The Li et al. NFW route remains useful as a
+control, but because it is based on published rotation-curve fit products it is
+not promoted to an endpoint-safe carrier by default.
+
+UGC12506 beta-closure carrier review bundle and intake:
+
+```text
+scripts:
+    scripts/build_ugc12506_beta_closure_carrier_review_bundle.py
+    scripts/run_ugc12506_beta_closure_carrier_review_response_intake.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_carrier_review_bundle_summary.csv
+    data/derived/ugc12506_beta_closure_carrier_review_obligations.csv
+    data/derived/ugc12506_beta_closure_carrier_review_forbidden_inputs.csv
+    data/derived/ugc12506_beta_closure_carrier_review_response_template.csv
+    data/derived/ugc12506_beta_closure_carrier_review_response_intake_summary.csv
+    data/derived/ugc12506_beta_closure_carrier_review_response_intake_checks.csv
+    review_bundles/ugc12506_beta_closure_carrier_review_bundle.zip
+    reports/ugc12506_beta_closure_carrier_review_bundle.md
+    reports/ugc12506_beta_closure_carrier_review_response_intake.md
+
+status:
+    U12506_BETA_CARRIER_REVIEW_BUNDLE_READY_RESPONSE_PENDING
+    U12506_BETA_CARRIER_REVIEW_RESPONSE_PENDING_ENDPOINT_BLOCKED
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: the carrier blocker is now actionable. A reviewer can
+accept the minimal baryonic stress carrier, require a source-native transfer
+carrier, or reject the route. The intake validator keeps endpoint scoring
+blocked unless the response declares no forbidden residual or score inputs.
+
+UGC12506 beta-closure transfer formula-freeze gate:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_transfer_formula_freeze_gate.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_transfer_formula_manifest.csv
+    data/derived/ugc12506_beta_closure_transfer_formula_freeze_gates.csv
+    data/derived/ugc12506_beta_closure_transfer_formula_freeze_summary.csv
+    reports/ugc12506_beta_closure_transfer_formula_freeze_gate.md
+
+status:
+    U12506_BETA_CLOSURE_TRANSFER_FORMULA_FREEZE_BLOCKED_PREFREEZE_PENDING
+
+current gate counts:
+    pass gates = 2
+    blocked gates = 3
+    formula manifest rows = 0
+
+observed-curve read permission:
+    false
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: the beta-closure transfer formula shell is now separated
+from scoring. The manifest path is present, but it contains only headers until
+an independent spin-route review and source-frozen spin values exist. This
+prevents the future scoring runner from reading rotation curves before the
+source-side formula is frozen.
+
+UGC12506 beta-closure transfer scoring runner:
+
+```text
+script:
+    scripts/run_ugc12506_beta_closure_transfer_scoring.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_transfer_scoring_summary.csv
+    data/derived/ugc12506_beta_closure_transfer_scoring_gates.csv
+    data/derived/ugc12506_beta_closure_transfer_scoring_scores.csv
+    data/derived/ugc12506_beta_closure_transfer_scoring_points.csv
+    reports/ugc12506_beta_closure_transfer_scoring.md
+
+status:
+    U12506_BETA_CLOSURE_TRANSFER_SCORING_BLOCKED_LAUNCH_GATE
+
+formula manifest:
+    exists, but has zero rows
+
+observed-curve read permission:
+    false
+
+endpoint/replay permission:
+    none
+```
+
+Bridge consequence: the scoring script now exists as a separate stage, but it
+correctly refuses to score while launch and formula-freeze conditions are not
+met. The dormant scoring branch is implemented for a future accepted
+`BARYONIC_050_FAST_PACKET` carrier: once a non-empty frozen formula manifest
+and launch permission exist, it computes
+`v_readout = sqrt(beta_cl * v_baryon_050^2)` and writes score-level plus
+point-level control artifacts. This moves the bridge closer to scoring without
+weakening leakage prevention.
+
+UGC12506 beta-closure transfer scoring contract dry run:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_transfer_scoring_contract_dry_run.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_transfer_scoring_contract_dry_run_summary.csv
+    data/derived/ugc12506_beta_closure_transfer_scoring_contract_dry_run_scenarios.csv
+    data/derived/ugc12506_beta_closure_transfer_scoring_contract_dry_run_manifest.csv
+    data/derived/ugc12506_beta_closure_transfer_scoring_contract_dry_run_predictions.csv
+    reports/ugc12506_beta_closure_transfer_scoring_contract_dry_run.md
+
+status:
+    U12506_BETA_CLOSURE_TRANSFER_SCORING_CONTRACT_DRY_RUN_READY_REVIEWS_PENDING
+
+scenario count:
+    2
+
+dry-run manifest rows:
+    22
+
+prediction rows without vobs:
+    656
+```
+
+Bridge consequence: the transfer path now has a no-vobs execution contract.
+If an independent reviewer accepts either implemented spin-normalization route
+and accepts the baryonic stress carrier, the scoring runner has the
+non-observed inputs needed to execute. This is not a replay or endpoint score:
+it only proves that the remaining blocker is review/freeze authorization, not
+missing scoring infrastructure.
+
+UGC12506 beta-closure transfer scoring unlock packet:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_transfer_scoring_unlock_packet.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_transfer_scoring_unlock_packet_summary.csv
+    data/derived/ugc12506_beta_closure_transfer_scoring_unlock_requirements.csv
+    data/derived/ugc12506_beta_closure_spin_proxy_review_response_example_only_exposure_proxy.csv
+    data/derived/ugc12506_beta_closure_spin_proxy_review_response_example_only_bullock_conversion.csv
+    data/derived/ugc12506_beta_closure_carrier_review_response_example_only_baryonic_stress.csv
+    review_bundles/ugc12506_beta_closure_transfer_scoring_unlock_packet.zip
+    reports/ugc12506_beta_closure_transfer_scoring_unlock_packet.md
+
+status:
+    U12506_BETA_CLOSURE_TRANSFER_SCORING_UNLOCK_PACKET_READY_ACTIVE_RESPONSES_PENDING
+
+required active response files:
+    2
+
+active response files present:
+    0
+
+example-only response files:
+    3
+```
+
+Bridge consequence: the reviewer handoff is now explicit and machine-readable.
+The packet gives exact acceptable response fields for the spin-route and
+carrier decisions, but it does not write the active response files. Endpoint
+scoring remains blocked until an independent response is supplied and the
+standard intakes pass.
+
+UGC12506 beta-closure post-review scoring launcher:
+
+```text
+script:
+    scripts/run_ugc12506_beta_closure_post_review_scoring_launcher.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_post_review_scoring_launcher_summary.csv
+    data/derived/ugc12506_beta_closure_post_review_scoring_launcher_active_inputs.csv
+    data/derived/ugc12506_beta_closure_post_review_scoring_launcher_chain.csv
+    reports/ugc12506_beta_closure_post_review_scoring_launcher.md
+
+status:
+    U12506_BETA_CLOSURE_POST_REVIEW_SCORING_BLOCKED_ACTIVE_RESPONSES_PENDING
+
+required active response files:
+    2
+
+active response files present:
+    0
+
+chain return codes:
+    all zero
+```
+
+Bridge consequence: the post-review scoring path is now executable as one
+command after external review. In the present state it proves the chain itself
+is mechanically consistent while preserving the scientific blocker: no active
+review response, no scoring, no observed-curve read.
+
+UGC12506 beta-closure active review response installer:
+
+```text
+script:
+    scripts/install_ugc12506_beta_closure_active_review_responses.py
+
+default incoming directory:
+    review_bundles/incoming/ugc12506_beta_closure_transfer_scoring/
+
+expected incoming files:
+    ugc12506_beta_closure_spin_proxy_review_response.csv
+    ugc12506_beta_closure_carrier_review_response.csv
+
+outputs:
+    data/derived/ugc12506_beta_closure_active_review_response_install_summary.csv
+    data/derived/ugc12506_beta_closure_active_review_response_install_checks.csv
+    reports/ugc12506_beta_closure_active_review_response_installer.md
+
+status:
+    U12506_BETA_ACTIVE_REVIEW_RESPONSE_INSTALL_BLOCKED_INCOMING_PENDING_OR_INVALID
+
+incoming active responses:
+    0/2
+```
+
+Bridge consequence: the response installation step is now explicit and guarded.
+Example-only rows, pending rows, missing files, endpoint flags, or residual-use
+flags cannot silently become active reviewer responses. This preserves the
+review wall while making the path to scoring operationally short once genuine
+responses arrive.
+
+UGC12506 beta-closure scoring-readiness dashboard:
+
+```text
+script:
+    scripts/build_ugc12506_beta_closure_scoring_readiness_dashboard.py
+
+outputs:
+    data/derived/ugc12506_beta_closure_scoring_readiness_summary.csv
+    data/derived/ugc12506_beta_closure_scoring_readiness_dashboard.csv
+    reports/ugc12506_beta_closure_scoring_readiness_dashboard.md
+
+status:
+    U12506_BETA_CLOSURE_SCORING_READINESS_BLOCKED_ACTIVE_RESPONSES_PENDING
+
+ready stages:
+    no-vobs scoring contract dry run
+    unlock packet
+
+blocked stages:
+    active response installer
+    post-review launcher
+    scoring launch gate
+    formula-freeze gate
+    transfer scoring runner
+```
+
+Bridge consequence: the route now has a single status ledger for moving toward
+scoring without weakening the review wall. It records that the computational
+path is mechanically prepared and the remaining blocker is scientific:
+two independent active response files must be supplied and validated before the
+launcher can open the formula/scoring gates. In the current state it reports no
+scores, no endpoint claim, and no observed-curve read.
+
+## Multichannel Time Projection Refinement
+
+The current `Xi_t` tests should not be read as the full Tau Core time
+projection mechanism. They instantiate only a narrow proxy/control slice. If
+time projection is fundamental, it must be allowed to act in at least two
+different places:
+
+```text
+1. source morphology time / phase:
+       the galaxy's own Tau-side morphology clock state changes which
+       morphology kernel or source phase is read out
+
+2. observer/path projection time:
+       the observer sees a projection-selected clock slice through the
+       source-observer light bundle
+
+3. optional path/environment time:
+       the null-bundle environment may add a path term only when supported
+       by source/path evidence
+```
+
+The factorized shell is:
+
+```text
+Xi_eff(R) =
+    Xi_morph(R; Theta_src^tau)
+  * Xi_obs(R; O_obs/path)
+  * Xi_path(R; E_proj/history)
+
+v_obs^2(R) =
+  Xi_eff^2(R)
+  [
+    v_Newt^2(R)
+    + delta_v_morph^2(R; Theta_src^tau, O_obs/path)
+  ]
+```
+
+The morphology kernel itself may also change:
+
+```text
+K_readout(R)
+  =
+  K_0(R; K_present)
+  + deltaK_morph_time(R; Theta_src^tau)
+  + deltaK_obs_time(R; O_obs/path)
+```
+
+Small-mismatch expansion:
+
+```text
+Xi_i = 1 + epsilon_i
+
+delta_v_t^2
+  ~= 2 (epsilon_morph + epsilon_obs + epsilon_path)
+      [
+        v_Newt^2 + delta_v_morph^2
+      ]
+```
+
+Bridge consequence: UGC12506's weak caveated `Xi_t` improvement does not test
+this full branch. The current UGC12506 control only partially covers
+`Xi_morph`, partially covers `Xi_obs`, sets `Xi_path = 1`, and does not include
+kernel-deformation terms. Therefore its small improvement is evidence that the
+narrow protocol cap is not a rescue knob, not evidence that fundamental time
+projection is weak.
+
+Current audit artifact:
+
+```text
+summary:
+    data/derived/time_projection_multichannel_summary.csv
+
+report:
+    reports/time_projection_multichannel_fundamental_gate.md
+
+status:
+    TIME_PROJECTION_FUNDAMENTAL_MULTICHANNEL_GATE_RECORDED_NOT_DERIVED
+```
+
+Open proof obligation: derive the Tau-side origin and normalization of
+`Xi_morph`, `Xi_obs`, and `Xi_path`, then freeze each channel from residual-blind
+source evidence before any full time-projection endpoint.
+
+Endpoint-preflight status:
+
+```text
+status:
+    TIME_PROJECTION_ENDPOINT_PREFLIGHT_BUILT_NO_ENDPOINTS_ALLOWED
+
+galaxies audited:
+    6
+
+control replay allowed:
+    2
+
+endpoint scores allowed:
+    0
+
+strongest current route:
+    UGC12506 caveated interval/control replay
+    NGC4088 Xi_eff control manifest route
+
+main blocker:
+    no endpoint-permitted Xi_eff route with additive-kernel / clock-layer
+    double-count separation resolved
+```
+
+The preflight splits the time channel into two operational manifests:
+
+```text
+source-morphology time manifest:
+    data/derived/time_projection_source_morphology_time_manifest.csv
+
+observer/projection time manifest:
+    data/derived/time_projection_observer_projection_time_manifest.csv
+
+endpoint preflight:
+    data/derived/time_projection_endpoint_preflight_gate.csv
+
+report:
+    reports/time_projection_endpoint_preflight_gate.md
+```
+
+Current consequence: the next legitimate endpoint calculation cannot be a
+single fitted `Xi_t` score. It must first produce an accepted `Xi_eff` manifest
+where the source-morphology clock channel and the observer/projection clock
+channel are frozen separately. UGC12506 can continue as a caveated control
+replay. NGC4088 has now passed the `q_warp`, `m_history`, independent review,
+and `B_i` coefficient protocol gates, but remains endpoint-blocked until the
+clock/readout contribution is separated from the already active additive
+warp-history morphology kernel.
+
+NGC4088 time-projection update:
+
+```text
+q_warp:
+    accepted for protocol numeric bound
+    q_warp = 1.0
+
+m_history:
+    accepted for protocol numeric bound
+    m_history = 1.0
+
+B_i coefficient rule:
+    residual-blind sharpened protocol coefficients ready
+    B_i = 0.5 under second-order remainder bound
+
+Xi_eff candidate:
+    raw source load L = 1.375
+    epsilon_clock = 0.020263...
+    Xi_eff(R) = 1 + epsilon_clock K_t(R)
+
+status:
+    NGC4088_XI_EFF_CONTROL_READY_ENDPOINT_BLOCKED
+
+blocking gate:
+    double-count separation
+```
+
+Control replay result:
+
+```text
+base projection RMSE:
+    11.619
+
+additive warp/history RMSE:
+    9.391
+
+clock-only Xi_eff on base RMSE:
+    10.496
+
+additive + Xi_eff stress RMSE:
+    8.384
+
+interpretation:
+    ADDITIVE_PLUS_CLOCK_IMPROVES_BUT_DOUBLE_COUNT_BLOCKED
+```
+
+Bridge consequence: this is a meaningful endpoint-step, not an accepted
+endpoint. The clock-only layer improves the base projection curve, while the
+additive-plus-clock stress curve improves further. But the latter cannot be
+claimed as the endpoint route until the clock/readout contribution is separated
+from the already active additive warp-history morphology kernel. This is exactly
+the discipline expected if time projection is a real channel rather than a
+universal amplitude rescue term.
+
+Artifacts:
+
+```text
+manifest:
+    data/derived/ngc4088_time_projection_xi_eff_manifest_gate.csv
+
+ablation replay:
+    data/derived/ngc4088_time_projection_ablation_control_summary.csv
+
+figure:
+    figures/endpoint_diagnostics/ngc4088_time_projection_ablation_control_replay.png
+```
+
+Double-count resolution:
+
+```text
+status:
+    NGC4088_DOUBLE_COUNT_RESOLVED_ACCEPTED_COMBINED_XI_ONE
+
+source-space audit:
+    f_PA  overlaps additive C_warp geometry
+    f_R   overlaps additive x_w radial-onset support
+    f_q   overlaps additive q_warp source-strength factor
+    f_mem overlaps additive sigma_warp history phase
+
+result:
+    all four current Xi_eff terms overlap the already active additive
+    warp-history morphology route.
+
+accepted combined endpoint route:
+    additive_warp_history_with_Xi_eff_equal_one
+
+preserved control:
+    clock-only Xi_eff replay on the base projection kernel
+
+rejected endpoint route:
+    additive_warp_history + Xi_eff clock multiplier
+```
+
+Bridge consequence: the double-count blocker is resolved, but not by opening a
+new time-projection endpoint.  The clean combined endpoint uses the accepted
+additive warp/history morphology kernel with `Xi_eff=1`.  The clock-only replay
+remains useful as a control signal, while a true time-projection endpoint can be
+reopened only if independent non-overlapping clock/readout evidence is supplied.
+
+Artifacts:
+
+```text
+summary:
+    data/derived/ngc4088_time_projection_double_count_resolution_summary.csv
+
+overlap audit:
+    data/derived/ngc4088_time_projection_double_count_overlap_audit.csv
+
+report:
+    reports/ngc4088_time_projection_double_count_resolution_gate.md
+```
+
+Accepted combined-route handoff:
+
+```text
+status:
+    NGC4088_ACCEPTED_COMBINED_ROUTE_HANDOFF_READY
+
+accepted combined route:
+    additive_warp_history_endpoint_with_Xi_eff_equal_one
+
+accepted combined RMSE:
+    11.619 km/s
+
+clock-only control RMSE:
+    10.496 km/s
+
+additive-plus-clock stress RMSE:
+    8.384 km/s
+
+endpoint policy:
+    stress_test_endpoint_allowed = False
+    time_endpoint_reopened = False
+    requires_new_nonoverlap_clock_evidence = True
+```
+
+Bridge consequence: the endpoint-relevant NGC4088 route is now unambiguous.
+The accepted combined route is exactly the caveated accepted additive
+warp/history endpoint, interpreted with `Xi_eff=1`.  The lower RMSE
+additive-plus-clock stress curve remains scientifically useful as a diagnostic
+that the clock/readout channel can move the curve, but it is explicitly not an
+endpoint route because it reuses the same warp/onset/strength/history evidence.
+
+Artifacts:
+
+```text
+summary:
+    data/derived/ngc4088_time_projection_accepted_combined_route_handoff_summary.csv
+
+routes:
+    data/derived/ngc4088_time_projection_accepted_combined_route_handoff_routes.csv
+
+report:
+    reports/ngc4088_time_projection_accepted_combined_route_handoff.md
+```
+
+UGC12506 external-review handoff:
+
+```text
+status:
+    U12506_XI_T_EXTERNAL_REVIEW_HANDOFF_READY
+
+contains:
+    reviewer prompt
+    fillable response CSV
+    six source-review tasks
+    five allowed route-level responses
+    forbidden-input guardrails
+    input hash ledger
+
+response form:
+    data/derived/ugc12506_xi_t_source_review_response_blank.csv
+
+prompt:
+    reports/ugc12506_xi_t_external_review_prompt.md
+
+intake script:
+    scripts/run_ugc12506_xi_t_source_review_response_intake.py
+
+portable bundle:
+    review_bundles/ugc12506_xi_t_external_review_bundle.zip
+
+bundle builder:
+    scripts/build_ugc12506_xi_t_external_review_bundle.py
+```
+
+Bridge consequence: the next UGC12506 step no longer requires interpreting a
+conversation log. A residual-blind reviewer can fill the response form, after
+which the intake validator decides whether the route can feed the
+accepted-manifest gate.
+
+The portable bundle is still not an accepted manifest and not an endpoint. It
+only packages the review prompt, usage note, fillable response form,
+source-review packet, source evidence, forbidden-input ledger, and relative-path
+hash manifest so that the review can be performed outside the working thread.
 
 ## Main Clarification
 
@@ -54,14 +2194,23 @@ F = F_{K_obs}
 
 This prevents a present-day visual exponential disk from being silently treated
 as a clean exponential-disk readout when the source evidence points to
-projection, bar, compact-core, outer-disk, or morphology-history caveats.
+projection, bar, compact-core, outer-disk, or morphology-trajectory caveats.
 
-## Memory / History Layer
+Bridge consequence for residuals: a Tau Core residual is not required to be
+locally sourced only by the four-dimensional baryonic mass density at the same
+radius. It may descend through multiple readout/projection channels of the
+deeper Tau morphology state, including baryonic distribution, metric/closure
+response, observer/path projection, envelope/history/phase structure, or other
+admissible source-frozen channels. This is not an arbitrary nonlocal-force
+license. Each channel must have residual-blind source support, a non-overlap
+ledger assignment, and an ablation check before it can affect endpoint scoring.
 
-The bridge also permits a morphology-memory or history proxy layer. A galaxy's
-current observed 4D shape may be an incomplete proxy for the readout-relevant
-morphology if the solved readout encodes delayed, integrated, or projection
-filtered structure.
+## Morphology Trajectory / Phase Layer
+
+The bridge also permits a morphology-trajectory or phase proxy layer. A
+galaxy's current observed 4D shape may be an incomplete proxy for the
+readout-relevant morphology if the solved readout encodes delayed, integrated,
+projection-filtered, or future-directed relaxation structure.
 
 This layer is only a hypothesis layer until populated by residual-blind source
 evidence. Rotation-curve-inferred readout families may motivate review, but
@@ -318,7 +2467,7 @@ L1 source-reviewed K_readout:
     residual-blind promotion/caveat layer.
 
 L2 readout-state vector:
-    q_tail, q_compact, q_thick, q_bar, q_memory, q_regular.
+    q_tail, q_compact, q_thick, q_bar, q_phase, q_regular.
 
 L3 source-native scales and normalization:
     disk scale, tail/HI radius, core radius, flare support, bar length,

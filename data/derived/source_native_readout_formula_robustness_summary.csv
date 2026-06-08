@@ -1,0 +1,7 @@
+test,result,p_value,detail
+Original holdout,0.8863636363636364,,n_holdout=44; mean matched-minus-wrong=-17.684
+10k shuffled-label null,0.8863636363636364,0.009299070092990702,seed=271828; observed mean-minus-wrong=-17.684; null beats-wrong median=0.773
+Bootstrap CI,0.8863636363636364,,"seed=271829; 10000 galaxy bootstrap CI=[0.795,0.977]"
+Error-weighted RMSE,0.8863636363636364,,uses errv weights; mean weighted matched-minus-wrong=-17.758
+Alternative split median,0.8409090909090909,,"seed=271830; 100 family-stratified splits; central 90%=[0.773,0.909]"
+Family-balanced score,0.8321428571428571,,K_compact_finite=0.571; K_exponential_disk=0.857; K_scale_tail_spiral=1.000; K_thick_flared=0.900

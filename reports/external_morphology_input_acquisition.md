@@ -8,8 +8,8 @@ astroquery.
 ## Verdict
 
 SPARC master rows acquired: 175.
-S4G crossmatches acquired: 77.
-S4G/SPARC-derived disk scale candidates acquired: 75.
+S4G crossmatches acquired: 78.
+S4G/SPARC-derived disk scale candidates acquired: 76.
 
 These are candidate source observables, not a completed accepted manifest.
 In particular, S4G disk scales can support `scale_radius_kpc` where matched,
@@ -21,7 +21,7 @@ and full provenance still require the accepted-source audit path.
 | proxy_formula_family_for_scope | n_galaxies | n_s4g_matched | n_scale_acquired |
 | --- | --- | --- | --- |
 | K_compact_finite | 29 | 8 | 7 |
-| K_exponential_disk | 32 | 14 | 13 |
+| K_exponential_disk | 32 | 15 | 14 |
 | K_scale_tail_spiral | 80 | 30 | 30 |
 | K_thick_flared | 34 | 25 | 25 |
 

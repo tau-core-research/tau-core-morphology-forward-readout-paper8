@@ -12,6 +12,7 @@ import shutil
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 import pandas as pd
 
 
@@ -236,26 +237,188 @@ def make_figures() -> None:
         "newtonian_baryonic",
     ]
     demo = demo.set_index("condition").loc[order].reset_index()
-    plt.figure(figsize=(7.4, 4.2))
+    display_labels = {
+        "matched_family": "Matched\nfamily",
+        "empirical_rar": "Empirical\nRAR",
+        "mond_simple": "MOND-like\nsimple",
+        "shuffled_K_median": "Shuffled label\nmedian",
+        "wrong_family_mean": "Wrong-family\nmean",
+        "newtonian_baryonic": "Newtonian\nbaryonic",
+    }
+    demo["display_condition"] = demo["condition"].map(display_labels)
+    fig, ax = plt.subplots(figsize=(7.6, 4.6))
     bar_colors = ["#2a9d8f" if x == "matched_family" else "#6c757d" for x in demo["condition"]]
-    plt.barh(demo["condition"], demo["rms"], color=bar_colors)
-    plt.xlabel("RMS residual score (synthetic protocol fixture)")
-    plt.title("Forward gate endpoint: matched family versus controls")
-    plt.gca().invert_yaxis()
-    plt.tight_layout()
+    ax.barh(demo["display_condition"], demo["rms"], color=bar_colors)
+    ax.set_xlabel("RMS residual score (synthetic protocol fixture)")
+    ax.set_title("Forward gate endpoint: matched family versus controls")
+    ax.invert_yaxis()
+    ax.tick_params(axis="y", labelsize=8)
+    fig.subplots_adjust(left=0.25, right=0.97, top=0.88, bottom=0.15)
     savefig("fig02_forward_gate_score_schema")
 
-    steps = pd.DataFrame(FORWARD_GATE_SCHEMA)
-    plt.figure(figsize=(7.4, 4.4))
-    y = range(len(steps), 0, -1)
-    plt.scatter([1] * len(steps), y, s=520, color="#457b9d")
-    for yi, (_, row) in zip(y, steps.iterrows()):
-        plt.text(1.08, yi, f"{row['step']}. {row['gate_component']}", va="center", fontsize=9)
-    plt.xlim(0.8, 3.2)
-    plt.ylim(0.3, len(steps) + 0.7)
-    plt.axis("off")
-    plt.title("MORPHOLOGY-MATCHED-FORWARD-READOUT-GATE")
-    plt.tight_layout()
+    def box(ax, xy, wh, text, fc, ec="#334155", lw=1.0, fontsize=7.2, weight="normal"):
+        patch = FancyBboxPatch(
+            xy,
+            wh[0],
+            wh[1],
+            boxstyle="round,pad=0.012,rounding_size=0.018",
+            linewidth=lw,
+            edgecolor=ec,
+            facecolor=fc,
+        )
+        ax.add_patch(patch)
+        ax.text(
+            xy[0] + wh[0] / 2,
+            xy[1] + wh[1] / 2,
+            text,
+            ha="center",
+            va="center",
+            fontsize=fontsize,
+            weight=weight,
+            color="#0F172A",
+            linespacing=1.15,
+        )
+        return patch
+
+    def arrow(ax, start, end, color="#334155", lw=1.25, style="-|>", rad=0.0):
+        ax.add_patch(
+            FancyArrowPatch(
+                start,
+                end,
+                arrowstyle=style,
+                mutation_scale=10,
+                linewidth=lw,
+                color=color,
+                connectionstyle=f"arc3,rad={rad}",
+                shrinkA=4,
+                shrinkB=4,
+            )
+        )
+
+    fig, ax = plt.subplots(figsize=(10.6, 6.2))
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.axis("off")
+    ax.set_title(
+        "MORPHOLOGY-MATCHED-FORWARD-READOUT-GATE",
+        fontsize=12,
+        weight="bold",
+        pad=10,
+    )
+
+    # Layer bands.
+    band_specs = [
+        ((0.02, 0.72), (0.96, 0.18), "A. Residual-blind source layer", "#F8FAFC"),
+        ((0.02, 0.41), (0.96, 0.25), "B. Forward readout construction", "#F0FDF4"),
+        ((0.02, 0.14), (0.96, 0.21), "C. Endpoint scoring and controls", "#FFF7ED"),
+    ]
+    for xy, wh, label, fc in band_specs:
+        ax.add_patch(
+            FancyBboxPatch(
+                xy,
+                wh[0],
+                wh[1],
+                boxstyle="round,pad=0.008,rounding_size=0.012",
+                linewidth=0.9,
+                edgecolor="#CBD5E1",
+                facecolor=fc,
+            )
+        )
+        ax.text(xy[0] + 0.012, xy[1] + wh[1] - 0.026, label, fontsize=8.5, weight="bold", color="#334155")
+
+    # A: source layer.
+    source_boxes = [
+        ((0.05, 0.765), (0.16, 0.075), "$K_{obs}$\nobserved morphology\nlabel"),
+        ((0.25, 0.765), (0.18, 0.075), "source manifest\nNED/S4G/H I/\nDustPedia/PHANGS"),
+        ((0.47, 0.765), (0.18, 0.075), "source observables\nscale, tail, warp,\nvertical support"),
+        ((0.69, 0.765), (0.20, 0.075), "amplitude policy\nsource-normalized\nor frozen bound"),
+    ]
+    for xy, wh, label in source_boxes:
+        box(ax, xy, wh, label, "#FFFFFF", ec="#64748B")
+    for x0, x1 in [(0.21, 0.25), (0.43, 0.47), (0.65, 0.69)]:
+        arrow(ax, (x0, 0.802), (x1, 0.802))
+
+    # B: construction layer.
+    construction = [
+        ((0.05, 0.51), (0.15, 0.085), "readout map\n$K_{obs}\\to K_{readout}$"),
+        ((0.24, 0.51), (0.15, 0.085), "family registry\n$K_{readout}\\to\\mathcal{F}_K$"),
+        ((0.43, 0.51), (0.15, 0.085), "kernel shell\n$K_{gK}(R)$"),
+        ((0.62, 0.51), (0.15, 0.085), "forward response\n$\\delta v^2_{gK}(R)=A_{gK}K_{gK}(R)$"),
+        ((0.81, 0.51), (0.13, 0.085), "freeze gate\nno endpoint\nretuning"),
+    ]
+    for xy, wh, label in construction:
+        box(ax, xy, wh, label, "#FFFFFF", ec="#16A34A")
+    for x0, x1 in [(0.20, 0.24), (0.39, 0.43), (0.58, 0.62), (0.77, 0.81)]:
+        arrow(ax, (x0, 0.552), (x1, 0.552), color="#166534")
+    source_to_construction = [
+        (0.13, 0.125),
+        (0.34, 0.315),
+        (0.56, 0.505),
+        (0.79, 0.695),
+    ]
+    for x_src, x_dst in source_to_construction:
+        ax.plot([x_src, x_src, x_dst], [0.765, 0.688, 0.688], color="#166534", lw=1.35)
+        arrow(ax, (x_dst, 0.688), (x_dst, 0.605), color="#166534")
+
+    # Leakage guard.
+    box(
+        ax,
+        (0.12, 0.425),
+        (0.76, 0.045),
+        "leakage guard: endpoint residuals, required $S_\\tau$, and post-hoc family switching are forbidden inputs",
+        "#FEE2E2",
+        ec="#DC2626",
+        fontsize=7.4,
+        weight="bold",
+    )
+    ax.plot([0.48, 0.52], [0.402, 0.402], color="#DC2626", lw=2.0)
+    ax.plot([0.48, 0.48], [0.402, 0.417], color="#DC2626", lw=2.0)
+    ax.plot([0.52, 0.52], [0.402, 0.417], color="#DC2626", lw=2.0)
+    ax.text(0.50, 0.392, "blocked feedback path", ha="center", va="top", fontsize=7.0, color="#991B1B")
+
+    # C: endpoint controls.
+    endpoint_boxes = [
+        ((0.05, 0.215), (0.17, 0.075), "matched family\nscore $R_{g,matched}$"),
+        ((0.27, 0.215), (0.17, 0.075), "wrong-family\nscores $R_{g,K\\ne K_g}$"),
+        ((0.49, 0.215), (0.15, 0.075), "shuffled-$K$\nnull distribution"),
+        ((0.69, 0.215), (0.24, 0.075), "external baselines\nNewtonian / MOND-like / RAR\n+ frozen TPG/v6"),
+    ]
+    for xy, wh, label in endpoint_boxes:
+        box(ax, xy, wh, label, "#FFFFFF", ec="#EA580C")
+    score_bus_y = 0.365
+    score_centers = [0.135, 0.355, 0.565, 0.81]
+    ax.plot([0.875, 0.955, 0.955, 0.135], [0.51, 0.51, score_bus_y, score_bus_y], color="#9A3412", lw=1.25)
+    ax.text(0.952, 0.374, "score only\nafter freeze", ha="right", va="bottom", fontsize=6.8, color="#9A3412")
+    for x0 in score_centers:
+        ax.plot([x0, x0], [score_bus_y, 0.305], color="#9A3412", lw=1.05)
+        arrow(ax, (x0, 0.305), (x0, 0.292), color="#9A3412", lw=1.05)
+
+    # Decision and claim boundary.
+    box(
+        ax,
+        (0.12, 0.065),
+        (0.76, 0.065),
+        "pass evidence: matched family beats wrong families and shuffled labels\nbaseline comparison is reported separately",
+        "#EFF6FF",
+        ec="#2563EB",
+        fontsize=7.2,
+        weight="bold",
+    )
+    decision_bus_y = 0.155
+    ax.plot([0.135, 0.81], [decision_bus_y, decision_bus_y], color="#2563EB", lw=1.25)
+    for x0 in score_centers:
+        ax.plot([x0, x0], [0.215, decision_bus_y], color="#2563EB", lw=1.05)
+    arrow(ax, (0.50, decision_bus_y), (0.50, 0.132), color="#2563EB", lw=1.25)
+    ax.text(
+        0.5,
+        0.018,
+        "Claim boundary: a positive gate supports morphology-specific forward-readout information; it does not by itself validate a full gravity theory.",
+        ha="center",
+        va="bottom",
+        fontsize=7.3,
+        color="#475569",
+    )
+
     savefig("fig03_forward_readout_gate_flow")
 
 

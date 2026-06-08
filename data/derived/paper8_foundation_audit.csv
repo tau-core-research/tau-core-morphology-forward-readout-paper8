@@ -1,7 +1,7 @@
 gate,status,evidence,required_next_action
 paper1_3_local_context,PASS,local Paper 1-3 manuscripts found,Keep Paper 8 citations pointed to archived Paper 1-3 packages.
 paper3_inverse_to_forward_bridge,PASS,Paper 3 states required-S_tau is inverse and asks for a frozen predictive gate.,"Paper 8 may use Paper 3 as the direct launch point, but must not use required-S_tau as a predictor."
-claim_boundary,PASS,Forbidden claims appear only inside explicit non-claim lists.,Keep all empirical wording at protocol/gate status until real matched-family endpoints are run.
+claim_boundary,REVIEW,No explicit forbidden-claim list detected.,Keep all empirical wording at protocol/gate status until real matched-family endpoints are run.
 forward_gate_schema_complete,PASS,"6 schema rows present: residual-blind morphology label, formula-shell selection, geometry and amplitude discipline, matched-vs-wrong family endpoint, shuffled-K null, baseline comparison","Before real endpoint work, materialize every required artifact named in the schema."
 leakage_boundary,PASS,"Crosswalk forbids required S_tau, endpoint residual gain, post-hoc family choice, and residual-selected morphology.",Add the same forbidden-input discipline to any future endpoint-run manifest.
 morphology_family_registry,PASS,"7 families; statuses: 1D proxy testable, 1D rotation-curve testable, velocity-field preferred",Promote only 1D-testable/proxy families into the first SPARC endpoint; keep m=1/m=2 as velocity-field follow-up.

@@ -7,8 +7,8 @@ Tau Core.
 
 ## Verdict
 
-- PASS gates: 8
-- REVIEW gates: 1
+- PASS gates: 7
+- REVIEW gates: 2
 - BLOCKED gates: 1
 
 The package is suitable as a theory-method/reproducibility preparation
@@ -32,8 +32,8 @@ component tables, and real matched-vs-wrong endpoint remain open.
 
 ### claim_boundary
 
-- Status: PASS
-- Evidence: Forbidden claims appear only inside explicit non-claim lists.
+- Status: REVIEW
+- Evidence: No explicit forbidden-claim list detected.
 - Required next action: Keep all empirical wording at protocol/gate status until real matched-family endpoints are run.
 
 ### forward_gate_schema_complete

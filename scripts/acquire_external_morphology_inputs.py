@@ -19,6 +19,9 @@ REPORTS = ROOT / "reports"
 
 SPARC_URL = "https://astroweb.case.edu/SPARC/SPARC_Lelli2016c.mrt"
 S4G_CATALOG = "J/ApJS/219/4"
+SPARC_TO_S4G_ALIAS_OVERRIDES = {
+    "UGC08286": "NGC5023",
+}
 
 
 SPARC_COLUMNS = [
@@ -110,6 +113,9 @@ def acquire_s4g() -> tuple[pd.DataFrame, pd.DataFrame]:
 
 
 def best_s4g_match(name: str, s4g_names: dict[str, str]) -> str | None:
+    override = SPARC_TO_S4G_ALIAS_OVERRIDES.get(str(name).upper())
+    if override is not None:
+        return override
     for variant in norm_variants(name):
         if variant in s4g_names:
             return s4g_names[variant]

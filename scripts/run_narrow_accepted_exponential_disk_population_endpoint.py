@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run the first narrow matched-family accepted population endpoint.
 
-This endpoint is restricted to the 13-row externally audited exponential-disk
+This endpoint is restricted to the 14-row externally audited exponential-disk
 lane. The amplitude is frozen from the global train-only source-native bridge
 formula preflight; it is not refit on the accepted endpoint pool.
 """
@@ -23,6 +23,8 @@ TPG_RESULTS = Path("/Users/jolcsak/Projects/TPG/results/tau_core_projection_v1")
 CLAIM_BOUNDARY = (
     "narrow_accepted_exponential_disk_population_endpoint_preliminary_control"
 )
+ACCEPTED_POPULATION_LANE = "NARROW_ACCEPTED_EXPONENTIAL_DISK_14"
+ALL_SUPPORT_TIER = "ALL_14"
 
 
 def freeman_bessel_shape(y: pd.Series | np.ndarray) -> np.ndarray:
@@ -111,7 +113,7 @@ def build_summary(scores: pd.DataFrame, beta: float) -> pd.DataFrame:
     for tier, sub in scores.groupby("support_tier"):
         rows.append(
             {
-                "accepted_population_lane": "NARROW_ACCEPTED_EXPONENTIAL_DISK_13",
+                "accepted_population_lane": ACCEPTED_POPULATION_LANE,
                 "support_tier": tier,
                 "n_galaxies": int(len(sub)),
                 "mean_rmse_tau": float(sub["rmse_tau"].mean()),
@@ -129,8 +131,8 @@ def build_summary(scores: pd.DataFrame, beta: float) -> pd.DataFrame:
         )
     rows.append(
         {
-            "accepted_population_lane": "NARROW_ACCEPTED_EXPONENTIAL_DISK_13",
-            "support_tier": "ALL_13",
+            "accepted_population_lane": ACCEPTED_POPULATION_LANE,
+            "support_tier": ALL_SUPPORT_TIER,
             "n_galaxies": int(len(scores)),
             "mean_rmse_tau": float(scores["rmse_tau"].mean()),
             "mean_rmse_tpg_v6": float(scores["rmse_tpg_v6"].mean()),
@@ -159,12 +161,12 @@ def markdown_table(df: pd.DataFrame) -> str:
 
 
 def write_report(summary: pd.DataFrame, scores: pd.DataFrame) -> None:
-    overall = summary.loc[summary["support_tier"] == "ALL_13"].iloc[0]
+    overall = summary.loc[summary["support_tier"] == ALL_SUPPORT_TIER].iloc[0]
     lines = [
         "# Narrow Accepted Exponential-Disk Population Endpoint",
         "",
         "This is the first population-level matched-family accepted endpoint lane in",
-        "Paper 8. It is intentionally narrow: only the 13 externally audited",
+        "Paper 8. It is intentionally narrow: only the 14 externally audited",
         "exponential-disk rows are scored, using accepted scale radii and the",
         "frozen train-only exponential-disk amplitude from the source-native bridge",
         "formula preflight.",
@@ -172,7 +174,7 @@ def write_report(summary: pd.DataFrame, scores: pd.DataFrame) -> None:
         "## Verdict",
         "",
         "This lane is endpoint-complete in the narrow accepted sense, but it is not the full 175-row matched-family launch.",
-        f"On all 13 accepted rows, mean Tau RMSE = {overall['mean_rmse_tau']:.6f},",
+        f"On all 14 accepted rows, mean Tau RMSE = {overall['mean_rmse_tau']:.6f},",
         f"mean TPG/v6 RMSE = {overall['mean_rmse_tpg_v6']:.6f},",
         f"mean MOND RMSE = {overall['mean_rmse_mond']:.6f}.",
         "",
