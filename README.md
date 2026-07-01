@@ -87,6 +87,27 @@ language `Theta_morph` is a morphology-state phase/history readout, while
 they are not the same channel and must pass a non-overlap ledger before any
 combined endpoint claim.
 
+The current Tau Core theory update states this as a source-factored kernel
+discipline. A stabilized source class `M_tau^stab` is read by branch kernels,
+and observer time is an internal path-conditioned readout:
+
+```text
+K_i(s0) = Ktilde_i(M_tau^stab)
+t_obs^gal = R_time^{obs,gal}(M_tau^stab, OI_gal, o_path^gal)
+```
+
+The operational rule is:
+
+```text
+one protected source coordinate -> one quotient contribution
+```
+
+Every kernel component must declare `SourceSupp(Delta K_a)`. If two
+components reuse the same source/proxy coordinate, they must be merged into a
+shared quotient term, justified by an independent source-side split, or
+demoted to diagnostic/control status. This is the paper-level form of the
+non-double-counting rule.
+
 This is an open channel hierarchy, not a fixed two-term model. Other
 projections of the same internal Tau morphology state may also affect the
 rotation readout, such as mass-distribution, metric/closure, coherence/phase,
