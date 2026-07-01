@@ -5501,6 +5501,19 @@ package the overall decision is
 Codex/source-reviewed audit-label lane is populated, while full endpoint labels
 and endpoint scoring remain disabled.
 
+## Current Source-Completion Workplan
+
+The current morphology-source completion workplan is:
+
+```text
+reports/thick_flared_scale_tail_source_completion_workplan.md
+data/derived/thick_flared_scale_tail_source_completion_v1.csv
+```
+
+It records the source-native observables required before thick/flared,
+vertical-overlay, and scale-tail kernels can be replayed as clean
+source-frozen morphology/readout preflight candidates.
+
 ## arXiv Source Package
 
 Build the arXiv source package directly with:
