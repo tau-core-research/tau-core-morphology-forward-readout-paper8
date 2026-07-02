@@ -160,6 +160,18 @@ The first shell is `v_obs^2 = Xi_t^2 [v_Newt^2 + delta_v_grav/morph^2]`, with
 it must be frozen from residual-blind source/path/time-readout evidence before
 scoring and cannot be inferred from the rotation residual.
 
+The current paper-level kernel status map is:
+
+```text
+reports/kernel_record_status_audit.md
+```
+
+It maps the Paper 8 morphology, mixed, and single-object endpoint kernels onto
+the shared `KernelRecord_tau^S` discipline: diagnostic/control, source-proxy,
+source-factored candidate, endpoint-active frozen kernel, or validated physical
+readout.  No Paper 8 kernel is promoted to validated physical readout by that
+audit.
+
 This Paper 8 repository is standalone. It does not require accepting Tau Core
 as a completed physical theory.
 
