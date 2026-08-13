@@ -1,0 +1,59 @@
+{
+  "schema": "tau-core.paper8.body-only-newtonian-kernel-score.v01",
+  "status": "BODY_ONLY_NEWTONIAN_KERNEL_HOLDOUT_SCORED",
+  "model": "v_body^2 = max(v_Newton^2 + beta_family K_family(B), 0)",
+  "fit_target": "train-only vobs^2-v_Newton^2",
+  "nonconventional_channel_parameters": 0,
+  "tpg_used_in_fit_or_prediction": false,
+  "n_train_galaxies": 131,
+  "n_holdout_galaxies": 44,
+  "n_holdout_points": 835,
+  "family_amplitudes": [
+    {
+      "formula_family": "K_compact_finite",
+      "beta_newtonian_delta_v2": 503139.1203164431,
+      "n_train_galaxies": 22,
+      "n_train_points": 765
+    },
+    {
+      "formula_family": "K_scale_tail_spiral",
+      "beta_newtonian_delta_v2": 7280.073967913264,
+      "n_train_galaxies": 60,
+      "n_train_points": 742
+    },
+    {
+      "formula_family": "K_exponential_disk",
+      "beta_newtonian_delta_v2": 11781.022991977163,
+      "n_train_galaxies": 25,
+      "n_train_points": 586
+    },
+    {
+      "formula_family": "K_thick_flared",
+      "beta_newtonian_delta_v2": 15546.093233775624,
+      "n_train_galaxies": 24,
+      "n_train_points": 461
+    }
+  ],
+  "matched_vs_wrong": {
+    "win_fraction": 0.9545454545454546,
+    "mean_delta_km_s": -51.13107253157252,
+    "shuffle_p_win_fraction": 9.999000099990002e-05,
+    "shuffle_p_mean_delta": 9.999000099990002e-05
+  },
+  "matched_vs_newton": {
+    "win_fraction": 0.7954545454545454,
+    "mean_delta_km_s": -16.68315257040805,
+    "median_delta_km_s": -26.22877995726849
+  },
+  "matched_vs_tpg_v6": {
+    "win_fraction": 0.2727272727272727,
+    "mean_delta_km_s": 8.364985972284876,
+    "median_delta_km_s": 6.181794691920468
+  },
+  "matched_vs_mond": {
+    "win_fraction": 0.29545454545454547,
+    "mean_delta_km_s": 7.893740727498113,
+    "median_delta_km_s": 5.16377019524579
+  },
+  "claim_boundary": "retrospective fixed-split body-only morphology-kernel test; family shapes and labels are source-side but amplitudes are train-fitted; not prospective, not a parent derivation, and not a dark-matter or Tau Core validation"
+}

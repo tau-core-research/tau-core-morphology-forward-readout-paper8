@@ -1,0 +1,26 @@
+{
+  "schema": "tau_core_ngc7479_reliability_capacity_response_freeze_v01",
+  "status": "SOURCE_ERROR_WEIGHTED_CAPACITY_FORMULA_FROZEN_POST_OPEN",
+  "coordinate": "x = R / a_bar",
+  "symmetric_source_error": "sigma = (sigma_minus + sigma_plus) / 2",
+  "reliability": "rho = Delta^2 / (Delta^2 + sigma^2)",
+  "reliable_density": "q_rel = rho * Delta^2",
+  "accumulation": "Q_rel(x) = integral_0^x q_rel(s) ds",
+  "capacity_map": "C(Q_rel) = Q_rel / (1 + Q_rel)",
+  "readout": "v_pred^2 = v_bar^2 * (1 + C(Q_rel))",
+  "fitted_parameters": 0,
+  "known_limits": {
+    "zero_morphology": "Delta -> 0 implies rho*Delta^2 -> 0 and v_pred -> v_bar",
+    "unresolved_source": "sigma/Delta -> infinity implies rho -> 0",
+    "precise_source": "sigma/Delta -> 0 implies rho -> 1",
+    "finite_capacity": "0 <= C < 1"
+  },
+  "forbidden": [
+    "endpoint-fitted reliability scale",
+    "endpoint-fitted capacity",
+    "endpoint-selected error convention",
+    "dropping an eligible wrong-family profile after scoring"
+  ],
+  "prospective_for_ngc7479": false,
+  "claim_boundary": "post-open diagnostic of a source-error and finite-capacity construction; not a physical channel derivation"
+}

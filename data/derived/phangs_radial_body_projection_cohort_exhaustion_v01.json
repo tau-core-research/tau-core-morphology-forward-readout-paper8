@@ -1,0 +1,103 @@
+{
+  "schema": "phangs_radial_body_projection_cohort_exhaustion_v01",
+  "status": "PHANGS_MUSE_SAME_FAMILY_CONFIRMATORY_COHORT_EXHAUSTED",
+  "galaxies": [
+    {
+      "galaxy": "IC5332",
+      "disposition": "PRIOR_ENDPOINT_ALREADY_OPENED"
+    },
+    {
+      "galaxy": "NGC0628",
+      "disposition": "GEOMETRY_GATE_FAILED"
+    },
+    {
+      "galaxy": "NGC1087",
+      "disposition": "CURRENT_METHOD_DEVELOPMENT_VALUES_OPENED"
+    },
+    {
+      "galaxy": "NGC1300",
+      "disposition": "CURRENT_CONFIRMATORY_VALUES_OPENED"
+    },
+    {
+      "galaxy": "NGC1365",
+      "disposition": "SOURCE_BLOCKED_NO_MATCHING_BROAD_CO_MOMENT0"
+    },
+    {
+      "galaxy": "NGC1385",
+      "disposition": "CURRENT_CONFIRMATORY_VALUES_OPENED"
+    },
+    {
+      "galaxy": "NGC1433",
+      "disposition": "CURRENT_METHOD_DEVELOPMENT_VALUES_OPENED"
+    },
+    {
+      "galaxy": "NGC1512",
+      "disposition": "CURRENT_CONFIRMATORY_VALUES_OPENED"
+    },
+    {
+      "galaxy": "NGC1566",
+      "disposition": "CURRENT_METHOD_DEVELOPMENT_VALUES_OPENED"
+    },
+    {
+      "galaxy": "NGC1672",
+      "disposition": "CURRENT_METHOD_DEVELOPMENT_VALUES_OPENED"
+    },
+    {
+      "galaxy": "NGC2835",
+      "disposition": "SOURCE_BODY_DESCRIPTION_INCOMPLETE"
+    },
+    {
+      "galaxy": "NGC3351",
+      "disposition": "PRIOR_ENDPOINT_ALREADY_OPENED"
+    },
+    {
+      "galaxy": "NGC3627",
+      "disposition": "PRIOR_ENDPOINT_ALREADY_OPENED"
+    },
+    {
+      "galaxy": "NGC4254",
+      "disposition": "PRIOR_ENDPOINT_ALREADY_OPENED"
+    },
+    {
+      "galaxy": "NGC4303",
+      "disposition": "GEOMETRY_GATE_FAILED"
+    },
+    {
+      "galaxy": "NGC4321",
+      "disposition": "PRIOR_ENDPOINT_ALREADY_OPENED"
+    },
+    {
+      "galaxy": "NGC4535",
+      "disposition": "PRIOR_ENDPOINT_ALREADY_OPENED"
+    },
+    {
+      "galaxy": "NGC5068",
+      "disposition": "CURRENT_CONFIRMATORY_VALUES_OPENED"
+    },
+    {
+      "galaxy": "NGC7496",
+      "disposition": "CURRENT_METHOD_DEVELOPMENT_VALUES_OPENED"
+    }
+  ],
+  "disposition_counts": {
+    "CURRENT_CONFIRMATORY_VALUES_OPENED": 4,
+    "CURRENT_METHOD_DEVELOPMENT_VALUES_OPENED": 5,
+    "GEOMETRY_GATE_FAILED": 2,
+    "PRIOR_ENDPOINT_ALREADY_OPENED": 6,
+    "SOURCE_BLOCKED_NO_MATCHING_BROAD_CO_MOMENT0": 1,
+    "SOURCE_BODY_DESCRIPTION_INCOMPLETE": 1
+  },
+  "untouched_same_family_candidates": [],
+  "checks": {
+    "atlas_has_19_galaxies": true,
+    "development_set_matches_preregistration": true,
+    "confirmatory_set_matches_preregistration": true,
+    "no_untouched_same_family_candidate": true,
+    "all_galaxies_have_one_disposition": true
+  },
+  "all_checks_pass": true,
+  "same_sample_relabel_or_replacement_allowed": false,
+  "finite_decision": "close same-sample confirmatory search; future empirical validation requires an external survey or genuinely new public galaxies with the complete source and terminal product family",
+  "theory_frontier": "return to the source-derived body coefficient and low-dimensional complement law; do not use the exhausted sample to choose that law",
+  "claim_boundary": "cohort provenance and endpoint-availability audit; not evidence for or against morphology, channel, time, quantum, Tau, or dark-sector physics"
+}

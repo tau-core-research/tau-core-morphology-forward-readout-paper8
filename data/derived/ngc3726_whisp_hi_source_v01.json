@@ -1,0 +1,62 @@
+{
+  "schema": "ngc3726_whisp_hi_source_v01",
+  "status": "WHISP_NGC3726_GRAPHICAL_HI_VELOCITY_FIELD_ACQUIRED_FITS_OPEN",
+  "galaxy": "NGC3726",
+  "whisp_name": "UGC6537",
+  "source_only_rank": 1,
+  "source_only_selection_verified": true,
+  "selection_uses_vobs_or_residual": false,
+  "metadata": {
+    "quality": "good",
+    "bandwidth_mhz": 2.48,
+    "n_channels": 127,
+    "central_velocity_km_s": 870.0,
+    "channel_separation_km_s": 4.15,
+    "beam_full_resolution_arcsec": "15.8 x 11.8",
+    "rms_noise_mjy_beam": 3.1,
+    "channel_map_quality": "good",
+    "cleaned_map_quality": "good"
+  },
+  "overview_image_size_pixels": [
+    791,
+    1024
+  ],
+  "direct_fits_links_found": [],
+  "source_coordinate_fits_acquired": false,
+  "graphical_velocity_field_acquired": true,
+  "physical_a_row_constructed": false,
+  "endpoint_access": false,
+  "claim_boundary": "rank-1 source acquisition only; no calibrated common H I-Halpha coordinates, channel statistic, residual test, or Tau Core validation",
+  "manifest": [
+    {
+      "source_id": "object_page",
+      "url": "https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6537/u6537.html",
+      "local_path": "data/external/literature/ngc3726_whisp_hi_route/whisp_ngc3726_object_page.html",
+      "content_type": "text/html",
+      "bytes": 1134,
+      "sha256": "c9666235f5bc7d85f2cae47ea2bb0ad2d3bd7fab3e87070673d71aa4b5f5fa5a",
+      "source_native": true,
+      "endpoint_access": false
+    },
+    {
+      "source_id": "graphical_overview",
+      "url": "https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6537/u6537plot.gif",
+      "local_path": "data/external/literature/ngc3726_whisp_hi_route/whisp_ngc3726_overview.gif",
+      "content_type": "image/gif",
+      "bytes": 80123,
+      "sha256": "ce13f3d628515a40ceb9a8e08bcabc114730baf2a5a557ba9f0154775b7c91d1",
+      "source_native": true,
+      "endpoint_access": false
+    },
+    {
+      "source_id": "observation_notes",
+      "url": "https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6537/u6537obsred.html",
+      "local_path": "data/external/literature/ngc3726_whisp_hi_route/whisp_ngc3726_obs_reduction_notes.html",
+      "content_type": "text/html",
+      "bytes": 2509,
+      "sha256": "c9a00244d8c7883343e911aee8ba461ea64b920ae3ace27ad81f4b172aee0cb1",
+      "source_native": true,
+      "endpoint_access": false
+    }
+  ]
+}

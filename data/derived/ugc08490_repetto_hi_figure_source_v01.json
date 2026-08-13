@@ -1,0 +1,13 @@
+{
+  "schema": "ugc08490_repetto_hi_figure_source_v01",
+  "status": "UGC08490_REPETTO2018_VECTOR_HI_FIGURE_ACQUIRED",
+  "arxiv_id": "1804.07594",
+  "source_url": "https://export.arxiv.org/e-print/1804.07594",
+  "doi": "10.1093/mnras/sty631",
+  "figure": "f4.pdf",
+  "figure_sha256": "0f470f74ba213e9ba165434525db759f805ccde73a20c6e2db5955e905f7dcc6",
+  "source_native_numeric_table_acquired": false,
+  "vector_figure_acquired": true,
+  "endpoint_access": false,
+  "claim_boundary": "published vector figure, suitable for figure-derived profile extraction"
+}

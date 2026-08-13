@@ -1,0 +1,15 @@
+{
+  "schema": "tau-core.paper8.little-things-alias-independence-audit.v01",
+  "status": "ALIAS_OVERLAP_FOUND_PROSPECTIVE_NAME_GATE_CORRECTION_REQUIRED",
+  "n_objects": 26,
+  "n_alias_overlaps": 6,
+  "n_missed_by_exact_name": 3,
+  "missed_objects": [
+    "DDO_50",
+    "DDO_87",
+    "DDO_126"
+  ],
+  "corrected_independent_count": 20,
+  "ddo50_ugc04305_overlap_confirmed": true,
+  "claim_boundary": "identity/provenance audit only; alias-overlap objects are not independent external tests"
+}

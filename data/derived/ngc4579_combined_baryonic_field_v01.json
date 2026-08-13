@@ -1,0 +1,29 @@
+{
+  "schema": "tau_core_ngc4579_combined_baryonic_field_v01",
+  "status": "ENDPOINT_BLIND_STELLAR_HI_H2_BARYONIC_FIELD_READY",
+  "source_sha256": "9a040297bf7089d8d37de2cb585402e9c58fbd741927e0a4b8cd8f229b9ac6cd",
+  "co_bunit": "K.km/s",
+  "co_signal_pixels": 941,
+  "alpha_co_sensitivities_msun_pc2_per_k_km_s": [
+    3.2,
+    4.35,
+    5.5
+  ],
+  "molecular_plus_helium_mass_msun": {
+    "alpha_3.20": 2167370733.043647,
+    "alpha_4.35": 2946269590.231206,
+    "alpha_5.50": 3725168447.4187675
+  },
+  "published_reference_molecular_plus_helium_mass_msun": 2930000000.0,
+  "primary_alpha_co": 4.35,
+  "primary_vertical_softening_kpc": 0.3,
+  "gravity_method": "signed axisymmetric finite-thickness ring integration for HI and H2",
+  "construction_uses_halpha_endpoint_or_dark_discrepancy": false,
+  "stellar_field_ready": true,
+  "hi_gravity_ready": true,
+  "molecular_gas_gravity_ready": true,
+  "combined_baryonic_field_ready": true,
+  "halpha_endpoint_ready": false,
+  "scoring_allowed": false,
+  "claim_boundary": "endpoint-blind baryonic predictor ready; Halpha endpoint access remains required"
+}

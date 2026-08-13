@@ -1,0 +1,7 @@
+galaxy,ra_deg,dec_deg,s4g_image_acquired,s4g_mask_acquired,co_moment0_acquired,source_body_ready,blocker
+NGC1087,41.6049,-0.4987,True,True,True,True,
+NGC1365,53.4017,-36.1405,True,True,False,False,no NGC1365 broad-moment0 product appears in the indexed PHANGS LP delivery groups
+NGC1433,55.5064,-47.222,True,True,True,True,
+NGC1566,65.0016,-54.9378,True,True,True,True,
+NGC1672,71.4271,-59.2473,True,True,True,True,
+NGC7496,347.447,-43.428,True,True,True,True,

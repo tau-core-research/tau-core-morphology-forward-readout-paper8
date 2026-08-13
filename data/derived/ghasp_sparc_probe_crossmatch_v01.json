@@ -1,0 +1,18 @@
+{
+  "schema": "ghasp_sparc_probe_crossmatch_v01",
+  "status": "GHASP_SPARC_ONE_OBJECT_HALPHA_SOURCE_ACQUIRED_SINGLE_SIDE_ONLY_HI_FIELD_OPEN",
+  "source_url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J/MNRAS/388/500/tablef&-out.all",
+  "source_catalog": "J/MNRAS/388/500/tablef",
+  "raw_path": "data/external/catalogs/ghasp/J_MNRAS_388_500_tablef.tsv",
+  "raw_sha256": "e707dcdb93444ed13177440a784ec46b9e78467d1008e7f6d31348ff4ef714d0",
+  "ghasp_rows": 5505,
+  "ghasp_galaxies": 93,
+  "sparc_galaxies": 175,
+  "overlap_galaxies": [
+    "UGC06787"
+  ],
+  "overlap_points": 15,
+  "endpoint_access": false,
+  "collective_a_row_constructed": false,
+  "claim_boundary": "source acquisition and identity/radial coverage only; no H I-Halpha common-parent transport, A_p row, residual test, or Tau Core claim"
+}

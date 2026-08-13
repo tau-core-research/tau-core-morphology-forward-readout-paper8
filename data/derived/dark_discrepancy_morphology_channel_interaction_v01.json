@@ -1,0 +1,22 @@
+{
+  "schema": "dark_discrepancy_morphology_channel_interaction_v01",
+  "status": "DARK_DISCREPANCY_SOURCE_CHANNEL_INTERACTION_SIGNAL_FAIL",
+  "n_galaxies": 75,
+  "n_train": 56,
+  "n_holdout": 19,
+  "target": "log outer3 vobs^2/vbar^2; no TPG subtraction",
+  "holdout_mse": {
+    "baseline": 0.2311599365125655,
+    "source": 0.26740727276081994,
+    "channel": 0.23483208397012287,
+    "source_channel_additive": 0.2562417270836074,
+    "source_channel_interaction": 0.36581378732792286
+  },
+  "interaction_mse_reduction_vs_additive": -0.10957206024431548,
+  "channel_row_shuffle_p": 0.7876061969015492,
+  "channel_row_shuffle_q95": 0.0230133323538233,
+  "path_nonzero_count": 7,
+  "interaction_information_candidate": false,
+  "physical_channel_detected": false,
+  "claim_boundary": "retrospective compact interaction test with incomplete/imbalanced SIMBAD path proxy; even a pass is incremental information, not physical channel causation"
+}

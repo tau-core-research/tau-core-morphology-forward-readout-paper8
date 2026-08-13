@@ -1,0 +1,13 @@
+{
+  "schema": "tau_core_coming_bar_family_completion_v01",
+  "status": "FIVE_OF_FIVE_SOURCE_READY_ENDPOINT_ACQUISITION_OPEN",
+  "n_candidates": 5,
+  "n_source_ready": 5,
+  "blocked_galaxies": [],
+  "ngc4579_outlier_policy_source_frozen": true,
+  "minimum_five_ready_met": true,
+  "family_source_gate_complete": true,
+  "endpoint_scoring_allowed": false,
+  "next_action": "acquire independent tracer rotation endpoints and baryonic mass models without reopening COMING profiles",
+  "claim_boundary": "source-family readiness only; no rotation endpoint or Tau response score opened"
+}

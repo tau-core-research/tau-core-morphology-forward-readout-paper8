@@ -1,0 +1,28 @@
+{
+  "schema": "dark_discrepancy_channel_disturbance_classification_v01",
+  "status": "LOCAL_CANDIDATE_OCCURS_IN_SOURCE_DISTURBED_PATH_UNKNOWN_CLASS",
+  "classified_results": {
+    "NGC3726": {
+      "combined_class": "S3-PX-O0",
+      "source_class": "S3",
+      "source_basis": "A3.6>=0.6 proxy",
+      "path_class": "PX",
+      "observation_class": "O0",
+      "post_d1p5_zero_p": 0.04289091569917987,
+      "local_channel_candidate": true
+    },
+    "NGC4559": {
+      "combined_class": "S0-PX-O0",
+      "source_class": "S0",
+      "source_basis": "Theta1<=0",
+      "path_class": "PX",
+      "observation_class": "O0",
+      "post_d1p5_zero_p": 0.10767901058724341,
+      "local_channel_candidate": false
+    }
+  },
+  "candidate_clean_source_replication": false,
+  "candidate_clean_path_replication": false,
+  "interpretation": "The NGC3726 local candidate is S3-PX-O0: observational geometry is clean, but strong source-side asymmetry and unknown foreground path prevent a physical observer-channel attribution. The S0-PX-O0 NGC4559 comparison is null.",
+  "verdict": "DISTURBANCE_CLASSIFICATION_WEAKENS_CHANNEL_INTERPRETATION"
+}

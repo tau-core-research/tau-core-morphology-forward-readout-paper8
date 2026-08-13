@@ -1,0 +1,28 @@
+{
+  "schema": "sparc_lightcone_disturbance_atlas_v02",
+  "status": "PRELIMINARY_S_P_O_CLASSES_READY_SIMBAD_PATH_INCOMPLETE",
+  "n_galaxies": 75,
+  "source_class_counts": {
+    "S0": 17,
+    "S1": 22,
+    "S2": 13,
+    "S3": 23
+  },
+  "path_class_counts": {
+    "P0": 68,
+    "P1": 4,
+    "P2": 2,
+    "P3": 1
+  },
+  "observation_class_counts": {
+    "O0": 52,
+    "O1": 8,
+    "O2": 6,
+    "O3": 9
+  },
+  "path_proxy": "redshift-confirmed foreground extragalactic objects in a fixed 10 arcmin SIMBAD cone",
+  "path_proxy_is_complete": false,
+  "allowed_use": "exploratory stratification and acquisition prioritization",
+  "forbidden_use": "physical lightcone transfer coefficient or causal channel attribution",
+  "verdict": "S_P_O_ATLAS_V02_READY_FOR_CONFOUNDED_STRATIFICATION_ONLY"
+}

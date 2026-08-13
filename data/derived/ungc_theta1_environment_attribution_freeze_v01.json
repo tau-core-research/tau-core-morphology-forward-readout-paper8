@@ -1,0 +1,46 @@
+{
+  "schema": "ungc_theta1_environment_attribution_freeze_v01",
+  "status": "SOURCE_ONLY_THETA1_ENVIRONMENT_FREEZE_READY",
+  "source_only": true,
+  "endpoint_access": false,
+  "retrospective_lock": true,
+  "prospective_validation": false,
+  "n_rows": 36,
+  "n_folds": 5,
+  "fold_salt": "tau-core-ungc-theta1-environment-v01",
+  "fold_counts": {
+    "0": 5,
+    "1": 7,
+    "2": 11,
+    "3": 8,
+    "4": 5
+  },
+  "baseline_features": [
+    "sparc_t_type",
+    "log_distance_mpc",
+    "inclination_deg",
+    "log_l36",
+    "log_rdisk_kpc",
+    "log_mhi"
+  ],
+  "baseline_missingness_features": [],
+  "environment_features": [
+    "theta1"
+  ],
+  "theory_role": "environment_channel_to_W_B_coupling_constraint",
+  "frozen_sign": "positive_theta1_coefficient_for_log_tpg_v6_rmse",
+  "model": "ridge_linear_fixed_lambda_1",
+  "primary_metric": "five_fold_oof_mse_reduction",
+  "primary_target": "log_tpg_v6_velocity_rmse",
+  "control_target": "log_newtonian_baryonic_velocity_rmse",
+  "n_permutations": 2000,
+  "permutation_seed": 20260711,
+  "promotion_rule": "positive OOF MSE reduction; Theta1 shuffle p<=0.05; observed reduction above shuffle q95; positive Theta1 coefficient in at least 4/5 folds; proportional gain exceeds Newtonian control",
+  "claim_boundary": "retrospective source-family-specific prevalidation only; positive result would not exclude ordinary tidal astrophysics or prove M_tau",
+  "input_sha256": {
+    "ungc_crossmatch": "d6b81f5f7e8faf473ce6e9da0bcfbd7a56fd86cd76c2336a76ea147a0d4537d0",
+    "ungc_provenance": "bb74467e37db3de80bb8ac39f256dcf2f199252151177d506be3f5e93dabeead",
+    "sparc_source": "d6900f7a90d4e19cda4ad94c518baa862d4ed9d2405d2b94c3c48708a8f8e24a"
+  },
+  "source_features_sha256": "b9caa5f9d3b43a921b0684e3c9e2d8e5b3f87a8921d2945579846a8129aa37cc"
+}

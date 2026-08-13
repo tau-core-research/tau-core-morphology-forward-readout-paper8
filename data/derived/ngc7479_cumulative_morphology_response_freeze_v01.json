@@ -1,0 +1,24 @@
+{
+  "schema": "tau_core_ngc7479_cumulative_morphology_response_freeze_v01",
+  "status": "SOURCE_SIDE_FORMULA_FROZEN_AFTER_LOCAL_SCORE_OPENED",
+  "source_coordinate": "x = R / a_bar",
+  "source_density": "q(x) = Delta_source(x)^2",
+  "response": "Q(x) = integral_0^x q(s) ds",
+  "readout": "v_pred^2 = v_bar^2 * (1 + Q(x))",
+  "fitted_parameters": 0,
+  "boundary_policy": {
+    "below_source_support": "Delta=0",
+    "within_source_support": "piecewise-linear Delta followed by trapezoidal integration of Delta^2",
+    "above_source_support": "Q remains at the total accumulated source value"
+  },
+  "motivation": "A nonlocal readout may retain accumulated interior morphology after the local source marker profile ends; the cumulative operator preserves radial ordering and source amplitude without endpoint fitting.",
+  "forbidden": [
+    "endpoint-fitted gain",
+    "endpoint-selected integration exponent",
+    "endpoint-selected decay length",
+    "choosing among multiple cumulative formulas by NGC7479 endpoint RMSE"
+  ],
+  "prospective_for_ngc7479": false,
+  "reason_not_prospective": "The NGC7479 endpoint and failed local Delta^2 score were opened before this formula freeze.",
+  "claim_boundary": "diagnostic shape-preservation test only; not physical validation or channel detection"
+}

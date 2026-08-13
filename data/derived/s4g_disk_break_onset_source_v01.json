@@ -1,0 +1,15 @@
+{
+  "schema": "s4g_disk_break_onset_source_v01",
+  "status": "SOURCE_ONLY_S4G_DISK_BREAK_ONSET_ACQUIRED_SMALL_SAMPLE",
+  "catalog_id": "J/MNRAS/441/1992",
+  "catalog_profile_rows": 335,
+  "sparc_rows": 175,
+  "unique_matches": 9,
+  "numeric_break_matches": 7,
+  "endpoint_access": false,
+  "source_paper_arxiv": "https://arxiv.org/abs/1404.0559",
+  "source_paper_doi": "10.1093/mnras/stu628",
+  "raw_selected_sha256": "c727a256208a61b3cfde05759b8422da0d347b6350ec2bb1bd1f00f9ec33b34e",
+  "crossmatch_sha256": "4cdd7522dec3f93123456a09d7dd68b255465574aabece886658590e910703f4",
+  "claim_boundary": "source_acquisition_only_small_sample_not_channel_attribution"
+}

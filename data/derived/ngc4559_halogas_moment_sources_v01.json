@@ -1,0 +1,131 @@
+{
+  "schema": "ngc4559_halogas_moment_sources_v01",
+  "status": "NGC4559_HALOGAS_HR_LR_MOMENT0_MOMENT1_FITS_ACQUIRED_PIXELS_UNOPENED",
+  "galaxy": "NGC4559",
+  "source_only_rank": 2,
+  "zenodo_record": "2552349",
+  "record_url": "https://zenodo.org/records/2552349",
+  "headers": {
+    "NGC4559-HR_mom0m.fits": {
+      "naxis": 2,
+      "shape": [
+        1024,
+        1024
+      ],
+      "ctype1": "RA---NCP",
+      "ctype2": "DEC--NCP",
+      "cunit1": "",
+      "cunit2": "",
+      "bunit": "JY/BEAM.km/s",
+      "bmaj_deg": 0.00788302067667,
+      "bmin_deg": 0.00364008266479,
+      "bmaj_arcsec": 28.378874436012,
+      "bmin_arcsec": 13.104297593244,
+      "bpa_deg": 0.684054791927
+    },
+    "NGC4559-HR_mom1m.fits": {
+      "naxis": 2,
+      "shape": [
+        1024,
+        1024
+      ],
+      "ctype1": "RA---NCP",
+      "ctype2": "DEC--NCP",
+      "cunit1": "",
+      "cunit2": "",
+      "bunit": "km/s",
+      "bmaj_deg": 0.00788302067667,
+      "bmin_deg": 0.00364008266479,
+      "bmaj_arcsec": 28.378874436012,
+      "bmin_arcsec": 13.104297593244,
+      "bpa_deg": 0.684054791927
+    },
+    "NGC4559-LR_mom0m.fits": {
+      "naxis": 2,
+      "shape": [
+        1024,
+        1024
+      ],
+      "ctype1": "RA---NCP",
+      "ctype2": "DEC--NCP",
+      "cunit1": "",
+      "cunit2": "",
+      "bunit": "JY/BEAM.km/s",
+      "bmaj_deg": 0.0114300474524,
+      "bmin_deg": 0.00885946396738,
+      "bmaj_arcsec": 41.14817082864,
+      "bmin_arcsec": 31.894070282568002,
+      "bpa_deg": 6.7781662941
+    },
+    "NGC4559-LR_mom1m.fits": {
+      "naxis": 2,
+      "shape": [
+        1024,
+        1024
+      ],
+      "ctype1": "RA---NCP",
+      "ctype2": "DEC--NCP",
+      "cunit1": "",
+      "cunit2": "",
+      "bunit": "km/s",
+      "bmaj_deg": 0.0114300474524,
+      "bmin_deg": 0.00885946396738,
+      "bmaj_arcsec": 41.14817082864,
+      "bmin_arcsec": 31.894070282568002,
+      "bpa_deg": 6.7781662941
+    }
+  },
+  "n_products": 4,
+  "pixel_values_opened": false,
+  "cube_downloaded": false,
+  "selection_uses_vobs_or_residual": false,
+  "sparc_endpoint_opened": false,
+  "physical_a_row_constructed": false,
+  "claim_boundary": "prospective replication source acquisition only; no moment-map pixel inspection, geometry extraction, H I-Halpha comparison, or channel result",
+  "manifest": [
+    {
+      "filename": "NGC4559-HR_mom0m.fits",
+      "url": "https://zenodo.org/api/records/2552349/files/NGC4559-HR_mom0m.fits/content",
+      "local_path": "data/external/literature/ngc4559_halogas_route/NGC4559-HR_mom0m.fits",
+      "bytes": 4242240,
+      "md5": "ac8f435c2367e23801a88b5089464b48",
+      "sha256": "8717c5da2882e2d03970d919cbac14a49efae0e761df4543b742159d1cebb17c",
+      "source_native": true,
+      "pixel_values_opened": false,
+      "endpoint_access": false
+    },
+    {
+      "filename": "NGC4559-HR_mom1m.fits",
+      "url": "https://zenodo.org/api/records/2552349/files/NGC4559-HR_mom1m.fits/content",
+      "local_path": "data/external/literature/ngc4559_halogas_route/NGC4559-HR_mom1m.fits",
+      "bytes": 4242240,
+      "md5": "46809fb342f4453dc1ab2ee5bf1d0812",
+      "sha256": "e7b000adecc6a011c2e21b4afb0d8ac12c97d34b8df14ba67863bf6440613ce6",
+      "source_native": true,
+      "pixel_values_opened": false,
+      "endpoint_access": false
+    },
+    {
+      "filename": "NGC4559-LR_mom0m.fits",
+      "url": "https://zenodo.org/api/records/2552349/files/NGC4559-LR_mom0m.fits/content",
+      "local_path": "data/external/literature/ngc4559_halogas_route/NGC4559-LR_mom0m.fits",
+      "bytes": 4245120,
+      "md5": "7ab549b63b9c858aa5cdde82e3c1ae82",
+      "sha256": "d94e95769bcae5c48407a5682c2201d08083bbde035d88ec195d3728d813fdb1",
+      "source_native": true,
+      "pixel_values_opened": false,
+      "endpoint_access": false
+    },
+    {
+      "filename": "NGC4559-LR_mom1m.fits",
+      "url": "https://zenodo.org/api/records/2552349/files/NGC4559-LR_mom1m.fits/content",
+      "local_path": "data/external/literature/ngc4559_halogas_route/NGC4559-LR_mom1m.fits",
+      "bytes": 4242240,
+      "md5": "e27de9b2c5320b05b9181bfea6c0a002",
+      "sha256": "a0575280b71ab7f988ebeb9d2f3d749536449683e807233633818d27fcdaa3e2",
+      "source_native": true,
+      "pixel_values_opened": false,
+      "endpoint_access": false
+    }
+  ]
+}

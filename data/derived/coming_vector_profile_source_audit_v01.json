@@ -1,0 +1,58 @@
+{
+  "schema": "tau_core_coming_vector_profile_source_audit_v01",
+  "status": "VECTOR_AUTHOR_SOURCE_ACQUIRED_DIGITIZATION_FREEZE_REQUIRED",
+  "arxiv_id": "1901.00640",
+  "journal_doi": "10.1093/pasj/psz004",
+  "archive_sha256": "6ed5babdb47b4a02d82e01a1eda43753e90a5994d49879bb2ef637f7333d827c",
+  "numeric_profile_table_present": false,
+  "required_vector_files_complete": true,
+  "files": [
+    {
+      "name": "noncirc.eps",
+      "exists": true,
+      "sha256": "e0bdebc78464d011632cc3037e3fdfe21c149005a564dd456d1f6d6d8d46ca8c",
+      "vector_eps": true
+    },
+    {
+      "name": "PLOTS1.eps",
+      "exists": true,
+      "sha256": "904d4a609b0eddc564e0a436c367f2520159fd9ada332522af8ce4cf1e2b33d0",
+      "vector_eps": true
+    },
+    {
+      "name": "PLOTS2.eps",
+      "exists": true,
+      "sha256": "4b238f7e8762cdffff7910a59f300d0ca0bdf68d6bcd9e7959bc26e50fd96801",
+      "vector_eps": true
+    },
+    {
+      "name": "PLOTS3.eps",
+      "exists": true,
+      "sha256": "56487d4e8dcefbf7103a8ea180cecb2d79bc75d0604301aecce563ea6d9227ad",
+      "vector_eps": true
+    },
+    {
+      "name": "PLOTS4.eps",
+      "exists": true,
+      "sha256": "eb5bac499237f2d1db194473fc4def8b8ecb94b86d16075a07e532c0d0df4ebb",
+      "vector_eps": true
+    },
+    {
+      "name": "PLOTS5.eps",
+      "exists": true,
+      "sha256": "10d99ae3c50778b2a195053f0aae6f1c9fc95649941316ac0020c5836aae66c9",
+      "vector_eps": true
+    }
+  ],
+  "digitization_protocol": [
+    "freeze panel bounding boxes and linear axis transforms before extracting markers",
+    "map EPS stroke/fill colors to the published galaxy legend",
+    "extract marker centers and vertical error-bar endpoints in vector coordinates",
+    "retain NGC4579 central Delta=2.9 as a flagged source point rather than deleting it",
+    "run a reverse-render pixel check against the source EPS"
+  ],
+  "uses_dark_discrepancy_endpoint": false,
+  "profile_values_frozen": false,
+  "endpoint_scoring_allowed": false,
+  "claim_boundary": "source/provenance audit only; vector availability is not a physical result"
+}

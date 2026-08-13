@@ -1,0 +1,150 @@
+{
+  "schema": "ngc4254_common_hi_resolution_source_cube_v03",
+  "status": "COMMON_HI_RESOLUTION_SOURCE_CUBE_BUILT_APPROXIMATE_NOT_ENDPOINT_READY",
+  "galaxy": "NGC4254",
+  "inputs": {
+    "surface_density_fields": "data/derived/ngc4254_baryonic_surface_density_fields_v01.fits",
+    "surface_density_fields_sha256": "1ec5ac541ca9f9284b182566362eb47eae72c491a1c80df933e0520dd7c763a1",
+    "surface_density_metadata": "data/derived/ngc4254_baryonic_surface_density_fields_v01.json",
+    "surface_density_metadata_sha256": "03b186974d546f1592329192c14a283dad1821ffc49ba934843d1a549c9ef947",
+    "stellar_moment0": "data/external/literature/ngc4254_phangs_tracer_velocity/NGC4254.stellar.fits",
+    "stellar_moment0_sha256": "4efe2976e8ace1ef407702a35aba96b4e3e6cf53830134c8e7492ae4609817e2",
+    "co_moment0": "data/external/literature/ngc4254_phangs_tracer_velocity/group.uid___A001_X2fb_X29a.lp_schinner.ngc4254_12m7mtp_co21_broad_mom0.fits",
+    "co_moment0_sha256": "ba6fbc147029ef030a4bc2b63893f7141b0c2ce7453a0edc8b548dc850888c9b",
+    "hi_moment0": "data/external/literature/ngc4254_phangs_tracer_velocity/ngc4254.viva.mom0.fits",
+    "hi_moment0_sha256": "1eff8bde174acebae8b3e4b424f3ad011d74ae89170e3bb2c0c36177ba9cd452",
+    "velocity_or_residual_inputs": []
+  },
+  "common_grid": {
+    "shape_yx": [
+      502,
+      502
+    ],
+    "pixel_scale_arcsec": 5.000000122800001,
+    "minimum_normalized_convolution_coverage": 0.5,
+    "common_valid_pixels": 1758,
+    "common_valid_fraction": 0.006976079744765956
+  },
+  "target_beam": {
+    "major_arcsec": 37.702799999999996,
+    "minor_arcsec": 32.94612,
+    "pa_deg_east_of_north": 42.4,
+    "provenance": "VIVA FITS HISTORY AIPS CLEAN BMAJ/BMIN/BPA",
+    "covariance_xy_pixels": [
+      [
+        8.932050904828456,
+        -1.2070712835992015
+      ],
+      [
+        -1.2070712835992015,
+        9.151755089505475
+      ]
+    ]
+  },
+  "tracer_matching": {
+    "hi": "already at target CLEAN beam; not convolved again",
+    "co": {
+      "native_beam_arcsec": [
+        1.7813371306644001,
+        1.7813371306644001,
+        0.0
+      ],
+      "matching_covariance_xy_pixels": [
+        [
+          8.909161380740263,
+          -1.2070712835992015
+        ],
+        [
+          -1.2070712835992015,
+          9.128865565417282
+        ]
+      ],
+      "kernel_shape_yx": [
+        33,
+        33
+      ]
+    },
+    "stellar": {
+      "native_psf_status": "not recorded in supplied FITS header",
+      "primary_approximation": "native PSF negligible relative to HI target",
+      "mandatory_native_fwhm_controls": [
+        {
+          "extension": "STAR_P00",
+          "assumed_native_fwhm_arcsec": 0.0,
+          "matching_covariance_xy_pixels": [
+            [
+              8.932050904828456,
+              -1.2070712835992015
+            ],
+            [
+              -1.2070712835992015,
+              9.151755089505475
+            ]
+          ],
+          "kernel_shape_yx": [
+            35,
+            35
+          ]
+        },
+        {
+          "extension": "STAR_P20",
+          "assumed_native_fwhm_arcsec": 2.0,
+          "matching_covariance_xy_pixels": [
+            [
+              8.90319700542798,
+              -1.2070712835992015
+            ],
+            [
+              -1.2070712835992015,
+              9.122901190104999
+            ]
+          ],
+          "kernel_shape_yx": [
+            33,
+            33
+          ]
+        },
+        {
+          "extension": "STAR_P40",
+          "assumed_native_fwhm_arcsec": 4.0,
+          "matching_covariance_xy_pixels": [
+            [
+              8.816635307226553,
+              -1.2070712835992015
+            ],
+            [
+              -1.2070712835992015,
+              9.036339491903572
+            ]
+          ],
+          "kernel_shape_yx": [
+            33,
+            33
+          ]
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "common_resolution_cube": "data/derived/ngc4254_common_hi_resolution_source_cube_v03.fits",
+    "common_resolution_cube_sha256": "a9c825c2e0e3a4c0c01fe03a2bc6b4ea8ae80f9cc83b43dfb1584137a9340653",
+    "report": "reports/ngc4254_common_hi_resolution_source_cube_v03.md"
+  },
+  "audit_checks": {
+    "source_only_moment0_inputs": true,
+    "velocity_or_residual_inputs_empty": true,
+    "co_matching_covariance_positive_definite": true,
+    "stellar_control_matching_covariances_positive_definite": true,
+    "all_common_output_fields_finite_on_common_mask": true
+  },
+  "complete_measurement_covariance_ready": false,
+  "endpoint_scored": false,
+  "known_limitations": [
+    "stellar native PSF is absent from the supplied FITS header",
+    "high-resolution stellar and CO fields were first sampled onto the 5 arcsec VIVA grid in the inherited v01 source cube",
+    "normalized convolution handles finite support but is not a measurement-noise model",
+    "no moment0 uncertainty maps, calibration covariance, or nonlinear median bootstrap are available",
+    "the common-resolution cube does not supply physical eta, kappa_X/kappa_Y, terminal gain, or a role-to-probe identity"
+  ],
+  "claim_boundary": "source-only beam-matched morphology input with explicit stellar-PSF limitation; not a complete noise covariance, physical FFL response, channel detection, or endpoint score"
+}

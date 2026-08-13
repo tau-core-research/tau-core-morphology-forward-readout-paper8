@@ -1,0 +1,53 @@
+{
+  "schema": "ngc7331_things_clock_channel_parity_v01",
+  "status": "SIMPLE_COMMON_MULTIPLICATIVE_CLOCK_CHANNEL_INCOMPATIBLE_SINGLE_GALAXY",
+  "galaxy": "NGC7331",
+  "claim_level": "single_galaxy_velocity_field_diagnostic",
+  "product_metrics": {
+    "NATURAL": {
+      "n_rings": 24,
+      "n_outer_rings": 11,
+      "all_median_abs_even_km_s": 6.848796875000062,
+      "all_median_abs_odd_km_s": 214.08684374999999,
+      "all_median_even_over_odd": 0.03311483507858888,
+      "outer_median_abs_even_km_s": 3.821468750000008,
+      "outer_median_abs_odd_km_s": 211.91674999999992,
+      "outer_median_even_over_odd": 0.018141263201670674,
+      "outer_max_even_over_odd": 0.0522914734791136
+    },
+    "ROBUST": {
+      "n_rings": 25,
+      "n_outer_rings": 12,
+      "all_median_abs_even_km_s": 8.081968749999987,
+      "all_median_abs_odd_km_s": 210.784625,
+      "all_median_even_over_odd": 0.040965857366341556,
+      "outer_median_abs_even_km_s": 4.879578125000023,
+      "outer_median_abs_odd_km_s": 211.026,
+      "outer_median_even_over_odd": 0.02348637450614943,
+      "outer_max_even_over_odd": 0.04993218130281046
+    }
+  },
+  "outer_clock_factor_from_sparc_diagnostic": 0.5739216411421619,
+  "required_simple_spectral_multiplier": 1.7423981399445039,
+  "required_simple_multiplier_even_shift_km_s": 222565.3631885908,
+  "observed_outer_even_median_max_across_products_km_s": 4.879578125000023,
+  "predicted_to_observed_even_ratio": 45611.599504534985,
+  "differential_observer_path_channel": {
+    "model": "A_plus=A_bar*(1+delta), A_minus=A_bar*(1-delta)",
+    "parity_law": "beta_inferred=(beta_dynamic+delta)/(1+delta*beta_dynamic)",
+    "representative_outer_odd_km_s": 211.47137499999997,
+    "beta_observed": 0.0007053925786218411,
+    "beta_dynamic_from_sparc_ratio": 0.0004048400663721485,
+    "required_delta": 0.00030055259807885217,
+    "required_fractional_side_to_side_difference": 0.0006011051961577043,
+    "status": "KINEMATIC_SCALE_ESTIMATE_NOT_PATH_CHANNEL_TEST"
+  },
+  "model_scope": "rules out only a common multiplicative factor in 1+z that is large enough to supply the outer SPARC velocity scaling; it does not test a differential observer-to-emission-point light-cone channel, nonlinear systemic-anchored map, tracer-dependent channel, or dynamics-changing channel",
+  "freeze_sha256": "1994b4e8977bc1ef0ade756484d2bfd30b2e65fe8edb66c171829d2b39f93663",
+  "clock_atlas_sha256": "a867abba169720f386044d10d8b67b1d1393dd0b02fd1fa190655774a8b30bce",
+  "outputs": {
+    "pairs": "ngc7331_things_clock_channel_parity_pairs_v01.csv",
+    "profile": "ngc7331_things_clock_channel_parity_profile_v01.csv"
+  },
+  "claim_boundary": "single-galaxy diagnostic; not a general time-channel rejection, quantum channel test, dark-matter falsification, or Tau Core validation"
+}

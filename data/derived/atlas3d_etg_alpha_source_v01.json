@@ -1,0 +1,12 @@
+{
+  "schema": "atlas3d_etg_alpha_source_v01",
+  "status": "SOURCE_ACQUISITION_ONLY",
+  "source": "Lelli et al. 2017 Atlas3D ETG acceleration pairs",
+  "upstream_tpg_commit": "2e6c63b33bbb9bdd04a38505acf7cced4ef39103",
+  "upstream_git_path": "Dtl.Core/data/external/etg_lelli2017.txt",
+  "sha256": "dbc86c358795aae57193045195f7642d49c2ef63a64758e30e7427e89f84840b",
+  "n_galaxies": 16,
+  "n_acceleration_pairs": 32,
+  "independent_of_sparc_175_membership": true,
+  "endpoint_access": false
+}

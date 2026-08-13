@@ -1,0 +1,386 @@
+{
+  "schema": "tau-core.paper8.kernel-curvature-onset-response-score.v01",
+  "status": "KERNEL_CURVATURE_ONSET_RESPONSE_HOLDOUT_SCORED",
+  "selected_family_eta": [
+    {
+      "family": "K_compact_finite",
+      "selected_eta": 1,
+      "grid": [
+        {
+          "eta": -4,
+          "galaxy_balanced_rmse": 169.61055752141735
+        },
+        {
+          "eta": -3.5,
+          "galaxy_balanced_rmse": 163.25033405725046
+        },
+        {
+          "eta": -3,
+          "galaxy_balanced_rmse": 155.7882093088693
+        },
+        {
+          "eta": -2.5,
+          "galaxy_balanced_rmse": 146.99535055977813
+        },
+        {
+          "eta": -2,
+          "galaxy_balanced_rmse": 136.59584648886744
+        },
+        {
+          "eta": -1.5,
+          "galaxy_balanced_rmse": 124.26403316340857
+        },
+        {
+          "eta": -1,
+          "galaxy_balanced_rmse": 109.63712892498606
+        },
+        {
+          "eta": -0.75,
+          "galaxy_balanced_rmse": 101.3540925978311
+        },
+        {
+          "eta": -0.5,
+          "galaxy_balanced_rmse": 92.38795554235757
+        },
+        {
+          "eta": -0.25,
+          "galaxy_balanced_rmse": 82.75636562876302
+        },
+        {
+          "eta": 0,
+          "galaxy_balanced_rmse": 72.58193220408367
+        },
+        {
+          "eta": 0.25,
+          "galaxy_balanced_rmse": 62.33936342848825
+        },
+        {
+          "eta": 0.5,
+          "galaxy_balanced_rmse": 54.05576764606406
+        },
+        {
+          "eta": 0.75,
+          "galaxy_balanced_rmse": 49.80184018687274
+        },
+        {
+          "eta": 1,
+          "galaxy_balanced_rmse": 48.867178079434034
+        },
+        {
+          "eta": 1.5,
+          "galaxy_balanced_rmse": 59.70146474205187
+        },
+        {
+          "eta": 2,
+          "galaxy_balanced_rmse": 95.44564984938361
+        },
+        {
+          "eta": 2.5,
+          "galaxy_balanced_rmse": 151.36935727856778
+        },
+        {
+          "eta": 3,
+          "galaxy_balanced_rmse": 224.765549494746
+        },
+        {
+          "eta": 3.5,
+          "galaxy_balanced_rmse": 316.99489321438347
+        },
+        {
+          "eta": 4,
+          "galaxy_balanced_rmse": 432.00057199445996
+        }
+      ]
+    },
+    {
+      "family": "K_scale_tail_spiral",
+      "selected_eta": 2,
+      "grid": [
+        {
+          "eta": -4,
+          "galaxy_balanced_rmse": 47.79523760729834
+        },
+        {
+          "eta": -3.5,
+          "galaxy_balanced_rmse": 46.63974523486743
+        },
+        {
+          "eta": -3,
+          "galaxy_balanced_rmse": 45.25810063383611
+        },
+        {
+          "eta": -2.5,
+          "galaxy_balanced_rmse": 43.60377883881372
+        },
+        {
+          "eta": -2,
+          "galaxy_balanced_rmse": 41.62159052388497
+        },
+        {
+          "eta": -1.5,
+          "galaxy_balanced_rmse": 39.24810976904446
+        },
+        {
+          "eta": -1,
+          "galaxy_balanced_rmse": 36.415907739940074
+        },
+        {
+          "eta": -0.75,
+          "galaxy_balanced_rmse": 34.80786591137773
+        },
+        {
+          "eta": -0.5,
+          "galaxy_balanced_rmse": 33.062188449613046
+        },
+        {
+          "eta": -0.25,
+          "galaxy_balanced_rmse": 31.172230948687762
+        },
+        {
+          "eta": 0,
+          "galaxy_balanced_rmse": 29.136574143379573
+        },
+        {
+          "eta": 0.25,
+          "galaxy_balanced_rmse": 26.976809072053104
+        },
+        {
+          "eta": 0.5,
+          "galaxy_balanced_rmse": 24.71922894345989
+        },
+        {
+          "eta": 0.75,
+          "galaxy_balanced_rmse": 22.345136662656223
+        },
+        {
+          "eta": 1,
+          "galaxy_balanced_rmse": 19.865156283065502
+        },
+        {
+          "eta": 1.5,
+          "galaxy_balanced_rmse": 15.632461707043893
+        },
+        {
+          "eta": 2,
+          "galaxy_balanced_rmse": 15.08234604125098
+        },
+        {
+          "eta": 2.5,
+          "galaxy_balanced_rmse": 19.640768795382918
+        },
+        {
+          "eta": 3,
+          "galaxy_balanced_rmse": 30.532295595565124
+        },
+        {
+          "eta": 3.5,
+          "galaxy_balanced_rmse": 46.74339064142806
+        },
+        {
+          "eta": 4,
+          "galaxy_balanced_rmse": 67.70968490638938
+        }
+      ]
+    },
+    {
+      "family": "K_exponential_disk",
+      "selected_eta": 2,
+      "grid": [
+        {
+          "eta": -4,
+          "galaxy_balanced_rmse": 72.32867147232031
+        },
+        {
+          "eta": -3.5,
+          "galaxy_balanced_rmse": 69.91028279715843
+        },
+        {
+          "eta": -3,
+          "galaxy_balanced_rmse": 67.18161629771289
+        },
+        {
+          "eta": -2.5,
+          "galaxy_balanced_rmse": 64.10068031785185
+        },
+        {
+          "eta": -2,
+          "galaxy_balanced_rmse": 60.62020263937947
+        },
+        {
+          "eta": -1.5,
+          "galaxy_balanced_rmse": 56.68763772204139
+        },
+        {
+          "eta": -1,
+          "galaxy_balanced_rmse": 52.24629855601676
+        },
+        {
+          "eta": -0.75,
+          "galaxy_balanced_rmse": 49.81700873588547
+        },
+        {
+          "eta": -0.5,
+          "galaxy_balanced_rmse": 47.24029577486032
+        },
+        {
+          "eta": -0.25,
+          "galaxy_balanced_rmse": 44.512504080816704
+        },
+        {
+          "eta": 0,
+          "galaxy_balanced_rmse": 41.635568822746755
+        },
+        {
+          "eta": 0.25,
+          "galaxy_balanced_rmse": 38.624029467353964
+        },
+        {
+          "eta": 0.5,
+          "galaxy_balanced_rmse": 35.51477614881117
+        },
+        {
+          "eta": 0.75,
+          "galaxy_balanced_rmse": 32.36654604725604
+        },
+        {
+          "eta": 1,
+          "galaxy_balanced_rmse": 29.281202017796613
+        },
+        {
+          "eta": 1.5,
+          "galaxy_balanced_rmse": 24.176228426663492
+        },
+        {
+          "eta": 2,
+          "galaxy_balanced_rmse": 21.684245353117777
+        },
+        {
+          "eta": 2.5,
+          "galaxy_balanced_rmse": 23.04358197220912
+        },
+        {
+          "eta": 3,
+          "galaxy_balanced_rmse": 28.30346285913403
+        },
+        {
+          "eta": 3.5,
+          "galaxy_balanced_rmse": 38.15263553072958
+        },
+        {
+          "eta": 4,
+          "galaxy_balanced_rmse": 52.36983339544722
+        }
+      ]
+    },
+    {
+      "family": "K_thick_flared",
+      "selected_eta": 1.5,
+      "grid": [
+        {
+          "eta": -4,
+          "galaxy_balanced_rmse": 115.22001121955488
+        },
+        {
+          "eta": -3.5,
+          "galaxy_balanced_rmse": 110.40318493682751
+        },
+        {
+          "eta": -3,
+          "galaxy_balanced_rmse": 104.9632654508148
+        },
+        {
+          "eta": -2.5,
+          "galaxy_balanced_rmse": 98.81277589340122
+        },
+        {
+          "eta": -2,
+          "galaxy_balanced_rmse": 91.85325496631616
+        },
+        {
+          "eta": -1.5,
+          "galaxy_balanced_rmse": 83.9761099450427
+        },
+        {
+          "eta": -1,
+          "galaxy_balanced_rmse": 75.06746003063557
+        },
+        {
+          "eta": -0.75,
+          "galaxy_balanced_rmse": 70.19308826384359
+        },
+        {
+          "eta": -0.5,
+          "galaxy_balanced_rmse": 65.02644816013033
+        },
+        {
+          "eta": -0.25,
+          "galaxy_balanced_rmse": 59.56863269308902
+        },
+        {
+          "eta": 0,
+          "galaxy_balanced_rmse": 53.84278533996282
+        },
+        {
+          "eta": 0.25,
+          "galaxy_balanced_rmse": 47.93012423850133
+        },
+        {
+          "eta": 0.5,
+          "galaxy_balanced_rmse": 42.08432878867968
+        },
+        {
+          "eta": 0.75,
+          "galaxy_balanced_rmse": 36.93920726281071
+        },
+        {
+          "eta": 1,
+          "galaxy_balanced_rmse": 33.088329226820015
+        },
+        {
+          "eta": 1.5,
+          "galaxy_balanced_rmse": 30.096010767335645
+        },
+        {
+          "eta": 2,
+          "galaxy_balanced_rmse": 34.2487574585885
+        },
+        {
+          "eta": 2.5,
+          "galaxy_balanced_rmse": 48.77820279263764
+        },
+        {
+          "eta": 3,
+          "galaxy_balanced_rmse": 72.32565413206122
+        },
+        {
+          "eta": 3.5,
+          "galaxy_balanced_rmse": 101.89336354208952
+        },
+        {
+          "eta": 4,
+          "galaxy_balanced_rmse": 136.87944052821862
+        }
+      ]
+    }
+  ],
+  "n_holdout_galaxies": 44,
+  "n_holdout_points": 835,
+  "matched_vs_wrong": {
+    "win_fraction": 0.75,
+    "mean_delta_km_s": -8.262720528245813
+  },
+  "matched_vs_newton": {
+    "win_fraction": 0.8409090909090909,
+    "mean_delta_km_s": -18.757884860934414
+  },
+  "matched_vs_tpg_v6": {
+    "win_fraction": 0.25,
+    "mean_delta_km_s": 6.290253681758506
+  },
+  "matched_vs_mond": {
+    "win_fraction": 0.2727272727272727,
+    "mean_delta_km_s": 5.819008436971745
+  },
+  "channel_coordinates_used": [],
+  "claim_boundary": "retrospective frozen curvature-onset diagnostic; not prospective, parent-derived, or validation"
+}

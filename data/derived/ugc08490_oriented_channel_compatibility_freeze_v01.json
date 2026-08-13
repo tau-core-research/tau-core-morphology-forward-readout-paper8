@@ -1,0 +1,26 @@
+{
+  "schema": "tau_core_ugc08490_oriented_channel_compatibility_freeze_v01",
+  "status": "RETROSPECTIVE_TWO_SIDE_CHANNEL_LAW_COMPATIBILITY_PROTOCOL_FROZEN",
+  "galaxy": "UGC08490 / UGC 8490 / NGC 5204",
+  "selection_basis": "rank 4 residual-blind GHASP-SPARC source federation; ranks 1-2 already tested and rank 3 conventionally disturbed",
+  "input_status": {
+    "ghasp_side_curves": "76 numeric points, 31 approaching and 45 receding",
+    "sparc_baryonic_components": "numeric rotation decomposition available",
+    "source_native_morphology_body": "blocked; proxy label only"
+  },
+  "baryonic_convention": "vbar^2 = sign(Vgas) Vgas^2 + 0.5 Vdisk^2 + 0.7 Vbul^2",
+  "common_radius_policy": "SPARC radii within the overlap of both positive GHASP side curves; sidewise linear interpolation without extrapolation",
+  "channel_inverse": "delta_s=(beta_obs_s-beta_bar)/(1-beta_obs_s beta_bar); q_s=atanh(delta_s)",
+  "primary_statistics": [
+    "weighted compatibility of q_approaching and q_receding on common radii",
+    "common q=(q_approaching+q_receding)/2",
+    "side contrast=(q_approaching-q_receding)/2"
+  ],
+  "uncertainty_policy": "propagate GHASP velocity errors through the inverse map; SPARC baryonic-model covariance remains an explicit missing nuisance",
+  "no_free_parameters": true,
+  "no_radial_gate_selected_from_q": true,
+  "endpoint_values_previously_open_elsewhere": true,
+  "endpoint_scoring_allowed": false,
+  "physical_channel_detection_allowed": false,
+  "claim_boundary": "retrospective law-compatibility preflight only; common q is degenerate with dark halo/shared dynamics and morphology body is not source-ready"
+}

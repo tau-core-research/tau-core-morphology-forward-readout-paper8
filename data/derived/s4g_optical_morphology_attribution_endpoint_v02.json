@@ -1,0 +1,40 @@
+{
+  "schema": "s4g_optical_morphology_attribution_endpoint_v02",
+  "status": "RETROSPECTIVE_S4G_OPTICAL_MORPHOLOGY_INCREMENTAL_SIGNAL_FAIL",
+  "claim_level": "retrospective_locked_prevalidation",
+  "n_rows": 76,
+  "n_train": 56,
+  "n_holdout": 20,
+  "projection_target": {
+    "mse_baseline": 0.37528793124980153,
+    "mse_augmented": 0.5474075113855894,
+    "mse_reduction": -0.17211958013578788,
+    "proportional_mse_reduction": -0.45863340066009356
+  },
+  "newtonian_control_target": {
+    "mse_baseline": 0.2055345439397814,
+    "mse_augmented": 0.5009311075784482,
+    "mse_reduction": -0.29539656363866673,
+    "proportional_mse_reduction": -1.4372112734743683
+  },
+  "nulls": {
+    "n_permutations": 1000,
+    "rng_seed": 20260710,
+    "row_shuffle_p": 0.6073926073926074,
+    "row_shuffle_q95": 0.038784955470119196,
+    "column_shuffle_p": 0.3806193806193806,
+    "column_shuffle_q95": 0.0036979495837228355
+  },
+  "gates": {
+    "positive_projection_holdout_reduction": false,
+    "row_shuffle_p_le_0p05": false,
+    "column_shuffle_p_le_0p05": false,
+    "above_row_shuffle_q95": false,
+    "above_column_shuffle_q95": false,
+    "projection_gain_exceeds_newtonian_control": true
+  },
+  "source_freeze_sha256": "8e103480b7ddaef7cdae9d68f8ad4426f25cddbea0b583ac7ca214c2c61e143e",
+  "source_features_sha256": "00c1651b10c8d38c47fb078c8233cc5ede20a624be47aa855c234940acf60efc",
+  "endpoint_sha256": "88a11d850b4f556197da12349601c2812fa46698293c9bea1882791fb69194f8",
+  "claim_boundary": "retrospective locked SPARC/S4G prevalidation only; not independent external replication, physical channel descent, lensing covariance, or M_tau attribution"
+}

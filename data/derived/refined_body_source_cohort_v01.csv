@@ -1,0 +1,21 @@
+galaxy,family,source_program,source_url,simbad_status,alias_keys,historical_overlap_keys,alias_independent,source_fields_complete,rotation_endpoint_acquired,endpoint_eligible
+DDO 43,K_scale_tail_turbulent_holey,LITTLE THINGS,https://doi.org/10.1088/0004-6256/149/6/180,OK,DDO43;UGC3860,,True,False,False,False
+DDO 46,K_scale_tail_turbulent_holey,LITTLE THINGS,https://doi.org/10.1088/0004-6256/149/6/180,OK,DDO46;UGC3966,,True,False,False,False
+DDO 47,K_scale_tail_turbulent_holey,LITTLE THINGS,https://doi.org/10.1088/0004-6256/149/6/180,OK,DDO47;UGC3974,,True,False,False,False
+DDO 52,K_scale_tail_turbulent_holey,LITTLE THINGS,https://doi.org/10.1088/0004-6256/149/6/180,OK,DDO52;UGC4426,,True,False,False,False
+DDO 53,K_scale_tail_turbulent_holey,LITTLE THINGS,https://doi.org/10.1088/0004-6256/149/6/180,OK,DDO53;F8295;UGC4459,,True,False,False,False
+NGC 4449,K_disturbed_tidal_history,resolved HI stream system,https://doi.org/10.1088/0004-637X/706/1/516,OK,F1229;NGC4449;UGC7592,,True,False,False,False
+NGC 4656,K_disturbed_tidal_history,HI tidal interaction system,https://doi.org/10.1086/307001,OK,F12415;NGC4656;UGC7907,,True,False,False,False
+NGC 4631,K_disturbed_tidal_history,HI tidal interaction system,https://doi.org/10.1086/307001,OK,F12396;NGC4631;UGC7865,,True,False,False,False
+NGC 1512,K_disturbed_tidal_history,HI companion interaction system,https://doi.org/10.1086/308819,OK,NGC1512,,True,False,False,False
+NGC 4490,K_disturbed_tidal_history,HI tidal interaction system,https://doi.org/10.1088/0004-637X/706/1/516,OK,F12281;NGC4490;UGC7651,,True,False,False,False
+UGC 2459,K_warped_asymmetric_disturbed_disk,edge-on HI warp survey,https://doi.org/10.1051/0004-6361:20020976,OK,UGC2459,,True,False,False,False
+UGC 2082,K_warped_asymmetric_disturbed_disk,edge-on HI warp survey,https://doi.org/10.1051/0004-6361:20020976,OK,F2334;UGC2082,,True,False,False,False
+UGC 7321,K_warped_asymmetric_disturbed_disk,edge-on HI warp survey,https://doi.org/10.1051/0004-6361:20020976,OK,F12150;UGC7321,,True,False,False,False
+NGC 4565,K_warped_asymmetric_disturbed_disk,edge-on HI warp survey,https://doi.org/10.1051/0004-6361:20020976,OK,F12338;NGC4565;UGC7772,,True,False,False,False
+UGC 3137,K_warped_asymmetric_disturbed_disk,edge-on HI warp survey,https://doi.org/10.1051/0004-6361:20020976,OK,UGC3137,,True,False,False,False
+NGC 613,K_bar_dominated_non_circular,COMING Fourier velocity field,https://doi.org/10.1093/pasj/psz004,OK,F1319;NGC613,,True,False,False,False
+NGC 4303,K_bar_dominated_non_circular,COMING Fourier velocity field,https://doi.org/10.1093/pasj/psz004,OK,F12193;NGC4303;UGC7420,,True,False,False,False
+NGC 4579,K_bar_dominated_non_circular,COMING Fourier velocity field,https://doi.org/10.1093/pasj/psz004,OK,F12351;NGC4579;UGC7796,,True,False,False,False
+NGC 5248,K_bar_dominated_non_circular,COMING Fourier velocity field,https://doi.org/10.1093/pasj/psz004,OK,F13350;NGC5248;UGC8616,,True,False,False,False
+NGC 7479,K_bar_dominated_non_circular,COMING Fourier velocity field,https://doi.org/10.1093/pasj/psz004,OK,F23024;NGC7479;UGC12343,,True,False,False,False

@@ -1,0 +1,58 @@
+{
+  "schema": "ic5332_phangs_tracer_velocity_fields_v01",
+  "status": "SOURCE_NATIVE_2D_TRACER_VELOCITY_FIELDS_ACQUIRED",
+  "galaxy": "IC5332",
+  "tracers": [
+    "PHANGS-MUSE H-alpha",
+    "PHANGS-ALMA CO(2-1)"
+  ],
+  "muse_psf_fwhm_arcsec": 0.87,
+  "co_beam_fwhm_arcsec": [
+    0.73540112133168,
+    0.73540112133168
+  ],
+  "muse_shape": [
+    897,
+    605
+  ],
+  "co_shape": [
+    1,
+    1,
+    838,
+    863
+  ],
+  "manifest": [
+    {
+      "filename": "IC5332_MAPS_copt_0.87asec.fits",
+      "url": "https://dataportal.eso.org/dataPortal/file/ADP.2021-07-16T10:20:56.326",
+      "sha256": "c620c2bbc9dbd9655a40ceb5290d461e50ba8fb9d1da26c912a9a0151fe55e1a",
+      "bytes": 230342400
+    },
+    {
+      "filename": "group.uid___A001_X2fe_X2bb.lp_schinner.ic5332_12m7mtp_co21_mom1wprior.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fe_X2bb.lp_schinner/group.uid___A001_X2fe_X2bb.lp_schinner.ic5332_12m7mtp_co21_mom1wprior.fits",
+      "sha256": "3cbaa8506ecc9ed9ec2e9b8fe725a6b6ab8e4529ac7f9fd52dfc5d5c0ba9c110",
+      "bytes": 2903040
+    },
+    {
+      "filename": "group.uid___A001_X2fe_X2bb.lp_schinner.ic5332_12m7mtp_co21_emom1wprior.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fe_X2bb.lp_schinner/group.uid___A001_X2fe_X2bb.lp_schinner.ic5332_12m7mtp_co21_emom1wprior.fits",
+      "sha256": "16bcc923101e232e33c91fada2d8e0642d5c03f6ecbe30e6223c0097006b358b",
+      "bytes": 2903040
+    },
+    {
+      "filename": "group.uid___A001_X2fe_X2bb.lp_schinner.ic5332_12m7mtp_co21_broad_mom0.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fe_X2bb.lp_schinner/group.uid___A001_X2fe_X2bb.lp_schinner.ic5332_12m7mtp_co21_broad_mom0.fits",
+      "sha256": "bafbc1a3951842377e8575b59417c7b9c1daa45f4fab92520d8e554169745497",
+      "bytes": 2903040
+    }
+  ],
+  "source_side_selection": {
+    "role": "preregistered confirmatory population endpoint",
+    "rule": "25<=inclination<=70 deg, S4G decomposition present, BAR absent; selected before tracer contrast was opened",
+    "muse_release": "https://www.eso.org/sci/publications/announcements/sciann17425.html",
+    "alma_release": "https://arxiv.org/abs/2104.07739"
+  },
+  "construction_uses_rotation_residual": false,
+  "claim_boundary": "source-native 2D field acquisition and integrity freeze; no tracer innovation or Tau-channel result"
+}

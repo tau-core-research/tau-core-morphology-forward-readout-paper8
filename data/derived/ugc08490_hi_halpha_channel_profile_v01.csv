@@ -1,0 +1,4 @@
+radius_arcsec,side,hi_rotation_km_s,hi_graphical_error_floor_km_s,hi_selected_pixels,halpha_rotation_km_s,halpha_error_km_s,hi_minus_halpha_km_s,endpoint_access
+30.0,approaching,49.44691790024897,19.698540425699765,40,59.1063829787234,4.574468085106384,-9.659465078474433,False
+60.0,approaching,48.46833445698523,19.698540425699765,81,78.0,3.0,-29.531665543014768,False
+90.0,approaching,48.507174510529616,19.698540425699765,110,84.15094339622642,3.0,-35.64376888569681,False

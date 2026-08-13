@@ -1,0 +1,42 @@
+{
+  "schema": "tau_core.paper8.sdp81-extended-source-reconstruction.v01",
+  "model": {
+    "source_grid_side": 7,
+    "source_basis_count": 49,
+    "source_extent_arcsec": 0.12,
+    "source_gaussian_sigma_arcsec": 0.02,
+    "image_radius_arcsec": 0.15,
+    "beam_convolution": true,
+    "nonnegative_source": true,
+    "smoothness_ridge_fraction": 0.001
+  },
+  "path_count": 4,
+  "jacobian_determinants": [
+    0.26811494670534275,
+    0.05590548508664655,
+    -0.09400892951416126,
+    -0.11269179151523467
+  ],
+  "common_source_relative_residual": 0.38722346300615534,
+  "common_source_path_relative_residuals": [
+    0.395627542895357,
+    0.34901293814098044,
+    0.3653572164863972,
+    0.4431424509900418
+  ],
+  "independent_source_relative_residual": 0.32869625125251467,
+  "independent_source_path_relative_residuals": [
+    0.3342048159753997,
+    0.30406944124019913,
+    0.2885126890661284,
+    0.3808347483913472
+  ],
+  "common_vs_independent_squared_residual_excess": 0.3878221899760442,
+  "common_extended_source_promoted": true,
+  "promotion_rule": "common residual < 0.5, every path residual < 0.65, and common squared residual no more than 50% above independent-path source fits",
+  "body_covector_materialized": false,
+  "time_covector_identified": false,
+  "time_score_authorized": false,
+  "verdict": "COMMON_BEAM_CONVOLVED_EXTENDED_SOURCE_SUPPORTED",
+  "claim_boundary": "Fixed-basis local source-morphology reconstruction only; not a unique body map, time covector, channel innovation, or Tau Core detection."
+}

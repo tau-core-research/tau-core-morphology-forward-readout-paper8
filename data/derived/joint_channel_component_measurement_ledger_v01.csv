@@ -1,0 +1,10 @@
+component,sample,n_objects,measured_statistic,control_result,identification_status
+measured spatial/capacity channel,LITTLE THINGS primary,14,mean capacity=0.790 bits/profile-use,water filling active; negligible score change,operational capacity measured; parent G/P and correlated noise open
+same-body joint tracer information,NGC3726 and NGC4559,2,mean joint=13.113 bits; H I|H-alpha=1.408; H-alpha|H I=4.392,"both conditional increments positive, but stacked rank increment is zero and innovation null is not rejected",shared-source precision gain measured; distinct tracer mode not detected
+same-body tracer terminal,NGC3726 and NGC4559,2,H I/H-alpha amplitudes differ above 2 sigma in all tested lanes,multiplicative carrier beats Tau-kernel shape controls,tracer contrast present; Tau-kernel-specific channel not identified
+same-body tracer scale,UGC08490,1,H I/H-alpha scale=0.815,inclination predicts 0.835; harmonized residual=0.976,standard inclination explanation sufficient
+common multiplicative clock channel,NGC7331,1,predicted/observed side-even ratio=45612,required common clock multiplier incompatible with side parity,simple common clock law rejected for this galaxy; differential clock/path law untested
+foreground/path information on mass discrepancy,SPARC path subset,75,"OOF MSE reduction=0.024, p=0.142",incremental path test fails,no path information detected for outer discrepancy target
+foreground/path information on fitted kernel amplitude,SPARC path subset,75,"OOF MSE reduction=0.099, p=0.015",retrospective incremental signal passes,confounded endpoint-derived beta; physical path channel not identified
+dark-discrepancy-zone tracer contrast,NGC3726 and NGC4559,2,post-onset contrast appears in one of two galaxies,replicated=False,not replicated; time/quantum origin not identified
+quantum-access channel,none,0,no phase-sensitive coherent terminal observable,not measurable from rotation products,unmeasured

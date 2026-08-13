@@ -1,0 +1,56 @@
+{
+  "schema": "ngc7331_things_clock_channel_parity_freeze_v01",
+  "status": "SOURCE_FROZEN_THINGS_CLOCK_CHANNEL_PARITY_DIAGNOSTIC_READY",
+  "galaxy": "NGC7331",
+  "source_only": true,
+  "mom1_values_opened_by_freeze": false,
+  "endpoint_access": false,
+  "systemic_velocity_km_s": 818.3,
+  "systemic_velocity_source": "de_Blok_et_al_2008_THINGS_Table_2",
+  "inclination_deg": 75.8,
+  "inclination_source": "de_Blok_et_al_2008_THINGS_Table_2",
+  "image_major_axis_deg": 79.93873448615092,
+  "image_major_axis_source": "source_only_THINGS_MOM0_principal_axis",
+  "center_x_zero_based": 511.0,
+  "center_y_zero_based": 512.0,
+  "kpc_per_pixel": 0.1069014192844951,
+  "rdisk_kpc": 5.02,
+  "source_outer_region_start_kpc": 15.059999999999999,
+  "mom0_signal_threshold": "positive_mom0_at_or_above_0p20_times_positive_p95",
+  "pairing_rule": "centrosymmetric_integer_pixel_pair_about_frozen_CRPIX_center",
+  "pair_selection_half": "positive_frozen_major_axis_coordinate_only",
+  "deprojected_radius": "sqrt(u^2+(v/cos(i))^2)*kpc_per_pixel",
+  "major_axis_wedge_abs_cos_theta_min": 0.7,
+  "ring_width_kpc": 1.0,
+  "minimum_pairs_per_ring": 20,
+  "pair_weight": "sqrt(nonnegative_mom0_pixel_times_reflected_pixel)",
+  "odd_definition": "0.5*(v_positive_major_side-v_reflected_side)",
+  "even_definition": "0.5*(v_positive_major_side+v_reflected_side)-Vsys",
+  "primary_metric": "outer_weighted_median_abs_even_over_abs_odd",
+  "simple_multiplier_test": "A common multiplicative spectral-clock factor that scales odd velocity must also appear in the even redshift factor",
+  "product_replication_rule": "NATURAL_and_ROBUST_profiles_must_be_reported_separately",
+  "claim_boundary": "single-galaxy velocity-field diagnostic; not a population result, physical clock-channel detection, quantum-channel detection, or Tau Core validation",
+  "products": {
+    "NA_MOM0": {
+      "path": "/Users/jolcsak/Projects/tau-core-morphology-forward-readout-paper8/data/external/literature/ngc7331_things_hi_route/NGC_7331_NA_MOM0_THINGS.FITS",
+      "sha256": "a2e0a9bf84084ae46f98b63bbd3ead88304e0888510809f271991a0042a425c8"
+    },
+    "NA_MOM1": {
+      "path": "/Users/jolcsak/Projects/tau-core-morphology-forward-readout-paper8/data/external/literature/ngc7331_things_hi_route/NGC_7331_NA_MOM1_THINGS.FITS",
+      "sha256": "49aade673411f53e6c84d169a1304e7277eac97dd8f9f1a0666538582c089116"
+    },
+    "RO_MOM0": {
+      "path": "/Users/jolcsak/Projects/tau-core-morphology-forward-readout-paper8/data/external/literature/ngc7331_things_hi_route/NGC_7331_RO_MOM0_THINGS.FITS",
+      "sha256": "f8de3c11162dc8103bb9ed4f17cac05543303d91a03a8a59d954f9ff6958fe18"
+    },
+    "RO_MOM1": {
+      "path": "/Users/jolcsak/Projects/tau-core-morphology-forward-readout-paper8/data/external/literature/ngc7331_things_hi_route/NGC_7331_RO_MOM1_THINGS.FITS",
+      "sha256": "bab6e9a80ea9244e575065fcf8efdb042c16352b441edf73520bbd00a98fe07c"
+    }
+  },
+  "input_sha256": {
+    "manifest": "1a591e4a656e17d4ca6570490f9955fd46e54aa2c34708253f820a1688374a90",
+    "geometry": "0519d0461f98651385fdee7fe62d72eea5e8d6c88105729d726d2f87b5c53c0a",
+    "morphology": "6cfda34ec8f9ac5bcff208809cce902dd6030c46a7270810930c6c3c48b00ec5"
+  }
+}

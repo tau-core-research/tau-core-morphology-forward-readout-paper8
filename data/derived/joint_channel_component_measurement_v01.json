@@ -1,0 +1,42 @@
+{
+  "schema": "joint_channel_component_measurement_v01",
+  "status": "SAME_BODY_PRECISION_GAIN_MEASURED_DISTINCT_MODE_AND_FULL_ORIGIN_BLOCKED",
+  "joint_law": "Delta I_j(Q)=I_Q(all readouts)-I_Q(without j)=I_Q(source;y_j|y_-j)",
+  "little_things_capacity_correlations": {
+    "distance_mpc": {
+      "rho": 0.04620464842145856,
+      "permutation_p_two_sided": 0.8721127887211279
+    },
+    "hi_beam_fwhm_kpc": {
+      "rho": 0.04175824175824176,
+      "permutation_p_two_sided": 0.8923107689231077
+    },
+    "median_velocity_error_km_s": {
+      "rho": -0.27912087912087913,
+      "permutation_p_two_sided": 0.33026697330266974
+    },
+    "oscc_improvement_vs_tpg": {
+      "rho": 0.16923076923076924,
+      "permutation_p_two_sided": 0.5706429357064293
+    },
+    "oscc_improvement_vs_v02": {
+      "rho": 0.006593406593406593,
+      "permutation_p_two_sided": 0.9876012398760124
+    }
+  },
+  "capacity_predicts_score_improvement_at_p_lt_0_05": false,
+  "component_counts": {
+    "operationally_measured": 4,
+    "positive_but_confounded": 2,
+    "negative_or_standard_explained": 4,
+    "quantum_measured": 0
+  },
+  "same_body_tracer_delta_i_computed": true,
+  "same_body_distinct_tracer_mode_detected": false,
+  "full_joint_channel_delta_i_computable": false,
+  "blocker": "same-body tracer Delta I is measured on two galaxies, but full tracer/path/time/spectral block covariance and independent replication are absent",
+  "time_channel_status": "simple common multiplier rejected in one galaxy; general differential observer-source parameterization unmeasured",
+  "quantum_channel_status": "unmeasured",
+  "physical_channel_detected": false,
+  "claim_boundary": "cross-product component ledger and within-product statistics; heterogeneous samples cannot be combined into a physical joint-channel detection or common conditional-information value"
+}

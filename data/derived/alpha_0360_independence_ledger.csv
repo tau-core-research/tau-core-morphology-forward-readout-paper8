@@ -1,0 +1,11 @@
+route,value,input_provenance,independence_class,caveat
+SPARC global fit,0.36,SPARC rotation curves,primary empirical estimate,one precise empirical origin
+SPARC CV and spiral subset,0.36,same SPARC parent sample,"robustness, not independent",shared galaxies and baryonic assumptions
+LITTLE THINGS external fit,0.2750776649801792,Oh et al. dwarf rotation curves,partially independent empirical estimate,vector-extracted baryonic components; broad interval
+Atlas3D ETG external fit,0.4396826060959085,Lelli et al. early-type accelerations,independent empirical estimate,32 points; pressure-support and anisotropy caveats
+"2 a0/(c H0), Planck",0.366,empirical a0 plus Planck H0,partially independent cosmological candidate,shares empirical a0; factor 2 unproved
+Omega_Lambda-Omega_m,0.3684,Planck base-LCDM,correlated cosmological candidate,not independent of Planck cosmology route
+2/pi^(3/2),0.3592,mathematical constants,post-hoc closed-form hit,best of 747; look-elsewhere dominated
+1/(4 ln 2),0.3607,mathematical constants,post-hoc curated hit,best-near hit in earlier curated scan
+9/25,0.36,small integers,numerology control,exact but no mechanism
+DTL capacity normalization,,Tau/DTL source architecture,unresolved theoretical route,does not yet output 0.360 independently

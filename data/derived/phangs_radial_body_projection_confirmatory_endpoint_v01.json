@@ -1,0 +1,20 @@
+{
+  "schema": "phangs_radial_body_projection_confirmatory_endpoint_v01",
+  "status": "CONFIRMATORY_ENDPOINT_OPENED_NONIDENTIFIABLE_GATE_FAILURE",
+  "galaxies_opened_once": [
+    "NGC1300",
+    "NGC1385",
+    "NGC1512",
+    "NGC5068"
+  ],
+  "eligibility_failures": {
+    "NGC1300": "ValueError: All 12 frozen azimuth sectors must be occupied",
+    "NGC1385": "ValueError: All 12 frozen azimuth sectors must be occupied",
+    "NGC1512": "ValueError: All 12 frozen azimuth sectors must be occupied",
+    "NGC5068": "ValueError: All 12 frozen azimuth sectors must be occupied"
+  },
+  "individual_scores_released": false,
+  "aggregate_score_computed": false,
+  "replacement_or_repair_allowed": false,
+  "claim_boundary": "predeclared endpoint gate failure; not evidence for or against a body-orthogonal mode or physical channel"
+}

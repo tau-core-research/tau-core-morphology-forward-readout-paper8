@@ -1,0 +1,34 @@
+{
+  "schema": "s4g_dark_discrepancy_morphology_endpoint_v01",
+  "status": "RETROSPECTIVE_S4G_DARK_DISCREPANCY_MORPHOLOGY_SIGNAL_FAIL",
+  "claim_level": "retrospective_locked_prevalidation",
+  "n_rows": 76,
+  "n_train": 56,
+  "n_holdout": 20,
+  "target": "log_outer3_mass_discrepancy",
+  "baseline_mse": 0.22097670198263403,
+  "baseline_plus_morphology_mse": 0.48144472690635165,
+  "mse_reduction": -0.2604680249237176,
+  "proportional_mse_reduction": -1.1787126090070215,
+  "nulls": {
+    "n": 2000,
+    "rng_seed": 20260711,
+    "row_p": 0.9245377311344328,
+    "row_q95": 0.019402969799814027,
+    "column_p": 0.7731134432783608,
+    "column_q95": -0.005914669024010266
+  },
+  "gates": {
+    "positive_holdout_mse_reduction": false,
+    "row_shuffle_p_le_0p05": false,
+    "column_shuffle_p_le_0p05": false,
+    "above_row_shuffle_q95": false,
+    "above_column_shuffle_q95": false
+  },
+  "freeze_sha256": "ce26161effbfb74876ed9c94d31afde85b796d75643c493dbe24f5107f2d77e1",
+  "source_sha256": "00c1651b10c8d38c47fb078c8233cc5ede20a624be47aa855c234940acf60efc",
+  "target_sha256": "a867abba169720f386044d10d8b67b1d1393dd0b02fd1fa190655774a8b30bce",
+  "morphology_information_candidate": false,
+  "channel_origin_identified": false,
+  "claim_boundary": "retrospective locked 4D inverse test; even a pass is incremental source-morphology information about outer discrepancy, not M_tau or channel proof"
+}

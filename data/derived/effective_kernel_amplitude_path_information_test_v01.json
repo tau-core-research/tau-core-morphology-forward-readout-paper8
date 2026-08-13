@@ -1,0 +1,21 @@
+{
+  "schema": "effective_kernel_amplitude_path_information_test_v01",
+  "status": "RETROSPECTIVE_EFFECTIVE_BETA_PATH_INFORMATION_PASS",
+  "n_galaxies": 75,
+  "n_folds": 5,
+  "target": "galaxy-specific effective beta for fixed matched Tau kernel shape",
+  "normalization": "beta divided by population median absolute beta",
+  "baseline_oof_mse": 4386.766652944787,
+  "baseline_plus_path_oof_mse": 3952.614682053296,
+  "mse_reduction": 434.15197089149115,
+  "proportional_mse_reduction": 0.09896855822044918,
+  "shuffle": {
+    "n": 2000,
+    "seed": 20260711,
+    "p": 0.014992503748125937,
+    "q95": 116.95274995779951
+  },
+  "path_information_candidate": true,
+  "physical_channel_detected": false,
+  "claim_boundary": "retrospective endpoint-derived beta attribution; path proxy incomplete and beta combines body mismatch, calibration, tracer transfer and any channel response"
+}

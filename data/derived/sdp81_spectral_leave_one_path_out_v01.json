@@ -1,0 +1,337 @@
+{
+  "schema": "tau_core.paper8.sdp81-spectral-leave-one-path-out.v01",
+  "method": "fit common nonnegative source on three paths; predict fourth with no held-out gain; estimate only a low-model-support background",
+  "fold_count": 24,
+  "folds": [
+    {
+      "channel_one_based": 47,
+      "heldout_path": 1,
+      "training_paths": [
+        2,
+        3,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00022979764617048204,
+      "predictive_r2_vs_background": -4.098864698399495,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 47,
+      "heldout_path": 2,
+      "training_paths": [
+        1,
+        3,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.0002663862251210958,
+      "predictive_r2_vs_background": -4.332264929257472,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 47,
+      "heldout_path": 3,
+      "training_paths": [
+        1,
+        2,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00019128141866531223,
+      "predictive_r2_vs_background": -119.96932873741389,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 47,
+      "heldout_path": 4,
+      "training_paths": [
+        1,
+        2,
+        3
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00020230411610100418,
+      "predictive_r2_vs_background": -200.14109023308953,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 48,
+      "heldout_path": 1,
+      "training_paths": [
+        2,
+        3,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.0002008822630159557,
+      "predictive_r2_vs_background": -2.8584451218168274,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 48,
+      "heldout_path": 2,
+      "training_paths": [
+        1,
+        3,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.0002732387656578794,
+      "predictive_r2_vs_background": -10.788370239533197,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 48,
+      "heldout_path": 3,
+      "training_paths": [
+        1,
+        2,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00019830922246910632,
+      "predictive_r2_vs_background": -197.20611132156407,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 48,
+      "heldout_path": 4,
+      "training_paths": [
+        1,
+        2,
+        3
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00032439662027172744,
+      "predictive_r2_vs_background": -78.6877992214764,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 49,
+      "heldout_path": 1,
+      "training_paths": [
+        2,
+        3,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00018700130749493837,
+      "predictive_r2_vs_background": -4.44236026843165,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 49,
+      "heldout_path": 2,
+      "training_paths": [
+        1,
+        3,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00025721624842844903,
+      "predictive_r2_vs_background": -2.4614239403559695,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 49,
+      "heldout_path": 3,
+      "training_paths": [
+        1,
+        2,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00014608931087423116,
+      "predictive_r2_vs_background": -95.96082353750447,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 49,
+      "heldout_path": 4,
+      "training_paths": [
+        1,
+        2,
+        3
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.0003677989589050412,
+      "predictive_r2_vs_background": -235.02879371914264,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 50,
+      "heldout_path": 1,
+      "training_paths": [
+        2,
+        3,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00022002891637384892,
+      "predictive_r2_vs_background": -2.7354065205034326,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 50,
+      "heldout_path": 2,
+      "training_paths": [
+        1,
+        3,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00043429501238279045,
+      "predictive_r2_vs_background": -14.89064636528939,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 50,
+      "heldout_path": 3,
+      "training_paths": [
+        1,
+        2,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00013515117461793125,
+      "predictive_r2_vs_background": -89.2360458097522,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 50,
+      "heldout_path": 4,
+      "training_paths": [
+        1,
+        2,
+        3
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.0005008272710256279,
+      "predictive_r2_vs_background": -247.9726284992784,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 51,
+      "heldout_path": 1,
+      "training_paths": [
+        2,
+        3,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.0002019413950620219,
+      "predictive_r2_vs_background": -5.774175197853981,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 51,
+      "heldout_path": 2,
+      "training_paths": [
+        1,
+        3,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.0005443812988232821,
+      "predictive_r2_vs_background": -10.411638964590365,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 51,
+      "heldout_path": 3,
+      "training_paths": [
+        1,
+        2,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00020484114065766335,
+      "predictive_r2_vs_background": -374.1997579695594,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 51,
+      "heldout_path": 4,
+      "training_paths": [
+        1,
+        2,
+        3
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.0006700457888655365,
+      "predictive_r2_vs_background": -265.9502008874752,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 52,
+      "heldout_path": 1,
+      "training_paths": [
+        2,
+        3,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00033242988865822554,
+      "predictive_r2_vs_background": -14.367778954040881,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 52,
+      "heldout_path": 2,
+      "training_paths": [
+        1,
+        3,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.0004132437170483172,
+      "predictive_r2_vs_background": 0.1927598831898989,
+      "improves_background": true,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 52,
+      "heldout_path": 3,
+      "training_paths": [
+        1,
+        2,
+        4
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.00033901838469319046,
+      "predictive_r2_vs_background": -663.1287883092048,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    },
+    {
+      "channel_one_based": 52,
+      "heldout_path": 4,
+      "training_paths": [
+        1,
+        2,
+        3
+      ],
+      "heldout_background_from_lowest_support_20pct": 0.0005869331071153283,
+      "predictive_r2_vs_background": -27.48411630947242,
+      "improves_background": false,
+      "uses_heldout_gain": false
+    }
+  ],
+  "predictive_r2_range": [
+    -663.1287883092048,
+    0.1927598831898989
+  ],
+  "predictive_r2_median": -21.187381337380906,
+  "positive_fold_count": 1,
+  "path_median_predictive_r2": {
+    "1": -4.270612483415572,
+    "2": -7.371951946923918,
+    "3": -158.587720029489,
+    "4": -217.58494197611608
+  },
+  "all_paths_positive_median": false,
+  "transferable_common_source_dynamics_promoted": false,
+  "body_clock_theta_M_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "COMMON_SOURCE_SPECTRAL_TRANSFER_NOT_ESTABLISHED",
+  "claim_boundary": "No-gain held-out path prediction of a 4D spectral source model; not a parent body clock, observer-time covector, or Tau Core detection."
+}

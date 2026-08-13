@@ -1,0 +1,27 @@
+{
+  "schema": "tau_core_ngc7479_modal_capacity_response_freeze_v01",
+  "status": "SOURCE_ONLY_THREE_MODE_CAPACITY_FORMULA_FROZEN_POST_OPEN",
+  "support_coordinate": "u = 2x/x_max - 1 on the measured source support",
+  "fixed_basis": [
+    "phi_0(u)=1",
+    "phi_1(u)=u",
+    "phi_2(u)=(3u^2-1)/2"
+  ],
+  "coefficient_estimator": "weighted least squares using symmetric source-marker errors",
+  "modal_capacity": "c_k = a_k^2 / (a_k^2 + Var[a_k])",
+  "transmitted_profile": "Delta_tx(u) = sum_k sqrt(c_k) a_k phi_k(u)",
+  "transport_density": "q_tx(u) = Delta_tx(u)^2",
+  "total_capacity": "C_modes = mean_k(c_k)",
+  "transport_ode": "dQ_out/dx = q_tx(x) [1 - Q_out/C_modes]",
+  "readout": "v_pred^2 = v_bar^2 [1 + Q_out]",
+  "fitted_endpoint_parameters": 0,
+  "basis_order": 2,
+  "basis_order_selected_from_endpoint": false,
+  "known_limits": {
+    "unresolved_mode": "Var[a_k]/a_k^2 -> infinity implies c_k -> 0",
+    "resolved_mode": "Var[a_k]/a_k^2 -> 0 implies c_k -> 1",
+    "finite_response": "0 <= Q_out <= C_modes <= 1"
+  },
+  "prospective_for_ngc7479": false,
+  "claim_boundary": "minimal mode-selective source-error diagnostic; not a physical channel spectrum derivation"
+}

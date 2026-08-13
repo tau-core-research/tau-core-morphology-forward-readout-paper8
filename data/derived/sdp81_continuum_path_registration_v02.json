@@ -1,0 +1,82 @@
+{
+  "schema": "tau_core.paper8.sdp81-continuum-path-registration.v02",
+  "source_tracer": "ALMA Band-7 continuum",
+  "calibration_method": "leave one path out; reconstruct source on three paths; select held-out geometric shift on fixed grid with no source gain",
+  "shift_grid_mas": [
+    -80.0,
+    -60.0,
+    -40.0,
+    -20.0,
+    0.0,
+    20.0,
+    40.0,
+    60.0,
+    80.0
+  ],
+  "path_calibrations": [
+    {
+      "path_index": 1,
+      "training_paths": [
+        2,
+        3,
+        4
+      ],
+      "selected_dx_lens_x_mas": -20.0,
+      "selected_dy_north_mas": 0.0,
+      "selected_sse": 2.4032492334763403e-06,
+      "nominal_sse": 2.6565513947435096e-06,
+      "fractional_sse_improvement": 0.09534999464658411,
+      "grid_boundary_selected": false,
+      "heldout_gain_fitted": false
+    },
+    {
+      "path_index": 2,
+      "training_paths": [
+        1,
+        3,
+        4
+      ],
+      "selected_dx_lens_x_mas": -20.0,
+      "selected_dy_north_mas": 80.0,
+      "selected_sse": 6.156493087230771e-07,
+      "nominal_sse": 9.112304559847515e-07,
+      "fractional_sse_improvement": 0.3243758429279504,
+      "grid_boundary_selected": true,
+      "heldout_gain_fitted": false
+    },
+    {
+      "path_index": 3,
+      "training_paths": [
+        1,
+        2,
+        4
+      ],
+      "selected_dx_lens_x_mas": -80.0,
+      "selected_dy_north_mas": 80.0,
+      "selected_sse": 4.966740521352041e-06,
+      "nominal_sse": 7.098671420667118e-05,
+      "fractional_sse_improvement": 0.9300328156210775,
+      "grid_boundary_selected": true,
+      "heldout_gain_fitted": false
+    },
+    {
+      "path_index": 4,
+      "training_paths": [
+        1,
+        2,
+        3
+      ],
+      "selected_dx_lens_x_mas": -80.0,
+      "selected_dy_north_mas": -80.0,
+      "selected_sse": 5.081594291532891e-06,
+      "nominal_sse": 7.888833367856638e-06,
+      "fractional_sse_improvement": 0.3558497112845548,
+      "grid_boundary_selected": true,
+      "heldout_gain_fitted": false
+    }
+  ],
+  "boundary_selection_count": 3,
+  "registration_freeze_usable_for_band6": false,
+  "verdict": "CONTINUUM_PATH_REGISTRATION_GRID_NOT_CLOSED",
+  "claim_boundary": "Independent-tracer geometric calibration only; not a spectral fit, clock effect, observer-time signal, or Tau Core detection."
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "s4g_optical_morphology_attribution_freeze_v02",
+  "status": "SOURCE_ONLY_RETROSPECTIVE_LOCK_V02_READY",
+  "source_only": true,
+  "endpoint_access": false,
+  "retrospective_lock": true,
+  "prospective_validation": false,
+  "split_salt": "tau-core-s4g-optical-attribution-v01",
+  "holdout_threshold_percent": 25,
+  "n_rows": 76,
+  "n_train": 56,
+  "n_holdout": 20,
+  "baseline_features": [
+    "sparc_t_type",
+    "log_distance_mpc",
+    "inclination_deg",
+    "log_l36",
+    "log_reff_kpc",
+    "log_sbeff",
+    "log_rdisk_kpc",
+    "log_sbdisk",
+    "log_mhi",
+    "log_rhi_kpc"
+  ],
+  "morphology_features": [
+    "log_s4g_scale_to_sparc_rdisk",
+    "s4g_bar_present",
+    "s4g_bar_to_disk_scale",
+    "s4g_component_bulge",
+    "s4g_component_disk",
+    "s4g_component_edge_disk",
+    "s4g_component_nucleus",
+    "s4g_component_bar",
+    "s4g_model_quality",
+    "s4g_global_sersic_n",
+    "s4g_global_axis_ratio_q",
+    "s4g_global_ellipticity",
+    "log_s4g_global_re_to_disk_scale",
+    "s4g_global_tmag"
+  ],
+  "baseline_missingness_features": [
+    "log_rhi_kpc__missing"
+  ],
+  "morphology_missingness_features": [
+    "s4g_bar_to_disk_scale__missing",
+    "s4g_global_sersic_n__missing",
+    "s4g_global_axis_ratio_q__missing",
+    "log_s4g_global_re_to_disk_scale__missing",
+    "s4g_global_tmag__missing"
+  ],
+  "imputation": "training_median_per_feature",
+  "standardization": "training_mean_and_population_sd",
+  "model": "ridge_linear_fixed_lambda_1",
+  "primary_target": "log_tpg_v6_velocity_rmse",
+  "primary_metric": "holdout_mean_squared_error_reduction",
+  "controls": [
+    "log_newtonian_baryonic_velocity_rmse_target",
+    "morphology_row_shuffle_1000",
+    "morphology_column_permutation_1000",
+    "baseline_plus_missingness_only"
+  ],
+  "promotion_rule": "positive holdout MSE reduction; row-shuffle p<=0.05; column-shuffle p<=0.05; observed reduction above both null 95th percentiles; larger proportional gain than on the Newtonian control target",
+  "claim_boundary": "retrospective locked prevalidation only; not independent external replication, shared-parent proof, or M_tau attribution",
+  "v01_coverage_failure": "Paper 1 publication endpoint joined only 33 of 76 frozen source rows; v02 switches by coverage rule to the Paper 8 full-population paired TPG-v6/Newtonian RMSE endpoint before any v02 scoring",
+  "input_sha256": {
+    "sparc_source": "d6900f7a90d4e19cda4ad94c518baa862d4ed9d2405d2b94c3c48708a8f8e24a",
+    "s4g_crossmatch": "53a5f9e888769dfb179cf6141bdf521fe2b4dffb607bd764d9803ce44cc0b70f",
+    "s4g_global": "b948a74da5cea36bab48e4682787717a20fda2f8ce7a30e839c5a80f25771e10"
+  },
+  "output_sha256": "00c1651b10c8d38c47fb078c8233cc5ede20a624be47aa855c234940acf60efc",
+  "forbidden_tokens": [
+    "vobs",
+    "residual",
+    "rmse",
+    "endpoint",
+    "score",
+    "mond",
+    "tpg",
+    "required_s_tau"
+  ]
+}

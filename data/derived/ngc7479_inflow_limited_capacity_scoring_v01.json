@@ -1,0 +1,41 @@
+{
+  "schema": "tau_core_ngc7479_inflow_limited_capacity_scoring_v01",
+  "status": "POST_OPEN_INFLOW_CAPACITY_DIAGNOSTIC_COMPLETE",
+  "freeze_status": "SOURCE_DEFINED_INFLOW_CAPACITY_FORMULA_FROZEN_POST_OPEN",
+  "fitted_parameters": 0,
+  "source_capacities": {
+    "NGC 613": 0.9206354159179,
+    "NGC 4303": 0.6996387407233597,
+    "NGC 4579": 0.601560691346315,
+    "NGC 5248": 0.4939276230311978,
+    "NGC 7479": 0.8148186442337587
+  },
+  "n_endpoint_points": 10,
+  "n_gas_sensitivities": 3,
+  "all_matched_beat_newton": true,
+  "all_matched_beat_wrong_mean": true,
+  "all_matched_beat_best_wrong": false,
+  "rmse_ranges": {
+    "newton": [
+      34.06424208361169,
+      34.10876178599462
+    ],
+    "matched": [
+      30.02253985559836,
+      30.067980379123327
+    ],
+    "wrong_mean": [
+      30.64474646590731,
+      30.68995853406974
+    ],
+    "best_wrong": [
+      24.72265881325739,
+      24.76883230208875
+    ]
+  },
+  "prospective": false,
+  "strict_physical_score_allowed": false,
+  "tau_morphology_detected": false,
+  "channel_detected": false,
+  "claim_boundary": "minimal source-defined inflow-capacity diagnostic; not a derived physical lightcone capacity"
+}

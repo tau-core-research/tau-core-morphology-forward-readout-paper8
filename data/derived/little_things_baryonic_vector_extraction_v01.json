@@ -1,0 +1,12 @@
+{
+  "schema": "little_things_baryonic_vector_extraction_v01",
+  "status": "PREFLIGHT_NOT_ENDPOINT",
+  "n_galaxies": 26,
+  "n_quality_pass": 20,
+  "n_extracted_scoring_points": 575,
+  "quality_gate": "axis calibration RMSE <= 0.35 PDF points; gas path and >=4 common-support points",
+  "endpoint_access": true,
+  "endpoint_access_scope": "published vobs used only to calibrate vector-figure coordinates",
+  "prospective_formula_retuning": false,
+  "claim_boundary": "vector extraction preflight; failed galaxies excluded; no Tau endpoint score"
+}

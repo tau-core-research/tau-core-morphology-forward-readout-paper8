@@ -1,0 +1,348 @@
+{
+  "audit_checks": {
+    "all_q_values_finite": true,
+    "complete_measurement_product": true,
+    "complete_source_systematic_product": true,
+    "endpoint_scored": false,
+    "fixed_random_seed": true,
+    "source_only": true,
+    "sparse_annulus_role_cells_eliminated": true,
+    "target_and_control_share_operator": true,
+    "velocity_or_residual_inputs_empty": true
+  },
+  "baseline": {
+    "m1": {
+      "delta_uv": 0.994133831481927,
+      "determinant_norm": 0.0427501760327201,
+      "eta_role_vector": [
+        0.10397668390060333,
+        -0.18595028955805554,
+        0.02887555513635049,
+        0.05309805052110174
+      ],
+      "flux_phase_anchor_deg": 24.251035064017795,
+      "harmonic": 1,
+      "log_gas_radial_profile": [
+        4.9567196609373845,
+        4.83760158710261,
+        4.672857841724186,
+        4.449620600546344,
+        4.230123211151121,
+        4.002852607339897
+      ],
+      "log_stellar_radial_profile": [
+        6.511849800413321,
+        6.256604403170216,
+        5.936642611210937,
+        5.587047587925056,
+        5.23288725339895,
+        4.928397832731087
+      ],
+      "minimum_role_pixels": 103,
+      "path_radial_profile": [
+        0.04806796205325559,
+        -0.055492965567795406,
+        0.02190042364389863,
+        0.014850773190019036,
+        -0.010484150708079593,
+        -0.016205114373761677
+      ],
+      "phase_amplitude": 0.30593916569329893,
+      "phase_anchor_deg": 3.3242663514184234,
+      "phase_anchor_rad": 0.05801939304551036,
+      "phase_estimator_difference_deg": 20.92676871259937,
+      "q_shape_proxy": -0.04341723284862197,
+      "role_0_pixels": 103,
+      "role_1_pixels": 107,
+      "role_2_pixels": 103,
+      "role_3_pixels": 105,
+      "u_role_vector": [
+        0.22864293845981112,
+        0.20407136673098947,
+        -0.225617669037388,
+        -0.20709663615341253
+      ],
+      "v_role_vector": [
+        0.05853801602867551,
+        -0.07392519239434081,
+        -0.012814155117973965,
+        0.028201331483639253
+      ]
+    },
+    "m2": {
+      "delta_uv": 0.9870676417462284,
+      "determinant_norm": 0.03987086278346001,
+      "eta_role_vector": [
+        -0.1753757621950649,
+        0.002171906281365321,
+        0.06828742225897935,
+        0.10491643365472028
+      ],
+      "flux_phase_anchor_deg": 84.33190025414287,
+      "harmonic": 2,
+      "log_gas_radial_profile": [
+        4.9567196609373845,
+        4.83760158710261,
+        4.672857841724186,
+        4.449620600546344,
+        4.230123211151121,
+        4.002852607339897
+      ],
+      "log_stellar_radial_profile": [
+        6.511849800413321,
+        6.256604403170216,
+        5.936642611210937,
+        5.587047587925056,
+        5.23288725339895,
+        4.928397832731087
+      ],
+      "minimum_role_pixels": 104,
+      "path_radial_profile": [
+        0.04806796205325559,
+        -0.055492965567795406,
+        0.02190042364389863,
+        0.014850773190019036,
+        -0.010484150708079593,
+        -0.016205114373761677
+      ],
+      "phase_amplitude": 0.5406907207656273,
+      "phase_anchor_deg": 84.69729253502413,
+      "phase_anchor_rad": 1.4782466222609858,
+      "phase_estimator_difference_deg": 0.36539228088127285,
+      "q_shape_proxy": 0.09129505311859842,
+      "role_0_pixels": 106,
+      "role_1_pixels": 104,
+      "role_2_pixels": 104,
+      "role_3_pixels": 104,
+      "u_role_vector": [
+        0.2350017734248584,
+        -0.17770976332222077,
+        -0.25332843213535694,
+        0.19603642203271932
+      ],
+      "v_role_vector": [
+        -0.05270231991741796,
+        -0.03951463791742718,
+        0.042704923047878464,
+        0.04951203478696668
+      ]
+    }
+  },
+  "candidate_status": "DIRECT_BEAM_M2_SOURCE_CANDIDATE_SURVIVES_INTERNAL_SPECIFICITY_GATE",
+  "claim_boundary": "finite source-only 4D-inverse audit of a direct beam-weighted m=2 role operator with an identically processed m=1 alternative-family control; not a parent-derived role, physical q_det, complete covariance, channel/time/quantum signal, dark-matter replacement, or endpoint score",
+  "construction": {
+    "alternative_family_control": "stellar_m1_phase four-role chart processed identically",
+    "beam_mode_1_eigenvalue": 1.4585374179644248,
+    "beam_support_rule": "each full angular role must contain at least one Gaussian beam area in source pixels",
+    "direct_operator": "axisymmetry-subtracted pixel fields weighted by the linearly interpolated frozen v06 beam_mode=1 radial eigenvector, normalized within each full-support role",
+    "gaussian_beam_area_arcsec2": 1407.4802210937216,
+    "gaussian_beam_area_pixels": 56.2992060783318,
+    "minimum_required_role_pixels": 57,
+    "phase_estimator": "annulus-median-subtracted log-stellar contrast over inherited 5-65 arcsec support",
+    "phase_limit_reason": "half of one pi/2 role-sector width",
+    "phase_stability_limit_deg": 22.5,
+    "radial_beam_mode_1": [
+      -0.5054229744025739,
+      -0.4128614389985285,
+      -0.1695982292496489,
+      0.16390029303235776,
+      0.4358288304985662,
+      0.5731661314310732
+    ],
+    "radial_midpoints_arcsec": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0
+    ],
+    "radial_weight_zero_crossings_arcsec": [
+      35.08542670861481
+    ],
+    "relative_role_rank_rule": "algebraic rank must equal the full three-dimensional relative-role space",
+    "role_edge_perturbation_deg": 0.5,
+    "sparse_annulus_role_cells_used": false,
+    "target_family": "stellar_m2_phase_four-role chart",
+    "v06_surviving_beam_mode_index": 1
+  },
+  "galaxy": "NGC4254",
+  "inputs": {
+    "beam_overlap": "data/derived/ngc4254_ffl_determinant_beam_overlap_correlation_v02.csv",
+    "beam_overlap_sha256": "bf2e1fbe94fb3fe516012a07de346de3acfc70dbda815bbb6c74d1b55d672c7b",
+    "common_source_cube": "data/derived/ngc4254_common_hi_resolution_source_cube_v03.fits",
+    "common_source_cube_sha256": "a9c825c2e0e3a4c0c01fe03a2bc6b4ea8ae80f9cc83b43dfb1584137a9340653",
+    "geometry": "data/derived/ngc4254_s4g_photometric_geometry_freeze_v02.json",
+    "geometry_sha256": "f5d5965b62f6cd5cf0b45c1f1085e492ecbb960f3cebb21fb800befd282832ef",
+    "uncertainty_fields": "data/derived/ngc4254_measurement_uncertainty_fields_v05.fits",
+    "uncertainty_fields_sha256": "90f0726d2f9c2ec06643c5f9e527939157575d17a20df1c09d8853054dd53fe6",
+    "v06_source_role_audit": "data/derived/ngc4254_ffl_morphology_phase_roles_v06.json",
+    "v06_source_role_audit_sha256": "5cfb6ba91dd6e53a4d624240bd30a158fda0818b360dc06eafed57172d19b6fc",
+    "velocity_or_residual_inputs": []
+  },
+  "known_limitations": [
+    "m=2 and m=1 remain finite source-coordinate families, not parent-derived role identities",
+    "the radial weight comes from a support-overlap beam screen, not a complete nonlinear q covariance",
+    "one-beam pixel support is a resolution floor, not proof of independent role information",
+    "the stellar measurement modes remain a conditional P5 uncertainty reconstruction",
+    "the H I measurement layer remains a robust-1 control for a robust-5 moment map",
+    "family specificity in one galaxy would not establish universality",
+    "passing source gates would not construct physical eta, q_det, determinant transport, or a terminal map"
+  ],
+  "measurement_audit": {
+    "hi_role": "robust1 49-channel control only",
+    "n_draws": 256,
+    "n_rows": 2048,
+    "primary_gate_scenario": "star_plus_co_independent",
+    "random_seed": 425407,
+    "scenarios": [
+      "star_only",
+      "co_independent_only",
+      "star_plus_co_independent",
+      "star_co_plus_hi_ctl49"
+    ]
+  },
+  "outputs": {
+    "measurement": "data/derived/ngc4254_ffl_direct_beam_m2_measurement_v07.csv",
+    "measurement_sha256": "3f0e00cee48bdc03d0166b5dbae3d61bd38d58f17797d6c571524ec276a2cebf",
+    "report": "reports/ngc4254_ffl_direct_beam_m2_operator_v07.md",
+    "summary": "data/derived/ngc4254_ffl_direct_beam_m2_summary_v07.csv",
+    "summary_sha256": "5fcb23f71361dfe13fa6b8a56eb836ae1d6822e81dacaf4f58a469bab681b2ec",
+    "systematics": "data/derived/ngc4254_ffl_direct_beam_m2_systematics_v07.csv",
+    "systematics_sha256": "4b3c4b2d077efdf5bd95e4abe92460da076678f3fc249ad74458008044b266e8"
+  },
+  "result": {
+    "endpoint_scoring_allowed": false,
+    "m1_alternative_control_passes_own_internal_gates": false,
+    "m2_family_specificity_pass": true,
+    "m2_passes_own_internal_gates": true,
+    "physical_q_det_constructed": false,
+    "physical_role_chart_promoted": false,
+    "source_candidate_survives_v07": true
+  },
+  "schema": "ngc4254_ffl_direct_beam_m2_operator_v07",
+  "source_systematic_audit": {
+    "geometry_variants": 8,
+    "h2_conversion_controls": 3,
+    "n_rows": 144,
+    "n_scenarios_per_harmonic": 72,
+    "stellar_psf_controls": 3
+  },
+  "status": "SOURCE_ONLY_DIRECT_BEAM_M2_OPERATOR_AUDIT_COMPLETE_NO_ENDPOINT",
+  "validation": {
+    "angular_role_beam_screen": {
+      "m1": {
+        "full_role_eigenvalues": [
+          1.5922801049587971,
+          1.0004776158290898,
+          0.8897372248512453,
+          0.5175050543608675
+        ],
+        "full_role_participation_rank": 3.481473510504562,
+        "is_complete_role_covariance": false,
+        "relative_role_algebraic_rank": 3,
+        "relative_role_eigenvalues": [
+          1.0004778254366966,
+          0.8897384989060096,
+          0.5175916874558008
+        ],
+        "relative_role_participation_rank": 2.8136680274383052,
+        "role_beam_overlap_correlation": [
+          [
+            1.0000000000000002,
+            0.2423563665037012,
+            0.06454299347523809,
+            0.2956613214247092
+          ],
+          [
+            0.2423563665037012,
+            1.0,
+            0.29615904490185946,
+            0.04524276509704172
+          ],
+          [
+            0.06454299347523809,
+            0.29615904490185946,
+            0.9999999999999998,
+            0.2404214850004369
+          ],
+          [
+            0.2956613214247092,
+            0.04524276509704172,
+            0.2404214850004369,
+            1.0000000000000002
+          ]
+        ],
+        "role_pixel_counts": [
+          103,
+          107,
+          103,
+          105
+        ]
+      },
+      "m2": {
+        "full_role_eigenvalues": [
+          1.5882770616222959,
+          1.013662406324564,
+          0.8764701727393489,
+          0.521590359313792
+        ],
+        "full_role_participation_rank": 3.485541130613266,
+        "is_complete_role_covariance": false,
+        "relative_role_algebraic_rank": 3,
+        "relative_role_eigenvalues": [
+          1.013669885758076,
+          0.8764707341018994,
+          0.5217707460553427
+        ],
+        "relative_role_participation_rank": 2.8130533697014277,
+        "role_beam_overlap_correlation": [
+          [
+            0.9999999999999998,
+            0.30214820030821676,
+            0.04105834716092221,
+            0.23374727805122808
+          ],
+          [
+            0.30214820030821676,
+            0.9999999999999998,
+            0.2322202363813763,
+            0.06881299244550411
+          ],
+          [
+            0.04105834716092221,
+            0.2322202363813763,
+            1.0000000000000002,
+            0.2981902138221168
+          ],
+          [
+            0.23374727805122808,
+            0.06881299244550411,
+            0.2981902138221168,
+            1.0000000000000002
+          ]
+        ],
+        "role_pixel_counts": [
+          106,
+          104,
+          104,
+          104
+        ]
+      }
+    },
+    "beam_overlap_is_complete_covariance": false,
+    "global_stellar_scale_max_q_change": {
+      "m1": 2.7755575615628914e-17,
+      "m2": 1.1102230246251565e-16
+    },
+    "half_degree_role_edge_max_q_change": {
+      "m1": 0.006890908368846191,
+      "m2": 0.007503742933229307
+    },
+    "independent_flux_phase_estimator_difference_deg": {
+      "m1": 20.92676871259937,
+      "m2": 0.36539228088127285
+    },
+    "role_rotation_covariance_exact": true
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "schema": "same_body_tracer_effective_kernel_amplitude_test_v01",
+  "status": "DIAGNOSTIC_TRACER_AMPLITUDE_DIFFERENCE_NOT_KERNEL_SPECIFIC",
+  "model": "fixed source kernel shape and TPG carrier; one beta per tracer",
+  "galaxies": {
+    "NGC3726": {
+      "formula_family": "K_thick_flared",
+      "n_common_radii": 6,
+      "radius_kpc_min": 3.49065522507454,
+      "radius_kpc_max": 12.21729328776089,
+      "hi": {
+        "beta_delta_v2_amplitude": -10341.575192389751,
+        "jackknife_se": 860.0986387035526,
+        "jackknife_min": -11031.061263213074,
+        "jackknife_max": -9945.512583964874,
+        "rmse_km_s": 5.0897571966384705
+      },
+      "halpha": {
+        "beta_delta_v2_amplitude": -1475.1392922077034,
+        "jackknife_se": 1551.354817399976,
+        "jackknife_min": -2468.265199794377,
+        "jackknife_max": -646.8683236180461,
+        "rmse_km_s": 7.61687439298403
+      },
+      "halpha_minus_hi": {
+        "delta_beta": 8866.435900182048,
+        "combined_jackknife_sigma": 1773.8295965987875,
+        "absolute_z": 4.998471057864245
+      },
+      "shape_controls": {
+        "models": {
+          "tau_kernel": {
+            "loo_rmse_v2": 1377.2017553709784
+          },
+          "constant_delta_v2": {
+            "loo_rmse_v2": 2379.979874056721
+          },
+          "multiplicative_carrier_v2": {
+            "loo_rmse_v2": 1192.4446765572354
+          }
+        },
+        "best_one_parameter_shape": "multiplicative_carrier_v2",
+        "tau_kernel_shape_wins": false,
+        "carrier_plus_tau_kernel": {
+          "loo_rmse_v2": 1649.5295193492525,
+          "normalized_design_condition_number": 41.17115074145814,
+          "loo_kernel_coefficient_min": -37017.8969893948,
+          "loo_kernel_coefficient_max": -3386.5676852073875,
+          "loo_kernel_coefficient_same_sign": true,
+          "improvement_over_carrier_only": -457.08484279201707,
+          "proportional_improvement_over_carrier_only": -0.3833174417044561,
+          "kernel_after_scale_candidate": false
+        }
+      }
+    },
+    "NGC4559": {
+      "formula_family": "K_exponential_disk",
+      "n_common_radii": 4,
+      "radius_kpc_min": 1.8325939931641335,
+      "radius_kpc_max": 7.330375972656534,
+      "resolutions": {
+        "HR": {
+          "hi": {
+            "beta_delta_v2_amplitude": -6359.138435401909,
+            "jackknife_se": 1132.583764962558,
+            "jackknife_min": -7590.242422416501,
+            "jackknife_max": -5972.073388587878,
+            "rmse_km_s": 4.647939832220975
+          },
+          "halpha": {
+            "beta_delta_v2_amplitude": -2189.3862448579603,
+            "jackknife_se": 1086.3403829373253,
+            "jackknife_min": -3140.263350495013,
+            "jackknife_max": -1393.56865795285,
+            "rmse_km_s": 5.219081939079054
+          },
+          "halpha_minus_hi": {
+            "delta_beta": 4169.752190543949,
+            "combined_jackknife_sigma": 1569.3570059923197,
+            "absolute_z": 2.6569812825395798
+          },
+          "projection_check_halpha_sin_i": 0.9335804264972017,
+          "shape_controls": {
+            "models": {
+              "tau_kernel": {
+                "loo_rmse_v2": 2551.4743611697827
+              },
+              "constant_delta_v2": {
+                "loo_rmse_v2": 2400.775306175814
+              },
+              "multiplicative_carrier_v2": {
+                "loo_rmse_v2": 2006.5593165342455
+              }
+            },
+            "best_one_parameter_shape": "multiplicative_carrier_v2",
+            "tau_kernel_shape_wins": false,
+            "carrier_plus_tau_kernel": {
+              "loo_rmse_v2": 3433.698563248274,
+              "normalized_design_condition_number": 11.54022430373,
+              "loo_kernel_coefficient_min": -5761.236138180899,
+              "loo_kernel_coefficient_max": 14627.087349295356,
+              "loo_kernel_coefficient_same_sign": false,
+              "improvement_over_carrier_only": -1427.1392467140283,
+              "proportional_improvement_over_carrier_only": -0.7112370090204965,
+              "kernel_after_scale_candidate": false
+            }
+          }
+        },
+        "LR": {
+          "hi": {
+            "beta_delta_v2_amplitude": -6958.496800141533,
+            "jackknife_se": 1459.5358673310668,
+            "jackknife_min": -8563.86275036343,
+            "jackknife_max": -6533.875736285074,
+            "rmse_km_s": 7.09993830100774
+          },
+          "halpha": {
+            "beta_delta_v2_amplitude": -2189.3862448579603,
+            "jackknife_se": 1086.3403829373253,
+            "jackknife_min": -3140.263350495013,
+            "jackknife_max": -1393.56865795285,
+            "rmse_km_s": 5.219081939079054
+          },
+          "halpha_minus_hi": {
+            "delta_beta": 4769.1105552835725,
+            "combined_jackknife_sigma": 1819.4450735392547,
+            "absolute_z": 2.6211896278938034
+          },
+          "projection_check_halpha_sin_i": 0.9335804264972017,
+          "shape_controls": {
+            "models": {
+              "tau_kernel": {
+                "loo_rmse_v2": 2865.55852471985
+              },
+              "constant_delta_v2": {
+                "loo_rmse_v2": 2329.2681473567955
+              },
+              "multiplicative_carrier_v2": {
+                "loo_rmse_v2": 2089.9179863087857
+              }
+            },
+            "best_one_parameter_shape": "multiplicative_carrier_v2",
+            "tau_kernel_shape_wins": false,
+            "carrier_plus_tau_kernel": {
+              "loo_rmse_v2": 3288.3604409920804,
+              "normalized_design_condition_number": 11.54022430373,
+              "loo_kernel_coefficient_min": -7904.29047636183,
+              "loo_kernel_coefficient_max": 11303.925526953366,
+              "loo_kernel_coefficient_same_sign": false,
+              "improvement_over_carrier_only": -1198.4424546832947,
+              "proportional_improvement_over_carrier_only": -0.5734399447894051,
+              "kernel_after_scale_candidate": false
+            }
+          }
+        }
+      },
+      "hi_resolution_beta_difference": 599.3583647396235
+    }
+  },
+  "two_sigma_difference_in_all_galaxy_resolution_tests": true,
+  "tau_kernel_shape_wins_all_equal_parameter_controls": false,
+  "kernel_embedded_channel_information_candidate": false,
+  "kernel_after_multiplicative_scale_candidate_all_tests": false,
+  "physical_channel_detected": false,
+  "limitations": [
+    "jackknife captures radial leverage but not full velocity covariance",
+    "only amplitude is varied; radial dilation and onset shift are fixed",
+    "H I and Halpha line formation, pressure support, beam and geometry remain conventional alternatives",
+    "small two-galaxy diagnostic"
+  ],
+  "claim_boundary": "same-body tracer effective-kernel amplitude diagnostic; a difference is not a physical observer-channel detection without full covariance and independent replication"
+}

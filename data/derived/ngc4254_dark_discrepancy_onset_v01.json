@@ -1,0 +1,18 @@
+{
+  "schema": "ngc4254_dark_discrepancy_onset_v01",
+  "status": "NGC4254_DARK_DISCREPANCY_ONSET_ALIGNS_WITH_H2_TO_HI_TRANSITION_DIAGNOSTIC",
+  "target": "vobs^2-vbar^2; no TPG subtraction",
+  "nominal_sustained_onset_kpc": 2.381644971274816,
+  "eighty_percent_model_onset_kpc": 4.286960948294669,
+  "q05_above_unity_onset_kpc": 5.239618936804596,
+  "all_models_positive_onset_kpc": 6.1922769253145225,
+  "h2_to_hi_crossover_kpc": 5.341285905716787,
+  "stellar_to_total_gas_crossover_kpc": null,
+  "robust_onset_minus_h2_hi_kpc": -0.10166696891219118,
+  "s4g_disk_break_kpc": 25.35,
+  "s4g_disk_break_inside_kinematic_coverage": false,
+  "tau_morphology_detected": false,
+  "channel_detected": false,
+  "interpretation": "the robust dark-discrepancy onset is colocated within one radial bin with the molecular-to-atomic gas transition",
+  "claim_boundary": "single-galaxy radial onset alignment; shared dependence on radius and mass conversion prevents causal morphology/channel attribution"
+}

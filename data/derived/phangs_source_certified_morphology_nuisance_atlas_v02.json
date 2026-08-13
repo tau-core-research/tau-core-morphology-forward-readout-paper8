@@ -1,0 +1,22 @@
+{
+  "schema": "phangs_source_certified_morphology_nuisance_atlas_v02",
+  "status": "NO_UNTOUCHED_LOW_ORDER_ENDPOINT_AFTER_MULTI_SOURCE_NUISANCE_UNION",
+  "population_size": 19,
+  "opened_endpoint_count": 6,
+  "untouched_low_order_endpoint_count": 0,
+  "untouched_low_order_endpoints": [],
+  "m2_clean_source_certified_bodies": [
+    "NGC4254"
+  ],
+  "cross_tracer_bar_conflicts": [
+    "NGC1385",
+    "NGC5068"
+  ],
+  "nuisance_union_rule": "m0 is always body nuisance; m2 is body nuisance if any source reports an S4G stellar BAR, PHANGS CO bar B/C, or grand-design G spiral; m1 is retained only when both published radial stellar A1 averages are below the pre-frozen 0.1 boundary",
+  "next_finite_action": "close the current low-order PHANGS selection lane and move to a higher-dimensional morphology basis before opening more tracer contrasts",
+  "phangs_source": "Stuber et al. 2023 Table 1 selected to the PHANGS-MUSE sample",
+  "phangs_source_url": "https://arxiv.org/abs/2305.17172",
+  "construction_uses_velocity_contrast": false,
+  "construction_uses_rotation_residual": false,
+  "claim_boundary": "source-only nuisance atlas; no new endpoint was opened, and zero eligible low-order endpoints does not imply absence of a complete channel or of higher-dimensional differential structure"
+}

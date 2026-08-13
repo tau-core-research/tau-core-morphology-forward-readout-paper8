@@ -1,0 +1,6 @@
+field_id,materialized,evidence
+SFH_01_BODY_CLOCK,False,No numeric Theta_M exists for a Paper 7 lens system.
+SFH_02_RELATIVE_MORPHOLOGY,False,"Paper 8 has source-frozen galaxy descriptors, but no object overlaps the Paper 7 lens-system set. SDP.81 has a supported common exact-ray extended-source morphology, but it is not a Paper 7 time-delay target."
+SFH_03_PATH_PULLBACK,False,"SDP.81 relative image geometry and the image-G WCS anchor are operational, but the ray-traced body-covector pullback remains open."
+SFH_04_TIME_COVECTOR,False,No quotient-basic numeric a_O has been derived from Theta_M and Phi_M.
+SFH_07_RANK_REPAIR_AUXILIARY,False,"SDP.81 provides four paths and two transitions, but the independent second mode lacks beam/lens covariance significance."

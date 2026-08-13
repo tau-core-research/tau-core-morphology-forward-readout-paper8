@@ -1,0 +1,67 @@
+{
+  "schema": "tau-core.paper8.body-amplitude-law-score.v01",
+  "status": "SOURCE_FEATURE_BODY_AMPLITUDE_LAW_HOLDOUT_SCORED",
+  "selected_ridge_alpha_train_cv": 100.0,
+  "train_cv": [
+    {
+      "alpha": 0.0,
+      "galaxy_balanced_cv_mse": 232711481.31969616
+    },
+    {
+      "alpha": 0.01,
+      "galaxy_balanced_cv_mse": 228262578.45460296
+    },
+    {
+      "alpha": 0.1,
+      "galaxy_balanced_cv_mse": 218960089.63754833
+    },
+    {
+      "alpha": 1.0,
+      "galaxy_balanced_cv_mse": 215113853.74312162
+    },
+    {
+      "alpha": 10.0,
+      "galaxy_balanced_cv_mse": 214046498.93847913
+    },
+    {
+      "alpha": 100.0,
+      "galaxy_balanced_cv_mse": 213787204.24053
+    }
+  ],
+  "coefficients": {
+    "family_intercept_K_compact_finite": 355886.0109918471,
+    "family_intercept_K_scale_tail_spiral": 7148.262324221536,
+    "family_intercept_K_exponential_disk": 10576.302008904064,
+    "family_intercept_K_thick_flared": 14685.03351623505,
+    "total_gas_fraction": -494.4685021494005,
+    "mean_log_sbdisk": 641.3887115898567,
+    "mean_bulge": 33.96935334704381,
+    "log_scale_radius_proxy_kpc": 184.46725095117583,
+    "log_tail_to_scale_ratio": 369.6926472414987
+  },
+  "n_holdout_galaxies": 44,
+  "n_holdout_points": 835,
+  "matched_vs_wrong": {
+    "win_fraction": 0.8409090909090909,
+    "mean_delta_km_s": -40.329526661880315
+  },
+  "matched_vs_newton": {
+    "win_fraction": 0.7954545454545454,
+    "mean_delta_km_s": -18.124527319792502
+  },
+  "matched_vs_tpg_v6": {
+    "win_fraction": 0.3181818181818182,
+    "mean_delta_km_s": 6.923611222900425
+  },
+  "matched_vs_mond": {
+    "win_fraction": 0.3409090909090909,
+    "mean_delta_km_s": 6.452365978113662
+  },
+  "change_vs_constant_family_body_model": {
+    "tpg_win_fraction": 0.04545454545454547,
+    "mond_win_fraction": 0.045454545454545414,
+    "tpg_mean_delta_km_s": -1.4413747493844502,
+    "mond_mean_delta_km_s": -1.4413747493844502
+  },
+  "claim_boundary": "retrospective source-feature amplitude-law diagnostic with train-only grouped CV; not prospective, not a parent derivation, and no channel/Tau validation"
+}

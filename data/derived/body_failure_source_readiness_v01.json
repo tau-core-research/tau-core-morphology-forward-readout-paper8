@@ -1,0 +1,15 @@
+{
+  "schema": "tau-core.paper8.body-failure-source-readiness.v01",
+  "status": "ALL_STRICT_BODY_FAILURES_REQUIRE_SOURCE_REFINEMENT",
+  "n_failures": 7,
+  "n_refined_source_ready": 0,
+  "n_scale_tail": 5,
+  "n_thick_flared": 2,
+  "cam_b_literature_candidate": {
+    "source": "Begum, Chengalur & Hopp (2003), arXiv:astro-ph/0301194",
+    "evidence": "regular HI field aligned with HI and optical axes; rotation traced beyond four optical scale lengths",
+    "boundary": "same broad HI family as kinematic endpoint and asymmetric-drift dominated; context only"
+  },
+  "rescoring_allowed": false,
+  "claim_boundary": "source-readiness audit triggered by post-score failures; may prioritize independent acquisition but cannot retune or rescore inspected holdout"
+}

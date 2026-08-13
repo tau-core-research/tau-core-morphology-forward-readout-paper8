@@ -1,0 +1,45 @@
+{
+  "schema": "tau_core_ugc08490_ngc5204_warp_body_v01",
+  "status": "SOURCE_NATIVE_TWO_PLANE_WARP_BODY_PROMOTED_OUTER_MODE_ONLY",
+  "source": "Jozsa et al. 2007 A&A 468 903-917, Table 6",
+  "source_pdf_sha256": "15b4ae9e2bb3268509e75b40e62def8cc4664a117fdcccafae8afb7f170ec8ba",
+  "n_tilted_rings": 24,
+  "inner_reference_orientation": {
+    "inclination_deg": 56.1,
+    "pa_deg": 257.4
+  },
+  "warp_onset": {
+    "radius_arcsec": 156.0,
+    "radius_kpc_source": 3.13,
+    "tip_deg": 5.8,
+    "tip_error_deg": 4.0
+  },
+  "inner_outer_mean_mutual_inclination_deg": 41.1,
+  "inner_outer_mean_mutual_inclination_error_deg": 5.7,
+  "source_inner_disk_range_arcsec": [
+    30.0,
+    180.0
+  ],
+  "source_outer_disk_range_arcsec": [
+    240.0,
+    420.0
+  ],
+  "source_rotation_rise_inner_km_s": 67.9,
+  "source_rotation_rise_delta_km_s": 14.6,
+  "source_rotation_rise_fraction": 0.22,
+  "ghasp_oriented_preflight_max_radius_kpc": 2.37,
+  "ghasp_preflight_overlaps_warp_onset": false,
+  "body_reclassification": "inner irregular/ringed disk plus outer two-plane grand-design warp",
+  "same_tracer_inner_context": {
+    "source": "Garrido et al. 2002 GHASP Halpha survey I",
+    "central_ring_radius_arcsec_approx": 30.0,
+    "central_ring_radius_kpc_approx": 0.68,
+    "morphology": "mottled appearance; spiral structure hard to see",
+    "source_rotation_assessment": "fairly symmetric",
+    "redshifted_high_point_caveat": "not significant; comes from a single isolated HII region",
+    "independent_body_coordinate": false
+  },
+  "outer_warp_can_explain_current_inner_side_incompatibility": false,
+  "endpoint_values_used_for_body_construction": false,
+  "claim_boundary": "source-native outer warp body; it begins beyond the current GHASP common-radius preflight and cannot be assigned as its cause"
+}

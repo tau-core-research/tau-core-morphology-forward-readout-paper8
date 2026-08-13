@@ -1,0 +1,11 @@
+galaxy,split_role,split_hash_rule,geometry_pass,phangs_co_bar_class,phangs_spiral_class,s4g_model_components,velocity_contrast_opened,rotation_residual_used
+NGC1087,pipeline_development_no_claim,uint32(sha256(galaxy)[0:8]) mod 2,True,B,,D;BAR,False,False
+NGC1300,confirmatory_untouched,uint32(sha256(galaxy)[0:8]) mod 2,True,C,G,B;D;BAR,False,False
+NGC1365,pipeline_development_no_claim,uint32(sha256(galaxy)[0:8]) mod 2,True,C,G,B;D;BAR;N,False,False
+NGC1385,confirmatory_untouched,uint32(sha256(galaxy)[0:8]) mod 2,True,A,F,D;BAR,False,False
+NGC1433,pipeline_development_no_claim,uint32(sha256(galaxy)[0:8]) mod 2,True,C,,B;D;BAR,False,False
+NGC1512,confirmatory_untouched,uint32(sha256(galaxy)[0:8]) mod 2,True,C,,B;D;BAR,False,False
+NGC1566,pipeline_development_no_claim,uint32(sha256(galaxy)[0:8]) mod 2,True,C,G,D;BAR;N,False,False
+NGC1672,pipeline_development_no_claim,uint32(sha256(galaxy)[0:8]) mod 2,True,C,G,B;D;BAR,False,False
+NGC5068,confirmatory_untouched,uint32(sha256(galaxy)[0:8]) mod 2,True,A,F,D;BAR;N,False,False
+NGC7496,pipeline_development_no_claim,uint32(sha256(galaxy)[0:8]) mod 2,True,C,F,D;BAR;N,False,False

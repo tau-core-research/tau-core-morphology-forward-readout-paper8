@@ -1,0 +1,168 @@
+{
+  "schema": "ngc4254_ffl_determinant_photometric_freeze_v02",
+  "status": "SOURCE_ONLY_PHOTOMETRIC_FFL_PROXY_WITH_BEAM_SCREEN_FROZEN_NOT_ENDPOINT_READY",
+  "galaxy": "NGC4254",
+  "inputs": {
+    "photometric_geometry_freeze": "data/derived/ngc4254_s4g_photometric_geometry_freeze_v02.json",
+    "photometric_geometry_freeze_sha256": "f5d5965b62f6cd5cf0b45c1f1085e492ecbb960f3cebb21fb800befd282832ef",
+    "surface_density_fields": "data/derived/ngc4254_baryonic_surface_density_fields_v01.fits",
+    "surface_density_fields_sha256": "1ec5ac541ca9f9284b182566362eb47eae72c491a1c80df933e0520dd7c763a1",
+    "surface_density_metadata": "data/derived/ngc4254_baryonic_surface_density_fields_v01.json",
+    "surface_density_metadata_sha256": "03b186974d546f1592329192c14a283dad1821ffc49ba934843d1a549c9ef947",
+    "viva_hi_moment0": "data/external/literature/ngc4254_phangs_tracer_velocity/ngc4254.viva.mom0.fits",
+    "viva_hi_moment0_sha256": "1eff8bde174acebae8b3e4b424f3ad011d74ae89170e3bb2c0c36177ba9cd452",
+    "velocity_or_residual_inputs": []
+  },
+  "outputs": {
+    "primary_vectors": "data/derived/ngc4254_ffl_determinant_photometric_vectors_v02.csv",
+    "primary_vectors_sha256": "02f12a5e2e6501e47069f000a14c416d72d19cc75de6c79541f609b24934b8d6",
+    "geometry_sensitivity": "data/derived/ngc4254_ffl_determinant_photometric_geometry_sensitivity_v02.csv",
+    "geometry_sensitivity_sha256": "57510c18ec53bc06b82e3947d51170fc4e8b92ae5c6c9cfa67581a78f4dca2e7",
+    "beam_overlap_matrix": "data/derived/ngc4254_ffl_determinant_beam_overlap_correlation_v02.csv",
+    "beam_overlap_matrix_sha256": "bf2e1fbe94fb3fe516012a07de346de3acfc70dbda815bbb6c74d1b55d672c7b",
+    "report": "reports/ngc4254_ffl_determinant_photometric_freeze_v02.md"
+  },
+  "geometry_sensitivity_summary": {
+    "n_photometric_variants": 8,
+    "n_annuli": 6,
+    "sign_stable_radial_indices": [
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "sign_unstable_radial_indices": [
+      1
+    ],
+    "low_conditioning_control_radial_indices_below_0p1": [
+      0
+    ],
+    "conditioning_threshold_used_for_selection": null,
+    "stability_rows": [
+      {
+        "radial_index": 0,
+        "radius_lo_arcsec": 5.0,
+        "radius_hi_arcsec": 15.0,
+        "photometric_q_min": 0.08033106717936306,
+        "photometric_q_max": 0.560962285371009,
+        "photometric_q_sign_stable": true,
+        "photometric_delta_uv_min": 0.08871208491358079,
+        "photometric_delta_uv_max": 0.937038736975582
+      },
+      {
+        "radial_index": 1,
+        "radius_lo_arcsec": 15.0,
+        "radius_hi_arcsec": 25.0,
+        "photometric_q_min": -0.4343892009186105,
+        "photometric_q_max": 0.10543430206800378,
+        "photometric_q_sign_stable": false,
+        "photometric_delta_uv_min": 0.5522793392607226,
+        "photometric_delta_uv_max": 0.7718574248889196
+      },
+      {
+        "radial_index": 2,
+        "radius_lo_arcsec": 25.0,
+        "radius_hi_arcsec": 35.0,
+        "photometric_q_min": 0.1475668721454688,
+        "photometric_q_max": 0.5422722434357371,
+        "photometric_q_sign_stable": true,
+        "photometric_delta_uv_min": 0.3453926561418308,
+        "photometric_delta_uv_max": 0.998875985054815
+      },
+      {
+        "radial_index": 3,
+        "radius_lo_arcsec": 35.0,
+        "radius_hi_arcsec": 45.0,
+        "photometric_q_min": 0.2245145301645543,
+        "photometric_q_max": 0.7885468663001597,
+        "photometric_q_sign_stable": true,
+        "photometric_delta_uv_min": 0.9256404564259754,
+        "photometric_delta_uv_max": 0.9987057342623442
+      },
+      {
+        "radial_index": 4,
+        "radius_lo_arcsec": 45.0,
+        "radius_hi_arcsec": 55.0,
+        "photometric_q_min": -0.42117741103148143,
+        "photometric_q_max": -0.25455232646627024,
+        "photometric_q_sign_stable": true,
+        "photometric_delta_uv_min": 0.9877338962187675,
+        "photometric_delta_uv_max": 0.9996010035742701
+      },
+      {
+        "radial_index": 5,
+        "radius_lo_arcsec": 55.0,
+        "radius_hi_arcsec": 65.0,
+        "photometric_q_min": -0.5329259113247515,
+        "photometric_q_max": -0.06657792219355683,
+        "photometric_q_sign_stable": true,
+        "photometric_delta_uv_min": 0.3432935472763105,
+        "photometric_delta_uv_max": 0.9999984983100925
+      }
+    ]
+  },
+  "beam_overlap_screen": {
+    "model": "exact elliptical Gaussian HI CLEAN-beam autocorrelation integrated over primary photometric annulus masks",
+    "beam_provenance": "VIVA FITS HISTORY AIPS CLEAN BMAJ/BMIN/BPA",
+    "pixel_scale_arcsec": 5.000000122800001,
+    "hi_beam_major_arcsec": 37.702799999999996,
+    "hi_beam_minor_arcsec": 32.94612,
+    "hi_beam_pa_deg_east_of_north": 42.4,
+    "beam_covariance_xy_pixels": [
+      [
+        8.932050904828456,
+        -1.2070712835992015
+      ],
+      [
+        -1.2070712835992015,
+        9.151755089505475
+      ]
+    ],
+    "annulus_pixel_counts": [
+      17,
+      43,
+      60,
+      79,
+      103,
+      116
+    ],
+    "correlation_eigenvalues": [
+      4.291133884851137,
+      1.4585374179648611,
+      0.22315238217384034,
+      0.018299437768005525,
+      0.007188953205752152,
+      0.001687924036405373
+    ],
+    "minimum_eigenvalue": 0.001687924036405373,
+    "participation_effective_rank": 1.7483071212824048,
+    "adjacent_correlations": [
+      0.9687347318371509,
+      0.9235569982027103,
+      0.9103258863919966,
+      0.9113512148129234,
+      0.9058518134764426
+    ],
+    "is_complete_q_covariance": false
+  },
+  "audit_checks": {
+    "geometry_is_endpoint_independent": true,
+    "velocity_or_residual_inputs_empty": true,
+    "all_primary_annuli_computable": true,
+    "all_geometry_controls_computable": true,
+    "beam_matrix_symmetric_unit_diagonal_psd": true
+  },
+  "physical_amplitude_ready": false,
+  "complete_covariance_ready": false,
+  "endpoint_scored": false,
+  "known_limitations": [
+    "q_shape_proxy is not the physical FFL response q_det",
+    "photometric PA ambiguity materially changes amplitudes and one inner sign",
+    "one disk-component control is nearly degenerate in the innermost annulus",
+    "the beam matrix is an HI support-overlap proxy, not covariance of nonlinear quadrant medians",
+    "CO, stellar-map, calibration, geometry, and endpoint noise covariance are not included",
+    "kappa_X/kappa_Y, terminal gain, paired-side involution, and role-to-probe identity remain open"
+  ],
+  "claim_boundary": "source-only photometric determinant-shape proxy plus minimum HI-beam overlap screen; not physical q_det, a complete covariance, channel/time detection, or endpoint score"
+}

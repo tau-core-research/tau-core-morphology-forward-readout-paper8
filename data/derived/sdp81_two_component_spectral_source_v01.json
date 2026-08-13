@@ -1,0 +1,44 @@
+{
+  "schema": "tau_core.paper8.sdp81-two-component-spectral-source.v01",
+  "channels_one_based": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58
+  ],
+  "aggregate_local_maxima_one_based": [
+    52,
+    55
+  ],
+  "one_component_center_one_based": [
+    52
+  ],
+  "two_component_centers_one_based": [
+    52,
+    55
+  ],
+  "profile_sigma_channels": 1.5,
+  "one_component": {
+    "rss": 6.237786595742786e-07,
+    "bic": -764.8795175448673,
+    "parameter_count": 8
+  },
+  "two_component": {
+    "rss": 2.1000251687086122e-07,
+    "bic": -797.644506418247,
+    "parameter_count": 12
+  },
+  "delta_bic_one_minus_two": 32.76498887337971,
+  "two_component_spectral_structure_promoted": true,
+  "velocity_field_or_clock_identified": false,
+  "time_score_authorized": false,
+  "verdict": "TWO_COMPONENT_SOURCE_SPECTRUM_SUPPORTED",
+  "claim_boundary": "Aperture-spectrum complexity audit; not a spatial velocity field, body clock, observer-time effect, or Tau detection."
+}

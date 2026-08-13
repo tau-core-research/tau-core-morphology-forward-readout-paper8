@@ -1,0 +1,36 @@
+{
+  "schema": "tau_core_ugc07323_ngc4242_body_freeze_v01",
+  "status": "SOURCE_NATIVE_QUALITATIVE_RING_PLUS_APPROACHING_EXTENSION_BODY_FROZEN",
+  "galaxy": "UGC07323 / UGC 7323 / NGC 4242",
+  "selection_uses_vobs_q_or_residual": false,
+  "sources": [
+    {
+      "source": "Richards et al. 2018 MNRAS 476 5127, Appendix A19",
+      "doi": "10.1093/mnras/sty514",
+      "evidence": "central HI ring around high-surface-brightness stellar concentration; southwest extension on approaching side without overlapping stellar population; extension also visible in narrow-band Halpha"
+    },
+    {
+      "source": "WHISP UGC 7323 public overview",
+      "sha256": "54d77a62d733ddcae801a2a8d91768d940407365e3c935a0ef13a16a690bf1fe",
+      "evidence": "independent graphical confirmation of ring-like central HI and southwest extension"
+    }
+  ],
+  "body_modes": [
+    {
+      "mode": "inner_hi_ring",
+      "orientation": "even/ring-like",
+      "numeric_onset_available": false
+    },
+    {
+      "mode": "southwest_hi_halpha_extension",
+      "orientation": "approaching-side localized",
+      "numeric_onset_available": false
+    }
+  ],
+  "source_rotation_context": "HI solid-body-like isovelocity contours; ionized gas field similar but more irregular; neutral and ionized rotation curves agree where overlapping",
+  "radial_window_freeze_allowed": false,
+  "signed_velocity_correction_predicted": false,
+  "body_conditioned_side_function_allowed": false,
+  "next_test": "zero-parameter full-common-support reciprocal-load compatibility only",
+  "claim_boundary": "qualitative source-native body modes; no numeric onset, sign, or amplitude may be inferred from the opened side curves"
+}

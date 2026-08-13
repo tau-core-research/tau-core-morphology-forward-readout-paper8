@@ -1,0 +1,80 @@
+{
+  "schema": "ngc4254_cross_wedge_geometry_sensitivity_v06",
+  "variants": [
+    {
+      "id": "nominal",
+      "max_abs_km_s": 4.613012451705025,
+      "chi2": 55.15357759797293,
+      "p": 1.2137630685327788e-10
+    },
+    {
+      "id": "pa_m5",
+      "max_abs_km_s": 4.0542726004945795,
+      "chi2": 49.953796627922046,
+      "p": 1.4162958986587365e-09
+    },
+    {
+      "id": "pa_p5",
+      "max_abs_km_s": 3.9702136267625,
+      "chi2": 42.780587855464304,
+      "p": 4.0934275549522246e-08
+    },
+    {
+      "id": "inc_m5",
+      "max_abs_km_s": 7.575476403896077,
+      "chi2": 130.92927260687222,
+      "p": 1.5113189490255664e-26
+    },
+    {
+      "id": "inc_p5",
+      "max_abs_km_s": 1.778831350130806,
+      "chi2": 7.907133281145916,
+      "p": 0.16142850630113756
+    },
+    {
+      "id": "east_m1",
+      "max_abs_km_s": 4.750964741173393,
+      "chi2": 68.08240154284472,
+      "p": 2.5671900916059015e-13
+    },
+    {
+      "id": "east_p1",
+      "max_abs_km_s": 4.4845187953615335,
+      "chi2": 104.42207863367035,
+      "p": 6.172446138786173e-21
+    },
+    {
+      "id": "north_m1",
+      "max_abs_km_s": 4.062761838564156,
+      "chi2": 60.56841127499029,
+      "p": 9.273694611263146e-12
+    },
+    {
+      "id": "north_p1",
+      "max_abs_km_s": 5.370020970915406,
+      "chi2": 66.74457403650362,
+      "p": 4.86869865189927e-13
+    },
+    {
+      "id": "wedge20",
+      "max_abs_km_s": 4.087636322711506,
+      "chi2": 22.46730363807994,
+      "p": 0.00042662437446578744
+    },
+    {
+      "id": "wedge40",
+      "max_abs_km_s": 4.309267718690611,
+      "chi2": 74.6302344654853,
+      "p": 1.11116749945145e-14
+    }
+  ],
+  "maximum_absolute_residual_range_km_s": [
+    1.778831350130806,
+    7.575476403896077
+  ],
+  "all_formal_residual_tests_p_below_0_01": false,
+  "geometry_eliminates_remainder": false,
+  "full_spatial_covariance_complete": false,
+  "common_channel_remainder_identified": false,
+  "claim_boundary": "predeclared geometry sensitivity of same-endpoint spatial holdout; not a channel detection"
+}

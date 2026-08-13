@@ -1,0 +1,23 @@
+{
+  "schema": "ngc4254_cross_wedge_gasdynamics_remainder_v05",
+  "sensitivity_id": "east_m1",
+  "geometry_offsets": {
+    "pa_deg": 0.0,
+    "inclination_deg": 0.0,
+    "center_east_arcsec": -1.0,
+    "center_north_arcsec": 0.0,
+    "wedge_half_deg": 30.0
+  },
+  "training_region": "outside frozen +/-30 deg major-axis wedge",
+  "heldout_region": "inside frozen major-axis wedge used by G_spec",
+  "harmonic_basis": "m0+m1+m2 independently in each frozen annulus",
+  "n_heldout_radial_contrasts": 5,
+  "residual_zero_chi2": 68.08240154284472,
+  "residual_zero_dof": 5,
+  "residual_zero_p": 2.5671900916059015e-13,
+  "maximum_absolute_residual_km_s": 4.750964741173393,
+  "endpoint_independent_source_body_prediction": false,
+  "spatial_holdout_nuisance_prediction": true,
+  "common_channel_remainder_identified": false,
+  "claim_boundary": "cross-wedge gas-dynamic nuisance prediction; same endpoint field, not source-side Tau prediction"
+}

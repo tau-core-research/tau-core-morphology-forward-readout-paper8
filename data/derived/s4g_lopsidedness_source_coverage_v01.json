@@ -1,0 +1,13 @@
+{
+  "schema": "s4g_lopsidedness_source_coverage_v01",
+  "status": "SOURCE_COVERAGE_INSUFFICIENT_NOT_ENDPOINT",
+  "catalog_id": "J/ApJ/772/135/table1",
+  "catalog_rows": 167,
+  "sparc_rows": 175,
+  "unique_matches": 1,
+  "endpoint_access": false,
+  "reason": "published sample requires nearly face-on inclination and has insufficient SPARC overlap",
+  "source_paper_arxiv": "https://arxiv.org/abs/1305.2940",
+  "source_paper_doi": "10.1088/0004-637X/772/2/135",
+  "claim_boundary": "source_coverage_audit_only_no_endpoint_score"
+}

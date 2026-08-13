@@ -1,0 +1,58 @@
+{
+  "schema": "ngc3627_phangs_tracer_velocity_fields_v01",
+  "status": "SOURCE_NATIVE_2D_TRACER_VELOCITY_FIELDS_ACQUIRED",
+  "galaxy": "NGC3627",
+  "tracers": [
+    "PHANGS-MUSE H-alpha",
+    "PHANGS-ALMA CO(2-1)"
+  ],
+  "muse_psf_fwhm_arcsec": 1.05,
+  "co_beam_fwhm_arcsec": [
+    1.6262350652836801,
+    1.6262350652836801
+  ],
+  "muse_shape": [
+    1188,
+    627
+  ],
+  "co_shape": [
+    1,
+    1,
+    686,
+    398
+  ],
+  "manifest": [
+    {
+      "filename": "NGC3627_MAPS_copt_1.05asec.fits",
+      "url": "https://dataportal.eso.org/dataPortal/file/ADP.2021-07-16T10:20:56.470",
+      "sha256": "baa454dbda4bdf46b8dd4fbee1da1741c4aa04f6c3531cde252da4a8c1bd125d",
+      "bytes": 316126080
+    },
+    {
+      "filename": "group.uid___A001_X2fb_X286.lp_schinner.ngc3627_12m7mtp_co21_mom1wprior.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fb_X286.lp_schinner/group.uid___A001_X2fb_X286.lp_schinner.ngc3627_12m7mtp_co21_mom1wprior.fits",
+      "sha256": "5eb99c32ff578486df5dc563e1e66f470c55e0f1dff05b413b71763d08856e70",
+      "bytes": 1103040
+    },
+    {
+      "filename": "group.uid___A001_X2fb_X286.lp_schinner.ngc3627_12m7mtp_co21_emom1wprior.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fb_X286.lp_schinner/group.uid___A001_X2fb_X286.lp_schinner.ngc3627_12m7mtp_co21_emom1wprior.fits",
+      "sha256": "582858cb729139409dca7d8bd3b294ed9298351904aebd3ec0693f7a92afc824",
+      "bytes": 1103040
+    },
+    {
+      "filename": "group.uid___A001_X2fb_X286.lp_schinner.ngc3627_12m7mtp_co21_broad_mom0.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fb_X286.lp_schinner/group.uid___A001_X2fb_X286.lp_schinner.ngc3627_12m7mtp_co21_broad_mom0.fits",
+      "sha256": "ec4640ce1d7b94f3c437338992981ff5cb29a3553a9fdc2e33d539aa7c4484b7",
+      "bytes": 1103040
+    }
+  ],
+  "source_side_selection": {
+    "role": "independent morphology-complex stress-control replication",
+    "rule": "public matched PHANGS-MUSE/ALMA fields, moderate inclination, and source-known bar plus interaction; selected without tracer contrast or rotation residual",
+    "muse_release": "https://www.eso.org/sci/publications/announcements/sciann17425.html",
+    "alma_release": "https://arxiv.org/abs/2104.07739"
+  },
+  "construction_uses_rotation_residual": false,
+  "claim_boundary": "source-native 2D field acquisition and integrity freeze; no tracer innovation or Tau-channel result"
+}

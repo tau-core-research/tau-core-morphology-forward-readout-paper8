@@ -1,0 +1,24 @@
+{
+  "schema": "ugc06787_common_angular_transport_gate_v01",
+  "status": "UGC06787_ANGULAR_FIRST_TRANSPORT_RULE_FROZEN_WORLD_AXIS_CALIBRATION_OPEN",
+  "galaxy": "UGC06787",
+  "n_ghasp_points": 15,
+  "ghasp_native_max_radius_arcsec": 173.7,
+  "ghasp_median_kpc_per_arcsec": 0.09163934426229509,
+  "ghasp_implied_distance_mpc": 18.901989344262297,
+  "whisp_printed_distance_mpc": 16.0,
+  "sparc_distance_mpc": 21.3,
+  "kpc_per_arcsec": {
+    "ghasp_implied": 0.09163934426229509,
+    "whisp_16_mpc": 0.07757011611276755,
+    "sparc_21p3_mpc": 0.1032652170751218
+  },
+  "distance_spread_max_over_min": 1.33125,
+  "transport_rule": "compare GHASP native angular radius r2 to WHISP source-figure angular axes before choosing one physical distance conversion",
+  "kpc_transport_allowed": false,
+  "whisp_world_axis_calibration_ready": false,
+  "common_hi_halpha_angular_transport_ready": false,
+  "physical_a_row_constructed": false,
+  "endpoint_access": false,
+  "claim_boundary": "source-side scale audit only; no residual access, no calibrated WHISP WCS, no common beam/radial operator, and no channel test"
+}

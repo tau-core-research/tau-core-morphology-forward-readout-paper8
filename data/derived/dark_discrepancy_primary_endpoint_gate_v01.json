@@ -1,0 +1,45 @@
+{
+  "schema": "dark_discrepancy_primary_endpoint_gate_v01",
+  "status": "DARK_DISCREPANCY_PRIMARY_ENDPOINT_FROZEN_2D_BARYONIC_FIELDS_INCOMPLETE",
+  "primary_target": "Delta_DM(R,theta)=v_common(R,theta)^2-v_baryon(R,theta)^2",
+  "equivalent_acceleration_target": "Delta_g(R,theta)=g_common(R,theta)-g_baryon(R,theta)",
+  "tau_core_attribution_order": [
+    "source_morphology component inside Delta_DM",
+    "observer-source path/channel component inside remaining Delta_DM",
+    "shared or interaction component if source and channel are nonseparable"
+  ],
+  "tracer_contrast_role": "nuisance calibration for v_common only; never the primary Tau Core endpoint",
+  "phangs_2d_readiness": {
+    "NGC3351": {
+      "common_co_halpha_velocity_field": true,
+      "co_molecular_intensity_field": true,
+      "stellar_mass_surface_density_field": true,
+      "atomic_hi_surface_density_field": false,
+      "two_dimensional_baryonic_gravity_field_ready": false,
+      "dark_discrepancy_field_open_allowed": false
+    },
+    "NGC4254": {
+      "common_co_halpha_velocity_field": true,
+      "co_molecular_intensity_field": true,
+      "stellar_mass_surface_density_field": true,
+      "atomic_hi_surface_density_field": true,
+      "two_dimensional_baryonic_gravity_field_ready": false,
+      "dark_discrepancy_field_open_allowed": false
+    }
+  },
+  "existing_one_dimensional_evidence": {
+    "global_s4g_morphology_status": "RETROSPECTIVE_S4G_DARK_DISCREPANCY_MORPHOLOGY_SIGNAL_FAIL",
+    "global_s4g_morphology_holdout_mse_reduction": -0.2604680249237176,
+    "dark_discrepancy_zone_multitracer_status": "DIAGNOSTIC_ONLY_D1P5_ZONE_MULTITRACER_CHANNEL_NOT_REPLICATED"
+  },
+  "forbidden_shortcuts": [
+    "treat CO-Halpha contrast as the dark discrepancy",
+    "compute baryonic gravity without stellar and atomic-gas mass fields",
+    "identify channel origin from a morphology-correlated residual"
+  ],
+  "next_required_acquisition": [
+    "source-native HI surface-density maps or a documented central-footprint negligible-HI gate",
+    "mass-conversion and vertical-thickness covariance"
+  ],
+  "claim_boundary": "endpoint architecture and readiness gate; no Tau Core morphology or channel detection"
+}

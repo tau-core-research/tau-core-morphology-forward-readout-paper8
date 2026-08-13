@@ -1,0 +1,39 @@
+{
+  "schema": "ugc08490_hi_halpha_channel_diagnostic_v01",
+  "status": "NEGATIVE_RESULT_PRESERVED",
+  "galaxy": "UGC08490 / NGC5204",
+  "geometry": {
+    "center": "external SIMBAD center transported to printed B1950 axes",
+    "position_angle_rule": "line joining source-side approaching/receding WHISP color centroids",
+    "inclination_deg": 53.0,
+    "inclination_source": "WHISP printed overview",
+    "minimum_abs_cos_theta": 0.65,
+    "radii_arcsec": [
+      30.0,
+      60.0,
+      90.0
+    ],
+    "annulus_half_width_arcsec": 15.0
+  },
+  "hi_usable_radial_support_by_side": {
+    "approaching": {
+      "minimum_usable_radius_arcsec": 6.554107503064721,
+      "maximum_usable_radius_arcsec": 411.045613623265,
+      "usable_pixels": 1022
+    },
+    "receding": {
+      "minimum_usable_radius_arcsec": 136.49478082452617,
+      "maximum_usable_radius_arcsec": 587.720657777844,
+      "usable_pixels": 1787
+    }
+  },
+  "halpha_max_radius_arcsec": 112.4,
+  "common_two_side_radial_support": false,
+  "one_side_audit_points": 3,
+  "matched_two_side_points": 0,
+  "median_hi_minus_halpha_km_s": null,
+  "rms_hi_minus_halpha_km_s": null,
+  "kernel_specific_channel_test_allowed": false,
+  "endpoint_access": false,
+  "claim_boundary": "the color-quantized WHISP figure has no two-sided usable H I support inside the H-alpha radial range; no same-body channel comparison is identified"
+}

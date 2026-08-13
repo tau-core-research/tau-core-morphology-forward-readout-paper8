@@ -1,0 +1,40 @@
+{
+  "schema": "phangs_population_morphology_label_audit_v01",
+  "status": "CONFIRMATORY_MORPHOLOGY_LABEL_INTEGRITY_FAILED",
+  "rows": [
+    {
+      "galaxy": "IC5332",
+      "s4g_fitted_components": "B;D",
+      "phangs_co_bar_class": null,
+      "phangs_inspector_agreement": null,
+      "verdict": "BAR_ABSENCE_NOT_PROVED",
+      "reason": "S4G fit omits an explicit BAR component, but no independent validated bar-absence label is frozen",
+      "confirmatory_endpoint": true
+    },
+    {
+      "galaxy": "NGC4254",
+      "s4g_fitted_components": "B;D",
+      "phangs_co_bar_class": "A",
+      "phangs_inspector_agreement": 0.8,
+      "verdict": "NONBARRED_LABEL_SUPPORTED",
+      "reason": "independent PHANGS CO morphology supports absence of a bar-like feature",
+      "confirmatory_endpoint": false
+    },
+    {
+      "galaxy": "NGC4321",
+      "s4g_fitted_components": "B;D",
+      "phangs_co_bar_class": "C",
+      "phangs_inspector_agreement": 1.0,
+      "verdict": "NONBARRED_LABEL_CONTRADICTED",
+      "reason": "independent PHANGS CO morphology identifies a clear bar-like feature",
+      "confirmatory_endpoint": true
+    }
+  ],
+  "confirmatory_label_integrity_pass": false,
+  "source_rule_error": "absence of a fitted BAR component in one S4G decomposition model was treated as proof of physical bar absence",
+  "source_reference": "Stuber et al. 2023, The Gas Morphology of Nearby Star-Forming Galaxies, Table 1",
+  "source_url": "https://arxiv.org/abs/2305.17172",
+  "endpoint_timing": "audit performed after the confirmatory tracer contrasts were opened; it can demote but cannot replace endpoints",
+  "replacement_endpoint_allowed": false,
+  "claim_boundary": "source-label integrity audit; it preserves the raw frozen statistic but blocks morphology-conditioned channel promotion and any post-result replacement selection"
+}

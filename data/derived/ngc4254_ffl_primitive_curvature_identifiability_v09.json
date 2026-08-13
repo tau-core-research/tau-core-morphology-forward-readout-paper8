@@ -1,0 +1,119 @@
+{
+  "audit_checks": {
+    "different_effective_gains": true,
+    "endpoint_scored": false,
+    "positive_curvature_witnesses": true,
+    "same_stationary_source_state": true,
+    "source_only": true,
+    "velocity_or_residual_inputs_empty": true
+  },
+  "claim_boundary": "constructive source-state/Hessian identifiability no-go and measurement-covariance separation; not a physical curvature or gain derivation, channel detection, component recovery, or endpoint score",
+  "finite_witness": {
+    "all_conditional_gains_distinct": true,
+    "gain_max": 0.6666666666666666,
+    "gain_min": 0.3333333333333333,
+    "models": [
+      {
+        "conditional_gain": 0.3333333333333333,
+        "conditional_terminal_q": 0.03043168437333333,
+        "effective_k": 0.5,
+        "kappa_X": 1.0,
+        "kappa_Y": 1.0,
+        "mu_R": 0.0,
+        "same_stationary_q_shape_proxy": 0.09129505312
+      },
+      {
+        "conditional_gain": 0.4736842105263158,
+        "conditional_terminal_q": 0.043245025162105266,
+        "effective_k": 0.9,
+        "kappa_X": 1.0,
+        "kappa_Y": 9.0,
+        "mu_R": 0.0,
+        "same_stationary_q_shape_proxy": 0.09129505312
+      },
+      {
+        "conditional_gain": 0.6666666666666666,
+        "conditional_terminal_q": 0.06086336874666666,
+        "effective_k": 2.0,
+        "kappa_X": 4.0,
+        "kappa_Y": 4.0,
+        "mu_R": 0.0,
+        "same_stationary_q_shape_proxy": 0.09129505312
+      },
+      {
+        "conditional_gain": 0.6153846153846154,
+        "conditional_terminal_q": 0.05618157115076923,
+        "effective_k": 1.6,
+        "kappa_X": 2.0,
+        "kappa_Y": 8.0,
+        "mu_R": 0.0,
+        "same_stationary_q_shape_proxy": 0.09129505312
+      }
+    ],
+    "normalization": {
+      "Q_star": 1.0,
+      "access_offset_1_plus_lambda_terms": 1.0,
+      "mu_R": 0.0,
+      "role": "dimensionless algebraic witness only; not a physical normalization choice"
+    },
+    "same_q_shape_in_every_model": true
+  },
+  "forbidden_substitutions": [
+    "fit kappa_X or kappa_Y to a velocity or dark-discrepancy residual",
+    "identify inverse measurement variance with parent action stiffness",
+    "treat the 72 nuisance/systematic scenarios as physical source interventions",
+    "use cross-galaxy variation as a local Hessian without proving common coordinates and perturbation equivalence"
+  ],
+  "galaxy": "NGC4254",
+  "inputs": {
+    "v07_manifest": "data/derived/ngc4254_ffl_direct_beam_m2_operator_v07.json",
+    "v07_manifest_sha256": "5140c9259dc73ed756af656e61be1319fe2b94c0f27afd261a30abe292ae05ab",
+    "v08_manifest": "data/derived/ngc4254_ffl_terminal_identifiability_v08.json",
+    "v08_manifest_sha256": "a73a9c6a5021047b1526d27d0ca2f01b5acc4b21b8f9715742613783da58d6f3",
+    "velocity_or_residual_inputs": []
+  },
+  "measurement_covariance_no_go": {
+    "measurement_object": "H_like=J^T Sigma_measurement^-1 J or propagated estimator covariance",
+    "missing_bridge": "an independently derived fluctuation/statistical law plus conjugate scale and source-coordinate normalization",
+    "not_equal_without_bridge": true,
+    "physical_object": "H_action=D^2 A_parent on a physically normalized source perturbation direction",
+    "reason": "measurement noise can vary while the physical action is fixed, and physical curvature can vary while the same measurement covariance is retained",
+    "v05_monte_carlo_role": "measurement and declared systematic robustness of q_shape_proxy only",
+    "v05_or_v07_covariance_can_define_kappa_X_kappa_Y": false
+  },
+  "minimal_curvature_routes": [
+    {
+      "claim_level_if_completed": "physical source-side derivation",
+      "requirement": "derive the primitive matched-access and source-consensus terms from B_tau^base, the universal seed, stabilized M_tau, and irreducible observer-source relation",
+      "route": "parent_action"
+    },
+    {
+      "claim_level_if_completed": "empirical source-curvature estimate under the proved perturbation map",
+      "requirement": "independently normalized physical source perturbation with measured first response around the same body-conditioned lane",
+      "route": "controlled_source_response"
+    },
+    {
+      "claim_level_if_completed": "conditional curvature inference",
+      "requirement": "derive a fluctuation law, conjugate scale, equilibrium class, and map from measured fluctuations to the parent source coordinate",
+      "route": "fluctuation_bridge"
+    }
+  ],
+  "result": {
+    "endpoint_scoring_allowed": false,
+    "measurement_covariance_promoted_to_parent_hessian": false,
+    "next_finite_target": "derive one physically normalized parent/source perturbation direction and its primitive second variation",
+    "physical_gain_identified": false,
+    "primitive_curvatures_identified": false,
+    "robust_source_shape_retained": true
+  },
+  "schema": "ngc4254_ffl_primitive_curvature_identifiability_v09",
+  "stationary_state_countermodel": {
+    "different_second_variations": true,
+    "local_action_family": "A=(mu_R/2)||c-c0||^2+(kappa_X/2)||(c-c0)-(x-x0)||^2+(kappa_Y/2)||(c-c0)-iota(y-y0)||^2",
+    "shared_action_value_at_state": 0.0,
+    "shared_first_variation_at_state": 0.0,
+    "shared_stationary_state": "(x,c,y)=(x0,c0,y0) for every positive kappa_X,kappa_Y and nonnegative mu_R",
+    "verdict": "zeroth-order source coordinates and a stationary morphology chart do not identify primitive Hessian curvatures"
+  },
+  "status": "SOURCE_STATE_DOES_NOT_IDENTIFY_PRIMITIVE_FFL_CURVATURES_PROVED_NO_ENDPOINT"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "tau-core.paper8.body-failure-channel-stratification.v01",
+  "status": "BODY_FAILURE_CHANNEL_LOAD_ASSOCIATION_FAIL",
+  "failure_rule": "holdout rmse_body_matched >= rmse_Newton",
+  "body_model": "constant-family body-only Newtonian kernel v01",
+  "channel_variables": [
+    "foreground_lens_geometry_weight",
+    "foreground_angular_weight",
+    "stellar_crowding_angular_weight"
+  ],
+  "n_overlap_holdout": 21,
+  "n_body_failures": 4,
+  "n_body_successes": 17,
+  "mean_channel_load_failure": 0.692447650156806,
+  "mean_channel_load_success": 9.921929279206063,
+  "failure_minus_success": -9.229481629049257,
+  "two_sided_permutation_p": 0.534046595340466,
+  "channel_load_vs_body_delta_pearson_r": -0.14870949807034653,
+  "physical_channel_detected": false,
+  "claim_boundary": "failure-stratified reuse of frozen observational-load proxies; diagnostic association only, not causal path/time/lightcone transfer"
+}

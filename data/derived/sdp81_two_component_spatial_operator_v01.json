@@ -1,0 +1,98 @@
+{
+  "schema": "tau_core.paper8.sdp81-two-component-spatial-operator.v01",
+  "channels_one_based": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58
+  ],
+  "component_centers_one_based": [
+    52,
+    55
+  ],
+  "profile_sigma_channels": 1.5,
+  "source_basis_count_per_component": 49,
+  "fit_block_count": 44,
+  "pixel_decimation": 4,
+  "mapping": "exact lens ray shooting plus ALMA beam convolution",
+  "one_component": {
+    "relative_residual": 0.887161520921342,
+    "rss": 6.690124961818647e-05,
+    "bic": -32757.413739834104,
+    "nominal_parameter_count": 93,
+    "component_source_fluxes": [
+      0.03768036942379851
+    ],
+    "component_map_cosine_similarity": null,
+    "nnls_reported_residual_norm": 0.008179318407922905
+  },
+  "two_component": {
+    "relative_residual": 0.7353842483946487,
+    "rss": 4.596819836357161e-05,
+    "bic": -33116.93199641757,
+    "nominal_parameter_count": 142,
+    "component_source_fluxes": [
+      0.029230723632667162,
+      0.049142302659084786
+    ],
+    "component_map_cosine_similarity": 0.5765432131792424,
+    "nnls_reported_residual_norm": 0.006779985130040597
+  },
+  "spectrally_flat_null": {
+    "relative_residual": 0.8895556238052624,
+    "rss": 6.726281757843741e-05,
+    "bic": -32746.919506354003,
+    "nominal_parameter_count": 93,
+    "component_source_fluxes": [
+      0.020786178857356185
+    ],
+    "component_map_cosine_similarity": null,
+    "nnls_reported_residual_norm": 0.008201391197744283
+  },
+  "delta_bic_one_minus_two": 359.51825658346206,
+  "delta_bic_flat_minus_two": 370.01249006356375,
+  "both_component_maps_nonzero": true,
+  "component_maps_spatially_distinct": true,
+  "leave_one_path_out": [
+    {
+      "held_path_index": 0,
+      "one_component_relative_residual": 0.9473835926600113,
+      "two_component_relative_residual": 1.1783012759057303,
+      "fractional_squared_residual_improvement": -0.5468955058488238
+    },
+    {
+      "held_path_index": 1,
+      "one_component_relative_residual": 0.9175054299607153,
+      "two_component_relative_residual": 0.9124939275464793,
+      "fractional_squared_residual_improvement": 0.010894356803297534
+    },
+    {
+      "held_path_index": 2,
+      "one_component_relative_residual": 79302.05621296576,
+      "two_component_relative_residual": 35192.793875818854,
+      "fractional_squared_residual_improvement": 0.8030578860582448
+    },
+    {
+      "held_path_index": 3,
+      "one_component_relative_residual": 121.97500338593291,
+      "two_component_relative_residual": 190.32301800292322,
+      "fractional_squared_residual_improvement": -1.4346747625022336
+    }
+  ],
+  "predictive_positive_path_count": 2,
+  "predictive_median_squared_residual_improvement": -0.26800057452276316,
+  "promotion_rule": "two-component residual < 1, BIC improves by >6 over both one-component and flat operators, both source maps are nonzero, their cosine similarity is <0.95, at least 3/4 held paths improve, and the median held-path squared-residual improvement is >5%",
+  "two_component_spatial_source_promoted": false,
+  "theta_M_identified": false,
+  "a_O_identified": false,
+  "time_score_authorized": false,
+  "verdict": "TWO_COMPONENT_SPATIAL_SOURCE_NOT_SUPPORTED",
+  "claim_boundary": "Finite 4D source-morphology forward audit; not a velocity field, body clock, observer-time effect, or Tau Core detection."
+}

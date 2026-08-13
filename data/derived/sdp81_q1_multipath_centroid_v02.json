@@ -1,0 +1,34 @@
+{
+  "schema": "sdp81_q1_multipath_centroid_v02",
+  "path_count": 4,
+  "target_channels_one_based": [
+    47,
+    52
+  ],
+  "nominal": {
+    "radius_arcsec": 0.12,
+    "dx_mas": 0.0,
+    "dy_mas": 0.0,
+    "path_centroids_radio_lsrk_km_s": [
+      24.4006489745521,
+      37.44512884725853,
+      21.621621298293647,
+      37.78380323248572
+    ],
+    "centroid_path_std_km_s": 8.50835121234711,
+    "centroid_path_range_km_s": 16.16218193419207
+  },
+  "registration_aperture_centroid_std_range_km_s": [
+    6.42684569370888,
+    11.88027117259584
+  ],
+  "rolling_six_channel_finite_windows": 32,
+  "empirical_upper_tail_fraction": 0.625,
+  "frequency_axis": "radio velocity from FITS FREQ/RESTFRQ in LSRK",
+  "constant_magnification_removed_by_centroid": true,
+  "differential_magnification_line_shape_control_complete": false,
+  "lens_family_null_complete": false,
+  "multipath_common_channel_detected": false,
+  "effective_time_readout_detected": false,
+  "claim_boundary": "same-source multipath centroid diagnostic; lens mapping, beam covariance, and differential magnification remain open"
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "phangs_population_channel_test_v01",
+  "status": "PREREGISTERED_POPULATION_M2_NUMERICAL_GATE_PASSED_LABEL_INTEGRITY_FAILED",
+  "confirmatory_galaxies": [
+    {
+      "galaxy": "IC5332",
+      "beam_independent_pixels": 585,
+      "retained_m2_chi2": 27.961334227643523,
+      "retained_m2_dof": 10,
+      "retained_m2_p": 0.0018311593838746057,
+      "wrong_family_m1_chi2": 23.84518300842898,
+      "wrong_family_m1_dof": 10,
+      "wrong_family_m1_p": 0.00802209744080548,
+      "individual_p_lt_0_05": true,
+      "sector_jackknife_max_absolute_mode_z": 3.2903744868898266
+    },
+    {
+      "galaxy": "NGC4321",
+      "beam_independent_pixels": 4575,
+      "retained_m2_chi2": 49.64446715633807,
+      "retained_m2_dof": 10,
+      "retained_m2_p": 3.1024444972028113e-07,
+      "wrong_family_m1_chi2": 65.88718886744707,
+      "wrong_family_m1_dof": 10,
+      "wrong_family_m1_p": 2.7412323682458907e-10,
+      "individual_p_lt_0_05": true,
+      "sector_jackknife_max_absolute_mode_z": 3.1032428922316555
+    }
+  ],
+  "retained_family": "m2 after source-frozen m0+m1 nuisance removal",
+  "global_retained_m2_chi2": 77.60580138398159,
+  "global_retained_m2_dof": 20,
+  "global_retained_m2_p": 9.96986416987696e-09,
+  "wrong_family_control": "m1, does not enter the promotion decision",
+  "global_wrong_family_m1_chi2": 89.73237187587604,
+  "global_wrong_family_m1_dof": 20,
+  "global_wrong_family_m1_p": 8.255957223220681e-11,
+  "promotion_rule": "global confirmatory p<0.01 and each confirmatory galaxy m2 p<0.05; only then permit a separately frozen body-increment score",
+  "numerical_gate_passed": true,
+  "confirmatory_morphology_label_integrity_pass": false,
+  "promotion_gate_passed": false,
+  "body_increment_score_open_allowed": false,
+  "body_increment_score_run": false,
+  "construction_uses_rotation_residual": false,
+  "time_channel_identified": false,
+  "quantum_channel_identified": false,
+  "claim_boundary": "source-frozen two-galaxy population test of low-order differential CO/H-alpha m2 structure; a null constrains only this basis and sensitivity, while a positive result would remain tracer-field structure until body increment, nuisance, parity and independent replication gates are passed"
+}

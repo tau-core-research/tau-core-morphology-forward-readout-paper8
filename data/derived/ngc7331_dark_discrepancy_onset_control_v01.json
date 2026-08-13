@@ -1,0 +1,13 @@
+{
+  "schema": "ngc7331_dark_discrepancy_onset_control_v01",
+  "status": "NGC7331_DARK_DISCREPANCY_PRECEDES_SOURCE_FROZEN_WARP_ONSET",
+  "target": "vobs^2-vbar^2; no TPG subtraction",
+  "positive_sustained_onset_kpc": 7.48,
+  "three_sigma_sustained_onset_kpc": 8.55,
+  "source_frozen_warp_onset_kpc": 14.431691252428111,
+  "robust_onset_minus_warp_kpc": -5.88169125242811,
+  "simple_universal_morphology_onset_alignment_supported": false,
+  "tau_morphology_detected": false,
+  "channel_detected": false,
+  "claim_boundary": "single SPARC galaxy with measurement-error threshold but no baryonic-model covariance; negative control for simple warp-onset equality"
+}

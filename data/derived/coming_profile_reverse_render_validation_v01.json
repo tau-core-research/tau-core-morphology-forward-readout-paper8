@@ -1,0 +1,16 @@
+{
+  "schema": "tau_core_coming_profile_reverse_render_validation_v01",
+  "status": "VISIBLE_PROFILE_REVERSE_RENDER_PASS_CLIPPED_OUTLIER_UNCERTAINTY_OPEN",
+  "n_visible_points": 56,
+  "max_x_roundtrip_residual_pt": 8.107812499247302e-05,
+  "max_y_roundtrip_residual_pt": 7.321188093101227e-05,
+  "max_error_roundtrip_residual_pt": 0.00013512749706023897,
+  "tolerance_pt": 0.0002,
+  "visible_marker_roundtrip_pass": true,
+  "visible_error_roundtrip_pass": true,
+  "clipped_ngc4579_outlier_present": true,
+  "clipped_ngc4579_outlier_uncertainty_available": false,
+  "source_profile_gate_complete": false,
+  "endpoint_scoring_allowed": false,
+  "claim_boundary": "visible profile geometry validated; one source-clipped uncertainty remains unknowable from this figure"
+}

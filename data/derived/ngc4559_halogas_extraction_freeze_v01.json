@@ -1,0 +1,139 @@
+{
+  "schema": "ngc4559_halogas_extraction_freeze_v01",
+  "status": "NGC4559_HALOGAS_PIXEL_EXTRACTION_AND_REPLICATION_RULE_FROZEN_PIXELS_UNOPENED",
+  "galaxy": "NGC4559",
+  "source_only_rank": 2,
+  "source_geometry": {
+    "primary_center": {
+      "ra_deg": 188.9916666667,
+      "dec_deg": 27.9588888889,
+      "role": "barbieri_kinematic_center"
+    },
+    "center_variants": [
+      {
+        "ra_deg": 188.99,
+        "dec_deg": 27.9587222222,
+        "role": "barbieri_optical_center"
+      },
+      {
+        "ra_deg": 188.98875,
+        "dec_deg": 27.9605555556,
+        "role": "ghasp_kinematic_study_center"
+      },
+      {
+        "ra_deg": 188.990005284,
+        "dec_deg": 27.9600007817,
+        "role": "halogas_wcs_reference_center"
+      }
+    ],
+    "hi": {
+      "inclination_deg": 67.2,
+      "inclination_error_deg": 0.6,
+      "receding_pa_deg": 323.0,
+      "pa_error_deg": 1.4,
+      "systemic_velocity_km_s": 810.0,
+      "systemic_velocity_error_km_s": 4.0
+    },
+    "ghasp": {
+      "systemic_velocity_km_s": 807,
+      "systemic_velocity_error_km_s": 1,
+      "kinematic_inclination_deg": 69,
+      "kinematic_inclination_error_deg": 3,
+      "kinematic_pa_deg": 143,
+      "kinematic_pa_side": "a",
+      "kinematic_pa_error_deg": 2
+    },
+    "ghasp_receding_pa_deg": 323,
+    "hi_ghasp_receding_pa_difference_deg": 0.0
+  },
+  "source_provenance": {
+    "barbieri_url": "https://www.aanda.org/articles/aa/pdf/2005/33/aa2395-04.pdf",
+    "barbieri_sha256": "3002e133208724080a8ab81653332fe4939a7a294a785506733d4461054ba5c2",
+    "ghasp_model_url": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/390/466/tableb2.dat",
+    "ghasp_model_sha256": "fc867346fb112a1938873a6de2ae887b1d4dab43988058327314c5a219ae7569",
+    "halpha_points_sha256": "06a6b9518a37305253452ef85054a889ec378ac79c1a7003cb2a53d41a573f0d",
+    "moment_headers": {
+      "NGC4559-HR_mom0m": {
+        "source_sha256": "8717c5da2882e2d03970d919cbac14a49efae0e761df4543b742159d1cebb17c",
+        "primary_center_pixel_zero_based": [
+          510.67927423631306,
+          510.99935565120614
+        ],
+        "pixel_scale_arcsec": 4.000000152456,
+        "beam_major_arcsec": 28.378874436012,
+        "beam_minor_arcsec": 13.104297593244,
+        "pixel_values_opened": false
+      },
+      "NGC4559-HR_mom1m": {
+        "source_sha256": "e7b000adecc6a011c2e21b4afb0d8ac12c97d34b8df14ba67863bf6440613ce6",
+        "primary_center_pixel_zero_based": [
+          510.67927423631306,
+          510.99935565120614
+        ],
+        "pixel_scale_arcsec": 4.000000152456,
+        "beam_major_arcsec": 28.378874436012,
+        "beam_minor_arcsec": 13.104297593244,
+        "pixel_values_opened": false
+      },
+      "NGC4559-LR_mom0m": {
+        "source_sha256": "d94e95769bcae5c48407a5682c2201d08083bbde035d88ec195d3728d813fdb1",
+        "primary_center_pixel_zero_based": [
+          510.67927423631306,
+          510.99935565120614
+        ],
+        "pixel_scale_arcsec": 4.000000152456,
+        "beam_major_arcsec": 41.14817082864,
+        "beam_minor_arcsec": 31.894070282568002,
+        "pixel_values_opened": false
+      },
+      "NGC4559-LR_mom1m": {
+        "source_sha256": "a0575280b71ab7f988ebeb9d2f3d749536449683e807233633818d27fcdaa3e2",
+        "primary_center_pixel_zero_based": [
+          510.67927423631306,
+          510.99935565120614
+        ],
+        "pixel_scale_arcsec": 4.000000152456,
+        "beam_major_arcsec": 41.14817082864,
+        "beam_minor_arcsec": 31.894070282568002,
+        "pixel_values_opened": false
+      }
+    }
+  },
+  "common_radii_arcsec": [
+    42.0,
+    84.0,
+    126.0,
+    168.0
+  ],
+  "annulus_width_arcsec": 42.0,
+  "radial_bins_overlap": false,
+  "major_axis_min_abs_cos_theta": 0.8,
+  "sky_geometry_rule": "east/north offsets rotated to PA east of north; disk radius sqrt(x_major^2+(x_minor/cos(i))^2)",
+  "side_rule": "+x_major along PA=323 deg is receding; -x_major is approaching",
+  "pixel_mask_rule": "finite moment0 and moment1 with moment0>0; no data-dependent clipping",
+  "pixel_estimator": "moment0*abs(cos_theta)-weighted median of (v_los-v_sys)/cos_theta in each side/ring",
+  "bootstrap_rule": "resample beam-sized spatial blocks independently within each side/ring",
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 4559001,
+  "primary_map": "HR",
+  "replication_map": "LR",
+  "channel_statistic": "unchanged NGC3726 Delta_O=O_Halpha-O_HI on common angular support",
+  "replication_gates": {
+    "zero_odd_contrast_rejected_in_hr": "p<0.05",
+    "zero_odd_contrast_rejected_in_lr": "p<0.05",
+    "gls_mean_sign_agreement": true,
+    "hr_lr_gls_mean_difference": "absolute difference <=2 combined standard errors",
+    "minimum_same_sign_radius_fraction": 0.75
+  },
+  "construction_blind_to": [
+    "HALOGAS moment-map pixel values",
+    "SPARC vobs and residuals",
+    "H I-Halpha contrast",
+    "baseline model scores",
+    "required Tau amplitudes"
+  ],
+  "pixel_values_opened_during_freeze": false,
+  "endpoint_access": false,
+  "physical_a_row_constructed": false,
+  "claim_boundary": "prospective map-extraction freeze only; later contrast remains a tracer diagnostic unless conventional systematics and common-parent response are controlled"
+}

@@ -1,0 +1,180 @@
+{
+  "schema": "phangs_radial_body_projection_development_terminal_edge_replay_v01",
+  "status": "DEVELOPMENT_TERMINAL_EDGE_BODY_MATRIX_RANK_GATE_PASSES",
+  "galaxies": {
+    "NGC1087": {
+      "shape": [
+        20,
+        8
+      ],
+      "rank": 8,
+      "projected_complement_dimension": 12,
+      "singular_values": [
+        1.531043270019942,
+        1.4577502695214561,
+        1.3356368332306983,
+        1.087764031960457,
+        0.5360121560813235,
+        0.430542546832277,
+        0.28385409402211503,
+        0.10229982763660651
+      ],
+      "condition_number_nonzero": 14.966235089452685,
+      "rank_gate_ge_4_complement": true,
+      "common_quality_pixels": 55317,
+      "beam_independent_pixels": 1543,
+      "co_beam_arcsec": 1.60260346097064,
+      "muse_psf_arcsec": 0.92,
+      "beam_subsample_pixels": 6,
+      "terminal_common_support_edges_arcsec": [
+        0.4077464954467862,
+        23.29080351182865,
+        38.07515049947592,
+        48.11408103993493,
+        56.87936433444737,
+        81.44872859741902
+      ]
+    },
+    "NGC1433": {
+      "shape": [
+        20,
+        8
+      ],
+      "rank": 8,
+      "projected_complement_dimension": 12,
+      "singular_values": [
+        1.558607471192346,
+        1.3509665697770454,
+        1.2497461580839222,
+        1.0497475690251914,
+        0.6369574208523595,
+        0.6326380533044051,
+        0.4553121036392846,
+        0.26180505262564135
+      ],
+      "condition_number_nonzero": 5.9533131830768005,
+      "rank_gate_ge_4_complement": true,
+      "common_quality_pixels": 51489,
+      "beam_independent_pixels": 3199,
+      "co_beam_arcsec": 1.09769529303252,
+      "muse_psf_arcsec": 0.91,
+      "beam_subsample_pixels": 4,
+      "terminal_common_support_edges_arcsec": [
+        0.60225626700806,
+        53.60310919221915,
+        73.37745539238243,
+        86.36893600999092,
+        102.79974908147618,
+        148.87282517309947
+      ]
+    },
+    "NGC1566": {
+      "shape": [
+        20,
+        8
+      ],
+      "rank": 8,
+      "projected_complement_dimension": 12,
+      "singular_values": [
+        1.4425727385546256,
+        1.4023017356708378,
+        1.3097157577714007,
+        1.2368181543229197,
+        0.5625897636352138,
+        0.4328087951101227,
+        0.3566923356704331,
+        0.2764038811201193
+      ],
+      "condition_number_nonzero": 5.219075552443903,
+      "rank_gate_ge_4_complement": true,
+      "common_quality_pixels": 108012,
+      "beam_independent_pixels": 4293,
+      "co_beam_arcsec": 1.25428013147268,
+      "muse_psf_arcsec": 0.8,
+      "beam_subsample_pixels": 5,
+      "terminal_common_support_edges_arcsec": [
+        0.6277861320408274,
+        35.03156593694004,
+        51.4826880222743,
+        64.93917008403572,
+        80.1788869284336,
+        129.2701830144737
+      ]
+    },
+    "NGC1672": {
+      "shape": [
+        20,
+        8
+      ],
+      "rank": 8,
+      "projected_complement_dimension": 12,
+      "singular_values": [
+        1.7935055023987065,
+        1.5556844314554412,
+        1.179269085544045,
+        0.6972833726587545,
+        0.4823814093920051,
+        0.3734149523885889,
+        0.25385446017783203,
+        0.22300593476385572
+      ],
+      "condition_number_nonzero": 8.042411536257436,
+      "rank_gate_ge_4_complement": true,
+      "common_quality_pixels": 37614,
+      "beam_independent_pixels": 2385,
+      "co_beam_arcsec": 1.9323665545593602,
+      "muse_psf_arcsec": 0.96,
+      "beam_subsample_pixels": 4,
+      "terminal_common_support_edges_arcsec": [
+        0.69280308538461,
+        40.58591787413675,
+        62.60825368619912,
+        82.88459820094157,
+        106.19643015084372,
+        160.55971438938212
+      ]
+    },
+    "NGC7496": {
+      "shape": [
+        20,
+        8
+      ],
+      "rank": 8,
+      "projected_complement_dimension": 12,
+      "singular_values": [
+        1.6918377164002585,
+        1.584289671786404,
+        1.1105091040254966,
+        0.9041561933672704,
+        0.48573482841703447,
+        0.48338749575498163,
+        0.29025574210313115,
+        0.15209304617616212
+      ],
+      "condition_number_nonzero": 11.123701963603803,
+      "rank_gate_ge_4_complement": true,
+      "common_quality_pixels": 17004,
+      "beam_independent_pixels": 1074,
+      "co_beam_arcsec": 1.6750384896869999,
+      "muse_psf_arcsec": 0.89,
+      "beam_subsample_pixels": 4,
+      "terminal_common_support_edges_arcsec": [
+        0.7958060138262015,
+        23.291684511834386,
+        35.39864560152441,
+        42.932198630414305,
+        54.36087040534344,
+        82.77287510744122
+      ]
+    }
+  },
+  "all_development_galaxies_pass_rank_gate": true,
+  "terminal_edges_computed": true,
+  "velocity_values_used_only_for_common_support": true,
+  "velocity_contrast_constructed": false,
+  "terminal_coefficients_fitted": false,
+  "body_projection_score_computed": false,
+  "confirmatory_galaxies_opened": [],
+  "endpoint_scoring_allowed": false,
+  "claim_boundary": "development-only exact terminal-edge rank and conditioning replay; not a body-orthogonal innovation, physical channel, time, quantum, Tau, or dark-sector signal"
+}

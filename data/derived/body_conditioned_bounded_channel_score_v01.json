@@ -1,0 +1,70 @@
+{
+  "schema": "tau-core.paper8.body-conditioned-bounded-channel-score.v01",
+  "status": "BODY_CONDITIONED_BOUNDED_CHANNEL_INCREMENTAL_FAIL",
+  "selected_lambda_train_only": 0,
+  "lambda_train_grid": [
+    {
+      "lambda": -2,
+      "galaxy_balanced_rmse": 34.45376308267306
+    },
+    {
+      "lambda": -1.5,
+      "galaxy_balanced_rmse": 30.222596508185962
+    },
+    {
+      "lambda": -1,
+      "galaxy_balanced_rmse": 26.547020915706494
+    },
+    {
+      "lambda": -0.75,
+      "galaxy_balanced_rmse": 25.121930898836037
+    },
+    {
+      "lambda": -0.5,
+      "galaxy_balanced_rmse": 24.018123148607803
+    },
+    {
+      "lambda": -0.25,
+      "galaxy_balanced_rmse": 23.293670396832383
+    },
+    {
+      "lambda": 0,
+      "galaxy_balanced_rmse": 23.01146435937222
+    },
+    {
+      "lambda": 0.25,
+      "galaxy_balanced_rmse": 23.1626062986185
+    },
+    {
+      "lambda": 0.5,
+      "galaxy_balanced_rmse": 23.683760983140157
+    },
+    {
+      "lambda": 0.75,
+      "galaxy_balanced_rmse": 24.578837556304574
+    },
+    {
+      "lambda": 1,
+      "galaxy_balanced_rmse": 25.91142429404178
+    },
+    {
+      "lambda": 1.5,
+      "galaxy_balanced_rmse": 30.2668666327035
+    },
+    {
+      "lambda": 2,
+      "galaxy_balanced_rmse": 36.85065953100244
+    }
+  ],
+  "n_overlap_holdout": 21,
+  "mean_joint_minus_body_rmse_km_s": 0.0,
+  "joint_beats_body_fraction": 0.0,
+  "joint_beats_tpg_fraction": 0.3333333333333333,
+  "joint_beats_mond_fraction": 0.3333333333333333,
+  "shuffle_p_mean_gain": 1.0,
+  "physical_capacity_measured": false,
+  "time_origin_identified": false,
+  "quantum_origin_identified": false,
+  "physical_channel_detected": false,
+  "claim_boundary": "bounded observational-load interaction with frozen body susceptibility; not OSCC capacity or physical channel-origin detection"
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "tau_core_coming_vector_marker_centers_v01",
+  "status": "DELTA_RADIAL_PROFILES_AND_VISIBLE_ERRORS_EXTRACTED_OUTLIER_ERROR_OPEN",
+  "n_galaxies": 5,
+  "n_markers": 57,
+  "marker_counts": {
+    "NGC 4303": 13,
+    "NGC 4579": 12,
+    "NGC 5248": 9,
+    "NGC 613": 13,
+    "NGC 7479": 10
+  },
+  "marker_count_gate_pass": true,
+  "delta_axis_calibrated": true,
+  "ngc4579_clipped_outlier_restored_as_separate_point": true,
+  "physical_delta_amplitudes_frozen": true,
+  "radial_r_over_abar_calibrated": true,
+  "central_value_profiles_frozen": true,
+  "n_points_with_vector_errors": 56,
+  "physical_profiles_frozen": false,
+  "uses_dark_discrepancy_endpoint": false,
+  "endpoint_scoring_allowed": false,
+  "next_gate": "complete reverse-render residual validation and decide the clipped outlier uncertainty policy",
+  "claim_boundary": "source Delta(R/a_bar) profiles with vector errors except the clipped NGC4579 outlier; endpoint remains closed"
+}

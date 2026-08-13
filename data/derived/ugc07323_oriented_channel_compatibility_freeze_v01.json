@@ -1,0 +1,16 @@
+{
+  "schema": "tau_core_ugc07323_oriented_channel_compatibility_freeze_v01",
+  "status": "ZERO_PARAMETER_TWO_SIDE_RECIPROCAL_COMPATIBILITY_FROZEN_WITH_QUALITATIVE_BODY",
+  "galaxy": "UGC07323 / UGC 7323 / NGC 4242",
+  "selection_uses_vobs_q_or_residual": false,
+  "body_freeze": "data/derived/ugc07323_ngc4242_body_freeze_v01.json",
+  "body_constraints": "no radial window, signed correction, or side function; full common support only",
+  "baryonic_convention": "vbar^2 = sign(Vgas) Vgas^2 + 0.5 Vdisk^2 + 0.7 Vbul^2",
+  "channel_inverse": "delta_s=(beta_obs_s-beta_bar)/(1-beta_obs_s beta_bar); q_s=atanh(delta_s)",
+  "common_radius_policy": "SPARC radii inside both positive GHASP side supports; sidewise linear interpolation without extrapolation",
+  "compatibility_gate": "chi2 per point <= 2 in first pass; covariance-aware audit required before interpretation",
+  "fitted_parameters": 0,
+  "endpoint_values_previously_present_in_source_federation": true,
+  "physical_channel_detection_allowed": false,
+  "claim_boundary": "zero-parameter compatibility preflight with qualitative source body; common load is halo/shared-dynamics degenerate and no Tau channel detection is allowed"
+}

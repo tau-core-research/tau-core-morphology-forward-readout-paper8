@@ -1,0 +1,45 @@
+{
+  "schema": "effective_kernel_amplitude_path_robustness_v01",
+  "status": "EFFECTIVE_BETA_PATH_SIGNAL_NOT_ROBUST_TO_TARGET_SCALE_AND_FAMILY",
+  "variants": {
+    "raw_scaled": {
+      "n": 75,
+      "mse_reduction": 434.15197089149115,
+      "proportional_mse_reduction": 0.09896855822044918,
+      "shuffle_p": 0.014992503748125937,
+      "null_q95": 94.61554810928072
+    },
+    "signed_log": {
+      "n": 75,
+      "mse_reduction": -0.6846934605936368,
+      "proportional_mse_reduction": -0.23625292382222354,
+      "shuffle_p": 0.7821089455272364,
+      "null_q95": 0.056370139004052376
+    },
+    "winsor_5_95": {
+      "n": 75,
+      "mse_reduction": -1.8299073486034132,
+      "proportional_mse_reduction": -0.22627718036182076,
+      "shuffle_p": 0.7716141929035483,
+      "null_q95": 0.2214568710990814
+    },
+    "exclude_compact_family": {
+      "n": 68,
+      "mse_reduction": -0.4633724398611374,
+      "proportional_mse_reduction": -0.034061057462654185,
+      "shuffle_p": 0.32233883058470764,
+      "null_q95": 0.27821563392228255
+    },
+    "scale_invariant_fractional_kernel_load": {
+      "n": 75,
+      "mse_reduction": -0.018484003128380305,
+      "proportional_mse_reduction": -0.12219398571854659,
+      "shuffle_p": 0.6266866566716641,
+      "null_q95": 0.004965576913649672
+    }
+  },
+  "all_variants_positive_and_p_le_0p05": false,
+  "path_information_candidate_promoted": false,
+  "physical_channel_detected": false,
+  "claim_boundary": "retrospective robustness audit; heterogeneous path proxy and endpoint-derived beta"
+}

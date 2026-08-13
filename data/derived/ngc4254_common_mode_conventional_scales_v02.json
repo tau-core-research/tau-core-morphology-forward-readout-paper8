@@ -1,0 +1,25 @@
+{
+  "schema": "ngc4254_common_mode_conventional_scales_v02",
+  "maximum_inferred_side_orbital_scale_km_s": 93.27810223227655,
+  "transverse_doppler_upper_scale_km_s": 0.01451137966261819,
+  "gravitational_redshift_order_scale_km_s": 0.02902275932523638,
+  "combined_relativistic_order_scale_km_s": 0.043534138987854576,
+  "observed_co_halpha_difference_km_s": {
+    "minimum": 3.8932046637628623,
+    "maximum": 8.175841831406979
+  },
+  "relativistic_scale_can_explain_tracer_difference": false,
+  "co_moment2_or_cube_available": false,
+  "asymmetric_drift_closed": false,
+  "noncircular_streaming_closed": false,
+  "geometry_perturbation_closed": false,
+  "full_spatial_covariance_closed": false,
+  "next_required_data": [
+    "PHANGS-ALMA CO cube or matched moment-2/equivalent-width product",
+    "matched Halpha line-profile rather than moment-1 only",
+    "source-frozen center/PA/inclination perturbation replay",
+    "beam-correlated annulus covariance"
+  ],
+  "common_channel_detected": false,
+  "claim_boundary": "order-of-magnitude conventional baseline audit; relativistic terms are too small, but gas dynamics, geometry, line formation, and covariance remain open"
+}

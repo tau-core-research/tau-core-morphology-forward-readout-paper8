@@ -1,0 +1,77 @@
+{
+  "schema": "theory_completed_scale_tail_kernel_v02",
+  "status": "THEORY_MOTIVATED_KERNEL_CANDIDATE_HISTORICAL_HOLDOUT_AND_OPENED_EXTERNAL_DIAGNOSTIC",
+  "formula": "v_v02^2=v_tpg^2 exp(eta phi); selected feature=phi_tail_bounded",
+  "theory_roles": {
+    "K_tail": "morphology-hosted support",
+    "source_normalization": "source-quotient-compatible dimensionless coordinate",
+    "phi": "bounded channel completion",
+    "radial_factor_candidate": "bounded observer-source radial activation",
+    "bilinear_candidate": "leading body-channel mixed response; retained only if train-selected",
+    "exponential": "positive multiplicative carrier composition"
+  },
+  "candidate_scan": [
+    {
+      "feature": "phi_tail_bounded",
+      "eta": 0.07319144586620145,
+      "train_v2_mse": 3408989.9761460675
+    },
+    {
+      "feature": "phi_tail_holographic",
+      "eta": 0.05746070259827597,
+      "train_v2_mse": 3409805.6234133635
+    },
+    {
+      "feature": "phi_radial_bounded",
+      "eta": 0.04809149665490534,
+      "train_v2_mse": 3412398.8664078135
+    },
+    {
+      "feature": "phi_bilinear_bounded",
+      "eta": 0.09084731062379699,
+      "train_v2_mse": 3416437.055060902
+    }
+  ],
+  "selected_feature": "phi_tail_bounded",
+  "eta": 0.07319144586620145,
+  "eta_units": "dimensionless",
+  "eta_fit_scope": "historical SPARC train scale-tail family only",
+  "historical_holdout": {
+    "n_galaxies": 20,
+    "n_points": 262,
+    "mean_rmse_km_s": {
+      "kernel_v02": 12.50436729792693,
+      "tpg_v6": 12.442468453999798,
+      "mond": 13.125020280755255
+    },
+    "win_fraction": {
+      "tpg_v6": 0.4,
+      "mond": 0.65
+    },
+    "mean_paired_delta_km_s": {
+      "v02_minus_tpg_v6": 0.061898843927132005,
+      "v02_minus_mond": -0.6206529828283261
+    }
+  },
+  "little_things_opened_external_diagnostic": {
+    "n_galaxies": 14,
+    "n_points": 313,
+    "mean_rmse_km_s": {
+      "kernel_v02": 8.962100153743387,
+      "tpg_v6": 8.97579644821774,
+      "mond": 8.225006890242398
+    },
+    "win_fraction": {
+      "tpg_v6": 0.5,
+      "mond": 0.5
+    },
+    "mean_paired_delta_km_s": {
+      "v02_minus_tpg_v6": -0.013696294474353023,
+      "v02_minus_mond": 0.7370932635009887
+    }
+  },
+  "little_things_is_prospective_for_v02": false,
+  "time_operator_identified": false,
+  "quantum_operator_identified": false,
+  "claim_boundary": "theory-motivated composite-kernel candidate; LITTLE THINGS was already opened before v02, so its v02 result is diagnostic and cannot promote a prospective claim"
+}

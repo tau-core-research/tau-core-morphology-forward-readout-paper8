@@ -1,0 +1,16 @@
+{
+  "schema": "tau_core_ngc5248_bar_scale_resolution_v01",
+  "status": "UNIFORM_CATALOG_SMALL_BAR_PRIMARY_LARGE_OVAL_SENSITIVITY_FROZEN",
+  "galaxy": "NGC 5248",
+  "primary_bar_radius_kpc": 1.78,
+  "primary_bar_radius_error_kpc": 0.18,
+  "primary_definition": "deprojected S4G infrared ellipticity-maximum bar used uniformly by the COMING analysis",
+  "primary_source": "Salak et al. 2019 Table 2 adopting Herrera-Endoqui et al. 2015",
+  "alternative_large_oval_radius_arcsec": 95.0,
+  "alternative_role": "predeclared source sensitivity control only",
+  "selection_uses_rotation_endpoint_or_dark_discrepancy": false,
+  "post_score_scale_switch_allowed": false,
+  "source_scale_resolved_for_primary_protocol": true,
+  "endpoint_scoring_allowed_by_this_gate": false,
+  "claim_boundary": "operational source hierarchy; does not prove the small bar is the unique physical decomposition"
+}

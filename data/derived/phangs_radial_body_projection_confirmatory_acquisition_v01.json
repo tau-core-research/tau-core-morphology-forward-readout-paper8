@@ -1,0 +1,609 @@
+{
+  "schema": "phangs_radial_body_projection_confirmatory_acquisition_v01",
+  "status": "CONFIRMATORY_PACKET_ACQUIRED_HASH_FROZEN_VALUES_UNOPENED",
+  "confirmatory_galaxies": [
+    "NGC1300",
+    "NGC1385",
+    "NGC1512",
+    "NGC5068"
+  ],
+  "products_per_galaxy": 6,
+  "products_total": 24,
+  "source_hashes_sha256": {
+    "NGC1300/NGC1300.phot.1.fits": "6e4bcc6fe2efbd42420976497fef0a82f0c074f3787fd00c49c86ab96f87f7ef",
+    "NGC1300/NGC1300.1.final_mask.fits": "b3086758a72ed71fbb3c52f0a025728392d01280cacfdd6eec0f7433d0b3101f",
+    "NGC1300/group.uid___A001_X136d_X13b.lp_schinner.ngc1300_12m7mtp_co21_broad_mom0.fits": "7b29eec713ff22d2bca57429ccd8a31abcacc1e9e72d0f7b9e20053ffd0fe83a",
+    "NGC1300/NGC1300_MAPS_copt_0.89asec.fits": "d2cd0a9b11e02a36cb127ec6fc5b0fee502754d5ca7ee9e5501e3c64a1a2d7f5",
+    "NGC1300/group.uid___A001_X136d_X13b.lp_schinner.ngc1300_12m7mtp_co21_mom1wprior.fits": "eb8ec73edf85a6a6a6ad12d628f8c8c37aa03e4d71df4b5519942c332fa21e6a",
+    "NGC1300/group.uid___A001_X136d_X13b.lp_schinner.ngc1300_12m7mtp_co21_emom1wprior.fits": "bb735074e4fac606ea39df8920e2269123b849cdf3c29b4604e30c6e663583b8",
+    "NGC1385/NGC1385.phot.1.fits": "4904183cc5ed93dbe84c8478ac338dd58b6260339f250a6375bc5ba99aae23bb",
+    "NGC1385/NGC1385.1.final_mask.fits": "0f448aecdb9c839227822a8507bad895a796ee2fa419e3922fe613b3588426ea",
+    "NGC1385/group.uid___A001_X136d_X133.lp_schinner.ngc1385_12m7mtp_co21_broad_mom0.fits": "4ad047be39f48156c883567056db012db80172388cd05c907157c8f3a0a575a5",
+    "NGC1385/NGC1385_MAPS_copt_0.77asec.fits": "f309d78a51b4662e0a5b3607a2eef8898b88c313cd2725ba3186a3d88fd23414",
+    "NGC1385/group.uid___A001_X136d_X133.lp_schinner.ngc1385_12m7mtp_co21_mom1wprior.fits": "0fb263af63006a5173e9150af4f7529d085349c0234503fb20a7619627793bc3",
+    "NGC1385/group.uid___A001_X136d_X133.lp_schinner.ngc1385_12m7mtp_co21_emom1wprior.fits": "672ae03098c0a433e140a5fd5a91ff697a85c0025783e7083b9a75d1ecd57ff0",
+    "NGC1512/NGC1512.phot.1.fits": "143bc721407c07a31ce2748bf22baccc44178220796859b63dcca6bfa863976d",
+    "NGC1512/NGC1512.1.final_mask.fits": "7e182011742ab8ba066a4e0c708d08b0b28e0b6f9306e6282a263ff8654e7d58",
+    "NGC1512/group.uid___A001_X136d_X137.lp_schinner.ngc1512_12m7mtp_co21_broad_mom0.fits": "b1c9f1ef78294439cb510877981f4d4d09394aceef35a920cf5b34dfeae61240",
+    "NGC1512/NGC1512_MAPS_copt_1.25asec.fits": "03d7ce9586a3ff4bd7df73a438b983ad1c8711c57f910ccd8ebe67720bd83faa",
+    "NGC1512/group.uid___A001_X136d_X137.lp_schinner.ngc1512_12m7mtp_co21_mom1wprior.fits": "5e3ce5e5d2aece8b85be8faccf7a842ad2a1f811d86a5906081978b5a8a516aa",
+    "NGC1512/group.uid___A001_X136d_X137.lp_schinner.ngc1512_12m7mtp_co21_emom1wprior.fits": "9de09b201b72cdb3e6ca678493abc0db785b14be143c79fcdbf6bd4ebaa07373",
+    "NGC5068/NGC5068.phot.1.fits": "89b92b6576f77cba9f988e6df830630ef67807ba522cce36be00b76fd30da0bb",
+    "NGC5068/NGC5068.1.final_mask.fits": "d5881b894ea0e8d6fd9ce987363feb60bad218f4ad34a69010e5c9364ebe863f",
+    "NGC5068/group.uid___A001_X2fe_X329.lp_schinner.ngc5068_12m7mtp_co21_broad_mom0.fits": "62ed5e5ec1797e06ca30868b22fc3bd3ffd30339f0a6e591ac5077fd8f6f6017",
+    "NGC5068/NGC5068_MAPS_copt_1.04asec.fits": "ab56e7a01e5a19eb0f8615ca34cf33d565f670862a0bc54bb09a792f95ef308e",
+    "NGC5068/group.uid___A001_X2fe_X329.lp_schinner.ngc5068_12m7mtp_co21_mom1wprior.fits": "b2428cca696deabcefb1c707196cd266ebbb2171ba2af569b411f96fc893f8d4",
+    "NGC5068/group.uid___A001_X2fe_X329.lp_schinner.ngc5068_12m7mtp_co21_emom1wprior.fits": "3f416e08c8861b56de0d13eacc1e4d05dc719545392e6eee493903cd6f59b452"
+  },
+  "header_only_product_summaries": {
+    "NGC1300/NGC1300.phot.1.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1210,
+        1743
+      ],
+      "bunit": "MJy/sr",
+      "beam_arcsec": null,
+      "pixel_array_read": false
+    },
+    "NGC1300/NGC1300.1.final_mask.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1210,
+        1743
+      ],
+      "bunit": "MJy/sr",
+      "beam_arcsec": null,
+      "pixel_array_read": false
+    },
+    "NGC1300/group.uid___A001_X136d_X13b.lp_schinner.ngc1300_12m7mtp_co21_broad_mom0.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1,
+        1,
+        620,
+        853
+      ],
+      "bunit": "K.km.s-1",
+      "beam_arcsec": [
+        1.22857204431924,
+        1.22857204431924
+      ],
+      "pixel_array_read": false
+    },
+    "NGC1300/NGC1300_MAPS_copt_0.89asec.fits": {
+      "hdu_names": [
+        "PRIMARY",
+        "BIN_ID",
+        "V_STARS",
+        "FORM_ERR_V_STARS",
+        "SIGMA_STARS",
+        "FORM_ERR_SIGMA_STARS",
+        "HB4861_FLUX",
+        "HB4861_FLUX_ERR",
+        "HB4861_VEL",
+        "HB4861_VEL_ERR",
+        "HB4861_SIGMA",
+        "HB4861_SIGMA_ERR",
+        "OIII4958_FLUX",
+        "OIII4958_FLUX_ERR",
+        "OIII4958_VEL",
+        "OIII4958_VEL_ERR",
+        "OIII4958_SIGMA",
+        "OIII4958_SIGMA_ERR",
+        "OIII5006_FLUX",
+        "OIII5006_FLUX_ERR",
+        "OIII5006_VEL",
+        "OIII5006_VEL_ERR",
+        "OIII5006_SIGMA",
+        "OIII5006_SIGMA_ERR",
+        "NII6548_FLUX",
+        "NII6548_FLUX_ERR",
+        "NII6548_VEL",
+        "NII6548_VEL_ERR",
+        "NII6548_SIGMA",
+        "NII6548_SIGMA_ERR",
+        "HA6562_FLUX",
+        "HA6562_FLUX_ERR",
+        "HA6562_VEL",
+        "HA6562_VEL_ERR",
+        "HA6562_SIGMA",
+        "HA6562_SIGMA_ERR",
+        "NII6583_FLUX",
+        "NII6583_FLUX_ERR",
+        "NII6583_VEL",
+        "NII6583_VEL_ERR",
+        "NII6583_SIGMA",
+        "NII6583_SIGMA_ERR",
+        "SII6716_FLUX",
+        "SII6716_FLUX_ERR",
+        "SII6716_VEL",
+        "SII6716_VEL_ERR",
+        "SII6716_SIGMA",
+        "SII6716_SIGMA_ERR",
+        "SII6730_FLUX",
+        "SII6730_FLUX_ERR",
+        "SII6730_VEL",
+        "SII6730_VEL_ERR",
+        "SII6730_SIGMA",
+        "SII6730_SIGMA_ERR"
+      ],
+      "header_shape": [
+        900,
+        1478
+      ],
+      "bunit": "1e-20erg.s**(-1).cm**(-2).spaxel**(-1)",
+      "beam_arcsec": null,
+      "pixel_array_read": false
+    },
+    "NGC1300/group.uid___A001_X136d_X13b.lp_schinner.ngc1300_12m7mtp_co21_mom1wprior.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1,
+        1,
+        620,
+        853
+      ],
+      "bunit": "km.s-1",
+      "beam_arcsec": [
+        1.22857204431924,
+        1.22857204431924
+      ],
+      "pixel_array_read": false
+    },
+    "NGC1300/group.uid___A001_X136d_X13b.lp_schinner.ngc1300_12m7mtp_co21_emom1wprior.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1,
+        1,
+        620,
+        853
+      ],
+      "bunit": "km.s-1",
+      "beam_arcsec": [
+        1.22857204431924,
+        1.22857204431924
+      ],
+      "pixel_array_read": false
+    },
+    "NGC1385/NGC1385.phot.1.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1051,
+        791
+      ],
+      "bunit": "MJy/sr",
+      "beam_arcsec": null,
+      "pixel_array_read": false
+    },
+    "NGC1385/NGC1385.1.final_mask.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1051,
+        791
+      ],
+      "bunit": "MJy/sr",
+      "beam_arcsec": null,
+      "pixel_array_read": false
+    },
+    "NGC1385/group.uid___A001_X136d_X133.lp_schinner.ngc1385_12m7mtp_co21_broad_mom0.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1,
+        1,
+        432,
+        362
+      ],
+      "bunit": "K.km.s-1",
+      "beam_arcsec": [
+        1.26799534739304,
+        1.26799534739304
+      ],
+      "pixel_array_read": false
+    },
+    "NGC1385/NGC1385_MAPS_copt_0.77asec.fits": {
+      "hdu_names": [
+        "PRIMARY",
+        "BIN_ID",
+        "V_STARS",
+        "FORM_ERR_V_STARS",
+        "SIGMA_STARS",
+        "FORM_ERR_SIGMA_STARS",
+        "HB4861_FLUX",
+        "HB4861_FLUX_ERR",
+        "HB4861_VEL",
+        "HB4861_VEL_ERR",
+        "HB4861_SIGMA",
+        "HB4861_SIGMA_ERR",
+        "OIII4958_FLUX",
+        "OIII4958_FLUX_ERR",
+        "OIII4958_VEL",
+        "OIII4958_VEL_ERR",
+        "OIII4958_SIGMA",
+        "OIII4958_SIGMA_ERR",
+        "OIII5006_FLUX",
+        "OIII5006_FLUX_ERR",
+        "OIII5006_VEL",
+        "OIII5006_VEL_ERR",
+        "OIII5006_SIGMA",
+        "OIII5006_SIGMA_ERR",
+        "NII6548_FLUX",
+        "NII6548_FLUX_ERR",
+        "NII6548_VEL",
+        "NII6548_VEL_ERR",
+        "NII6548_SIGMA",
+        "NII6548_SIGMA_ERR",
+        "HA6562_FLUX",
+        "HA6562_FLUX_ERR",
+        "HA6562_VEL",
+        "HA6562_VEL_ERR",
+        "HA6562_SIGMA",
+        "HA6562_SIGMA_ERR",
+        "NII6583_FLUX",
+        "NII6583_FLUX_ERR",
+        "NII6583_VEL",
+        "NII6583_VEL_ERR",
+        "NII6583_SIGMA",
+        "NII6583_SIGMA_ERR",
+        "SII6716_FLUX",
+        "SII6716_FLUX_ERR",
+        "SII6716_VEL",
+        "SII6716_VEL_ERR",
+        "SII6716_SIGMA",
+        "SII6716_SIGMA_ERR",
+        "SII6730_FLUX",
+        "SII6730_FLUX_ERR",
+        "SII6730_VEL",
+        "SII6730_VEL_ERR",
+        "SII6730_SIGMA",
+        "SII6730_SIGMA_ERR"
+      ],
+      "header_shape": [
+        896,
+        610
+      ],
+      "bunit": "1e-20erg.s**(-1).cm**(-2).spaxel**(-1)",
+      "beam_arcsec": null,
+      "pixel_array_read": false
+    },
+    "NGC1385/group.uid___A001_X136d_X133.lp_schinner.ngc1385_12m7mtp_co21_mom1wprior.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1,
+        1,
+        432,
+        362
+      ],
+      "bunit": "km.s-1",
+      "beam_arcsec": [
+        1.26799534739304,
+        1.26799534739304
+      ],
+      "pixel_array_read": false
+    },
+    "NGC1385/group.uid___A001_X136d_X133.lp_schinner.ngc1385_12m7mtp_co21_emom1wprior.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1,
+        1,
+        432,
+        362
+      ],
+      "bunit": "km.s-1",
+      "beam_arcsec": [
+        1.26799534739304,
+        1.26799534739304
+      ],
+      "pixel_array_read": false
+    },
+    "NGC1512/NGC1512.phot.1.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1881,
+        1755
+      ],
+      "bunit": "MJy/sr",
+      "beam_arcsec": null,
+      "pixel_array_read": false
+    },
+    "NGC1512/NGC1512.1.final_mask.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1881,
+        1755
+      ],
+      "bunit": "MJy/sr",
+      "beam_arcsec": null,
+      "pixel_array_read": false
+    },
+    "NGC1512/group.uid___A001_X136d_X137.lp_schinner.ngc1512_12m7mtp_co21_broad_mom0.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1,
+        1,
+        772,
+        735
+      ],
+      "bunit": "K.km.s-1",
+      "beam_arcsec": [
+        1.0346836146516,
+        1.0346836146516
+      ],
+      "pixel_array_read": false
+    },
+    "NGC1512/NGC1512_MAPS_copt_1.25asec.fits": {
+      "hdu_names": [
+        "PRIMARY",
+        "BIN_ID",
+        "V_STARS",
+        "FORM_ERR_V_STARS",
+        "SIGMA_STARS",
+        "FORM_ERR_SIGMA_STARS",
+        "HB4861_FLUX",
+        "HB4861_FLUX_ERR",
+        "HB4861_VEL",
+        "HB4861_VEL_ERR",
+        "HB4861_SIGMA",
+        "HB4861_SIGMA_ERR",
+        "OIII4958_FLUX",
+        "OIII4958_FLUX_ERR",
+        "OIII4958_VEL",
+        "OIII4958_VEL_ERR",
+        "OIII4958_SIGMA",
+        "OIII4958_SIGMA_ERR",
+        "OIII5006_FLUX",
+        "OIII5006_FLUX_ERR",
+        "OIII5006_VEL",
+        "OIII5006_VEL_ERR",
+        "OIII5006_SIGMA",
+        "OIII5006_SIGMA_ERR",
+        "NII6548_FLUX",
+        "NII6548_FLUX_ERR",
+        "NII6548_VEL",
+        "NII6548_VEL_ERR",
+        "NII6548_SIGMA",
+        "NII6548_SIGMA_ERR",
+        "HA6562_FLUX",
+        "HA6562_FLUX_ERR",
+        "HA6562_VEL",
+        "HA6562_VEL_ERR",
+        "HA6562_SIGMA",
+        "HA6562_SIGMA_ERR",
+        "NII6583_FLUX",
+        "NII6583_FLUX_ERR",
+        "NII6583_VEL",
+        "NII6583_VEL_ERR",
+        "NII6583_SIGMA",
+        "NII6583_SIGMA_ERR",
+        "SII6716_FLUX",
+        "SII6716_FLUX_ERR",
+        "SII6716_VEL",
+        "SII6716_VEL_ERR",
+        "SII6716_SIGMA",
+        "SII6716_SIGMA_ERR",
+        "SII6730_FLUX",
+        "SII6730_FLUX_ERR",
+        "SII6730_VEL",
+        "SII6730_VEL_ERR",
+        "SII6730_SIGMA",
+        "SII6730_SIGMA_ERR"
+      ],
+      "header_shape": [
+        910,
+        903
+      ],
+      "bunit": "1e-20erg.s**(-1).cm**(-2).spaxel**(-1)",
+      "beam_arcsec": null,
+      "pixel_array_read": false
+    },
+    "NGC1512/group.uid___A001_X136d_X137.lp_schinner.ngc1512_12m7mtp_co21_mom1wprior.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1,
+        1,
+        772,
+        735
+      ],
+      "bunit": "km.s-1",
+      "beam_arcsec": [
+        1.0346836146516,
+        1.0346836146516
+      ],
+      "pixel_array_read": false
+    },
+    "NGC1512/group.uid___A001_X136d_X137.lp_schinner.ngc1512_12m7mtp_co21_emom1wprior.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1,
+        1,
+        772,
+        735
+      ],
+      "bunit": "km.s-1",
+      "beam_arcsec": [
+        1.0346836146516,
+        1.0346836146516
+      ],
+      "pixel_array_read": false
+    },
+    "NGC5068/NGC5068.phot.1.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1823,
+        1832
+      ],
+      "bunit": "MJy/sr",
+      "beam_arcsec": null,
+      "pixel_array_read": false
+    },
+    "NGC5068/NGC5068.1.final_mask.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1823,
+        1832
+      ],
+      "bunit": "MJy/sr",
+      "beam_arcsec": null,
+      "pixel_array_read": false
+    },
+    "NGC5068/group.uid___A001_X2fe_X329.lp_schinner.ngc5068_12m7mtp_co21_broad_mom0.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1,
+        1,
+        918,
+        900
+      ],
+      "bunit": "K.km.s-1",
+      "beam_arcsec": [
+        1.03962479473944,
+        1.03962479473944
+      ],
+      "pixel_array_read": false
+    },
+    "NGC5068/NGC5068_MAPS_copt_1.04asec.fits": {
+      "hdu_names": [
+        "PRIMARY",
+        "BIN_ID",
+        "V_STARS",
+        "FORM_ERR_V_STARS",
+        "SIGMA_STARS",
+        "FORM_ERR_SIGMA_STARS",
+        "HB4861_FLUX",
+        "HB4861_FLUX_ERR",
+        "HB4861_VEL",
+        "HB4861_VEL_ERR",
+        "HB4861_SIGMA",
+        "HB4861_SIGMA_ERR",
+        "OIII4958_FLUX",
+        "OIII4958_FLUX_ERR",
+        "OIII4958_VEL",
+        "OIII4958_VEL_ERR",
+        "OIII4958_SIGMA",
+        "OIII4958_SIGMA_ERR",
+        "OIII5006_FLUX",
+        "OIII5006_FLUX_ERR",
+        "OIII5006_VEL",
+        "OIII5006_VEL_ERR",
+        "OIII5006_SIGMA",
+        "OIII5006_SIGMA_ERR",
+        "NII6548_FLUX",
+        "NII6548_FLUX_ERR",
+        "NII6548_VEL",
+        "NII6548_VEL_ERR",
+        "NII6548_SIGMA",
+        "NII6548_SIGMA_ERR",
+        "HA6562_FLUX",
+        "HA6562_FLUX_ERR",
+        "HA6562_VEL",
+        "HA6562_VEL_ERR",
+        "HA6562_SIGMA",
+        "HA6562_SIGMA_ERR",
+        "NII6583_FLUX",
+        "NII6583_FLUX_ERR",
+        "NII6583_VEL",
+        "NII6583_VEL_ERR",
+        "NII6583_SIGMA",
+        "NII6583_SIGMA_ERR",
+        "SII6716_FLUX",
+        "SII6716_FLUX_ERR",
+        "SII6716_VEL",
+        "SII6716_VEL_ERR",
+        "SII6716_SIGMA",
+        "SII6716_SIGMA_ERR",
+        "SII6730_FLUX",
+        "SII6730_FLUX_ERR",
+        "SII6730_VEL",
+        "SII6730_VEL_ERR",
+        "SII6730_SIGMA",
+        "SII6730_SIGMA_ERR"
+      ],
+      "header_shape": [
+        1190,
+        1172
+      ],
+      "bunit": "1e-20erg.s**(-1).cm**(-2).spaxel**(-1)",
+      "beam_arcsec": null,
+      "pixel_array_read": false
+    },
+    "NGC5068/group.uid___A001_X2fe_X329.lp_schinner.ngc5068_12m7mtp_co21_mom1wprior.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1,
+        1,
+        918,
+        900
+      ],
+      "bunit": "km.s-1",
+      "beam_arcsec": [
+        1.03962479473944,
+        1.03962479473944
+      ],
+      "pixel_array_read": false
+    },
+    "NGC5068/group.uid___A001_X2fe_X329.lp_schinner.ngc5068_12m7mtp_co21_emom1wprior.fits": {
+      "hdu_names": [
+        "PRIMARY"
+      ],
+      "header_shape": [
+        1,
+        1,
+        918,
+        900
+      ],
+      "bunit": "km.s-1",
+      "beam_arcsec": [
+        1.03962479473944,
+        1.03962479473944
+      ],
+      "pixel_array_read": false
+    }
+  },
+  "ledger": "data/derived/phangs_radial_body_projection_confirmatory_acquisition_ledger_v01.csv",
+  "source_morphology_pixel_values_opened": false,
+  "terminal_pixel_values_opened": false,
+  "velocity_contrast_constructed": false,
+  "terminal_coefficients_fitted": false,
+  "endpoint_score_computed": false,
+  "replacement_galaxy_allowed": false,
+  "next_gate": "build all four source matrices on common terminal-support edges and require every frozen rank/covariance gate before the single score",
+  "claim_boundary": "header-only acquisition and hash freeze of the preregistered confirmatory packet; not an opened endpoint, tracer innovation, channel, time, quantum, Tau, or dark-sector result"
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "ugc06787_whisp_hi_source_v01",
+  "status": "WHISP_UGC06787_GRAPHICAL_HI_VELOCITY_FIELD_ACQUIRED_FITS_OPEN",
+  "galaxy": "UGC06787",
+  "source_family": "WHISP",
+  "metadata": {
+    "quality": "reasonable",
+    "bandwidth_mhz": 4.96,
+    "n_channels": 127,
+    "central_velocity_km_s": 1176.0,
+    "channel_separation_km_s": 8.27,
+    "beam_full_resolution_arcsec": "13.8 x 12.6",
+    "rms_noise_mjy_beam": 0.63,
+    "channel_map_quality": "reasonable",
+    "cleaned_map_quality": "reasonable",
+    "cleaned_map_note": "channel32-34 bad images caused by bad data."
+  },
+  "overview_image_size_pixels": [
+    791,
+    1024
+  ],
+  "overview_contents": [
+    "optical image",
+    "global H I profile",
+    "major-axis position-velocity diagram",
+    "full-resolution total H I map",
+    "30 arcsec total H I map",
+    "60 arcsec total H I map",
+    "full-resolution intensity-weighted velocity field",
+    "30 arcsec intensity-weighted velocity field",
+    "60 arcsec intensity-weighted velocity field"
+  ],
+  "direct_fits_links_found": [],
+  "source_coordinate_fits_acquired": false,
+  "graphical_velocity_field_acquired": true,
+  "digitization_allowed": true,
+  "physical_a_row_constructed": false,
+  "endpoint_access": false,
+  "claim_boundary": "source-native graphical H I preflight only; no FITS/cube, calibrated pixel-to-sky field, common H I-Halpha transport, channel detection, or endpoint result",
+  "manifest": [
+    {
+      "source_id": "object_page",
+      "url": "https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6787/u6787p36921.html",
+      "local_path": "data/external/literature/ugc06787_whisp_hi_route/whisp_ugc06787_object_page.html",
+      "content_type": "text/html",
+      "bytes": 1145,
+      "sha256": "769d9c2a02774f9ec8d4cb5e8bdb6ef00b23e798e88b461590aff67a8f905d14",
+      "source_native": true,
+      "endpoint_access": false
+    },
+    {
+      "source_id": "graphical_overview",
+      "url": "https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6787/u6787plot36921.gif",
+      "local_path": "data/external/literature/ugc06787_whisp_hi_route/whisp_ugc06787_overview.gif",
+      "content_type": "image/gif",
+      "bytes": 73876,
+      "sha256": "54dec8774c5b3dfc2b061f2cfed7ebab3788a4b926de9f469f7c8e4b9942780b",
+      "source_native": true,
+      "endpoint_access": false
+    },
+    {
+      "source_id": "observation_notes",
+      "url": "https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6787/u6787p36921obsred.html",
+      "local_path": "data/external/literature/ugc06787_whisp_hi_route/whisp_ugc06787_obs_reduction_notes.html",
+      "content_type": "text/html",
+      "bytes": 2612,
+      "sha256": "a4e272038f7e6a77ab6135dc2ddf1baeca21a7e23afdb1f2f6b587fcbcdc1380",
+      "source_native": true,
+      "endpoint_access": false
+    }
+  ]
+}

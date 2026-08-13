@@ -1,0 +1,53 @@
+{
+  "schema": "tau_core_refined_body_subfamily_preregistration_v01",
+  "status": "SOURCE_ACQUISITION_ONLY",
+  "construction_uses_vobs_or_rotation_residual": false,
+  "inspected_motivating_objects_endpoint_eligible": false,
+  "alias_resolution_required_before_sample_freeze": true,
+  "minimum_independent_galaxies_per_family": 5,
+  "minimum_total_independent_galaxies": 20,
+  "primary_endpoint": "per-galaxy RMSE of the frozen matched body kernel",
+  "primary_control": "mean RMSE over frozen wrong-family kernels",
+  "primary_population_success_rule": "matched-minus-wrong-family mean delta below zero with a galaxy-level one-sided permutation p <= 0.05",
+  "specificity_rule": "matched kernel beats the best wrong family in at least 0.60 of independent galaxies",
+  "zone_rule": "improvement must be larger in the source-frozen active zone than outside it",
+  "newton_rule": "report matched-versus-Newton win fraction; no universal-superiority threshold is imposed",
+  "channel_handoff_rule": "fit no nonconventional channel term until the refined body test is frozen and scored; only cross-tracer residual structure surviving the matched body model may nominate a channel test",
+  "failure_rule": "failure of population, specificity, or active-zone rule rejects the refined family version without post-score retuning",
+  "families": [
+    {
+      "family": "K_scale_tail_turbulent_holey",
+      "motivating_objects_not_test_eligible": "UGC04305;DDO_50;Holmberg_II",
+      "required_source_fields": "HI_hole_catalog;HI_velocity_dispersion_profile;hole_covering_fraction;outer_HI_support_radius",
+      "classification_rule": "resolved HI holes plus a published or source-measurable non-thermal dispersion profile across the optical disk",
+      "kernel_change_frozen": "smooth scale-tail carrier multiplied by a bounded radial porosity-dispersion modulation",
+      "primary_active_zone": "published HI-hole support union outer turbulent HI disk"
+    },
+    {
+      "family": "K_disturbed_tidal_history",
+      "motivating_objects_not_test_eligible": "UGC07577;DDO_125",
+      "required_source_fields": "companion_or_stream_detection;projected_stream_support;kinematic_asymmetry;interaction_confidence",
+      "classification_rule": "independent tidal stream or companion evidence and a source-side disturbed-kinematics flag",
+      "kernel_change_frozen": "coarse carrier plus a bounded asymmetric outer-support term restricted to the source-marked disturbance zone",
+      "primary_active_zone": "source-marked stream or disturbed outer-disk support"
+    },
+    {
+      "family": "K_warped_asymmetric_disturbed_disk",
+      "motivating_objects_not_test_eligible": "NGC4088;UGC7081",
+      "required_source_fields": "warp_onset_radius;tilted_ring_PA_profile;approaching_receding_asymmetry;outer_HI_radius",
+      "classification_rule": "source-measured warp onset plus significant side-to-side or position-angle asymmetry",
+      "kernel_change_frozen": "thick/flared carrier split into symmetric vertical and signed warp-asymmetry components",
+      "primary_active_zone": "R greater than or equal to the source-frozen warp onset"
+    },
+    {
+      "family": "K_bar_dominated_non_circular",
+      "motivating_objects_not_test_eligible": "NGC4389;UGC7514",
+      "required_source_fields": "bar_length;bar_position_angle;harmonic_non_circular_amplitude;bar_confidence",
+      "classification_rule": "independently measured stellar bar and a source-side non-circular velocity harmonic",
+      "kernel_change_frozen": "thick/flared carrier with a compact bar-windowed non-circular component",
+      "primary_active_zone": "R less than or equal to the source-frozen bar length"
+    }
+  ],
+  "endpoint_scoring_allowed": false,
+  "next_gate": "acquire source-native fields and freeze an alias-resolved untouched galaxy manifest"
+}

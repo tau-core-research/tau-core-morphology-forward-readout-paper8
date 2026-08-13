@@ -1,0 +1,217 @@
+{
+  "audit_checks": {
+    "all_fields_finite_on_common_mask": true,
+    "co_exact_grid_error_used": true,
+    "endpoint_scored": false,
+    "hi_extensions_all_control_labeled": true,
+    "source_only": true,
+    "velocity_or_residual_inputs_empty": true
+  },
+  "claim_boundary": "source-only partial measurement uncertainty construction; not a complete covariance, physical FFL determinant, channel/time/quantum signal, dark-matter replacement, or endpoint score",
+  "co": {
+    "error_product": "data/external/literature/ngc4254_ffl_uncertainty_v04/group.uid___A001_X2fb_X29a.lp_schinner.ngc4254_12m7mtp_co21_broad_emom0.fits",
+    "fully_correlated_upper_control_extension": "H2_CORR",
+    "independent_pixel_extension": "H2_IND",
+    "matching_covariance_xy_pixels": [
+      [
+        8.909161380740263,
+        -1.2070712835992015
+      ],
+      [
+        -1.2070712835992015,
+        9.128865565417282
+      ]
+    ],
+    "native_beam_arcsec": [
+      1.7813371306644001,
+      1.7813371306644001,
+      0.0
+    ]
+  },
+  "common_grid": {
+    "inherited_common_pixels": 1758,
+    "pixel_scale_arcsec": 5.000000122800001,
+    "shape_yx": [
+      502,
+      502
+    ],
+    "target_beam_arcsec": [
+      37.702799999999996,
+      32.94612,
+      42.4
+    ],
+    "uncertainty_common_pixels": 1757
+  },
+  "complete_measurement_covariance_ready": false,
+  "endpoint_scoring_allowed": false,
+  "field_summaries_msun_pc2": {
+    "H2_CORR": {
+      "median": 4.194708569125086,
+      "n": 1757,
+      "p16": 3.239379183899895,
+      "p84": 4.924263686346254
+    },
+    "H2_IND": {
+      "median": 0.41459283088167787,
+      "n": 1757,
+      "p16": 0.3407976491895902,
+      "p84": 0.5262365849036854
+    },
+    "HI_CTL01": {
+      "median": 0.05850433093027809,
+      "n": 1757,
+      "p16": 0.05850433093027809,
+      "p84": 0.05850433093027809
+    },
+    "HI_CTL10": {
+      "median": 0.21596688680070783,
+      "n": 1757,
+      "p16": 0.21596688680070783,
+      "p84": 0.21596688680070783
+    },
+    "HI_CTL49": {
+      "median": 0.4849590672327256,
+      "n": 1757,
+      "p16": 0.4849590672327256,
+      "p84": 0.4849590672327256
+    },
+    "STAR_ICA1": {
+      "median": 6.789091304877342,
+      "n": 1757,
+      "p16": 2.9606135905660893,
+      "p84": 21.394811489827713
+    },
+    "STAR_ICA2": {
+      "median": 5.923731993423506,
+      "n": 1757,
+      "p16": 1.4005731852294419,
+      "p84": 18.208340964500803
+    },
+    "STAR_PIX": {
+      "median": 4.1588395171617245,
+      "n": 1757,
+      "p16": 3.9424351164045977,
+      "p84": 4.415136114575525
+    },
+    "STAR_SKY1": {
+      "median": 5.01202419502084,
+      "n": 1757,
+      "p16": 5.012024195020839,
+      "p84": 5.012024195020841
+    },
+    "STAR_SKY2": {
+      "median": -5.745306927006913,
+      "n": 1757,
+      "p16": -5.745306927006914,
+      "p84": -5.745306927006912
+    }
+  },
+  "galaxy": "NGC4254",
+  "hi": {
+    "channel_sigma_mjy_beam": 0.45679894387149034,
+    "channel_width_km_s": 10.305460940000001,
+    "controls": [
+      {
+        "adjacent_channel_rho": 0.17096512001120534,
+        "assumed_line_channels": 1,
+        "correlated_variance_factor": 1.0,
+        "extension": "HI_CTL01",
+        "role": "robust1_control_not_robust5_uncertainty",
+        "sigma_moment0_jy_beam_km_s": 0.0047075236735008965,
+        "sigma_surface_density_msun_pc2": 0.05850433093027809
+      },
+      {
+        "adjacent_channel_rho": 0.17096512001120534,
+        "assumed_line_channels": 10,
+        "correlated_variance_factor": 13.626938684255219,
+        "extension": "HI_CTL10",
+        "role": "robust1_control_not_robust5_uncertainty",
+        "sigma_moment0_jy_beam_km_s": 0.01737767471468437,
+        "sigma_surface_density_msun_pc2": 0.21596688680070783
+      },
+      {
+        "adjacent_channel_rho": 0.17096512001120534,
+        "assumed_line_channels": 49,
+        "correlated_variance_factor": 68.71224422924644,
+        "extension": "HI_CTL49",
+        "role": "robust1_control_not_robust5_uncertainty",
+        "sigma_moment0_jy_beam_km_s": 0.03902200492468937,
+        "sigma_surface_density_msun_pc2": 0.4849590672327256
+      }
+    ],
+    "exact_robust5_uncertainty_ready": false,
+    "public_cube_beam_arcsec": [
+      29.973240000000004,
+      26.698320000000002,
+      51.71
+    ],
+    "public_cube_role": "robust1_control_only"
+  },
+  "inputs": {
+    "common_resolution_cube": "data/derived/ngc4254_common_hi_resolution_source_cube_v03.fits",
+    "common_resolution_cube_sha256": "a9c825c2e0e3a4c0c01fe03a2bc6b4ea8ae80f9cc83b43dfb1584137a9340653",
+    "s4g_p3_noise": "data/external/literature/ngc4254_ffl_uncertainty_v04/NGC4254.s4gcat_p3_noise.json",
+    "s4g_p3_noise_sha256": "e8eefc5e73af54e0b09e7978a6cb5cd8260ae39888967e9d6f493081ee93b157",
+    "uncertainty_acquisition": "data/derived/ngc4254_ffl_uncertainty_source_acquisition_v04.json",
+    "uncertainty_acquisition_sha256": "654633524cbb28c348c179ac71570a3840259d66a8bdf9dc3b17d5fc3982cd62",
+    "velocity_or_residual_inputs": []
+  },
+  "known_limitations": [
+    "released P5 per-pixel sigma images were not located; the stellar pixel field is reconstructed from P1 coverage weights and P3 local noise",
+    "the stellar ICA color modes use the linear two-component mixing law before all P5 thresholding and postprocessing operations",
+    "the P5 mask and P1/P2 masks are sampled to a much coarser target grid",
+    "the CO independent-pixel propagation and fully correlated field bracket do not constitute a delivered full CO covariance",
+    "the public robust-1 H I cube is not the parent of the frozen robust-5 moment-0 map, so H I controls cannot authorize endpoint scoring"
+  ],
+  "outputs": {
+    "fits": "data/derived/ngc4254_measurement_uncertainty_fields_v05.fits",
+    "fits_sha256": "90f0726d2f9c2ec06643c5f9e527939157575d17a20df1c09d8853054dd53fe6",
+    "report": "reports/ngc4254_measurement_uncertainty_fields_v05.md"
+  },
+  "schema": "ngc4254_measurement_uncertainty_fields_v05",
+  "status": "PARTIAL_MEASUREMENT_UNCERTAINTY_FIELDS_BUILT_HI_CONTROL_ONLY",
+  "stellar": {
+    "assumed_native_fwhm_arcsec": 1.66,
+    "bootstrap_color_errors_mag": {
+      "c1": 0.022761,
+      "c2": 0.022892
+    },
+    "delta_sky_definition": "sqrt((ssky/sqrt(1000))^2+esky^2)",
+    "delta_sky_mjy_sr": {
+      "channel1": 0.002699748680155247,
+      "channel2": 0.00224981159766768
+    },
+    "global_mass_to_light_scale_mode": {
+      "included_in_fields": false,
+      "nominal_conversion": 231.03177951792264,
+      "shape_proxy_effect": "exactly cancels from centered log stellar vector"
+    },
+    "matching_covariance_xy_pixels": [
+      [
+        8.912173453531468,
+        -1.2070712835992015
+      ],
+      [
+        -1.2070712835992015,
+        9.131877638208486
+      ]
+    ],
+    "mixing_ratio_definition": "r(c)=10^(0.4*c)/(280.9/179.7)",
+    "p5_stellar_plus_nonstellar_vs_p1_fractional_absolute": {
+      "median": 0.06265164697127366,
+      "n": 1467,
+      "p16": 0.017087515187530752,
+      "p84": 0.14268726163709175
+    },
+    "pixel_noise_model": "catalog local pixel noise scaled by sqrt(median_coverage/current_coverage)",
+    "solution_colors_mag": {
+      "c1": -0.005477,
+      "c2": 0.138816
+    },
+    "stellar_component_definition": "s1=(r2*x1-x2)/(r2-r1)",
+    "weight_reference": {
+      "channel1": 85.17466813366478,
+      "channel2": 84.26060182725274
+    }
+  }
+}

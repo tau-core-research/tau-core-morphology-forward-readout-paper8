@@ -1,0 +1,35 @@
+{
+  "schema": "tau-core.paper8.body-conditioned-bounded-channel-freeze.v01",
+  "status": "BODY_CONDITIONED_BOUNDED_CHANNEL_DIAGNOSTIC_FROZEN",
+  "body_baseline": "local value-only invariant: v_body^2=v_Newton^2 exp(eta_f phi_B)",
+  "body_susceptibility": "phi_B=[K_f/K_f(R_s)]/[1+K_f/K_f(R_s)]",
+  "channel_load_variables": [
+    "foreground_lens_geometry_weight",
+    "foreground_angular_weight",
+    "stellar_crowding_angular_weight"
+  ],
+  "channel_load": "c=Euclidean norm of train-standardized log1p load variables",
+  "bounded_channel_activation": "A_C=c/(1+c)",
+  "joint_formula": "v_joint^2=v_body^2 exp(lambda phi_B A_C)",
+  "lambda_grid": [
+    -2,
+    -1.5,
+    -1,
+    -0.75,
+    -0.5,
+    -0.25,
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1,
+    1.5,
+    2
+  ],
+  "lambda_selection": "train-only galaxy-balanced RMSE on source/channel overlap",
+  "uses_vobs_or_residual": false,
+  "capacity_claim": "A_C is a bounded observational-load surrogate, not OSCC information capacity",
+  "time_origin_identified": false,
+  "quantum_origin_identified": false,
+  "claim_boundary": "diagnostic body-channel interaction freeze; no physical capacity, time, quantum, or Tau claim"
+}

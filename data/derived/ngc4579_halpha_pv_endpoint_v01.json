@@ -1,0 +1,25 @@
+{
+  "schema": "tau_core_ngc4579_halpha_pv_endpoint_v01",
+  "status": "GRAPHICAL_HALPHA_PV_ENDPOINT_INELIGIBLE_SOURCE_CURVE_CLIPPED",
+  "freeze_status": "PUBLISHED_PV_MODEL_EXTRACTION_PROTOCOL_FROZEN_BEFORE_PIXEL_READ",
+  "n_all_samples": 39,
+  "n_post_bar_samples": 10,
+  "post_bar_side_counts": {
+    "approaching": 10
+  },
+  "post_bar_radius_range_kpc": [
+    3.999709112064577,
+    7.599447312922696
+  ],
+  "post_bar_vrot_range_km_s": [
+    201.13663504202228,
+    272.75062194656255
+  ],
+  "endpoint_values_opened": true,
+  "reverse_render_visual_acceptance": false,
+  "source_curve_clipped_after_offset_arcsec": 20.0,
+  "both_sides_quality_gate_pass": false,
+  "combined_baryonic_field_ready": true,
+  "scoring_allowed": false,
+  "claim_boundary": "ineligible graphical endpoint: the published model curve exits the panel before the receding post-bar domain; no score is permitted"
+}

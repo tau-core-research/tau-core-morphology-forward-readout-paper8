@@ -1,0 +1,42 @@
+{
+  "schema": "ugc08490_whisp_external_center_freeze_v01",
+  "status": "UGC08490_EXTERNAL_CENTER_FROZEN_ON_PRINTED_B1950_AXES",
+  "source": "SIMBAD UGC 8490 / NGC 5204 coordinate",
+  "source_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=UGC+8490",
+  "icrs_coordinate_deg": {
+    "ra_deg": 202.40211666666664,
+    "dec_deg": 58.41873055555556
+  },
+  "fk4_b1950_coordinate": {
+    "ra_h": 13,
+    "ra_m": 27,
+    "ra_s": 43.95673432049165,
+    "dec_d": 58,
+    "dec_m": 40,
+    "dec_s": 35.30635042275776
+  },
+  "center_source_pixels": [
+    601.5858319503702,
+    596.7917934196761
+  ],
+  "center_source_pixels_by_panel": {
+    "60arcsec": [
+      601.5858319503702,
+      596.7917934196761
+    ],
+    "30arcsec": [
+      381.5858319503702,
+      596.7917934196761
+    ],
+    "full_resolution": [
+      161.58583195037022,
+      596.7917934196761
+    ]
+  },
+  "horizontal_panel_spacing_pixels": 220.0,
+  "conversion": "Astropy ICRS to FK4 B1950; printed-axis linear calibration",
+  "center_selected_from_velocity_or_endpoint": false,
+  "allowed_next_use": "freeze beam-scale radial annuli and side geometry",
+  "endpoint_access": false,
+  "claim_boundary": "external center on printed graphical axes; not formal FITS WCS"
+}

@@ -1,0 +1,6 @@
+galaxy,n_profile_rows,n_rows_with_errors,profile_policy,bar_radius_kpc,source_ready,blocker,endpoint_eligible
+NGC 613,13,13,use_all_visible_vector_points,10.3,True,,False
+NGC 4303,13,13,use_all_visible_vector_points,2.97,True,,False
+NGC 4579,12,11,preserve_Delta_2p9_row_but_exclude_it_from_interpolation_and_amplitude_summary_per_source,3.62,True,,False
+NGC 5248,9,9,uniform_small_bar_primary_large_oval_predeclared_sensitivity,1.78,True,,False
+NGC 7479,10,10,use_all_visible_vector_points,10.2,True,,False

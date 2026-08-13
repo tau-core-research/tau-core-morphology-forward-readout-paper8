@@ -1,0 +1,36 @@
+{
+  "schema": "ngc4254_common_mode_gas_dynamics_v04",
+  "input": "data/derived/ngc4254_phangs_tracer_velocity_field_rank_test_v01.json",
+  "covariance": "12-sector spatial jackknife covariance in five radial zones",
+  "conditional_axisymmetric_pressure_cancellation": "pressure support changes the side-odd azimuthal speed and cancels from ideal opposite-side geometric mean",
+  "sectors": {
+    "axisymmetric_m0": {
+      "chi2": 10.649857229083706,
+      "dof": 5,
+      "p": 0.0587816497491455
+    },
+    "lopsided_streaming_m1": {
+      "chi2": 20.499384276246804,
+      "dof": 10,
+      "p": 0.024867873132731307
+    },
+    "bisymmetric_m2": {
+      "chi2": 9.764859637954704,
+      "dof": 10,
+      "p": 0.4613596425009998
+    },
+    "combined_nonaxisymmetric_m1_m2": {
+      "chi2": 42.522893496445064,
+      "dof": 20,
+      "p": 0.0023626084391250796
+    }
+  },
+  "nonaxisymmetric_tracer_structure_detected": true,
+  "dominant_interpretable_sector": "m1 lopsided/streaming; individually p<0.05 but not p<0.01",
+  "gas_dynamics_can_contaminate_common_mode": true,
+  "gas_dynamics_fully_explains_common_mode": false,
+  "common_channel_remainder_identified": false,
+  "effective_time_readout_detected": false,
+  "next_test": "recompute G_spec after source-frozen m1/m2 field prediction and geometry perturbations, then test only the held-out remainder",
+  "claim_boundary": "covariance-aware reuse of a frozen 2D tracer-field decomposition; supports a conventional non-axisymmetric contamination route but is not a complete subtraction or channel test"
+}

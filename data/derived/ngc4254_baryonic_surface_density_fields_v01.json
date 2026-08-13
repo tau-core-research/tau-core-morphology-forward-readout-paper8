@@ -1,0 +1,16 @@
+{
+  "schema": "ngc4254_baryonic_surface_density_fields_v01",
+  "status": "NGC4254_BARYONIC_SURFACE_DENSITY_FIELDS_BUILT_GRAVITY_NOT_YET_SOLVED",
+  "distance_mpc": 13.1,
+  "inclination_deg": 34.4,
+  "stellar_conversion": "Sigma_star=280 I_3.6 cos(i), fixed M/L convention",
+  "molecular_conversion": "Sigma_H2=(4.35/0.65) I_CO21 cos(i)",
+  "atomic_conversion": "Sigma_HI=0.0199*487.605*I_JyBeam_kms*cos(i)",
+  "hi_beam_arcsec": [
+    37.702799999999996,
+    32.94612
+  ],
+  "n_radial_bins": 12,
+  "gravity_field_solved": false,
+  "claim_boundary": "surface-density construction with fixed conversions; no dark discrepancy or Tau attribution"
+}

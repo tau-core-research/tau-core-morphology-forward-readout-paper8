@@ -1,0 +1,85 @@
+{
+  "schema": "ngc4254_ffl_determinant_source_freeze_v01",
+  "status": "SOURCE_ONLY_FFL_DETERMINANT_PROXY_FROZEN_NOT_ENDPOINT_READY",
+  "galaxy": "NGC4254",
+  "construction_class": "source_only_4d_inverse_role_chart_proxy",
+  "inputs": {
+    "geometry_freeze": "data/derived/ngc4254_common_mode_geometry_freeze_v01.json",
+    "geometry_freeze_sha256": "1cb01af987064014f3ae30285c72d854dffac0f9f8966729a8ca8b3bfc00f29e",
+    "surface_density_fields": "data/derived/ngc4254_baryonic_surface_density_fields_v01.fits",
+    "surface_density_fields_sha256": "1ec5ac541ca9f9284b182566362eb47eae72c491a1c80df933e0520dd7c763a1",
+    "velocity_or_residual_inputs": []
+  },
+  "role_chart": {
+    "roles": [
+      "Q0",
+      "Q1",
+      "Q2",
+      "Q3"
+    ],
+    "quadrant_rule": "floor(mod(atan2(minor/cos(i),major),2pi)/(pi/2))",
+    "observer_source_tangent": "centered quadrant median of sin(i)*sin(theta)",
+    "body_tangent": "centered log quadrant median of Sigma_star",
+    "third_shape_proxy": "centered log quadrant median of Sigma_H2+Sigma_HI",
+    "radial_edges_arcsec": [
+      5.0,
+      15.0,
+      25.0,
+      35.0,
+      45.0,
+      55.0,
+      65.0
+    ],
+    "es_basis_columns": [
+      [
+        0.7071067811865475,
+        0.4082482904638631,
+        0.2886751345948129
+      ],
+      [
+        -0.7071067811865475,
+        0.4082482904638631,
+        0.2886751345948129
+      ],
+      [
+        0.0,
+        -0.8164965809277261,
+        0.2886751345948129
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8660254037844387
+      ]
+    ],
+    "orientation_policy": "fixed ordered Q0,Q1,Q2,Q3 pseudoform chart"
+  },
+  "formula": {
+    "determinant_normal": "cross(E_S^T u_OS,E_S^T v_M)",
+    "q_shape_proxy": "dot(determinant_normal,E_S^T eta_shape)/norm(determinant_normal)",
+    "conditioning": "Delta_uv=norm(cross(u_OS,v_M))/(norm(u_OS)*norm(v_M))",
+    "conditioning_selection_threshold": null
+  },
+  "outputs": {
+    "row_table": "data/derived/ngc4254_ffl_determinant_source_vectors_v01.csv",
+    "row_table_sha256": "bc02ef37122f098593c17191b1eeb70b2aa3f6a298e7ccc4f27e22777fae6656",
+    "report": "reports/ngc4254_ffl_determinant_source_freeze_v01.md"
+  },
+  "summary": {
+    "n_annuli": 6,
+    "n_source_vector_computable": 6,
+    "endpoint_scored": false,
+    "physical_amplitude_ready": false,
+    "source_extraction_viable": true
+  },
+  "known_limitations": [
+    "quadrant role chart is a 4D inverse candidate, not a parent role identity",
+    "gas contrast is a source-side eta-shape proxy, not the physical FFL eta",
+    "kappa_X/kappa_Y and the physical terminal gain remain unsourced",
+    "the inherited center/PA/inclination geometry has prior Halpha-kinematic provenance",
+    "the HI beam is about 37 arcsec and correlates the narrower annuli",
+    "fixed baryonic conversion assumptions are inherited",
+    "no endpoint or covariance score is present"
+  ],
+  "claim_boundary": "source-only four-role inverse proxy; not a parent role identification, physical channel/time/quantum signal, dark-matter replacement, or endpoint score"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "ngc4254_dark_discrepancy_2d_resolution_audit_v01",
+  "status": "NGC4254_RADIAL_ONLY_DARK_DISCREPANCY_READY_2D_HARMONIC_RESOLUTION_BLOCKED",
+  "hi_beam_major_arcsec": 37.702799999999996,
+  "hi_beam_minor_arcsec": 32.94612,
+  "beam_provenance": "VIVA FITS HISTORY AIPS CLEAN BMAJ/BMIN",
+  "common_grid_pixel_arcsec": 0.50000000000004,
+  "overlap_area_arcsec2": 21667.500000003463,
+  "independent_hi_beams_in_common_support": 15.39453249521768,
+  "minimum_beams_for_five_zone_m0_m1_m2_model": 25,
+  "five_zone_harmonic_model_allowed": false,
+  "coarse_radial_profile_allowed": true,
+  "fine_scale_channel_claim_allowed": false,
+  "required_common_resolution": "VIVA HI beam",
+  "claim_boundary": "resolution/readiness audit; no baryonic gravity, dark discrepancy, morphology, or channel result"
+}

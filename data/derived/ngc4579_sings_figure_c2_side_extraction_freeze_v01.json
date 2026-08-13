@@ -1,0 +1,36 @@
+{
+  "schema": "tau_core_ngc4579_sings_figure_c2_side_extraction_freeze_v01",
+  "status": "SIDE_RESOLVED_FIGURE_C2_EXTRACTION_PROTOCOL_FROZEN_BEFORE_PANEL_VALUES_OPEN",
+  "source_pdf": "data/external/literature/ngc4579_sings_halpha/daigle2006_full_ads.pdf",
+  "source_sha256": "9b2ff7acf12fe1ae5a9d9b13fe1cf4909c723d888ff65df4b8d1723e9d07ff2d",
+  "source_page_one_based": 43,
+  "source_figure": "C2",
+  "source_panel": "NGC 4579, bottom right of the 4 by 2 panel array",
+  "selection_reads_panel_values": false,
+  "target_signal": "approaching-versus-receding Halpha rotation parity beyond the independently fixed bar radius",
+  "fixed_geometry": {
+    "distance_mpc": 16.5,
+    "bar_radius_kpc": 3.62,
+    "bar_radius_arcsec_at_fixed_distance": 45.253,
+    "primary_domain": "radius_arcsec >= 45.253"
+  },
+  "extraction_policy": [
+    "render page 43 at 600 dpi if marker separation requires it",
+    "identify every visually distinct source marker series and the source legend before assigning side labels",
+    "retain marker centers and graphically resolvable vertical errors without smoothing",
+    "do not reconstruct individual sides algebraically from the averaged numeric table",
+    "use the author numeric radius grid and averaged vrot only as axis/calibration cross-checks, not as side values",
+    "reverse-render every accepted marker on the original panel"
+  ],
+  "quality_gates": [
+    "two marker series are visually and semantically distinguishable",
+    "approaching/receding assignment is source-supported rather than guessed",
+    "each side has at least three post-bar markers",
+    "reverse render overlays accepted source markers",
+    "side parity is computed only on common or explicitly interpolable radial support"
+  ],
+  "prefrozen_odd_law": "orientation-odd sector only; no amplitude or radial-law fitting on NGC4579",
+  "panel_values_opened": false,
+  "odd_channel_scoring_allowed": false,
+  "claim_boundary": "side-extraction protocol only; no orientation-odd time-channel value has been read or scored"
+}

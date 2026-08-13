@@ -1,0 +1,44 @@
+{
+  "schema": "s4g_disk_break_dynamic_onset_alignment_v01",
+  "status": "DIAGNOSTIC_ONLY_S4G_DISK_BREAK_DYNAMIC_ONSET_SMALL_N",
+  "source_rows": 7,
+  "minimum_population_n": 15,
+  "population_claim_allowed": false,
+  "metrics": {
+    "d1p5": {
+      "n_paired": 6,
+      "median_absolute_log_rdyn_over_rbreak": 0.8140364678748315,
+      "median_absolute_log_rdyn_over_rdisk_control": 0.9637114107034668,
+      "break_alignment_better_than_rdisk_control": true,
+      "exact_permutations": 720,
+      "permutation_p_lower_is_better": 0.5783633841886269,
+      "null_median": 0.7480313946150228,
+      "null_q05": 0.32921858237999885
+    },
+    "d2p0_primary": {
+      "n_paired": 5,
+      "median_absolute_log_rdyn_over_rbreak": 0.8575412507130594,
+      "median_absolute_log_rdyn_over_rdisk_control": 1.0123519443837028,
+      "break_alignment_better_than_rdisk_control": true,
+      "exact_permutations": 120,
+      "permutation_p_lower_is_better": 0.5371900826446281,
+      "null_median": 0.8575412507130594,
+      "null_q05": 0.061154446064425584
+    },
+    "d3p0": {
+      "n_paired": 3,
+      "median_absolute_log_rdyn_over_rbreak": 1.3781532035361908,
+      "median_absolute_log_rdyn_over_rdisk_control": 2.0013710143236887,
+      "break_alignment_better_than_rdisk_control": true,
+      "exact_permutations": 6,
+      "permutation_p_lower_is_better": 0.7142857142857143,
+      "null_median": 1.3781532035361908,
+      "null_q05": 1.3599416583731083
+    }
+  },
+  "primary_descriptive_verdict": "ALIGNMENT_PILOT_NOT_SIGNIFICANT",
+  "freeze_sha256": "8492abfc60a7cdf784fa58d34a1c0388385929e6e82f49541fad75135f921f6b",
+  "source_sha256": "3b274340d0aff21146ccf575ce0b06ee1f2ffd905f25f3a3104058871ff4c515",
+  "dynamic_atlas_sha256": "a867abba169720f386044d10d8b67b1d1393dd0b02fd1fa190655774a8b30bce",
+  "claim_boundary": "retrospective small-N alignment diagnostic; alignment cannot identify source versus clock, quantum, path, gravity, or mixed channel origin"
+}

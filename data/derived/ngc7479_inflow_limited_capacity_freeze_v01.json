@@ -1,0 +1,21 @@
+{
+  "schema": "tau_core_ngc7479_inflow_limited_capacity_freeze_v01",
+  "status": "SOURCE_DEFINED_INFLOW_CAPACITY_FORMULA_FROZEN_POST_OPEN",
+  "coordinate": "x = R / a_bar",
+  "reliability": "rho(x) = Delta(x)^2 / (Delta(x)^2 + sigma(x)^2)",
+  "source_capacity": "C_Gamma = [integral_support rho(x) dx] / [integral_support dx]",
+  "transport_ode": "dQ_out/dx = rho(x) Delta(x)^2 [1 - Q_out/C_Gamma]",
+  "initial_condition": "Q_out(0) = 0",
+  "outside_support": "dQ_out/dx = 0",
+  "readout": "v_pred^2 = v_bar^2 [1 + Q_out(x)]",
+  "fitted_parameters": 0,
+  "interpretation": "Capacity limits each incoming increment during accumulation; C_Gamma is the source profile's resolved-information fraction and is not inferred from rotation data.",
+  "known_limits": {
+    "empty_channel": "C_Gamma -> 0 implies Q_out -> 0",
+    "unsaturated": "Q_out << C_Gamma gives dQ_out/dx approximately rho Delta^2",
+    "saturated": "Q_out -> C_Gamma gives dQ_out/dx -> 0",
+    "capacity_bound": "0 <= Q_out <= C_Gamma for nonnegative source density"
+  },
+  "prospective_for_ngc7479": false,
+  "claim_boundary": "minimal source-defined inflow-capacity diagnostic; not a derived physical lightcone capacity"
+}

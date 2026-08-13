@@ -1,0 +1,45 @@
+{
+  "schema": "tau_core_ngc4579_sings_halpha_rotation_extraction_freeze_v01",
+  "status": "INDEPENDENT_HALPHA_ROTATION_EXTRACTION_PROTOCOL_FROZEN_BEFORE_FIGURE_VALUES_OPEN",
+  "galaxy": "NGC 4579",
+  "source": {
+    "paper": "Daigle et al. 2006, MNRAS 367, 469-481",
+    "title": "H-alpha kinematics of the SINGS nearby galaxies survey I",
+    "doi": "10.1111/j.1365-2966.2005.09918.x",
+    "arxiv": "astro-ph/0601376",
+    "endpoint_carrier": "Appendix Figure C2 two-sided Halpha rotation curve"
+  },
+  "selection_reads_figure_c2_ngc4579_values": false,
+  "selection_reads_dark_discrepancy": false,
+  "prefrozen_operator": {
+    "name": "fixed three-mode source-error modal-capacity transport",
+    "freeze_file": "data/derived/ngc7479_modal_capacity_response_freeze_v01.json",
+    "operator_change_after_figure_open_allowed": false
+  },
+  "source_geometry_policy": {
+    "use_source_published_fixed_PA_and_inclination_for_rotation_values": true,
+    "do_not_redeproject_published_rotation_velocity": true,
+    "bar_radius_kpc": 3.62,
+    "primary_domain": "R >= 3.62 kpc",
+    "central_bar_and_nuclear_spiral_excluded": true
+  },
+  "digitization_policy": {
+    "render_source_pdf_at_300_dpi_or_higher": true,
+    "extract_approaching_and_receding_markers_separately": true,
+    "retain_source_error_bars_when_graphically_resolvable": true,
+    "sample_only_source_marker_coordinates_not_a_smoothed_visual_envelope": true,
+    "reverse_render_required": true,
+    "minimum_post_bar_points_per_side": 3
+  },
+  "quality_gates": [
+    "NGC4579 panel axes and side-marker legend are unambiguous",
+    "both sides retain at least three post-bar source markers",
+    "reverse-rendered markers overlay the published points",
+    "radial support overlaps the endpoint-blind baryonic field",
+    "no operator, morphology profile, radial gate, or amplitude is changed after values open"
+  ],
+  "figure_values_opened": false,
+  "baryonic_field_ready": true,
+  "scoring_allowed": false,
+  "claim_boundary": "prospective independent-Halpha extraction freeze only; no Figure C2 NGC4579 value or Tau score opened"
+}

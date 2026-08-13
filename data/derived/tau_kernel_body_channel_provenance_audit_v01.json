@@ -1,0 +1,32 @@
+{
+  "schema": "tau_kernel_body_channel_provenance_audit_v01",
+  "status": "EFFECTIVE_KERNEL_SOURCE_SHAPE_TRAINED_READOUT_AMPLITUDE_PATH_UNIDENTIFIED",
+  "shape_and_scale_layer": {
+    "n_kernel_observable_rows": 15,
+    "sources": [
+      "S4G morphology/scale components",
+      "SPARC distance, RHI, Rdisk, Reff and inclination proxies"
+    ],
+    "uses_observed_rotation_endpoint": false,
+    "explicit_observer_path_inputs": []
+  },
+  "amplitude_layer": {
+    "n_formula_families": 4,
+    "fit_policy": [
+      "least_squares_train_only_on_vobs2_minus_v6_2_over_bridge_formula_kernel"
+    ],
+    "target": "training vobs^2 - v_tpg_v6^2",
+    "uses_observed_rotation_endpoint": true,
+    "scope": "one population amplitude per formula family"
+  },
+  "effective_kernel_interpretation": "K_eff,g(R)=beta_family_train*K_shape,g(R); source observables select shape/scale, while the training endpoint fixes a shared readout amplitude",
+  "identifiability": {
+    "body_shape_separable_from_shared_amplitude_by_current_construction": true,
+    "physical_path_channel_separable_from_amplitude": false,
+    "galaxy_specific_channel_kernel_measured": false,
+    "tracer_specific_channel_kernel_measured": false
+  },
+  "required_next_measurement": "hold K_shape fixed and infer endpoint-heldout effective kernel deformations from independent tracers or null paths; test amplitude, radial dilation, onset shift, tail deformation and family mixing without refitting body coordinates",
+  "claim_boundary": "provenance and identifiability audit only; current kernel success is compatible with body information, shared readout calibration, or an unresolved combination",
+  "verdict": "CURRENT_KERNEL_CAN_BE_EFFECTIVE_BUT_DOES_NOT_ISOLATE_PHYSICAL_CHANNEL_CONTENT"
+}

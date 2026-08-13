@@ -1,0 +1,17 @@
+{
+  "schema": "s4g_stellar_asymmetry_source_v01",
+  "status": "SOURCE_ONLY_S4G_STELLAR_ASYMMETRY_ACQUIRED",
+  "catalog_id": "J/ApJ/781/12/galaxies",
+  "catalog_rows": 4690,
+  "catalog_galaxies_per_channel": 2345,
+  "sparc_rows": 175,
+  "usable_two_channel_matches": 76,
+  "asymmetry_definition": "scale-independent 180-degree rotational asymmetry of S4G near-infrared light",
+  "endpoint_access": false,
+  "raw_selected_sha256": "84eeca3ac391067e970b78d7ba47bae191dd9807b5fa99e1a8e869b1dfb58d44",
+  "sparc_source_sha256": "d6900f7a90d4e19cda4ad94c518baa862d4ed9d2405d2b94c3c48708a8f8e24a",
+  "crossmatch_sha256": "9b9689558f5af09d644c3bfed08d25f7bb1f21e24b4d532ef0d441b3d0458651",
+  "source_paper_arxiv": "https://arxiv.org/abs/1309.1444",
+  "source_paper_doi": "10.1088/0004-637X/781/1/12",
+  "claim_boundary": "source_acquisition_only_not_m_tau_attribution"
+}

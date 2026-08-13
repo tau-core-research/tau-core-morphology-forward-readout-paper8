@@ -1,0 +1,34 @@
+{
+  "schema": "tau_core_ngc7479_diagnostic_bar_scoring_v01",
+  "status": "DIAGNOSTIC_ONLY_RASTER_GAS_PROXY_SCORE_COMPLETE",
+  "formula": "v_pred^2 = v_bar^2 * (1 + Delta_source^2)",
+  "fitted_parameters": 0,
+  "uses_endpoint_to_select_morphology_scale_or_amplitude": false,
+  "n_endpoint_points": 10,
+  "n_gas_sensitivities": 3,
+  "all_matched_beat_newton": true,
+  "all_matched_beat_wrong_mean": false,
+  "all_matched_beat_best_wrong": false,
+  "rmse_ranges": {
+    "newton_baryonic": [
+      34.06424208361169,
+      34.10876178599462
+    ],
+    "matched": [
+      33.499215085759026,
+      33.54380138093105
+    ],
+    "wrong_mean": [
+      33.05280543234755,
+      33.09751660358892
+    ],
+    "best_wrong": [
+      31.745704901526103,
+      31.79063430112895
+    ]
+  },
+  "strict_physical_score_allowed": false,
+  "tau_morphology_detected": false,
+  "channel_detected": false,
+  "claim_boundary": "diagnostic scoring with publication-raster gas and spherical gas-force proxy; not endpoint validation"
+}

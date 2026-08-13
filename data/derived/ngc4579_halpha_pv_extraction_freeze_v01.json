@@ -1,0 +1,32 @@
+{
+  "schema": "tau_core_ngc4579_halpha_pv_extraction_freeze_v01",
+  "status": "PUBLISHED_PV_MODEL_EXTRACTION_PROTOCOL_FROZEN_BEFORE_PIXEL_READ",
+  "source_pdf": "data/external/literature/ngc4579_halpha_sings/chemin2006_full_published.pdf",
+  "source_sha256": "36fcf863b9a2ef4e65a332084fe5f5786da4714c9c915ea71dc31788fb30f43c",
+  "source_page_one_based": 43,
+  "source_figure": "A26, NGC 4579 (VCC 1727)",
+  "endpoint_carrier": "black major-axis model line reconstructed by the source authors from their rotation curve",
+  "axis_calibration": {
+    "angular_offset_arcsec": [-100.0, 100.0],
+    "line_of_sight_velocity_km_s": [1250.0, 1750.0]
+  },
+  "source_geometry": {
+    "systemic_velocity_km_s": 1507.6,
+    "inclination_deg": 38.7,
+    "bar_radius_kpc": 3.62,
+    "distance_mpc": 16.5
+  },
+  "conversion": "R=abs(offset)*D*1000/206265; vrot=abs(v_los-v_sys)/sin(i)",
+  "primary_radial_policy": "retain only abs(offset) at or beyond the source COMING bar radius; keep approaching and receding sides separate before averaging",
+  "central_exclusion_reason": "bar and nuclear spiral produce strong non-circular motions and kinematic twist",
+  "digitization_policy": "render at 300 dpi; identify near-black connected curve pixels inside the calibrated plot interior; exclude axes, labels and isolated components; sample fixed 5-arcsec bins",
+  "quality_gates": [
+    "both sides cover at least three post-bar bins",
+    "side disagreement is retained as endpoint uncertainty",
+    "reverse-rendered curve overlays the source black line",
+    "no formula or morphology parameter changes after extraction"
+  ],
+  "pixel_values_opened": false,
+  "scoring_allowed": false,
+  "claim_boundary": "prospective graphical endpoint protocol; not yet extracted or scored"
+}

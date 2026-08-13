@@ -1,0 +1,5 @@
+radius_arcsec,annulus_inner_arcsec,annulus_outer_arcsec,halpha_approaching_lower_radius_arcsec,halpha_approaching_upper_radius_arcsec,halpha_approaching_lower_weight,halpha_approaching_upper_weight,halpha_receding_lower_radius_arcsec,halpha_receding_upper_radius_arcsec,halpha_receding_lower_weight,halpha_receding_upper_weight,endpoint_access
+42.0,21.0,63.0,41.4,42.5,0.4545454545454539,0.5454545454545461,41.6,42.7,0.6363636363636381,0.36363636363636187,False
+84.0,63.0,105.0,81.9,86.3,0.5227272727272732,0.4772727272727269,83.9,87.6,0.9729729729729745,0.027027027027025575,False
+126.0,105.0,147.0,120.6,128.2,0.289473684210525,0.710526315789475,111.5,126.9,0.05844155844155874,0.9415584415584413,False
+168.0,147.0,189.0,154.5,206.9,0.7423664122137406,0.2576335877862595,167.2,171.8,0.8260869565217375,0.17391304347826247,False

@@ -1,0 +1,27 @@
+galaxy,query,simbad_status,alias_keys,historical_overlap_keys,alias_physical_overlap,old_exact_overlap,old_prospective_freeze,corrected_independent_name_gate
+CVnIdwA,CVnIdwA,OK,CVNIDWA,,False,False,True,True
+DDO_43,DDO 43,OK,DDO43;UGC3860,,False,False,True,True
+DDO_46,DDO 46,OK,DDO46;UGC3966,,False,False,True,True
+DDO_47,DDO 47,OK,DDO47;UGC3974,,False,False,True,True
+DDO_50,DDO 50,OK,DDO50;UGC4305,UGC4305,True,False,True,False
+DDO_52,DDO 52,OK,DDO52;UGC4426,,False,False,True,True
+DDO_53,DDO 53,OK,DDO53;F8295;UGC4459,,False,False,True,True
+DDO_70,DDO 70,OK,DDO70;UGC5373,,False,False,True,True
+DDO_87,DDO 87,OK,DDO87;UGC5918,UGC5918,True,False,True,False
+DDO_101,DDO 101,OK,DDO101;UGC6900,,False,False,True,True
+DDO_126,DDO 126,OK,DDO126;UGC7559,UGC7559,True,False,True,False
+DDO_133,DDO 133,OK,DDO133;F322;UGC7698,,False,False,True,True
+DDO_154,DDO 154,OK,DDO154;UGC8024,DDO154,True,True,False,False
+DDO_168,DDO 168,OK,DDO168;UGC8320,DDO168,True,True,False,False
+DDO_210,DDO 210,OK,DDO210,,False,False,True,True
+DDO_216,DDO 216,OK,DDO216;UGC12613,,False,False,True,True
+F564-V3,F564-V3,OK,F564,,False,False,True,True
+IC_10,IC 10,OK,IC10;UGC192,,False,False,True,True
+IC_1613,IC 1613,OK,DDO8;F1024;IC1613;UGC668,,False,False,True,True
+NGC_1569,NGC 1569,OK,F4260;NGC1569;UGC3056,,False,False,True,True
+NGC_2366,NGC 2366,OK,DDO42;F7234;NGC2366;UGC3851,NGC2366,True,True,False,False
+NGC_3738,NGC 3738,OK,F11330;NGC3738;UGC6565,,False,False,True,True
+UGC_8508,UGC 8508,OK,UGC8508,,False,False,True,True
+WLM,WLM,OK,WLM,,False,False,True,True
+HARO_29,HARO 29,OK,HARO29,,False,False,True,True
+HARO_36,HARO 36,OK,HARO36,,False,False,True,True

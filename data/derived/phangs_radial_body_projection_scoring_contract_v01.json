@@ -1,0 +1,259 @@
+{
+  "schema": "phangs_radial_body_projection_scoring_contract_v01",
+  "status": "ONE_SHOT_BODY_ORTHOGONAL_Q_SCORING_CONTRACT_FROZEN_UNOPENED",
+  "terminal_construction": {
+    "quality_cuts": {
+      "maximum_velocity_error_km_s": 10.0,
+      "minimum_halpha_flux_snr": 5.0,
+      "maximum_absolute_halpha_velocity_km_s": 450.0,
+      "beam_independent_sampling": "integer CO-beam pixel stride in both image axes"
+    },
+    "zero_point": "median(CO-Halpha) on the beam-independent common-quality support",
+    "contrast": "CO velocity - frozen zero point - beam-matched Halpha velocity",
+    "pixel_variance": "CO velocity error squared + Halpha velocity error squared",
+    "radial_edges": "five quantile zones of radius on the same common-quality support",
+    "angular_fit": "weighted least squares in {m0,m1_cos,m1_sin,m2_cos,m2_sin}",
+    "terminal_vector": "zone-major {m1_cos,m1_sin,m2_cos,m2_sin}; m0 excluded; dimension 20"
+  },
+  "decision_covariance": {
+    "construction": "block diagonal of five per-zone 4-by-4 m1/m2 leave-one-azimuth-sector jackknife covariance blocks",
+    "azimuth_sectors": 12,
+    "jackknife_formula": "(J-1)/J sum_j (theta_j-theta_bar)(theta_j-theta_bar)^T",
+    "required_zone_gates": [
+      "all 12 sectors occupied",
+      "every leave-one-sector five-mode design has rank 5",
+      "each retained 4-by-4 covariance block has stable rank 4",
+      "the assembled 20-by-20 covariance is finite, symmetric, and positive definite"
+    ],
+    "cross_zone_covariance": "set to zero in the decision statistic by the frozen block construction",
+    "inference_boundary": "chi-square p-values are approximations because 12-sector jackknife blocks are not a complete spatial covariance model",
+    "regularization": "forbidden after opening; a failed covariance gate makes that galaxy non-identifiable"
+  },
+  "projection_and_score": {
+    "projection": "P=I-S(S^T Sigma^-1 S)^+S^T Sigma^-1",
+    "innovation": "z=P y",
+    "projected_covariance": "C=P Sigma P^T",
+    "statistic": "Q=z^T C^+ z",
+    "degrees_of_freedom": "stable rank(C)",
+    "relative_svd_tolerance": 1e-10,
+    "per_galaxy_p": "chi2.sf(Q, dof)",
+    "global_statistic": "sum_g Q_g with dof=sum_g dof_g"
+  },
+  "decision_rule": {
+    "global_p_below": 0.01,
+    "individual_p_below": 0.05,
+    "minimum_individual_detections_of_four": 3,
+    "both_conditions_required": true
+  },
+  "controls": {
+    "radial_reversal": "reverse the five source-profile zones before constructing S",
+    "phase_rotation": "rotate every complex m1 and m2 source profile by pi/2 at fixed amplitude",
+    "geometric_control_pass": "Q_correct is strictly below Q_control globally and in at least 3 of 4 individual galaxies, separately for each geometric control",
+    "stellar_ablation": "repeat with the four CO columns only; report, not a detection gate",
+    "co_ablation": "repeat with the four stellar columns only; report, not a detection gate"
+  },
+  "hard_stop_gates": [
+    "confirmatory cohort must remain exactly NGC1300, NGC1385, NGC1512, NGC5068",
+    "every acquired source and terminal hash must match its pre-open manifest",
+    "source matrix and projection ranks must be 8 and 12 respectively",
+    "every decision-covariance zone gate must pass without repair",
+    "no formula, threshold, source column, radial zone, or galaxy replacement may change after opening"
+  ],
+  "promotion_boundary": {
+    "one_shot_q_can_detect_body_orthogonal_tracer_structure": true,
+    "grouped_body_increment_available": false,
+    "reason": "the current source-frozen projector can test whether a measured terminal has a component outside the declared body nuisance span; grouped body-level predictive gain additionally requires a separately frozen source-to-beta map and a non-saturating source-to-complement law",
+    "positive_q_does_not_identify": [
+      "observer channel",
+      "time readout",
+      "quantum readout",
+      "Tau-parent mechanism",
+      "dark sector"
+    ]
+  },
+  "synthetic_audit": {
+    "NGC1087": {
+      "checks": {
+        "covariance_rank_20": true,
+        "pure_body_q_zero": true,
+        "projected_dof_12": true,
+        "transverse_q_positive": true,
+        "radial_control_computable": true,
+        "phase_control_computable": true,
+        "stellar_ablation_computable": true,
+        "co_ablation_computable": true
+      },
+      "pure_body": {
+        "q": 3.8814188272148726e-27,
+        "dof": 12,
+        "p_chi_square_approximation": 1.0,
+        "projection_rank": 12,
+        "projected_covariance_rank": 12,
+        "innovation_norm": 1.7025300173010659e-13
+      },
+      "transverse_injection": {
+        "q": 1.6816040670327388,
+        "dof": 12,
+        "p_chi_square_approximation": 0.9997599525508336,
+        "projection_rank": 12,
+        "projected_covariance_rank": 12,
+        "innovation_norm": 2.7174559782853502
+      },
+      "radial_reversal_pure_body_q": 108.96098758265741,
+      "phase_rotation_pure_body_q": 41.78695825204509,
+      "stellar_only_pure_body_q": 15.044167032464996,
+      "co_only_pure_body_q": 2.1257193076167122
+    },
+    "NGC1433": {
+      "checks": {
+        "covariance_rank_20": true,
+        "pure_body_q_zero": true,
+        "projected_dof_12": true,
+        "transverse_q_positive": true,
+        "radial_control_computable": true,
+        "phase_control_computable": true,
+        "stellar_ablation_computable": true,
+        "co_ablation_computable": true
+      },
+      "pure_body": {
+        "q": 1.2149208227191673e-28,
+        "dof": 12,
+        "p_chi_square_approximation": 1.0,
+        "projection_rank": 12,
+        "projected_covariance_rank": 12,
+        "innovation_norm": 2.6603006144419508e-14
+      },
+      "transverse_injection": {
+        "q": 0.9382567712063326,
+        "dof": 12,
+        "p_chi_square_approximation": 0.9999900794997694,
+        "projection_rank": 12,
+        "projected_covariance_rank": 12,
+        "innovation_norm": 1.7431476374498527
+      },
+      "radial_reversal_pure_body_q": 39.82445238482439,
+      "phase_rotation_pure_body_q": 130.18666354534707,
+      "stellar_only_pure_body_q": 41.843446158997985,
+      "co_only_pure_body_q": 29.187010233614338
+    },
+    "NGC1566": {
+      "checks": {
+        "covariance_rank_20": true,
+        "pure_body_q_zero": true,
+        "projected_dof_12": true,
+        "transverse_q_positive": true,
+        "radial_control_computable": true,
+        "phase_control_computable": true,
+        "stellar_ablation_computable": true,
+        "co_ablation_computable": true
+      },
+      "pure_body": {
+        "q": 1.250259978161843e-28,
+        "dof": 12,
+        "p_chi_square_approximation": 1.0,
+        "projection_rank": 12,
+        "projected_covariance_rank": 12,
+        "innovation_norm": 3.1916932803396003e-14
+      },
+      "transverse_injection": {
+        "q": 0.5102140359913139,
+        "dof": 12,
+        "p_chi_square_approximation": 0.9999996922082389,
+        "projection_rank": 12,
+        "projected_covariance_rank": 12,
+        "innovation_norm": 1.3243899536940447
+      },
+      "radial_reversal_pure_body_q": 162.55358823258854,
+      "phase_rotation_pure_body_q": 136.16526604409646,
+      "stellar_only_pure_body_q": 35.35318677618386,
+      "co_only_pure_body_q": 4.8935649613424586
+    },
+    "NGC1672": {
+      "checks": {
+        "covariance_rank_20": true,
+        "pure_body_q_zero": true,
+        "projected_dof_12": true,
+        "transverse_q_positive": true,
+        "radial_control_computable": true,
+        "phase_control_computable": true,
+        "stellar_ablation_computable": true,
+        "co_ablation_computable": true
+      },
+      "pure_body": {
+        "q": 2.9081091266740722e-28,
+        "dof": 12,
+        "p_chi_square_approximation": 1.0,
+        "projection_rank": 12,
+        "projected_covariance_rank": 12,
+        "innovation_norm": 4.9369572804356806e-14
+      },
+      "transverse_injection": {
+        "q": 1.2459278380697207,
+        "dof": 12,
+        "p_chi_square_approximation": 0.9999522604337808,
+        "projection_rank": 12,
+        "projected_covariance_rank": 12,
+        "innovation_norm": 1.6098183319175985
+      },
+      "radial_reversal_pure_body_q": 52.392089449547555,
+      "phase_rotation_pure_body_q": 77.85399892493339,
+      "stellar_only_pure_body_q": 28.30251043778408,
+      "co_only_pure_body_q": 5.191726481159783
+    },
+    "NGC7496": {
+      "checks": {
+        "covariance_rank_20": true,
+        "pure_body_q_zero": true,
+        "projected_dof_12": true,
+        "transverse_q_positive": true,
+        "radial_control_computable": true,
+        "phase_control_computable": true,
+        "stellar_ablation_computable": true,
+        "co_ablation_computable": true
+      },
+      "pure_body": {
+        "q": 4.905668237453099e-28,
+        "dof": 12,
+        "p_chi_square_approximation": 1.0,
+        "projection_rank": 12,
+        "projected_covariance_rank": 12,
+        "innovation_norm": 7.109743373704543e-14
+      },
+      "transverse_injection": {
+        "q": 2.20412515512643,
+        "dof": 12,
+        "p_chi_square_approximation": 0.9990228934357771,
+        "projection_rank": 12,
+        "projected_covariance_rank": 12,
+        "innovation_norm": 2.244539657932825
+      },
+      "radial_reversal_pure_body_q": 137.67649442008536,
+      "phase_rotation_pure_body_q": 63.6662482442682,
+      "stellar_only_pure_body_q": 38.021757077993556,
+      "co_only_pure_body_q": 9.382164740133447
+    }
+  },
+  "jackknife_assembly_audit": {
+    "zone_block_ranks": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "assembled_rank": 20,
+    "minimum_eigenvalue": 0.00636931155320084,
+    "all_gates_pass": true
+  },
+  "decision_truth_table": {
+    "global_and_three_individual": true,
+    "global_without_replication": false,
+    "replication_without_global": false
+  },
+  "all_synthetic_checks_pass": true,
+  "velocity_contrast_used": false,
+  "terminal_coefficients_used": false,
+  "confirmatory_galaxies_opened": [],
+  "endpoint_score_computed": false,
+  "claim_boundary": "pre-open executable scoring contract and synthetic numerical audit; not an empirical body-orthogonal mode, channel, time, quantum, Tau, or dark-sector result"
+}

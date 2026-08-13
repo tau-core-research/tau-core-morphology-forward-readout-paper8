@@ -1,0 +1,62 @@
+{
+  "schema": "ngc3351_common_mode_geometry_freeze_v01",
+  "galaxy": "NGC3351",
+  "protocol_parent": "ngc4254_common_mode_geometry_freeze_v01",
+  "center_icrs_deg": [
+    160.9906,
+    11.7037
+  ],
+  "position_angle_deg_east_of_north": 193.0,
+  "inclination_deg": 41.0,
+  "geometry_source": "existing source-frozen PHANGS Halpha kinematic geometry",
+  "muse_input_psf_fwhm_arcsec": 1.05,
+  "target_resolution": "native PHANGS-ALMA CO beam; flux-weighted MUSE smoothing",
+  "major_axis_half_wedge_deg": 30.0,
+  "radial_edges_arcsec": [
+    5.0,
+    15.0,
+    25.0,
+    35.0,
+    45.0,
+    55.0,
+    65.0
+  ],
+  "reference_annulus_arcsec": [
+    5.0,
+    15.0
+  ],
+  "quality": {
+    "minimum_halpha_flux_snr": 5.0,
+    "maximum_halpha_velocity_error_km_s": 10.0,
+    "maximum_co_velocity_error_km_s": 10.0,
+    "absolute_halpha_relative_velocity_limit_km_s": 450.0,
+    "beam_independent_subsampling": true
+  },
+  "spectral_transport": {
+    "muse_reference_velocity_km_s": 774.736,
+    "barycentric_to_lsrk_direction_correction_km_s": -3.7630557874444444,
+    "empirical_intertracer_offset_allowed": false
+  },
+  "geometry_sensitivity": {
+    "pa_offset_deg": [
+      -5,
+      5
+    ],
+    "inclination_offset_deg": [
+      -5,
+      5
+    ],
+    "center_offsets_arcsec": [
+      -1,
+      1
+    ],
+    "wedge_half_deg": [
+      20,
+      40
+    ]
+  },
+  "velocity_pixels_read_during_freeze": false,
+  "replication_settings_changed_after_ngc4254": false,
+  "freeze_complete": true,
+  "claim_boundary": "untouched replication freeze; no NGC3351 velocity endpoint read"
+}

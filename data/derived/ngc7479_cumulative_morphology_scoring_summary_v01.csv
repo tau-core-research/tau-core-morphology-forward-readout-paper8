@@ -1,0 +1,4 @@
+grayscale_floor,rmse_newton_baryonic,rmse_matched_ngc7479,rmse_wrong_family_mean,rmse_wrong_family_best,best_wrong_galaxy,matched_beats_newton,matched_beats_wrong_mean,matched_beats_best_wrong
+0.0,34.10876178599462,29.084944335929634,29.459172896051353,21.826944867158577,NGC 4579,True,True,False
+4.0,34.080838864763095,29.056337384625763,29.430751701277497,21.79806093207815,NGC 4579,True,True,False
+8.0,34.06424208361169,29.039302517897866,29.41382099597762,21.780763124486615,NGC 4579,True,True,False

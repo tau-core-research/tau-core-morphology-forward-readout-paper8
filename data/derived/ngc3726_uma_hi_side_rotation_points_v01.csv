@@ -1,0 +1,13 @@
+galaxy,source_name,sample,radius_arcsec,approaching_velocity_km_s,approaching_error_plus_km_s,approaching_error_minus_km_s,receding_velocity_km_s,receding_error_plus_km_s,receding_error_minus_km_s,average_velocity_km_s,inclination_deg,receding_pa_deg,source_url,endpoint_access
+NGC3726,N3726,FX,40,112,10,7,92,12,10,102,53,195,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,False
+NGC3726,N3726,FX,60,131,7,7,119,10,10,125,53,195,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,False
+NGC3726,N3726,FX,80,144,5,5,146,7,10,145,53,195,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,False
+NGC3726,N3726,FX,100,156,5,5,172,5,7,164,53,195,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,False
+NGC3726,N3726,FX,120,154,7,7,171,5,7,162,53,195,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,False
+NGC3726,N3726,FX,140,155,7,5,166,7,7,160,53,195,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,False
+NGC3726,N3726,FX,160,152,7,7,159,5,7,156,53,195,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,False
+NGC3726,N3726,FX,183,145,10,7,148,5,5,147,57,188,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,False
+NGC3726,N3726,FX,256,157,8,8,159,6,6,158,72,180,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,False
+NGC3726,N3726,FX,316,169,9,12,,,,169,75,179,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,False
+NGC3726,N3726,FX,344,169,9,12,,,,169,75,179,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,False
+NGC3726,N3726,FX,373,167,15,15,,,,167,75,179,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,False

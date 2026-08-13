@@ -1,0 +1,23 @@
+{
+  "schema": "little_things_prospective_scoring_source_v01",
+  "status": "PROSPECTIVE_SAMPLE_FROZEN_SCORING_BLOCKED_BARYONIC_RADIAL_COMPONENTS",
+  "source": "Oh et al. 2015 LITTLE THINGS, VizieR J/AJ/149/180",
+  "source_url": "https://cdsarc.cds.unistra.fr/ftp/J/AJ/149/180",
+  "file_sha256": {
+    "ReadMe": "c9cafe20d4096448078e9191534a7d6890262669ca9a90e802abf83dc5607c0c",
+    "table1.dat.gz": "f5f430d88ab1201c4b61ea43619626b8b8ea1750b4855b35b4055fdbbe897614",
+    "table2.dat.gz": "2a568f070faba0eb2afa452c2663b05aad5d878c16e34d346fe88eddaa0fb1d4",
+    "rotdmbar.dat.gz": "ddb6d013e469de0f8d9543609f8ecf75f9b44df5a48e6cd49a986539995b059f"
+  },
+  "n_catalog_galaxies": 26,
+  "n_exact_name_new_vs_historical_175": 23,
+  "n_exact_name_overlap": 3,
+  "n_rotation_rows": 1716,
+  "source_native_numeric_rotation_curves": true,
+  "source_native_global_baryonic_masses": true,
+  "source_native_radial_baryonic_velocity_components": false,
+  "prospective_scoring_allowed": false,
+  "next_required_acquisition": "radial v_gas(R) and v_star(R), or author-supplied mass-model tables",
+  "endpoint_access": false,
+  "claim_boundary": "sample freeze and source acquisition only; no endpoint score"
+}

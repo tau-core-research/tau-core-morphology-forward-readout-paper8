@@ -1,0 +1,76 @@
+{
+  "schema": "phangs_radial_body_projection_rank4_source_shadow_v01",
+  "status": "SOURCE_ONLY_OPTIMAL_RANK4_BODY_SHADOW_QUANTIFIED",
+  "galaxies": {
+    "NGC1087": {
+      "source_matrix_rank": 8,
+      "captured_frobenius_energy_fraction": {
+        "3": 0.7816318866557203,
+        "4": 0.9295357103090791,
+        "5": 0.9654493392424478
+      },
+      "rank4_relative_reconstruction_error": 0.2654511060269311,
+      "sigma4_over_sigma5": 2.0293644829118804,
+      "rank4_subspace_unique_in_euclidean_source_metric": true,
+      "rank4_projector_idempotence_error": 1.9734898599276927e-15
+    },
+    "NGC1433": {
+      "source_matrix_rank": 8,
+      "captured_frobenius_energy_fraction": {
+        "3": 0.7270291726946596,
+        "4": 0.864775417528947,
+        "5": 0.9154897620263084
+      },
+      "rank4_relative_reconstruction_error": 0.36772895245146636,
+      "sigma4_over_sigma5": 1.6480655294359343,
+      "rank4_subspace_unique_in_euclidean_source_metric": true,
+      "rank4_projector_idempotence_error": 1.7435061776526244e-15
+    },
+    "NGC1566": {
+      "source_matrix_rank": 8,
+      "captured_frobenius_energy_fraction": {
+        "3": 0.7203527037551439,
+        "4": 0.9115675971129881,
+        "5": 0.9511310023813788
+      },
+      "rank4_relative_reconstruction_error": 0.29737586130520405,
+      "sigma4_over_sigma5": 2.1984370037789724,
+      "rank4_subspace_unique_in_euclidean_source_metric": true,
+      "rank4_projector_idempotence_error": 1.626340421343416e-15
+    },
+    "NGC1672": {
+      "source_matrix_rank": 8,
+      "captured_frobenius_energy_fraction": {
+        "3": 0.8784364516908956,
+        "4": 0.9392119644141914,
+        "5": 0.9682984424300686
+      },
+      "rank4_relative_reconstruction_error": 0.24655229787168603,
+      "sigma4_over_sigma5": 1.4455021671287294,
+      "rank4_subspace_unique_in_euclidean_source_metric": true,
+      "rank4_projector_idempotence_error": 1.738715031020351e-15
+    },
+    "NGC7496": {
+      "source_matrix_rank": 8,
+      "captured_frobenius_energy_fraction": {
+        "3": 0.8256898866108782,
+        "4": 0.9278771893614273,
+        "5": 0.957369479803593
+      },
+      "rank4_relative_reconstruction_error": 0.2685569039115783,
+      "sigma4_over_sigma5": 1.8614193186719452,
+      "rank4_subspace_unique_in_euclidean_source_metric": true,
+      "rank4_projector_idempotence_error": 9.624119437197632e-16
+    }
+  },
+  "summary": {
+    "minimum_rank4_energy_fraction": 0.864775417528947,
+    "maximum_rank4_energy_fraction": 0.9392119644141914,
+    "minimum_sigma4_over_sigma5": 1.4455021671287294,
+    "maximum_sigma4_over_sigma5": 2.1984370037789724
+  },
+  "velocity_contrast_opened": false,
+  "endpoint_score_computed": false,
+  "theorem_basis": "Eckart-Young-Mirsky optimal rank-four Frobenius approximation",
+  "claim_boundary": "source-only inverse shadow of a possible rank-four body image; not a parent-derived Gamma_B, physical CHDF role identification, channel, time, quantum, or dark-sector signal"
+}

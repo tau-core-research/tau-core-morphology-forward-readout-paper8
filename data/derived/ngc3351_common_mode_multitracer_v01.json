@@ -1,0 +1,17 @@
+{
+  "schema": "ngc3351_common_mode_multitracer_v01",
+  "status": "COMMON_MODE_METHOD_PREFLIGHT_SCORED",
+  "n_radial_contrasts": 2,
+  "common_zero_chi2": 5.8690787392449675,
+  "common_zero_dof": 2,
+  "common_zero_p": 0.053155198567203334,
+  "tracer_agreement_chi2": 11.527034609249036,
+  "tracer_agreement_dof": 2,
+  "tracer_agreement_p": 0.0031400476480951327,
+  "maximum_absolute_common_z": 2.0455548361569904,
+  "standard_physical_baseline_complete": false,
+  "full_spatial_covariance_complete": false,
+  "common_channel_detected": false,
+  "effective_time_readout_detected": false,
+  "claim_boundary": "opened two-tracer method preflight with conservative side scatter; not a channel/time/Tau detection"
+}

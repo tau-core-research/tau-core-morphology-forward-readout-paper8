@@ -1,0 +1,4 @@
+performance_class,n,median_channel_load,mean_channel_load
+body_failure,4,0.7782953028916246,0.6924476501568059
+partial_success,12,0.6875112078558037,4.912044633658676
+strong_success,5,0.6461038123984698,21.945652428519793

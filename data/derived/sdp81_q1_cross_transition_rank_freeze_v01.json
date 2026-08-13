@@ -1,0 +1,44 @@
+{
+  "schema": "sdp81_q1_cross_transition_rank_freeze_v01",
+  "readouts": [
+    "CO(5-4)",
+    "CO(8-7)"
+  ],
+  "path_count": 4,
+  "cube_sha256": {
+    "CO(5-4)": "b26f3e4cbff43bab9d6c4c082ff513788f9dcf20b2e640edf607dbc3fe34a656",
+    "CO(8-7)": "aeea985de1e590921a6282cdd9d017f0a888958e7e07b54d4d51435772475ea3"
+  },
+  "shared_wcs_shape": [
+    672,
+    672
+  ],
+  "spectral_frame": "LSRK",
+  "velocity_convention": "radio",
+  "channels_one_based": [
+    47,
+    52
+  ],
+  "velocity_window_km_s": [
+    -34.0,
+    71.0
+  ],
+  "nominal_aperture_radius_arcsec": 0.12,
+  "aperture_sensitivity_arcsec": [
+    0.08,
+    0.1,
+    0.12,
+    0.15
+  ],
+  "registration_sensitivity_mas": [
+    -20,
+    0,
+    20
+  ],
+  "statistic": "center each four-path centroid vector; compare cross-transition cosine/correlation and permutation path-label null",
+  "constant_transition_magnification_removed": true,
+  "differential_magnification_model_complete": false,
+  "cube_flux_opened_during_freeze": false,
+  "freeze_complete": true,
+  "claim_boundary": "metadata/geometry/statistic freeze only; no cross-transition endpoint score"
+}

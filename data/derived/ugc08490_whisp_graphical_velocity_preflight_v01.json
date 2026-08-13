@@ -1,0 +1,65 @@
+{
+  "schema": "ugc08490_whisp_graphical_velocity_preflight_v01",
+  "status": "WHISP_UGC08490_60ARCSEC_VELOCITY_DIGITIZED_AXIS_TRANSPORT_OPEN",
+  "panel_box_source_pixels": [
+    537,
+    542,
+    701,
+    694
+  ],
+  "panel_size_pixels": [
+    164,
+    152
+  ],
+  "systemic_velocity_km_s": 204.0,
+  "legend_anchors": [
+    [
+      782.4603174603,
+      250.0
+    ],
+    [
+      821.4925373134,
+      200.0
+    ],
+    [
+      860.5,
+      150.0
+    ]
+  ],
+  "legend_velocity_per_source_y_pixel": -1.2813993264831578,
+  "palette_bin_centers_km_s": {
+    "red": 270.4568256694972,
+    "orange": 250.0052856254115,
+    "yellow": 233.64817881929196,
+    "bright_green": 216.8359664186503,
+    "dark_green": 199.9894253945065,
+    "light_blue": 183.31851531264942,
+    "blue": 166.66348022436136,
+    "purple": 150.00528898008042
+  },
+  "quantization_half_width_km_s": 10.225770022042866,
+  "largest_component_pixels": 13519,
+  "connected_component_sizes": [
+    13519,
+    144,
+    31,
+    30,
+    21,
+    12,
+    9,
+    6,
+    5,
+    4
+  ],
+  "side_counts": {
+    "approaching": 5744,
+    "systemic_ambiguous": 1252,
+    "receding": 6523
+  },
+  "both_hi_velocity_sides_present": true,
+  "printed_axis_transport_ready": false,
+  "common_hi_halpha_radii_ready": false,
+  "kernel_measurement_allowed": false,
+  "endpoint_access": false,
+  "claim_boundary": "exact-palette graphical preflight with printed-legend calibration; formal WCS, center, beam covariance and common tracer radii remain open"
+}

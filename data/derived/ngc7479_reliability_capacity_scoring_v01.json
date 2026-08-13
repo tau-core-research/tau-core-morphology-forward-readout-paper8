@@ -1,0 +1,61 @@
+{
+  "schema": "tau_core_ngc7479_reliability_capacity_scoring_v01",
+  "status": "POST_OPEN_RELIABILITY_CAPACITY_DIAGNOSTIC_COMPLETE",
+  "freeze_status": "SOURCE_ERROR_WEIGHTED_CAPACITY_FORMULA_FROZEN_POST_OPEN",
+  "fitted_parameters": 0,
+  "n_endpoint_points": 10,
+  "n_gas_sensitivities": 3,
+  "source_reliability": {
+    "NGC 613": {
+      "mean": 0.9312472869844372,
+      "min": 0.493166514845122,
+      "max": 0.997470865718725
+    },
+    "NGC 4303": {
+      "mean": 0.717971504794083,
+      "min": 0.229787233155677,
+      "max": 0.920984999417696
+    },
+    "NGC 4579": {
+      "mean": 0.5881460467935188,
+      "min": 0.3365809832492405,
+      "max": 0.9878705591364453
+    },
+    "NGC 5248": {
+      "mean": 0.4792469768337085,
+      "min": 0.3805372133382476,
+      "max": 0.6808884050522683
+    },
+    "NGC 7479": {
+      "mean": 0.8262927636885667,
+      "min": 0.5880982781121011,
+      "max": 0.9881710362370406
+    }
+  },
+  "all_matched_beat_newton": true,
+  "all_matched_beat_wrong_mean": true,
+  "all_matched_beat_best_wrong": false,
+  "rmse_ranges": {
+    "newton": [
+      34.06424208361169,
+      34.10876178599462
+    ],
+    "matched": [
+      30.098590767234608,
+      30.144015119372483
+    ],
+    "wrong_mean": [
+      30.68712656383274,
+      30.732334948809406
+    ],
+    "best_wrong": [
+      24.867276935656673,
+      24.913441596653595
+    ]
+  },
+  "prospective": false,
+  "strict_physical_score_allowed": false,
+  "tau_morphology_detected": false,
+  "channel_detected": false,
+  "claim_boundary": "post-open diagnostic of a source-error and finite-capacity construction; not a physical channel derivation"
+}

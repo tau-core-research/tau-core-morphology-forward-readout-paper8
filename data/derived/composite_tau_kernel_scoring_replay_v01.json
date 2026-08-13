@@ -1,0 +1,146 @@
+{
+  "schema": "composite_tau_kernel_scoring_replay_v01",
+  "status": "PREDECLARED_REPLAY_POSITIVE_KERNEL_SPECIFICITY_NOT_PROSPECTIVE_ENDPOINT",
+  "kernel_interpretation": "effective composite morphology-channel carrier; time and quantum factors unresolved",
+  "amplitude_policy": "train_selected_family_to_global_shrinkage_0_40",
+  "primary_lane": {
+    "lane": "no_low_inclination",
+    "n_galaxies": 35,
+    "n_rotation_points": 640,
+    "mean_rmse_km_s": {
+      "matched_tau": 17.48865763589087,
+      "wrong_family": 26.89302225629268,
+      "tpg_v6": 17.141845629538587,
+      "mond": 17.8757944395688
+    },
+    "win_fraction": {
+      "wrong_family": 0.8571428571428571,
+      "tpg_v6": 0.5142857142857142,
+      "mond": 0.6571428571428571
+    },
+    "mean_paired_rmse_delta_km_s": {
+      "matched_minus_wrong": -9.40436462040181,
+      "matched_minus_tpg_v6": 0.346812006352289,
+      "matched_minus_mond": -0.3871368036779294
+    },
+    "paired_bootstrap_mean_delta_95_interval_km_s": {
+      "matched_minus_wrong": [
+        -14.617874725569925,
+        -9.251157886914177,
+        -4.9752827350868305
+      ],
+      "matched_minus_tpg_v6": [
+        -0.23448423713353522,
+        0.306086882538699,
+        1.138442473552934
+      ],
+      "matched_minus_mond": [
+        -1.3653335205330543,
+        -0.40195705132210696,
+        0.6860241217110356
+      ]
+    },
+    "shuffled_family_null": {
+      "p_beats_wrong_fraction": 0.0409590409590409,
+      "p_mean_matched_minus_wrong": 0.0109890109890109
+    }
+  },
+  "full_support_lane": {
+    "lane": "all",
+    "n_galaxies": 44,
+    "n_rotation_points": 835,
+    "mean_rmse_km_s": {
+      "matched_tau": 17.959293551781045,
+      "wrong_family": 26.513504932538755,
+      "tpg_v6": 17.642547659143375,
+      "mond": 18.113792903930133
+    },
+    "win_fraction": {
+      "wrong_family": 0.8181818181818182,
+      "tpg_v6": 0.4772727272727273,
+      "mond": 0.6136363636363636
+    },
+    "mean_paired_rmse_delta_km_s": {
+      "matched_minus_wrong": -8.554211380757708,
+      "matched_minus_tpg_v6": 0.3167458926376676,
+      "matched_minus_mond": -0.1544993521490949
+    },
+    "paired_bootstrap_mean_delta_95_interval_km_s": {
+      "matched_minus_wrong": [
+        -12.930630345878463,
+        -8.461612660153106,
+        -4.8317836184166385
+      ],
+      "matched_minus_tpg_v6": [
+        -0.2707298597089187,
+        0.29016453274673115,
+        1.0362594744144733
+      ],
+      "matched_minus_mond": [
+        -1.0495749681556652,
+        -0.16243501032833613,
+        0.7778413510945197
+      ]
+    },
+    "shuffled_family_null": {
+      "p_beats_wrong_fraction": 0.0359640359640359,
+      "p_mean_matched_minus_wrong": 0.0129870129870129
+    }
+  },
+  "baseline_secondary_lane": {
+    "lane": "no_large_distance_error",
+    "n_galaxies": 26,
+    "n_rotation_points": 457,
+    "mean_rmse_km_s": {
+      "matched_tau": 18.39452801028149,
+      "wrong_family": 28.863942493256584,
+      "tpg_v6": 18.275474943169193,
+      "mond": 19.48965078100393
+    },
+    "win_fraction": {
+      "wrong_family": 0.8846153846153846,
+      "tpg_v6": 0.5384615384615384,
+      "mond": 0.7307692307692307
+    },
+    "mean_paired_rmse_delta_km_s": {
+      "matched_minus_wrong": -10.469414482975091,
+      "matched_minus_tpg_v6": 0.11905306711229793,
+      "matched_minus_mond": -1.0951227707224345
+    },
+    "paired_bootstrap_mean_delta_95_interval_km_s": {
+      "matched_minus_wrong": [
+        -17.113921474877483,
+        -10.349052350129606,
+        -4.766782310698224
+      ],
+      "matched_minus_tpg_v6": [
+        -0.18109777945434619,
+        0.11552880187288866,
+        0.4424246432457459
+      ],
+      "matched_minus_mond": [
+        -2.1170648150236917,
+        -1.1069000143955203,
+        -0.009230412083429758
+      ]
+    },
+    "shuffled_family_null": {
+      "p_beats_wrong_fraction": 0.1308691308691308,
+      "p_mean_matched_minus_wrong": 0.1218781218781218
+    }
+  },
+  "verdicts": {
+    "matched_kernel_family_specificity_signal": true,
+    "majority_beats_tpg_v6": true,
+    "majority_beats_mond": true,
+    "mean_rmse_beats_tpg_v6": false,
+    "mean_rmse_beats_mond": true,
+    "universal_baseline_superiority": false,
+    "time_operator_identified": false,
+    "quantum_operator_identified": false,
+    "physical_channel_origin_identified": false
+  },
+  "replay_not_prospective_reason": "the quality gate was selected as a protocol candidate after preparation-state holdout inspection",
+  "endpoint_access": true,
+  "claim_boundary": "positive morphology-family-specific composite-kernel replay; not a new prospective endpoint, not universal superiority, and not identification of time or quantum channel origin"
+}

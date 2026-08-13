@@ -1,0 +1,209 @@
+{
+  "schema": "phangs_radial_body_projection_development_preflight_v01",
+  "status": "SOURCE_BODY_MATRIX_DEVELOPMENT_PREFLIGHT_RANK_GATE_PASSES_PARTIAL_COHORT",
+  "development_ready": [
+    "NGC1087",
+    "NGC1433",
+    "NGC1566",
+    "NGC1672",
+    "NGC7496"
+  ],
+  "development_blocked": [
+    "NGC1365"
+  ],
+  "terminal_dimension": 20,
+  "body_columns": [
+    "S4G 3.6um stellar m1 complex radial profile",
+    "radial finite difference of stellar m1 profile",
+    "S4G 3.6um stellar m2 complex radial profile",
+    "radial finite difference of stellar m2 profile",
+    "PHANGS CO moment-0 m1 complex radial profile",
+    "radial finite difference of CO moment-0 m1 profile",
+    "PHANGS CO moment-0 m2 complex radial profile",
+    "radial finite difference of CO moment-0 m2 profile"
+  ],
+  "galaxies": {
+    "NGC1087": {
+      "shape": [
+        20,
+        8
+      ],
+      "rank": 8,
+      "projected_complement_dimension": 12,
+      "singular_values": [
+        1.5551055827983016,
+        1.380865516093757,
+        1.3369463790366867,
+        1.1327372236265805,
+        0.4259390533273244,
+        0.4044732892772136,
+        0.367361357278598,
+        0.3526481658741971
+      ],
+      "condition_number_nonzero": 4.409793480545328,
+      "rank_gate_ge_4_complement": true,
+      "center_inside_both_sources": true,
+      "target_beam_arcsec": 1.7,
+      "s4g_extra_gaussian_sigma_pixels": 0.0,
+      "co_extra_gaussian_sigma_pixels": 0.8028252213113134,
+      "co_noise_robust_mom0_units": 0.0,
+      "co_support_pixels": 110061,
+      "provisional_source_only_radial_edges_arcsec": [
+        0.11325615330813484,
+        30.74255786468518,
+        44.547850552111235,
+        55.26136603019829,
+        65.89437639416073,
+        92.99970362391383
+      ],
+      "radial_edge_role": "development conditioning preflight only"
+    },
+    "NGC1433": {
+      "shape": [
+        20,
+        8
+      ],
+      "rank": 8,
+      "projected_complement_dimension": 12,
+      "singular_values": [
+        1.5629055098917728,
+        1.319455976799937,
+        1.2314690652865448,
+        1.0710649107092394,
+        0.7274082501517638,
+        0.5907929472562385,
+        0.46194924411709615,
+        0.24720440463235202
+      ],
+      "condition_number_nonzero": 6.32232064075137,
+      "rank_gate_ge_4_complement": true,
+      "center_inside_both_sources": true,
+      "target_beam_arcsec": 1.7,
+      "s4g_extra_gaussian_sigma_pixels": 0.0,
+      "co_extra_gaussian_sigma_pixels": 1.8375085317384416,
+      "co_noise_robust_mom0_units": 0.32390905634611844,
+      "co_support_pixels": 91878,
+      "provisional_source_only_radial_edges_arcsec": [
+        0.12823311578978494,
+        53.77295540763218,
+        75.43553889514288,
+        87.35184463026016,
+        103.76312193607738,
+        151.28008419356001
+      ],
+      "radial_edge_role": "development conditioning preflight only"
+    },
+    "NGC1566": {
+      "shape": [
+        20,
+        8
+      ],
+      "rank": 8,
+      "projected_complement_dimension": 12,
+      "singular_values": [
+        1.4596363263771144,
+        1.4291398222734721,
+        1.2803050247905263,
+        1.2391208114414154,
+        0.5903704251854222,
+        0.3748381059502063,
+        0.29962849087514204,
+        0.2712964137457421
+      ],
+      "condition_number_nonzero": 5.380227133208917,
+      "rank_gate_ge_4_complement": true,
+      "center_inside_both_sources": true,
+      "target_beam_arcsec": 1.7,
+      "s4g_extra_gaussian_sigma_pixels": 0.0,
+      "co_extra_gaussian_sigma_pixels": 1.6243434566099906,
+      "co_noise_robust_mom0_units": 0.8162650464445352,
+      "co_support_pixels": 92173,
+      "provisional_source_only_radial_edges_arcsec": [
+        0.20344471064442943,
+        32.964360465699194,
+        47.300135410962454,
+        62.50818951457619,
+        81.04549390962632,
+        146.39846507344154
+      ],
+      "radial_edge_role": "development conditioning preflight only"
+    },
+    "NGC1672": {
+      "shape": [
+        20,
+        8
+      ],
+      "rank": 8,
+      "projected_complement_dimension": 12,
+      "singular_values": [
+        1.781654271379704,
+        1.5203181606281415,
+        1.1646474762921333,
+        0.7749239222837337,
+        0.5106433022480895,
+        0.4582379772290576,
+        0.2673431583186615,
+        0.1233650200497372
+      ],
+      "condition_number_nonzero": 14.442134980089108,
+      "rank_gate_ge_4_complement": true,
+      "center_inside_both_sources": true,
+      "target_beam_arcsec": 1.9323665545593602,
+      "s4g_extra_gaussian_sigma_pixels": 0.5201907966063757,
+      "co_extra_gaussian_sigma_pixels": 0.0,
+      "co_noise_robust_mom0_units": 1.255013739258796,
+      "co_support_pixels": 20602,
+      "provisional_source_only_radial_edges_arcsec": [
+        0.23022695031246512,
+        23.070742886501186,
+        53.64323810944412,
+        75.66492901427335,
+        98.84321435356463,
+        158.15217282627142
+      ],
+      "radial_edge_role": "development conditioning preflight only"
+    },
+    "NGC7496": {
+      "shape": [
+        20,
+        8
+      ],
+      "rank": 8,
+      "projected_complement_dimension": 12,
+      "singular_values": [
+        1.6073174014036014,
+        1.5968514488834653,
+        1.080702792837171,
+        0.974432093852768,
+        0.5877432013402845,
+        0.5072035496718656,
+        0.34867003727472357,
+        0.15777034877624319
+      ],
+      "condition_number_nonzero": 10.187702656873563,
+      "rank_gate_ge_4_complement": true,
+      "center_inside_both_sources": true,
+      "target_beam_arcsec": 1.7,
+      "s4g_extra_gaussian_sigma_pixels": 0.0,
+      "co_extra_gaussian_sigma_pixels": 0.24651711384431696,
+      "co_noise_robust_mom0_units": 0.48209807494673873,
+      "co_support_pixels": 12695,
+      "provisional_source_only_radial_edges_arcsec": [
+        0.1467037567947435,
+        18.53323470885813,
+        34.19133182881502,
+        41.82045132063463,
+        51.132048441312584,
+        83.91493169556972
+      ],
+      "radial_edge_role": "development conditioning preflight only"
+    }
+  },
+  "all_ready_galaxies_pass_rank_gate": true,
+  "radial_coordinate_boundary": "the five radial edges here are 3-sigma CO moment-0 support quantiles used only for source-side conditioning; final endpoint matrices must be reevaluated on the unchanged terminal common-support quantile edges",
+  "velocity_contrast_opened": false,
+  "rotation_residual_opened": false,
+  "confirmatory_products_opened": false,
+  "endpoint_score_computed": false,
+  "claim_boundary": "development-only numerical existence and conditioning of the frozen source body basis; not a body-orthogonal innovation, channel signal, parent derivation, time signal, quantum signal, or dark-sector result"
+}

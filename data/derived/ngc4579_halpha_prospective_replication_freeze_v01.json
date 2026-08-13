@@ -1,0 +1,43 @@
+{
+  "schema": "tau_core_ngc4579_halpha_prospective_replication_freeze_v01",
+  "status": "INDEPENDENT_TRACER_PROSPECTIVE_REPLICATION_TARGET_FROZEN",
+  "galaxy": "NGC 4579",
+  "target_selection_reads_halpha_rotation_values": false,
+  "target_selection_reads_halpha_dark_discrepancy": false,
+  "selection_basis": [
+    "strongest wrong-family control in the opened NGC7479 diagnostics",
+    "complete source-only COMING multi-coordinate descriptor",
+    "S4G stellar decomposition available",
+    "published Virgo Fabry-Perot Halpha velocity field and rotation curve",
+    "moderate inclination rather than near-face-on geometry"
+  ],
+  "prefrozen_operator": {
+    "name": "fixed three-mode source-error modal-capacity transport",
+    "freeze_file": "data/derived/ngc7479_modal_capacity_response_freeze_v01.json",
+    "frozen_before_halpha_endpoint_open": true,
+    "post_halpha_operator_selection_allowed": false
+  },
+  "primary_halpha_source": {
+    "paper": "Chemin et al. 2006, MNRAS 366, 812-834",
+    "title": "A Virgo high-resolution Halpha kinematical survey II: The Atlas",
+    "doi": "10.1111/j.1365-2966.2005.09899.x",
+    "arxiv": "astro-ph/0511417",
+    "product": "Fabry-Perot Halpha velocity field and published rotation curve"
+  },
+  "source_geometry": {
+    "phangs_kinematic_inclination_deg_context_only": 41.3,
+    "coming_bar_radius_kpc": 3.62,
+    "coming_reversal_over_bar": 1.37
+  },
+  "required_before_score": [
+    "acquire checksum-frozen Halpha velocity/rotation product",
+    "freeze source-paper side/geometry/error policy",
+    "build endpoint-blind stellar and gas baryonic velocity field",
+    "apply the already frozen modal-capacity operator without modification",
+    "retain Newton and wrong-family controls"
+  ],
+  "halpha_endpoint_values_opened": false,
+  "baryonic_field_ready": false,
+  "scoring_allowed": false,
+  "claim_boundary": "prospective target and operator freeze only; no Halpha endpoint value or Tau score opened"
+}

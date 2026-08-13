@@ -1,0 +1,60 @@
+{
+  "schema": "phangs_radial_body_projection_preregistration_v01",
+  "status": "HIGHER_DIMENSIONAL_BODY_PROJECTION_ENDPOINTS_FROZEN_UNOPENED",
+  "eligible_population": [
+    "NGC1087",
+    "NGC1300",
+    "NGC1365",
+    "NGC1385",
+    "NGC1433",
+    "NGC1512",
+    "NGC1566",
+    "NGC1672",
+    "NGC5068",
+    "NGC7496"
+  ],
+  "pipeline_development_no_claim": [
+    "NGC1087",
+    "NGC1365",
+    "NGC1433",
+    "NGC1566",
+    "NGC1672",
+    "NGC7496"
+  ],
+  "confirmatory_untouched": [
+    "NGC1300",
+    "NGC1385",
+    "NGC1512",
+    "NGC5068"
+  ],
+  "radial_zones": 5,
+  "terminal_vector": "five-zone CO-minus-Halpha velocity coefficients ordered as {m1_cos,m1_sin,m2_cos,m2_sin} per zone; dimension 20",
+  "source_body_profiles": [
+    "S4G 3.6um stellar m1 complex radial profile",
+    "radial finite difference of stellar m1 profile",
+    "S4G 3.6um stellar m2 complex radial profile",
+    "radial finite difference of stellar m2 profile",
+    "PHANGS CO moment-0 m1 complex radial profile",
+    "radial finite difference of CO moment-0 m1 profile",
+    "PHANGS CO moment-0 m2 complex radial profile",
+    "radial finite difference of CO moment-0 m2 profile"
+  ],
+  "body_nuisance_matrix": "S_B is the 20-by-at-most-8 real matrix embedding the frozen complex source profiles and radial differences into their matching m1/m2 terminal coordinates",
+  "covariance_weighted_projection": "P_perp=I-S_B (S_B^T Sigma^-1 S_B)^+ S_B^T Sigma^-1",
+  "primary_statistic": "Q=(P_perp y)^T (P_perp Sigma P_perp^T)^+ (P_perp y), dof=rank(P_perp Sigma P_perp^T)",
+  "rank_gate": "rank(P_perp)>=4 in every confirmatory galaxy; otherwise preserve non-identifiability",
+  "primary_null": "all confirmatory body-orthogonal projected coefficients are zero",
+  "primary_threshold": "global confirmatory chi-square p<0.01",
+  "replication_threshold": "at least 3 of 4 confirmatory galaxies have individual p<0.05",
+  "controls": [
+    "radially permute each source profile before constructing S_B",
+    "rotate each complex source phase by pi/2 without changing amplitude",
+    "repeat after removing either stellar or CO morphology block"
+  ],
+  "promotion_rule": "primary and replication thresholds, rank gate, both geometric controls, and positive grouped holdout gain over a frozen body-only predictor are all required",
+  "development_boundary": "development galaxies may validate WCS, beam matching and numerical conditioning only; they cannot change zones, profiles, projection, thresholds, controls or confirmatory membership",
+  "construction_uses_velocity_contrast": false,
+  "construction_uses_rotation_residual": false,
+  "endpoint_opened": false,
+  "claim_boundary": "source-frozen higher-dimensional inverse-readout test design; not a detected channel, not a parent-derived law, and not time, quantum or dark-sector evidence"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "ngc4321_phangs_tracer_velocity_fields_v01",
+  "status": "SOURCE_NATIVE_2D_TRACER_VELOCITY_FIELDS_ACQUIRED",
+  "galaxy": "NGC4321",
+  "tracers": [
+    "PHANGS-MUSE H-alpha",
+    "PHANGS-ALMA CO(2-1)"
+  ],
+  "muse_psf_fwhm_arcsec": 1.16,
+  "co_beam_fwhm_arcsec": [
+    1.6665647416704001,
+    1.6665647416704001
+  ],
+  "muse_shape": [
+    999,
+    1231
+  ],
+  "co_shape": [
+    1,
+    1,
+    529,
+    594
+  ],
+  "manifest": [
+    {
+      "filename": "NGC4321_MAPS_copt_1.16asec.fits",
+      "url": "https://dataportal.eso.org/dataPortal/file/ADP.2021-07-16T10:20:56.506",
+      "sha256": "7829e009cac7466716a6fb6edbe892a1ad28f15a3a91de2fe50d49576ef91b1b",
+      "bytes": 521732160
+    },
+    {
+      "filename": "group.uid___A001_X2fb_X2b8.lp_schinner.ngc4321_12m7mtp_co21_mom1wprior.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fb_X2b8.lp_schinner/group.uid___A001_X2fb_X2b8.lp_schinner.ngc4321_12m7mtp_co21_mom1wprior.fits",
+      "sha256": "e4537cc40f9f893c2cefaf7fb4e5b6354a11619869fadfcfe2fe2aef9a52a7a1",
+      "bytes": 1267200
+    },
+    {
+      "filename": "group.uid___A001_X2fb_X2b8.lp_schinner.ngc4321_12m7mtp_co21_emom1wprior.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fb_X2b8.lp_schinner/group.uid___A001_X2fb_X2b8.lp_schinner.ngc4321_12m7mtp_co21_emom1wprior.fits",
+      "sha256": "d456eb86989fa3b945a10c4e6d6ca1978d0256d767093daf0f562985a6bada54",
+      "bytes": 1267200
+    },
+    {
+      "filename": "group.uid___A001_X2fb_X2b8.lp_schinner.ngc4321_12m7mtp_co21_broad_mom0.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fb_X2b8.lp_schinner/group.uid___A001_X2fb_X2b8.lp_schinner.ngc4321_12m7mtp_co21_broad_mom0.fits",
+      "sha256": "3bc450f262a3024cb5e6b94f32dff404f9919e208b7a0442981a0ba2cb43897d",
+      "bytes": 1267200
+    }
+  ],
+  "source_side_selection": {
+    "role": "preregistered confirmatory population endpoint",
+    "rule": "25<=inclination<=70 deg, S4G decomposition present, BAR absent; selected before tracer contrast was opened",
+    "alma_duplicate_rule": "X2b8 and X2c2 science arrays are identical; lexicographically first X2b8 group frozen",
+    "muse_release": "https://www.eso.org/sci/publications/announcements/sciann17425.html",
+    "alma_release": "https://arxiv.org/abs/2104.07739"
+  },
+  "construction_uses_rotation_residual": false,
+  "claim_boundary": "source-native 2D field acquisition and integrity freeze; no tracer innovation or Tau-channel result"
+}

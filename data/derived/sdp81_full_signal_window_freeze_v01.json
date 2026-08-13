@@ -1,0 +1,43 @@
+{
+  "schema": "tau_core.paper8.sdp81-full-signal-window-freeze.v01",
+  "selection_source": "sum of four q1 path aperture spectra",
+  "aperture_radius_arcsec": 0.12,
+  "threshold": "aggregate median + 3 * robust MAD sigma",
+  "aggregate_median": 0.0001057308761525408,
+  "aggregate_robust_sigma": 0.00024056817093369326,
+  "selected_channels_one_based": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58
+  ],
+  "selected_channel_count": 11,
+  "contiguous": true,
+  "previous_window_one_based": [
+    47,
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "previous_window_omitted_selected_channels": [
+    53,
+    54,
+    55,
+    56,
+    57,
+    58
+  ],
+  "uses_time_delay_or_rotation_residual": false,
+  "velocity_field_rescore_authorized": true,
+  "claim_boundary": "Source-side spectral support freeze only; not a channel effect, clock, observer-time signal, or Tau Core detection.",
+  "verdict": "CONTIGUOUS_CHANNELS_48_TO_58_FROZEN"
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "ugc08490_whisp_hi_source_v01",
+  "status": "WHISP_UGC08490_GRAPHICAL_HI_SOURCE_ACQUIRED_FITS_NOT_LINKED",
+  "galaxy": "UGC08490",
+  "alias": "NGC5204",
+  "source_family": "WHISP",
+  "metadata": {
+    "quality": "good",
+    "bandwidth_mhz": 2.48,
+    "n_channels": 127,
+    "central_velocity_km_s": 204.0,
+    "channel_separation_km_s": 4.14,
+    "beam_full_resolution_arcsec": "13.5 x 11.3",
+    "rms_noise_mjy_beam": 1.9,
+    "channel_map_quality": "reasonable",
+    "cleaned_map_quality": "good"
+  },
+  "overview_image_size_pixels": [
+    791,
+    1024
+  ],
+  "direct_fits_links_found": [],
+  "source_coordinate_fits_acquired": false,
+  "graphical_velocity_field_acquired": true,
+  "digitization_allowed": true,
+  "source_selection_reason": "pre-ranked residual-blind GHASP-WHISP candidate with two Halpha sides and Halpha coverage 7.45 times the frozen D>=2 onset",
+  "endpoint_access": false,
+  "physical_channel_detected": false,
+  "claim_boundary": "source acquisition only; graphical field requires frozen panel/legend calibration before same-body tracer-kernel scoring",
+  "manifest": [
+    {
+      "source_id": "object_page",
+      "url": "https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U8490/u8490.html",
+      "local_path": "data/external/literature/ugc08490_whisp_hi_route/whisp_ugc08490_object_page.html",
+      "content_type": "text/html",
+      "bytes": 1134,
+      "sha256": "55bc5bbe98e3a8ce5db3c58fa00dfea3a132a13ea1d5441f487da395c0a1afe7",
+      "source_native": true,
+      "endpoint_access": false
+    },
+    {
+      "source_id": "graphical_overview",
+      "url": "https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U8490/u8490plot.gif",
+      "local_path": "data/external/literature/ugc08490_whisp_hi_route/whisp_ugc08490_overview.gif",
+      "content_type": "image/gif",
+      "bytes": 88788,
+      "sha256": "a9d2cfcdf95cc8c14e165d782d9363b46ee232f687b6630360694295c2ef0b43",
+      "source_native": true,
+      "endpoint_access": false
+    },
+    {
+      "source_id": "observation_notes",
+      "url": "https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U8490/u8490obsred.html",
+      "local_path": "data/external/literature/ugc08490_whisp_hi_route/whisp_ugc08490_obs_reduction_notes.html",
+      "content_type": "text/html",
+      "bytes": 2515,
+      "sha256": "edc9cd7bce1bebae0af619da20c567244382b912540b8726b894632da01c7bca",
+      "source_native": true,
+      "endpoint_access": false
+    }
+  ]
+}

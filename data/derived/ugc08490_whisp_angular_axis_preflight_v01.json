@@ -1,0 +1,67 @@
+{
+  "schema": "ugc08490_whisp_angular_axis_preflight_v01",
+  "status": "WHISP_UGC08490_PRINTED_AXIS_PROXY_READY_COMMON_SUPPORT_PRESENT",
+  "axis_epoch": "B1950_as_printed",
+  "ra_tick_anchors": [
+    [
+      566.0,
+      1700.0
+    ],
+    [
+      615.5,
+      1650.0
+    ],
+    [
+      664.5,
+      1600.0
+    ]
+  ],
+  "dec_tick_anchors": [
+    [
+      546.5,
+      45.0
+    ],
+    [
+      603.5,
+      40.0
+    ],
+    [
+      660.5,
+      35.0
+    ]
+  ],
+  "anchor_pixel_uncertainty": 1.0,
+  "ra_seconds_of_time_per_pixel": -1.0152197065997872,
+  "dec_arcmin_per_pixel": -0.08771929824561403,
+  "ra_anchor_max_residual_seconds": 0.16920328443302424,
+  "dec_anchor_max_residual_arcmin": 0.0,
+  "center_proxy_radius_summary": {
+    "systemic_color_centroid": {
+      "center_source_pixels": [
+        618.5990415335464,
+        611.5199680511182
+      ],
+      "p50_arcsec": 318.7878626161867,
+      "p95_arcsec": 535.5509497951223,
+      "max_arcsec": 638.8681105377462
+    },
+    "side_centroid_midpoint": {
+      "center_source_pixels": [
+        614.8756477775021,
+        617.3406426376648
+      ],
+      "p50_arcsec": 315.9277764038589,
+      "p95_arcsec": 532.0514791451992,
+      "max_arcsec": 615.8206790201339
+    }
+  },
+  "ghasp_max_radius_arcsec": 112.4,
+  "ghasp_support_inside_both_hi_proxy_maxima": true,
+  "formal_wcs_ready": false,
+  "center_source_frozen": false,
+  "beam_covariance_ready": false,
+  "common_hi_halpha_radial_transport_ready": false,
+  "kernel_measurement_allowed": false,
+  "endpoint_access": false,
+  "claim_boundary": "printed-axis and two-center source proxy only; formal center, deprojection, beam covariance and common radial bin freeze remain open"
+}

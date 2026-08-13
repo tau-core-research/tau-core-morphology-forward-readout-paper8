@@ -1,0 +1,103 @@
+{
+  "schema": "tau_core.paper8.sdp81-source-spectral-cube.v01",
+  "tracer": "ALMA Band-6 CO(8-7)",
+  "channels_one_based": [
+    47,
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "velocities_radio_lsrk_km_s": [
+    -33.9999994453536,
+    -12.999999445360299,
+    8.000000554633004,
+    29.000000554626308,
+    50.00000055461961,
+    71.00000055461291
+  ],
+  "path_count": 4,
+  "source_basis_count": 49,
+  "active_source_cell_count": 21,
+  "channel_fits": [
+    {
+      "channel_one_based": 47,
+      "velocity_radio_lsrk_km_s": -33.9999994453536,
+      "common_source_relative_residual": 0.36603121810339984,
+      "maximum_path_relative_residual": 0.4816925398506298,
+      "independent_source_relative_residual": 0.22079837319227213,
+      "common_vs_independent_squared_residual_excess": 1.748175830146015
+    },
+    {
+      "channel_one_based": 48,
+      "velocity_radio_lsrk_km_s": -12.999999445360299,
+      "common_source_relative_residual": 0.3053689961359955,
+      "maximum_path_relative_residual": 0.3995343482446775,
+      "independent_source_relative_residual": 0.17857228213422846,
+      "common_vs_independent_squared_residual_excess": 1.9242990623194305
+    },
+    {
+      "channel_one_based": 49,
+      "velocity_radio_lsrk_km_s": 8.000000554633004,
+      "common_source_relative_residual": 0.30221034167889155,
+      "maximum_path_relative_residual": 0.3834671468767227,
+      "independent_source_relative_residual": 0.18422050143103139,
+      "common_vs_independent_squared_residual_excess": 1.6911798574714663
+    },
+    {
+      "channel_one_based": 50,
+      "velocity_radio_lsrk_km_s": 29.000000554626308,
+      "common_source_relative_residual": 0.2631699145270893,
+      "maximum_path_relative_residual": 0.3385125211171705,
+      "independent_source_relative_residual": 0.1606639801695113,
+      "common_vs_independent_squared_residual_excess": 1.6830912041352455
+    },
+    {
+      "channel_one_based": 51,
+      "velocity_radio_lsrk_km_s": 50.00000055461961,
+      "common_source_relative_residual": 0.20889123541466764,
+      "maximum_path_relative_residual": 0.3553670428764611,
+      "independent_source_relative_residual": 0.10847759578734822,
+      "common_vs_independent_squared_residual_excess": 2.708175961543276
+    },
+    {
+      "channel_one_based": 52,
+      "velocity_radio_lsrk_km_s": 71.00000055461291,
+      "common_source_relative_residual": 0.1467260740005377,
+      "maximum_path_relative_residual": 0.2544376445986865,
+      "independent_source_relative_residual": 0.08625055243747015,
+      "common_vs_independent_squared_residual_excess": 1.8939486676645263
+    }
+  ],
+  "all_common_channel_residuals_finite": true,
+  "source_spectral_rank": 6,
+  "channel_common_source_promotion_flags": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "common_source_spectral_cube_promoted": false,
+  "source_clock_proxy": {
+    "name": "Theta_dyn_4D_inverse",
+    "definition": "weighted affine fit to source-cell CO spectral centroids",
+    "offset_km_s": 7.766515575755961,
+    "covector_km_s_per_arcsec": [
+      -93.77702252362661,
+      72.23875047531725
+    ],
+    "covector_norm_km_s_per_arcsec": 118.37468911736123,
+    "centroid_plane_r2": -0.1255574604219858,
+    "nonzero_fit": true,
+    "stable": false,
+    "parent_body_clock_identified": false
+  },
+  "body_clock_theta_M_materialized": false,
+  "quotient_basic_time_covector_a_O_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "CONSTRAINED_SOURCE_SPECTRAL_CUBE_MATERIALIZED__CLOCK_PROXY_NOT_PROMOTED",
+  "claim_boundary": "A 4D inverse dynamical-order proxy reconstructed from a spectral tracer; not a parent-derived Theta_M, quotient-basic a_O, observer-time effect, or Tau Core detection."
+}

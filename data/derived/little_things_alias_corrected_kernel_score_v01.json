@@ -1,0 +1,48 @@
+{
+  "schema": "tau-core.paper8.little-things-alias-corrected-kernel-score.v01",
+  "status": "EXTERNAL_SCORE_RECOMPUTED_AFTER_ALIAS_EXCLUSION",
+  "excluded_alias_overlaps": [
+    "DDO_126",
+    "DDO_50",
+    "DDO_87"
+  ],
+  "all_corrected": {
+    "n_galaxies": 14,
+    "n_points": 233,
+    "mean_rmse_km_s": {
+      "tau_matched": 13.070758129323364,
+      "wrong_family_mean": 47.95158191838436,
+      "tpg_v6": 13.23146205027231,
+      "mond": 12.195796177124038,
+      "newton": 24.343780666844935
+    },
+    "win_fraction": {
+      "wrong_family_mean": 1.0,
+      "best_wrong_family": 0.5,
+      "tpg_v6": 0.5714285714285714,
+      "mond": 0.35714285714285715,
+      "newton": 1.0
+    }
+  },
+  "primary_inclination_ge_40": {
+    "n_galaxies": 11,
+    "n_points": 187,
+    "mean_rmse_km_s": {
+      "tau_matched": 7.890108264448245,
+      "wrong_family_mean": 46.92055763933579,
+      "tpg_v6": 8.046688083459543,
+      "mond": 6.879114386028426,
+      "newton": 18.752751227621676
+    },
+    "win_fraction": {
+      "wrong_family_mean": 1.0,
+      "best_wrong_family": 0.5454545454545454,
+      "tpg_v6": 0.5454545454545454,
+      "mond": 0.36363636363636365,
+      "newton": 1.0
+    }
+  },
+  "prospective_claim_allowed": false,
+  "reason": "the original exact-name gate missed physical aliases; corrected set is independent by SIMBAD identity but was selected after original score inspection",
+  "claim_boundary": "alias-corrected retrospective external score; not prospective validation and not a test of new post-score subfamily labels"
+}

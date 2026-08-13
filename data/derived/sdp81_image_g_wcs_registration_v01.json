@@ -1,0 +1,64 @@
+{
+  "schema": "tau_core.paper8.sdp81-image-g-wcs-registration.v01",
+  "status": "IMAGE_G_WCS_ANCHOR_OPERATIONAL_WITH_BEAM_SCALE_SYSTEMATIC",
+  "anchor": {
+    "source": "Tamura et al. (2015), arXiv:1503.07605",
+    "ra_hms": "09:03:11.573",
+    "dec_dms": "+00:39:06.54",
+    "pixel_x_zero_based": 1606.4311371192753,
+    "pixel_y_zero_based": 1463.920458125751
+  },
+  "local_compact_peak": {
+    "pixel_x_zero_based": 1613,
+    "pixel_y_zero_based": 1467,
+    "separation_from_published_g_arcsec": 0.036274487599285817,
+    "beam_major_arcsec": 0.0307760555297124,
+    "beam_minor_arcsec": 0.0234658066183344,
+    "acceptance_tolerance_arcsec": 0.0461640832945686,
+    "counterpart_consistent_within_tolerance": true
+  },
+  "q1_paths": [
+    {
+      "path_index": 1,
+      "lens_x_west_offset_arcsec": 1.9150438850589304,
+      "north_offset_arcsec": 0.2486292031005207,
+      "ra_deg": 135.79768884226615,
+      "dec_deg": 0.6518857303061002,
+      "pixel_x_zero_based": 1989.4399145903706,
+      "pixel_y_zero_based": 1513.6462952764068
+    },
+    {
+      "path_index": 2,
+      "lens_x_west_offset_arcsec": -1.5130306342596636,
+      "north_offset_arcsec": -0.09343950359425356,
+      "ra_deg": 135.79864114681692,
+      "dec_deg": 0.6517907112314646,
+      "pixel_x_zero_based": 1303.8250100754942,
+      "pixel_y_zero_based": 1445.2325601466707
+    },
+    {
+      "path_index": 3,
+      "lens_x_west_offset_arcsec": -1.201631645351138,
+      "north_offset_arcsec": 0.8646433657896423,
+      "ra_deg": 135.79855464151808,
+      "dec_deg": 0.6520568453683248,
+      "pixel_x_zero_based": 1366.1048096242841,
+      "pixel_y_zero_based": 1636.8491334450177
+    },
+    {
+      "path_index": 4,
+      "lens_x_west_offset_arcsec": -0.8181867790180961,
+      "north_offset_arcsec": -1.1877749739404568,
+      "ra_deg": 135.79844812213156,
+      "dec_deg": 0.6514867291687774,
+      "pixel_x_zero_based": 1442.7937791639495,
+      "pixel_y_zero_based": 1226.365464823696
+    }
+  ],
+  "lens_x_convention": "positive lens-model x is westward RA offset; WCS sky-offset longitude therefore uses -x",
+  "q1_path_count": 4,
+  "absolute_wcs_registration_operational": true,
+  "body_covector_pullback_materialized": false,
+  "pathwise_sensitivity_requirement": "repeat extraction over at least the published-coordinate to local-peak offset and the frozen smooth-lens family",
+  "claim_boundary": "Operational image-plane WCS registration with beam-scale systematic; not a body covector, time predictor, channel effect, or Tau detection."
+}

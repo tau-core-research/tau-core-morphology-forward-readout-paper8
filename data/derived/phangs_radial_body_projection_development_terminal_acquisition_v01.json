@@ -1,0 +1,201 @@
+{
+  "schema": "phangs_radial_body_projection_development_terminal_acquisition_v01",
+  "status": "DEVELOPMENT_TERMINAL_FIELDS_ACQUIRED_HASH_FROZEN",
+  "development_galaxies": [
+    "NGC1087",
+    "NGC1433",
+    "NGC1566",
+    "NGC1672",
+    "NGC7496"
+  ],
+  "confirmatory_galaxies_opened": [],
+  "products": {
+    "NGC1087/NGC1087_MAPS_copt_0.92asec.fits": {
+      "shape": [
+        897,
+        609
+      ],
+      "required_extensions": [
+        "HA6562_FLUX",
+        "HA6562_FLUX_ERR",
+        "HA6562_VEL",
+        "HA6562_VEL_ERR"
+      ]
+    },
+    "NGC1087/group.uid___A001_X13b3_X90.lp_schinner.ngc1087_12m7mtp_co21_mom1wprior.fits": {
+      "shape": [
+        1,
+        1,
+        578,
+        485
+      ],
+      "beam_arcsec": [
+        1.60260346097064,
+        1.60260346097064
+      ]
+    },
+    "NGC1087/group.uid___A001_X13b3_X90.lp_schinner.ngc1087_12m7mtp_co21_emom1wprior.fits": {
+      "shape": [
+        1,
+        1,
+        578,
+        485
+      ],
+      "beam_arcsec": [
+        1.60260346097064,
+        1.60260346097064
+      ]
+    },
+    "NGC1433/NGC1433_MAPS_copt_0.91asec.fits": {
+      "shape": [
+        915,
+        1480
+      ],
+      "required_extensions": [
+        "HA6562_FLUX",
+        "HA6562_FLUX_ERR",
+        "HA6562_VEL",
+        "HA6562_VEL_ERR"
+      ]
+    },
+    "NGC1433/group.uid___A001_X136e_X9b.lp_schinner.ngc1433_12m7mtp_co21_mom1wprior.fits": {
+      "shape": [
+        1,
+        1,
+        576,
+        835
+      ],
+      "beam_arcsec": [
+        1.09769529303252,
+        1.09769529303252
+      ]
+    },
+    "NGC1433/group.uid___A001_X136e_X9b.lp_schinner.ngc1433_12m7mtp_co21_emom1wprior.fits": {
+      "shape": [
+        1,
+        1,
+        576,
+        835
+      ],
+      "beam_arcsec": [
+        1.09769529303252,
+        1.09769529303252
+      ]
+    },
+    "NGC1566/NGC1566_MAPS_copt_0.80asec.fits": {
+      "shape": [
+        1187,
+        898
+      ],
+      "required_extensions": [
+        "HA6562_FLUX",
+        "HA6562_FLUX_ERR",
+        "HA6562_VEL",
+        "HA6562_VEL_ERR"
+      ]
+    },
+    "NGC1566/group.uid___A001_X136e_X9f.lp_schinner.ngc1566_12m7mtp_co21_mom1wprior.fits": {
+      "shape": [
+        1,
+        1,
+        838,
+        576
+      ],
+      "beam_arcsec": [
+        1.25428013147268,
+        1.25428013147268
+      ]
+    },
+    "NGC1566/group.uid___A001_X136e_X9f.lp_schinner.ngc1566_12m7mtp_co21_emom1wprior.fits": {
+      "shape": [
+        1,
+        1,
+        838,
+        576
+      ],
+      "beam_arcsec": [
+        1.25428013147268,
+        1.25428013147268
+      ]
+    },
+    "NGC1672/NGC1672_MAPS_copt_0.96asec.fits": {
+      "shape": [
+        711,
+        1235
+      ],
+      "required_extensions": [
+        "HA6562_FLUX",
+        "HA6562_FLUX_ERR",
+        "HA6562_VEL",
+        "HA6562_VEL_ERR"
+      ]
+    },
+    "NGC1672/group.uid___A001_X2fb_X272.lp_schinner.ngc1672_12m7mtp_co21_mom1wprior.fits": {
+      "shape": [
+        1,
+        1,
+        274,
+        487
+      ],
+      "beam_arcsec": [
+        1.9323665545593602,
+        1.9323665545593602
+      ]
+    },
+    "NGC1672/group.uid___A001_X2fb_X272.lp_schinner.ngc1672_12m7mtp_co21_emom1wprior.fits": {
+      "shape": [
+        1,
+        1,
+        274,
+        487
+      ],
+      "beam_arcsec": [
+        1.9323665545593602,
+        1.9323665545593602
+      ]
+    },
+    "NGC7496/NGC7496_MAPS_copt_0.89asec.fits": {
+      "shape": [
+        936,
+        532
+      ],
+      "required_extensions": [
+        "HA6562_FLUX",
+        "HA6562_FLUX_ERR",
+        "HA6562_VEL",
+        "HA6562_VEL_ERR"
+      ]
+    },
+    "NGC7496/group.uid___A001_X1284_X2634.lp_schinner.ngc7496_12m7mtp_co21_mom1wprior.fits": {
+      "shape": [
+        1,
+        1,
+        330,
+        300
+      ],
+      "beam_arcsec": [
+        1.6750384896869999,
+        1.6750384896869999
+      ]
+    },
+    "NGC7496/group.uid___A001_X1284_X2634.lp_schinner.ngc7496_12m7mtp_co21_emom1wprior.fits": {
+      "shape": [
+        1,
+        1,
+        330,
+        300
+      ],
+      "beam_arcsec": [
+        1.6750384896869999,
+        1.6750384896869999
+      ]
+    }
+  },
+  "ledger": "data/derived/phangs_radial_body_projection_development_terminal_ledger_v01.csv",
+  "hashes_frozen_in_script": true,
+  "velocity_values_opened_for_pipeline_development": true,
+  "terminal_edges_computed": false,
+  "body_projection_score_computed": false,
+  "endpoint_scoring_allowed": false,
+  "claim_boundary": "development-only velocity-field acquisition for common-support edge and conditioning replay; not a confirmatory endpoint, body-orthogonal innovation, physical channel, time, quantum, Tau, or dark-sector signal"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "ngc4535_phangs_tracer_velocity_fields_v01",
+  "status": "SOURCE_NATIVE_2D_TRACER_VELOCITY_FIELDS_ACQUIRED",
+  "galaxy": "NGC4535",
+  "tracers": [
+    "PHANGS-MUSE H-alpha",
+    "PHANGS-ALMA CO(2-1)"
+  ],
+  "muse_psf_fwhm_arcsec": 0.56,
+  "co_beam_fwhm_arcsec": [
+    1.55823455733084,
+    1.55823455733084
+  ],
+  "muse_shape": [
+    898,
+    610
+  ],
+  "co_shape": [
+    1,
+    1,
+    399,
+    292
+  ],
+  "manifest": [
+    {
+      "filename": "NGC4535_MAPS_copt_0.56asec.fits",
+      "url": "https://dataportal.eso.org/dataPortal/file/ADP.2021-07-16T10:20:56.518",
+      "sha256": "cfa4530d8db9e70aa9f2b50ed2e9261c11c382c5809d3eafe92ea826743dc68f",
+      "bytes": 232479360
+    },
+    {
+      "filename": "group.uid___A001_X2fb_X2cc.lp_schinner.ngc4535_12m7mtp_co21_mom1wprior.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fb_X2cc.lp_schinner/group.uid___A001_X2fb_X2cc.lp_schinner.ngc4535_12m7mtp_co21_mom1wprior.fits",
+      "sha256": "45889fcc280b2738909ad5637d92ba95a3092cf48bfc82e38c0d32f0efd48dff",
+      "bytes": 475200
+    },
+    {
+      "filename": "group.uid___A001_X2fb_X2cc.lp_schinner.ngc4535_12m7mtp_co21_emom1wprior.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fb_X2cc.lp_schinner/group.uid___A001_X2fb_X2cc.lp_schinner.ngc4535_12m7mtp_co21_emom1wprior.fits",
+      "sha256": "95f8c6a00d7ba9fb70a3a4e601b10dca8a927646bb1ec602cfce6d0d058cb2c2",
+      "bytes": 475200
+    },
+    {
+      "filename": "group.uid___A001_X2fb_X2cc.lp_schinner.ngc4535_12m7mtp_co21_broad_mom0.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fb_X2cc.lp_schinner/group.uid___A001_X2fb_X2cc.lp_schinner.ngc4535_12m7mtp_co21_broad_mom0.fits",
+      "sha256": "133f7b2cddb38948f2ee6c973fd909b7ea2f83e27251ae737804a3cd984c30dd",
+      "bytes": 475200
+    }
+  ],
+  "source_side_selection": {
+    "role": "independent barred-galaxy morphology-orthogonal replication",
+    "rule": "public matched PHANGS-MUSE/ALMA fields, moderate inclination, source-known bar, and no prefrozen m1 nuisance label; selected without tracer contrast or rotation residual",
+    "muse_release": "https://www.eso.org/sci/publications/announcements/sciann17425.html",
+    "alma_release": "https://arxiv.org/abs/2104.07739"
+  },
+  "construction_uses_rotation_residual": false,
+  "claim_boundary": "source-native 2D field acquisition and integrity freeze; no tracer innovation or Tau-channel result"
+}

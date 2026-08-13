@@ -1,0 +1,43 @@
+{
+  "schema": "tau_kernel_path_modulation_test_v01",
+  "status": "RETROSPECTIVE_TAU_KERNEL_PATH_MODULATION_NOT_DETECTED",
+  "n_galaxies": 75,
+  "n_path_clean_p0": 68,
+  "n_path_disturbed_p1_p3": 7,
+  "kernel_gain_definition": "rmse_tpg_v6 - rmse_matched_family; positive favors Tau kernel",
+  "clean": {
+    "mean_gain_vs_tpg": -0.32140780012277453,
+    "median_gain_vs_tpg": -0.027746240199324035,
+    "matched_beats_tpg_fraction": 0.4852941176470588,
+    "matched_beats_wrong_fraction": 0.9117647058823529,
+    "median_gain_vs_wrong_kernel": 13.538914968210635
+  },
+  "path_disturbed": {
+    "mean_gain_vs_tpg": 0.021926004090636702,
+    "median_gain_vs_tpg": 0.8343215222636076,
+    "matched_beats_tpg_fraction": 0.5714285714285714,
+    "matched_beats_wrong_fraction": 0.8571428571428571,
+    "median_gain_vs_wrong_kernel": 4.2489919946240775
+  },
+  "difference_disturbed_minus_clean_mean_gain": 0.34333380421341125,
+  "permutation": {
+    "n": 10000,
+    "seed": 20260711,
+    "two_sided_p": 0.7893210678932107
+  },
+  "mann_whitney_two_sided_p": 0.5738162613787778,
+  "fisher_win_table": [
+    [
+      4,
+      3
+    ],
+    [
+      33,
+      35
+    ]
+  ],
+  "fisher_two_sided_p": 0.7110369183534802,
+  "path_modulation_candidate": false,
+  "physical_channel_detected": false,
+  "claim_boundary": "retrospective kernel-performance stratification with seven non-P0 systems; SIMBAD path proxy incomplete and kernel endpoint is a stress test, not validation"
+}

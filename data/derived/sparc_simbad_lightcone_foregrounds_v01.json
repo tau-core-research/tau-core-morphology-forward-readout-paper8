@@ -1,0 +1,23 @@
+{
+  "schema": "sparc_simbad_lightcone_foregrounds_v01",
+  "status": "SIMBAD_FOREGROUND_CONE_CENSUS_ACQUIRED_PRELIMINARY_PATH_PROXY",
+  "source_service": "SIMBAD astronomical database",
+  "source_url": "https://simbad.cds.unistra.fr/",
+  "cone_radius_arcmin": 10.0,
+  "n_targets": 75,
+  "n_query_ok": 75,
+  "n_object_rows": 9905,
+  "path_class_counts": {
+    "P0": 68,
+    "P1": 4,
+    "P2": 2,
+    "P3": 1
+  },
+  "limitations": [
+    "SIMBAD is heterogeneous and not a complete magnitude-limited foreground catalogue",
+    "foreground weight uses angular separation only and has no mass proxy",
+    "objects without redshift cannot be classified as foreground or background",
+    "P0 means no catalogued redshift-confirmed foreground in this cone, not an empty lightcone"
+  ],
+  "claim_boundary": "preliminary path-disturbance proxy for stratification only; not a physical lightcone transfer integral"
+}

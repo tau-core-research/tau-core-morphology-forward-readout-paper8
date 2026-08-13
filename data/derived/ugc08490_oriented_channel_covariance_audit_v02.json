@@ -1,0 +1,70 @@
+{
+  "schema": "tau_core_ugc08490_oriented_channel_covariance_audit_v02",
+  "status": "INTERPOLATION_COVARIANCE_AWARE_COMPATIBILITY_AUDIT_COMPLETE",
+  "first_pass_status": "RETROSPECTIVE_ORIENTED_LAW_COMPATIBILITY_PREFLIGHT_COMPLETE",
+  "fitted_channel_parameters": 0,
+  "n_common_radii": 7,
+  "covariance_rank": 7,
+  "side_diagnostics": {
+    "approaching": {
+      "n_source_points": 31,
+      "interpolation_matrix_rank": 7,
+      "covariance_rank": 7,
+      "max_off_diagonal_correlation": 0.18025585058648555
+    },
+    "receding": {
+      "n_source_points": 44,
+      "interpolation_matrix_rank": 7,
+      "covariance_rank": 7,
+      "max_off_diagonal_correlation": 0.7786102563426113
+    }
+  },
+  "gls_side_compatibility": {
+    "chi2": 36.154120546169814,
+    "effective_degrees_of_freedom": 7,
+    "chi2_per_effective_dof": 5.164874363738545,
+    "weighted_mean_q_difference": -2.4037617340073582e-06,
+    "weighted_mean_q_difference_error": 6.041489006951859e-06,
+    "weighted_mean_q_difference_z": -0.397875710978102
+  },
+  "leave_one_radius_out": {
+    "minimum_chi2_per_effective_dof": 4.00511147177284,
+    "maximum_chi2_per_effective_dof": 6.025094954173638,
+    "best_omitted_radius_kpc": 2.37,
+    "all_omissions": [
+      {
+        "omitted_radius_kpc": 0.34,
+        "chi2_per_effective_dof": 5.126494623658083
+      },
+      {
+        "omitted_radius_kpc": 0.68,
+        "chi2_per_effective_dof": 6.025094954173638
+      },
+      {
+        "omitted_radius_kpc": 1.02,
+        "chi2_per_effective_dof": 4.497968135526622
+      },
+      {
+        "omitted_radius_kpc": 1.36,
+        "chi2_per_effective_dof": 5.7992650299925295
+      },
+      {
+        "omitted_radius_kpc": 1.69,
+        "chi2_per_effective_dof": 5.874125000308843
+      },
+      {
+        "omitted_radius_kpc": 2.03,
+        "chi2_per_effective_dof": 6.007590083323863
+      },
+      {
+        "omitted_radius_kpc": 2.37,
+        "chi2_per_effective_dof": 4.00511147177284
+      }
+    ]
+  },
+  "common_reciprocal_load_compatible": false,
+  "baryonic_covariance_included": false,
+  "inclination_covariance_included": false,
+  "physical_channel_detected": false,
+  "claim_boundary": "retrospective interpolation-covariance audit; remaining geometry and baryonic covariance are open, and common load remains halo-degenerate"
+}

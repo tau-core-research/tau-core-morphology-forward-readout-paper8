@@ -1,0 +1,106 @@
+{
+  "schema": "ngc4254_ffl_source_systematics_v03",
+  "status": "BEAM_MATCHED_SOURCE_SYSTEMATICS_FROZEN_MEASUREMENT_COVARIANCE_NOT_IDENTIFIABLE",
+  "galaxy": "NGC4254",
+  "inputs": {
+    "photometric_geometry": "data/derived/ngc4254_s4g_photometric_geometry_freeze_v02.json",
+    "photometric_geometry_sha256": "f5d5965b62f6cd5cf0b45c1f1085e492ecbb960f3cebb21fb800befd282832ef",
+    "common_hi_resolution_cube": "data/derived/ngc4254_common_hi_resolution_source_cube_v03.fits",
+    "common_hi_resolution_cube_sha256": "a9c825c2e0e3a4c0c01fe03a2bc6b4ea8ae80f9cc83b43dfb1584137a9340653",
+    "common_hi_resolution_metadata": "data/derived/ngc4254_common_hi_resolution_source_cube_v03.json",
+    "common_hi_resolution_metadata_sha256": "ad74656f4c36d8c94a6ac12bf6742b3c176dd72ac13d093896bf0d06493575b2",
+    "unmatched_primary_vectors": "data/derived/ngc4254_ffl_determinant_photometric_vectors_v02.csv",
+    "unmatched_primary_vectors_sha256": "02f12a5e2e6501e47069f000a14c416d72d19cc75de6c79541f609b24934b8d6",
+    "beam_overlap_matrix": "data/derived/ngc4254_ffl_determinant_beam_overlap_correlation_v02.csv",
+    "beam_overlap_matrix_sha256": "bf2e1fbe94fb3fe516012a07de346de3acfc70dbda815bbb6c74d1b55d672c7b",
+    "velocity_or_residual_inputs": []
+  },
+  "frozen_systematics": {
+    "photometric_geometry_variants": [
+      "s4g_global_thin_primary",
+      "s4g_global_pa_minus_1sigma",
+      "s4g_global_pa_plus_1sigma",
+      "s4g_global_ellipticity_minus_1sigma",
+      "s4g_global_ellipticity_plus_1sigma",
+      "s4g_global_finite_thickness_q0_0p2",
+      "s4g_disk_component_1",
+      "s4g_disk_component_2"
+    ],
+    "stellar_native_psf_fwhm_arcsec": [
+      0.0,
+      2.0,
+      4.0
+    ],
+    "h2_conversion_factors": [
+      0.7,
+      1.0,
+      1.3
+    ],
+    "stellar_global_scale_invariance_controls": [
+      0.7,
+      1.0,
+      1.3
+    ],
+    "n_equal_weight_scenarios": 72,
+    "scenario_weights_have_probability_interpretation": false
+  },
+  "summary": {
+    "n_annuli": 6,
+    "systematic_sign_stable_radial_indices": [
+      5
+    ],
+    "systematic_sign_unstable_radial_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "beam_matching_primary_sign_change_radial_indices": [
+      0
+    ],
+    "maximum_q_change_under_global_stellar_scale": 1.366962099069724e-15,
+    "beam_overlap_participation_effective_rank": 1.7483071212823864,
+    "beam_overlap_eigenvalues": [
+      4.291133884851305,
+      1.4585374179644237,
+      0.223152382173934,
+      0.01829943776838045,
+      0.007188953205433705,
+      0.0016879240365224822
+    ],
+    "radial_rows_are_independent": false
+  },
+  "covariance_boundary": {
+    "equal_weight_scenario_covariance_available": true,
+    "equal_weight_scenario_covariance_is_measurement_covariance": false,
+    "beam_overlap_correlation_available": true,
+    "beam_overlap_is_complete_q_covariance": false,
+    "complete_measurement_covariance_identifiable_from_available_products": false,
+    "reason": "no moment0 uncertainty maps or calibration covariance, nonlinear quadrant medians, and only about 1.75 beam-overlap radial modes",
+    "diagonal_six_row_likelihood_allowed": false
+  },
+  "outputs": {
+    "systematic_scenarios": "data/derived/ngc4254_ffl_source_systematic_scenarios_v03.csv",
+    "systematic_scenarios_sha256": "8f0cba96ea7a97fc56c745186759af8c309679188e3d1c9546a705eb546497fe",
+    "systematic_summary": "data/derived/ngc4254_ffl_source_systematic_summary_v03.csv",
+    "systematic_summary_sha256": "53f856a533eed3361b7798af2155661e0b28d472707d6b88b2e38d1e4e9643e1",
+    "equal_weight_scenario_covariance": "data/derived/ngc4254_ffl_source_scenario_covariance_v03.csv",
+    "equal_weight_scenario_covariance_sha256": "39806728c9eb4af4cbafecc74909ad989f01e9bddc079327a50873995dde01dd",
+    "systematic_driver_summary": "data/derived/ngc4254_ffl_source_systematic_driver_summary_v03.csv",
+    "systematic_driver_summary_sha256": "c66d9641ae671f255c81400549fc4dcef2bb45a5d94b06e4897720239b033b24",
+    "report": "reports/ngc4254_ffl_source_systematics_v03.md"
+  },
+  "audit_checks": {
+    "velocity_or_residual_inputs_empty": true,
+    "all_scenarios_complete": true,
+    "psf_and_h2_one_factor_signs_stable_in_all_annuli": true,
+    "geometry_one_factor_has_sign_instability": true,
+    "stellar_global_scale_cancels_in_centered_log_shape": true,
+    "beam_matrix_symmetric_unit_diagonal_psd": true
+  },
+  "physical_amplitude_ready": false,
+  "complete_measurement_covariance_ready": false,
+  "endpoint_scoring_authorized": false,
+  "claim_boundary": "equal-weight source-systematic sensitivity ensemble and exact beam-overlap rank; not a probability model, complete measurement covariance, physical q_det, channel signal, or endpoint score"
+}

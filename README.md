@@ -4,6 +4,206 @@ This repository is the public reproducibility package for:
 
 **Morphology-matched forward readout gates for Tau Core gravity: extending SPARC residual Papers 1-3 from inverse diagnostics to predeclared family tests**
 
+## Observer Co-Descent
+
+Paper 8 operates downstream of observer production. A body-side carrier counts
+as an operational observer only together with regular local rank-four
+Lorentzian descent, a stable observer-source resolution map, and a nonzero
+record/effect. The observer and its accessible 4D world are co-readouts of one
+body-conditioned solution. The galaxy endpoints below therefore test terminal
+readout-family information within an already realized observer-source packet;
+they do not prove observer existence, an independent channel layer, or the
+parent origin of that packet.
+
+## Composite Tau-kernel scoring replay
+
+The current frozen replay interprets the matched Tau kernel as an effective
+composite morphology-channel carrier. The primary `no_low_inclination` lane
+contains 35 holdout galaxies and 640 rotation points. The matched kernel beats
+the wrong-family mean in `0.857` of galaxies, with shuffled-family p-values
+`0.0410` for the win fraction and `0.0110` for the mean paired RMSE endpoint.
+This is positive kernel-family specificity.
+
+Baseline comparison remains mixed. The matched kernel beats TPG/v6 in `0.514`
+and MOND in `0.657` of galaxies, but mean matched-minus-TPG RMSE is
+`+0.347 km/s`, while mean matched-minus-MOND is `-0.387 km/s`; both paired
+bootstrap intervals cross zero. The replay therefore does not establish
+universal baseline superiority. It also does not separate morphology, path,
+time, or quantum operators inside the effective kernel. Because the quality
+lane was selected after preparation-state holdout inspection, this is a
+predeclared replay rather than a fresh prospective endpoint.
+
+```text
+data/derived/composite_tau_kernel_scoring_replay_v01.json
+data/derived/composite_tau_kernel_scoring_replay_primary_v01.csv
+reports/composite_tau_kernel_scoring_replay_v01.md
+```
+
+## Prospective LITTLE THINGS freeze
+
+The first genuinely external confirmation sample is now frozen from Oh et al.
+(2015), VizieR `J/AJ/149/180`. It contains 26 galaxies and 1716 numerical
+rotation-curve rows; canonical name comparison leaves 23 galaxies not present
+in the historically scored SPARC-175 packet. These names and source hashes are
+frozen before any endpoint access.
+
+Prospective scoring is currently blocked rather than approximated. The public
+machine-readable package supplies observed rotation curves and global gas and
+stellar masses, but not radial `v_gas(R)` and `v_star(R)` components. Therefore
+the Paper 8 TPG/MOND carrier and matched-versus-wrong formula score cannot yet
+be reproduced on equal terms. The next acquisition is an author-supplied
+radial mass-model table or a source-faithful extraction of those components;
+a point-mass substitute is forbidden for endpoint scoring.
+
+```text
+data/derived/little_things_prospective_scoring_source_v01.json
+data/derived/little_things_prospective_scoring_freeze_v01.csv
+data/derived/little_things_rotation_curves_v01.csv
+```
+
+## Targeted dark-discrepancy measurement
+
+The first direct outer-discrepancy test uses the source-frozen S4G feature
+matrix to predict `log D_outer3 = -2 log median_outer3(vbar/vobs)` on the
+existing 56/20 train/holdout split. Adding the global optical morphology block
+worsens holdout MSE from `0.22098` to `0.48144`; row- and column-shuffle
+p-values are `0.9245` and `0.7731`. The current global bar/bulge/Sersic feature
+set therefore carries no accepted incremental information about the outer
+dark-matter-like discrepancy.
+
+A separate retrospective H I-Halpha audit targets only radii beyond the
+frozen persistent `D>=1.5` onset. NGC3726 has a local post-onset odd-contrast
+candidate (`9.49 +/- 4.43 km/s`, zero-null `p=0.0429`), but NGC4559 does not
+replicate it (`2.45 +/- 5.88 km/s`, `p=0.1077`). The stronger `D>=2` zone is
+not covered in both systems. The result is therefore a localized candidate
+without replication, not a morphology-body or observer-channel detection.
+
+```text
+data/derived/s4g_dark_discrepancy_morphology_endpoint_v01.json
+data/derived/dark_discrepancy_zone_multitracer_channel_audit_v01.json
+```
+
+The first `(source,path,observation)` disturbance atlas covers 75 galaxies.
+Source-side and observation-side classes are available, but every physical
+path class remains `PX` because no object-level foreground lightcone catalogue
+has yet been acquired. Applying the partial atlas to the two channel-zone
+results classifies the NGC3726 local candidate as `S3-PX-O0`: clean
+observational geometry, strong source-side asymmetry, and unknown foreground
+path. The null NGC4559 comparison is `S0-PX-O0`. This weakens a physical
+observer-channel interpretation of the lone candidate and makes foreground
+path acquisition the next required gate.
+
+```text
+data/derived/sparc_lightcone_disturbance_atlas_v01.csv
+data/derived/dark_discrepancy_channel_disturbance_classification_v01.json
+```
+
+A v02 path proxy now uses a fixed 10-arcmin SIMBAD cone and retains only
+redshift-confirmed extragalactic objects in front of each target. All 75 cones
+were queried: 68 are `P0`, four `P1`, two `P2`, and one `P3`. NGC3726 becomes
+`S3-P2-O0` because a foreground galaxy lies 1.20 arcmin away; NGC4559 becomes
+`S0-P0-O0`. This alignment is interesting but source and path disturbance are
+confounded. Across all 75 galaxies, adding foreground count and inverse-angle
+weight improves five-fold out-of-fold prediction of outer mass discrepancy by
+only `2.35%`, with shuffle `p=0.1424`; it is not a population path signal.
+
+```text
+data/derived/sparc_simbad_lightcone_foregrounds_v01.json
+data/derived/sparc_lightcone_disturbance_atlas_v02.csv
+data/derived/dark_discrepancy_channel_disturbance_classification_v02.json
+data/derived/sparc_path_disturbance_dark_discrepancy_test_v01.json
+```
+
+The same path proxy has now been tested against the already frozen Tau-kernel
+endpoint rather than against raw discrepancy. Among 68 `P0` and seven
+`P1-P3` galaxies, the matched Tau kernel beats TPG/v6 in `48.5%` and `57.1%`
+respectively. Neither the continuous kernel-gain difference (permutation
+`p=0.7893`) nor the win-rate difference (Fisher `p=0.7110`) is significant.
+Thus the current foreground proxy does not explain where the Tau kernel gains
+or loses relative to TPG/v6. This leaves the kernel-family signal and physical
+observer-path modulation as distinct questions.
+
+```text
+data/derived/tau_kernel_path_modulation_test_v01.json
+data/derived/tau_kernel_path_modulation_by_galaxy_v01.csv
+```
+
+## Effective body-channel kernel interpretation
+
+The current kernel should not be read as a pure morphology object. Its family,
+shape, and radial scales come from residual-blind S4G/SPARC source observables,
+but the shared amplitude for each family is fitted on training
+`vobs^2-v_TPG^2`. Operationally,
+
+```text
+K_P8,g(R) = beta_family_train K_shape,g_source(R).
+```
+
+It is therefore an effective source-shape/readout-amplitude kernel and may
+absorb a population-average channel response. It does not isolate a physical
+observer path because no foreground/lightcone input enters the shape or
+family assignment, and no same-body tracer-specific kernel deformation has
+yet been measured. The provenance audit is:
+
+```text
+data/derived/tau_kernel_body_channel_provenance_audit_v01.json
+```
+
+The first same-body effective-kernel test freezes the source kernel shape and
+TPG carrier, then fits one amplitude separately to H I and Halpha. The tracer
+amplitudes differ by about `5.00` jackknife sigma in NGC3726 and `2.66/2.62`
+sigma in the two NGC4559 H I resolutions. However, in all three equal-parameter
+leave-one-radius controls a simple multiplicative carrier-velocity shape
+predicts the tracer difference better than the Tau-kernel shape. The replicated
+tracer scale difference is therefore not a kernel-embedded channel candidate;
+inclination, calibration, pressure support, and line-formation controls remain
+the preferred explanations at this stage.
+
+```text
+data/derived/same_body_tracer_effective_kernel_amplitude_test_v01.json
+```
+
+Profiling the multiplicative carrier scale before adding a Tau-kernel component
+closes the next simple deformation. Relative to carrier-only leave-one-radius
+prediction, carrier-plus-kernel worsens error by `38%` in NGC3726, `71%` in
+NGC4559 HR, and `57%` in NGC4559 LR. NGC3726 also has a normalized two-basis
+condition number of `41.2`, while both NGC4559 reductions flip the fitted
+kernel coefficient sign under point deletion. The present data therefore do
+not support a kernel-specific tracer deformation after scale profiling.
+
+A population diagnostic then reconstructed one effective `beta_g` per galaxy
+for the fixed matched kernel shape. The raw target initially showed a `9.90%`
+path-proxy OOF gain (`p=0.0150`), but this result is not robust. Signed-log and
+5-95% winsorized targets worsen by `23.6%` and `22.6%`; excluding the
+`K_compact_finite` family worsens by `3.4%`. Extreme compact-family amplitudes
+drive the raw result, so no effective-beta path-information candidate is
+promoted. The scale-invariant signed kernel load
+`RMS(beta K)/RMS(v_TPG^2)` also fails: path variables worsen OOF error by
+`12.2%` with `p=0.6267`. This confirms that the raw positive result was a
+kernel-normalization artifact rather than stable path information.
+
+```text
+data/derived/effective_kernel_amplitude_path_information_test_v01.json
+data/derived/effective_kernel_amplitude_path_robustness_v01.json
+```
+
+The next same-body measurement target is now source-frozen as `UGC08490`
+(`NGC5204`). It was selected residual-blind from the GHASP-WHISP federation:
+both Halpha sides are available and Halpha support extends to `7.45` times the
+frozen `D>=2` onset. The public WHISP overview and notes are cached by hash;
+the 60-arcsec velocity panel yields 13,519 connected exact-palette pixels with
+both H I sides and `10.23 km/s` graphical half-bin uncertainty. Printed B1950
+axes show common H I-Halpha support, and an independent SIMBAD center has been
+frozen on the panel. Formal radial annuli, deprojection, and beam covariance
+remain open, so kernel scoring is still forbidden.
+
+```text
+data/derived/ugc08490_whisp_hi_source_v01.json
+data/derived/ugc08490_whisp_graphical_velocity_preflight_v01.json
+data/derived/ugc08490_whisp_angular_axis_preflight_v01.json
+data/derived/ugc08490_whisp_external_center_freeze_v01.json
+```
+
 The package is intentionally small. It contains only the files needed to
 compile the manuscript, regenerate compact protocol tables and figures, build
 the arXiv-oriented source package, and verify the publication-facing claim
@@ -5526,6 +5726,341 @@ It records the source-native observables required before thick/flared,
 vertical-overlay, and scale-tail kernels can be replayed as clean
 source-frozen morphology/readout preflight candidates.
 
+## S4G Optical Morphology Attribution Test
+
+The first source-family-independent morphology-attribution endpoint is built
+and scored by:
+
+```bash
+python scripts/build_s4g_optical_morphology_attribution_freeze.py
+python scripts/run_s4g_optical_morphology_attribution_endpoint.py
+```
+
+The source-only freeze uses 76 S4G/SPARC galaxies, with a deterministic
+56/20 train/holdout split. It reads S4G 3.6 micron global-profile and Pipeline
+4 component structure plus SPARC source/photometric covariates. It reads no
+velocity, residual, RMSE, MOND/TPG, or endpoint artifact.
+
+The v0.1 Paper 1 endpoint joined only 33/76 source rows and was rejected by the
+coverage gate. The v0.2 coverage-frozen endpoint uses the full-population
+paired TPG-v6 and Newtonian baryonic RMSE columns already computed in Paper 8.
+
+The locked v0.2 result is negative:
+
+```text
+projection residual MSE:       0.375288 -> 0.547408
+proportional reduction:       -45.863%
+row-shuffle p:                  0.607393
+column-shuffle p:               0.380619
+Newtonian proportional change: -143.721%
+status: RETROSPECTIVE_S4G_OPTICAL_MORPHOLOGY_INCREMENTAL_SIGNAL_FAIL
+```
+
+Thus this broad S4G optical morphology handle does not add held-out predictive
+information for the selected low-acceleration residual endpoint. The result is
+preserved as a negative route result. No feature, split, regularization,
+endpoint, or threshold is retuned after scoring. This rejects the present
+source-handle/model combination; it does not reject all morphology-body
+information or Tau Core.
+
+## Specific Source-Handle Follow-Ups
+
+Three narrower, independently motivated source routes are preserved after the
+broad S4G result.
+
+The UNGC dominant-neighbor tidal index `Theta1` route uses 36 uniquely matched
+galaxies. Its TPG-v6 out-of-fold MSE improves by only `2.818%`, with
+`p=0.164918`, the frozen positive sign failing in all five folds, and the
+Newtonian control improving by `18.836%`. Its status is therefore:
+
+```text
+RETROSPECTIVE_UNGC_THETA1_ENVIRONMENT_SIGNAL_FAIL
+```
+
+The published S4G stellar `m=1` amplitudes are physically more direct, but the
+nearly face-on 167-galaxy source sample overlaps SPARC in only one object. This
+route is stopped source-side as:
+
+```text
+SOURCE_COVERAGE_INSUFFICIENT_NOT_ENDPOINT
+```
+
+The full-sample Holwerda S4G catalog supplies rotational stellar asymmetry `A`
+in both the 3.6 and 4.5 micron bands. There are 75 complete SPARC matches, and
+the two source measurements correlate at `r=0.833746`. After controlling for
+the frozen broad SPARC/S4G feature packet, neither band adds TPG-v6 residual
+information:
+
+```text
+3.6 micron proportional reduction: -1.668%, p=0.372314
+4.5 micron proportional reduction: -1.050%, p=0.292354
+status: RETROSPECTIVE_S4G_STELLAR_ASYMMETRY_SIGNAL_FAIL
+```
+
+These results reject three tested handles, not morphology-body information in
+general. They move the next search away from global labels, environment alone,
+and global rotational asymmetry toward source-frozen, radially localized
+structure such as outer-mode onset, break radius, or a resolved radial
+asymmetry profile.
+
+## Disk-Break/Dynamic-Onset Pilot
+
+The first radial-onset pilot is built by:
+
+```bash
+python scripts/acquire_s4g_disk_break_onset_source.py
+python scripts/build_s4g_disk_break_dynamic_onset_freeze.py
+python scripts/run_s4g_disk_break_dynamic_onset_alignment_diagnostic.py
+```
+
+The source-only S4G catalog has nine SPARC matches and seven numeric break
+radii. The primary dynamic onset is frozen independently as the first three
+consecutive radial points with baryonic mass discrepancy `D>=2`, provided the
+outer median remains above two. Only five galaxies contain both coordinates.
+
+```text
+median |log(R_dyn/R_break)|: 0.857541
+exact permutation p:         0.537190
+status: DIAGNOSTIC_ONLY_S4G_DISK_BREAK_DYNAMIC_ONSET_SMALL_N
+```
+
+The pilot supplies no alignment signal and is below the frozen population
+minimum `N=15`. An eventual alignment would show radial coupling only; it
+would not distinguish source morphology from gravity, clock/path, quantum, or
+mixed source-channel origin.
+
+## NGC7331 Clock-Channel Parity Pilot
+
+The first approaching/receding-side odd/even channel test is built and scored
+by:
+
+```bash
+python scripts/build_ngc7331_things_clock_channel_parity_freeze.py
+python scripts/run_ngc7331_things_clock_channel_parity_diagnostic.py
+```
+
+The freeze fixes the THINGS product hashes, published systemic velocity and
+inclination, MOM0-only major axis, centrosymmetric pixel pairs, major-axis
+wedge, radial bins, source-defined outer region, and odd/even definitions
+before opening the moment-1 velocity values.
+
+```text
+natural outer median |odd|:  211.917 km/s
+natural outer median |even|:   3.821 km/s
+robust outer median |odd|:   211.026 km/s
+robust outer median |even|:    4.880 km/s
+```
+
+The outer SPARC discrepancy would require a simple common spectral multiplier
+`A=1/N_ch=1.742398`. Applied to the full `1+z` factor, it predicts an even
+shift near `222565 km/s`, over `4.56e4` times the larger observed median even
+component. The frozen single-galaxy verdict is:
+
+```text
+SIMPLE_COMMON_MULTIPLICATIVE_CLOCK_CHANNEL_INCOMPATIBLE_SINGLE_GALAXY
+```
+
+This rejects only the simple common multiplicative spectral-clock channel. It
+does not reject nonlinear systemic-anchored maps, orientation-sensitive
+channels, tracer-dependent quantum-access maps, or channels that change the
+dynamics rather than the spectral terminal.
+
+The same packet now separates the older Tau Core light-cone class. If opposite
+disk points have `A_plus=A_bar(1+delta)` and
+`A_minus=A_bar(1-delta)`, the parity estimator reads
+`beta_inf=(beta_dyn+delta)/(1+delta beta_dyn)`. The NGC7331 cross-packet scale
+is `delta_req about 3.01e-4`; this is not a detection or fit, but it shows that
+the common-factor null does not test the differential observer-to-point path
+channel.
+
+## Minimal Oriented Observer-Source Channel Draft
+
+The first low-complexity law has now been derived and tested in the theory
+packet:
+
+```text
+u = R/Rdisk
+f(u) = u/(1+u)
+A_sigma = exp[sigma epsilon f(u)]
+delta = tanh[epsilon f(u)]
+beta_pred = (beta_bar + delta)/(1 + delta beta_bar).
+```
+
+Positive multiplicative transport supplies the exponential, orientation
+reversal supplies the odd side sign, and the normalized `[1/1]` Pade family
+supplies the bounded center-null activation. In five-fold held-out-galaxy
+testing over 175 SPARC galaxies, absolute MSE falls to `0.332322` of the
+baryonic null and MAE falls from `39.729` to `20.972 km/s`. However,
+galaxy-scale-normalized MSE worsens to `1.606590` of the null.
+
+Status:
+
+```text
+DIRECTION_MIXED_MINIMAL_RADIAL_ORIENTED_CHANNEL_SCALE_INCOMPLETE
+```
+
+Thus the odd outward-saturating shape remains a viable direction, but one
+universal additive amplitude is not cross-galaxy complete. Paper 8 does not
+open a new endpoint from this result. The next admissible input is one
+source-blind observer-path scale carrier, not a fitted amplitude per galaxy.
+
+The follow-on 4D inverse carrier atlas freezes a concrete readout target:
+
+```text
+Mbar_4D = 0.5 L_3.6 + 1.33 M_HI
+Lambda_G = 1.50e-4 (Mbar_4D / (5e9 Msun))^(1/4).
+```
+
+Inside the same frozen oriented terminal law, this gives held-out MSE/null
+`0.226121`, normalized MSE/null `0.344189`, and MAE `17.306 km/s`. The H I-only
+one-third-power alternative is slightly stronger and is retained as a future
+multi-tracer discriminator. Because mass, luminosity, disk size, and baryonic
+velocity are highly covariant, this is a 4D inverse formula target, not a
+unique physical carrier or a new Paper 8 endpoint claim.
+
+The per-galaxy comparison is substantially weaker than the aggregate carrier
+metrics might suggest. The one frozen formula improves the baryonic curve in
+`158/175` galaxies, beats TPG/v6 in `55/175`, MOND in `66/175`, and both in
+`53/175`. Mean RMSE is `19.272 km/s`, compared with TPG/v6 `16.622` and MOND
+`17.101 km/s`. Full-population pointwise RMOND is unavailable; the different-
+scope six-galaxy combined RMOND/MOND gallery gives only `1/6` inverse wins.
+
+The parent factorization question is now separated from this empirical inverse
+fit. A `C2`, orientation-odd parent response that vanishes on both the
+body/source-null and channel-null axes has a leading bilinear mixed term. With
+one surviving body mode and one channel mode this becomes
+`q_omega=omega Omega S C+o(|S C|)`. Exact global factorization needs an
+additional rank-one mixed-minor condition and is not forced by the current
+axioms. Consequently neither the quarter-power baryonic carrier nor its
+coefficient is claimed as parent-derived here.
+
+The finite-dimensional mode-reduction problem is now solved conditionally on
+a parent-specified protected mixed-susceptibility operator. Its first singular
+body-channel pair is the optimal rank-one approximation, with normalized
+worst-case error `sigma_2/sigma_1`; exact leading rank one is equivalent to
+`sigma_2=0`. Paper 8 does not construct this parent operator, establish a small
+singular-value ratio, or identify its singular coordinates with the current
+4D mass and radial proxies.
+
+The parent chain is also explicit conditionally:
+`K_seed=J_B^*K_body`, with `J_B` the base-seed-to-body response Jacobian and
+`K_body` the body-channel parent-readout susceptibility. Consequently an
+apparently rank-one 4D response may reflect either a genuinely one-mode
+channel coupling or filtering by the morphological-body response. Paper 8
+does not yet discriminate those mechanisms.
+
+The discrimination criterion is now formal. With predeclared probes
+`A_p=J_p^*`, the hidden coupling class is exactly `ran H subset ker A` for the
+stacked map `A`. Only collective injectivity permits
+`K_body=A^dagger K_stack`; stability is controlled by `sigma_min(A)`. The
+current Paper 8 galaxy and tracer lanes have not been proved to share one
+transported parent operator or to provide an injective probe stack, so a
+rank-one visible result would remain non-identifying.
+
+The first source-backed collective probe atlas is generated by:
+
+```bash
+python scripts/acquire_ghasp_sparc_probe_crossmatch.py
+python scripts/acquire_ghasp_full_federation_source_only.py
+python scripts/acquire_ngc3726_whisp_hi_source.py
+python scripts/build_ngc3726_whisp_graphical_side_preflight.py
+python scripts/build_observer_channel_collective_probe_atlas.py
+```
+
+It classifies twelve physical-probe, body-coordinate, control, and cross-domain
+roles while keeping zero constructed physical `A_p` rows. GHASP VI+VII supply
+`9713` side-labelled Halpha points in `175` release-specific curves for `173`
+distinct galaxies. Alias-aware matching raises the SPARC overlap from the
+legacy exact-name result of one to `26`; `25` have both Halpha sides and `21`
+have an exact public WHISP overview entry. The residual-blind source ranking
+selects NGC3726/UGC6537 first. Its cached WHISP graphical field and GHASP curve
+both contain robust approaching and receding support, but FITS/WCS, common
+center/beam transport, and a physical channel statistic remain open. The local
+PHANGS table yields two ALMA/SPARC overlaps, NGC2903 and NGC3521, with no MUSE
+flag in that overlap. Status:
+
+```text
+COLLECTIVE_PROBE_ATLAS_BUILT_NO_INJECTIVE_A_MATRIX
+```
+
+The source-ranked NGC3726 route now continues with:
+
+```bash
+python scripts/acquire_ngc3726_uma_hi_rotation_source.py
+python scripts/build_ngc3726_hi_halpha_angular_transport_freeze.py
+python scripts/run_ngc3726_hi_halpha_channel_preflight.py
+```
+
+The WSRT Ursa Major catalogue supplies twelve source-native H I side-rotation
+rows and a receding-axis direction only `6 deg` from the GHASP side convention.
+Six two-sided radii (`40-140 arcsec`) are frozen before velocity comparison.
+After returning both deprojected curves to line-of-sight equivalents, the
+H I and Halpha odd profiles correlate at `r=0.886`; their GLS mean contrast is
+`1.90 +/- 3.53 km/s`. The zero-contrast vector is not rejected
+(`chi2=9.47`, six degrees of freedom, `p=0.149`). This is a preserved
+negative/indeterminate single-galaxy channel preflight, not an observer-channel
+detection. The unchanged statistic should next be replicated prospectively.
+
+Prospective rank-2 replication has begun without reading its velocity pixels:
+
+```bash
+python scripts/acquire_ngc4559_halogas_moment_sources.py
+```
+
+Four checksum-verified HALOGAS NGC4559 FITS products are cached: HR/LR
+moment-0 and moment-1 maps. Their beams are approximately
+`28.38 x 13.10 arcsec` and `41.15 x 31.89 arcsec`. Only FITS headers have been
+opened. The next freeze must declare WCS center, source geometry, radial bins,
+major-axis wedge, weighting, and HR/LR replication before any map pixel is
+read.
+
+The frozen NGC4559 extraction and prospective replication run with:
+
+```bash
+python scripts/build_ngc4559_halogas_extraction_freeze.py
+python scripts/run_ngc4559_halogas_hi_halpha_replication.py
+```
+
+At the four predeclared radii, HR and LR give identical contrast signs and
+compatible GLS means. Neither resolution rejects zero odd contrast:
+`2.79 +/- 5.86 km/s` with `p=0.164` for HR and
+`0.89 +/- 5.97 km/s` with `p=0.136` for LR. Two of five replication gates
+therefore fail and the result is not positive. Together with NGC3726 this
+leaves two source-ranked, residual-blind cases with no observer-channel
+detection; it is not yet a general population rejection.
+
+The next ranked object is audited separately with:
+
+```bash
+python scripts/audit_ngc3893_replication_eligibility.py
+```
+
+NGC3893 is not promoted to a third primary replication. Its dedicated source
+reports the NGC3893/3896 interaction, non-circular motions, a common H I
+envelope/connecting arm, and a curve construction chosen to make the inner
+curve symmetric and minimize side scatter. It is therefore frozen as a
+disturbed conventional-asymmetry control. No channel statistic was run, so it
+does not count as either a detection or a third negative channel test. The
+next clean-candidate audit is UGC08490 (NGC5204).
+
+The UGC06787 priority route now additionally runs:
+
+```bash
+python scripts/acquire_ugc06787_whisp_hi_source.py
+python scripts/build_ugc06787_whisp_graphical_velocity_preflight.py
+python scripts/build_ugc06787_common_angular_transport_gate.py
+python scripts/build_ugc06787_whisp_angular_axis_preflight.py
+```
+
+The public WHISP overview supplies graphical total-H I and velocity fields at
+full, 30-arcsec, and 60-arcsec resolution. The coarse 60-arcsec extraction
+retains `2511` largest-component palette pixels and both H I velocity sides;
+the GHASP `173.7 arcsec` approaching support fits inside both H I extent
+proxies. No direct FITS/cube is exposed. Formal WCS/center, beam covariance,
+and receding-side Halpha remain open. Because GHASP, WHISP, and SPARC use
+different distances, the common transport is frozen in angular coordinates
+before any kpc conversion.
+
 ## arXiv Source Package
 
 Build the arXiv source package directly with:
@@ -5581,3 +6116,779 @@ internal-preflight lane and the Paper 2 projection-enriched lane. It excludes
 raw SPARC downloads, private workbench outputs, endpoint-fitting notebooks, and
 broad Tau Core theory-hub material that is not needed to verify these paper
 packages.
+## LITTLE THINGS prospective external kernel score
+
+The frozen composite-kernel policy is now tested on a genuinely external Oh et
+al. (2015) LITTLE THINGS sample. The acquisition and vector-extraction route is:
+
+```bash
+python scripts/acquire_little_things_prospective_scoring_source.py
+python scripts/acquire_little_things_mass_model_vector_sources.py
+python scripts/extract_little_things_baryonic_vector_components.py
+python scripts/run_little_things_prospective_kernel_score.py
+```
+
+The primary `inclination >= 40 deg` lane contains 14 galaxies and 313 points
+that are new by exact name versus the historical SPARC-175 scoring pool. No
+external amplitude, sign, scale rule, or family label is fitted. The frozen
+`K_scale_tail_spiral` kernel is rank 1 among the four Tau families in `7/14`
+galaxies, beats TPG/v6 in `7/14`, MOND in `6/14`, and Newton in `13/14`.
+Mean matched-minus-TPG RMSE is `-0.101 km/s`; matched-minus-MOND is
+`+0.649 km/s`. This is a mixed prospective transfer result: it supports
+nontrivial external transfer of the frozen kernel, but not universal baseline
+superiority. Because all eligible objects share one source-frozen morphology
+family, it is not a multi-family attribution test and does not identify time or
+quantum channel factors.
+
+Artifacts:
+
+```text
+data/derived/little_things_baryonic_vector_extraction_v01.json
+data/derived/little_things_baryonic_vector_extraction_audit_v01.csv
+data/derived/little_things_prospective_kernel_score_v01.json
+data/derived/little_things_prospective_kernel_scores_by_galaxy_v01.csv
+reports/little_things_prospective_kernel_score_v01.md
+```
+
+## Theory-completed scale-tail kernel v02
+
+The source-factorization and leading body-channel mixed-response results define
+a stricter scale-tail candidate:
+
+```text
+u=K_tail(R)/K_tail(R_cut)
+phi=u/(1+u)
+v_v02^2=v_TPG^2 exp(eta phi)
+```
+
+Four theory-declared bounded shapes are compared on historical SPARC train
+only. The normalized bounded tail above is selected; the additional bilinear
+radial factor is not supported by the train objective. LITTLE THINGS was already
+opened before v02 was defined, so its v02 replay is diagnostic, not
+prospective. Generate the audit with:
+
+```bash
+python scripts/run_theory_completed_scale_tail_kernel_v02.py
+```
+
+Artifacts are `data/derived/theory_completed_scale_tail_kernel_v02.json`, the
+historical/external score CSVs, and
+`reports/theory_completed_scale_tail_kernel_v02.md`.
+
+## Measured lightcone-capacity replay
+
+The opened LITTLE THINGS lane also has a refit-free diagnostic in which the
+source-native physical H I beam scale supplies the observer-source geometric
+response and a thresholded singular-mode operator supplies finite effective
+channel capacity before the bounded activation:
+
+```bash
+python scripts/acquire_little_things_prospective_scoring_source.py
+python scripts/run_little_things_lightcone_capacity_score.py
+```
+
+The `eta` coefficient remains frozen from the historical-SPARC v02 fit. Fixed
+relative capacity thresholds `0.01`, `0.05`, and `0.10` are all reported. This
+is an opened-sample sensitivity test, not a new prospective endpoint or an
+identification of physical time, quantum, intrinsic null-cone, or parent
+operators. Artifacts are `data/derived/little_things_lightcone_capacity_*_v01.*`
+and `reports/little_things_lightcone_capacity_score_v01.md`.
+
+The corrected OSCC-1 replay replaces the arbitrary relative SVD threshold with
+a water-filled capacity calculation using the published velocity errors and an
+explicit operational source-cost convention:
+
+```bash
+python scripts/run_little_things_oscc_capacity_scoring_v02.py
+```
+
+It scores the beam-transported frozen v02 correction while reporting capacity
+separately. Capacity is not an extra fitted attenuation. The diagonal-noise and
+`G=I/n` cost choices keep this an opened-sample diagnostic rather than a
+parent-derived physical capacity measurement. Outputs are
+`data/derived/little_things_oscc_capacity_*_v02.*` and
+`reports/little_things_oscc_capacity_scoring_v02.md`.
+
+## Joint channel component measurement
+
+The current spatial/capacity, same-body tracer, side-parity, path-proxy, and
+dark-discrepancy-zone results are consolidated without combining heterogeneous
+samples into a false joint statistic:
+
+```bash
+python scripts/run_joint_channel_component_measurement_v01.py
+```
+
+The governing target is conditional information
+`Delta I_j=I(source;y_j|y_-j)`. A common numerical value remains blocked until
+one same-body multi-tracer sample has harmonized transfer operators and a full
+block covariance. Outputs are `data/derived/joint_channel_*_v01.*` and
+`reports/joint_channel_component_measurement_v01.md`.
+
+The first common same-body conditional-information calculation uses NGC3726
+and NGC4559 H I/H-alpha side-odd profiles, persisted tracer covariance blocks,
+three source-signal scales, and three unfitted cross-noise sensitivities:
+
+```bash
+python scripts/run_same_body_joint_conditional_information_v01.py
+```
+
+It measures whether either tracer improves precision about a declared shared
+radial velocity source beyond the other. Positive conditional information does
+not by itself establish a distinct source mode: stacked-rank growth or excess
+innovation is additionally required. Outputs are
+`data/derived/same_body_joint_conditional_information_v01.*` and the matching
+report.
+
+The finite morphology-conditioned channel-novelty rule now combines that
+distinction with the body-dominant baseline:
+
+```bash
+python scripts/audit_morphology_conditioned_channel_novelty_v01.py
+```
+
+A channel component is promotable only when one source-frozen terminal adds a
+nonfactorizing source direction, its innovation survives nuisance/parity
+controls, it improves grouped holdout prediction over the frozen body model,
+and the same rule replicates independently. The duplicate-readout witness
+shows why positive conditional information alone is insufficient: two noisy
+copies of one scalar source have positive conditional information but zero
+stacked-rank increment. None of the current Paper 8 channel candidates passes
+the complete rule. The next single measurement is a replicated 2D
+morphology-conditioned differential tracer mode, followed by an incremental
+body-plus-channel score. This does not identify the mode as time or quantum.
+
+Outputs are
+`data/derived/morphology_conditioned_channel_novelty_audit_v01.json` and
+`reports/morphology_conditioned_channel_novelty_audit_v01.md`.
+
+## PHANGS 2D tracer velocity field
+
+NGC3351 supplies a source-native PHANGS-MUSE H-alpha velocity/error/flux MAPS
+product and a PHANGS-ALMA CO(2-1) moment-1/error pair. The replay beam-matches
+H-alpha to CO, reprojects to one WCS, freezes quality cuts, and tests `m=0,1,2`
+innovation modes in five radial zones:
+
+```bash
+python scripts/acquire_ngc3351_phangs_tracer_velocity_fields.py --galaxy NGC3351
+python scripts/run_ngc3351_phangs_tracer_velocity_field_rank_test.py --galaxy NGC3351
+python scripts/acquire_ngc3351_phangs_tracer_velocity_fields.py --galaxy NGC4254
+python scripts/run_ngc3351_phangs_tracer_velocity_field_rank_test.py --galaxy NGC4254
+python scripts/acquire_ngc3351_phangs_tracer_velocity_fields.py --galaxy NGC3627
+python scripts/run_ngc3351_phangs_tracer_velocity_field_rank_test.py --galaxy NGC3627
+python scripts/acquire_ngc3351_phangs_tracer_velocity_fields.py --galaxy NGC4535
+python scripts/run_ngc3351_phangs_tracer_velocity_field_rank_test.py --galaxy NGC4535
+```
+
+The barred NGC3351 pilot is inner-`m=2` dominated, while the unbarred but
+lopsided/environmentally disturbed NGC4254 control is `m=1` dominated. The
+independently selected NGC3627 stress control is both barred and interacting.
+NGC4535 is an independently selected barred replication with no prefrozen
+`m=1` nuisance label. The largest 12-sector jackknife mode significances are
+respectively `2.11`, `2.85`, `1.58`, and `2.04`, all below the declared
+`3`-sigma threshold. These are
+per-galaxy tracer-field diagnostics: morphology-following CO/H-alpha structure does not
+by itself identify an additional parent mode or observer-time, path, quantum,
+or Tau origin.
+
+The source-frozen morphology-removal diagnostic is generated by:
+
+```bash
+python scripts/run_phangs_morphology_orthogonal_tracer_field_test.py
+```
+
+It removes `m0+m2` for barred NGC3351 and `m0+m1` for lopsided NGC4254.
+With the eligible NGC4535 replication included, the retained morphology-
+orthogonal field gives `chi2=23.17/30` (`p=0.8082`), while the expanded
+wrong-family control gives `36.98/30` (`p=0.1777`). The orthogonal null
+replicates, but the original two-object wrong-family specificity hint does
+not. NGC3627 is a negative identifiability stress control:
+its source-known bar and interaction occupy both tested `m=1` and `m=2`
+families, so removing its matched low-order morphology leaves no eligible
+angular direction to score. The current objects therefore do not identify a
+low-order differential channel component; weaker or differently structured
+components remain outside this test.
+
+The serial lane was then closed and a population rule was frozen before
+opening the remaining tracer contrasts:
+
+```bash
+python scripts/build_phangs_population_channel_preregistration_v01.py
+python scripts/acquire_ngc3351_phangs_tracer_velocity_fields.py --galaxy IC5332
+python scripts/run_ngc3351_phangs_tracer_velocity_field_rank_test.py --galaxy IC5332
+python scripts/acquire_ngc3351_phangs_tracer_velocity_fields.py --galaxy NGC4321
+python scripts/run_ngc3351_phangs_tracer_velocity_field_rank_test.py --galaxy NGC4321
+python scripts/audit_phangs_population_morphology_labels_v01.py
+python scripts/run_phangs_population_channel_test_v01.py
+```
+
+The frozen `IC5332 + NGC4321` numerical `m=2` gate passes with
+`chi2=77.606/20` (`p=9.97e-09`), and both galaxies pass the individual
+threshold. This does not promote a morphology-conditioned channel. The
+non-decisional `m=1` control is also non-null (`p=8.26e-11`), and the
+post-open source-label audit finds that absence of a fitted S4G `BAR`
+component did not prove bar absence: PHANGS classifies NGC4321 as a clear
+bar with unanimous agreement, while IC5332 lacks a validated label in that
+catalogue. The numerical result is preserved, but label integrity fails,
+no body-increment score is opened, and no replacement endpoint is selected.
+
+A subsequent source-only nuisance-atlas audit combines PHANGS CO morphology,
+S4G stellar decompositions, and published radial stellar `A1` values before
+opening any further velocity contrast:
+
+```bash
+python scripts/audit_phangs_radial_m1_source_coverage_v01.py
+python scripts/build_phangs_source_certified_morphology_nuisance_atlas_v02.py
+```
+
+The Zaritsky et al. catalogue covers four of the 19 PHANGS-MUSE bodies; none
+has both inner and outer `A1<0.1`. Under the multi-source nuisance union, the
+only clean low-order `m=2` body is the already opened NGC4254 pilot and no
+body has a certified clean `m=1` direction. NGC1385 and NGC5068 additionally
+show why the union is required: PHANGS CO labels them unbarred while S4G
+stellar decompositions contain explicit bars. The untouched low-order
+endpoint count is therefore zero. The `m1/m2` selection lane is closed; any
+future test must freeze a higher-dimensional radial amplitude/phase/onset
+body basis first.
+
+That higher-dimensional test is now frozen, still without opening a new
+velocity contrast:
+
+```bash
+python scripts/build_phangs_radial_body_projection_preregistration_v01.py
+python scripts/acquire_phangs_radial_body_projection_development_sources_v01.py
+python scripts/build_phangs_radial_body_projection_development_preflight_v01.py
+python scripts/acquire_phangs_radial_body_projection_development_terminal_fields_v01.py
+python scripts/replay_phangs_radial_body_projection_development_terminal_edges_v01.py
+python scripts/audit_phangs_radial_body_projection_operator_v01.py
+```
+
+For each body, a 20-dimensional five-zone velocity-contrast vector contains
+the complex `m1` and `m2` coefficients. An at-most rank-eight source matrix
+contains the matching S4G stellar and CO-intensity radial amplitude/phase
+profiles plus their first radial differences. The primary statistic acts only
+on the covariance-weighted complement of this body matrix. The untouched
+confirmatory cohort is `NGC1300`, `NGC1385`, `NGC1512`, and `NGC5068`, fixed
+by a SHA-256 split; six other galaxies are pipeline-development-only and may
+not change the operator or thresholds. A positive result would establish a
+body-orthogonal differential tracer mode, not yet its time, quantum, path,
+gas-dynamical, or Tau origin.
+
+The source-only development preflight acquires no velocity or residual data.
+Five of the six development galaxies have both masked S4G 3.6 micron imaging
+and a public PHANGS broad CO moment-0 map; NGC1365 remains frozen but blocked
+because no matching broad-moment product appears in the indexed large-program
+delivery. No replacement was selected. On the five available bodies the
+20-by-8 source matrix has rank eight, leaves a 12-dimensional orthogonal
+complement, and has nonzero condition number between `4.41` and `14.44`.
+These numbers establish numerical feasibility only. Their radial edges are
+provisional source-only CO-support quantiles; the final matrices must be
+recomputed on the unchanged terminal common-support edges before scoring.
+
+That exact development replay is now complete. The 15 MUSE/ALMA velocity and
+error products are hash-frozen for the same five galaxies; no confirmatory
+product was requested. Velocity values were used only to reconstruct the
+unchanged common-quality support and its five radial quantiles. On those exact
+terminal edges every source matrix again has rank eight and leaves a
+12-dimensional complement, with condition numbers `5.22--14.97`. No
+CO-minus-Halpha contrast, terminal coefficient, or endpoint score was
+computed. A deterministic synthetic-covariance audit additionally verifies
+source annihilation, projector idempotence, weighted self-adjointness, rank
+12, pure-body nullity, and the frozen radial/phase/block control ranks.
+
+The preregistered grouped-holdout promotion clause has also been audited:
+
+```bash
+python scripts/audit_phangs_radial_body_projection_holdout_identifiability_v01.py
+python scripts/audit_phangs_radial_body_projection_normalization_gauge_v01.py
+python scripts/audit_phangs_radial_body_projection_rank4_source_shadow_v01.py
+```
+
+It yields a finite linear no-go for the current packet. `S_g` is a nuisance
+subspace, not a source-to-terminal predictor: the source fields do not select
+the galaxy-specific coefficients `beta_g`. Moreover, `span(S_g)` plus an
+arbitrary vector in the 12-dimensional complement spans the complete terminal,
+so a free per-body "channel" term would saturate rather than predict. The
+projected `Q` statistic remains a valid one-shot test of body-orthogonal
+innovation. Grouped body-level predictive gain is a separate promotion stage
+that requires a source-frozen source-to-`beta` map and a low-dimensional,
+non-saturating source-to-complement law.
+
+The exact-edge source tables preserve every pre-normalization complex profile.
+The normalization-gauge audit reconstructs all eight raw column norms for
+every development galaxy and verifies
+`S_tilde beta_tilde = S(D beta_tilde)` exactly. Column normalization is
+therefore a recoverable coefficient-coordinate choice, not permanent
+source-amplitude loss. It still does not derive the physical response gains or
+the velocity unit.
+
+The same source-only matrices also admit a unique Euclidean optimal rank-four
+shadow. It captures `0.8648--0.9392` of normalized source-matrix Frobenius
+energy across the five development galaxies, with
+`sigma_4/sigma_5=1.4455--2.1984`. This is compatible with a rank-four parent
+body image but does not identify CHDF roles, construct `Gamma_B`, or authorize
+an endpoint interpretation.
+
+The remaining one-shot score is now executable and frozen before confirmatory
+opening:
+
+```bash
+python scripts/freeze_phangs_radial_body_projection_scoring_contract_v01.py
+```
+
+Its decision covariance is the block diagonal of five per-zone `4x4`
+leave-one-azimuth-sector jackknife blocks. It fixes the weighted projector,
+`Q`, stable-rank tolerance, individual and aggregate thresholds, exact radial
+reversal and phase-rotation controls, block ablations, and hard-stop gates. A
+geometric control passes only when the correct source body leaves less `Q`
+than the wrong geometry globally and in at least three of four galaxies. The
+chi-square calibration remains approximate because twelve-sector jackknife
+blocks are not a complete spatial covariance model. No confirmatory field or
+velocity contrast was opened while freezing this contract.
+
+The confirmatory packet was then acquired and SHA-256 frozen before any pixel
+access:
+
+```bash
+python scripts/acquire_phangs_radial_body_projection_confirmatory_packet_v01.py
+python scripts/run_phangs_radial_body_projection_confirmatory_endpoint_v01.py
+python scripts/audit_phangs_radial_body_projection_sector_occupancy_failure_v01.py
+```
+
+The single authorized opening ends in a preserved non-identifiability result,
+not a `Q` score. The pre-frozen requirement that all twelve azimuth sectors be
+occupied in every radial zone fails in all four galaxies. The occupied-sector
+counts by zone are `12,11,12,12,9` (NGC1300), `12,12,12,12,9` (NGC1385),
+`12,12,12,12,8` (NGC1512), and `12,12,11,10,6` (NGC5068). The failure is
+concentrated in the finite outer common-support footprint. No individual or
+aggregate statistic is released, and the opened cohort cannot be repaired,
+relaxed, or replaced post-result. A future endpoint would need a separately
+preregistered footprint-adaptive spatial-block covariance on a new untouched
+cohort; this diagnostic does not itself authorize that endpoint.
+
+The same-family population is also exhausted rather than merely inconvenient:
+
+```bash
+python scripts/audit_phangs_radial_body_projection_cohort_exhaustion_v01.py
+```
+
+Across the 19-object PHANGS-MUSE atlas, six galaxies had earlier endpoints
+opened, five supplied the current method-development fields, four were opened
+in the failed confirmatory packet, NGC1365 is source-blocked, two fail the
+geometry gate, and NGC2835 lacks the complete validated S4G body description.
+No untouched same-product-family galaxy remains. Same-sample replacement is
+therefore closed. Development data may inform a future measurement method but
+cannot select a law and then be relabelled as fresh confirmation.
+
+## TPG/v6 motivation ablation
+
+`scripts/run_tpg_v6_motivation_ablation.py` separates the contribution of the
+local `a0/aN` coordinate, logarithmic response shape, and `alpha`. Linear and
+simple bounded controls are substantially worse, while the generalized DTL
+train grid selects `gamma=beta=1`, the canonical logarithmic branch. The
+`0.360` to `0.366` alpha change moves holdout mean galaxy RMSE by only
+`+0.023 km/s`; the dominant strength is therefore structural rather than tied
+to the last digits of alpha. The result is diagnostic because `0.360` was
+calibrated on full SPARC before the later split.
+
+Artifacts:
+
+```text
+data/derived/tpg_v6_motivation_ablation.json
+data/derived/tpg_v6_motivation_ablation.csv
+data/derived/tpg_v6_generalized_dtl_train_grid.csv
+reports/tpg_v6_motivation_ablation.md
+```
+
+The companion independence audit is generated by
+`scripts/run_alpha_0360_independence_audit.py`. It classifies SPARC reuse,
+cosmological candidates, closed-form coincidences, and the separate LITTLE
+THINGS estimate. The latter gives `alpha_hat=0.275` with galaxy-bootstrap 95%
+interval `[0.149,0.489]`: compatible with `0.360`, but not a sharp independent
+recovery.
+
+The git-anchored Atlas3D ETG source is acquired with
+`scripts/acquire_atlas3d_etg_alpha_source.py`. Its 16 galaxies and 32
+acceleration pairs give `alpha_hat=0.440` with galaxy-bootstrap interval
+`[0.357,0.528]`. Canonical `0.360` is compatible at the lower edge. The ETG
+and LITTLE THINGS estimates are kept separate because their dynamical and
+systematic structures differ.
+
+## NGC4254 determinant source-systematic boundary
+
+The source-only FFL inverse proxy now has an exact beam-matching and finite
+systematics pass:
+
+```bash
+python scripts/freeze_ngc4254_s4g_photometric_geometry_v02.py
+python scripts/freeze_ngc4254_ffl_determinant_photometric_v02.py
+python scripts/build_ngc4254_common_hi_resolution_source_cube_v03.py
+python scripts/freeze_ngc4254_ffl_source_systematics_v03.py
+python scripts/acquire_ngc4254_ffl_uncertainty_sources_v04.py
+python scripts/build_ngc4254_measurement_uncertainty_fields_v05.py
+python scripts/propagate_ngc4254_ffl_partial_measurement_covariance_v05.py
+python scripts/freeze_ngc4254_ffl_morphology_phase_roles_v06.py
+python scripts/freeze_ngc4254_ffl_direct_beam_m2_operator_v07.py
+python scripts/audit_ngc4254_ffl_terminal_identifiability_v08.py
+python scripts/audit_ngc4254_ffl_primitive_curvature_identifiability_v09.py
+```
+
+The v03 source cube matches stellar and CO-derived surface-density maps to the
+VIVA H I CLEAN beam (`37.7028 x 32.9461` arcsec, PA `42.40` degrees). The
+source-systematic freeze crosses eight photometric geometries, three stellar
+native-PSF assumptions, and three CO-to-H2 conversion factors without reading
+velocity or residual data. Only the `55--65` arcsec row keeps one
+`q_shape_proxy` sign across all 72 scenarios; geometry controls cause the sign
+instability. The exact beam-overlap participation rank is `1.748` for six
+rows.
+
+This is a source-coordinate no-go for promoting the current four-quadrant
+inverse chart, not a rejection of the determinant identity or FFL. The
+equal-weight scenario covariance is not a probability covariance, and the
+available moment-0 products do not identify complete nonlinear measurement
+covariance. Endpoint scoring of this proxy remains unauthorized.
+
+The residual-blind v04 acquisition adds 21 hash-identified source products.
+The official PHANGS `broad_emom0` map is an exact-grid pixelwise uncertainty
+partner for the frozen CO `broad_mom0`. The S4G packet now includes both P1
+IRAC mosaics, coverage maps, P2 masks, P3 radial-error profiles, the P5 ICA
+mask/color/nonstellar products, the galaxy-specific S4G catalog sky/noise row,
+the P5 uncertainty paper, and the IRAC handbook. S4G does not distribute a P5
+pixelwise stellar-error map in that directory, so v05 keeps the reconstructed
+stellar field explicitly conditional.
+
+The public VIVA H I cube is also acquired, but it is not the exact parent of
+the frozen moment-0 map: the public cube has the robust-1 CLEAN beam, whereas
+the moment-0 history records a robust-5, 8-klambda UV-tapered parent with the
+`37.7028 x 32.9461` arcsec beam. The cube is therefore retained only as a
+source-native noise and channel-correlation control. Its outer-field line-free
+channels give median robust noise `0.457` mJy/beam, close to the VIVA atlas
+value `0.41` mJy/beam, and median clipped adjacent-channel correlation `0.171`.
+These numbers characterize the nonidentical robust-1 control only. Exact H I
+covariance still requires that robust-5 parent cube or a source-native
+moment-0 error map. This provenance mismatch keeps endpoint scoring closed.
+
+The v05 construction carries the source uncertainties onto the common H I
+grid without reading a velocity endpoint. It keeps local stellar noise, two
+coherent sky modes, two ICA-color modes, the PHANGS CO error field, and three
+robust-1 H I channel-count controls separate. The subsequent fixed-seed
+Monte Carlo finds conditional 95% sign support in annuli 0--3 under stellar
+plus independent-CO measurement uncertainty. CO noise alone preserves all six
+baseline signs, while the outer two measurement uncertainties are dominated by
+the conditional stellar/ICA modes. The broadest H I control changes annular
+standard deviations by only `0.000654` in the median, but this is not an exact
+robust-5 H I result.
+
+The earlier v03 source-systematic family preserves sign only in annulus 5.
+Consequently, no annulus passes both the separate v03 systematics check and the
+v05 partial-measurement check. This is a robustness intersection, not a joint
+posterior, and it keeps endpoint scoring closed.
+
+The v06 finite redesign replaces sky-PA quadrants by two predeclared role-chart
+candidates anchored to the stellar `m=1` or `m=2` morphology phase. It projects
+the six annular relative vectors onto the first two modes of the frozen beam-
+overlap screen, which carry `95.83%` of its trace, and replays both the 72
+source-systematic scenarios and 256 partial-measurement draws. Only the
+`m=2`, beam-mode-1 candidate preserves source sign, source phase, measurement
+sign, and measurement phase under the frozen gates. Its source range is
+`[+0.0728,+0.2171]`, measurement 95% interval is
+`[+0.0272,+0.2644]`, and measurement baseline-sign probability is `0.977`.
+
+This is an internally surviving source-coordinate candidate, not a physical
+role-map promotion. The independent flux phase agrees with the primary `m=2`
+phase within `0.37` degrees, and the four full-support angular roles retain
+relative beam-screen participation rank `2.813/3`. However, the overlap screen
+is not a full covariance, the stellar covariance is conditional, H I remains a
+robust-1 control, and some inherited annulus-role cells contain only three map
+pixels. Endpoint scoring remains closed.
+
+The v07 audit removes those sparse annulus-by-role cells from the tested
+operator. It interpolates the already selected v06 `beam_mode=1` radial
+eigenvector directly onto source pixels, subtracts an all-role radial baseline
+from the observer-path, log-stellar, and log-gas fields, and projects every
+full angular role in one step. Each role must contain at least one Gaussian
+beam area: `57` source pixels. The minimum across all source-systematic
+scenarios is `101` pixels.
+
+Under the unchanged 72-scenario source family and 256-draw partial-measurement
+model, the direct `m=2` operator preserves sign and phase. Its source range is
+`[+0.0466,+0.1017]`, its primary measurement 95% interval is
+`[+0.0612,+0.1229]`, and its baseline-sign probability is `0.996`. The
+identically processed `m=1` alternative-family control fails source-sign,
+measurement-sign, and measurement-phase gates, so the `m=2` construction also
+passes the frozen internal specificity check.
+
+This is a stronger source-coordinate result because the sparse-cell blocker is
+absent from this operator. It remains a one-galaxy 4D inverse result based on a
+beam-overlap screen and partial covariance. It does not identify a parent role,
+physical `q_det`, determinant transport, channel, time or quantum readout, or
+dark-sector replacement. Endpoint scoring remains closed.
+
+The v08 source-only identifiability audit proves why the surviving morphology
+coordinate cannot yet be scored by inserting a free terminal gain. For the
+conditional spectral law, every admissible scalar endpoint has the exact
+inverse
+
+```text
+g_req = atanh[(beta_obs-beta_dyn)/(1-beta_obs beta_dyn)] / q_shape.
+```
+
+Thus a free gain saturates one scalar endpoint. A fixed-seed 10,000-case
+identity replay reconstructs every endpoint with maximum error `1.67e-16`.
+The physical gain must instead be derived from the primitive curvatures and
+normalization or frozen independently.
+
+More generally, `K` claimed channel components require a source-frozen
+terminal sensitivity matrix with full column rank `K` and at least `K`
+independent scalar terminal coordinates supplied by mutually nonfactorizing
+terminal maps. Several tracer or readout names are not automatically
+independent information. Side-resolved spectra can separate
+common and differential sectors conditionally, but do not by themselves name
+those sectors as time, quantum, gravity, or other physical components.
+
+The v09 source-state/Hessian audit closes the next tempting shortcut. A local
+FFL action can be centered on exactly the same stationary source state for
+arbitrary positive `kappa_X` and `kappa_Y`; its value and first variation are
+unchanged while its second variation and terminal gain differ. Four explicit
+countermodels retain the same v07 `q_shape_proxy=+0.09129505` while their
+dimensionless witness gains span `0.3333--0.6667`.
+
+Consequently, neither the morphology image nor the v05/v07 measurement and
+systematic covariance can define the primitive parent curvatures. Measurement
+likelihood curvature becomes a physical action Hessian only under a separately
+derived fluctuation law, conjugate scale, and source-coordinate normalization.
+The primary next route is therefore a parent-action derivation of one
+physically normalized source perturbation and its second variation.
+
+Artifacts:
+
+```text
+data/derived/ngc4254_common_hi_resolution_source_cube_v03.fits
+data/derived/ngc4254_common_hi_resolution_source_cube_v03.json
+data/derived/ngc4254_ffl_source_systematic_scenarios_v03.csv
+data/derived/ngc4254_ffl_source_systematic_driver_summary_v03.csv
+data/derived/ngc4254_ffl_source_systematics_v03.json
+data/derived/ngc4254_ffl_uncertainty_source_acquisition_v04.json
+data/derived/ngc4254_ffl_uncertainty_source_ledger_v04.csv
+data/derived/ngc4254_measurement_uncertainty_fields_v05.fits
+data/derived/ngc4254_measurement_uncertainty_fields_v05.json
+data/derived/ngc4254_ffl_partial_measurement_samples_v05.csv
+data/derived/ngc4254_ffl_partial_measurement_summary_v05.csv
+data/derived/ngc4254_ffl_partial_measurement_covariance_v05.json
+data/derived/ngc4254_ffl_morphology_phase_role_systematics_v06.csv
+data/derived/ngc4254_ffl_morphology_phase_role_measurement_v06.csv
+data/derived/ngc4254_ffl_morphology_phase_role_summary_v06.csv
+data/derived/ngc4254_ffl_morphology_phase_roles_v06.json
+data/derived/ngc4254_ffl_direct_beam_m2_systematics_v07.csv
+data/derived/ngc4254_ffl_direct_beam_m2_measurement_v07.csv
+data/derived/ngc4254_ffl_direct_beam_m2_summary_v07.csv
+data/derived/ngc4254_ffl_direct_beam_m2_operator_v07.json
+data/derived/ngc4254_ffl_terminal_identifiability_v08.json
+data/derived/ngc4254_ffl_primitive_curvature_identifiability_v09.json
+reports/ngc4254_common_hi_resolution_source_cube_v03.md
+reports/ngc4254_ffl_source_systematics_v03.md
+reports/ngc4254_ffl_uncertainty_source_acquisition_v04.md
+reports/ngc4254_measurement_uncertainty_fields_v05.md
+reports/ngc4254_ffl_partial_measurement_covariance_v05.md
+reports/ngc4254_ffl_morphology_phase_roles_v06.md
+reports/ngc4254_ffl_direct_beam_m2_operator_v07.md
+reports/ngc4254_ffl_terminal_identifiability_v08.md
+reports/ngc4254_ffl_primitive_curvature_identifiability_v09.md
+```
+
+## Paper 7 source-forward bridge audit
+
+The cross-paper bridge audit tests whether the present Paper 8 artifacts can
+numerically supply the source-forward observer-time handoff used by Paper 7.
+There is currently no object overlap between the Paper 8 morphology tables and
+the five Paper 7 strong-lens targets, so no lens `Theta_M`, `U_BF Phi_M`, or
+derived `a_O` may be imported by analogy.
+
+SDP.81 is retained as the strongest rank-repair candidate because it supplies
+four paths and two spectral transitions. Its relative smooth-lens geometry is
+reproduced. The published image-G coordinate now also supplies an operational
+Band-7 WCS anchor, with the nearby compact peak retained as a beam-scale
+registration systematic. The body-covector pullback and independent covariance
+significance for the second cross-transition mode remain open. It is therefore
+not yet an authorized auxiliary observable and does not open a time score.
+
+```text
+python scripts/audit_paper7_source_forward_bridge_v01.py
+python scripts/register_sdp81_image_g_wcs_v01.py
+
+data/derived/paper7_source_forward_bridge_audit_v01.json
+data/derived/paper7_source_forward_bridge_fields_v01.csv
+data/derived/sdp81_image_g_wcs_registration_v01.json
+reports/paper7_source_forward_bridge_audit_v01.md
+reports/sdp81_image_g_wcs_registration_v01.md
+```
+
+The first source-covector realization has also been tested. Under the frozen
+smooth-lens Jacobians, a common local scalar source gradient would obey
+`grad_theta I_i = A_i^T grad_beta I_source` on all four q1 paths. Joint fits
+over two registration anchors and three beam-scaled apertures span both sides
+of the declared acceptance boundary, so this minimal plane-gradient
+realization is not robustly promoted. The result does not reject a
+beam-convolved source reconstruction or a richer body covector.
+
+```text
+python scripts/audit_sdp81_common_source_covector_v01.py
+
+data/derived/sdp81_common_source_covector_audit_v01.json
+reports/sdp81_common_source_covector_audit_v01.md
+```
+
+The next finite realization replaces the unstable point gradient by one common
+nonnegative extended source on a frozen `7 x 7` Gaussian basis. Each basis
+element is pushed through the local lens Jacobian and analytically convolved
+with the Band-7 synthesized beam before a joint four-path fit. Independent
+per-path source fits are retained as the flexibility control. This determines
+whether extended source structure is sufficient before any body- or
+time-covector interpretation is attempted.
+
+```text
+python scripts/reconstruct_sdp81_extended_source_v01.py
+
+data/derived/sdp81_extended_source_reconstruction_v01.json
+data/derived/sdp81_extended_source_coefficients_v01.csv
+reports/sdp81_extended_source_reconstruction_v01.md
+```
+
+The v02 reconstruction replaces the local constant-Jacobian approximation by
+exact nonlinear `lenstronomy` ray shooting for every image pixel. The source
+basis, nonnegativity, apertures, ALMA beam convolution, and promotion rule
+remain frozen, so improvement can be attributed to the mapping rather than a
+retuned endpoint model. After correction of the published west-positive
+lens-`x` convention in the WCS export, both the local-Jacobian and exact-ray
+extended-source constructions pass their frozen promotion rules. The exact-ray
+common-source residual is about `0.383`, with all four path residuals below
+`0.45`; its squared-residual cost is about `36%` above four independently
+fitted source controls.
+
+```text
+python scripts/reconstruct_sdp81_exact_ray_source_v02.py
+
+data/derived/sdp81_exact_ray_source_reconstruction_v02.json
+data/derived/sdp81_exact_ray_source_coefficients_v02.csv
+reports/sdp81_exact_ray_source_reconstruction_v02.md
+```
+
+The Band-6 CO(8-7) extension reconstructs channels 47--52 independently on the
+same common source grid through all four exact lens paths. Source-cell spectral
+centroids then define a source-side `Theta_dyn_4D_inverse` ordering proxy and
+its affine covector without using a time-delay residual. This is deliberately
+kept below `Theta_M`: a spectral velocity ordering in a 4D inverse
+reconstruction does not by itself identify the parent body clock or a
+quotient-basic observer-time covector. In the present fit the affine centroid
+plane has negative explanatory `R^2`, and every channel fails the frozen
+common-versus-independent source-cost boundary. The constrained source cube is
+materialized as a diagnostic, but the dynamical clock proxy is not promoted.
+
+```text
+python scripts/reconstruct_sdp81_source_spectral_cube_v01.py
+
+data/derived/sdp81_source_spectral_cube_v01.json
+data/derived/sdp81_source_spectral_cube_coefficients_v01.csv
+reports/sdp81_source_spectral_cube_v01.md
+```
+
+Because four independently fitted sources have substantially more parameters,
+the v01 spectral-cube cost comparison is supplemented by a no-gain
+leave-one-path-out test. Each channel is fitted on three paths and predicted
+on the fourth. Only a background estimated from the lowest 20% of
+model-support pixels is permitted on the holdout; no source amplitude or
+terminal gain is refitted.
+
+```text
+python scripts/audit_sdp81_spectral_leave_one_path_out_v01.py
+
+data/derived/sdp81_spectral_leave_one_path_out_v01.json
+reports/sdp81_spectral_leave_one_path_out_v01.md
+```
+
+The independent registration repair is calibrated only on Band-7 continuum.
+Each path is held out while the other three define the common continuum
+source. A frozen `-40` to `+40 mas` grid then selects the held-out geometric
+shift without fitting a source amplitude. The resulting shifts may be carried
+to Band-6 only if all four optima are interior to the declared grid.
+
+```text
+python scripts/calibrate_sdp81_path_registration_from_continuum_v01.py
+
+data/derived/sdp81_continuum_path_registration_v01.json
+reports/sdp81_continuum_path_registration_v01.md
+```
+
+If the v01 optimum touches the `+/-40 mas` boundary, exactly one wider audit is
+allowed on the frozen `+/-80 mas` grid with the same 20 mas spacing. A boundary
+solution in v02 closes the simple-registration repair rather than authorizing
+another expansion.
+
+```text
+python scripts/calibrate_sdp81_path_registration_from_continuum_v02.py
+
+data/derived/sdp81_continuum_path_registration_v02.json
+reports/sdp81_continuum_path_registration_v02.md
+```
+
+The post-registration route uses one finite extended velocity-field operator:
+a nonnegative source intensity on the frozen 49-cell grid, one affine source
+velocity field, and one common Gaussian line width. Exact ray shooting and the
+ALMA beam generate all 24 path/channel blocks simultaneously. The comparison
+null retains the same spatial source but removes spectral structure.
+
+```text
+python scripts/fit_sdp81_velocity_field_operator_v01.py
+
+data/derived/sdp81_velocity_field_operator_v01.json
+reports/sdp81_velocity_field_operator_v01.md
+```
+
+The full-cube source-side support freeze sums the four q1 aperture spectra and
+selects contiguous channels above `median + 3 robust-MAD sigma`. It freezes
+channels 48--58, showing that the earlier 47--52 endpoint included one
+sub-threshold edge channel and omitted six supported channels.
+
+```text
+python scripts/freeze_sdp81_full_signal_window_v01.py
+
+data/derived/sdp81_full_signal_window_freeze_v01.json
+reports/sdp81_full_signal_window_freeze_v01.md
+```
+
+The v02 velocity-field audit changes only the frozen spectral support from the
+old six-channel endpoint to the complete 48--58 source-side window. The source
+grid, finite velocity candidates, exact lens operator, beam model, solver, null
+and promotion rule remain unchanged.
+
+```text
+python scripts/fit_sdp81_velocity_field_operator_v02.py
+
+data/derived/sdp81_velocity_field_operator_v02.json
+reports/sdp81_velocity_field_operator_v02.md
+```
+
+The first finite post-affine diagnostic tests whether the frozen 48--58
+source spectrum itself requires two components. Aggregate local maxima select
+the candidate centers, while a pathwise nonnegative one- versus two-profile
+fit is compared with the Bayesian information criterion. This is a spectral
+complexity audit, not yet a spatial velocity-field model.
+
+```text
+python scripts/audit_sdp81_two_component_spectral_source_v01.py
+
+data/derived/sdp81_two_component_spectral_source_v01.json
+reports/sdp81_two_component_spectral_source_v01.md
+```
+
+The spatial follow-up freezes those two profiles at channels 52 and 55 and
+assigns each one a separate nonnegative 49-cell source map. The exact lens
+operator and ALMA beam are shared across all 44 path/channel blocks. BIC
+compares this finite two-map operator with one-map and spectrally flat controls.
+
+```text
+python scripts/fit_sdp81_two_component_spatial_operator_v01.py
+
+data/derived/sdp81_two_component_spatial_operator_v01.json
+reports/sdp81_two_component_spatial_operator_v01.md
+```

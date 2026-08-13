@@ -1,0 +1,46 @@
+{
+  "schema": "same_body_joint_conditional_information_v01",
+  "status": "SHARED_SOURCE_PRECISION_GAIN_MEASURED_DISTINCT_TRACER_MODE_NOT_DETECTED",
+  "law": "Delta I_j=I(source;y_j|other tracer)",
+  "galaxies": 2,
+  "channel_pairs": 3,
+  "source_sigma_sensitivity_km_s": [
+    10.0,
+    30.0,
+    100.0
+  ],
+  "cross_noise_rho_sensitivity": [
+    0.0,
+    0.25,
+    0.5
+  ],
+  "nominal": {
+    "mean_joint_information_bits": 13.112727102239502,
+    "mean_hi_given_halpha_bits": 1.4082348657745076,
+    "mean_halpha_given_hi_bits": 4.391523279494472,
+    "mean_redundant_information_bits": 7.312968956970519,
+    "mean_hi_unique_fraction": 0.12255867174790182,
+    "mean_halpha_unique_fraction": 0.3090402503244916
+  },
+  "positive_incremental_information_all_sensitivities": {
+    "hi_given_halpha": true,
+    "halpha_given_hi": true
+  },
+  "declared_tracer_jacobians": "C_HI=I and C_Halpha=I on the same radial source carrier",
+  "stacked_rank_increment": 0,
+  "shared_source_innovation_null_rejected": false,
+  "innovation_evidence": {
+    "ngc3726_zero_contrast_p": 0.14888777907332534,
+    "ngc4559_hr_zero_contrast_rejected": false,
+    "ngc4559_lr_zero_contrast_rejected": false
+  },
+  "distinct_tracer_source_mode_detected": false,
+  "cross_covariance_measured": false,
+  "cross_covariance_treatment": "positive-definite rho sensitivity 0, 0.25, 0.5; not fitted",
+  "shared_source_prior_parent_derived": false,
+  "observer_time_channel_identified": false,
+  "quantum_channel_identified": false,
+  "physical_channel_detected": false,
+  "interpretation": "each tracer improves precision about the declared shared radial odd-velocity source beyond the other, but the stacked Jacobian adds no source rank and the shared-source innovation null is not rejected; no distinct tracer source mode is detected",
+  "claim_boundary": "two-galaxy, three-pair conditional-information diagnostic with source-scale and cross-noise sensitivity; line formation, pressure support, remaining geometry, and parent source covariance prevent time/path/quantum attribution"
+}

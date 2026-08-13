@@ -1,0 +1,68 @@
+{
+  "schema": "little_things_oscc_capacity_scoring_v02",
+  "status": "DIAGNOSTIC_ONLY_NOT_ENDPOINT",
+  "law": "OSCC-1 classical real linear-Gaussian water-filled capacity",
+  "scored_formula": "v_oscc=v_TPG+W_beam(v_v02-v_TPG)",
+  "capacity_operator": "H=N^{-1/2} W_beam diag(dv_v02/dphi) G^{-1/2}",
+  "noise_covariance": "diagonal published velocity_error_km_s squared; correlations unavailable",
+  "source_cost": "G=I/n, so P=mean(phi_tail_bounded^2)",
+  "eta": 0.07319144586620145,
+  "eta_refit": false,
+  "little_things_opened_before_formula": true,
+  "primary": {
+    "n_galaxies": 14,
+    "n_points": 313,
+    "mean_rmse_km_s": {
+      "oscc_v02": 8.96184837160921,
+      "v02": 8.962100153743387,
+      "tpg_v6": 8.97579644821774,
+      "mond": 8.225006890242398
+    },
+    "mean_paired_delta_km_s": {
+      "oscc_minus_tpg": -0.013948076608529305,
+      "oscc_minus_v02": -0.0002517821341762832
+    },
+    "win_fraction": {
+      "tpg_v6": 0.5,
+      "v02": 0.7142857142857143,
+      "mond": 0.5
+    },
+    "mean_reduced_chi2": {
+      "oscc_v02": 12.333664974882884,
+      "v02": 12.335057313002745,
+      "tpg_v6": 12.493490333361846
+    },
+    "capacity_bits_per_profile_use": {
+      "mean": 0.7903743383017817,
+      "median": 0.3387938957859833,
+      "min": 0.059903405836718486,
+      "max": 3.2478605330148618
+    },
+    "water_filled_modes": {
+      "mean": 4.714285714285714,
+      "min": 1,
+      "max": 20
+    }
+  },
+  "budget_sensitivity": {
+    "0.5": {
+      "mean_capacity_bits_per_profile_use": 0.43657723504978047,
+      "mean_active_modes": 3.2857142857142856
+    },
+    "1.0": {
+      "mean_capacity_bits_per_profile_use": 0.7903743383017817,
+      "mean_active_modes": 4.714285714285714
+    },
+    "2.0": {
+      "mean_capacity_bits_per_profile_use": 1.397832745541302,
+      "mean_active_modes": 6.5
+    }
+  },
+  "full_smoothing_control_mean_rmse_km_s": 8.948740294454621,
+  "capacity_modifies_prediction_directly": false,
+  "physical_parent_cost_metric_derived": false,
+  "correlated_path_noise_available": false,
+  "time_operator_identified": false,
+  "quantum_operator_identified": false,
+  "claim_boundary": "OSCC-1-consistent opened-sample diagnostic using diagonal published errors and an operational source-cost convention; not a physical parent-capacity measurement or prospective endpoint"
+}

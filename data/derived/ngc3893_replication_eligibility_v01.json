@@ -1,0 +1,43 @@
+{
+  "schema": "ngc3893_replication_eligibility_v01",
+  "status": "NGC3893_DISTURBED_CONTROL_PRIMARY_REPLICATION_BLOCKED",
+  "galaxy": "NGC3893",
+  "aliases": [
+    "UGC6778"
+  ],
+  "source_only_rank": 3,
+  "role": "DISTURBED_CONVENTIONAL_ASYMMETRY_CONTROL_NOT_PRIMARY_CHANNEL_REPLICATION",
+  "gates": {
+    "source_only_rank_frozen": true,
+    "both_ghasp_halpha_sides": true,
+    "whisp_graphical_source_available": true,
+    "low_disturbance_primary_replication": false,
+    "independent_machine_readable_hi_radial_sides_acquired": false,
+    "side_curve_not_symmetry_targeted": false
+  },
+  "primary_replication_eligible": false,
+  "channel_statistic_run": false,
+  "counts_as_negative_channel_test": false,
+  "selection_uses_vobs_or_residual": false,
+  "sparc_endpoint_opened": false,
+  "endpoint_access": false,
+  "evidence": {
+    "interaction_and_non_circular_motion": true,
+    "common_hi_envelope_or_bridge": true,
+    "dedicated_curve_symmetry_targeted": true,
+    "ugc6778_in_whisp_lopsidedness_source_package": false,
+    "whisp_graphical_page_cached": true
+  },
+  "sources": {
+    "interaction_kinematics": "https://arxiv.org/abs/astro-ph/0701878",
+    "whisp_overview": "https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6778/u6778p36875.html",
+    "whisp_lopsidedness_catalog_audit": "https://arxiv.org/abs/1103.4928"
+  },
+  "source_hashes_sha256": {
+    "astro-ph_0701878": "6dfecb8a513188e607ca3dc1e6991e51aa974d1aa036fffb284838fcbb05056f",
+    "1103.4928": "eb648878d8706a878e2d06f8d7c631ea6c76ada58f14a935c03c94b083ea0d6e",
+    "whisp_overview": "8b25fdddbbd31602992e0f6fda3305d126f899745a1c9ecce50400e2144c50c4"
+  },
+  "next_clean_candidate": "UGC08490",
+  "claim_boundary": "source-side eligibility audit only; NGC3893 is retained as a disturbed-control case, not counted as a channel detection or a failed channel replication"
+}

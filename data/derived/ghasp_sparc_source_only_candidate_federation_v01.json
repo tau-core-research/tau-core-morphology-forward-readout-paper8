@@ -1,0 +1,49 @@
+{
+  "schema": "ghasp_sparc_source_only_candidate_federation_v01",
+  "status": "GHASP_FULL_FEDERATION_SOURCE_ONLY_CANDIDATES_RANKED_NOT_ENDPOINT",
+  "source_catalogs": [
+    "J/MNRAS/388/500",
+    "J/MNRAS/390/466"
+  ],
+  "source_urls": {
+    "vi_readme": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/388/500/ReadMe",
+    "vi_points": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/388/500/tablef.dat",
+    "vii_readme": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/390/466/ReadMe",
+    "vii_aliases": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/390/466/tableb1.dat",
+    "vii_metadata": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/390/466/tableb3.dat",
+    "vii_points": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/390/466/tablef.dat"
+  },
+  "source_sha256": {
+    "vi_readme": "6f6133cc1217d205b02299b18573781c6bea29b4a8c994bac02d3d2e950adbc1",
+    "vi_points": "8c528d722531494c7b7455037079bdf44d56610df857f48349f37fef295a0b98",
+    "vii_readme": "bc0dfec9ca2518650835d8b164de06872584833c83d4d5417aaec7d94782c021",
+    "vii_aliases": "8ec6e50471deece86d2f360171f45751c58de06381de6dfd5e3db6e9db1feff1",
+    "vii_metadata": "31f93086f6c7f0051fd333cc2749902de36f3bcf244fa233a379d8e472063dac",
+    "vii_points": "11aa997de834a6f71e085d30928f85ddac865853ab388dd1ed39bf2cb3e6b707"
+  },
+  "ghasp_point_rows": 9713,
+  "ghasp_release_specific_rotation_curves": 175,
+  "ghasp_rotation_curve_galaxies": 173,
+  "sparc_overlap_galaxies": 26,
+  "both_side_overlap_galaxies": 25,
+  "whisp_overview_overlap_galaxies": 21,
+  "eligible_both_side_whisp_galaxies": 20,
+  "top_source_only_candidate": "NGC3726",
+  "top_source_only_candidates": [
+    "NGC3726",
+    "NGC4559",
+    "NGC3893",
+    "UGC08490",
+    "UGC04305"
+  ],
+  "ranking_inputs": [
+    "Halpha side counts and total source-point count",
+    "Halpha angular support divided by GHASP D25",
+    "WHISP overview availability and GHASP H I reference",
+    "SPARC inclination geometry and quoted source uncertainties"
+  ],
+  "selection_uses_vobs_or_residual": false,
+  "endpoint_access": false,
+  "physical_a_row_constructed": false,
+  "claim_boundary": "candidate acquisition and source-only ranking; no common-coordinate transport, channel observable, residual test, or Tau Core validation"
+}

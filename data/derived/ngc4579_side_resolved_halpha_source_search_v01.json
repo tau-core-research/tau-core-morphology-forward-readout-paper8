@@ -1,0 +1,28 @@
+{
+  "schema": "tau_core_ngc4579_side_resolved_halpha_source_search_v01",
+  "status": "ODD_CHANNEL_ENDPOINT_BLOCKED_SOURCE_PRODUCT_NOT_PUBLICLY_RECOVERED",
+  "archived_author_index_recovered": true,
+  "archived_author_numeric_curve_recovered": true,
+  "numeric_curve_side_policy": "source-averaged vrot with side_error, gipsy_error, and final_error",
+  "archived_ngc4579_page_recovered": true,
+  "page_product_links": [
+    "images/imngc4579.PNG",
+    "rotation_curves.htm"
+  ],
+  "page_links_fits_or_cube": false,
+  "composite_png_archive_recovered": false,
+  "full_ads_journal_pdf_recovered": true,
+  "full_ads_journal_pdf_sha256": "9b2ff7acf12fe1ae5a9d9b13fe1cf4909c723d888ff65df4b8d1723e9d07ff2d",
+  "figure_c2_ngc4579_series_count": 1,
+  "figure_c2_side_resolved_gate_pass": false,
+  "published_figure_c2_known_to_show_rotation_curve": true,
+  "even_common_amplitude_test_available": true,
+  "orientation_odd_time_channel_test_available": false,
+  "public_archive_search_outcome": "no FaNTOmM NGC4579 FITS velocity field or data cube recovered; IRSA SINGS FITS products are not the Fabry-Perot kinematic cube",
+  "source_reported_receding_side_caveat": "Virgo Halpha atlas reports substantially larger velocity dispersion in the receding half",
+  "next_routes": [
+    "request original FaNTOmM NGC4579 velocity field or cube from authors/archive",
+    "find an independent source publishing approaching and receding Halpha curves numerically"
+  ],
+  "claim_boundary": "the recovered author table supports a common/even rotation-amplitude replay only; NGC4579 is blocked as an orientation-odd endpoint until a side-resolved velocity product is acquired"
+}

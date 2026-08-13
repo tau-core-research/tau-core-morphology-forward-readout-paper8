@@ -1,0 +1,74 @@
+{
+  "audit_checks": {
+    "endpoint_scored": false,
+    "free_gain_not_fitted_to_endpoint": true,
+    "inverse_forward_identity_verified": true,
+    "source_only": true,
+    "v07_q_nonzero": true,
+    "v07_source_range_excludes_zero": true,
+    "velocity_or_residual_inputs_empty": true
+  },
+  "claim_boundary": "algebraic source-to-terminal identifiability result using the frozen v07 q_shape proxy; not a physical gain derivation, channel-component recovery, time/quantum/gravity attribution, dark-matter replacement, or endpoint score",
+  "factorization_no_go": {
+    "component_identifiability_iff": "A is independently frozen and has full column rank",
+    "minimum_terminal_coordinate_count": "the number of independent scalar terminal coordinates must be at least the number of claimed components",
+    "model": "q_req=A*c for source-frozen terminal sensitivity matrix A and channel-component vector c",
+    "named_readouts_are_independent_by_name": false,
+    "one_scalar_source_proxy_separates_components": false,
+    "unknown_factorization_gauge": "A->A*S and c->S^-1*c leaves q_req unchanged for every invertible S"
+  },
+  "galaxy": "NGC4254",
+  "inputs": {
+    "v07_manifest": "data/derived/ngc4254_ffl_direct_beam_m2_operator_v07.json",
+    "v07_manifest_sha256": "5140c9259dc73ed756af656e61be1319fe2b94c0f27afd261a30abe292ae05ab",
+    "v07_summary": "data/derived/ngc4254_ffl_direct_beam_m2_summary_v07.csv",
+    "v07_summary_sha256": "5fcb23f71361dfe13fa6b8a56eb836ae1d6822e81dacaf4f58a469bab681b2ec",
+    "velocity_or_residual_inputs": []
+  },
+  "minimum_future_measurement_contract": [
+    "derive or independently freeze the physical gain from kappa_X, kappa_Y, Q_*, lambda, w_A, and w_S",
+    "freeze one shared parent-readout descriptor before terminal maps",
+    "supply at least K independent scalar terminal coordinates for K claimed channel components, obtained from mutually nonfactorizing terminal maps",
+    "freeze the terminal sensitivity matrix A without using scored residuals",
+    "verify full column rank and a non-negligible smallest singular value under complete covariance",
+    "use side-resolved spectra to retain both common and differential channel sectors",
+    "treat time, quantum, gravity, and other names as interpretations only after their terminal maps are recovered"
+  ],
+  "paired_spectral_boundary": {
+    "absolute_observable": "side geometric mean retains the terminal-visible common sector conditionally",
+    "reason": "common/differential separation is not a physical component basis without independently derived terminal sensitivities",
+    "relative_observable": "side odd/even ratio isolates the differential q sector conditionally",
+    "two_observables_identify_time_quantum_gravity_components": false
+  },
+  "result": {
+    "channel_components_identifiable": false,
+    "channel_presence_detected": false,
+    "endpoint_scoring_allowed": false,
+    "morphology_source_coordinate_robust": true,
+    "next_finite_target": "source-derived terminal gain plus a source-frozen full-rank multi-readout sensitivity matrix",
+    "single_terminal_physical_test_ready": false
+  },
+  "schema": "ngc4254_ffl_terminal_identifiability_v08",
+  "single_terminal_theorem": {
+    "consequence": "single-terminal scoring is nonfalsifiable until the gain is source-derived or independently frozen",
+    "domain": "q_shape != 0, beta_dyn,beta_obs in (-1,1), and the fitted gain g is unconstrained over the reals",
+    "forward_law": "beta_read=(beta_dyn+tanh(g*q_shape))/(1+beta_dyn*tanh(g*q_shape))",
+    "identity_checks": 10000,
+    "inverse_gain": "g_req=atanh((beta_obs-beta_dyn)/(1-beta_obs*beta_dyn))/q_shape",
+    "maximum_reconstruction_error": 1.6653345369377348e-16,
+    "random_seed": 425408,
+    "single_terminal_free_gain_saturated": true,
+    "verdict": "a free gain exactly saturates one scalar terminal endpoint"
+  },
+  "source_result": {
+    "family": "direct stellar-m2 morphology-phase operator",
+    "physical_q_det_constructed": false,
+    "q_shape_proxy_baseline": 0.09129505312,
+    "q_shape_proxy_source_range": [
+      0.04663450575,
+      0.1016890116
+    ],
+    "source_family_specificity_pass": true
+  },
+  "status": "SOURCE_ONLY_TERMINAL_IDENTIFIABILITY_NO_GO_PROVED_NO_ENDPOINT"
+}

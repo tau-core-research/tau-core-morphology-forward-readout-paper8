@@ -1,0 +1,31 @@
+{
+  "schema": "tau_core_ngc4303_prospective_endpoint_intake_freeze_v01",
+  "status": "PROSPECTIVE_ENDPOINT_ACQUISITION_ROUTE_FROZEN",
+  "galaxy": "NGC 4303",
+  "selection_reads_ngc4303_rotation_values": false,
+  "selection_reads_ngc4303_dark_discrepancy": false,
+  "selection_basis": [
+    "COMING source morphology profile already frozen",
+    "S4G stellar decomposition already local",
+    "PHANGS catalog match already local",
+    "independent endpoint not yet opened locally"
+  ],
+  "primary_rotation_source": {
+    "name": "PHANGS CO kinematics rotation curves at 150 pc resolution",
+    "paper": "Lang et al. 2020, ApJ 897, 122",
+    "doi": "10.3847/1538-4357/ab9953",
+    "data_landing_page": "https://www.phangs.org/data",
+    "archive": "https://www.canfar.net/storage/list/phangs/RELEASES/Lang_etal_2020/",
+    "independence_caveat": "CO tracer overlaps the broad molecular-gas domain used by COMING; numerical products and analysis are independent, but a stricter non-CO replication remains required"
+  },
+  "required_before_score": [
+    "acquire checksum-frozen NGC4303 numeric PHANGS rotation curve",
+    "audit PHANGS quality flags for bar-dominated or unreliable fit status",
+    "construct endpoint-blind stellar and gas baryonic velocity fields",
+    "freeze the multi-coordinate channel operator before opening endpoint values",
+    "retain a later non-CO replication requirement"
+  ],
+  "endpoint_values_opened": false,
+  "scoring_allowed": false,
+  "claim_boundary": "acquisition protocol only; PHANGS existence does not imply endpoint eligibility"
+}

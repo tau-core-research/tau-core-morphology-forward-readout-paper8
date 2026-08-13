@@ -1,0 +1,31 @@
+{
+  "schema": "tau_core_ngc7479_hi_endpoint_source_v01",
+  "status": "INDEPENDENT_HI_ROTATION_ENDPOINT_AND_GAS_MAP_SOURCE_ACQUIRED",
+  "source": "Laine and Gottesman 1998, MNRAS 297, 1041",
+  "source_url": "https://adsabs.harvard.edu/pdf/1998MNRAS.297.1041L",
+  "source_pdf_sha256": "29fcc087340dfd3c44bee638db3148554540d5a68f65089bcc3f87df3bd8a540",
+  "n_rotation_points": 10,
+  "rotation_radius_arcsec_range": [
+    40,
+    130
+  ],
+  "rotation_radius_kpc_range_at_source_distance": [
+    6.205609289021404,
+    20.168230189319566
+  ],
+  "hi_mass_msun": 8580000000.0,
+  "hi_mass_error_msun": 300000000.0,
+  "hi_moment0_map_published": true,
+  "hi_moment0_beam_arcsec": [
+    9.7,
+    7.4
+  ],
+  "hi_column_density_rms_atoms_cm2": 7e+19,
+  "numeric_radial_hi_surface_density_profile_published": false,
+  "independent_of_coming_co_morphology": true,
+  "stellar_ml_1p35_route_endpoint_calibrated_and_primary_forbidden": true,
+  "dark_discrepancy_ready": false,
+  "endpoint_scoring_allowed": false,
+  "remaining_blocker": "derive a residual-blind radial gas profile and independently normalized stellar gravitational velocity field",
+  "claim_boundary": "independent observed endpoint acquired; baryonic prediction not yet complete"
+}

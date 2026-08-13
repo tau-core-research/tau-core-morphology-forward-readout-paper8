@@ -1,0 +1,586 @@
+{
+  "schema": "tau-core.paper8.sdp81-q1-multipath-spectral-score.v01",
+  "status": "Q1_MULTIPATH_DIAGNOSTIC_SCORED_SIGNIFICANCE_AND_OPERATOR_NULLS_OPEN",
+  "target": "CO(8-7) one-based channels 47--52 from the same q1 source clump",
+  "path_count": 4,
+  "image_G_icrs_j2000": {
+    "ra_hms": "09:03:11.573",
+    "dec_dms": "+00:39:06.54",
+    "source": "Tamura et al. (2015), arXiv:1503.07605",
+    "reported_role": "central compact non-thermal source"
+  },
+  "image_x_to_icrs_ra_convention": "delta_RA*cos(dec) = -x",
+  "nominal": {
+    "aperture_radius_arcsec": 0.12,
+    "registration_dx_mas": 0.0,
+    "registration_dy_mas": 0.0,
+    "pixels_per_aperture": 111,
+    "all_path_endpoint_flux_positive": true,
+    "mean_pairwise_normalized_spectral_rms": 0.06111185097034482,
+    "channel_50_normalized_path_spread": 0.034643431406453325
+  },
+  "sensitivity_score_range": [
+    0.04628322421390777,
+    0.08545596080981799
+  ],
+  "n_sensitivity_runs": 36,
+  "rolling_six_channel_positive_flux_windows": 32,
+  "published_endpoint_empirical_upper_tail_fraction": 0.75,
+  "rolling_window_null": [
+    {
+      "channels_one_based": [
+        32,
+        37
+      ],
+      "score": 1.0955649395690255
+    },
+    {
+      "channels_one_based": [
+        33,
+        38
+      ],
+      "score": 0.28908663145567354
+    },
+    {
+      "channels_one_based": [
+        34,
+        39
+      ],
+      "score": 0.2504223878761255
+    },
+    {
+      "channels_one_based": [
+        35,
+        40
+      ],
+      "score": 0.27221075111625354
+    },
+    {
+      "channels_one_based": [
+        36,
+        41
+      ],
+      "score": 0.23022964329416776
+    },
+    {
+      "channels_one_based": [
+        37,
+        42
+      ],
+      "score": 0.2089886939181357
+    },
+    {
+      "channels_one_based": [
+        38,
+        43
+      ],
+      "score": 0.17137518071456248
+    },
+    {
+      "channels_one_based": [
+        39,
+        44
+      ],
+      "score": 0.14542273862533414
+    },
+    {
+      "channels_one_based": [
+        40,
+        45
+      ],
+      "score": 0.12509005529244993
+    },
+    {
+      "channels_one_based": [
+        41,
+        46
+      ],
+      "score": 0.09609769335395886
+    },
+    {
+      "channels_one_based": [
+        42,
+        47
+      ],
+      "score": 0.0744541570105663
+    },
+    {
+      "channels_one_based": [
+        43,
+        48
+      ],
+      "score": 0.07099307048470434
+    },
+    {
+      "channels_one_based": [
+        44,
+        49
+      ],
+      "score": 0.07632792456115947
+    },
+    {
+      "channels_one_based": [
+        45,
+        50
+      ],
+      "score": 0.08615348273125227
+    },
+    {
+      "channels_one_based": [
+        46,
+        51
+      ],
+      "score": 0.07940485730043427
+    },
+    {
+      "channels_one_based": [
+        47,
+        52
+      ],
+      "score": 0.06111185097034482
+    },
+    {
+      "channels_one_based": [
+        48,
+        53
+      ],
+      "score": 0.05355420685053786
+    },
+    {
+      "channels_one_based": [
+        49,
+        54
+      ],
+      "score": 0.05327086676903328
+    },
+    {
+      "channels_one_based": [
+        50,
+        55
+      ],
+      "score": 0.053680959402713585
+    },
+    {
+      "channels_one_based": [
+        51,
+        56
+      ],
+      "score": 0.05168763629495657
+    },
+    {
+      "channels_one_based": [
+        52,
+        57
+      ],
+      "score": 0.05056463817721756
+    },
+    {
+      "channels_one_based": [
+        53,
+        58
+      ],
+      "score": 0.0426168323552637
+    },
+    {
+      "channels_one_based": [
+        54,
+        59
+      ],
+      "score": 0.04107425298601072
+    },
+    {
+      "channels_one_based": [
+        55,
+        60
+      ],
+      "score": 0.04973228240316311
+    },
+    {
+      "channels_one_based": [
+        56,
+        61
+      ],
+      "score": 0.0641520336663623
+    },
+    {
+      "channels_one_based": [
+        57,
+        62
+      ],
+      "score": 0.16212942284036855
+    },
+    {
+      "channels_one_based": [
+        58,
+        63
+      ],
+      "score": 0.6746690326582548
+    },
+    {
+      "channels_one_based": [
+        84,
+        89
+      ],
+      "score": 3.9451806412407477
+    },
+    {
+      "channels_one_based": [
+        85,
+        90
+      ],
+      "score": 0.836930289293945
+    },
+    {
+      "channels_one_based": [
+        86,
+        91
+      ],
+      "score": 0.844803192848973
+    },
+    {
+      "channels_one_based": [
+        89,
+        94
+      ],
+      "score": 1.1798023140397647
+    },
+    {
+      "channels_one_based": [
+        90,
+        95
+      ],
+      "score": 1.4847786276634658
+    }
+  ],
+  "runs": [
+    {
+      "aperture_radius_arcsec": 0.08,
+      "registration_dx_mas": -20.0,
+      "registration_dy_mas": -20.0,
+      "pixels_per_aperture": 50,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.06347039684570414,
+      "channel_50_normalized_path_spread": 0.03302225274693403
+    },
+    {
+      "aperture_radius_arcsec": 0.08,
+      "registration_dx_mas": -20.0,
+      "registration_dy_mas": 0.0,
+      "pixels_per_aperture": 50,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.06450149355902718,
+      "channel_50_normalized_path_spread": 0.045930557773557756
+    },
+    {
+      "aperture_radius_arcsec": 0.08,
+      "registration_dx_mas": -20.0,
+      "registration_dy_mas": 20.0,
+      "pixels_per_aperture": 50,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.06921730380643663,
+      "channel_50_normalized_path_spread": 0.06172307330357714
+    },
+    {
+      "aperture_radius_arcsec": 0.08,
+      "registration_dx_mas": 0.0,
+      "registration_dy_mas": -20.0,
+      "pixels_per_aperture": 50,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.07570071501853587,
+      "channel_50_normalized_path_spread": 0.03942108965290117
+    },
+    {
+      "aperture_radius_arcsec": 0.08,
+      "registration_dx_mas": 0.0,
+      "registration_dy_mas": 0.0,
+      "pixels_per_aperture": 50,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.07390210138342186,
+      "channel_50_normalized_path_spread": 0.04608566571460215
+    },
+    {
+      "aperture_radius_arcsec": 0.08,
+      "registration_dx_mas": 0.0,
+      "registration_dy_mas": 20.0,
+      "pixels_per_aperture": 50,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.07382980011164751,
+      "channel_50_normalized_path_spread": 0.05574548380618136
+    },
+    {
+      "aperture_radius_arcsec": 0.08,
+      "registration_dx_mas": 20.0,
+      "registration_dy_mas": -20.0,
+      "pixels_per_aperture": 50,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.08545596080981799,
+      "channel_50_normalized_path_spread": 0.042389889377651924
+    },
+    {
+      "aperture_radius_arcsec": 0.08,
+      "registration_dx_mas": 20.0,
+      "registration_dy_mas": 0.0,
+      "pixels_per_aperture": 50,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.08224083979002643,
+      "channel_50_normalized_path_spread": 0.044393036350199394
+    },
+    {
+      "aperture_radius_arcsec": 0.08,
+      "registration_dx_mas": 20.0,
+      "registration_dy_mas": 20.0,
+      "pixels_per_aperture": 50,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.0802592466860875,
+      "channel_50_normalized_path_spread": 0.04949056312360041
+    },
+    {
+      "aperture_radius_arcsec": 0.1,
+      "registration_dx_mas": -20.0,
+      "registration_dy_mas": -20.0,
+      "pixels_per_aperture": 79,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.05513191950959693,
+      "channel_50_normalized_path_spread": 0.02880856881301898
+    },
+    {
+      "aperture_radius_arcsec": 0.1,
+      "registration_dx_mas": -20.0,
+      "registration_dy_mas": 0.0,
+      "pixels_per_aperture": 79,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.05672971195143922,
+      "channel_50_normalized_path_spread": 0.039853902276202016
+    },
+    {
+      "aperture_radius_arcsec": 0.1,
+      "registration_dx_mas": -20.0,
+      "registration_dy_mas": 20.0,
+      "pixels_per_aperture": 79,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.0629925912538825,
+      "channel_50_normalized_path_spread": 0.05448204690757024
+    },
+    {
+      "aperture_radius_arcsec": 0.1,
+      "registration_dx_mas": 0.0,
+      "registration_dy_mas": -20.0,
+      "pixels_per_aperture": 79,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.06614729339076843,
+      "channel_50_normalized_path_spread": 0.03137324226822043
+    },
+    {
+      "aperture_radius_arcsec": 0.1,
+      "registration_dx_mas": 0.0,
+      "registration_dy_mas": 0.0,
+      "pixels_per_aperture": 79,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.06601414984360558,
+      "channel_50_normalized_path_spread": 0.03899681155175369
+    },
+    {
+      "aperture_radius_arcsec": 0.1,
+      "registration_dx_mas": 0.0,
+      "registration_dy_mas": 20.0,
+      "pixels_per_aperture": 79,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.06911632698587723,
+      "channel_50_normalized_path_spread": 0.05020730653354932
+    },
+    {
+      "aperture_radius_arcsec": 0.1,
+      "registration_dx_mas": 20.0,
+      "registration_dy_mas": -20.0,
+      "pixels_per_aperture": 79,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.07668428098145792,
+      "channel_50_normalized_path_spread": 0.03314029549923324
+    },
+    {
+      "aperture_radius_arcsec": 0.1,
+      "registration_dx_mas": 20.0,
+      "registration_dy_mas": 0.0,
+      "pixels_per_aperture": 79,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.07573685893149995,
+      "channel_50_normalized_path_spread": 0.03780865024348912
+    },
+    {
+      "aperture_radius_arcsec": 0.1,
+      "registration_dx_mas": 20.0,
+      "registration_dy_mas": 20.0,
+      "pixels_per_aperture": 79,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.07683701182986047,
+      "channel_50_normalized_path_spread": 0.04596628335631387
+    },
+    {
+      "aperture_radius_arcsec": 0.12,
+      "registration_dx_mas": -20.0,
+      "registration_dy_mas": -20.0,
+      "pixels_per_aperture": 111,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.04974979585385619,
+      "channel_50_normalized_path_spread": 0.02758465510367323
+    },
+    {
+      "aperture_radius_arcsec": 0.12,
+      "registration_dx_mas": -20.0,
+      "registration_dy_mas": 0.0,
+      "pixels_per_aperture": 111,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.052204886194030936,
+      "channel_50_normalized_path_spread": 0.03644644784636814
+    },
+    {
+      "aperture_radius_arcsec": 0.12,
+      "registration_dx_mas": -20.0,
+      "registration_dy_mas": 20.0,
+      "pixels_per_aperture": 111,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.05908902225210987,
+      "channel_50_normalized_path_spread": 0.04811037086384025
+    },
+    {
+      "aperture_radius_arcsec": 0.12,
+      "registration_dx_mas": 0.0,
+      "registration_dy_mas": -20.0,
+      "pixels_per_aperture": 111,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.05938720051939267,
+      "channel_50_normalized_path_spread": 0.027186145800425297
+    },
+    {
+      "aperture_radius_arcsec": 0.12,
+      "registration_dx_mas": 0.0,
+      "registration_dy_mas": 0.0,
+      "pixels_per_aperture": 111,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.06111185097034482,
+      "channel_50_normalized_path_spread": 0.034643431406453325
+    },
+    {
+      "aperture_radius_arcsec": 0.12,
+      "registration_dx_mas": 0.0,
+      "registration_dy_mas": 20.0,
+      "pixels_per_aperture": 111,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.0657766702822608,
+      "channel_50_normalized_path_spread": 0.044847571234276025
+    },
+    {
+      "aperture_radius_arcsec": 0.12,
+      "registration_dx_mas": 20.0,
+      "registration_dy_mas": -20.0,
+      "pixels_per_aperture": 111,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.06978674114017654,
+      "channel_50_normalized_path_spread": 0.02730161218706301
+    },
+    {
+      "aperture_radius_arcsec": 0.12,
+      "registration_dx_mas": 20.0,
+      "registration_dy_mas": 0.0,
+      "pixels_per_aperture": 111,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.07075989123225405,
+      "channel_50_normalized_path_spread": 0.03313269773348938
+    },
+    {
+      "aperture_radius_arcsec": 0.12,
+      "registration_dx_mas": 20.0,
+      "registration_dy_mas": 20.0,
+      "pixels_per_aperture": 111,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.07346382581173012,
+      "channel_50_normalized_path_spread": 0.04175261991346184
+    },
+    {
+      "aperture_radius_arcsec": 0.15,
+      "registration_dx_mas": -20.0,
+      "registration_dy_mas": -20.0,
+      "pixels_per_aperture": 177,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.04628322421390777,
+      "channel_50_normalized_path_spread": 0.02870481396018444
+    },
+    {
+      "aperture_radius_arcsec": 0.15,
+      "registration_dx_mas": -20.0,
+      "registration_dy_mas": 0.0,
+      "pixels_per_aperture": 177,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.04974211579267288,
+      "channel_50_normalized_path_spread": 0.03402452224633546
+    },
+    {
+      "aperture_radius_arcsec": 0.15,
+      "registration_dx_mas": -20.0,
+      "registration_dy_mas": 20.0,
+      "pixels_per_aperture": 177,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.05567472907908155,
+      "channel_50_normalized_path_spread": 0.04124035648469103
+    },
+    {
+      "aperture_radius_arcsec": 0.15,
+      "registration_dx_mas": 0.0,
+      "registration_dy_mas": -20.0,
+      "pixels_per_aperture": 177,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.05332970304573215,
+      "channel_50_normalized_path_spread": 0.02667053732824814
+    },
+    {
+      "aperture_radius_arcsec": 0.15,
+      "registration_dx_mas": 0.0,
+      "registration_dy_mas": 0.0,
+      "pixels_per_aperture": 177,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.0567762213615251,
+      "channel_50_normalized_path_spread": 0.03200878441584272
+    },
+    {
+      "aperture_radius_arcsec": 0.15,
+      "registration_dx_mas": 0.0,
+      "registration_dy_mas": 20.0,
+      "pixels_per_aperture": 177,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.061875539555516355,
+      "channel_50_normalized_path_spread": 0.03924356319342725
+    },
+    {
+      "aperture_radius_arcsec": 0.15,
+      "registration_dx_mas": 20.0,
+      "registration_dy_mas": -20.0,
+      "pixels_per_aperture": 177,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.06171606849294981,
+      "channel_50_normalized_path_spread": 0.02522370036933848
+    },
+    {
+      "aperture_radius_arcsec": 0.15,
+      "registration_dx_mas": 20.0,
+      "registration_dy_mas": 0.0,
+      "pixels_per_aperture": 177,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.06462268674636253,
+      "channel_50_normalized_path_spread": 0.030314260851060704
+    },
+    {
+      "aperture_radius_arcsec": 0.15,
+      "registration_dx_mas": 20.0,
+      "registration_dy_mas": 20.0,
+      "pixels_per_aperture": 177,
+      "all_path_endpoint_flux_positive": true,
+      "mean_pairwise_normalized_spectral_rms": 0.0686413676381616,
+      "channel_50_normalized_path_spread": 0.0373301307365317
+    }
+  ],
+  "lens_magnification_control": "each path spectrum normalized by its six-channel endpoint flux",
+  "physical_significance_computed": false,
+  "lens_model_family_null_computed": false,
+  "channel_origin_identified": false,
+  "claim_boundary": "source-matched spectral-shape diagnostic only; beam mixing, correlated noise, lens-family sensitivity, and perturbed-lens alternatives remain open"
+}

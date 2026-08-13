@@ -1,0 +1,29 @@
+{
+  "schema": "phangs_population_channel_preregistration_v01",
+  "status": "SOURCE_FROZEN_POPULATION_TEST_PREREGISTERED_ENDPOINTS_CLOSED",
+  "population_size": 19,
+  "eligible_galaxies": [
+    "IC5332",
+    "NGC4254",
+    "NGC4321"
+  ],
+  "legacy_open_pilots": [
+    "NGC4254"
+  ],
+  "confirmatory_unopened_galaxies": [
+    "IC5332",
+    "NGC4321"
+  ],
+  "source_rule": "25<=inclination<=70 deg; S4G decomposition present; BAR absent; remove m0+m1 and test m2",
+  "basis": "five radial zones times {m2_cos,m2_sin} from the unchanged PHANGS tracer-field operator",
+  "primary_null": "all retained confirmatory m2 coefficients are zero under block sector-jackknife covariance",
+  "promotion_rule": "global confirmatory p<0.01 and each confirmatory galaxy m2 p<0.05; only then permit a separately frozen body-increment score",
+  "wrong_family_control": "m1 block evaluated without changing the m2 decision",
+  "geometry_source": "Emsellem et al. 2022 table using Lang et al. 2020 CO geometry",
+  "geometry_source_url": "https://academic.oup.com/view-large/555742476",
+  "morphology_source": "S4G multicomponent decomposition summary frozen in the repository",
+  "construction_uses_tracer_contrast": false,
+  "construction_uses_rotation_residual": false,
+  "endpoint_opened": false,
+  "claim_boundary": "source-side population preregistration only; no channel, time, quantum, path, Tau, or dark-sector signal"
+}

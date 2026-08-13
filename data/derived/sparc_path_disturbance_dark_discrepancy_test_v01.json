@@ -1,0 +1,42 @@
+{
+  "schema": "sparc_path_disturbance_dark_discrepancy_test_v01",
+  "status": "RETROSPECTIVE_PATH_PROXY_INCREMENTAL_SIGNAL_FAIL",
+  "n_galaxies": 75,
+  "n_folds": 5,
+  "target": "log_outer3_mass_discrepancy",
+  "baseline_oof_mse": 0.39634328058176027,
+  "baseline_plus_path_oof_mse": 0.3870278011028681,
+  "mse_reduction": 0.009315479478892164,
+  "proportional_mse_reduction": 0.02350356354021878,
+  "shuffle": {
+    "n": 2000,
+    "seed": 20260711,
+    "p": 0.1424287856071964,
+    "q95": 0.040195096753165044
+  },
+  "path_features": [
+    "foreground_candidate_count",
+    "log1p_foreground_inverse_angle_weight"
+  ],
+  "controls": [
+    "sparc_t_type",
+    "log_distance_mpc",
+    "inclination_deg",
+    "log_l36",
+    "log_reff_kpc",
+    "log_sbeff",
+    "log_rdisk_kpc",
+    "log_sbdisk",
+    "log_mhi",
+    "log_rhi_kpc",
+    "asymmetry_3p6",
+    "asymmetry_4p5",
+    "background_redshift_control_count",
+    "stellar_crowding_control_count",
+    "source_disturbance_class",
+    "observation_disturbance_class"
+  ],
+  "path_information_candidate": false,
+  "physical_channel_detected": false,
+  "claim_boundary": "retrospective heterogeneous-SIMBAD proxy test; even a pass is incremental catalogue path information, not a complete lightcone integral or physical channel detection"
+}

@@ -1,0 +1,166 @@
+{
+  "schema": "phangs_radial_body_projection_normalization_gauge_v01",
+  "status": "RAW_SOURCE_AMPLITUDE_GAUGE_RECOVERED_SOURCE_SIDE",
+  "galaxies": {
+    "NGC1087": {
+      "column_labels": [
+        "stellar_m1",
+        "stellar_m1_radial_difference",
+        "stellar_m2",
+        "stellar_m2_radial_difference",
+        "co_m1",
+        "co_m1_radial_difference",
+        "co_m2",
+        "co_m2_radial_difference"
+      ],
+      "raw_column_norms": [
+        0.23706585324157756,
+        0.19575822167039514,
+        0.37174446765616814,
+        0.30630721707209646,
+        0.4690744164564615,
+        0.41517570466491716,
+        0.734138357945636,
+        0.7083872942304981
+      ],
+      "minimum_raw_column_norm": 0.19575822167039514,
+      "maximum_raw_column_norm": 0.734138357945636,
+      "matrix_reconstruction_error": 1.1159612433310966e-15,
+      "coordinate_identity_error": 1.9821445675202302e-15,
+      "checks": {
+        "all_raw_norms_positive": true,
+        "normalized_matrix_reconstructed": true,
+        "normalization_coordinate_identity": true
+      }
+    },
+    "NGC1433": {
+      "column_labels": [
+        "stellar_m1",
+        "stellar_m1_radial_difference",
+        "stellar_m2",
+        "stellar_m2_radial_difference",
+        "co_m1",
+        "co_m1_radial_difference",
+        "co_m2",
+        "co_m2_radial_difference"
+      ],
+      "raw_column_norms": [
+        0.0772467190697785,
+        0.08163668492552069,
+        0.6905321887301444,
+        0.21051868847650043,
+        0.29565011062608565,
+        0.32459037243168454,
+        1.1219338341198672,
+        0.6371810705952278
+      ],
+      "minimum_raw_column_norm": 0.0772467190697785,
+      "maximum_raw_column_norm": 1.1219338341198672,
+      "matrix_reconstruction_error": 2.9585096767881845e-15,
+      "coordinate_identity_error": 1.4812872731649245e-15,
+      "checks": {
+        "all_raw_norms_positive": true,
+        "normalized_matrix_reconstructed": true,
+        "normalization_coordinate_identity": true
+      }
+    },
+    "NGC1566": {
+      "column_labels": [
+        "stellar_m1",
+        "stellar_m1_radial_difference",
+        "stellar_m2",
+        "stellar_m2_radial_difference",
+        "co_m1",
+        "co_m1_radial_difference",
+        "co_m2",
+        "co_m2_radial_difference"
+      ],
+      "raw_column_norms": [
+        0.11160658223680808,
+        0.13008512730305943,
+        0.5934634345266989,
+        0.5404646584905541,
+        0.46216286871094975,
+        0.37735490516885756,
+        1.4119898833650313,
+        1.3088845481026563
+      ],
+      "minimum_raw_column_norm": 0.11160658223680808,
+      "maximum_raw_column_norm": 1.4119898833650313,
+      "matrix_reconstruction_error": 1.5536044377932865e-15,
+      "coordinate_identity_error": 2.7285297859879227e-15,
+      "checks": {
+        "all_raw_norms_positive": true,
+        "normalized_matrix_reconstructed": true,
+        "normalization_coordinate_identity": true
+      }
+    },
+    "NGC1672": {
+      "column_labels": [
+        "stellar_m1",
+        "stellar_m1_radial_difference",
+        "stellar_m2",
+        "stellar_m2_radial_difference",
+        "co_m1",
+        "co_m1_radial_difference",
+        "co_m2",
+        "co_m2_radial_difference"
+      ],
+      "raw_column_norms": [
+        0.24813865529463006,
+        0.23400126576311844,
+        0.7632777907010572,
+        0.4610892860553288,
+        0.7944015141968381,
+        0.9021544791954184,
+        1.4289198456420338,
+        0.7185443238666381
+      ],
+      "minimum_raw_column_norm": 0.23400126576311844,
+      "maximum_raw_column_norm": 1.4289198456420338,
+      "matrix_reconstruction_error": 9.117585131878097e-16,
+      "coordinate_identity_error": 2.296847253011292e-15,
+      "checks": {
+        "all_raw_norms_positive": true,
+        "normalized_matrix_reconstructed": true,
+        "normalization_coordinate_identity": true
+      }
+    },
+    "NGC7496": {
+      "column_labels": [
+        "stellar_m1",
+        "stellar_m1_radial_difference",
+        "stellar_m2",
+        "stellar_m2_radial_difference",
+        "co_m1",
+        "co_m1_radial_difference",
+        "co_m2",
+        "co_m2_radial_difference"
+      ],
+      "raw_column_norms": [
+        0.289053957699613,
+        0.21120536312761962,
+        0.6488244566831268,
+        0.16816207172648398,
+        0.8304890312203798,
+        0.4200884186368175,
+        1.3013357686708962,
+        0.4421251530355743
+      ],
+      "minimum_raw_column_norm": 0.16816207172648398,
+      "maximum_raw_column_norm": 1.3013357686708962,
+      "matrix_reconstruction_error": 9.946612311476242e-16,
+      "coordinate_identity_error": 1.814119370099142e-15,
+      "checks": {
+        "all_raw_norms_positive": true,
+        "normalized_matrix_reconstructed": true,
+        "normalization_coordinate_identity": true
+      }
+    }
+  },
+  "all_checks_pass": true,
+  "endpoint_opened": false,
+  "score_computed": false,
+  "law": "S_tilde=S D and beta=D beta_tilde, so S_tilde beta_tilde=S beta",
+  "claim_boundary": "source-coordinate audit only; recovers normalization factors but does not derive physical response gains, a terminal map, channel, time, quantum, or dark-sector signal"
+}

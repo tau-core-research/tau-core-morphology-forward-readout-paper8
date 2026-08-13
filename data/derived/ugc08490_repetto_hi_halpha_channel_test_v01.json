@@ -1,0 +1,18 @@
+{
+  "schema": "ugc08490_repetto_hi_halpha_channel_test_v01",
+  "status": "DIAGNOSTIC_ONLY_NOT_ENDPOINT",
+  "n_common_points": 14,
+  "common_radius_arcsec": [
+    13.17000274747602,
+    103.8
+  ],
+  "both_halpha_sides_covered_without_extrapolation": true,
+  "raw_rms_km_s": 14.638144170311493,
+  "multiplicative_halpha_scale": 0.8154180883519878,
+  "scale_control_rms_km_s": 6.389884866783539,
+  "rms_reduction_fraction": 0.5634771189271894,
+  "tau_kernel_tested": false,
+  "physical_channel_detected": false,
+  "endpoint_access": false,
+  "claim_boundary": "same-body figure-derived H I versus published H-alpha diagnostic; a tracer difference does not identify observer-path, time, quantum, or Tau-kernel origin"
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "ugc06787_whisp_graphical_velocity_preflight_v01",
+  "status": "WHISP_UGC06787_60ARCSEC_GRAPHICAL_VELOCITY_DIGITIZED_WORLD_TRANSPORT_OPEN",
+  "panel_box_source_pixels": [
+    537,
+    542,
+    701,
+    694
+  ],
+  "panel_size_pixels": [
+    164,
+    152
+  ],
+  "systemic_velocity_km_s": 1176.0,
+  "palette_bin_centers_km_s": {
+    "red": 1425.0,
+    "orange": 1375.0,
+    "yellow": 1325.0,
+    "bright_green": 1275.0,
+    "dark_green": 1225.0,
+    "light_blue": 1175.0,
+    "blue": 1125.0,
+    "purple": 1075.0
+  },
+  "quantization_half_width_km_s": 25.0,
+  "exact_palette_pixels": 2511,
+  "raw_exact_palette_pixels": 2578,
+  "connected_component_sizes": [
+    2511,
+    39,
+    8,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "largest_component_policy": "retain only the largest 8-connected exact-palette component to remove the plotted beam marker and isolated graphical pixels",
+  "side_counts": {
+    "systemic_ambiguous": 340,
+    "approaching": 585,
+    "receding": 1586
+  },
+  "palette_counts": {
+    "light_blue": 340,
+    "blue": 499,
+    "purple": 86,
+    "dark_green": 277,
+    "bright_green": 242,
+    "yellow": 280,
+    "orange": 462,
+    "red": 325
+  },
+  "side_centroids": {
+    "approaching": {
+      "n_pixels": 585,
+      "panel_x_mean": 104.95555555555555,
+      "panel_y_mean": 65.20170940170941
+    },
+    "receding": {
+      "n_pixels": 1586,
+      "panel_x_mean": 68.45712484237075,
+      "panel_y_mean": 81.85435056746532
+    },
+    "systemic_ambiguous": {
+      "n_pixels": 340,
+      "panel_x_mean": 94.5,
+      "panel_y_mean": 69.08823529411765
+    }
+  },
+  "approaching_receding_centroid_separation_pixels": 40.11790002381206,
+  "both_hi_velocity_sides_present": true,
+  "world_coordinate_transport_ready": false,
+  "halpha_common_radial_transport_ready": false,
+  "physical_a_row_constructed": false,
+  "endpoint_access": false,
+  "claim_boundary": "coarse exact-palette graphical digitization only; bin centers inferred from the printed legend with +/-25 km/s quantization; no WCS/FITS, beam covariance, H I-Halpha radial map, or physical channel test"
+}

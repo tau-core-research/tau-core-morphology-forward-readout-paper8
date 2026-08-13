@@ -1,0 +1,69 @@
+{
+  "schema": "sdp81_multipath_channel_source_audit_v01",
+  "status": "SDP81_MULTIPATH_DATA_ACQUIRED_OPERATOR_VALIDATION_REQUIRED",
+  "source": "SDP.81 / HATLAS J090311.6+003906",
+  "source_redshift": 3.042,
+  "lens_redshift": 0.2999,
+  "preflight_band4": {
+    "line": "CO(5-4)",
+    "archive_url": "https://almascience.nrao.edu/almadata/sciver/SDP81Band4/SDP81_Band4_ReferenceImages_z3.042.tgz",
+    "archive_md5": "6c4ed2a251aac9ec4a8ddf1fad2d09a2",
+    "archive_sha256": "6deee357e04c09d9826256d833fea1971f0cdfe52ed9d7ca9510cad46e04c536",
+    "cube_sha256": "b26f3e4cbff43bab9d6c4c082ff513788f9dcf20b2e640edf607dbc3fe34a656",
+    "cube_shape": [
+      1,
+      119,
+      672,
+      672
+    ],
+    "beam_arcsec": [
+      0.154807984828944,
+      0.12129168957472801
+    ],
+    "n_spectral_channels": 119,
+    "radio_velocity_range_km_s": [
+      -1000.000001000909,
+      1477.9999990005613
+    ],
+    "moment0_positive_pixel_count": 249883,
+    "moment0_peak": 0.20359961688518524
+  },
+  "published_endpoint_band6": {
+    "line": "CO(8-7)",
+    "archive_url": "https://bulk.cv.nrao.edu/almadata/sciver/SDP81Band6/SDP81_Band6_ReferenceImages.tgz",
+    "archive_sha256": "d59ae345ead6e44e2abc647b773de2ae10cd4ec5af868ac876628a4c608d86b1",
+    "cube_sha256": "aeea985de1e590921a6282cdd9d017f0a888958e7e07b54d4d51435772475ea3",
+    "continuum_sha256": "bda1f0efc3e97b5bc4a2ed2aee1b32ca58153c07b227486be31decac68fdccab",
+    "cube_shape": [
+      1,
+      100,
+      672,
+      672
+    ],
+    "beam_arcsec": [
+      0.169258102774632,
+      0.117267228662976
+    ],
+    "n_spectral_channels": 100,
+    "published_channels_of_interest_one_based": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ]
+  },
+  "lens_registration_band7": {
+    "role": "highest-resolution continuum used for the published smooth lens fit and image-G registration",
+    "archive_url": "https://bulk.cv.nrao.edu/almadata/sciver/SDP81Band7/SDP81_Band7_ReferenceImages.tgz",
+    "archive_sha256": "f76e56a87647754be4f21df9b404e1641f2013742f2893029f2d8cfc540ab775",
+    "continuum_sha256": "030372d52c8d19d76cb7d9607e8b1b447e859678cb66e9b4c9cc017b11f88b86",
+    "line_in_archive": "CO(10-9), not the published CO(8-7) endpoint"
+  },
+  "same_source_multiple_null_paths": true,
+  "pathwise_comparison_allowed": false,
+  "blocker": "image-G WCS registration and published lens operator geometry have not yet been reproduced",
+  "forbidden_shortcut": "compare image-plane arc pixels or integrated spectra as if they were identical source elements",
+  "claim_boundary": "source-native multipath data acquisition; no channel anomaly, time-readout effect, or Tau detection"
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "ugc08490_repetto_hi_vector_profile_v01",
+  "status": "UGC08490_PUBLISHED_VECTOR_HI_PROFILE_EXTRACTED",
+  "n_points": 70,
+  "radius_kpc_range": [
+    0.10000008046626804,
+    10.399995672702918
+  ],
+  "radius_arcsec_range": [
+    4.390003532469167,
+    456.55981003165806
+  ],
+  "axis_calibration": {
+    "x_zero_pdf": 89.17333221435547,
+    "x_pdf_per_2_kpc": 85.33333587646484,
+    "y_zero_pdf": 490.04534912109375,
+    "y_pdf_per_20_km_s": 82.2158203125,
+    "arcsec_per_kpc_from_printed_top_axis": 43.9
+  },
+  "source_native_numeric_table": false,
+  "figure_derived_numeric_profile": true,
+  "endpoint_access": false,
+  "claim_boundary": "vector-figure extraction; values remain secondary to an author-supplied table"
+}

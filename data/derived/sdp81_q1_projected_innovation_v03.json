@@ -1,0 +1,28 @@
+{
+  "schema": "sdp81_q1_projected_innovation_v03",
+  "shared_mode": "first singular vector of centered 4-path x 2-transition matrix",
+  "nominal": {
+    "singular_values_km_s": [
+      24.639514444495536,
+      7.545246983451148
+    ],
+    "second_to_first_ratio": 0.3062254737384549,
+    "orthogonal_energy_fraction": 0.0857343813907298
+  },
+  "exact_path_label_permutations": 24,
+  "rank_one_alignment_lower_tail_p": 0.041666666666666664,
+  "sensitivity_second_to_first_range": [
+    0.16220535773011763,
+    0.6127180057447089
+  ],
+  "sensitivity_orthogonal_energy_fraction_range": [
+    0.02563607804342242,
+    0.27295112687892503
+  ],
+  "observed_is_most_rank_one_permutation": true,
+  "shared_parent_lens_mode_supported": true,
+  "independent_second_mode_significance_computed": false,
+  "projected_channel_innovation_detected": false,
+  "reason": "second component has no independent beam/lens covariance significance and observed pairing maximizes rank-one alignment",
+  "claim_boundary": "SVD shared-mode projection; not physical K_Gamma derivation or Tau/time detection"
+}

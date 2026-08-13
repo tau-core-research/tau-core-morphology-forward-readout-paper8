@@ -1,0 +1,13 @@
+{
+  "schema": "tau_core_coming_bar_endpoint_readiness_v01",
+  "status": "NGC7479_PRIMARY_ENDPOINT_CANDIDATE_BARYONIC_FIELD_OPEN",
+  "n_galaxies": 5,
+  "n_independent_rotation_acquired": 1,
+  "n_dark_discrepancy_endpoint_ready": 0,
+  "primary_acquisition_target": "NGC 7479",
+  "primary_target_halpha_points": 99,
+  "coming_co_reuse_as_endpoint_allowed": false,
+  "endpoint_scoring_allowed": false,
+  "next_action": "acquire NGC7479 radial HI/gas surface density and compute source-frozen stellar+gas baryonic velocity components",
+  "claim_boundary": "readiness audit only; no dark discrepancy or Tau score computed"
+}

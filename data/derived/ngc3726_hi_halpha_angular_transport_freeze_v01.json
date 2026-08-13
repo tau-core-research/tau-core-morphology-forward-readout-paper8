@@ -1,0 +1,42 @@
+{
+  "schema": "ngc3726_hi_halpha_angular_transport_freeze_v01",
+  "status": "NGC3726_HI_HALPHA_ANGULAR_TRANSPORT_AND_ODD_CONTRAST_FROZEN",
+  "galaxy": "NGC3726",
+  "construction_blind_to": [
+    "SPARC vobs and rotation residuals",
+    "H I-Halpha velocity differences",
+    "baseline model scores",
+    "required Tau channel amplitudes"
+  ],
+  "input_sha256": {
+    "hi_points": "31c6d331a6e375f3e57f0d9e66854c29703beb4d0f19eae575ea40a3d6ece8cd",
+    "halpha_points": "06a6b9518a37305253452ef85054a889ec378ac79c1a7003cb2a53d41a573f0d",
+    "geometry_source": "56e31488a0023cde0d1358c73bf9fff0cb6c1dfcc4a39e1c4d65525c8b91f817"
+  },
+  "common_radius_unit": "arcsec",
+  "common_radii_arcsec": [
+    40.0,
+    60.0,
+    80.0,
+    100.0,
+    120.0,
+    140.0
+  ],
+  "n_common_radii": 6,
+  "halpha_interpolation": "side-separate linear interpolation in angular radius using frozen brackets and weights",
+  "projection_rule": "u_tracer_side(R)=Vrot_tracer_side(R)*sin(inclination_tracer(R))",
+  "halpha_inclination_deg": 47,
+  "halpha_inclination_error_deg": 5,
+  "hi_inclination_error_deg_inner": 2,
+  "odd_statistic": "O_tracer(R)=u_receding(R)-u_approaching(R)",
+  "even_statistic": "E_tracer(R)=[u_receding(R)+u_approaching(R)]/2",
+  "primary_channel_contrast": "Delta_O(R)=O_Halpha(R)-O_HI(R)",
+  "secondary_tracer_offset": "Delta_E(R)=E_Halpha(R)-E_HI(R)",
+  "uncertainty_rule": "symmetrize quoted side errors; interpolate in quadrature; propagate shared inclination error analytically; combine tracer errors in quadrature",
+  "primary_null": "Delta_O(R)=0 on common support within propagated uncertainty",
+  "selection_uses_vobs_or_residual": false,
+  "velocity_values_opened_during_freeze": false,
+  "endpoint_access": false,
+  "physical_a_row_constructed": false,
+  "claim_boundary": "predeclared two-tracer angular statistic only; any nonzero result remains compatible with conventional tracer, geometry, beam, and non-circular-motion systematics"
+}

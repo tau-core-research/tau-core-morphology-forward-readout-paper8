@@ -1,0 +1,92 @@
+{
+  "audit_checks": {
+    "all_expected_samples_present": true,
+    "all_q_values_finite": true,
+    "endpoint_scored": false,
+    "fixed_random_seed": true,
+    "hi_controls_not_promoted": true,
+    "source_only": true,
+    "velocity_or_residual_inputs_empty": true
+  },
+  "claim_boundary": "conditional source-only uncertainty propagation through a 4D inverse shape proxy; not a parent-role identification, complete covariance, channel/time/quantum signal, dark-matter replacement, or endpoint score",
+  "complete_measurement_covariance_ready": false,
+  "endpoint_scoring_allowed": false,
+  "galaxy": "NGC4254",
+  "hi49_control_result": {
+    "conditionally_sign_stable_annuli_95": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "median_std_change_vs_no_hi_control": 0.0006539600294667106
+  },
+  "inputs": {
+    "common_resolution_cube": "data/derived/ngc4254_common_hi_resolution_source_cube_v03.fits",
+    "common_resolution_cube_sha256": "a9c825c2e0e3a4c0c01fe03a2bc6b4ea8ae80f9cc83b43dfb1584137a9340653",
+    "geometry": "data/derived/ngc4254_s4g_photometric_geometry_freeze_v02.json",
+    "geometry_sha256": "f5d5965b62f6cd5cf0b45c1f1085e492ecbb960f3cebb21fb800befd282832ef",
+    "uncertainty_fields": "data/derived/ngc4254_measurement_uncertainty_fields_v05.fits",
+    "uncertainty_fields_sha256": "90f0726d2f9c2ec06643c5f9e527939157575d17a20df1c09d8853054dd53fe6",
+    "uncertainty_metadata": "data/derived/ngc4254_measurement_uncertainty_fields_v05.json",
+    "uncertainty_metadata_sha256": "a9c6d13cdc60a822393968bb46dd9f9ec500cfcd6bcf4d9208e5ddf798ba8d3d",
+    "velocity_or_residual_inputs": []
+  },
+  "n_draws_per_scenario": 256,
+  "outputs": {
+    "report": "reports/ngc4254_ffl_partial_measurement_covariance_v05.md",
+    "samples": "data/derived/ngc4254_ffl_partial_measurement_samples_v05.csv",
+    "samples_sha256": "abb16b558c3f18c2d57ba1bfbaec076fa6b148c0146489f627dee949db5c2b13",
+    "summary": "data/derived/ngc4254_ffl_partial_measurement_summary_v05.csv",
+    "summary_sha256": "b70a55b4abd6bdb335fd142b04940a9a98ec5fc53a079bbe1136014b9cbd4818"
+  },
+  "primary_measurement_result": {
+    "annuli_passing_both_separate_robustness_checks": [],
+    "co_only_conditionally_sign_stable_annuli_95": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "conditionally_sign_stable_annuli_95": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "maximum_absolute_baseline_shift_from_v03_due_to_one_pixel_mask_refinement": 4.779510121011299e-14,
+    "maximum_mean_component_clipping_fraction": 0.006914307057484349,
+    "median_measurement_to_v03_systematic_std_ratio": 0.3411708057438667,
+    "outer_two_median_star_to_combined_std_ratio": 1.0017517164569474,
+    "v03_source_systematic_sign_stable_annuli": [
+      5
+    ]
+  },
+  "propagation": {
+    "co_primary": "H2_IND exact error-map marginal field with approximate target-beam correlation",
+    "co_upper_control": "one coherent standard-normal coefficient multiplying H2_CORR",
+    "coherent_stellar_modes": [
+      "STAR_SKY1",
+      "STAR_SKY2",
+      "STAR_ICA1",
+      "STAR_ICA2"
+    ],
+    "hi_role": "robust1 channel-count controls only",
+    "positive_floor_msun_pc2": 1e-08,
+    "spatial_random_modes": "unit-variance Gaussian fields correlated at the common H I beam"
+  },
+  "random_seed": 4254,
+  "scenarios": [
+    "star_only",
+    "co_independent_only",
+    "star_plus_co_independent",
+    "star_plus_co_correlated_control",
+    "star_co_plus_hi_ctl01",
+    "star_co_plus_hi_ctl10",
+    "star_co_plus_hi_ctl49"
+  ],
+  "schema": "ngc4254_ffl_partial_measurement_covariance_v05",
+  "status": "PARTIAL_MEASUREMENT_PROPAGATION_COMPLETE_HI_CONTROL_ONLY_NO_ENDPOINT"
+}

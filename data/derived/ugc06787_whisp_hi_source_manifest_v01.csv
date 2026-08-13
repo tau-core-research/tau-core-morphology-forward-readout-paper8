@@ -1,0 +1,4 @@
+source_id,url,local_path,content_type,bytes,sha256,source_native,endpoint_access
+object_page,https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6787/u6787p36921.html,data/external/literature/ugc06787_whisp_hi_route/whisp_ugc06787_object_page.html,text/html,1145,769d9c2a02774f9ec8d4cb5e8bdb6ef00b23e798e88b461590aff67a8f905d14,True,False
+graphical_overview,https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6787/u6787plot36921.gif,data/external/literature/ugc06787_whisp_hi_route/whisp_ugc06787_overview.gif,image/gif,73876,54dec8774c5b3dfc2b061f2cfed7ebab3788a4b926de9f469f7c8e4b9942780b,True,False
+observation_notes,https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6787/u6787p36921obsred.html,data/external/literature/ugc06787_whisp_hi_route/whisp_ugc06787_obs_reduction_notes.html,text/html,2612,a4e272038f7e6a77ab6135dc2ddf1baeca21a7e23afdb1f2f6b587fcbcdc1380,True,False

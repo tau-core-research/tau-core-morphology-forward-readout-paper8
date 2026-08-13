@@ -1,0 +1,36 @@
+{
+  "schema": "tau_core_ngc7479_hi_radial_proxy_v01",
+  "status": "PUBLICATION_RASTER_GAS_PROXY_RECONSTRUCTED_NOT_FITS_GRADE",
+  "image_sha256": "f135e2c5baf32ca92003ae6d749a5005fe540b173d4305e4da9a2a5f9573a089",
+  "image_shape": [
+    207,
+    174
+  ],
+  "pixel_scale_arcsec": [
+    1.6861479157378485,
+    1.8840579710144927
+  ],
+  "center_pixel": [
+    82.476,
+    107.26846153846154
+  ],
+  "geometry": {
+    "inclination_deg": 51.0,
+    "position_angle_deg": 22.0,
+    "distance_mpc": 32.0
+  },
+  "hi_mass_normalization_msun": 8580000000.0,
+  "helium_factor": 1.36,
+  "grayscale_floor_sensitivities": [
+    0.0,
+    4.0,
+    8.0
+  ],
+  "mass_conservation_relative_error_max": 1.7319479184152442e-14,
+  "uses_rotation_endpoint_or_dark_discrepancy": false,
+  "strict_radial_gas_profile_ready": false,
+  "diagnostic_gas_profile_ready": true,
+  "endpoint_scoring_allowed": false,
+  "remaining_blocker": "recover the calibrated digital moment-0/FITS product or validate publication grayscale linearity against it",
+  "claim_boundary": "mass-normalized publication-raster proxy only; not a precision gas gravitational field"
+}

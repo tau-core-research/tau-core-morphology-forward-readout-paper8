@@ -1,0 +1,20 @@
+{
+  "schema": "tau_core_coming_multicoordinate_source_descriptor_v01",
+  "status": "FIVE_SOURCE_MULTICOORDINATE_DESCRIPTOR_FROZEN",
+  "n_galaxies": 5,
+  "n_core_descriptor_complete": 5,
+  "coordinates": [
+    "bar class",
+    "physical bar radius",
+    "reversal radius / bar radius",
+    "profile level",
+    "profile slope",
+    "profile curvature",
+    "per-mode source capacity"
+  ],
+  "construction_uses_rotation_endpoint_or_dark_discrepancy": false,
+  "ngc4303_selected_for_next_intake_from_readiness": true,
+  "selection_reason": "S4G stellar decomposition and PHANGS coverage are already available; independent endpoint remains unopened locally",
+  "formula_scoring_allowed": false,
+  "claim_boundary": "source descriptor and prospective acquisition selection only; no endpoint attribution"
+}

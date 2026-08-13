@@ -1,0 +1,12 @@
+{
+  "schema": "tau_core_coming_bar_source_fields_v01",
+  "status": "BAR_CLASS_AND_ACTIVE_ZONE_FROZEN_HARMONIC_PROFILE_OPEN",
+  "n_galaxies": 5,
+  "n_classification_source_supported": 5,
+  "n_active_zones_frozen": 5,
+  "n_source_fields_complete": 0,
+  "construction_uses_vobs_or_dark_discrepancy_residual": false,
+  "endpoint_scoring_allowed": false,
+  "remaining_blocker": "acquire or residual-blindly digitize the published radial non-circular harmonic profiles with uncertainty and provenance",
+  "claim_boundary": "bar morphology and source-active zones only; no Tau kernel success or channel effect is measured"
+}

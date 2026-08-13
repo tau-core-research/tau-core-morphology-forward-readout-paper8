@@ -1,0 +1,51 @@
+{
+  "schema": "tau_core_ngc4579_morphology_amplitude_shape_gap_v01",
+  "status": "POST_OPEN_AMPLITUDE_VERSUS_SHAPE_DIAGNOSTIC_COMPLETE",
+  "n_baryonic_sensitivities": 9,
+  "source_support_counts": {
+    "inside": 12,
+    "beyond": 8
+  },
+  "q_required_dynamic_range": [
+    0.765397726580491,
+    0.8152792767285355
+  ],
+  "q_morph_dynamic_range": [
+    0.003508448986841106,
+    0.003508448986841106
+  ],
+  "median_q_response_fraction": [
+    0.21612596353651953,
+    0.23031229764815664
+  ],
+  "frozen_total_capacity": 0.9463529510688321,
+  "n_q_required_above_frozen_capacity": [
+    7,
+    9
+  ],
+  "pearson_q_all": [
+    0.7788004379450725,
+    0.8730026332299466
+  ],
+  "pearson_q_inside_support": [
+    0.8255309427545718,
+    0.949228774860426
+  ],
+  "post_open_scale_only_factor": [
+    4.225475863662603,
+    4.449435629205091
+  ],
+  "rmse_prefrozen_matched_km_s": [
+    51.0527454210623,
+    53.57207082780318
+  ],
+  "rmse_post_open_scaled_diagnostic_km_s": [
+    13.400260489114359,
+    15.556493527747653
+  ],
+  "interpretation": "the prefrozen matched win is dominated by morphology-conditioned capacity level; radial shape is weakly resolved and a substantial endpoint fraction lies beyond source support",
+  "new_formula_selection_allowed": false,
+  "tau_morphology_detected": false,
+  "physical_channel_detected": false,
+  "claim_boundary": "post-open diagnostic only; the fitted scale is not predictive and may not be promoted into the operator"
+}

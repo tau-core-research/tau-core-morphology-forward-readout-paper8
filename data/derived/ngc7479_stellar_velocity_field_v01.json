@@ -1,0 +1,33 @@
+{
+  "schema": "tau_core_ngc7479_stellar_velocity_field_v01",
+  "status": "ENDPOINT_BLIND_STELLAR_VELOCITY_FIELD_CONSTRUCTED_GAS_OPEN",
+  "stellar_mass_msun": 107000000000.0,
+  "stellar_mass_error_msun": 3000000000.0,
+  "stellar_mass_source": "Salak et al. 2019 Table 3, WISE 3.4 micron mass",
+  "s4g_component_fractions_raw": {
+    "bulge": 0.083,
+    "disk": 0.68,
+    "bar": 0.238
+  },
+  "s4g_fraction_sum": 1.001,
+  "component_fractions_renormalized": {
+    "bulge": 0.08291708291708293,
+    "disk": 0.6793206793206794,
+    "bar": 0.2377622377622378
+  },
+  "disk_scale_kpc": 5.783627857367949,
+  "bulge_re_kpc": 0.17996266938162073,
+  "bar_radius_kpc_s4g": 12.659442949603665,
+  "primary_bar_enclosure_power": 2.0,
+  "bar_enclosure_sensitivity_powers": [
+    1.0,
+    3.0
+  ],
+  "dimension_check": "G*M/R gives velocity squared; Bessel and enclosed fractions are dimensionless",
+  "uses_rotation_endpoint_or_dark_discrepancy_in_construction": false,
+  "stellar_velocity_field_ready": true,
+  "gas_velocity_field_ready": false,
+  "baryonic_velocity_field_ready": false,
+  "endpoint_scoring_allowed": false,
+  "claim_boundary": "axisymmetrized stellar predictor with frozen bar-shape sensitivity; not a unique barred potential reconstruction"
+}

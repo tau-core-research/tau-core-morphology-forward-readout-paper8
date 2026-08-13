@@ -1,0 +1,19 @@
+{
+  "schema": "continuous_channel_dark_discrepancy_interaction_v01",
+  "status": "CONTINUOUS_CHANNEL_DARK_DISCREPANCY_INTERACTION_FAIL",
+  "n_galaxies": 75,
+  "target": "log outer3 vobs^2/vbar^2; no TPG subtraction",
+  "holdout_mse": {
+    "baseline": 0.2311599365125655,
+    "source": 0.26740727276081994,
+    "continuous_channel": 0.2265052542713229,
+    "additive": 0.25859555533711437,
+    "interaction": 0.29300726665207305
+  },
+  "interaction_mse_reduction": -0.03441171131495868,
+  "shuffle_p": 0.31284357821089454,
+  "shuffle_q95": 0.021550166553023106,
+  "interaction_information_candidate": false,
+  "physical_channel_detected": false,
+  "claim_boundary": "continuous observational-load proxy test; not physical time/lightcone transfer detection"
+}

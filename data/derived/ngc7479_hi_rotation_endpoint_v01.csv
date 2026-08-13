@@ -1,0 +1,11 @@
+galaxy,radius_arcsec,vrot_hi_km_s,vrot_error_km_s,side_policy,inclination_deg,position_angle_deg,distance_mpc_source,source_table,uses_coming_co_or_tau_residual,radius_kpc_at_source_distance
+NGC 7479,40,171.0,8.3,south_eastern_less_perturbed_side,51.0,22.0,32.0,Laine_and_Gottesman_1998_Table_5,False,6.205609289021404
+NGC 7479,50,191.7,4.8,south_eastern_less_perturbed_side,51.0,22.0,32.0,Laine_and_Gottesman_1998_Table_5,False,7.757011611276756
+NGC 7479,60,201.1,4.0,south_eastern_less_perturbed_side,51.0,22.0,32.0,Laine_and_Gottesman_1998_Table_5,False,9.308413933532107
+NGC 7479,70,208.0,3.8,south_eastern_less_perturbed_side,51.0,22.0,32.0,Laine_and_Gottesman_1998_Table_5,False,10.859816255787457
+NGC 7479,80,211.3,5.4,south_eastern_less_perturbed_side,51.0,22.0,32.0,Laine_and_Gottesman_1998_Table_5,False,12.411218578042808
+NGC 7479,90,215.9,4.3,south_eastern_less_perturbed_side,51.0,22.0,32.0,Laine_and_Gottesman_1998_Table_5,False,13.96262090029816
+NGC 7479,100,214.0,4.6,south_eastern_less_perturbed_side,51.0,22.0,32.0,Laine_and_Gottesman_1998_Table_5,False,15.514023222553512
+NGC 7479,110,214.5,4.6,south_eastern_less_perturbed_side,51.0,22.0,32.0,Laine_and_Gottesman_1998_Table_5,False,17.065425544808864
+NGC 7479,120,216.9,5.4,south_eastern_less_perturbed_side,51.0,22.0,32.0,Laine_and_Gottesman_1998_Table_5,False,18.616827867064213
+NGC 7479,130,216.9,6.1,south_eastern_less_perturbed_side,51.0,22.0,32.0,Laine_and_Gottesman_1998_Table_5,False,20.168230189319566

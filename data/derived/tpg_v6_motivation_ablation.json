@@ -1,0 +1,18 @@
+{
+  "schema": "tpg_v6_motivation_ablation",
+  "status": "TPG_V6_STRUCTURAL_MOTIVATION_ABLATION_COMPLETE",
+  "canonical_formula": "v=vN[1+alpha log(1+a0/aN)]",
+  "conditional_log_derivation": "independent finite-capacity loadings compose multiplicatively while response adds; I(0)=0 and I'(0)=1 force I(x)=log(1+x)",
+  "canonical_holdout_mean_galaxy_rmse_km_s": 17.642542601964035,
+  "cosmology_alpha_holdout_delta_km_s": 0.022980388589463274,
+  "train_refit_alpha": 0.3908357054141126,
+  "train_refit_alpha_holdout_delta_km_s": 0.336392574735882,
+  "generalized_dtl_train_selected": {
+    "gamma": 1.0,
+    "beta": 1.0,
+    "alpha": 0.3908357054141126
+  },
+  "a0_status": "empirical MOND scale; Tau-side compact-scale origin remains conditional",
+  "alpha_status": "SPARC-calibrated operational constant; first-principles normalization open",
+  "claim_boundary": "ablation of predictive ingredients, not a parent derivation or new validation"
+}

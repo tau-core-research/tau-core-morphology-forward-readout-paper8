@@ -1,0 +1,25 @@
+{
+  "schema": "tau_core_ngc4579_sings_side_resolved_gate_v01",
+  "status": "SIDE_RESOLVED_GATE_FAILED_SINGLE_AVERAGED_CURVE_ONLY",
+  "freeze_status": "SIDE_RESOLVED_FIGURE_C2_EXTRACTION_PROTOCOL_FROZEN_BEFORE_PANEL_VALUES_OPEN",
+  "full_pdf_sha256": "9b2ff7acf12fe1ae5a9d9b13fe1cf4909c723d888ff65df4b8d1723e9d07ff2d",
+  "figure_c2_visual_series_count": 1,
+  "approaching_receding_assignment_available": false,
+  "side_values_algebraically_reconstructed": false,
+  "n_post_bar_points": 20,
+  "n_side_error_dominates_formal_error": 19,
+  "side_error_km_s": {
+    "median": 17.325000000000003,
+    "rms": 24.418363905881776,
+    "maximum": 52.66
+  },
+  "formal_error_km_s": {
+    "median": 1.0550000000000002,
+    "rms": 1.1874699996210432,
+    "maximum": 2.08
+  },
+  "unsigned_side_asymmetry_information_available": true,
+  "signed_orientation_odd_information_available": false,
+  "odd_channel_scoring_allowed": false,
+  "claim_boundary": "side_error is an unsigned source uncertainty/asymmetry magnitude; it is not a signed orientation-odd time-channel observable"
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "tau_core_ngc7479_cumulative_morphology_scoring_v01",
+  "status": "POST_OPEN_DIAGNOSTIC_CUMULATIVE_SCORE_COMPLETE",
+  "freeze_status": "SOURCE_SIDE_FORMULA_FROZEN_AFTER_LOCAL_SCORE_OPENED",
+  "fitted_parameters": 0,
+  "n_endpoint_points": 10,
+  "n_gas_sensitivities": 3,
+  "all_matched_beat_newton": true,
+  "all_matched_beat_wrong_mean": true,
+  "all_matched_beat_best_wrong": false,
+  "rmse_ranges": {
+    "newton": [
+      34.06424208361169,
+      34.10876178599462
+    ],
+    "matched": [
+      29.039302517897866,
+      29.084944335929634
+    ],
+    "wrong_mean": [
+      29.41382099597762,
+      29.459172896051353
+    ],
+    "best_wrong": [
+      21.780763124486615,
+      21.826944867158577
+    ]
+  },
+  "prospective": false,
+  "strict_physical_score_allowed": false,
+  "tau_morphology_detected": false,
+  "channel_detected": false,
+  "claim_boundary": "post-open diagnostic with raster gas and spherical gas gravity; no physical attribution"
+}

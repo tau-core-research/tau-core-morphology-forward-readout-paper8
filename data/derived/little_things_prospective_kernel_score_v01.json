@@ -1,0 +1,64 @@
+{
+  "schema": "little_things_prospective_kernel_score_v01",
+  "status": "PROSPECTIVE_EXTERNAL_SCORE_COMPLETE_CAVEATED_VECTOR_EXTRACTION",
+  "sample": "Oh et al. 2015 LITTLE THINGS galaxies new by exact name versus historical SPARC-175",
+  "formula_family": "K_scale_tail_spiral",
+  "amplitude_policy": "frozen_train_selected_family_to_global_shrinkage_0_40_no_external_refit",
+  "primary_quality_lane": "inclination_deg >= 40",
+  "primary": {
+    "n_galaxies": 14,
+    "n_points": 313,
+    "mean_rmse_km_s": {
+      "tau_matched": 8.874435094501763,
+      "wrong_family_mean": 43.09950903682415,
+      "tpg_v6": 8.97579644821774,
+      "mond": 8.225006890242398,
+      "newton": 18.622565457660748
+    },
+    "win_fraction": {
+      "wrong_family_mean": 1.0,
+      "best_wrong_family": 0.5,
+      "tpg_v6": 0.5,
+      "mond": 0.42857142857142855,
+      "newton": 0.9285714285714286
+    },
+    "mean_paired_rmse_delta_km_s": {
+      "matched_minus_wrong": -34.22507394232239,
+      "matched_minus_best_wrong": -0.21348237486614566,
+      "matched_minus_tpg_v6": -0.10136135371597617,
+      "matched_minus_mond": 0.6494282042593656,
+      "matched_minus_newton": -9.748130363158984
+    }
+  },
+  "all_extraction_pass": {
+    "n_galaxies": 17,
+    "n_points": 359,
+    "mean_rmse_km_s": {
+      "tau_matched": 12.967147895565947,
+      "wrong_family_mean": 44.62289054942503,
+      "tpg_v6": 13.081650003576804,
+      "mond": 12.365940276283379,
+      "newton": 23.249916602308303
+    },
+    "win_fraction": {
+      "wrong_family_mean": 1.0,
+      "best_wrong_family": 0.47058823529411764,
+      "tpg_v6": 0.5294117647058824,
+      "mond": 0.4117647058823529,
+      "newton": 0.9411764705882353
+    },
+    "mean_paired_rmse_delta_km_s": {
+      "matched_minus_wrong": -31.655742653859086,
+      "matched_minus_best_wrong": -0.08998729681980683,
+      "matched_minus_tpg_v6": -0.11450210801086008,
+      "matched_minus_mond": 0.6012076192825703,
+      "matched_minus_newton": -10.282768706742354
+    }
+  },
+  "family_diversity": false,
+  "primary_matched_family_rank1_fraction": 0.5,
+  "shuffled_family_null_available": false,
+  "endpoint_access": true,
+  "prospective_formula_retuning": false,
+  "claim_boundary": "external prospective score of one frozen kernel family with vector-extracted baryonic components; not a multi-family attribution test and not identification of a physical time or quantum operator"
+}

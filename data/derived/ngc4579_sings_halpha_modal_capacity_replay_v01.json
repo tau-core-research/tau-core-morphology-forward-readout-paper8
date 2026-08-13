@@ -1,0 +1,138 @@
+{
+  "schema": "tau_core_ngc4579_sings_halpha_modal_capacity_replay_v01",
+  "status": "PROSPECTIVE_PREFROZEN_OPERATOR_REPLAY_CAVEATED_SOURCE_SIDE_AVERAGED",
+  "target_freeze_status": "INDEPENDENT_TRACER_PROSPECTIVE_REPLICATION_TARGET_FROZEN",
+  "numeric_route_freeze_status": "INDEPENDENT_HALPHA_ROTATION_EXTRACTION_PROTOCOL_FROZEN_BEFORE_FIGURE_VALUES_OPEN",
+  "source_sha256": "a0bc3ab76e5c55b1653132a03cce325cc33598eefa45afa266829104c86ffb04",
+  "fitted_endpoint_parameters": 0,
+  "n_source_points": 35,
+  "n_post_bar_points": 20,
+  "post_bar_radius_range_kpc": [
+    3.839720747581994,
+    8.399389135335612
+  ],
+  "source_sides_individually_available": false,
+  "side_disagreement_retained_in_source_final_error": true,
+  "source_mode_diagnostics": {
+    "NGC 613": {
+      "coefficients": [
+        0.15905565351965378,
+        -0.09894141282716523,
+        -0.019692161682767283
+      ],
+      "coefficient_standard_errors": [
+        0.00758954596425424,
+        0.01609910925445883,
+        0.014970910069845278
+      ],
+      "modal_capacities": [
+        0.9977283277482384,
+        0.9742071812185531,
+        0.6337233001763284
+      ],
+      "total_capacity": 0.86855293638104,
+      "support_xmax": 1.124142
+    },
+    "NGC 4303": {
+      "coefficients": [
+        0.10499851694905929,
+        -0.06139189277155884,
+        0.0030404383278408065
+      ],
+      "coefficient_standard_errors": [
+        0.015812156221614523,
+        0.034440370994035796,
+        0.0363029741276227
+      ],
+      "modal_capacities": [
+        0.9778243323981296,
+        0.7606227361841952,
+        0.006965500404628335
+      ],
+      "total_capacity": 0.5818041896623177,
+      "support_xmax": 2.41413
+    },
+    "NGC 4579": {
+      "coefficients": [
+        0.2611059509703098,
+        -0.3626296203753949,
+        0.20762491972334557
+      ],
+      "coefficient_standard_errors": [
+        0.027015387847185462,
+        0.06429036774083866,
+        0.07662548799468522
+      ],
+      "modal_capacities": [
+        0.9894083301256863,
+        0.9695263220454216,
+        0.8801242010353881
+      ],
+      "total_capacity": 0.9463529510688321,
+      "support_xmax": 1.834039
+    },
+    "NGC 5248": {
+      "coefficients": [
+        0.13300954604598353,
+        0.024081431386377052,
+        -0.042347188490247344
+      ],
+      "coefficient_standard_errors": [
+        0.05015872487249099,
+        0.07302473898304061,
+        0.11414942535383658
+      ],
+      "modal_capacities": [
+        0.8754964482472387,
+        0.09808247050946767,
+        0.12097678771305198
+      ],
+      "total_capacity": 0.36485190215658614,
+      "support_xmax": 2.142565
+    },
+    "NGC 7479": {
+      "coefficients": [
+        0.2614420875401678,
+        -0.14019929155711955,
+        0.10424400559103522
+      ],
+      "coefficient_standard_errors": [
+        0.036842474099903134,
+        0.0739286861250323,
+        0.07024474561962693
+      ],
+      "modal_capacities": [
+        0.9805281755153595,
+        0.7824375181271128,
+        0.6877234663142112
+      ],
+      "total_capacity": 0.8168963866522279,
+      "support_xmax": 1.190348
+    }
+  },
+  "n_baryonic_sensitivities": 9,
+  "all_matched_beat_newton": true,
+  "all_matched_beat_wrong_mean": true,
+  "all_matched_beat_best_wrong": true,
+  "rmse_ranges_km_s": {
+    "newton": [
+      68.57594037308033,
+      70.84699842780833
+    ],
+    "matched": [
+      51.0527454210623,
+      53.57207082780319
+    ],
+    "wrong_mean": [
+      64.77201024237364,
+      67.08968615726486
+    ],
+    "best_wrong": [
+      60.92959524354534,
+      63.295066532755676
+    ]
+  },
+  "tau_morphology_detected": false,
+  "physical_channel_detected": false,
+  "claim_boundary": "independent-Halpha zero-fit operator replay with source-averaged sides; diagnostic evidence only, not a physical channel detection or Tau Core proof"
+}

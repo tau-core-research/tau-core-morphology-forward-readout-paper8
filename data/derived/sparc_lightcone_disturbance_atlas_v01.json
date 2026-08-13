@@ -1,0 +1,37 @@
+{
+  "schema": "sparc_lightcone_disturbance_atlas_v01",
+  "status": "SOURCE_AND_OBSERVATION_CLASSES_READY_PATH_CLASS_BLOCKED",
+  "n_galaxies": 75,
+  "source_class_counts": {
+    "S0": 17,
+    "S1": 22,
+    "S2": 13,
+    "S3": 23
+  },
+  "path_class_counts": {
+    "PX": 75
+  },
+  "observation_class_counts": {
+    "O0": 52,
+    "O1": 8,
+    "O2": 6,
+    "O3": 9
+  },
+  "class_semantics": {
+    "S": "source-side environmental or asymmetry disturbance proxy",
+    "P": "foreground observer-source lightcone/path disturbance",
+    "O": "observational geometry and source-field completeness",
+    "X": "not classifiable from current source data"
+  },
+  "path_data_requirements": [
+    "foreground objects in an angular cone around every galaxy",
+    "foreground redshift or distance separation from the target",
+    "mass or luminosity proxy per intervenor",
+    "angular impact parameter",
+    "Galactic extinction and sky-background fields",
+    "weak-lensing convergence/shear proxy where available"
+  ],
+  "allowed_current_use": "stratify future endpoint results by S and O; P remains unknown",
+  "forbidden_current_use": "claim physical lightcone disturbance or fit a path coefficient",
+  "verdict": "DISTURBANCE_ATLAS_PARTIAL_P_AXIS_REQUIRES_FOREGROUND_DATA"
+}

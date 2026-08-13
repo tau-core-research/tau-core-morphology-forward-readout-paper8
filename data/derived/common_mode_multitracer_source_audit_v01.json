@@ -1,0 +1,96 @@
+{
+  "schema": "common_mode_multitracer_source_audit_v01",
+  "statistic": "G_spec(R)=sqrt((1+z_plus)(1+z_minus))",
+  "primary_candidate": "NGC4254",
+  "replication_candidate": "NGC3351",
+  "records": [
+    {
+      "galaxy": "NGC4254",
+      "muse_maps": "data/external/literature/ngc4254_phangs_tracer_velocity/NGC4254_MAPS_copt_0.89asec.fits",
+      "muse_sha256": "6c04947a4d575233517526257374934fbf3b931c9d5451760653d4a8a1b181d8",
+      "muse_reference_velocity_km_s": 2387.79,
+      "muse_spectral_frame": "BARYCENT",
+      "muse_velocity_layers": [
+        "HB4861_VEL",
+        "OIII5006_VEL",
+        "HA6562_VEL",
+        "NII6583_VEL"
+      ],
+      "muse_shape": [
+        1190,
+        1012
+      ],
+      "co_moment1": "data/external/literature/ngc4254_phangs_tracer_velocity/group.uid___A001_X2fb_X29a.lp_schinner.ngc4254_12m7mtp_co21_mom1wprior.fits",
+      "co_sha256": "e18c06000af4b56e3ecf9c731022b0a7261d742515c49ff63ee9a550cf5c62e6",
+      "co_unit": "km.s-1",
+      "co_spectral_frame": "LSRK",
+      "co_shape": [
+        1,
+        1,
+        466,
+        400
+      ],
+      "absolute_reconstruction_possible": true,
+      "spectral_frames_match": false,
+      "muse_velocity_convention": "systemic-subtracted optical line velocity; restore FITS REDSHIFT reference",
+      "co_velocity_convention": "radio Doppler velocity in LSRK",
+      "barycentric_to_lsrk_direction_correction_km_s": 3.586395393549658,
+      "frame_transform_frozen": true,
+      "cross_tracer_common_mode_ready": false,
+      "cross_tracer_blocker": "frame transform is frozen, but WCS/PSF, paired geometry, masks, standard baseline, and covariance remain to be frozen before endpoint scoring",
+      "endpoint_scored": false
+    },
+    {
+      "galaxy": "NGC3351",
+      "muse_maps": "data/external/literature/ngc3351_phangs_tracer_velocity/NGC3351_MAPS_copt_1.05asec.fits",
+      "muse_sha256": "c67e284f4556f6a9e5e74270c2076d37a2a9fb29563ceb10b95ae2dbae9b88bf",
+      "muse_reference_velocity_km_s": 774.736,
+      "muse_spectral_frame": "BARYCENT",
+      "muse_velocity_layers": [
+        "HB4861_VEL",
+        "OIII5006_VEL",
+        "HA6562_VEL",
+        "NII6583_VEL"
+      ],
+      "muse_shape": [
+        896,
+        897
+      ],
+      "co_moment1": "data/external/literature/ngc3351_phangs_tracer_velocity/group.uid___A001_X2fb_X27c.lp_schinner.ngc3351_12m7mtp_co21_mom1wprior.fits",
+      "co_sha256": "59f9c5e2c9d94ffae72986ecd3993c9808e9bc3caab81c32cbfd870c60669e74",
+      "co_unit": "km.s-1",
+      "co_spectral_frame": "LSRK",
+      "co_shape": [
+        1,
+        1,
+        418,
+        431
+      ],
+      "absolute_reconstruction_possible": true,
+      "spectral_frames_match": false,
+      "muse_velocity_convention": "systemic-subtracted optical line velocity; restore FITS REDSHIFT reference",
+      "co_velocity_convention": "radio Doppler velocity in LSRK",
+      "barycentric_to_lsrk_direction_correction_km_s": -3.7630557874444444,
+      "frame_transform_frozen": true,
+      "cross_tracer_common_mode_ready": false,
+      "cross_tracer_blocker": "frame transform is frozen, but WCS/PSF, paired geometry, masks, standard baseline, and covariance remain to be frozen before endpoint scoring",
+      "endpoint_scored": false
+    }
+  ],
+  "freeze_before_scoring": [
+    "common WCS and PSF/beam",
+    "center, position angle, inclination, and opposite-side apertures",
+    "radial bins and reference radius R0",
+    "velocity-to-redshift convention for MUSE and CO",
+    "source-derived BARYCENT-to-LSRK spectral-frame transform",
+    "line S/N, fit-quality, profile-width, and outlier masks",
+    "standard relativistic and instrumental common-mode baseline",
+    "shared geometry and wavelength-calibration covariance"
+  ],
+  "claim_boundary": "source eligibility only; no common channel, time readout, or Tau Core signal scored",
+  "convention_sources": [
+    "https://doi.org/10.1051/0004-6361/202141727",
+    "https://openaccess.inaf.it/bitstream/20.500.12386/31307/7/2104.07665-compr.pdf",
+    "https://docs.astropy.org/en/stable/api/astropy.coordinates.LSRK.html"
+  ]
+}

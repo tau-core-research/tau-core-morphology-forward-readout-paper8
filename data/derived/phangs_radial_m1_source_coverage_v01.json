@@ -1,0 +1,16 @@
+{
+  "schema": "phangs_radial_m1_source_coverage_v01",
+  "status": "PHANGS_RADIAL_M1_SOURCE_COVERAGE_AUDITED",
+  "catalog_id": "J/ApJ/772/135/table1",
+  "population_size": 19,
+  "catalog_match_count": 4,
+  "m1_null_threshold": 0.1,
+  "m1_null_threshold_basis": "conventional 10-percent fractional m1 boundary; frozen before catalog values were queried",
+  "radial_m1_null_certified_count": 0,
+  "radial_m1_null_certified_bodies": [],
+  "source_paper": "Zaritsky et al. 2013",
+  "source_url": "https://arxiv.org/abs/1305.2940",
+  "construction_uses_velocity_contrast": false,
+  "construction_uses_rotation_residual": false,
+  "claim_boundary": "source-only radial stellar m1 coverage and threshold classification; no tracer velocity endpoint, channel component, time, quantum, or Tau origin is tested"
+}

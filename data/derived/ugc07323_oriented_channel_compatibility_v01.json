@@ -1,0 +1,34 @@
+{
+  "schema": "tau_core_ugc07323_oriented_channel_compatibility_v01",
+  "status": "RETROSPECTIVE_ORIENTED_LAW_COMPATIBILITY_PREFLIGHT_COMPLETE",
+  "freeze_status": "ZERO_PARAMETER_TWO_SIDE_RECIPROCAL_COMPATIBILITY_FROZEN_WITH_QUALITATIVE_BODY",
+  "fitted_parameters": 0,
+  "n_common_radii": 8,
+  "common_radius_range_kpc": [
+    0.58,
+    4.65
+  ],
+  "side_compatibility": {
+    "chi2": 26.303380619193195,
+    "degrees_of_freedom": 8,
+    "chi2_per_point": 3.2879225773991494,
+    "weighted_mean_q_approaching_minus_receding": 9.127022718217277e-06,
+    "weighted_mean_difference_error": 5.207146595353993e-06,
+    "weighted_mean_difference_z": 1.7527877410558677
+  },
+  "cq_common_km_s_equivalent": {
+    "median": 23.322932109681993,
+    "minimum": 12.401178382844531,
+    "maximum": 35.054366757821064
+  },
+  "cq_side_contrast_km_s_equivalent": {
+    "median_absolute": 3.603906352366165,
+    "maximum_absolute": 8.500000682906945
+  },
+  "common_oriented_load_compatible_with_both_sides": false,
+  "source_native_morphology_body_ready": false,
+  "sparc_baryonic_covariance_included": false,
+  "dark_halo_degeneracy_removed": false,
+  "physical_channel_detected": false,
+  "claim_boundary": "zero-parameter compatibility preflight with qualitative source body; common load is halo/shared-dynamics degenerate and no Tau channel detection is allowed"
+}

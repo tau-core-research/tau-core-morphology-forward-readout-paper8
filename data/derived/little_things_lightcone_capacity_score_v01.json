@@ -1,0 +1,66 @@
+{
+  "schema": "little_things_lightcone_capacity_score_v01",
+  "status": "DIAGNOSTIC_ONLY_NOT_ENDPOINT",
+  "operator_order": "K_tail -> H_I beam lightcone geometry -> finite spectral capacity -> bounded activation -> frozen TPG carrier",
+  "formula": "W_ij~exp[-(R_i-R_j)^2/(2 sigma_beam^2)]; C_lambda=U diag[s A(s/lambda) 1(s/lambda>=1)] V^T; phi=C_lambda[u]/(1+C_lambda[u]); v^2=v_TPG^2 exp(eta phi)",
+  "eta": 0.07319144586620145,
+  "eta_source": "frozen historical-SPARC v02 value; no LITTLE THINGS refit",
+  "capacity_relative_thresholds": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "primary_reporting_threshold": 0.05,
+  "primary": {
+    "n_galaxies": 14,
+    "n_points": 313,
+    "mean_rmse_km_s": 8.962202711441607,
+    "mean_minus_tpg_km_s": -0.013593736776133165,
+    "mean_minus_v02_km_s": 0.00010255769821985807,
+    "beats_tpg_fraction": 0.5,
+    "beats_v02_fraction": 0.5
+  },
+  "threshold_sensitivity": {
+    "0.01": {
+      "n_galaxies": 14,
+      "n_points": 313,
+      "mean_rmse_km_s": 8.962121098104257,
+      "mean_minus_tpg_km_s": -0.013675350113484466,
+      "mean_minus_v02_km_s": 2.094436086855619e-05,
+      "beats_tpg_fraction": 0.5,
+      "beats_v02_fraction": 0.5
+    },
+    "0.05": {
+      "n_galaxies": 14,
+      "n_points": 313,
+      "mean_rmse_km_s": 8.962202711441607,
+      "mean_minus_tpg_km_s": -0.013593736776133165,
+      "mean_minus_v02_km_s": 0.00010255769821985807,
+      "beats_tpg_fraction": 0.5,
+      "beats_v02_fraction": 0.5
+    },
+    "0.1": {
+      "n_galaxies": 14,
+      "n_points": 313,
+      "mean_rmse_km_s": 8.962310896554406,
+      "mean_minus_tpg_km_s": -0.013485551663333697,
+      "mean_minus_v02_km_s": 0.00021074281101932498,
+      "beats_tpg_fraction": 0.5,
+      "beats_v02_fraction": 0.5
+    }
+  },
+  "primary_capacity": {
+    "mean_effective_rank": 22.357142857142858,
+    "mean_effective_rank_fraction": 1.0,
+    "min_effective_rank": 7,
+    "max_effective_rank": 64,
+    "all_sampled_modes_retained": true
+  },
+  "distance_enters_via": "source-native physical H I beam scale Rmax/(Rmax/HI), equivalent to angular resolution mapped across observer-source distance",
+  "raw_null_propagation_claimed_compact": false,
+  "measured_channel_finite_dimensional": true,
+  "physical_time_operator_identified": false,
+  "quantum_operator_identified": false,
+  "capacity_result": "finite sampled channel, but no resolved spectral bottleneck at relative thresholds 0.01-0.10",
+  "claim_boundary": "opened-sample sensitivity test of a measured lightcone-capacity completion; not a prospective endpoint, intrinsic null-cone law, time detection, quantum detection, or parent-level derivation"
+}

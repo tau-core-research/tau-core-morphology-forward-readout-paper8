@@ -1,0 +1,18 @@
+{
+  "schema": "continuous_lightcone_channel_proxy_v01",
+  "status": "CONTINUOUS_OBSERVATIONAL_CHANNEL_LOAD_PROXY_BUILT_NOT_PHYSICAL_TRANSFER",
+  "n_galaxies": 75,
+  "nonzero_counts": {
+    "foreground_lens_geometry_weight": 7,
+    "stellar_crowding_angular_weight": 75,
+    "background_angular_control_weight": 73
+  },
+  "physical_time_channel_variable": false,
+  "limitations": [
+    "no homogeneous object mass proxy",
+    "no distances for stellar foregrounds",
+    "SIMBAD selection is heterogeneous",
+    "background term is a negative control and not on the observer-source path"
+  ],
+  "claim_boundary": "continuous angular observational-load proxy; not lightcone stress-energy integral, lensing convergence, time dilation, or Tau channel"
+}

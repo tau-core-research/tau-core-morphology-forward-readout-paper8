@@ -1,0 +1,40 @@
+{
+  "schema": "tau_core_ngc4579_viva_hi_gravity_v01",
+  "status": "CALIBRATED_HI_DISK_GRAVITY_READY_MOLECULAR_GAS_OPEN",
+  "source_sha256": "5ebe494a6e78d01c565c9add0b7f2a9fc9ff38c1e354110407affa3d18898567",
+  "image_shape": [
+    246,
+    246
+  ],
+  "bunit": "JY/B*KM/S",
+  "pixel_arcsec": 10.000000242,
+  "beam_arcsec": [
+    42.440400000000004,
+    34.50996
+  ],
+  "blank_floor_jy_beam_km_s": 4.589557647705078e-06,
+  "signal_pixels": 807,
+  "integrated_hi_flux_jy_km_s": 10.013457451723328,
+  "hi_mass_msun": 642284189.214183,
+  "hi_plus_helium_mass_msun": 873506497.3312887,
+  "geometry": {
+    "distance_mpc": 16.5,
+    "pa_deg": 90.3,
+    "inclination_deg": 38.7
+  },
+  "ring_width_kpc": 1.0,
+  "vertical_softening_sensitivities_kpc": [
+    0.1,
+    0.3,
+    0.5
+  ],
+  "gravity_method": "axisymmetric finite-thickness ring angular integration with signed radial v-squared contribution",
+  "inner_outward_ring_force_preserved": true,
+  "uses_spherical_enclosed_mass_proxy": false,
+  "construction_uses_halpha_endpoint_or_dark_discrepancy": false,
+  "hi_gravity_ready": true,
+  "molecular_gas_gravity_ready": false,
+  "combined_gas_gravity_ready": false,
+  "scoring_allowed": false,
+  "claim_boundary": "calibrated VIVA H I plus helium disk gravity; molecular gas still required"
+}

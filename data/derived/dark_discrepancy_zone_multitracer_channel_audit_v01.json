@@ -1,0 +1,44 @@
+{
+  "schema": "dark_discrepancy_zone_multitracer_channel_audit_v01",
+  "status": "DIAGNOSTIC_ONLY_D1P5_ZONE_MULTITRACER_CHANNEL_NOT_REPLICATED",
+  "target_zone": "persistent SPARC mass discrepancy D>=1.5 onset and beyond",
+  "retrospective_zone_audit": true,
+  "galaxies": {
+    "NGC3726": {
+      "distance_mpc": 17.999999999999996,
+      "d1p5_onset_kpc": 8.72,
+      "d1p5_onset_arcsec": 99.92393333333337,
+      "d2p0_onset_kpc": 22.3,
+      "max_channel_radius_kpc": 12.217293287760887,
+      "covariance_scope": "quoted measurement diagonal; existing full-sample inclination covariance not persisted",
+      "post_d1p5": {
+        "n_post_onset": 3,
+        "gls_mean_km_s": 9.487251912744968,
+        "gls_sigma_km_s": 4.425021171476144,
+        "gls_z": 2.1440014736878905,
+        "chi2_zero": 8.156227777151082,
+        "chi2_zero_p": 0.04289091569917987
+      }
+    },
+    "NGC4559": {
+      "distance_mpc": 9.000000000000002,
+      "d1p5_onset_kpc": 2.62,
+      "d1p5_onset_arcsec": 60.04603333333332,
+      "d2p0_onset_kpc": 9.16,
+      "max_channel_radius_kpc": 7.330375972656536,
+      "covariance_scope": "HALOGAS bootstrap plus geometry variants plus Halpha covariance",
+      "post_d1p5": {
+        "n_post_onset": 3,
+        "gls_mean_km_s": 2.454215332071041,
+        "gls_sigma_km_s": 5.883541656147086,
+        "gls_z": 0.4171323117100552,
+        "chi2_zero": 6.082195269748764,
+        "chi2_zero_p": 0.10767901058724341
+      }
+    }
+  },
+  "zero_contrast_rejected_in_both_galaxies": false,
+  "d2_zone_covered_in_both_galaxies": false,
+  "channel_information_candidate": false,
+  "claim_boundary": "retrospective two-galaxy D>=1.5 zone audit; no replicated channel contrast, D>=2 coverage is incomplete, and no observer-time or quantum origin is identified"
+}

@@ -1,0 +1,7 @@
+source_id,url,local_path,bytes,sha256,source_native,endpoint_access
+uma_readme,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/ReadMe,data/external/catalogs/ngc3726_uma_hi/uma_readme_ReadMe,17134,2959675fbd5b6c904d3bfc2850e4ddcc5cce42aaafbdf6b3fcea9a3ab7c89e6d,True,False
+uma_identity,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table1.dat.gz,data/external/catalogs/ngc3726_uma_hi/uma_identity_table1.dat.gz,1768,cdcd02b592204a5bfa7765e0fcf158e2831a0fad906884cbe298b2f42adc1aa0,True,False
+uma_rotation,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz,data/external/catalogs/ngc3726_uma_hi/uma_rotation_table4.dat.gz,4684,b572484788f2dd30ec741ee594d3f191cb1aba8c7280638727eadf89bbe366b4,True,False
+uma_summary,https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table5.dat.gz,data/external/catalogs/ngc3726_uma_hi/uma_summary_table5.dat.gz,1764,9c587ea0fa41ed97063c0fc6fe3d0521f93f94b0287b7c67df3e32dadcdb967a,True,False
+ghasp_readme,https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/390/466/ReadMe,data/external/catalogs/ngc3726_uma_hi/ghasp_readme_ReadMe,14796,bc0dfec9ca2518650835d8b164de06872584833c83d4d5417aaec7d94782c021,True,False
+ghasp_model,https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/390/466/tableb2.dat,data/external/catalogs/ngc3726_uma_hi/ghasp_model_tableb2.dat,18983,fc867346fb112a1938873a6de2ae887b1d4dab43988058327314c5a219ae7569,True,False

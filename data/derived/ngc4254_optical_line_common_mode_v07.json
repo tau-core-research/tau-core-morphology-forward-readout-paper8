@@ -1,0 +1,41 @@
+{
+  "schema": "ngc4254_optical_line_common_mode_v07",
+  "lines": [
+    "HB4861",
+    "OIII5006",
+    "HA6562",
+    "NII6583",
+    "SII6716"
+  ],
+  "n_line_annulus_controls": 20,
+  "all_optical_vs_halpha_chi2": 52.81972280924736,
+  "all_optical_vs_halpha_dof": 20,
+  "all_optical_vs_halpha_p": 8.638388555363325e-05,
+  "per_line_vs_halpha": {
+    "HB4861": {
+      "chi2": 0.006640944621187583,
+      "dof": 5,
+      "p": 0.9999998092811968
+    },
+    "NII6583": {
+      "chi2": 12.352606394587145,
+      "dof": 5,
+      "p": 0.030262993447315346
+    },
+    "OIII5006": {
+      "chi2": 27.992457881452886,
+      "dof": 5,
+      "p": 3.652254044278366e-05
+    },
+    "SII6716": {
+      "chi2": 12.468017588586145,
+      "dof": 5,
+      "p": 0.028908184412985538
+    }
+  },
+  "optical_line_common_mode_consistent": false,
+  "independent_readout_count": 1,
+  "co_comparison_repaired": false,
+  "common_channel_detected": false,
+  "claim_boundary": "same-instrument optical line-formation control; not independent multi-readout evidence"
+}

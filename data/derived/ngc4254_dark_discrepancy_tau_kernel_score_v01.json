@@ -1,0 +1,24 @@
+{
+  "schema": "ngc4254_dark_discrepancy_tau_kernel_score_v01",
+  "status": "NGC4254_FIXED_TPG_DARK_DISCREPANCY_SHAPE_DIAGNOSTIC",
+  "n_models": 27,
+  "n_radial_bins": 11,
+  "nominal_rmse_km_s": {
+    "newton": 28.92387114308843,
+    "tpg_v6": 14.785774620162126,
+    "mond": 17.31987822615052
+  },
+  "nominal_delta_v2_spearman": {
+    "tpg_v6": 0.990909090909091,
+    "mond": 0.990909090909091
+  },
+  "model_win_counts": {
+    "newton": 7,
+    "tpg_v6": 16,
+    "mond": 4
+  },
+  "ngc4254_parameters_fitted": false,
+  "tau_kernel_origin_identified": false,
+  "channel_origin_identified": false,
+  "claim_boundary": "single-galaxy coarse radial fixed-form comparison; shape agreement is not morphology/channel attribution or dark-matter exclusion"
+}

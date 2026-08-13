@@ -1,0 +1,4 @@
+grayscale_floor,rmse_newton_baryonic,rmse_matched_ngc7479,rmse_wrong_family_mean,rmse_wrong_family_best,matched_beats_newton,matched_beats_wrong_mean,matched_beats_best_wrong
+0.0,34.10876178599462,33.54380138093105,33.09751660358892,31.79063430112895,True,False,False
+4.0,34.080838864763095,33.5158505886404,33.06948417692926,31.76246437684843,True,False,False
+8.0,34.06424208361169,33.499215085759026,33.05280543234755,31.745704901526103,True,False,False

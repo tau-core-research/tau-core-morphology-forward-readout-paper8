@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+"""Test frozen channel-load proxies specifically in body-model holdout failures."""
+from __future__ import annotations
+import json
+from pathlib import Path
+import numpy as np,pandas as pd
+ROOT=Path(__file__).resolve().parents[1];DATA=ROOT/'data/derived';REPORT=ROOT/'reports/body_failure_channel_stratification_v01.md';SEED=20260712;N=10000
+def main():
+ s=pd.read_csv(DATA/'body_only_newtonian_kernel_scores_by_galaxy_v01.csv');c=pd.read_csv(DATA/'continuous_lightcone_channel_proxy_v01.csv');m=pd.read_csv(DATA/'s4g_optical_morphology_attribution_source_features_v02.csv')
+ d=s.merge(c,on='galaxy').merge(m[['galaxy','inclination_deg','log_distance_mpc','log_l36','log_rdisk_kpc']],on='galaxy');tr=d.split.eq('train');cols=['foreground_lens_geometry_weight','foreground_angular_weight','stellar_crowding_angular_weight'];x=np.log1p(d[cols]);mu=x[tr].mean();sd=x[tr].std(ddof=0).replace(0,1);z=(x-mu)/sd;d['channel_load_norm']=np.sqrt((z*z).sum(axis=1));h=d[d.split.eq('holdout')].copy();h['body_failure']=h.matched_minus_newton>=0
+ fail=h[h.body_failure].channel_load_norm.to_numpy();succ=h[~h.body_failure].channel_load_norm.to_numpy();obs=float(fail.mean()-succ.mean()) if len(fail) and len(succ) else float('nan');rng=np.random.default_rng(SEED);vals=h.channel_load_norm.to_numpy();nf=len(fail);null=[]
+ for _ in range(N):
+  q=rng.permutation(vals);null.append(float(q[:nf].mean()-q[nf:].mean()))
+ p=float((1+np.sum(np.abs(null)>=abs(obs)))/(N+1));corr=float(np.corrcoef(h.channel_load_norm,h.matched_minus_newton)[0,1]);result={'schema':'tau-core.paper8.body-failure-channel-stratification.v01','status':'BODY_FAILURE_CHANNEL_LOAD_ASSOCIATION_PASS' if p<=.05 else 'BODY_FAILURE_CHANNEL_LOAD_ASSOCIATION_FAIL','failure_rule':'holdout rmse_body_matched >= rmse_Newton','body_model':'constant-family body-only Newtonian kernel v01','channel_variables':cols,'n_overlap_holdout':len(h),'n_body_failures':len(fail),'n_body_successes':len(succ),'mean_channel_load_failure':float(fail.mean()),'mean_channel_load_success':float(succ.mean()),'failure_minus_success':obs,'two_sided_permutation_p':p,'channel_load_vs_body_delta_pearson_r':corr,'physical_channel_detected':False,'claim_boundary':'failure-stratified reuse of frozen observational-load proxies; diagnostic association only, not causal path/time/lightcone transfer'};(DATA/'body_failure_channel_stratification_v01.json').write_text(json.dumps(result,indent=2)+'\n');h.to_csv(DATA/'body_failure_channel_stratification_holdout_v01.csv',index=False);REPORT.write_text(f"# Body-failure channel stratification v01\n\nStatus: `{result['status']}`\n\nThe overlap has `{len(h)}` holdout galaxies: `{len(fail)}` body failures and `{len(succ)}` successes. Mean frozen channel-load norm is `{fail.mean():.4f}` in failures and `{succ.mean():.4f}` in successes; difference `{obs:+.4f}`, two-sided permutation `p={p:.4f}`. Correlation with body-minus-Newton RMSE is `{corr:+.4f}`. This is a diagnostic proxy association, not a physical channel detection.\n");print(result['status'])
+if __name__=='__main__':main()

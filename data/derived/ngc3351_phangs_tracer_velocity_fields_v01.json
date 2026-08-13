@@ -1,0 +1,46 @@
+{
+  "schema": "ngc3351_phangs_tracer_velocity_fields_v01",
+  "status": "SOURCE_NATIVE_2D_TRACER_VELOCITY_FIELDS_ACQUIRED",
+  "galaxy": "NGC3351",
+  "tracers": [
+    "PHANGS-MUSE H-alpha",
+    "PHANGS-ALMA CO(2-1)"
+  ],
+  "muse_psf_fwhm_arcsec": 1.05,
+  "co_beam_fwhm_arcsec": [
+    1.46324654559396,
+    1.46324654559396
+  ],
+  "muse_shape": [
+    896,
+    897
+  ],
+  "co_shape": [
+    1,
+    1,
+    418,
+    431
+  ],
+  "manifest": [
+    {
+      "filename": "NGC3351_MAPS_copt_1.05asec.fits",
+      "url": "https://dataportal.eso.org/dataPortal/file/ADP.2021-07-16T10:20:56.458",
+      "sha256": "c67e284f4556f6a9e5e74270c2076d37a2a9fb29563ceb10b95ae2dbae9b88bf",
+      "bytes": 341006400
+    },
+    {
+      "filename": "group.uid___A001_X2fb_X27c.lp_schinner.ngc3351_12m7mtp_co21_mom1wprior.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fb_X27c.lp_schinner/group.uid___A001_X2fb_X27c.lp_schinner.ngc3351_12m7mtp_co21_mom1wprior.fits",
+      "sha256": "59f9c5e2c9d94ffae72986ecd3993c9808e9bc3caab81c32cbfd870c60669e74",
+      "bytes": 731520
+    },
+    {
+      "filename": "group.uid___A001_X2fb_X27c.lp_schinner.ngc3351_12m7mtp_co21_emom1wprior.fits",
+      "url": "https://almascience.eso.org/almadata/lp/PHANGS/phangs_groups/group.uid___A001_X2fb_X27c.lp_schinner/group.uid___A001_X2fb_X27c.lp_schinner.ngc3351_12m7mtp_co21_emom1wprior.fits",
+      "sha256": "69fd5f32a915caed7859f9e38c3c33f20690d9f3380bff13ff5a2c97bf5214f9",
+      "bytes": 731520
+    }
+  ],
+  "construction_uses_rotation_residual": false,
+  "claim_boundary": "source-native 2D field acquisition and integrity freeze; no tracer innovation or Tau-channel result"
+}

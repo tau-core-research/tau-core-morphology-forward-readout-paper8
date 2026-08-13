@@ -1,0 +1,33 @@
+{
+  "schema": "tau_core_ngc4579_stellar_velocity_field_v01",
+  "status": "ENDPOINT_BLIND_STELLAR_FIELD_READY_GAS_OPEN",
+  "stellar_mass_msun": 69000000000.0,
+  "stellar_mass_error_msun": 1600000000.0,
+  "stellar_mass_source": "Salak et al. 2019 barred-galaxy table; WISE 3.4 micron",
+  "s4g_component_fractions": {
+    "bulge": 0.113,
+    "disk": 0.776,
+    "bar": 0.111
+  },
+  "disk_scale_kpc": 3.621336630063268,
+  "bulge_re_kpc": 0.3127772525634499,
+  "bulge_sersic_n": 2.655,
+  "bar_radius_kpc_s4g": 3.5997382008581194,
+  "coming_bar_radius_kpc": 3.62,
+  "primary_bar_enclosure_power": 2.0,
+  "bar_sensitivity_powers": [
+    1.0,
+    3.0
+  ],
+  "radius_grid_kpc": [
+    0.1,
+    15.0,
+    0.05
+  ],
+  "construction_uses_halpha_endpoint_or_dark_discrepancy": false,
+  "stellar_field_ready": true,
+  "gas_field_ready": false,
+  "baryonic_field_ready": false,
+  "scoring_allowed": false,
+  "claim_boundary": "axisymmetrized source-only stellar predictor; Halpha endpoint remains unopened"
+}

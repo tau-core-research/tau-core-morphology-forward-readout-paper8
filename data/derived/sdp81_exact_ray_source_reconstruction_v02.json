@@ -1,0 +1,34 @@
+{
+  "schema": "tau_core.paper8.sdp81-exact-ray-source-reconstruction.v02",
+  "mapping": "exact lenstronomy ray_shooting plus image-plane ALMA beam convolution",
+  "path_count": 4,
+  "pixels_per_path": [
+    2835,
+    2827,
+    2827,
+    2826
+  ],
+  "source_basis_count": 49,
+  "common_source_relative_residual": 0.38266209257359124,
+  "common_source_path_relative_residuals": [
+    0.3993771239859465,
+    0.33213907972459267,
+    0.36840256120175563,
+    0.44122901833069056
+  ],
+  "independent_source_relative_residual": 0.32815784612957344,
+  "independent_source_path_relative_residuals": [
+    0.33898042572468146,
+    0.2914466584252301,
+    0.3025142576868933,
+    0.3817132737024498
+  ],
+  "common_vs_independent_squared_residual_excess": 0.35976951105266985,
+  "common_extended_source_promoted": true,
+  "promotion_rule": "common residual < 0.5, every path residual < 0.65, and common squared residual no more than 50% above independent-path source fits",
+  "body_covector_materialized": false,
+  "time_covector_identified": false,
+  "time_score_authorized": false,
+  "verdict": "EXACT_RAY_COMMON_EXTENDED_SOURCE_SUPPORTED",
+  "claim_boundary": "Fixed-basis exact-ray morphology reconstruction; not a unique body map, time covector, channel innovation, or Tau Core detection."
+}

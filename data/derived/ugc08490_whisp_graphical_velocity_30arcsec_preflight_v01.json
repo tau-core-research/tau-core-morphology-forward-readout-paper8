@@ -1,0 +1,38 @@
+{
+  "schema": "ugc08490_whisp_30arcsec_velocity_preflight_v01",
+  "status": "WHISP_UGC08490_30ARCSEC_VELOCITY_DIGITIZED",
+  "panel_box_source_pixels": [
+    317,
+    542,
+    481,
+    694
+  ],
+  "panel_size_pixels": [
+    164,
+    152
+  ],
+  "beam_fwhm_arcsec": 30.0,
+  "systemic_velocity_km_s": 204.0,
+  "quantization_half_width_km_s": 10.225770022042866,
+  "largest_component_pixels": 6723,
+  "connected_component_sizes": [
+    6723,
+    229,
+    101,
+    82,
+    73,
+    71,
+    62,
+    53,
+    46,
+    25
+  ],
+  "side_counts": {
+    "approaching": 3375,
+    "systemic_ambiguous": 840,
+    "receding": 2508
+  },
+  "both_hi_velocity_sides_present": true,
+  "endpoint_access": false,
+  "claim_boundary": "exact-palette graphical preflight; not a FITS velocity field"
+}

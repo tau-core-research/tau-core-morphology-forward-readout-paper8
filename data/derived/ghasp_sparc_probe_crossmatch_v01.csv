@@ -1,0 +1,2 @@
+galaxy,ghasp_name,n_points,n_approaching,n_receding,both_sides_present,radius_min_kpc,radius_max_kpc,sparc_rdisk_kpc,sparc_rhi_kpc,sparc_reference,hi_velocity_field_status,probe_status,endpoint_access
+UGC06787,UGC 6787,15,15,0,False,0.26,15.92,5.37,26.44,"No07,No05",NOT_ACQUIRED,HALPHA_SINGLE_SIDE_SOURCE_ACQUIRED_HI_COSPATIAL_FIELD_OPEN,False

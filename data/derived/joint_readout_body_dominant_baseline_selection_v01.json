@@ -1,0 +1,46 @@
+{
+  "schema": "tau-core.paper8.joint-readout-baseline-selection.v01",
+  "status": "BODY_DOMINANT_JOINT_READOUT_SELECTED_AS_WORKING_BASELINE",
+  "decision_rule": "select the no-nonconventional-channel baseline when no predeclared channel family survives its controls; require grouped holdout gain and independent replication to add a channel deformation",
+  "baseline_model": "Y_Oc = P_Oc[K_body(B)] + epsilon",
+  "nested_alternative": "Y_Oc = P_Oc[K_body(B) + Delta_Oc(B;theta)] + epsilon",
+  "nonconventional_channel_default": "Delta_Oc = 0",
+  "independent_test_family_count": 5,
+  "no_positive_channel_test": true,
+  "tests": [
+    {
+      "family": "population_path_proxy",
+      "verdict": "not_selected",
+      "evidence": "RETROSPECTIVE_PATH_PROXY_INCREMENTAL_SIGNAL_FAIL",
+      "physical_channel_detected": false
+    },
+    {
+      "family": "continuous_source_channel_interaction",
+      "verdict": "not_selected",
+      "evidence": "CONTINUOUS_CHANNEL_DARK_DISCREPANCY_INTERACTION_FAIL",
+      "shuffle_p": 0.31284357821089454,
+      "physical_channel_detected": false
+    },
+    {
+      "family": "same_body_tracer_kernel_amplitude",
+      "verdict": "conventional_scale_control_preferred",
+      "evidence": "DIAGNOSTIC_TRACER_AMPLITUDE_DIFFERENCE_NOT_KERNEL_SPECIFIC",
+      "physical_channel_detected": false
+    },
+    {
+      "family": "common_multiplicative_spectral_clock",
+      "verdict": "rejected_in_tested_single_galaxy_family",
+      "evidence": "SIMPLE_COMMON_MULTIPLICATIVE_CLOCK_CHANNEL_INCOMPATIBLE_SINGLE_GALAXY",
+      "predicted_to_observed_even_ratio": 45611.599504534985
+    },
+    {
+      "family": "true_multipath_integrated_spectral_shape",
+      "verdict": "non_exceptional_diagnostic",
+      "evidence": "Q1_MULTIPATH_DIAGNOSTIC_SCORED_SIGNIFICANCE_AND_OPERATOR_NULLS_OPEN",
+      "empirical_upper_tail_fraction": 0.75,
+      "channel_origin_identified": false
+    }
+  ],
+  "next_primary_score": "grouped body-level holdout performance of the source-frozen morphology kernel against baryonic/Newtonian, MOND/RAR, TPG, wrong-family, and shuffled controls, with no fitted channel coordinate",
+  "claim_boundary": "working model selection within tested channel families; not a theorem that all channels are trivial and not a Tau Core or dark-matter proof"
+}

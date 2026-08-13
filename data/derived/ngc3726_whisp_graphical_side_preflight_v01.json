@@ -1,0 +1,56 @@
+{
+  "schema": "ngc3726_whisp_graphical_side_preflight_v01",
+  "status": "NGC3726_HI_HALPHA_TWO_SIDE_SOURCE_SUPPORT_CONFIRMED_COMMON_TRANSPORT_OPEN",
+  "panel_box_source_pixels": [
+    537,
+    542,
+    701,
+    694
+  ],
+  "panel_size_pixels": [
+    164,
+    152
+  ],
+  "raw_exact_palette_pixels": 4433,
+  "exact_palette_pixels_largest_component": 4188,
+  "connected_component_sizes": [
+    4188,
+    56,
+    45,
+    31,
+    25,
+    15,
+    11,
+    10,
+    10,
+    6
+  ],
+  "side_counts": {
+    "robust_approaching": 1631,
+    "systemic_ambiguous": 641,
+    "robust_receding": 1916
+  },
+  "side_centroids": {
+    "robust_approaching": {
+      "n_pixels": 1631,
+      "panel_x_mean": 89.19435928877989,
+      "panel_y_mean": 52.715511955855305
+    },
+    "robust_receding": {
+      "n_pixels": 1916,
+      "panel_x_mean": 92.92640918580376,
+      "panel_y_mean": 111.7813152400835
+    }
+  },
+  "approaching_receding_centroid_separation_pixels": 59.183589905015204,
+  "both_hi_velocity_sides_present": true,
+  "halpha_approaching_points": 85,
+  "halpha_receding_points": 105,
+  "both_halpha_sides_present": true,
+  "selection_uses_vobs_or_residual": false,
+  "world_coordinate_transport_ready": false,
+  "beam_matched_hi_halpha_ready": false,
+  "physical_a_row_constructed": false,
+  "endpoint_access": false,
+  "claim_boundary": "graphical robust-side support only; central green colors left ambiguous; no velocity calibration, WCS/FITS, common radial map, beam covariance, channel statistic, or endpoint result"
+}

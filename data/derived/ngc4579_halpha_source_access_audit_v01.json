@@ -1,0 +1,48 @@
+{
+  "schema": "tau_core_ngc4579_halpha_source_access_audit_v01",
+  "status": "AUTHOR_NUMERIC_SINGS_HALPHA_ROTATION_TABLE_RECOVERED_AND_REPLAYED",
+  "source": "Chemin et al. 2006 Virgo Fabry-Perot Halpha atlas",
+  "ngc4579_in_published_sample": true,
+  "ngc4303_in_published_sample": false,
+  "ngc4579_observation": {
+    "date": "2002-04-04",
+    "spectral_channels": 40,
+    "total_exposure_minutes": 92.0,
+    "seeing_class": "better_than_1.5_arcsec",
+    "kinematic_pa_deg": 91.0,
+    "kinematic_pa_error_deg": 3.0,
+    "kinematic_inclination_deg": 44.0,
+    "kinematic_inclination_error_deg": 8.0,
+    "central_caveat": "nuclear spiral causes a central kinematic twist and large velocity gradient",
+    "geometry_policy_in_source": "mean geometry derived in the radial range where angle variations are smallest"
+  },
+  "access_routes": {
+    "arxiv_pdf": "available but intentionally contains only the NGC4254 example maps",
+    "legacy_ftp": "published full PS/PDF route currently rejects anonymous access",
+    "legacy_web_preview": "published URL currently returns a site-level 404 page",
+    "numeric_rotation_table": "not present in the acquired published paper package",
+    "full_published_pdf": "acquired from HAL and checksum-frozen; Figure A26 inspected at 300 dpi",
+    "sings_arxiv_source": "checksum-frozen source package inspected; contains only three example EPS figures and no NGC4579 curve"
+  },
+  "halpha_rotation_values_opened": true,
+  "prospective_status_preserved": true,
+  "endpoint_eligibility": "failed: the black source-model line exits the upper PV-panel boundary before the receding post-bar radial domain",
+  "replacement_numeric_endpoint": {
+    "source": "Daigle et al. 2006 SINGS Halpha author electronic rotation-curve table",
+    "archived_url": "https://web.archive.org/web/20240222032919id_/https://www.astro.umontreal.ca/fantomm/sings/ngc4579.dat",
+    "sha256": "a0bc3ab76e5c55b1653132a03cce325cc33598eefa45afa266829104c86ffb04",
+    "n_points": 35,
+    "n_post_bar_points": 20,
+    "side_policy": "source-averaged velocity with side_error retained in final_error; individual side curves unavailable",
+    "zero_fit_prefrozen_operator_replay_complete": true
+  },
+  "scoring_allowed": false,
+  "next_acquisition_routes": [
+    "author or observatory numeric rotation-curve request",
+    "archive velocity-field FITS retrieval followed by a newly prefrozen tilted-ring extraction",
+    "an independent two-sided Halpha endpoint with full post-bar support"
+  ],
+  "sings_arxiv_source_sha256": "ae06add42b837bf63c0bf7920ae61e2ccd88f3cf034b62addd84415896aaf940",
+  "published_pdf_sha256": "36fcf863b9a2ef4e65a332084fe5f5786da4714c9c915ea71dc31788fb30f43c",
+  "claim_boundary": "the Virgo graphical endpoint failed, but a separate author numeric SINGS Halpha table supports a zero-fit caveated replay; this is not a physical channel detection"
+}

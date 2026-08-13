@@ -1,0 +1,141 @@
+{
+  "schema": "tau-core.paper8.body-success-morphology-channel-atlas.v01",
+  "status": "BODY_SUCCESS_MORPHOLOGY_CHANNEL_DESCRIPTIVE_ATLAS_COMPLETE",
+  "body_model": "local value-only invariant response v01",
+  "classification": {
+    "strong_success": "matched body RMSE < Newton RMSE and < TPG/v6 RMSE",
+    "partial_success": "matched body RMSE < Newton RMSE but >= TPG/v6 RMSE",
+    "body_failure": "matched body RMSE >= Newton RMSE regardless of TPG comparison"
+  },
+  "counts": {
+    "body_failure": 7,
+    "partial_success": 28,
+    "strong_success": 9
+  },
+  "channel_overlap_n": 21,
+  "top_standardized_morphology_contrasts": [
+    {
+      "performance_class": "body_failure",
+      "feature": "inclination_deg",
+      "standardized_mean_contrast": -0.7829931801115567,
+      "n_inside": 7,
+      "n_outside": 37,
+      "abs_effect": 0.7829931801115567
+    },
+    {
+      "performance_class": "body_failure",
+      "feature": "distance_frac_error",
+      "standardized_mean_contrast": -0.547952034936686,
+      "n_inside": 7,
+      "n_outside": 37,
+      "abs_effect": 0.547952034936686
+    },
+    {
+      "performance_class": "body_failure",
+      "feature": "r_median",
+      "standardized_mean_contrast": -0.5370515554757619,
+      "n_inside": 7,
+      "n_outside": 37,
+      "abs_effect": 0.5370515554757619
+    },
+    {
+      "performance_class": "body_failure",
+      "feature": "scale_radius_proxy_kpc",
+      "standardized_mean_contrast": -0.5370515554757617,
+      "n_inside": 7,
+      "n_outside": 37,
+      "abs_effect": 0.5370515554757617
+    },
+    {
+      "performance_class": "body_failure",
+      "feature": "tail_cutoff_radius_proxy_kpc",
+      "standardized_mean_contrast": -0.5012185215021823,
+      "n_inside": 7,
+      "n_outside": 37,
+      "abs_effect": 0.5012185215021823
+    },
+    {
+      "performance_class": "partial_success",
+      "feature": "distance_frac_error",
+      "standardized_mean_contrast": 0.6651245200451481,
+      "n_inside": 28,
+      "n_outside": 16,
+      "abs_effect": 0.6651245200451481
+    },
+    {
+      "performance_class": "partial_success",
+      "feature": "r_median",
+      "standardized_mean_contrast": 0.6469102047358496,
+      "n_inside": 28,
+      "n_outside": 16,
+      "abs_effect": 0.6469102047358496
+    },
+    {
+      "performance_class": "partial_success",
+      "feature": "scale_radius_proxy_kpc",
+      "standardized_mean_contrast": 0.6469102047358495,
+      "n_inside": 28,
+      "n_outside": 16,
+      "abs_effect": 0.6469102047358495
+    },
+    {
+      "performance_class": "partial_success",
+      "feature": "tail_cutoff_radius_proxy_kpc",
+      "standardized_mean_contrast": 0.5938727142070069,
+      "n_inside": 28,
+      "n_outside": 16,
+      "abs_effect": 0.5938727142070069
+    },
+    {
+      "performance_class": "partial_success",
+      "feature": "r_max",
+      "standardized_mean_contrast": 0.575093475958729,
+      "n_inside": 28,
+      "n_outside": 16,
+      "abs_effect": 0.575093475958729
+    },
+    {
+      "performance_class": "strong_success",
+      "feature": "distance_frac_error",
+      "standardized_mean_contrast": -0.49541653311626876,
+      "n_inside": 9,
+      "n_outside": 35,
+      "abs_effect": 0.49541653311626876
+    },
+    {
+      "performance_class": "strong_success",
+      "feature": "scale_radius_proxy_kpc",
+      "standardized_mean_contrast": -0.4784743455664707,
+      "n_inside": 9,
+      "n_outside": 35,
+      "abs_effect": 0.4784743455664707
+    },
+    {
+      "performance_class": "strong_success",
+      "feature": "r_median",
+      "standardized_mean_contrast": -0.47847434556647067,
+      "n_inside": 9,
+      "n_outside": 35,
+      "abs_effect": 0.47847434556647067
+    },
+    {
+      "performance_class": "strong_success",
+      "feature": "tail_cutoff_radius_proxy_kpc",
+      "standardized_mean_contrast": -0.43250596474817116,
+      "n_inside": 9,
+      "n_outside": 35,
+      "abs_effect": 0.43250596474817116
+    },
+    {
+      "performance_class": "strong_success",
+      "feature": "r_max",
+      "standardized_mean_contrast": -0.4252784995221894,
+      "n_inside": 9,
+      "n_outside": 35,
+      "abs_effect": 0.4252784995221894
+    }
+  ],
+  "physical_channel_detected": false,
+  "retuning_allowed": false,
+  "claim_boundary": "descriptive post-score atlas; generates hypotheses for new source-frozen tests but cannot retune the inspected holdout"
+}

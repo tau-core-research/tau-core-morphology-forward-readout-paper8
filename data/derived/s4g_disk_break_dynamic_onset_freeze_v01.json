@@ -1,0 +1,28 @@
+{
+  "schema": "s4g_disk_break_dynamic_onset_freeze_v01",
+  "status": "SOURCE_ONLY_DISK_BREAK_ALIGNMENT_PILOT_FREEZE_READY_SMALL_N",
+  "source_only": true,
+  "endpoint_access": false,
+  "retrospective_lock": true,
+  "n_source_rows": 7,
+  "minimum_population_n": 15,
+  "population_claim_allowed": false,
+  "primary_dynamic_onset": {
+    "mass_discrepancy_threshold": 2.0,
+    "persistence_points": 3,
+    "outer_median_must_remain_above_threshold": true
+  },
+  "sensitivity_thresholds": [
+    1.5,
+    3.0
+  ],
+  "primary_alignment_metric": "median_absolute_log_rdyn_over_rbreak",
+  "null": "exact_or_10000_draw_permutation_of_break_radii_across_paired_galaxies",
+  "promotion_rule": "descriptive pilot only because frozen source N<15; no pass status is available",
+  "claim_boundary": "retrospective small-N onset-alignment diagnostic; cannot distinguish source activation from time, quantum, path, gravity, or mixed channel origin",
+  "input_sha256": {
+    "source": "4cdd7522dec3f93123456a09d7dd68b255465574aabece886658590e910703f4",
+    "provenance": "6ba7cd2aa460799aac7a4c85a1cb671c1807cced8756482371e9077509a776fc"
+  },
+  "frozen_source_sha256": "3b274340d0aff21146ccf575ce0b06ee1f2ffd905f25f3a3104058871ff4c515"
+}

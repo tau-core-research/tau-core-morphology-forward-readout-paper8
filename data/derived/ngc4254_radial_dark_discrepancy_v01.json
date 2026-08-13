@@ -1,0 +1,22 @@
+{
+  "schema": "ngc4254_radial_dark_discrepancy_v01",
+  "status": "NGC4254_RADIAL_DARK_DISCREPANCY_DIAGNOSTIC_SOLVED",
+  "systemic_velocity_km_s": 2391.4181020707065,
+  "n_observed_radial_bins": 11,
+  "n_sensitivity_models": 27,
+  "outer_nominal_median_ratio": 1.5598657854342723,
+  "outer_all_models_ratio_range": [
+    1.1520289680050002,
+    2.6171823951092605
+  ],
+  "two_dimensional_attribution_allowed": false,
+  "tau_morphology_detected": false,
+  "channel_detected": false,
+  "limitations": [
+    "axisymmetric gravity from azimuthal median surface-density profiles",
+    "VIVA-beam radial resolution only",
+    "fixed distance and inclination",
+    "formal tilted-ring errors omit full inter-ring covariance"
+  ],
+  "claim_boundary": "coarse radial fixed-convention diagnostic; not a halo comparison, 2D morphology attribution, or Tau/channel detection"
+}

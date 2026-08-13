@@ -1,0 +1,309 @@
+{
+  "schema": "ngc4254_ffl_uncertainty_source_acquisition_v04",
+  "status": "SOURCE_UNCERTAINTY_ACQUISITION_PARTIAL_CO_EXACT_HI_CONTROL_STELLAR_INPUTS_READY",
+  "galaxy": "NGC4254",
+  "source_products_acquired": 21,
+  "co_pixelwise_moment0_uncertainty_acquired": true,
+  "co_error_map_matches_frozen_moment0_grid": true,
+  "hi_public_spectral_cube_acquired": true,
+  "hi_public_cube_role": "nonidentical_noise_and_channel_correlation_control",
+  "hi_public_cube_beam": {
+    "major_arcsec": 29.973240000000004,
+    "minor_arcsec": 26.698320000000002,
+    "pa_deg": 51.71
+  },
+  "hi_frozen_moment0_beam": {
+    "major_arcsec": 37.702799999999996,
+    "minor_arcsec": 32.94612,
+    "pa_deg": 42.4
+  },
+  "hi_public_cube_is_exact_parent_of_frozen_moment0": false,
+  "hi_public_cube_noise_control": {
+    "role": "robust1_control_not_robust5_moment0_covariance",
+    "linefree_channels_one_based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "spatial_control": "outer_100_pixel_border_of_512x512_cube",
+    "estimator": "1.4826_median_absolute_deviation_per_channel",
+    "per_channel_sigma_mjy_beam": [
+      0.7246744654315989,
+      0.4656510934759353,
+      0.41933049781364384,
+      0.3119639580905641,
+      0.2973911183340533,
+      0.29284899776685047,
+      0.30458188556658566,
+      0.32047890032990833,
+      0.4479467942670453,
+      0.514443453347235,
+      0.669170672367909,
+      1.0359909919614438,
+      1.912641876553607,
+      4.297909418097697
+    ],
+    "median_sigma_mjy_beam": 0.45679894387149034,
+    "minimum_sigma_mjy_beam": 0.29284899776685047,
+    "maximum_sigma_mjy_beam": 4.297909418097697,
+    "median_clipped_adjacent_channel_correlation": 0.17096512001120534,
+    "published_viva_atlas_rms_mjy_beam": 0.41,
+    "median_to_published_ratio": 1.1141437655402204,
+    "published_value_role": "survey_table_cross_check_for_robust1_cube"
+  },
+  "hi_pixelwise_moment0_uncertainty_acquired": false,
+  "hi_exact_moment0_uncertainty_construction_now_possible": false,
+  "hi_control_uncertainty_construction_now_possible": true,
+  "hi_exact_parent_blocker": "the public cube is robust=1 with a different CLEAN beam, while the frozen moment0 history identifies a robust=5, 8 klambda UV-tapered parent cube; that exact parent cube or a source-native moment0 error map is not exposed in the public archive index",
+  "stellar_pixelwise_p5_uncertainty_acquired": false,
+  "stellar_uncertainty_inputs_acquired": {
+    "pre_ica_channel_maps": true,
+    "coverage_weight_maps": true,
+    "foreground_background_masks": true,
+    "radial_photometric_errors": true,
+    "ica_mask": true,
+    "ica_color_map": true,
+    "removed_nonstellar_component": true,
+    "instrument_psf_documentation": true,
+    "galaxy_specific_p3_sky_and_noise": true
+  },
+  "s4g_p3_noise_row": {
+    "schema": "ngc4254_s4gcat_p3_noise_v01",
+    "object": "NGC4254",
+    "ra_deg": 184.706831,
+    "dec_deg": 14.416424,
+    "sky1_mjy_sr": 0.041704,
+    "ssky1_mjy_sr": 0.010044,
+    "esky1_mjy_sr": 0.002681,
+    "sky2_mjy_sr": 0.073855,
+    "ssky2_mjy_sr": 0.015035,
+    "esky2_mjy_sr": 0.002199,
+    "catalog": "IRSA S4G Catalog (s4gcat)",
+    "query": "SELECT object,ra,dec,sky1,ssky1,esky1,sky2,ssky2,esky2 FROM s4gcat WITHIN 5 arcsec OF ICRS(184.70677,14.41649)",
+    "catalog_documentation_url": "https://irsa.ipac.caltech.edu/data/SPITZER/S4G/gator_docs/s4g_colDescriptions.html"
+  },
+  "existing_frozen_products": {
+    "co_broad_moment0": "data/external/literature/ngc4254_phangs_tracer_velocity/group.uid___A001_X2fb_X29a.lp_schinner.ngc4254_12m7mtp_co21_broad_mom0.fits",
+    "co_broad_moment0_sha256": "ba6fbc147029ef030a4bc2b63893f7141b0c2ce7453a0edc8b548dc850888c9b",
+    "s4g_p5_stellar": "data/external/literature/ngc4254_phangs_tracer_velocity/NGC4254.stellar.fits",
+    "s4g_p5_stellar_sha256": "4efe2976e8ace1ef407702a35aba96b4e3e6cf53830134c8e7492ae4609817e2"
+  },
+  "p5_ngc4254_status_rows": [
+    "NGC4254            0         2         2      -0.005477       0.022761       0.138816       0.022892       0.735510     182.800003       0.197000      82.599998"
+  ],
+  "products": {
+    "group.uid___A001_X2fb_X29a.lp_schinner.ngc4254_12m7mtp_co21_broad_emom0.fits": {
+      "shape": [
+        1,
+        1,
+        466,
+        400
+      ],
+      "dtype": ">f4",
+      "bunit": "K.km.s-1",
+      "ctype": [
+        "RA---SIN",
+        "DEC--SIN",
+        "FREQ",
+        "STOKES"
+      ],
+      "finite_fraction": 0.9724785407725322,
+      "finite_min": 0.1857782006263733,
+      "finite_median": 0.7421365976333618,
+      "finite_max": 2.369084358215332,
+      "bmaj": 0.000494815869629,
+      "bmin": 0.000494815869629,
+      "bpa": 0.0,
+      "cdelt1": -0.0001388888888889,
+      "cdelt2": 0.0001388888888889,
+      "cdelt3": 1000.0,
+      "crval3": 230538000000.0,
+      "crpix3": 1.0
+    },
+    "ngc4254.cube.fits.gz": {
+      "shape": [
+        1,
+        63,
+        512,
+        512
+      ],
+      "dtype": ">f4",
+      "bunit": "JY/BEAM",
+      "ctype": [
+        "RA---SIN",
+        "DEC--SIN",
+        "VELO-HEL",
+        "STOKES"
+      ],
+      "finite_fraction": 1.0,
+      "cdelt1": -0.001388888923,
+      "cdelt2": 0.001388888923,
+      "cdelt3": -10305.46094,
+      "crval3": 2408000.0,
+      "crpix3": 32.0
+    },
+    "NGC4254.phot.1.fits": {
+      "shape": [
+        1646,
+        1456
+      ],
+      "dtype": ">f4",
+      "bunit": "MJy/sr",
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "finite_fraction": 0.5069549223558945,
+      "finite_min": -0.18387824296951294,
+      "finite_median": 0.04553569294512272,
+      "finite_max": 70.51436614990234
+    },
+    "NGC4254.phot.2.fits": {
+      "shape": [
+        1624,
+        1453
+      ],
+      "dtype": ">f4",
+      "bunit": "MJy/sr",
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "finite_fraction": 0.5057105394309039,
+      "finite_min": -0.24963051080703735,
+      "finite_median": 0.08288052678108215,
+      "finite_max": 250.24781799316406
+    },
+    "NGC4254.phot.1_wt.fits": {
+      "shape": [
+        1646,
+        1456
+      ],
+      "dtype": ">f4",
+      "bunit": "MJy/sr",
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "finite_fraction": 0.5069549223558945,
+      "finite_min": 1.976210342036211e-06,
+      "finite_median": 44.98340606689453,
+      "finite_max": 208.17208862304688
+    },
+    "NGC4254.phot.2_wt.fits": {
+      "shape": [
+        1624,
+        1453
+      ],
+      "dtype": ">f4",
+      "bunit": "MJy/sr",
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "finite_fraction": 0.5057105394309039,
+      "finite_min": 8.244423042924609e-06,
+      "finite_median": 45.64513397216797,
+      "finite_max": 176.95494079589844
+    },
+    "NGC4254.1.final_mask.fits": {
+      "shape": [
+        1646,
+        1456
+      ],
+      "dtype": "uint16",
+      "bunit": "MJy/sr",
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "finite_fraction": 1.0,
+      "finite_min": 0.0,
+      "finite_median": 0.0,
+      "finite_max": 2101.0
+    },
+    "NGC4254.2.final_mask.fits": {
+      "shape": [
+        1624,
+        1453
+      ],
+      "dtype": ">f4",
+      "bunit": "MJy/sr",
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "finite_fraction": 1.0,
+      "finite_min": 0.0,
+      "finite_median": 0.0,
+      "finite_max": 2101.0,
+      "cdelt1": -0.00020833333333333,
+      "cdelt2": 0.000208333333333333
+    },
+    "NGC4254.ICAmask.fits": {
+      "shape": [
+        914,
+        809
+      ],
+      "dtype": ">f4",
+      "bunit": "MJy/sr",
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "finite_fraction": 1.0,
+      "finite_min": -300.0,
+      "finite_median": 0.0,
+      "finite_max": 5494.0
+    },
+    "NGC4254.colormap.fits": {
+      "shape": [
+        914,
+        809
+      ],
+      "dtype": ">f4",
+      "bunit": "MJy/sr",
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "finite_fraction": 0.5591675164249026,
+      "finite_min": -11.037834167480469,
+      "finite_median": -0.005477000027894974,
+      "finite_max": 15.141873359680176
+    },
+    "NGC4254.nonstellar.fits": {
+      "shape": [
+        914,
+        809
+      ],
+      "dtype": ">f4",
+      "bunit": "MJy/sr",
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "finite_fraction": 1.0,
+      "finite_min": -0.045076485723257065,
+      "finite_median": 0.0,
+      "finite_max": 12.389938354492188
+    }
+  },
+  "ledger": "data/derived/ngc4254_ffl_uncertainty_source_ledger_v04.csv",
+  "ledger_sha256": "c489c2cfd0588996f24b647918768051c7edc351dadf63ba03c0ff5739d6b5c1",
+  "velocity_or_residual_inputs": [],
+  "endpoint_scoring_allowed": false,
+  "next_construction": "derive the exact CO uncertainty field and a documented stellar uncertainty construction; use the robust-1 H I cube only as a noise/correlation control while requesting or locating the robust-5 parent cube before any exact H I covariance claim",
+  "claim_boundary": "source-native uncertainty acquisition and product-identity audit only; not a complete covariance, morphology attribution, channel signal, or endpoint score"
+}

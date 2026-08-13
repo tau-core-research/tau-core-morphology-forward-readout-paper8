@@ -1,0 +1,4 @@
+source_id,url,local_path,content_type,bytes,sha256,source_native,endpoint_access
+object_page,https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6537/u6537.html,data/external/literature/ngc3726_whisp_hi_route/whisp_ngc3726_object_page.html,text/html,1134,c9666235f5bc7d85f2cae47ea2bb0ad2d3bd7fab3e87070673d71aa4b5f5fa5a,True,False
+graphical_overview,https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6537/u6537plot.gif,data/external/literature/ngc3726_whisp_hi_route/whisp_ngc3726_overview.gif,image/gif,80123,ce13f3d628515a40ceb9a8e08bcabc114730baf2a5a557ba9f0154775b7c91d1,True,False
+observation_notes,https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/U6537/u6537obsred.html,data/external/literature/ngc3726_whisp_hi_route/whisp_ngc3726_obs_reduction_notes.html,text/html,2509,c9a00244d8c7883343e911aee8ba461ea64b920ae3ace27ad81f4b172aee0cb1,True,False

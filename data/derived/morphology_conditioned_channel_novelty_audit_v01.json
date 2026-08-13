@@ -1,0 +1,91 @@
+{
+  "schema": "tau-core.paper8.morphology-conditioned-channel-novelty-audit.v01",
+  "status": "NO_CURRENT_CHANNEL_CANDIDATE_PASSES_MORPHOLOGY_CONDITIONED_NOVELTY_RULE",
+  "baseline_status": "BODY_DOMINANT_JOINT_READOUT_SELECTED_AS_WORKING_BASELINE",
+  "theorem": "positive conditional information does not prove a new channel mode; structural novelty requires a source-frozen stacked-rank increment or independently proved nonfactorization",
+  "decision_rule": {
+    "source_freeze": "the body descriptor and terminal operator are fixed without rotation residuals",
+    "structural_novelty": "rank([C_existing;C_new])-rank(C_existing)>0 or nonfactorization is independently proved",
+    "innovation": "the new-mode contrast survives declared nuisance covariance and parity controls",
+    "body_increment": "the frozen body-plus-channel model improves grouped holdout prediction over the frozen body model",
+    "replication": "the same signed/mode-specific rule survives an independent body or path",
+    "promotion": "all five conditions are required for a detected nonconventional channel component"
+  },
+  "finite_witnesses": {
+    "duplicate_readout_rank_before": 1,
+    "duplicate_readout_rank_after": 1,
+    "duplicate_readout_rank_increment": 0,
+    "duplicate_readout_positive_conditional_information_bits": 0.29248125036057804,
+    "transverse_readout_rank_increment": 1
+  },
+  "current_candidates": [
+    {
+      "candidate": "bounded_population_sightline_load",
+      "source_frozen": true,
+      "structural_novelty": false,
+      "innovation_survives": false,
+      "body_increment_pass": false,
+      "independent_replication": false,
+      "reason": "train selects lambda=0; no holdout increment over the body model",
+      "promotion_pass": false
+    },
+    {
+      "candidate": "same_body_hi_halpha_radial_pair",
+      "source_frozen": true,
+      "structural_novelty": false,
+      "innovation_survives": false,
+      "body_increment_pass": false,
+      "independent_replication": false,
+      "reason": "positive conditional information is shared-source precision gain with zero stacked-rank increment",
+      "promotion_pass": false
+    },
+    {
+      "candidate": "dark_discrepancy_zone_hi_halpha_contrast",
+      "source_frozen": false,
+      "structural_novelty": false,
+      "innovation_survives": false,
+      "body_increment_pass": false,
+      "independent_replication": false,
+      "reason": "retrospective two-body contrast does not replicate and does not reach the body-increment score",
+      "promotion_pass": false
+    },
+    {
+      "candidate": "phangs_2d_morphology_conditioned_tracer_modes",
+      "source_frozen": true,
+      "structural_novelty": true,
+      "innovation_survives": false,
+      "body_increment_pass": false,
+      "independent_replication": false,
+      "reason": "the 2D harmonic carrier can represent transverse modes, but both robust maxima remain below 3 sigma and no body-increment endpoint was run",
+      "promotion_pass": false
+    },
+    {
+      "candidate": "phangs_preregistered_population_m2_mode",
+      "source_frozen": true,
+      "structural_novelty": false,
+      "innovation_survives": false,
+      "body_increment_pass": false,
+      "independent_replication": true,
+      "reason": "the frozen numerical m2 threshold passes, but the m1 control is also non-null and the confirmatory nonbarred label fails source integrity; no morphology-specific nonfactorization or body increment is established",
+      "promotion_pass": false
+    },
+    {
+      "candidate": "universal_tracer_independent_scalar",
+      "source_frozen": true,
+      "structural_novelty": false,
+      "innovation_survives": false,
+      "body_increment_pass": false,
+      "independent_replication": false,
+      "reason": "one universal tracer-independent scalar common/reciprocal channel law as complete explanation of current endpoints",
+      "promotion_pass": false
+    }
+  ],
+  "candidate_count": 6,
+  "promotion_pass_count": 0,
+  "next_single_measurement": "the source-certified nuisance atlas leaves no untouched low-order endpoint; close the m1/m2 selection lane and freeze a higher-dimensional morphology basis before new contrasts",
+  "time_status": "not identified; any time interpretation is downstream of a detected differential channel mode",
+  "quantum_status": "not identified; no frequency/polarization nonfactorization measurement is present",
+  "population_label_integrity_pass": false,
+  "untouched_low_order_endpoint_count": 0,
+  "claim_boundary": "finite decision audit over existing Paper 8 results; it neither proves channel absence nor permits residual-based channel construction"
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "tau_core_ngc4303_phangs_rotation_endpoint_v01",
+  "status": "NUMERIC_ENDPOINT_ACQUIRED_QUALITY_LIMITED_SCORING_CLOSED",
+  "source": "Lang, Meidt and the PHANGS collaboration (2020)",
+  "doi": "10.3847/1538-4357/ab9953",
+  "checksums_sha256": {
+    "PHANGS_RC_all_kpc.ecsv": "8f570093da3aed1c00748cc728e609e66b8bd372fb6eca3c55d04576c2953e79",
+    "PHANGS_RC_all_arcsec.ecsv": "aefa39146abab298953c4516f10cd978a94e5709f7405b954b492b2e7c2d4b35"
+  },
+  "n_points": 43,
+  "radius_range_kpc": [
+    0.125,
+    6.425
+  ],
+  "inclination_deg": 23.5,
+  "inclination_error_deg": 9.2,
+  "paper_unreliable_fit_marker": false,
+  "outer_velocity_field_truncated_arcsec": 60.0,
+  "outer_truncation_reason": "outer bins overly sensitive to minor-axis information from incomplete coverage",
+  "tracer": "PHANGS CO(2-1)",
+  "strictly_independent_tracer_from_coming": false,
+  "endpoint_values_now_open": true,
+  "new_operator_selection_on_ngc4303_allowed": false,
+  "existing_prefrozen_operator_diagnostic_only": true,
+  "strict_endpoint_scoring_allowed": false,
+  "claim_boundary": "official numeric curve acquired; low-inclination and shared-CO quality limits block strict independent validation"
+}

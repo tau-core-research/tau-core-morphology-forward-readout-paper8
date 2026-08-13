@@ -1,0 +1,80 @@
+{
+  "schema": "phangs_radial_body_projection_operator_audit_v01",
+  "status": "COVARIANCE_WEIGHTED_BODY_PROJECTOR_IDENTITIES_PASS",
+  "galaxies": {
+    "NGC1087": {
+      "source_rank": 8,
+      "projection_rank": 12,
+      "projected_covariance_rank": 12,
+      "annihilation_max_abs": 1.9736862562351764e-14,
+      "idempotence_max_abs": 1.2628786905111156e-14,
+      "weighted_self_adjoint_max_abs": 5.218048215738236e-15,
+      "body_vector_q": 2.138904698762956e-27,
+      "radial_reverse_rank": 8,
+      "phase_pi_over_2_rank": 8,
+      "stellar_only_rank": 4,
+      "co_only_rank": 4
+    },
+    "NGC1433": {
+      "source_rank": 8,
+      "projection_rank": 12,
+      "projected_covariance_rank": 12,
+      "annihilation_max_abs": 3.352639075656829e-15,
+      "idempotence_max_abs": 3.6637359812630166e-15,
+      "weighted_self_adjoint_max_abs": 6.74807432154978e-16,
+      "body_vector_q": 2.7290154564343483e-28,
+      "radial_reverse_rank": 8,
+      "phase_pi_over_2_rank": 8,
+      "stellar_only_rank": 4,
+      "co_only_rank": 4
+    },
+    "NGC1566": {
+      "source_rank": 8,
+      "projection_rank": 12,
+      "projected_covariance_rank": 12,
+      "annihilation_max_abs": 3.94420297447133e-15,
+      "idempotence_max_abs": 7.244205235679146e-15,
+      "weighted_self_adjoint_max_abs": 1.547373340571312e-15,
+      "body_vector_q": 1.3931080530254384e-28,
+      "radial_reverse_rank": 8,
+      "phase_pi_over_2_rank": 8,
+      "stellar_only_rank": 4,
+      "co_only_rank": 4
+    },
+    "NGC1672": {
+      "source_rank": 8,
+      "projection_rank": 12,
+      "projected_covariance_rank": 12,
+      "annihilation_max_abs": 2.425994760407214e-15,
+      "idempotence_max_abs": 2.4980018054066022e-15,
+      "weighted_self_adjoint_max_abs": 5.499073418846478e-16,
+      "body_vector_q": 2.6082485656099443e-29,
+      "radial_reverse_rank": 8,
+      "phase_pi_over_2_rank": 8,
+      "stellar_only_rank": 4,
+      "co_only_rank": 4
+    },
+    "NGC7496": {
+      "source_rank": 8,
+      "projection_rank": 12,
+      "projected_covariance_rank": 12,
+      "annihilation_max_abs": 3.67976163527169e-15,
+      "idempotence_max_abs": 5.051514762044462e-15,
+      "weighted_self_adjoint_max_abs": 8.222589276130066e-16,
+      "body_vector_q": 8.661770429009472e-29,
+      "radial_reverse_rank": 8,
+      "phase_pi_over_2_rank": 8,
+      "stellar_only_rank": 4,
+      "co_only_rank": 4
+    }
+  },
+  "all_operator_checks_pass": true,
+  "rank_relative_svd_tolerance": 1e-10,
+  "covariance_role": "deterministic synthetic SPD matrices for algebra and conditioning only",
+  "velocity_contrast_used": false,
+  "terminal_coefficients_used": false,
+  "confirmatory_galaxies_opened": [],
+  "endpoint_score_computed": false,
+  "endpoint_scoring_allowed": false,
+  "claim_boundary": "finite numerical audit of projector identities and source controls; not an empirical body-orthogonal mode, channel, time, quantum, Tau, or dark-sector result"
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "common_channel_exclusion_matrix_v01",
+  "rows": [
+    {
+      "family": "side-odd reciprocal scalar",
+      "objects": "UGC08490 + UGC07323",
+      "result": "rejected as complete pointwise law in both preflights",
+      "gate_pass": false,
+      "reason": "distributed common-q incompatibility without stable global side bias"
+    },
+    {
+      "family": "same-galaxy tracer-independent common scalar",
+      "objects": "NGC4254",
+      "result": "tracer agreement rejected and geometry-confounded",
+      "gate_pass": false,
+      "reason": "CO/Halpha p=6.58e-06; geometry all-significant=False"
+    },
+    {
+      "family": "same-instrument line-independent common scalar",
+      "objects": "NGC4254 MUSE lines",
+      "result": "line consistency rejected",
+      "gate_pass": false,
+      "reason": "five-line control p=8.638e-05"
+    },
+    {
+      "family": "cross-galaxy reproducible common scalar",
+      "objects": "NGC4254 -> NGC3351",
+      "result": "not replicated",
+      "gate_pass": false,
+      "reason": "NGC3351 common p=0.05316; tracer p=0.00314"
+    },
+    {
+      "family": "same-source multipath scalar shift",
+      "objects": "SDP.81 q1",
+      "result": "target window not exceptional",
+      "gate_pass": false,
+      "reason": "rolling-window upper-tail fraction=0.625"
+    }
+  ],
+  "all_universal_scalar_gates_pass": false,
+  "excluded_candidate_family": "one universal tracer-independent scalar common/reciprocal channel law as complete explanation of current endpoints",
+  "not_excluded": [
+    "body-conditioned finite-rank channel",
+    "frequency/polarization selective channel",
+    "noncommutative or transition-sensitive channel",
+    "common mode below current systematics",
+    "parent-readout effect not represented by these observables"
+  ],
+  "physical_channel_detected": false,
+  "dark_matter_replacement_supported": false,
+  "claim_boundary": "joint constraint matrix; correlated tests are not summed as independent evidence"
+}

@@ -1,0 +1,10 @@
+candidate,alpha,origin,train_selected,train_mean_galaxy_rmse_km_s,holdout_mean_galaxy_rmse_km_s,holdout_median_galaxy_rmse_km_s
+log_fixed_0360,0.36,frozen TPG/v6,False,16.27893148074056,17.642542601964035,13.241618216534361
+log_cosmology_0366,0.366,2 a0/(c H0 Planck) candidate,False,16.28351249014131,17.665522990553498,13.364589384328468
+log_train_alpha,0.3908357054141126,alpha selected on historical train,True,16.564649881627208,17.978935176699917,14.022388304228333
+generalized_dtl_train_selected_g1.0_b1.0,0.3908357054141126,gamma beta and alpha selected on historical train,True,16.564649881627208,17.978935176699917,14.022388304228333
+bounded_train_alpha,0.8109480403115186,alpha selected on historical train,True,21.53548961853853,21.418021239535793,17.822382593188102
+linear_train_alpha,0.05932285501601134,alpha selected on historical train,True,25.989720892083596,25.02229503422658,20.950764818215934
+bounded_fixed,0.36,saturating control,False,29.310114337093278,29.408309634131886,29.747596926977657
+newton,0.0,no low-acceleration response,False,43.34437424290374,42.6906862018363,40.372806874610156
+linear_fixed,0.36,additive loading control,False,191.41152936329058,152.07095914117906,128.4661791649556

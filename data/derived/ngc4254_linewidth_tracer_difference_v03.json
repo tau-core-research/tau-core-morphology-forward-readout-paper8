@@ -1,0 +1,32 @@
+{
+  "schema": "ngc4254_linewidth_tracer_difference_v03",
+  "sources": {
+    "co_strict_mom2": {
+      "path": "data/external/literature/ngc4254_phangs_tracer_velocity/group.uid___A001_X2fb_X29a.lp_schinner.ngc4254_12m7mtp_co21_strict_mom2.fits",
+      "sha256": "448143971a6d3435d1224969af785c3498eb3395865374818c4bcd9636c83c23"
+    },
+    "co_strict_ew": {
+      "path": "data/external/literature/ngc4254_phangs_tracer_velocity/group.uid___A001_X2fb_X29a.lp_schinner.ngc4254_12m7mtp_co21_strict_ew.fits",
+      "sha256": "4c637b531e1f709144380c8a819722e7d99a20d762083180cd31703668f31d06"
+    }
+  },
+  "n_nonreference_annuli": 5,
+  "absolute_tracer_difference_vs_co_mom2_spearman": {
+    "rho": -0.6,
+    "p": 0.28475697986529375
+  },
+  "absolute_tracer_difference_vs_halpha_observed_sigma_spearman": {
+    "rho": 0.0,
+    "p": 1.0
+  },
+  "co_linewidth_data_blocker_removed": true,
+  "pressure_support_correction_derived": false,
+  "reasons_not_corrected": [
+    "five nonreference annuli only",
+    "Halpha sigma includes instrumental and thermal broadening",
+    "moment-2 and equivalent width do not uniquely determine asymmetric drift",
+    "surface-density and anisotropy gradients are not yet propagated"
+  ],
+  "common_channel_detected": false,
+  "claim_boundary": "linewidth association diagnostic, not a pressure correction or channel test"
+}

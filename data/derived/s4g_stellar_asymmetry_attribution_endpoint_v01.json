@@ -1,0 +1,73 @@
+{
+  "schema": "s4g_stellar_asymmetry_attribution_endpoint_v01",
+  "status": "RETROSPECTIVE_S4G_STELLAR_ASYMMETRY_SIGNAL_FAIL",
+  "claim_level": "retrospective_source_family_prevalidation",
+  "n_rows": 75,
+  "n_folds": 5,
+  "source_channel_correlation": 0.8337463011106223,
+  "tpg_3p6_primary": {
+    "mse_baseline": 0.5098449664667917,
+    "mse_augmented": 0.5183470482511376,
+    "mse_reduction": -0.008502081784345972,
+    "proportional_mse_reduction": -0.016675817833929223,
+    "asymmetry_coefficients": [
+      -0.0020763980065101315,
+      -0.021250506829577968,
+      0.029692966005818243,
+      0.07425905312426904,
+      -0.020054888351942045
+    ],
+    "positive_asymmetry_coefficient_folds": 2
+  },
+  "tpg_4p5_replication": {
+    "mse_baseline": 0.5098449664667917,
+    "mse_augmented": 0.5151987595386719,
+    "mse_reduction": -0.00535379307188022,
+    "proportional_mse_reduction": -0.010500825592104643,
+    "asymmetry_coefficients": [
+      -0.10968156721533501,
+      -0.042959104449483025,
+      -0.076866235083521,
+      -0.004214185112219679,
+      -0.0315583401805611
+    ],
+    "positive_asymmetry_coefficient_folds": 0
+  },
+  "newtonian_3p6_control": {
+    "mse_baseline": 0.45778313698146283,
+    "mse_augmented": 0.46068248421840535,
+    "mse_reduction": -0.0028993472369425177,
+    "proportional_mse_reduction": -0.006333451371888174,
+    "asymmetry_coefficients": [
+      0.1229477172765529,
+      0.0068627900347855665,
+      0.0826008938661896,
+      0.0396775158800526,
+      0.05769732227018936
+    ],
+    "positive_asymmetry_coefficient_folds": 5
+  },
+  "shuffle": {
+    "n": 2000,
+    "p_3p6": 0.37231384307846077,
+    "p_4p5": 0.29235382308845576,
+    "q95_3p6": 0.022454007775373427,
+    "q95_4p5": 0.0225531377810162
+  },
+  "gates": {
+    "source_channel_correlation_ge_0p8": true,
+    "positive_tpg_oof_reduction_3p6": false,
+    "positive_tpg_oof_reduction_4p5": false,
+    "shuffle_p_le_0p05_3p6": false,
+    "shuffle_p_le_0p05_4p5": false,
+    "above_shuffle_q95_3p6": false,
+    "above_shuffle_q95_4p5": false,
+    "positive_coefficient_in_4_of_5_folds_3p6": false,
+    "positive_coefficient_in_4_of_5_folds_4p5": false,
+    "tpg_gain_exceeds_newtonian_control": false
+  },
+  "freeze_sha256": "05deb1a1518d09d553774bf3fe69838ebc8bdd6d345ecb8763e143570fe70cb8",
+  "source_sha256": "a8a5c87217ffc76c8bf7ccf0e66d170200250392b0a08e69df6749e210ec547a",
+  "endpoint_sha256": "88a11d850b4f556197da12349601c2812fa46698293c9bea1882791fb69194f8",
+  "claim_boundary": "retrospective source-family prevalidation; a pass would establish only incremental stellar-asymmetry information after broad controls, not M_tau"
+}

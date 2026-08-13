@@ -1,0 +1,5 @@
+harmonic,beam_mode,baseline_q_shape_proxy,source_q_min,source_q_max,source_sign_stable,source_phase_max_delta_deg,source_phase_stable,measurement_q_p025,measurement_q_median,measurement_q_p975,measurement_baseline_sign_probability,measurement_sign_stable_95,measurement_phase_p95_delta_deg,measurement_phase_stable,passes_both_separate_gates,minimum_delta_uv_source_systematics,minimum_role_pixels_source_systematics
+1,0,-0.005312701457,-0.01015886272,0.07108252618,False,13.10717992,True,-0.1461649996,-0.01312396579,0.1076309234,0.5546875,False,26.02472723,False,False,0.9713314804,3
+1,1,-0.06754237606,-0.1369146936,0.02202689478,False,13.10717992,True,-0.2226314338,-0.04105634218,0.1096293003,0.68359375,False,26.02472723,False,False,0.7473054737,3
+2,0,0.1020894902,-0.1173803943,0.1663383766,False,5.443454353,True,0.08128441353,0.1039108335,0.1283866283,0.99609375,True,3.93522033,True,False,0.8294720214,3
+2,1,0.1391221154,0.07278703482,0.2171410908,True,5.443454353,True,0.02716908576,0.1396487361,0.2644357037,0.9765625,True,3.93522033,True,True,0.5538834988,3

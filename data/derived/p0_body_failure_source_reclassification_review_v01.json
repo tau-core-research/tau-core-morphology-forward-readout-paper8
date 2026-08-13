@@ -1,0 +1,15 @@
+{
+  "schema": "tau-core.paper8.p0-body-failure-source-reclassification-review.v01",
+  "status": "P0_FAILURES_SHOW_SOURCE_BACKED_RECLASSIFICATION_PRESSURE",
+  "n_p0": 4,
+  "n_high_pressure": 4,
+  "proposed_subfamilies": {
+    "UGC04305": "K_scale_tail_turbulent_holey",
+    "UGC07577": "K_disturbed_tidal_history",
+    "NGC4088": "K_warped_asymmetric_disturbed_disk",
+    "NGC4389": "K_bar_dominated_non_circular"
+  },
+  "inspected_holdout_rescoring_allowed": false,
+  "next_use": "freeze these subfamily definitions and observables on a new or untouched source packet before scoring",
+  "claim_boundary": "post-score primary-source review; reclassification pressure only, not retrospective endpoint repair or channel detection"
+}

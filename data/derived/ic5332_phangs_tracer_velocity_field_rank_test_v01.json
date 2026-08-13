@@ -1,0 +1,359 @@
+{
+  "schema": "ic5332_phangs_tracer_velocity_field_rank_test_v01",
+  "status": "TWO_DIMENSIONAL_TRACER_INNOVATION_DIAGNOSTIC",
+  "galaxy": "IC5332",
+  "morphology_control": "nonbarred_population_m2_test",
+  "replication_role": "preregistered confirmatory population endpoint",
+  "tracers": [
+    "CO(2-1)",
+    "H-alpha"
+  ],
+  "common_quality_pixels": 9633,
+  "beam_independent_pixels": 585,
+  "co_beam_arcsec": 0.73540112133168,
+  "muse_input_psf_arcsec": 0.87,
+  "velocity_zero_point_offset_km_s": 699.4468709840414,
+  "common_velocity_field_fits": "data/derived/ic5332_phangs_common_tracer_velocity_field_v01.fits",
+  "harmonic_basis": "five radial zones times {m0,m1_cos,m1_sin,m2_cos,m2_sin}",
+  "global_zero_innovation_chi2": 3104.8320292743865,
+  "global_zero_innovation_dof": 25,
+  "global_zero_innovation_p": 0.0,
+  "max_absolute_mode_z": 12.148022568495337,
+  "formal_abs_z_ge_3_mode_count": 18,
+  "sector_jackknife_global_chi2_diagnostic": 153.85144732457005,
+  "sector_jackknife_global_rank": 25,
+  "sector_jackknife_global_p_diagnostic": 1.6382479147422453e-20,
+  "sector_jackknife_max_absolute_mode_z": 3.2903744868898266,
+  "zone_mode_blocks": [
+    {
+      "zone": 0,
+      "radius_min_arcsec": 3.2438416250273803,
+      "radius_max_arcsec": 17.13017058490896,
+      "mode_order": [
+        "m0",
+        "m1_cos",
+        "m1_sin",
+        "m2_cos",
+        "m2_sin"
+      ],
+      "coefficient_km_s": [
+        -0.7363344671236004,
+        -1.2822827909326986,
+        -1.5056132866389125,
+        3.8881104760705307,
+        -2.735817545938594
+      ],
+      "sector_jackknife_covariance_km2_s2": [
+        [
+          1.1377722042443195,
+          -0.03808734554145426,
+          0.49543878964762744,
+          -0.2061389838379846,
+          0.08021222493100315
+        ],
+        [
+          -0.038087345541454244,
+          1.743251326834678,
+          -0.0339905230562516,
+          -0.9590836766991419,
+          0.8695922704460038
+        ],
+        [
+          0.4954387896476275,
+          -0.033990523056251595,
+          1.9236007125328323,
+          0.0796788480754709,
+          0.7270197700232102
+        ],
+        [
+          -0.20613898383798457,
+          -0.9590836766991419,
+          0.07967884807547092,
+          1.3963250672636136,
+          -0.5669454247618124
+        ],
+        [
+          0.08021222493100323,
+          0.8695922704460038,
+          0.7270197700232102,
+          -0.5669454247618123,
+          2.1417637584775835
+        ]
+      ]
+    },
+    {
+      "zone": 1,
+      "radius_min_arcsec": 17.13017058490896,
+      "radius_max_arcsec": 26.68346689100921,
+      "mode_order": [
+        "m0",
+        "m1_cos",
+        "m1_sin",
+        "m2_cos",
+        "m2_sin"
+      ],
+      "coefficient_km_s": [
+        -2.3259613244043957,
+        -0.9222460605664863,
+        -3.0951566199805103,
+        -0.8750445615933802,
+        -0.021315800644184434
+      ],
+      "sector_jackknife_covariance_km2_s2": [
+        [
+          3.6278166838234696,
+          2.5592568981706094,
+          -0.10110192951309802,
+          2.2641824536170336,
+          -0.8889389544918743
+        ],
+        [
+          2.5592568981706094,
+          9.205834327880014,
+          -0.5920276526565629,
+          2.2042770805078225,
+          -0.16127206551164314
+        ],
+        [
+          -0.10110192951309788,
+          -0.5920276526565627,
+          4.439793338794045,
+          1.4985444854993566,
+          1.2157216621905502
+        ],
+        [
+          2.264182453617034,
+          2.204277080507823,
+          1.4985444854993568,
+          8.096964401163502,
+          -1.0927274214938176
+        ],
+        [
+          -0.8889389544918742,
+          -0.16127206551164266,
+          1.21572166219055,
+          -1.0927274214938179,
+          5.533824405907541
+        ]
+      ]
+    },
+    {
+      "zone": 2,
+      "radius_min_arcsec": 26.68346689100921,
+      "radius_max_arcsec": 34.31483459802657,
+      "mode_order": [
+        "m0",
+        "m1_cos",
+        "m1_sin",
+        "m2_cos",
+        "m2_sin"
+      ],
+      "coefficient_km_s": [
+        -1.221662337177052,
+        -0.6006694730378778,
+        -1.5048913445219299,
+        -4.016825603310614,
+        3.6931605691806246
+      ],
+      "sector_jackknife_covariance_km2_s2": [
+        [
+          8.717314477638611,
+          10.003692763478316,
+          -2.048122000481054,
+          7.339914236051346,
+          -2.512499255692244
+        ],
+        [
+          10.003692763478316,
+          24.353840131972095,
+          -2.421572744077568,
+          11.284991350194124,
+          -7.088995011707063
+        ],
+        [
+          -2.048122000481054,
+          -2.421572744077568,
+          5.746527424652291,
+          -1.1509268918993696,
+          2.601245989545844
+        ],
+        [
+          7.339914236051346,
+          11.284991350194124,
+          -1.1509268918993698,
+          11.226173865459552,
+          -2.674017057786155
+        ],
+        [
+          -2.5124992556922443,
+          -7.088995011707064,
+          2.6012459895458444,
+          -2.674017057786155,
+          10.907308114836992
+        ]
+      ]
+    },
+    {
+      "zone": 3,
+      "radius_min_arcsec": 34.31483459802657,
+      "radius_max_arcsec": 44.01400387753537,
+      "mode_order": [
+        "m0",
+        "m1_cos",
+        "m1_sin",
+        "m2_cos",
+        "m2_sin"
+      ],
+      "coefficient_km_s": [
+        -2.4831454217731763,
+        1.6134803591094184,
+        7.073693256559225,
+        -0.5713357039958763,
+        6.750250961973237
+      ],
+      "sector_jackknife_covariance_km2_s2": [
+        [
+          4.079444407017775,
+          2.6426539968951452,
+          -4.611269542292694,
+          -2.9600146263220948,
+          -4.073684736087181
+        ],
+        [
+          2.6426539968951452,
+          3.357189770546043,
+          -5.248375908821833,
+          -0.8108219913068689,
+          -3.815823922472151
+        ],
+        [
+          -4.611269542292694,
+          -5.248375908821833,
+          14.352741860078272,
+          0.9310348173803311,
+          7.720254167283524
+        ],
+        [
+          -2.9600146263220948,
+          -0.8108219913068688,
+          0.9310348173803311,
+          4.07226016729419,
+          2.661432387827091
+        ],
+        [
+          -4.073684736087181,
+          -3.815823922472151,
+          7.720254167283524,
+          2.6614323878270914,
+          6.7515334515781245
+        ]
+      ]
+    },
+    {
+      "zone": 4,
+      "radius_min_arcsec": 44.01400387753537,
+      "radius_max_arcsec": 64.6759354871716,
+      "mode_order": [
+        "m0",
+        "m1_cos",
+        "m1_sin",
+        "m2_cos",
+        "m2_sin"
+      ],
+      "coefficient_km_s": [
+        1.0725412941267338,
+        2.5569597663636787,
+        -7.558950747835896,
+        -4.4955416579753775,
+        -3.9870889792932056
+      ],
+      "sector_jackknife_covariance_km2_s2": [
+        [
+          10.781734615837191,
+          2.7080869893706407,
+          -18.28960895578969,
+          -11.012198097286886,
+          -1.6689265169122145
+        ],
+        [
+          2.7080869893706407,
+          2.200238711936653,
+          -7.7705584227676,
+          -4.303290382222604,
+          1.433827188498022
+        ],
+        [
+          -18.289608955789685,
+          -7.770558422767599,
+          42.29587605039514,
+          21.52823316131549,
+          -1.4274793804337702
+        ],
+        [
+          -11.012198097286886,
+          -4.303290382222604,
+          21.52823316131549,
+          13.384287588440387,
+          -1.621741114490825
+        ],
+        [
+          -1.6689265169122145,
+          1.433827188498022,
+          -1.4274793804337704,
+          -1.6217411144908245,
+          8.561912033793119
+        ]
+      ]
+    }
+  ],
+  "error_floor_sensitivity": [
+    {
+      "error_floor_km_s": 0.0,
+      "global_chi2": 3104.8320292743865,
+      "dof": 25,
+      "p": 0.0,
+      "max_absolute_mode_z": 12.148022568495337
+    },
+    {
+      "error_floor_km_s": 1.0,
+      "global_chi2": 1159.641204452741,
+      "dof": 25,
+      "p": 6.877806269594739e-229,
+      "max_absolute_mode_z": 10.773409638413566
+    },
+    {
+      "error_floor_km_s": 3.0,
+      "global_chi2": 397.10851129914136,
+      "dof": 25,
+      "p": 1.2137799114938696e-68,
+      "max_absolute_mode_z": 7.198133759514983
+    },
+    {
+      "error_floor_km_s": 5.0,
+      "global_chi2": 225.88778261722217,
+      "dof": 25,
+      "p": 2.9305636525968277e-34,
+      "max_absolute_mode_z": 5.015684768167651
+    },
+    {
+      "error_floor_km_s": 10.0,
+      "global_chi2": 91.0787615885221,
+      "dof": 25,
+      "p": 1.9060722631597083e-09,
+      "max_absolute_mode_z": 2.9242051687068233
+    }
+  ],
+  "distinct_tracer_field_mode_candidate": true,
+  "construction_uses_rotation_residual": false,
+  "time_channel_identified": false,
+  "quantum_channel_identified": false,
+  "limitations": [
+    "formal chi-square still uses diagonal per-pixel errors after beam-independent subsampling",
+    "sector jackknife is a robustness diagnostic and does not estimate a complete spatial covariance matrix",
+    "MUSE velocity-extension BUNIT metadata is incorrect in DR1 although values are documented as km/s",
+    "global geometry is frozen from published H-alpha kinematics rather than refit",
+    "gas phase, bar streaming, line formation and pressure support remain physical alternatives",
+    "the retained angular-family interpretation is supplied by the separate morphology-removal audit"
+  ],
+  "claim_boundary": "per-galaxy 2D CO/H-alpha field innovation diagnostic; a nonzero harmonic contrast is tracer-field structure, not observer-time, path, quantum, Tau Core, or dark-sector detection"
+}

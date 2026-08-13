@@ -1,0 +1,37 @@
+{
+  "schema": "dark_discrepancy_channel_disturbance_classification_v02",
+  "status": "LOCAL_CANDIDATE_ALIGNS_WITH_SOURCE_AND_PATH_DISTURBANCE_CONFOUNDED",
+  "classified_results": {
+    "NGC3726": {
+      "combined_class": "S3-P2-O0",
+      "source_class": "S3",
+      "path_class": "P2",
+      "observation_class": "O0",
+      "foreground_candidate_count": 1,
+      "foreground_inverse_angle_weight": 0.6636040825370075,
+      "post_d1p5_zero_p": 0.04289091569917987,
+      "local_channel_candidate": true
+    },
+    "NGC4559": {
+      "combined_class": "S0-P0-O0",
+      "source_class": "S0",
+      "path_class": "P0",
+      "observation_class": "O0",
+      "foreground_candidate_count": 0,
+      "foreground_inverse_angle_weight": 0.0,
+      "post_d1p5_zero_p": 0.10767901058724341,
+      "local_channel_candidate": false
+    }
+  },
+  "pattern": "candidate=S3-P2-O0; null=S0-P0-O0",
+  "source_vs_path_separable": false,
+  "physical_channel_detected": false,
+  "required_replication_cells": [
+    "S0-P2-O0",
+    "S3-P0-O0",
+    "S0-P0-O0",
+    "S3-P2-O0"
+  ],
+  "interpretation": "The only local candidate occurs where both source and preliminary foreground-path disturbance are elevated. The clean null differs on both axes, so morphology/source and path-channel effects are confounded rather than identified.",
+  "verdict": "FOREGROUND_ALIGNMENT_INTERESTING_BUT_SOURCE_PATH_CONFOUNDED"
+}

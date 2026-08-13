@@ -1,0 +1,119 @@
+{
+  "schema": "ngc4254_s4g_photometric_geometry_freeze_v02",
+  "status": "SOURCE_ONLY_S4G_PHOTOMETRIC_GEOMETRY_FROZEN",
+  "galaxy": "NGC4254",
+  "center_icrs_deg": [
+    184.70677,
+    14.41649
+  ],
+  "position_angle_deg_east_of_north": 76.6,
+  "ellipticity": 0.203,
+  "axis_ratio": 0.7969999999999999,
+  "inclination_deg": 37.1554291033931,
+  "inclination_rule": "thin circular disk: i=acos(1-Ell)",
+  "s4g_global_fit": {
+    "flag": "ok",
+    "source_radial_range_arcsec": [
+      161.0,
+      187.0
+    ],
+    "position_angle_error_deg": 5.9,
+    "ellipticity_error": 0.015,
+    "global_sersic_axis_ratio": 0.808,
+    "global_sersic_position_angle_deg": 63.11,
+    "catalog_url": "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/219/4/galaxies",
+    "published_table_url": "https://www.oulu.fi/astronomy/S4G_PIPELINE4/s4g_p4_table1.pdf"
+  },
+  "photometric_geometry_controls": [
+    {
+      "name": "s4g_global_pa_minus_1sigma",
+      "position_angle_deg_east_of_north": 70.69999999999999,
+      "axis_ratio": 0.7969999999999999,
+      "inclination_deg": 37.1554291033931
+    },
+    {
+      "name": "s4g_global_pa_plus_1sigma",
+      "position_angle_deg_east_of_north": 82.5,
+      "axis_ratio": 0.7969999999999999,
+      "inclination_deg": 37.1554291033931
+    },
+    {
+      "name": "s4g_global_ellipticity_minus_1sigma",
+      "position_angle_deg_east_of_north": 76.6,
+      "ellipticity": 0.188,
+      "axis_ratio": 0.812,
+      "inclination_deg": 35.708200383693274
+    },
+    {
+      "name": "s4g_global_ellipticity_plus_1sigma",
+      "position_angle_deg_east_of_north": 76.6,
+      "ellipticity": 0.21800000000000003,
+      "axis_ratio": 0.782,
+      "inclination_deg": 38.55593997770533
+    },
+    {
+      "name": "s4g_global_finite_thickness_q0_0p2",
+      "position_angle_deg_east_of_north": 76.6,
+      "axis_ratio": 0.7969999999999999,
+      "intrinsic_thickness_q0": 0.2,
+      "inclination_deg": 38.0561764974895
+    },
+    {
+      "name": "s4g_disk_component_1",
+      "position_angle_deg_east_of_north": 85.06,
+      "axis_ratio": 0.813,
+      "thin_disk_inclination_deg": 35.60991626396474,
+      "scale_length_arcsec": 13.76,
+      "flux_fraction": 0.179
+    },
+    {
+      "name": "s4g_disk_component_2",
+      "position_angle_deg_east_of_north": 53.8,
+      "axis_ratio": 0.789,
+      "thin_disk_inclination_deg": 37.9078420946512,
+      "scale_length_arcsec": 39.16,
+      "flux_fraction": 0.775
+    }
+  ],
+  "radial_edges_arcsec": [
+    5.0,
+    15.0,
+    25.0,
+    35.0,
+    45.0,
+    55.0,
+    65.0
+  ],
+  "radial_window_provenance": "inherited unchanged from the endpoint-unread v01 protocol; geometry values are not inherited",
+  "velocity_pixels_read_during_freeze": false,
+  "velocity_or_residual_inputs": [],
+  "freeze_complete": true,
+  "geometry_endpoint_independent": true,
+  "full_endpoint_ready": false,
+  "inputs": {
+    "s4g_global_catalog": "data/derived/external_s4g_galaxies.csv",
+    "s4g_global_catalog_sha256": "b948a74da5cea36bab48e4682787717a20fda2f8ce7a30e839c5a80f25771e10",
+    "s4g_component_catalog": "data/derived/external_s4g_table7.csv",
+    "s4g_component_catalog_sha256": "fb1f73435f5edd34b4a4f7d82897ac84589910133abe44ea9b049d262f2e4e46",
+    "legacy_radial_window_manifest": "data/derived/ngc4254_common_mode_geometry_freeze_v01.json",
+    "legacy_radial_window_manifest_sha256": "1cb01af987064014f3ae30285c72d854dffac0f9f8966729a8ca8b3bfc00f29e"
+  },
+  "legacy_kinematic_comparison_not_selected": {
+    "center_icrs_deg": [
+      184.7067,
+      14.4168
+    ],
+    "position_angle_deg_east_of_north": 68.1,
+    "inclination_deg": 34.4,
+    "delta_position_angle_deg": 8.5,
+    "delta_inclination_deg": 2.755429103393098
+  },
+  "known_limitations": [
+    "photometric inclination assumes an intrinsically circular disk",
+    "NGC4254 is morphologically asymmetric and its two S4G disk components have different PAs",
+    "the q0=0.2 thickness correction and both disk components are mandatory sensitivity controls",
+    "radial windows are inherited from an endpoint-unread protocol rather than newly selected from S4G",
+    "beam covariance and physical FFL source/gain construction remain separate"
+  ],
+  "claim_boundary": "velocity-independent photometric geometry freeze; not a parent role identity, channel/time signal, dynamical inclination proof, or endpoint score"
+}

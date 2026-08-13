@@ -1,0 +1,465 @@
+{
+  "schema": "phangs_radial_body_projection_sector_occupancy_failure_v01",
+  "status": "FROZEN_12_SECTOR_GATE_FAILS_FINITE_FOOTPRINT_DIAGNOSTIC_ONLY",
+  "galaxies": {
+    "NGC1300": {
+      "beam_independent_pixels": 2281,
+      "beam_stride_pixels": 5,
+      "zones": [
+        {
+          "zone": 0,
+          "independent_pixels": 456,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            82,
+            61,
+            44,
+            22,
+            5,
+            37,
+            57,
+            18,
+            25,
+            37,
+            26,
+            42
+          ]
+        },
+        {
+          "zone": 1,
+          "independent_pixels": 456,
+          "occupied_sector_count": 11,
+          "missing_sectors": [
+            7
+          ],
+          "sector_counts": [
+            42,
+            40,
+            43,
+            62,
+            25,
+            34,
+            27,
+            0,
+            44,
+            44,
+            35,
+            60
+          ]
+        },
+        {
+          "zone": 2,
+          "independent_pixels": 456,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            31,
+            41,
+            32,
+            24,
+            49,
+            57,
+            12,
+            13,
+            41,
+            31,
+            74,
+            51
+          ]
+        },
+        {
+          "zone": 3,
+          "independent_pixels": 456,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            50,
+            54,
+            2,
+            5,
+            90,
+            85,
+            19,
+            41,
+            66,
+            16,
+            13,
+            15
+          ]
+        },
+        {
+          "zone": 4,
+          "independent_pixels": 457,
+          "occupied_sector_count": 9,
+          "missing_sectors": [
+            2,
+            3,
+            9
+          ],
+          "sector_counts": [
+            177,
+            19,
+            0,
+            0,
+            21,
+            32,
+            92,
+            96,
+            10,
+            0,
+            1,
+            9
+          ]
+        }
+      ],
+      "all_12_sectors_in_every_zone": false
+    },
+    "NGC1385": {
+      "beam_independent_pixels": 1419,
+      "beam_stride_pixels": 4,
+      "zones": [
+        {
+          "zone": 0,
+          "independent_pixels": 284,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            30,
+            16,
+            28,
+            29,
+            17,
+            10,
+            21,
+            16,
+            27,
+            31,
+            26,
+            33
+          ]
+        },
+        {
+          "zone": 1,
+          "independent_pixels": 284,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            29,
+            20,
+            19,
+            36,
+            30,
+            27,
+            18,
+            19,
+            18,
+            14,
+            29,
+            25
+          ]
+        },
+        {
+          "zone": 2,
+          "independent_pixels": 283,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            20,
+            16,
+            5,
+            19,
+            25,
+            39,
+            20,
+            30,
+            28,
+            23,
+            33,
+            25
+          ]
+        },
+        {
+          "zone": 3,
+          "independent_pixels": 284,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            13,
+            18,
+            2,
+            3,
+            4,
+            23,
+            29,
+            16,
+            46,
+            55,
+            63,
+            12
+          ]
+        },
+        {
+          "zone": 4,
+          "independent_pixels": 284,
+          "occupied_sector_count": 9,
+          "missing_sectors": [
+            2,
+            3,
+            4
+          ],
+          "sector_counts": [
+            14,
+            3,
+            0,
+            0,
+            0,
+            1,
+            19,
+            74,
+            53,
+            29,
+            43,
+            48
+          ]
+        }
+      ],
+      "all_12_sectors_in_every_zone": false
+    },
+    "NGC1512": {
+      "beam_independent_pixels": 1931,
+      "beam_stride_pixels": 4,
+      "zones": [
+        {
+          "zone": 0,
+          "independent_pixels": 386,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            24,
+            18,
+            35,
+            37,
+            23,
+            45,
+            44,
+            16,
+            38,
+            33,
+            35,
+            38
+          ]
+        },
+        {
+          "zone": 1,
+          "independent_pixels": 386,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            70,
+            37,
+            6,
+            24,
+            32,
+            24,
+            51,
+            41,
+            25,
+            6,
+            29,
+            41
+          ]
+        },
+        {
+          "zone": 2,
+          "independent_pixels": 386,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            34,
+            91,
+            12,
+            16,
+            33,
+            43,
+            50,
+            54,
+            26,
+            12,
+            7,
+            8
+          ]
+        },
+        {
+          "zone": 3,
+          "independent_pixels": 386,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            46,
+            68,
+            36,
+            44,
+            4,
+            11,
+            30,
+            75,
+            31,
+            27,
+            6,
+            8
+          ]
+        },
+        {
+          "zone": 4,
+          "independent_pixels": 387,
+          "occupied_sector_count": 8,
+          "missing_sectors": [
+            4,
+            9,
+            10,
+            11
+          ],
+          "sector_counts": [
+            8,
+            22,
+            107,
+            53,
+            0,
+            1,
+            31,
+            66,
+            99,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "all_12_sectors_in_every_zone": false
+    },
+    "NGC5068": {
+      "beam_independent_pixels": 2682,
+      "beam_stride_pixels": 4,
+      "zones": [
+        {
+          "zone": 0,
+          "independent_pixels": 537,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            67,
+            40,
+            52,
+            16,
+            22,
+            44,
+            95,
+            53,
+            15,
+            31,
+            41,
+            61
+          ]
+        },
+        {
+          "zone": 1,
+          "independent_pixels": 536,
+          "occupied_sector_count": 12,
+          "missing_sectors": [],
+          "sector_counts": [
+            36,
+            20,
+            67,
+            7,
+            28,
+            31,
+            51,
+            46,
+            53,
+            68,
+            40,
+            89
+          ]
+        },
+        {
+          "zone": 2,
+          "independent_pixels": 536,
+          "occupied_sector_count": 11,
+          "missing_sectors": [
+            3
+          ],
+          "sector_counts": [
+            67,
+            23,
+            12,
+            0,
+            4,
+            17,
+            58,
+            66,
+            85,
+            34,
+            121,
+            49
+          ]
+        },
+        {
+          "zone": 3,
+          "independent_pixels": 536,
+          "occupied_sector_count": 10,
+          "missing_sectors": [
+            3,
+            4
+          ],
+          "sector_counts": [
+            37,
+            43,
+            19,
+            0,
+            0,
+            5,
+            69,
+            36,
+            40,
+            127,
+            95,
+            65
+          ]
+        },
+        {
+          "zone": 4,
+          "independent_pixels": 537,
+          "occupied_sector_count": 6,
+          "missing_sectors": [
+            1,
+            2,
+            3,
+            4,
+            8,
+            11
+          ],
+          "sector_counts": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            18,
+            178,
+            265,
+            0,
+            63,
+            9,
+            0
+          ]
+        }
+      ],
+      "all_12_sectors_in_every_zone": false
+    }
+  },
+  "same_endpoint_rescoring_allowed": false,
+  "post_open_gate_relaxation_allowed": false,
+  "future_protocol_candidate": "predeclare a footprint-adaptive spatial block jackknife on a new untouched cohort, with block count and covariance-rank gates frozen before acquisition",
+  "claim_boundary": "post-open support-geometry diagnosis only; not a repaired endpoint, score, body-orthogonal signal, channel, time, quantum, Tau, or dark-sector result"
+}

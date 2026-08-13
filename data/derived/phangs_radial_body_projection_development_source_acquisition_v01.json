@@ -1,0 +1,237 @@
+{
+  "schema": "phangs_radial_body_projection_development_source_acquisition_v01",
+  "status": "SOURCE_ONLY_DEVELOPMENT_FIELDS_ACQUIRED_PARTIAL_COHORT",
+  "development_cohort": [
+    "NGC1087",
+    "NGC1365",
+    "NGC1433",
+    "NGC1566",
+    "NGC1672",
+    "NGC7496"
+  ],
+  "source_body_ready": [
+    "NGC1087",
+    "NGC1433",
+    "NGC1566",
+    "NGC1672",
+    "NGC7496"
+  ],
+  "source_body_blocked": [
+    "NGC1365"
+  ],
+  "products_acquired": 17,
+  "product_summaries": {
+    "NGC1087/NGC1087.phot.1.fits": {
+      "shape": [
+        1052,
+        737
+      ],
+      "finite_fraction": 0.5566240694213,
+      "celestial_wcs": true,
+      "bunit": "MJy/sr",
+      "pixel_scale_arcsec": 0.7499999999999934,
+      "beam_major_arcsec": null,
+      "beam_minor_arcsec": null
+    },
+    "NGC1087/NGC1087.1.final_mask.fits": {
+      "shape": [
+        1052,
+        737
+      ],
+      "finite_fraction": 1.0,
+      "celestial_wcs": true,
+      "bunit": "MJy/sr",
+      "pixel_scale_arcsec": 0.7499999999999934,
+      "beam_major_arcsec": null,
+      "beam_minor_arcsec": null
+    },
+    "NGC1087/group.uid___A001_X13b3_X90.lp_schinner.ngc1087_12m7mtp_co21_broad_mom0.fits": {
+      "shape": [
+        578,
+        485
+      ],
+      "finite_fraction": 0.976185210287875,
+      "celestial_wcs": true,
+      "bunit": "K.km.s-1",
+      "pixel_scale_arcsec": 0.299999999999988,
+      "beam_major_arcsec": 1.60260346097064,
+      "beam_minor_arcsec": 1.60260346097064
+    },
+    "NGC1365/NGC1365.phot.1.fits": {
+      "shape": [
+        1679,
+        1766
+      ],
+      "finite_fraction": 0.6233480399067287,
+      "celestial_wcs": true,
+      "bunit": "MJy/sr",
+      "pixel_scale_arcsec": 0.7499999999999934,
+      "beam_major_arcsec": null,
+      "beam_minor_arcsec": null
+    },
+    "NGC1365/NGC1365.1.final_mask.fits": {
+      "shape": [
+        1679,
+        1766
+      ],
+      "finite_fraction": 1.0,
+      "celestial_wcs": true,
+      "bunit": "MJy/sr",
+      "pixel_scale_arcsec": 0.7499999999999934,
+      "beam_major_arcsec": null,
+      "beam_minor_arcsec": null
+    },
+    "NGC1433/NGC1433.phot.1.fits": {
+      "shape": [
+        1360,
+        1030
+      ],
+      "finite_fraction": 0.5191576242147344,
+      "celestial_wcs": true,
+      "bunit": "MJy/sr",
+      "pixel_scale_arcsec": 0.7499999999999934,
+      "beam_major_arcsec": null,
+      "beam_minor_arcsec": null
+    },
+    "NGC1433/NGC1433.1.final_mask.fits": {
+      "shape": [
+        1360,
+        1030
+      ],
+      "finite_fraction": 1.0,
+      "celestial_wcs": true,
+      "bunit": "MJy/sr",
+      "pixel_scale_arcsec": 0.7499999999999934,
+      "beam_major_arcsec": null,
+      "beam_minor_arcsec": null
+    },
+    "NGC1433/group.uid___A001_X136e_X9b.lp_schinner.ngc1433_12m7mtp_co21_broad_mom0.fits": {
+      "shape": [
+        576,
+        835
+      ],
+      "finite_fraction": 0.9797322022621424,
+      "celestial_wcs": true,
+      "bunit": "K.km.s-1",
+      "pixel_scale_arcsec": 0.299999999999988,
+      "beam_major_arcsec": 1.09769529303252,
+      "beam_minor_arcsec": 1.09769529303252
+    },
+    "NGC1566/NGC1566.phot.1.fits": {
+      "shape": [
+        1713,
+        1898
+      ],
+      "finite_fraction": 0.5085917089731594,
+      "celestial_wcs": true,
+      "bunit": "MJy/sr",
+      "pixel_scale_arcsec": 0.7499999999999934,
+      "beam_major_arcsec": null,
+      "beam_minor_arcsec": null
+    },
+    "NGC1566/NGC1566.1.final_mask.fits": {
+      "shape": [
+        1713,
+        1898
+      ],
+      "finite_fraction": 1.0,
+      "celestial_wcs": true,
+      "bunit": "MJy/sr",
+      "pixel_scale_arcsec": 0.7499999999999934,
+      "beam_major_arcsec": null,
+      "beam_minor_arcsec": null
+    },
+    "NGC1566/group.uid___A001_X136e_X9f.lp_schinner.ngc1566_12m7mtp_co21_broad_mom0.fits": {
+      "shape": [
+        838,
+        576
+      ],
+      "finite_fraction": 0.983695472023336,
+      "celestial_wcs": true,
+      "bunit": "K.km.s-1",
+      "pixel_scale_arcsec": 0.299999999999988,
+      "beam_major_arcsec": 1.25428013147268,
+      "beam_minor_arcsec": 1.25428013147268
+    },
+    "NGC1672/NGC1672.phot.1.fits": {
+      "shape": [
+        1042,
+        1356
+      ],
+      "finite_fraction": 0.5144215797847344,
+      "celestial_wcs": true,
+      "bunit": "MJy/sr",
+      "pixel_scale_arcsec": 0.7499999999999934,
+      "beam_major_arcsec": null,
+      "beam_minor_arcsec": null
+    },
+    "NGC1672/NGC1672.1.final_mask.fits": {
+      "shape": [
+        1042,
+        1356
+      ],
+      "finite_fraction": 1.0,
+      "celestial_wcs": true,
+      "bunit": "MJy/sr",
+      "pixel_scale_arcsec": 0.7499999999999934,
+      "beam_major_arcsec": null,
+      "beam_minor_arcsec": null
+    },
+    "NGC1672/group.uid___A001_X2fb_X272.lp_schinner.ngc1672_12m7mtp_co21_broad_mom0.fits": {
+      "shape": [
+        274,
+        487
+      ],
+      "finite_fraction": 0.8751180323446095,
+      "celestial_wcs": true,
+      "bunit": "K.km.s-1",
+      "pixel_scale_arcsec": 0.50000000000004,
+      "beam_major_arcsec": 1.9323665545593602,
+      "beam_minor_arcsec": 1.9323665545593602
+    },
+    "NGC7496/NGC7496.phot.1.fits": {
+      "shape": [
+        1506,
+        1158
+      ],
+      "finite_fraction": 0.3311004685919534,
+      "celestial_wcs": true,
+      "bunit": "MJy/sr",
+      "pixel_scale_arcsec": 0.7499999999999934,
+      "beam_major_arcsec": null,
+      "beam_minor_arcsec": null
+    },
+    "NGC7496/NGC7496.1.final_mask.fits": {
+      "shape": [
+        1506,
+        1158
+      ],
+      "finite_fraction": 1.0,
+      "celestial_wcs": true,
+      "bunit": "MJy/sr",
+      "pixel_scale_arcsec": 0.7499999999999934,
+      "beam_major_arcsec": null,
+      "beam_minor_arcsec": null
+    },
+    "NGC7496/group.uid___A001_X1284_X2634.lp_schinner.ngc7496_12m7mtp_co21_broad_mom0.fits": {
+      "shape": [
+        330,
+        300
+      ],
+      "finite_fraction": 0.6360606060606061,
+      "celestial_wcs": true,
+      "bunit": "K.km.s-1",
+      "pixel_scale_arcsec": 0.50000000000004,
+      "beam_major_arcsec": 1.6750384896869999,
+      "beam_minor_arcsec": 1.6750384896869999
+    }
+  },
+  "ledger": "data/derived/phangs_radial_body_projection_development_source_ledger_v01.csv",
+  "coverage": "data/derived/phangs_radial_body_projection_development_source_coverage_v01.csv",
+  "velocity_products_acquired": 0,
+  "velocity_contrast_opened": false,
+  "rotation_residual_opened": false,
+  "confirmatory_products_requested": false,
+  "endpoint_scoring_allowed": false,
+  "claim_boundary": "source-only development acquisition and WCS/product audit; not a body-orthogonal endpoint, channel detection, parent derivation, time signal, quantum signal, or dark-sector result"
+}

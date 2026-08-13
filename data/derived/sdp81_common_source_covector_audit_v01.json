@@ -1,0 +1,95 @@
+{
+  "schema": "tau_core.paper8.sdp81-common-source-covector-audit.v01",
+  "model": "grad_theta I_i = A_i^T grad_beta I_source for one common local source-plane scalar covector",
+  "path_count": 4,
+  "sensitivity_anchors": [
+    "published_g",
+    "local_peak"
+  ],
+  "sensitivity_radius_beams": [
+    1.0,
+    1.5,
+    2.0
+  ],
+  "runs": [
+    {
+      "anchor": "published_g",
+      "radius_beams": 1.0,
+      "source_covector_intensity_per_arcsec": [
+        0.001460414223764688,
+        0.0005758263926400172
+      ],
+      "stacked_design_rank": 2,
+      "stacked_design_condition_number": 1.4940084334370036,
+      "relative_residual": 0.36462614321928455
+    },
+    {
+      "anchor": "published_g",
+      "radius_beams": 1.5,
+      "source_covector_intensity_per_arcsec": [
+        0.001080769009521906,
+        0.00047574053625666656
+      ],
+      "stacked_design_rank": 2,
+      "stacked_design_condition_number": 1.4940084334370036,
+      "relative_residual": 0.32762799209314064
+    },
+    {
+      "anchor": "published_g",
+      "radius_beams": 2.0,
+      "source_covector_intensity_per_arcsec": [
+        0.0006101050395563933,
+        0.00030717564237756875
+      ],
+      "stacked_design_rank": 2,
+      "stacked_design_condition_number": 1.4940084334370036,
+      "relative_residual": 0.38473567920980845
+    },
+    {
+      "anchor": "local_peak",
+      "radius_beams": 1.0,
+      "source_covector_intensity_per_arcsec": [
+        -0.0004971589487755543,
+        -0.0007871350916770185
+      ],
+      "stacked_design_rank": 2,
+      "stacked_design_condition_number": 1.4940084334370036,
+      "relative_residual": 0.6138851218326357
+    },
+    {
+      "anchor": "local_peak",
+      "radius_beams": 1.5,
+      "source_covector_intensity_per_arcsec": [
+        -0.0004603138416576539,
+        -0.00034769600634337834
+      ],
+      "stacked_design_rank": 2,
+      "stacked_design_condition_number": 1.4940084334370036,
+      "relative_residual": 0.5606484577795496
+    },
+    {
+      "anchor": "local_peak",
+      "radius_beams": 2.0,
+      "source_covector_intensity_per_arcsec": [
+        -0.0003190031583520159,
+        -0.00021520234758487443
+      ],
+      "stacked_design_rank": 2,
+      "stacked_design_condition_number": 1.4940084334370036,
+      "relative_residual": 0.49517914901588567
+    }
+  ],
+  "relative_residual_range": [
+    0.32762799209314064,
+    0.6138851218326357
+  ],
+  "all_designs_full_rank": true,
+  "common_covector_promoted": false,
+  "promotion_rule": "relative residual <= 0.5 in every frozen sensitivity run",
+  "reason": "A common local source-plane scalar covector is supported on some aperture/anchor choices but not across the complete frozen sensitivity set.",
+  "interpretation": "This rejects the minimal local scalar-gradient realization, not a richer source morphology, beam-convolved forward model, or Tau body covector.",
+  "time_covector_identified": false,
+  "time_score_authorized": false,
+  "next_finite_action": "Replace local image-plane plane fits by a beam-convolved source-plane brightness reconstruction jointly forward-rendered through all four paths.",
+  "claim_boundary": "Source-morphology pullback audit only; no channel innovation, observer-time effect, or Tau Core detection."
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "tau_core.paper8.paper7-source-forward-bridge-audit.v01",
+  "paper8_numeric_object_count": 180,
+  "paper7_target_systems": [
+    "DES J0408-5354",
+    "HE 0435-1223",
+    "RXJ 1131-1231",
+    "WFI 2033-4723",
+    "WGD 2038-4008"
+  ],
+  "direct_object_overlap": [],
+  "direct_object_overlap_count": 0,
+  "sdp81": {
+    "same_source_path_count": 4,
+    "transition_count": 2,
+    "relative_lens_geometry_reproduced": true,
+    "absolute_wcs_registration_complete": false,
+    "absolute_wcs_registration_operational": true,
+    "cross_transition_centered_path_cosine": 0.8024054961227721,
+    "orthogonal_energy_fraction": 0.0857343813907298,
+    "shared_parent_lens_mode_supported": true,
+    "independent_auxiliary_mode_detected": false,
+    "minimal_common_source_covector_promoted": false,
+    "minimal_covector_relative_residual_range": [
+      0.32762799209314064,
+      0.6138851218326357
+    ],
+    "exact_ray_common_extended_source_supported": true,
+    "exact_ray_common_source_relative_residual": 0.38266209257359124,
+    "exact_ray_common_vs_independent_squared_residual_excess": 0.35976951105266985,
+    "spectral_leave_one_path_out_promoted": false,
+    "spectral_leave_one_path_out_median_r2": -21.187381337380906,
+    "spectral_leave_one_path_out_positive_folds": 1,
+    "continuum_registration_boundary_count": 3,
+    "continuum_registration_usable_for_band6": false,
+    "full_window_velocity_operator_promoted": false,
+    "full_window_velocity_gradient_norm": 0.0,
+    "two_component_spatial_source_promoted": false,
+    "two_component_spatial_predictive_positive_paths": 2,
+    "two_component_spatial_predictive_median_improvement": -0.26800057452276316
+  },
+  "fields": [
+    {
+      "field_id": "SFH_01_BODY_CLOCK",
+      "materialized": false,
+      "evidence": "No numeric Theta_M exists for a Paper 7 lens system."
+    },
+    {
+      "field_id": "SFH_02_RELATIVE_MORPHOLOGY",
+      "materialized": false,
+      "evidence": "Paper 8 has source-frozen galaxy descriptors, but no object overlaps the Paper 7 lens-system set. SDP.81 has a supported common exact-ray extended-source morphology, but it is not a Paper 7 time-delay target."
+    },
+    {
+      "field_id": "SFH_03_PATH_PULLBACK",
+      "materialized": false,
+      "evidence": "SDP.81 relative image geometry and the image-G WCS anchor are operational, but the ray-traced body-covector pullback remains open."
+    },
+    {
+      "field_id": "SFH_04_TIME_COVECTOR",
+      "materialized": false,
+      "evidence": "No quotient-basic numeric a_O has been derived from Theta_M and Phi_M."
+    },
+    {
+      "field_id": "SFH_07_RANK_REPAIR_AUXILIARY",
+      "materialized": false,
+      "evidence": "SDP.81 provides four paths and two transitions, but the independent second mode lacks beam/lens covariance significance."
+    }
+  ],
+  "source_forward_h_tau_materialized": false,
+  "rank_repair_authorized": false,
+  "time_score_authorized": false,
+  "verdict": "NO_DIRECT_PAPER8_PAPER7_OBJECT_BRIDGE__SDP81_IS_A_RANK_REPAIR_CANDIDATE_NOT_YET_AN_AUTHORIZED_AUXILIARY",
+  "next_finite_action": "Do not further enrich the SDP.81 spatial inverse family: its two-component leave-one-path-out audit failed. Construct a source-frozen morphology descriptor for one actual Paper 7 lens target.",
+  "claim_boundary": "Coverage and bridge-readiness audit only; no time distortion, channel innovation, or Tau Core detection."
+}

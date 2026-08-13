@@ -1,0 +1,59 @@
+{
+  "schema": "observer_channel_collective_probe_atlas_v01",
+  "status": "COLLECTIVE_PROBE_ATLAS_BUILT_NO_INJECTIVE_A_MATRIX",
+  "n_rows": 12,
+  "n_physical_candidates": 8,
+  "n_controls_or_body_coordinates": 3,
+  "n_constructed_a_rows": 0,
+  "phangs_alma_sparc_overlap": [
+    "NGC2903",
+    "NGC3521"
+  ],
+  "phangs_muse_sparc_overlap": [],
+  "ghasp_sparc_overlap_count": 26,
+  "ghasp_both_side_overlap_count": 25,
+  "ghasp_whisp_overview_overlap_count": 21,
+  "ghasp_top_source_only_candidate": "NGC3726",
+  "ghasp_top_source_only_candidates": [
+    "NGC3726",
+    "NGC4559",
+    "NGC3893",
+    "UGC08490",
+    "UGC04305"
+  ],
+  "ghasp_legacy_exact_primary_name_overlap": [
+    "UGC06787"
+  ],
+  "ngc3726_whisp_graphical_hi_acquired": true,
+  "ngc3726_whisp_fits_acquired": false,
+  "ngc3726_hi_halpha_two_side_source_support": true,
+  "ngc3726_odd_contrast_zero_null_p": 0.14888777907332534,
+  "ngc3726_odd_contrast_gls_mean_km_s": 1.8997429757091961,
+  "ngc3726_observer_channel_detected": false,
+  "ngc4559_halogas_moment_products_acquired": 4,
+  "ngc4559_halogas_pixels_opened": false,
+  "ngc4559_replication_all_gates_pass": false,
+  "ngc4559_hr_odd_contrast_zero_null_p": 0.1639187548258688,
+  "ngc4559_lr_odd_contrast_zero_null_p": 0.1362197837217355,
+  "ngc3893_primary_replication_eligible": false,
+  "ngc3893_control_role": "DISTURBED_CONVENTIONAL_ASYMMETRY_CONTROL_NOT_PRIMARY_CHANNEL_REPLICATION",
+  "ngc3893_counts_as_negative_channel_test": false,
+  "next_clean_source_candidate": "UGC08490",
+  "ugc06787_whisp_graphical_hi_acquired": true,
+  "ugc06787_whisp_fits_acquired": false,
+  "ugc06787_whisp_graphical_digitization_ready": true,
+  "ugc06787_hi_halpha_world_transport_ready": false,
+  "ugc06787_angular_first_transport_rule_frozen": "compare GHASP native angular radius r2 to WHISP source-figure angular axes before choosing one physical distance conversion",
+  "ugc06787_distance_spread_max_over_min": 1.33125,
+  "ugc06787_source_axis_proxy_ready": true,
+  "ugc06787_formal_wcs_ready": false,
+  "ugc06787_possible_angular_support_overlap": true,
+  "collective_injectivity_test_allowed": false,
+  "sigma_min_a_available": false,
+  "priority_1": [
+    "OC-P01",
+    "OC-P02",
+    "OC-P06"
+  ],
+  "claim_boundary": "source-backed candidate atlas only; no physical A_p rows, common transported K_body, injectivity result, channel detection, or Tau Core validation"
+}

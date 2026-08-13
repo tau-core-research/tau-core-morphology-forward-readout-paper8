@@ -1,0 +1,24 @@
+{
+  "schema": "tau_core.paper8.sdp81-velocity-field-operator.v01",
+  "operator": "I_s(x,y) times Gaussian[v-v0-gx*x-gy*y; sigma_v], exact lens ray shooting, ALMA beam convolution",
+  "fit_blocks": 24,
+  "source_amplitude_count": 49,
+  "velocity_parameters": {
+    "v0_km_s": 78.03464059025238,
+    "gx_km_s_per_arcsec": -180.6345790958165,
+    "gy_km_s_per_arcsec": 599.9525568451386,
+    "gradient_norm_km_s_per_arcsec": 626.555601387572,
+    "sigma_v_km_s": 36.28986838143102
+  },
+  "optimizer_success": true,
+  "relative_residual": 0.3076575292655799,
+  "maximum_block_relative_residual": 0.6718839237374761,
+  "spectrally_flat_null_relative_residual": 0.3436350707758363,
+  "squared_residual_improvement_over_flat_null": 0.19843243660812726,
+  "velocity_field_operator_promoted": true,
+  "theta_M_identified": false,
+  "a_O_identified": false,
+  "time_score_authorized": false,
+  "verdict": "VELOCITY_FIELD_DIFFERENTIAL_MAGNIFICATION_OPERATOR_SUPPORTED",
+  "claim_boundary": "4D source-kinematic forward operator; not parent Theta_M, observer-time covector, or Tau detection."
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "tau_core_refined_body_source_cohort_v01",
+  "status": "SOURCE_COHORT_NOMINATED_FIELD_EXTRACTION_OPEN",
+  "n_nominated": 20,
+  "n_alias_independent": 20,
+  "n_alias_overlaps": 0,
+  "n_query_failures": 0,
+  "family_counts": {
+    "K_bar_dominated_non_circular": {
+      "nominated": 5,
+      "alias_independent": 5
+    },
+    "K_disturbed_tidal_history": {
+      "nominated": 5,
+      "alias_independent": 5
+    },
+    "K_scale_tail_turbulent_holey": {
+      "nominated": 5,
+      "alias_independent": 5
+    },
+    "K_warped_asymmetric_disturbed_disk": {
+      "nominated": 5,
+      "alias_independent": 5
+    }
+  },
+  "source_fields_complete": false,
+  "endpoint_scoring_allowed": false,
+  "claim_boundary": "source-acquisition cohort only; nomination is not classification, formula freeze, or endpoint evidence"
+}

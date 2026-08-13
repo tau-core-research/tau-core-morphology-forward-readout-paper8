@@ -1,0 +1,90 @@
+{
+  "schema": "ngc3726_uma_hi_rotation_source_v01",
+  "status": "NGC3726_SOURCE_NATIVE_HI_SIDE_ROTATION_ACQUIRED_GEOMETRY_COMPATIBLE",
+  "galaxy": "NGC3726",
+  "hi_source": "Verheijen and Sancisi 2001 WSRT Ursa Major synthesis survey",
+  "ghasp_source": "Epinat et al. 2008 GHASP Paper VII",
+  "n_hi_rows": 12,
+  "hi_radius_min_arcsec": 40,
+  "hi_radius_max_arcsec": 373,
+  "metadata": {
+    "hi_adopted_inclination_deg": 53,
+    "hi_adopted_inclination_error_deg": 2,
+    "hi_receding_pa_deg": 194,
+    "hi_radius_arcmin": 4.24,
+    "hi_last_rotation_radius_arcmin": 6.22,
+    "hi_systemic_velocity_km_s": 865.6,
+    "hi_systemic_velocity_error_km_s": 0.9,
+    "ghasp_systemic_velocity_km_s": 856,
+    "ghasp_systemic_velocity_error_km_s": 2,
+    "ghasp_morphological_inclination_deg": 49,
+    "ghasp_morphological_inclination_error_deg": 5,
+    "ghasp_kinematic_inclination_deg": 47,
+    "ghasp_kinematic_inclination_error_deg": 5,
+    "ghasp_kinematic_pa_deg": 20,
+    "ghasp_pa_side": "a",
+    "ghasp_kinematic_pa_error_deg": 2
+  },
+  "ghasp_receding_pa_from_side_convention_deg": 200,
+  "hi_ghasp_receding_pa_difference_deg": 6,
+  "selection_uses_vobs_or_residual": false,
+  "endpoint_access": false,
+  "physical_a_row_constructed": false,
+  "claim_boundary": "source-native side curves and geometry only; no tracer comparison, path-channel statistic, SPARC residual, or Tau Core validation",
+  "manifest": [
+    {
+      "source_id": "uma_readme",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/ReadMe",
+      "local_path": "data/external/catalogs/ngc3726_uma_hi/uma_readme_ReadMe",
+      "bytes": 17134,
+      "sha256": "2959675fbd5b6c904d3bfc2850e4ddcc5cce42aaafbdf6b3fcea9a3ab7c89e6d",
+      "source_native": true,
+      "endpoint_access": false
+    },
+    {
+      "source_id": "uma_identity",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table1.dat.gz",
+      "local_path": "data/external/catalogs/ngc3726_uma_hi/uma_identity_table1.dat.gz",
+      "bytes": 1768,
+      "sha256": "cdcd02b592204a5bfa7765e0fcf158e2831a0fad906884cbe298b2f42adc1aa0",
+      "source_native": true,
+      "endpoint_access": false
+    },
+    {
+      "source_id": "uma_rotation",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table4.dat.gz",
+      "local_path": "data/external/catalogs/ngc3726_uma_hi/uma_rotation_table4.dat.gz",
+      "bytes": 4684,
+      "sha256": "b572484788f2dd30ec741ee594d3f191cb1aba8c7280638727eadf89bbe366b4",
+      "source_native": true,
+      "endpoint_access": false
+    },
+    {
+      "source_id": "uma_summary",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/370/765/table5.dat.gz",
+      "local_path": "data/external/catalogs/ngc3726_uma_hi/uma_summary_table5.dat.gz",
+      "bytes": 1764,
+      "sha256": "9c587ea0fa41ed97063c0fc6fe3d0521f93f94b0287b7c67df3e32dadcdb967a",
+      "source_native": true,
+      "endpoint_access": false
+    },
+    {
+      "source_id": "ghasp_readme",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/390/466/ReadMe",
+      "local_path": "data/external/catalogs/ngc3726_uma_hi/ghasp_readme_ReadMe",
+      "bytes": 14796,
+      "sha256": "bc0dfec9ca2518650835d8b164de06872584833c83d4d5417aaec7d94782c021",
+      "source_native": true,
+      "endpoint_access": false
+    },
+    {
+      "source_id": "ghasp_model",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/390/466/tableb2.dat",
+      "local_path": "data/external/catalogs/ngc3726_uma_hi/ghasp_model_tableb2.dat",
+      "bytes": 18983,
+      "sha256": "fc867346fb112a1938873a6de2ae887b1d4dab43988058327314c5a219ae7569",
+      "source_native": true,
+      "endpoint_access": false
+    }
+  ]
+}

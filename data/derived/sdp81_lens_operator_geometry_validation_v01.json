@@ -1,0 +1,70 @@
+{
+  "schema": "tau-core.paper8.sdp81-lens-geometry-validation.v01",
+  "status": "SMOOTH_OPERATOR_MULTIPLICITY_AND_CONFIGURATION_REPRODUCED_G_WCS_OPEN",
+  "implementation": {
+    "library": "lenstronomy",
+    "version": "1.14.2"
+  },
+  "convention_transform": {
+    "ellipticity_phi_lenstronomy_deg": 115.0,
+    "shear_phi_lenstronomy_deg": -10.0,
+    "reason": "reproduces the published q1 quadruple and d1/d2 doubles"
+  },
+  "image_positions_arcsec_relative_to_G": {
+    "q1": [
+      [
+        1.9150438850589304,
+        0.2486292031005207
+      ],
+      [
+        -1.5130306342596636,
+        -0.09343950359425356
+      ],
+      [
+        -1.201631645351138,
+        0.8646433657896423
+      ],
+      [
+        -0.8181867790180961,
+        -1.1877749739404568
+      ]
+    ],
+    "d1": [
+      [
+        1.9152013985776308,
+        -0.05597049235558226
+      ],
+      [
+        -0.8468588982172597,
+        1.118080742850361
+      ]
+    ],
+    "d2": [
+      [
+        1.9146343916415094,
+        -0.10623522165245963
+      ],
+      [
+        -0.8148064032342055,
+        1.1257392901037158
+      ]
+    ]
+  },
+  "image_multiplicities": {
+    "q1": 4,
+    "d1": 2,
+    "d2": 2
+  },
+  "expected_multiplicities": {
+    "q1": 4,
+    "d1": 2,
+    "d2": 2
+  },
+  "multiplicity_pass": true,
+  "published_configuration_pass": true,
+  "mean_fit_distance_reported_by_inoue_arcsec": 0.0014,
+  "image_G_wcs_registration_complete": false,
+  "pathwise_cube_comparison_allowed": false,
+  "remaining_blocker": "an external or image-modelled centroid for G must anchor the relative coordinates to the ALMA WCS before cube pixels are ray-traced",
+  "claim_boundary": "standard smooth-lens architecture reproduced; no multipath residual, channel-origin identification, time effect, or Tau Core detection"
+}
