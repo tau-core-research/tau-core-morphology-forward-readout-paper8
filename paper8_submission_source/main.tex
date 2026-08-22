@@ -14,7 +14,7 @@
 
 \title{A morphology-matched forward-readout protocol for SPARC rotation curves}
 \author{Jozsef Olcsak}
-\date{Last revised: 11 August 2026}
+\date{Last revised: 22 August 2026}
 
 \begin{document}
 \maketitle
@@ -90,6 +90,15 @@ fit a galaxy.  The test is whether the morphology-matched readout family,
 chosen before endpoint scoring, performs better than wrong morphology families
 and shuffled labels, and only then whether it is competitive with conventional
 baselines.
+
+The forward kernel is deliberately a terminal hypothesis. A morphology label,
+a fitted rotation residual, or a successful matched-family score does not
+construct a smooth parent source arrow or optical/body connection. Current
+Tau Core source accounting permits such non-scalar transport only after an
+independently sourced full body connection or a varying, constant-rank,
+source-owned access projector has been supplied. This added boundary does not
+alter the scoring problem below; it prevents a terminal success from being
+reinterpreted as identification of the upstream transport mechanism.
 
 This paper makes that test self-contained.  The framework is used only through
 operational definitions.  In Tau Core terminology the intrinsic source object is
