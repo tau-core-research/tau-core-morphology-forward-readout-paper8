@@ -11,7 +11,7 @@
   "local_compact_peak": {
     "pixel_x_zero_based": 1613,
     "pixel_y_zero_based": 1467,
-    "separation_from_published_g_arcsec": 0.036274487599285817,
+    "separation_from_published_g_arcsec": 0.03627448759190259,
     "beam_major_arcsec": 0.0307760555297124,
     "beam_minor_arcsec": 0.0234658066183344,
     "acceptance_tolerance_arcsec": 0.0461640832945686,

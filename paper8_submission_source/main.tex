@@ -14,7 +14,7 @@
 
 \title{A morphology-matched forward-readout protocol for SPARC rotation curves}
 \author{Jozsef Olcsak}
-\date{Last revised: 22 August 2026}
+\date{Last revised: 26 August 2026}
 
 \begin{document}
 \maketitle
@@ -1391,6 +1391,34 @@ frozen, the correct readout subfamily should explain when those simple limits
 are adequate and when a richer morphology-specific kernel is needed.  The
 present paper does not prove that claim.  It sets up the endpoint machinery
 needed to test it.
+
+\section{Full-4D Distortion Impact on the Frozen Scores}
+
+The observer-specific full-4D Tau descent broadens the future forward model
+but does not alter any score reported in this paper.  The current matched,
+wrong-family, shuffled-label, baseline, and holdout statistics were computed
+from a frozen morphology/readout family.  Recognition of an additional model
+class does not change those statistics.
+
+A future full-4D candidate must begin with a source-derived radial relative
+coframe $D_O(R)$, not with a rotation residual.  That single object must
+induce the lapse, shift, spatial metric and source-observer photon transfer;
+the exact $D_O=I$ branch must remain a mandatory null.  Time-only,
+spatial-only, shift-only and full-coframe ablations may then be compared under
+the same family-budget and wrong-family controls used here.  Until that
+source-side contract is satisfied, the full-4D route is a blocked future
+family and cannot be used as a retroactive rescue term for any galaxy.
+
+The later source-frozen compiler fixes the corresponding scoring object.  If
+the packet induces Hessian blocks \(K_{HH},C,K_{VV}\), the candidate is not
+the positive Schur term but
+\[
+ E_K=(K_{HH}-K_{\rm std})-CK_{VV}^{-1}C^\dagger.
+\]
+The graph-normal control has \(C\neq0\) but \(E_K=0\).  Therefore a future
+Paper-8 endpoint must freeze the complete standard excess, all terminal maps,
+their deduplicated observable support and full covariance before scoring.  No
+reported matched-family or holdout statistic is changed by this rule.
 
 \section{Conclusion}
 

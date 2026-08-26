@@ -15,6 +15,15 @@ readout-family information within an already realized observer-source packet;
 they do not prove observer existence, an independent channel layer, or the
 parent origin of that packet.
 
+## Full-4D Distortion Boundary
+
+The later observer-specific full-4D descent does not change any frozen Paper 8
+score. It defines a future model family whose lapse, shift, spatial metric and
+photon-transfer terms must all descend from one source-frozen radial coframe
+`D_O(R)`. The exact `D_O=I` branch is mandatory. Until such a nonzero law is
+derived independently of the target residual, the family remains blocked and
+cannot be used to rescue or reinterpret an existing endpoint.
+
 ## Composite Tau-kernel scoring replay
 
 The current frozen replay interprets the matched Tau kernel as an effective
@@ -1186,6 +1195,14 @@ data/derived/paper8_readiness_table.csv
 
 These are protocol fixtures and claim-boundary artifacts. They are not raw
 SPARC data and not an empirical matched-family endpoint result.
+
+## Full-4D Score Boundary
+
+The forward-readout family must eventually be generated from one nonzero
+source-frozen `E_K = (K_HH - K_std) - C K_VV^-1 C^dagger`. Exact duplicate
+terminals are quotiented while genuine shared-source covariance is retained.
+Paper 8's existing forward scores are unchanged and remain conditional
+endpoint diagnostics.
 
 ## Reproduce
 
