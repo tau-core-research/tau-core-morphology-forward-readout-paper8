@@ -1,0 +1,176 @@
+{
+  "schema": "tau-core.paper8.sdp81-pcrr-rank-one-invariant-score.v01",
+  "status": "RETROSPECTIVE_DIAGNOSTIC_ONLY_NOT_ENDPOINT",
+  "verdict": "RANK_ONE_COMPATIBLE_NOT_DETECTED_NOT_IDENTIFYING",
+  "model": "data/derived/sdp81_pcrr_rank_one_invariant_diagnostic_freeze_v01.json",
+  "covariance_source": "data/derived/sdp81_4d_corridor_proxy_covariance_robustness_v01.json",
+  "spectral_endpoint_read": true,
+  "observed_double_centered_log_matrix": [
+    [
+      0.0013575170484598183,
+      0.694678924438646,
+      0.5921577966683966,
+      0.48227994005243396,
+      0.16049299814910448
+    ],
+    [
+      0.10806829304442114,
+      -0.18450662669786408,
+      -0.27887883672100205,
+      -0.3648585084512236,
+      -0.3339752637423344
+    ],
+    [
+      0.43727884299092296,
+      0.3930018287726586,
+      0.6132274673229595,
+      0.4798294830398164,
+      0.18960187780191445
+    ]
+  ],
+  "observed_statistics": {
+    "singular_values": [
+      1.4806409657818236,
+      0.41165179713084926,
+      0.29305460030681757
+    ],
+    "rank_one_energy_fraction": 0.8956796621872479,
+    "rank_one_residual_fraction": 0.10432033781275207
+  },
+  "geometry_records": [
+    {
+      "inner_radius_arcsec": 2.5,
+      "outer_radius_arcsec": 4.5,
+      "grid_step_arcsec": 0.4,
+      "projected_covariance_minimum_eigenvalue": 0.0008758616097650238,
+      "noise_null_rank_one_energy_median": 0.775134716197724,
+      "noise_null_upper_tail_p_value": 0.14498413473273128,
+      "rank_one_bootstrap_residual_median": 0.11128472881756082,
+      "rank_one_gof_upper_tail_p_value": 0.5316084940200146,
+      "rank_zero_rejected_at_0_05": false,
+      "rank_one_rejected_at_0_05": false
+    },
+    {
+      "inner_radius_arcsec": 2.5,
+      "outer_radius_arcsec": 4.5,
+      "grid_step_arcsec": 0.5,
+      "projected_covariance_minimum_eigenvalue": 0.0009266338835342195,
+      "noise_null_rank_one_energy_median": 0.7836450333413012,
+      "noise_null_upper_tail_p_value": 0.15108616060532096,
+      "rank_one_bootstrap_residual_median": 0.09846835101096865,
+      "rank_one_gof_upper_tail_p_value": 0.47571393702709297,
+      "rank_zero_rejected_at_0_05": false,
+      "rank_one_rejected_at_0_05": false
+    },
+    {
+      "inner_radius_arcsec": 2.5,
+      "outer_radius_arcsec": 4.5,
+      "grid_step_arcsec": 0.6,
+      "projected_covariance_minimum_eigenvalue": 0.0010440912345739074,
+      "noise_null_rank_one_energy_median": 0.7845792772281268,
+      "noise_null_upper_tail_p_value": 0.14962167439589943,
+      "rank_one_bootstrap_residual_median": 0.10347729258414336,
+      "rank_one_gof_upper_tail_p_value": 0.496460824993898,
+      "rank_zero_rejected_at_0_05": false,
+      "rank_one_rejected_at_0_05": false
+    },
+    {
+      "inner_radius_arcsec": 3.0,
+      "outer_radius_arcsec": 5.0,
+      "grid_step_arcsec": 0.4,
+      "projected_covariance_minimum_eigenvalue": 0.001063715481116813,
+      "noise_null_rank_one_energy_median": 0.7806998378274169,
+      "noise_null_upper_tail_p_value": 0.13961435196485233,
+      "rank_one_bootstrap_residual_median": 0.10124025046327474,
+      "rank_one_gof_upper_tail_p_value": 0.4857212594581401,
+      "rank_zero_rejected_at_0_05": false,
+      "rank_one_rejected_at_0_05": false
+    },
+    {
+      "inner_radius_arcsec": 3.0,
+      "outer_radius_arcsec": 5.0,
+      "grid_step_arcsec": 0.5,
+      "projected_covariance_minimum_eigenvalue": 0.0009583272328358031,
+      "noise_null_rank_one_energy_median": 0.7792904843297956,
+      "noise_null_upper_tail_p_value": 0.15547961923358555,
+      "rank_one_bootstrap_residual_median": 0.10318820496522664,
+      "rank_one_gof_upper_tail_p_value": 0.49524041981938005,
+      "rank_zero_rejected_at_0_05": false,
+      "rank_one_rejected_at_0_05": false
+    },
+    {
+      "inner_radius_arcsec": 3.0,
+      "outer_radius_arcsec": 5.0,
+      "grid_step_arcsec": 0.6,
+      "projected_covariance_minimum_eigenvalue": 0.000916623371402948,
+      "noise_null_rank_one_energy_median": 0.7855283866583638,
+      "noise_null_upper_tail_p_value": 0.16329021235050037,
+      "rank_one_bootstrap_residual_median": 0.10193061807914389,
+      "rank_one_gof_upper_tail_p_value": 0.48816206980717597,
+      "rank_zero_rejected_at_0_05": false,
+      "rank_one_rejected_at_0_05": false
+    },
+    {
+      "inner_radius_arcsec": 3.5,
+      "outer_radius_arcsec": 5.5,
+      "grid_step_arcsec": 0.4,
+      "projected_covariance_minimum_eigenvalue": 0.0009493583550221047,
+      "noise_null_rank_one_energy_median": 0.7798404934612472,
+      "noise_null_upper_tail_p_value": 0.14888943129118867,
+      "rank_one_bootstrap_residual_median": 0.09581864041780849,
+      "rank_one_gof_upper_tail_p_value": 0.46131315596778133,
+      "rank_zero_rejected_at_0_05": false,
+      "rank_one_rejected_at_0_05": false
+    },
+    {
+      "inner_radius_arcsec": 3.5,
+      "outer_radius_arcsec": 5.5,
+      "grid_step_arcsec": 0.5,
+      "projected_covariance_minimum_eigenvalue": 0.0008836422089920338,
+      "noise_null_rank_one_energy_median": 0.7819715146571082,
+      "noise_null_upper_tail_p_value": 0.14742494508176715,
+      "rank_one_bootstrap_residual_median": 0.09979899116642353,
+      "rank_one_gof_upper_tail_p_value": 0.4754698559921894,
+      "rank_zero_rejected_at_0_05": false,
+      "rank_one_rejected_at_0_05": false
+    },
+    {
+      "inner_radius_arcsec": 3.5,
+      "outer_radius_arcsec": 5.5,
+      "grid_step_arcsec": 0.6,
+      "projected_covariance_minimum_eigenvalue": 0.0008198785072013754,
+      "noise_null_rank_one_energy_median": 0.7785479111541742,
+      "noise_null_upper_tail_p_value": 0.15377105198926044,
+      "rank_one_bootstrap_residual_median": 0.09569238326633603,
+      "rank_one_gof_upper_tail_p_value": 0.4588723456187454,
+      "rank_zero_rejected_at_0_05": false,
+      "rank_one_rejected_at_0_05": false
+    }
+  ],
+  "summary": {
+    "geometry_count": 9,
+    "noise_null_upper_tail_p_value_range": [
+      0.13961435196485233,
+      0.16329021235050037
+    ],
+    "rank_one_gof_upper_tail_p_value_range": [
+      0.4588723456187454,
+      0.5316084940200146
+    ],
+    "rank_zero_rejected_geometries": 0,
+    "rank_one_rejected_geometries": 0
+  },
+  "checks": {
+    "nine_covariance_geometries": true,
+    "all_projected_covariances_positive": true,
+    "rank_zero_not_rejected_any_geometry": true,
+    "rank_one_not_rejected_any_geometry": true,
+    "no_depth_proxy_used": true,
+    "physical_endpoint_remains_unauthorized": true
+  },
+  "checks_passed": 6,
+  "checks_total": 6,
+  "physical_endpoint_authorized": false,
+  "confirmatory_prediction": false,
+  "claim_boundary": "The observed interaction is compatible with a rank-one matrix under all nine covariance models, but its leading singular fraction is not unusual under the rank-zero noise control. Rank one is also shared by nonlinear separable filters and can be altered by path-mode calibration. This depth-free retrospective diagnostic neither detects PCRR nor identifies Tau, parent depth, terminal calibration, or Nature occupation."
+}

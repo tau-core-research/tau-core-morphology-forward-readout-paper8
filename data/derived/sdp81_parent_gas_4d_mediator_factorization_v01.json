@@ -1,0 +1,30 @@
+{
+  "schema": "tau-core.paper8.sdp81-parent-gas-4d-mediator-factorization.v01",
+  "status": "FOUR_D_MEDIATOR_FACTORIZATION_DERIVED_DIRECT_REMAINDER_AND_PHYSICAL_DESCENT_OPEN",
+  "checks": {
+    "conditional_chain_rule_reproduced": true,
+    "pure_factorization_annihilates_mediator_kernel": true,
+    "pseudoinverse_kernel_criterion_accepts_factorized_bridge": true,
+    "pseudoinverse_kernel_criterion_rejects_bad_bridge": true,
+    "scalar_mediator_rank_is_at_most_one": true,
+    "four_component_mediator_rank_is_at_most_four": true,
+    "five_mode_witness_requires_rank_five_mediator": true,
+    "full_column_rank_factorization_is_nonidentifying": true,
+    "direct_mixed_derivative_produces_exact_remainder": true,
+    "ordinary_lens_path_geometry_not_retyped_as_parent_mediator": true,
+    "no_spectral_endpoint_read": true,
+    "no_co109_header_or_pixel_read": true,
+    "physical_mediator_not_self_asserted": true
+  },
+  "checks_passed": 13,
+  "checks_total": 13,
+  "mediator_dimension": 6,
+  "mediator_jacobian_rank": 5,
+  "derived_bridge_rank": 5,
+  "physical_environment_descriptor_owned": false,
+  "physical_D_Z_e_owned": false,
+  "physical_B_xi_e_owned": false,
+  "no_direct_coupling_certificate_owned": false,
+  "endpoint_authorized": false,
+  "claim_boundary": "This endpoint-blind audit proves only the conditional factorization, kernel criterion, rank limits and direct remainder. It does not supply the physical SDP.81 environment-to-gas packet."
+}

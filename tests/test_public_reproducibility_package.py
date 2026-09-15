@@ -30,6 +30,25 @@ def test_publication_files_exist():
         ROOT / "scripts/audit_paper8_foundations.py",
         ROOT / "scripts/run_source_native_readout_formula_endpoint.py",
         ROOT / "scripts/run_source_native_carrier_robustness.py",
+        ROOT / "scripts/run_inverse_required_rapidity_diagnostic_v01.py",
+        ROOT / "scripts/audit_sdp81_parent_path_lift_gate_v01.py",
+        DATA / "sdp81_parent_path_lift_gate_v01.json",
+        ROOT / "reports/sdp81_parent_path_lift_gate_v01.md",
+        ROOT / "scripts/compile_sdp81_common_action_forward_model_v01.py",
+        DATA / "sdp81_common_action_forward_model_v01.json",
+        ROOT / "reports/sdp81_common_action_forward_model_v01.md",
+        ROOT / "scripts/run_sdp81_common_action_endpoint_v01.py",
+        ROOT / "scripts/freeze_sdp81_4d_corridor_proxy_diagnostic_v01.py",
+        DATA / "sdp81_4d_corridor_proxy_diagnostic_freeze_v01.json",
+        ROOT / "reports/sdp81_4d_corridor_proxy_diagnostic_freeze_v01.md",
+        ROOT / "scripts/run_sdp81_4d_corridor_proxy_diagnostic_v01.py",
+        DATA / "sdp81_4d_corridor_proxy_diagnostic_score_v01.json",
+        ROOT / "reports/sdp81_4d_corridor_proxy_diagnostic_score_v01.md",
+        ROOT / "scripts/run_sdp81_4d_corridor_proxy_covariance_robustness_v01.py",
+        DATA / "sdp81_4d_corridor_proxy_covariance_robustness_v01.json",
+        ROOT / "reports/sdp81_4d_corridor_proxy_covariance_robustness_v01.md",
+        DATA / "sdp81_common_action_endpoint_v01.json",
+        ROOT / "reports/sdp81_common_action_endpoint_v01.md",
         ROOT / "arxiv_submission_source.zip",
     ]
     missing = [str(path.relative_to(ROOT)) for path in required if not path.exists()]
@@ -50,6 +69,8 @@ def test_headline_artifacts_are_present():
         DATA / "source_native_carrier_robustness_summary.csv",
         DATA / "accepted_morphology_manifest.csv",
         DATA / "narrow_accepted_exponential_disk_population_endpoint_summary.csv",
+        DATA / "inverse_required_rapidity_diagnostic_v01_summary.csv",
+        DATA / "inverse_required_rapidity_diagnostic_v01_audit.json",
     ]
     missing = [str(path.relative_to(ROOT)) for path in required if not path.exists()]
     assert not missing
@@ -272,6 +293,17 @@ def test_observer_channel_collective_probe_atlas_preserves_identifiability_bound
     assert channel["observer_channel_detected"] is False
     assert channel["sparc_endpoint_opened"] is False
 
+    zero_point = json.loads(
+        (DATA / "ngc3726_source_owned_zero_point_projector_v01.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert zero_point["operator_checks_pass"] is True
+    assert zero_point["confirmatory_endpoint"] is False
+    assert zero_point["nuisance_rank"] == 1
+    assert zero_point["projector_rank"] == 5
+    assert zero_point["shape_zero_p"] > 0.05
+
     ngc4559 = json.loads(
         (DATA / "ngc4559_halogas_moment_sources_v01.json").read_text(
             encoding="utf-8"
@@ -321,7 +353,65 @@ def test_observer_channel_collective_probe_atlas_preserves_identifiability_bound
     assert ngc3893["counts_as_negative_channel_test"] is False
     assert ngc3893["evidence"]["interaction_and_non_circular_motion"] is True
     assert ngc3893["evidence"]["dedicated_curve_symmetry_targeted"] is True
+    assert ngc3893["gates"]["independent_machine_readable_hi_radial_sides_acquired"] is True
     assert ngc3893["next_clean_candidate"] == "UGC08490"
+    ngc3893_freeze = json.loads(
+        (DATA / "ngc3893_disturbed_control_freeze_v01.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert ngc3893_freeze["velocity_columns_parsed_during_freeze"] is False
+    assert ngc3893_freeze["common_radii_arcsec"] == [20.0, 40.0, 60.0, 80.0]
+    assert ngc3893_freeze["source_template"] == [0.0, 0.0, 0.0, 1.0]
+    ngc3893_score = json.loads(
+        (DATA / "ngc3893_disturbed_control_score_v01.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert ngc3893_score["status"] == "NEGATIVE_RESULT_PRESERVED"
+    assert ngc3893_score["projector_rank"] == 3
+    assert ngc3893_score["control_detected_at_5pct"] is False
+    assert ngc3893_score["matched_outer_disturbance"]["two_sided_p"] > 0.05
+
+    viva_prereg = json.loads(
+        (DATA / "viva_2d_morphology_sensitivity_preregistration_v01.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert viva_prereg["construction_uses_velocity_or_rotation_residual"] is False
+    assert viva_prereg["construction"]["source_morphology_mode"] == 1
+    assert viva_prereg["construction"]["velocity_target_upper_sideband"] == 2
+    assert viva_prereg["endpoint_scoring_allowed"] is False
+    viva_result = json.loads(
+        (DATA / "viva_2d_morphology_sensitivity_endpoint_v01.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert viva_result["status"] == "PREFLIGHT_BLOCKED_BY_FROZEN_SUPPORT_GATE"
+    assert viva_result["all_frozen_support_gates_pass"] is False
+    assert viva_result["score_rows"] == []
+    assert viva_result["tau_endpoint_scored"] is False
+    assert all(not row["support_gate"] for row in viva_result["support_gates"])
+
+    little = json.loads(
+        (DATA / "little_things_2d_morphology_population_endpoint_v01.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert little["status"] == "CONVENTIONAL_MORPHOLOGY_SENSITIVITY_NOT_DEMONSTRATED"
+    assert little["scored_galaxy_count"] == 20
+    assert little["mean_specificity"] < 0
+    assert little["median_specificity"] < 0
+    assert little["positive_fraction"] == 0.25
+    assert little["exact_one_sided_sign_flip_p"] > 0.95
+    assert little["tau_endpoint_scored"] is False
+    little_robustness = json.loads(
+        (DATA / "little_things_2d_morphology_endpoint_robustness_v01.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert little_robustness["all_leave_one_out_primary_means_negative"] is True
+    assert little_robustness["global_phase_rotation_is_invalid_negative_control"] is True
 
     whisp = json.loads(
         (DATA / "ugc06787_whisp_hi_source_v01.json").read_text(encoding="utf-8")
@@ -1757,3 +1847,64 @@ def test_phangs_radial_body_projection_same_family_cohort_is_exhausted():
         "SOURCE_BLOCKED_NO_MATCHING_BROAD_CO_MOMENT0": 1,
         "SOURCE_BODY_DESCRIPTION_INCOMPLETE": 1,
     }
+
+
+def test_ngc0925_signed_geometry_partial_freeze_preserves_endpoint_blindness():
+    result = json.loads(
+        (DATA / "ngc0925_signed_descriptor_source_geometry_freeze_v01.json").read_text()
+    )
+    assert result["status"] == "SOURCE_GEOMETRY_DIGITIZATION_COMPLETE_ENDPOINT_BLOCKED_PHYSICAL_UNCERTAINTY"
+    assert result["digitization"]["sampled_ring_count"] == 93
+    assert result["digitization"]["absolute_difference_from_published_mean_pa_deg"] < 1.0
+    assert result["endpoint_pixels_read"] is False
+    assert result["endpoint_allowed"] is False
+
+
+def test_ngc0925_source_only_audits_block_the_clean_endpoint():
+    physical = json.loads(
+        (DATA / "ngc0925_physical_geometry_uncertainty_v02.json").read_text()
+    )
+    outer = json.loads((DATA / "ngc0925_outer_only_source_support_v01.json").read_text())
+    assert physical["status"] == "PHYSICAL_MC_ACQUIRED_GEOMETRY_IDENTIFIABILITY_FAIL_ENDPOINT_BLOCKED"
+    assert physical["identifiability"]["inner_boundary_arcsec"] == 250.0
+    assert outer["status"] == "OUTER_GEOMETRIC_CAPACITY_PASS_TERMINAL_CLEANLINESS_FAIL_ENDPOINT_BLOCKED"
+    assert outer["next_source_target"] == "NGC4062"
+    assert physical["endpoint_pixels_read"] is False
+    assert outer["endpoint_pixels_read"] is False
+
+
+def test_ngc4062_negative_endpoint_exhausts_clean_halogas_lane():
+    freeze = json.loads(
+        (DATA / "ngc4062_halogas_confirmatory_freeze_v01.json").read_text()
+    )
+    endpoint = json.loads(
+        (DATA / "ngc4062_halogas_confirmatory_endpoint_v01.json").read_text()
+    )
+    pool = json.loads(
+        (DATA / "multigalaxy_halogas_confirmatory_candidate_pool_v01.json").read_text()
+    )
+    assert freeze["pixel_values_opened_during_freeze"] is False
+    assert freeze["common_radii_arcsec"] == [42.0, 84.0]
+    assert endpoint["status"] == "NGC4062_CONFIRMATORY_ENDPOINT_FAIL"
+    assert endpoint["confirmatory_pass"] is False
+    assert endpoint["gates"]["hr_rejects_zero"] is False
+    assert endpoint["gates"]["lr_rejects_zero"] is False
+    assert endpoint["gates"]["all_twelve_nuisance_scores_preserve_sign"] is False
+    assert pool["n_clean_source_candidates"] == 0
+    assert pool["next_clean_source_acquisition_target"] is None
+
+
+def test_ngc4062_post_open_zero_point_audit_cannot_repair_endpoint():
+    audit = json.loads(
+        (DATA / "ngc4062_velocity_zero_point_orthogonalization_v01.json").read_text()
+    )
+    assert audit["operator_checks_pass"] is True
+    assert audit["endpoint_rescored"] is False
+    assert audit["confirmatory_status_changed"] is False
+    assert audit["derived_results"]["future_target_requires_rank_increment"] == (
+        "rank([G,s]) = rank(G) + 1"
+    )
+    assert all(
+        row["common_template_information_fraction_retained"] < 0.001
+        for row in audit["resolutions"].values()
+    )

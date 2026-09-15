@@ -1,0 +1,73 @@
+{
+  "schema": "ngc3893_disturbed_control_score_v01",
+  "status": "NEGATIVE_RESULT_PRESERVED",
+  "role": "CONVENTIONAL_DISTURBED_CONTROL_NOT_TAU_ENDPOINT",
+  "freeze_unchanged": true,
+  "common_radii_arcsec": [
+    20.0,
+    40.0,
+    60.0,
+    80.0
+  ],
+  "delta_odd_los_km_s": [
+    -12.521318035514152,
+    -1.294308700382054,
+    -5.402704639190918,
+    1.5700959017642453
+  ],
+  "covariance_km2_s2": [
+    [
+      134.8625599442198,
+      0.040875443599560274,
+      0.04748663613941902,
+      -0.00301867469475137
+    ],
+    [
+      0.040875443599560274,
+      122.00787490819945,
+      0.002736287353869749,
+      0.010313332805408746
+    ],
+    [
+      0.04748663613941902,
+      0.002736287353869749,
+      122.77161334173707,
+      -0.007204833431359914
+    ],
+    [
+      -0.00301867469475137,
+      0.010313332805408746,
+      -0.007204833431359914,
+      87.84281287192587
+    ]
+  ],
+  "projector_rank": 3,
+  "omnibus_shape": {
+    "chi2": 0.9641803384321904,
+    "dof": 3,
+    "p": 0.809918322778267
+  },
+  "matched_outer_disturbance": {
+    "amplitude_km_s": 7.775981674526667,
+    "sigma_km_s": 11.399830428522305,
+    "z": 0.6821138018922817,
+    "two_sided_p": 0.4951669939866091
+  },
+  "wrong_template_controls": {
+    "inner_single_ring": {
+      "amplitude_km_s": -11.194386028978803,
+      "sigma_km_s": 13.072193649347716,
+      "z": -0.8563509942753478,
+      "two_sided_p": 0.39180366259120525
+    },
+    "linear_radius": {
+      "amplitude_km_s": 11.319295923155261,
+      "sigma_km_s": 14.082523375186932,
+      "z": 0.8037832156628684,
+      "two_sided_p": 0.42152218481963133
+    }
+  },
+  "control_detected_at_5pct": false,
+  "interpretation": "the frozen outer-disturbance template is not detected; the terminal fails this conventional sensitivity control",
+  "claim_boundary": "negative conventional sensitivity control; not a Tau endpoint, q_R, parent morphology, Nature occupation, or dark-matter result"
+}

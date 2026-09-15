@@ -1,0 +1,114 @@
+{
+  "schema": "tau-core.paper8.sdp81-observed-4d-incidence-measure.v01",
+  "status": "OBSERVED_4D_INCIDENCE_MEASURE_PASS",
+  "scientific_role": "endpoint-blind positive counting measure on Band-7-detected 4D image-path incidences",
+  "inputs": {
+    "continuum": "data/external/literature/sdp81_multipath_channel/SDP81_Band7_ReferenceImages/SDP81_band7_11exec.contR1.image.fits",
+    "continuum_sha256": "030372d52c8d19d76cb7d9607e8b1b447e859678cb66e9b4c9cc017b11f88b86",
+    "registration": "data/derived/sdp81_image_g_wcs_registration_v01.json",
+    "registration_sha256": "89bb320fb30bde18f18f4b827b2769898b75d1a6dbb1d7b76d88e4bc9d1faac7",
+    "spectral_or_velocity_endpoint_read": false
+  },
+  "measurement": {
+    "image_unit": "JY/BEAM",
+    "pixel_arcsec": 0.0050000000000004,
+    "beam_major_arcsec": 0.0307760555297124,
+    "beam_minor_arcsec": 0.0234658066183344,
+    "robust_off_source_rms_jy_per_beam": 9.159497964037655e-06,
+    "off_source_inner_radius_arcsec": 4.0,
+    "aperture_radius_arcsec": 0.12,
+    "detection_threshold_sigma": 5.0
+  },
+  "atoms": [
+    {
+      "path_key": "q1_path_1",
+      "ra_deg": 135.79768884226615,
+      "dec_deg": 0.6518857303061002,
+      "continuum_sha256": "030372d52c8d19d76cb7d9607e8b1b447e859678cb66e9b4c9cc017b11f88b86",
+      "incidence_key": "b5b9eeeacdff6a241ef2a93051588e46b32128050d3ebea941fe334a20a87892",
+      "aperture_radius_arcsec": 0.12,
+      "aperture_beams": 55.35863046846071,
+      "integrated_flux_jy": 0.001504407040455357,
+      "integrated_sigma_jy": 6.814976132547952e-05,
+      "integrated_snr": 22.075015542173237,
+      "peak_jy_per_beam": 0.00011148289922857657,
+      "peak_snr": 12.171289263481981,
+      "detected": true,
+      "counting_mass": 1.0
+    },
+    {
+      "path_key": "q1_path_2",
+      "ra_deg": 135.79864114681692,
+      "dec_deg": 0.6517907112314646,
+      "continuum_sha256": "030372d52c8d19d76cb7d9607e8b1b447e859678cb66e9b4c9cc017b11f88b86",
+      "incidence_key": "31ea250b03a49aef0a6dec123b6118a5c8ba1c783003ae00cdc6f9632f45ce8b",
+      "aperture_radius_arcsec": 0.12,
+      "aperture_beams": 55.29752822732554,
+      "integrated_flux_jy": 0.002024897518028299,
+      "integrated_sigma_jy": 6.811214069808852e-05,
+      "integrated_snr": 29.728877954427958,
+      "peak_jy_per_beam": 0.00011504691792652011,
+      "peak_snr": 12.560395600088716,
+      "detected": true,
+      "counting_mass": 1.0
+    },
+    {
+      "path_key": "q1_path_3",
+      "ra_deg": 135.79855464151808,
+      "dec_deg": 0.6520568453683248,
+      "continuum_sha256": "030372d52c8d19d76cb7d9607e8b1b447e859678cb66e9b4c9cc017b11f88b86",
+      "incidence_key": "a8058151afd6c7c92a7bb546552a34cc966b614605342b44dbb54f66d0db2dca",
+      "aperture_radius_arcsec": 0.12,
+      "aperture_beams": 55.14477262448763,
+      "integrated_flux_jy": 0.0014325521565030567,
+      "integrated_sigma_jy": 6.801799809511564e-05,
+      "integrated_snr": 21.06136899971374,
+      "peak_jy_per_beam": 9.556947043165565e-05,
+      "peak_snr": 10.433920156637829,
+      "detected": true,
+      "counting_mass": 1.0
+    },
+    {
+      "path_key": "q1_path_4",
+      "ra_deg": 135.79844812213156,
+      "dec_deg": 0.6514867291687774,
+      "continuum_sha256": "030372d52c8d19d76cb7d9607e8b1b447e859678cb66e9b4c9cc017b11f88b86",
+      "incidence_key": "d044b7eca24cca92b892dae15112975705d3253b6a7b4b7c8e1bd6ae07ccd66d",
+      "aperture_radius_arcsec": 0.12,
+      "aperture_beams": 55.32807934789313,
+      "integrated_flux_jy": 0.0017295439456818942,
+      "integrated_sigma_jy": 6.813095360845917e-05,
+      "integrated_snr": 25.385582530099114,
+      "peak_jy_per_beam": 0.00012414260709192604,
+      "peak_snr": 13.55342919222638,
+      "detected": true,
+      "counting_mass": 1.0
+    }
+  ],
+  "counting_measure": {
+    "total_mass": 4.0,
+    "normalized_masses_in_path_order": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "semantics": "unweighted positive counting measure on independently detected 4D incidence atoms"
+  },
+  "checks": {
+    "band7_continuum_artifact_present": true,
+    "absolute_wcs_registration_operational": true,
+    "four_registered_q1_locations": true,
+    "robust_off_source_rms_positive": true,
+    "all_four_paths_detected_above_five_sigma": true,
+    "positive_nonzero_counting_measure": true,
+    "normalized_measure_has_unit_mass": true,
+    "unique_incidence_keys": true,
+    "no_spectral_or_velocity_endpoint_read": true,
+    "no_parent_lift_or_transfer_field_materialized": true
+  },
+  "checks_passed": 10,
+  "checks_total": 10,
+  "parent_selector_or_lift_occupation_materialized": false,
+  "claim_boundary": "This is observed post-body 4D path-incidence support conditional on the frozen standard lens/WCS registration. It is not a Tau parent lift, does not select a parent section, and does not establish parent-law Nature occupation, transfer, loss, time, quantum structure, or gravity."
+}

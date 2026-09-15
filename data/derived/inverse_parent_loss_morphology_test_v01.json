@@ -1,0 +1,40 @@
+{
+  "schema": "inverse_parent_loss_morphology_test_v01",
+  "status": "DIAGNOSTIC_ONLY_NOT_ENDPOINT",
+  "hashes": {
+    "tpg_points_sha256": "f77b9e70888e406d975d14f597aeafc8c262f3010b3050be64f9137f8f19a8a2",
+    "sparc_master_sha256": "d6900f7a90d4e19cda4ad94c518baa862d4ed9d2405d2b94c3c48708a8f8e24a",
+    "formula_labels_sha256": "772b1992fc4cd0399a579e6d5ec39d3510b8a8c9f23555481e89460e0cb58551"
+  },
+  "n_train_galaxies": 131,
+  "n_holdout_galaxies": 44,
+  "n_holdout_points": 835,
+  "target": "kappa_required=log(v_observed/v_baseline)",
+  "checks": {
+    "frozen_split_retained": true,
+    "equal_velocity_zero_limit": true,
+    "forward_substitution_max_abs_v2_error": 4.3655745685100555e-11,
+    "forward_substitution_tolerance_pass": true,
+    "finite_metrics": true,
+    "alpha_sensitivity_values": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0
+    ],
+    "independent_metrics": [
+      "mean-galaxy RMSE",
+      "Pearson r",
+      "Spearman r"
+    ],
+    "forbidden_predictor_overlap": []
+  },
+  "forbidden_interpretations": [
+    "parent morphology identified from the inverse target",
+    "Nature occupation",
+    "dark-matter replacement"
+  ],
+  "strongest_alternative": "baryonic scaling, inclination/deprojection, non-circular motion, distance and baseline-systematic structure"
+}

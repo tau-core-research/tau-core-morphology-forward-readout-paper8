@@ -1,0 +1,116 @@
+{
+  "schema": "tau-core.paper8.sdp81-co109-common-action-confirmatory-protocol.v01",
+  "status": "SOURCE_PROTOCOL_FROZEN_ENDPOINT_SEALED",
+  "freeze_date": "2026-09-03",
+  "scientific_role": "prospective held-out-transition protocol within the already studied SDP.81 system",
+  "sealed_endpoint": {
+    "archive": "data/external/literature/sdp81_multipath_channel/SDP81_Band7_ReferenceImages.tgz",
+    "archive_sha256": "f76e56a87647754be4f21df9b404e1641f2013742f2893029f2d8cfc540ab775",
+    "member": "SDP81_Band7_ReferenceImages/SDP81_11exec.co109.R1uvtaper1000kl.image.fits",
+    "line": "CO(10-9)",
+    "fits_header_read_before_physical_gate": false,
+    "fits_data_array_read_before_physical_gate": false,
+    "member_sha256": null,
+    "member_sha256_boundary": "hashing the member requires opening its payload and is deferred until the complete pre-pixel gate passes"
+  },
+  "held_out_scope": {
+    "repository_unopened_transition": true,
+    "independent_source_replication": false,
+    "shared_lens_geometry": true,
+    "shared_source_systematics": true
+  },
+  "static_source_inputs": [
+    {
+      "artifact": "data/derived/sdp81_multipath_channel_source_audit_v01.json",
+      "sha256": "4894c4f3d5ce22f6e43ea73b49fc41c534088725c2405cc7f31c9f7e6745f230"
+    },
+    {
+      "artifact": "data/derived/sdp81_image_g_wcs_registration_v01.json",
+      "sha256": "89bb320fb30bde18f18f4b827b2769898b75d1a6dbb1d7b76d88e4bc9d1faac7"
+    },
+    {
+      "artifact": "data/derived/sdp81_standard_corridor_descriptor_v01.json",
+      "sha256": "7aa0f160f5c661ea00f25eb0f251064aae74001782528dad3bfc0ebfba80803a"
+    },
+    {
+      "artifact": "data/derived/sdp81_observed_4d_incidence_measure_v01.json",
+      "sha256": "fff5c4784b6f04cc22327ae8ed3d0804cf043bc3110b635e126cc72e220479b4"
+    },
+    {
+      "artifact": "data/derived/sdp81_standard_path_radiative_factorization_v01.json",
+      "sha256": "e5166a804198d95368722c54b8ab1f6625cf3f989f5963ef32693c21eb7630b1"
+    },
+    {
+      "artifact": "data/derived/sdp81_radiative_mixed_jet_minimal_rank_v01.json",
+      "sha256": "d199eb070cdc21c72d2257d489bc3c3ce522928818d4cb86839dccfa53be2702"
+    },
+    {
+      "artifact": "data/derived/sdp81_parent_gas_conditional_response_v01.json",
+      "sha256": "5cf7734c4b6ad5805753c004365a4c245f1d1b6a0a380d5f5e2081f20e353c09"
+    },
+    {
+      "artifact": "data/derived/sdp81_parent_gas_equivariant_intertwiner_v01.json",
+      "sha256": "60f73ce4a512e2f6e3b53d738fee605d5a98caa6cb425421da9ef9e7f3612090"
+    },
+    {
+      "artifact": "data/derived/sdp81_parent_gas_4d_mediator_factorization_v01.json",
+      "sha256": "7d1e8453ca0640f8e3ca304fa8fb14a3d8e3b46a6ab0cf941540542722dbf710"
+    },
+    {
+      "artifact": "data/derived/sdp81_g4d_coframe_parent_gas_mediator_compiler_v01.json",
+      "sha256": "e7ed420599f90dba6a88fa8f770bcdee44fbf1201f1d2b6165ff3fbd04b4ed9a"
+    },
+    {
+      "artifact": "data/derived/sdp81_rybak2020_source_blind_pdr_preflight_v01.json",
+      "sha256": "e45096a306b6b2e505ced2f73ccfc7fba8be1cef93d168f7c75b7f58abd67be6"
+    },
+    {
+      "artifact": "data/derived/sdp81_open_transition_profile_lift_gate_v01.json",
+      "sha256": "e993a1278931596f937fa11bf0c1e57115ac0f9a04f9b85424b1c6080b2617b3"
+    },
+    {
+      "artifact": "data/derived/sdp81_alma_visibility_source_route_v01.json",
+      "sha256": "179e22b3f610193216e22a3d6563c46ffed7d1c8b7806baf3fbddea4e65d08ac"
+    },
+    {
+      "artifact": "data/derived/sdp81_reference_image_source_route_v01.json",
+      "sha256": "39a4f49e9aa363b1b6567ada0bcdf9968ff0f4c1c661df818ef90922fdbbdb04"
+    },
+    {
+      "artifact": "data/derived/sdp81_full_arc_regularized_source_inversion_v02.json",
+      "sha256": "69e7d6365beb5bac9e300d211601313a18753a39e0dd1593679103395e10e53a"
+    }
+  ],
+  "required_dynamic_source_inputs": {
+    "physical_parent_manifest": "data/derived/sdp81_parent_lift_physical_source_manifest_v01.json",
+    "parent_path_gate": "data/derived/sdp81_parent_path_lift_gate_v01.json",
+    "common_action_forward_model": "data/derived/sdp81_common_action_forward_model_v01.json",
+    "co109_terminal_registration": "data/derived/sdp81_co109_parent_terminal_registration_manifest_v01.json",
+    "co109_header_freeze": "data/derived/sdp81_co109_header_only_freeze_v01.json"
+  },
+  "hard_pre_pixel_requirements": [
+    "archive hash and exact member inventory pass without extracting the member",
+    "four registered q1 paths and positive continuum incidence remain source-valid",
+    "parent-path physical gate passes all seven requirements under one source-owned common post-body action",
+    "fixed-key or responsive-lift transfer semantics are frozen before endpoint access",
+    "four contractive transfers and every three-path leave-one-out fold are identifiable",
+    "the four ordinary smooth-lens plus aperture functionals are frozen independently of parent transfer, and the separable-source and spatial-spectral standard-physics controls are retained",
+    "the one-zone radiative rank obstruction is enforced and any five-mode terminal registration supplies a nondegenerate multi-component line model plus a source-owned ordered conditional gas functional whose physical H_xi and B_xiZ derive a full-rank parent/body-to-gas bridge without upstream backreaction; the CO(5-4)/CO(8-7) ratio alone may not be used to declare a channel opacity profile because source function, excitation, filling and differential magnification remain degenerate; P6 reflection or two-component label symmetry alone may not be claimed to select that bridge; bridge provenance must be either a source-owned direct conditional cross derivative or a gauge-quotiented environmental mediator with source-owned D_Ze and B_xi,e and an explicit no-direct-coupling certificate; the G4D relative-coframe specialization additionally requires an occupied G4D row, a source-owned I_ZA registration and a physical gas--metric mixed derivative; if its natural common-volume completion is used, q_A, q_V, L_0, T_0, D_C, D_A, W_R, I_ZA and B_xi,h must be source-frozen, gamma_cm must be derived as Lambda_A times the W_R Gram pairing of D_C e_V and D_A e_A rather than fitted independently, both relation images must be nonzero and nonorthogonal, both rank transversality conditions must pass, the channel-wise opacity/source-function derivative must be independently source-owned, and the exact rank-at-most-one Sherman--Morrison increment plus cancellation and terminal-null flags must be recorded before endpoint access",
+    "a source-owned parent-mode to CO(10-9) centered-log registration reproduces W=-H_Z^{-1}B_ZC, the ordered conditional gas bridge P=-H_xi^{-1}B_xiZ, and, separately for all four paths, D_ZF_i=(D_xiF_i)P and J_log,i=U_0^T diag(F_i^0)^{-1}D_ZF_i plus the composite and whitened operators; it validates source hashes and fixes the resulting simple-mode orientation and permutation",
+    "a header-only freeze fixes velocity-window and rebin rules before any FITS data-array access",
+    "a header/source-only rule fixes aperture, blank-region covariance estimator and positivity/conditioning thresholds",
+    "no CO(10-9) data-array access has occurred"
+  ],
+  "endpoint_score_contract": {
+    "observable": "five-dimensional centered-log CO(10-9) spectral shape",
+    "primary": "leave-one-path-out generalized least-squares prediction of one common source-mode vector",
+    "baseline": "lossless identity transfer",
+    "wrong_assignment_control": "all 23 nonidentity path-to-transfer permutations",
+    "transfer_semantics_control": "pre-frozen fixed-key versus responsive-lift alternative",
+    "common_volume_completion_control": "when activated, score only the source-frozen exact rank-at-most-one increment Delta R=L_0^-1 u [k_V u^* L_0^-1 T_0-gamma_cm v^*]/(1+k_V u^* L_0^-1 u), with predeclared self/mixed-cancellation and terminal-null controls",
+    "covariance": "predeclared off-source blank-aperture covariance propagated to centered-log modes",
+    "no_post_endpoint_retuning": true,
+    "failure_action": "demote the tested common-action/registration packet; do not fit a replacement on CO(10-9)"
+  },
+  "claim_boundary": "Prospective only with respect to the repository-unopened SDP.81 CO(10-9) transition, not an independent-source replication. A scored result tests one pre-frozen common-action transfer and terminal registration on a held-out tracer through the same lens geometry. It cannot by itself establish the parent action, Nature occupation, universal parent loss, observer-time distortion, or a dark-sector replacement. Any CO(10-9) pixel access before the complete source gate passes demotes the result to retrospective diagnostic status."
+}

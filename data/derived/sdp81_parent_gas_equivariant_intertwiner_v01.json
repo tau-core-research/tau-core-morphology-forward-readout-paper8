@@ -1,0 +1,33 @@
+{
+  "schema": "tau-core.paper8.sdp81-parent-gas-equivariant-intertwiner.v01",
+  "status": "SYMMETRY_INTERTWINER_SHAPE_DERIVED_CURRENT_SYMMETRIES_NONSELECTING",
+  "formula": "P rho_Z(g)=rho_xi(g)P",
+  "p6_reflection_parity_multiplicities": [
+    2,
+    3
+  ],
+  "p6_reflection_intertwiner_dimension": 13,
+  "hypothetical_s6_commutant_dimension": 1,
+  "two_component_swap_fixed_radiative_rank": 2,
+  "physical_common_representation_owned": false,
+  "physical_susceptibility_anchor_owned": false,
+  "checks": {
+    "basis_orthonormal": true,
+    "reflection_is_involution": true,
+    "p6_reflection_is_graph_symmetry": true,
+    "reflection_split_is_two_plus_three": true,
+    "reflection_commutant_dimension_is_thirteen": true,
+    "multiple_full_rank_reflection_intertwiners_exist": true,
+    "standard_s6_commutant_dimension_is_one": true,
+    "standard_s6_is_not_p6_graph_symmetry": true,
+    "s6_scalar_scale_remains_free": true,
+    "trivial_gas_reflection_has_rank_at_most_two": true,
+    "generic_two_component_baseline_not_swap_fixed": true,
+    "swap_fixed_baseline_radiative_rank_below_five": true,
+    "no_spectral_endpoint_read": true,
+    "no_co109_header_or_pixel_read": true
+  },
+  "checks_passed": 14,
+  "checks_total": 14,
+  "claim_boundary": "Current terminal-graph and component-label symmetries do not select the physical parent-to-gas bridge or authorize the CO(10-9) endpoint."
+}

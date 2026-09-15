@@ -1,0 +1,39 @@
+{
+  "schema": "little_things_2d_morphology_endpoint_robustness_v01",
+  "status": "NEGATIVE_PRIMARY_RESULT_ROBUST_TO_CONTROL_FAMILY_DECOMPOSITION",
+  "audit_class": "post-open robustness; not a replacement endpoint",
+  "endpoint": "data/derived/little_things_2d_morphology_population_endpoint_v01.json",
+  "endpoint_sha256": "a56366bade831b143887ce4c599316a0535cc76e47c2f1f33c740889b37c2f54",
+  "family_specific_contrasts": {
+    "radial_reversal": {
+      "mean_matched_minus_control": -0.012839583331408954,
+      "median_matched_minus_control": 0.008248060789240461,
+      "positive_fraction": 0.65,
+      "exact_one_sided_sign_flip_p": 0.5984163284301758,
+      "exact_one_sided_wilcoxon_p": 0.32382774353027344
+    },
+    "annular_phase_scramble": {
+      "mean_matched_minus_control": -0.05651353935460509,
+      "median_matched_minus_control": -0.03563090757195018,
+      "positive_fraction": 0.35,
+      "exact_one_sided_sign_flip_p": 0.8860254287719727,
+      "exact_one_sided_wilcoxon_p": 0.9285469055175781
+    },
+    "cross_galaxy": {
+      "mean_matched_minus_control": -0.03980811656568371,
+      "median_matched_minus_control": -0.007657312956431507,
+      "positive_fraction": 0.45,
+      "exact_one_sided_sign_flip_p": 0.7796411514282227,
+      "exact_one_sided_wilcoxon_p": 0.6761722564697266
+    }
+  },
+  "leave_one_galaxy_out_primary_mean_min": -0.13240106657012013,
+  "leave_one_galaxy_out_primary_mean_max": -0.07788274220711709,
+  "all_leave_one_out_primary_means_negative": true,
+  "all_target_valid_fractions_one": true,
+  "global_phase_rotation_projector_delta": 5.262270241538797e-16,
+  "global_phase_rotation_is_invalid_negative_control": true,
+  "primary_endpoint_changed": false,
+  "tau_endpoint_scored": false,
+  "claim_boundary": "post-open decomposition confirms lack of matched-template advantage; it cannot identify the cause or reject the wider Tau architecture"
+}

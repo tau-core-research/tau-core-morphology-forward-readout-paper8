@@ -1,0 +1,679 @@
+{
+  "schema": "tau-core.paper8.sdp81-graph-spectral-terminal-calibration-score.v01",
+  "status": "RETROSPECTIVE_DIAGNOSTIC_ONLY_NOT_ENDPOINT",
+  "verdict": "CANONICAL_BASIS_DERIVED_MONOTONE_ASSIGNMENT_NOT_SUPPORTED",
+  "model": "data/derived/sdp81_graph_spectral_terminal_calibration_diagnostic_freeze_v01.json",
+  "covariance_source": "data/derived/sdp81_4d_corridor_proxy_covariance_robustness_v01.json",
+  "spectral_endpoint_read": true,
+  "candidate_results": {
+    "wr_t19_graph_monotone_half": {
+      "geometry_records": [
+        {
+          "inner_radius_arcsec": 2.5,
+          "outer_radius_arcsec": 4.5,
+          "grid_step_arcsec": 0.4,
+          "matched_score": 34.576874129029605,
+          "lossless_score": 35.44021930105707,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.34782608695652173,
+          "wrong_assignment_not_worse_count": 8,
+          "exact_assignment_rank_p_value": 0.375
+        },
+        {
+          "inner_radius_arcsec": 2.5,
+          "outer_radius_arcsec": 4.5,
+          "grid_step_arcsec": 0.5,
+          "matched_score": 32.68056548829991,
+          "lossless_score": 34.91771637863044,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.34782608695652173,
+          "wrong_assignment_not_worse_count": 8,
+          "exact_assignment_rank_p_value": 0.375
+        },
+        {
+          "inner_radius_arcsec": 2.5,
+          "outer_radius_arcsec": 4.5,
+          "grid_step_arcsec": 0.6,
+          "matched_score": 29.73509819046641,
+          "lossless_score": 30.619954653447937,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.391304347826087,
+          "wrong_assignment_not_worse_count": 9,
+          "exact_assignment_rank_p_value": 0.4166666666666667
+        },
+        {
+          "inner_radius_arcsec": 3.0,
+          "outer_radius_arcsec": 5.0,
+          "grid_step_arcsec": 0.4,
+          "matched_score": 35.632480193511824,
+          "lossless_score": 36.99601406245405,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.34782608695652173,
+          "wrong_assignment_not_worse_count": 8,
+          "exact_assignment_rank_p_value": 0.375
+        },
+        {
+          "inner_radius_arcsec": 3.0,
+          "outer_radius_arcsec": 5.0,
+          "grid_step_arcsec": 0.5,
+          "matched_score": 35.75652203979715,
+          "lossless_score": 38.072619559093184,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.34782608695652173,
+          "wrong_assignment_not_worse_count": 8,
+          "exact_assignment_rank_p_value": 0.375
+        },
+        {
+          "inner_radius_arcsec": 3.0,
+          "outer_radius_arcsec": 5.0,
+          "grid_step_arcsec": 0.6,
+          "matched_score": 37.31357567513135,
+          "lossless_score": 39.32079242587308,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.34782608695652173,
+          "wrong_assignment_not_worse_count": 8,
+          "exact_assignment_rank_p_value": 0.375
+        },
+        {
+          "inner_radius_arcsec": 3.5,
+          "outer_radius_arcsec": 5.5,
+          "grid_step_arcsec": 0.4,
+          "matched_score": 38.43333607994488,
+          "lossless_score": 40.133269863454174,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.34782608695652173,
+          "wrong_assignment_not_worse_count": 8,
+          "exact_assignment_rank_p_value": 0.375
+        },
+        {
+          "inner_radius_arcsec": 3.5,
+          "outer_radius_arcsec": 5.5,
+          "grid_step_arcsec": 0.5,
+          "matched_score": 38.85096059804206,
+          "lossless_score": 41.29090017983266,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.34782608695652173,
+          "wrong_assignment_not_worse_count": 8,
+          "exact_assignment_rank_p_value": 0.375
+        },
+        {
+          "inner_radius_arcsec": 3.5,
+          "outer_radius_arcsec": 5.5,
+          "grid_step_arcsec": 0.6,
+          "matched_score": 43.380708393038475,
+          "lossless_score": 44.688614004584934,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.34782608695652173,
+          "wrong_assignment_not_worse_count": 8,
+          "exact_assignment_rank_p_value": 0.375
+        }
+      ],
+      "summary": {
+        "geometry_count": 9,
+        "matched_beats_lossless_geometries": 9,
+        "matched_beats_wrong_median_geometries": 9,
+        "matched_beats_every_wrong_assignment_geometries": 0,
+        "wrong_assignment_fraction_not_worse_range": [
+          0.34782608695652173,
+          0.391304347826087
+        ],
+        "exact_assignment_rank_p_value_range": [
+          0.375,
+          0.4166666666666667
+        ],
+        "exact_assignment_p_le_0_05_geometries": 0
+      }
+    },
+    "wr_t19_graph_reverse_half": {
+      "geometry_records": [
+        {
+          "inner_radius_arcsec": 2.5,
+          "outer_radius_arcsec": 4.5,
+          "grid_step_arcsec": 0.4,
+          "matched_score": 34.84482624106389,
+          "lossless_score": 35.44021930105707,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 2.5,
+          "outer_radius_arcsec": 4.5,
+          "grid_step_arcsec": 0.5,
+          "matched_score": 32.37814248656913,
+          "lossless_score": 34.91771637863044,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.043478260869565216,
+          "wrong_assignment_not_worse_count": 1,
+          "exact_assignment_rank_p_value": 0.08333333333333333
+        },
+        {
+          "inner_radius_arcsec": 2.5,
+          "outer_radius_arcsec": 4.5,
+          "grid_step_arcsec": 0.6,
+          "matched_score": 30.222730155135785,
+          "lossless_score": 30.619954653447937,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 3.0,
+          "outer_radius_arcsec": 5.0,
+          "grid_step_arcsec": 0.4,
+          "matched_score": 36.48373910983502,
+          "lossless_score": 36.99601406245405,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 3.0,
+          "outer_radius_arcsec": 5.0,
+          "grid_step_arcsec": 0.5,
+          "matched_score": 35.97606479040405,
+          "lossless_score": 38.072619559093184,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 3.0,
+          "outer_radius_arcsec": 5.0,
+          "grid_step_arcsec": 0.6,
+          "matched_score": 36.878615755490536,
+          "lossless_score": 39.32079242587308,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.13043478260869565,
+          "wrong_assignment_not_worse_count": 3,
+          "exact_assignment_rank_p_value": 0.16666666666666666
+        },
+        {
+          "inner_radius_arcsec": 3.5,
+          "outer_radius_arcsec": 5.5,
+          "grid_step_arcsec": 0.4,
+          "matched_score": 38.581094999558005,
+          "lossless_score": 40.133269863454174,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 3.5,
+          "outer_radius_arcsec": 5.5,
+          "grid_step_arcsec": 0.5,
+          "matched_score": 38.57233529880705,
+          "lossless_score": 41.29090017983266,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 3.5,
+          "outer_radius_arcsec": 5.5,
+          "grid_step_arcsec": 0.6,
+          "matched_score": 44.27227749276476,
+          "lossless_score": 44.688614004584934,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.13043478260869565,
+          "wrong_assignment_not_worse_count": 3,
+          "exact_assignment_rank_p_value": 0.16666666666666666
+        }
+      ],
+      "summary": {
+        "geometry_count": 9,
+        "matched_beats_lossless_geometries": 9,
+        "matched_beats_wrong_median_geometries": 9,
+        "matched_beats_every_wrong_assignment_geometries": 0,
+        "wrong_assignment_fraction_not_worse_range": [
+          0.043478260869565216,
+          0.30434782608695654
+        ],
+        "exact_assignment_rank_p_value_range": [
+          0.08333333333333333,
+          0.3333333333333333
+        ],
+        "exact_assignment_p_le_0_05_geometries": 0
+      }
+    },
+    "isotropic_mean_half": {
+      "geometry_records": [
+        {
+          "inner_radius_arcsec": 2.5,
+          "outer_radius_arcsec": 4.5,
+          "grid_step_arcsec": 0.4,
+          "matched_score": 34.55064576957916,
+          "lossless_score": 35.44021930105707,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 2.5,
+          "outer_radius_arcsec": 4.5,
+          "grid_step_arcsec": 0.5,
+          "matched_score": 32.4342095263057,
+          "lossless_score": 34.91771637863044,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 2.5,
+          "outer_radius_arcsec": 4.5,
+          "grid_step_arcsec": 0.6,
+          "matched_score": 29.895442320561465,
+          "lossless_score": 30.619954653447937,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.34782608695652173,
+          "wrong_assignment_not_worse_count": 8,
+          "exact_assignment_rank_p_value": 0.375
+        },
+        {
+          "inner_radius_arcsec": 3.0,
+          "outer_radius_arcsec": 5.0,
+          "grid_step_arcsec": 0.4,
+          "matched_score": 35.84645786870052,
+          "lossless_score": 36.99601406245405,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 3.0,
+          "outer_radius_arcsec": 5.0,
+          "grid_step_arcsec": 0.5,
+          "matched_score": 35.77781218501866,
+          "lossless_score": 38.072619559093184,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 3.0,
+          "outer_radius_arcsec": 5.0,
+          "grid_step_arcsec": 0.6,
+          "matched_score": 36.991587943457574,
+          "lossless_score": 39.32079242587308,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 3.5,
+          "outer_radius_arcsec": 5.5,
+          "grid_step_arcsec": 0.4,
+          "matched_score": 38.37953859551989,
+          "lossless_score": 40.133269863454174,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 3.5,
+          "outer_radius_arcsec": 5.5,
+          "grid_step_arcsec": 0.5,
+          "matched_score": 38.65163528627791,
+          "lossless_score": 41.29090017983266,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        },
+        {
+          "inner_radius_arcsec": 3.5,
+          "outer_radius_arcsec": 5.5,
+          "grid_step_arcsec": 0.6,
+          "matched_score": 43.55995864555787,
+          "lossless_score": 44.688614004584934,
+          "matched_beats_lossless": true,
+          "matched_beats_wrong_median": true,
+          "matched_beats_every_wrong_assignment": false,
+          "wrong_assignment_fraction_not_worse": 0.30434782608695654,
+          "wrong_assignment_not_worse_count": 7,
+          "exact_assignment_rank_p_value": 0.3333333333333333
+        }
+      ],
+      "summary": {
+        "geometry_count": 9,
+        "matched_beats_lossless_geometries": 9,
+        "matched_beats_wrong_median_geometries": 9,
+        "matched_beats_every_wrong_assignment_geometries": 0,
+        "wrong_assignment_fraction_not_worse_range": [
+          0.30434782608695654,
+          0.34782608695652173
+        ],
+        "exact_assignment_rank_p_value_range": [
+          0.3333333333333333,
+          0.375
+        ],
+        "exact_assignment_p_le_0_05_geometries": 0
+      }
+    }
+  },
+  "monotone_summary": {
+    "geometry_count": 9,
+    "matched_beats_lossless_geometries": 9,
+    "matched_beats_wrong_median_geometries": 9,
+    "matched_beats_every_wrong_assignment_geometries": 0,
+    "wrong_assignment_fraction_not_worse_range": [
+      0.34782608695652173,
+      0.391304347826087
+    ],
+    "exact_assignment_rank_p_value_range": [
+      0.375,
+      0.4166666666666667
+    ],
+    "exact_assignment_p_le_0_05_geometries": 0
+  },
+  "reverse_summary": {
+    "geometry_count": 9,
+    "matched_beats_lossless_geometries": 9,
+    "matched_beats_wrong_median_geometries": 9,
+    "matched_beats_every_wrong_assignment_geometries": 0,
+    "wrong_assignment_fraction_not_worse_range": [
+      0.043478260869565216,
+      0.30434782608695654
+    ],
+    "exact_assignment_rank_p_value_range": [
+      0.08333333333333333,
+      0.3333333333333333
+    ],
+    "exact_assignment_p_le_0_05_geometries": 0
+  },
+  "isotropic_summary": {
+    "geometry_count": 9,
+    "matched_beats_lossless_geometries": 9,
+    "matched_beats_wrong_median_geometries": 9,
+    "matched_beats_every_wrong_assignment_geometries": 0,
+    "wrong_assignment_fraction_not_worse_range": [
+      0.30434782608695654,
+      0.34782608695652173
+    ],
+    "exact_assignment_rank_p_value_range": [
+      0.3333333333333333,
+      0.375
+    ],
+    "exact_assignment_p_le_0_05_geometries": 0
+  },
+  "mode_assignment_records": [
+    {
+      "inner_radius_arcsec": 2.5,
+      "outer_radius_arcsec": 4.5,
+      "grid_step_arcsec": 0.4,
+      "monotone_rank_of_120": 60,
+      "monotone_exact_mode_assignment_p": 0.5,
+      "reverse_rank_of_120": 79,
+      "reverse_exact_mode_assignment_p": 0.6583333333333333,
+      "best_assignment": [
+        2,
+        1,
+        4,
+        0,
+        3
+      ],
+      "best_matched_score": 33.55697057773008
+    },
+    {
+      "inner_radius_arcsec": 2.5,
+      "outer_radius_arcsec": 4.5,
+      "grid_step_arcsec": 0.5,
+      "monotone_rank_of_120": 81,
+      "monotone_exact_mode_assignment_p": 0.675,
+      "reverse_rank_of_120": 59,
+      "reverse_exact_mode_assignment_p": 0.49166666666666664,
+      "best_assignment": [
+        2,
+        1,
+        4,
+        0,
+        3
+      ],
+      "best_matched_score": 31.678254450488218
+    },
+    {
+      "inner_radius_arcsec": 2.5,
+      "outer_radius_arcsec": 4.5,
+      "grid_step_arcsec": 0.6,
+      "monotone_rank_of_120": 45,
+      "monotone_exact_mode_assignment_p": 0.375,
+      "reverse_rank_of_120": 80,
+      "reverse_exact_mode_assignment_p": 0.6666666666666666,
+      "best_assignment": [
+        2,
+        1,
+        3,
+        0,
+        4
+      ],
+      "best_matched_score": 28.924781222122895
+    },
+    {
+      "inner_radius_arcsec": 3.0,
+      "outer_radius_arcsec": 5.0,
+      "grid_step_arcsec": 0.4,
+      "monotone_rank_of_120": 39,
+      "monotone_exact_mode_assignment_p": 0.325,
+      "reverse_rank_of_120": 97,
+      "reverse_exact_mode_assignment_p": 0.8083333333333333,
+      "best_assignment": [
+        2,
+        1,
+        3,
+        0,
+        4
+      ],
+      "best_matched_score": 34.92108040851883
+    },
+    {
+      "inner_radius_arcsec": 3.0,
+      "outer_radius_arcsec": 5.0,
+      "grid_step_arcsec": 0.5,
+      "monotone_rank_of_120": 59,
+      "monotone_exact_mode_assignment_p": 0.49166666666666664,
+      "reverse_rank_of_120": 76,
+      "reverse_exact_mode_assignment_p": 0.6333333333333333,
+      "best_assignment": [
+        2,
+        1,
+        4,
+        0,
+        3
+      ],
+      "best_matched_score": 34.82301631373304
+    },
+    {
+      "inner_radius_arcsec": 3.0,
+      "outer_radius_arcsec": 5.0,
+      "grid_step_arcsec": 0.6,
+      "monotone_rank_of_120": 81,
+      "monotone_exact_mode_assignment_p": 0.675,
+      "reverse_rank_of_120": 55,
+      "reverse_exact_mode_assignment_p": 0.4583333333333333,
+      "best_assignment": [
+        2,
+        1,
+        4,
+        0,
+        3
+      ],
+      "best_matched_score": 35.96401762372076
+    },
+    {
+      "inner_radius_arcsec": 3.5,
+      "outer_radius_arcsec": 5.5,
+      "grid_step_arcsec": 0.4,
+      "monotone_rank_of_120": 66,
+      "monotone_exact_mode_assignment_p": 0.55,
+      "reverse_rank_of_120": 71,
+      "reverse_exact_mode_assignment_p": 0.5916666666666667,
+      "best_assignment": [
+        2,
+        1,
+        3,
+        0,
+        4
+      ],
+      "best_matched_score": 37.35635591040775
+    },
+    {
+      "inner_radius_arcsec": 3.5,
+      "outer_radius_arcsec": 5.5,
+      "grid_step_arcsec": 0.5,
+      "monotone_rank_of_120": 73,
+      "monotone_exact_mode_assignment_p": 0.6083333333333333,
+      "reverse_rank_of_120": 61,
+      "reverse_exact_mode_assignment_p": 0.5083333333333333,
+      "best_assignment": [
+        2,
+        1,
+        4,
+        0,
+        3
+      ],
+      "best_matched_score": 37.58288148218632
+    },
+    {
+      "inner_radius_arcsec": 3.5,
+      "outer_radius_arcsec": 5.5,
+      "grid_step_arcsec": 0.6,
+      "monotone_rank_of_120": 43,
+      "monotone_exact_mode_assignment_p": 0.35833333333333334,
+      "reverse_rank_of_120": 96,
+      "reverse_exact_mode_assignment_p": 0.8,
+      "best_assignment": [
+        1,
+        2,
+        3,
+        0,
+        4
+      ],
+      "best_matched_score": 42.547923286009286
+    }
+  ],
+  "mode_assignment_summary": {
+    "assignment_count": 120,
+    "monotone_rank_range_of_120": [
+      39,
+      81
+    ],
+    "monotone_exact_p_range": [
+      0.325,
+      0.675
+    ],
+    "reverse_rank_range_of_120": [
+      55,
+      97
+    ],
+    "reverse_exact_p_range": [
+      0.4583333333333333,
+      0.8083333333333333
+    ],
+    "distinct_best_assignment_count": 3,
+    "distinct_best_assignments": [
+      [
+        1,
+        2,
+        3,
+        0,
+        4
+      ],
+      [
+        2,
+        1,
+        3,
+        0,
+        4
+      ],
+      [
+        2,
+        1,
+        4,
+        0,
+        3
+      ]
+    ]
+  },
+  "checks": {
+    "nine_covariance_geometries_preserved": true,
+    "all_candidates_scored_without_geometry_selection": true,
+    "monotone_beats_lossless_all_geometries": true,
+    "reverse_beats_lossless_all_geometries": true,
+    "no_candidate_beats_every_wrong_assignment": true,
+    "no_candidate_passes_exact_assignment_0_05": true,
+    "reverse_control_attains_better_rank_than_monotone": true,
+    "all_120_mode_assignments_scored": true,
+    "monotone_not_selected_within_mode_assignments": true,
+    "best_mode_assignment_is_not_geometry_stable": true,
+    "physical_endpoint_remains_unauthorized": true
+  },
+  "checks_passed": 11,
+  "checks_total": 11,
+  "physical_endpoint_authorized": false,
+  "confirmatory_prediction": false,
+  "claim_boundary": "The P6 graph gives a canonical mode basis, but the source-frozen monotone WR-T19 assignment is not selected by this endpoint: its exact path-assignment rank range is worse than the predeclared reverse control, and its rank within all 120 stiffness-to-mode assignments is only mid-pack. That comparison is retrospective and the depth remains a 4D Fermat proxy. It neither chooses a replacement assignment nor validates a parent-to-terminal calibration or Nature occupation."
+}

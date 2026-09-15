@@ -1,0 +1,50 @@
+{
+  "schema": "tau_core_ugc03580_signed_descriptor_projection_control_robustness_v01",
+  "status": "POST_SCORE_ROBUSTNESS_AUDIT_COMPLETE_NOT_CLAIM_RAISING",
+  "grid": {
+    "distance_mpc": [
+      15.5,
+      20.7,
+      25.9
+    ],
+    "global_inclination_deg": [
+      59.0,
+      63.0,
+      67.0
+    ],
+    "interpolation": [
+      "linear",
+      "nearest"
+    ],
+    "n_rows": 54
+  },
+  "checks": {
+    "baseline_reproduced": true,
+    "identity_inclination_limit_exact": true,
+    "all_grid_scores_finite": true,
+    "independent_mae_and_chi2_present_in_primary_score": true
+  },
+  "maximum_linear_nearest_factor_difference": 0.016052588688205027,
+  "carrier_robustness": {
+    "MOND": {
+      "minimum_delta_rmse_km_s": 0.15336833396606053,
+      "maximum_delta_rmse_km_s": 7.834023511726059,
+      "fraction_grid_projection_improves": 0.0,
+      "sign_is_uniform_across_grid": true
+    },
+    "NEWTONIAN": {
+      "minimum_delta_rmse_km_s": -0.9602039192450249,
+      "maximum_delta_rmse_km_s": -0.0957251426957555,
+      "fraction_grid_projection_improves": 1.0,
+      "sign_is_uniform_across_grid": true
+    },
+    "TPG_V6": {
+      "minimum_delta_rmse_km_s": 0.09016333429538648,
+      "maximum_delta_rmse_km_s": 7.0536760491045385,
+      "fraction_grid_projection_improves": 0.0,
+      "sign_is_uniform_across_grid": true
+    }
+  },
+  "interpretation": "The grid was run after the primary diagnostic was opened. It is a robustness audit only and cannot promote the projection control or select a Tau correction.",
+  "claim_boundary": "post_score_standard_projection_robustness_not_claim_raising"
+}

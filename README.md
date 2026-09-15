@@ -4,6 +4,86 @@ This repository is the public reproducibility package for:
 
 **Morphology-matched forward readout gates for Tau Core gravity: extending SPARC residual Papers 1-3 from inverse diagnostics to predeclared family tests**
 
+## Current rotation-claim status (2026-08-30)
+
+The galaxy-rotation programme now has four empirically distinct levels:
+
+1. The frozen SPARC A/C packet retains a marginal/unconditional association
+   between low-acceleration residual structure and residual-blind structural
+   labels.
+2. A later cross-fitted Paper 3 audit finds no stable projection-contrast
+   increment beyond endpoint-residual-free observability/baryonic covariates
+   and MOND/RAR-common structure. The internal matched-versus-wrong Paper 8
+   score is therefore a label--formula compatibility preflight, not an
+   independently established projection-specific signal.
+3. A seven-galaxy, source-frozen EDGE--CALIFA matched-tracer proxy fails its
+   external confirmation gate: mean `D=-0.0586793`, exact one-sided
+   `p=0.6015625`, median `D=+0.110202`, and `4/7` positive galaxies. All three
+   max-T adjusted wrong-family control gates also fail.
+4. Later public-data routes remain non-promotable. LITTLE THINGS gives mixed
+   one-family transfer in `N=14`; the PHANGS low-order population statistic is
+   non-specific and fails its source-label audit; the PHANGS radial-body
+   confirmatory packet stops at its frozen sector-occupancy gate; and the
+   same-family cohort is exhausted. NGC4254 supplies a robust source-side
+   `m=2` coordinate candidate, but terminal gain and primitive curvature are
+   mathematically non-identifiable from the current source state.
+
+These failures are now classified at representation level. A finite
+source-frozen morphology map supports a terminal law only if the complete
+terminal composition is constant on each representation fibre; the current
+EDGE matrices leave four linear directions unresolved. This does not prove
+that a richer body direction is occupied. It also does not authorize repair:
+adding an opened terminal to the morphology span trivially drives its residual
+to zero, so any refined representation must be source-only and tested on a new
+untouched packet.
+
+An independent implementation reconstructed all `7 x 20` coefficients from
+the checksum-matched public HDF5 packet. The maximum absolute coefficient
+difference is `3.553e-15 km/s`; all `32/32` executable checks and `4/4` focused
+tests pass. The audit preserves explicit provenance limitations: the local hash
+chain does not externally anchor freeze chronology, the original endpoint JSON
+does not bind the coefficient CSV, and the raw HDF5 is referenced rather than
+vendored.
+
+The EDGE--CALIFA result rejects this development-informed morphology-alignment
+proxy as a promotion route. It does not falsify the general Tau Core
+architecture, prove standard astrophysics complete, identify dark matter, or
+erase the earlier descriptive SPARC association. No same-packet repair or
+alternative score is permitted. A claim-raising successor needs an independent
+survey/release, a source-derived signed `h_tau`, an explicitly complete
+standard comparator, and a new freeze before endpoint access.
+
+There is now an exact reason for the signed-law requirement. For a full-rank
+source matrix `S`, the covariance-weighted residual projector satisfies
+`P_perp(SR)=P_perp(S)` for every invertible basis map `R`; hence the endpoint
+score sees only the source span. It cannot choose a coefficient orientation or
+distinguish an otherwise unspecified candidate vector from its negative. The
+next packet must therefore derive and freeze the ordered physical chain
+`H_B delta_M=j_s -> z_A=J_(A<-M)delta_M+J_(A<-OS)xi_OS ->`
+`c_OS=Q_OS(z_A) -> h_tau=R_T(c_OS)-R_T(Q_OS(0))` before opening terminal
+velocities, then test a nonzero component outside a complete standard tangent
+space. The irreducible observer--source load and stable resolution map are
+separate post-body ingredients. The existing conditional CHDF/ordered-disk
+completion does not prove their physical occupation or supply this full
+signed terminal packet.
+
+The executable record is:
+
+```text
+scripts/freeze_edge_califa_rotation_morphology_preregistration_v01.py
+scripts/freeze_edge_califa_rotation_morphology_preregistration_v02.py
+scripts/freeze_edge_califa_rotation_morphology_preregistration_v03.py
+scripts/freeze_edge_califa_rotation_morphology_preregistration_v04.py
+scripts/freeze_edge_califa_rotation_morphology_scoring_contract_v02.py
+scripts/freeze_edge_califa_rotation_morphology_endpoint_implementation_v02.py
+scripts/run_edge_califa_rotation_morphology_endpoint_v02.py
+data/derived/edge_califa_rotation_morphology_confirmatory_endpoint_v02.json
+reports/edge_califa_rotation_morphology_confirmatory_endpoint_v02.md
+scripts/audit_edge_califa_rotation_morphology_confirmatory_endpoint_v02_reproducibility.py
+data/derived/edge_califa_rotation_morphology_confirmatory_endpoint_v02_reproducibility_audit.json
+reports/edge_califa_rotation_morphology_confirmatory_endpoint_v02_reproducibility_audit.md
+```
+
 ## Observer Co-Descent
 
 Paper 8 operates downstream of observer production. A body-side carrier counts
@@ -24,6 +104,63 @@ photon-transfer terms must all descend from one source-frozen radial coframe
 derived independently of the target residual, the family remains blocked and
 cannot be used to rescue or reinterpret an existing endpoint.
 
+The exact conditional shift ablation is now co-registered with that same
+packet: \`q_tau = -omega_uv P_beta L_O^-1 B_OS^* W_rho(D_B Cx + D_A a)\`.
+If it occupies the standard photon-rapidity terminal, the corresponding
+velocity increment follows without a new terminal gain. This is still not a
+new rotation law: one rotation terminal cannot separate morphology from
+observer access, and the required nonzero incidence, stable \`Q_OS\`, joint
+terminal law and Nature occupation remain unfrozen. The Paper 8 scores are
+therefore reproduced, not rescored.
+
+## Inverse required-rapidity diagnostic
+
+An explicitly endpoint-informed diagnostic now reconstructs
+q_req = atanh(vobs/c) - atanh(vbase/c) and asks whether frozen source and
+observer-geometry proxies predict it on the existing 44-galaxy holdout.
+Regularization is selected only on the 131 training galaxies; endpoint values
+and residuals are forbidden predictors.
+
+The combined source model strongly predicts the Newton-relative target
+(mean-galaxy RMSE ratio 0.405, paired p=0.00002), which is expected from
+ordinary baryonic scaling and the mass-discrepancy relation. After TPG/v6 and
+MOND, the ratios are 0.963 (p=0.119) and 0.936 (p=0.075): small,
+statistically unresolved improvements with weak pointwise correlations.
+Adding geometric distance to morphology is also null for TPG/v6
+(p=0.323) and MOND (p=0.952). Thus this packet does not support a
+distance-dependent parent-readout loss or a universal post-baseline rapidity
+profile.
+
+Status: DIAGNOSTIC_ONLY_NOT_ENDPOINT. The reconstruction is informative
+retrodiction, not a physical q_tau(R), D_O(R), stable Q_OS, Nature
+occupation or dark-matter replacement law. See
+reports/inverse_required_rapidity_diagnostic_v01.md.
+
+## Inverse required parent-loss diagnostic
+
+The measurement-first companion reconstructs the total scalar correction
+needed by the declared effective shell
+
+`vobs^2 = vbase^2 / (1 - loss_required)`,
+
+so that `gain_required = vobs/vbase`,
+`kappa_required = log(gain_required)`, and
+`loss_required = 1 - vbase^2/vobs^2`. This inversion is exact and unique
+inside the scalar shell, but its physical attribution is not: one rotation
+terminal cannot separate parent distance/access, time calibration, morphology,
+and terminal calibration.
+
+Across 3,389 SPARC points in 175 galaxies, the median required gain is `1.658`
+relative to Newtonian baryons, `1.011` relative to frozen TPG/v6, and `0.975`
+relative to fixed MOND. A common cubic radial profile evaluated on the frozen
+44-galaxy holdout has RMSE ratios `0.563`, `0.994`, and `0.966`, respectively.
+Thus baryons expose the familiar mass-discrepancy target, while the remaining
+post-TPG/MOND field is sign-mixed and is not captured by one universal
+radius-only scalar loss profile.
+
+Status: `DIAGNOSTIC_ONLY_NOT_ENDPOINT`. See
+`reports/inverse_required_parent_loss_diagnostic_v01.md`.
+
 ## Composite Tau-kernel scoring replay
 
 The current frozen replay interprets the matched Tau kernel as an effective
@@ -31,7 +168,9 @@ composite morphology-channel carrier. The primary `no_low_inclination` lane
 contains 35 holdout galaxies and 640 rotation points. The matched kernel beats
 the wrong-family mean in `0.857` of galaxies, with shuffled-family p-values
 `0.0410` for the win fraction and `0.0110` for the mean paired RMSE endpoint.
-This is positive kernel-family specificity.
+This is positive within-packet kernel-family compatibility. The later
+conditional and external audits above block its promotion to independently
+replicated morphology specificity.
 
 Baseline comparison remains mixed. The matched kernel beats TPG/v6 in `0.514`
 and MOND in `0.657` of galaxies, but mean matched-minus-TPG RMSE is
@@ -50,7 +189,8 @@ reports/composite_tau_kernel_scoring_replay_v01.md
 
 ## Prospective LITTLE THINGS freeze
 
-The first genuinely external confirmation sample is now frozen from Oh et al.
+The first genuinely external confirmation sample for the original radial
+formula-family endpoint is frozen from Oh et al.
 (2015), VizieR `J/AJ/149/180`. It contains 26 galaxies and 1716 numerical
 rotation-curve rows; canonical name comparison leaves 23 galaxies not present
 in the historically scored SPARC-175 packet. These names and source hashes are
@@ -420,6 +560,19 @@ Narrow accepted exponential-disk population lane:
 NGC4088:
     caveated accepted warp-history endpoint
     operationally useful, but still carries explicit law-level caveats
+
+UGC08490 / NGC5204:
+    retrospective unchanged-law transfer of the NGC4088 warp/history class
+    source-correct onset beats the wrong-onset and wrong-p controls and improves
+    strongly over Newtonian baryons, but fails fixed MOND and fitted halo controls
+    negative for the present one-component universal warp law, not for morphology
+    information or Tau Core in general
+
+UGC03580 / UGC3580:
+    second retrospective unchanged-law replication from the same Jozsa warp class
+    source-correct onset loses to Newtonian, fixed MOND, and earlier wrong-onset controls
+    uncapped kernel overshoots beyond RHI
+    rejects the present uncapped one-component formula as a universal warp-class law
 ```
 
 The correct reading is narrow:
@@ -429,6 +582,580 @@ These are single-galaxy predeclared endpoints or controls.
 Together with the narrow accepted exponential-disk population lane, they strengthen the paper's operational and methodological case.
 They do not yet authorize a claim that Tau Core beats all baselines in general,
 nor do they replace the blocked population-level accepted-observable launch.
+```
+
+## UGC08490 unchanged-law transfer
+
+The NGC4088 warp/history law has now been transferred without endpoint retuning
+to the promoted source-native two-plane warp of UGC08490/NGC5204. The source
+freeze used the TiRiFiC warp onset plus the published SPARC `RHI` and `Vflat`,
+then hashed the manifest before the pointwise endpoint scorer ran.
+
+```text
+x_w(source)                         = 0.4508763
+RMSE frozen source-correct transfer = 29.7035 km/s
+RMSE wrong NGC4088 onset control     = 31.6406 km/s
+RMSE wrong p=2 control               = 31.9043 km/s
+RMSE Newtonian baryonic              = 44.8712 km/s
+RMSE fixed MOND                      =  8.7820 km/s
+RMSE fixed TPG/v6                    = 12.7501 km/s
+RMSE best two-parameter halo fit      =  1.1953 km/s
+```
+
+The morphology ordering is directionally useful: the correct warp onset beats
+the wrong-onset control, and the endpoint-informed best-onset diagnostic
+(`0.4937`) remains close to the source value. The advantage over the wrong
+onset is not conventionally decisive under the descriptive radial block
+bootstrap, however, and the transferred curve is much worse than the standard
+comparators. The reason is visible before any repair: the outer warp begins
+after the inner rotation discrepancy is already large. Therefore the current
+result preserves morphology information while rejecting the one-component
+warp law as a complete universal rotation law.
+
+This is retrospective because UGC08490 was opened in earlier, different tracer
+analyses. It is also not a fully kinematically independent amplitude prediction,
+because catalog `Vflat` and `RHI` enter the frozen normalization. No
+endpoint-informed enrichment is promoted.
+
+```text
+scripts/freeze_ugc08490_ngc5204_ngc4088_class_transfer_v01.py
+scripts/run_ugc08490_ngc5204_ngc4088_class_transfer_endpoint_v01.py
+scripts/audit_ugc08490_ngc5204_ngc4088_class_transfer_reproducibility_v01.py
+data/derived/ugc08490_ngc5204_ngc4088_class_transfer_freeze_v01.json
+data/derived/ugc08490_ngc5204_ngc4088_class_transfer_endpoint_v01.json
+data/derived/ugc08490_ngc5204_ngc4088_class_transfer_reproducibility_audit_v01.json
+reports/ugc08490_ngc5204_ngc4088_class_transfer_endpoint_v01.md
+```
+
+## UGC03580 second unchanged-law replication
+
+UGC03580/UGC3580 is the second source-selected replication of the unchanged
+NGC4088 warp/history law. Jozsa (2007) fixes the first nonzero tip at 180
+arcsec and an inner/outer mutual inclination of 13.9 +/- 2.5 degrees, while
+explicitly warning that this warp is less significant than those of NGC2541
+and NGC5204. The source-body record preserves that caveat. UGC03580 had already
+appeared in historical repository endpoints, so this is retrospective rather
+than prospective.
+
+```text
+x_w(source on SPARC RHI scale)        = 0.9045639
+RMSE frozen source-correct transfer   = 38.0353 km/s
+RMSE Newtonian baryonic               = 36.0120 km/s
+RMSE fixed MOND                       = 27.1727 km/s
+RMSE wrong UGC08490 onset control     = 24.5570 km/s
+RMSE source-HI denominator sensitivity= 27.6774 km/s
+RMSE best two-parameter halo fit      = 14.9891 km/s
+```
+
+Within `RHI`, the source-correct transfer modestly improves Newtonian RMSE
+from 31.6614 to 29.6815 km/s, but it remains worse than fixed MOND at 28.0672
+km/s. On the full curve it is worse than Newtonian and decisively worse than
+the earlier wrong-onset control. Three points lie beyond `RHI`; the unchanged
+linear kernel reaches 4.72 there and overshoots. A cap or outer plateau would
+therefore be a new law, not an allowed same-endpoint repair.
+
+This result does not negate the existence of the source-native warp. It rejects
+the present uncapped one-component NGC4088 formula as a universal warp-class
+rotation law and narrows the next test to a source-derived bounded two-plane
+kernel on a new target.
+
+```text
+scripts/build_ugc03580_ugc3580_warp_body_v01.py
+scripts/freeze_ugc03580_ugc3580_ngc4088_class_transfer_v01.py
+scripts/run_ugc03580_ugc3580_ngc4088_class_transfer_endpoint_v01.py
+scripts/audit_ugc03580_ugc3580_ngc4088_class_transfer_reproducibility_v01.py
+data/derived/ugc03580_ugc3580_warp_body_v01.json
+data/derived/ugc03580_ugc3580_ngc4088_class_transfer_freeze_v01.json
+data/derived/ugc03580_ugc3580_ngc4088_class_transfer_endpoint_v01.json
+data/derived/ugc03580_ugc3580_ngc4088_class_transfer_reproducibility_audit_v01.json
+reports/ugc03580_ugc3580_ngc4088_class_transfer_endpoint_v01.md
+```
+
+## UGC03580 endpoint-blind radial two-plane body proxy
+
+The failed transfer showed that a single onset radius is not an adequate
+representation of the published source morphology. A separate source-only
+builder now transcribes all UGC3580 Table 6 ring orientations while excluding
+the published rotation-velocity columns and every SPARC endpoint field.
+
+Each ring is represented by a unit normal on `S2`; adjacent rings are joined by
+shortest great-circle interpolation. The primary outer plane is the unweighted
+chordal mean over the source-declared `240-375 arcsec` outer support. The
+bounded source invariant is
+
+```text
+delta_tilt(R) = 1 - n_inner dot n(R),       0 <= delta_tilt <= 2.
+```
+
+The reconstruction gives an inner/outer separation of `14.2966 deg`, compared
+with the independent published `13.9 +/- 2.5 deg` summary. Weighting, support,
+ring-thinning and leave-one-out sensitivities all shift the outer mean by less
+than `2.5 deg`. The independent audit passes `25/25` checks.
+
+This is `SOURCE_ACQUISITION_ONLY`. It improves the morphology representation,
+but it does not select a velocity kernel, rescore UGC03580 or validate Tau Core.
+The galaxy descriptor is a localized downstream proxy, not a separate
+universe-level `M_tau`.
+
+```text
+data/external/literature/ugc08490_ngc5204_warp/ugc3580_table6_geometry_v01.csv
+scripts/two_plane_morphology_common_v01.py
+scripts/build_ugc03580_ugc3580_two_plane_body_v01.py
+scripts/audit_ugc03580_ugc3580_two_plane_body_reproducibility_v01.py
+data/derived/ugc03580_ugc3580_two_plane_body_v01.json
+data/derived/ugc03580_ugc3580_two_plane_body_reproducibility_audit_v01.json
+reports/ugc03580_ugc3580_two_plane_body_v01.md
+```
+
+## UGC03580 bounded two-plane shell and the non-identifiability result
+
+The refined body fixes a bounded family of source coordinates. For inner and
+outer plane normals `n_in`, `n_out`, and the radial normal `n(R)`, define
+
+```text
+d_in  = 1 - n_in dot n(R)
+d_out = 1 - n_out dot n(R)
+K_p   = d_in^p / (d_in^p + d_out^p),   p > 0.
+```
+
+For distinct planes, `0 <= K_p <= 1`, the inner and outer limits are exactly
+zero and one, and swapping the planes sends `K_p` to `1-K_p`. Coincident planes
+deactivate the coordinate. The primary `p=1` form is a minimal affine-defect
+convention, not a source-selected physical law.
+
+An explicit counterfamily proves the remaining blocker:
+
+```text
+v_(p,a,s)^2 = v_carrier^2 * (1 + s*a*K_p),
+p > 0, 0 <= a <= 1, s in {-1,+1}.
+```
+
+Every member is dimensionally valid, nonnegative, and recovers the carrier at
+zero morphology response, while different `p`, `a`, or `s` give different
+terminal curves. The source body therefore does not determine the terminal
+power, amplitude, sign, carrier, or physical occupation.
+
+The Parent-action specialization sharpens this statement. After the body is
+solved and frozen, a regular post-body response has the local form
+
+```text
+D_K Z_* = -H_Z^{-1} B_ZK,
+Gamma   = -L_G H_Z^{-1} B_ZK,
+delta v_G^2(R) = [Gamma K](R).
+```
+
+Positive `H_Z` guarantees a regular stable response, but it does not select
+the sign or scale of the mixed block `B_ZK`, the gravity-terminal covector
+`L_G`, or their contraction. The one-number shell amplitude `a` is therefore
+an additional radial factorization claim: it exists only if
+`[Gamma K_p]/(v_carrier^2 K_p)=s*a` is constant wherever `K_p` is nonzero.
+In general the source-derived response may be a radial operator rather than a
+scalar multiplier. Likewise, an analytic source law fixes only a local leading
+power through its first nonzero jet; it fixes the exact global exponent `p`
+only if its complete defect response is proportional to `d^p` on the support.
+The carrier must be the independently derived, calibrated zero-morphology
+physical terminal branch.
+
+Inside one frozen common-action completion, however, these are not three
+independent gains. With the complete signed descriptor
+`D_hat=(d_in,d_out,chi)`, a source-owned registration `I=iota(D_hat)` gives
+
+```text
+B_ZDhat = B_ZI J_(I<-Dhat),
+Gamma_Dhat = -L_G H_Z^{-1} B_ZI J_(I<-Dhat),
+v_carrier^2 = O_G[Z_*(I=0)].
+```
+
+The selected JCSEL/BRAC plus Einstein--Newton branch supplies this conditional
+grammar, and exact Schur elimination retains any occupied internal-field
+contribution. The current source does not supply the full-support
+signed-descriptor-to-Parent-invariant registration. Two distinct Parent lifts in the
+audit have exactly the same visible `K` projection but different terminal
+gains, so the visible two-plane coordinate cannot reconstruct this map.
+
+The raw descriptor's actual geometric fibre is now exact. For the ordered
+source normals define `c=(n_in x n_out)/|n_in x n_out|` and
+`chi(R)=c dot n(R)`. The pair `(d_in,d_out)` generically leaves two reflected
+ring normals with opposite `chi`, while `(d_in,d_out,chi)` reconstructs the
+oriented normal uniquely. Moreover `chi^2` is already fixed by the two raw
+defects. This is a discrete ambiguity: away from `chi=0` the raw descriptor
+has full local rank, so a Jacobian-null test alone cannot prove terminal
+factorization. The complete terminal stack must be exactly mirror-even, or
+`chi` must remain in the shared descriptor. On the supported UGC03580 rings,
+`chi` spans `-0.047813169` to `0.095201374` and uses both signs; the exact
+`chi^2` identity is independently reproduced to below `2.4e-15`.
+
+The frozen source resolves that fork for the complete standard projection
+stack. Jozsa (2007) Table 6 publishes the oriented spin-normal components
+toward west, north, and the observer, and the UGC3580 figure captions identify
+the approaching side as southeast. Under the mirror
+`R_c n=n-2 chi c`, the fixed-inner-inclination projection obeys exactly
+
+```text
+G_proj(R_c n)-G_proj(n)
+  = 4 chi (ell dot c)[(ell dot n)-chi(ell dot c)]/sin(i_inner)^2.
+```
+
+It is not mirror-even on the 17 supported rings: the maximum absolute
+difference is `0.142726674696` and the RMS difference is `0.046534679366`.
+At `270 arcsec`, the source and reflected values are `1.096849451016` and
+`0.954122776319`. Therefore `chi` is retained in the complete descriptor for
+this lane. This is a standard projection/representation result, not evidence
+for fundamental Parent handedness, a Tau-specific `chi` coupling, or a new
+rotation effect.
+
+The primary `K_1` is now conditionally unique in the normalized-affine
+two-anchor class: homogeneity, affine descent on the normalized positive
+defect simplex, and the inner/outer anchor values force
+`K_1=d_in/(d_in+d_out)`. The `K_p` family proves that limits, homogeneity and
+anchor-swap symmetry alone do not select this affine class. Its physical
+source origin and co-registration with the occupied JCSEL/BRAC invariant
+remain open.
+
+`K_1` is nevertheless refuted as the complete shared descriptor. It is
+constant on every raw-descriptor mirror pair, while the standard projection
+is not. More strongly, the frozen continuous piecewise-SLERP source path
+revisits `K_1=0.925` at `228.939929970` and `275.245362641 arcsec`. The two
+locations have `chi=-0.033824288698` and `+0.074850153783`, and projection
+values `0.998056542027` and `1.084700249348`. The neighboring levels `0.900`
+and `0.950` give the same double-intersection result, so this is not a tuned
+level choice. Thus even the actual one-galaxy source path cannot be indexed
+completely by `K_1`.
+
+This does not prove that Nature uses a multicomponent Parent coupling. The
+signed descriptor has three ambient entries but only two intrinsic degrees of
+freedom, and a source-derived rank-one response through another signed scalar
+could still exist. The current safe handoff therefore retains `D_hat`, or an
+exactly fibre-equivalent descriptor, until the complete terminal stack is
+proved to factor through one source-owned scalar.
+
+A minimal complete-registration graph action now makes that handoff explicit.
+The signed descriptor has the exact decoder
+
+$$
+\mathcal N(\widehat D)
+=A_{ab}^{-1}(1-d_{\mathrm{in}},1-d_{\mathrm{out}},\chi)^T.
+$$
+
+For any positive source-frozen graph metric, the squared defect between a
+typed oriented-normal register and this decoder has the unique zero-energy
+minimum \(N_*=\mathcal N(\widehat D)\). The decoder differential restricted
+to the physical descriptor tangent has rank two on the complete signed
+two-plane descriptor surface, independently of the metric scale and shape.
+This is completeness for that morphology sector only. Because the decoder is
+explicit in the square, the construction proves conditional existence and
+consistency by itself, not deeper source selection or physical occupation.
+
+The inverse appearance can now be removed conditionally. Put
+`q(D_hat)=(1-d_in,1-d_out,chi)^T` and define the forward same-object incidence
+`rho_TPORI=A_ab N-q(D_hat)`. Its positive square has the unique zero
+`N_*=A_ab^-1 q(D_hat)=N(D_hat)` and is exactly the graph action above with
+`K_reg=A_ab^T W A_ab`; conversely every positive `K_reg` has one positive
+forward weight `W`. Thus the decoder follows from the forward incidence if
+that incidence is source-owned.
+
+The present enriched source still does not select it. A smooth endpoint-blind,
+proper-rotation-covariant twist of the oriented normal can fix all three
+source-frame axes and retain rank two while defining a different positive
+graph. This same-reduct control proves that positivity, covariance, anchors
+and rank do not force the same-object coidentity
+`D_hat_ab(N_*(D_hat))=D_hat`. The separate source-incidence theory audit
+passes 19/19 checks. `TPORI-P1` and Nature occupation remain open, and this
+result does not alter or enlarge the 62/62 Paper 8 source-shell audit.
+
+The exact graph square is also Schur-neutral if the register merely
+re-expresses the same descriptor. In local descriptor/register charts its
+residual is `rho=J_N u-Qx`, with `Q=J_N C`, and exact register elimination
+gives `H_xx-H_xN H_NN^-1 H_Nx=0`. Equivalently, the minimized nonlinear
+registration action is zero for every admissible descriptor. The
+deterministic register therefore adds no source rank, force, energy,
+dark-sector term, or independent readout. A physical register effect would
+need an additional source-owned off-graph load, mixed coupling,
+register-sensitive terminal, or calibrated fluctuation spectrum. The
+separate Schur-neutrality audit passes 14/14 checks; physical ownership and
+Nature occupation remain open.
+
+The ordered downstream solve now gives the exact remaining no-bypass target.
+After `u_*=Cx` is frozen, every indirect linear terminal response factors
+through `B_eff=B_Zu C+B_Zx` and
+`Gamma_x=-L H_Z^-1 B_eff`. A nonzero register coupling can cancel against the
+direct descriptor row, and a nonzero effective row can still be terminally
+invisible. Every on-graph register model is exactly equivalent to a direct
+descriptor model using `B_eff`; only off-graph fluctuations or another
+independently typed register-sensitive terminal can identify register
+ontology. The separate no-bypass audit passes 15/15 checks. Source ownership,
+standard-comparator separation and Nature occupation remain open.
+
+The corresponding source-selection question is now closed negatively for the
+current upstream reduct.  With the same frozen graph `u_*=Cx`, the positive
+ordered family
+
+$$
+\mathcal A_Z^{(\lambda)}
+=\frac12\lVert z-\lambda R u_*\rVert_{H_Z}^{2}
+$$
+
+has `B_Zx=0` but yields
+`B_eff=-lambda H_Z R C` and `Gamma_x=lambda L R C`.  The same descriptor and
+registration therefore admit zero, rank-one and rank-two completions and both
+response orientations, while a nonzero row may remain terminal-blind.  Zero
+direct cross coupling does not forbid later mediation, but positivity and the
+current source select neither activation, rank, orientation nor terminal
+survival.  The separate source-selection audit passes 18/18 checks.  A
+physical promotion still requires an endpoint-blind typed incidence and
+source-owned activation/orientation together with a de-duplicated terminal
+for which `lambda L R C != 0`, followed by standard-comparator and Nature
+tests.  This result uses no rotation endpoint and is not evidence for a new
+galactic force.
+
+A scalar JCSEL/BRAC descendant \(I_K=f(N)\) still has pointwise rank at most
+one, and the actual interaction can transmit zero, one or two directions
+according to its mixed block. The single UGC03580 radial source path has
+pullback rank at most one, so it cannot validate Nature-level rank-two
+occupation. The separate theory audit passes 22/22 checks without endpoint
+data; it does not increase the 62/62 Paper 8 source-shell audit count.
+Physical occupation and the source law selecting \(f\) remain open.
+
+An executable same-body witness keeps one positive `H_Z` fixed while replacing
+`B_ZK` by `-B_ZK` and `3 B_ZK`; the terminal response respectively reverses
+sign and triples in magnitude. A separate nonconstant radial response shows
+that scalar-amplitude factorization is not automatic. Thus the current corpus
+supplies a conditional completion formula, not the occupied physical terminal
+law.
+
+For UGC03580, `K_1` spans `0` to `0.992276495` on supported rings. The
+geometry-only separation scale is `sin^2(Theta/2) = 0.015484869`; it is retained
+only as a diagnostic envelope, not a coupling prediction. The exact standard
+fixed-inclination projection control spans `0.994090714` to `1.096849451` in
+squared speed and must be audited before attributing a terminal effect to Tau.
+
+The historical audit recorded `62/62` checks and the then-current suite
+`85/85`. The 2026-09-15 reproduction instead returns `61/62`: the stored
+chirality-square/raw-defect comparison fails its declared tolerance, although
+the independently recomputed raw identity passes. No tolerance, source hash
+or endpoint parameter was changed to force a pass. Numerical reproducibility
+of this shell remains open. Status: `FORMULA_SHELL_DERIVED_ENDPOINT_BLOCKED`.
+The broader current run has 161 passed, four failed and one skipped; three
+SDP81 failures are missing-lenstronomy dependencies and pass separately in the
+existing lens environment (1.14.2, not the pinned 1.13.5). The remaining shell
+failure is retained. No new accepted endpoint score is asserted.
+
+```text
+scripts/build_ugc03580_ugc3580_two_plane_readout_shell_v01.py
+scripts/audit_ugc03580_ugc3580_two_plane_readout_shell_v01.py
+data/derived/ugc03580_ugc3580_two_plane_readout_shell_v01.json
+data/derived/ugc03580_ugc3580_two_plane_readout_shell_reproducibility_audit_v01.json
+reports/ugc03580_ugc3580_two_plane_readout_shell_v01.md
+reports/ugc03580_ugc3580_two_plane_readout_shell_reproducibility_audit_v01.md
+```
+
+### Signed-descriptor standard projection control
+
+The mixed-Hessian migration makes one narrower control executable without
+choosing a Tau correction. For the complete signed descriptor
+`D_hat=(d_in,d_out,chi)`, the frozen Bregman graph control gives
+`Gamma=J_OS=D_Dhat N`, and the ordinary fixed-inclination terminal satisfies
+
+```text
+D_Dhat G_proj = P_R J_OS,
+G_proj(R) = sin(i_source(R))^2 / sin(i_global)^2.
+```
+
+The source-only freeze uses the published UGC03580 oriented ring normals and
+the SPARC global distance/inclination fields, but no pointwise `vobs` or
+residual. Its chain-rule finite-difference error is `1.21e-10`. A separate
+scorer then applies the zero-free-parameter standard projection control to the
+already opened 47-point rotation terminal.
+
+At the central catalog calibration the correction changes RMSE by
+`-0.617 km/s` for Newtonian baryons, `+3.102 km/s` for TPG/v6 and
+`+3.531 km/s` for fixed MOND. Across the fixed distance/inclination uncertainty
+grid and linear/nearest interpolation controls, Newtonian RMSE improves in all
+grid rows, while TPG/v6 and MOND worsen in all rows. Thus this standard
+projection sensitivity does not explain the post-TPG/MOND residual on this
+galaxy.
+
+Status: `DIAGNOSTIC_STANDARD_PROJECTION_CONTROL_SCORED_NOT_TAU_ENDPOINT`.
+The result is applicable literally only if the compared terminal used the
+declared fixed global-inclination reduction. If it already incorporated the
+same tilted-ring correction, reapplying it is double counting.
+
+```text
+scripts/freeze_ugc03580_signed_descriptor_projection_control_v01.py
+scripts/run_ugc03580_signed_descriptor_projection_control_v01.py
+scripts/audit_ugc03580_signed_descriptor_projection_control_robustness_v01.py
+data/derived/ugc03580_signed_descriptor_projection_control_freeze_v01.json
+data/derived/ugc03580_signed_descriptor_projection_control_score_v01.json
+data/derived/ugc03580_signed_descriptor_projection_control_robustness_v01.json
+reports/ugc03580_signed_descriptor_projection_control_score_v01.md
+reports/ugc03580_signed_descriptor_projection_control_robustness_v01.md
+```
+
+### NGC2541 prospective signed-descriptor source freeze
+
+A second galaxy has now passed the source-geometry part of the forward gate
+without using any rotation-velocity endpoint. For NGC2541 (UGC4284), the
+published Table 6 oriented-ring geometry supplies a 25-ring support over
+30--590 arcsec. The inner and outer plane ranges are fixed from the source,
+and the complete signed descriptor `D_hat=(d_in,d_out,chi)` has the exact
+decoder
+
+```text
+N(D_hat) = A^-1 (1-d_in, 1-d_out, chi)^T,
+J_OS = A^-1 diag(-1,-1,+1).
+```
+
+The basis condition number is `6.57269`, the maximum reconstruction error is
+`8.40e-16`, and the standard fixed-inclination chain-rule check closes to
+`1.24e-10`. The associated reference projection ratio ranges from `0.81865`
+to `1.03107`, but this is only a sensitivity diagnostic: it is not a selected
+Tau correction.
+
+Status:
+`SOURCE_GEOMETRY_READY_TERMINAL_CALIBRATION_AND_UNTOUCHED_ENDPOINT_BLOCKED`.
+No endpoint values were read, no free parameter was fitted, and no score is
+authorized until a source-owned terminal calibration and an independent,
+previously unopened endpoint are frozen.
+
+That next gate has now been executed against the independently reduced
+HALOGAS DR1 high-resolution moment maps, after the protocol and runner were
+hashed. The first attempt stopped before any summary statistic because Astropy
+exposed the FITS WCS in a different celestial frame; the lock records the sole
+technical frame-conversion correction. On 23 common eligible rings, the
+source-frozen variable geometry initially reduced the mean
+approaching--receding side difference from `13.2069` to `12.5729 km/s`, a
+directional change of `-0.6341 km/s`, with zero fitted parameters. A required
+nuisance audit then demoted this result. Replacing the optical/NED centre by
+the same source's fitted kinematic centre changes the delta to approximately
+`+0.3799 km/s`; a four-arcsec eastward shift gives `+0.0888 km/s`, so even
+sub-beam centre changes can reverse its sign. The
+fixed and variable reductions additionally selected different sky pixels,
+the 12-arcsec inner ring spacing is smaller than the 14--17.5 arcsec beam, and
+several accepted sides contain less than one synthesized beam. Consequently
+the earlier ring-iid bootstrap interval and sign-flip `p=0.2144` are only
+naive descriptive diagnostics. Current status:
+`POST_OPEN_DESCRIPTIVE_DIAGNOSTIC_CALIBRATION_UNSTABLE`. This is not a
+standard-calibration detection, Tau correction, or dark-matter-replacement
+score.
+
+The next population-level side-consistency score is now source-side frozen in
+`data/protocols/multigalaxy_signed_morphology_side_consistency_confirmatory_v01.json`
+and summarized in
+`reports/multigalaxy_signed_morphology_side_consistency_confirmatory_protocol_v01.md`.
+NGC2541 is excluded from that confirmatory population because it was used to
+develop and audit the statistic. The galaxy, not the ring or pixel, is the
+inference unit; all candidate geometries must use the same sky footprint;
+centre, beam, orientation, convergence, and covariance nuisances are mandatory;
+and both an improvement over fixed geometry and a morphology-specific advantage
+over frozen wrong-family controls must pass. This is a protocol freeze, not a
+population result or a physical `q_R` selection.
+
+The endpoint-blind HALOGAS DR1 candidate-pool audit is recorded in
+`data/derived/multigalaxy_halogas_confirmatory_candidate_pool_v01.json` and
+`reports/multigalaxy_halogas_confirmatory_candidate_pool_v01.md`. NGC3198 is
+excluded because prior diagnostic/replay scores were opened, and NGC5055 is
+excluded because it belonged to the Paper 8 SPARC training population. Of the
+24 HALOGAS galaxies, eight are endpoint-unopened and within the current
+50--75 degree inclination window, leaving a four-galaxy shortfall relative to
+the frozen minimum of 12. NGC925 was audited first. Both adopted de Blok
+THINGS orientation curves are now extracted directly from the immutable
+561-by-756 source JPEG into 93 three-arcsec rings; an earlier use of the
+printed 66-degree mean as a constant inclination law was corrected. The
+digitized means are 64.861 degrees for inclination and 286.608 degrees for PA,
+within 1.139 and 0.008 degrees of the independently printed summaries. The
+largest 90-percent raster-sensitivity widths are 7.771 and 4.195 degrees;
+these are digitization diagnostics, not physical covariance.
+
+An independent Schmidt et al. THINGS analysis supplies 15 pairs of physical
+marginal orientation errors from a 100-step residual-rescrambling Monte Carlo.
+It also declares the geometry inside 250 arcsec non-identifiable because the
+nearly solid-body rotation does not separate inclination from rotation speed.
+At the only source-claimed robust ring shared with the de Blok extraction
+(270 arcsec), the inclination gap is 0.878 degrees (1.23 Schmidt marginal
+sigmas) and the PA gap is 3.773 degrees (2.91 such sigmas). These are not global
+cross-source significances because joint/cross-ring covariance and de Blok
+physical errors are unavailable.
+
+The six source-robust outer Schmidt rings have at least 11.89 ideal projected
+half-annulus beam areas even under the broadest published HALOGAS pilot beam,
+so an outer-only route is geometrically possible before masking. It is not a
+clean moment-1 endpoint: the same outer disk is source-described as a
+minor-merger gas stream with twisted isovelocity contours, warp/spiral
+ambiguity, and anomalous HI. NGC925 is retained only for a separately frozen
+disturbed-system robustness or stronger-terminal lane. NGC4062 becomes the
+next clean source-acquisition target. No HALOGAS endpoint pixel or score was
+opened in reaching this decision.
+
+NGC4062 was then source-frozen and opened. GHASP gives `i=68 +/- 2 deg`, a
+receding `PA=99 +/- 2 deg`, and `v_sys=758 +/- 1 km/s`; the independent
+HALOGAS 3DBarolo reduction gives median `i=67.1 deg`, `PA=100.1 deg`, and does
+not flag NGC4062 among its six substantially warped H I discs. Two
+non-overlapping LR-beam rings at 42 and 84 arcsec were frozen before any map
+pixel was read. HR and LR both return null-compatible contrasts:
+`4.27 +/- 10.23 km/s` (`p=0.470`) and `3.22 +/- 10.50 km/s` (`p=0.556`). The
+sign also reverses when the alternate published systemic velocity is used.
+The confirmatory endpoint therefore fails and is retained as a negative
+result. Source review demotes all seven remaining moderate-inclination,
+endpoint-unopened HALOGAS systems because of interaction, substantial warp,
+kinematic complexity, or inadequate resolution. The current HALOGAS pool has
+no further clean candidate under this protocol; the next population step must
+use an independently frozen survey family or a preregistered stronger
+terminal, not a post-open NGC4062 repair.
+
+```text
+data/external/literature/ngc0925_signed_geometry_source_v01/
+scripts/freeze_ngc0925_signed_descriptor_source_geometry_v01.py
+tests/test_ngc0925_signed_descriptor_source_geometry_v01.py
+data/derived/ngc0925_signed_descriptor_source_geometry_freeze_v01.json
+data/derived/ngc0925_signed_descriptor_source_geometry_freeze_v01_points.csv
+data/derived/ngc0925_signed_descriptor_source_geometry_freeze_v01.sha256
+reports/ngc0925_signed_descriptor_source_geometry_freeze_v01.md
+data/external/literature/ngc0925_schmidt2016_geometry_uncertainty_v01/
+scripts/audit_ngc0925_physical_geometry_uncertainty_v02.py
+tests/test_ngc0925_physical_geometry_uncertainty_v02.py
+data/derived/ngc0925_physical_geometry_uncertainty_v02.json
+data/derived/ngc0925_physical_geometry_uncertainty_v02_points.csv
+data/derived/ngc0925_physical_geometry_uncertainty_v02_comparison.csv
+reports/ngc0925_physical_geometry_uncertainty_v02.md
+scripts/audit_ngc0925_outer_only_source_support_v01.py
+tests/test_ngc0925_outer_only_source_support_v01.py
+data/derived/ngc0925_outer_only_source_support_v01.json
+data/derived/ngc0925_outer_only_source_support_v01.csv
+reports/ngc0925_outer_only_source_support_v01.md
+scripts/audit_multigalaxy_halogas_confirmatory_candidate_pool_v01.py
+tests/test_multigalaxy_halogas_confirmatory_candidate_pool_v01.py
+data/derived/multigalaxy_halogas_confirmatory_candidate_pool_v01.json
+data/derived/multigalaxy_halogas_confirmatory_candidate_pool_v01.csv
+reports/multigalaxy_halogas_confirmatory_candidate_pool_v01.md
+data/external/literature/ngc4062_halogas_confirmatory_v01/
+scripts/freeze_ngc4062_halogas_confirmatory_endpoint_v01.py
+scripts/run_ngc4062_halogas_confirmatory_endpoint_v01.py
+tests/test_ngc4062_halogas_confirmatory_endpoint_v01.py
+data/derived/ngc4062_halogas_confirmatory_freeze_v01.json
+data/derived/ngc4062_halogas_confirmatory_freeze_v01.csv
+data/derived/ngc4062_halogas_confirmatory_endpoint_v01.json
+data/derived/ngc4062_halogas_confirmatory_endpoint_v01_side_rows.csv
+reports/ngc4062_halogas_confirmatory_freeze_v01.md
+reports/ngc4062_halogas_confirmatory_endpoint_v01.md
+scripts/audit_ngc4062_velocity_zero_point_orthogonalization_v01.py
+tests/test_ngc4062_velocity_zero_point_orthogonalization_v01.py
+data/derived/ngc4062_velocity_zero_point_orthogonalization_v01.json
+reports/ngc4062_velocity_zero_point_orthogonalization_v01.md
+data/external/literature/jozsa2007_ngc2541_table6_orientation_v01.csv
+scripts/freeze_ngc2541_signed_descriptor_source_geometry_v01.py
+tests/test_ngc2541_signed_descriptor_source_geometry_v01.py
+data/derived/ngc2541_signed_descriptor_source_geometry_freeze_v01.json
+data/derived/ngc2541_signed_descriptor_source_geometry_freeze_v01_points.csv
+reports/ngc2541_signed_descriptor_source_geometry_freeze_v01.md
+data/protocols/ngc2541_halogas_independent_side_consistency_endpoint_v01.json
+data/protocols/ngc2541_halogas_independent_side_consistency_endpoint_v01.lock
+scripts/run_ngc2541_halogas_independent_side_consistency_endpoint_v01.py
+scripts/audit_ngc2541_halogas_side_consistency_robustness_v01.py
+data/derived/ngc2541_halogas_independent_side_consistency_endpoint_v01.json
+data/derived/ngc2541_halogas_side_consistency_robustness_v01.json
+reports/ngc2541_halogas_independent_side_consistency_endpoint_v01.md
+reports/ngc2541_halogas_side_consistency_robustness_v01.md
+reports/ngc2541_halogas_side_consistency_nuisance_audit_v02.md
 ```
 
 ## Relation To Papers 1-3
@@ -1425,9 +2152,10 @@ morphology parameter manifest and evaluates the concrete Tau Core bridge
 formulas as `delta v^2` readout kernels: scale-tail `n=2`, finite exponential
 disk Freeman/Bessel kernel, compact finite-source exterior response, and
 thick/flared damped vertical-kernel response. The current holdout result gives
-a strong matched-vs-wrong morphology-specific signal, but does not beat TPG/v6
-or MOND on average. This is preserved as a claim-bounded preparation result:
-it supports formula-family specificity, not empirical validation.
+a strong within-packet matched-vs-wrong label--formula compatibility signal,
+but does not beat TPG/v6 or MOND on average. This is preserved as a
+claim-bounded preparation result; the later conditional and external audits do
+not promote it to independently established morphology specificity.
 
 ## Readout-Mixture Proxy Diagnostic
 
@@ -1990,7 +2718,7 @@ Tau evidence L2 beats MOND:                0.3125.
 L2 -> L3 improves RMSE in:                 0.6250.
 ```
 
-This is mixed. The lane preserves a matched-vs-wrong morphology-specific signal,
+This is mixed. The lane preserves a within-packet matched-vs-wrong compatibility signal,
 but it does not yet produce baseline superiority. That is useful: it says the
 expanded support lane is good for acquisition planning and sensitivity checks,
 not for an endpoint-validation claim.
@@ -1999,8 +2727,9 @@ The caution lane is now split by allowed use. On holdout, the projection-caveat
 sub-lane contains 14 galaxies. The source-native hard-family formula still
 beats the wrong-family mean in `0.7857` of those rows, but the Tau evidence L2
 normalization beats TPG/v6 in only `0.3571` and MOND in only `0.2857`. This
-points to projection/scale quality and source-normalization as the immediate
-weak link, not to loss of morphology-family specificity.
+points to projection/scale quality and source-normalization as immediate
+development questions. It cannot override the later negative conditional and
+external promotion gates.
 
 The projection/scale repair audit and source-normalization failure-mode audit
 are generated by:
@@ -6006,6 +6735,7 @@ The source-ranked NGC3726 route now continues with:
 python scripts/acquire_ngc3726_uma_hi_rotation_source.py
 python scripts/build_ngc3726_hi_halpha_angular_transport_freeze.py
 python scripts/run_ngc3726_hi_halpha_channel_preflight.py
+python scripts/audit_ngc3726_source_owned_zero_point_projector_v01.py
 ```
 
 The WSRT Ursa Major catalogue supplies twelve source-native H I side-rotation
@@ -6017,6 +6747,16 @@ H I and Halpha odd profiles correlate at `r=0.886`; their GLS mean contrast is
 (`chi2=9.47`, six degrees of freedom, `p=0.149`). This is a preserved
 negative/indeterminate single-galaxy channel preflight, not an observer-channel
 detection. The unchanged statistic should next be replicated prospectively.
+
+The velocity-zero-point obstruction is now removed algebraically for radial
+shape tests. Under the published fixed-systemic-velocity side convention, the
+two tracer zero points span only one constant radial nuisance direction.
+Covariance-weighted projection removes that direction exactly and leaves five
+of the six NGC3726 radial degrees of freedom. The already opened shape-only
+test remains null (chi-square `9.1784/5`, `p=0.1022`). This is an
+operator-validation result, not a new endpoint: it cannot see a constant
+radial signal and no source-derived nonconstant morphology template has yet
+been frozen on an unopened sample.
 
 Prospective rank-2 replication has begun without reading its velocity pixels:
 
@@ -6050,15 +6790,689 @@ The next ranked object is audited separately with:
 
 ```bash
 python scripts/audit_ngc3893_replication_eligibility.py
+python scripts/freeze_ngc3893_disturbed_control_v01.py
+python scripts/run_ngc3893_disturbed_control_v01.py
 ```
 
 NGC3893 is not promoted to a third primary replication. Its dedicated source
 reports the NGC3893/3896 interaction, non-circular motions, a common H I
 envelope/connecting arm, and a curve construction chosen to make the inner
 curve symmetric and minimize side scatter. It is therefore frozen as a
-disturbed conventional-asymmetry control. No channel statistic was run, so it
-does not count as either a detection or a third negative channel test. The
-next clean-candidate audit is UGC08490 (NGC5204).
+disturbed conventional-asymmetry control. The previously missed
+machine-readable Ursa Major table supplies four two-sided radii inside the
+GHASP support. Without reading their velocities, the external perturbation
+onset above 75 arcsec freezes the nonconstant template `(0,0,0,1)` and the
+zero-point projector leaves three shape degrees of freedom. The subsequently
+opened control is negative: the outer-disturbance amplitude is
+`7.78 +/- 11.40 km/s` (`p=0.495`), while the omnibus shape test gives
+`chi2=0.964/3` (`p=0.810`). The terminal therefore fails to detect even this
+predeclared conventional disturbance control. This weakens the current
+side-odd terminal as a morphology-sensitive instrument; it is neither a Tau
+detection nor a clean Tau negative.
+
+A separate two-dimensional VIVA H I sensitivity control now runs:
+
+```bash
+python scripts/freeze_viva_2d_morphology_sensitivity_preregistration_v01.py
+python scripts/acquire_viva_2d_morphology_sensitivity_cubes_v01.py
+python scripts/freeze_viva_2d_morphology_sensitivity_operator_v01.py
+python scripts/run_viva_2d_morphology_sensitivity_endpoint_v01.py
+```
+
+This control starts from a source-imaging mode rather than a rotation-curve
+residual. An in-plane morphology mode `m` projects into line-of-sight velocity
+sidebands `k=m-1` and `k=m+1`; for the frozen `m=1` construction the lower
+sideband overlaps the nuisance sector, so the instrument retains the upper
+`k=2` sideband with two quadratures. The exact three-disturbed/three-quiet
+cohort, four annuli, nuisance basis, wrong templates, cross-validation and
+support gates were frozen before velocity pixels were opened. All six galaxies
+then failed the preregistered requirement of at least 24 beam-independent
+samples and eight occupied sectors in every annulus (total retained sample
+counts: `29, 4, 81, 28, 27, 45`). The endpoint therefore has status
+`PREFLIGHT_BLOCKED_BY_FROZEN_SUPPORT_GATE` and emits no score. The opened
+cohort is not repaired by weakening the gate or coarsening the operator. This
+is a negative result about the resolution/capacity of this VIVA implementation,
+not a Tau negative, a parent-loss measurement, a galaxy-rotation correction or
+a dark-matter alternative. A higher-resolution independent survey or a newly
+frozen untouched cohort is required before this 2D terminal can be scored.
+
+That successor test is now complete on the LITTLE THINGS H I survey:
+
+```bash
+python scripts/freeze_little_things_2d_morphology_population_preregistration_v01.py
+python scripts/acquire_little_things_2d_morphology_source_maps_v01.py
+python scripts/run_little_things_2d_morphology_source_preflight_v01.py
+python scripts/freeze_little_things_2d_morphology_operator_calibration_v01.py
+python scripts/freeze_little_things_2d_morphology_endpoint_launch_v01.py
+python scripts/acquire_little_things_2d_morphology_velocity_products_v01.py
+python scripts/run_little_things_2d_morphology_population_endpoint_v01.py
+python scripts/audit_little_things_2d_morphology_endpoint_robustness_v01.py
+```
+
+The source-only intake used all 40 galaxies common to the published LITTLE
+THINGS morphology/product tables rather than disturbed/quiet labels. Twenty-five
+moment-0 maps were acquired under the frozen geometry/support screen; 22 passed
+the source support gate. Velocity-blind rank and injection calibration removed
+M81dwA and Mrk178 because one held-out block in each had no target novelty,
+leaving a 20-galaxy endpoint. This also corrected a control-design error before
+velocity access: a global phase rotation is exactly the same two-quadrature
+target subspace, so it was replaced by a nonconstant annular phase scramble.
+
+All 20 frozen moment-1 targets were then scored without changing the source
+mode, nuisance basis, folds, controls or decision rule. The matched H I
+`m=1 -> k=2` template did not beat the best wrong template: mean specificity
+`-0.107551`, median `-0.056207`, positive fraction `0.25`, exact one-sided
+sign-flip `p=0.983505`. The post-open family decomposition finds no significant
+matched advantage against any individual wrong family, and every leave-one-
+galaxy-out primary mean remains negative. This is a controlled negative result
+for this concrete same-tracer harmonic terminal. It weakens that terminal but
+does not reject the wider parent/channel architecture; conventional gas
+dynamics, projection, feedback and shared moment-map construction remain live
+explanations, and no Tau, parent-loss, gravity-correction or dark-matter claim
+is licensed.
+
+This endpoint is not the primary test of the observer-centred parent-distance
+proposal. It asks whether one source-image harmonic selects a velocity-field
+terminal. The parent-distance proposal instead requires a separately derived
+observer--emission-point corridor `C_(O<-x)`, its lossy transfer `T_(P|Ox)`,
+and the observer access/noise/quantization/calibration chain. Projected
+galactocentric radius and H I `m=1` asymmetry are not substitutes for that
+object. Accordingly this result is retained as an auxiliary terminal control;
+it neither scores nor weakens the still-open corridor-loss hypothesis.
+Within the present repository the four-image, two-transition SDP.81 program is
+the closer development route because it holds one source behind several lens
+paths. The conditional Hessian-to-depth compiler is now derived, but no
+physical occupied parent Hessian or path lift is present, so its current
+lens/source diagnostics are not yet a Tau parent-loss score.
+
+The endpoint-free standard corridor comparator is now materialized directly
+from the frozen Inoue smooth-lens model:
+
+```bash
+python scripts/build_sdp81_standard_corridor_descriptor_v01.py
+python scripts/audit_sdp81_parent_path_lift_gate_v01.py
+
+data/derived/sdp81_standard_corridor_descriptor_v01.json
+data/derived/sdp81_parent_path_lift_gate_v01.json
+reports/sdp81_standard_corridor_descriptor_v01.md
+reports/sdp81_parent_path_lift_gate_v01.md
+```
+
+It records the four q1 paths' relative Fermat potentials, local lens
+Jacobians, singular values, signed magnifications and parities without reading
+a spectral or velocity endpoint. All `7/7` checks pass; the relative Fermat
+span is `0.743341 arcsec^2`, the absolute magnification range is
+`3.730--17.887`, and the centered path descriptor has rank three. These are
+standard 4D lens/corridor comparator variables, not Tau parent distance. The
+physical `T_(P|Ox)`, parent-to-SI calibration, complete covariance and stable
+observer terminal remain open, so endpoint authorization stays false.
+The maximum q1 lens-Jacobi singular value is `1.038708`, one path therefore
+exceeds unit operator norm, and two paths reverse parity. Together with the
+different angular-coordinate domain, this is an explicit no-go against using
+the standard lens Jacobian itself as the positive-metric parent-loss
+contraction. It must remain in the conventional comparator.
+
+The parent-loss generator is now frozen before any SDP.81 endpoint access.
+Under the explicitly conditional post-body row-refinement principle
+`PCRR-P1`, continuity, row locality and the inherited local half-unit uniquely
+select
+
+```text
+Gamma_e = P_e K_src P_e^*/(2 A_* ell_*).
+```
+
+The supporting theory audit passes `14/14`: square and saturating spectral
+filters fail same-mode row-splitting invariance even though they pass ordinary
+direct-sum naturality, and a quadratic source Hessian alone still permits
+alternative positive stage metrics. Forward decision `PCRR-D1` therefore
+uses the linear law as the primary conditional family and predeclares those
+alternatives as wrong-family controls. The endpoint may demote this completion
+but may not choose a replacement filter. Physical parent depth,
+registration/orientation, source overlap, terminal visibility and stable-cell
+crossing remain required before scoring is authorized.
+
+In the common commuting-mode branch this frozen choice gives a concrete
+nuisance-reduced multipath invariant. If the corrected positive amplitudes are
+`z_in=c_i s_n exp(-eta_i lambda_n/2)`, double-centering `log z` over paths and
+modes cancels arbitrary common source-mode amplitudes, path-scalar gains and
+the additive depth origin. The remainder must equal
+`-(eta_i-mean eta)(lambda_n-mean lambda)/2` and therefore has rank one. The
+theory audit passes `12/12`. Rank one alone is not a Tau signature: nonlinear
+spectral filters share it, while path-and-mode-dependent differential
+magnification, beam, radiative-transfer or calibration terms survive. The
+future SDP.81 score must test the full frozen outer-product alignment after
+those conventional terms, not merely low rank.
+
+The absolute scalar parent-distance unit is no longer an eligibility
+requirement for the first dimensionless score. If a source-side positive
+parent interface Hessian supplies an invertible contraction `C_gamma`, the
+integrated morphology-depth operator
+`Omega_gamma=-log[(C_gamma C_gamma^*)^(1/2)]` and the polar orientation are
+unique and sufficient. A separate factorization `Omega=eta F` is not
+identifiable. Within `PCRR-D1`, a scalar `eta` is admissible only if `Omega`
+lies exactly on the registered `K_src/A_*` ray; the `12/12` theory audit
+recovers its coefficient and rejects an off-ray control. Consequently the
+remaining SDP.81 blocker is the physical source-owned parent interface
+Hessian/transfer and its occupation, not an SI calibration of parent length.
+
+The ordered segment product is itself conditional. It follows from one
+source-owned simultaneous innovation action with primitive residuals
+`x_e-V_e x_(e-1)`; its triangular stationary solve yields `V_N...V_1`
+without introducing parent time. Generic positivity does not imply this law.
+An additional positive internal susceptibility changes the endpoint transfer
+and must be retained by exact Schur elimination. The supporting audit passes
+`12/12`. Thus the SDP.81 source freeze must supply either this innovation
+factorization or the complete global corridor Hessian; multiplying local
+contractions is otherwise unauthorized.
+
+The missing transfer formula is nevertheless conditionally closed by the
+existing FULLCONE body law. After all coupled corridor-interior morphology is
+eliminated from one positive causal-body Hessian, split its positive boundary
+Schur operator into source and observer blocks and set
+`C_gamma=-S_OO^(-1/2) S_OS S_SS^(-1/2)`. A second Schur complement proves
+strict contraction, and the corresponding theory audit passes `12/12`.
+Accordingly, Paper 8 no longer lacks a mathematical `H_corridor -> C_gamma`
+map. It lacks physical source selection/occupation of that causal-body
+Hessian and a source-owned co-registration between the four optical SDP.81
+paths and four complete parent-corridor restrictions. Those objects must be
+frozen before spectral pixels are read.
+
+The new `CSCR-T32h/PATHLIFT-C1` audit makes "co-registration" fail-closed.
+An occupied EBOA parent path already fixes its restriction and observer trace;
+however, one observed 4D ray fixes a unique FULLCONE transfer only when that
+transfer is constant, up to endpoint-frame gauge, on the full fibre of parent
+lifts above the ray. Positive same-ray countermodels give different transfers
+and integrated morphology depths. The SDP.81 source packet passes all `8/8`
+method checks and supplies four unique residual-blind optical path keys, but
+materializes `0/7` physical lift requirements. It contains neither a common
+occupied parent-Hessian key plus fibre-basicness certificate nor four occupied
+parent-lift keys under such a packet. Status therefore remains
+`PREFLIGHT_NOT_ENDPOINT`; Fermat potentials, parities and lens Jacobians may
+not select the missing lifts.
+
+`CSCR-T32i` now makes the fibre-basicness branch executable rather than
+qualitative. On each connected regular parent-lift fibre, the
+endpoint-frame-covariant vertical derivative of `C_gamma` must vanish. It is
+computed from the occupied Hessian jet by the exact interior-Schur derivative
+and the Sylvester derivative of the inverse positive square roots. Disconnected
+fibres additionally need matching component anchors. The theory audit passes
+`12/12`, but SDP.81 contains no occupied smooth parent-Hessian family,
+`D pi_4D`, vertical kernel or fibre-topology certificate. This refinement
+therefore changes the required source schema, not the endpoint status.
+
+`CSCR-T32j` supplies a finite reduction only if the occupied parent packet
+owns a connected Lie-group action that is transitive on each regular lift
+fibre. Its fundamental generators must span the full vertical kernel at every
+orbit point, and every endpoint-frame-covariant generator defect must vanish.
+One-point checks, partial generator lists and identity-component checks do not
+suffice; discrete components and discrete isotropy require anchor/holonomy
+tests. The SDP.81 source packet contains no such group action or occupied
+generator jets, so this refinement does not alter `PREFLIGHT_NOT_ENDPOINT`.
+
+`CSCR-T32k--T32l` close the next source-side fork. If a physically occupied,
+fibre-transitive action preserves the complete typed parent Hessian up to one
+common positive scale, Schur functoriality makes `C_gamma` basic and the scale
+cancels. But the action is not implied by Hessian positivity: it must be
+reconstructed from a source-owned lift-space metric and the vertical symmetry
+algebra, with complete flows and an everywhere-zero generator-span projector
+defect. The standard 2D lens-potential Hessian is not this parent Hessian,
+`d beta/d theta` is not `D pi_4D`, four-image multiplicity is not lift-fibre
+topology, and an optical path key is not an occupied parent-lift key. The gate
+records these as typed exclusions rather than silently filling them.
+
+The smallest physical acquisition is therefore the direct-lift route, not the
+full homogeneous-fibre proof: one common physical parent-Hessian/selector-law
+packet, independently reviewed source ownership, typed `E_P -> E_4D`, and one
+nonzero positive actual post-body observer--source incidence measure. The four
+parent-lift keys must then be derived by pushing that measure through the
+common selector, with four certificates
+`pi_4D(tilde_gamma_i)=gamma_i`, all frozen before any spectral endpoint read.
+A hash proves record integrity, not physical occupation.
+
+`CSCR-T32m--T32n` now prove the keyed route is mathematically nonempty without
+pretending it is occupied. A fibre-proper, strongly convex post-body selector
+gives a unique smooth conditional section; the selected positive `S/O/I`
+Hessian then gives the strict FULLCONE transfer. A simultaneous mixed
+body/lift scalar action is rejected because it backreacts on the already
+stabilized body. Gauge-invariant uniqueness is only orbit uniqueness unless a
+source-owned slice is provided. The `23/23` theory audit constructs four
+conditional keys but explicitly leaves Nature occupation false.
+
+`CSCR-T32o--T32q` now remove a redundant occupation layer. Once the selector
+law is physically realized and actual positive observer--source incidence is
+supplied, the occupied-lift measure and the four keys follow by pushforward;
+they are not four additional physical inputs. The actual 4D paths alone still
+cannot choose the parent section. The least exact local occurrence law is its
+graph square, whose upstream Schur remainder is zero, so it does not refit the
+frozen body. The accompanying theory audit passes `20/20`; neither physical
+selector-law ownership nor parent-lift occupation is present in SDP.81.
+
+The incidence statement is now stronger at the observed 4D level. A separate
+endpoint-blind audit evaluates fixed `0.12 arcsec` apertures in the ALMA
+Band-7 continuum image. All four registered q1 locations exceed both the
+integrated and peak `5 sigma` thresholds; integrated SNR is
+`21.061--29.729` and peak SNR is `10.434--13.553`. This freezes the positive,
+unweighted 4D counting measure of mass four. It is not a parent-lift measure
+and does not select the missing physical selector law, so the parent physical
+count stays `0/7` and the endpoint remains closed.
+
+`CSCR-T32s--T32u` now make the remaining selector request finite. One
+physically owned complete post-body action would derive the effective
+selector, its Schur Hessian and section jet by exact elimination. In the
+linear positive-action class the unique coefficient-free candidate is the
+minimum-action right inverse
+`J_min=H_P^(-1) L^* (L H_P^(-1) L^*)^(-1)`, where `L=Dpi` is the
+linear part of the affine descent, with vertical Hessian
+`K_min=H_P|ker(L)`. The two theory audits pass `15/15` and `14/14`.
+However, the current source domain contains no parent-path fibre map or owned
+affine parent anchor. A vertical affine shift leaves the complete observed 4D
+packet unchanged while selecting a different parent lift. Thus the formula is
+selected conditionally inside its class, but PLMIN-P1 is not Nature-selected
+and the physical gate remains `0/7`.
+
+`CSCR-T32v--T32w` now require the lift and `S/O/I` transfer to descend from
+one source-owned post-body action rather than from independently entered
+Hessians. Nested Schur elimination derives the effective lift metric and the
+boundary transfer without double counting. It also separates two physical
+semantics: a source-selected lift held fixed during terminal variation and a
+lift that relaxes jointly with that variation. Their boundary Hessians differ
+by a positive-semidefinite Schur term for nonzero effective coupling, and the
+normalized transfers generally differ.
+The choice must be source-frozen before endpoint access. The `16/16` theory
+audit proves these identities, but no current SDP.81 artifact owns the common
+action, correctly typed affine path descent, anchor or Nature occupation; the
+physical gate therefore remains `0/7`.
+
+The scoring path is now executable rather than merely specified. Run
+
+```bash
+python scripts/compile_sdp81_common_action_forward_model_v01.py
+python scripts/run_sdp81_common_action_endpoint_v01.py
+```
+
+The first command is strictly source-only. Given an authorized physical
+manifest, it reduces each path's common `(B,u,I)` Hessian to the selected
+fixed-lift or relaxed-lift transfer, freezes a five-dimensional centered-log
+spectral terminal, its pathwise covariance, and a leave-one-path-out score
+contract. The second command alone may open the CO(8-7) endpoint, and only
+after the compiled model is authorized. The primary statistic reconstructs
+one common source-mode vector from three paths and predicts the fourth;
+controls use lossless identity transfer and every wrong path-to-transfer
+assignment. With the current absent physical manifest both commands return
+`FORMULA_SHELL_DERIVED_ENDPOINT_BLOCKED`, the endpoint reader remains false,
+and no score is emitted. The seven targeted numerical tests verify authorized
+synthetic compilation, exact source recovery, wrong-assignment discrimination, common-gain
+invariance, positive nested-Schur relaxation, foldwise source identifiability
+and perturbation stability.
+
+Even a future authorized result on this SDP.81 cube is retrospective: the
+cube was already inspected before the common-action formula freeze. It can be
+an informative diagnostic, but the first confirmatory test requires a new
+untouched same-source multipath endpoint.
+
+That diagnostic has now been run without weakening the physical gate. A
+separate source-only freeze uses the conventional relative Fermat coordinate
+only as a **4D proxy label**, maps it through a unit-normalized six-channel
+path-graph Laplacian, and fixes
+`C_i=exp[-(1+r_i)K]` before reopening the spectral values. The result is
+negative: its uncalibrated held-out quadratic sensitivity score is `4.46913`,
+worse than the lossless identity value `4.35135`; it also fails to beat the
+wrong-assignment median, and `17/23` nonidentity path permutations are no
+worse. Status is `DIAGNOSTIC_ONLY_NOT_ENDPOINT`. This rejects the fixed simple
+proxy as a preferred description of these data; it does not reject the wider
+parent-loss hypothesis, because Fermat coordinate was never identified with
+parent morphology distance and no physical Tau action was supplied.
+
+A blank-aperture covariance robustness audit then propagates the measured
+six-channel covariance to centered-log modes for nine fixed annulus/grid
+geometries. Covariance weighting gives a weak path-order tendency: the matched
+proxy beats lossless transfer in `6/9` geometries and the wrong-assignment
+median in `9/9`, but it beats every wrong assignment in `0/9`; `39.1%--47.8%`
+of wrong assignments remain no worse. The frozen unit strength is the
+post-hoc best grid value in only `2/9` geometries, while `0.5` is best in
+`7/9`. Retuning is forbidden. The combined verdict is therefore
+`WEAK_PATH_ORDER_COMPATIBILITY_NOT_MODEL_SELECTION`, still
+`DIAGNOSTIC_ONLY_NOT_ENDPOINT`.
+
+The next source-constrained diagnostic does not adopt the post-hoc optimum as
+a fit. Instead it imports the independently pre-existing conditional
+`CSCR-T32c/PCRR-D1` refinement law, whose linear generator is exactly one
+half, and freezes
+`C_i=exp[-(1+r_i)K/2]` without rereading the endpoint. On the same nine fixed
+blank-aperture covariance geometries this half-generator beats lossless in
+`9/9` cases and the wrong-assignment median in `9/9`, but still beats every
+wrong assignment in `0/9`; `34.8%--39.1%` of wrong assignments are no worse.
+The corresponding exact rank p-values over all `4!=24` assignments are
+`0.375--0.417`, so no geometry reaches `0.05`. These are conditional ranks
+under exchangeable path labels, not population-level significance values.
+Its verdict is therefore
+`PCRR_HALF_SHAPE_COMPATIBLE_BUT_NOT_IDENTIFYING`, not model selection. The
+coincidence with the earlier post-hoc `0.5` preference is retrospective:
+SDP.81 had already been opened, and the tested `r_i` remains a conventional
+4D Fermat proxy rather than a derived parent distance.
+
+A companion WR-T19 spectrum diagnostic uses the source-frozen stiffnesses
+`diag(1.25,1.5,2,2.5,3)`, normalized only by their fixed maximum and combined
+with the same conditional half-generator. Its increasing-stiffness alignment
+has fewer no-worse wrong assignments (`4.3%--30.4%`) and exact rank p-values
+`0.083--0.333`, but also fails the
+every-wrong-assignment test in all nine geometries. More importantly, the
+mapping between those five stiffness eigenmodes and the five observed Helmert
+modes is not derived. It is retained as a calibration hypothesis alongside a
+reversed-alignment control, not promoted as a Tau prediction. The physical
+common-action gate remains `0/7`.
+
+The arbitrary Helmert-column ordering has now been removed in a stricter
+follow-up. The six ordered spectral bins define the path graph `P6`; its
+centered normalized Laplacian has five simple eigenvalues, so its graph
+eigenvectors give a canonical terminal mode basis up to irrelevant signs.
+Every self-adjoint terminal operator commuting with that Laplacian is diagonal
+in this basis. This does **not** select the stiffness-to-frequency assignment:
+every permutation of the five WR-T19 eigenvalues still commutes. With the
+predeclared monotone assignment (larger graph frequency gets larger stiffness),
+the exact path-assignment rank remains `0.375--0.417`; the reversed control is
+better at `0.083--0.333`, and the isotropic control gives `0.333--0.375`.
+No candidate beats every wrong assignment or reaches `p<=0.05`. Verdict:
+`CANONICAL_BASIS_DERIVED_MONOTONE_ASSIGNMENT_NOT_SUPPORTED`. The reverse
+control is not a replacement law: the comparison is retrospective and still
+uses the conventional 4D Fermat proxy. A physical parent-to-terminal
+registration and an untouched endpoint remain necessary.
+
+The no-go was also tested exhaustively rather than only with those three
+named cases. Across all `5!=120` stiffness-to-graph-mode permutations, the
+monotone assignment ranks only `39--81/120` (`p=0.325--0.675`) over the nine
+covariance geometries; the reverse ranks `55--97/120`. Three different
+permutations become best in at least one geometry. Thus the endpoint neither
+selects monotonicity nor a stable alternative mode assignment.
+
+The missing calibration has now been reduced to a source-derived composite
+rather than another guessed basis. A common post-body action supplies
+`W=-H_Z^{-1}B_ZC`; for each lensed path, a separately sourced CO
+line-formation+lens+instrument+aperture forward Jacobian supplies
+`J_log,i=U_0^T diag(F_i^0)^{-1}D Phi_i`. Their product `C_ST,i=J_log,i W`,
+whitened by the source metric and measured noise covariance, has an SVD whose
+mode pairs are the physical local calibration. The `P6` basis is valid only in
+the special case where the derived whitened response Gram commutes with the
+graph Laplacian. A `10/10` endpoint-free audit verifies the formula and
+positive aligned/rotated countermodels. No current SDP.81 artifact owns the
+four path-specific composite Jacobians, so status is
+`COMPOSITE_CALIBRATION_FORMULA_DERIVED_PHYSICAL_MIXED_JET_OPEN`.
+
+The standard path/radiative factorization is now explicit without opening a
+spectral endpoint. For source-plane coefficients `S_nk(Z)`, the frozen smooth
+lens and aperture define `L_in`, so
+`F_ik=sum_n L_in S_nk` and
+`[D_Z Phi_i]_ka=sum_n L_in[D_ZS]_nka`. The normalized four-path by 49-cell
+matrix has rank four and leaves 45 spatial null directions per channel. In the
+separable-source control, common lens gain cancels from centered logs to
+machine precision (`3.69e-16` maximum pathwise Jacobian spread). A
+nonseparable spatial--spectral source yields spread `0.2869` under the same
+lens with no parent loss. The lens/aperture block is therefore derived, while
+the source-owned CO(10-9) radiative mixed jet, line-specific beam/spectral
+response and covariance remain open. Any later parent-loss score must retain
+the nonseparable standard-source countermodel.
+
+The remaining radiative jet is now factored again as
+`D_ZS=(D_xi S)P`, with `P=D_Zxi`. A uniform slab has centered-log rank at most
+three and only two in the optically thin limit, so it cannot realize the
+five-mode calibration. A two-component thin Gaussian mixture has five shape
+coordinates after removing common gain and supplies an explicit rank-five
+witness with minimum singular value `0.231306`; coincident components collapse
+to rank two. This establishes a nonempty minimal radiative completion, not its
+physical occupation. The remaining Tau-facing object is one source-owned
+full-rank parent/body-to-gas bridge `P`, followed by the CO(10-9)-specific gas
+baseline, beam/spectral response and covariance. The earlier CO(8-7)
+two-component preference is retrospective and cannot freeze that bridge.
+
+The common-volume route supplies one further exact terminal derivative. For a
+fixed-source-function line `I_j=S_j(1-exp(-tau_j))` with
+`tau_j -> exp(zeta)tau_j`, the logarithmic volume/column response is
+`g_j=tau_j/(exp(tau_j)-1)`. It is strictly decreasing for positive opacity.
+Thus equal channel opacity and the leading optically thin uniform gain are
+centered-log nulls, while unequal opacity can survive as a shape mode. This is
+a conditional radiative-transfer result, not a fitted Tau correction.
+
+The published intrinsic `CO(8-7)/CO(5-4)=0.30+-0.04` ratio does not identify
+that opacity vector. For every positive trial `tau_j`, choosing
+`S_j=I_j/(1-exp(-tau_j))` reproduces the same two intensities but changes
+`g_j`; two explicit counterfamilies pass the expanded `13/13` radiative audit.
+The observed excitation-dependent CO morphology also makes a homogeneous
+common source function unsafe as a source assumption. A channel-wise
+excitation/source-function or independent opacity constraint, including beam
+filling and differential magnification, must therefore be frozen before the
+CO(10-9) score.
+
+The nearest concrete acquisition route is the published 200-pc SDP.81
+multi-line/PDR reconstruction, which reports spatially resolved FIR, [CII] and
+CO information and makes the reconstruction products available on request.
+It cannot be imported as-is: its physical-condition analysis includes
+CO(10-9), so a prospective calibration must refit only the non-held-out
+tracers, propagate the released source-plane covariance, and demonstrate that
+the resulting opacity/excitation posterior predicts the six CO(10-9) channels
+without using them. Velocity-integrated PDR maps alone are not a channel-wise
+opacity certificate. An isotopologue ratio or another direct opacity tracer
+would provide a cleaner independent route.
+
+The parent/body-to-gas bridge is now reduced one level further without a
+simultaneous body/gas solve. Once the post-body response `Z` is solved and
+frozen, a source-owned conditional gas functional with positive `H_xi` and
+mixed derivative `B_xiZ` gives
+`P=D_Zxi_*=-H_xi^{-1}B_xiZ` by implicit differentiation. Therefore bridge rank
+equals mixed-derivative rank. Putting the same coupling in a jointly varied
+symmetric action would generically shift the upstream Hessian by
+`-B_xiZ^T H_xi^{-1}B_xiZ`; the endpoint-blind audit verifies this nonzero
+backreaction and all `11/11` proof checks. A same-Hessian counterfamily realizes
+different bridges, so this does not select the physical law. The remaining
+Tau-facing object is the source-owned and occupied conditional gas functional,
+or equivalently its typed physical `(H_xi,B_xiZ)` at the frozen line baseline.
+The physical terminal-registration validator now reproduces both
+`P=-H_xi^{-1}B_xiZ` and every pathwise `D_ZF_i=(D_xiF_i)P`; a directly asserted
+raw flux Jacobian fails closed. CO(10-9) remains sealed.
+
+The available symmetries were then tested as possible selectors. A genuinely
+common source-owned action would imply `P rho_Z=rho_xi P`. The ordered `P6`
+reflection splits the centered five-space as `2+3` and leaves a
+`2^2+3^2=13` dimensional intertwiner space containing distinct full-rank
+bridges. A hypothetical standard `S6` action leaves only a scalar bridge, but
+it is not a symmetry of the ordered graph, is not physically represented on
+the gas tangent, and still leaves the susceptibility scale free. Generic
+distinct gas components are not fixed by component exchange; its fixed locus
+has centered-log radiative rank two. The `14/14` endpoint-blind audit therefore
+rules out selecting the physical bridge from the current graph/label
+symmetries. A common source representation/intertwiner plus one nonzero
+susceptibility anchor, or an independently derived nonsymmetric interaction,
+is still required.
+
+The proposed 4D intermediate has now been made exact. If the conditional gas
+functional depends on frozen `Z` only through a gauge-quotiented descriptor
+`e(Z)`, then
+`P=D_e xi_* D_Ze=-H_xi^{-1}B_xi,e D_Ze`. For fixed `G=D_Ze`, such a pure
+factorization exists exactly when `ker G` is contained in `ker P`, equivalently
+`P=PG^+G`. This yields a decisive rank control: a scalar descriptor carries at
+most one mode and a four-component vector at most four, so the five-mode
+terminal needs a mediator tangent of dimension and transmitted rank at least
+five. Full-column rank also makes bare factorization automatic and therefore
+non-identifying. In the general conditional law a direct mixed derivative adds
+`P_dir=-H_xi^{-1}B_xiZ^dir`; it may not be silently discarded. The `13/13`
+endpoint-blind audit passes, but no physical `e`, `D_Ze`, `B_xi,e`, or
+no-direct-coupling certificate is present. The terminal registration now
+accepts only a source-owned direct cross derivative or a reproduced
+gauge-quotiented mediator packet. Ordinary lens/path geometry cannot be
+retyped as this upstream bridge.
+
+The existing G4D branch now supplies a concrete candidate for that mediator,
+without being promoted to an occupied law. Let `I_ZA:T_Z->X_A` register the
+five Paper 8 post-body modes into the observer--source input of the ordered
+G4D relation row. Then
+`D_Zc_*=-L_C^{-1}D_C^*W_R D_A I_ZA`, and the relative-metric derivative is
+`D_Zh=J_met D_Zc_*`. At the GR leaf `J_met` maps the ten metric-active
+lapse/shift/symmetric-strain generators bijectively to the ten symmetric
+metric components; the other six coframe directions are exactly Lorentz-gauge
+nulls. An abstract metric-only gas bridge with an access incidence of rank at
+least five would be
+`P_cof=-H_xi^{-1}B_xi,h D_Zh`. The updated `56/56` endpoint-blind compiler
+audit gives an abstract rank-five witness but also two decisive countermodels: changing only `I_ZA`
+changes `D_Zh`, and changing only `B_xi,h` changes `P`. Thus the G4D branch
+provides sufficient carrier capacity and the lawful formula, but not the
+physical Paper8-to-G4D registration or the CO(10-9) gas--metric response.
+
+The registration itself is no longer left as an arbitrary matrix. For a
+frozen post-body $Z$, a source-owned common relation row with typed maps
+$R_Z:T_Z\to Y_{ZA}$, $R_A:X_A\to Y_{ZA}$ and access compatibility $d_A$
+would derive
+$I_{ZA}=-K_A^{-1}R_A^*W_{ZA}R_Z$, where
+$K_A=R_A^*W_{ZA}R_A+d_A^*W_Ad_A>0$. The common action scale cancels and the
+five-mode requirement is exactly rank five of the cross-Gram row. A
+simultaneous symmetric $Z/a$ solve is not equivalent: its Schur complement
+changes the already frozen $Z$ Hessian. The ordered lower-triangular solve
+preserves $Z$. The endpoint-blind registration audit passes 15/15 checks, but
+also proves nonselection: if the common row is not source-owned, an $R_Z$ can
+be reconstructed for any desired $I_{ZA}$. The present packet owns no such
+occupied common codomain or row, so CO(10-9) remains sealed.
+
+The concrete AORS specialization adds a stricter obstruction. Its current
+access star is `D_A^star=(-1_4,I_4):R^5->R^4`, with rank four and common-mode
+kernel `span{1_5}`. Therefore every composed coframe response has rank at most
+four, even for invertible `I_ZA`; the rank-ten coframe cannot restore a mode
+already removed at access. The earlier five-mode witness is consequently an
+abstract G4D compiler witness, not a realization by the present AORS packet.
+The exact deficit is one: one scalar shared access--coframe row can raise the
+rank to five iff both of its legs are independent of the existing row and
+column images, while a redundant row cannot. The natural direction is now
+fixed: the normalized AORS common null covector pairs with the coframe
+log-volume covector `D log|det D_O|`, equivalently half the mixed metric trace.
+This covector annihilates all Lorentz-gauge directions. Positivity of the
+resulting scalar source Hessian gives only
+`|gamma_cm|<=sqrt(k_V k_A)`: it permits zero and both signs. A perfect-square
+source saturates the bound but still needs sourced diagonal susceptibilities
+and an orientation. Including the correlated coframe self-Hessian gives the
+exact response increment
+`Delta R=L_0^-1u[k_Vu^*L_0^-1T_0-gamma_cm v^*]/(1+k_Vs)`. It has rank at
+most one through metricization and a linear gas terminal. In the one-row
+source class, `gamma_cm=Lambda_A<D_Ce_V,D_Ae_A>_W`: activation is exactly
+nonzero, nonorthogonal occupation of the volume and common-access relation
+images, and the normalized coupling is their scale-invariant weighted cosine.
+Standard covariant matter supplies the physical type of the volume leg:
+`delta S_m=int sqrt(-g) varphi T^mu_mu` under a conformal variation, with
+`q_V=4 varphi`. Cold massive gas has a generically nonzero trace, whereas
+classical radiation is the trace-free control. Centered spectral projection
+still removes a uniform gain, so this does not by itself establish a visible
+five-mode CO response. The exact opacity-shape derivative above supplies the
+conditional survival criterion. The updated endpoint-blind audit passes 56/56 checks, including orthogonal,
+orientation-reversed, exact-cancellation and terminal-null controls. Physical
+occupation, transversality, channel-wise opacity/excitation and terminal
+registration remain unsourced; the result does not open CO(10-9).
+
+A depth-free consequence of the same conditional PCRR family has also been
+scored. `CSCR-T32d` predicts that the double-centered log spectrum of one
+source observed through several commuting scalar-depth paths has rank at most
+one. This removes the common source spectrum, pathwise scalar gains and the
+depth origin without inserting Fermat or parent distance. For the four q1
+paths and six CO(8-7) channels the three singular values are
+`1.480641, 0.411652, 0.293055`; the leading component carries `89.568%` of the
+double-centered energy. Across nine blank-covariance models, however, the
+rank-zero noise upper-tail p-value is `0.140--0.163`, while the fitted-rank-one
+goodness-of-fit p-value is `0.459--0.532`. Neither rank zero nor rank one is
+rejected in any geometry. Verdict:
+`RANK_ONE_COMPATIBLE_NOT_DETECTED_NOT_IDENTIFYING`. Rank one is shared by
+nonlinear separable filters and can be spoiled by path-by-mode calibration,
+so this is a necessary-condition diagnostic, not a Tau detection.
+
+The next endpoint is now sealed rather than opened. The repository-local
+Band-7 archive contains an otherwise unextracted CO(10-9) line cube under the
+frozen archive hash
+`f76e56a87647754be4f21df9b404e1641f2013742f2893029f2d8cfc540ab775`.
+It is a held-out transition in the same SDP.81 source/lens system, not an
+independent replication. An endpoint-blind standard-physics PDR preflight now
+uses the official 200-pc CII, FIR, CO(3-2), CO(5-4), and CO(8-7) source maps.
+Among 288 five-tracer S/N>=3 pixels, 80 have reduced chi-square below 5; the
+blind median CO(10-9)/CO(5-4) prediction is 0.231 with median relative 68%
+half-width 0.363. The median 0.05-versus-0.10 dex grid change is 6.0%, so the
+predeclared 5% numerical-stability check fails narrowly. This freezes a
+partial integrated-amplitude prior, not a six-channel source-function or
+opacity registration.
+
+The PDR contribution materializes one of six transition-readiness
+requirements. The seven deterministically regenerated prerequisite hashes
+have been explicitly re-frozen. A further endpoint-blind gate rejects simple
+inheritance of the open CO(8-7) profile: the official source products are
+two-dimensional integrated maps, the current inverse source cube promotes
+zero of six channel-common fits, and its three-path-to-fourth-path transfer
+improves only 1/24 folds with median predictive R2 `-21.187`. The rejected
+shortcut now has a concrete replacement route. Official ALMA
+TAP/Datalink metadata and calibration-script bundles identify 12 Band-4
+CO(5-4) and 9 Band-6 CO(8-7) executions, disjoint from all 11 Band-7
+CO(10-9) executions. The permitted raw payload is 211.709 GB. This freezes
+which data may be acquired and how the visibility-plane source reconstruction
+must be validated; acquisition and reconstruction have not yet occurred. A
+resource-bounded route is therefore frozen first: the already-local CO(5-4)
+and CO(8-7) restored cubes total only 395.928 MB. Their successor inversion
+must use full arcs, exact lensing and beam operators, correlated blank-image
+noise, regularization and held-path/channel/grid/beam controls. It is
+development-only because restored images do not retain the full visibility
+likelihood. Neither route yet increases transition readiness. The aggregate
+The resource-bounded inversion was then executed. Its open-line-only
+regularization scan selects lambda 100; all four paths have positive median
+held-path improvement, but the combined median is only 2.07%, below the frozen
+5% threshold. A fair source-reflection control reaches 1.61%, leaving only a
+0.46 percentage-point matched advantage. Status:
+`FULL_ARC_REFERENCE_IMAGE_INVERSION_NOT_PROMOTED`. Further tuning of this
+restored-image family is stopped. Because the primary gate failed, the
+downstream grid, beam, astrometric and channel-block stability controls were
+short-circuited rather than used as rescue searches. The aggregate source gate
+therefore passes `19/19` static checks, while remaining at `0/7`
+parent-physical and `1/6` transition readiness.
+
+The public reduced-product hierarchy is now explicit. Official calibrated
+Band-4/Band-6 measurement-set packages total 54.009 GB, compared with the
+211.709-GB raw-ASDM route. The 1.599-GB reference-image tier contains the
+already-tested 395.928-MB pair of allowed line cubes. The public Rybak source
+maps are velocity-integrated rather than channel-resolved and do not include a
+full spectral covariance/posterior. No compact public source-plane spectral
+likelihood or target-and-line-only calibrated visibility cutout was found.
+Accordingly, the next finite acquisition is an author request for either those
+source cubes plus covariance and resolution operator, or line-SPW-only
+calibrated measurement-set cutouts. No request has been sent, and this inventory
+adds zero transition-readiness items. Neither the held-out FITS header nor its
+data array was read. Status:
+`FORMULA_FREEZE_PROTOCOL_READY_PHYSICAL_SOURCE_BLOCKED`; the cube stays sealed
+until one physical common-action packet and one independently validated
+parent-mode-to-six-channel CO(10-9) terminal-registration certificate exist.
+
+```bash
+python scripts/freeze_sdp81_4d_corridor_proxy_diagnostic_v01.py
+python scripts/run_sdp81_4d_corridor_proxy_diagnostic_v01.py
+python scripts/run_sdp81_4d_corridor_proxy_covariance_robustness_v01.py
+python scripts/freeze_sdp81_pcrr_source_hessian_diagnostic_v01.py
+python scripts/run_sdp81_pcrr_source_hessian_diagnostic_v01.py
+python scripts/freeze_sdp81_graph_spectral_terminal_calibration_diagnostic_v01.py
+python scripts/run_sdp81_graph_spectral_terminal_calibration_diagnostic_v01.py
+python scripts/freeze_sdp81_pcrr_rank_one_invariant_diagnostic_v01.py
+python scripts/run_sdp81_pcrr_rank_one_invariant_diagnostic_v01.py
+python scripts/audit_sdp81_co109_common_action_source_gate_v01.py
+python scripts/audit_sdp81_rybak2020_source_blind_pdr_preflight_v01.py
+python scripts/freeze_sdp81_alma_visibility_source_route_v01.py
+python scripts/audit_sdp81_reference_image_source_route_v01.py
+python scripts/run_sdp81_full_arc_regularized_source_inversion_v02.py
+python scripts/audit_sdp81_open_transition_profile_lift_gate_v01.py
+python scripts/derive_sdp81_standard_path_radiative_factorization_v01.py
+python scripts/audit_sdp81_radiative_mixed_jet_minimal_rank_v01.py
+python scripts/audit_sdp81_parent_gas_conditional_response_v01.py
+python scripts/audit_sdp81_parent_gas_equivariant_intertwiner_v01.py
+python scripts/audit_sdp81_parent_gas_4d_mediator_factorization_v01.py
+python scripts/audit_sdp81_g4d_coframe_parent_gas_mediator_compiler_v01.py
+```
+
+The Paper 8 gate has also been hardened. Physical authorization fields are no
+longer read from the standard corridor descriptor. Any such injected strings
+fail a dedicated adversarial test. A second adversarial test rejects a
+self-asserted hash-valid manifest that lacks the typed post-body occurrence
+law, selector graph certificate, rival-lift control and independent scientific
+review declaration. A future physical route must arrive in the separate
+artifact-verified
+`sdp81_parent_lift_physical_source_manifest_v01.json`; it must include real
+projection certificates as well as lift keys. The current manifest is absent,
+so all `0/7` physical requirements remain false and the endpoint stays closed.
 
 The UGC06787 priority route now additionally runs:
 
@@ -6909,3 +8323,23 @@ python scripts/fit_sdp81_two_component_spatial_operator_v01.py
 data/derived/sdp81_two_component_spatial_operator_v01.json
 reports/sdp81_two_component_spatial_operator_v01.md
 ```
+
+<!-- BEGIN OBSERVER UPDATE 20260914 -->
+## Observer realization update (2026-09-14)
+
+For galactic inference, these observer constructions do not derive a rotation-curve correction or identify a measured residual as a parent effect. Existing endpoint freezes and scores are unchanged.
+
+The manuscript distinguishes inherited BRAC contact, conditional coherent-state
+selection and interacting local covariance from physical observer identification,
+preparation and stable resolution. Those physical claims remain open. No
+empirical score was changed. The [dependency and source-result ledger](data/derived/observer_update_2026_09_14.json) records the assumptions and controls.
+<!-- END OBSERVER UPDATE 20260914 -->
+
+<!-- BEGIN LAB UPDATE 20260915 -->
+## Finite lab integration (2026-09-15)
+
+The manuscript imports the scope-specific source, body, observer or terminal
+result from the current lab. Supplied priors, conditional recovery and physical
+selection remain separate. No SI constant, viable universe or Tau-specific
+signal is newly established. See the [source and ownership ledger](data/derived/lab_update_2026_09_15.json).
+<!-- END LAB UPDATE 20260915 -->

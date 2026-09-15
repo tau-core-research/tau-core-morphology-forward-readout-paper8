@@ -12,7 +12,7 @@
     "both_ghasp_halpha_sides": true,
     "whisp_graphical_source_available": true,
     "low_disturbance_primary_replication": false,
-    "independent_machine_readable_hi_radial_sides_acquired": false,
+    "independent_machine_readable_hi_radial_sides_acquired": true,
     "side_curve_not_symmetry_targeted": false
   },
   "primary_replication_eligible": false,
@@ -36,7 +36,8 @@
   "source_hashes_sha256": {
     "astro-ph_0701878": "6dfecb8a513188e607ca3dc1e6991e51aa974d1aa036fffb284838fcbb05056f",
     "1103.4928": "eb648878d8706a878e2d06f8d7c631ea6c76ada58f14a935c03c94b083ea0d6e",
-    "whisp_overview": "8b25fdddbbd31602992e0f6fda3305d126f899745a1c9ecce50400e2144c50c4"
+    "whisp_overview": "8b25fdddbbd31602992e0f6fda3305d126f899745a1c9ecce50400e2144c50c4",
+    "uma_rotation_table4": "b572484788f2dd30ec741ee594d3f191cb1aba8c7280638727eadf89bbe366b4"
   },
   "next_clean_candidate": "UGC08490",
   "claim_boundary": "source-side eligibility audit only; NGC3893 is retained as a disturbed-control case, not counted as a channel detection or a failed channel replication"

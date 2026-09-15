@@ -1,0 +1,15 @@
+{
+  "schema": "ngc4254_s4gcat_p3_noise_v01",
+  "object": "NGC4254",
+  "ra_deg": 184.706831,
+  "dec_deg": 14.416424,
+  "sky1_mjy_sr": 0.041704,
+  "ssky1_mjy_sr": 0.010044,
+  "esky1_mjy_sr": 0.002681,
+  "sky2_mjy_sr": 0.073855,
+  "ssky2_mjy_sr": 0.015035,
+  "esky2_mjy_sr": 0.002199,
+  "catalog": "IRSA S4G Catalog (s4gcat)",
+  "query": "SELECT object,ra,dec,sky1,ssky1,esky1,sky2,ssky2,esky2 FROM s4gcat WITHIN 5 arcsec OF ICRS(184.70677,14.41649)",
+  "catalog_documentation_url": "https://irsa.ipac.caltech.edu/data/SPITZER/S4G/gator_docs/s4g_colDescriptions.html"
+}

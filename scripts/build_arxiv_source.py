@@ -10,11 +10,24 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "paper8_submission_source"
 ZIP_PATH = ROOT / "arxiv_submission_source.zip"
-EXCLUDED_SUFFIXES = {".aux", ".log", ".out", ".toc", ".blg", ".bbl", ".synctex.gz"}
+EXCLUDED_SUFFIXES = {
+    ".aux",
+    ".log",
+    ".out",
+    ".toc",
+    ".blg",
+    ".bbl",
+    ".synctex.gz",
+    ".fdb_latexmk",
+    ".fls",
+}
+EXCLUDED_PARTS = {".pytest_cache", "__pycache__"}
 ZIP_EPOCH = (2026, 1, 1, 0, 0, 0)
 
 
 def should_include(path: Path) -> bool:
+    if any(part in EXCLUDED_PARTS for part in path.relative_to(SOURCE).parts):
+        return False
     if path.name == "main.pdf":
         return False
     if any(str(path).endswith(suffix) for suffix in EXCLUDED_SUFFIXES):

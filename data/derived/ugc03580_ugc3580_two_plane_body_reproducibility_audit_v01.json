@@ -1,0 +1,43 @@
+{
+  "schema": "tau_core_ugc03580_ugc3580_two_plane_body_reproducibility_audit_v01",
+  "status": "REPRODUCIBILITY_AUDIT_PASS",
+  "checks_passed": 25,
+  "checks_total": 25,
+  "checks": {
+    "source_pdf_hash_matches": true,
+    "source_table_hash_matches": true,
+    "source_table_has_18_rows": true,
+    "source_radii_strictly_increase": true,
+    "source_table_has_no_endpoint_columns": true,
+    "builder_has_no_endpoint_path_or_loader": true,
+    "derived_points_have_no_endpoint_columns": true,
+    "primary_support_excludes_420_arcsec": true,
+    "primary_support_has_17_rings": true,
+    "outer_support_has_5_rings": true,
+    "orientation_normals_are_unit": true,
+    "orientation_matches_published_normals": true,
+    "published_tip_reconstructed": true,
+    "inner_reference_limit_is_exact": true,
+    "bounded_defect_holds": true,
+    "plane_separation_matches_summary": true,
+    "plane_separation_reproduces_table4": true,
+    "maximum_tip_residual_matches_summary": true,
+    "density_weight_sensitivity_matches": true,
+    "support_extension_sensitivity_matches": true,
+    "resolution_sensitivity_matches": true,
+    "leave_one_out_sensitivity_matches": true,
+    "all_primary_sensitivities_below_published_table4_error": true,
+    "endpoint_remains_blocked": true,
+    "readout_formula_remains_unselected": true
+  },
+  "independent_recomputation": {
+    "inner_outer_plane_separation_deg": 14.296629138375462,
+    "maximum_orientation_vs_published_normal_deg": 0.08452571071549828,
+    "maximum_tip_reconstruction_residual_deg": 0.09272960846378986,
+    "density_weighted_outer_plane_shift_deg": 1.486991163724879,
+    "include_420_arcsec_shift_deg": 1.80595865636149,
+    "every_other_ring_shift_deg": 2.217234354631239,
+    "maximum_leave_one_out_shift_deg": 1.3653291594257222
+  },
+  "claim_boundary": "source-geometry reproducibility only; no terminal or Tau-specific physical validation"
+}

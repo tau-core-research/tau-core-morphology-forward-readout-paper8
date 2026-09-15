@@ -1,0 +1,56 @@
+{
+  "schema": "tau_core_ugc08490_ngc5204_ngc4088_class_transfer_endpoint_v01",
+  "status": "RETROSPECTIVE_CLASS_TRANSFER_NEGATIVE",
+  "galaxy": "UGC08490",
+  "alias": "NGC5204",
+  "formula_id": "NGC4088_WARP_HISTORY_CLASS_V1__UGC08490_TRANSFER_V01",
+  "freeze_manifest_sha256": "24afaae684cfb53700f969c4114278636c7aaf42a2a74a891952b7e1ab66db17",
+  "n_points": 30,
+  "n_pre_onset": 10,
+  "n_post_onset": 20,
+  "x_w_frozen": 0.4508762999054615,
+  "primary_rmse_km_s": 29.703509883114187,
+  "fixed_mond_rmse_km_s": 8.782045083335015,
+  "wrong_ngc4088_onset_rmse_km_s": 31.64062539109528,
+  "best_fit_halo_rmse_km_s": 1.1953019908601819,
+  "matched_beats_fixed_mond": false,
+  "matched_beats_wrong_onset_control": true,
+  "matched_beats_best_fit_halo": false,
+  "endpoint_informed_preferred_x_w_diagnostic": 0.49369501466275656,
+  "endpoint_informed_preferred_x_w_rmse_km_s": 29.62924454787134,
+  "frozen_x_w_minus_endpoint_preferred_x_w": -0.04281871475729504,
+  "bootstrap_primary_vs_mond": {
+    "observed_delta_mse_primary_minus_comparator": 805.1741835305336,
+    "bootstrap_ci95_low": 474.5671507704241,
+    "bootstrap_ci95_high": 1142.7283965838535,
+    "bootstrap_fraction_primary_better": 0.0,
+    "n_bootstrap": 20000,
+    "block_length": 3
+  },
+  "bootstrap_primary_vs_wrong_onset": {
+    "observed_delta_mse_primary_minus_comparator": -118.83067576336086,
+    "bootstrap_ci95_low": -255.28344444972174,
+    "bootstrap_ci95_high": 28.972037135600473,
+    "bootstrap_fraction_primary_better": 0.9436,
+    "n_bootstrap": 20000,
+    "block_length": 3
+  },
+  "halo_fit_parameters": {
+    "NFW": {
+      "v200_km_s": 49.679006421016,
+      "concentration": 22.271042513363213,
+      "optimizer_success": true
+    },
+    "PSEUDO_ISOTHERMAL": {
+      "v_inf_km_s": 77.17660452809197,
+      "r_core_kpc": 0.4486586782735072,
+      "optimizer_success": true
+    }
+  },
+  "interpretation": "The source-correct outer-warp law does not transfer as a complete rotation-law explanation if it fails the fixed MOND and wrong-onset controls. This is a negative result for the current universal class-law transfer, not a falsification of Tau Core or of morphology-conditioned readouts in general.",
+  "construction_used_pointwise_vobs_or_residual": false,
+  "scoring_used_vobs": true,
+  "prospective_blind_endpoint": false,
+  "post_endpoint_repair_performed": false,
+  "claim_boundary": "retrospective_single_galaxy_class_transfer_negative_not_tau_falsification"
+}

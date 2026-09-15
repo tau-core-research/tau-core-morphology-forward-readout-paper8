@@ -1,0 +1,110 @@
+{
+  "schema": "tau_core_inverse_required_rapidity_diagnostic_v01",
+  "status": "DIAGNOSTIC_ONLY_NOT_ENDPOINT",
+  "formula": {
+    "q_required": "atanh(v_observed/c)-atanh(v_baseline/c)",
+    "u_required_kms": "c*q_required",
+    "interpretation": "terminal-equivalent inverse rapidity, not a physical Tau source kernel"
+  },
+  "frozen_packet": {
+    "n_points": 3389,
+    "n_galaxies": 175,
+    "n_train_galaxies": 131,
+    "n_holdout_galaxies": 44,
+    "tpg_points_sha256": "f77b9e70888e406d975d14f597aeafc8c262f3010b3050be64f9137f8f19a8a2",
+    "sparc_master_sha256": "d6900f7a90d4e19cda4ad94c518baa862d4ed9d2405d2b94c3c48708a8f8e24a",
+    "formula_labels_sha256": "772b1992fc4cd0399a579e6d5ec39d3510b8a8c9f23555481e89460e0cb58551"
+  },
+  "predictor_policy": {
+    "forbidden_overlap": [],
+    "holdout_used_for_tuning": false,
+    "alpha_selection": "five-fold grouped CV on training galaxies only",
+    "formula_family_status": "residual-blind proxy, not externally promoted physical morphology",
+    "distance_status": "geometric proxy, not a measured instrument or parent-loss kernel"
+  },
+  "known_limit_and_numerics": {
+    "equal_velocity_gives_zero_exactly": true,
+    "maximum_exact_minus_linear_kms": {
+      "newtonian_baryonic": 0.00017424621833583842,
+      "tpg_v6": 0.00010616538776275775,
+      "mond_fixed": 0.00010052468735466391
+    },
+    "maximum_change_using_c_300000_kms": {
+      "newtonian_baryonic": 2.4100626205836306e-07,
+      "tpg_v6": 1.4684120230867848e-07,
+      "mond_fixed": 1.39039372015759e-07
+    }
+  },
+  "headline_combined": {
+    "newtonian_baryonic": {
+      "rmse_ratio_to_zero": 0.4045472378847008,
+      "mean_delta_rmse_kms": -25.420292028407367,
+      "paired_sign_flip_p_lower": 1.999960000799984e-05,
+      "holdout_point_pearson_r": 0.7481023577990471
+    },
+    "tpg_v6": {
+      "rmse_ratio_to_zero": 0.9625858250070661,
+      "mean_delta_rmse_kms": -0.6600815325736294,
+      "paired_sign_flip_p_lower": 0.11911761764764704,
+      "holdout_point_pearson_r": 0.15724270183573894
+    },
+    "mond_fixed": {
+      "rmse_ratio_to_zero": 0.9356556996309696,
+      "mean_delta_rmse_kms": -1.1655196259912406,
+      "paired_sign_flip_p_lower": 0.07547849043019139,
+      "holdout_point_pearson_r": 0.16892493016172969
+    }
+  },
+  "observer_added_to_morphology": [
+    {
+      "baseline_id": "newtonian_baryonic",
+      "comparison_id": "observer_added_to_morphology",
+      "left_model": "combined",
+      "right_model": "morphology_proxy",
+      "mean_delta_rmse_left_minus_right_kms": -1.2531335004056887,
+      "bootstrap_ci_lower_kms": -2.5237837171824538,
+      "bootstrap_ci_upper_kms": -0.02811197142933198,
+      "paired_sign_flip_p_lower": 0.027079458410831782,
+      "left_beats_right_galaxy_fraction": 0.6590909090909091
+    },
+    {
+      "baseline_id": "tpg_v6",
+      "comparison_id": "observer_added_to_morphology",
+      "left_model": "combined",
+      "right_model": "morphology_proxy",
+      "mean_delta_rmse_left_minus_right_kms": -0.726049300321657,
+      "bootstrap_ci_lower_kms": -1.440509328484331,
+      "bootstrap_ci_upper_kms": -0.010343804240178632,
+      "paired_sign_flip_p_lower": 0.02871942561148777,
+      "left_beats_right_galaxy_fraction": 0.6363636363636364
+    },
+    {
+      "baseline_id": "mond_fixed",
+      "comparison_id": "observer_added_to_morphology",
+      "left_model": "combined",
+      "right_model": "morphology_proxy",
+      "mean_delta_rmse_left_minus_right_kms": -0.6197875532128837,
+      "bootstrap_ci_lower_kms": -1.5144354379622373,
+      "bootstrap_ci_upper_kms": 0.18141902819939812,
+      "paired_sign_flip_p_lower": 0.08339833203335933,
+      "left_beats_right_galaxy_fraction": 0.5227272727272727
+    }
+  ],
+  "strongest_alternatives": [
+    "conventional baryonic scaling and the mass-discrepancy relation",
+    "distance, beam, inclination, calibration and deprojection systematics",
+    "smooth structure already absorbed by the TPG/v6 and MOND baselines"
+  ],
+  "claim_boundary": {
+    "endpoint_allowed": false,
+    "not_derived": [
+      "physical q_tau(R)",
+      "source-owned D_O(R)",
+      "stable Q_OS",
+      "body-versus-observer attribution",
+      "distance-dependent parent loss",
+      "Nature occupation",
+      "dark-matter replacement law"
+    ]
+  }
+}

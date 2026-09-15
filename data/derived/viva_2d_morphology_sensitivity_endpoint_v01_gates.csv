@@ -1,0 +1,7 @@
+galaxy,role,support_gate,beam_sampling_step_pixels,beam_major_arcsec,beam_minor_arcsec,independent_samples
+NGC4298,disturbed,False,4,16.8516,15.716880000000002,29
+NGC4424,disturbed,False,4,37.2744,31.77396,4
+NGC4654,disturbed,False,4,16.138080000000002,15.517800000000001,81
+NGC4450,quiet,False,4,16.44732,15.605279999999999,28
+NGC4579,quiet,False,4,42.440400000000004,34.50996,27
+NGC4689,quiet,False,4,16.7058,15.841080000000002,45

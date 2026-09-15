@@ -1,0 +1,30 @@
+{
+  "schema": "tau_core_ugc08490_ngc5204_ngc4088_class_transfer_reproducibility_audit_v01",
+  "status": "REPRODUCIBILITY_AUDIT_PASS",
+  "checks": {
+    "manifest_hash_matches": true,
+    "source_body_declares_no_endpoint_construction": true,
+    "freeze_precedes_current_score": true,
+    "retuning_forbidden": true,
+    "xw_reproduces": true,
+    "lambda_reproduces": true,
+    "point_count_reproduces": true,
+    "primary_curve_reproduces": true,
+    "mond_curve_reproduces": true,
+    "primary_rmse_reproduces": true,
+    "wrong_onset_rmse_reproduces": true,
+    "mond_rmse_reproduces": true,
+    "source_correct_onset_beats_wrong_onset": true,
+    "source_correct_onset_does_not_beat_mond": true,
+    "negative_status_preserved": true,
+    "no_post_endpoint_repair": true
+  },
+  "recomputed": {
+    "x_w": 0.4508762999054615,
+    "lambda_w_km2_s2": 2785.495745763945,
+    "primary_rmse_km_s": 29.703509883114187,
+    "wrong_onset_rmse_km_s": 31.64062539109528,
+    "mond_rmse_km_s": 8.782045083335015
+  },
+  "claim_boundary": "reproducibility_of_retrospective_negative_transfer_not_physical_validation"
+}

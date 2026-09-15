@@ -1,0 +1,290 @@
+{
+  "schema": "tau_core_ugc03580_ugc3580_two_plane_readout_shell_reproducibility_audit_v01",
+  "status": "REPRODUCIBILITY_AUDIT_FAIL",
+  "checks_passed": 61,
+  "checks_total": 62,
+  "checks": {
+    "upstream_summary_hash_matches": true,
+    "upstream_points_hash_matches": true,
+    "builder_has_no_endpoint_loader": true,
+    "output_has_no_endpoint_columns": true,
+    "row_count_preserved": true,
+    "plane_defects_nonnegative": true,
+    "K1_bounded": true,
+    "K2_bounded": true,
+    "inner_and_outer_limits_exact": true,
+    "plane_swap_complementarity": true,
+    "coincident_plane_deactivates_kernel": true,
+    "stored_defects_match": true,
+    "stored_K1_matches": true,
+    "stored_K2_matches": true,
+    "stored_signed_chirality_matches": true,
+    "stored_chirality_square_matches_raw_defect_identity": false,
+    "raw_defect_chirality_square_identity_is_exact": true,
+    "supported_source_path_uses_both_chirality_signs": true,
+    "source_output_contains_published_oriented_spin_normal_components": true,
+    "source_orientation_matches_published_spin_normal_components": true,
+    "reflected_normals_remain_unit": true,
+    "p_counterfamily_is_nontrivial": true,
+    "sign_counterfamily_is_nontrivial": true,
+    "power_counterfamily_is_nontrivial": true,
+    "postbody_hessian_is_positive": true,
+    "implicit_response_formula_is_exact": true,
+    "mixed_block_sign_flip_reverses_terminal_sign": true,
+    "mixed_block_rescaling_changes_terminal_amplitude": true,
+    "hessian_stays_fixed_across_sign_and_scale_countermodels": true,
+    "common_action_mixed_block_factorizes_through_registration": true,
+    "distinct_parent_lifts_have_same_visible_K": true,
+    "same_visible_K_can_have_distinct_terminal_response": true,
+    "visible_lift_complete_and_schur_responses_agree": true,
+    "hidden_lift_complete_and_schur_responses_agree": true,
+    "same_action_zero_morphology_carrier_is_positive": true,
+    "constant_scalar_amplitude_is_not_generic": true,
+    "same_body_allows_distinct_zero_morphology_carriers": true,
+    "zero_amplitude_recovers_carrier": true,
+    "negative_branch_remains_nonnegative": true,
+    "projection_control_matches": true,
+    "stored_mirror_reflected_los_matches": true,
+    "stored_mirror_projection_matches": true,
+    "stored_mirror_projection_difference_matches": true,
+    "analytic_mirror_projection_identity_is_exact": true,
+    "standard_projection_is_not_mirror_even_on_source_support": true,
+    "summary_retains_chi_for_complete_projection_stack": true,
+    "K1_path_segments_have_overlapping_level_range": true,
+    "same_K1_level_has_two_disjoint_source_path_roots": true,
+    "source_path_collision_K1_residual_is_small": true,
+    "equal_K1_source_path_roots_have_opposite_chi": true,
+    "equal_K1_source_path_roots_have_distinct_projection": true,
+    "source_path_collision_survives_neighboring_level_targets": true,
+    "source_path_level_solver_is_tolerance_stable": true,
+    "stored_source_path_collision_matches_independent_recomputation": true,
+    "summary_refutes_K1_as_complete_shared_descriptor": true,
+    "summary_does_not_overclaim_multicomponent_parent_occupation": true,
+    "projection_range_matches_summary": true,
+    "geometric_amplitude_matches_summary": true,
+    "endpoint_values_unused": true,
+    "terminal_formula_unselected": true,
+    "endpoint_remains_blocked": true,
+    "status_is_formula_shell_only": true
+  },
+  "independent_recomputation": {
+    "plane_defect_separation": 0.030969738667647295,
+    "geometric_amplitude": 0.015484869333823648,
+    "minimum_supported_K1": 8.424430492821361e-13,
+    "maximum_supported_K1": 0.9922764946691954,
+    "maximum_transition_abs_K1_minus_K2": 0.14987401884655976,
+    "minimum_supported_projection_ratio_sq": 0.9940907140030083,
+    "maximum_supported_projection_ratio_sq": 1.0968494510157643,
+    "minimum_supported_signed_chirality": -0.04781316856282913,
+    "maximum_supported_signed_chirality": 0.09520137395007985,
+    "maximum_abs_chirality_square_identity_residual": 1.1825262991038699e-13,
+    "maximum_source_orientation_vs_published_spin_normal_deg": 0.08452570875359215,
+    "maximum_supported_abs_mirror_projection_difference": 0.14272667469641798,
+    "rms_supported_mirror_projection_difference": 0.04653467936552679,
+    "maximum_abs_mirror_projection_identity_residual": 5.573319583618286e-14,
+    "maximum_difference_witness": {
+      "radius_arcsec": 270.0,
+      "source_n_los": 0.2605045086426,
+      "mirror_n_los": 0.4349209668095879,
+      "source_projection_ratio_sq": 1.0968494510157643,
+      "mirror_projection_ratio_sq": 0.9541227763193463
+    },
+    "same_body_plus_minus_max_v2_difference_for_100_km_s_carrier": 7938.211957353563
+  },
+  "scalar_registration_collision": {
+    "segments_arcsec": [
+      [
+        210.0,
+        240.0
+      ],
+      [
+        270.0,
+        300.0
+      ]
+    ],
+    "sensitivity_targets": [
+      {
+        "target_K1": 0.9,
+        "roots": [
+          {
+            "segment_arcsec": [
+              210.0,
+              240.0
+            ],
+            "fraction": 0.526955957685459,
+            "radius_arcsec": 225.80867873056377,
+            "K1": 0.9000000000000079,
+            "K1_residual": 7.882583474838611e-15,
+            "chi": -0.030454891320954025,
+            "projection_ratio_sq": 0.999258035614409
+          },
+          {
+            "segment_arcsec": [
+              270.0,
+              300.0
+            ],
+            "fraction": 0.05409103304907603,
+            "radius_arcsec": 271.6227309914723,
+            "K1": 0.8999999999999914,
+            "K1_residual": -8.659739592076221e-15,
+            "chi": 0.0889092727094036,
+            "projection_ratio_sq": 1.0931752602452522
+          }
+        ],
+        "radial_separation_arcsec": 45.81405226090851,
+        "projection_difference": 0.09391722463084329,
+        "chi_difference": 0.11936416403035763
+      },
+      {
+        "target_K1": 0.925,
+        "roots": [
+          {
+            "segment_arcsec": [
+              210.0,
+              240.0
+            ],
+            "fraction": 0.6313309990000562,
+            "radius_arcsec": 228.93992997000169,
+            "K1": 0.9250000000000078,
+            "K1_residual": 7.771561172376096e-15,
+            "chi": -0.033824288698278304,
+            "projection_ratio_sq": 0.998056542026934
+          },
+          {
+            "segment_arcsec": [
+              270.0,
+              300.0
+            ],
+            "fraction": 0.17484542135389347,
+            "radius_arcsec": 275.2453626406168,
+            "K1": 0.9249999999999907,
+            "K1_residual": -9.325873406851315e-15,
+            "chi": 0.07485015378291782,
+            "projection_ratio_sq": 1.0847002493480409
+          }
+        ],
+        "radial_separation_arcsec": 46.30543267061512,
+        "projection_difference": 0.08664370732110693,
+        "chi_difference": 0.10867444248119612
+      },
+      {
+        "target_K1": 0.95,
+        "roots": [
+          {
+            "segment_arcsec": [
+              210.0,
+              240.0
+            ],
+            "fraction": 0.7949077051566746,
+            "radius_arcsec": 233.84723115470024,
+            "K1": 0.9499999999999946,
+            "K1_residual": -5.329070518200751e-15,
+            "chi": -0.0390973921003272,
+            "projection_ratio_sq": 0.9962427894634226
+          },
+          {
+            "segment_arcsec": [
+              270.0,
+              300.0
+            ],
+            "fraction": 0.30681699696651776,
+            "radius_arcsec": 279.20450990899553,
+            "K1": 0.9499999999999975,
+            "K1_residual": -2.4424906541753444e-15,
+            "chi": 0.059468093197833694,
+            "projection_ratio_sq": 1.0750138709152164
+          }
+        ],
+        "radial_separation_arcsec": 45.357278754295294,
+        "projection_difference": 0.07877108145179379,
+        "chi_difference": 0.0985654852981609
+      }
+    ],
+    "selected_witness": {
+      "target_K1": 0.925,
+      "roots": [
+        {
+          "segment_arcsec": [
+            210.0,
+            240.0
+          ],
+          "fraction": 0.6313309990000562,
+          "radius_arcsec": 228.93992997000169,
+          "K1": 0.9250000000000078,
+          "K1_residual": 7.771561172376096e-15,
+          "chi": -0.033824288698278304,
+          "projection_ratio_sq": 0.998056542026934
+        },
+        {
+          "segment_arcsec": [
+            270.0,
+            300.0
+          ],
+          "fraction": 0.17484542135389347,
+          "radius_arcsec": 275.2453626406168,
+          "K1": 0.9249999999999907,
+          "K1_residual": -9.325873406851315e-15,
+          "chi": 0.07485015378291782,
+          "projection_ratio_sq": 1.0847002493480409
+        }
+      ],
+      "radial_separation_arcsec": 46.30543267061512,
+      "projection_difference": 0.08664370732110693,
+      "chi_difference": 0.10867444248119612
+    },
+    "maximum_radius_shift_under_tolerance_change_arcsec": 1.0913936421275139e-09,
+    "maximum_builder_vs_auditor_value_error": 3.8318148654070683e-10,
+    "interpretation": "K1 is not injective even on the frozen continuous source path and cannot be the complete shared descriptor; an alternative source-owned scalar factorization or a multicomponent Parent coupling remains open",
+    "endpoint_values_used": false
+  },
+  "source_action_countermodel": {
+    "H_Z": [
+      [
+        2.0,
+        0.3
+      ],
+      [
+        0.3,
+        1.5
+      ]
+    ],
+    "B_ZK": [
+      0.4,
+      -0.2
+    ],
+    "L_G": [
+      1.2,
+      0.7
+    ],
+    "minimum_H_Z_eigenvalue": 1.3594875162046671,
+    "Gamma": -0.14707903780068726,
+    "Gamma_after_B_ZK_sign_flip": 0.14707903780068726,
+    "Gamma_after_B_ZK_scale_times_three": -0.4412371134020619,
+    "same_body_and_H_Z": true,
+    "endpoint_values_used": false
+  },
+  "common_action_pullback_witness": {
+    "factorization": "B_ZK=B_ZI J_(I<-K)",
+    "terminal_response": "Gamma=-L_G H_Z^{-1} B_ZI J_(I<-K)",
+    "same_visible_K_projection_residual": 0.0,
+    "Gamma_visible_lift": -0.16308306234523323,
+    "Gamma_hidden_lift": -0.13688114819825004,
+    "Gamma_visible_lift_after_exact_schur_reduction": -0.16308306234523326,
+    "Gamma_hidden_lift_after_exact_schur_reduction": -0.13688114819825004,
+    "same_action_zero_morphology_carrier": 0.2908799404173503,
+    "endpoint_values_used": false
+  },
+  "conditional_completion": {
+    "response_operator": "Gamma=-L_G H_Z^{-1} B_ZK",
+    "common_action_reduction": "B_ZDhat=B_ZI J_(I<-Dhat); inside a frozen Einstein--Newton/observer branch L_G=D_Z O_G and v_carrier^2=O_G[Z_*(I=0)]",
+    "p": "selected exactly only by a source-owned full-support defect law f(d)=c*d^p; a first nonzero analytic jet selects only local leading order",
+    "sign": "sign of the occupied typed terminal response Gamma after conventions are frozen",
+    "amplitude": "one scalar a exists only if [Gamma K_p]/(v_carrier^2 K_p) is constant on nonzero support",
+    "carrier": "the calibrated zero-morphology physical terminal branch",
+    "occupation": "requires independent physical source-orbit occupation",
+    "remaining_source_object": "a source-owned complete-terminal scalar factorization of the retained signed descriptor, or a genuinely multicomponent registration into the Parent invariant, plus an occupied calibrated common packet",
+    "current_status": "K1_REFUTED_AS_COMPLETE_DESCRIPTOR_SIGNED_REGISTRATION_AND_OCCUPATION_OPEN"
+  },
+  "verdict": "bounded morphology coordinate proven; a common action conditionally makes the mixed response, gravity terminal and carrier one derivative/evaluation chain, but the current source packet fixes chi retention and refutes K1 as a complete source-path descriptor but does not select an alternative signed scalar or multicomponent Parent registration, exact exponent/profile, constant-amplitude factorization, calibrated occupation or nature-level completion",
+  "claim_boundary": "formula-shell mathematics only; no endpoint or Tau-specific physical validation"
+}

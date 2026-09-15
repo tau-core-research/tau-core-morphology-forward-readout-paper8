@@ -1,0 +1,128 @@
+{
+  "schema": "ngc4062_halogas_confirmatory_freeze_v01",
+  "status": "NGC4062_SOURCE_GEOMETRY_COMPLETE_TWO_RING_ENDPOINT_FROZEN_PIXELS_UNOPENED",
+  "galaxy": "NGC4062",
+  "source_geometry": {
+    "ghasp": {
+      "center_ra_deg": 181.01583333333335,
+      "center_dec_deg": 31.895,
+      "seeing_arcsec": 2.1,
+      "systemic_velocity_km_s": 758,
+      "systemic_velocity_error_km_s": 1,
+      "kinematic_inclination_deg": 68,
+      "kinematic_inclination_error_deg": 2,
+      "kinematic_pa_deg": 99,
+      "kinematic_pa_side_flag": " ",
+      "kinematic_pa_error_deg": 2,
+      "d25_radius_arcsec": 124
+    },
+    "halogas_3dbarolo": {
+      "median_inclination_deg": 67.1,
+      "median_pa_deg": 100.1
+    },
+    "primary": {
+      "center_ra_deg": 181.015838061,
+      "center_dec_deg": 31.8958338917,
+      "inclination_deg": 67.1,
+      "receding_pa_deg": 100.1,
+      "systemic_velocity_km_s": 769.0
+    },
+    "variants": {
+      "center": "GHASP kinematic-study center",
+      "inclination_deg": [
+        62.1,
+        72.1
+      ],
+      "receding_pa_deg": [
+        98.1,
+        102.1
+      ],
+      "systemic_velocity_km_s": [
+        758.0,
+        769.0
+      ]
+    }
+  },
+  "source_interpretation": {
+    "halogas_geometry_role": "median 3DBarolo thin-disc geometry; not a published radial i(R),PA(R) table",
+    "constant_geometry_justification": "NGC4062 is not among the six systems Marasco et al. flag as having a substantial (~10 deg or more) H I warp",
+    "limitation": "absence from that list is not proof of zero warp; constant geometry and systemic velocity are mandatory nuisance variants"
+  },
+  "headers": {
+    "HR": {
+      "shape": [
+        1024,
+        1024
+      ],
+      "pixel_scale_arcsec": 4.000000152456,
+      "beam_major_arcsec": 25.202614255236,
+      "beam_minor_arcsec": 13.595834188152,
+      "beam_pa_deg": 0.713172137737,
+      "ghasp_center_pixel_zero_based": [
+        512.0036124856944,
+        511.24950627453427
+      ],
+      "pixel_values_opened": false
+    },
+    "LR": {
+      "shape": [
+        1024,
+        1024
+      ],
+      "pixel_scale_arcsec": 4.000000152456,
+      "beam_major_arcsec": 39.3133722246,
+      "beam_minor_arcsec": 34.774507954728,
+      "beam_pa_deg": 29.1448612213,
+      "ghasp_center_pixel_zero_based": [
+        512.0036124856944,
+        511.24950627453427
+      ],
+      "pixel_values_opened": false
+    }
+  },
+  "common_radii_arcsec": [
+    42.0,
+    84.0
+  ],
+  "annulus_width_arcsec": 42.0,
+  "radial_bins_overlap": false,
+  "halpha_common_max_radius_arcsec": 108.7,
+  "major_axis_min_abs_cos_theta": 0.8,
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 4062001,
+  "primary_map": "HR",
+  "mandatory_replication_map": "LR",
+  "pixel_mask_rule": "finite moment0 and moment1 with moment0>0; no data-dependent clipping",
+  "pixel_estimator": "moment0*abs(cos_theta)-weighted median of (v_los-v_sys)/cos_theta in each side/ring",
+  "channel_statistic": "Delta_O=O_Halpha-O_HI on two non-overlapping LR-beam rings",
+  "replication_gates": {
+    "zero_odd_contrast_rejected_in_hr": "p<0.05",
+    "zero_odd_contrast_rejected_in_lr": "p<0.05",
+    "gls_mean_sign_agreement": true,
+    "hr_lr_gls_mean_difference": "absolute difference <=2 combined standard errors",
+    "same_sign_radius_fraction": 1.0,
+    "all_geometry_and_systemic_variants_preserve_gls_sign": true
+  },
+  "construction_blind_to": [
+    "HALOGAS moment-map pixel values",
+    "H I-Halpha contrast",
+    "SPARC vobs and residuals",
+    "baseline scores",
+    "required Tau amplitudes"
+  ],
+  "pixel_values_opened_during_freeze": false,
+  "endpoint_access": false,
+  "physical_a_row_constructed": false,
+  "claim_boundary": "A passed score would be a two-tracer morphology/readout diagnostic, not a Tau detection, q_R derivation, parent-morphology measurement, Nature-occupation result, or dark-matter replacement.",
+  "source_sha256": {
+    "NGC4062-HR_mom0m.fits": "e0d6109305839768c129e6a93cafa889d323ee502173b1a5fb78ea93f6124605",
+    "NGC4062-HR_mom1m.fits": "35fb55608e6dc25767386e77b5a53e0e2cd8eb65957d8607bf7656709f15754f",
+    "NGC4062-LR_mom0m.fits": "4071706a881f551c41f8c91c5457190800d44f67e37b799e61d5a4e33f1e6502",
+    "NGC4062-LR_mom1m.fits": "c9eb53e5324aa8b09de5281178aaa3d68315c017d3c795f497343a4cfc38d0f1",
+    "ghasp_vi_tablec1.dat": "551a334477b6ba1b3aca6c5c91b9a74d1a8c7f01db6db400f622211687821282",
+    "ghasp_vi_tablec2.dat": "6cefb0007e7d5fe9e74a0d9ee36591e5c23f690fbefa53194a03a5aa49706952",
+    "ghasp_vi_tablec3.dat": "1999ab72d8eb6221c68aa720157a8a9b5489015e3eb2bbb5785f2912668e8ce9",
+    "marasco2019_arxiv_1909.04048_source.tar.gz": "934e5027115408b11284bf1dc68d1d3916321cb9734f347fa72645dea9455398"
+  },
+  "halpha_points_sha256": "5ccb1da84fe2fb92c63b384ef9fc3ba852443f5fb690748f4c337533166e26a3"
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "phangs_postopen_resolved_morphology_diagnostic_v01",
+  "status": "NEGATIVE_RESULT_PRESERVED_POSTOPEN_DIAGNOSTIC",
+  "endpoint_reopened": false,
+  "original_gate_failure_preserved": true,
+  "galaxies": [
+    "NGC1300",
+    "NGC1385",
+    "NGC1512",
+    "NGC5068"
+  ],
+  "resolved_body_basis": "five radial zones of stellar and CO m1/m2 amplitudes, phases, and first radial differences",
+  "terminal": "beam-matched CO minus Halpha m1/m2 velocity contrast",
+  "error_floors_km_s": [
+    5.0,
+    10.0,
+    20.0
+  ],
+  "all_formal_primary_nonzero": true,
+  "radial_control_pass_all_floors": false,
+  "phase_control_pass_all_floors": false,
+  "interpretation": "resolved tracer structure remains outside the declared body span under diagonal formal covariance, but the matched morphology fails the frozen geometric specificity controls",
+  "strongest_alternative": "spatially correlated measurement noise, incomplete azimuthal support, ordinary tracer physics and an incomplete morphology nuisance basis",
+  "claim_boundary": "retrospective sensitivity diagnostic after a preregistered covariance-gate failure; not an endpoint, parent kernel, channel detection or Tau evidence"
+}

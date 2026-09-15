@@ -1,0 +1,107 @@
+{
+  "schema": "tau-core.paper8.sdp81-rybak2020-source-blind-pdr-preflight.v01",
+  "status": "SOURCE_ACQUIRED_PDR_AMPLITUDE_PARTIAL_SPECTRAL_REGISTRATION_BLOCKED",
+  "scientific_role": "CO(10-9)-blind standard-physics source-amplitude preflight",
+  "sources": {
+    "author_data_page": "https://sites.google.com/view/matusdoesresearch/data",
+    "paper": "https://arxiv.org/abs/1912.12538",
+    "sha256": {
+      "L_CII_200pc.fits": "f36c10fe2684525342d5e564644c0f88b6890e439e71dc9b35133839e921a61b",
+      "L_CII_200pc_error.fits": "bf4e21039c83c78d98d3521d8ad7ca5e6cc905ae858dbfeb4c6742b190672b00",
+      "FIR_200pc.fits": "edcd785d6c84d03d26d568a537e4c90b0537fe1afd0e9ac69915fed647dd0707",
+      "FIR_200pc_error.fits": "d44547b8b58762460aa4d10f9bff24f65db6120372a8602aee2d161834ce451a",
+      "L_CO32_200pc.fits": "61e6d69ac3ac6bd2183bf5e9deb8d09e62d8fcb964251be03a677f5d3b47143d",
+      "L_CO32_200pc_error.fits": "60aa4463ccf17ba1ddbfb6c47a2fa32114f0b6d0404367ddaa75889fd41a3229",
+      "L_CO54_200pc.fits": "b4ba3e38a8bb80876a8d0370c0b3f2edec920a14bb3427a5c5815f37f71b2d8f",
+      "L_CO54_200pc_error.fits": "51302a052bc0b6a59d208287bec91b70d98ac51454f02303f5a1cf65792acbcb",
+      "L_CO87_200pc.fits": "066cfd571c9f397298eeff380b8d5344e71a29b1a3c4949292081799684426f3",
+      "L_CO87_200pc_error.fits": "33f168de523b9cb7b4461914cb7af7a9b6c5579774e6dab4df3e499b5a145146"
+    }
+  },
+  "endpoint_access": {
+    "co109_header_read": false,
+    "co109_pixels_read": false
+  },
+  "model": {
+    "package": "pdrtpy 2.6.4",
+    "model_set": "wk2006",
+    "model_version": "2006",
+    "metallicity_solar": 1.0,
+    "f_pdr_cii": 0.8,
+    "flux_calibration_fraction": 0.1,
+    "reconstruction_systematics": {
+      "CII": 0.07,
+      "FIR": 0.07,
+      "CO32": 0.65,
+      "CO54": 0.1,
+      "CO87": 0.2
+    },
+    "fit_ratios": [
+      "CII/FIR",
+      "CII/CO54",
+      "CII/CO32",
+      "CO87/CO54"
+    ],
+    "held_out_prediction": "CO109/CO54",
+    "grid_step_dex": 0.05
+  },
+  "data": {
+    "shape": [
+      40,
+      40
+    ],
+    "detection_counts": {
+      "CII": 1411,
+      "FIR": 545,
+      "CO32": 959,
+      "CO54": 699,
+      "CO87": 622
+    },
+    "all_five_tracer_pixels": 288
+  },
+  "fit_summary": {
+    "median_logn_cm3": 4.950000000000004,
+    "median_logg_habing": 3.249999999999999,
+    "median_reduced_chi2": 7.745473225940076,
+    "well_fit_chi2red_below_5_pixels": 80,
+    "well_fit_fraction": 0.2777777777777778,
+    "median_predicted_co109_over_co54": 0.23095314893117538,
+    "median_relative_68pct_half_width": 0.36316161890470355,
+    "median_fine_coarse_relative_difference": 0.060187521580086625
+  },
+  "f_pdr_sensitivity": {
+    "0.6": {
+      "median_logn_cm3": 5.050000000000003,
+      "median_logg_habing": 3.299999999999999,
+      "median_predicted_co109_over_co54": 0.3611582396986699,
+      "fraction_reduced_chi2_below_5": 0.3090277777777778
+    },
+    "0.8": {
+      "median_logn_cm3": 4.950000000000004,
+      "median_logg_habing": 3.249999999999999,
+      "median_predicted_co109_over_co54": 0.23095314893117538,
+      "fraction_reduced_chi2_below_5": 0.2777777777777778
+    },
+    "0.9": {
+      "median_logn_cm3": 4.950000000000004,
+      "median_logg_habing": 3.249999999999999,
+      "median_predicted_co109_over_co54": 0.1978441364810298,
+      "fraction_reduced_chi2_below_5": 0.2361111111111111
+    }
+  },
+  "checks": {
+    "all_source_hashes_match": true,
+    "all_maps_are_40_by_40": true,
+    "co109_header_not_read": true,
+    "co109_pixels_not_read": true,
+    "four_independent_log_ratios_for_two_parameters": true,
+    "model_prediction_positive": true,
+    "fine_coarse_prediction_stable_on_median": false,
+    "at_least_one_well_fit_source_pixel": true,
+    "all_source_pixels_well_fit": false,
+    "channelwise_spectral_registration_available": false
+  },
+  "endpoint_authorized": false,
+  "blocker": "integrated 200-pc PDR amplitudes do not fix the six-channel pathwise source function, opacity, filling, differential magnification, or five-mode terminal Jacobian",
+  "claim_boundary": "This is a standard-physics, CO(10-9)-blind source-amplitude preflight. It neither validates Tau Core nor authorizes the held-out spectral endpoint."
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "tau_core_ugc03580_ugc3580_class_transfer_reproducibility_audit_v01",
+  "status": "REPRODUCIBILITY_AUDIT_PASS",
+  "checks_passed": 20,
+  "checks_total": 20,
+  "checks": {
+    "source_pdf_hash_matches": true,
+    "endpoint_hash_matches": true,
+    "freeze_hash_matches": true,
+    "body_uses_no_endpoint": true,
+    "freeze_script_certifies_no_pointwise_endpoint": true,
+    "historical_exposure_disclosed": true,
+    "point_count_is_47": true,
+    "x_w_recomputed": true,
+    "lambda_recomputed": true,
+    "primary_rmse_recomputed": true,
+    "within_rhi_rmse_recomputed": true,
+    "wrong_onset_rmse_recomputed": true,
+    "score_csv_primary_matches": true,
+    "primary_worse_than_newtonian_full": true,
+    "primary_better_than_newtonian_within_rhi": true,
+    "source_correct_worse_than_wrong_onset": true,
+    "three_points_beyond_rhi": true,
+    "uncapped_kernel_exceeds_one": true,
+    "negative_status_preserved": true,
+    "zone_table_present": true
+  },
+  "independent_recomputation": {
+    "x_w": 0.9045638853160114,
+    "lambda_w_km2_s2": 14406.482445652337,
+    "primary_rmse_full_km_s": 38.03529456130914,
+    "primary_rmse_within_rhi_km_s": 29.681543909963708,
+    "newtonian_rmse_full_km_s": 36.01201131349121,
+    "newtonian_rmse_within_rhi_km_s": 31.661409474817457,
+    "wrong_ugc08490_onset_rmse_full_km_s": 24.55696197807874,
+    "max_uncapped_kernel": 4.720106900818742
+  },
+  "claim_boundary": "numerical reproducibility only; not physical validation"
+}

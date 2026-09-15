@@ -1,0 +1,96 @@
+{
+  "schema": "tau-core.paper8.sdp81-reference-image-source-route.v01",
+  "status": "LOCAL_REFERENCE_IMAGE_ROUTE_AVAILABLE_DEVELOPMENT_ONLY",
+  "scientific_role": "resource-bounded successor to the rejected small-aperture toy inverse",
+  "products": [
+    {
+      "line": "CO(5-4)",
+      "path": "data/external/literature/sdp81_multipath_channel/SDP81_Band4_ReferenceImages_z3.042/SDP.81.Band4.CO_smooth_z3.042.fits",
+      "bytes": 215072640,
+      "sha256": "b26f3e4cbff43bab9d6c4c082ff513788f9dcf20b2e640edf607dbc3fe34a656",
+      "shape": [
+        1,
+        119,
+        672,
+        672
+      ],
+      "actual_bytes": 215072640,
+      "actual_sha256": "b26f3e4cbff43bab9d6c4c082ff513788f9dcf20b2e640edf607dbc3fe34a656",
+      "actual_shape": [
+        1,
+        119,
+        672,
+        672
+      ],
+      "beam_major_arcsec": 0.154807984828944,
+      "beam_minor_arcsec": 0.12129168957472801,
+      "rest_frequency_hz": 142570000000.0,
+      "spectral_increment_hz": -9986808.94101
+    },
+    {
+      "line": "CO(8-7)",
+      "path": "data/external/literature/sdp81_multipath_channel/SDP81_Band6_ReferenceImages/SDP81_9exec.co87.R1uvtaper1000klambda.fits",
+      "bytes": 180855360,
+      "sha256": "aeea985de1e590921a6282cdd9d017f0a888958e7e07b54d4d51435772475ea3",
+      "shape": [
+        1,
+        100,
+        672,
+        672
+      ],
+      "actual_bytes": 180855360,
+      "actual_sha256": "aeea985de1e590921a6282cdd9d017f0a888958e7e07b54d4d51435772475ea3",
+      "actual_shape": [
+        1,
+        100,
+        672,
+        672
+      ],
+      "beam_major_arcsec": 0.169258102774632,
+      "beam_minor_arcsec": 0.117267228662976,
+      "rest_frequency_hz": 228055340000.0,
+      "spectral_increment_hz": -15974925.35986
+    }
+  ],
+  "total_bytes": 395928000,
+  "total_mib": 377.58636474609375,
+  "successor_reconstruction_contract": {
+    "image_support": "full source-connected arc masks for all four q1 paths; no centroid-only circular apertures",
+    "forward_operator": "exact frozen lens ray shooting followed by line-specific restored-beam convolution",
+    "source_model": "one common nonnegative adaptive or convergence-tested source grid per channel",
+    "regularization": "source-gradient/curvature family with lambda selected only from open-line evidence and frozen before any CO(10-9) access",
+    "noise": "blank-image correlated covariance or validated stationary approximation, propagated through the inversion",
+    "joint_open_line_constraint": "shared kinematic support across CO(5-4) and CO(8-7), with transition-specific amplitudes and opacity/excitation freedom",
+    "validation": [
+      "leave-one-path-out image prediction",
+      "leave-one-channel-block-out prediction",
+      "source-grid and regularization stability",
+      "beam and astrometric perturbation audit",
+      "wrong-lens/path-assignment controls"
+    ],
+    "promotion_rule": "development source profile only if at least 3/4 held paths improve over independent/background controls and median held-path squared-residual improvement exceeds 5 percent under every declared stability family"
+  },
+  "limitations": [
+    "restored image cubes do not retain the full visibility likelihood",
+    "deconvolution and correlated imaging errors can bias source-plane covariance",
+    "this route cannot by itself validate the final confirmatory endpoint",
+    "two open transitions still do not uniquely determine the CO(10-9) excitation-opacity response"
+  ],
+  "checks": {
+    "both_open_transition_cubes_present": true,
+    "frozen_hashes_match": true,
+    "frozen_sizes_match": true,
+    "frozen_shapes_match": true,
+    "resource_bound_is_395928000_bytes": true,
+    "previous_toy_inverse_not_promoted": true,
+    "co109_header_not_read": true,
+    "co109_pixels_not_read": true
+  },
+  "checks_passed": 8,
+  "checks_total": 8,
+  "source_reconstruction_completed": false,
+  "transition_readiness_increment": 0,
+  "endpoint_authorized": false,
+  "next_finite_action": "Run the frozen full-arc regularized inversion on the two local reference cubes. Promote only a development source profile that survives all path/channel/grid/beam controls; retain raw visibilities as the later confirmatory route.",
+  "claim_boundary": "This proves that a 395.928-MB local development route exists and diagnoses why the earlier 7x7 small-aperture inverse was not decisive. It does not yet reconstruct a promoted source cube, identify D_Zp, validate visibility-level covariance, authorize CO(10-9), or score Tau Core."
+}

@@ -1,0 +1,20 @@
+{
+  "failures": {
+    "NGC2639": "RuntimeError: zone 4 does not occupy all six terminal macrosectors"
+  },
+  "galaxies_opened_once": [
+    "NGC2639"
+  ],
+  "provenance": {
+    "endpoint_implementation_sha256": "5405055ece52fd20a7eceeadacde5de38243f40a509a25ca08ec14b02ec61353",
+    "input_md5": "b7e308d0985e8f85ef7afbe1ec4c48b8",
+    "input_sha256": "297a3b7ca6d0c1ee699dd335bfa1f40581d9e96614715382a75f32d4efa0275f",
+    "preregistration_sha256": "9d246b65a6e39844bff3b92d56733fddebfa41b10ef8013a9bed124b853de645",
+    "scoring_contract_sha256": "7cf0b4657d91bdf779e5f32d7569d69462225c48a17bc547d81cd36ca1005905"
+  },
+  "replacement_or_repair_allowed": false,
+  "schema": "edge_califa_rotation_morphology_development_endpoint_v01",
+  "scores_released": false,
+  "status": "DEVELOPMENT_ENDPOINT_OPENED_FROZEN_GATE_FAILURE_NO_SCORE_RELEASED",
+  "summary": "At least one frozen support/rank/covariance gate failed after terminal opening. No partial or aggregate score is released and no same-packet repair is allowed."
+}

@@ -1,0 +1,260 @@
+{
+  "amendment_audit": {
+    "confirmatory_untouched": [
+      "IC4566",
+      "NGC2730",
+      "NGC3811",
+      "NGC6004",
+      "NGC6060",
+      "NGC6186",
+      "NGC6301"
+    ],
+    "development_no_claim": [
+      "NGC2639"
+    ],
+    "eligible_galaxies": [
+      "IC4566",
+      "NGC2639",
+      "NGC2730",
+      "NGC3811",
+      "NGC6004",
+      "NGC6060",
+      "NGC6186",
+      "NGC6301"
+    ],
+    "resolution": "six is controlling and agrees with the frozen split and small-sample design",
+    "v02_conflict": "deterministic_split.minimum_confirmatory_galaxies was six while one inherited hard-fail string said twelve"
+  },
+  "construction_uses_velocity_values": false,
+  "decision_rule": {
+    "directional_replication": [
+      "median(D_g)>0",
+      "strictly more than 60 percent of confirmatory galaxies have D_g>0"
+    ],
+    "hard_fail": [
+      "fewer than 6 source-eligible confirmatory galaxies",
+      "any rank, covariance, support, provenance, or hash gate failure",
+      "any post-open change to fields, zones, masks, split, controls, conversions, or thresholds"
+    ],
+    "individual_controls": "the same exact shared-sign permutations form a studentized max-T null across radial-reversal, phase-rotation and cross-galaxy controls; all three adjusted p-values must be <0.05",
+    "look_accounting": "this is one prevalidation look and cannot be called discovery at any p-value; a later Tau-specific discovery program must preregister a source-derived h_tau, all routes, alpha spending, and an independent survey/release replication",
+    "no_rescue": "a failed one-shot confirmation may not be repaired with replacement galaxies, alternative masks, fewer sectors, different radial zones, or a new score in the same EDGE--CALIFA packet",
+    "primary_alpha": 0.01,
+    "primary_test": "one-sided exact shared-sign permutation of mean(D_g)>0 over every 2^N confirmatory sign vector",
+    "v02_is_additional_program_look": true,
+    "v02_primary_alpha": 0.01
+  },
+  "deterministic_split": {
+    "applied_after": "historical exclusion and all source-only eligibility gates",
+    "confirmatory_untouched": [
+      1,
+      2
+    ],
+    "development_no_claim": [
+      0
+    ],
+    "minimum_confirmatory_galaxies": 6,
+    "rule": "uint32(sha256(canonical galaxy name)[0:8]) mod 3",
+    "small_sample_boundary": "the expected source-eligible cohort is small; v02 can only be prevalidation and cannot supply discovery or independent replication"
+  },
+  "endpoint_opened": false,
+  "external_data": {
+    "content_url": "https://zenodo.org/api/records/10256732/files/edge_carma.2d_smo7.hdf5/content",
+    "file": "edge_carma.2d_smo7.hdf5",
+    "md5": "b7e308d0985e8f85ef7afbe1ec4c48b8",
+    "preferred_co_product": "dilated-mask 12CO(1-0) moment maps",
+    "record_doi": "10.5281/zenodo.10256732",
+    "record_url": "https://zenodo.org/records/10256732",
+    "resolution": "matched 7 arcsec FWHM on a 3 arcsec CARMA grid",
+    "size_bytes": 84941807,
+    "title": "Data Tables for the CARMA Extragalactic Database for Galaxy Evolution (CARMA EDGE)"
+  },
+  "frozen_date": "2026-08-30",
+  "geometry_fields": {
+    "angle_unit": "degrees in the public table; converted once to radians",
+    "fields": [
+      "rad_arc",
+      "azi_ang",
+      "cosi"
+    ],
+    "table": "comom_dil"
+  },
+  "historical_overlap": {
+    "excluded_from_development_and_confirmation": [
+      "IC1199",
+      "NGC2253",
+      "NGC2347",
+      "NGC2410",
+      "NGC3815",
+      "NGC4047",
+      "NGC4644",
+      "NGC4711",
+      "NGC5016",
+      "NGC5480",
+      "NGC5520",
+      "NGC5633",
+      "NGC5980",
+      "UGC04132",
+      "UGC05111",
+      "UGC09067",
+      "UGC10384"
+    ],
+    "known_result": "17 rotation-dominated galaxies were used for the published CO--Halpha rotation-curve comparison; about 75 percent had faster CO in the outer curve",
+    "reason": "their CO--Halpha terminal behavior and conventional eDIG interpretation are already public, so they are not untouched replication endpoints",
+    "reference": "Levy et al. 2018, ApJ 860, 92; arXiv:1804.05853"
+  },
+  "interpretation": {
+    "measurement_dependence_caveat": "CO intensity and velocity share a data cube, and Halpha source and velocity fields share a spectral fit.  The frozen sector jackknife does not fully propagate this source--terminal covariance, so any pass requires a later end-to-end cube/mock audit.",
+    "negative": "failure of this frozen EDGE--CALIFA morphology-alignment proxy; it does not falsify the general Tau Core architecture",
+    "not_implied_by_positive": [
+      "a unique Tau Core mechanism",
+      "a dark-matter or dark-energy explanation",
+      "failure of standard astrophysics outside the declared nuisance span",
+      "a universal body-to-terminal coefficient law",
+      "Nature-level occupation of the Tau parent"
+    ],
+    "positive": "source-developed external morphology-alignment prevalidation beyond the declared low-dimensional standard source span and equal-rank controls",
+    "tau_specificity_blocker": "the current test compares source-frozen spans but does not yet derive a unique coefficient map from the universal seed/body action; therefore even a pass is prevalidation rather than a beyond-standard Tau prediction",
+    "v02_limit": "source coverage and sector count were selected before terminal opening but after source inspection; a pass is therefore weaker than a fully untouched protocol"
+  },
+  "method_lineage": {
+    "measurement_bridge_change": "CALIFA/Pipe3D stellar mass replaces S4G 3.6um, and CARMA CO(1-0) replaces PHANGS CO(2-1); the five-zone harmonic algebra is retained",
+    "phangs_preregistration_sha256": "1c0949fbe2f37b6ace9d92297f358a01a2ba2992b5745e88f32d6f6fd5f742cb",
+    "phangs_scoring_contract_sha256": "62c87e3b9d366de3f6967300385affd3d3befa04464de82a5c282a316bbe9b83",
+    "relationship": "external operational homolog, not exact-instrument replication"
+  },
+  "projection_and_scores": {
+    "correct": "[S_std,S_body]",
+    "cross_galaxy": "[S_std,S_body(next galaxy in the sorted confirmatory list, cyclic)]",
+    "per_galaxy_primary_contrast": "D_g=mean(Q_radial_reversal,Q_phase_rotation,Q_cross_galaxy)-Q_correct",
+    "phase_rotation": "[S_std,rotate_each_m1_and_m2_complex_profile_by_pi/2(S_body)]",
+    "q": "Q(S)=y^T P_perp(S)^T [P_perp(S) Sigma P_perp(S)^T]^+ P_perp(S)y",
+    "radial_reversal": "[S_std,reverse_five_radial_zones(S_body)]",
+    "same_rank_requirement": "correct and all three controls must each have combined stable rank 16 and projected covariance rank 4",
+    "standard": "S_std",
+    "weighted_projection": "P_perp(S)=I-S(S^T Sigma^-1 S)^+S^T Sigma^-1"
+  },
+  "row_key": [
+    "Name",
+    "ix",
+    "iy"
+  ],
+  "schema": "edge_califa_rotation_morphology_preregistration_v03",
+  "scientific_question": "After removing a declared conventional ionized-gas/eDIG source span, does the matched CO-minus-Halpha velocity contrast align more strongly with the frozen stellar-plus-CO morphology body than with equal-rank wrong-family bodies?",
+  "source_development_disclosure": "v02 was selected after inspecting source-field coverage and ranks but before requesting either CO or Halpha velocity field; it is a new prevalidation look",
+  "source_matrices": {
+    "body_columns": [
+      "stellar m1 complex radial profile",
+      "first radial difference of stellar m1",
+      "stellar m2 complex radial profile",
+      "first radial difference of stellar m2",
+      "CO-intensity m1 complex radial profile",
+      "first radial difference of CO-intensity m1",
+      "CO-intensity m2 complex radial profile",
+      "first radial difference of CO-intensity m2"
+    ],
+    "dispersion_caveat": "Vdisp_sm includes instrumental width and is used only as a conservative standard-source nuisance descriptor, not as a calibrated intrinsic dispersion",
+    "embedding": "real and imaginary profile parts enter only the matching m1 or m2 terminal coordinates; every 20-vector column is unit-normalized",
+    "profile_definition": "normalized positive-field complex moment sum(w exp(i m theta))/sum(w) within each frozen radial zone",
+    "rank_gates": {
+      "body": 8,
+      "combined": 16,
+      "combined_projected_complement": 4,
+      "standard": 8
+    },
+    "standard_columns": [
+      "axisymmetric rotation-lag m1_cos profile constant across five zones",
+      "axisymmetric rotation-lag m1_cos profile linear in centered zone index",
+      "Halpha-dispersion-plus-instrumental-width m1 profile",
+      "Halpha-dispersion-plus-instrumental-width m2 profile",
+      "[SII]/Halpha m1 profile",
+      "[SII]/Halpha m2 profile",
+      "Sigma_SFR m1 profile",
+      "Sigma_SFR m2 profile"
+    ],
+    "standard_span_boundary": "the constant-plus-linear m1_cos columns explicitly absorb a smooth axisymmetric CO--Halpha rotation lag; the remaining six columns absorb declared eDIG/excitation and star-formation morphology, but this is not a complete standard-astrophysics model"
+  },
+  "source_only_fields": {
+    "body": [
+      "SSP_sm.sigstar_sm",
+      "comom_dil.mom0_12",
+      "comom_dil.e_mom0_12",
+      "comom_dil.snrpk_12"
+    ],
+    "conventional_ionized_gas": [
+      "ELINES_sm.Vdisp_sm",
+      "flux_elines_sm.flux_Halpha_sm",
+      "flux_elines_sm.e_flux_Halpha_sm",
+      "flux_elines_sm.flux_[SII]6717_sm",
+      "flux_elines_sm.flux_[SII]6731_sm",
+      "flux_elines_sm.flux_sigsfr_adopt_sm"
+    ],
+    "explicitly_forbidden_during_source_freeze": [
+      "comom_dil.mom1_12",
+      "comom_dil.e_mom1_12",
+      "flux_elines_sm.vel_Halpha_sm",
+      "flux_elines_sm.e_vel_Halpha_sm",
+      "any published or recomputed CO-minus-Halpha velocity difference"
+    ]
+  },
+  "source_support": {
+    "azimuth_gate": "all six fixed equal-width macrosectors occupied in every radial-edge zone",
+    "co_support": "positive finite mom0_12 with positive finite e_mom0_12 inside the public dilated mask; no second integrated-SNR cut is imposed because the published mask already grows a two-channel 3.5-sigma seed to a 2-sigma boundary",
+    "halpha_support": "flux_Halpha_sm/e_flux_Halpha_sm >= 3.5",
+    "inclination_window": "30 <= inclination <= 70 degrees, implemented as 0.3420201433 <= median(cosi) <= 0.8660254038",
+    "minimum_profile_rows_per_zone": 20,
+    "minimum_radial_edge_rows": 120,
+    "profile_support": "each source profile uses its own positive finite field support inside the frozen radial edges; standard nuisance fields are not forced onto the CO mask",
+    "radial_edge_support": "intersection of CO, Halpha and stellar supports",
+    "radial_edges": "five equal-count quantile zones from radial-edge support",
+    "stellar_support": "positive finite sigstar_sm",
+    "why_six_sectors": "source-only coverage showed that the inherited 12-sector PHANGS gate leaves only one nonhistorical EDGE galaxy; six sectors retain angular leave-one-sector variation while matching the public 7-arcsec beam on a sparse 3-arcsec grid"
+  },
+  "status": "V03_CONVENTION_SAFE_PROTOCOL_FROZEN_FULL_VELOCITY_ENDPOINT_UNOPENED",
+  "supersedes": {
+    "frame_calibration_sha256": "a4e681f5a3ff1dd112b9f1bde0f17126e940af1777277242388301de539eebb9",
+    "reason": "pre-opening correction of the internally inconsistent v02 twelve-versus-six confirmatory threshold and explicit radio/optical/frame conversion required by the primary EDGE--CALIFA kinematic analysis",
+    "source_cohort_or_matrices_changed": false,
+    "v02_protocol_sha256": "1a0b33aa0a74f21c1377e6b4a46470955083eac3b0bb1dd2d48281face5be56d",
+    "v02_source_preflight_sha256": "a57a93a1ea6bc813f92957a4b39eb7ea40080738fb84a59b00e138e2d7e002db",
+    "velocity_values_opened_before_amendment": false
+  },
+  "terminal_opening": {
+    "co_velocity": "comom_dil.mom1_12",
+    "co_velocity_error": "comom_dil.e_mom1_12",
+    "contrast": "v_CO,rel - v_Halpha,rel after the frozen v03 conversions",
+    "covariance": "delete-one-of-six-azimuth-macrosectors jackknife in each zone, assembled as five 4x4 blocks; every block and the 20x20 covariance must be full rank",
+    "error_gate": "both errors finite, positive, and <= 20 km/s",
+    "fit": "inverse-variance weighted {intercept,cos(theta),sin(theta),cos(2theta),sin(2theta)} regression; intercept discarded",
+    "halpha_velocity": "flux_elines_sm.vel_Halpha_sm",
+    "halpha_velocity_error": "flux_elines_sm.e_vel_Halpha_sm",
+    "support": "intersection with the frozen v02 radial-edge support",
+    "variance": "sigma_CO,rel^2 + sigma_Halpha,rel^2 using the frozen analytic Jacobians",
+    "vector": "20 components ordered by five zones, with {m1_cos,m1_sin,m2_cos,m2_sin} in each zone",
+    "zero_point": "intercept included independently in every zone and discarded; harmonic coefficients only",
+    "zone_gate": "at least 20 rows and all six macrosectors in each frozen zone"
+  },
+  "velocity_frame_and_convention": {
+    "audit_boundary": "a later failure of the public products to satisfy these documented conventions closes the endpoint; it does not authorize empirical refitting",
+    "co_error_derivative": "sigma_CO,rel = abs(4*u/(1+u^2)^2)*sigma_CO,radio, u=1-v_CO,helio,radio/c",
+    "co_radio_to_relativistic": "v_CO,rel/c = [1-(1-v_CO,helio,radio/c)^2] / [1+(1-v_CO,helio,radio/c)^2]",
+    "constant_offset_handling": "the per-zone intercept is fitted and discarded; no endpoint-derived affine rescaling or tracer-to-tracer calibration is allowed",
+    "contrast": "Delta_v_rel = v_CO,rel - v_Ha,rel",
+    "frame_correction": {
+      "formula": "v_CO,helio,radio = mom1_12 - rfLSRK2helio",
+      "frozen_table": "data/derived/edge_califa_velocity_frame_calibration_v01.csv",
+      "frozen_table_sha256": "2eb488ea6e0ea25fb4059392b7b4a0e92a76ee35fe4c3b8ef39f2705a17e1d9c",
+      "source": {
+        "catalog_definition": "V(helio)=V(LSRK)-rfLSRK2helio",
+        "commit": "1af9ae612024baecf44c8f16244c841e4be4352b",
+        "path": "edge_pydb/dat_glob/derived/edge_rfpars.csv",
+        "repository": "https://github.com/tonywong94/edge_pydb",
+        "sha256": "97582d96f69c5d8a26bf52d3b413ec620b4229fdc26fff09dd7686f1b28dfed3"
+      }
+    },
+    "halpha_error_derivative": "sigma_Ha,rel = abs(4*s/(1+s^2)^2)*sigma_Ha,opt, s=1+v_Ha,opt/c",
+    "halpha_optical_to_relativistic": "v_Ha,rel/c = [(1+v_Ha,opt/c)^2-1] / [(1+v_Ha,opt/c)^2+1]",
+    "primary_reference": "Levy et al. 2018, ApJ 860, 92, Appendix A (arXiv:1804.05853): EDGE uses the radio convention, CALIFA the optical convention, and both must be converted to the relativistic convention before comparison",
+    "speed_of_light_km_s": 299792.458
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "claim_boundary": "source-only cohort and operator-rank freeze; no CO--Halpha velocity contrast, endpoint statistic, Tau signal, or dark-sector evidence",
+  "confirmatory_untouched": [],
+  "development_no_claim": [],
+  "endpoint_opening_authorized": false,
+  "historical_excluded": [
+    "IC1199",
+    "NGC2253",
+    "NGC2347",
+    "NGC2410",
+    "NGC3815",
+    "NGC4047",
+    "NGC4644",
+    "NGC4711",
+    "NGC5016",
+    "NGC5480",
+    "NGC5520",
+    "NGC5633",
+    "NGC5980",
+    "UGC04132",
+    "UGC05111",
+    "UGC09067",
+    "UGC10384"
+  ],
+  "input_file": "edge_carma.2d_smo7.hdf5",
+  "input_md5": "b7e308d0985e8f85ef7afbe1ec4c48b8",
+  "input_sha256": "297a3b7ca6d0c1ee699dd335bfa1f40581d9e96614715382a75f32d4efa0275f",
+  "input_size_bytes": 84941807,
+  "matches_published_file_size": true,
+  "matches_published_md5": true,
+  "minimum_confirmatory": 12,
+  "n_confirmatory": 0,
+  "n_development": 0,
+  "n_source_eligible": 0,
+  "n_total_galaxies": 125,
+  "requested_source_fields": {
+    "ELINES_sm": [
+      "Name",
+      "ix",
+      "iy",
+      "Vdisp_sm"
+    ],
+    "SSP_sm": [
+      "Name",
+      "ix",
+      "iy",
+      "sigstar_sm"
+    ],
+    "comom_dil": [
+      "Name",
+      "ix",
+      "iy",
+      "rad_arc",
+      "azi_ang",
+      "cosi",
+      "snrpk_12",
+      "mom0_12",
+      "e_mom0_12"
+    ],
+    "flux_elines_sm": [
+      "Name",
+      "ix",
+      "iy",
+      "flux_Halpha_sm",
+      "e_flux_Halpha_sm",
+      "flux_[SII]6717_sm",
+      "flux_[SII]6731_sm",
+      "flux_sigsfr_adopt_sm"
+    ]
+  },
+  "schema": "edge_califa_rotation_morphology_source_preflight_v01",
+  "source_eligible": [],
+  "status": "SOURCE_ONLY_COHORT_INSUFFICIENT_NO_ENDPOINT_OPENING",
+  "velocity_terminal_fields_requested": false,
+  "velocity_terminal_values_opened": false
+}

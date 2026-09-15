@@ -1,0 +1,44 @@
+{
+  "schema": "tau_core_ngc2541_halogas_independent_side_consistency_endpoint_v01",
+  "status_before_endpoint_access": "SOURCE_FROZEN_READY_TO_ACQUIRE",
+  "galaxy": "NGC2541",
+  "source_geometry": "data/derived/ngc2541_signed_descriptor_source_geometry_freeze_v01_points.csv",
+  "independent_endpoint": {
+    "record": "HALOGAS DR1, Zenodo 2552349",
+    "moment0_file": "NGC2541-HR_mom0m.fits",
+    "moment0_md5": "fc6149afc34a6fb0d5bcd7b13cb21aa4",
+    "moment0_url": "https://zenodo.org/api/records/2552349/files/NGC2541-HR_mom0m.fits/content",
+    "moment1_file": "NGC2541-HR_mom1m.fits",
+    "moment1_md5": "290a53d6bcaf372bb0d4b508dad6df64",
+    "moment1_url": "https://zenodo.org/api/records/2552349/files/NGC2541-HR_mom1m.fits/content"
+  },
+  "fixed_source_calibration": {
+    "centre_ra_j2000": "08h14m40.07s",
+    "centre_dec_j2000": "+49d03m41.2s",
+    "systemic_velocity_kms": 559.5,
+    "inclination_deg": 66.3,
+    "major_axis_pa_deg_east_of_north": 171.2,
+    "provenance": "Jozsa 2007 Tables 1 and 4; major-axis PA is the published reference normal PA minus 90 degrees modulo 180"
+  },
+  "estimator": {
+    "radial_support_arcsec": [30.0, 590.0],
+    "major_axis_acceptance": "absolute cos(theta) >= 0.8",
+    "pixel_acceptance": "finite positive SoFiA-masked moment0 and finite moment1",
+    "ring_edges": "midpoints of the frozen source radii, clipped to the declared support",
+    "side_estimator": "unweighted median of signed deprojected circular speed per side and ring",
+    "minimum_pixels_per_side_ring": 8,
+    "variable_geometry_radius_solver": "four deterministic fixed-point iterations initialized by sky radius",
+    "primary_score": "mean absolute approaching-minus-receding ring-speed difference over common eligible rings",
+    "secondary_scores": [
+      "median absolute side difference",
+      "fraction of common rings improved by variable geometry"
+    ]
+  },
+  "comparison": {
+    "control": "fixed source inclination and major-axis PA",
+    "candidate": "source-frozen radially varying oriented-ring geometry",
+    "success_direction": "candidate primary score lower than control",
+    "free_parameters": 0
+  },
+  "claim_boundary": "Independent standard readout-calibration endpoint only. It cannot select a Tau q_R, parent morphology, dark-matter replacement, or Nature occupation."
+}

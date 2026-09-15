@@ -1,0 +1,70 @@
+{
+  "schema": "tau_core_ugc03580_ugc3580_ngc4088_class_transfer_endpoint_v01",
+  "status": "RETROSPECTIVE_CLASS_TRANSFER_REJECTS_UNCAPPED_UNIVERSAL_LAW",
+  "galaxy": "UGC03580",
+  "alias": "UGC3580",
+  "formula_id": "NGC4088_WARP_HISTORY_CLASS_V1__UGC03580_TRANSFER_V01",
+  "endpoint_sha256": "60e65aa00bff8714755a111e5065194bb1a3fe1aa4573a319ca058ab6d3a8425",
+  "freeze_manifest_sha256": "8e58ce01511e0c774032796e1999c0ec8dfd8541ce929ecd4d19571840a573f7",
+  "n_points": 47,
+  "n_pre_onset": 42,
+  "n_onset_to_rhi": 2,
+  "n_beyond_rhi": 3,
+  "x_w_frozen": 0.9045638853160114,
+  "primary_rmse_full_km_s": 38.03529456130914,
+  "primary_rmse_within_rhi_km_s": 29.681543909963708,
+  "newtonian_rmse_full_km_s": 36.01201131349121,
+  "fixed_mond_rmse_full_km_s": 27.172706555031347,
+  "fixed_mond_rmse_within_rhi_km_s": 28.06717386417285,
+  "wrong_ugc08490_onset_rmse_full_km_s": 24.55696197807874,
+  "best_fit_halo_rmse_km_s": 14.989091123800288,
+  "primary_beats_newtonian_full": false,
+  "primary_beats_fixed_mond_full": false,
+  "primary_beats_wrong_onset_full": false,
+  "primary_beats_fixed_mond_within_rhi": false,
+  "endpoint_informed_preferred_x_w_diagnostic": 0.3999999999999999,
+  "endpoint_informed_preferred_x_w_rmse_km_s": 24.407657668108776,
+  "bootstrap_full_primary_vs_mond": {
+    "observed_delta_mse_primary_minus_comparator": 708.327650839709,
+    "bootstrap_ci95_low": -357.2429629833909,
+    "bootstrap_ci95_high": 2098.251245447204,
+    "bootstrap_fraction_primary_better": 0.12805,
+    "n_bootstrap": 20000,
+    "block_length": 3
+  },
+  "bootstrap_full_primary_vs_wrong_ugc08490_onset": {
+    "observed_delta_mse_primary_minus_comparator": 843.6392507727477,
+    "bootstrap_ci95_low": 58.285417633899854,
+    "bootstrap_ci95_high": 2088.16514790973,
+    "bootstrap_fraction_primary_better": 0.00015,
+    "n_bootstrap": 20000,
+    "block_length": 3
+  },
+  "bootstrap_within_rhi_primary_vs_mond": {
+    "observed_delta_mse_primary_minus_comparator": 93.22780015739582,
+    "bootstrap_ci95_low": -561.1303730527605,
+    "bootstrap_ci95_high": 836.2310051304454,
+    "bootstrap_fraction_primary_better": 0.41415,
+    "n_bootstrap": 20000,
+    "block_length": 3
+  },
+  "halo_fit_parameters": {
+    "NFW": {
+      "v200_km_s": 206.42276447687746,
+      "concentration": 2.3082236008135575,
+      "optimizer_success": true
+    },
+    "PSEUDO_ISOTHERMAL": {
+      "v_inf_km_s": 146.02583932535202,
+      "r_core_kpc": 6.473298376507025,
+      "optimizer_success": true
+    }
+  },
+  "interpretation": "The source-correct UGC03580 onset does not replicate the NGC4088 class-law success. It improves the Newtonian comparison inside R_HI only modestly, loses to fixed MOND there, loses to earlier wrong-onset controls, and the unchanged uncapped kernel overshoots beyond R_HI. This rejects the current one-component uncapped law as a universal warp-class rotation law; it does not reject source-native warp morphology or Tau Core in general.",
+  "construction_used_pointwise_vobs_or_residual": false,
+  "scoring_used_vobs": true,
+  "historical_endpoint_exposure": true,
+  "prospective_blind_endpoint": false,
+  "post_endpoint_repair_performed": false,
+  "claim_boundary": "retrospective_class_replication_negative_not_tau_falsification"
+}

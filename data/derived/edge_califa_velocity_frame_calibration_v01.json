@@ -1,0 +1,25 @@
+{
+  "calibration_boundary": "only the public sky/frame correction was read; rfVsys, rotation velocities, CO moment-1 and Halpha velocity values were not used",
+  "correction_table": "data/derived/edge_califa_velocity_frame_calibration_v01.csv",
+  "correction_table_sha256": "2eb488ea6e0ea25fb4059392b7b4a0e92a76ee35fe4c3b8ef39f2705a17e1d9c",
+  "frozen_galaxies": [
+    "IC4566",
+    "NGC2639",
+    "NGC2730",
+    "NGC3811",
+    "NGC6004",
+    "NGC6060",
+    "NGC6186",
+    "NGC6301"
+  ],
+  "schema": "edge_califa_velocity_frame_calibration_v01",
+  "source": {
+    "catalog_definition": "V(helio)=V(LSRK)-rfLSRK2helio",
+    "commit": "1af9ae612024baecf44c8f16244c841e4be4352b",
+    "path": "edge_pydb/dat_glob/derived/edge_rfpars.csv",
+    "repository": "https://github.com/tonywong94/edge_pydb",
+    "sha256": "97582d96f69c5d8a26bf52d3b413ec620b4229fdc26fff09dd7686f1b28dfed3"
+  },
+  "status": "PUBLIC_FRAME_CORRECTIONS_FROZEN_VELOCITY_FIELDS_UNOPENED",
+  "velocity_terminal_values_opened": false
+}

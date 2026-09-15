@@ -1,0 +1,82 @@
+{
+  "schema": "inverse_required_parent_loss_diagnostic_v01",
+  "status": "DIAGNOSTIC_ONLY_NOT_ENDPOINT",
+  "source_sha256": "f77b9e70888e406d975d14f597aeafc8c262f3010b3050be64f9137f8f19a8a2",
+  "n_points": 3389,
+  "n_galaxies": 175,
+  "inverse_shell": {
+    "gain_required": "v_observed/v_baseline",
+    "kappa_required": "log(v_observed/v_baseline)",
+    "loss_required": "1-(v_baseline/v_observed)^2",
+    "forward_convention": "v_observed^2=v_baseline^2/(1-loss_required)"
+  },
+  "identifiability": {
+    "identified": "one terminal-equivalent scalar combination per measured radius and chosen baseline",
+    "not_identified": [
+      "parent morphology versus distance calibration versus time calibration",
+      "channel kernel and terminal map separately",
+      "causal origin or Nature occupation"
+    ],
+    "gauge_family": "kappa_required=kappa_D-kappa_T+kappa_M+kappa_cal; arbitrary component shifts summing to zero leave the measurement unchanged"
+  },
+  "summary": [
+    {
+      "baseline_id": "newtonian_baryonic",
+      "n_points": 3389,
+      "n_galaxies": 175,
+      "median_gain": 1.6575956033937873,
+      "median_kappa": 0.5053681206867652,
+      "median_loss": 0.6360490748217866,
+      "point_fraction_positive_loss": 0.9368545293596932,
+      "point_fraction_positive_loss_95": 0.8675125405724402,
+      "point_fraction_negative_loss_95": 0.021245205075243436,
+      "galaxy_fraction_median_positive": 0.9828571428571429,
+      "galaxy_fraction_majority_positive_95": 0.9085714285714286,
+      "holdout_zero_kappa_rmse": 0.6424506539358871,
+      "holdout_constant_rmse_ratio": 0.5728268802931357,
+      "holdout_fixed_cubic_rmse_ratio": 0.5632979078033974
+    },
+    {
+      "baseline_id": "tpg_v6",
+      "n_points": 3389,
+      "n_galaxies": 175,
+      "median_gain": 1.010601390114826,
+      "median_kappa": 0.01054558940888905,
+      "median_loss": 0.02087031538779338,
+      "point_fraction_positive_loss": 0.5275892593685453,
+      "point_fraction_positive_loss_95": 0.3413986426674535,
+      "point_fraction_negative_loss_95": 0.20861611094718205,
+      "galaxy_fraction_median_positive": 0.4857142857142857,
+      "galaxy_fraction_majority_positive_95": 0.3028571428571429,
+      "holdout_zero_kappa_rmse": 0.3043454583787726,
+      "holdout_constant_rmse_ratio": 0.9953325412387658,
+      "holdout_fixed_cubic_rmse_ratio": 0.9943475704936475
+    },
+    {
+      "baseline_id": "mond_fixed",
+      "n_points": 3389,
+      "n_galaxies": 175,
+      "median_gain": 0.9754978227531459,
+      "median_kappa": -0.024807350850579394,
+      "median_loss": -0.050866121434057554,
+      "point_fraction_positive_loss": 0.42372381233402184,
+      "point_fraction_positive_loss_95": 0.2688108586603718,
+      "point_fraction_negative_loss_95": 0.2797285334907052,
+      "galaxy_fraction_median_positive": 0.36,
+      "galaxy_fraction_majority_positive_95": 0.19428571428571428,
+      "holdout_zero_kappa_rmse": 0.31938770370671044,
+      "holdout_constant_rmse_ratio": 0.9659559202981739,
+      "holdout_fixed_cubic_rmse_ratio": 0.9655433958442577
+    }
+  ],
+  "checks": {
+    "equal_velocity_gives_zero_kappa": true,
+    "equal_velocity_gives_zero_loss": true,
+    "forward_substitution_max_abs_v2_error": 5.820766091346741e-11,
+    "all_outputs_finite": true,
+    "holdout_not_used_to_fit_fixed_cubic": true
+  },
+  "strongest_alternative": "ordinary baseline incompleteness, baryonic modelling and measurement/deprojection systematics generate the same inverse target",
+  "endpoint_authorized": false,
+  "claim_boundary": "The measurement fixes an effective terminal preimage only after a baseline and readout convention are chosen. It does not uniquely reconstruct the parent body or prove morphological loss."
+}

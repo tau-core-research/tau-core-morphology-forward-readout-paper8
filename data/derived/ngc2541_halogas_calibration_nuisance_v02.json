@@ -1,0 +1,118 @@
+{
+  "schema": "tau_core_ngc2541_halogas_calibration_nuisance_v02",
+  "status": "POST_OPEN_DESCRIPTIVE_DIAGNOSTIC_CALIBRATION_UNSTABLE",
+  "endpoint": "NGC2541 HALOGAS DR1 HR moment-0/moment-1",
+  "systemic_velocity_kms_held_fixed": 559.5,
+  "footprint_rule": "fixed and variable estimators use the identical sky pixels in each ring and side",
+  "centre_cases": [
+    "NED",
+    "JOZSA_FITTED",
+    "NED_E_PLUS_4_ARCSEC",
+    "NED_E_MINUS_4_ARCSEC",
+    "NED_N_PLUS_4_ARCSEC",
+    "NED_N_MINUS_4_ARCSEC"
+  ],
+  "ned_to_jozsa_fitted_centre_separation_arcsec": 10.656496103761581,
+  "solver_iterations_compared": [
+    4,
+    20
+  ],
+  "nuisance_direction_contains_improvement_and_worsening": true,
+  "calibration_direction_stable": false,
+  "beam_correlation_audit": {
+    "beam_major_arcsec": 17.483840323992002,
+    "beam_minor_arcsec": 14.047638047496001,
+    "pixel_scale_arcsec": 4.000000152455999,
+    "pixels_per_gaussian_beam": 17.393402406191985,
+    "minimum_pixels_per_side_ring_in_v01": 8,
+    "minimum_pixels_in_beams": 0.45994451305007644,
+    "minimum_ring_spacing_arcsec": 12.0,
+    "median_ring_spacing_arcsec": 12.0,
+    "ring_spacing_below_beam_major_present": true,
+    "consequence": "pixel counts and adjacent rings cannot be treated as independent samples"
+  },
+  "source_uncertainty_limitation": {
+    "maximum_inclination_error_deg": 15.0,
+    "maximum_pa_error_deg": 15.0,
+    "propagated_in_v02": false,
+    "covariance_available_in_source_table": false,
+    "consequence": "the source ring geometry is frozen but not known exactly; this audit cannot form a physical confidence interval"
+  },
+  "moment1_limitation": "Moment-1 is an intensity-weighted line-of-sight velocity. It is not a thin-disc circular-speed measurement and can be biased by line-of-sight warp overlap and slower extraplanar gas.",
+  "statistical_claim": "The scenario deltas are descriptive nuisance checks. Correlated pixels/rings and unpropagated source uncertainty prohibit interpreting them as independent-sample significance.",
+  "claim_boundary": "Post-open standard-calibration diagnostic only. The sign of the small mean change is unstable under source-relevant centre choices; no Tau q_R, physical calibration law, Nature occupation, or dark-matter-replacement evidence follows.",
+  "convergence_diagnostics": {
+    "NED": {
+      "4": {
+        "median_next_step_arcsec": 0.2655895526960421,
+        "p95_next_step_arcsec": 35.3611373824618,
+        "maximum_next_step_arcsec": 94.22191513664507
+      },
+      "20": {
+        "median_next_step_arcsec": 1.4653380731033394e-09,
+        "p95_next_step_arcsec": 29.67100505292328,
+        "maximum_next_step_arcsec": 72.91148145245026
+      }
+    },
+    "JOZSA_FITTED": {
+      "4": {
+        "median_next_step_arcsec": 0.26522215565810825,
+        "p95_next_step_arcsec": 36.25337413051764,
+        "maximum_next_step_arcsec": 100.92564476618816
+      },
+      "20": {
+        "median_next_step_arcsec": 1.0649614523572382e-09,
+        "p95_next_step_arcsec": 27.59380800768378,
+        "maximum_next_step_arcsec": 72.86888098208331
+      }
+    },
+    "NED_E_PLUS_4_ARCSEC": {
+      "4": {
+        "median_next_step_arcsec": 0.2695616487672794,
+        "p95_next_step_arcsec": 35.50655482906457,
+        "maximum_next_step_arcsec": 94.19884624345195
+      },
+      "20": {
+        "median_next_step_arcsec": 1.4331931197375525e-09,
+        "p95_next_step_arcsec": 28.579320501199476,
+        "maximum_next_step_arcsec": 72.91199583668109
+      }
+    },
+    "NED_E_MINUS_4_ARCSEC": {
+      "4": {
+        "median_next_step_arcsec": 0.2635900797346693,
+        "p95_next_step_arcsec": 35.193039162033806,
+        "maximum_next_step_arcsec": 94.24472526449324
+      },
+      "20": {
+        "median_next_step_arcsec": 1.5824923593754647e-09,
+        "p95_next_step_arcsec": 29.66648757097592,
+        "maximum_next_step_arcsec": 72.9109516512826
+      }
+    },
+    "NED_N_PLUS_4_ARCSEC": {
+      "4": {
+        "median_next_step_arcsec": 0.2659950495234966,
+        "p95_next_step_arcsec": 35.36582953492209,
+        "maximum_next_step_arcsec": 94.20687884858546
+      },
+      "20": {
+        "median_next_step_arcsec": 1.5848513612581883e-09,
+        "p95_next_step_arcsec": 29.673144240137688,
+        "maximum_next_step_arcsec": 72.91094404988846
+      }
+    },
+    "NED_N_MINUS_4_ARCSEC": {
+      "4": {
+        "median_next_step_arcsec": 0.2631623028319723,
+        "p95_next_step_arcsec": 35.30796092329857,
+        "maximum_next_step_arcsec": 94.23669547130567
+      },
+      "20": {
+        "median_next_step_arcsec": 1.359779844278819e-09,
+        "p95_next_step_arcsec": 28.6988611864468,
+        "maximum_next_step_arcsec": 72.91200362876424
+      }
+    }
+  }
+}

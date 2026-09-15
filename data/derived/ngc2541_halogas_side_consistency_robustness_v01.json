@@ -1,0 +1,20 @@
+{
+  "schema": "tau_core_ngc2541_halogas_side_consistency_robustness_v01",
+  "status": "NAIVE_CORRELATED_RING_UNCERTAINTY_DIAGNOSTIC_ONLY",
+  "n_paired_rings": 23,
+  "mean_delta_variable_minus_fixed_kms": -0.634051519301488,
+  "bootstrap_95pct_ci_kms": [
+    -2.1210506319159004,
+    0.6344821073650508
+  ],
+  "one_sided_sign_flip_p": 0.2143778562214378,
+  "rings_improved": 12,
+  "rings_worsened": 11,
+  "leave_one_out_delta_range_kms": [
+    -0.9184750933177367,
+    -0.09473843079818431
+  ],
+  "leave_one_out_direction_always_improves": true,
+  "interpretation": "rings are beam-correlated and the iid-ring bootstrap/sign-flip assumptions are not established; quoted interval and p-value are descriptive only",
+  "claim_boundary": "Post-open robustness diagnostic; it cannot upgrade the standard calibration control into a Tau-specific or dark-matter-replacement result."
+}

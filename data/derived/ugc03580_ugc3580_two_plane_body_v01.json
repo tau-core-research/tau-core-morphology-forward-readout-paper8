@@ -1,0 +1,93 @@
+{
+  "schema": "tau_core_ugc03580_ugc3580_two_plane_body_v01",
+  "status": "SOURCE_ACQUISITION_ONLY",
+  "galaxy": "UGC03580",
+  "alias": "UGC3580",
+  "descriptor_type": "localized_galaxy_body_proxy_not_universe_level_M_tau",
+  "source": {
+    "citation": "Jozsa 2007 A&A 468 903-917, Tables 1, 4 and 6",
+    "pdf_path": "data/external/literature/ugc08490_ngc5204_warp/gentile2007_warped_disks.pdf",
+    "pdf_sha256": "15b4ae9e2bb3268509e75b40e62def8cc4664a117fdcccafae8afb7f170ec8ba",
+    "geometry_table_path": "data/external/literature/ugc08490_ngc5204_warp/ugc3580_table6_geometry_v01.csv",
+    "geometry_table_sha256": "fb27253af89e667395eca2ccec23055b79dd74ee0fe38bbc5e26ae800ba4e568",
+    "published_rotation_velocity_columns_imported": false,
+    "sparc_endpoint_accessed": false
+  },
+  "construction": {
+    "inner_reference_plane": {
+      "inclination_deg": 67.2,
+      "pa_deg": 96.3,
+      "n_w": 0.9162959789518291,
+      "n_n": 0.10116001785978392,
+      "n_los": 0.38751558645210293
+    },
+    "outer_plane_support_arcsec": [
+      240.0,
+      375.0
+    ],
+    "outer_plane_estimator": "unweighted chordal mean of source orientation normals",
+    "outer_mean_plane": {
+      "n_w": 0.9255197244906046,
+      "n_n": -0.14469458112215777,
+      "n_los": 0.349966738094806
+    },
+    "transition_interpolation": "piecewise shortest great-circle interpolation on S2",
+    "bounded_tilt_defect": "delta_tilt(R)=1-n_inner dot n(R), in [0,2]",
+    "connection_gradient": "acos(n_j dot n_(j-1))/(R_j-R_(j-1))",
+    "geodesic_progress_is_kernel": false
+  },
+  "derived_geometry": {
+    "n_source_rings": 18,
+    "n_primary_supported_rings": 17,
+    "n_outer_plane_rings": 5,
+    "inner_outer_plane_separation_deg": 14.296629138375462,
+    "published_table4_inner_outer_mean_mutual_inclination_deg": 13.9,
+    "published_table4_error_deg": 2.5,
+    "table4_standardized_difference": 0.1586516553501845,
+    "outer_plane_mean_ring_distance_deg": 2.811736032068464,
+    "outer_plane_max_ring_distance_deg": 5.466364292330181,
+    "maximum_supported_delta_tilt": 0.03754239911584567,
+    "maximum_supported_connection_gradient_deg_per_kpc": 3.7146569506500966
+  },
+  "validation": {
+    "endpoint_columns_absent": true,
+    "maximum_orientation_vs_published_normal_deg": 0.08452571071549828,
+    "maximum_tip_reconstruction_residual_deg": 0.09272960846378986,
+    "maximum_inner_reference_delta_tilt": 0.0,
+    "maximum_slerp_unit_norm_error": 1.1102230246251565e-16,
+    "table4_reproduction_within_one_published_sigma": true,
+    "all_delta_tilt_within_mathematical_bounds": true
+  },
+  "source_only_sensitivity": {
+    "density_weighted_outer_plane_shift_deg": 1.486991163724879,
+    "include_420_arcsec_beyond_support_shift_deg": 1.80595865636149,
+    "every_other_outer_ring_shift_deg": 2.217234354631239,
+    "maximum_leave_one_outer_ring_out_shift_deg": 1.3653291594257222,
+    "interpretation": "support and weighting sensitivity only; no endpoint selected these variants"
+  },
+  "claim_ledger": {
+    "facts": [
+      "Table 6 supplies radial orientation and H I source fields.",
+      "The source fixes the inner plane through 150 arcsec and defines the outer comparison range as 240-375 arcsec."
+    ],
+    "definitions": [
+      "The primary outer plane is the unweighted chordal mean on the published outer support.",
+      "The radial body proxy is the piecewise geodesic path of published plane normals."
+    ],
+    "derived_results": [
+      "The bounded tilt defect and connection gradients follow from the frozen source normals.",
+      "The reconstructed plane separation can be checked against the independent Table 4 summary."
+    ],
+    "assumptions": [
+      "Tilted-ring orientations are adequate local plane descriptors despite reported non-circular structure.",
+      "An unweighted chordal mean is an admissible source-only outer-plane summary."
+    ],
+    "not_derived": [
+      "No velocity readout kernel, amplitude, sign or terminal law is selected.",
+      "No identification with the universe-level morphological body M_tau is made."
+    ]
+  },
+  "endpoint_allowed": false,
+  "readout_formula_selected": false,
+  "next_gate": "derive a source-side bounded two-plane readout shell before opening a new endpoint"
+}

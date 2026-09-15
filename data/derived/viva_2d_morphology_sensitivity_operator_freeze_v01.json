@@ -1,0 +1,40 @@
+{
+  "schema": "viva_2d_morphology_sensitivity_operator_freeze_v01",
+  "status": "SOURCE_AND_IMPLEMENTATION_FROZEN_SCORE_ALLOWED",
+  "preregistration_sha256": "4406eef670730e6338d7d29215948f84d2ad187e1191bd18821d46b50fc604fa",
+  "acquisition_sha256": "6ab754afada0640b5c1f45a0a17cf0473a1132509378df48570f9ce84a3d8a0f",
+  "scoring_script": "scripts/run_viva_2d_morphology_sensitivity_endpoint_v01.py",
+  "scoring_script_sha256": "da711ef383198281c9fe2f3e9416b6929ef2f9a4a6eea32d41d51acb19451a89",
+  "exact_operator": {
+    "radial_edges_r25": [
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "morphology_mode": 1,
+    "velocity_upper_sideband": 2,
+    "nuisance_per_annulus": [
+      "constant",
+      "cos_theta",
+      "sin_theta"
+    ],
+    "phase_wrong_offsets_rad": [
+      0.0,
+      1.5707963267948966,
+      3.141592653589793,
+      4.71238898038469
+    ],
+    "cross_galaxy_control": "lexicographic cyclic donor within the same frozen role",
+    "held_out_sectors": 12,
+    "fit_weight": "equal beam-independent pixels",
+    "primary_score": "fractional held-out SSE reduction",
+    "specificity": "matched minus arithmetic mean of three wrong-template fractional reductions",
+    "permutation": "all 20 choices of three disturbed labels among six; one-sided including observed"
+  },
+  "geometry_policy": "use published fixed VIVA center/PA/inclination; no geometry refit; lack of source covariance is an explicit limitation rather than a fitted repair",
+  "velocity_pixels_opened_before_this_freeze": false,
+  "tau_endpoint_allowed": false,
+  "claim_boundary": "implementation freeze for a conventional sensitivity control; no Tau, gravity, or parent-loss score"
+}

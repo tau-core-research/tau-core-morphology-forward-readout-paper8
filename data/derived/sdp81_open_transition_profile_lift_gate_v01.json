@@ -1,0 +1,85 @@
+{
+  "schema": "tau-core.paper8.sdp81-open-transition-profile-lift-gate.v01",
+  "status": "INHERITED_CO87_PROFILE_LIFT_REJECTED_NEW_SOURCE_SPECTROSCOPY_REQUIRED",
+  "scientific_role": "endpoint-blind candidate profile-lift rejection",
+  "official_source_inventory": [
+    {
+      "artifact": "data/external/literature/sdp81_rybak2020_source_blind/source_CII_Jykmspx_zoomed.fits",
+      "sha256": "b7e326e60e4a733b1eb0b31253a3dec3e3e19d7b44ba8f351c6cc17f83864bc2",
+      "naxis": 2,
+      "shape": [
+        801,
+        801
+      ],
+      "has_spectral_axis": false
+    },
+    {
+      "artifact": "data/external/literature/sdp81_rybak2020_source_blind/source_CO54_Jykmspx.fits",
+      "sha256": "06564faf22dff796d80c96b840b9cf4524efd54e99e68d1575f50305ee54637a",
+      "naxis": 2,
+      "shape": [
+        800,
+        800
+      ],
+      "has_spectral_axis": false
+    },
+    {
+      "artifact": "data/external/literature/sdp81_rybak2020_source_blind/source_CO87_Jykmspx.fits",
+      "sha256": "932925aa10b35d32b3fdc3123644a978ed9558d454b3387c74d57eaccf629664",
+      "naxis": 2,
+      "shape": [
+        800,
+        800
+      ],
+      "has_spectral_axis": false
+    }
+  ],
+  "published_constraints": {
+    "source": "Rybak et al. 2015, arXiv:1506.01425, sections 2.1 and 3",
+    "co109_velocity_maps_reliable": false,
+    "co54_and_co87_excitation_dependent_morphology": true,
+    "co87_dispersion_approximately_40_km_s_above_co54": true,
+    "co87_tail_has_two_velocity_components": true
+  },
+  "open_transition_diagnostics": {
+    "source_cube_common_channel_flags": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "source_cube_promoted": false,
+    "loo_fold_count": 24,
+    "loo_positive_fold_count": 1,
+    "loo_median_predictive_r2": -21.187381337380906,
+    "loo_path_median_predictive_r2": {
+      "1": -4.270612483415572,
+      "2": -7.371951946923918,
+      "3": -158.587720029489,
+      "4": -217.58494197611608
+    },
+    "cross_transition_sensitivity_cosine_range": [
+      0.36846352066315635,
+      0.936489143047276
+    ],
+    "cross_transition_rank_promoted": false
+  },
+  "checks": {
+    "heldout_transition_absent_from_source_directory": true,
+    "official_open_source_maps_are_two_dimensional": true,
+    "official_open_source_maps_have_no_spectral_axis": true,
+    "blind_pdr_amplitude_prior_available": true,
+    "blind_pdr_does_not_claim_channel_registration": true,
+    "image_plane_inverse_source_cube_not_promoted": true,
+    "three_path_to_fourth_path_transfer_not_established": true,
+    "cross_transition_projected_rank_not_promoted": true,
+    "co109_header_not_read": true,
+    "co109_pixels_not_read": true
+  },
+  "profile_lift_authorized": false,
+  "endpoint_authorized": false,
+  "next_source_requirement": "an endpoint-independent source-plane velocity/profile cube or a source-owned excitation-opacity-kinematic law with covariance, filling, and differential magnification; then propagate D_Zp through the frozen lens/aperture operator and rerun the five-mode rank gate",
+  "claim_boundary": "rejects only simple inheritance of the currently open CO(8-7) profile; it does not reject richer standard line formation or Tau Core"
+}

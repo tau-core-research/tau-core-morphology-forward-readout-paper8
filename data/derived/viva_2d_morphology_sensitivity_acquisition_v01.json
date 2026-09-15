@@ -1,0 +1,13 @@
+{
+  "schema": "viva_2d_morphology_sensitivity_acquisition_v01",
+  "status": "FROZEN_VIVA_CUBES_ACQUIRED_UNOPENED",
+  "preregistration": "data/derived/viva_2d_morphology_sensitivity_preregistration_v01.json",
+  "preregistration_sha256": "4406eef670730e6338d7d29215948f84d2ad187e1191bd18821d46b50fc604fa",
+  "ledger": "data/derived/viva_2d_morphology_sensitivity_acquisition_v01.csv",
+  "ledger_sha256": "965869e2f6589590036a14de2b16c46eae5f84ecae0a6bd3118e299943b41ac5",
+  "cube_count": 6,
+  "total_bytes": 138155732,
+  "all_nonempty": true,
+  "velocity_pixels_read": false,
+  "claim_boundary": "source acquisition under a prior frozen conventional-control protocol; no velocity-field score and no Tau endpoint"
+}

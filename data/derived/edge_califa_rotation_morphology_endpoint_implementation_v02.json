@@ -1,0 +1,39 @@
+{
+  "confirmatory_terminal_values_opened": false,
+  "conversion_and_exact_inference_self_test": {
+    "all_pass": true,
+    "exact_sign_vectors_for_seven": 128,
+    "optical_jacobian_max_abs_error": 1.897262691397117e-08,
+    "radio_jacobian_max_abs_error": 9.84534964665329e-09
+  },
+  "endpoint_script": "scripts/run_edge_califa_rotation_morphology_endpoint_v02.py",
+  "endpoint_script_sha256": "6f6f37e3c1090e93a5a1d011dfa0cda5b5c5e10a0428b3e9d6e29504ad1fa7f8",
+  "occupied_sector_covariance_self_test": {
+    "all_gates_pass": true,
+    "assembled_covariance_rank": 20,
+    "minimum_eigenvalue": 0.00036936734500363797,
+    "occupied_sector_counts": [
+      5,
+      6,
+      5,
+      6,
+      5
+    ],
+    "projected_rank": 4,
+    "pure_source_q": 5.704756761969207e-25,
+    "zone_covariance_ranks": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "post_confirmatory_open_code_change_policy": "any implementation change invalidates this endpoint and no same-packet repair or replacement is permitted",
+  "preregistration_sha256": "f73e3c1998d7427830aacbd929ee58b92c8714fb9bbc6f7aade64dd7da32becf",
+  "schema": "edge_califa_rotation_morphology_endpoint_implementation_v02",
+  "score_blind_development_v01_sha256": "f62c6c1b0fa1a78e4394ecbaf7bda00e82a002f6b3f26165e2a0cbf411246bc2",
+  "scoring_contract_sha256": "7ca5a45819762b1e47b3b5f312a0c58bc411b59838a9eced07e14f4056662788",
+  "source_preflight_sha256": "a57a93a1ea6bc813f92957a4b39eb7ea40080738fb84a59b00e138e2d7e002db",
+  "status": "V02_IMPLEMENTATION_HASH_FROZEN_ALL_SYNTHETIC_TESTS_PASS_CONFIRMATORY_UNOPENED"
+}

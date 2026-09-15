@@ -1,0 +1,7 @@
+galaxy,role,url,local_path,bytes,sha256,status,velocity_opened_by_acquisition
+NGC4298,disturbed,https://www.astro.yale.edu/viva/cubes/ngc4298.cube.fits.gz,data/external/literature/viva_2d_morphology_sensitivity_v01/ngc4298.cube.fits.gz,17406526,5c23d3498068fff615f2f60add4ba2b220b55340f603bdfee5b705e9a7feacab,downloaded,False
+NGC4424,disturbed,https://www.astro.yale.edu/viva/cubes/ngc4424.cube.fits.gz,data/external/literature/viva_2d_morphology_sensitivity_v01/ngc4424.cube.fits.gz,62694190,5d6ff1661deb2ad6762dd1280119268427cc5e659a6bf11667eec2eba328f2d3,downloaded,False
+NGC4654,disturbed,https://www.astro.yale.edu/viva/cubes/ngc4654.cube.fits.gz,data/external/literature/viva_2d_morphology_sensitivity_v01/ngc4654.cube.fits.gz,17444094,b59aa0ab3e5970c5db5aaa69ec3ab84d72f1e70275ab47722021f6627a6ee841,downloaded,False
+NGC4450,quiet,https://www.astro.yale.edu/viva/cubes/ngc4450.cube.fits.gz,data/external/literature/viva_2d_morphology_sensitivity_v01/ngc4450.cube.fits.gz,5783261,8eb8c71eb172a62bc72282742c41c42a47f0f94b1c84bf9fe776726eec4c9900,downloaded,False
+NGC4579,quiet,https://www.astro.yale.edu/viva/cubes/ngc4579.cube.fits.gz,data/external/literature/viva_2d_morphology_sensitivity_v01/ngc4579.cube.fits.gz,17444252,b9af843e33ad378d6a9cdd78ad4f99083c9a9e3fb0cd0ee1d70471ba1ece7c92,downloaded,False
+NGC4689,quiet,https://www.astro.yale.edu/viva/cubes/ngc4689.cube.fits.gz,data/external/literature/viva_2d_morphology_sensitivity_v01/ngc4689.cube.fits.gz,17383409,0e51b8751592ce159702d43a7b0112ddf7405d7e0e47c2de0390bd3fbe706725,downloaded,False

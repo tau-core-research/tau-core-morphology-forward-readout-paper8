@@ -1,0 +1,49 @@
+{
+  "schema": "ngc3893_disturbed_control_freeze_v01",
+  "status": "DISTURBED_CONTROL_SOURCE_FREEZE_COMPLETE_VELOCITIES_UNOPENED",
+  "galaxy": "NGC3893",
+  "role": "CONVENTIONAL_DISTURBED_CONTROL_NOT_TAU_ENDPOINT",
+  "common_radii_arcsec": [
+    20.0,
+    40.0,
+    60.0,
+    80.0
+  ],
+  "source_template": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "control_templates": {
+    "inner_single_ring": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "linear_radius": [
+      0.0,
+      0.3333333333333333,
+      0.6666666666666666,
+      1.0
+    ]
+  },
+  "template_rule": "one for R>75 arcsec, zero otherwise",
+  "template_source": "Fuentes-Carrera et al. report perturbed optical RC points above 75 arcsec and uncertain H I beyond 120 arcsec",
+  "zero_point_nuisance_tangent": "(-2,+2) repeated at every radius",
+  "expected_projector_rank": 3,
+  "score_rule": "two-sided covariance-weighted matched-template z after zero-point projection",
+  "omnibus_rule": "projected zero-vector chi-square with three degrees of freedom",
+  "input_sha256": {
+    "uma_table4": "b572484788f2dd30ec741ee594d3f191cb1aba8c7280638727eadf89bbe366b4",
+    "halpha_federation": "5ccb1da84fe2fb92c63b384ef9fc3ba852443f5fb690748f4c337533166e26a3",
+    "interaction_source": "6dfecb8a513188e607ca3dc1e6991e51aa974d1aa036fffb284838fcbb05056f"
+  },
+  "velocity_columns_parsed_during_freeze": false,
+  "endpoint_access": false,
+  "selection_uses_velocity_difference_or_residual": false,
+  "literature_overlap_caveat": "the disturbance source analyzed related optical and H I kinematics, so this can validate sensitivity only",
+  "next_action": "run a separate disturbed-control score without changing radii, template, nuisance span or covariance rules",
+  "claim_boundary": "source-frozen conventional disturbance control; not a clean replication, Tau signal, q_R, or dark-matter result"
+}

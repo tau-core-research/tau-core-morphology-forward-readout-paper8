@@ -1,0 +1,34 @@
+{
+  "schema": "inverse_parent_loss_conditional_kernel_test_v01",
+  "status": "DIAGNOSTIC_ONLY_NOT_ENDPOINT",
+  "hashes": {
+    "tpg_points_sha256": "f77b9e70888e406d975d14f597aeafc8c262f3010b3050be64f9137f8f19a8a2",
+    "sparc_master_sha256": "d6900f7a90d4e19cda4ad94c518baa862d4ed9d2405d2b94c3c48708a8f8e24a",
+    "formula_labels_sha256": "772b1992fc4cd0399a579e6d5ec39d3510b8a8c9f23555481e89460e0cb58551"
+  },
+  "n_train_galaxies": 131,
+  "n_holdout_galaxies": 44,
+  "n_holdout_points": 835,
+  "checks": {
+    "endpoint_predictor_overlap": [],
+    "equal_velocity_zero_limit": true,
+    "roundtrip_max_abs_v2_error": 2.9103830456733704e-11,
+    "roundtrip_tolerance_pass": true,
+    "resolution_scan_knots": [
+      4,
+      6
+    ],
+    "regularization_scan": [
+      10.0,
+      100.0
+    ],
+    "independent_metrics": [
+      "mean-galaxy RMSE",
+      "Pearson r",
+      "Spearman r"
+    ],
+    "family_shuffle_count": 30
+  },
+  "endpoint_authorized": false,
+  "strongest_alternative": "ordinary baryonic scaling, non-circular motion, inclination/deprojection, tracer and distance systematics"
+}

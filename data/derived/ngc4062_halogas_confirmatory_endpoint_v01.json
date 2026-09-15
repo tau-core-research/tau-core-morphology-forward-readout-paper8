@@ -1,0 +1,244 @@
+{
+  "schema": "ngc4062_halogas_confirmatory_endpoint_v01",
+  "status": "NGC4062_CONFIRMATORY_ENDPOINT_FAIL",
+  "galaxy": "NGC4062",
+  "endpoint_opened_after_freeze": true,
+  "n_common_rings": 2,
+  "outputs": {
+    "HR": {
+      "halpha_odd_by_radius_km_s": [
+        6.857435825382764,
+        -11.696780934534855
+      ],
+      "hi_odd_by_radius_km_s": [
+        -11.180896219137438,
+        -14.475078624894579
+      ],
+      "delta_odd_by_radius_km_s": [
+        18.038332044520203,
+        2.7782976903597234
+      ],
+      "covariance_km2_s2": [
+        [
+          246.59198503098202,
+          89.40882455148886
+        ],
+        [
+          89.40882455148886,
+          106.41446249909885
+        ]
+      ],
+      "primary_score": {
+        "gls_mean_km_s": 4.2680985365579085,
+        "gls_mean_sigma_km_s": 10.234952004154241,
+        "gls_mean_z": 0.41701207146115976,
+        "chi2_zero": 1.510774059666451,
+        "chi2_zero_dof": 2,
+        "chi2_zero_p": 0.4698287417981003
+      },
+      "nuisance_variants": [
+        {
+          "variant": "ghasp_center",
+          "delta_odd_by_radius_km_s": [
+            18.56454101091535,
+            3.4923464911701547
+          ],
+          "gls_mean_km_s": 5.269875203061615,
+          "gls_mean_sigma_km_s": 4.1427333955222565,
+          "gls_mean_z": 1.2720768391124684,
+          "chi2_zero": 2.927611016703544,
+          "chi2_zero_dof": 2,
+          "chi2_zero_p": 0.23135417712612585
+        },
+        {
+          "variant": "inclination_62.1",
+          "delta_odd_by_radius_km_s": [
+            17.522659843962217,
+            2.4733735727841992
+          ],
+          "gls_mean_km_s": 4.248200616414017,
+          "gls_mean_sigma_km_s": 4.1427333955222565,
+          "gls_mean_z": 1.025458365485396,
+          "chi2_zero": 2.357019002892401,
+          "chi2_zero_dof": 2,
+          "chi2_zero_p": 0.30773707860933575
+        },
+        {
+          "variant": "inclination_72.1",
+          "delta_odd_by_radius_km_s": [
+            18.066138383771346,
+            2.110661419220195
+          ],
+          "gls_mean_km_s": 3.992359428044191,
+          "gls_mean_sigma_km_s": 4.1427333955222565,
+          "gls_mean_z": 0.9637017512059551,
+          "chi2_zero": 2.3961240448241807,
+          "chi2_zero_dof": 2,
+          "chi2_zero_p": 0.3017784855162051
+        },
+        {
+          "variant": "pa_98.1",
+          "delta_odd_by_radius_km_s": [
+            16.63846983287786,
+            2.7116246015707066
+          ],
+          "gls_mean_km_s": 4.354077346742392,
+          "gls_mean_sigma_km_s": 4.1427333955222565,
+          "gls_mean_z": 1.0510155810288373,
+          "chi2_zero": 2.222617042150831,
+          "chi2_zero_dof": 2,
+          "chi2_zero_p": 0.3291280082459507
+        },
+        {
+          "variant": "pa_102.1",
+          "delta_odd_by_radius_km_s": [
+            16.153143723538676,
+            1.927146293806091
+          ],
+          "gls_mean_km_s": 3.6048793441271063,
+          "gls_mean_sigma_km_s": 4.1427333955222565,
+          "gls_mean_z": 0.8701692819585014,
+          "chi2_zero": 1.9237228430775093,
+          "chi2_zero_dof": 2,
+          "chi2_zero_p": 0.3821808238396214
+        },
+        {
+          "variant": "ghasp_systemic_758",
+          "delta_odd_by_radius_km_s": [
+            -5.6394302627870605,
+            -20.008937276306355
+          ],
+          "gls_mean_km_s": -18.314279523661586,
+          "gls_mean_sigma_km_s": 4.1427333955222565,
+          "gls_mean_z": -4.420820210988446,
+          "chi2_zero": 20.733833813490932,
+          "chi2_zero_dof": 2,
+          "chi2_zero_p": 3.145612290682359e-05
+        }
+      ]
+    },
+    "LR": {
+      "halpha_odd_by_radius_km_s": [
+        6.857435825382764,
+        -11.696780934534855
+      ],
+      "hi_odd_by_radius_km_s": [
+        -13.75171549118825,
+        -13.527667510626202
+      ],
+      "delta_odd_by_radius_km_s": [
+        20.609151316571015,
+        1.8308865760913466
+      ],
+      "covariance_km2_s2": [
+        [
+          389.96775818673353,
+          88.01009189016584
+        ],
+        [
+          88.01009189016584,
+          112.12193181642512
+        ]
+      ],
+      "primary_score": {
+        "gls_mean_km_s": 3.2194816604962906,
+        "gls_mean_sigma_km_s": 10.504234156051936,
+        "gls_mean_z": 0.306493706506096,
+        "chi2_zero": 1.175374159453382,
+        "chi2_zero_dof": 2,
+        "chi2_zero_p": 0.5556108834078866
+      },
+      "nuisance_variants": [
+        {
+          "variant": "ghasp_center",
+          "delta_odd_by_radius_km_s": [
+            20.943013850345054,
+            2.181473358567219
+          ],
+          "gls_mean_km_s": 3.6125652650670084,
+          "gls_mean_sigma_km_s": 4.805427448516694,
+          "gls_mean_z": 0.7517677259245918,
+          "chi2_zero": 1.645305953275196,
+          "chi2_zero_dof": 2,
+          "chi2_zero_p": 0.4392647481881541
+        },
+        {
+          "variant": "inclination_62.1",
+          "delta_odd_by_radius_km_s": [
+            20.168408384705117,
+            1.9475771852381047
+          ],
+          "gls_mean_km_s": 3.337424893675674,
+          "gls_mean_sigma_km_s": 4.805427448516694,
+          "gls_mean_z": 0.6945115558254547,
+          "chi2_zero": 1.5011345990880136,
+          "chi2_zero_dof": 2,
+          "chi2_zero_p": 0.47209865540724316
+        },
+        {
+          "variant": "inclination_72.1",
+          "delta_odd_by_radius_km_s": [
+            19.81712311251077,
+            1.8138075762693422
+          ],
+          "gls_mean_km_s": 3.1870636351397823,
+          "gls_mean_sigma_km_s": 4.805427448516694,
+          "gls_mean_z": 0.6632216736772383,
+          "chi2_zero": 1.434472400852917,
+          "chi2_zero_dof": 2,
+          "chi2_zero_p": 0.4880994024012696
+        },
+        {
+          "variant": "pa_98.1",
+          "delta_odd_by_radius_km_s": [
+            20.247315502187305,
+            1.829734632369382
+          ],
+          "gls_mean_km_s": 3.234590002942642,
+          "gls_mean_sigma_km_s": 4.805427448516694,
+          "gls_mean_z": 0.6731118173350162,
+          "chi2_zero": 1.4939884843907616,
+          "chi2_zero_dof": 2,
+          "chi2_zero_p": 0.4737885081497767
+        },
+        {
+          "variant": "pa_102.1",
+          "delta_odd_by_radius_km_s": [
+            20.93772357269266,
+            1.8763336933984807
+          ],
+          "gls_mean_km_s": 3.3302974974288384,
+          "gls_mean_sigma_km_s": 4.805427448516694,
+          "gls_mean_z": 0.6930283586857214,
+          "chi2_zero": 1.5952416829042517,
+          "chi2_zero_dof": 2,
+          "chi2_zero_p": 0.4503992616619258
+        },
+        {
+          "variant": "ghasp_systemic_758",
+          "delta_odd_by_radius_km_s": [
+            -2.450232917704499,
+            -21.0309503713529
+          ],
+          "gls_mean_km_s": -19.61365127608251,
+          "gls_mean_sigma_km_s": 4.805427448516694,
+          "gls_mean_z": -4.081562251478111,
+          "chi2_zero": 17.718581071892814,
+          "chi2_zero_dof": 2,
+          "chi2_zero_p": 0.0001420558119124878
+        }
+      ]
+    }
+  },
+  "gates": {
+    "hr_rejects_zero": false,
+    "lr_rejects_zero": false,
+    "hr_lr_gls_sign_agreement": true,
+    "hr_lr_gls_compatible_2sigma": true,
+    "all_four_radius_resolution_cells_same_sign": true,
+    "all_twelve_nuisance_scores_preserve_sign": false
+  },
+  "confirmatory_pass": false,
+  "interpretation": "A pass is a replicated cross-tracer side-odd discrepancy under the frozen constant-geometry protocol; a fail is preserved as a negative endpoint result.",
+  "claim_boundary": "A passed score would be a two-tracer morphology/readout diagnostic, not a Tau detection, q_R derivation, parent-morphology measurement, Nature-occupation result, or dark-matter replacement."
+}

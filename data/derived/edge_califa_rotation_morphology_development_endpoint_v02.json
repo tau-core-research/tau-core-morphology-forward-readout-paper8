@@ -1,0 +1,82 @@
+{
+  "galaxies": {
+    "NGC2639": {
+      "control_differences": {
+        "cross_galaxy": 1.3238079114764187,
+        "phase_rotation_pi_over_2": 1.3849665893468788,
+        "radial_reversal": 2.1639056647309802
+      },
+      "cross_galaxy_body": "IC4566",
+      "frame_correction_subtracted_km_s": 4.13,
+      "median_co_convention_shift_km_s": 16.451395637210453,
+      "median_halpha_convention_shift_km_s": -16.940436005422043,
+      "median_raw_co_velocity_km_s": 3144.9180908203125,
+      "median_raw_halpha_velocity_km_s": 3187.1300048828125,
+      "median_relativistic_contrast_km_s": 20.235251535662655,
+      "occupied_macrosectors_by_zone": [
+        6,
+        6,
+        6,
+        6,
+        5
+      ],
+      "primary_d": 1.624226721851426,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 1.273905417675017e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.812077782563089,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 3.853978052731067e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 2.1358856940395077,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 2.0542685363507674e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 2.1970443719099677,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 4.782070558070465e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 2.975983447294069,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 1.025567519566391e-14,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 7.728191919994295,
+          "source_rank": 8
+        }
+      },
+      "standard_minus_correct_q_diagnostic": 6.916114137431205,
+      "terminal_covariance_minimum_eigenvalue": 1.0572351882045008,
+      "terminal_covariance_rank": 20,
+      "terminal_rows_total": 140
+    }
+  },
+  "galaxies_opened_once": [
+    "NGC2639"
+  ],
+  "inference_performed": false,
+  "provenance": {
+    "endpoint_implementation_sha256": "6f6f37e3c1090e93a5a1d011dfa0cda5b5c5e10a0428b3e9d6e29504ad1fa7f8",
+    "input_md5": "b7e308d0985e8f85ef7afbe1ec4c48b8",
+    "input_sha256": "297a3b7ca6d0c1ee699dd335bfa1f40581d9e96614715382a75f32d4efa0275f",
+    "preregistration_sha256": "f73e3c1998d7427830aacbd929ee58b92c8714fb9bbc6f7aade64dd7da32becf",
+    "scoring_contract_sha256": "7ca5a45819762b1e47b3b5f312a0c58bc411b59838a9eced07e14f4056662788"
+  },
+  "schema": "edge_califa_rotation_morphology_development_endpoint_v02",
+  "status": "DEVELOPMENT_V02_PIPELINE_EXECUTED_NO_CLAIM_NO_RETUNING",
+  "summary": "The development galaxy passed v02. Its diagnostic values cannot alter the frozen confirmatory protocol.",
+  "threshold_or_protocol_change_authorized": false
+}

@@ -1,0 +1,16 @@
+radius_arcsec,inclination_deg,inclination_mc_sigma_deg,position_angle_deg,position_angle_mc_sigma_deg,source_identifiability
+27.0,73.489153,5.091873,272.154765,5.872462,nonidentifiable_solid_body
+54.0,84.088149,2.827019,279.758018,3.324008,nonidentifiable_solid_body
+81.0,84.432571,1.023960,279.917224,1.528323,nonidentifiable_solid_body
+108.0,83.063784,1.126761,280.312933,1.592351,nonidentifiable_solid_body
+135.0,80.341589,2.032540,279.807914,1.452469,nonidentifiable_solid_body
+162.0,75.661728,3.517484,282.580180,4.244924,nonidentifiable_solid_body
+189.0,69.379957,2.378177,288.707603,1.602157,nonidentifiable_solid_body
+216.0,65.040472,1.283795,286.102907,0.685279,nonidentifiable_solid_body
+243.0,63.872025,0.739437,288.563394,1.831737,nonidentifiable_solid_body
+270.0,62.455480,0.712725,290.113636,1.297877,source_claimed_robust_outer
+297.0,61.474826,0.852356,290.192374,0.994751,source_claimed_robust_outer
+324.0,61.013032,1.472802,290.321873,1.085025,source_claimed_robust_outer
+351.0,57.749717,1.830176,289.622750,1.397670,source_claimed_robust_outer
+378.0,54.541849,2.784523,288.343909,1.875865,source_claimed_robust_outer
+405.0,50.109276,3.797151,286.759056,2.081507,source_claimed_robust_outer

@@ -1,0 +1,40 @@
+{
+  "status": "SOURCE_ACQUISITION_ONLY_HALOGAS_ALONE_INSUFFICIENT_FOR_CONFIRMATORY_N12",
+  "n_halogas_galaxies": 24,
+  "n_prior_endpoint_exposed": 12,
+  "n_current_protocol_edge_on_excluded": 5,
+  "n_endpoint_unopened_moderate_candidates": 7,
+  "confirmatory_minimum_galaxies": 12,
+  "n_clean_source_candidates": 0,
+  "halogas_clean_shortfall": 12,
+  "priority_order": [],
+  "next_clean_source_acquisition_target": null,
+  "ngc4062_endpoint": {
+    "status": "NGC4062_CONFIRMATORY_ENDPOINT_FAIL",
+    "confirmatory_pass": false,
+    "hr_gls_mean_km_s": 4.2680985365579085,
+    "hr_gls_sigma_km_s": 10.234952004154241,
+    "lr_gls_mean_km_s": 3.219481660496291,
+    "lr_gls_sigma_km_s": 10.504234156051936,
+    "velocity_zero_point_sign_stable": false
+  },
+  "ngc0925_source_constants": {
+    "centre_ra_j2000": "02 27 16.5",
+    "centre_dec_j2000": "+33 34 43.5",
+    "distance_mpc": 9.2,
+    "ring_spacing_arcsec": 3.0,
+    "systemic_velocity_km_s": 546.3,
+    "mean_inclination_deg": 66.0,
+    "mean_position_angle_deg": 286.6,
+    "published_radial_geometry_statement": "inclination trends from about 75 deg inner to about 60 deg outer; PA is continuous and well-defined",
+    "digitized_geometry_status": "SOURCE_GEOMETRY_DIGITIZATION_COMPLETE_ENDPOINT_BLOCKED_PHYSICAL_UNCERTAINTY",
+    "digitized_ring_count": 93,
+    "digitized_mean_pa_deg": 286.6084447941254,
+    "physical_uncertainty_status": "PHYSICAL_MC_ACQUIRED_GEOMETRY_IDENTIFIABILITY_FAIL_ENDPOINT_BLOCKED",
+    "outer_only_status": "OUTER_GEOMETRIC_CAPACITY_PASS_TERMINAL_CLEANLINESS_FAIL_ENDPOINT_BLOCKED",
+    "disposition": "demote from first clean confirmatory acquisition target; retain only as a preregistered disturbed-system robustness or stronger-terminal case",
+    "remaining_freeze": "retain only as a preregistered disturbed-system robustness/stronger-terminal case; source-specific centre weights, joint covariance, signed PA ray, masked beam support, solver tolerance, and wrong-family controls remain open"
+  },
+  "endpoint_pixels_read_by_this_audit": false,
+  "claim_boundary": "Pool bookkeeping incorporates the separately frozen NGC4062 endpoint result but does not create a new score. No Tau q_R, parent morphology, Nature occupation, or dark-matter-replacement result is produced."
+}

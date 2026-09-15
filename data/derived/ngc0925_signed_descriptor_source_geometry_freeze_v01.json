@@ -1,0 +1,82 @@
+{
+  "status": "SOURCE_GEOMETRY_DIGITIZATION_COMPLETE_ENDPOINT_BLOCKED_PHYSICAL_UNCERTAINTY",
+  "galaxy": "NGC0925",
+  "source": {
+    "citation": "de Blok et al. 2008, AJ 136, 2648, Figure 68 and Table 2",
+    "arxiv": "0810.2100v2",
+    "eps_sha256": "ed3b8e197e523531b5b9e77c9a58f8f7a5e275c4cc3f30ff773977e64fa0b2a0",
+    "tex_sha256": "6c76c8d95dc671727370a44d7e040fa17e752971f2ad8c8b053438b998caa199",
+    "embedded_jpeg_sha256": "aebfe341f19fc24ddc31ab3dc4699763afd9a953a8da1c5407a94696e879edb9",
+    "embedded_jpeg_shape_yx": [
+      756,
+      561
+    ]
+  },
+  "source_constants": {
+    "centre_ra_j2000": "02 27 16.5",
+    "centre_dec_j2000": "+33 34 43.5",
+    "systemic_velocity_km_s": 546.3,
+    "ring_spacing_arcsec": 3.0,
+    "published_mean_inclination_deg": 66.0,
+    "published_mean_position_angle_deg": 286.6
+  },
+  "digitization": {
+    "radius_axis_pixels": [
+      309,
+      510
+    ],
+    "radius_axis_arcsec": [
+      0.0,
+      300.0
+    ],
+    "pa_panel_pixels": [
+      627,
+      698
+    ],
+    "pa_tick_anchor_pixels": [
+      647,
+      688
+    ],
+    "pa_tick_anchor_deg": [
+      300.0,
+      260.0
+    ],
+    "inclination_panel_pixels": [
+      557,
+      627
+    ],
+    "inclination_tick_anchor_pixels": [
+      565,
+      619
+    ],
+    "inclination_tick_anchor_deg": [
+      80.0,
+      20.0
+    ],
+    "nominal_smoothness_penalty": 10.0,
+    "ensemble_size": 486,
+    "sampled_radius_min_arcsec": 15.0,
+    "sampled_radius_max_arcsec": 291.0,
+    "sampled_ring_count": 93,
+    "digitized_mean_pa_deg": 286.6084447941254,
+    "digitized_mean_inclination_deg": 64.8605734767025,
+    "absolute_difference_from_published_mean_pa_deg": 0.008444794125352928,
+    "absolute_difference_from_published_mean_inclination_deg": 1.1394265232975016,
+    "maximum_90pct_digitization_width_deg": 4.195121951219505,
+    "maximum_inclination_90pct_digitization_width_deg": 7.771473495058402,
+    "meaning": "The interval quantifies raster trace and axis-anchor sensitivity only; it is not a physical tilted-ring uncertainty."
+  },
+  "signed_side_convention": {
+    "receding": "PA(R), measured counter-clockwise from north to the receding major axis",
+    "approaching": "PA(R)+180 deg modulo 360 deg"
+  },
+  "endpoint_pixels_read": false,
+  "endpoint_allowed": false,
+  "remaining_blockers": [
+    "source-published or independently justified physical i(R)/PA(R) uncertainty and covariance",
+    "source-frozen centre alternatives and their weights",
+    "HALOGAS beam/covariance blocks and common-footprint mask",
+    "solver convergence tolerance and wrong-family geometries"
+  ],
+  "claim_boundary": "This is a reproducible source-figure digitization and signed-geometry partial freeze. It is not an endpoint score, a Tau q_R selection, a parent-morphology detection, Nature occupation, or dark-matter-replacement evidence."
+}

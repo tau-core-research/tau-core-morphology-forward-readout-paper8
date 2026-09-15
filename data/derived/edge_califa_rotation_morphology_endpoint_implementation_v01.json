@@ -1,0 +1,17 @@
+{
+  "endpoint_script": "scripts/run_edge_califa_rotation_morphology_endpoint_v01.py",
+  "endpoint_script_sha256": "5405055ece52fd20a7eceeadacde5de38243f40a509a25ca08ec14b02ec61353",
+  "post_open_code_change_policy": "any change invalidates this implementation hash and forbids reuse of the current confirmatory packet; development diagnostics may motivate only a separately versioned future endpoint",
+  "preregistration_sha256": "9d246b65a6e39844bff3b92d56733fddebfa41b10ef8013a9bed124b853de645",
+  "schema": "edge_califa_rotation_morphology_endpoint_implementation_v01",
+  "scoring_contract_sha256": "7cf0b4657d91bdf779e5f32d7569d69462225c48a17bc547d81cd36ca1005905",
+  "self_test": {
+    "all_pass": true,
+    "exact_sign_vectors_for_seven": 128,
+    "optical_jacobian_max_abs_error": 1.897262691397117e-08,
+    "radio_jacobian_max_abs_error": 9.84534964665329e-09
+  },
+  "source_preflight_sha256": "a57a93a1ea6bc813f92957a4b39eb7ea40080738fb84a59b00e138e2d7e002db",
+  "status": "ENDPOINT_IMPLEMENTATION_HASH_FROZEN_SYNTHETIC_TESTS_PASS_VALUES_UNOPENED",
+  "terminal_values_opened": false
+}

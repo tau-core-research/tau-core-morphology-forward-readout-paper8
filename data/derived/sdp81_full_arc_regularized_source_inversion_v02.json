@@ -1,0 +1,204 @@
+{
+  "schema": "tau-core.paper8.sdp81-full-arc-regularized-source-inversion.v02",
+  "status": "FULL_ARC_REFERENCE_IMAGE_INVERSION_NOT_PROMOTED",
+  "scientific_role": "endpoint-blind open-transition development source reconstruction",
+  "configuration": {
+    "grid_side": 11,
+    "source_basis_count": 121,
+    "source_extent_arcsec": 0.18,
+    "source_sigma_arcsec": 0.018,
+    "image_radius_arcsec": 0.48,
+    "pixel_stride": 3,
+    "noise_nugget_fraction": 0.08,
+    "velocity_grid_km_s": [
+      -202.0,
+      -181.0,
+      -160.0,
+      -139.0,
+      -118.0,
+      -97.0,
+      -76.0,
+      -55.0,
+      -34.0,
+      -13.0,
+      8.0,
+      29.0,
+      50.0,
+      71.0,
+      92.0,
+      113.0,
+      134.0,
+      155.0,
+      176.0,
+      197.0
+    ],
+    "calibration_velocity_grid_km_s": [
+      -160.0,
+      -76.0,
+      8.0,
+      92.0,
+      176.0
+    ],
+    "lambda_grid": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "selected_lambda": 100.0,
+    "v02_change": "lambda range extended after v01 selected its upper boundary; source data, model family, score and 5 percent promotion threshold unchanged"
+  },
+  "line_metadata": {
+    "CO54": {
+      "pixels_per_path": 201,
+      "beam_arcsec": [
+        0.154807984828944,
+        0.12129168957472801,
+        57.25862884521
+      ],
+      "channel_indices_zero_based": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ]
+    },
+    "CO87": {
+      "pixels_per_path": 201,
+      "beam_arcsec": [
+        0.169258102774632,
+        0.117267228662976,
+        46.79936981201
+      ],
+      "channel_indices_zero_based": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ]
+    }
+  },
+  "lambda_scan": [
+    {
+      "lambda": 0.0001,
+      "median_held_path_improvement": -0.12075080478348788,
+      "positive_fraction": 0.225
+    },
+    {
+      "lambda": 0.001,
+      "median_held_path_improvement": -0.1100511865770627,
+      "positive_fraction": 0.225
+    },
+    {
+      "lambda": 0.01,
+      "median_held_path_improvement": -0.07096487385488692,
+      "positive_fraction": 0.275
+    },
+    {
+      "lambda": 0.1,
+      "median_held_path_improvement": -0.01288405109083035,
+      "positive_fraction": 0.425
+    },
+    {
+      "lambda": 1.0,
+      "median_held_path_improvement": 0.015038065071699191,
+      "positive_fraction": 0.525
+    },
+    {
+      "lambda": 10.0,
+      "median_held_path_improvement": 0.028390109293918775,
+      "positive_fraction": 0.7
+    },
+    {
+      "lambda": 100.0,
+      "median_held_path_improvement": 0.022758158505853943,
+      "positive_fraction": 0.875
+    }
+  ],
+  "held_path_summary": {
+    "0": {
+      "median_improvement": 0.014334609069435233,
+      "positive_fraction": 0.825
+    },
+    "1": {
+      "median_improvement": 0.030375277506210774,
+      "positive_fraction": 0.775
+    },
+    "2": {
+      "median_improvement": 0.024489053472568356,
+      "positive_fraction": 0.975
+    },
+    "3": {
+      "median_improvement": 0.0226986748408613,
+      "positive_fraction": 0.775
+    }
+  },
+  "held_path_positive_median_count": 4,
+  "median_held_path_squared_residual_improvement": 0.02069175080109148,
+  "wrong_source_reflection_median_improvement": 0.016093545604967896,
+  "matched_minus_wrong_median_improvement": 0.004598205196123584,
+  "zero_source_limit_norm": 0.0,
+  "development_source_profile_promoted": false,
+  "controls_completed": [
+    "background-plane baseline",
+    "leave-one-path-out prediction",
+    "five-point then boundary-extended seven-point regularization scan",
+    "fair identically trained source-reflection control",
+    "zero-source known limit"
+  ],
+  "controls_not_run_after_primary_failure": [
+    "source-grid resolution perturbation",
+    "beam perturbation",
+    "astrometric perturbation",
+    "leave-one-channel-block-out prediction"
+  ],
+  "short_circuit_rule": "If the frozen primary 5 percent LOO promotion threshold fails, downstream stability controls cannot rescue or promote the family and are not run.",
+  "visibility_level_confirmation_complete": false,
+  "physical_D_Zp_identified": false,
+  "transition_readiness_increment": 0,
+  "co109_header_read": false,
+  "co109_pixels_read": false,
+  "endpoint_authorized": false,
+  "promotion_rule": "at least 3/4 paths have positive median held-path improvement and the all-record median improvement exceeds 5 percent",
+  "failure_modes": [
+    "restored-image covariance is only a stationary beam-correlated approximation",
+    "lens/source-grid/regularization mismatch can suppress held-path prediction",
+    "a promoted open-line source profile would still not uniquely select CO(10-9) excitation-opacity response"
+  ],
+  "claim_boundary": "Development-only source-profile reconstruction from already-open restored images. Promotion, if any, is not visibility-level validation, does not identify D_Zp or a physical parent transfer, does not increase the sealed transition gate, and does not authorize or score CO(10-9)."
+}

@@ -1,0 +1,188 @@
+{
+  "schema": "ngc3726_source_owned_zero_point_projector_v01",
+  "status": "SOURCE_DERIVED_ZERO_POINT_PROJECTOR_PASS_OPENED_SHAPE_NULL_NOT_REJECTED",
+  "galaxy": "NGC3726",
+  "analysis_role": "operator validation on an already opened independent-survey development case",
+  "confirmatory_endpoint": false,
+  "endpoint_rescored": false,
+  "n_common_radii": 6,
+  "nuisance_parameters": [
+    "delta_vsys_halpha_km_s",
+    "delta_vsys_hi_km_s"
+  ],
+  "nuisance_tangent": [
+    [
+      -2.0,
+      2.0
+    ],
+    [
+      -2.0,
+      2.0
+    ],
+    [
+      -2.0,
+      2.0
+    ],
+    [
+      -2.0,
+      2.0
+    ],
+    [
+      -2.0,
+      2.0
+    ],
+    [
+      -2.0,
+      2.0
+    ]
+  ],
+  "nuisance_rank": 1,
+  "projector_rank": 5,
+  "projector": [
+    [
+      0.8982171563500844,
+      -0.13235495830687227,
+      -0.17822769682820863,
+      -0.24259092022640985,
+      -0.18307505814343047,
+      -0.16196852284516236
+    ],
+    [
+      -0.10178284364991565,
+      0.8676450416931277,
+      -0.17822769682820863,
+      -0.24259092022640985,
+      -0.18307505814343047,
+      -0.16196852284516236
+    ],
+    [
+      -0.10178284364991565,
+      -0.13235495830687227,
+      0.8217723031717914,
+      -0.24259092022640985,
+      -0.18307505814343047,
+      -0.16196852284516236
+    ],
+    [
+      -0.10178284364991565,
+      -0.13235495830687227,
+      -0.17822769682820863,
+      0.7574090797735902,
+      -0.18307505814343047,
+      -0.16196852284516236
+    ],
+    [
+      -0.10178284364991565,
+      -0.13235495830687227,
+      -0.17822769682820863,
+      -0.24259092022640985,
+      0.8169249418565695,
+      -0.16196852284516236
+    ],
+    [
+      -0.10178284364991565,
+      -0.13235495830687227,
+      -0.17822769682820863,
+      -0.24259092022640985,
+      -0.18307505814343047,
+      0.8380314771548376
+    ]
+  ],
+  "projected_delta_odd_los_km_s": [
+    -2.6872217702026475,
+    -13.94329060302288,
+    -12.403857290522986,
+    -2.488682776146341,
+    12.526173973260846,
+    16.300633026455607
+  ],
+  "projected_covariance_km2_s2": [
+    [
+      119.12081262840874,
+      -9.928817203922868,
+      -11.464217626440554,
+      -13.929244855186235,
+      -15.693216712243446,
+      -15.527343356232153
+    ],
+    [
+      -9.928817203922865,
+      91.71486143154452,
+      -11.170085085894044,
+      -14.265621964076617,
+      -16.535739446648744,
+      -16.358259040176325
+    ],
+    [
+      -11.464217626440558,
+      -11.170085085894048,
+      59.920264411918424,
+      -13.13998049689211,
+      -14.071832464470505,
+      -14.017121082593686
+    ],
+    [
+      -13.929244855186234,
+      -14.265621964076617,
+      -13.139980496892107,
+      37.66534469576023,
+      -10.054716282650245,
+      -10.179202856848905
+    ],
+    [
+      -15.693216712243448,
+      -16.535739446648748,
+      -14.071832464470504,
+      -10.054716282650247,
+      54.20329687186759,
+      -7.348410737690034
+    ],
+    [
+      -15.527343356232151,
+      -16.35825904017632,
+      -14.017121082593686,
+      -10.179202856848907,
+      -7.348410737690033,
+      62.10123915230482
+    ]
+  ],
+  "shape_zero_statistic": 9.178387104921075,
+  "shape_zero_dof": 5,
+  "shape_zero_p": 0.10215697204645931,
+  "operator_checks": {
+    "nuisance_rank_is_one": true,
+    "projector_rank_is_five": true,
+    "nuisance_annihilated": true,
+    "projector_idempotent": true,
+    "weighted_self_adjoint": true,
+    "finite_shift_invariant": true,
+    "constant_radial_mode_annihilated": true,
+    "matches_previous_constant_residual_statistic": true
+  },
+  "operator_checks_pass": true,
+  "derivation": {
+    "side_convention": "u_r=v_los,r-v_sys and u_a=v_sys-v_los,a after line-of-sight transport",
+    "single_tracer_derivative": "d(u_r-u_a)/d(v_sys)=-2",
+    "cross_tracer_derivatives": "d Delta_O/d(vsys_Halpha,vsys_HI)=(-2,+2)",
+    "rank_result": "the two zero points span one common radial nuisance direction",
+    "projector": "P_perp=I-G(G^T C^-1 G)^+G^T C^-1"
+  },
+  "units": {
+    "delta": "km/s",
+    "nuisance_parameters": "km/s",
+    "nuisance_tangent": "dimensionless",
+    "covariance": "(km/s)^2",
+    "projector": "dimensionless",
+    "statistic": "dimensionless"
+  },
+  "assumptions": [
+    "each published side curve uses one radius-independent systemic velocity",
+    "approaching and receding side signs follow the frozen common convention",
+    "the line-of-sight transport is linear in the side velocities",
+    "the recorded covariance is adequate; missing beam, center, PA, radial, and phase-dependent terms remain limitations"
+  ],
+  "derived_result": "six radii minus one common zero-point nuisance direction leave five shape degrees of freedom; the opened shape-only zero test is not rejected",
+  "interpretation": "The source-derived operator solves the constant velocity-zero-point degeneracy for radial shape tests, but it deliberately cannot test a constant radial signal and supplies no morphology-specific target template.",
+  "next_finite_action": "freeze the same operator plus an independently source-derived nonconstant morphology template on a new, unopened survey/sample",
+  "claim_boundary": "standard kinematic nuisance projection and a preserved null development result; not a Tau detection, physical q_R, parent-morphology attribution, Nature occupation, or dark-matter replacement result"
+}

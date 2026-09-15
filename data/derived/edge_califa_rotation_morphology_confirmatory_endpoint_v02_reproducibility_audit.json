@@ -1,0 +1,748 @@
+{
+  "actual_hashes": {
+    "audit_script": "b7ed4900cc105d335f0e9605bb03e8f1e13c1af830fb7ad47a44e7b10277ea4c",
+    "calibration_csv": "2eb488ea6e0ea25fb4059392b7b4a0e92a76ee35fe4c3b8ef39f2705a17e1d9c",
+    "calibration_json": "a4e681f5a3ff1dd112b9f1bde0f17126e940af1777277242388301de539eebb9",
+    "coefficient_csv": "f567e6a399cfbefd59c022c3f350d2a52317f12ef443f61986f3b975a7449ec9",
+    "endpoint_json": "b8a901ae13d6de9e86714705c90342fb0e797cc78dce6cdeb8c441062f801832",
+    "endpoint_script": "6f6f37e3c1090e93a5a1d011dfa0cda5b5c5e10a0428b3e9d6e29504ad1fa7f8",
+    "implementation_json": "b9c790696e412f5f7d28c63fcae4507295a2daeb0edf757ba6277088c93cabca",
+    "preregistration_json": "f73e3c1998d7427830aacbd929ee58b92c8714fb9bbc6f7aade64dd7da32becf",
+    "raw_input_md5": "b7e308d0985e8f85ef7afbe1ec4c48b8",
+    "raw_input_sha256": "297a3b7ca6d0c1ee699dd335bfa1f40581d9e96614715382a75f32d4efa0275f",
+    "scoring_contract_json": "7ca5a45819762b1e47b3b5f312a0c58bc411b59838a9eced07e14f4056662788",
+    "source_matrices_npz": "1a805d0522fd36c3db14663cfa49b8769f64dcc12940059cb4eb854b87f03d87",
+    "source_preflight_json": "a57a93a1ea6bc813f92957a4b39eb7ea40080738fb84a59b00e138e2d7e002db"
+  },
+  "audit_scope": "independent reconstruction from saved frozen artifacts and the hash-matched public raw packet; no import of endpoint/scoring implementation",
+  "checks": [
+    {
+      "evidence": {
+        "actual": "b8a901ae13d6de9e86714705c90342fb0e797cc78dce6cdeb8c441062f801832",
+        "sidecar": "b8a901ae13d6de9e86714705c90342fb0e797cc78dce6cdeb8c441062f801832"
+      },
+      "id": "hash.sidecar.endpoint_json",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "actual": "f73e3c1998d7427830aacbd929ee58b92c8714fb9bbc6f7aade64dd7da32becf",
+        "sidecar": "f73e3c1998d7427830aacbd929ee58b92c8714fb9bbc6f7aade64dd7da32becf"
+      },
+      "id": "hash.sidecar.preregistration_json",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "actual": "7ca5a45819762b1e47b3b5f312a0c58bc411b59838a9eced07e14f4056662788",
+        "sidecar": "7ca5a45819762b1e47b3b5f312a0c58bc411b59838a9eced07e14f4056662788"
+      },
+      "id": "hash.sidecar.scoring_contract_json",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "actual": "a57a93a1ea6bc813f92957a4b39eb7ea40080738fb84a59b00e138e2d7e002db",
+        "sidecar": "a57a93a1ea6bc813f92957a4b39eb7ea40080738fb84a59b00e138e2d7e002db"
+      },
+      "id": "hash.sidecar.source_preflight_json",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "actual": "b9c790696e412f5f7d28c63fcae4507295a2daeb0edf757ba6277088c93cabca",
+        "sidecar": "b9c790696e412f5f7d28c63fcae4507295a2daeb0edf757ba6277088c93cabca"
+      },
+      "id": "hash.sidecar.implementation_json",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "actual": "a4e681f5a3ff1dd112b9f1bde0f17126e940af1777277242388301de539eebb9",
+        "sidecar": "a4e681f5a3ff1dd112b9f1bde0f17126e940af1777277242388301de539eebb9"
+      },
+      "id": "hash.sidecar.calibration_json",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "endpoint_implementation_sha256": "6f6f37e3c1090e93a5a1d011dfa0cda5b5c5e10a0428b3e9d6e29504ad1fa7f8",
+        "input_md5": "b7e308d0985e8f85ef7afbe1ec4c48b8",
+        "input_sha256": "297a3b7ca6d0c1ee699dd335bfa1f40581d9e96614715382a75f32d4efa0275f",
+        "preregistration_sha256": "f73e3c1998d7427830aacbd929ee58b92c8714fb9bbc6f7aade64dd7da32becf",
+        "scoring_contract_sha256": "7ca5a45819762b1e47b3b5f312a0c58bc411b59838a9eced07e14f4056662788"
+      },
+      "id": "hash.endpoint_to_preregistration",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "endpoint_implementation_sha256": "6f6f37e3c1090e93a5a1d011dfa0cda5b5c5e10a0428b3e9d6e29504ad1fa7f8",
+        "input_md5": "b7e308d0985e8f85ef7afbe1ec4c48b8",
+        "input_sha256": "297a3b7ca6d0c1ee699dd335bfa1f40581d9e96614715382a75f32d4efa0275f",
+        "preregistration_sha256": "f73e3c1998d7427830aacbd929ee58b92c8714fb9bbc6f7aade64dd7da32becf",
+        "scoring_contract_sha256": "7ca5a45819762b1e47b3b5f312a0c58bc411b59838a9eced07e14f4056662788"
+      },
+      "id": "hash.endpoint_to_contract",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "endpoint_implementation_sha256": "6f6f37e3c1090e93a5a1d011dfa0cda5b5c5e10a0428b3e9d6e29504ad1fa7f8",
+        "input_md5": "b7e308d0985e8f85ef7afbe1ec4c48b8",
+        "input_sha256": "297a3b7ca6d0c1ee699dd335bfa1f40581d9e96614715382a75f32d4efa0275f",
+        "preregistration_sha256": "f73e3c1998d7427830aacbd929ee58b92c8714fb9bbc6f7aade64dd7da32becf",
+        "scoring_contract_sha256": "7ca5a45819762b1e47b3b5f312a0c58bc411b59838a9eced07e14f4056662788"
+      },
+      "id": "hash.endpoint_to_executed_script",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "6f6f37e3c1090e93a5a1d011dfa0cda5b5c5e10a0428b3e9d6e29504ad1fa7f8",
+      "id": "hash.implementation_to_script",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "f73e3c1998d7427830aacbd929ee58b92c8714fb9bbc6f7aade64dd7da32becf",
+      "id": "hash.implementation_to_preregistration",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "7ca5a45819762b1e47b3b5f312a0c58bc411b59838a9eced07e14f4056662788",
+      "id": "hash.implementation_to_contract",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "a57a93a1ea6bc813f92957a4b39eb7ea40080738fb84a59b00e138e2d7e002db",
+      "id": "hash.implementation_to_preflight",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "f73e3c1998d7427830aacbd929ee58b92c8714fb9bbc6f7aade64dd7da32becf",
+      "id": "hash.contract_to_preregistration",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "a57a93a1ea6bc813f92957a4b39eb7ea40080738fb84a59b00e138e2d7e002db",
+      "id": "hash.contract_to_preflight",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "1a805d0522fd36c3db14663cfa49b8769f64dcc12940059cb4eb854b87f03d87",
+      "id": "hash.contract_to_source_matrices",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "2eb488ea6e0ea25fb4059392b7b4a0e92a76ee35fe4c3b8ef39f2705a17e1d9c",
+      "id": "hash.calibration_json_to_csv",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "2eb488ea6e0ea25fb4059392b7b4a0e92a76ee35fe4c3b8ef39f2705a17e1d9c",
+      "id": "hash.preregistration_to_calibration_csv",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "b7e308d0985e8f85ef7afbe1ec4c48b8",
+      "id": "hash.raw_input_md5",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "297a3b7ca6d0c1ee699dd335bfa1f40581d9e96614715382a75f32d4efa0275f",
+      "id": "hash.raw_input_sha256",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": 84941807,
+      "id": "hash.raw_input_size",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "contract": [
+          "IC4566",
+          "NGC2730",
+          "NGC3811",
+          "NGC6004",
+          "NGC6060",
+          "NGC6186",
+          "NGC6301"
+        ],
+        "endpoint": [
+          "IC4566",
+          "NGC2730",
+          "NGC3811",
+          "NGC6004",
+          "NGC6060",
+          "NGC6186",
+          "NGC6301"
+        ],
+        "preflight": [
+          "IC4566",
+          "NGC2730",
+          "NGC3811",
+          "NGC6004",
+          "NGC6060",
+          "NGC6186",
+          "NGC6301"
+        ],
+        "preregistration": [
+          "IC4566",
+          "NGC2730",
+          "NGC3811",
+          "NGC6004",
+          "NGC6060",
+          "NGC6186",
+          "NGC6301"
+        ]
+      },
+      "id": "cohort.seven_frozen_galaxies",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "per_galaxy": {
+          "IC4566": 20,
+          "NGC2730": 20,
+          "NGC3811": 20,
+          "NGC6004": 20,
+          "NGC6060": 20,
+          "NGC6186": 20,
+          "NGC6301": 20
+        },
+        "rows": 140
+      },
+      "id": "coefficients.shape_7_by_20",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "expected_entries": 140,
+        "observed_entries": 140
+      },
+      "id": "coefficients.canonical_order",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "f567e6a399cfbefd59c022c3f350d2a52317f12ef443f61986f3b975a7449ec9",
+      "id": "coefficients.finite",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "maximum_absolute_residual_km_s": 3.552713678800501e-15
+      },
+      "id": "coefficients.raw_reconstruction",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": "row count, occupied sectors, and radial edges match raw reconstruction",
+      "id": "coefficients.metadata_reconstruction",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "maximum_saved_metric_absolute_residual": 0.0,
+        "null_absolute_tolerance": 1e-08
+      },
+      "id": "matrices.rank_null_and_score_reconstruction",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "control_max_t_adjusted_p": [
+          0.9765625,
+          0.9453125,
+          0.3359375
+        ],
+        "control_studentized_statistics": [
+          -0.8407936033154784,
+          -0.5232312674954377,
+          0.9893389883758851
+        ],
+        "median_primary_d": 0.11020194395988532,
+        "n_exact_sign_vectors": 128,
+        "n_galaxies": 7,
+        "observed_primary_mean_d": -0.058679293503004035,
+        "positive_primary_count": 4,
+        "primary_exact_one_sided_p": 0.6015625,
+        "primary_tail_count": 77
+      },
+      "id": "inference.exact_shared_sign_reconstruction",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "denominator": 128,
+        "p": 0.6015625,
+        "tail_count": 77
+      },
+      "id": "inference.primary_p_is_77_over_128",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": [
+        0.9765625,
+        0.9453125,
+        0.3359375
+      ],
+      "id": "inference.max_t_controls_reconstructed",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "evidence": {
+        "expected_status": "SOURCE_DEVELOPED_EXTERNAL_MORPHOLOGY_ALIGNMENT_PREVALIDATION_FAIL",
+        "gates": {
+          "all_three_max_t_adjusted_control_p_below_0_05": false,
+          "median_primary_d_positive": true,
+          "primary_exact_p_below_0_01": false,
+          "strictly_more_than_60_percent_primary_d_positive": false
+        }
+      },
+      "id": "decision.negative_status_reconstructed",
+      "passed": true,
+      "severity": "error"
+    }
+  ],
+  "claim_boundary": "This audit confirms the saved numerical negative endpoint conditional on the hash-matched raw packet and current artifacts. It does not establish freeze chronology, a Tau-specific law, a beyond-standard component, dark-sector physics, or exhaustive conventional comparison.",
+  "coefficient_structure": {
+    "components_per_galaxy": 20,
+    "maximum_absolute_raw_reconstruction_residual_km_s": 3.552713678800501e-15,
+    "mode_order": [
+      "m1_cos",
+      "m1_sin",
+      "m2_cos",
+      "m2_sin"
+    ],
+    "n_galaxies": 7,
+    "n_rows": 140
+  },
+  "failed_error_checks": [],
+  "input_path_used": "/private/tmp/edge_carma.2d_smo7.hdf5",
+  "limitations": [
+    {
+      "id": "freeze_chronology_not_externally_anchored",
+      "impact": "The current bytes and their internal hash chain agree, but local sidecars do not independently prove that preregistration and implementation bytes predated endpoint opening. A trusted commit, release, registry, or timestamp is required for that historical claim."
+    },
+    {
+      "id": "implementation_manifest_runtime_trust_gap",
+      "impact": "The endpoint runtime reads the implementation manifest to obtain the expected script hash but does not first pin that manifest to its sidecar or another immutable anchor. The present audit verifies the current manifest sidecar and script relation only."
+    },
+    {
+      "id": "coefficient_csv_not_in_original_endpoint_provenance",
+      "impact": "The original endpoint JSON/sidecar does not bind the coefficient CSV. This audit records its current SHA-256 and independently reconstructs every coefficient from the hash-matched raw packet."
+    },
+    {
+      "id": "external_raw_packet_not_vendored",
+      "impact": "Full matrix-level reproduction requires the 84,941,807-byte public HDF5 packet. It is identified by DOI, MD5 and SHA-256 but is not stored in the repository."
+    },
+    {
+      "id": "negative_endpoint_not_tau_specific",
+      "impact": "The reproduced failure is a negative result for this development-informed proxy only. It neither validates nor falsifies the general Tau Core architecture, and the declared standard/eDIG span is not exhaustive."
+    }
+  ],
+  "reconstructed_decision_gates": {
+    "all_three_max_t_adjusted_control_p_below_0_05": false,
+    "median_primary_d_positive": true,
+    "primary_exact_p_below_0_01": false,
+    "strictly_more_than_60_percent_primary_d_positive": false
+  },
+  "reconstructed_exact_inference": {
+    "control_max_t_adjusted_p": [
+      0.9765625,
+      0.9453125,
+      0.3359375
+    ],
+    "control_studentized_statistics": [
+      -0.8407936033154784,
+      -0.5232312674954377,
+      0.9893389883758851
+    ],
+    "median_primary_d": 0.11020194395988532,
+    "n_exact_sign_vectors": 128,
+    "n_galaxies": 7,
+    "observed_primary_mean_d": -0.058679293503004035,
+    "positive_primary_count": 4,
+    "primary_exact_one_sided_p": 0.6015625,
+    "primary_tail_count": 77
+  },
+  "reconstructed_galaxies": {
+    "IC4566": {
+      "control_differences": {
+        "cross_galaxy": -0.023434988181175176,
+        "phase_rotation_pi_over_2": -0.1673728673505993,
+        "radial_reversal": -0.2129002603015125
+      },
+      "primary_d": -0.134569371944429,
+      "rank_and_null_gate_pass": true,
+      "saved_metric_match": true,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 2.0496698676982344e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.6823419593657962,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 7.443114955144824e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.658906971184621,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 4.332683379737416e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.5149690920151969,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 2.3926893695027486e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.46944169906428374,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 1.7261337769864516e-14,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 3.3294913231945342,
+          "source_rank": 8
+        }
+      },
+      "terminal_covariance_minimum_eigenvalue": 1.4885993549743375,
+      "terminal_covariance_rank": 20
+    },
+    "NGC2730": {
+      "control_differences": {
+        "cross_galaxy": 2.296334732631554,
+        "phase_rotation_pi_over_2": 0.681279207123792,
+        "radial_reversal": -0.21180072198300298
+      },
+      "primary_d": 0.9219377392574476,
+      "rank_and_null_gate_pass": true,
+      "saved_metric_match": true,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 1.979015204029796e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.5467757928267795,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 1.5230103402762938e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 2.8431105254583335,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 1.5357919960968314e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 1.2280549999505714,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 4.882488184264892e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.3349750708437765,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 3.2519435892916364e-14,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 20.845814358596357,
+          "source_rank": 8
+        }
+      },
+      "terminal_covariance_minimum_eigenvalue": 0.06433744073662141,
+      "terminal_covariance_rank": 20
+    },
+    "NGC3811": {
+      "control_differences": {
+        "cross_galaxy": 0.1287563824510646,
+        "phase_rotation_pi_over_2": 0.06255618918600744,
+        "radial_reversal": 0.13929326024258395
+      },
+      "primary_d": 0.11020194395988532,
+      "rank_and_null_gate_pass": true,
+      "saved_metric_match": true,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 1.0370059486372849e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.1683641187118697,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 1.9574886647753877e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.2971205011629343,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 2.5205780189415113e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.23092030789787715,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 6.009538703163118e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.30765737895445366,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 1.2592585687308622e-13,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 4.809461651004197,
+          "source_rank": 8
+        }
+      },
+      "terminal_covariance_minimum_eigenvalue": 0.03691761707995416,
+      "terminal_covariance_rank": 20
+    },
+    "NGC6004": {
+      "control_differences": {
+        "cross_galaxy": 0.7364343090012742,
+        "phase_rotation_pi_over_2": 0.5607684285622045,
+        "radial_reversal": 1.5805484014286788
+      },
+      "primary_d": 0.9592503796640525,
+      "rank_and_null_gate_pass": true,
+      "saved_metric_match": true,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 3.70311098241502e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 1.7348119450470956,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 1.5721256999546988e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 2.4712462540483697,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 7.571579028865141e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 2.2955803736093,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 2.029699561301406e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 3.3153603464757744,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 1.5988368055332697e-13,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 15.96287902920195,
+          "source_rank": 8
+        }
+      },
+      "terminal_covariance_minimum_eigenvalue": 0.011743901123275991,
+      "terminal_covariance_rank": 20
+    },
+    "NGC6060": {
+      "control_differences": {
+        "cross_galaxy": 2.3423888588937674,
+        "phase_rotation_pi_over_2": -2.6088051547058093,
+        "radial_reversal": -2.9118987700202235
+      },
+      "primary_d": -1.0594383552774218,
+      "rank_and_null_gate_pass": true,
+      "saved_metric_match": true,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 2.941090471601765e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 7.840582915485791,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 6.240444367834894e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 10.182971774379558,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 5.817082550909412e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 5.231777760779981,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 1.5866499151413296e-11,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 4.928684145465567,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 3.218875474960915e-14,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 15.339110432494286,
+          "source_rank": 8
+        }
+      },
+      "terminal_covariance_minimum_eigenvalue": 0.044651643515919257,
+      "terminal_covariance_rank": 20
+    },
+    "NGC6186": {
+      "control_differences": {
+        "cross_galaxy": -2.19787569029795,
+        "phase_rotation_pi_over_2": -1.802080171890485,
+        "radial_reversal": -1.9607181767665032
+      },
+      "primary_d": -1.9868913463183127,
+      "rank_and_null_gate_pass": true,
+      "saved_metric_match": true,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 8.558700313179076e-14,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 2.7991570224035662,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 2.462022976305926e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.601281332105616,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 1.7382181182778875e-14,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.9970768505130811,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 7.062073936155077e-14,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.8384388456370632,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 3.054211713101264e-15,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 6.705740301421371,
+          "source_rank": 8
+        }
+      },
+      "terminal_covariance_minimum_eigenvalue": 2.0915497584097107,
+      "terminal_covariance_rank": 20
+    },
+    "NGC6301": {
+      "control_differences": {
+        "cross_galaxy": 0.7721346947054604,
+        "phase_rotation_pi_over_2": 1.31280052698427,
+        "radial_reversal": 0.2513266467235192
+      },
+      "primary_d": 0.7787539561377498,
+      "rank_and_null_gate_pass": true,
+      "saved_metric_match": true,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 1.7778953320517596e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.10980040720479446,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 1.3042793987928357e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.8819351019102548,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 9.137363793634509e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 1.4226009341890644,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 7.802994105688224e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.3611270539283136,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 2.1952291493199342e-13,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 7.473795820891245,
+          "source_rank": 8
+        }
+      },
+      "terminal_covariance_minimum_eigenvalue": 0.09361382422352652,
+      "terminal_covariance_rank": 20
+    }
+  },
+  "reconstructed_status": "SOURCE_DEVELOPED_EXTERNAL_MORPHOLOGY_ALIGNMENT_PREVALIDATION_FAIL",
+  "schema": "edge_califa_rotation_morphology_confirmatory_endpoint_v02_reproducibility_audit",
+  "status": "PASS_WITH_PROVENANCE_LIMITATIONS_NEGATIVE_ENDPOINT_CONFIRMED"
+}

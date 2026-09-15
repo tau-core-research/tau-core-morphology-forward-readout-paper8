@@ -1,0 +1,38 @@
+{
+  "status": "OUTER_GEOMETRIC_CAPACITY_PASS_TERMINAL_CLEANLINESS_FAIL_ENDPOINT_BLOCKED",
+  "galaxy": "NGC0925",
+  "prospective_radial_rule": "use only published Schmidt ring centres R>=250 arcsec; first retained centre is 270 arcsec",
+  "retained_ring_count": 6,
+  "retained_radii_arcsec": [
+    270.0,
+    297.0,
+    324.0,
+    351.0,
+    378.0,
+    405.0
+  ],
+  "published_beam_scenarios_arcsec": {
+    "uniform": [
+      22.2,
+      12.6
+    ],
+    "robust_0": [
+      25.3,
+      13.9
+    ],
+    "30_arcsec_taper": [
+      37.9,
+      33.2
+    ]
+  },
+  "minimum_full_half_annulus_capacity_beam_areas": 11.885266,
+  "geometric_capacity_gate": "passes before masking for all three published pilot-cube beams",
+  "mask_occupancy_gate": "not testable without endpoint pixels; the full-area calculation is only an upper capacity bound",
+  "terminal_cleanliness_gate": "fails the current source-only readiness test because the same outer disk is source-described as a minor-merger stream with twisted isovelocity contours, warp/spiral ambiguity, and anomalous HI",
+  "signed_pa_gate": "open; Schmidt defines a sky-plane major-axis PA and rotation sense but the cached text does not explicitly state which PA ray is receding",
+  "disposition": "demote from first clean confirmatory acquisition target; retain only as a preregistered disturbed-system robustness or stronger-terminal case",
+  "next_source_target": "NGC4062",
+  "endpoint_pixels_read": false,
+  "endpoint_allowed": false,
+  "claim_boundary": "The outer annuli have adequate ideal geometric beam capacity, but this neither certifies masked support nor removes known standard-physics terminal contamination. No Tau or parent-morphology inference follows."
+}

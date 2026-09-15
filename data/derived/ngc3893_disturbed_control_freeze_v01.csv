@@ -1,0 +1,5 @@
+radius_arcsec,approaching_present,receding_present,hi_inclination_deg,hi_receding_pa_deg,halpha_a_lower_arcsec,halpha_a_upper_arcsec,halpha_a_lower_weight,halpha_a_upper_weight,halpha_r_lower_arcsec,halpha_r_upper_arcsec,halpha_r_lower_weight,halpha_r_upper_weight,outer_disturbance_template,endpoint_access
+20.0,True,True,49.0,345.0,20.0,20.0,1.0,0.0,19.7,21.9,0.8636363636363633,0.13636363636363674,0,False
+40.0,True,True,49.0,345.0,38.9,41.2,0.5217391304347829,0.47826086956521713,39.9,41.7,0.9444444444444438,0.05555555555555621,0,False
+60.0,True,True,49.0,345.0,58.5,63.7,0.7115384615384617,0.2884615384615383,58.5,60.1,0.06250000000000078,0.9374999999999992,0,False
+80.0,True,True,49.0,346.0,79.6,87.8,0.9512195121951212,0.048780487804878724,73.8,81.9,0.2345679012345684,0.7654320987654316,1,False

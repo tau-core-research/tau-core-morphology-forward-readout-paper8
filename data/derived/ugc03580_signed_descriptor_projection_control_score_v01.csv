@@ -1,0 +1,7 @@
+model_id,role,valid_full_endpoint,n_points,rmse_km_s,mae_km_s,bias_km_s,chi2,chi2_per_point,aic_known_errors,bic_known_errors,endpoint_fit_parameters,imported_summary_scalars,claim_boundary
+TPG_V6_UNCORRECTED,fixed_baseline,True,47,25.4945261508,21.7886656011,19.6320962062,3700.36742695,78.73122185,3700.36742695,3700.36742695,0,0,ugc03580_standard_projection_systematics_control_not_tau_endpoint
+MOND_UNCORRECTED,fixed_baseline,True,47,27.172706555,23.4836853102,22.8704982501,4435.66399061,94.3758295874,4435.66399061,4435.66399061,0,0,ugc03580_standard_projection_systematics_control_not_tau_endpoint
+TPG_V6_SOURCE_PROJECTION_CONTROL,standard_projection_systematics_control,True,47,28.5964015681,24.7310803783,23.7187554061,4940.04809438,105.107406263,4940.04809438,4940.04809438,0,0,ugc03580_standard_projection_systematics_control_not_tau_endpoint
+MOND_SOURCE_PROJECTION_CONTROL,standard_projection_systematics_control,True,47,30.7035574957,27.6427583421,27.0911560292,6159.84761619,131.060587578,6159.84761619,6159.84761619,0,0,ugc03580_standard_projection_systematics_control_not_tau_endpoint
+NEWTONIAN_SOURCE_PROJECTION_CONTROL,standard_projection_systematics_control,True,47,35.3948065473,28.9701961771,-9.98121194389,18882.6089751,401.757637768,18882.6089751,18882.6089751,0,0,ugc03580_standard_projection_systematics_control_not_tau_endpoint
+NEWTONIAN_UNCORRECTED,fixed_baseline,True,47,36.0120113135,28.8053513275,-12.8174941286,20411.6537332,434.290504962,20411.6537332,20411.6537332,0,0,ugc03580_standard_projection_systematics_control_not_tau_endpoint

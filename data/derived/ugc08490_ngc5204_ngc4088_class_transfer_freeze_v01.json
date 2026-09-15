@@ -1,0 +1,72 @@
+{
+  "schema": "tau_core_ugc08490_ngc5204_ngc4088_class_transfer_freeze_v01",
+  "freeze_date": "2026-08-30",
+  "freeze_status": "RETROSPECTIVE_SOURCE_FROZEN_CLASS_TRANSFER_READY_NOT_SCORED",
+  "formula_id": "NGC4088_WARP_HISTORY_CLASS_V1__UGC08490_TRANSFER_V01",
+  "galaxy": "UGC08490",
+  "alias": "NGC5204",
+  "source_body": "data/derived/ugc08490_ngc5204_warp_body_v01.json",
+  "source_body_sha256": "220b4fd53636e1b9b50b6b7d513e89b45b6f0c23a5f3e8077c32e430da9725f2",
+  "source_selection": {
+    "criterion": "promoted source-native outer two-plane warp plus public SPARC endpoint",
+    "selection_uses_pointwise_vobs_or_residual": false,
+    "target_endpoint_opened_in_prior_other_analysis": true,
+    "prospective_blind_endpoint": false,
+    "epistemic_role": "retrospective unchanged-law class transfer"
+  },
+  "formula": {
+    "readout": "v_readout^2(R)=v_Newtonian_baryonic^2(R)+lambda_w*C_warp(R/R_HI;x_w,p)",
+    "kernel": "C_warp(x;x_w,p)=q_warp*max(0,(x-x_w)/(1-x_w))^p",
+    "amplitude": "lambda_w=sigma_warp*q_warp*x_w*Vflat^2",
+    "q_warp": 1.0,
+    "sigma_warp": 1.0,
+    "turn_on_power": 1.0,
+    "post_freeze_retuning_allowed": false
+  },
+  "frozen_source_inputs": {
+    "warp_onset_arcsec": 156.0,
+    "distance_mpc": 4.65,
+    "r_hi_kpc": 7.8,
+    "vflat_km_s_primary": 78.6,
+    "vflat_error_km_s": 3.8,
+    "source_outer_rotation_speed_km_s_sensitivity": 82.5,
+    "inner_outer_mutual_inclination_deg": 41.1,
+    "source_rotation_rise_fraction": 0.22
+  },
+  "derived_frozen_values": {
+    "warp_onset_kpc_distance_harmonized": 3.5168351392625996,
+    "x_w": 0.4508762999054615,
+    "lambda_w_primary_km2_s2": 2785.495745763945,
+    "lambda_w_source_speed_sensitivity_km2_s2": 3068.7768162315474
+  },
+  "independence_audit": {
+    "pointwise_endpoint_curve_read_by_freeze": false,
+    "vobs_or_residual_used_to_choose_x_w_q_sigma_p": false,
+    "observed_catalog_summary_Vflat_used": true,
+    "observed_catalog_summary_RHI_used": true,
+    "fully_kinematically_independent_amplitude_prediction": false,
+    "note": "Vflat and RHI are published SPARC summary inputs. The transfer tests the unchanged morphology-conditioned radial law, not a zero-information prediction of its complete dimensional amplitude."
+  },
+  "predeclared_controls": {
+    "primary_normalization": "SPARC_master_Vflat",
+    "normalization_sensitivity": "Jozsa_TiRiFiC_outer_rotation_speed",
+    "standard_comparators": [
+      "Newtonian_baryonic",
+      "MOND_RAR"
+    ],
+    "morphology_controls": [
+      "no_warp_q0",
+      "wrong_onset_NGC4088_xw",
+      "wrong_turn_on_p2",
+      "wrong_sign_sigma_minus1"
+    ],
+    "score": "error-weighted_chi2_and_unweighted_RMSE",
+    "radial_diagnostics": [
+      "pre_onset",
+      "post_onset"
+    ]
+  },
+  "formula_frozen_before_current_endpoint_scoring": true,
+  "endpoint_scores_allowed_in_this_step": false,
+  "claim_boundary": "retrospective_source_frozen_class_transfer_not_tau_validation"
+}

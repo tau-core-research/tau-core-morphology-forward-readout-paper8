@@ -1,0 +1,851 @@
+{
+  "schema": "tau-core.paper8.sdp81-4d-corridor-proxy-covariance-robustness.v01",
+  "status": "DIAGNOSTIC_ONLY_NOT_ENDPOINT",
+  "verdict": "WEAK_PATH_ORDER_COMPATIBILITY_NOT_MODEL_SELECTION",
+  "model": "data/derived/sdp81_4d_corridor_proxy_diagnostic_freeze_v01.json",
+  "covariance_method": "sample covariance of geometry-selected 0.12-arcsec blank apertures on channels 47--52, propagated to centered log modes by the delta method",
+  "geometry_records": [
+    {
+      "inner_radius_arcsec": 2.5,
+      "outer_radius_arcsec": 4.5,
+      "grid_step_arcsec": 0.4,
+      "blank_aperture_count": 273,
+      "channel_covariance": [
+        [
+          9.104513714503598e-09,
+          6.774928212984061e-09,
+          2.316751267447604e-09,
+          5.757573120496687e-10,
+          1.290194653076324e-09,
+          2.0279075726952477e-09
+        ],
+        [
+          6.774928212984061e-09,
+          9.255658754116381e-09,
+          6.128579644563041e-09,
+          2.3685998081052717e-09,
+          1.4472616956424452e-09,
+          1.664931053061018e-09
+        ],
+        [
+          2.316751267447604e-09,
+          6.128579644563041e-09,
+          8.646932142938292e-09,
+          6.4403844599163795e-09,
+          2.535272236460655e-09,
+          6.822914706105751e-10
+        ],
+        [
+          5.757573120496687e-10,
+          2.3685998081052717e-09,
+          6.4403844599163795e-09,
+          8.854084429021623e-09,
+          5.962546458175385e-09,
+          1.8231709818091834e-09
+        ],
+        [
+          1.290194653076324e-09,
+          1.4472616956424452e-09,
+          2.535272236460655e-09,
+          5.962546458175385e-09,
+          8.253644435784015e-09,
+          6.248987645072391e-09
+        ],
+        [
+          2.0279075726952477e-09,
+          1.664931053061018e-09,
+          6.822914706105751e-10,
+          1.8231709818091834e-09,
+          6.248987645072391e-09,
+          1.001084145061463e-08
+        ]
+      ],
+      "channel_covariance_condition_number": 142.71058257060344,
+      "matched_score": 36.5144472554203,
+      "lossless_score": 35.44021930105707,
+      "matched_beats_lossless": false,
+      "matched_beats_wrong_median": true,
+      "matched_beats_every_wrong_assignment": false,
+      "wrong_assignment_fraction_not_worse": 0.4782608695652174,
+      "scale_sensitivity": [
+        {
+          "scale": 0.0,
+          "matched_score": 35.44021930105707
+        },
+        {
+          "scale": 0.25,
+          "matched_score": 35.07827369218623
+        },
+        {
+          "scale": 0.5,
+          "matched_score": 34.97006178168057
+        },
+        {
+          "scale": 1.0,
+          "matched_score": 36.5144472554203
+        },
+        {
+          "scale": 2.0,
+          "matched_score": 54.006906510607834
+        },
+        {
+          "scale": 4.0,
+          "matched_score": 479.7442348005558
+        }
+      ],
+      "posthoc_preferred_scale": 0.5
+    },
+    {
+      "inner_radius_arcsec": 2.5,
+      "outer_radius_arcsec": 4.5,
+      "grid_step_arcsec": 0.5,
+      "blank_aperture_count": 184,
+      "channel_covariance": [
+        [
+          1.0432811457358458e-08,
+          7.667217842480011e-09,
+          2.76188986681329e-09,
+          6.304713818652127e-10,
+          8.54041138872226e-10,
+          2.2445187591722237e-09
+        ],
+        [
+          7.667217842480011e-09,
+          9.939962710361825e-09,
+          5.698063677488536e-09,
+          1.3796224842525046e-09,
+          7.925445573867651e-10,
+          1.896302085436272e-09
+        ],
+        [
+          2.76188986681329e-09,
+          5.698063677488536e-09,
+          7.48261950828261e-09,
+          5.226105576324022e-09,
+          1.7409495163221031e-09,
+          7.145733588887793e-10
+        ],
+        [
+          6.304713818652127e-10,
+          1.3796224842525046e-09,
+          5.226105576324022e-09,
+          7.853472542311644e-09,
+          5.2331296078984155e-09,
+          1.7145501655934976e-09
+        ],
+        [
+          8.54041138872226e-10,
+          7.925445573867651e-10,
+          1.7409495163221031e-09,
+          5.2331296078984155e-09,
+          7.987437683926823e-09,
+          5.801592714492942e-09
+        ],
+        [
+          2.2445187591722237e-09,
+          1.896302085436272e-09,
+          7.145733588887793e-10,
+          1.7145501655934976e-09,
+          5.801592714492942e-09,
+          8.328132593349567e-09
+        ]
+      ],
+      "channel_covariance_condition_number": 123.58081170358788,
+      "matched_score": 33.42412066886002,
+      "lossless_score": 34.91771637863044,
+      "matched_beats_lossless": true,
+      "matched_beats_wrong_median": true,
+      "matched_beats_every_wrong_assignment": false,
+      "wrong_assignment_fraction_not_worse": 0.43478260869565216,
+      "scale_sensitivity": [
+        {
+          "scale": 0.0,
+          "matched_score": 34.91771637863044
+        },
+        {
+          "scale": 0.25,
+          "matched_score": 34.16542832440753
+        },
+        {
+          "scale": 0.5,
+          "matched_score": 33.53227238342427
+        },
+        {
+          "scale": 1.0,
+          "matched_score": 33.42412066886002
+        },
+        {
+          "scale": 2.0,
+          "matched_score": 43.433479380805366
+        },
+        {
+          "scale": 4.0,
+          "matched_score": 329.0656110069257
+        }
+      ],
+      "posthoc_preferred_scale": 1.0
+    },
+    {
+      "inner_radius_arcsec": 2.5,
+      "outer_radius_arcsec": 4.5,
+      "grid_step_arcsec": 0.6,
+      "blank_aperture_count": 120,
+      "channel_covariance": [
+        [
+          9.510049874871006e-09,
+          7.639491136187928e-09,
+          3.4916330927530016e-09,
+          1.220009611052889e-09,
+          1.70275579608851e-11,
+          3.163368858848135e-11
+        ],
+        [
+          7.639491136187928e-09,
+          9.996367085721108e-09,
+          6.792012359246484e-09,
+          2.7965259170301247e-09,
+          1.1925243227029872e-10,
+          1.992450356180326e-10
+        ],
+        [
+          3.4916330927530016e-09,
+          6.792012359246484e-09,
+          8.801286502465277e-09,
+          6.644174707791537e-09,
+          2.129073363775325e-09,
+          3.9193190145900303e-10
+        ],
+        [
+          1.220009611052889e-09,
+          2.7965259170301247e-09,
+          6.644174707791537e-09,
+          9.420649021487442e-09,
+          6.358019787662374e-09,
+          1.7669445942645217e-09
+        ],
+        [
+          1.70275579608851e-11,
+          1.1925243227029872e-10,
+          2.129073363775325e-09,
+          6.358019787662374e-09,
+          8.634355260037975e-09,
+          5.7963938056313125e-09
+        ],
+        [
+          3.163368858848135e-11,
+          1.992450356180326e-10,
+          3.9193190145900303e-10,
+          1.7669445942645217e-09,
+          5.7963938056313125e-09,
+          9.445730644506885e-09
+        ]
+      ],
+      "channel_covariance_condition_number": 110.6634370459398,
+      "matched_score": 30.91329327689904,
+      "lossless_score": 30.619954653447937,
+      "matched_beats_lossless": false,
+      "matched_beats_wrong_median": true,
+      "matched_beats_every_wrong_assignment": false,
+      "wrong_assignment_fraction_not_worse": 0.43478260869565216,
+      "scale_sensitivity": [
+        {
+          "scale": 0.0,
+          "matched_score": 30.619954653447937
+        },
+        {
+          "scale": 0.25,
+          "matched_score": 30.20170734421526
+        },
+        {
+          "scale": 0.5,
+          "matched_score": 29.984068561251974
+        },
+        {
+          "scale": 1.0,
+          "matched_score": 30.91329327689904
+        },
+        {
+          "scale": 2.0,
+          "matched_score": 43.315055879881754
+        },
+        {
+          "scale": 4.0,
+          "matched_score": 371.98178035475195
+        }
+      ],
+      "posthoc_preferred_scale": 0.5
+    },
+    {
+      "inner_radius_arcsec": 3.0,
+      "outer_radius_arcsec": 5.0,
+      "grid_step_arcsec": 0.4,
+      "blank_aperture_count": 312,
+      "channel_covariance": [
+        [
+          8.624110491050862e-09,
+          5.87595792438289e-09,
+          1.6377258215780336e-09,
+          -4.605684948906868e-10,
+          -7.952506848629982e-11,
+          1.172427936607298e-09
+        ],
+        [
+          5.87595792438289e-09,
+          8.059034212656244e-09,
+          4.993264460186011e-09,
+          1.2287348817619584e-09,
+          1.6816158002267535e-10,
+          4.600634239265086e-10
+        ],
+        [
+          1.6377258215780336e-09,
+          4.993264460186011e-09,
+          7.255488521335573e-09,
+          5.421373726665905e-09,
+          1.574658421255712e-09,
+          -2.4770155488789054e-10
+        ],
+        [
+          -4.605684948906868e-10,
+          1.2287348817619584e-09,
+          5.421373726665905e-09,
+          8.296177393149967e-09,
+          5.340666963788635e-09,
+          1.249736394126756e-09
+        ],
+        [
+          -7.952506848629982e-11,
+          1.6816158002267535e-10,
+          1.574658421255712e-09,
+          5.340666963788635e-09,
+          8.070686004505281e-09,
+          5.7780885631833835e-09
+        ],
+        [
+          1.172427936607298e-09,
+          4.600634239265086e-10,
+          -2.4770155488789054e-10,
+          1.249736394126756e-09,
+          5.7780885631833835e-09,
+          8.960512909619904e-09
+        ]
+      ],
+      "channel_covariance_condition_number": 91.6647430383483,
+      "matched_score": 36.49026906476263,
+      "lossless_score": 36.99601406245405,
+      "matched_beats_lossless": true,
+      "matched_beats_wrong_median": true,
+      "matched_beats_every_wrong_assignment": false,
+      "wrong_assignment_fraction_not_worse": 0.43478260869565216,
+      "scale_sensitivity": [
+        {
+          "scale": 0.0,
+          "matched_score": 36.99601406245405
+        },
+        {
+          "scale": 0.25,
+          "matched_score": 36.438522549031575
+        },
+        {
+          "scale": 0.5,
+          "matched_score": 36.03098867841495
+        },
+        {
+          "scale": 1.0,
+          "matched_score": 36.49026906476263
+        },
+        {
+          "scale": 2.0,
+          "matched_score": 48.808695655380205
+        },
+        {
+          "scale": 4.0,
+          "matched_score": 392.9572928815829
+        }
+      ],
+      "posthoc_preferred_scale": 0.5
+    },
+    {
+      "inner_radius_arcsec": 3.0,
+      "outer_radius_arcsec": 5.0,
+      "grid_step_arcsec": 0.5,
+      "blank_aperture_count": 208,
+      "channel_covariance": [
+        [
+          9.239138422478703e-09,
+          6.81133075872993e-09,
+          2.5381893296687663e-09,
+          3.895279560542371e-10,
+          2.2196959978729667e-10,
+          1.240996845797064e-09
+        ],
+        [
+          6.81133075872993e-09,
+          9.02125515691795e-09,
+          5.623438961514048e-09,
+          1.8264480647569108e-09,
+          9.148953074530658e-10,
+          1.1590003798426536e-09
+        ],
+        [
+          2.5381893296687663e-09,
+          5.623438961514048e-09,
+          8.216794747831746e-09,
+          6.335027749668292e-09,
+          2.0177112258516305e-09,
+          1.7881778293185335e-10
+        ],
+        [
+          3.895279560542371e-10,
+          1.8264480647569108e-09,
+          6.335027749668292e-09,
+          8.785271523137498e-09,
+          5.353834228248232e-09,
+          1.6654417664763365e-09
+        ],
+        [
+          2.2196959978729667e-10,
+          9.148953074530658e-10,
+          2.0177112258516305e-09,
+          5.353834228248232e-09,
+          8.244392216037811e-09,
+          6.285026031011223e-09
+        ],
+        [
+          1.240996845797064e-09,
+          1.1590003798426536e-09,
+          1.7881778293185335e-10,
+          1.6654417664763365e-09,
+          6.285026031011223e-09,
+          8.818256163914743e-09
+        ]
+      ],
+      "channel_covariance_condition_number": 130.26405256575006,
+      "matched_score": 36.14950150886976,
+      "lossless_score": 38.072619559093184,
+      "matched_beats_lossless": true,
+      "matched_beats_wrong_median": true,
+      "matched_beats_every_wrong_assignment": false,
+      "wrong_assignment_fraction_not_worse": 0.391304347826087,
+      "scale_sensitivity": [
+        {
+          "scale": 0.0,
+          "matched_score": 38.072619559093184
+        },
+        {
+          "scale": 0.25,
+          "matched_score": 37.20451806156083
+        },
+        {
+          "scale": 0.5,
+          "matched_score": 36.44602257349645
+        },
+        {
+          "scale": 1.0,
+          "matched_score": 36.14950150886976
+        },
+        {
+          "scale": 2.0,
+          "matched_score": 46.67557071854609
+        },
+        {
+          "scale": 4.0,
+          "matched_score": 354.9115129276958
+        }
+      ],
+      "posthoc_preferred_scale": 1.0
+    },
+    {
+      "inner_radius_arcsec": 3.0,
+      "outer_radius_arcsec": 5.0,
+      "grid_step_arcsec": 0.6,
+      "blank_aperture_count": 133,
+      "channel_covariance": [
+        [
+          1.0040384425660566e-08,
+          6.711227126831629e-09,
+          2.016011368848647e-09,
+          -2.7699296511309675e-10,
+          5.2026020486557113e-11,
+          1.4554299123393224e-09
+        ],
+        [
+          6.711227126831629e-09,
+          8.55224407588259e-09,
+          5.3955726459835685e-09,
+          1.5471033882726998e-09,
+          8.965137579874788e-10,
+          1.8256121351391483e-09
+        ],
+        [
+          2.016011368848647e-09,
+          5.3955726459835685e-09,
+          8.029109274216503e-09,
+          6.21452020305889e-09,
+          2.5352053710268635e-09,
+          8.821258746692934e-10
+        ],
+        [
+          -2.7699296511309675e-10,
+          1.5471033882726998e-09,
+          6.21452020305889e-09,
+          8.71950635540584e-09,
+          5.515746592692767e-09,
+          1.5633598483267332e-09
+        ],
+        [
+          5.2026020486557113e-11,
+          8.965137579874788e-10,
+          2.5352053710268635e-09,
+          5.515746592692767e-09,
+          7.863321526956736e-09,
+          6.2352658977144665e-09
+        ],
+        [
+          1.4554299123393224e-09,
+          1.8256121351391483e-09,
+          8.821258746692934e-10,
+          1.5633598483267332e-09,
+          6.2352658977144665e-09,
+          9.897715614480835e-09
+        ]
+      ],
+      "channel_covariance_condition_number": 124.84896957847795,
+      "matched_score": 38.65035306886345,
+      "lossless_score": 39.32079242587308,
+      "matched_beats_lossless": true,
+      "matched_beats_wrong_median": true,
+      "matched_beats_every_wrong_assignment": false,
+      "wrong_assignment_fraction_not_worse": 0.43478260869565216,
+      "scale_sensitivity": [
+        {
+          "scale": 0.0,
+          "matched_score": 39.32079242587308
+        },
+        {
+          "scale": 0.25,
+          "matched_score": 38.69272191505783
+        },
+        {
+          "scale": 0.5,
+          "matched_score": 38.20530676097719
+        },
+        {
+          "scale": 1.0,
+          "matched_score": 38.65035306886345
+        },
+        {
+          "scale": 2.0,
+          "matched_score": 52.23411042462
+        },
+        {
+          "scale": 4.0,
+          "matched_score": 420.8370265664164
+        }
+      ],
+      "posthoc_preferred_scale": 0.5
+    },
+    {
+      "inner_radius_arcsec": 3.5,
+      "outer_radius_arcsec": 5.5,
+      "grid_step_arcsec": 0.4,
+      "blank_aperture_count": 349,
+      "channel_covariance": [
+        [
+          8.225577880877558e-09,
+          5.5982136323268745e-09,
+          1.4213986224274634e-09,
+          -2.834460799282722e-10,
+          -3.6156953125928234e-10,
+          3.358544143089393e-11
+        ],
+        [
+          5.5982136323268745e-09,
+          7.630945792667537e-09,
+          4.768091666884035e-09,
+          1.3581795929867488e-09,
+          1.8217263964391708e-10,
+          2.2992392308176966e-10
+        ],
+        [
+          1.4213986224274634e-09,
+          4.768091666884035e-09,
+          6.755952062398367e-09,
+          4.649493701786079e-09,
+          1.4138733119286354e-09,
+          1.9248043713844414e-10
+        ],
+        [
+          -2.834460799282722e-10,
+          1.3581795929867488e-09,
+          4.649493701786079e-09,
+          6.626441355772879e-09,
+          4.585200800640548e-09,
+          1.530695603946137e-09
+        ],
+        [
+          -3.6156953125928234e-10,
+          1.8217263964391708e-10,
+          1.4138733119286354e-09,
+          4.585200800640548e-09,
+          7.310079182026646e-09,
+          5.551793861803885e-09
+        ],
+        [
+          3.358544143089393e-11,
+          2.2992392308176966e-10,
+          1.9248043713844414e-10,
+          1.530695603946137e-09,
+          5.551793861803885e-09,
+          8.671897393932382e-09
+        ]
+      ],
+      "channel_covariance_condition_number": 93.70055163053316,
+      "matched_score": 39.497513186212,
+      "lossless_score": 40.133269863454174,
+      "matched_beats_lossless": true,
+      "matched_beats_wrong_median": true,
+      "matched_beats_every_wrong_assignment": false,
+      "wrong_assignment_fraction_not_worse": 0.391304347826087,
+      "scale_sensitivity": [
+        {
+          "scale": 0.0,
+          "matched_score": 40.133269863454174
+        },
+        {
+          "scale": 0.25,
+          "matched_score": 39.52061874149193
+        },
+        {
+          "scale": 0.5,
+          "matched_score": 39.06059969572891
+        },
+        {
+          "scale": 1.0,
+          "matched_score": 39.497513186212
+        },
+        {
+          "scale": 2.0,
+          "matched_score": 53.75580107259915
+        },
+        {
+          "scale": 4.0,
+          "matched_score": 458.83130860213237
+        }
+      ],
+      "posthoc_preferred_scale": 0.5
+    },
+    {
+      "inner_radius_arcsec": 3.5,
+      "outer_radius_arcsec": 5.5,
+      "grid_step_arcsec": 0.5,
+      "blank_aperture_count": 232,
+      "channel_covariance": [
+        [
+          8.369211913186822e-09,
+          6.498176100517046e-09,
+          2.5424771344912242e-09,
+          4.6746869652225815e-11,
+          -1.8354054791826515e-10,
+          7.902759418484925e-10
+        ],
+        [
+          6.498176100517046e-09,
+          8.862994060085266e-09,
+          5.518277556370593e-09,
+          1.1932591833878401e-09,
+          1.8113881673361795e-10,
+          7.548362114661607e-10
+        ],
+        [
+          2.5424771344912242e-09,
+          5.518277556370593e-09,
+          7.638541086583273e-09,
+          5.430756052687334e-09,
+          1.3748317975974064e-09,
+          -2.2182493873048833e-11
+        ],
+        [
+          4.6746869652225815e-11,
+          1.1932591833878401e-09,
+          5.430756052687334e-09,
+          7.987265850341424e-09,
+          4.8772573049470435e-09,
+          1.3965506839725585e-09
+        ],
+        [
+          -1.8354054791826515e-10,
+          1.8113881673361795e-10,
+          1.3748317975974064e-09,
+          4.8772573049470435e-09,
+          7.625703724767893e-09,
+          5.7950914636557785e-09
+        ],
+        [
+          7.902759418484925e-10,
+          7.548362114661607e-10,
+          -2.2182493873048833e-11,
+          1.3965506839725585e-09,
+          5.7950914636557785e-09,
+          8.50767568323842e-09
+        ]
+      ],
+      "channel_covariance_condition_number": 130.87019842873366,
+      "matched_score": 39.849853445304845,
+      "lossless_score": 41.29090017983266,
+      "matched_beats_lossless": true,
+      "matched_beats_wrong_median": true,
+      "matched_beats_every_wrong_assignment": false,
+      "wrong_assignment_fraction_not_worse": 0.43478260869565216,
+      "scale_sensitivity": [
+        {
+          "scale": 0.0,
+          "matched_score": 41.29090017983266
+        },
+        {
+          "scale": 0.25,
+          "matched_score": 40.4133476688564
+        },
+        {
+          "scale": 0.5,
+          "matched_score": 39.705232579590714
+        },
+        {
+          "scale": 1.0,
+          "matched_score": 39.849853445304845
+        },
+        {
+          "scale": 2.0,
+          "matched_score": 53.91905846690945
+        },
+        {
+          "scale": 4.0,
+          "matched_score": 442.301300946626
+        }
+      ],
+      "posthoc_preferred_scale": 0.5
+    },
+    {
+      "inner_radius_arcsec": 3.5,
+      "outer_radius_arcsec": 5.5,
+      "grid_step_arcsec": 0.6,
+      "blank_aperture_count": 155,
+      "channel_covariance": [
+        [
+          7.546346084724055e-09,
+          4.712466708900316e-09,
+          4.736914329708787e-10,
+          -9.603816833765725e-10,
+          1.197031890948747e-10,
+          5.092622469007633e-10
+        ],
+        [
+          4.712466708900316e-09,
+          5.943514484139041e-09,
+          3.3667926522879403e-09,
+          4.587399720671724e-10,
+          2.4253756414332526e-10,
+          6.723377325444077e-10
+        ],
+        [
+          4.736914329708787e-10,
+          3.3667926522879403e-09,
+          5.570330170558469e-09,
+          3.6432911621105525e-09,
+          6.250762842688119e-10,
+          -2.419065798638437e-10
+        ],
+        [
+          -9.603816833765725e-10,
+          4.587399720671724e-10,
+          3.6432911621105525e-09,
+          6.083093718485037e-09,
+          4.087237247967314e-09,
+          8.167166254645159e-10
+        ],
+        [
+          1.197031890948747e-10,
+          2.4253756414332526e-10,
+          6.250762842688119e-10,
+          4.087237247967314e-09,
+          7.099937931318828e-09,
+          5.05326520095667e-09
+        ],
+        [
+          5.092622469007633e-10,
+          6.723377325444077e-10,
+          -2.419065798638437e-10,
+          8.167166254645159e-10,
+          5.05326520095667e-09,
+          7.757679947287624e-09
+        ]
+      ],
+      "channel_covariance_condition_number": 80.20430171486082,
+      "matched_score": 44.9565125034496,
+      "lossless_score": 44.688614004584934,
+      "matched_beats_lossless": false,
+      "matched_beats_wrong_median": true,
+      "matched_beats_every_wrong_assignment": false,
+      "wrong_assignment_fraction_not_worse": 0.4782608695652174,
+      "scale_sensitivity": [
+        {
+          "scale": 0.0,
+          "matched_score": 44.688614004584934
+        },
+        {
+          "scale": 0.25,
+          "matched_score": 44.15180731611197
+        },
+        {
+          "scale": 0.5,
+          "matched_score": 43.80695566456943
+        },
+        {
+          "scale": 1.0,
+          "matched_score": 44.9565125034496
+        },
+        {
+          "scale": 2.0,
+          "matched_score": 65.73512222707882
+        },
+        {
+          "scale": 4.0,
+          "matched_score": 593.0260208101278
+        }
+      ],
+      "posthoc_preferred_scale": 0.5
+    }
+  ],
+  "summary": {
+    "matched_beats_lossless_geometries": 6,
+    "geometry_count": 9,
+    "matched_beats_wrong_median_geometries": 9,
+    "matched_beats_every_wrong_assignment_geometries": 0,
+    "wrong_assignment_fraction_not_worse_range": [
+      0.391304347826087,
+      0.4782608695652174
+    ],
+    "posthoc_preferred_scale_counts": {
+      "0.0": 0,
+      "0.25": 0,
+      "0.5": 7,
+      "1.0": 2,
+      "2.0": 0,
+      "4.0": 0
+    },
+    "frozen_unit_scale_is_posthoc_best_geometries": 2,
+    "posthoc_retuning_allowed": false
+  },
+  "checks": {
+    "fixed_proxy_unchanged": true,
+    "nine_blank_geometries": true,
+    "all_blank_ensembles_overdetermine_six_channel_covariance": true,
+    "all_channel_covariances_positive": true,
+    "no_geometry_selected_from_score": true,
+    "physical_endpoint_remains_unauthorized": true
+  },
+  "checks_passed": 6,
+  "checks_total": 6,
+  "physical_endpoint_authorized": false,
+  "claim_boundary": "Retrospective covariance robustness for the already frozen nonphysical 4D proxy. The path-order advantage over a wrong-assignment median is descriptive, while preference over lossless transfer is not stable across blank-aperture geometries and no geometry beats every wrong assignment. This is neither a calibrated population p-value nor evidence for a Nature-occupied parent action."
+}

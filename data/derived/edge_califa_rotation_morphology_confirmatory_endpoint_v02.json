@@ -1,0 +1,495 @@
+{
+  "beyond_standard_component_identified": false,
+  "claim_boundary": "tests a development-informed morphology-alignment proxy beyond a declared nuisance span and equal-rank controls; does not identify a unique Tau law or exhaust standard alternatives",
+  "dark_sector_identified": false,
+  "decision_gates": {
+    "all_three_max_t_adjusted_control_p_below_0_05": false,
+    "median_primary_d_positive": true,
+    "primary_exact_p_below_0_01": false,
+    "strictly_more_than_60_percent_primary_d_positive": false
+  },
+  "exact_inference": {
+    "control_max_t_adjusted_p": [
+      0.9765625,
+      0.9453125,
+      0.3359375
+    ],
+    "control_studentized_statistics": [
+      -0.8407936033154784,
+      -0.5232312674954377,
+      0.9893389883758851
+    ],
+    "median_primary_d": 0.11020194395988532,
+    "n_exact_sign_vectors": 128,
+    "n_galaxies": 7,
+    "observed_primary_mean_d": -0.058679293503004035,
+    "positive_primary_count": 4,
+    "primary_exact_one_sided_p": 0.6015625
+  },
+  "galaxies": {
+    "IC4566": {
+      "control_differences": {
+        "cross_galaxy": -0.023434988181175176,
+        "phase_rotation_pi_over_2": -0.1673728673505993,
+        "radial_reversal": -0.2129002603015125
+      },
+      "cross_galaxy_body": "NGC2730",
+      "frame_correction_subtracted_km_s": 2.05,
+      "median_co_convention_shift_km_s": 50.48360868029249,
+      "median_halpha_convention_shift_km_s": -51.40564883004481,
+      "median_raw_co_velocity_km_s": 5504.26806640625,
+      "median_raw_halpha_velocity_km_s": 5552.228515625,
+      "median_relativistic_contrast_km_s": 25.963646323599278,
+      "occupied_macrosectors_by_zone": [
+        6,
+        6,
+        6,
+        6,
+        5
+      ],
+      "primary_d": -0.134569371944429,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 2.0496698676982344e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.6823419593657962,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 7.443114955144824e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.658906971184621,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 4.332683379737416e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.5149690920151969,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 2.3926893695027486e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.46944169906428374,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 1.7261337769864516e-14,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 3.3294913231945342,
+          "source_rank": 8
+        }
+      },
+      "standard_minus_correct_q_diagnostic": 2.647149363828738,
+      "terminal_covariance_minimum_eigenvalue": 1.4885993549743375,
+      "terminal_covariance_rank": 20,
+      "terminal_rows_total": 129
+    },
+    "NGC2730": {
+      "control_differences": {
+        "cross_galaxy": 2.296334732631554,
+        "phase_rotation_pi_over_2": 0.681279207123792,
+        "radial_reversal": -0.21180072198300298
+      },
+      "cross_galaxy_body": "NGC3811",
+      "frame_correction_subtracted_km_s": -0.55,
+      "median_co_convention_shift_km_s": 23.875613341322605,
+      "median_halpha_convention_shift_km_s": -24.189165832394565,
+      "median_raw_co_velocity_km_s": 3783.1798095703125,
+      "median_raw_halpha_velocity_km_s": 3808.492431640625,
+      "median_relativistic_contrast_km_s": 24.978332423590018,
+      "occupied_macrosectors_by_zone": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "primary_d": 0.9219377392574476,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 1.979015204029796e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.5467757928267795,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 1.5230103402762938e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 2.8431105254583335,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 1.5357919960968314e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 1.2280549999505714,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 4.882488184264892e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.3349750708437765,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 3.2519435892916364e-14,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 20.845814358596357,
+          "source_rank": 8
+        }
+      },
+      "standard_minus_correct_q_diagnostic": 20.299038565769578,
+      "terminal_covariance_minimum_eigenvalue": 0.06433744073662141,
+      "terminal_covariance_rank": 20,
+      "terminal_rows_total": 152
+    },
+    "NGC3811": {
+      "control_differences": {
+        "cross_galaxy": 0.1287563824510646,
+        "phase_rotation_pi_over_2": 0.06255618918600744,
+        "radial_reversal": 0.13929326024258395
+      },
+      "cross_galaxy_body": "NGC6004",
+      "frame_correction_subtracted_km_s": 3.32,
+      "median_co_convention_shift_km_s": 15.55766921587474,
+      "median_halpha_convention_shift_km_s": -15.689762585031076,
+      "median_raw_co_velocity_km_s": 3057.60107421875,
+      "median_raw_halpha_velocity_km_s": 3067.218994140625,
+      "median_relativistic_contrast_km_s": 6.176070098627406,
+      "occupied_macrosectors_by_zone": [
+        6,
+        6,
+        6,
+        6,
+        5
+      ],
+      "primary_d": 0.11020194395988532,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 1.0370059486372849e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.1683641187118697,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 1.9574886647753877e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.2971205011629343,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 2.5205780189415113e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.23092030789787715,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 6.009538703163118e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.30765737895445366,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 1.2592585687308622e-13,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 4.809461651004197,
+          "source_rank": 8
+        }
+      },
+      "standard_minus_correct_q_diagnostic": 4.641097532292327,
+      "terminal_covariance_minimum_eigenvalue": 0.03691761707995416,
+      "terminal_covariance_rank": 20,
+      "terminal_rows_total": 191
+    },
+    "NGC6004": {
+      "control_differences": {
+        "cross_galaxy": 0.7364343090012742,
+        "phase_rotation_pi_over_2": 0.5607684285622045,
+        "radial_reversal": 1.5805484014286788
+      },
+      "cross_galaxy_body": "NGC6060",
+      "frame_correction_subtracted_km_s": -1.83,
+      "median_co_convention_shift_km_s": 23.915686554178592,
+      "median_halpha_convention_shift_km_s": -24.165154444905966,
+      "median_raw_co_velocity_km_s": 3785.07421875,
+      "median_raw_halpha_velocity_km_s": 3806.6015625,
+      "median_relativistic_contrast_km_s": 24.938127469222763,
+      "occupied_macrosectors_by_zone": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "primary_d": 0.9592503796640525,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 3.70311098241502e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 1.7348119450470956,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 1.5721256999546988e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 2.4712462540483697,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 7.571579028865141e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 2.2955803736093,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 2.029699561301406e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 3.3153603464757744,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 1.5988368055332697e-13,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 15.96287902920195,
+          "source_rank": 8
+        }
+      },
+      "standard_minus_correct_q_diagnostic": 14.228067084154855,
+      "terminal_covariance_minimum_eigenvalue": 0.011743901123275991,
+      "terminal_covariance_rank": 20,
+      "terminal_rows_total": 211
+    },
+    "NGC6060": {
+      "control_differences": {
+        "cross_galaxy": 2.3423888588937674,
+        "phase_rotation_pi_over_2": -2.6088051547058093,
+        "radial_reversal": -2.9118987700202235
+      },
+      "cross_galaxy_body": "NGC6186",
+      "frame_correction_subtracted_km_s": -1.49,
+      "median_co_convention_shift_km_s": 32.159622710782514,
+      "median_halpha_convention_shift_km_s": -31.947144632778418,
+      "median_raw_co_velocity_km_s": 4389.9248046875,
+      "median_raw_halpha_velocity_km_s": 4376.87451171875,
+      "median_relativistic_contrast_km_s": 74.92894703327738,
+      "occupied_macrosectors_by_zone": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "primary_d": -1.0594383552774218,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 2.941090471601765e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 7.840582915485791,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 6.240444367834894e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 10.182971774379558,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 5.817082550909412e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 5.231777760779981,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 1.5866499151413296e-11,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 4.928684145465567,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 3.218875474960915e-14,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 15.339110432494286,
+          "source_rank": 8
+        }
+      },
+      "standard_minus_correct_q_diagnostic": 7.498527517008495,
+      "terminal_covariance_minimum_eigenvalue": 0.044651643515919257,
+      "terminal_covariance_rank": 20,
+      "terminal_rows_total": 236
+    },
+    "NGC6186": {
+      "control_differences": {
+        "cross_galaxy": -2.19787569029795,
+        "phase_rotation_pi_over_2": -1.802080171890485,
+        "radial_reversal": -1.9607181767665032
+      },
+      "cross_galaxy_body": "NGC6301",
+      "frame_correction_subtracted_km_s": -1.59,
+      "median_co_convention_shift_km_s": 14.613891066879887,
+      "median_halpha_convention_shift_km_s": -14.567011115059358,
+      "median_raw_co_velocity_km_s": 2958.5950927734375,
+      "median_raw_halpha_velocity_km_s": 2955.4271240234375,
+      "median_relativistic_contrast_km_s": 29.435495967127736,
+      "occupied_macrosectors_by_zone": [
+        6,
+        6,
+        6,
+        6,
+        5
+      ],
+      "primary_d": -1.9868913463183127,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 8.558700313179076e-14,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 2.7991570224035662,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 2.462022976305926e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.601281332105616,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 1.7382181182778875e-14,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.9970768505130811,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 7.062073936155077e-14,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.8384388456370632,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 3.054211713101264e-15,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 6.705740301421371,
+          "source_rank": 8
+        }
+      },
+      "standard_minus_correct_q_diagnostic": 3.9065832790178048,
+      "terminal_covariance_minimum_eigenvalue": 2.0915497584097107,
+      "terminal_covariance_rank": 20,
+      "terminal_rows_total": 152
+    },
+    "NGC6301": {
+      "control_differences": {
+        "cross_galaxy": 0.7721346947054604,
+        "phase_rotation_pi_over_2": 1.31280052698427,
+        "radial_reversal": 0.2513266467235192
+      },
+      "cross_galaxy_body": "IC4566",
+      "frame_correction_subtracted_km_s": 1.59,
+      "median_co_convention_shift_km_s": 110.71943876099249,
+      "median_halpha_convention_shift_km_s": -116.52151659911578,
+      "median_raw_co_velocity_km_s": 8150.87939453125,
+      "median_raw_halpha_velocity_km_s": 8360.08203125,
+      "median_relativistic_contrast_km_s": 14.555201230046805,
+      "occupied_macrosectors_by_zone": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "primary_d": 0.7787539561377498,
+      "scores": {
+        "correct": {
+          "annihilation_max_abs": 1.7778953320517596e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.10980040720479446,
+          "source_rank": 16
+        },
+        "cross_galaxy": {
+          "annihilation_max_abs": 1.3042793987928357e-12,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.8819351019102548,
+          "source_rank": 16
+        },
+        "phase_rotation_pi_over_2": {
+          "annihilation_max_abs": 9.137363793634509e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 1.4226009341890644,
+          "source_rank": 16
+        },
+        "radial_reversal": {
+          "annihilation_max_abs": 7.802994105688224e-13,
+          "projected_covariance_rank": 4,
+          "projection_rank": 4,
+          "q": 0.3611270539283136,
+          "source_rank": 16
+        },
+        "standard": {
+          "annihilation_max_abs": 2.1952291493199342e-13,
+          "projected_covariance_rank": 12,
+          "projection_rank": 12,
+          "q": 7.473795820891245,
+          "source_rank": 8
+        }
+      },
+      "standard_minus_correct_q_diagnostic": 7.3639954136864505,
+      "terminal_covariance_minimum_eigenvalue": 0.09361382422352652,
+      "terminal_covariance_rank": 20,
+      "terminal_rows_total": 169
+    }
+  },
+  "galaxies_opened_once": [
+    "IC4566",
+    "NGC2730",
+    "NGC3811",
+    "NGC6004",
+    "NGC6060",
+    "NGC6186",
+    "NGC6301"
+  ],
+  "physical_tau_source_identified": false,
+  "positive_primary_fraction": 0.5714285714285714,
+  "preregistered_prevalidation_pass": false,
+  "provenance": {
+    "endpoint_implementation_sha256": "6f6f37e3c1090e93a5a1d011dfa0cda5b5c5e10a0428b3e9d6e29504ad1fa7f8",
+    "input_md5": "b7e308d0985e8f85ef7afbe1ec4c48b8",
+    "input_sha256": "297a3b7ca6d0c1ee699dd335bfa1f40581d9e96614715382a75f32d4efa0275f",
+    "preregistration_sha256": "f73e3c1998d7427830aacbd929ee58b92c8714fb9bbc6f7aade64dd7da32becf",
+    "scoring_contract_sha256": "7ca5a45819762b1e47b3b5f312a0c58bc411b59838a9eced07e14f4056662788"
+  },
+  "replacement_or_repair_allowed": false,
+  "schema": "edge_califa_rotation_morphology_confirmatory_endpoint_v02",
+  "status": "SOURCE_DEVELOPED_EXTERNAL_MORPHOLOGY_ALIGNMENT_PREVALIDATION_FAIL",
+  "summary": "The frozen seven-galaxy v02 endpoint returned `SOURCE_DEVELOPED_EXTERNAL_MORPHOLOGY_ALIGNMENT_PREVALIDATION_FAIL` with exact one-sided p=0.60156250 and 4/7 positive D values."
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "sdp81_public_reduced_spectral_product_audit_v01",
+  "status": "REDUCED_IMAGE_CUBES_CONFIRMED_NO_COMPACT_VISIBILITY_OR_SOURCE_CUBE_FOUND",
+  "generated_utc": "2026-09-03T00:00:00Z",
+  "project_code": "2011.0.00016.SV",
+  "member_ous_uid": "uid://A002/X8fa7af/X12",
+  "official_datalink": "https://almascience.org/datalink/sync?ID=uid://A002/X8fa7af/X12",
+  "product_levels": {
+    "allowed_raw_asdm_bytes": 211709114368,
+    "calibrated_visibility_packages": {
+      "band4_bytes": 9043149221,
+      "band6_bytes": 44965898587,
+      "total_bytes": 54009047808,
+      "band4_root": "SDP81_Band4_CalibratedData/SDP.81_Band4.ms/",
+      "band6_root": "SDP81_Band6_CalibratedData/SDP81_band6_9exec.ms.calavg/"
+    },
+    "reference_image_packages": {
+      "band4_bytes": 1212386119,
+      "band6_bytes": 386715687,
+      "total_bytes": 1599101806
+    },
+    "local_allowed_line_cubes": [
+      {
+        "line": "CO(5-4)",
+        "kind": "restored image-plane spectral cube",
+        "filename": "SDP.81.Band4.CO_smooth_z3.042.fits",
+        "bytes": 215072640,
+        "sha256": "b26f3e4cbff43bab9d6c4c082ff513788f9dcf20b2e640edf607dbc3fe34a656"
+      },
+      {
+        "line": "CO(8-7)",
+        "kind": "restored image-plane spectral cube",
+        "filename": "SDP81_9exec.co87.R1uvtaper1000klambda.fits",
+        "bytes": 180855360,
+        "sha256": "aeea985de1e590921a6282cdd9d017f0a888958e7e07b54d4d51435772475ea3"
+      }
+    ],
+    "local_allowed_line_cube_total_bytes": 395928000
+  },
+  "author_source_products": {
+    "co54": "velocity-integrated source map plus uncertainty map",
+    "co87": "velocity-integrated source map plus uncertainty map",
+    "spectral_axis_present": false,
+    "full_covariance_or_posterior_present": false
+  },
+  "compact_sufficient_public_product_found": false,
+  "full_arc_reference_image_result": {
+    "promoted": false,
+    "aggregate_held_path_median_improvement_percent": 2.069,
+    "promotion_threshold_percent": 5.0,
+    "reflected_source_control_percent": 1.609,
+    "matched_minus_control_percentage_points": 0.460
+  },
+  "minimum_next_acquisition": [
+    "CO(5-4) and CO(8-7) source-plane channel cubes with covariance/posterior draws and resolution operator",
+    "or target-only line-SPW-only calibrated measurement-set cutouts with weights, flags and continuum-subtraction metadata"
+  ],
+  "request_sent": false,
+  "co109_header_read": false,
+  "co109_pixels_read": false,
+  "transition_readiness_increment": 0,
+  "endpoint_authorized": false,
+  "claim_boundary": "The audit establishes the public product hierarchy and the 54.009-GB calibrated alternative. It is not a source reconstruction, Nature selection, transition promotion, or endpoint score."
+}

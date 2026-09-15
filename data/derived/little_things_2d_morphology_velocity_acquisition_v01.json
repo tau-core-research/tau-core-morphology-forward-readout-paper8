@@ -1,0 +1,12 @@
+{
+  "schema": "little_things_2d_morphology_velocity_acquisition_v01",
+  "status": "FROZEN_VELOCITY_PRODUCTS_ACQUIRED_UNOPENED",
+  "launch_freeze": "data/derived/little_things_2d_morphology_endpoint_launch_freeze_v01.json",
+  "launch_freeze_sha256": "461fdc8775397ce3c33e00047f89f01d71fef9c2312348f570b92eadd600abc6",
+  "ledger": "data/derived/little_things_2d_morphology_velocity_acquisition_v01.csv",
+  "ledger_sha256": "9b684de5db087995fff4f21aae665c0e6c89fd92f7c527b2485435fc94e10f7e",
+  "target_count": 20,
+  "total_bytes": 143369280,
+  "velocity_pixels_opened_by_acquisition": false,
+  "claim_boundary": "target acquisition after source/operator/scorer freeze; no score in this step"
+}

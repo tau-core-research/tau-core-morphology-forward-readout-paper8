@@ -1,0 +1,115 @@
+{
+  "claim_boundary": "development-informed source-frozen external prevalidation; not a Tau-specific prediction and not an exhaustive standard-astrophysics comparator",
+  "confirmatory_galaxies": [
+    "IC4566",
+    "NGC2730",
+    "NGC3811",
+    "NGC6004",
+    "NGC6060",
+    "NGC6186",
+    "NGC6301"
+  ],
+  "confirmatory_terminal_values_opened": false,
+  "control_inference": "exact shared-sign studentized max-T across the three controls",
+  "per_galaxy_primary": "D_g=mean(Q_radial,Q_phase,Q_cross)-Q_correct",
+  "preregistration_sha256": "f73e3c1998d7427830aacbd929ee58b92c8714fb9bbc6f7aade64dd7da32becf",
+  "primary_inference": "exact one-sided shared-sign permutation over all 2^N sign vectors",
+  "schema": "edge_califa_rotation_morphology_scoring_contract_v02",
+  "sector_rule": "five or six occupied fixed macrosectors; delete one occupied sector at a time; unregularized retained 4x4 covariance must be full rank and positive definite",
+  "source_control_rank_audit": [
+    {
+      "all_equal_rank_16": true,
+      "correct_rank": 16,
+      "cross_galaxy_body": "NGC2730",
+      "cross_galaxy_rank": 16,
+      "galaxy": "IC4566",
+      "phase_rotation_pi_over_2_rank": 16,
+      "radial_reversal_rank": 16
+    },
+    {
+      "all_equal_rank_16": true,
+      "correct_rank": 16,
+      "cross_galaxy_body": "NGC3811",
+      "cross_galaxy_rank": 16,
+      "galaxy": "NGC2730",
+      "phase_rotation_pi_over_2_rank": 16,
+      "radial_reversal_rank": 16
+    },
+    {
+      "all_equal_rank_16": true,
+      "correct_rank": 16,
+      "cross_galaxy_body": "NGC6004",
+      "cross_galaxy_rank": 16,
+      "galaxy": "NGC3811",
+      "phase_rotation_pi_over_2_rank": 16,
+      "radial_reversal_rank": 16
+    },
+    {
+      "all_equal_rank_16": true,
+      "correct_rank": 16,
+      "cross_galaxy_body": "NGC6060",
+      "cross_galaxy_rank": 16,
+      "galaxy": "NGC6004",
+      "phase_rotation_pi_over_2_rank": 16,
+      "radial_reversal_rank": 16
+    },
+    {
+      "all_equal_rank_16": true,
+      "correct_rank": 16,
+      "cross_galaxy_body": "NGC6186",
+      "cross_galaxy_rank": 16,
+      "galaxy": "NGC6060",
+      "phase_rotation_pi_over_2_rank": 16,
+      "radial_reversal_rank": 16
+    },
+    {
+      "all_equal_rank_16": true,
+      "correct_rank": 16,
+      "cross_galaxy_body": "NGC6301",
+      "cross_galaxy_rank": 16,
+      "galaxy": "NGC6186",
+      "phase_rotation_pi_over_2_rank": 16,
+      "radial_reversal_rank": 16
+    },
+    {
+      "all_equal_rank_16": true,
+      "correct_rank": 16,
+      "cross_galaxy_body": "IC4566",
+      "cross_galaxy_rank": 16,
+      "galaxy": "NGC6301",
+      "phase_rotation_pi_over_2_rank": 16,
+      "radial_reversal_rank": 16
+    }
+  ],
+  "source_matrices_sha256": "1a805d0522fd36c3db14663cfa49b8769f64dcc12940059cb4eb854b87f03d87",
+  "source_preflight_sha256": "a57a93a1ea6bc813f92957a4b39eb7ea40080738fb84a59b00e138e2d7e002db",
+  "status": "V02_OCCUPIED_SECTOR_SCORING_CONTRACT_FROZEN_AND_AUDITED",
+  "supersedes_v01_sha256": "7cf0b4657d91bdf779e5f32d7569d69462225c48a17bc547d81cd36ca1005905",
+  "synthetic_covariance_audit": {
+    "all_gates_pass": true,
+    "assembled_covariance_rank": 20,
+    "minimum_eigenvalue": 0.00036936734500363797,
+    "occupied_sector_counts": [
+      5,
+      6,
+      5,
+      6,
+      5
+    ],
+    "projected_rank": 4,
+    "pure_source_q": 5.704756761969207e-25,
+    "zone_covariance_ranks": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "thresholds": {
+    "every_control_max_t_adjusted_p_less_than": 0.05,
+    "median_d_positive": true,
+    "primary_p_less_than": 0.01,
+    "strictly_more_than_fraction_positive": 0.6
+  }
+}

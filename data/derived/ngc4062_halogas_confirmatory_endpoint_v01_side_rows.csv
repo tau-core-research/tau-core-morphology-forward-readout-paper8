@@ -1,0 +1,9 @@
+radius_arcsec,side,n_pixels,n_beam_blocks,u_los_km_s,resolution
+42.0,receding,53,4,104.31756118523099,HR
+42.0,approaching,53,3,115.49845740436842,HR
+84.0,receding,109,7,126.5440120515719,HR
+84.0,approaching,109,6,141.01909067646648,HR
+42.0,receding,53,4,93.91747947663475,LR
+42.0,approaching,53,2,107.669194967823,LR
+84.0,receding,109,4,120.98520652293334,LR
+84.0,approaching,109,4,134.51287403355954,LR

@@ -1,0 +1,492 @@
+{
+  "schema": "tau-core.paper8.sdp81-4d-corridor-proxy-diagnostic-freeze.v01",
+  "status": "DIAGNOSTIC_ONLY_NOT_ENDPOINT",
+  "scientific_role": "retrospective sensitivity control for one fixed 4D-corridor proxy; not a Tau parent-distance or parent-action model",
+  "inputs": {
+    "standard_corridor_descriptor": "data/derived/sdp81_standard_corridor_descriptor_v01.json",
+    "standard_corridor_descriptor_sha256": "d268ec5321d0812d6d1f64fc158e265cc893d1a3c66fae9d6288a6bb2e35ccf1",
+    "spectral_or_velocity_endpoint_read": false
+  },
+  "proxy_definition": {
+    "relative_coordinate": "r_i=(phi_i-min_j phi_j)/(max_j phi_j-min_j phi_j)",
+    "ordered_channel_generator": "K=U^T D^T D U/lambda_max(D^T D)",
+    "transfer": "C_i=exp[-(1+r_i)K]",
+    "common_depth_origin_note": "the +1 is a common invertible source reparameterization, not an identified physical depth"
+  },
+  "generator": [
+    [
+      0.6698729810778066,
+      -0.23205080756887728,
+      0.0,
+      0.0,
+      5.6465522807651896e-18
+    ],
+    [
+      -0.23205080756887725,
+      0.5805565836007659,
+      -0.2526249213086747,
+      1.4874168143337457e-17,
+      1.224121193885495e-18
+    ],
+    [
+      0.0,
+      -0.25262492130867464,
+      0.5582274842315056,
+      -0.25944068997886616,
+      -8.548536063938513e-18
+    ],
+    [
+      0.0,
+      0.0,
+      -0.2594406899788662,
+      0.5492958444838014,
+      -0.2625355193788284
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -0.2625355193788284,
+      0.3215390309173472
+    ]
+  ],
+  "compiled_paths": [
+    {
+      "path_id": "q1_path_1",
+      "relative_4d_fermat_coordinate": 0.0,
+      "proxy_depth": 1.0,
+      "selected_transfer": [
+        [
+          0.5261145192172142,
+          0.12671499069760125,
+          0.016295656423269092,
+          0.0014243964509937275,
+          9.82859337883852e-05
+        ],
+        [
+          0.12671499069760128,
+          0.592627605548391,
+          0.1473825838736692,
+          0.019070433697621313,
+          0.0017590586902118323
+        ],
+        [
+          0.0162956564232691,
+          0.14738258387366923,
+          0.6102709424818441,
+          0.15423845732232155,
+          0.021531866033102545
+        ],
+        [
+          0.0014243964509937032,
+          0.019070433697621295,
+          0.15423845732232158,
+          0.618800117902388,
+          0.17400907895416484
+        ],
+        [
+          9.828593378838346e-05,
+          0.0017590586902118954,
+          0.02153186603310249,
+          0.1740090789541648,
+          0.7484797561266815
+        ]
+      ],
+      "maximum_transfer_singular_value": 0.9307200270794806
+    },
+    {
+      "path_id": "q1_path_2",
+      "relative_4d_fermat_coordinate": 0.964118101989576,
+      "proxy_depth": 1.964118101989576,
+      "selected_transfer": [
+        [
+          0.29903564169660063,
+          0.14439481570623916,
+          0.03679057564280099,
+          0.006351160229007139,
+          0.0008966451041510459
+        ],
+        [
+          0.14439481570623916,
+          0.3946657378052695,
+          0.18199885140031477,
+          0.045447711828961575,
+          0.008531481105980974
+        ],
+        [
+          0.03679057564280099,
+          0.1819988514003148,
+          0.4236318957208553,
+          0.19556527262933754,
+          0.0551543952739566
+        ],
+        [
+          0.006351160229007138,
+          0.04544771182896158,
+          0.19556527262933754,
+          0.441923096486225,
+          0.2399082973264567
+        ],
+        [
+          0.0008966451041510642,
+          0.00853148110598096,
+          0.05515439527395659,
+          0.2399082973264567,
+          0.5955459475100064
+        ]
+      ],
+      "maximum_transfer_singular_value": 0.8684742564962454
+    },
+    {
+      "path_id": "q1_path_3",
+      "relative_4d_fermat_coordinate": 0.9834363493314562,
+      "proxy_depth": 1.9834363493314562,
+      "selected_transfer": [
+        [
+          0.29583371537433717,
+          0.14428966174830293,
+          0.037128571834688574,
+          0.006472975581239797,
+          0.0009235123442971204
+        ],
+        [
+          0.14428966174830293,
+          0.3917913013524495,
+          0.18218318646860399,
+          0.04591929698564108,
+          0.008709630146226974
+        ],
+        [
+          0.037128571834688595,
+          0.18218318646860399,
+          0.4209475914408954,
+          0.19588618007341166,
+          0.055802458880811125
+        ],
+        [
+          0.006472975581239796,
+          0.045919296985641074,
+          0.19588618007341166,
+          0.4394464380547507,
+          0.24065079414914262
+        ],
+        [
+          0.0009235123442971199,
+          0.008709630146226978,
+          0.05580245888081108,
+          0.24065079414914262,
+          0.5930730014946954
+        ]
+      ],
+      "maximum_transfer_singular_value": 0.8672705283072849
+    },
+    {
+      "path_id": "q1_path_4",
+      "relative_4d_fermat_coordinate": 1.0,
+      "proxy_depth": 2.0,
+      "selected_transfer": [
+        [
+          0.2931207631822932,
+          0.14419043063107106,
+          0.03741554278356226,
+          0.0065778417269895155,
+          0.0009469075996505076
+        ],
+        [
+          0.14419043063107104,
+          0.3893525694836825,
+          0.18233047018871762,
+          0.04632109901792822,
+          0.008863391514807223
+        ],
+        [
+          0.03741554278356225,
+          0.1823304701887176,
+          0.4186709206572597,
+          0.19615062573888134,
+          0.05635618616154872
+        ],
+        [
+          0.006577841726989522,
+          0.0463210990179282,
+          0.19615062573888128,
+          0.43734795753832045,
+          0.24127383936283858
+        ],
+        [
+          0.0009469075996505066,
+          0.008863391514807223,
+          0.056356186161548714,
+          0.24127383936283864,
+          0.5909678300924012
+        ]
+      ],
+      "maximum_transfer_singular_value": 0.8662397688068286
+    }
+  ],
+  "terminal_calibration": {
+    "centered_log_channel_basis": [
+      [
+        0.7071067811865475,
+        0.4082482904638631,
+        0.2886751345948129,
+        0.22360679774997896,
+        0.18257418583505536
+      ],
+      [
+        -0.7071067811865475,
+        0.4082482904638631,
+        0.2886751345948129,
+        0.22360679774997896,
+        0.18257418583505536
+      ],
+      [
+        0.0,
+        -0.8164965809277261,
+        0.2886751345948129,
+        0.22360679774997896,
+        0.18257418583505536
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8660254037844387,
+        0.22360679774997896,
+        0.18257418583505536
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        -0.8944271909999159,
+        0.18257418583505536
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.9128709291752769
+      ]
+    ],
+    "mode_noise_covariance_by_path": {
+      "q1_path_1": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "q1_path_2": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "q1_path_3": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "q1_path_4": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "covariance_status": "identity sensitivity metric; values called Mahalanobis chi2 are not calibrated statistical chi-square variables"
+  },
+  "leave_one_path_out_identifiability": {
+    "folds": [
+      {
+        "held_out_path_id": "q1_path_1",
+        "stacked_transfer_rank": 5,
+        "source_mode_dimension": 5,
+        "minimum_fisher_eigenvalue": 0.056926537882086604,
+        "fisher_condition_number": 39.64367278410873,
+        "identifiable": true
+      },
+      {
+        "held_out_path_id": "q1_path_2",
+        "stacked_transfer_rank": 5,
+        "source_mode_dimension": 5,
+        "minimum_fisher_eigenvalue": 0.1725834705606771,
+        "fisher_condition_number": 13.725354273177162,
+        "identifiable": true
+      },
+      {
+        "held_out_path_id": "q1_path_3",
+        "stacked_transfer_rank": 5,
+        "source_mode_dimension": 5,
+        "minimum_fisher_eigenvalue": 0.17332927268336934,
+        "fisher_condition_number": 13.678351056125576,
+        "identifiable": true
+      },
+      {
+        "held_out_path_id": "q1_path_4",
+        "stacked_transfer_rank": 5,
+        "source_mode_dimension": 5,
+        "minimum_fisher_eigenvalue": 0.17394618222996566,
+        "fisher_condition_number": 13.640112371866694,
+        "identifiable": true
+      }
+    ],
+    "all_folds_identifiable": true
+  },
+  "endpoint_extraction_freeze": {
+    "line": "CO(8-7)",
+    "channels_one_based": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "aperture_radius_arcsec": 0.12,
+    "registration_dx_mas": 0.0,
+    "registration_dy_mas": 0.0,
+    "observable": "five-dimensional centered log spectral shape"
+  },
+  "checks": {
+    "standard_descriptor_is_source_only": true,
+    "direct_parent_identification_remains_forbidden": true,
+    "four_paths": true,
+    "five_centered_log_modes": true,
+    "generator_is_positive_on_centered_modes": true,
+    "all_proxy_transfers_are_strict_contractions": true,
+    "every_loo_fold_is_identifiable": true,
+    "no_spectral_endpoint_read": true
+  },
+  "checks_passed": 8,
+  "checks_total": 8,
+  "physical_endpoint_authorized": false,
+  "diagnostic_run_allowed": true,
+  "retrospective_only": true,
+  "claim_boundary": "The conventional 4D Fermat coordinate is used only as a proxy label. It is not retyped as parent distance, and the resulting contractions are not claimed to be Nature-owned Tau transfers. A score can reject or motivate this fixed proxy family only; it cannot validate Tau Core."
+}

@@ -1,0 +1,121 @@
+{
+  "schema": "tau-core.paper8.sdp81-pcrr-rank-one-invariant-freeze.v01",
+  "status": "SOURCE_METHOD_FROZEN_RETROSPECTIVE_DIAGNOSTIC_ONLY",
+  "scientific_role": "depth-free necessary-condition test of the conditional commuting same-source PCRR family",
+  "source_provenance": {
+    "repository": "tau-core-theory",
+    "path": "docs/tau_core_cross_scale_clock_resolution_hypothesis_001.md",
+    "label": "CSCR-T32d",
+    "law": "DC[log z]_in=-(eta_i-mean eta)(lambda_n-mean lambda)/2, hence rank DC[log z] <= 1",
+    "status": "conditional theorem; physical eta and lambda remain open"
+  },
+  "endpoint_contract": {
+    "path_count": 4,
+    "channel_count": 6,
+    "channels_one_based": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "aperture_radius_arcsec": 0.12,
+    "observable": "double-centered log spectral matrix"
+  },
+  "path_centering_basis": [
+    [
+      0.7071067811865475,
+      0.4082482904638631,
+      0.2886751345948129
+    ],
+    [
+      -0.7071067811865475,
+      0.4082482904638631,
+      0.2886751345948129
+    ],
+    [
+      0.0,
+      -0.8164965809277261,
+      0.2886751345948129
+    ],
+    [
+      0.0,
+      0.0,
+      -0.8660254037844387
+    ]
+  ],
+  "channel_centering_basis": [
+    [
+      0.7071067811865475,
+      0.4082482904638631,
+      0.2886751345948129,
+      0.22360679774997896,
+      0.18257418583505536
+    ],
+    [
+      -0.7071067811865475,
+      0.4082482904638631,
+      0.2886751345948129,
+      0.22360679774997896,
+      0.18257418583505536
+    ],
+    [
+      0.0,
+      -0.8164965809277261,
+      0.2886751345948129,
+      0.22360679774997896,
+      0.18257418583505536
+    ],
+    [
+      0.0,
+      0.0,
+      -0.8660254037844387,
+      0.22360679774997896,
+      0.18257418583505536
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -0.8944271909999159,
+      0.18257418583505536
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.9128709291752769
+    ]
+  ],
+  "statistics": {
+    "rank_one_energy_fraction": "sigma_1^2/sum_a sigma_a^2",
+    "rank_one_residual_fraction": "sum_{a>1} sigma_a^2/sum_a sigma_a^2",
+    "noise_null": "rank-zero Gaussian draws in projected log-mode covariance",
+    "rank_one_gof": "Gaussian draws about the observed best Frobenius rank-one matrix, with rank one refit by SVD on every draw",
+    "bootstrap_draws_per_geometry": 4096,
+    "random_seed_base": 20260902,
+    "decision_threshold": 0.05
+  },
+  "predeclared_interpretation": {
+    "rank_zero_rejected_and_rank_one_not_rejected": "rank-one interaction candidate, still non-identifying",
+    "rank_zero_not_rejected": "rank-one component not detected above noise",
+    "rank_one_rejected": "commuting scalar-depth PCRR specialization demoted"
+  },
+  "wrong_family_boundary": "a nonlinear separable spectral filter is also rank one, while a path-by-mode calibration can create higher rank; rank one alone does not identify PCRR or Tau",
+  "checks": {
+    "no_endpoint_read": true,
+    "four_path_centered_dimension_is_three": true,
+    "six_channel_centered_dimension_is_five": true,
+    "path_basis_is_orthonormal_and_centered": true,
+    "channel_basis_is_orthonormal_and_centered": true,
+    "no_fermat_or_parent_depth_input": true,
+    "physical_endpoint_remains_unauthorized": true
+  },
+  "checks_passed": 7,
+  "checks_total": 7,
+  "diagnostic_run_allowed": true,
+  "physical_endpoint_authorized": false,
+  "retrospective_only": true
+}

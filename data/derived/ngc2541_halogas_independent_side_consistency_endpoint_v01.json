@@ -1,0 +1,15 @@
+{
+  "schema": "tau_core_ngc2541_halogas_independent_side_consistency_endpoint_v01",
+  "status": "POST_OPEN_DESCRIPTIVE_MOMENT1_SIDE_SYMMETRY_DIAGNOSTIC",
+  "n_common_eligible_rings": 23,
+  "fixed_mean_absolute_side_difference_kms": 13.206930620065247,
+  "variable_mean_absolute_side_difference_kms": 12.572879100763757,
+  "delta_mean_variable_minus_fixed_kms": -0.6340515193014902,
+  "fixed_median_absolute_side_difference_kms": 11.710529754811674,
+  "variable_median_absolute_side_difference_kms": 10.608375040544061,
+  "fraction_common_rings_improved": 0.5217391304347826,
+  "primary_metric_direction_met": true,
+  "free_parameters": 0,
+  "endpoint_hashes_verified": true,
+  "claim_boundary": "Independent map input, but calibration-centre and footprint sensitivity demote this to a descriptive moment-1 side-symmetry diagnostic; it cannot select a Tau q_R, parent morphology, dark-matter replacement, or Nature occupation."
+}

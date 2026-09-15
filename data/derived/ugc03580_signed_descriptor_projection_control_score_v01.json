@@ -1,0 +1,37 @@
+{
+  "schema": "tau_core_ugc03580_signed_descriptor_projection_control_score_v01",
+  "status": "DIAGNOSTIC_STANDARD_PROJECTION_CONTROL_SCORED_NOT_TAU_ENDPOINT",
+  "galaxy": "UGC03580",
+  "n_points": 47,
+  "freeze_manifest_sha256": "05ca834cc16a15e1e7eb7a3afb441c26bd5aecd0d428a3c7ca014505d36a229b",
+  "endpoint_sha256": "60e65aa00bff8714755a111e5065194bb1a3fe1aa4573a319ca058ab6d3a8425",
+  "construction_used_vobs_or_residual": false,
+  "scoring_used_vobs": true,
+  "projection_factor_range": [
+    1.0316615231778383,
+    1.0829497666155556
+  ],
+  "carrier_results": {
+    "NEWTONIAN": {
+      "rmse_uncorrected_km_s": 36.01201131349121,
+      "rmse_projection_control_km_s": 35.394806547329964,
+      "delta_rmse_projection_minus_uncorrected_km_s": -0.6172047661612439,
+      "projection_improves_rmse": true
+    },
+    "TPG_V6": {
+      "rmse_uncorrected_km_s": 25.494526150767044,
+      "rmse_projection_control_km_s": 28.59640156807453,
+      "delta_rmse_projection_minus_uncorrected_km_s": 3.101875417307486,
+      "projection_improves_rmse": false
+    },
+    "MOND": {
+      "rmse_uncorrected_km_s": 27.172706555031347,
+      "rmse_projection_control_km_s": 30.703557495731634,
+      "delta_rmse_projection_minus_uncorrected_km_s": 3.5308509407002866,
+      "projection_improves_rmse": false
+    }
+  },
+  "best_model": "TPG_V6_UNCORRECTED",
+  "interpretation": "This measures an ordinary inclination/projection sensitivity from a source-frozen signed descriptor. It is not a Tau score. If the SPARC terminal already includes the same tilted-ring correction, applying it again is double counting, so the result must remain a systematics control.",
+  "claim_boundary": "ugc03580_standard_projection_systematics_control_not_tau_endpoint"
+}

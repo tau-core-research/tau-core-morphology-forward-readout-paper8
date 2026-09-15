@@ -1,0 +1,75 @@
+{
+  "claim_boundary": "source-developed cohort/rank freeze only; no velocity contrast or endpoint score has been opened, and no Tau/dark-sector claim is authorized",
+  "confirmatory_untouched": [
+    "IC4566",
+    "NGC2730",
+    "NGC3811",
+    "NGC6004",
+    "NGC6060",
+    "NGC6186",
+    "NGC6301"
+  ],
+  "development_no_claim": [
+    "NGC2639"
+  ],
+  "endpoint_opening_authorized": true,
+  "input_file": "edge_carma.2d_smo7.hdf5",
+  "input_md5": "b7e308d0985e8f85ef7afbe1ec4c48b8",
+  "input_sha256": "297a3b7ca6d0c1ee699dd335bfa1f40581d9e96614715382a75f32d4efa0275f",
+  "input_size_bytes": 84941807,
+  "minimum_confirmatory": 6,
+  "n_confirmatory": 7,
+  "n_development": 1,
+  "n_source_eligible": 8,
+  "n_total_galaxies": 125,
+  "requested_source_fields": {
+    "ELINES_sm": [
+      "Name",
+      "ix",
+      "iy",
+      "Vdisp_sm"
+    ],
+    "SSP_sm": [
+      "Name",
+      "ix",
+      "iy",
+      "sigstar_sm"
+    ],
+    "comom_dil": [
+      "Name",
+      "ix",
+      "iy",
+      "rad_arc",
+      "azi_ang",
+      "cosi",
+      "snrpk_12",
+      "mom0_12",
+      "e_mom0_12"
+    ],
+    "flux_elines_sm": [
+      "Name",
+      "ix",
+      "iy",
+      "flux_Halpha_sm",
+      "e_flux_Halpha_sm",
+      "flux_[SII]6717_sm",
+      "flux_[SII]6731_sm",
+      "flux_sigsfr_adopt_sm"
+    ]
+  },
+  "schema": "edge_califa_rotation_morphology_source_preflight_v02",
+  "source_development_disclosure": "v02 was selected after inspecting source-field coverage and ranks but before requesting either CO or Halpha velocity field; it is a new prevalidation look",
+  "source_eligible": [
+    "IC4566",
+    "NGC2639",
+    "NGC2730",
+    "NGC3811",
+    "NGC6004",
+    "NGC6060",
+    "NGC6186",
+    "NGC6301"
+  ],
+  "status": "SOURCE_DEVELOPED_V02_COHORT_FROZEN_ENDPOINT_REMAINS_UNOPENED",
+  "velocity_terminal_fields_requested": false,
+  "velocity_terminal_values_opened": false
+}

@@ -1,0 +1,71 @@
+{
+  "status": "PHYSICAL_MC_ACQUIRED_GEOMETRY_IDENTIFIABILITY_FAIL_ENDPOINT_BLOCKED",
+  "galaxy": "NGC0925",
+  "source": {
+    "citation": "Schmidt et al. 2016, MNRAS 457, 2642, Figure 19 and Sections 3.4, 4.1, 5.10",
+    "arxiv": "1601.01689",
+    "sha256": {
+      "arxiv_1601.01689_source.tar.gz": "abc5f465b7cbcb21502a7dd1292aaeb5d374ec4a8563e22a96d88cee81e998d4",
+      "Radialinflows.tex": "d569ca904c49cd03b00f2aa77fa9828e47dcec35ba935d967784b9ee9af42f5a",
+      "fig19_NGC925.pdf": "16b9236c8a05f1e3d9afa19fad415d6c530c999065a2c1f7a85304bd63bf8f8b",
+      "fig19_NGC925_pdftocairo_26.04.0.svg": "1ae5bf309eca492c03951876b1c1bde07701ce91e2dc9e1e5be83c06e7959713"
+    },
+    "svg_derivation": "pdftocairo 26.04.0 -svg; byte-identical regeneration verified locally from the cached vector PDF"
+  },
+  "uncertainty_model": {
+    "kind": "source-published residual-rescrambling Monte Carlo marginal standard deviations",
+    "iterations": 100,
+    "convergence_check_max_iterations": 2500,
+    "cross_ring_covariance_published": false,
+    "joint_inclination_pa_covariance_published": false
+  },
+  "geometry": {
+    "ring_count": 15,
+    "ring_centres_arcsec": [
+      27.0,
+      54.0,
+      81.0,
+      108.0,
+      135.0,
+      162.0,
+      189.0,
+      216.0,
+      243.0,
+      270.0,
+      297.0,
+      324.0,
+      351.0,
+      378.0,
+      405.0
+    ],
+    "ring_width_arcsec": 43.2,
+    "centre_treatment": "fixed after an inner-disk fit; source-specific centre covariance and alternative-centre weights are not published",
+    "generic_centre_sensitivity": "5-arcsec and 10-arcsec offsets become unnoticeable beyond about 100 and 200 arcsec in the authors' tests"
+  },
+  "identifiability": {
+    "inner_boundary_arcsec": 250.0,
+    "inner_verdict": "source-declared inclination/rotation non-identifiability under nearly solid-body rotation",
+    "outer_verdict": "authors state their fit should be robust outside 250 arcsec",
+    "overlap_with_deblok_max_arcsec": 291.0,
+    "outer_robust_independent_comparison_ring_count": 1
+  },
+  "cross_source_comparison": {
+    "purpose": "pre-endpoint nuisance compatibility audit, not a global significance test",
+    "outer_270_arcsec_inclination_gap_deg": 0.87752,
+    "outer_270_arcsec_inclination_gap_over_schmidt_mc_sigma": 1.231218,
+    "outer_270_arcsec_pa_gap_deg": 3.772636,
+    "outer_270_arcsec_pa_gap_over_schmidt_mc_sigma": 2.906775,
+    "outer_270_arcsec_one_sigma_pa_intervals_overlap": false,
+    "interpretation": "The normalized gaps divide only by Schmidt marginal MC errors; de Blok physical covariance and cross-source systematics are unavailable, so they are diagnostics rather than cross-source significances."
+  },
+  "endpoint_pixels_read": false,
+  "endpoint_allowed": false,
+  "next_decision": "Test a prospectively frozen R>=250 arcsec outer-only descriptor for source/beam support; otherwise demote NGC925 and advance to the next unopened candidate.",
+  "remaining_blockers": [
+    "a cross-source-compatible geometry law or a source-justified outer-only restriction",
+    "source-specific centre alternatives and weights",
+    "cross-ring and joint inclination/position-angle covariance or a conservative nuisance construction",
+    "HALOGAS beam blocks, common-footprint mask, solver tolerance, and wrong-family controls"
+  ],
+  "claim_boundary": "This audit acquires physical marginal MC errors and proves a source-side identifiability failure for the inner geometry. It is not an endpoint score, a global covariance, a Tau q_R selection, parent-morphology evidence, Nature occupation, or dark-matter-replacement evidence."
+}

@@ -1,0 +1,128 @@
+{
+  "schema": "ngc4062_velocity_zero_point_orthogonalization_v01",
+  "status": "POST_OPEN_ORTHOGONALIZATION_DERIVED_FUTURE_FREEZE_REQUIRED",
+  "input_endpoint_status": "NGC4062_CONFIRMATORY_ENDPOINT_FAIL",
+  "analysis_role": "post-open identifiability and operator-design audit only",
+  "endpoint_rescored": false,
+  "confirmatory_status_changed": false,
+  "velocity_step_km_s": -11.0,
+  "equation": "P_perp = I - G (G^T C^-1 G)^+ G^T C^-1",
+  "units": {
+    "d": "km/s",
+    "C": "(km/s)^2",
+    "G_dd_dvsys": "dimensionless",
+    "P_perp": "dimensionless",
+    "quadratic_statistic": "dimensionless"
+  },
+  "resolutions": {
+    "HR": {
+      "post_open_secant_nuisance_tangent_dimensionless": [
+        2.152523846118842,
+        2.0715668151514617
+      ],
+      "nuisance_rank": 1,
+      "projector_rank": 1,
+      "augmented_nuisance_common_template_rank": 2,
+      "projector": [
+        [
+          0.8748214443042593,
+          -0.9090095507362935
+        ],
+        [
+          -0.12047055479336526,
+          0.12517855569574077
+        ]
+      ],
+      "projected_delta_km_s": [
+        13.254820556701393,
+        -1.825304576778245
+      ],
+      "projected_covariance_km2_s2": [
+        [
+          134.450481061249,
+          -18.515005720470377
+        ],
+        [
+          -18.515005720470377,
+          2.5496780236352263
+        ]
+      ],
+      "annihilation_max_abs": 3.3306690738754696e-16,
+      "idempotence_max_abs": 1.1102230246251565e-16,
+      "weighted_self_adjoint_max_abs": 8.673617379884035e-19,
+      "zero_point_shift_invariance_max_abs_km_s": 3.086420008457935e-14,
+      "common_template_information_fraction_retained": 0.0009106664878025642,
+      "post_open_projected_zero_statistic": 1.3067284445811533,
+      "post_open_projected_zero_dof": 1,
+      "post_open_projected_zero_p": 0.2529878436150654
+    },
+    "LR": {
+      "post_open_secant_nuisance_tangent_dimensionless": [
+        2.09630765766141,
+        2.0783488134040224
+      ],
+      "nuisance_rank": 1,
+      "projector_rank": 1,
+      "augmented_nuisance_common_template_rank": 2,
+      "projector": [
+        [
+          0.922518171699049,
+          -0.9304895767217788
+        ],
+        [
+          -0.07681804973669829,
+          0.07748182830095107
+        ]
+      ],
+      "projected_delta_km_s": [
+        17.30869571761932,
+        -1.441294371540267
+      ],
+      "projected_covariance_km2_s2": [
+        [
+          277.859870153877,
+          -23.137379815512478
+        ],
+        [
+          -23.13737981551248,
+          1.9266486536210408
+        ]
+      ],
+      "annihilation_max_abs": 2.220446049250313e-16,
+      "idempotence_max_abs": 1.1102230246251565e-16,
+      "weighted_self_adjoint_max_abs": 1.3010426069826053e-18,
+      "zero_point_shift_invariance_max_abs_km_s": 2.4868995751603507e-14,
+      "common_template_information_fraction_retained": 2.5233222202625285e-05,
+      "post_open_projected_zero_statistic": 1.0782087650124565,
+      "post_open_projected_zero_dof": 1,
+      "post_open_projected_zero_p": 0.2990986133087795
+    }
+  },
+  "exact_common_mode_counterexample": {
+    "nuisance_tangent": [
+      1.0,
+      1.0
+    ],
+    "common_signal_template": [
+      1.0,
+      1.0
+    ],
+    "projected_common_information": 0.0,
+    "conclusion": "A common signal is unidentifiable when it is collinear with the velocity-zero-point nuisance."
+  },
+  "operator_checks_pass": true,
+  "derived_results": {
+    "nuisance_shifts_are_annihilated": true,
+    "one_of_two_radial_degrees_of_freedom_is_removed": true,
+    "current_common_mean_is_nearly_erased": true,
+    "future_target_requires_rank_increment": "rank([G,s]) = rank(G) + 1"
+  },
+  "future_freeze_requirements": [
+    "derive or calibrate G without opening the future endpoint contrast",
+    "use a linear or otherwise differentiably calibrated radial estimator",
+    "freeze the covariance, nuisance span, target template, rank tolerance, and minimum information rule",
+    "open an independent survey/sample; do not reuse NGC4062 as confirmation"
+  ],
+  "first_questionable_step": "The NGC4062 secant tangent uses two already opened systemic-velocity reductions and is not source-owned; it cannot define a confirmatory terminal.",
+  "claim_boundary": "The covariance-weighted nuisance projection is an algebraic result and the NGC4062 numbers are post-open diagnostics.  They do not repair the failed endpoint, select a physical q_R, establish parent morphology or Nature occupation, or support a dark-matter replacement claim."
+}

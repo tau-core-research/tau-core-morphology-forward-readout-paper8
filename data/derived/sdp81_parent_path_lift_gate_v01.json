@@ -1,0 +1,119 @@
+{
+  "schema": "tau-core.paper8.sdp81-parent-path-lift-gate.v01",
+  "status": "PREFLIGHT_NOT_ENDPOINT",
+  "scientific_role": "source-only PATHLIFT-C1 registration audit; never a spectral endpoint score",
+  "input": {
+    "standard_corridor_descriptor": "data/derived/sdp81_standard_corridor_descriptor_v01.json",
+    "sha256": "d268ec5321d0812d6d1f64fc158e265cc893d1a3c66fae9d6288a6bb2e35ccf1",
+    "spectral_or_velocity_endpoint_read": false,
+    "physical_source_manifest": null,
+    "physical_source_manifest_sha256": null,
+    "observed_4d_incidence_measure": "data/derived/sdp81_observed_4d_incidence_measure_v01.json",
+    "observed_4d_incidence_measure_sha256": "fff5c4784b6f04cc22327ae8ed3d0804cf043bc3110b635e126cc72e220479b4"
+  },
+  "observed_4d_path_keys": [
+    "q1_path_1",
+    "q1_path_2",
+    "q1_path_3",
+    "q1_path_4"
+  ],
+  "source_checks": {
+    "frozen_standard_corridor_descriptor_present": true,
+    "four_unique_optical_path_keys": true,
+    "one_common_standard_source_position": true,
+    "all_optical_image_positions_finite_and_typed": true,
+    "no_spectral_or_velocity_endpoint_read": true,
+    "standard_lens_jacobian_not_retyped_as_parent_transfer": true,
+    "standard_descriptor_contains_no_physical_authorization_fields": true,
+    "positive_observed_4d_incidence_measure_present": true
+  },
+  "source_checks_passed": 8,
+  "source_checks_total": 8,
+  "physical_requirements": {
+    "physical_manifest_header_valid": false,
+    "physical_parent_packet_key": false,
+    "independent_nature_occupation_evidence": false,
+    "typed_parent_hessian_and_projection_packet": false,
+    "fiber_basicness_certificate": false,
+    "four_occupied_lifts_with_projection_certificates": false,
+    "at_least_one_authorization_route_complete": false
+  },
+  "physical_requirements_materialized": 0,
+  "physical_requirements_total": 7,
+  "physical_basicness_authorization_route_complete": false,
+  "physical_occupied_lift_authorization_route_complete": false,
+  "authorization_rule": "one common occupied physical parent-Hessian key AND either (a transfer-basicness certificate on all four lift fibers) OR (four immutable occupied parent-lift keys derived by occurrence pushforward under that same packet)",
+  "basicness_certificate_contract": [
+    "one smooth occupied parent-Hessian family H(lambda)",
+    "the source-owned 4D descent differential D pi_4D",
+    "the full vertical kernel ker D pi_4D",
+    "the source/observer/interior block split and endpoint-frame connection",
+    "connected lift fibers or matching anchors for every disconnected component",
+    "zero endpoint-frame covariant D C_gamma on every vertical direction"
+  ],
+  "homogeneous_fiber_generator_reduction_contract": [
+    "a source-owned connected Lie-group action transitive on each regular lift fiber",
+    "a complete fundamental-generator span of ker D pi_4D at every orbit point",
+    "zero endpoint-frame covariant C_gamma defect for every generator everywhere",
+    "explicit anchor/holonomy checks for discrete components and discrete isotropy"
+  ],
+  "parent_hessian_equivariance_certificate_contract": [
+    "a fiber-preserving transitive action with typed source/observer/interior representations",
+    "conformal equivariance of the complete occupied parent Hessian under that action",
+    "one common positive action scale across every Hessian block",
+    "proof that the action preserves the typed block split and all source tensors"
+  ],
+  "source_symmetry_reconstruction_contract": [
+    "a source-owned positive lift-space metric distinct from the response Hessian unless identified",
+    "vertical symmetry fields preserving the descent map and complete source packet",
+    "finite bracket closure, Jacobi identity and complete generator flows",
+    "zero generator-versus-vertical projector defect at every occupied fiber point",
+    "component and discrete-isotropy anchor/holonomy registry"
+  ],
+  "minimum_direct_occupied_lift_acquisition_contract": [
+    "endpoint-independent authoritative provenance artifacts with immutable hashes",
+    "one common physical parent-packet key and independently reviewed source-ownership evidence",
+    "typed E_P, E_4D and pi_4D definitions with a source-owned projection artifact",
+    "occupied H(lambda) definition, domain, S/O/I split, positivity certificate and unit normalization",
+    "one nonzero positive actual post-body observer-source incidence measure",
+    "one source-owned measurable selector/graph law with zero body-side Schur remainder",
+    "occupied parent-lift keys derived by pushing that incidence through the common selector",
+    "four certificates pi_4D(tilde_gamma_i)=gamma_i under the common packet key",
+    "pre-endpoint freeze timestamp, manifest hash and endpoint_authorized=false"
+  ],
+  "lift_occurrence_pushforward_contract": [
+    "nu_OS is a nonzero positive post-body occurrence measure, not a fitted terminal weight",
+    "the physical selector law is measurable on the support and satisfies pi_4D o s_theta = id",
+    "the lift measure is defined by (s_theta o g)_* nu_OS rather than asserted path by path",
+    "projection of the lift measure recovers the registered 4D incidence exactly",
+    "the local graph-square occurrence Hessian has zero upstream Schur remainder",
+    "physical selector-law ownership and actual incidence remain separately evidenced"
+  ],
+  "complete_action_induced_selector_contract": [
+    "one source-owned complete post-body action frozen before endpoint access",
+    "typed incidence, parent-lift and internal-channel domains with no terminal argument",
+    "positive proper internal/lift Hessian and an exact internal Schur elimination certificate",
+    "a source-owned affine descent pi with separately typed linear part L=Dpi",
+    "a physical quotient or gauge slice and affine parent anchor",
+    "one common Hessian on boundary, lift and internal coordinates",
+    "a pre-endpoint fixed-lift or relaxed-lift transfer-semantics declaration",
+    "nested/direct Schur equality and the positive-semidefinite relaxation correction",
+    "the selector, vertical Hessian and section jet derived from that same action",
+    "zero upper-right body/post-body block so the frozen body is not reselected",
+    "a rival-action or affine-shift control demonstrating the physical ownership burden"
+  ],
+  "typed_standard_lens_exclusions": {
+    "lens_potential_hessian_is_parent_hessian": false,
+    "lens_jacobian_is_D_pi_4D": false,
+    "four_image_multiplicity_is_parent_fiber_topology": false,
+    "optical_path_key_is_occupied_parent_lift_key": false
+  },
+  "observed_4d_incidence_status": {
+    "positive_counting_measure_materialized": true,
+    "parent_lift_measure_materialized": false,
+    "physical_parent_requirement_delta": 0
+  },
+  "endpoint_authorized": false,
+  "next_finite_action": "The minimum-scope route is to acquire one common physical complete post-body action that derives the parent Hessian, selector law, quotient and affine anchor. The positive observed 4D incidence is already materialized. Four occupied lift keys must then be derived by pushforward, with four pi_4D projection certificates. The more general route is to prove transfer basicness directly or through a complete sourced symmetry certificate.",
+  "claim_boundary": "The audit certifies four residual-blind standard optical path keys and shows that neither PATHLIFT-C1 authorization route is present. It does not infer parent lifts from Fermat potentials, lens Jacobians, spectral pixels, rotation residuals, or fit quality. Standard lens Hessians, Jacobians, image multiplicity and optical labels are explicitly kept in their downstream 4D types. Artifact hashes certify integrity only; the source-ownership and independent-review clauses remain scientific premises of the manifest rather than consequences of hashing."
+}

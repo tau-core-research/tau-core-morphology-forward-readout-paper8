@@ -1,0 +1,155 @@
+{
+  "schema": "tau-core.paper8.sdp81-standard-corridor-descriptor.v01",
+  "status": "STANDARD_CORRIDOR_COMPARATOR_DERIVED_TAU_PARENT_DEPTH_OPEN",
+  "scientific_role": "source-side standard SIE+shear path comparator; not parent depth or Tau loss",
+  "inputs": {
+    "lens_freeze": "data/derived/sdp81_lens_operator_freeze_v01.json",
+    "lens_freeze_sha256": "1ecdbb92a9d55622e8c38dbdc36b9c37887c74f09c2e14e07e97b197ba41ecea",
+    "geometry_validation": "data/derived/sdp81_lens_operator_geometry_validation_v01.json",
+    "geometry_validation_sha256": "f2a4bb3d3eaddaf824c88cf16813ace467cce6a8771e53c92a6b3e60271fcff9",
+    "spectral_or_velocity_endpoint_read": false
+  },
+  "source_position_arcsec_relative_to_G": [
+    0.1978,
+    0.0215
+  ],
+  "paths": [
+    {
+      "path_id": "q1_path_1",
+      "image_position_arcsec_relative_to_G": [
+        1.9150438850589304,
+        0.2486292031005207
+      ],
+      "fermat_potential_arcsec2": -1.7735906465664493,
+      "relative_fermat_potential_arcsec2": 0.0,
+      "lens_jacobian_d_beta_d_theta": [
+        [
+          0.9321211810840297,
+          0.12310173022666
+        ],
+        [
+          0.12310173022666,
+          0.3038971632000751
+        ]
+      ],
+      "jacobian_singular_values": [
+        0.9553819483797952,
+        0.28063639590430944
+      ],
+      "jacobian_determinant": 0.26811494670534275,
+      "signed_magnification": 3.729743575612724,
+      "parity": "positive"
+    },
+    {
+      "path_id": "q1_path_2",
+      "image_position_arcsec_relative_to_G": [
+        -1.5130306342596636,
+        -0.09343950359425356
+      ],
+      "fermat_potential_arcsec2": -1.0569217238868907,
+      "relative_fermat_potential_arcsec2": 0.7166689226795586,
+      "lens_jacobian_d_beta_d_theta": [
+        [
+          0.9438882462421406,
+          0.06970241214753752
+        ],
+        [
+          0.06970241214753752,
+          0.06437617121279804
+        ]
+      ],
+      "jacobian_singular_values": [
+        0.9493779821939787,
+        0.05888643526095997
+      ],
+      "jacobian_determinant": 0.05590548508664655,
+      "signed_magnification": 17.88733249430042,
+      "parity": "positive"
+    },
+    {
+      "path_id": "q1_path_3",
+      "image_position_arcsec_relative_to_G": [
+        -1.201631645351138,
+        0.8646433657896423
+      ],
+      "fermat_potential_arcsec2": -1.0425616704017502,
+      "relative_fermat_potential_arcsec2": 0.7310289761646991,
+      "lens_jacobian_d_beta_d_theta": [
+        [
+          0.5481190012590338,
+          -0.5202258082140796
+        ],
+        [
+          -0.5202258082140796,
+          0.3222401734151157
+        ]
+      ],
+      "jacobian_singular_values": [
+        0.9675236515934802,
+        0.09716447691933064
+      ],
+      "jacobian_determinant": -0.09400892951416126,
+      "signed_magnification": -10.63728738501764,
+      "parity": "negative"
+    },
+    {
+      "path_id": "q1_path_4",
+      "image_position_arcsec_relative_to_G": [
+        -0.8181867790180961,
+        -1.1877749739404568
+      ],
+      "fermat_potential_arcsec2": -1.030249222729863,
+      "relative_fermat_potential_arcsec2": 0.7433414238365863,
+      "lens_jacobian_d_beta_d_theta": [
+        [
+          0.22363991704975283,
+          0.5202983275834561
+        ],
+        [
+          0.5202983275834561,
+          0.7065758217740374
+        ]
+      ],
+      "jacobian_singular_values": [
+        1.038708010367341,
+        0.10849227154355066
+      ],
+      "jacobian_determinant": -0.11269179151523467,
+      "signed_magnification": -8.873760781989262,
+      "parity": "negative"
+    }
+  ],
+  "summary": {
+    "relative_fermat_span_arcsec2": 0.7433414238365863,
+    "absolute_magnification_range": [
+      3.729743575612724,
+      17.88733249430042
+    ],
+    "centered_descriptor_rank": 3,
+    "maximum_jacobian_magnification_identity_error": 4.163336342344337e-17,
+    "maximum_jacobian_singular_value": 1.038708010367341,
+    "paths_above_unit_operator_norm": 1,
+    "negative_parity_paths": 2
+  },
+  "direct_parent_contraction_identification_allowed": false,
+  "direct_identification_no_go": "The lens Jacobian is a standard 4D angular-coordinate map, includes parity reversal, and has a path with operator norm above one. It is a comparator/nuisance map, not the positive-metric parent contraction C_P.",
+  "checks": {
+    "four_q1_paths": true,
+    "finite_fermat_potentials": true,
+    "finite_nonzero_magnifications": true,
+    "both_lens_parities_present": true,
+    "jacobian_magnification_identity": true,
+    "path_descriptor_has_relative_rank": true,
+    "no_spectral_endpoint_input": true
+  },
+  "checks_passed": 7,
+  "checks_total": 7,
+  "endpoint_authorized": false,
+  "remaining_blockers": [
+    "select and occupy one physical causal-body Hessian rather than identifying Fermat potential with parent depth",
+    "prove PATHLIFT-C1 fiber-basicness or freeze four occupied parent-lift keys under one common physical parent packet",
+    "propagate full lens, differential-magnification, beam and source-reconstruction covariance",
+    "freeze observer access, noise, stable quantizer and terminal calibration on an untouched endpoint"
+  ],
+  "claim_boundary": "Fermat potential and lens Jacobians are standard 4D corridor descriptors and nuisance/comparator inputs. They are not Tau parent distance, do not select T_P|OS, and do not establish nonzero parent loss or Nature occupation."
+}

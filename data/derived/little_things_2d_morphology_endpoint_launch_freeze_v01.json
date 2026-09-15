@@ -1,0 +1,265 @@
+{
+  "schema": "little_things_2d_morphology_endpoint_launch_freeze_v01",
+  "status": "TARGET_LIST_AND_SCORER_FROZEN_VELOCITY_ACQUISITION_ALLOWED",
+  "source_preflight": "data/derived/little_things_2d_morphology_source_preflight_v01.json",
+  "source_preflight_sha256": "a6a9b727b9affc4318dc1c934f9bf40845b816d34edd48bee308807b437d00f8",
+  "operator_calibration": "data/derived/little_things_2d_morphology_operator_calibration_v01.json",
+  "operator_calibration_sha256": "72f3bde0b986f386811609263127909036849751589b323390b56afdb13bc141",
+  "scoring_script": "scripts/run_little_things_2d_morphology_population_endpoint_v01.py",
+  "scoring_script_sha256": "39edf88ce0dbccc96e9229b07751ea53c12259a47ac4cdbae28b42c58e2b7c3e",
+  "acquisition_script": "scripts/acquire_little_things_2d_morphology_velocity_products_v01.py",
+  "acquisition_script_sha256": "1499ff874cc94b10248f628ece2be6ebf40bda604b25cc0e65b0eae4635bc240",
+  "eligible_galaxies": [
+    "DDO126",
+    "DDO133",
+    "DDO154",
+    "DDO165",
+    "DDO168",
+    "DDO187",
+    "DDO216",
+    "DDO47",
+    "DDO50",
+    "DDO52",
+    "DDO53",
+    "DDO69",
+    "DDO70",
+    "DDO75",
+    "DDO87",
+    "IC1613",
+    "NGC1569",
+    "NGC4163",
+    "SagDIG",
+    "UGC8508"
+  ],
+  "targets": {
+    "DDO126": {
+      "galaxy": "DDO126",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo126/HI/DDO126_R_XMOM1.FITS",
+      "velocity_filename": "DDO126_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 1.36,
+      "published_hi_asymmetry_error": 0.266
+    },
+    "DDO133": {
+      "galaxy": "DDO133",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo133/HI/DDO133_R_XMOM1.FITS",
+      "velocity_filename": "DDO133_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 1.82,
+      "published_hi_asymmetry_error": 0.091
+    },
+    "DDO154": {
+      "galaxy": "DDO154",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo154/HI/DDO154_R_XMOM1.FITS",
+      "velocity_filename": "DDO154_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 1.519,
+      "published_hi_asymmetry_error": 0.058
+    },
+    "DDO165": {
+      "galaxy": "DDO165",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo165/HI/DDO165_R_XMOM1.FITS",
+      "velocity_filename": "DDO165_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 1.955,
+      "published_hi_asymmetry_error": 0.055
+    },
+    "DDO168": {
+      "galaxy": "DDO168",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo168/HI/DDO168_R_XMOM1.FITS",
+      "velocity_filename": "DDO168_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 1.137,
+      "published_hi_asymmetry_error": 0.043
+    },
+    "DDO187": {
+      "galaxy": "DDO187",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo187/HI/DDO187_R_XMOM1.FITS",
+      "velocity_filename": "DDO187_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 1.438,
+      "published_hi_asymmetry_error": 0.252
+    },
+    "DDO216": {
+      "galaxy": "DDO216",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo216/HI/DDO216_R_XMOM1.FITS",
+      "velocity_filename": "DDO216_R_XMOM1.FITS",
+      "expected_image_shape": [
+        512,
+        512
+      ],
+      "published_hi_asymmetry": 1.688,
+      "published_hi_asymmetry_error": 0.101
+    },
+    "DDO47": {
+      "galaxy": "DDO47",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo47/HI/DDO47_R_XMOM1.FITS",
+      "velocity_filename": "DDO47_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 0.612,
+      "published_hi_asymmetry_error": 0.058
+    },
+    "DDO50": {
+      "galaxy": "DDO50",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo50/HI/DDO50_R_XMOM1.FITS",
+      "velocity_filename": "DDO50_R_XMOM1.FITS",
+      "expected_image_shape": [
+        2048,
+        2048
+      ],
+      "published_hi_asymmetry": 1.742,
+      "published_hi_asymmetry_error": 0.014
+    },
+    "DDO52": {
+      "galaxy": "DDO52",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo52/HI/DDO52_R_XMOM1.FITS",
+      "velocity_filename": "DDO52_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 1.239,
+      "published_hi_asymmetry_error": 0.159
+    },
+    "DDO53": {
+      "galaxy": "DDO53",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo53/HI/DDO53_R_XMOM1.FITS",
+      "velocity_filename": "DDO53_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 1.951,
+      "published_hi_asymmetry_error": 0.052
+    },
+    "DDO69": {
+      "galaxy": "DDO69",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo69/HI/DDO69_R_XMOM1.FITS",
+      "velocity_filename": "DDO69_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 1.551,
+      "published_hi_asymmetry_error": 0.154
+    },
+    "DDO70": {
+      "galaxy": "DDO70",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo70/HI/DDO70_R_XMOM1.FITS",
+      "velocity_filename": "DDO70_R_XMOM1.FITS",
+      "expected_image_shape": [
+        2048,
+        2048
+      ],
+      "published_hi_asymmetry": 1.136,
+      "published_hi_asymmetry_error": 0.037
+    },
+    "DDO75": {
+      "galaxy": "DDO75",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo75/HI/DDO75_R_XMOM1.FITS",
+      "velocity_filename": "DDO75_R_XMOM1.FITS",
+      "expected_image_shape": [
+        2048,
+        2048
+      ],
+      "published_hi_asymmetry": 2.0,
+      "published_hi_asymmetry_error": 0.0
+    },
+    "DDO87": {
+      "galaxy": "DDO87",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ddo87/HI/DDO87_R_XMOM1.FITS",
+      "velocity_filename": "DDO87_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 0.736,
+      "published_hi_asymmetry_error": 0.066
+    },
+    "IC1613": {
+      "galaxy": "IC1613",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ic1613/HI/IC1613_R_XMOM1.FITS",
+      "velocity_filename": "IC1613_R_XMOM1.FITS",
+      "expected_image_shape": [
+        2048,
+        2048
+      ],
+      "published_hi_asymmetry": 1.076,
+      "published_hi_asymmetry_error": 0.029
+    },
+    "NGC1569": {
+      "galaxy": "NGC1569",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ngc1569/HI/NGC1569_R_XMOM1.FITS",
+      "velocity_filename": "NGC1569_R_XMOM1.FITS",
+      "expected_image_shape": [
+        2048,
+        2048
+      ],
+      "published_hi_asymmetry": 1.987,
+      "published_hi_asymmetry_error": 0.002
+    },
+    "NGC4163": {
+      "galaxy": "NGC4163",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ngc4163/HI/NGC4163_R_XMOM1.FITS",
+      "velocity_filename": "NGC4163_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 1.281,
+      "published_hi_asymmetry_error": 0.136
+    },
+    "SagDIG": {
+      "galaxy": "SagDIG",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/sagdig/HI/SAGDIG_R_XMOM1.FITS",
+      "velocity_filename": "SAGDIG_R_XMOM1.FITS",
+      "expected_image_shape": [
+        512,
+        512
+      ],
+      "published_hi_asymmetry": 2.0,
+      "published_hi_asymmetry_error": 0.0
+    },
+    "UGC8508": {
+      "galaxy": "UGC8508",
+      "velocity_url": "https://things.cv.nrao.edu/littlethings/ugc8508/HI/UGC8508_R_XMOM1.FITS",
+      "velocity_filename": "UGC8508_R_XMOM1.FITS",
+      "expected_image_shape": [
+        1024,
+        1024
+      ],
+      "published_hi_asymmetry": 1.937,
+      "published_hi_asymmetry_error": 0.086
+    }
+  },
+  "success_gate": {
+    "minimum_endpoint_galaxies": 19,
+    "minimum_positive_fraction": 0.6,
+    "maximum_one_sided_sign_flip_p": 0.05,
+    "mean_and_median_specificity_must_be_positive": true
+  },
+  "velocity_pixels_opened_before_launch_freeze": false,
+  "tau_endpoint_allowed": false,
+  "claim_boundary": "frozen conventional same-tracer morphology-sensitivity endpoint; a pass cannot identify Tau or parent loss"
+}

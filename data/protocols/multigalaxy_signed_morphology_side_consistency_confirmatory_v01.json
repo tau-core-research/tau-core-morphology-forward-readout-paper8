@@ -1,0 +1,73 @@
+{
+  "protocol_id": "MULTIGALAXY_SIGNED_MORPHOLOGY_SIDE_CONSISTENCY_CONFIRMATORY_V01",
+  "status": "SOURCE_ONLY_CONFIRMATORY_PROTOCOL_FROZEN_ENDPOINTS_NOT_ACQUIRED",
+  "freeze_stage": "before confirmatory endpoint-map access",
+  "development_cases_excluded": {
+    "NGC2541": "used to develop and audit the side-consistency statistic, footprint rule, centre nuisance set, beam rule, and solver diagnostics",
+    "NGC3198": "prior Paper 8 diagnostic scan and predeclared replay score were already opened",
+    "NGC5055": "included in the Paper 8 SPARC rotation-curve training population"
+  },
+  "current_source_pool_audit": {
+    "audit_id": "MULTIGALAXY_HALOGAS_CONFIRMATORY_CANDIDATE_POOL_V01",
+    "halogas_sample_size": 24,
+    "endpoint_unopened_moderate_inclination_candidates": 8,
+    "shortfall_to_frozen_minimum": 4,
+    "first_source_acquisition_target": "NGC4062",
+    "first_target_geometry_status": "GHASP_SIDE_DATA_PRESENT_SIGNED_RADIAL_IPA_SOURCE_PENDING",
+    "ngc0925_digitized_rings_before_source_demotion": 93,
+    "endpoint_pixels_opened_by_audit": false,
+    "consequence": "NGC925 was source-only demoted from the clean lane after its independent physical-MC audit exposed inner non-identifiability and its outer-only audit exposed known disturbed-gas terminal contamination. NGC4062 is next. HALOGAS alone cannot populate the frozen N>=12 confirmatory cohort; at least four eligible galaxies must come from an independent survey family unless the design is preregisteredly revised before endpoint access"
+  },
+  "minimum_confirmatory_galaxies": 12,
+  "inference_unit": "galaxy",
+  "galaxy_weighting": "equal",
+  "eligibility": [
+    "source-published signed radial morphology descriptor includes radius, inclination, position angle, uncertainties, and approaching/receding or spin convention",
+    "descriptor is frozen without access to the confirmatory endpoint summary statistic",
+    "endpoint map is independently reduced and its observation provenance is audited against the morphology source",
+    "all fixed, morphology, and wrong-family geometries use the identical finite sky-pixel intersection",
+    "each accepted side-ring cell contains at least two synthesized-beam areas after masking",
+    "beam-scale spatial blocks or an equivalent source-frozen covariance model replace pixel-iid and ring-iid inference",
+    "source-published astrometric and kinematic centres and their uncertainty envelope are evaluated as frozen nuisances",
+    "inclination and position-angle uncertainty, including covariance when published, is propagated",
+    "the coordinate solve satisfies a source-frozen convergence tolerance; iteration count alone is insufficient",
+    "moment-1 limitations, warp overlap, and extraplanar-gas contamination are audited or a stronger terminal is used"
+  ],
+  "ring_loss": "e_g,r^(a) = abs(vhat_plus_g,r^(a) - vhat_minus_g,r^(a))",
+  "galaxy_loss": "L_g^(a) = sum_r w_g,r e_g,r^(a), with source-frozen covariance-aware normalized weights",
+  "primary_gains": {
+    "A_g": "L_g^(fixed) - L_g^(morphology)",
+    "D_g": "mean_k[L_g^(wrong_family_k) - L_g^(morphology)]"
+  },
+  "source_side_wrong_family_controls": [
+    "radial-order reversal",
+    "tangent-orientation mirror",
+    "position-angle rotation by pi/2",
+    "donor morphology profile matched only on preregistered support variables"
+  ],
+  "nuisance_reporting": [
+    "all frozen centre alternatives",
+    "orientation uncertainty draws or quadrature nodes",
+    "beam-block covariance choices",
+    "solver residual and convergence map",
+    "radial-zone and data-quality breakdowns"
+  ],
+  "confirmatory_statistics": {
+    "test": "exact galaxy-level shared-sign permutation for mean A_g and mean D_g",
+    "multiplicity": "max-T adjustment across the two primary gains and the frozen wrong-family family",
+    "secondary": [
+      "median A_g > 0",
+      "median D_g > 0",
+      "fraction of galaxies with A_g > 0 is at least 0.60",
+      "fraction of galaxies with D_g > 0 is at least 0.60",
+      "leave-one-galaxy-out means remain positive for A_g and D_g"
+    ]
+  },
+  "promotion_gate": {
+    "max_T_adjusted_p_A_at_most": 0.01,
+    "max_T_adjusted_p_D_at_most": 0.01,
+    "all_secondary_conditions_required": true,
+    "all_eligibility_and_nuisance_conditions_required": true
+  },
+  "claim_boundary": "Passing would be a predeclared population-level morphology/readout calibration signal only. It would not derive or select a physical q_R, prove the parent morphology, establish Nature occupation, or replace dark matter."
+}

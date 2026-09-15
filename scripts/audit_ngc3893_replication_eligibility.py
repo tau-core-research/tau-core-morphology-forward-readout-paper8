@@ -20,6 +20,7 @@ REPORTS = ROOT / "reports"
 PRIMARY_URL = "https://export.arxiv.org/e-print/astro-ph/0701878"
 LOPSIDEDNESS_URL = "https://export.arxiv.org/e-print/1103.4928"
 WHISP_BASE = "https://www.astro.rug.nl/~whisp/Database/OverviewCatalog/ListByName/"
+UMA_ROTATION = ROOT / "data/external/catalogs/ngc3726_uma_hi/uma_rotation_table4.dat.gz"
 
 
 def download(url: str) -> bytes:
@@ -89,7 +90,7 @@ def main() -> None:
         "both_ghasp_halpha_sides": candidate["both_halpha_sides"] == "True",
         "whisp_graphical_source_available": candidate["whisp_overview_available"] == "True",
         "low_disturbance_primary_replication": False,
-        "independent_machine_readable_hi_radial_sides_acquired": False,
+        "independent_machine_readable_hi_radial_sides_acquired": UMA_ROTATION.exists(),
         "side_curve_not_symmetry_targeted": False,
     }
     result = {
@@ -116,6 +117,7 @@ def main() -> None:
             "astro-ph_0701878": hashlib.sha256(primary_payload).hexdigest(),
             "1103.4928": hashlib.sha256(lopsidedness_payload).hexdigest(),
             "whisp_overview": hashlib.sha256(whisp_payload).hexdigest(),
+            "uma_rotation_table4": hashlib.sha256(UMA_ROTATION.read_bytes()).hexdigest() if UMA_ROTATION.exists() else None,
         },
         "next_clean_candidate": "UGC08490",
         "claim_boundary": (
@@ -129,7 +131,7 @@ def main() -> None:
     with (DATA / "ngc3893_replication_eligibility_gates_v01.csv").open(
         "w", newline="", encoding="utf-8"
     ) as handle:
-        writer = csv.DictWriter(handle, fieldnames=["gate", "pass"])
+        writer = csv.DictWriter(handle, fieldnames=["gate", "pass"], lineterminator="\n")
         writer.writeheader()
         writer.writerows({"gate": key, "pass": value} for key, value in gates.items())
 
@@ -151,9 +153,10 @@ primary odd-channel replication.
 {gate_rows}
 
 The WHISP graphical overview is cached. The searched WHISP lopsidedness source
-package does not contain UGC6778/NGC3893, and no independent machine-readable
-H I radial side table has been acquired in this audit. This is a bounded source
-audit, not a universal non-existence claim.
+package does not contain UGC6778/NGC3893. A later source audit found that the
+checksum-frozen Verheijen--Sancisi Ursa Major table contains machine-readable
+NGC3893 approaching/receding H I rows. This removes the data-availability
+blocker but not the disturbed-control classification.
 
 No channel statistic was run, so this object is neither a positive detection
 nor a third negative channel test. It remains available as a predeclared

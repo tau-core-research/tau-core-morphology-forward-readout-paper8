@@ -15,13 +15,14 @@ primary odd-channel replication.
 | both_ghasp_halpha_sides | True |
 | whisp_graphical_source_available | True |
 | low_disturbance_primary_replication | False |
-| independent_machine_readable_hi_radial_sides_acquired | False |
+| independent_machine_readable_hi_radial_sides_acquired | True |
 | side_curve_not_symmetry_targeted | False |
 
 The WHISP graphical overview is cached. The searched WHISP lopsidedness source
-package does not contain UGC6778/NGC3893, and no independent machine-readable
-H I radial side table has been acquired in this audit. This is a bounded source
-audit, not a universal non-existence claim.
+package does not contain UGC6778/NGC3893. A later source audit found that the
+checksum-frozen Verheijen--Sancisi Ursa Major table contains machine-readable
+NGC3893 approaching/receding H I rows. This removes the data-availability
+blocker but not the disturbed-control classification.
 
 No channel statistic was run, so this object is neither a positive detection
 nor a third negative channel test. It remains available as a predeclared

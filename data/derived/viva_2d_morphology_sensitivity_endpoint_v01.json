@@ -1,0 +1,77 @@
+{
+  "schema": "viva_2d_morphology_sensitivity_endpoint_v01",
+  "status": "PREFLIGHT_BLOCKED_BY_FROZEN_SUPPORT_GATE",
+  "all_frozen_support_gates_pass": false,
+  "conventional_sensitivity_demonstrated": false,
+  "primary_disturbed_minus_quiet_specificity": null,
+  "exact_one_sided_permutation_p": null,
+  "disturbed_median_specificity": null,
+  "score_rows": [],
+  "support_gates": [
+    {
+      "galaxy": "NGC4298",
+      "role": "disturbed",
+      "support_gate": false,
+      "beam_sampling_step_pixels": 4,
+      "beam_major_arcsec": 16.8516,
+      "beam_minor_arcsec": 15.716880000000002,
+      "independent_samples": 29
+    },
+    {
+      "galaxy": "NGC4424",
+      "role": "disturbed",
+      "support_gate": false,
+      "beam_sampling_step_pixels": 4,
+      "beam_major_arcsec": 37.2744,
+      "beam_minor_arcsec": 31.77396,
+      "independent_samples": 4
+    },
+    {
+      "galaxy": "NGC4654",
+      "role": "disturbed",
+      "support_gate": false,
+      "beam_sampling_step_pixels": 4,
+      "beam_major_arcsec": 16.138080000000002,
+      "beam_minor_arcsec": 15.517800000000001,
+      "independent_samples": 81
+    },
+    {
+      "galaxy": "NGC4450",
+      "role": "quiet",
+      "support_gate": false,
+      "beam_sampling_step_pixels": 4,
+      "beam_major_arcsec": 16.44732,
+      "beam_minor_arcsec": 15.605279999999999,
+      "independent_samples": 28
+    },
+    {
+      "galaxy": "NGC4579",
+      "role": "quiet",
+      "support_gate": false,
+      "beam_sampling_step_pixels": 4,
+      "beam_major_arcsec": 42.440400000000004,
+      "beam_minor_arcsec": 34.50996,
+      "independent_samples": 27
+    },
+    {
+      "galaxy": "NGC4689",
+      "role": "quiet",
+      "support_gate": false,
+      "beam_sampling_step_pixels": 4,
+      "beam_major_arcsec": 16.7058,
+      "beam_minor_arcsec": 15.841080000000002,
+      "independent_samples": 45
+    }
+  ],
+  "source_geometry_uncertainty_tangents_supported": false,
+  "geometry_caveat": "the VIVA atlas supplies one adopted center/PA/inclination per object but no covariance sufficient for frozen tangent marginalization",
+  "same_cube_source_velocity_caveat": "H I moment-0 and moment-1 are reduced from the same cube; shared masking/noise may contribute to apparent coupling",
+  "construction_uses_rotation_or_gravity_residual": false,
+  "tau_endpoint_scored": false,
+  "claim_boundary": "frozen conventional morphology-correlated 2D kinematic sensitivity control only; passing would not identify causality or Tau, and failure demotes only this terminal",
+  "outputs": {
+    "zones": "data/derived/viva_2d_morphology_sensitivity_endpoint_v01_zones.csv",
+    "gates": "data/derived/viva_2d_morphology_sensitivity_endpoint_v01_gates.csv",
+    "scores": "data/derived/viva_2d_morphology_sensitivity_endpoint_v01_scores.csv"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "tau-core.paper8.sdp81-parent-gas-conditional-response.v01",
+  "status": "CONDITIONAL_PARENT_GAS_RESPONSE_DERIVED_PHYSICAL_MIXED_JET_OPEN",
+  "formula": "P=D_Z xi_*(Z)=-H_xi^{-1}B_xiZ",
+  "derived_bridge_rank": 5,
+  "mixed_derivative_rank": 5,
+  "minimum_bridge_singular_value": 0.7786804734167273,
+  "backreaction_frobenius_norm": 6.69331675068497,
+  "physical_mixed_derivative_selected": false,
+  "checks": {
+    "gas_hessian_positive": true,
+    "implicit_formula_verified": true,
+    "finite_difference_verified": true,
+    "full_rank_equivalence_verified": true,
+    "singular_control_verified": true,
+    "conditioning_bounds_verified": true,
+    "positive_joint_control": true,
+    "simultaneous_elimination_backreacts": true,
+    "same_reduct_does_not_select_bridge": true,
+    "physical_mixed_derivative_selected": false,
+    "no_spectral_endpoint_read": true,
+    "no_co109_header_or_pixel_read": true
+  },
+  "proof_checks_passed": 11,
+  "proof_checks_total": 11,
+  "claim_boundary": "The ordered implicit-response formula and no-backreaction requirement are derived. The physical conditional gas law, B_xiZ, and Nature occupation are not selected; no CO(10-9) endpoint was read."
+}

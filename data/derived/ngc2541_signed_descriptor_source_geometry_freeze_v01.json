@@ -1,0 +1,69 @@
+{
+  "schema": "tau_core_ngc2541_signed_descriptor_source_geometry_freeze_v01",
+  "status": "SOURCE_GEOMETRY_READY_TERMINAL_CALIBRATION_AND_UNTOUCHED_ENDPOINT_BLOCKED",
+  "galaxy": "NGC2541",
+  "alias": "UGC4284",
+  "source": {
+    "citation": "Jozsa 2007, A&A 468, 731, online Table 6 and Table 4",
+    "pdf_sha256": "15b4ae9e2bb3268509e75b40e62def8cc4664a117fdcccafae8afb7f170ec8ba",
+    "orientation_table_sha256": "3585d5a72f19fb00bb761fbdd141c2aa268f1ef9b9da0ab4b6e58e04c3d07a03",
+    "approaching_side": "NE",
+    "reference_inclination_deg": 66.3,
+    "reference_pa_deg": 261.2,
+    "inner_plane_range_arcsec": [
+      30.0,
+      240.0
+    ],
+    "outer_plane_range_arcsec": [
+      300.0,
+      590.0
+    ],
+    "excluded_inner_reason": "published inner-plane range begins at 30 arcsec; paper separately flags its first two plotted points as possible non-circular-motion fit artefacts"
+  },
+  "descriptor": {
+    "definition": "D_hat=(1-n_inner dot n,1-n_outer dot n,c dot n)",
+    "decoder": "N(D_hat)=A^-1(1-d_inner,1-d_outer,chi)^T",
+    "jacobian": "J_OS=D_Dhat N=A^-1 diag(-1,-1,+1)",
+    "inner_normal": [
+      -0.8879408245542837,
+      0.1644543655996976,
+      0.42955308603833803
+    ],
+    "outer_normal": [
+      -0.867671647542588,
+      -0.13151691904287935,
+      0.4794259192578137
+    ],
+    "transverse_axis": [
+      0.45506028587834624,
+      0.17817730100792897,
+      0.8724522827191454
+    ],
+    "basis_condition_number": 6.57269287866163,
+    "maximum_decoder_error": 8.025154038416283e-16,
+    "maximum_source_rounding_norm_error": 0.0006662219258272151,
+    "n_support_rings": 25
+  },
+  "reference_projection_sensitivity": {
+    "formula": "G_ref=(1-n_los^2)/sin(i_ref)^2",
+    "terminal_covector": "P_R=(0,0,-2*n_los/sin(i_ref)^2)",
+    "chain": "D_Dhat G_ref=P_R J_OS",
+    "maximum_finite_difference_error": 1.0521128412932512e-10,
+    "minimum_ratio_sq": 0.8186532300403337,
+    "maximum_ratio_sq": 1.0310746128543613,
+    "status": "SOURCE_FROZEN_ALGEBRAIC_SENSITIVITY_ONLY"
+  },
+  "physical_terminal_branch": {
+    "status": "BLOCKED_PENDING_ENDPOINT_CALIBRATION",
+    "reason": "oriented normals do not prove that an eventual endpoint used one fixed 66.3-degree inclination reduction"
+  },
+  "integrability": {
+    "pathwise_finite_profile": "available after one source-owned anchor for any L1 pullback on this radial chain",
+    "ambient_descriptor_exactness": "not established by one radial chain; no independent cycles",
+    "normalization": "must be source-owned and fixed before endpoint access"
+  },
+  "endpoint_values_used": false,
+  "endpoint_scoring_allowed": false,
+  "free_parameters": 0,
+  "claim_boundary": "Complete source-owned signed geometry and a reference-projection sensitivity Jacobian only. No Tau-specific q_R, physical terminal calibration, Nature occupation, or galaxy score is derived."
+}

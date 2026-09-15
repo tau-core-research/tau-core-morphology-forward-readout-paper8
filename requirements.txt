@@ -1,6 +1,8 @@
 astropy>=5.0
 astroquery>=0.4
+lenstronomy==1.13.5
 matplotlib>=3.8
 pandas>=2.0
+pdrtpy==2.6.4
 pytest>=8.0
 scipy>=1.11

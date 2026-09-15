@@ -1,0 +1,50 @@
+{
+  "schema": "tau-core.paper8.sdp81-common-action-forward-model.v01",
+  "status": "FORMULA_SHELL_DERIVED_ENDPOINT_BLOCKED",
+  "scientific_role": "source-only common-action to fixed/relaxed transfer compiler",
+  "inputs": {
+    "parent_path_gate": "data/derived/sdp81_parent_path_lift_gate_v01.json",
+    "parent_path_gate_sha256": "6da3af009c2131be3c19640664aefaf16030e15a8435df71711d6a26f348f548",
+    "physical_manifest": null,
+    "physical_manifest_sha256": null,
+    "spectral_or_velocity_endpoint_read": false
+  },
+  "source_checks": {
+    "parent_path_gate_present": true,
+    "parent_path_gate_source_checks_pass": true,
+    "spectral_or_velocity_endpoint_read": false
+  },
+  "transfer_semantics": null,
+  "compiled_paths": [],
+  "terminal_calibration": null,
+  "leave_one_path_out_identifiability": null,
+  "endpoint_extraction_freeze": {
+    "line": "CO(8-7)",
+    "channels_one_based": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "aperture_radius_arcsec": 0.12,
+    "registration_dx_mas": 0.0,
+    "registration_dy_mas": 0.0,
+    "observable": "five-dimensional centered log spectral shape"
+  },
+  "endpoint_authorized": false,
+  "retrospective_only": true,
+  "blocker": "physical common-action manifest absent",
+  "score_contract": {
+    "primary": "leave-one-path-out generalized least-squares prediction of a common source-mode vector",
+    "baseline": "lossless identity transfer",
+    "wrong_family": "all non-identity permutations of path-to-transfer assignment",
+    "metrics": [
+      "held-out Mahalanobis chi2",
+      "held-out Euclidean mode RMSE"
+    ],
+    "no_post_endpoint_retuning": true
+  },
+  "claim_boundary": "Compilation derives transfer matrices only from an independently physical, gate-authorized common-action manifest. The present absent manifest blocks endpoint access. Any future SDP.81 score is retrospective because the spectral cube was opened before this common-action formula freeze; it cannot be reported as a novel Tau prediction or Nature occupation proof."
+}

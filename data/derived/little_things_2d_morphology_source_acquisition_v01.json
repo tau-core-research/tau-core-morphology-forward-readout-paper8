@@ -1,0 +1,19 @@
+{
+  "schema": "little_things_2d_morphology_source_acquisition_v01",
+  "status": "SOURCE_MOM0_ACQUISITION_COMPLETE",
+  "preregistration": "data/derived/little_things_2d_morphology_population_preregistration_v01.json",
+  "preregistration_sha256": "09918d8d687a8ca4cfc42ec5d85b28ae9ec260599f24af12da61dc1f88ef1748",
+  "ledger": "data/derived/little_things_2d_morphology_source_acquisition_v01.csv",
+  "ledger_sha256": "2b7dd29dc060830f5c847a9b78b5d769519e915072e85542cc0bc425ee490efb",
+  "requested_count": 25,
+  "acquired_count": 25,
+  "failure_count": 0,
+  "failures": [],
+  "total_bytes": 177667200,
+  "product_family": "robust-weighted primary-beam-corrected H I moment 0 only",
+  "same_cube_target_caveat": "future moment-1 targets are reductions of the same H I cube and may share masks/noise with moment 0; wrong-template and injection controls do not erase this dependence",
+  "velocity_products_downloaded": false,
+  "velocity_pixels_read": false,
+  "endpoint_scoring_allowed": false,
+  "claim_boundary": "source-map acquisition only; no kinematic result and no Tau endpoint"
+}

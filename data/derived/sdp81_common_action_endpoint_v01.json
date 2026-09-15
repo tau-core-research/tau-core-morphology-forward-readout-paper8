@@ -1,0 +1,9 @@
+{
+  "schema": "tau-core.paper8.sdp81-common-action-endpoint.v01",
+  "status": "FORMULA_SHELL_DERIVED_ENDPOINT_BLOCKED",
+  "model": "data/derived/sdp81_common_action_forward_model_v01.json",
+  "spectral_endpoint_read": false,
+  "score_emitted": false,
+  "blocker": "physical common-action manifest absent",
+  "claim_boundary": "Fail-closed result; no spectral endpoint was opened."
+}

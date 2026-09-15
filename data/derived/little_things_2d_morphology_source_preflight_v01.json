@@ -1,0 +1,1838 @@
+{
+  "schema": "little_things_2d_morphology_source_preflight_v01",
+  "status": "SOURCE_SUPPORT_PASSED_OPERATOR_CALIBRATION_PENDING",
+  "preregistration": "data/derived/little_things_2d_morphology_population_preregistration_v01.json",
+  "preregistration_sha256": "09918d8d687a8ca4cfc42ec5d85b28ae9ec260599f24af12da61dc1f88ef1748",
+  "acquisition": "data/derived/little_things_2d_morphology_source_acquisition_v01.json",
+  "acquisition_sha256": "95f889f1e6c5c9cb62f83f48400a26270dfaa5c9fcd7ae1687a28991e8569072",
+  "support_ledger": "data/derived/little_things_2d_morphology_source_preflight_v01.csv",
+  "support_ledger_sha256": "6f4a64627240c961bc6d2e5d724f3130773377714f28b967dc86b1b154d8fe12",
+  "source_map_count": 25,
+  "support_pass_count": 22,
+  "support_fail_count": 3,
+  "passing_galaxies": [
+    "DDO126",
+    "DDO133",
+    "DDO154",
+    "DDO165",
+    "DDO168",
+    "DDO187",
+    "DDO216",
+    "DDO47",
+    "DDO50",
+    "DDO52",
+    "DDO53",
+    "DDO69",
+    "DDO70",
+    "DDO75",
+    "DDO87",
+    "IC1613",
+    "M81dwA",
+    "Mrk178",
+    "NGC1569",
+    "NGC4163",
+    "SagDIG",
+    "UGC8508"
+  ],
+  "failing_galaxies": [
+    "F564-V3",
+    "Haro36",
+    "IC10"
+  ],
+  "source_descriptors": {
+    "DDO126": {
+      "catalog_center_ra_deg": 186.7770833333333,
+      "catalog_center_dec_deg": 37.13972222222222,
+      "optical_pa_deg": -41.0,
+      "optical_inclination_deg": 67.7,
+      "source_r95_arcsec": 166.2991671291627,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.07953869740682068,
+          "m1_imag": 0.08642104669318497,
+          "m1_amplitude": 0.11745212512645073,
+          "m1_phase_rad": 0.8268444072407529
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.1021826858177112,
+          "m1_imag": -0.04264923205323181,
+          "m1_amplitude": 0.11072605057370868,
+          "m1_phase_rad": -0.3954006320259753
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.12594650715580022,
+          "m1_imag": -0.051572320988217096,
+          "m1_amplitude": 0.13609638847837857,
+          "m1_phase_rad": -0.3886502501365322
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": -0.04509753619278502,
+          "m1_imag": 0.004766576967039501,
+          "m1_amplitude": 0.0453487378726494,
+          "m1_phase_rad": 3.0362887806525576
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": -0.21406235975782992,
+          "m1_imag": 0.14507884317576358,
+          "m1_amplitude": 0.2585934349559331,
+          "m1_phase_rad": 2.5459623222463423
+        }
+      ],
+      "beams_by_azimuth_block": [
+        105,
+        129,
+        127,
+        131,
+        127,
+        130,
+        130,
+        111
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "DDO133": {
+      "catalog_center_ra_deg": 188.23083333333332,
+      "catalog_center_dec_deg": 31.537222222222223,
+      "optical_pa_deg": -6.0,
+      "optical_inclination_deg": 49.4,
+      "source_r95_arcsec": 182.58579843560338,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.09805269276269722,
+          "m1_imag": 0.08885434757355241,
+          "m1_amplitude": 0.13232318633080734,
+          "m1_phase_rad": 0.7362243606442389
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.048901755550605115,
+          "m1_imag": -0.02314707810935168,
+          "m1_amplitude": 0.05410331709730529,
+          "m1_phase_rad": -0.44209173682324
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.0849721837552422,
+          "m1_imag": -0.06495398742810263,
+          "m1_amplitude": 0.10695462820722046,
+          "m1_phase_rad": -0.6526628759284008
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.06326153638847537,
+          "m1_imag": -0.037627129560133456,
+          "m1_amplitude": 0.07360586162232911,
+          "m1_phase_rad": -0.5365774796691477
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.0514301453924653,
+          "m1_imag": -0.07780279375443439,
+          "m1_amplitude": 0.09326486246751868,
+          "m1_phase_rad": -0.986704716852513
+        }
+      ],
+      "beams_by_azimuth_block": [
+        77,
+        80,
+        81,
+        82,
+        78,
+        80,
+        81,
+        80
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "DDO154": {
+      "catalog_center_ra_deg": 193.5258333333333,
+      "catalog_center_dec_deg": 27.150555555555552,
+      "optical_pa_deg": 46.0,
+      "optical_inclination_deg": 65.2,
+      "source_r95_arcsec": 531.6368656501857,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.016020071769383956,
+          "m1_imag": -0.007911491728288103,
+          "m1_amplitude": 0.017867131858890613,
+          "m1_phase_rad": -0.4587144764088442
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.04051734506940089,
+          "m1_imag": -0.02304665801566202,
+          "m1_amplitude": 0.046613342480064476,
+          "m1_phase_rad": -0.5171696445950198
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.13417262600835614,
+          "m1_imag": 0.08105932296460922,
+          "m1_amplitude": 0.15675747959653802,
+          "m1_phase_rad": 0.5434595476392967
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.05414102568759738,
+          "m1_imag": 0.09749115351979314,
+          "m1_amplitude": 0.11151580909057222,
+          "m1_phase_rad": 1.063860292800878
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.030272223061504264,
+          "m1_imag": 0.36442489158350483,
+          "m1_amplitude": 0.36568006384643764,
+          "m1_phase_rad": 1.4879181240355575
+        }
+      ],
+      "beams_by_azimuth_block": [
+        568,
+        632,
+        958,
+        861,
+        633,
+        954,
+        971,
+        766
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "DDO165": {
+      "catalog_center_ra_deg": 196.60541666666663,
+      "catalog_center_dec_deg": 67.70694444444445,
+      "optical_pa_deg": 89.0,
+      "optical_inclination_deg": 61.9,
+      "source_r95_arcsec": 241.76559334187968,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.13044001336056693,
+          "m1_imag": -0.3634976531441676,
+          "m1_amplitude": 0.3861931394093148,
+          "m1_phase_rad": -1.2262619069867233
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.0662580575627974,
+          "m1_imag": -0.35823423611455124,
+          "m1_amplitude": 0.36431016746252226,
+          "m1_phase_rad": -1.3879057925416884
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.011732011351527502,
+          "m1_imag": -0.05238295684187212,
+          "m1_amplitude": 0.053680669312610174,
+          "m1_phase_rad": -1.3504660956975687
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.031821223901980285,
+          "m1_imag": 0.26906646351487623,
+          "m1_amplitude": 0.2709416027099238,
+          "m1_phase_rad": 1.4530778328152278
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": -0.012822798638742717,
+          "m1_imag": 0.14925883520932387,
+          "m1_amplitude": 0.14980862476163995,
+          "m1_phase_rad": 1.6564957185923614
+        }
+      ],
+      "beams_by_azimuth_block": [
+        26,
+        86,
+        115,
+        23,
+        30,
+        105,
+        136,
+        33
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        6,
+        4,
+        4
+      ]
+    },
+    "DDO168": {
+      "catalog_center_ra_deg": 198.6133333333333,
+      "catalog_center_dec_deg": 45.92944444444444,
+      "optical_pa_deg": -24.5,
+      "optical_inclination_deg": 54.5,
+      "source_r95_arcsec": 233.28795552677985,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": -0.1603795294215902,
+          "m1_imag": 0.21530721374086362,
+          "m1_amplitude": 0.2684749331806317,
+          "m1_phase_rad": 2.2110170314313917
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": -0.2613427197254677,
+          "m1_imag": 0.17173302850644273,
+          "m1_amplitude": 0.3127175246664296,
+          "m1_phase_rad": 2.560229768286167
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": -0.2645551489587669,
+          "m1_imag": 0.09253779253575868,
+          "m1_amplitude": 0.2802724922071134,
+          "m1_phase_rad": 2.8051081384954966
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": -0.12045241145554851,
+          "m1_imag": 0.009192142050614293,
+          "m1_amplitude": 0.12080264442856962,
+          "m1_phase_rad": 3.0654268068545503
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": -0.33725705671806966,
+          "m1_imag": -0.008845204690245917,
+          "m1_amplitude": 0.33737302789664086,
+          "m1_phase_rad": -3.115371771645488
+        }
+      ],
+      "beams_by_azimuth_block": [
+        251,
+        283,
+        301,
+        304,
+        298,
+        295,
+        300,
+        262
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "DDO187": {
+      "catalog_center_ra_deg": 213.98624999999998,
+      "catalog_center_dec_deg": 23.05527777777778,
+      "optical_pa_deg": 37.0,
+      "optical_inclination_deg": 39.0,
+      "source_r95_arcsec": 95.87738615892697,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": -0.08215756690729782,
+          "m1_imag": -0.12202915287305088,
+          "m1_amplitude": 0.14710873512827694,
+          "m1_phase_rad": -2.163350903380341
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": -0.07292054854011495,
+          "m1_imag": -0.15113143799493864,
+          "m1_amplitude": 0.16780380791212468,
+          "m1_phase_rad": -2.020344191547899
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.01941183268843724,
+          "m1_imag": -0.2379025287710154,
+          "m1_amplitude": 0.23869317636658088,
+          "m1_phase_rad": -1.489380952115954
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.07319672226685901,
+          "m1_imag": -0.23759420516039712,
+          "m1_amplitude": 0.24861368923776617,
+          "m1_phase_rad": -1.2719482706352807
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": -0.010790677665976502,
+          "m1_imag": -0.27641969686283485,
+          "m1_amplitude": 0.2766302361243841,
+          "m1_phase_rad": -1.6098138116282086
+        }
+      ],
+      "beams_by_azimuth_block": [
+        67,
+        96,
+        95,
+        90,
+        81,
+        79,
+        91,
+        89
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "DDO216": {
+      "catalog_center_ra_deg": 352.14583333333326,
+      "catalog_center_dec_deg": 14.741666666666665,
+      "optical_pa_deg": -58.0,
+      "optical_inclination_deg": 69.4,
+      "source_r95_arcsec": 342.22786705402774,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": -0.10332762313818593,
+          "m1_imag": 0.1979958692236452,
+          "m1_amplitude": 0.2233359844114105,
+          "m1_phase_rad": 2.051784559354973
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.026319427495562188,
+          "m1_imag": 0.19982457138466223,
+          "m1_amplitude": 0.20155041948048166,
+          "m1_phase_rad": 1.4398374877445972
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.17076085690310971,
+          "m1_imag": 0.10917613493770205,
+          "m1_amplitude": 0.2026788067120478,
+          "m1_phase_rad": 0.5688526840053839
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.20184850896723158,
+          "m1_imag": -0.011553116170942016,
+          "m1_amplitude": 0.20217886898870974,
+          "m1_phase_rad": -0.057174189058348535
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.20268305831826136,
+          "m1_imag": -0.1323143315453959,
+          "m1_amplitude": 0.24204855806541936,
+          "m1_phase_rad": -0.5783508625769265
+        }
+      ],
+      "beams_by_azimuth_block": [
+        84,
+        83,
+        79,
+        46,
+        45,
+        76,
+        84,
+        81
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        6
+      ]
+    },
+    "DDO47": {
+      "catalog_center_ra_deg": 115.48041666666666,
+      "catalog_center_dec_deg": 16.802222222222223,
+      "optical_pa_deg": -70.0,
+      "optical_inclination_deg": 64.4,
+      "source_r95_arcsec": 442.7521823029663,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": -0.020045647833998353,
+          "m1_imag": -0.020773603740521153,
+          "m1_amplitude": 0.02886815909359094,
+          "m1_phase_rad": -2.3383627387409036
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.04623454626614522,
+          "m1_imag": 0.01576009521583772,
+          "m1_amplitude": 0.04884684093826942,
+          "m1_phase_rad": 0.32852057981037275
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.08134803270204387,
+          "m1_imag": -0.045640144017263296,
+          "m1_amplitude": 0.09327660569729869,
+          "m1_phase_rad": -0.5112857072526085
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.03787348464789867,
+          "m1_imag": 0.07604624969655566,
+          "m1_amplitude": 0.08495547617596824,
+          "m1_phase_rad": 1.1087241585481977
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.028954324186134528,
+          "m1_imag": -0.13056082886878484,
+          "m1_amplitude": 0.13373287899383568,
+          "m1_phase_rad": -1.3525594644522874
+        }
+      ],
+      "beams_by_azimuth_block": [
+        176,
+        364,
+        335,
+        150,
+        122,
+        350,
+        312,
+        140
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        6,
+        5
+      ]
+    },
+    "DDO50": {
+      "catalog_center_ra_deg": 124.78624999999998,
+      "catalog_center_dec_deg": 70.72361111111111,
+      "optical_pa_deg": 18.0,
+      "optical_inclination_deg": 46.7,
+      "source_r95_arcsec": 355.42688851029936,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.0963223938727545,
+          "m1_imag": -0.0374003873606867,
+          "m1_amplitude": 0.10332856592495353,
+          "m1_phase_rad": -0.3703652407727954
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": -0.06530920363058156,
+          "m1_imag": -0.03551673804828218,
+          "m1_amplitude": 0.0743419851796484,
+          "m1_phase_rad": -2.64350315202565
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": -0.08872573550232783,
+          "m1_imag": -0.029835924273316054,
+          "m1_amplitude": 0.09360789773129236,
+          "m1_phase_rad": -2.8172002045713813
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.12055816037838742,
+          "m1_imag": 0.03314394344500776,
+          "m1_amplitude": 0.1250311601997952,
+          "m1_phase_rad": 0.26829255889025516
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.14132809673486763,
+          "m1_imag": 0.07116486077580478,
+          "m1_amplitude": 0.15823421986390865,
+          "m1_phase_rad": 0.46647848107329215
+        }
+      ],
+      "beams_by_azimuth_block": [
+        401,
+        216,
+        427,
+        826,
+        443,
+        255,
+        493,
+        823
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        6,
+        6
+      ]
+    },
+    "DDO52": {
+      "catalog_center_ra_deg": 127.11874999999999,
+      "catalog_center_dec_deg": 41.85583333333334,
+      "optical_pa_deg": 5.0,
+      "optical_inclination_deg": 51.1,
+      "source_r95_arcsec": 113.1595513919588,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": -0.13000060453766063,
+          "m1_imag": -0.0734743105854067,
+          "m1_amplitude": 0.1493272630706062,
+          "m1_phase_rad": -2.6271663623362764
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": -0.0869454322999503,
+          "m1_imag": 0.03849764177122121,
+          "m1_amplitude": 0.0950872053420991,
+          "m1_phase_rad": 2.7247596247820307
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": -0.045267291855722105,
+          "m1_imag": 0.03662462883934213,
+          "m1_amplitude": 0.05822792413928815,
+          "m1_phase_rad": 2.461342689588302
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.046927307384570315,
+          "m1_imag": -0.015496049116908604,
+          "m1_amplitude": 0.04941962885938735,
+          "m1_phase_rad": -0.31894044063399307
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.017380734265843547,
+          "m1_imag": -0.06996358889916282,
+          "m1_amplitude": 0.07209017752281463,
+          "m1_phase_rad": -1.3273001653241097
+        }
+      ],
+      "beams_by_azimuth_block": [
+        105,
+        103,
+        103,
+        104,
+        108,
+        102,
+        101,
+        103
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "DDO53": {
+      "catalog_center_ra_deg": 128.53333333333333,
+      "catalog_center_dec_deg": 66.17694444444444,
+      "optical_pa_deg": 81.0,
+      "optical_inclination_deg": 64.4,
+      "source_r95_arcsec": 170.32408384252375,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.018813858986404416,
+          "m1_imag": 0.03052359999421211,
+          "m1_amplitude": 0.03585598201928063,
+          "m1_phase_rad": 1.0184262809256066
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.03046250804811958,
+          "m1_imag": 0.06738196742400307,
+          "m1_amplitude": 0.07394791363190148,
+          "m1_phase_rad": 1.1462082484878746
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.018468390226177092,
+          "m1_imag": 0.05356743430746963,
+          "m1_amplitude": 0.05666172831666386,
+          "m1_phase_rad": 1.2387892293383163
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.022224922662853145,
+          "m1_imag": -0.003993577321654098,
+          "m1_amplitude": 0.022580873481640017,
+          "m1_phase_rad": -0.17779182126217927
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": -0.004564312521598576,
+          "m1_imag": -0.13467042446163285,
+          "m1_amplitude": 0.13474775016107388,
+          "m1_phase_rad": -1.604675822381663
+        }
+      ],
+      "beams_by_azimuth_block": [
+        19,
+        76,
+        88,
+        11,
+        10,
+        68,
+        127,
+        38
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        6,
+        5,
+        4,
+        4
+      ]
+    },
+    "DDO69": {
+      "catalog_center_ra_deg": 149.85416666666663,
+      "catalog_center_dec_deg": 30.745,
+      "optical_pa_deg": -64.0,
+      "optical_inclination_deg": 60.3,
+      "source_r95_arcsec": 288.4846444256118,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": -0.218866916303131,
+          "m1_imag": -0.2506133828942182,
+          "m1_amplitude": 0.3327308142293493,
+          "m1_phase_rad": -2.288676829071453
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": -0.19866845160731572,
+          "m1_imag": -0.049306002522719806,
+          "m1_amplitude": 0.2046954702694195,
+          "m1_phase_rad": -2.8983254533330216
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": -0.09150568004339803,
+          "m1_imag": 0.22222930368216234,
+          "m1_amplitude": 0.24033133981081922,
+          "m1_phase_rad": 1.9614014320162443
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.07625403952896728,
+          "m1_imag": 0.29395335343322304,
+          "m1_amplitude": 0.30368281567965394,
+          "m1_phase_rad": 1.3169822636404085
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.12869774225825056,
+          "m1_imag": 0.3380268907127561,
+          "m1_amplitude": 0.36169778504616895,
+          "m1_phase_rad": 1.2070096082366775
+        }
+      ],
+      "beams_by_azimuth_block": [
+        543,
+        524,
+        493,
+        497,
+        526,
+        542,
+        535,
+        509
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "DDO70": {
+      "catalog_center_ra_deg": 150.00374999999997,
+      "catalog_center_dec_deg": 5.330555555555556,
+      "optical_pa_deg": 88.0,
+      "optical_inclination_deg": 57.8,
+      "source_r95_arcsec": 487.8566616694434,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.0046642714910077035,
+          "m1_imag": -0.027733801857156112,
+          "m1_amplitude": 0.028123285618750576,
+          "m1_phase_rad": -1.4041755549065442
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.023664107149758737,
+          "m1_imag": -0.1414246032720378,
+          "m1_amplitude": 0.1433907541574719,
+          "m1_phase_rad": -1.4050055580939989
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": -0.08903028265883654,
+          "m1_imag": -0.057223511982574096,
+          "m1_amplitude": 0.10583440628610401,
+          "m1_phase_rad": -2.5703365710982085
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": -0.2170420270708093,
+          "m1_imag": -0.03414238759099769,
+          "m1_amplitude": 0.2197110469353324,
+          "m1_phase_rad": -2.985563561145018
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": -0.15439529468589044,
+          "m1_imag": 0.0923396967166378,
+          "m1_amplitude": 0.179901435822129,
+          "m1_phase_rad": 2.602591080648274
+        }
+      ],
+      "beams_by_azimuth_block": [
+        155,
+        282,
+        298,
+        287,
+        283,
+        304,
+        296,
+        203
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        7
+      ]
+    },
+    "DDO75": {
+      "catalog_center_ra_deg": 152.74666666666664,
+      "catalog_center_dec_deg": -4.698888888888889,
+      "optical_pa_deg": 41.0,
+      "optical_inclination_deg": 33.5,
+      "source_r95_arcsec": 411.6368481130628,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.0200320563413014,
+          "m1_imag": 0.06324011654337655,
+          "m1_amplitude": 0.06633698532252519,
+          "m1_phase_rad": 1.2640335008630423
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.20860089379132843,
+          "m1_imag": -0.07640919706837318,
+          "m1_amplitude": 0.2221546719904278,
+          "m1_phase_rad": -0.3511160047707133
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.2434655907665784,
+          "m1_imag": 0.03309578555325267,
+          "m1_amplitude": 0.24570475149802437,
+          "m1_phase_rad": 0.13510804992987127
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.121623742174305,
+          "m1_imag": 0.17456747822135688,
+          "m1_amplitude": 0.2127584055050369,
+          "m1_phase_rad": 0.9622786126929977
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.11144418682964223,
+          "m1_imag": 0.11496541554513011,
+          "m1_amplitude": 0.16011512592376975,
+          "m1_phase_rad": 0.8009493803758193
+        }
+      ],
+      "beams_by_azimuth_block": [
+        1141,
+        1074,
+        966,
+        1146,
+        1086,
+        1096,
+        1139,
+        1130
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "DDO87": {
+      "catalog_center_ra_deg": 162.39458333333332,
+      "catalog_center_dec_deg": 65.52944444444444,
+      "optical_pa_deg": 76.5,
+      "optical_inclination_deg": 58.6,
+      "source_r95_arcsec": 225.38735329790433,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": -0.013939630524478476,
+          "m1_imag": 0.03057416269430325,
+          "m1_amplitude": 0.03360197499577512,
+          "m1_phase_rad": 1.9985694015037485
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.027569777684342676,
+          "m1_imag": -0.16088863954786206,
+          "m1_amplitude": 0.16323371887305013,
+          "m1_phase_rad": -1.4010852687188515
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.02493025257883255,
+          "m1_imag": 0.012891331199972003,
+          "m1_amplitude": 0.02806606338180969,
+          "m1_phase_rad": 0.47723059632730463
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.011589815749855537,
+          "m1_imag": -0.059752479469421686,
+          "m1_amplitude": 0.06086610412913956,
+          "m1_phase_rad": -1.3792115211359046
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.045042698838042086,
+          "m1_imag": 0.25859912131516244,
+          "m1_amplitude": 0.26249257182554453,
+          "m1_phase_rad": 1.3983467654108686
+        }
+      ],
+      "beams_by_azimuth_block": [
+        22,
+        101,
+        161,
+        29,
+        16,
+        101,
+        185,
+        36
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        7,
+        5,
+        4,
+        4
+      ]
+    },
+    "F564-V3": {
+      "catalog_center_ra_deg": 135.72458333333333,
+      "catalog_center_dec_deg": 20.07472222222222,
+      "optical_pa_deg": 8.5,
+      "optical_inclination_deg": 35.8,
+      "source_r95_arcsec": 76.55252832498064,
+      "radial_capacity_j": 3,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.4666666666666667,
+          "m1_real": 0.033817879564560276,
+          "m1_imag": 0.01532691197094843,
+          "m1_amplitude": 0.037129007646425266,
+          "m1_phase_rad": 0.42552777936439184
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.4666666666666667,
+          "rho_hi": 0.7333333333333334,
+          "m1_real": 0.06104659528465064,
+          "m1_imag": 0.036085681697873316,
+          "m1_amplitude": 0.07091447820754349,
+          "m1_phase_rad": 0.5338622960743876
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.7333333333333334,
+          "rho_hi": 1.0000000000000002,
+          "m1_real": -0.09809996006837282,
+          "m1_imag": 0.07859141094473784,
+          "m1_amplitude": 0.12569889434557888,
+          "m1_phase_rad": 2.4661594038939225
+        }
+      ],
+      "beams_by_azimuth_block": [
+        28,
+        28,
+        26,
+        28,
+        29,
+        28,
+        28,
+        27
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8
+      ]
+    },
+    "Haro36": {
+      "catalog_center_ra_deg": 191.73458333333332,
+      "catalog_center_dec_deg": 51.61333333333334,
+      "optical_pa_deg": 2.0,
+      "optical_inclination_deg": 37.9,
+      "source_r95_arcsec": 62.84321754759272,
+      "radial_capacity_j": 3,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.4666666666666667,
+          "m1_real": -0.11201827060081092,
+          "m1_imag": -0.009997760340455818,
+          "m1_amplitude": 0.1124635414710994,
+          "m1_phase_rad": -3.052577354290512
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.4666666666666667,
+          "rho_hi": 0.7333333333333334,
+          "m1_real": -0.17318245688680242,
+          "m1_imag": -0.02154554998001659,
+          "m1_amplitude": 0.17451754667451227,
+          "m1_phase_rad": -3.0178190761916954
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.7333333333333334,
+          "rho_hi": 1.0000000000000002,
+          "m1_real": 0.20565390488934773,
+          "m1_imag": -0.052570233137444855,
+          "m1_amplitude": 0.21226671432036204,
+          "m1_phase_rad": -0.2502655225250925
+        }
+      ],
+      "beams_by_azimuth_block": [
+        39,
+        39,
+        27,
+        44,
+        39,
+        37,
+        15,
+        37
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        7
+      ]
+    },
+    "IC10": {
+      "catalog_center_ra_deg": 5.091249999999999,
+      "catalog_center_dec_deg": 59.29416666666666,
+      "optical_pa_deg": -38.0,
+      "optical_inclination_deg": 41.0,
+      "source_r95_arcsec": 1157.0962659288616,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.17866709481478443,
+          "m1_imag": -0.2060965825050608,
+          "m1_amplitude": 0.27275947662697353,
+          "m1_phase_rad": -0.8565669446078241
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": -0.11703800185771246,
+          "m1_imag": -0.026093297826326484,
+          "m1_amplitude": 0.1199114426162044,
+          "m1_phase_rad": -2.9222329281272477
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": -0.3111222542657207,
+          "m1_imag": 0.26292184506171706,
+          "m1_amplitude": 0.40733886840079636,
+          "m1_phase_rad": 2.439964377195931
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": -0.6018921648813468,
+          "m1_imag": 0.6103191766192017,
+          "m1_amplitude": 0.8571835716430259,
+          "m1_phase_rad": 2.3492428344023435
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": -0.7382205357422119,
+          "m1_imag": 0.6550184948108599,
+          "m1_amplitude": 0.9869239017957782,
+          "m1_phase_rad": 2.4158420759021975
+        }
+      ],
+      "beams_by_azimuth_block": [
+        3530,
+        5749,
+        2936,
+        1847,
+        7252,
+        8425,
+        2046,
+        1294
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        6,
+        4,
+        2
+      ]
+    },
+    "IC1613": {
+      "catalog_center_ra_deg": 16.205,
+      "catalog_center_dec_deg": 2.13,
+      "optical_pa_deg": 71.0,
+      "optical_inclination_deg": 37.9,
+      "source_r95_arcsec": 713.52095031905,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.4703627411351278,
+          "m1_imag": 0.2286347718619891,
+          "m1_amplitude": 0.5229865841037752,
+          "m1_phase_rad": 0.4524511875046327
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.24065444737905983,
+          "m1_imag": -0.15885371415810054,
+          "m1_amplitude": 0.28835579679476564,
+          "m1_phase_rad": -0.5834360432322027
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.04729532087807794,
+          "m1_imag": -0.14619257477315906,
+          "m1_amplitude": 0.15365258310801697,
+          "m1_phase_rad": -1.2579091975350183
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": -0.09937839344458282,
+          "m1_imag": 0.10698881196331947,
+          "m1_amplitude": 0.14602284399692,
+          "m1_phase_rad": 2.319333152243095
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.026338131973446106,
+          "m1_imag": 0.13717207623006067,
+          "m1_amplitude": 0.13967775661541906,
+          "m1_phase_rad": 1.381097087611015
+        }
+      ],
+      "beams_by_azimuth_block": [
+        3051,
+        2803,
+        2659,
+        3025,
+        3066,
+        3038,
+        2723,
+        3143
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "M81dwA": {
+      "catalog_center_ra_deg": 125.9883333333333,
+      "catalog_center_dec_deg": 71.03083333333333,
+      "optical_pa_deg": 86.0,
+      "optical_inclination_deg": 45.8,
+      "source_r95_arcsec": 107.35957340264659,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": -0.05545991243512948,
+          "m1_imag": 0.08717192375092328,
+          "m1_amplitude": 0.10331866325959223,
+          "m1_phase_rad": 2.1374183300517884
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": -0.06381649160041843,
+          "m1_imag": 0.04019553335154462,
+          "m1_amplitude": 0.07542032552038881,
+          "m1_phase_rad": 2.579505263388668
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": -0.004089234306130195,
+          "m1_imag": -0.01194720880003155,
+          "m1_amplitude": 0.012627653595263985,
+          "m1_phase_rad": -1.9005729349967182
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": -0.0048854734508257894,
+          "m1_imag": 0.22008849484317247,
+          "m1_amplitude": 0.2201427114695644,
+          "m1_phase_rad": 1.5929904504233021
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.011609199889089032,
+          "m1_imag": 0.3902459138945219,
+          "m1_amplitude": 0.3904185533929393,
+          "m1_phase_rad": 1.541056676229045
+        }
+      ],
+      "beams_by_azimuth_block": [
+        6,
+        36,
+        54,
+        14,
+        13,
+        53,
+        52,
+        10
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        7,
+        4,
+        4,
+        4
+      ]
+    },
+    "Mrk178": {
+      "catalog_center_ra_deg": 173.37083333333334,
+      "catalog_center_dec_deg": 49.24,
+      "optical_pa_deg": -50.0,
+      "optical_inclination_deg": 68.6,
+      "source_r95_arcsec": 87.54621671737617,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.3314700014088305,
+          "m1_imag": -0.09330106419081163,
+          "m1_amplitude": 0.3443507665348054,
+          "m1_phase_rad": -0.27437747068594365
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.2412650494087822,
+          "m1_imag": 0.03685947214110315,
+          "m1_amplitude": 0.24406442746279697,
+          "m1_phase_rad": 0.15160360015641583
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.2611759725185957,
+          "m1_imag": -0.12328952991921449,
+          "m1_amplitude": 0.2888134290657814,
+          "m1_phase_rad": -0.44104307228703177
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.3104413943950422,
+          "m1_imag": -0.3057648868892063,
+          "m1_amplitude": 0.43573618785717955,
+          "m1_phase_rad": -0.7778091175397026
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.3488180408425714,
+          "m1_imag": -0.31800125671382734,
+          "m1_amplitude": 0.47201570407013294,
+          "m1_phase_rad": -0.7392164273074826
+        }
+      ],
+      "beams_by_azimuth_block": [
+        42,
+        45,
+        21,
+        10,
+        11,
+        42,
+        29,
+        22
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        7,
+        6,
+        6
+      ]
+    },
+    "NGC1569": {
+      "catalog_center_ra_deg": 67.7075,
+      "catalog_center_dec_deg": 64.8475,
+      "optical_pa_deg": -59.0,
+      "optical_inclination_deg": 61.1,
+      "source_r95_arcsec": 312.56327783509863,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.083155040237277,
+          "m1_imag": -0.09155881466845814,
+          "m1_amplitude": 0.12368418354970138,
+          "m1_phase_rad": -0.8334613369808002
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.13948860415805545,
+          "m1_imag": -0.09643393684232114,
+          "m1_amplitude": 0.16957763668854295,
+          "m1_phase_rad": -0.6048896506636297
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.07941107781667305,
+          "m1_imag": 0.23015900796053745,
+          "m1_amplitude": 0.24347338299162077,
+          "m1_phase_rad": 1.2385586256716958
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": -0.25146458103883235,
+          "m1_imag": 0.10283981434254186,
+          "m1_amplitude": 0.27168081075233114,
+          "m1_phase_rad": 2.753383154670346
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": -0.22236251089083398,
+          "m1_imag": 0.08431910831700026,
+          "m1_amplitude": 0.2378125275864379,
+          "m1_phase_rad": 2.779147857257482
+        }
+      ],
+      "beams_by_azimuth_block": [
+        364,
+        488,
+        469,
+        442,
+        394,
+        568,
+        461,
+        282
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        7
+      ]
+    },
+    "NGC4163": {
+      "catalog_center_ra_deg": 183.0383333333333,
+      "catalog_center_dec_deg": 36.17027777777778,
+      "optical_pa_deg": 18.0,
+      "optical_inclination_deg": 53.7,
+      "source_r95_arcsec": 134.5916612795231,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": -0.03473071009623271,
+          "m1_imag": 0.07031435138112012,
+          "m1_amplitude": 0.07842404117320267,
+          "m1_phase_rad": 2.029580071069204
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": -0.18614779668479073,
+          "m1_imag": 0.06379721461392895,
+          "m1_amplitude": 0.1967767435524277,
+          "m1_phase_rad": 2.81141493615873
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": -0.295952814453536,
+          "m1_imag": -0.061995932291670115,
+          "m1_amplitude": 0.30237652687284183,
+          "m1_phase_rad": -2.935099400214517
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": -0.3827343703861519,
+          "m1_imag": 0.021948718216741266,
+          "m1_amplitude": 0.3833632018155133,
+          "m1_phase_rad": 3.0843082641792727
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": -0.48587648308908,
+          "m1_imag": 0.16613817847935117,
+          "m1_amplitude": 0.5134957167956221,
+          "m1_phase_rad": 2.8121206722112175
+        }
+      ],
+      "beams_by_azimuth_block": [
+        28,
+        62,
+        86,
+        86,
+        59,
+        87,
+        70,
+        34
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        7,
+        6
+      ]
+    },
+    "SagDIG": {
+      "catalog_center_ra_deg": 292.50249999999994,
+      "catalog_center_dec_deg": -17.682222222222222,
+      "optical_pa_deg": 87.5,
+      "optical_inclination_deg": 62.7,
+      "source_r95_arcsec": 427.10675598584106,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.05410785889641324,
+          "m1_imag": 0.22699494024634018,
+          "m1_amplitude": 0.23335458703825326,
+          "m1_phase_rad": 1.336796996503343
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": -0.17133803759604455,
+          "m1_imag": 0.22223173288102852,
+          "m1_amplitude": 0.28061301863343474,
+          "m1_phase_rad": 2.227595109152238
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": -0.21611006332960966,
+          "m1_imag": 0.09344720802848244,
+          "m1_amplitude": 0.23544838109582825,
+          "m1_phase_rad": 2.733466130287653
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": -0.17175668413208076,
+          "m1_imag": 0.06962153018925973,
+          "m1_amplitude": 0.18533082854706434,
+          "m1_phase_rad": 2.7564829414784437
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": -0.1372424560470054,
+          "m1_imag": -0.1568945411524752,
+          "m1_amplitude": 0.20844996710304356,
+          "m1_phase_rad": -2.289480946911116
+        }
+      ],
+      "beams_by_azimuth_block": [
+        40,
+        70,
+        83,
+        61,
+        67,
+        79,
+        75,
+        29
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        6
+      ]
+    },
+    "UGC8508": {
+      "catalog_center_ra_deg": 202.6870833333333,
+      "catalog_center_dec_deg": 54.908055555555556,
+      "optical_pa_deg": -60.0,
+      "optical_inclination_deg": 61.9,
+      "source_r95_arcsec": 115.02971084282696,
+      "radial_capacity_j": 5,
+      "m1_radial_descriptor": [
+        {
+          "zone": 0,
+          "rho_lo": 0.2,
+          "rho_hi": 0.36,
+          "m1_real": 0.08648796385114278,
+          "m1_imag": -0.2499287966702738,
+          "m1_amplitude": 0.2644703599577231,
+          "m1_phase_rad": -1.2376443923664269
+        },
+        {
+          "zone": 1,
+          "rho_lo": 0.36,
+          "rho_hi": 0.52,
+          "m1_real": 0.08250675428426565,
+          "m1_imag": -0.3689156612378593,
+          "m1_amplitude": 0.37802927083638793,
+          "m1_phase_rad": -1.350770388702924
+        },
+        {
+          "zone": 2,
+          "rho_lo": 0.52,
+          "rho_hi": 0.6800000000000002,
+          "m1_real": 0.10877311536819348,
+          "m1_imag": -0.3804027498986559,
+          "m1_amplitude": 0.39564863548022217,
+          "m1_phase_rad": -1.2922861709707907
+        },
+        {
+          "zone": 3,
+          "rho_lo": 0.6800000000000002,
+          "rho_hi": 0.8400000000000001,
+          "m1_real": 0.22077034516601093,
+          "m1_imag": -0.26696460348079737,
+          "m1_amplitude": 0.3464240823273968,
+          "m1_phase_rad": -0.8798282863045429
+        },
+        {
+          "zone": 4,
+          "rho_lo": 0.8400000000000001,
+          "rho_hi": 1.0,
+          "m1_real": 0.31872729912268083,
+          "m1_imag": -0.4466487435655889,
+          "m1_amplitude": 0.5487095692028325,
+          "m1_phase_rad": -0.9510028880112482
+        }
+      ],
+      "beams_by_azimuth_block": [
+        102,
+        104,
+        64,
+        55,
+        69,
+        94,
+        41,
+        75
+      ],
+      "occupied_blocks_by_radial_zone": [
+        8,
+        8,
+        8,
+        8,
+        6
+      ]
+    }
+  },
+  "cross_galaxy_derangement": {
+    "DDO126": "DDO133",
+    "DDO133": "DDO154",
+    "DDO154": "DDO165",
+    "DDO165": "DDO168",
+    "DDO168": "DDO187",
+    "DDO187": "DDO216",
+    "DDO216": "DDO47",
+    "DDO47": "DDO50",
+    "DDO50": "DDO52",
+    "DDO52": "DDO53",
+    "DDO53": "DDO69",
+    "DDO69": "DDO70",
+    "DDO70": "DDO75",
+    "DDO75": "DDO87",
+    "DDO87": "IC1613",
+    "IC1613": "M81dwA",
+    "M81dwA": "Mrk178",
+    "Mrk178": "NGC1569",
+    "NGC1569": "NGC4163",
+    "NGC4163": "SagDIG",
+    "SagDIG": "UGC8508",
+    "UGC8508": "DDO126"
+  },
+  "source_radius_definition": "deprojected radius enclosing 95% of positive integrated intensity in the largest 8-connected moment-0 component around the frozen optical center",
+  "source_mask_definition": "largest 8-connected component of finite strictly positive pixels in the survey-provided robust primary-beam-corrected moment-0 map",
+  "hard_support_gate": "B_source>=10, J>=2, >=2 independent beam cells in each of 8 contiguous azimuth blocks, every radial zone represented in >=4 blocks, and maximum occupied-block gap <=pi/2",
+  "source_mode_definition": "complex intensity-normalized m=1 coefficient in each of J source-frozen radial zones",
+  "operator_calibration_complete": false,
+  "velocity_product_acquisition_allowed": false,
+  "velocity_pixels_opened": false,
+  "endpoint_scoring_allowed": false,
+  "tau_endpoint_allowed": false,
+  "claim_boundary": "source-only support and morphology descriptor freeze; no kinematic association, parent loss, gravity result, dark-matter replacement, or Tau validation"
+}

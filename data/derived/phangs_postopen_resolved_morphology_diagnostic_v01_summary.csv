@@ -1,0 +1,4 @@
+error_floor_km_s,q_primary,dof_primary,p_primary_formal,individual_p_below_0_05,q_radial_reversal,primary_below_reversal_global,primary_below_reversal_count,radial_control_pass,q_phase_rotation,primary_below_phase_global,primary_below_phase_count,phase_control_pass
+5.0,2148.4252469663343,48,0.0,4,2152.912164412769,True,2,False,2156.028769483355,True,1,False
+10.0,745.8468444667092,48,6.364127867480181e-126,4,758.4082696934292,True,2,False,711.9693693679142,False,1,False
+20.0,211.86525383689494,48,1.828652291867808e-22,2,216.58534858719577,True,2,False,199.11211525468124,False,1,False

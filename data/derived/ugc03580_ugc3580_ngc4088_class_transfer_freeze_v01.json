@@ -1,0 +1,82 @@
+{
+  "schema": "tau_core_ugc03580_ugc3580_ngc4088_class_transfer_freeze_v01",
+  "freeze_date": "2026-08-30",
+  "freeze_status": "RETROSPECTIVE_SOURCE_FROZEN_CLASS_TRANSFER_READY_NOT_SCORED",
+  "formula_id": "NGC4088_WARP_HISTORY_CLASS_V1__UGC03580_TRANSFER_V01",
+  "galaxy": "UGC03580",
+  "alias": "UGC3580",
+  "source_body": "data/derived/ugc03580_ugc3580_warp_body_v01.json",
+  "source_body_sha256": "283bfdb1a3bf50688856fb57c36dd4161b16207f7b39d74af7153d3922045ed7",
+  "source_selection": {
+    "criterion": "same Jozsa symmetric-warp source class as UGC08490",
+    "selection_uses_pointwise_vobs_or_residual": false,
+    "target_endpoint_opened_in_prior_repo_analyses": true,
+    "prospective_blind_endpoint": false,
+    "epistemic_role": "retrospective unchanged-law replication"
+  },
+  "formula": {
+    "readout": "v_readout^2(R)=v_Newtonian_baryonic^2(R)+lambda_w*C_warp(R/R_HI;x_w,p)",
+    "kernel": "C_warp(x;x_w,p)=q_warp*max(0,(x-x_w)/(1-x_w))^p",
+    "amplitude": "lambda_w=sigma_warp*q_warp*x_w*Vflat^2",
+    "q_warp": 1.0,
+    "sigma_warp": 1.0,
+    "turn_on_power": 1.0,
+    "kernel_is_uncapped_for_x_gt_1": true,
+    "post_freeze_retuning_allowed": false
+  },
+  "frozen_source_inputs": {
+    "warp_onset_arcsec": 180.0,
+    "distance_mpc": 20.7,
+    "distance_error_mpc": 5.2,
+    "r_hi_kpc": 19.97,
+    "vflat_km_s_primary": 126.2,
+    "vflat_error_km_s": 3.2,
+    "source_hi_radius_arcsec": 240.0,
+    "source_terminal_radius_arcsec": 375.0,
+    "source_outer_rotation_speed_km_s_sensitivity": 118.60000000000001,
+    "inner_outer_mutual_inclination_deg": 13.9,
+    "source_rotation_rise_fraction": 0.09,
+    "source_warp_significance_caveat": true
+  },
+  "derived_frozen_values": {
+    "warp_onset_kpc_distance_harmonized": 18.064140789760746,
+    "x_w_primary_sparc_rhi": 0.9045638853160114,
+    "lambda_w_primary_km2_s2": 14406.482445652337,
+    "lambda_w_source_speed_sensitivity_km2_s2": 12723.559428299606,
+    "x_w_source_hi_denominator_sensitivity": 0.75,
+    "lambda_w_source_hi_denominator_sensitivity_km2_s2": 11944.83
+  },
+  "independence_audit": {
+    "pointwise_endpoint_curve_read_by_freeze_script": false,
+    "vobs_or_residual_used_to_choose_x_w_q_sigma_p": false,
+    "historical_human_exposure_to_target_endpoint": true,
+    "observed_catalog_summary_Vflat_used": true,
+    "observed_catalog_summary_RHI_used": true,
+    "fully_kinematically_independent_amplitude_prediction": false
+  },
+  "predeclared_controls": {
+    "primary_normalization": "SPARC_master_Vflat_and_RHI",
+    "normalization_sensitivity": "Jozsa_TiRiFiC_outer_rotation_speed",
+    "denominator_sensitivity": "Jozsa_source_RHI_angular_ratio",
+    "standard_comparators": [
+      "Newtonian_baryonic",
+      "MOND_RAR",
+      "TPG_v6"
+    ],
+    "morphology_controls": [
+      "no_warp_q0",
+      "wrong_onset_NGC4088_xw",
+      "wrong_onset_UGC08490_xw",
+      "wrong_turn_on_p2",
+      "wrong_sign_sigma_minus1"
+    ],
+    "radial_diagnostics": [
+      "pre_onset",
+      "onset_to_RHI",
+      "beyond_RHI"
+    ]
+  },
+  "formula_frozen_before_current_scoring_script": true,
+  "endpoint_scores_allowed_in_this_step": false,
+  "claim_boundary": "retrospective_source_frozen_class_transfer_not_tau_validation"
+}

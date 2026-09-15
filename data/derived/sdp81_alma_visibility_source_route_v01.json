@@ -1,0 +1,187 @@
+{
+  "schema": "sdp81_alma_visibility_source_route_v01",
+  "status": "RAW_VISIBILITY_SOURCE_ROUTE_IDENTIFIED_ACQUISITION_NOT_EXECUTED",
+  "generated_utc": "2026-09-03T00:00:00Z",
+  "source": {
+    "archive": "ALMA Science Archive",
+    "project_code": "2011.0.00016.SV",
+    "member_ous_uid": "uid://A002/X8fa7af/X12",
+    "tap_endpoint": "https://almascience.eso.org/tap/sync",
+    "datalink_endpoint": "https://almascience.org/datalink/sync?ID=uid://A002/X8fa7af/X12",
+    "datalink_response_sha256": "e686929b0ab1f2f75177602088b4bb24fd07aacadb7871e0396253c52b73a34c",
+    "band4_calibration_bundle_sha256": "f69dbf45213dd2dfc0c21e17c37e178bb556f1ac5c9180100a338a4ffa8982b6",
+    "band6_calibration_bundle_sha256": "35b375b6543460facf56d20fb320b6b7c47fa094893826592dff405afaf6dbe1",
+    "inventory_observed_utc": "2026-09-03"
+  },
+  "allowed_training_products": {
+    "Band4_CO54": [
+      {
+        "execution_uid": "uid___A002_X91068d_Xa1e",
+        "content_length_bytes": 7066663936,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X91068d_Xa1e.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X91068d_Xc50",
+        "content_length_bytes": 4931837952,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X91068d_Xc50.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X91068d_Xead",
+        "content_length_bytes": 6465080320,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X91068d_Xead.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X915f1c_X5d0",
+        "content_length_bytes": 4681423872,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X915f1c_X5d0.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X924c91_X12c",
+        "content_length_bytes": 15099610112,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X924c91_X12c.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X924c91_X34f",
+        "content_length_bytes": 15099683840,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X924c91_X34f.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X924c91_X572",
+        "content_length_bytes": 15099720704,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X924c91_X572.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X924c91_X847",
+        "content_length_bytes": 14154798080,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X924c91_X847.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X924c91_Xa47",
+        "content_length_bytes": 15247220736,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X924c91_Xa47.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X93514d_X1634",
+        "content_length_bytes": 16294638592,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X93514d_X1634.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X93514d_X1857",
+        "content_length_bytes": 16453101568,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X93514d_X1857.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X93514d_Xfc6",
+        "content_length_bytes": 17545526272,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X93514d_Xfc6.asdm.sdm.tar"
+      }
+    ],
+    "Band6_CO87": [
+      {
+        "execution_uid": "uid___A002_X8fd70d_X1484",
+        "content_length_bytes": 4957810688,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X8fd70d_X1484.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X8fd70d_X188b",
+        "content_length_bytes": 3655892992,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X8fd70d_X188b.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X907514_X11d6",
+        "content_length_bytes": 6338478080,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X907514_X11d6.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X915f1c_X8be",
+        "content_length_bytes": 4954334208,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X915f1c_X8be.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X916b15_X1716",
+        "content_length_bytes": 5269903360,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X916b15_X1716.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X923b56_X43c",
+        "content_length_bytes": 10697946112,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X923b56_X43c.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X923b56_X65f",
+        "content_length_bytes": 10697825280,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X923b56_X65f.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X92c694_X1099",
+        "content_length_bytes": 9280667648,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X92c694_X1099.asdm.sdm.tar"
+      },
+      {
+        "execution_uid": "uid___A002_X92ec61_X1f23",
+        "content_length_bytes": 7716950016,
+        "access_url": "https://almascience.eso.org/dataPortal/2011.0.00016.SV_uid___A002_X92ec61_X1f23.asdm.sdm.tar"
+      }
+    ]
+  },
+  "allowed_execution_count": 21,
+  "allowed_content_length_bytes": 211709114368,
+  "allowed_content_length_decimal_gb": 211.709114368,
+  "forbidden_holdout": {
+    "band": "Band7",
+    "line": "CO(10-9)",
+    "execution_uids": [
+      "uid___A002_X91dc9f_X2eb",
+      "uid___A002_X91dc9f_X517",
+      "uid___A002_X91dc9f_Xb6",
+      "uid___A002_X91f01f_X5e6",
+      "uid___A002_X91f01f_X812",
+      "uid___A002_X920302_X1059",
+      "uid___A002_X920302_X1336",
+      "uid___A002_X920302_X1562",
+      "uid___A002_X920302_Xe29",
+      "uid___A002_X925649_Xa99",
+      "uid___A002_X925649_Xcc5"
+    ],
+    "rule": "Do not download, extract, inspect, calibrate, image, or read a header/pixel from any listed Band-7 execution before the complete source gate passes."
+  },
+  "source_reconstruction_contract": {
+    "training_lines_only": [
+      "CO(5-4)",
+      "CO(8-7)"
+    ],
+    "visibility_domain_required": true,
+    "continuum_subtraction": "uv-domain, frozen without CO(10-9)",
+    "spectral_grid": "common 41 km/s channels, matching the independent Rybak et al. 2015 source analysis unless a source-only audit freezes a stricter grid",
+    "uv_support": "common <=1 Mlambda support or a stricter source-only common-support intersection",
+    "lens_model": "independent continuum-frozen model; no CO(10-9) tuning",
+    "outputs_required": [
+      "separate CO(5-4) and CO(8-7) source-plane spectral cubes",
+      "channel covariance or posterior draws",
+      "source-plane PSF/resolution operator",
+      "regularization-selection record",
+      "leave-one-execution-block-out stability diagnostics",
+      "cross-transition profile-transfer rejection or validated physical transfer law"
+    ],
+    "terminal_promotion_rule": "No terminal Jacobian is promoted unless the source-only reconstruction supplies a full-rank five-mode derivative with uncertainty and survives execution-block and regularization perturbations."
+  },
+  "checks": {
+    "official_project_and_member_frozen": true,
+    "band4_execution_count_is_12": true,
+    "band6_execution_count_is_9": true,
+    "allowed_raw_size_is_211709114368_bytes": true,
+    "no_allowed_uid_is_band7": true,
+    "allowed_uids_are_unique": true,
+    "all_urls_are_official_asdm_tar_urls": true,
+    "co109_header_not_read": true,
+    "co109_pixels_not_read": true
+  },
+  "checks_passed": 9,
+  "checks_total": 9,
+  "acquisition_executed": false,
+  "source_cube_reconstructed": false,
+  "transition_readiness_increment": 0,
+  "endpoint_authorized": false,
+  "next_finite_action": "Acquire only the 21 frozen Band-4/Band-6 ASDM packages after storage/transfer authorization, calibrate them with the matching official scripts, and perform a visibility-plane source reconstruction under the frozen contract. Keep all 11 Band-7 executions untouched.",
+  "claim_boundary": "This freezes a public, endpoint-independent acquisition route and proves Band-4/Band-6/Band-7 execution separation at the archive-manifest level. It is not a source-cube reconstruction, does not select a physical CO(10-9) profile law, does not increase transition readiness, and does not authorize or score the held-out endpoint."
+}

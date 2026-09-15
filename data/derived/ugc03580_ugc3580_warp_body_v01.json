@@ -1,0 +1,54 @@
+{
+  "schema": "tau_core_ugc03580_ugc3580_warp_body_v01",
+  "status": "SOURCE_NATIVE_OUTER_WARP_BODY_PROMOTED_WITH_SIGNIFICANCE_CAVEAT",
+  "galaxy": "UGC03580",
+  "alias": "UGC3580",
+  "source": "Jozsa 2007 A&A 468 903-917, Tables 1, 4, 5, and 6",
+  "source_pdf": "data/external/literature/ugc08490_ngc5204_warp/gentile2007_warped_disks.pdf",
+  "source_pdf_sha256": "15b4ae9e2bb3268509e75b40e62def8cc4664a117fdcccafae8afb7f170ec8ba",
+  "inner_reference_orientation": {
+    "inclination_deg": 67.2,
+    "pa_deg": 96.3
+  },
+  "warp_onset": {
+    "radius_arcsec": 180.0,
+    "radius_kpc_source": 13.18,
+    "tip_deg": 5.5,
+    "tip_error_deg": 3.9
+  },
+  "source_hi_radius": {
+    "radius_arcsec": 240.0,
+    "radius_kpc_source": 17.6,
+    "radius_arcsec_error": 30.0,
+    "radius_kpc_error": 4.1
+  },
+  "source_terminal_radius": {
+    "radius_arcsec": 375.0,
+    "radius_kpc_source": 27.5,
+    "radius_arcsec_error": 30.0,
+    "radius_kpc_error": 6.4
+  },
+  "source_inner_disk_range_arcsec": [
+    30.0,
+    180.0
+  ],
+  "source_outer_disk_range_arcsec": [
+    240.0,
+    375.0
+  ],
+  "inner_outer_mean_mutual_inclination_deg": 13.9,
+  "inner_outer_mean_mutual_inclination_error_deg": 2.5,
+  "source_rotation_rise_inner_km_s": 108.9,
+  "source_rotation_rise_delta_km_s": 9.7,
+  "source_rotation_rise_fraction": 0.09,
+  "source_classification": "SA(s)a",
+  "source_assessment": {
+    "outer_planar_regime": true,
+    "warp_is_less_significant_than_ngc2541_and_ngc5204": true,
+    "rotation_rise_to_warp_connection_requires_caution": true,
+    "slow_extraplanar_gas_component_reported": true
+  },
+  "endpoint_values_used_for_body_construction": false,
+  "target_endpoint_opened_in_prior_repo_analyses": true,
+  "claim_boundary": "source-native outer-warp class member with a published significance caveat; not a complete galaxy morphology and not a Tau Core identification"
+}
