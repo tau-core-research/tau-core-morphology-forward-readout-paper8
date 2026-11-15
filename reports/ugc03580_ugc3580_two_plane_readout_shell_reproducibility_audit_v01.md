@@ -1,8 +1,8 @@
 # UGC03580 bounded two-plane readout-shell reproducibility audit v01
 
-Status: `REPRODUCIBILITY_AUDIT_FAIL`
+Status: `REPRODUCIBILITY_AUDIT_PASS`
 
-Independent checks passed: `61/62`.
+Independent checks passed: `62/62`.
 
 The audit independently reconstructs the plane defects, the `p=1` and
 `p=2` bounded coordinates, exact plane-swap complementarity, theoretical

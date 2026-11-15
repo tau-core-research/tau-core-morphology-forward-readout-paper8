@@ -4,7 +4,7 @@
   "scientific_role": "retrospective sensitivity control for one fixed 4D-corridor proxy; not a Tau parent-distance or parent-action model",
   "inputs": {
     "standard_corridor_descriptor": "data/derived/sdp81_standard_corridor_descriptor_v01.json",
-    "standard_corridor_descriptor_sha256": "d268ec5321d0812d6d1f64fc158e265cc893d1a3c66fae9d6288a6bb2e35ccf1",
+    "standard_corridor_descriptor_sha256": "7aa0f160f5c661ea00f25eb0f251064aae74001782528dad3bfc0ebfba80803a",
     "spectral_or_velocity_endpoint_read": false
   },
   "proxy_definition": {

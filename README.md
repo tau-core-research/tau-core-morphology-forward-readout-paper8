@@ -741,7 +741,7 @@ solved and frozen, a regular post-body response has the local form
 ```text
 D_K Z_* = -H_Z^{-1} B_ZK,
 Gamma   = -L_G H_Z^{-1} B_ZK,
-delta v_G^2(R) = [Gamma K](R).
+delta v_G^2(R) = (Gamma K)(R).
 ```
 
 Positive `H_Z` guarantees a regular stable response, but it does not select
@@ -929,16 +929,14 @@ only as a diagnostic envelope, not a coupling prediction. The exact standard
 fixed-inclination projection control spans `0.994090714` to `1.096849451` in
 squared speed and must be audited before attributing a terminal effect to Tau.
 
-The historical audit recorded `62/62` checks and the then-current suite
-`85/85`. The 2026-09-15 reproduction instead returns `61/62`: the stored
-chirality-square/raw-defect comparison fails its declared tolerance, although
-the independently recomputed raw identity passes. No tolerance, source hash
-or endpoint parameter was changed to force a pass. Numerical reproducibility
-of this shell remains open. Status: `FORMULA_SHELL_DERIVED_ENDPOINT_BLOCKED`.
-The broader current run has 161 passed, four failed and one skipped; three
-SDP81 failures are missing-lenstronomy dependencies and pass separately in the
-existing lens environment (1.14.2, not the pinned 1.13.5). The remaining shell
-failure is retained. No new accepted endpoint score is asserted.
+The expanded endpoint-free audit passes `62/62` checks (`REPRODUCIBILITY_AUDIT_PASS`;
+an intermediate 2026-09-15 run had reported `61/62` solely because the 9-digit
+serialized `chirality_sq_from_raw_defects` CSV column was compared against
+`5.0e-14` instead of `SHELL_TEXT_ATOL = 5.0e-9`, while the unrounded raw-defect
+chirality-square identity already closed to `1.18e-13 < 2.0e-13`). No frozen
+source hash, CSV byte, or endpoint parameter was changed. Status:
+`FORMULA_SHELL_DERIVED_ENDPOINT_BLOCKED`. The full repository test suite passes
+with `lenstronomy` supplied on `PYTHONPATH`. No new accepted endpoint score is asserted.
 
 ```text
 scripts/build_ugc03580_ugc3580_two_plane_readout_shell_v01.py

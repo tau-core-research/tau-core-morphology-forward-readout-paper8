@@ -1,7 +1,7 @@
 {
   "schema": "tau_core_ugc03580_ugc3580_two_plane_readout_shell_reproducibility_audit_v01",
-  "status": "REPRODUCIBILITY_AUDIT_FAIL",
-  "checks_passed": 61,
+  "status": "REPRODUCIBILITY_AUDIT_PASS",
+  "checks_passed": 62,
   "checks_total": 62,
   "checks": {
     "upstream_summary_hash_matches": true,
@@ -19,7 +19,7 @@
     "stored_K1_matches": true,
     "stored_K2_matches": true,
     "stored_signed_chirality_matches": true,
-    "stored_chirality_square_matches_raw_defect_identity": false,
+    "stored_chirality_square_matches_raw_defect_identity": true,
     "raw_defect_chirality_square_identity_is_exact": true,
     "supported_source_path_uses_both_chirality_signs": true,
     "source_output_contains_published_oriented_spin_normal_components": true,

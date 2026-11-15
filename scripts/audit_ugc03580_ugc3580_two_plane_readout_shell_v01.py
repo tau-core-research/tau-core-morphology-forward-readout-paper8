@@ -367,7 +367,7 @@ def main() -> None:
             np.allclose(
                 points["chirality_sq_from_raw_defects"],
                 chirality_sq_from_defects,
-                atol=5.0e-14,
+                atol=SHELL_TEXT_ATOL,
             )
         ),
         "raw_defect_chirality_square_identity_is_exact": bool(

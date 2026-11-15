@@ -4,7 +4,7 @@
   "scientific_role": "source-only common-action to fixed/relaxed transfer compiler",
   "inputs": {
     "parent_path_gate": "data/derived/sdp81_parent_path_lift_gate_v01.json",
-    "parent_path_gate_sha256": "6da3af009c2131be3c19640664aefaf16030e15a8435df71711d6a26f348f548",
+    "parent_path_gate_sha256": "966d09105f719969c9ce6086403f1c09cc24367656d2272d402c6da0526f41fc",
     "physical_manifest": null,
     "physical_manifest_sha256": null,
     "spectral_or_velocity_endpoint_read": false

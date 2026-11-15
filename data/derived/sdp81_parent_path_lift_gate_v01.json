@@ -4,7 +4,7 @@
   "scientific_role": "source-only PATHLIFT-C1 registration audit; never a spectral endpoint score",
   "input": {
     "standard_corridor_descriptor": "data/derived/sdp81_standard_corridor_descriptor_v01.json",
-    "sha256": "d268ec5321d0812d6d1f64fc158e265cc893d1a3c66fae9d6288a6bb2e35ccf1",
+    "sha256": "7aa0f160f5c661ea00f25eb0f251064aae74001782528dad3bfc0ebfba80803a",
     "spectral_or_velocity_endpoint_read": false,
     "physical_source_manifest": null,
     "physical_source_manifest_sha256": null,

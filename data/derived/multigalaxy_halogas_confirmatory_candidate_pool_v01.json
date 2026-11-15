@@ -14,7 +14,7 @@
     "confirmatory_pass": false,
     "hr_gls_mean_km_s": 4.2680985365579085,
     "hr_gls_sigma_km_s": 10.234952004154241,
-    "lr_gls_mean_km_s": 3.219481660496291,
+    "lr_gls_mean_km_s": 3.2194816604962906,
     "lr_gls_sigma_km_s": 10.504234156051936,
     "velocity_zero_point_sign_stable": false
   },
