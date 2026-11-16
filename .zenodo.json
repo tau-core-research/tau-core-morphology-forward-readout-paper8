@@ -4,7 +4,8 @@
   "description": "Reproducibility package for the Paper 8 internal-preflight morphology-matched forward-readout protocol. The package contains claim-bounded scripts, derived artifacts, manuscript source, rendered PDF, arXiv source package, and source-native robustness diagnostics. It should be read as a reproducible protocol and internal-preflight signal, not as empirical evidence for a new gravitational law.",
   "creators": [
     {
-      "name": "Olcsak, Jozsef"
+      "name": "Olcsak, Jozsef",
+      "orcid": "0009-0003-7311-6522"
     }
   ],
   "license": "MIT",
